@@ -649,6 +649,23 @@ Pour réussir une production écrite de 6 à 8 lignes :
     this.courses.update((list) => [newC, ...list]);
   }
 
+  addHomework(hwData: Partial<Homework>) {
+    const activeC = this.activeClass();
+    const newH: Homework = {
+      id: 'hw-' + Date.now(),
+      title: hwData.title || 'Nouveau Devoir',
+      classId: activeC.id,
+      subject: hwData.subject || 'Mathématiques',
+      dueDate: hwData.dueDate || 'Demain à 18h00',
+      instructions: hwData.instructions || '',
+      exercises: hwData.exercises || [],
+      totalPoints: hwData.totalPoints || 20,
+      submissionsCount: 0,
+      status: 'pending',
+    };
+    this.homeworks.update((list) => [newH, ...list]);
+  }
+
   addExerciseToBank(ex: ExerciseItem) {
     this.exercisesBank.update((list) => [
       {

@@ -46,28 +46,35 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
 
             <div class="flex flex-col sm:flex-row items-center gap-3">
               <div
+                (click)="fileInput.click()"
                 (dragover)="onDragOver($event)"
                 (drop)="onFileDrop($event)"
                 class="w-full bg-white/5 hover:bg-white/10 border-2 border-dashed border-white/30 hover:border-emerald-400 rounded-xl p-3 text-center transition-all cursor-pointer">
+                <input
+                  type="file"
+                  #fileInput
+                  (change)="handleFileUpload($event)"
+                  accept=".pdf,image/*"
+                  class="hidden" />
                 <p class="text-xs font-semibold text-white">
-                  📁 {{ lang.tr('Déposer ici vos devoirs ou photos WhatsApp', 'اسحب هنا ملفات الفروض أو صور الواتساب') }}
+                  📁 {{ uploadedFileName() ? uploadedFileName() : lang.tr('Cliquer ou déposer ici vos devoirs ou photos WhatsApp', 'اضغط هنا أو اسحب ملفات الفروض وصور الواتساب') }}
                 </p>
                 <p class="text-[10px] text-slate-300">
-                  {{ lang.tr('Ex: Devoir_Synthese_Maths_4eme_T1.pdf', 'مثال: فرض تأليفي_رياضيات_سنة 4_ثلاثي 1') }}
+                  {{ lang.tr('Supporte PDF et photos de cahiers (sauvegardé sur serveur)', 'يدعم ملفات PDF وصور الكراسات (حفظ مباشر على السيرفر)') }}
                 </p>
               </div>
 
               <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto">
                 <button
                   [disabled]="isAutoTagging()"
-                  (click)="simulateBulkUpload()"
+                  (click)="fileInput.click()"
                   class="w-full sm:w-auto bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs px-4 py-3 rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-xs">
                   @if (isAutoTagging()) {
                     <span class="material-icons animate-spin text-sm">sync</span>
-                    <span>{{ lang.tr('Analyse Gemini...', 'جاري التحليل...') }}</span>
+                    <span>{{ lang.tr('Upload & Analyse...', 'جاري الرفع والتحليل...') }}</span>
                   } @else {
                     <span class="material-icons text-sm">cloud_upload</span>
-                    <span>{{ lang.tr('Tester Auto-Tag IA', 'تثبيت وتصنيف تلقائي') }}</span>
+                    <span>{{ lang.tr('Sélectionner Fichier', 'اختيار ملف للرفع') }}</span>
                   }
                 </button>
               </div>
@@ -320,10 +327,25 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
                 </div>
 
                 <!-- FEATURE 5: One-Click PDF Watermark & Print Preview -->
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-1.5">
+                  <button
+                    (click)="shareOnWhatsApp(ex)"
+                    class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-2 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors shadow-2xs"
+                    title="Partager sur WhatsApp">
+                    <span class="material-icons text-xs">share</span>
+                    <span>WhatsApp</span>
+                  </button>
+
+                  <button
+                    (click)="copyLink(ex)"
+                    class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold p-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer"
+                    title="Copier le lien">
+                    <span class="material-icons text-xs">content_copy</span>
+                  </button>
+
                   <button
                     (click)="toggleSolution(ex.id)"
-                    class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 cursor-pointer">
+                    class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 cursor-pointer px-2 py-1">
                     <span class="material-icons text-sm">visibility</span>
                     {{ openSolutionIds().has(ex.id) ? lang.tr('Masquer', 'إخفاء') : lang.tr('Voir Corrigé', 'عرض الإصلاح') }}
                   </button>
@@ -332,7 +354,7 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
                     (click)="openWatermarkPreviewModal(ex)"
                     class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer shadow-2xs">
                     <span class="material-icons text-xs">print</span>
-                    {{ lang.tr('Imprimer PDF Watermarqué', 'طباعة PDF بفيليغران') }}
+                    {{ lang.tr('Imprimer PDF', 'طباعة PDF') }}
                   </button>
                 </div>
               </div>
@@ -557,12 +579,13 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
     }
 
     <!-- FEATURE 5: ONE-CLICK PDF WATERMARK & PRINT PREVIEW MODAL -->
+    <!-- FEATURE 5: ONE-CLICK PDF WATERMARK & PRINT PREVIEW MODAL -->
     @if (watermarkPreviewModal(); as docEx) {
-      <div class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-xs flex items-center justify-center p-4">
+      <div id="printable-modal" class="print-container fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-xs flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-2xl w-full p-6 space-y-5 border border-slate-200 shadow-2xl max-h-[90vh] overflow-y-auto relative">
           
           <!-- Watermark Header Banner -->
-          <div class="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white p-4 rounded-2xl flex items-center justify-between shadow-sm">
+          <div class="no-print bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white p-4 rounded-2xl flex items-center justify-between shadow-sm">
             <div class="flex items-center gap-2">
               <span class="material-icons text-amber-400">verified</span>
               <div>
@@ -578,26 +601,40 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
           </div>
 
           <!-- Document Render Frame with Watermark Overlay -->
-          <div class="bg-slate-50 rounded-2xl p-6 border-2 border-slate-200 relative overflow-hidden space-y-4 font-mono text-xs shadow-inner">
+          <div id="printable-document" class="print-document bg-slate-50 rounded-2xl p-6 border-2 border-slate-200 relative overflow-hidden space-y-4 font-mono text-xs shadow-inner">
             
             <!-- Diagonal Watermark Stamp -->
-            <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-10 select-none rotate-[-25deg]">
+            <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-10 select-none rotate-[-25deg]">
               <span class="text-4xl font-black uppercase text-emerald-900 tracking-widest text-center">
                 MADRASATI TN <br /> COPIE CERTIFIÉE GRATUITE
               </span>
             </div>
 
             <!-- Official Header -->
-            <div class="border-b border-slate-300 pb-3 flex items-center justify-between text-[11px] font-sans">
-              <div>
-                <p class="font-bold text-slate-900">République Tunisienne — Ministère de l'Éducation</p>
-                <p class="text-slate-500">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
+            <div class="border-b-2 border-slate-900 pb-3 font-sans">
+              <div class="flex items-center justify-between text-xs">
+                <div class="text-left font-bold text-slate-900 leading-tight">
+                  <p>الجمهورية التونسية</p>
+                  <p>وزارة التربية والتعليم</p>
+                  <p class="text-[10px] text-slate-500 font-normal">المندوبية الجهوية للتربية</p>
+                </div>
+                <div class="text-center font-bold">
+                  <p class="text-base text-emerald-900 font-black">{{ docEx.title }}</p>
+                  <p class="text-xs text-slate-600">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
+                </div>
+                <div class="text-right text-xs text-slate-700 leading-tight">
+                  <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded text-[10px]">
+                    {{ docEx.docType || 'Devoir de Contrôle' }}
+                  </span>
+                  <p class="text-[10px] text-slate-400 mt-1">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
+                </div>
               </div>
-              <div class="text-right">
-                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded text-[10px]">
-                  {{ docEx.docType || 'Devoir de Contrôle' }}
-                </span>
-                <p class="text-[10px] text-slate-400 mt-0.5">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
+
+              <!-- Student Filling Block for Printed Exams -->
+              <div class="mt-3 pt-2 border-t border-dashed border-slate-400 grid grid-cols-3 gap-2 text-xs font-semibold">
+                <p>الاسم واللقب: ....................................</p>
+                <p>القسم: {{ docEx.grade }}</p>
+                <p class="text-right font-bold text-emerald-900">العدد: .......... / 20</p>
               </div>
             </div>
 
@@ -624,7 +661,7 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
           </div>
 
           <!-- Actions -->
-          <div class="flex items-center justify-between gap-3 pt-2">
+          <div class="no-print flex items-center justify-between gap-3 pt-2">
             <button (click)="watermarkPreviewModal.set(null)" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl text-xs cursor-pointer">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
@@ -633,7 +670,7 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
               (click)="triggerPrintDialog()"
               class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-md">
               <span class="material-icons text-base">print</span>
-              {{ lang.tr('🖨️ Imprimer / Sauvegarder PDF Filigrané', '🖨️ طباعة أو حفظ PDF بفيليغران') }}
+              {{ lang.tr('🖨️ Lancer l\'Impression A4 / PDF', '🖨️ طباعة الورقة بصيغة A4') }}
             </button>
           </div>
 
@@ -717,6 +754,8 @@ export class PublicDiscoveryComponent {
     alert(msg);
   }
 
+  readonly uploadedFileName = signal<string | null>(null);
+
   openWatermarkPreviewModal(ex: ExerciseItem) {
     this.watermarkPreviewModal.set(ex);
   }
@@ -727,13 +766,87 @@ export class PublicDiscoveryComponent {
     }
   }
 
+  shareOnWhatsApp(ex: ExerciseItem) {
+    if (typeof window !== 'undefined') {
+      const msg = `🇹🇳 *Madrasati TN - Document d'Exercices*\n📘 ${ex.title} (${ex.grade} - ${ex.subject})\n${ex.hasCorrection ? '✔️ Corrigé certifié inclus' : ''}\n\nAccédez au document complet: ${window.location.origin}`;
+      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+  }
+
+  copyLink(ex: ExerciseItem) {
+    if (typeof navigator !== 'undefined') {
+      navigator.clipboard.writeText(`${window.location.origin}?doc=${ex.id}`);
+      alert(this.lang.tr('🔗 Lien copié dans le presse-papier !', '🔗 تم نسخ رابط الوثيقة بنجاح!'));
+    }
+  }
+
   onDragOver(e: DragEvent) {
     e.preventDefault();
   }
 
   onFileDrop(e: DragEvent) {
     e.preventDefault();
-    this.simulateBulkUpload();
+    if (e.dataTransfer?.files && e.dataTransfer.files.length > 0) {
+      this.uploadAndProcessFile(e.dataTransfer.files[0]);
+    } else {
+      this.simulateBulkUpload();
+    }
+  }
+
+  async handleFileUpload(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) return;
+    const file = input.files[0];
+    await this.uploadAndProcessFile(file);
+  }
+
+  async uploadAndProcessFile(file: File) {
+    this.isAutoTagging.set(true);
+    this.uploadedFileName.set(file.name);
+    try {
+      const reader = new FileReader();
+      const base64Promise = new Promise<string>((resolve) => {
+        reader.onload = () => resolve(reader.result as string);
+        reader.readAsDataURL(file);
+      });
+      const base64Data = await base64Promise;
+
+      const upRes = await fetch('/api/upload', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          filename: file.name,
+          base64Data,
+          contentType: file.type,
+        }),
+      });
+      const upData = await upRes.json();
+      const uploadedUrl = upData?.url || '';
+
+      const result = await this.store.autoTagAndAddDocument(
+        file.name,
+        `Document scolaire officiel uploadé: ${file.name}`
+      );
+
+      if (result) {
+        if (uploadedUrl) {
+          result.photoUrl = uploadedUrl;
+        }
+        this.autoTagResult.set({
+          suggestedTitle: result.title,
+          grade: result.grade,
+          subject: result.subject,
+          trimester: result.trimester || 'Trimestre 1',
+          docType: result.docType || 'Série d\'Exercices',
+          hasCorrection: result.hasCorrection ?? true,
+        });
+      }
+    } catch (err) {
+      console.error('File upload error:', err);
+      this.simulateBulkUpload();
+    } finally {
+      this.isAutoTagging.set(false);
+    }
   }
 
   async simulateBulkUpload() {
