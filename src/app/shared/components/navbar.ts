@@ -93,6 +93,16 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <span>{{ lang.isArabic() ? 'Fr' : 'عربي' }}</span>
             </button>
 
+            <!-- Watchlist Quick Pill -->
+            <button
+              (click)="openWatchlist()"
+              class="flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300/80 px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-extrabold cursor-pointer transition-all shadow-2xs shrink-0"
+              [title]="lang.tr('Ma Watchlist & Favoris', 'قائمة المحفوظات')">
+              <span class="material-icons text-sm text-amber-600">bookmark</span>
+              <span class="hidden sm:inline">{{ lang.isArabic() ? 'محفوظاتي' : 'Favoris' }}</span>
+              <span class="bg-amber-600 text-white rounded-full px-1.5 py-0.2 text-[10px] font-black leading-tight">{{ store.totalWatchlistCount() }}</span>
+            </button>
+
             <!-- Authentication Widget -->
             @if (firebase.userProfile(); as user) {
               <div class="flex items-center gap-1.5 sm:gap-2 bg-slate-100/90 border border-slate-200/90 p-1 pl-1.5 pr-1.5 rounded-2xl shadow-2xs shrink-0">
@@ -214,6 +224,10 @@ export class NavbarComponent {
   async handleLogout() {
     await this.firebase.logout();
     this.store.switchRole('home');
+  }
+
+  openWatchlist() {
+    this.store.switchRole('public');
   }
 
   onClassChange(event: Event) {

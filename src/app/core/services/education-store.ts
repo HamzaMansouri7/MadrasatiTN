@@ -54,6 +54,17 @@ export class EducationStore {
   readonly selectedSchoolYearFilter = signal<string>('Tous');
   readonly onlyWithCorrectionFilter = signal<boolean>(false);
 
+  // Watchlist & Favorites State
+  readonly watchlist = signal<{
+    courses: string[];
+    exercises: string[];
+    teachers: string[];
+  }>({
+    courses: ['c-1', 'c-3'],
+    exercises: ['ex-1'],
+    teachers: ['t-1'],
+  });
+
   // Mock Data Collections
   readonly classes = signal<ClassGroup[]>([
     {
@@ -497,6 +508,75 @@ Pour réussir une production écrite de 6 à 8 lignes :
       return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor;
     });
   });
+
+  // Watchlist Computeds
+  readonly watchedCourses = computed(() => {
+    const ids = new Set(this.watchlist().courses);
+    return this.courses().filter((c) => ids.has(c.id));
+  });
+
+  readonly watchedExercises = computed(() => {
+    const ids = new Set(this.watchlist().exercises);
+    return this.exercisesBank().filter((e) => ids.has(e.id));
+  });
+
+  readonly watchedTeachers = computed(() => {
+    const ids = new Set(this.watchlist().teachers);
+    return this.teachers().filter((t) => ids.has(t.id));
+  });
+
+  readonly totalWatchlistCount = computed(() => {
+    const w = this.watchlist();
+    return w.courses.length + w.exercises.length + w.teachers.length;
+  });
+
+  constructor() {
+    if (typeof localStorage !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('madrasati_watchlist');
+        if (saved) {
+          this.watchlist.set(JSON.parse(saved));
+        }
+      } catch (e) {
+        console.warn('Failed to load watchlist from localStorage', e);
+      }
+    }
+  }
+
+  isWatched(id: string, type: 'course' | 'exercise' | 'teacher'): boolean {
+    const w = this.watchlist();
+    if (type === 'course') return w.courses.includes(id);
+    if (type === 'exercise') return w.exercises.includes(id);
+    if (type === 'teacher') return w.teachers.includes(id);
+    return false;
+  }
+
+  toggleWatchlist(id: string, type: 'course' | 'exercise' | 'teacher') {
+    this.watchlist.update((curr) => {
+      let updated = { ...curr };
+      if (type === 'course') {
+        const exists = curr.courses.includes(id);
+        updated.courses = exists
+          ? curr.courses.filter((c) => c !== id)
+          : [...curr.courses, id];
+      } else if (type === 'exercise') {
+        const exists = curr.exercises.includes(id);
+        updated.exercises = exists
+          ? curr.exercises.filter((e) => e !== id)
+          : [...curr.exercises, id];
+      } else if (type === 'teacher') {
+        const exists = curr.teachers.includes(id);
+        updated.teachers = exists
+          ? curr.teachers.filter((t) => t !== id)
+          : [...curr.teachers, id];
+      }
+
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('madrasati_watchlist', JSON.stringify(updated));
+      }
+      return updated;
+    });
+  }
 
   // Actions
   switchRole(role: UserRole) {

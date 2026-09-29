@@ -229,11 +229,11 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
       </div>
 
       <!-- Main Directory Navigation Tabs -->
-      <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+      <div class="flex items-center gap-2 border-b border-slate-200 pb-2 overflow-x-auto no-scrollbar">
         <button
           (click)="activeSection.set('exercises')"
           [class]="activeSection() === 'exercises' ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 text-slate-700 font-medium'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">fitness_center</span>
           <span>{{ lang.tr("Banque d'Examens & Séries", 'مكتبة الفروض والسلاسل') }} ({{ store.filteredExercisesBank().length }})</span>
         </button>
@@ -241,7 +241,7 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
         <button
           (click)="activeSection.set('courses')"
           [class]="activeSection() === 'courses' ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 text-slate-700 font-medium'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">menu_book</span>
           <span>{{ lang.tr('Fiches & Cours', 'الملخصات والدروس') }} ({{ store.filteredCourses().length }})</span>
         </button>
@@ -249,9 +249,17 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
         <button
           (click)="activeSection.set('teachers')"
           [class]="activeSection() === 'teachers' ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 text-slate-700 font-medium'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">verified</span>
           <span>{{ lang.t('teachersDirectory') }} ({{ store.teachers().length }})</span>
+        </button>
+
+        <button
+          (click)="activeSection.set('watchlist')"
+          [class]="activeSection() === 'watchlist' ? 'bg-amber-600 text-white font-bold shadow-xs' : 'bg-amber-50 hover:bg-amber-100 text-amber-900 font-semibold border border-amber-200/80'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
+          <span class="material-icons text-sm">bookmark</span>
+          <span>{{ lang.tr('⭐ Ma Watchlist', '⭐ قائمة محفوظاتي') }} ({{ store.totalWatchlistCount() }})</span>
         </button>
       </div>
 
@@ -325,7 +333,18 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
                 </div>
 
                 <!-- FEATURE 5: One-Click PDF Watermark & Print Preview -->
-                <div class="flex items-center gap-1.5">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <button
+                    (click)="store.toggleWatchlist(ex.id, 'exercise')"
+                    [class]="store.isWatched(ex.id, 'exercise') ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium border-slate-200'"
+                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-all cursor-pointer border shadow-2xs"
+                    [title]="store.isWatched(ex.id, 'exercise') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
+                    <span class="material-icons text-xs" [class.text-amber-600]="store.isWatched(ex.id, 'exercise')">
+                      {{ store.isWatched(ex.id, 'exercise') ? 'bookmark' : 'bookmark_border' }}
+                    </span>
+                    <span>{{ store.isWatched(ex.id, 'exercise') ? 'Sauvegardé' : 'Favoris' }}</span>
+                  </button>
+
                   <button
                     (click)="shareOnWhatsApp(ex)"
                     class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-2 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors shadow-2xs"
@@ -394,11 +413,24 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
                   <span>{{ c.upvotesCount || 0 }}</span>
                 </button>
 
-                <button
-                  (click)="viewCourseModal.set(c)"
-                  class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-3.5 py-2 rounded-xl cursor-pointer">
-                  {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
-                </button>
+                <div class="flex items-center gap-2">
+                  <button
+                    (click)="store.toggleWatchlist(c.id, 'course')"
+                    [class]="store.isWatched(c.id, 'course') ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium border-slate-200'"
+                    class="px-2.5 py-2 rounded-xl text-xs flex items-center gap-1 transition-all cursor-pointer border shadow-2xs"
+                    [title]="store.isWatched(c.id, 'course') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
+                    <span class="material-icons text-xs" [class.text-amber-600]="store.isWatched(c.id, 'course')">
+                      {{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}
+                    </span>
+                    <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
+                  </button>
+
+                  <button
+                    (click)="viewCourseModal.set(c)"
+                    class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-3.5 py-2 rounded-xl cursor-pointer">
+                    {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
+                  </button>
+                </div>
               </div>
             </div>
           }
@@ -448,13 +480,161 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
                 </div>
               </div>
 
+              <div class="flex items-center gap-2">
+                <button
+                  (click)="store.toggleWatchlist(t.id, 'teacher')"
+                  [class]="store.isWatched(t.id, 'teacher') ? 'bg-amber-100 text-amber-900 border-amber-300' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200'"
+                  class="px-3 py-2.5 rounded-xl text-xs font-bold border flex items-center justify-center gap-1 cursor-pointer transition-all shadow-2xs"
+                  [title]="store.isWatched(t.id, 'teacher') ? 'Ne plus suivre' : 'Suivre cet enseignant'">
+                  <span class="material-icons text-sm" [class.text-amber-600]="store.isWatched(t.id, 'teacher')">
+                    {{ store.isWatched(t.id, 'teacher') ? 'star' : 'star_border' }}
+                  </span>
+                  <span>{{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre', 'متابعة') }}</span>
+                </button>
+
+                <button
+                  (click)="selectedTeacherModal.set(t)"
+                  class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-xl cursor-pointer flex items-center justify-center gap-1 transition-colors shadow-2xs">
+                  <span class="material-icons text-sm">badge</span>
+                  {{ lang.tr('Profil & Avis', 'عرض الملف والتقييمات') }}
+                </button>
+              </div>
+            </div>
+          }
+        </div>
+      }
+
+      <!-- FEATURE 6: ⭐ WATCHLIST & FAVORITES HUB -->
+      @if (activeSection() === 'watchlist') {
+        <div class="space-y-6">
+          <div class="bg-gradient-to-r from-amber-500/10 via-amber-400/10 to-emerald-500/10 border border-amber-300/60 rounded-3xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="material-icons text-amber-600 text-2xl">bookmark</span>
+                <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl">
+                  {{ lang.tr('⭐ Ma Watchlist Éducative — Documents Favoris', '⭐ قائمة محفوظاتي التعليمية') }}
+                </h3>
+              </div>
+              <p class="text-xs text-slate-600 mt-1">
+                {{ lang.tr('Accédez immédiatement à vos cours, examens et enseignants favoris pour révision rapide ou impression.', 'الوصول المباشر إلى الدروس، الفروض والمعلمين المفضلين للمراجعة أو الطباعة.') }}
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 px-3.5 py-2 rounded-2xl border border-amber-300 shrink-0">
+              <span class="material-icons text-sm text-amber-700">folder_special</span>
+              <span>{{ store.totalWatchlistCount() }} {{ lang.tr('éléments sauvegardés', 'عناصر محفوظة') }}</span>
+            </div>
+          </div>
+
+          @if (store.totalWatchlistCount() === 0) {
+            <div class="bg-white rounded-3xl p-12 text-center border border-slate-200 space-y-3">
+              <span class="material-icons text-5xl text-slate-300">bookmark_border</span>
+              <h4 class="font-extrabold text-slate-800 text-base">
+                {{ lang.tr('Votre watchlist est vide pour le moment', 'قائمة المحفوظات فارغة حالياً') }}
+              </h4>
+              <p class="text-xs text-slate-500 max-w-md mx-auto">
+                {{ lang.tr('Cliquez sur le signet "Favoris" dans la Banque d\'Examens ou les Cours pour sauvegarder vos documents de révision.', 'انقر على رمز الحفظ في مكتبة الفروض أو الدروس لحفظ وثائق المراجعة.') }}
+              </p>
               <button
-                (click)="selectedTeacherModal.set(t)"
-                class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-xl cursor-pointer flex items-center justify-center gap-1">
-                <span class="material-icons text-sm">badge</span>
-                {{ lang.tr('Profil & Avis Évaluations', 'عرض الملف المهني والتقييمات') }}
+                (click)="activeSection.set('exercises')"
+                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl cursor-pointer shadow-xs inline-flex items-center gap-1.5">
+                <span class="material-icons text-sm">explore</span>
+                <span>{{ lang.tr('Explorer la Banque d\'Examens', 'تصفح مكتبة الفروض') }}</span>
               </button>
             </div>
+          } @else {
+            <!-- 1. Watched Exercises -->
+            @if (store.watchedExercises().length > 0) {
+              <div class="space-y-3">
+                <h4 class="font-extrabold text-slate-900 text-sm flex items-center gap-2">
+                  <span class="material-icons text-amber-500 text-base">assignment</span>
+                  <span>{{ lang.tr('Examens & Séries Sauvegardés', 'الفروض والسلاسل المحفوظة') }} ({{ store.watchedExercises().length }})</span>
+                </h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                  @for (ex of store.watchedExercises(); track ex.id) {
+                    <div class="bg-white rounded-2xl p-4 border border-amber-200/80 shadow-xs space-y-3">
+                      <div class="flex items-center justify-between text-[10px]">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">{{ ex.subject }} — {{ ex.grade }}</span>
+                        <button (click)="store.toggleWatchlist(ex.id, 'exercise')" class="text-rose-600 hover:text-rose-800 text-xs font-bold flex items-center gap-1 cursor-pointer">
+                          <span class="material-icons text-sm">bookmark_remove</span>
+                          <span>{{ lang.tr('Retirer', 'حذف') }}</span>
+                        </button>
+                      </div>
+                      <h5 class="font-bold text-slate-900 text-xs">{{ ex.title }}</h5>
+                      <p class="text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200 line-clamp-2">{{ ex.promptText }}</p>
+                      <div class="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
+                        <button (click)="openWatermarkPreviewModal(ex)" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer">
+                          <span class="material-icons text-xs">print</span>
+                          <span>{{ lang.tr('Imprimer A4', 'طباعة A4') }}</span>
+                        </button>
+                        <button (click)="shareOnWhatsApp(ex)" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer">
+                          <span class="material-icons text-xs">share</span>
+                          <span>WhatsApp</span>
+                        </button>
+                      </div>
+                    </div>
+                  }
+                </div>
+              </div>
+            }
+
+            <!-- 2. Watched Courses -->
+            @if (store.watchedCourses().length > 0) {
+              <div class="space-y-3 pt-4">
+                <h4 class="font-extrabold text-slate-900 text-sm flex items-center gap-2">
+                  <span class="material-icons text-indigo-500 text-base">menu_book</span>
+                  <span>{{ lang.tr('Fiches & Cours Sauvegardés', 'الدروس والملخصات المحفوظة') }} ({{ store.watchedCourses().length }})</span>
+                </h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                  @for (c of store.watchedCourses(); track c.id) {
+                    <div class="bg-white rounded-2xl p-4 border border-indigo-200/80 shadow-xs space-y-3">
+                      <div class="flex items-center justify-between text-[10px]">
+                        <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded-full">{{ c.subject }} — {{ c.grade }}</span>
+                        <button (click)="store.toggleWatchlist(c.id, 'course')" class="text-rose-600 hover:text-rose-800 text-xs font-bold flex items-center gap-1 cursor-pointer">
+                          <span class="material-icons text-sm">bookmark_remove</span>
+                          <span>{{ lang.tr('Retirer', 'حذف') }}</span>
+                        </button>
+                      </div>
+                      <h5 class="font-bold text-slate-900 text-xs">{{ c.title }}</h5>
+                      <p class="text-[11px] text-slate-600 line-clamp-2">{{ c.summary }}</p>
+                      <div class="flex justify-end pt-2 border-t border-slate-100">
+                        <button (click)="viewCourseModal.set(c)" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs cursor-pointer">
+                          {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
+                        </button>
+                      </div>
+                    </div>
+                  }
+                </div>
+              </div>
+            }
+
+            <!-- 3. Watched Teachers -->
+            @if (store.watchedTeachers().length > 0) {
+              <div class="space-y-3 pt-4">
+                <h4 class="font-extrabold text-slate-900 text-sm flex items-center gap-2">
+                  <span class="material-icons text-emerald-500 text-base">verified</span>
+                  <span>{{ lang.tr('Enseignants Suivis', 'المعلمون المتابعون') }} ({{ store.watchedTeachers().length }})</span>
+                </h4>
+                <div class="grid md:grid-cols-3 gap-4">
+                  @for (t of store.watchedTeachers(); track t.id) {
+                    <div class="bg-white rounded-2xl p-4 border border-emerald-200/80 shadow-xs space-y-3 text-center">
+                      <img [src]="t.avatarUrl" alt="Avatar" class="w-16 h-16 rounded-full object-cover mx-auto border-2 border-emerald-500" />
+                      <div>
+                        <h5 class="font-bold text-slate-900 text-xs">{{ t.name }}</h5>
+                        <p class="text-[10px] text-slate-500">{{ t.school }}</p>
+                      </div>
+                      <div class="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
+                        <button (click)="selectedTeacherModal.set(t)" class="text-emerald-700 font-bold hover:underline">
+                          {{ lang.tr('Voir profil', 'الملف') }}
+                        </button>
+                        <button (click)="store.toggleWatchlist(t.id, 'teacher')" class="text-rose-600 text-xs font-semibold cursor-pointer">
+                          {{ lang.tr('Ne plus suivre', 'إلغاء المتابعة') }}
+                        </button>
+                      </div>
+                    </div>
+                  }
+                </div>
+              </div>
+            }
           }
         </div>
       }
@@ -681,7 +861,7 @@ export class PublicDiscoveryComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
 
-  readonly activeSection = signal<'exercises' | 'courses' | 'teachers'>('exercises');
+  readonly activeSection = signal<'exercises' | 'courses' | 'teachers' | 'watchlist'>('exercises');
   readonly openSolutionIds = signal<Set<string>>(new Set());
 
   readonly viewCourseModal = signal<Course | null>(null);
