@@ -1,0 +1,39 @@
+<div [dir]="lang.dir()" class="min-h-screen bg-slate-50 flex flex-col font-sans transition-all">
+  <app-navbar />
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    @switch (store.currentRole()) {
+      @case ('teacher') {
+        <app-teacher-home />
+      }
+      @case ('parent') {
+        <app-parent-home />
+      }
+      @case ('student') {
+        <app-student-home />
+      }
+      @case ('public') {
+        <app-public-discovery />
+      }
+    }
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200/80 mt-12 py-8 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-sm font-arabic">
+          م
+        </div>
+        <span class="font-extrabold text-slate-800 text-sm">{{ lang.t('brandName') }} — {{ lang.t('brandSub') }}</span>
+        <span class="text-rose-600 font-bold bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full text-[10px]">
+          {{ lang.t('freeBadge') }} 🇹🇳
+        </span>
+      </div>
+
+      <p class="text-center md:text-right text-[11px] text-slate-400">
+        {{ lang.t('tagline') }}
+      </p>
+    </div>
+  </footer>
+</div>
