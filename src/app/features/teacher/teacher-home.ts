@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore } from '../services/education-store';
-import { LanguageService } from '../services/language.service';
-import { Announcement, Course, Homework, SubjectName, Submission } from '../models/education.model';
+import { EducationStore, LanguageService, Announcement, Course, Homework, SubjectName, Submission } from '@core';
 
 export interface GeneratedExerciseResult {
   title: string;

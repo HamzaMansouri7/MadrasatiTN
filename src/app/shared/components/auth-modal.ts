@@ -1,10 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { EducationStore } from '../services/education-store';
-import { LanguageService } from '../services/language.service';
-import { FirebaseService } from '../services/firebase.service';
-import { UserRole } from '../models/education.model';
+import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
 
 @Component({
   selector: 'app-auth-modal',

@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore } from '../services/education-store';
-import { LanguageService } from '../services/language.service';
-import { ExerciseItem, Homework } from '../models/education.model';
+import { EducationStore, LanguageService, ExerciseItem, Homework } from '@core';
 
 export interface TutorExplanation {
   explanation: string;

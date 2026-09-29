@@ -1,0 +1,5 @@
+export * from './landing/landing-home';
+export * from './teacher/teacher-home';
+export * from './parent/parent-home';
+export * from './student/student-home';
+export * from './discovery/public-discovery';

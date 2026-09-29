@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore } from '../services/education-store';
-import { LanguageService } from '../services/language.service';
-import { Course, ExerciseItem, TeacherProfile } from '../models/education.model';
+import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile } from '@core';
 
 @Component({
   selector: 'app-public-discovery',

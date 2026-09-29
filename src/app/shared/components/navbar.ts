@@ -1,8 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { EducationStore } from '../services/education-store';
-import { LanguageService } from '../services/language.service';
-import { FirebaseService } from '../services/firebase.service';
-import { UserRole } from '../models/education.model';
+import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
 
 @Component({
   selector: 'app-navbar',

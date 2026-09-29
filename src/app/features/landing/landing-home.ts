@@ -1,8 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EducationStore } from '../services/education-store';
-import { LanguageService } from '../services/language.service';
-import { UserRole } from '../models/education.model';
+import { EducationStore, LanguageService, UserRole } from '@core';
 
 @Component({
   selector: 'app-landing-home',

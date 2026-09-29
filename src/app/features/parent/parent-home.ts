@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore } from '../services/education-store';
-import { LanguageService } from '../services/language.service';
+import { EducationStore, LanguageService } from '@core';
 
 @Component({
   selector: 'app-parent-home',
