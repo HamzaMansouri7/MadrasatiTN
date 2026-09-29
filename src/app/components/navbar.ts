@@ -10,31 +10,31 @@ import { UserRole } from '../models/education.model';
   imports: [],
   template: `
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16 gap-4">
+      <div class="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <div class="flex items-center justify-between h-16 gap-2 lg:gap-4">
           
           <!-- Logo & Platform Identity -->
-          <div (click)="selectRole('home')" class="flex items-center gap-3 shrink-0 cursor-pointer group">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-emerald-500 text-white flex items-center justify-center shadow-sm font-bold text-xl font-arabic group-hover:scale-105 transition-transform">
+          <div (click)="selectRole('home')" class="flex items-center gap-2.5 shrink-0 cursor-pointer group">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-emerald-500 text-white flex items-center justify-center shadow-sm font-bold text-lg sm:text-xl font-arabic group-hover:scale-105 transition-transform shrink-0">
               م
             </div>
             <div>
               <div class="flex items-center gap-1.5">
-                <span class="font-extrabold text-slate-900 text-lg tracking-tight">
+                <span class="font-extrabold text-slate-900 text-base sm:text-lg tracking-tight">
                   {{ lang.t('brandName') }}
                 </span>
-                <span class="text-xs font-bold px-1.5 py-0.5 rounded-full bg-rose-100 text-rose-700 border border-rose-200">
+                <span class="text-[10px] sm:text-xs font-bold px-1.5 py-0.5 rounded-full bg-rose-100 text-rose-700 border border-rose-200">
                   TN 🇹🇳
                 </span>
               </div>
-              <p class="text-[11px] text-slate-500 font-medium leading-none">
+              <p class="text-[10px] text-slate-500 font-medium leading-none hidden sm:block">
                 {{ lang.t('brandSub') }}
               </p>
             </div>
           </div>
 
           <!-- Role Switcher Tabs -->
-          <nav class="hidden md:flex items-center gap-1 bg-slate-100 p-1.5 rounded-2xl border border-slate-200/60">
+          <nav class="hidden md:flex items-center gap-1 bg-slate-100 p-1.5 rounded-2xl border border-slate-200/60 shrink-0">
             <button
               (click)="selectRole('home')"
               [class]="store.currentRole() === 'home' 
@@ -49,7 +49,7 @@ import { UserRole } from '../models/education.model';
               [class]="store.currentRole() === 'teacher' 
                 ? 'bg-white text-emerald-800 shadow-xs font-semibold' 
                 : 'text-slate-600 hover:text-slate-900 font-medium'"
-              class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
+              class="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
               <span class="material-icons text-base text-emerald-600">school</span>
               <span>{{ lang.t('roleTeacher') }}</span>
             </button>
@@ -85,61 +85,55 @@ import { UserRole } from '../models/education.model';
             </button>
           </nav>
 
-          <!-- Language Switcher, Class Active & Google Auth -->
-          <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Language Switcher, Class Active & Auth -->
+          <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
             
             <!-- Language Toggle Pill -->
             <button
               (click)="lang.toggleLanguage()"
-              class="flex items-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300/80 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-extrabold cursor-pointer transition-all shadow-2xs">
+              class="flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300/80 px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-extrabold cursor-pointer transition-all shadow-2xs shrink-0">
               <span class="material-icons text-sm text-emerald-700">translate</span>
-              <span>{{ lang.isArabic() ? 'Français 🇫🇷' : 'العربية 🇹🇳' }}</span>
+              <span>{{ lang.isArabic() ? 'Fr' : 'عربي' }}</span>
             </button>
 
             @if (store.currentRole() === 'teacher') {
-              <div class="hidden sm:flex items-center gap-2 bg-emerald-50/80 p-1.5 rounded-2xl border border-emerald-200/80 shadow-2xs">
-                <div class="flex items-center gap-1.5 pl-2 text-emerald-800 font-bold text-xs">
-                  <span class="material-icons text-emerald-600 text-sm">class</span>
-                  <label for="active-class-select" class="cursor-pointer shrink-0">
-                    {{ lang.t('activeClassLabel') }}
-                  </label>
-                </div>
-                <div class="relative flex items-center">
-                  <select
-                    id="active-class-select"
-                    [value]="store.activeClassId()"
-                    (change)="onClassChange($event)"
-                    class="appearance-none text-xs font-extrabold bg-white text-emerald-950 hover:bg-emerald-100/50 border border-emerald-300 rounded-xl pl-3 pr-8 py-1.5 cursor-pointer outline-none focus:ring-2 focus:ring-emerald-500 shadow-xs transition-all">
-                    @for (c of store.classes(); track c.id) {
-                      <option [value]="c.id" class="text-slate-900 font-semibold bg-white py-1">
-                        🏫 {{ c.name }} ({{ c.studentCount }} {{ lang.tr('élèves', 'تلاميذ') }})
-                      </option>
-                    }
-                  </select>
-                  <span class="material-icons absolute right-2 pointer-events-none text-emerald-700 text-sm">
-                    unfold_more
-                  </span>
-                </div>
+              <div class="hidden xl:flex items-center gap-1.5 bg-emerald-50/80 p-1 rounded-2xl border border-emerald-200/80 shadow-2xs shrink-0">
+                <span class="material-icons text-emerald-600 text-sm pl-1.5">class</span>
+                <select
+                  id="active-class-select"
+                  [value]="store.activeClassId()"
+                  (change)="onClassChange($event)"
+                  class="appearance-none text-xs font-bold bg-white text-emerald-950 hover:bg-emerald-100/50 border border-emerald-300 rounded-xl pl-2 pr-6 py-1 cursor-pointer outline-none focus:ring-2 focus:ring-emerald-500 shadow-xs transition-all max-w-[180px] truncate">
+                  @for (c of store.classes(); track c.id) {
+                    <option [value]="c.id" class="text-slate-900 font-semibold bg-white py-1">
+                      {{ c.name }}
+                    </option>
+                  }
+                </select>
               </div>
             }
 
             <!-- Authentication Widget -->
-            <div class="flex items-center gap-1.5 sm:gap-2 pl-2 border-l border-slate-200">
+            <div class="flex items-center pl-1.5 border-l border-slate-200 shrink-0">
               @if (firebase.userProfile(); as user) {
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 bg-slate-50 border border-slate-200/90 p-1 pl-1.5 pr-1.5 rounded-2xl shadow-2xs shrink-0">
                   <img
                     [src]="user.photoURL || getUserAvatar()"
                     alt="User"
-                    class="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover border-2 border-emerald-500 shadow-xs" />
-                  <div class="hidden lg:block text-left leading-tight">
-                    <p class="text-xs font-bold text-slate-800">{{ user.displayName || getUserName() }}</p>
-                    <p class="text-[10px] text-emerald-700 font-semibold">{{ user.role }} ✔️</p>
+                    class="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover border-2 border-emerald-500 shadow-xs shrink-0" />
+                  <div class="hidden lg:block text-left leading-tight max-w-[120px]">
+                    <p class="text-xs font-bold text-slate-800 truncate" [title]="user.displayName || getUserName()">
+                      {{ user.displayName || getUserName() }}
+                    </p>
+                    <p class="text-[10px] text-emerald-700 font-semibold uppercase">{{ user.role }} ✔️</p>
                   </div>
                   <button
+                    type="button"
                     (click)="firebase.logout()"
                     title="Se déconnecter"
-                    class="text-slate-400 hover:text-rose-600 p-1.5 rounded-lg cursor-pointer transition-colors">
-                    <span class="material-icons text-base">logout</span>
+                    class="flex items-center gap-1 bg-rose-50 hover:bg-rose-100 text-rose-700 hover:text-rose-800 px-2 sm:px-2.5 py-1 rounded-xl text-xs font-bold cursor-pointer transition-colors border border-rose-200 shadow-2xs shrink-0">
+                    <span class="material-icons text-sm">logout</span>
+                    <span class="hidden sm:inline">Quitter</span>
                   </button>
                 </div>
               } @else {
@@ -181,37 +175,48 @@ import { UserRole } from '../models/education.model';
         </div>
 
         <!-- Mobile Role Selector Bar -->
-        <div class="flex md:hidden overflow-x-auto py-2 gap-1.5 no-scrollbar border-t border-slate-100">
-          <button
-            (click)="selectRole('home')"
-            [class]="store.currentRole() === 'home' ? 'bg-slate-900 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
-            class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-            {{ lang.t('navHome') }}
-          </button>
-          <button
-            (click)="selectRole('teacher')"
-            [class]="store.currentRole() === 'teacher' ? 'bg-emerald-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
-            class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-            {{ lang.t('roleTeacher') }}
-          </button>
-          <button
-            (click)="selectRole('parent')"
-            [class]="store.currentRole() === 'parent' ? 'bg-indigo-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
-            class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-            {{ lang.t('roleParent') }}
-          </button>
-          <button
-            (click)="selectRole('student')"
-            [class]="store.currentRole() === 'student' ? 'bg-amber-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
-            class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-            {{ lang.t('roleStudent') }}
-          </button>
-          <button
-            (click)="selectRole('public')"
-            [class]="store.currentRole() === 'public' ? 'bg-teal-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
-            class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-            {{ lang.t('rolePublic') }}
-          </button>
+        <div class="flex md:hidden items-center justify-between overflow-x-auto py-2 gap-2 no-scrollbar border-t border-slate-100">
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button
+              (click)="selectRole('home')"
+              [class]="store.currentRole() === 'home' ? 'bg-slate-900 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+              {{ lang.t('navHome') }}
+            </button>
+            <button
+              (click)="selectRole('teacher')"
+              [class]="store.currentRole() === 'teacher' ? 'bg-emerald-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+              {{ lang.t('roleTeacher') }}
+            </button>
+            <button
+              (click)="selectRole('parent')"
+              [class]="store.currentRole() === 'parent' ? 'bg-indigo-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+              {{ lang.t('roleParent') }}
+            </button>
+            <button
+              (click)="selectRole('student')"
+              [class]="store.currentRole() === 'student' ? 'bg-amber-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+              {{ lang.t('roleStudent') }}
+            </button>
+            <button
+              (click)="selectRole('public')"
+              [class]="store.currentRole() === 'public' ? 'bg-teal-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+              {{ lang.t('rolePublic') }}
+            </button>
+          </div>
+
+          @if (firebase.userProfile()) {
+            <button
+              (click)="firebase.logout()"
+              class="bg-rose-50 text-rose-700 border border-rose-200 px-2.5 py-1 rounded-lg text-xs font-bold whitespace-nowrap shrink-0 flex items-center gap-1 cursor-pointer">
+              <span class="material-icons text-xs">logout</span>
+              <span>Déconnexion</span>
+            </button>
+          }
         </div>
 
       </div>
