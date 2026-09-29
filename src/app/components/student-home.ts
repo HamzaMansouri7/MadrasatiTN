@@ -251,20 +251,46 @@ export interface TutorExplanation {
                 class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 outline-none"></textarea>
             </div>
 
-            <div class="bg-indigo-50 p-3 rounded-2xl border border-indigo-200 text-indigo-900 flex items-center justify-between">
+            <div class="bg-indigo-50 p-4 rounded-2xl border border-indigo-200 text-indigo-900 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
-                <p class="font-bold">{{ lang.tr('Ou joins une photo de ton cahier :', 'أو أرفق صورة من كراستك:') }}</p>
+                <p class="font-bold flex items-center gap-1.5">
+                  <span class="material-icons text-indigo-600 text-sm">photo_camera</span>
+                  {{ lang.tr('Joins la photo de ton cahier :', 'أرفق صورة واضحة من كراستك:') }}
+                </p>
                 <p class="text-[11px] text-indigo-700">
-                  {{ lang.tr("Simuler l'envoi de la photo de ton exercice écrit", 'محاكاة التقاط صورة الواجب المكتوب') }}
+                  {{ lang.tr("Prends en photo ton travail manuscrit directement", 'التقط صورة الواجب مباشرة من هاتفك أو حاسوبك') }}
                 </p>
               </div>
-              <button
-                (click)="simulatePhotoUpload()"
-                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1 cursor-pointer">
-                <span class="material-icons text-sm">photo_camera</span>
-                {{ uploadedPhotoUrl() ? lang.tr('Photo attachée ✔️', 'تم إرفاق الصورة ✔️') : lang.tr('Prendre photo', 'التقاط صورة') }}
-              </button>
+
+              <div class="flex items-center gap-2">
+                <input
+                  type="file"
+                  #cameraInput
+                  (change)="handlePhotoUpload($event)"
+                  accept="image/*"
+                  capture="environment"
+                  class="hidden" />
+                <button
+                  type="button"
+                  (click)="cameraInput.click()"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-xs">
+                  <span class="material-icons text-sm">add_a_photo</span>
+                  {{ uploadedPhotoUrl() ? lang.tr('Changer photo ✔️', 'تغيير الصورة ✔️') : lang.tr('Prendre en photo', 'التقاط صورة') }}
+                </button>
+              </div>
             </div>
+
+            @if (uploadedPhotoUrl()) {
+              <div class="p-2.5 bg-white rounded-xl border border-indigo-200 flex items-center gap-3">
+                <img [src]="uploadedPhotoUrl()" alt="Aperçu cahier" class="w-16 h-16 rounded-lg object-cover border border-slate-300 shadow-2xs" />
+                <div class="text-xs">
+                  <p class="font-bold text-emerald-800 flex items-center gap-1">
+                    <span class="material-icons text-xs">verified</span> {{ lang.tr('Photo prête à l\'envoi', 'الصورة جاهزة للإرسال') }}
+                  </p>
+                  <p class="text-[11px] text-slate-500">Sera transmise directement avec votre devoir</p>
+                </div>
+              </div>
+            }
 
             <button
               (click)="submitHomework()"
@@ -320,6 +346,7 @@ export class StudentHomeComponent {
 
   readonly studentAnswerText = signal("Exercice 1 : 145 x 24 = 3480 kg d'oranges.\nExercice 2 : 35 x 12 = 420.\nExercice 3 : Périmètre = 146 m, grillage = 143 m.");
   readonly uploadedPhotoUrl = signal<string | null>(null);
+  readonly isPhotoUploading = signal<boolean>(false);
 
   readonly tutorQuestion = signal('');
   readonly isTutorLoading = signal<boolean>(false);
@@ -327,6 +354,43 @@ export class StudentHomeComponent {
 
   startHomework(hw: Homework) {
     this.activeHomeworkToSolve.set(hw);
+  }
+
+  async handlePhotoUpload(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) return;
+    const file = input.files[0];
+    this.isPhotoUploading.set(true);
+
+    try {
+      const reader = new FileReader();
+      const base64Promise = new Promise<string>((resolve) => {
+        reader.onload = () => resolve(reader.result as string);
+        reader.readAsDataURL(file);
+      });
+      const base64Data = await base64Promise;
+
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          filename: `notebook_${Date.now()}_${file.name}`,
+          base64Data,
+          contentType: file.type,
+        }),
+      });
+      const data = await res.json();
+      if (data.success && data.url) {
+        this.uploadedPhotoUrl.set(data.url);
+      } else {
+        alert('Échec de l\'envoi de la photo');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Erreur lors du téléversement de la photo');
+    } finally {
+      this.isPhotoUploading.set(false);
+    }
   }
 
   simulatePhotoUpload() {

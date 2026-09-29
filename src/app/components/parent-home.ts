@@ -210,7 +210,7 @@ import { LanguageService } from '../services/language.service';
                   </div>
 
                   <button
-                    (click)="contactTeacher(t.name)"
+                    (click)="openTeacherContact(t)"
                     class="bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-[11px] px-3 py-1.5 rounded-xl border border-indigo-200 flex items-center gap-1 cursor-pointer">
                     <span class="material-icons text-xs">chat</span> {{ lang.t('messageBtn') }}
                   </button>
@@ -222,6 +222,88 @@ import { LanguageService } from '../services/language.service';
         </div>
 
       </div>
+
+      <!-- DIRECT TEACHER MESSAGING MODAL -->
+      @if (activeContactTeacher(); as teacher) {
+        <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div class="bg-white rounded-3xl max-w-lg w-full p-6 space-y-4 border border-slate-200 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="material-icons text-indigo-600">forum</span>
+                <h3 class="font-bold text-slate-900 text-base">
+                  {{ lang.tr('Contacter', 'مراسلة المعلم(ة)') }} {{ teacher.name }}
+                </h3>
+              </div>
+              <button (click)="activeContactTeacher.set(null)" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+                <span class="material-icons">close</span>
+              </button>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-200">
+              <img [src]="teacher.avatarUrl" alt="Teacher" class="w-12 h-12 rounded-full object-cover border border-slate-300" />
+              <div>
+                <p class="font-bold text-slate-900 text-xs">{{ teacher.name }}</p>
+                <p class="text-[11px] text-slate-500">{{ teacher.title }}</p>
+                <p class="text-[10px] text-emerald-700 font-semibold mt-0.5">
+                  {{ lang.tr('Élève concerné :', 'التلميذ المعني:') }} <strong>{{ store.activeStudent().name }} ({{ store.activeStudent().grade }})</strong>
+                </p>
+              </div>
+            </div>
+
+            @if (messageSentSuccess()) {
+              <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-emerald-950 text-center space-y-2">
+                <span class="material-icons text-emerald-600 text-3xl">check_circle</span>
+                <h4 class="font-bold text-sm">{{ lang.tr('Message transmis avec succès !', 'تم إرسال رسالتكم بنجاح!') }}</h4>
+                <p class="text-xs text-emerald-800">
+                  {{ lang.tr("L'enseignant vous répondra durant ses heures de permanence sur Madrasati TN.", 'سيصلكم الرد في فضاء الأولياء خلال أوقات التواصل الرسمية.') }}
+                </p>
+                <button
+                  (click)="activeContactTeacher.set(null)"
+                  class="mt-2 bg-emerald-600 text-white font-bold px-4 py-2 rounded-xl text-xs cursor-pointer">
+                  {{ lang.tr('Fermer', 'إغلاق') }}
+                </button>
+              </div>
+            } @else {
+              <div class="space-y-3 text-xs">
+                <div>
+                  <label class="block font-semibold text-slate-700 mb-1">
+                    {{ lang.tr('Objet du message', 'موضوع الرسالة') }}
+                  </label>
+                  <select
+                    [value]="messageSubject()"
+                    (change)="messageSubject.set($any($event.target).value)"
+                    class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none">
+                    <option value="Question sur un devoir">Question sur un devoir / سؤال حول واجب</option>
+                    <option value="Absence ou retard prévisible">Absence ou retard prévisible / إشعار بغياب أو تأخير</option>
+                    <option value="Demande de rendez-vous">Demande de rendez-vous / طلب موعد لمقابلة المعلم</option>
+                    <option value="Évolution des résultats">Évolution des résultats / استفسار حول النتائج</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block font-semibold text-slate-700 mb-1">
+                    {{ lang.tr('Votre message', 'نص الرسالة') }}
+                  </label>
+                  <textarea
+                    [value]="messageBody()"
+                    (input)="messageBody.set($any($event.target).value)"
+                    rows="4"
+                    placeholder="Rédigez votre message avec bienveillance et clarté..."
+                    class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none"></textarea>
+                </div>
+
+                <div class="flex items-center gap-2 pt-2">
+                  <button
+                    (click)="sendMessageToTeacher()"
+                    class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 rounded-xl cursor-pointer shadow-xs">
+                    {{ lang.tr('Envoyer via la Plateforme', 'إرسال الرسالة عبر المنصة') }}
+                  </button>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      }
     </div>
   `,
 })
@@ -230,6 +312,10 @@ export class ParentHomeComponent {
   readonly lang = inject(LanguageService);
 
   readonly confirmedIds = signal<Set<string>>(new Set());
+  readonly activeContactTeacher = signal<any | null>(null);
+  readonly messageSubject = signal('Question sur un devoir');
+  readonly messageBody = signal('');
+  readonly messageSentSuccess = signal<boolean>(false);
 
   confirmRead(id: string) {
     this.store.confirmAnnouncementRead(id);
@@ -238,11 +324,13 @@ export class ParentHomeComponent {
     this.confirmedIds.set(newSet);
   }
 
-  contactTeacher(teacherName: string) {
-    const msg = this.lang.tr(
-      `Messagerie sécurisée envoyée à ${teacherName}. L'enseignant vous répondra durant ses heures de permanence.`,
-      `تم إرسال الرسالة بنجاح إلى المعلم(ة) ${teacherName}. سيتم إجابتكم في أوقات التواصل المخصصة.`
-    );
-    alert(msg);
+  openTeacherContact(teacher: any) {
+    this.messageSentSuccess.set(false);
+    this.messageBody.set('');
+    this.activeContactTeacher.set(teacher);
+  }
+
+  sendMessageToTeacher() {
+    this.messageSentSuccess.set(true);
   }
 }
