@@ -8,12 +8,51 @@ import express from 'express';
 import { join } from 'node:path';
 import { GoogleGenAI } from '@google/genai';
 
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { randomUUID } from 'node:crypto';
+
 const browserDistFolder = join(import.meta.dirname, '../browser');
+const uploadsFolder = join(process.cwd(), 'uploads');
+
+if (!existsSync(uploadsFolder)) {
+  mkdirSync(uploadsFolder, { recursive: true });
+}
 
 const app = express();
-app.use(express.json());
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
+app.use('/uploads', express.static(uploadsFolder));
 
 const angularApp = new AngularNodeAppEngine();
+
+// Free VPS Storage: Direct File Upload
+app.post('/api/upload', (req, res): void => {
+  try {
+    const { filename, base64Data, contentType } = req.body;
+    if (!base64Data) {
+      res.status(400).json({ error: 'Aucun fichier transmis' });
+      return;
+    }
+
+    const ext = filename?.split('.').pop() || (contentType?.includes('pdf') ? 'pdf' : 'jpg');
+    const cleanName = `${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
+    const filePath = join(uploadsFolder, cleanName);
+
+    // Strip base64 prefix if present
+    const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
+    writeFileSync(filePath, Buffer.from(base64Clean, 'base64'));
+
+    res.json({
+      success: true,
+      url: `/uploads/${cleanName}`,
+      filename: cleanName,
+    });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur d\'upload';
+    console.error('Upload error:', err);
+    res.status(500).json({ error: message });
+  }
+});
 
 // Initialize Gemini Client
 const apiKey = process.env['GEMINI_API_KEY'] || '';

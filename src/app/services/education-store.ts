@@ -10,6 +10,7 @@ import {
   TeacherProfile,
   UserRole,
 } from '../models/education.model';
+import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 
 @Injectable({
   providedIn: 'root',
@@ -216,6 +217,7 @@ export class EducationStore {
   ]);
 
   readonly courses = signal<Course[]>([
+    ...CNP_PRIMARY_COURSES,
     {
       id: 'crs-1',
       title: 'La multiplication des grands nombres (jusqu\'à 999 999)',
