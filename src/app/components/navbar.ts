@@ -14,8 +14,8 @@ import { UserRole } from '../models/education.model';
         <div class="flex items-center justify-between h-16 gap-4">
           
           <!-- Logo & Platform Identity -->
-          <div class="flex items-center gap-3 shrink-0">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-emerald-500 text-white flex items-center justify-center shadow-sm font-bold text-xl font-arabic">
+          <div (click)="selectRole('home')" class="flex items-center gap-3 shrink-0 cursor-pointer group">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-emerald-500 text-white flex items-center justify-center shadow-sm font-bold text-xl font-arabic group-hover:scale-105 transition-transform">
               م
             </div>
             <div>
@@ -35,6 +35,15 @@ import { UserRole } from '../models/education.model';
 
           <!-- Role Switcher Tabs -->
           <nav class="hidden md:flex items-center gap-1 bg-slate-100 p-1.5 rounded-2xl border border-slate-200/60">
+            <button
+              (click)="selectRole('home')"
+              [class]="store.currentRole() === 'home' 
+                ? 'bg-white text-slate-900 shadow-xs font-bold' 
+                : 'text-slate-600 hover:text-slate-900 font-medium'"
+              class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
+              <span class="material-icons text-base text-emerald-600">home</span>
+              <span>{{ lang.tr('Accueil', 'الرئيسية') }}</span>
+            </button>
             <button
               (click)="selectRole('teacher')"
               [class]="store.currentRole() === 'teacher' 
@@ -114,9 +123,9 @@ import { UserRole } from '../models/education.model';
               </div>
             }
 
-            <!-- Google Authentication Widget -->
-            <div class="flex items-center gap-2 pl-2 border-l border-slate-200">
-              @if (firebase.currentUser(); as user) {
+            <!-- Authentication Widget -->
+            <div class="flex items-center gap-1.5 sm:gap-2 pl-2 border-l border-slate-200">
+              @if (firebase.userProfile(); as user) {
                 <div class="flex items-center gap-2">
                   <img
                     [src]="user.photoURL || getUserAvatar()"
@@ -124,26 +133,45 @@ import { UserRole } from '../models/education.model';
                     class="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover border-2 border-emerald-500 shadow-xs" />
                   <div class="hidden lg:block text-left leading-tight">
                     <p class="text-xs font-bold text-slate-800">{{ user.displayName || getUserName() }}</p>
-                    <p class="text-[10px] text-emerald-700 font-semibold">Google Auth ✔️</p>
+                    <p class="text-[10px] text-emerald-700 font-semibold">{{ user.role }} ✔️</p>
                   </div>
                   <button
                     (click)="firebase.logout()"
                     title="Se déconnecter"
-                    class="text-slate-400 hover:text-rose-600 p-1 rounded-lg cursor-pointer transition-colors">
-                    <span class="material-icons text-sm">logout</span>
+                    class="text-slate-400 hover:text-rose-600 p-1.5 rounded-lg cursor-pointer transition-colors">
+                    <span class="material-icons text-base">logout</span>
                   </button>
                 </div>
               } @else {
+                <!-- Login Button -->
                 <button
+                  type="button"
+                  (click)="store.openLoginModal()"
+                  class="hidden sm:inline-flex text-slate-700 hover:text-slate-950 font-bold text-xs px-2.5 py-1.5 rounded-xl hover:bg-slate-100 cursor-pointer transition-colors">
+                  {{ lang.tr('Connexion', 'دخول') }}
+                </button>
+
+                <!-- Signup Button -->
+                <button
+                  type="button"
+                  (click)="store.openSignupModal('teacher')"
+                  class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-xs cursor-pointer transition-all">
+                  {{ lang.tr('S\'inscrire', 'تسجيل') }}
+                </button>
+
+                <!-- Google Button -->
+                <button
+                  type="button"
                   (click)="loginGoogle()"
-                  class="flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-3 py-1.5 rounded-xl transition-all cursor-pointer shadow-xs">
+                  title="Google Login"
+                  class="flex items-center gap-1 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl transition-all cursor-pointer shadow-xs">
                   <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
                     <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                     <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
                     <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
                     <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
                   </svg>
-                  <span class="hidden sm:inline">{{ lang.tr('Google Login', 'دخول بجوجل') }}</span>
+                  <span class="hidden md:inline">{{ lang.tr('Google', 'جوجل') }}</span>
                 </button>
               }
             </div>
@@ -154,6 +182,12 @@ import { UserRole } from '../models/education.model';
 
         <!-- Mobile Role Selector Bar -->
         <div class="flex md:hidden overflow-x-auto py-2 gap-1.5 no-scrollbar border-t border-slate-100">
+          <button
+            (click)="selectRole('home')"
+            [class]="store.currentRole() === 'home' ? 'bg-slate-900 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+            class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+            {{ lang.tr('Accueil', 'الرئيسية') }}
+          </button>
           <button
             (click)="selectRole('teacher')"
             [class]="store.currentRole() === 'teacher' ? 'bg-emerald-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
@@ -199,10 +233,16 @@ export class NavbarComponent {
   }
 
   async loginGoogle() {
-    await this.firebase.loginWithGoogle(this.store.currentRole());
+    const targetRole = this.store.currentRole() === 'home' ? 'teacher' : this.store.currentRole();
+    const profile = await this.firebase.loginWithGoogle(targetRole);
+    if (profile) {
+      this.store.switchRole(profile.role);
+    }
   }
 
   getUserName(): string {
+    const profile = this.firebase.userProfile();
+    if (profile?.displayName) return profile.displayName;
     const user = this.firebase.currentUser();
     if (user?.displayName) return user.displayName;
 
@@ -222,6 +262,8 @@ export class NavbarComponent {
   }
 
   getUserAvatar(): string {
+    const profile = this.firebase.userProfile();
+    if (profile?.photoURL) return profile.photoURL;
     const user = this.firebase.currentUser();
     if (user?.photoURL) return user.photoURL;
 

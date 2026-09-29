@@ -3,6 +3,9 @@
 
   <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
     @switch (store.currentRole()) {
+      @case ('home') {
+        <app-landing-home />
+      }
       @case ('teacher') {
         <app-teacher-home />
       }
@@ -17,6 +20,9 @@
       }
     }
   </main>
+
+  <!-- Global Auth & Signup Modal -->
+  <app-auth-modal />
 
   <!-- Footer -->
   <footer class="bg-white border-t border-slate-200/80 mt-12 py-8 text-xs text-slate-500">

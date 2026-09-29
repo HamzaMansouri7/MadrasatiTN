@@ -4,6 +4,8 @@ import { TeacherHomeComponent } from './components/teacher-home';
 import { ParentHomeComponent } from './components/parent-home';
 import { StudentHomeComponent } from './components/student-home';
 import { PublicDiscoveryComponent } from './components/public-discovery';
+import { LandingHomeComponent } from './components/landing-home';
+import { AuthModalComponent } from './components/auth-modal';
 import { EducationStore } from './services/education-store';
 import { LanguageService } from './services/language.service';
 
@@ -12,10 +14,12 @@ import { LanguageService } from './services/language.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     NavbarComponent,
+    LandingHomeComponent,
     TeacherHomeComponent,
     ParentHomeComponent,
     StudentHomeComponent,
     PublicDiscoveryComponent,
+    AuthModalComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

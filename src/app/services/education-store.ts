@@ -16,8 +16,28 @@ import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
   providedIn: 'root',
 })
 export class EducationStore {
-  // Current active role
-  readonly currentRole = signal<UserRole>('teacher');
+  // Current active role ('home' by default shows the landing page)
+  readonly currentRole = signal<UserRole>('home');
+
+  // Auth Modal State
+  readonly isAuthModalOpen = signal<boolean>(false);
+  readonly authModalMode = signal<'login' | 'signup'>('login');
+  readonly authModalRole = signal<'teacher' | 'parent' | 'student'>('teacher');
+
+  openLoginModal() {
+    this.authModalMode.set('login');
+    this.isAuthModalOpen.set(true);
+  }
+
+  openSignupModal(role: 'teacher' | 'parent' | 'student' = 'teacher') {
+    this.authModalRole.set(role);
+    this.authModalMode.set('signup');
+    this.isAuthModalOpen.set(true);
+  }
+
+  closeAuthModal() {
+    this.isAuthModalOpen.set(false);
+  }
 
   // Currently selected class in Teacher/Class views
   readonly activeClassId = signal<string>('c-4a');

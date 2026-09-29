@@ -40,6 +40,7 @@ export class LanguageService {
     },
 
     // Roles
+    roleHome: { fr: '🏠 Accueil', ar: '🏠 الرئيسية' },
     roleTeacher: { fr: '👨‍🏫 Enseignant', ar: '👨‍🏫 فضاء المعلم' },
     roleParent: { fr: '👨‍👩‍👧 Parent', ar: '👨‍👩‍👧 فضاء الولي' },
     roleStudent: { fr: '👦 Élève', ar: '👦 فضاء التلميذ' },
