@@ -330,38 +330,54 @@ export class AuthModalComponent {
     }
   }
 
-  handleSignupSubmit() {
-    const role = this.store.authModalRole();
-    this.firebase.signup({
-      displayName: this.signupName || 'Nouvel Utilisateur',
-      email: this.signupEmail || 'user@madrasati.tn',
-      role,
-      school: this.signupSchool,
-      phone: this.signupPhone,
-      grade: this.signupGrade,
-    });
-    this.store.switchRole(role);
-    this.store.closeAuthModal();
-  }
-
-  handleEmailLogin() {
-    const targetRole = this.store.currentRole() === 'home' ? 'teacher' : this.store.currentRole();
-    this.firebase.loginWithEmail(this.loginEmail, targetRole);
-    this.store.switchRole(targetRole);
-    this.store.closeAuthModal();
-  }
-
-  quickDemoLogin(role: 'teacher' | 'parent' | 'student') {
-    if (role === 'teacher') {
-      this.firebase.loginWithEmail('amel.benali@madrasati.tn', 'teacher', 'Mme Amel Ben Ali');
-      this.store.switchRole('teacher');
-    } else if (role === 'parent') {
-      this.firebase.loginWithEmail('youssef.mansouri@madrasati.tn', 'parent', 'M. Youssef Mansouri');
-      this.store.switchRole('parent');
-    } else {
-      this.firebase.loginWithEmail('ahmed@madrasati.tn', 'student', 'Ahmed Mansouri');
-      this.store.switchRole('student');
+  async handleSignupSubmit() {
+    this.isLoading.set(true);
+    try {
+      const role = this.store.authModalRole();
+      const profile = await this.firebase.signup({
+        displayName: this.signupName || 'Nouvel Utilisateur',
+        email: this.signupEmail || 'user@madrasati.tn',
+        password: this.signupPassword,
+        role,
+        school: this.signupSchool,
+        phone: this.signupPhone,
+        grade: this.signupGrade,
+      });
+      this.store.switchRole(profile.role);
+      this.store.closeAuthModal();
+    } finally {
+      this.isLoading.set(false);
     }
-    this.store.closeAuthModal();
+  }
+
+  async handleEmailLogin() {
+    this.isLoading.set(true);
+    try {
+      const targetRole = this.store.currentRole() === 'home' ? 'teacher' : this.store.currentRole();
+      const profile = await this.firebase.loginWithEmail(this.loginEmail, this.loginPassword, targetRole);
+      this.store.switchRole(profile.role);
+      this.store.closeAuthModal();
+    } finally {
+      this.isLoading.set(false);
+    }
+  }
+
+  async quickDemoLogin(role: 'teacher' | 'parent' | 'student') {
+    this.isLoading.set(true);
+    try {
+      if (role === 'teacher') {
+        await this.firebase.loginWithEmail('amel.benali@madrasati.tn', undefined, 'teacher');
+        this.store.switchRole('teacher');
+      } else if (role === 'parent') {
+        await this.firebase.loginWithEmail('youssef.mansouri@madrasati.tn', undefined, 'parent');
+        this.store.switchRole('parent');
+      } else {
+        await this.firebase.loginWithEmail('ahmed@madrasati.tn', undefined, 'student');
+        this.store.switchRole('student');
+      }
+      this.store.closeAuthModal();
+    } finally {
+      this.isLoading.set(false);
+    }
   }
 }
