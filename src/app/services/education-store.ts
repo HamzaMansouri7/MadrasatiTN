@@ -24,14 +24,53 @@ export class EducationStore {
   // Currently selected student in Parent view
   readonly activeStudentId = signal<string>('st-1');
 
-  // Filters & Search State
+  // Multi-Facet Search & Filter Hub State
   readonly searchQuery = signal<string>('');
   readonly selectedGradeFilter = signal<string>('Tous');
   readonly selectedSubjectFilter = signal<string>('Tous');
-  readonly selectedTab = signal<'classes' | 'courses' | 'exercises' | 'announcements' | 'teachers'>('classes');
+  readonly selectedTrimesterFilter = signal<string>('Tous');
+  readonly selectedDocTypeFilter = signal<string>('Tous');
+  readonly selectedSchoolYearFilter = signal<string>('Tous');
+  readonly onlyWithCorrectionFilter = signal<boolean>(false);
 
   // Mock Data Collections
   readonly classes = signal<ClassGroup[]>([
+    {
+      id: 'c-1a',
+      name: '1ère A — Classe Mme Salma',
+      grade: '1ère Année',
+      teacherId: 't-4',
+      teacherName: 'Mme Salma Karray',
+      teacherAvatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80',
+      schoolName: 'École Primaire Habib Bourguiba, Ariana',
+      studentCount: 25,
+      code: '1A-2026',
+      scheduleSummary: 'Lu - Ve : 08h00 - 12h30',
+    },
+    {
+      id: 'c-2b',
+      name: '2ème B — Classe M. Nidhal',
+      grade: '2ème Année',
+      teacherId: 't-5',
+      teacherName: 'M. Nidhal Gharbi',
+      teacherAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+      schoolName: 'École Primaire Habib Bourguiba, Ariana',
+      studentCount: 27,
+      code: '2B-2026',
+      scheduleSummary: 'Lu - Ve : 08h00 - 12h30',
+    },
+    {
+      id: 'c-3a',
+      name: '3ème A — Classe Mme Meriem',
+      grade: '3ème Année',
+      teacherId: 't-6',
+      teacherName: 'Mme Meriem Chebbi',
+      teacherAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+      schoolName: 'École Primaire Habib Bourguiba, Ariana',
+      studentCount: 29,
+      code: '3A-2026',
+      scheduleSummary: 'Lu - Ve : 08h00 - 13h00',
+    },
     {
       id: 'c-4a',
       name: '4ème A — Classe Mme Amel',
@@ -54,6 +93,18 @@ export class EducationStore {
       schoolName: 'École Primaire Habib Bourguiba, Ariana',
       studentCount: 31,
       code: '4B-2026',
+      scheduleSummary: 'Lu - Ve : 08h00 - 13h00',
+    },
+    {
+      id: 'c-5a',
+      name: '5ème A — Classe Mme Faten',
+      grade: '5ème Année',
+      teacherId: 't-7',
+      teacherName: 'Mme Faten Zaouali',
+      teacherAvatar: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=150&auto=format&fit=crop&q=80',
+      schoolName: 'École Primaire Habib Bourguiba, Ariana',
+      studentCount: 30,
+      code: '5A-2026',
       scheduleSummary: 'Lu - Ve : 08h00 - 13h00',
     },
     {
@@ -80,41 +131,50 @@ export class EducationStore {
       coursesCount: 24,
       exercisesCount: 340,
       studentsCount: 620,
+      totalUploads: 148,
+      downloadableExercisesCount: 310,
       rating: 4.9,
       reviewsCount: 128,
       verifiedBadge: true,
       subjects: ['Mathématiques', 'Éveil Scientifique'],
       bio: 'Enseignante passionnée depuis 12 ans. Spécialisée dans la pédagogie active des mathématiques et l’apprentissage logique pour le primaire tunisien.',
+      starRatingBreakdown: { 5: 110, 4: 14, 3: 3, 2: 1, 1: 0 },
     },
     {
       id: 't-2',
       name: 'M. Karim Hammami',
-      title: 'Enseignant de Français & Anglais',
+      title: 'Enseignant de Français & Anglais (6ème Concours)',
       school: 'École Primaire Ibn Khaldoun, Tunis',
       avatarUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80',
       coursesCount: 18,
       exercisesCount: 215,
       studentsCount: 480,
+      totalUploads: 92,
+      downloadableExercisesCount: 195,
       rating: 4.8,
       reviewsCount: 94,
       verifiedBadge: true,
       subjects: ['Français', 'Anglais'],
       bio: 'Formateur certifié en langue française. Auteur de fiches de lecture et de préparation au Concours de 6ème.',
+      starRatingBreakdown: { 5: 78, 4: 12, 3: 3, 2: 1, 1: 0 },
     },
     {
       id: 't-3',
       name: 'Mme Sonia Trabelsi',
-      title: 'Enseignante de Langue Arabe',
+      title: 'Enseignante de Langue Arabe (5ème & 6ème)',
       school: 'École Primaire Monji Slim, Marsa',
       avatarUrl: 'https://images.unsplash.com/photo-1580894732413-802c6769998b?w=150&auto=format&fit=crop&q=80',
       coursesCount: 31,
       exercisesCount: 410,
       studentsCount: 890,
+      totalUploads: 210,
+      downloadableExercisesCount: 380,
       rating: 5.0,
       reviewsCount: 210,
       verifiedBadge: true,
       subjects: ['اللغة العربية', 'Éducation Islamique'],
-      bio: 'استاذة تعليم ابتدائي. متخصصة في قواعد اللغة العربية والإنتاج الكتابي للمرحلة الابتدائي.',
+      bio: 'أستاذة تعليم ابتدائي. متخصصة في قواعد اللغة العربية والإنتاج الكتابي للمرحلة الابتدائية.',
+      starRatingBreakdown: { 5: 198, 4: 10, 3: 2, 2: 0, 1: 0 },
     },
   ]);
 
@@ -137,24 +197,6 @@ export class EducationStore {
         { subject: 'Éveil Scientifique', score: 88, color: '#06b6d4' },
       ],
     },
-    {
-      id: 'st-2',
-      name: 'Sarra Mansouri',
-      grade: '6ème Année',
-      school: 'École Primaire Ibn Khaldoun, Tunis',
-      avatarUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80',
-      parentId: 'p-1',
-      classId: 'c-6c',
-      streakDays: 12,
-      totalPoints: 2150,
-      completedExercisesCount: 89,
-      subjectsProgress: [
-        { subject: 'Mathématiques', score: 91, color: '#10b981' },
-        { subject: 'Français', score: 95, color: '#6366f1' },
-        { subject: 'اللغة العربية', score: 89, color: '#f59e0b' },
-        { subject: 'Histoire & Géographie', score: 94, color: '#ec4899' },
-      ],
-    },
   ]);
 
   readonly announcements = signal<Announcement[]>([
@@ -164,36 +206,12 @@ export class EducationStore {
       classId: 'c-4a',
       teacherName: 'Mme Amel Ben Ali',
       teacherAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
-      content: 'Chers parents et élèves, le Devoir de Synthèse N°1 aura lieu jeudi prochain à 09h00. Les chapitres concernés sont : La multiplication des nombres de 0 à 999 999, la géométrie des droites perpendiculaires et la résolution de problèmes à deux étapes. Merci de bien réviser les séries publiées ci-dessous !',
+      content: 'Chers parents et élèves, le Devoir de Synthèse N°1 aura lieu jeudi prochain à 09h00. Les chapitres concernés sont : La multiplication des nombres de 0 à 999 999, la géométrie des droites perpendiculaires et la résolution de problèmes à deux étapes.',
       category: 'exam',
       date: 'Aujourd\'hui à 10:15',
       likesCount: 19,
       confirmedByParentsCount: 24,
       isPinned: true,
-    },
-    {
-      id: 'a-2',
-      title: '📚 Matériel nécessaire pour le cours d\'Éveil Scientifique',
-      classId: 'c-4a',
-      teacherName: 'Mme Amel Ben Ali',
-      teacherAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
-      content: 'Pour la séance de vendredi sur les états de la matière (eau liquide, vapeur, glace), veuillez rapporter un petit récipient transparent gradué si possible. Les groupes de travail sont déjà attribués.',
-      category: 'supply',
-      date: 'Hier à 14:30',
-      likesCount: 12,
-      confirmedByParentsCount: 20,
-    },
-    {
-      id: 'a-3',
-      title: '📝 Devoir à domicile : Vocabulaire & Grammaire',
-      classId: 'c-6c',
-      teacherName: 'M. Karim Hammami',
-      teacherAvatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80',
-      content: 'Faire les exercices N° 3, 4 et 5 de la page 42 du Manuel de Français. La correction détaillée sera mise en ligne vendredi après-midi.',
-      category: 'homework',
-      date: 'Il y a 2 jours',
-      likesCount: 15,
-      confirmedByParentsCount: 22,
     },
   ]);
 
@@ -204,6 +222,9 @@ export class EducationStore {
       classId: 'c-4a',
       subject: 'Mathématiques',
       grade: '4ème Année',
+      trimester: 'Trimestre 1',
+      docType: 'Fiche de Révision',
+      schoolYear: '2025-2026',
       teacherName: 'Mme Amel Ben Ali',
       summary: 'Technique opératoire de la multiplication à 2 et 3 chiffres, retenues et estimation du résultat.',
       content: `### Objective du cours
@@ -218,23 +239,25 @@ A la fin de cette leçon, l'élève de 4ème année sera capable de :
 Pour multiplier $3~452 \\times 24$ :
 - Étape 1 : Multiplier $3~452$ par les unités ($4$). $3~452 \\times 4 = 13~808$.
 - Étape 2 : Placer un zéro sous le rang des unités, puis multiplier $3~452$ par les dizaines ($2$). $3~452 \\times 20 = 69~040$.
-- Étape 3 : Additionner les deux résultats intermédiaires : $13~808 + 69~040 = 82~848$.
-
----
-
-### 💡 Astuce de Mme Amel
-N'oubliez jamais d'écrire proprement les retenues au-dessus des colonnes et d'aligner parfaitement les unités sous les unités !`,
+- Étape 3 : Additionner les deux résultats intermédiaires : $13~808 + 69~040 = 82~848$.`,
       viewsCount: 342,
       createdAt: '22 Septembre 2026',
-      tags: ['Calcul', 'Multiplication', 'Opérations', '4ème'],
-      isBookmarked: true,
+      tags: ['Calcul', 'Multiplication', '4ème'],
+      hasCorrection: true,
+      upvotesCount: 48,
+      isUpvoted: false,
+      reportedCount: 0,
+      watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
     },
     {
       id: 'crs-2',
-      title: 'Écrire un texte narratif : Le cadre spatio-temporel et l\'action',
+      title: 'Écrire un texte narratif : Le cadre spatio-temporel',
       classId: 'c-4a',
       subject: 'Français',
       grade: '4ème Année',
+      trimester: 'Trimestre 1',
+      docType: 'Fiche de Révision',
+      schoolYear: '2025-2026',
       teacherName: 'M. Karim Hammami',
       summary: 'Structure du récit court : Situation initiale, élément perturbateur, péripéties et situation finale.',
       content: `### Schéma Narratif pour le Primaire
@@ -247,14 +270,22 @@ Pour réussir une production écrite de 6 à 8 lignes :
 5. **Fin** (Heureux, ils l'ont ramené à la maison.)`,
       viewsCount: 289,
       createdAt: '18 Septembre 2026',
-      tags: ['Production écrite', 'Rédaction', 'Français', '4ème'],
+      tags: ['Production écrite', 'Rédaction', '4ème'],
+      hasCorrection: true,
+      upvotesCount: 35,
+      isUpvoted: false,
+      reportedCount: 0,
+      watermarkText: 'Madrasati TN — Document Certifié — M. Karim Hammami',
     },
     {
       id: 'crs-3',
       title: 'اللغة العربية : الجملة الاسمية ونواسخها (إنّ وأخواتها)',
-      classId: 'c-4a',
+      classId: 'c-5a',
       subject: 'اللغة العربية',
-      grade: '4ème Année',
+      grade: '5ème Année',
+      trimester: 'Trimestre 1',
+      docType: 'Fiche de Révision',
+      schoolYear: '2025-2026',
       teacherName: 'Mme Sonia Trabelsi',
       summary: 'شرح مبسط لمكونات الجملة الاسمية (المبتدأ والخبر) وتأثير إن وأخواتها عليها مع أمثلة وتطبيقات.',
       content: `### عناصر الدرس :
@@ -267,141 +298,79 @@ Pour réussir une production écrite de 6 à 8 lignes :
    - مثال : *إِنَّ العِلْمَ نُورٌ.*`,
       viewsCount: 512,
       createdAt: '15 Septembre 2026',
-      tags: ['قواعد', 'إعراب', 'لغة عربية', '4 ابتدائي'],
+      tags: ['قواعد', 'إعراب', '5 ابتدائي'],
+      hasCorrection: true,
+      upvotesCount: 62,
+      isUpvoted: false,
+      reportedCount: 0,
+      watermarkText: 'Madrasati TN — Document Certifié — Mme Sonia Trabelsi',
     },
   ]);
 
-  readonly homeworks = signal<Homework[]>([
-    {
-      id: 'hw-1',
-      title: 'Série N°3 : Problèmes de Multiplication & Division',
-      classId: 'c-4a',
-      subject: 'Mathématiques',
-      dueDate: 'Demain à 18h00',
-      instructions: 'Résoudre les 3 exercices suivants sur votre cahier d\'exercices ou soumettre directement la photo sur l\'application.',
-      submissionsCount: 22,
-      totalPoints: 20,
-      status: 'pending',
-      exercises: [
-        {
-          id: 'ex-101',
-          title: 'Exercice 1 : Le verger de l\'agriculteur',
-          chapter: 'Multiplication & Problèmes',
-          subject: 'Mathématiques',
-          grade: '4ème Année',
-          difficulty: 'Facile',
-          promptText: 'Un agriculteur à Nabeul récolte 145 caisses d\'oranges. Chaque caisse pèse 24 kg. Quelle est la masse totale d\'oranges récoltées en kilogrammes ?',
-          solutionText: 'Masse totale = 145 × 24 = 3 480 kg. L\'agriculteur a récolté 3 480 kg d\'oranges.',
-          hints: ['Multipliez le nombre de caisses par le poids d\'une caisse.', 'Posez l\'opération : 145 × 24.'],
-          points: 6,
-        },
-        {
-          id: 'ex-102',
-          title: 'Exercice 2 : Calcul réfléchi',
-          chapter: 'Multiplication rapide',
-          subject: 'Mathématiques',
-          grade: '4ème Année',
-          difficulty: 'Moyen',
-          promptText: 'Effectuer mentalement en décomposant : 35 × 12.',
-          solutionText: '35 × 12 = 35 × (10 + 2) = (35 × 10) + (35 × 2) = 350 + 70 = 420.',
-          hints: ['Décomposez 12 en (10 + 2).', 'Multipliez d\'abord par 10 puis par 2.'],
-          points: 6,
-        },
-        {
-          id: 'ex-103',
-          title: 'Exercice 3 : Géométrie et Périmètre',
-          chapter: 'Périmètres des figures',
-          subject: 'Mathématiques',
-          grade: '4ème Année',
-          difficulty: 'Avancé',
-          promptText: 'Un terrain rectangulaire mesure 45 mètres de longueur et 28 mètres de largeur. Calculez son périmètre puis la longueur de grillage nécessaire si on laisse une porte de 3 mètres.',
-          solutionText: 'Périmètre = (45 + 28) × 2 = 73 × 2 = 146 mètres.\nLongueur de grillage = 146 - 3 = 143 mètres.',
-          hints: ['Rappel : Périmètre du rectangle = (Longueur + Largeur) × 2.', 'N\'oubliez pas de soustraire les 3m de la porte !'],
-          points: 8,
-        },
-      ],
-    },
-    {
-      id: 'hw-2',
-      title: 'Devoir de Français : Conjugaison du Présent',
-      classId: 'c-4a',
-      subject: 'Français',
-      dueDate: 'Vendredi 02 Octobre',
-      instructions: 'Compléter les phrases avec les verbes entre parenthèses au présent de l\'indicatif.',
-      submissionsCount: 18,
-      totalPoints: 10,
-      status: 'pending',
-      exercises: [
-        {
-          id: 'ex-201',
-          title: 'Exercice 1 : Verbes du 1er et 2ème groupe',
-          chapter: 'Présent de l\'indicatif',
-          subject: 'Français',
-          grade: '4ème Année',
-          difficulty: 'Facile',
-          promptText: 'Conjuguer : "Les élèves (travailler) ..... avec attention et (finir) ..... leurs devoirs à l\'heure."',
-          solutionText: 'Les élèves travaillent avec attention et finissent leurs devoirs à l\'heure.',
-          hints: ['Le sujet "Les élèves" se remplace par "Ils".', 'Terminaison 1er groupe : -ent. Terminaison 2ème groupe : -issent.'],
-          points: 10,
-        },
-      ],
-    },
-  ]);
-
-  readonly submissions = signal<Submission[]>([
-    {
-      id: 'sub-1',
-      homeworkId: 'hw-1',
-      studentId: 'st-1',
-      studentName: 'Ahmed Mansouri',
-      studentAvatar: 'https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=150&auto=format&fit=crop&q=80',
-      submittedAt: 'Aujourd\'hui à 11:20',
-      textAnswer: '1) 145 x 24 = 3480 kg.\n2) 35 x 12 = 35 x 10 + 35 x 2 = 350 + 70 = 420.\n3) Périmètre = (45 + 28) x 2 = 146 m. Grillage = 146 - 3 = 143 m.',
-      photoUrl: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop&q=80',
-      score: 19,
-      maxScore: 20,
-      feedback: 'Excellent travail Ahmed ! Très bonne présentation et calculs exacts. Continue ainsi !',
-      status: 'graded',
-    },
-  ]);
+  readonly homeworks = signal<Homework[]>([]);
+  readonly submissions = signal<Submission[]>([]);
 
   // Public Exercises Repository (Searchable Bank)
   readonly exercisesBank = signal<ExerciseItem[]>([
     {
       id: 'bank-1',
-      title: 'Problème de géométrie : Aires et Périmètres',
+      title: 'Devoir de Contrôle N°1 : Aires et Périmètres',
       chapter: 'Géométrie',
       subject: 'Mathématiques',
       grade: '4ème Année',
+      trimester: 'Trimestre 1',
+      docType: 'Devoir de Contrôle',
+      schoolYear: '2025-2026',
       difficulty: 'Moyen',
       promptText: 'Un jardin carré a un côté de 15 mètres. Calculez son périmètre et son aire.',
       solutionText: 'Périmètre = 15 × 4 = 60 m. Aire = 15 × 15 = 225 m².',
+      hasCorrection: true,
       hints: ['Périmètre d\'un carré = Côté × 4', 'Aire d\'un carré = Côté × Côté'],
       points: 10,
+      upvotesCount: 54,
+      isUpvoted: false,
+      reportedCount: 0,
+      watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
     },
     {
       id: 'bank-2',
-      title: 'Accord de l\'adjectif qualificatif',
+      title: 'Devoir de Synthèse N°2 : Accord de l\'adjectif qualificatif',
       chapter: 'Grammaire',
       subject: 'Français',
       grade: '4ème Année',
+      trimester: 'Trimestre 2',
+      docType: 'Devoir de Synthèse',
+      schoolYear: '2025-2026',
       difficulty: 'Facile',
       promptText: 'Accorder correctement : "Des fillettes (joyeux) ..... jouent dans une cour (vert) ....."',
       solutionText: 'Des fillettes joyeuses jouent dans une cour verte.',
+      hasCorrection: true,
       hints: ['Fillettes est un nom féminin pluriel.', 'Cour est un nom féminin singulier.'],
       points: 10,
+      upvotesCount: 29,
+      isUpvoted: false,
+      reportedCount: 0,
+      watermarkText: 'Madrasati TN — Document Certifié — M. Karim Hammami',
     },
     {
       id: 'bank-3',
-      title: 'تمرين في التميين والإعراب',
+      title: 'Série N°1 : تمرين في التمييز والإعراب (السادسة مناظرة)',
       chapter: 'قواعد اللغة',
       subject: 'اللغة العربية',
-      grade: '5ème Année',
+      grade: '6ème Année',
+      trimester: 'Trimestre 1',
+      docType: 'Série d\'Exercices',
+      schoolYear: '2025-2026',
       difficulty: 'Avancé',
       promptText: 'أعرب الكلمة المسطرة : "قَرَأَ الطَّالِبُ **كِتَاباً** مُمِتِعاً."',
       solutionText: 'كِتَاباً : مَفْعُولٌ بِهِ مَنْصُوبٌ وَعَلاَمَةُ نَصْبِهِ التَّنْوِينُ الفَتْحُ الظَّاهِرُ عَلَى آخِرِهِ.',
+      hasCorrection: true,
       hints: ['اسأل نفسك : ماذا قرأ الطالب؟', 'الجواب عن "ماذا" يكون مفعولاً به.'],
       points: 10,
+      upvotesCount: 88,
+      isUpvoted: false,
+      reportedCount: 0,
+      watermarkText: 'Madrasati TN — Document Certifié — Mme Sonia Trabelsi',
     },
     {
       id: 'bank-4',
@@ -409,11 +378,19 @@ Pour réussir une production écrite de 6 à 8 lignes :
       chapter: 'Physique & Électricité',
       subject: 'Éveil Scientifique',
       grade: '5ème Année',
+      trimester: 'Trimestre 1',
+      docType: 'Fiche de Révision',
+      schoolYear: '2025-2026',
       difficulty: 'Moyen',
       promptText: 'Quels sont les trois composants indispensables pour faire briller une ampoule dans un circuit fermé ?',
       solutionText: '1. Une pile (générateur)\n2. Une ampoule (récepteur)\n3. Des fils conducteurs de connexion.',
+      hasCorrection: true,
       hints: ['Il faut une source d\'énergie, un composant qui s\'allume et des liaisons.'],
       points: 10,
+      upvotesCount: 42,
+      isUpvoted: false,
+      reportedCount: 0,
+      watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
     },
   ]);
 
@@ -443,27 +420,43 @@ Pour réussir une production écrite de 6 à 8 lignes :
     return this.homeworks().filter((h) => h.classId === cid);
   });
 
+  // Multi-Facet Filtering Engine for Courses Library
   readonly filteredCourses = computed(() => {
     const q = this.searchQuery().toLowerCase().trim();
     const g = this.selectedGradeFilter();
     const s = this.selectedSubjectFilter();
+    const t = this.selectedTrimesterFilter();
+    const d = this.selectedDocTypeFilter();
+    const y = this.selectedSchoolYearFilter();
+    const onlyCor = this.onlyWithCorrectionFilter();
 
     return this.courses().filter((course) => {
       const matchQ =
         !q ||
         course.title.toLowerCase().includes(q) ||
         course.summary.toLowerCase().includes(q) ||
-        course.tags.some((t) => t.toLowerCase().includes(q));
+        course.tags.some((tag) => tag.toLowerCase().includes(q));
+
       const matchG = g === 'Tous' || course.grade === g;
       const matchS = s === 'Tous' || course.subject === s;
-      return matchQ && matchG && matchS;
+      const matchT = t === 'Tous' || course.trimester === t;
+      const matchD = d === 'Tous' || course.docType === d;
+      const matchY = y === 'Tous' || course.schoolYear === y;
+      const matchCor = !onlyCor || course.hasCorrection === true;
+
+      return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor;
     });
   });
 
+  // Multi-Facet Filtering Engine for Exercises Bank
   readonly filteredExercisesBank = computed(() => {
     const q = this.searchQuery().toLowerCase().trim();
     const g = this.selectedGradeFilter();
     const s = this.selectedSubjectFilter();
+    const t = this.selectedTrimesterFilter();
+    const d = this.selectedDocTypeFilter();
+    const y = this.selectedSchoolYearFilter();
+    const onlyCor = this.onlyWithCorrectionFilter();
 
     return this.exercisesBank().filter((ex) => {
       const matchQ =
@@ -471,14 +464,16 @@ Pour réussir une production écrite de 6 à 8 lignes :
         ex.title.toLowerCase().includes(q) ||
         ex.promptText.toLowerCase().includes(q) ||
         ex.chapter.toLowerCase().includes(q);
+
       const matchG = g === 'Tous' || ex.grade === g;
       const matchS = s === 'Tous' || ex.subject === s;
-      return matchQ && matchG && matchS;
-    });
-  });
+      const matchT = t === 'Tous' || ex.trimester === t;
+      const matchD = d === 'Tous' || ex.docType === d;
+      const matchY = y === 'Tous' || ex.schoolYear === y;
+      const matchCor = !onlyCor || ex.hasCorrection === true;
 
-  readonly activeTeacherProfile = computed(() => {
-    return this.teachers()[0]; // Mme Amel Ben Ali default
+      return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor;
+    });
   });
 
   // Actions
@@ -494,6 +489,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
     this.activeStudentId.set(studentId);
   }
 
+  // Filter Updaters
   setSearchQuery(q: string) {
     this.searchQuery.set(q);
   }
@@ -504,6 +500,110 @@ Pour réussir une production écrite de 6 à 8 lignes :
 
   setSubjectFilter(s: string) {
     this.selectedSubjectFilter.set(s);
+  }
+
+  setTrimesterFilter(t: string) {
+    this.selectedTrimesterFilter.set(t);
+  }
+
+  setDocTypeFilter(d: string) {
+    this.selectedDocTypeFilter.set(d);
+  }
+
+  setSchoolYearFilter(y: string) {
+    this.selectedSchoolYearFilter.set(y);
+  }
+
+  setOnlyWithCorrectionFilter(val: boolean) {
+    this.onlyWithCorrectionFilter.set(val);
+  }
+
+  resetAllFilters() {
+    this.searchQuery.set('');
+    this.selectedGradeFilter.set('Tous');
+    this.selectedSubjectFilter.set('Tous');
+    this.selectedTrimesterFilter.set('Tous');
+    this.selectedDocTypeFilter.set('Tous');
+    this.selectedSchoolYearFilter.set('Tous');
+    this.onlyWithCorrectionFilter.set(false);
+  }
+
+  // Community Actions: Upvote & Report
+  toggleUpvoteExercise(id: string) {
+    this.exercisesBank.update((list) =>
+      list.map((ex) => {
+        if (ex.id === id) {
+          const isUpvoted = !ex.isUpvoted;
+          const upvotesCount = (ex.upvotesCount || 0) + (isUpvoted ? 1 : -1);
+          return { ...ex, isUpvoted, upvotesCount };
+        }
+        return ex;
+      })
+    );
+  }
+
+  toggleUpvoteCourse(id: string) {
+    this.courses.update((list) =>
+      list.map((crs) => {
+        if (crs.id === id) {
+          const isUpvoted = !crs.isUpvoted;
+          const upvotesCount = (crs.upvotesCount || 0) + (isUpvoted ? 1 : -1);
+          return { ...crs, isUpvoted, upvotesCount };
+        }
+        return crs;
+      })
+    );
+  }
+
+  reportExercise(id: string) {
+    this.exercisesBank.update((list) =>
+      list.map((ex) => {
+        if (ex.id === id) {
+          return { ...ex, isReported: true, reportedCount: (ex.reportedCount || 0) + 1 };
+        }
+        return ex;
+      })
+    );
+  }
+
+  // AI Bulk Upload & Auto-Tagger
+  async autoTagAndAddDocument(documentName: string, rawText: string): Promise<ExerciseItem | null> {
+    try {
+      const res = await fetch('/api/ai/auto-tag-document', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ documentName, rawText }),
+      });
+      const data = await res.json();
+      if (data.success && data.tags) {
+        const tags = data.tags;
+        const newEx: ExerciseItem = {
+          id: 'auto-' + Date.now(),
+          title: tags.suggestedTitle || documentName,
+          chapter: tags.summary || 'Document importé WhatsApp',
+          subject: tags.subject || 'Mathématiques',
+          grade: tags.grade || '4ème Année',
+          trimester: tags.trimester || 'Trimestre 1',
+          docType: tags.docType || 'Série d\'Exercices',
+          schoolYear: '2025-2026',
+          difficulty: 'Moyen',
+          promptText: rawText || 'Contenu extrait du document WhatsApp.',
+          solutionText: tags.hasCorrection ? 'Solution complète incluse dans le document.' : 'Aide : voir les étapes du cours.',
+          hasCorrection: tags.hasCorrection ?? true,
+          hints: ['Généré et étiqueté par Gemini IA'],
+          points: 10,
+          upvotesCount: 1,
+          isUpvoted: true,
+          watermarkText: 'Madrasati TN — Auto-Tagué par Gemini IA — Mme Amel Ben Ali',
+        };
+
+        this.exercisesBank.update((list) => [newEx, ...list]);
+        return newEx;
+      }
+    } catch (err) {
+      console.error('Error in autoTagAndAddDocument:', err);
+    }
+    return null;
   }
 
   addAnnouncement(announcementData: Partial<Announcement>) {
@@ -539,31 +639,27 @@ Pour réussir une production écrite de 6 à 8 lignes :
       viewsCount: 1,
       createdAt: 'Aujourd\'hui',
       tags: courseData.tags || ['Nouveau'],
+      hasCorrection: true,
+      upvotesCount: 1,
+      watermarkText: `Madrasati TN — Document Certifié — ${activeC.teacherName}`,
     };
 
     this.courses.update((list) => [newC, ...list]);
   }
 
-  addHomework(hwData: Partial<Homework>) {
-    const activeC = this.activeClass();
-    const newHw: Homework = {
-      id: 'hw-' + Date.now(),
-      title: hwData.title || 'Nouveau Devoir',
-      classId: activeC.id,
-      subject: hwData.subject || 'Mathématiques',
-      dueDate: hwData.dueDate || 'Demain',
-      instructions: hwData.instructions || '',
-      submissionsCount: 0,
-      totalPoints: hwData.totalPoints || 20,
-      status: 'pending',
-      exercises: hwData.exercises || [],
-    };
-
-    this.homeworks.update((list) => [newHw, ...list]);
-  }
-
   addExerciseToBank(ex: ExerciseItem) {
-    this.exercisesBank.update((list) => [ex, ...list]);
+    this.exercisesBank.update((list) => [
+      {
+        ...ex,
+        trimester: ex.trimester || 'Trimestre 1',
+        docType: ex.docType || 'Série d\'Exercices',
+        schoolYear: '2025-2026',
+        hasCorrection: true,
+        upvotesCount: 1,
+        watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
+      },
+      ...list,
+    ]);
   }
 
   confirmAnnouncementRead(announcementId: string) {

@@ -1,0 +1,127 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile with role and contact information",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["teacher", "parent", "student"] },
+        "avatarUrl": { "type": "string" },
+        "school": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "role"]
+    },
+    "ClassGroup": {
+      "title": "ClassGroup",
+      "description": "School class entity",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "grade": { "type": "string" },
+        "teacherId": { "type": "string" },
+        "teacherName": { "type": "string" },
+        "schoolName": { "type": "string" },
+        "studentCount": { "type": "number" },
+        "code": { "type": "string" }
+      },
+      "required": ["id", "name", "grade", "teacherId"]
+    },
+    "Announcement": {
+      "title": "Announcement",
+      "description": "Official class announcement",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "classId": { "type": "string" },
+        "teacherName": { "type": "string" },
+        "teacherAvatar": { "type": "string" },
+        "content": { "type": "string" },
+        "category": { "type": "string" },
+        "date": { "type": "string" },
+        "confirmedByParentsCount": { "type": "number" }
+      },
+      "required": ["id", "title", "classId", "content"]
+    },
+    "Course": {
+      "title": "Course",
+      "description": "Lesson and study material",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "classId": { "type": "string" },
+        "subject": { "type": "string" },
+        "grade": { "type": "string" },
+        "teacherName": { "type": "string" },
+        "summary": { "type": "string" },
+        "content": { "type": "string" }
+      },
+      "required": ["id", "title", "classId", "content"]
+    },
+    "Homework": {
+      "title": "Homework",
+      "description": "Assigned homework for students",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "classId": { "type": "string" },
+        "subject": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "instructions": { "type": "string" },
+        "totalPoints": { "type": "number" }
+      },
+      "required": ["id", "title", "classId"]
+    },
+    "Submission": {
+      "title": "Submission",
+      "description": "Student homework submission",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "homeworkId": { "type": "string" },
+        "studentId": { "type": "string" },
+        "studentName": { "type": "string" },
+        "submittedAt": { "type": "string" },
+        "textAnswer": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "score": { "type": "number" },
+        "feedback": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "homeworkId", "studentId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles collection"
+    },
+    "/classes/{classId}": {
+      "schema": "ClassGroup",
+      "description": "Classes collection"
+    },
+    "/announcements/{announcementId}": {
+      "schema": "Announcement",
+      "description": "Class announcements collection"
+    },
+    "/courses/{courseId}": {
+      "schema": "Course",
+      "description": "Course materials collection"
+    },
+    "/homeworks/{homeworkId}": {
+      "schema": "Homework",
+      "description": "Homework collection"
+    },
+    "/submissions/{submissionId}": {
+      "schema": "Submission",
+      "description": "Submissions collection"
+    }
+  }
+}

@@ -151,6 +151,50 @@ Format JSON :
   }
 });
 
+// 4. AI Auto-Tagger for Bulk Uploads
+app.post('/api/ai/auto-tag-document', async (req, res): Promise<void> => {
+  try {
+    const { documentName, rawText } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API non disponible' });
+      return;
+    }
+
+    const prompt = `Tu es un système de reconnaissance automatique de documents scolaires pour le primaire tunisien.
+Analyse le document suivant (nom de fichier ou extrait de texte) :
+Nom/Extrait: "${documentName || ''} - ${rawText || ''}"
+
+Extrais les métadonnées exactes au format JSON suivant :
+{
+  "suggestedTitle": "Titre propre et bien formaté",
+  "grade": "1ère Année" | "2ème Année" | "3ème Année" | "4ème Année" | "5ème Année" | "6ème Année",
+  "subject": "Mathématiques" | "Français" | "اللغة العربية" | "Éveil Scientifique" | "Histoire & Géographie" | "Anglais",
+  "trimester": "Trimestre 1" | "Trimestre 2" | "Trimestre 3",
+  "docType": "Devoir de Contrôle" | "Devoir de Synthèse" | "Fiche de Révision" | "Série d'Exercices",
+  "hasCorrection": true ou false,
+  "summary": "Brève description du contenu"
+}`;
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+    });
+
+    const text = response.text || '';
+    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const data = JSON.parse(cleanedText);
+
+    res.json({ success: true, tags: data });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de l\'auto-tagging';
+    console.error('Error in /api/ai/auto-tag-document:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
 /**
  * Serve static files from /browser
  */

@@ -2,5 +2,7 @@
   "name": "Madrasati TN — Espace Éducatif Réussite",
   "description": "Plateforme éducative professionnelle gratuite pour enseignants, parents et élèves en Tunisie. Remplace les groupes Facebook/WhatsApp avec classes virtuelles, devoirs, cours et exercices organisés.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

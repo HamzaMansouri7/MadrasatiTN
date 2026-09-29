@@ -21,20 +21,37 @@ export type SubjectName =
   | 'Informatique'
   | 'Éducation Islamique';
 
+export type Trimester = 'Trimestre 1' | 'Trimestre 2' | 'Trimestre 3';
+
+export type DocType =
+  | 'Devoir de Contrôle'
+  | 'Devoir de Synthèse'
+  | 'Fiche de Révision'
+  | 'Série d\'Exercices';
+
 export interface ExerciseItem {
   id: string;
   title: string;
   chapter: string;
   subject: SubjectName;
   grade: GradeLevel;
+  trimester?: Trimester;
+  docType?: DocType;
+  schoolYear?: string;
   difficulty: 'Facile' | 'Moyen' | 'Avancé';
   promptText: string;
   photoUrl?: string;
-  options?: string[]; // for MCQs
+  options?: string[];
   correctAnswer?: string;
   solutionText: string;
+  hasCorrection?: boolean;
   hints: string[];
   points: number;
+  upvotesCount?: number;
+  isUpvoted?: boolean;
+  reportedCount?: number;
+  isReported?: boolean;
+  watermarkText?: string;
 }
 
 export interface Homework {
@@ -67,14 +84,14 @@ export interface Submission {
 
 export interface ClassGroup {
   id: string;
-  name: string; // e.g. "4ème A — Classe Mme Amel"
+  name: string;
   grade: GradeLevel;
   teacherId: string;
   teacherName: string;
   teacherAvatar: string;
-  schoolName: string; // e.g. "École Primaire Habib Bourguiba, Ariana"
+  schoolName: string;
   studentCount: number;
-  code: string; // e.g. "4A-2026"
+  code: string;
   scheduleSummary: string;
 }
 
@@ -84,6 +101,9 @@ export interface Course {
   classId: string;
   subject: SubjectName;
   grade: GradeLevel;
+  trimester?: Trimester;
+  docType?: DocType;
+  schoolYear?: string;
   teacherName: string;
   summary: string;
   content: string;
@@ -93,6 +113,12 @@ export interface Course {
   createdAt: string;
   tags: string[];
   isBookmarked?: boolean;
+  hasCorrection?: boolean;
+  upvotesCount?: number;
+  isUpvoted?: boolean;
+  reportedCount?: number;
+  isReported?: boolean;
+  watermarkText?: string;
 }
 
 export interface Announcement {
@@ -111,23 +137,32 @@ export interface Announcement {
 
 export interface TeacherProfile {
   id: string;
-  name: string; // e.g. "Mme Amel Ben Ali"
-  title: string; // e.g. "Enseignante Principale de Mathématiques & Sciences"
+  name: string;
+  title: string;
   school: string;
   avatarUrl: string;
   coursesCount: number;
   exercisesCount: number;
   studentsCount: number;
+  totalUploads?: number;
+  downloadableExercisesCount?: number;
   rating: number;
   reviewsCount: number;
   verifiedBadge: boolean;
   subjects: SubjectName[];
   bio: string;
+  starRatingBreakdown?: {
+    5: number;
+    4: number;
+    3: number;
+    2: number;
+    1: number;
+  };
 }
 
 export interface StudentProfile {
   id: string;
-  name: string; // e.g. "Ahmed Mansouri"
+  name: string;
   grade: GradeLevel;
   school: string;
   avatarUrl: string;
@@ -138,7 +173,7 @@ export interface StudentProfile {
   completedExercisesCount: number;
   subjectsProgress: {
     subject: SubjectName;
-    score: number; // 0 - 100%
+    score: number;
     color: string;
   }[];
 }
