@@ -21,40 +21,40 @@ import { UserRole } from '../models/education.model';
         <div class="relative z-10 max-w-3xl space-y-6">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold">
             <span>🇹🇳</span>
-            <span>{{ lang.tr('Plateforme Éducative Primaire Tunisienne (1ère — 6ème)', 'المنصة التعليمية للابتدائي التونسي (السنة 1 — 6)') }}</span>
+            <span>{{ lang.t('heroBadge') }}</span>
           </div>
 
           <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-            {{ lang.tr('L\'école tunisienne moderne, connectée et sereine.', 'المدرسة التونسية الحديثة، المتصلة والناجحة.') }}
+            {{ lang.t('heroTitle') }}
           </h1>
 
           <p class="text-sm sm:text-lg text-emerald-100/90 leading-relaxed font-normal">
-            {{ lang.tr(
-              'Fini les devoirs éparpillés sur Facebook et les messages WhatsApp à minuit. Madrasati TN réunit les Enseignants, Parents et Élèves autour des 38 manuels officiels CNP, de devoirs imprimables en A4 et d\'un suivi pédagogique rigoureux.',
-              'وداعاً للواجبات الضائعة في مجموعات الفيسبوك والرسائل العشوائية. تجمع مدرستي تونس المعلمين والأولياء والتلاميذ حول 38 كتاباً مدرسياً رسمياً، وواجبات قابلة للطباعة A4 ومتابعة دراسية دقيقة.'
-            ) }}
+            {{ lang.t('heroSubtitle') }}
           </p>
 
           <!-- Primary Call to Actions -->
           <div class="flex flex-wrap items-center gap-4 pt-3">
             <button
+              type="button"
               (click)="store.openSignupModal('teacher')"
               class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold px-6 py-3.5 rounded-2xl shadow-lg hover:shadow-emerald-500/30 transition-all cursor-pointer text-sm flex items-center gap-2">
               <span class="material-icons text-base">person_add</span>
-              {{ lang.tr('Créer un compte gratuit', 'إنشاء حساب مجاني') }}
+              {{ lang.t('ctaFreeAccount') }}
             </button>
 
             <button
+              type="button"
               (click)="store.openLoginModal()"
               class="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3.5 rounded-2xl border border-white/20 backdrop-blur-md transition-all cursor-pointer text-sm flex items-center gap-2">
               <span class="material-icons text-base">login</span>
-              {{ lang.tr('Se connecter', 'تسجيل الدخول') }}
+              {{ lang.t('ctaLogin') }}
             </button>
 
             <button
+              type="button"
               (click)="enterWorkspace('public')"
               class="text-emerald-200 hover:text-white font-semibold text-xs underline underline-offset-4 cursor-pointer px-2 py-1">
-              {{ lang.tr('Explorer les 38 manuels CNP sans compte →', 'تصفح 38 كتاباً مدرسياً دون حساب ←') }}
+              {{ lang.t('ctaExploreCnp') }}
             </button>
           </div>
 
@@ -84,10 +84,10 @@ import { UserRole } from '../models/education.model';
       <section class="space-y-6">
         <div class="text-center max-w-xl mx-auto space-y-2">
           <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800">
-            {{ lang.tr('Choisissez votre espace dédié', 'اختر فضائك المخصص') }}
+            {{ lang.t('chooseSpaceTitle') }}
           </h2>
           <p class="text-xs sm:text-sm text-slate-500">
-            {{ lang.tr('Chaque utilisateur dispose d\'outils sur-mesure adaptés à ses besoins scolaires', 'أدوات مصممة خصيصاً لكل طرف في المنظومة التربوية') }}
+            {{ lang.t('chooseSpaceSub') }}
           </p>
         </div>
 
@@ -102,14 +102,11 @@ import { UserRole } from '../models/education.model';
               <div>
                 <span class="text-[11px] font-bold text-emerald-700 uppercase tracking-wider">Espace Pédagogique</span>
                 <h3 class="text-xl font-bold text-slate-900 mt-0.5">
-                  {{ lang.tr('Pour les Enseignants', 'للمعلمين والمعلمات') }}
+                  {{ lang.t('teacherSpaceTitle') }}
                 </h3>
               </div>
               <p class="text-xs text-slate-600 leading-relaxed">
-                {{ lang.tr(
-                  'Publiez cours, devoirs et annonces officielles. Générez des feuilles d\'exercices conformes avec filigrane et partagez-les en un clic sur WhatsApp.',
-                  'نشر الدروس والواجبات المدرسية مع الطباعة الرسمية ومشاركتها في ثوان عبر الواتساب مع الأولياء.'
-                ) }}
+                {{ lang.t('teacherSpaceDesc') }}
               </p>
               <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                 <li class="flex items-center gap-2">
@@ -129,15 +126,17 @@ import { UserRole } from '../models/education.model';
 
             <div class="pt-6 space-y-2">
               <button
+                type="button"
                 (click)="enterWorkspace('teacher')"
                 class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-2xl text-xs transition-colors cursor-pointer flex items-center justify-center gap-1.5 shadow-xs">
-                <span>{{ lang.tr('Ouvrir l\'Espace Enseignant', 'دخول فضاء المعلم') }}</span>
+                <span>{{ lang.t('teacherOpenBtn') }}</span>
                 <span class="material-icons text-xs">arrow_forward</span>
               </button>
               <button
+                type="button"
                 (click)="store.openSignupModal('teacher')"
                 class="w-full bg-slate-50 hover:bg-slate-100 text-slate-700 font-semibold py-2.5 rounded-2xl text-xs transition-colors cursor-pointer border border-slate-200">
-                {{ lang.tr('S\'inscrire comme Enseignant', 'التسجيل كمعلم(ة)') }}
+                {{ lang.t('teacherSignupBtn') }}
               </button>
             </div>
           </div>
@@ -151,14 +150,11 @@ import { UserRole } from '../models/education.model';
               <div>
                 <span class="text-[11px] font-bold text-indigo-700 uppercase tracking-wider">Suivi Familial</span>
                 <h3 class="text-xl font-bold text-slate-900 mt-0.5">
-                  {{ lang.tr('Pour les Parents', 'للأولياء') }}
+                  {{ lang.t('parentSpaceTitle') }}
                 </h3>
               </div>
               <p class="text-xs text-slate-600 leading-relaxed">
-                {{ lang.tr(
-                  'Suivez en temps réel le travail scolaire de vos enfants. Consultez les dates d\'examens, communiquez directement avec les enseignants et accusez réception.',
-                  'متابعة دراسية دقيقة وفورية لأبنائك، جدول الامتحانات والتواصل المباشر والمنظم مع الإطار التربوي.'
-                ) }}
+                {{ lang.t('parentSpaceDesc') }}
               </p>
               <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                 <li class="flex items-center gap-2">
@@ -178,15 +174,17 @@ import { UserRole } from '../models/education.model';
 
             <div class="pt-6 space-y-2">
               <button
+                type="button"
                 (click)="enterWorkspace('parent')"
                 class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-2xl text-xs transition-colors cursor-pointer flex items-center justify-center gap-1.5 shadow-xs">
-                <span>{{ lang.tr('Ouvrir l\'Espace Parent', 'دخول فضاء الولي') }}</span>
+                <span>{{ lang.t('parentOpenBtn') }}</span>
                 <span class="material-icons text-xs">arrow_forward</span>
               </button>
               <button
+                type="button"
                 (click)="store.openSignupModal('parent')"
                 class="w-full bg-slate-50 hover:bg-slate-100 text-slate-700 font-semibold py-2.5 rounded-2xl text-xs transition-colors cursor-pointer border border-slate-200">
-                {{ lang.tr('S\'inscrire comme Parent', 'التسجيل كولي أمر') }}
+                {{ lang.t('parentSignupBtn') }}
               </button>
             </div>
           </div>
@@ -200,14 +198,11 @@ import { UserRole } from '../models/education.model';
               <div>
                 <span class="text-[11px] font-bold text-amber-700 uppercase tracking-wider">Réussite Scolaire</span>
                 <h3 class="text-xl font-bold text-slate-900 mt-0.5">
-                  {{ lang.tr('Pour les Élèves', 'للتلاميذ') }}
+                  {{ lang.t('studentSpaceTitle') }}
                 </h3>
               </div>
               <p class="text-xs text-slate-600 leading-relaxed">
-                {{ lang.tr(
-                  'Fais tes devoirs sereinement, prends en photo ton cahier d\'exercices et reçois les corrections. Consulte tous tes manuels scolaires officiels CNP en ligne.',
-                  'حل واجباتك، أرفق صورة من كراسك وتصفح جميع كتبك المدرسية الرسمية للمرحلة الابتدائية.'
-                ) }}
+                {{ lang.t('studentSpaceDesc') }}
               </p>
               <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                 <li class="flex items-center gap-2">
@@ -227,15 +222,17 @@ import { UserRole } from '../models/education.model';
 
             <div class="pt-6 space-y-2">
               <button
+                type="button"
                 (click)="enterWorkspace('student')"
                 class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 rounded-2xl text-xs transition-colors cursor-pointer flex items-center justify-center gap-1.5 shadow-xs">
-                <span>{{ lang.tr('Ouvrir l\'Espace Élève', 'دخول فضاء التلميذ') }}</span>
+                <span>{{ lang.t('studentOpenBtn') }}</span>
                 <span class="material-icons text-xs">arrow_forward</span>
               </button>
               <button
+                type="button"
                 (click)="store.openSignupModal('student')"
                 class="w-full bg-slate-50 hover:bg-slate-100 text-slate-700 font-semibold py-2.5 rounded-2xl text-xs transition-colors cursor-pointer border border-slate-200">
-                {{ lang.tr('S\'inscrire comme Élève', 'التسجيل كتلميذ') }}
+                {{ lang.t('studentSignupBtn') }}
               </button>
             </div>
           </div>
@@ -248,24 +245,22 @@ import { UserRole } from '../models/education.model';
         <div class="space-y-2 max-w-xl">
           <div class="inline-flex items-center gap-2 bg-teal-800/80 px-3 py-1 rounded-full text-xs font-semibold text-teal-200">
             <span>📚</span>
-            <span>{{ lang.tr('Centre National Pédagogique (CNP) Tunisie', 'المركز الوطني البيداغوجي بتونس') }}</span>
+            <span>{{ lang.t('cnpBannerBadge') }}</span>
           </div>
           <h3 class="text-2xl font-bold">
-            {{ lang.tr('38 Manuels Scolaires Officiels Numérisés', '38 كتاباً مدرسياً رسمياً متاحاً للتحميل') }}
+            {{ lang.t('cnpBannerTitle') }}
           </h3>
           <p class="text-xs text-teal-100/80 leading-relaxed">
-            {{ lang.tr(
-              'Tous les livres d\'élèves de la 1ère à la 6ème année primaire (Mathématiques, Arabe, Français, Éveil Scientifique, etc.) accessibles en haute définition.',
-              'جميع كتب التلميذ من السنة الأولى إلى السادسة أساسي في جميع المواد متوفرة بدقة عالية ومجاناً.'
-            ) }}
+            {{ lang.t('cnpBannerDesc') }}
           </p>
         </div>
 
         <button
+          type="button"
           (click)="enterWorkspace('public')"
           class="shrink-0 bg-white text-teal-950 hover:bg-teal-50 font-extrabold px-6 py-3.5 rounded-2xl text-xs transition-colors cursor-pointer flex items-center gap-2 shadow-lg">
           <span class="material-icons text-teal-700 text-sm">collections_bookmark</span>
-          <span>{{ lang.tr('Ouvrir la Bibliothèque CNP', 'تصفح مكتبة الكتب المدرسية') }}</span>
+          <span>{{ lang.t('cnpBannerBtn') }}</span>
         </button>
       </section>
 

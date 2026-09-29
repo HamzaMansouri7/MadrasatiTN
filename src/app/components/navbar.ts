@@ -42,7 +42,7 @@ import { UserRole } from '../models/education.model';
                 : 'text-slate-600 hover:text-slate-900 font-medium'"
               class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
               <span class="material-icons text-base text-emerald-600">home</span>
-              <span>{{ lang.tr('Accueil', 'الرئيسية') }}</span>
+              <span>{{ lang.t('navHome') }}</span>
             </button>
             <button
               (click)="selectRole('teacher')"
@@ -148,7 +148,7 @@ import { UserRole } from '../models/education.model';
                   type="button"
                   (click)="store.openLoginModal()"
                   class="hidden sm:inline-flex text-slate-700 hover:text-slate-950 font-bold text-xs px-2.5 py-1.5 rounded-xl hover:bg-slate-100 cursor-pointer transition-colors">
-                  {{ lang.tr('Connexion', 'دخول') }}
+                  {{ lang.t('navLogin') }}
                 </button>
 
                 <!-- Signup Button -->
@@ -156,7 +156,7 @@ import { UserRole } from '../models/education.model';
                   type="button"
                   (click)="store.openSignupModal('teacher')"
                   class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-xs cursor-pointer transition-all">
-                  {{ lang.tr('S\'inscrire', 'تسجيل') }}
+                  {{ lang.t('navSignup') }}
                 </button>
 
                 <!-- Google Button -->
@@ -186,7 +186,7 @@ import { UserRole } from '../models/education.model';
             (click)="selectRole('home')"
             [class]="store.currentRole() === 'home' ? 'bg-slate-900 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
             class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-            {{ lang.tr('Accueil', 'الرئيسية') }}
+            {{ lang.t('navHome') }}
           </button>
           <button
             (click)="selectRole('teacher')"

@@ -87,7 +87,7 @@ import { UserRole } from '../models/education.model';
             @if (store.authModalMode() === 'signup') {
               <div>
                 <label class="block text-xs font-bold text-slate-700 mb-2">
-                  {{ lang.tr('S\'inscrire en tant que :', 'التسجيل بصفة:') }} *
+                  {{ lang.t('authSignupAs') }} *
                 </label>
                 <div class="grid grid-cols-3 gap-2">
                   <button
@@ -123,7 +123,7 @@ import { UserRole } from '../models/education.model';
               <div class="space-y-3">
                 <div>
                   <label class="block text-xs font-semibold text-slate-600 mb-1">
-                    {{ store.authModalRole() === 'student' ? lang.tr('Prénom & Nom de l\'élève', 'اسم التلميذ(ة)') : lang.tr('Nom complet', 'الاسم واللقب') }} *
+                    {{ store.authModalRole() === 'student' ? lang.t('authStudentName') : lang.t('authFullName') }} *
                   </label>
                   <input
                     type="text"
@@ -220,7 +220,7 @@ import { UserRole } from '../models/education.model';
               <div class="space-y-3">
                 <div>
                   <label class="block text-xs font-semibold text-slate-600 mb-1">
-                    {{ lang.tr('Adresse Email ou Nom d\'utilisateur', 'البريد الإلكتروني أو اسم المستخدم') }}
+                    {{ lang.t('authEmailOrUser') }}
                   </label>
                   <input
                     type="email"
@@ -288,7 +288,7 @@ import { UserRole } from '../models/education.model';
 
           <!-- Footer note -->
           <div class="p-4 bg-slate-50 border-t border-slate-200 text-center text-[11px] text-slate-500">
-            🇹🇳 {{ lang.tr('100% Conforme au Ministère de l\'Éducation Tunisien', 'مطابق 100% لبرامج وزارة التربية التونسية') }}
+            🇹🇳 {{ lang.t('authMinistryCompliance') }}
           </div>
 
         </div>

@@ -670,7 +670,7 @@ import { Course, ExerciseItem, TeacherProfile } from '../models/education.model'
               (click)="triggerPrintDialog()"
               class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-md">
               <span class="material-icons text-base">print</span>
-              {{ lang.tr('🖨️ Lancer l\'Impression A4 / PDF', '🖨️ طباعة الورقة بصيغة A4') }}
+              {{ lang.t('printBtn') }}
             </button>
           </div>
 

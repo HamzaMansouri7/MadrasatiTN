@@ -99,6 +99,59 @@ export class LanguageService {
     aiTutorTitle: { fr: 'Mon Tuteur Éducatif IA', ar: 'المعلم الذكي المساعد' },
     askAiBtn: { fr: 'M\'expliquer la notion', ar: 'شرح المفهوم وتبسيطه' },
 
+    // Navigation & Auth
+    navHome: { fr: 'Accueil', ar: 'الرئيسية' },
+    navLogin: { fr: 'Connexion', ar: 'دخول' },
+    navSignup: { fr: "S'inscrire", ar: 'تسجيل' },
+    authSignupAs: { fr: "S'inscrire en tant que :", ar: 'التسجيل بصفة:' },
+    authStudentName: { fr: "Prénom & Nom de l'élève", ar: 'اسم التلميذ(ة)' },
+    authFullName: { fr: 'Nom complet', ar: 'الاسم واللقب' },
+    authEmailOrUser: { fr: "Adresse Email ou Nom d'utilisateur", ar: 'البريد الإلكتروني أو اسم المستخدم' },
+    authMinistryCompliance: { fr: "100% Conforme au Ministère de l'Éducation Tunisien", ar: 'مطابق 100% لبرامج وزارة التربية التونسية' },
+    printBtn: { fr: "🖨️ Lancer l'Impression A4 / PDF", ar: '🖨️ طباعة الورقة بصيغة A4' },
+    photoReady: { fr: "Photo prête à l'envoi", ar: 'الصورة جاهزة للإرسال' },
+
+    // Landing Page
+    heroBadge: { fr: 'Plateforme Éducative Primaire Tunisienne (1ère — 6ème)', ar: 'المنصة التعليمية للابتدائي التونسي (السنة 1 — 6)' },
+    heroTitle: { fr: "L'école tunisienne moderne, connectée et sereine.", ar: 'المدرسة التونسية الحديثة، المتصلة والناجحة.' },
+    heroSubtitle: {
+      fr: "Fini les devoirs éparpillés sur Facebook et les messages WhatsApp à minuit. Madrasati TN réunit les Enseignants, Parents et Élèves autour des 38 manuels officiels CNP, de devoirs imprimables en A4 et d'un suivi pédagogique rigoureux.",
+      ar: 'وداعاً للواجبات الضائعة في مجموعات الفيسبوك والرسائل العشوائية. تجمع مدرستي تونس المعلمين والأولياء والتلاميذ حول 38 كتاباً مدرسياً رسمياً، وواجبات قابلة للطباعة A4 ومتابعة دراسية دقيقة.',
+    },
+    ctaFreeAccount: { fr: 'Créer un compte gratuit', ar: 'إنشاء حساب مجاني' },
+    ctaLogin: { fr: 'Se connecter', ar: 'تسجيل الدخول' },
+    ctaExploreCnp: { fr: 'Explorer les 38 manuels CNP sans compte →', ar: 'تصفح 38 كتاباً مدرسياً دون حساب ←' },
+    chooseSpaceTitle: { fr: 'Choisissez votre espace dédié', ar: 'اختر فضائك المخصص' },
+    chooseSpaceSub: { fr: "Chaque utilisateur dispose d'outils sur-mesure adaptés à ses besoins scolaires", ar: 'أدوات مصممة خصيصاً لكل طرف في المنظومة التربوية' },
+    teacherSpaceTitle: { fr: 'Pour les Enseignants', ar: 'للمعلمين والمعلمات' },
+    teacherSpaceDesc: {
+      fr: "Publiez cours, devoirs et annonces officielles. Générez des feuilles d'exercices conformes avec filigrane et partagez-les en un clic sur WhatsApp.",
+      ar: 'نشر الدروس والواجبات المدرسية مع الطباعة الرسمية ومشاركتها في ثوان عبر الواتساب مع الأولياء.',
+    },
+    teacherOpenBtn: { fr: "Ouvrir l'Espace Enseignant", ar: 'دخول فضاء المعلم' },
+    teacherSignupBtn: { fr: "S'inscrire comme Enseignant", ar: 'التسجيل كمعلم(ة)' },
+    parentSpaceTitle: { fr: 'Pour les Parents', ar: 'للأولياء' },
+    parentSpaceDesc: {
+      fr: "Suivez en temps réel le travail scolaire de vos enfants. Consultez les dates d'examens, communiquez directement avec les enseignants et accusez réception.",
+      ar: 'متابعة دراسية دقيقة وفورية لأبنائك، جدول الامتحانات والتواصل المباشر والمنظم مع الإطار التربوي.',
+    },
+    parentOpenBtn: { fr: "Ouvrir l'Espace Parent", ar: 'دخول فضاء الولي' },
+    parentSignupBtn: { fr: "S'inscrire comme Parent", ar: 'التسجيل كولي أمر' },
+    studentSpaceTitle: { fr: 'Pour les Élèves', ar: 'للتلاميذ' },
+    studentSpaceDesc: {
+      fr: "Fais tes devoirs sereinement, prends en photo ton cahier d'exercices et reçois les corrections. Consulte tous tes manuels scolaires officiels CNP en ligne.",
+      ar: 'حل واجباتك، أرفق صورة من كراسك وتصفح جميع كتبك المدرسية الرسمية للمرحلة الابتدائية.',
+    },
+    studentOpenBtn: { fr: "Ouvrir l'Espace Élève", ar: 'دخول فضاء التلميذ' },
+    studentSignupBtn: { fr: "S'inscrire comme Élève", ar: 'التسجيل كتلميذ' },
+    cnpBannerBadge: { fr: 'Centre National Pédagogique (CNP) Tunisie', ar: 'المركز الوطني البيداغوجي بتونس' },
+    cnpBannerTitle: { fr: '38 Manuels Scolaires Officiels Numérisés', ar: '38 كتاباً مدرسياً رسمياً متاحاً للتحميل' },
+    cnpBannerDesc: {
+      fr: "Tous les livres d'élèves de la 1ère à la 6ème année primaire (Mathématiques, Arabe, Français, Éveil Scientifique, etc.) accessibles en haute définition.",
+      ar: 'جميع كتب التلميذ من السنة الأولى إلى السادسة أساسي في جميع المواد متوفرة بدقة عالية ومجاناً.',
+    },
+    cnpBannerBtn: { fr: 'Ouvrir la Bibliothèque CNP', ar: 'تصفح مكتبة الكتب المدرسية' },
+
     // Public Bank View
     publicHeroTitle: {
       fr: 'Stop aux groupes Facebook dispersés. Bienvenue sur la plateforme éducative tunisienne organisée.',

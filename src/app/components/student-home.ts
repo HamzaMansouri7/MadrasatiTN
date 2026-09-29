@@ -285,7 +285,7 @@ export interface TutorExplanation {
                 <img [src]="uploadedPhotoUrl()" alt="Aperçu cahier" class="w-16 h-16 rounded-lg object-cover border border-slate-300 shadow-2xs" />
                 <div class="text-xs">
                   <p class="font-bold text-emerald-800 flex items-center gap-1">
-                    <span class="material-icons text-xs">verified</span> {{ lang.tr('Photo prête à l\'envoi', 'الصورة جاهزة للإرسال') }}
+                    <span class="material-icons text-xs">verified</span> {{ lang.t('photoReady') }}
                   </p>
                   <p class="text-[11px] text-slate-500">Sera transmise directement avec votre devoir</p>
                 </div>
