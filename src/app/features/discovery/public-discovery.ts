@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, Comment } from '@core';
 
 @Component({
@@ -496,7 +497,15 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                   <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                     {{ c.subject }}
                   </span>
-                  <span class="text-[11px] font-semibold text-slate-400">{{ c.grade }}</span>
+                  <div class="flex items-center gap-1.5">
+                    @if (c.pdfUrl) {
+                      <span class="bg-red-100 text-red-700 text-[9px] font-black px-2 py-0.5 rounded-full border border-red-200 flex items-center gap-0.5">
+                        <span class="material-icons text-[10px]">picture_as_pdf</span>
+                        CNP Officiel
+                      </span>
+                    }
+                    <span class="text-[11px] font-semibold text-slate-400">{{ c.grade }}</span>
+                  </div>
                 </div>
 
                 <h3 class="font-bold text-slate-900 text-base leading-snug">{{ c.title }}</h3>
@@ -539,11 +548,22 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                     <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
                   </button>
 
-                  <button
-                    (click)="viewCourseModal.set(c)"
-                    class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-3.5 py-2 rounded-xl cursor-pointer">
-                    {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
-                  </button>
+                  @if (c.pdfUrl) {
+                    <a
+                      [href]="c.pdfUrl"
+                      target="_blank"
+                      rel="noopener"
+                      class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow-xs transition-colors">
+                      <span class="material-icons text-sm">download</span>
+                      {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
+                    </a>
+                  } @else {
+                    <button
+                      (click)="viewCourseModal.set(c)"
+                      class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-3.5 py-2 rounded-xl cursor-pointer">
+                      {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
+                    </button>
+                  }
                 </div>
               </div>
 
@@ -837,24 +857,75 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
     <!-- MODAL: COURSE VIEW -->
     @if (viewCourseModal(); as c) {
       <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 space-y-4 border border-slate-200 shadow-xl max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full p-6 space-y-4 border border-slate-200 shadow-xl max-h-[92vh] overflow-y-auto">
+
+          <!-- Header -->
           <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-            <div>
-              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                {{ c.subject }}
-              </span>
-              <h3 class="font-bold text-slate-900 text-lg mt-1">{{ c.title }}</h3>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">{{ c.subject }}</span>
+                <span class="text-[10px] text-slate-500">{{ c.grade }}</span>
+                @if (c.pdfUrl) {
+                  <span class="bg-red-100 text-red-700 text-[9px] font-black px-2 py-0.5 rounded-full border border-red-200 flex items-center gap-0.5">
+                    <span class="material-icons text-[10px]">picture_as_pdf</span>
+                    Livre Officiel CNP — Ministère de l’Éducation
+                  </span>
+                }
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg mt-1 leading-tight">{{ c.title }}</h3>
             </div>
-            <button (click)="viewCourseModal.set(null)" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="viewCourseModal.set(null)" class="text-slate-400 hover:text-slate-600 cursor-pointer ml-4 shrink-0">
               <span class="material-icons">close</span>
             </button>
           </div>
 
-          <div class="prose prose-slate max-w-none text-xs leading-relaxed whitespace-pre-line bg-slate-50 p-4 rounded-2xl border border-slate-200 font-sans">
-            {{ c.content }}
-          </div>
+          <!-- PDF Embed for CNP books -->
+          @if (c.pdfUrl) {
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <p class="text-xs text-slate-600 font-semibold">
+                  📚 {{ lang.tr('Livre scolaire officiel du Centre National Pédagogique (CNP)', 'الكتاب المدرسي الرسمي للمركز الوطني البيداغوجي') }}
+                </p>
+                <a
+                  [href]="c.pdfUrl"
+                  target="_blank"
+                  download
+                  class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-2 rounded-xl flex items-center gap-1.5 shadow-xs transition-colors shrink-0">
+                  <span class="material-icons text-sm">download</span>
+                  {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
+                </a>
+              </div>
 
-          <div class="flex justify-between items-center pt-2">
+              <!-- PDF iframe preview -->
+              <div class="relative w-full rounded-2xl overflow-hidden border border-slate-200 bg-slate-100" style="height: 520px;">
+                <iframe
+                  [src]="getSafePdfUrl(c.pdfUrl)"
+                  class="w-full h-full"
+                  style="border: none;"
+                  title="PDF Viewer">
+                </iframe>
+                <!-- Fallback if iframe blocked -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-slate-50 text-center p-6 pointer-events-none" style="display:none">
+                  <span class="material-icons text-5xl text-red-400 mb-2">picture_as_pdf</span>
+                  <p class="text-sm font-bold text-slate-700">{{ lang.tr('Prévisualisation non disponible dans ce navigateur', 'المعاينة غير متاحة') }}</p>
+                  <a [href]="c.pdfUrl" target="_blank" class="mt-3 bg-red-600 text-white font-bold text-xs px-4 py-2 rounded-xl pointer-events-auto">
+                    {{ lang.tr('Ouvrir dans un nouvel onglet', 'فتح في تبويب جديد') }}
+                  </a>
+                </div>
+              </div>
+
+              <p class="text-[10px] text-slate-400 text-center">
+                {{ lang.tr('Document officiel — Droits réservés à la République Tunisienne — Ministère de l’Éducation', 'وثيقة رسمية — جميع الحقوق محفوظة لوزارة التربية التونسية') }}
+              </p>
+            </div>
+          } @else {
+            <!-- Text content for teacher-created courses -->
+            <div class="prose prose-slate max-w-none text-xs leading-relaxed whitespace-pre-line bg-slate-50 p-4 rounded-2xl border border-slate-200 font-sans">
+              {{ c.content }}
+            </div>
+          }
+
+          <div class="flex justify-between items-center pt-2 border-t border-slate-100">
             <span class="text-xs text-slate-500">{{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}</span>
             <button (click)="viewCourseModal.set(null)" class="bg-slate-900 text-white font-bold text-xs px-4 py-2 rounded-xl cursor-pointer">
               {{ lang.tr('Fermer', 'إغلاق') }}
@@ -1053,6 +1124,11 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
 export class PublicDiscoveryComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  private readonly sanitizer = inject(DomSanitizer);
+
+  getSafePdfUrl(url: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
 
   readonly activeSection = signal<'exercises' | 'courses' | 'teachers' | 'watchlist'>('exercises');
   readonly openSolutionIds = signal<Set<string>>(new Set());
