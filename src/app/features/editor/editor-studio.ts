@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, GradeLevel, SubjectName } from '@core';
-import { EditorBlock, EditorBlockType, CalloutVariant, DocumentType, StudioDocument } from './editor.model';
+import { EditorBlock, EditorBlockType, DocumentType } from './editor.model';
 
 @Component({
   selector: 'app-editor-studio',
@@ -193,6 +193,28 @@ import { EditorBlock, EditorBlockType, CalloutVariant, DocumentType, StudioDocum
               class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#007CC2] font-semibold outline-none" />
           </div>
         </div>
+
+        <!-- Quick Templates -->
+        <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-[#E3ECF2] dark:border-[#1A3145]">
+          <span class="text-[11px] font-semibold text-[#627D98] dark:text-[#8CA9C4]">
+            {{ lang.tr('Modèles rapides :', 'قوالب جاهزة :') }}
+          </span>
+          <button
+            (click)="loadTemplatePreset('exam_full')"
+            class="bg-[#E8F5FC] dark:bg-[#102A43] hover:bg-[#D7E7F2] text-[#007CC2] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
+            {{ lang.tr('Examen complet', 'امتحان كامل') }}
+          </button>
+          <button
+            (click)="loadTemplatePreset('course_summary')"
+            class="bg-[#E8F6EF] dark:bg-[#153B2D] hover:bg-[#D0EFE2] text-[#23845B] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
+            {{ lang.tr('Fiche de cours', 'ملخص درس') }}
+          </button>
+          <button
+            (click)="loadTemplatePreset('exercise_sheet')"
+            class="bg-[#FFF4D8] dark:bg-[#3D2E10] hover:bg-[#FFE8B2] text-[#9E6A00] dark:text-[#E0AA32] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
+            {{ lang.tr("Série d'exercices", 'سلسلة تمارين') }}
+          </button>
+        </div>
       </div>
 
       <!-- Studio Work Area -->
@@ -217,10 +239,24 @@ import { EditorBlock, EditorBlockType, CalloutVariant, DocumentType, StudioDocum
               </button>
 
               <button
+                (click)="addBlock('heading1')"
+                class="bg-[#F7F9FB] dark:bg-[#152737] hover:bg-[#E3ECF2] dark:hover:bg-[#1E364B] text-[#102A43] dark:text-white px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-medium transition-colors cursor-pointer">
+                <span class="material-icons text-xs">title</span>
+                {{ lang.tr('Titre H1', 'عنوان رئيسي') }}
+              </button>
+
+              <button
                 (click)="addBlock('heading2')"
                 class="bg-[#F7F9FB] dark:bg-[#152737] hover:bg-[#E3ECF2] dark:hover:bg-[#1E364B] text-[#102A43] dark:text-white px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-medium transition-colors cursor-pointer">
                 <span class="material-icons text-xs">title</span>
                 {{ lang.tr('Titre H2', 'عنوان فرعي') }}
+              </button>
+
+              <button
+                (click)="addBlock('divider')"
+                class="bg-[#F7F9FB] dark:bg-[#152737] hover:bg-[#E3ECF2] dark:hover:bg-[#1E364B] text-[#102A43] dark:text-white px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-medium transition-colors cursor-pointer">
+                <span class="material-icons text-xs">horizontal_rule</span>
+                {{ lang.tr('Séparateur', 'فاصل') }}
               </button>
 
               <button
@@ -463,10 +499,13 @@ import { EditorBlock, EditorBlockType, CalloutVariant, DocumentType, StudioDocum
                               <input
                                 type="file"
                                 (change)="handleBlockImageUpload(block.id, $event)"
-                                accept="image/*"
+                                accept="image/png,image/jpeg,image/webp"
                                 class="hidden" />
                             </label>
                           </div>
+                          @if (imageUploadError()) {
+                            <p class="text-[11px] text-[#D64545] font-semibold mt-2 text-center">{{ imageUploadError() }}</p>
+                          }
                         }
 
                         <input
@@ -540,6 +579,9 @@ import { EditorBlock, EditorBlockType, CalloutVariant, DocumentType, StudioDocum
                     <div class="text-center font-bold">
                       <p class="font-display text-lg text-[#007CC2] font-semibold">{{ docTitle() || 'Évaluation & Devoir' }}</p>
                       <p class="text-xs text-[#486581]">{{ docGrade() }} • {{ docSubject() }}</p>
+                      @if (totalExamPoints() > 0) {
+                        <p class="text-[11px] font-bold text-[#23845B] mt-0.5">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</p>
+                      }
                     </div>
 
                     <div class="text-right text-xs text-[#334E68] leading-tight">
@@ -562,7 +604,12 @@ import { EditorBlock, EditorBlockType, CalloutVariant, DocumentType, StudioDocum
                     <h2 class="font-display font-bold text-lg text-[#102A43]">{{ docTitle() || 'Document Pédagogique' }}</h2>
                     <p class="text-[#627D98]">{{ docSubject() }} — {{ docGrade() }}</p>
                   </div>
-                  <span class="text-[11px] text-[#627D98]">{{ docTrimester() }}</span>
+                  <div class="text-right">
+                    <span class="text-[11px] text-[#627D98] block">{{ docTrimester() }}</span>
+                    @if (totalExamPoints() > 0) {
+                      <span class="text-[11px] font-bold text-[#23845B]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
+                    }
+                  </div>
                 </div>
               }
 
@@ -744,6 +791,10 @@ export class EditorStudioComponent {
   readonly aiModalOpen = signal<boolean>(false);
   readonly isAiLoading = signal<boolean>(false);
   readonly aiPromptQuery = signal<string>('');
+  readonly imageUploadError = signal<string>('');
+
+  private readonly MAX_IMAGE_BYTES = 15 * 1024 * 1024;
+  private readonly ALLOWED_IMAGE_TYPES = new Set(['image/png', 'image/jpeg', 'image/webp']);
 
   // Document Metadata
   readonly docTitle = signal<string>('Évaluation de Mathématiques — Trimestre 1');
@@ -752,8 +803,15 @@ export class EditorStudioComponent {
   readonly docGrade = signal<GradeLevel>('4ème Année');
   readonly docTrimester = signal<'Trimestre 1' | 'Trimestre 2' | 'Trimestre 3'>('Trimestre 1');
   readonly docSchoolYear = signal<string>('2025-2026');
-  readonly docSchool = signal<string>('École Primaire Habib Bourguiba, Ariana');
+  readonly docSchool = signal<string>('École Primaire Habib Bourguiba');
   readonly docWatermark = signal<string>('Madrasati TN — Document Certifié');
+
+  // Computed live exam points sum
+  readonly totalExamPoints = computed(() => {
+    return this.blocks()
+      .filter((b) => b.type === 'exercise')
+      .reduce((sum, b) => sum + (b.exercisePoints || 0), 0);
+  });
 
   // Blocks
   readonly blocks = signal<EditorBlock[]>([
@@ -771,7 +829,7 @@ export class EditorStudioComponent {
       id: 'b-ex1',
       type: 'exercise',
       exerciseTitle: 'Exercice N°1 : Calcul posé',
-      exercisePoints: 6,
+      exercisePoints: 8,
       content: 'Pose et effectue les opérations suivantes :\na) 4 825 + 3 947 = ............\nb) 9 000 - 4 382 = ............\nc) 348 × 26 = ............',
       exerciseSolution: 'a) 8 772\nb) 4 618\nc) 9 048',
       showSolution: false,
@@ -790,13 +848,108 @@ export class EditorStudioComponent {
     {
       id: 'b-ex2',
       type: 'exercise',
-      exerciseTitle: 'Exercice N°2 : Problème à étapes',
-      exercisePoints: 8,
-      content: "Un directeur d'école achète 15 cartons contenant chacun 24 cahiers pour ses élèves.\n1. Calcule le nombre total de cahiers achetés.\n2. Si chaque cahier coûte 2 dinars 500 millimes, calcule le montant total de la dépense.",
-      exerciseSolution: '1. 15 × 24 = 360 cahiers\n2. 360 × 2,500 = 900 DT',
+      exerciseTitle: 'Exercice N°2 : Situation Problème',
+      exercisePoints: 12,
+      content: 'Un agriculteur récolte 1 450 kg d\'olives le matin et 980 kg l\'après-midi.\n1) Calcule la masse totale d\'olives récoltées.\n2) Il vend les olives à 3 dinars le kg. Quel est le montant total de la vente ?',
+      exerciseSolution: '1) 1 450 + 980 = 2 430 kg\n2) 2 430 × 3 = 7 290 DT',
       showSolution: false,
     },
   ]);
+
+  private draftLoaded = false;
+
+  constructor() {
+    this.loadDraft();
+    const user = this.firebase.userProfile() || this.firebase.currentUser();
+    if (user?.displayName) {
+      this.docWatermark.set(`Madrasati TN — Enseignant : ${user.displayName}`);
+    }
+    this.draftLoaded = true;
+
+    // Auto-persist any metadata/block change to localStorage.
+    effect(() => {
+      // Track every persisted field so the effect re-runs on any edit.
+      this.docTitle();
+      this.docType();
+      this.docSubject();
+      this.docGrade();
+      this.docTrimester();
+      this.docSchool();
+      this.docWatermark();
+      this.blocks();
+      if (this.draftLoaded) this.saveDraft();
+    });
+  }
+
+  saveDraft() {
+    if (typeof localStorage !== 'undefined') {
+      const draft = {
+        title: this.docTitle(),
+        type: this.docType(),
+        subject: this.docSubject(),
+        grade: this.docGrade(),
+        trimester: this.docTrimester(),
+        school: this.docSchool(),
+        watermark: this.docWatermark(),
+        blocks: this.blocks(),
+      };
+      localStorage.setItem('madrasati_studio_draft', JSON.stringify(draft));
+      this.isAutoSaved.set(true);
+    }
+  }
+
+  loadDraft() {
+    if (typeof localStorage !== 'undefined') {
+      const raw = localStorage.getItem('madrasati_studio_draft');
+      if (raw) {
+        try {
+          const draft = JSON.parse(raw);
+          if (draft.title) this.docTitle.set(draft.title);
+          if (draft.type) this.docType.set(draft.type);
+          if (draft.subject) this.docSubject.set(draft.subject);
+          if (draft.grade) this.docGrade.set(draft.grade);
+          if (draft.trimester) this.docTrimester.set(draft.trimester);
+          if (draft.school) this.docSchool.set(draft.school);
+          if (draft.watermark) this.docWatermark.set(draft.watermark);
+          if (Array.isArray(draft.blocks) && draft.blocks.length > 0) this.blocks.set(draft.blocks);
+        } catch (e) {
+          console.error('Failed to parse draft', e);
+        }
+      }
+    }
+  }
+
+  loadTemplatePreset(type: 'exam_full' | 'course_summary' | 'exercise_sheet') {
+    if (type === 'exam_full') {
+      this.docType.set('exam');
+      this.docTitle.set(`Évaluation Trimestrielle : ${this.docSubject()} (${this.docGrade()})`);
+      this.blocks.set([
+        { id: 'b-' + Date.now() + '-1', type: 'cartouche', content: '' },
+        { id: 'b-' + Date.now() + '-2', type: 'heading1', content: 'I. Connaissances & Application' },
+        { id: 'b-' + Date.now() + '-3', type: 'exercise', exerciseTitle: 'Exercice 1', exercisePoints: 8, content: 'Consigne et énoncé du premier exercice...', exerciseSolution: 'Corrigé type de l\'exercice 1...', showSolution: false },
+        { id: 'b-' + Date.now() + '-4', type: 'heading1', content: 'II. Raisonnement & Résolution de Problème' },
+        { id: 'b-' + Date.now() + '-5', type: 'exercise', exerciseTitle: 'Exercice 2 (Situation Problème)', exercisePoints: 12, content: 'Texte du problème avec mise en situation...', exerciseSolution: 'Solution détaillée et étapes de calcul...', showSolution: false },
+      ]);
+    } else if (type === 'course_summary') {
+      this.docType.set('course');
+      this.docTitle.set(`Fiche de Synthèse : ${this.docSubject()} (${this.docGrade()})`);
+      this.blocks.set([
+        { id: 'b-' + Date.now() + '-1', type: 'heading1', content: 'Objectifs d\'apprentissage' },
+        { id: 'b-' + Date.now() + '-2', type: 'paragraph', content: 'Ce résumé regroupe les notions clés et les règles essentielles du programme officiel.' },
+        { id: 'b-' + Date.now() + '-3', type: 'callout', calloutTitle: 'Règle Fondamentale', content: 'Définition ou formule à retenir par cœur.' },
+        { id: 'b-' + Date.now() + '-4', type: 'exercise', exerciseTitle: 'Exemple d\'Application', exercisePoints: 5, content: 'Application directe de la règle...', exerciseSolution: 'Corrigé explicatif...', showSolution: true },
+      ]);
+    } else if (type === 'exercise_sheet') {
+      this.docType.set('exercise_sheet');
+      this.docTitle.set(`Série d'Entraînement : ${this.docSubject()} (${this.docGrade()})`);
+      this.blocks.set([
+        { id: 'b-' + Date.now() + '-1', type: 'heading1', content: 'Série d\'Exercices Pratiques' },
+        { id: 'b-' + Date.now() + '-2', type: 'exercise', exerciseTitle: 'Exercice 1 : Entraînement de base', exercisePoints: 10, content: 'Exercices d\'assimilation rapide...', showSolution: false },
+        { id: 'b-' + Date.now() + '-3', type: 'exercise', exerciseTitle: 'Exercice 2 : Approfondissement', exercisePoints: 10, content: 'Questions d\'analyse et de réflexion...', showSolution: false },
+      ]);
+    }
+    this.saveDraft();
+  }
 
   readonly hasCartoucheBlock = computed(() => {
     return this.blocks().some((b) => b.type === 'cartouche');
@@ -828,11 +981,12 @@ export class EditorStudioComponent {
   }
 
   addBlock(type: EditorBlockType) {
+    const exerciseCount = this.blocks().filter((b) => b.type === 'exercise').length;
     const newBlock: EditorBlock = {
       id: 'b-' + Date.now(),
       type,
       content: '',
-      exerciseTitle: type === 'exercise' ? 'Exercice N°' + (this.blocks().length + 1) : undefined,
+      exerciseTitle: type === 'exercise' ? 'Exercice N°' + (exerciseCount + 1) : undefined,
       exercisePoints: type === 'exercise' ? 5 : undefined,
       calloutTitle: type === 'callout' ? 'Conseil Pédagogique' : undefined,
     };
@@ -845,7 +999,7 @@ export class EditorStudioComponent {
     );
   }
 
-  updateBlockField(id: string, field: string, value: any) {
+  updateBlockField(id: string, field: keyof EditorBlock, value: string | number | boolean) {
     this.blocks.update((list) =>
       list.map((b) => (b.id === id ? { ...b, [field]: value } : b))
     );
@@ -913,7 +1067,7 @@ export class EditorStudioComponent {
   }
 
   onDocTrimesterChange(e: Event) {
-    this.docTrimester.set((e.target as HTMLSelectElement).value as any);
+    this.docTrimester.set((e.target as HTMLSelectElement).value as 'Trimestre 1' | 'Trimestre 2' | 'Trimestre 3');
   }
 
   onDocSchoolInput(e: Event) {
@@ -928,11 +1082,24 @@ export class EditorStudioComponent {
     const input = event.target as HTMLInputElement;
     if (!input.files || input.files.length === 0) return;
     const file = input.files[0];
+    this.imageUploadError.set('');
+
+    if (!this.ALLOWED_IMAGE_TYPES.has(file.type)) {
+      this.imageUploadError.set(this.lang.tr('Format non autorisé (PNG, JPG, WEBP).', 'صيغة غير مدعومة (PNG, JPG, WEBP).'));
+      input.value = '';
+      return;
+    }
+    if (file.size > this.MAX_IMAGE_BYTES) {
+      this.imageUploadError.set(this.lang.tr('Image trop volumineuse (limite 15 Mo).', 'الصورة كبيرة جداً (الحد 15 ميغا).'));
+      input.value = '';
+      return;
+    }
 
     try {
       const reader = new FileReader();
-      const base64Promise = new Promise<string>((resolve) => {
+      const base64Promise = new Promise<string>((resolve, reject) => {
         reader.onload = () => resolve(reader.result as string);
+        reader.onerror = () => reject(reader.error);
         reader.readAsDataURL(file);
       });
       const base64Data = await base64Promise;
@@ -949,9 +1116,14 @@ export class EditorStudioComponent {
       const data = await res.json();
       if (data.success && data.url) {
         this.updateBlockField(blockId, 'imageUrl', data.url);
+      } else {
+        this.imageUploadError.set(data.error || this.lang.tr('Échec du téléversement.', 'فشل الرفع.'));
       }
     } catch (err) {
       console.error('Upload failed:', err);
+      this.imageUploadError.set(this.lang.tr('Échec du téléversement. Réessayez.', 'فشل الرفع. حاول مجدداً.'));
+    } finally {
+      input.value = '';
     }
   }
 
@@ -970,29 +1142,55 @@ export class EditorStudioComponent {
     if (!prompt) return;
     this.isAiLoading.set(true);
 
+    // Prose documents (blog / course / summary) draft a heading + paragraph;
+    // exams and exercise sheets generate a graded exercise block.
+    const isProse = this.docType() === 'article' || this.docType() === 'course' || this.docType() === 'summary';
+
     try {
-      const res = await fetch('/api/ai/generate-exercise', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          grade: this.docGrade(),
-          subject: this.docSubject(),
-          topic: prompt,
-          difficulty: 'Moyen',
-        }),
-      });
-      const data = await res.json();
-      if (data.success && data.exercise) {
-        const generated = data.exercise;
-        this.addBlock('exercise');
-        const lastIdx = this.blocks().length - 1;
-        const lastBlock = this.blocks()[lastIdx];
-        this.updateBlockField(lastBlock.id, 'exerciseTitle', generated.title);
-        this.updateBlockContent(lastBlock.id, generated.promptText);
-        this.updateBlockField(lastBlock.id, 'exerciseSolution', generated.solutionText);
-        this.updateBlockField(lastBlock.id, 'exercisePoints', generated.points || 5);
-        this.aiModalOpen.set(false);
-        this.aiPromptQuery.set('');
+      if (isProse) {
+        const res = await fetch('/api/ai/draft-announcement', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            purpose: prompt,
+            details: `${this.docSubject()} - ${this.docGrade()}`,
+            targetAudience: `${this.docGrade()} — parents et élèves`,
+          }),
+        });
+        const data = await res.json();
+        if (data.success && data.result) {
+          this.addBlock('heading1');
+          const heading = this.blocks()[this.blocks().length - 1];
+          this.updateBlockContent(heading.id, data.result.title || prompt);
+          this.addBlock('paragraph');
+          const para = this.blocks()[this.blocks().length - 1];
+          this.updateBlockContent(para.id, data.result.content || '');
+          this.aiModalOpen.set(false);
+          this.aiPromptQuery.set('');
+        }
+      } else {
+        const res = await fetch('/api/ai/generate-exercise', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            grade: this.docGrade(),
+            subject: this.docSubject(),
+            topic: prompt,
+            difficulty: 'Moyen',
+          }),
+        });
+        const data = await res.json();
+        if (data.success && data.exercise) {
+          const generated = data.exercise;
+          this.addBlock('exercise');
+          const lastBlock = this.blocks()[this.blocks().length - 1];
+          this.updateBlockField(lastBlock.id, 'exerciseTitle', generated.title);
+          this.updateBlockContent(lastBlock.id, generated.promptText);
+          this.updateBlockField(lastBlock.id, 'exerciseSolution', generated.solutionText);
+          this.updateBlockField(lastBlock.id, 'exercisePoints', generated.points || 5);
+          this.aiModalOpen.set(false);
+          this.aiPromptQuery.set('');
+        }
       }
     } catch (err) {
       console.error('AI generation error:', err);
@@ -1033,7 +1231,7 @@ export class EditorStudioComponent {
     this.firebase.addNotification({
       type: 'new_doc',
       title: `Nouveau document : ${this.docTitle()}`,
-      message: `${this.docSubject()} (${this.docGrade()}) - Prêt pour impression A4 et partage WhatsApp.`,
+      message: `${this.docSubject()} (${this.docGrade()}) - Prêt pour impression A4 et téléchargement.`,
       linkRole: 'parent',
       icon: 'menu_book',
     });
