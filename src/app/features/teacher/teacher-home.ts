@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, BlogPost, QuestionThread } from '@core';
+import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, BlogPost, QuestionThread } from '@core';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -627,87 +627,17 @@ export interface GeneratedExerciseResult {
           </div>
 
           <div class="space-y-3 text-xs">
-            <div>
-              <label for="course-title" class="block font-semibold text-[#102A43] dark:text-white mb-1">
-                {{ lang.tr('Titre du document', 'عنوان الوثيقة') }} *
-              </label>
-              <input
-                id="course-title"
-                type="text"
-                [value]="newCourseTitle()"
-                (input)="newCourseTitle.set($any($event.target).value)"
-                placeholder="Ex: Évaluation N°1 : Les 4 Opérations"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
-            </div>
-
-            <div class="grid grid-cols-2 gap-3">
-              <div>
-                <label for="course-subj" class="block font-semibold text-[#102A43] dark:text-white mb-1">
-                  {{ lang.tr('Matière', 'المادة') }}
-                </label>
-                <select
-                  id="course-subj"
-                  [value]="newCourseSubject()"
-                  (change)="newCourseSubject.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
-                  <option value="Mathématiques">Mathématiques / الرياضيات</option>
-                  <option value="Français">Français / الفرنسية</option>
-                  <option value="اللغة العربية">اللغة العربية</option>
-                  <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ العلمي</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="course-grade" class="block font-semibold text-[#102A43] dark:text-white mb-1">
-                  {{ lang.tr('Niveau', 'المستوى') }}
-                </label>
-                <select
-                  id="course-grade"
-                  [value]="newCourseGrade()"
-                  (change)="newCourseGrade.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
-                  <option value="1ère Année">1ère Année / السنة الأولى</option>
-                  <option value="2ème Année">2ème Année / السنة الثانية</option>
-                  <option value="3ème Année">3ème Année / السنة الثالثة</option>
-                  <option value="4ème Année">4ème Année / السنة الرابعة</option>
-                  <option value="5ème Année">5ème Année / السنة الخامسة</option>
-                  <option value="6ème Année">6ème Année / السنة السادسة</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="course-summary" class="block font-semibold text-[#102A43] dark:text-white mb-1">
-                {{ lang.tr('Résumé / Description rapide', 'ملخص أو وصف موجز') }}
-              </label>
-              <input
-                id="course-summary"
-                type="text"
-                [value]="newCourseSummary()"
-                (input)="newCourseSummary.set($any($event.target).value)"
-                placeholder="Ex: Fiche d'exercices d'entraînement pour le contrôle..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
-            </div>
-
-            <div>
-              <label for="course-content" class="block font-semibold text-[#102A43] dark:text-white mb-1">
-                {{ lang.tr('Contenu A4 imprimable', 'المحتوى القابل للطباعة A4') }}
-              </label>
-              <textarea
-                id="course-content"
-                [value]="newCourseContent()"
-                (input)="newCourseContent.set($any($event.target).value)"
-                rows="4"
-                placeholder="Rédigez ou collez le texte du cours / examen ici..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none font-mono text-[11px]"></textarea>
-            </div>
-
-            <!-- VPS Direct Upload -->
-            <div class="border-2 border-dashed border-[#E3ECF2] dark:border-[#1A3145] rounded-[14px] p-3 text-center bg-[#F7F9FB] dark:bg-[#152737]">
+            <!-- VPS Direct Upload & AI Multimodal Scanner Zone -->
+            <div class="border-2 border-dashed border-[#007CC2]/40 rounded-[18px] p-4 text-center bg-[#F3FAFD] dark:bg-[#102A43]/40 space-y-2">
               <label for="file-upload" class="cursor-pointer block">
-                <span class="material-icons text-xl text-[#007CC2]">cloud_upload</span>
-                <p class="text-[11px] font-semibold text-[#102A43] dark:text-white">
-                  {{ isUploading() ? lang.tr('Envoi vers le VPS...', 'جاري الرفع إلى الخادم...') : lang.tr('Joindre un fichier PDF / Image (Stockage VPS)', 'إرفاق ملف PDF أو صورة (خادم مجاني)') }}
+                <div class="w-12 h-12 rounded-full bg-[#007CC2]/10 text-[#007CC2] flex items-center justify-center mx-auto mb-2">
+                  <span class="material-icons text-2xl">document_scanner</span>
+                </div>
+                <h4 class="text-xs font-bold text-[#102A43] dark:text-white">
+                  {{ lang.tr('Numériser un devoir / capture d\'écran / PDF', 'مسح ضوئي للامتحان أو الصورة أو PDF') }}
+                </h4>
+                <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">
+                  {{ isAiScanning() ? lang.tr('Analyse OCR & classification par Gemini 2.5 en cours...', 'جاري الفرز والتحليل الذكي بواسطة الذكاء الاصطناعي...') : (isUploading() ? lang.tr('Envoi vers le VPS...', 'جاري الرفع إلى الخادم...') : lang.tr('L\'IA extrait le texte, classifie la matière/niveau et applique votre filigrane officiel', 'يقوم الذكاء الاصطناعي باستخراج النص وتصنيف المادة وتطبيق علامتك المائية')) }}
                 </p>
                 <input
                   id="file-upload"
@@ -716,15 +646,162 @@ export interface GeneratedExerciseResult {
                   class="hidden"
                   accept="application/pdf,image/*" />
               </label>
-              @if (uploadedFileName()) {
-                <span class="text-[10px] text-[#23845B] font-semibold block mt-1">✓ {{ uploadedFileName() }}</span>
+
+              @if (isAiScanning()) {
+                <div class="flex items-center justify-center gap-2 text-xs text-[#007CC2] font-semibold py-1 animate-pulse">
+                  <span class="material-icons animate-spin text-sm">sync</span>
+                  <span>{{ lang.tr('OCR & Classification intelligente...', 'معالجة ضوئية وفهرسة...') }}</span>
+                </div>
               }
+
+              @if (aiDetectedBadge()) {
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold border border-emerald-500/20">
+                  <span class="material-icons text-xs">auto_awesome</span>
+                  <span>{{ aiDetectedBadge() }}</span>
+                </div>
+              }
+
+              @if (uploadedFileName()) {
+                <span class="text-[11px] text-[#23845B] font-semibold block">✓ {{ uploadedFileName() }}</span>
+              }
+            </div>
+
+            <div>
+              <label for="course-title" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                {{ lang.tr('Titre officiel du document', 'العنوان الرسمي للوثيقة') }} *
+              </label>
+              <input
+                id="course-title"
+                type="text"
+                [value]="newCourseTitle()"
+                (input)="newCourseTitle.set($any($event.target).value)"
+                placeholder="Ex: Devoir de Contrôle N°1 : Mathématiques et Géométrie"
+                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none font-semibold" />
+            </div>
+
+            <!-- 4-Facet Strict Classification Matrix to Protect Library -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <div>
+                <label for="course-subj" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                  {{ lang.tr('Matière', 'المادة') }} *
+                </label>
+                <select
+                  id="course-subj"
+                  [value]="newCourseSubject()"
+                  (change)="newCourseSubject.set($any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  <option value="Mathématiques">Mathématiques / الرياضيات</option>
+                  <option value="Français">Français / الفرنسية</option>
+                  <option value="اللغة العربية">اللغة العربية</option>
+                  <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ</option>
+                  <option value="Histoire & Géographie">Histoire & Géo / التاريخ والجغرافيا</option>
+                  <option value="Anglais">Anglais / الإنجليزية</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="course-grade" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                  {{ lang.tr('Niveau', 'المستوى') }} *
+                </label>
+                <select
+                  id="course-grade"
+                  [value]="newCourseGrade()"
+                  (change)="newCourseGrade.set($any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  <option value="1ère Année">1ère Année / السنة الأولى</option>
+                  <option value="2ème Année">2ème Année / السنة الثانية</option>
+                  <option value="3ème Année">3ème Année / السنة الثالثة</option>
+                  <option value="4ème Année">4ème Année / السنة الرابعة</option>
+                  <option value="5ème Année">5ème Année / السنة الخامسة</option>
+                  <option value="6ème Année">6ème Année / السنة السادسة</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="course-trim" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                  {{ lang.tr('Trimestre', 'الثلاثي') }} *
+                </label>
+                <select
+                  id="course-trim"
+                  [value]="newCourseTrimester()"
+                  (change)="newCourseTrimester.set($any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  <option value="Trimestre 1">Trimestre 1 / الثلاثي الأول</option>
+                  <option value="Trimestre 2">Trimestre 2 / الثلاثي الثاني</option>
+                  <option value="Trimestre 3">Trimestre 3 / الثلاثي الثالث</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="course-doctype" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                  {{ lang.tr('Type', 'النوع') }} *
+                </label>
+                <select
+                  id="course-doctype"
+                  [value]="newCourseDocType()"
+                  (change)="newCourseDocType.set($any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  <option value="Devoir de Contrôle">Devoir de Contrôle / مراقبة</option>
+                  <option value="Devoir de Synthèse">Devoir de Synthèse / تأليفي</option>
+                  <option value="Fiche de Révision">Fiche de Révision / تقييم</option>
+                  <option value="Série d'Exercices">Série d'Exercices / تمارين</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="course-summary" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                {{ lang.tr('Résumé pédagogique', 'ملخص تربوي موجز') }}
+              </label>
+              <input
+                id="course-summary"
+                type="text"
+                [value]="newCourseSummary()"
+                (input)="newCourseSummary.set($any($event.target).value)"
+                placeholder="Ex: Fiche d'exercices et problèmes d'évaluation pour le 1er trimestre."
+                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <label for="course-content" class="block font-semibold text-[#102A43] dark:text-white">
+                  {{ lang.tr('Contenu A4 imprimable & transcrit par OCR', 'المحتوى المستخرج القابل للطباعة A4') }}
+                </label>
+                <span class="text-[10px] text-[#829AB1]">
+                  {{ lang.tr('Format Markdown supporté', 'يدعم التنسيق المتقدم') }}
+                </span>
+              </div>
+              <textarea
+                id="course-content"
+                [value]="newCourseContent()"
+                (input)="newCourseContent.set($any($event.target).value)"
+                rows="5"
+                placeholder="Rédigez ou laissez l'IA transcrire automatiquement les exercices depuis votre photo..."
+                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none font-mono text-[11px] leading-relaxed"></textarea>
+            </div>
+
+            <!-- Identity Attribution & Watermark Badge Preview -->
+            <div class="p-3 bg-[#E8F5FC]/80 dark:bg-[#102A43]/50 border border-[#007CC2]/20 rounded-[12px] flex items-center justify-between gap-3 text-xs">
+              <div class="flex items-center gap-2">
+                <span class="material-icons text-base text-[#007CC2]">verified_user</span>
+                <div>
+                  <p class="font-bold text-[#102A43] dark:text-white">
+                    {{ getTeacherName() }}
+                  </p>
+                  <p class="text-[10px] text-[#486581] dark:text-[#8CA9C4]">
+                    {{ getTeacherSchool() }} • {{ lang.tr('Filigrane officiel appliqué automatiquement', 'العلامة المائية تطبق تلقائياً') }}
+                  </p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#007CC2] text-white">
+                A4 Impress
+              </span>
             </div>
 
             <button
               (click)="submitCourse()"
               class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
-              {{ lang.tr('Publier le Document A4', 'نشر الوثيقة وتثبيتها') }}
+              {{ lang.tr('Publier le Document A4 Certifié', 'نشر وتوثيق الوثيقة الرسمية') }}
             </button>
           </div>
         </div>
@@ -1193,11 +1270,22 @@ export class TeacherHomeComponent {
   readonly newCourseSubject = signal<SubjectName>('Mathématiques');
   readonly newCourseGrade = signal<GradeLevel>('4ème Année');
   readonly newCourseTrimester = signal('Trimestre 1');
+  readonly newCourseDocType = signal<DocType>('Devoir de Contrôle');
   readonly newCourseSummary = signal('');
   readonly newCourseContent = signal('');
   readonly uploadedFileUrl = signal<string | null>(null);
   readonly uploadedFileName = signal<string | null>(null);
   readonly isUploading = signal<boolean>(false);
+  readonly isAiScanning = signal<boolean>(false);
+  readonly aiDetectedBadge = signal<string | null>(null);
+
+  getTeacherName(): string {
+    return this.firebase.userProfile()?.displayName || 'Enseignant Certifié';
+  }
+
+  getTeacherSchool(): string {
+    return this.firebase.userProfile()?.school || 'École Primaire Habib Bourguiba, Ariana';
+  }
 
   // Blog Article Form
   readonly newArticleTitle = signal('');
@@ -1233,6 +1321,8 @@ export class TeacherHomeComponent {
     this.modalType.set('none');
     this.uploadedFileUrl.set(null);
     this.uploadedFileName.set(null);
+    this.isAiScanning.set(false);
+    this.aiDetectedBadge.set(null);
   }
 
   getCategoryBadgeClass(category: string): string {
@@ -1289,6 +1379,9 @@ export class TeacherHomeComponent {
     if (!input.files || input.files.length === 0) return;
     const file = input.files[0];
     this.isUploading.set(true);
+    this.isAiScanning.set(true);
+    this.aiDetectedBadge.set(null);
+
     try {
       const reader = new FileReader();
       const base64Promise = new Promise<string>((resolve) => {
@@ -1297,6 +1390,7 @@ export class TeacherHomeComponent {
       });
       const base64Data = await base64Promise;
 
+      // 1. Direct VPS disk storage
       const res = await fetch('/api/upload', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -1310,36 +1404,75 @@ export class TeacherHomeComponent {
       if (data.success && data.url) {
         this.uploadedFileUrl.set(data.url);
         this.uploadedFileName.set(file.name);
-        if (!this.newCourseTitle()) {
-          this.newCourseTitle.set(file.name.replace(/\.[^/.]+$/, ''));
-        }
+      }
+
+      // 2. Multimodal OCR & Classification by Gemini 2.5 Flash
+      const tagRes = await fetch('/api/ai/auto-tag-document', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          documentName: file.name,
+          base64Data: file.type.startsWith('image/') ? base64Data : undefined,
+          contentType: file.type,
+        }),
+      });
+      const tagData = await tagRes.json();
+      if (tagData.success && tagData.tags) {
+        const t = tagData.tags;
+        if (t.suggestedTitle) this.newCourseTitle.set(t.suggestedTitle);
+        if (t.subject) this.newCourseSubject.set(t.subject as SubjectName);
+        if (t.grade) this.newCourseGrade.set(t.grade as GradeLevel);
+        if (t.trimester) this.newCourseTrimester.set(t.trimester);
+        if (t.docType) this.newCourseDocType.set(t.docType as DocType);
+        if (t.summary) this.newCourseSummary.set(t.summary);
+        if (t.extractedContent) this.newCourseContent.set(t.extractedContent);
+
+        this.aiDetectedBadge.set(
+          `${t.grade || '4ème'} • ${t.subject || 'Maths'} • ${t.docType || 'Devoir'}`
+        );
+      } else if (!this.newCourseTitle()) {
+        this.newCourseTitle.set(file.name.replace(/\.[^/.]+$/, ''));
       }
     } catch (err) {
-      console.error('Upload failed:', err);
+      console.error('Upload / AI OCR failed:', err);
+      if (!this.newCourseTitle()) {
+        this.newCourseTitle.set(file.name.replace(/\.[^/.]+$/, ''));
+      }
     } finally {
       this.isUploading.set(false);
+      this.isAiScanning.set(false);
     }
   }
 
   submitCourse() {
     if (!this.newCourseTitle()) return;
+    const teacherName = this.getTeacherName();
+    const school = this.getTeacherSchool();
+    const watermark = `Madrasati TN — Document Certifié — ${teacherName} (${school})`;
+
     this.store.addCourse({
       title: this.newCourseTitle(),
       subject: this.newCourseSubject(),
       grade: this.newCourseGrade(),
       trimester: this.newCourseTrimester() as any,
-      summary: this.newCourseSummary(),
-      content: this.newCourseContent() || 'Document de révision officiel préparé pour la classe.',
+      docType: this.newCourseDocType(),
+      schoolYear: '2025-2026',
+      teacherName,
+      summary: this.newCourseSummary() || `${this.newCourseSubject()} - ${this.newCourseGrade()} - Document conforme au programme tunisien.`,
+      content: this.newCourseContent() || 'Document officiel conforme avec en-tête républicain et cartouche élève.',
       pdfUrl: this.uploadedFileUrl() || undefined,
-      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
+      watermarkText: watermark,
+      hasCorrection: true,
     });
+
     this.firebase.addNotification({
       type: 'new_doc',
       title: `Nouvelle fiche : ${this.newCourseTitle()}`,
-      message: `${this.newCourseSubject()} (${this.newCourseGrade()}) - Ajoutée à la banque de documents.`,
+      message: `${this.newCourseSubject()} (${this.newCourseGrade()}) • ${this.newCourseDocType()} - Publié par ${teacherName}.`,
       linkRole: 'parent',
       icon: 'menu_book',
     });
+
     this.closeModal();
   }
 
