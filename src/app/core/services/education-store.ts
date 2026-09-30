@@ -18,6 +18,7 @@ import {
   GradeLevel,
 } from '../models/education.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
+import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 
 @Injectable({
   providedIn: 'root',
@@ -342,6 +343,7 @@ export class EducationStore {
 
   readonly courses = signal<Course[]>([
     ...CNP_PRIMARY_COURSES,
+    ...LIBRARY_EXERCISES,
     {
       id: 'crs-1',
       title: 'La multiplication des grands nombres (jusqu\'à 999 999)',
@@ -739,7 +741,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
 
   toggleWatchlist(id: string, type: 'course' | 'exercise' | 'teacher') {
     this.watchlist.update((curr) => {
-      let updated = { ...curr };
+      const updated = { ...curr };
       if (type === 'course') {
         const exists = curr.courses.includes(id);
         updated.courses = exists

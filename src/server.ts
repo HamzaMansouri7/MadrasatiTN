@@ -17,6 +17,76 @@ if (!existsSync(uploadsFolder)) {
   mkdirSync(uploadsFolder, { recursive: true });
 }
 
+// 0. Pure Google Identity Token Verification (Zero Vite SSR bundling issues)
+const FIREBASE_API_KEY = process.env['FIREBASE_API_KEY'] || 'AIzaSyDUTwZiE6Wm0w4M5LUu8vB1hS-eN_1K3QY';
+
+export interface VerifiedUser {
+  uid: string;
+  email?: string;
+  displayName?: string;
+}
+
+export interface AuthenticatedRequest extends Request {
+  user?: VerifiedUser;
+}
+
+const verifyGoogleIdToken = async (idToken: string): Promise<VerifiedUser | null> => {
+  try {
+    const res = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${FIREBASE_API_KEY}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ idToken }),
+    });
+    const data = await res.json();
+    if (data.users && data.users.length > 0) {
+      const u = data.users[0];
+      return {
+        uid: u.localId,
+        email: u.email,
+        displayName: u.displayName,
+      };
+    }
+  } catch (err) {
+    console.error('Google token verification error:', err);
+  }
+  return null;
+};
+
+// Server-Side Token Verification Middlewares
+const verifyAuthToken = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    if (process.env['NODE_ENV'] !== 'production' && !authHeader) {
+      next();
+      return;
+    }
+    res.status(401).json({ error: 'Authentification requise : Veuillez vous connecter avec un compte vérifié.' });
+    return;
+  }
+
+  const idToken = authHeader.split('Bearer ')[1];
+  const user = await verifyGoogleIdToken(idToken);
+  if (!user) {
+    res.status(401).json({ error: 'Session expirée ou jeton d\'authentification invalide.' });
+    return;
+  }
+
+  req.user = user;
+  next();
+};
+
+const optionalAuthToken = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  const authHeader = req.headers.authorization;
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    const idToken = authHeader.split('Bearer ')[1];
+    const user = await verifyGoogleIdToken(idToken);
+    if (user) {
+      req.user = user;
+    }
+  }
+  next();
+};
+
 const app = express();
 
 // 1. Reduced Body Limit (16MB max to prevent memory exhaustion)

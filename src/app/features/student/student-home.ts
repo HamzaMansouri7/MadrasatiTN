@@ -384,9 +384,10 @@ export class StudentHomeComponent {
       });
       const base64Data = await base64Promise;
 
+      const authHeaders = await this.firebase.getAuthHeaders();
       const res = await fetch('/api/upload', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: authHeaders,
         body: JSON.stringify({
           filename: `notebook_${Date.now()}_${file.name}`,
           base64Data,

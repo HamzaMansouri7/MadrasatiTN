@@ -9,7 +9,8 @@ export type GradeLevel =
   | '6ème Année'
   | '7ème de base'
   | '8ème de base'
-  | '9ème de base';
+  | '9ème de base'
+  | 'Baccalauréat';
 
 export type SubjectName =
   | 'Mathématiques'
@@ -27,7 +28,15 @@ export type DocType =
   | 'Devoir de Contrôle'
   | 'Devoir de Synthèse'
   | 'Fiche de Révision'
-  | 'Série d\'Exercices';
+  | 'Série d\'Exercices'
+  | 'Manuel Scolaire'
+  | 'Évaluation'
+  | 'Corrigé'
+  | 'Fiche de Cours'
+  | 'Fiche Mémento'
+  | 'Fiche Outil'
+  | 'Épreuve'
+  | 'Illustration';
 
 export interface ExerciseItem {
   id: string;
@@ -51,6 +60,7 @@ export interface ExerciseItem {
   isUpvoted?: boolean;
   reportedCount?: number;
   isReported?: boolean;
+  theme?: string;
   watermarkText?: string;
 }
 
@@ -109,6 +119,7 @@ export interface Course {
   content: string;
   pdfUrl?: string;
   audioUrl?: string;
+  imageUrls?: string[];
   viewsCount: number;
   createdAt: string;
   tags: string[];
@@ -118,6 +129,7 @@ export interface Course {
   isUpvoted?: boolean;
   reportedCount?: number;
   isReported?: boolean;
+  theme?: string;
   watermarkText?: string;
 }
 

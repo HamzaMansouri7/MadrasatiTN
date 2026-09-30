@@ -265,7 +265,7 @@ export interface GeneratedExerciseResult {
                       </div>
 
                       <button
-                        (click)="selectedCourseDetail.set(c)"
+                        (click)="openPrintCourseModal(c)"
                         class="text-xs font-semibold text-[#102A43] dark:text-white hover:text-[#007CC2] flex items-center gap-1 cursor-pointer">
                         {{ lang.tr('Aperçu', 'معاينة') }} <span class="material-icons text-sm">arrow_forward</span>
                       </button>
@@ -1169,10 +1169,23 @@ export interface GeneratedExerciseResult {
                 </div>
               </div>
 
+              <!-- Scanned document pages (community library) -->
+              @if (c.imageUrls && c.imageUrls.length) {
+                <div class="space-y-3 py-3 relative z-10">
+                  @for (url of c.imageUrls; track url; let i = $index) {
+                    <figure class="print-page rounded-lg overflow-hidden border border-[#E3ECF2]">
+                      <img [src]="url" [alt]="c.title + ' — page ' + (i + 1)" class="w-full h-auto" />
+                    </figure>
+                  }
+                </div>
+              }
+
               <!-- Course Content -->
-              <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
-                {{ c.content }}
-              </div>
+              @if (!c.imageUrls || !c.imageUrls.length) {
+                <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
+                  {{ c.content }}
+                </div>
+              }
 
               <!-- Footer Attribution -->
               <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
@@ -1321,7 +1334,6 @@ export class TeacherHomeComponent {
   readonly activeTab = signal<'courses' | 'blog' | 'qa' | 'announcements'>('courses');
   readonly modalType = signal<'none' | 'announcement' | 'course' | 'blogArticle' | 'ai'>('none');
   
-  readonly selectedCourseDetail = signal<Course | null>(null);
   readonly selectedArticleDetail = signal<BlogPost | null>(null);
   readonly printModalCourse = signal<Course | null>(null);
   readonly teacherProfileModal = signal<boolean>(false);
@@ -1457,10 +1469,11 @@ export class TeacherHomeComponent {
       });
       const base64Data = await base64Promise;
 
-      // 1. Direct VPS disk storage
+      // 1. Direct VPS disk storage with auth headers
+      const authHeaders = await this.firebase.getAuthHeaders();
       const res = await fetch('/api/upload', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: authHeaders,
         body: JSON.stringify({
           filename: file.name,
           base64Data,
@@ -1476,7 +1489,7 @@ export class TeacherHomeComponent {
       // 2. Multimodal OCR & Classification by Gemini 2.5 Flash
       const tagRes = await fetch('/api/ai/auto-tag-document', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: authHeaders,
         body: JSON.stringify({
           documentName: file.name,
           base64Data: file.type.startsWith('image/') ? base64Data : undefined,

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal, computed } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment } from '@core';
@@ -42,7 +42,11 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
 
             <div class="flex flex-col sm:flex-row items-center gap-3">
               <div
+                role="button"
+                tabindex="0"
                 (click)="fileInput.click()"
+                (keydown.enter)="fileInput.click()"
+                (keydown.space)="fileInput.click()"
                 (dragover)="onDragOver($event)"
                 (drop)="onFileDrop($event)"
                 class="w-full bg-white/5 hover:bg-white/10 border-2 border-dashed border-white/30 hover:border-[#F2C14E] rounded-xl p-3 text-center transition-colors cursor-pointer">
@@ -409,7 +413,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                               <span class="material-icons text-xs" [class.text-[#C1121F]]="cmt.isLiked">favorite</span>
                               <span>{{ cmt.likes }}</span>
                             </button>
-                            <button (click)="setReplyTarget(cmt.id, ex.id)" class="text-[10px] text-[#1B4332] hover:text-[#14251D] font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
+                            <button (click)="setReplyTarget(cmt.id)" class="text-[10px] text-[#1B4332] hover:text-[#14251D] font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
                           </div>
                         </div>
                       </div>
@@ -485,6 +489,23 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
           @for (c of store.filteredCourses(); track c.id) {
             <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
               <div class="space-y-3">
+                @if (c.imageUrls && c.imageUrls.length) {
+                  <button
+                    (click)="openImageDoc(c)"
+                    class="block w-full relative rounded-xl overflow-hidden border border-[#E7DFCF] group cursor-pointer"
+                    [title]="lang.tr('Voir en grand & imprimer', 'عرض وطباعة')">
+                    <img [src]="c.imageUrls[0]" [alt]="c.title" loading="lazy" class="w-full h-44 object-cover object-top transition-transform group-hover:scale-[1.03]" />
+                    @if (c.imageUrls.length > 1) {
+                      <span class="absolute top-2 right-2 bg-[#14251D]/80 text-[#FBF8F1] text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+                        <span class="material-icons text-[11px]">collections</span>{{ c.imageUrls.length }}
+                      </span>
+                    }
+                    <span class="absolute inset-0 bg-[#14251D]/0 group-hover:bg-[#14251D]/15 transition-colors flex items-center justify-center">
+                      <span class="material-icons text-white opacity-0 group-hover:opacity-100 transition-opacity text-3xl drop-shadow">zoom_in</span>
+                    </span>
+                  </button>
+                }
+
                 <div class="flex items-center justify-between">
                   <span class="bg-[#1B4332]/10 text-[#1B4332] text-[10px] font-semibold px-2.5 py-0.5 rounded-full">
                     {{ c.subject }}
@@ -495,6 +516,14 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                         <span class="material-icons text-[10px]">picture_as_pdf</span>
                         CNP Officiel
                       </span>
+                    }
+                    @if (c.imageUrls && c.imageUrls.length && c.hasCorrection) {
+                      <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[9px] font-semibold px-2 py-0.5 rounded-full border border-[#2D6A4F]/30">
+                        {{ lang.tr('Corrigé', 'إصلاح') }}
+                      </span>
+                    }
+                    @if (c.docType) {
+                      <span class="text-[9px] font-medium text-[#8A5A00] bg-[#8A5A00]/10 px-2 py-0.5 rounded-full">{{ c.docType }}</span>
                     }
                     <span class="text-[11px] font-medium text-[#6B7A70]">{{ c.grade }}</span>
                   </div>
@@ -549,6 +578,13 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                       <span class="material-icons text-sm">download</span>
                       {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
                     </a>
+                  } @else if (c.imageUrls && c.imageUrls.length) {
+                    <button
+                      (click)="openImageDoc(c)"
+                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow-sm cursor-pointer transition-colors">
+                      <span class="material-icons text-sm">print</span>
+                      {{ lang.tr('Voir & Imprimer A4', 'عرض وطباعة') }}
+                    </button>
                   } @else {
                     <button
                       (click)="viewCourseModal.set(c)"
@@ -582,7 +618,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                               <span class="material-icons text-xs" [class.text-[#C1121F]]="cmt.isLiked">favorite</span>
                               <span>{{ cmt.likes }}</span>
                             </button>
-                            <button (click)="setReplyTarget(cmt.id, c.id)" class="text-[10px] text-[#1B4332] hover:text-[#14251D] font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
+                            <button (click)="setReplyTarget(cmt.id)" class="text-[10px] text-[#1B4332] hover:text-[#14251D] font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
                           </div>
                         </div>
                       </div>
@@ -923,6 +959,42 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
       </div>
     }
 
+    <!-- IMAGE DOCUMENT VIEWER & A4 PRINT MODAL -->
+    @if (imageDocModal(); as c) {
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4 print:bg-white print:p-0 print:static print:block">
+        <div class="bg-[#FBF8F1] rounded-2xl max-w-3xl w-full border border-[#E7DFCF] shadow-xl max-h-[92vh] overflow-hidden flex flex-col print:max-w-none print:max-h-none print:shadow-none print:border-0 print:rounded-none">
+          <!-- header (hidden on print) -->
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] p-4 print:hidden">
+            <div class="min-w-0">
+              <h3 class="font-display font-semibold text-[#14251D] text-base truncate">{{ c.title }}</h3>
+              <p class="text-[11px] text-[#6B7A70]">{{ c.subject }} • {{ c.grade }}@if (c.docType) { • {{ c.docType }}}</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button
+                (click)="printImageDoc()"
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer transition-colors">
+                <span class="material-icons text-sm">print</span>
+                {{ lang.tr('Imprimer A4', 'طباعة A4') }}
+              </button>
+              <button (click)="imageDocModal.set(null)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
+                <span class="material-icons">close</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- printable pages -->
+          <div id="image-doc-printable" class="overflow-y-auto p-4 space-y-4 print:overflow-visible print:p-0 print:space-y-0">
+            @for (url of c.imageUrls; track url; let i = $index) {
+              <figure class="print-page bg-white rounded-lg border border-[#E7DFCF] overflow-hidden print:border-0 print:rounded-none print:break-after-page">
+                <img [src]="url" [alt]="c.title + ' — page ' + (i + 1)" class="w-full h-auto" />
+              </figure>
+            }
+            <p class="text-center text-[10px] text-[#6B7A70] print:hidden">{{ c.watermarkText }}</p>
+          </div>
+        </div>
+      </div>
+    }
+
     <!-- FEATURE 3: CREDIBILITY PROFILE MODAL WITH STAR RATING BREAKDOWN -->
     @if (selectedTeacherModal(); as t) {
       <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
@@ -1123,6 +1195,7 @@ export class PublicDiscoveryComponent {
   readonly openCommentIds = signal<Set<string>>(new Set());
 
   readonly viewCourseModal = signal<Course | null>(null);
+  readonly imageDocModal = signal<Course | null>(null);
   readonly selectedTeacherModal = signal<TeacherProfile | null>(null);
   readonly watermarkPreviewModal = signal<ExerciseItem | null>(null);
 
@@ -1152,7 +1225,7 @@ export class PublicDiscoveryComponent {
     this.openCommentIds.set(newSet);
   }
 
-  setReplyTarget(commentId: string, _targetId: string) {
+  setReplyTarget(commentId: string) {
     this.replyTargetId.set(commentId);
     this.replyText = '';
   }
@@ -1281,6 +1354,16 @@ export class PublicDiscoveryComponent {
     }
   }
 
+  openImageDoc(c: Course) {
+    this.imageDocModal.set(c);
+  }
+
+  printImageDoc() {
+    if (typeof window !== 'undefined') {
+      window.print();
+    }
+  }
+
   copyLink(ex: ExerciseItem) {
     if (typeof navigator !== 'undefined') {
       navigator.clipboard.writeText(`${window.location.origin}?doc=${ex.id}`);
@@ -1328,9 +1411,10 @@ export class PublicDiscoveryComponent {
       });
       const base64Data = await base64Promise;
 
+      const authHeaders = await this.firebase.getAuthHeaders();
       const upRes = await fetch('/api/upload', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: authHeaders,
         body: JSON.stringify({
           filename: file.name,
           base64Data,

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, QuestionThread, GradeLevel, SubjectName } from '@core';
+import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName } from '@core';
 
 @Component({
   selector: 'app-parent-home',
@@ -278,7 +278,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Que
                       </div>
 
                       <button
-                        (click)="selectedCourseDetail.set(c)"
+                        (click)="openPrintCourseModal(c)"
                         class="text-xs font-semibold text-[#102A43] dark:text-white hover:text-[#007CC2] flex items-center gap-1 cursor-pointer shrink-0">
                         {{ lang.tr('Aperçu', 'معاينة') }} <span class="material-icons text-sm">arrow_forward</span>
                       </button>
@@ -761,10 +761,23 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Que
                 </div>
               </div>
 
+              <!-- Scanned document pages (community library) -->
+              @if (c.imageUrls && c.imageUrls.length) {
+                <div class="space-y-3 py-3 relative z-10">
+                  @for (url of c.imageUrls; track url; let i = $index) {
+                    <figure class="print-page rounded-lg overflow-hidden border border-[#E3ECF2]">
+                      <img [src]="url" [alt]="c.title + ' — page ' + (i + 1)" class="w-full h-auto" />
+                    </figure>
+                  }
+                </div>
+              }
+
               <!-- Course Content -->
-              <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
-                {{ c.content }}
-              </div>
+              @if (!c.imageUrls || !c.imageUrls.length) {
+                <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
+                  {{ c.content }}
+                </div>
+              }
 
               <!-- Footer Attribution -->
               <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
@@ -867,7 +880,6 @@ export class ParentHomeComponent {
   readonly selectedSubjectFilter = signal<string>('all');
 
   readonly printModalCourse = signal<Course | null>(null);
-  readonly selectedCourseDetail = signal<Course | null>(null);
   readonly selectedArticleDetail = signal<BlogPost | null>(null);
 
   readonly gradesList: string[] = ['all', '1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'];
@@ -915,7 +927,7 @@ export class ParentHomeComponent {
     const maxButtons = 5;
 
     let start = Math.max(1, current - 2);
-    let end = Math.min(total, start + maxButtons - 1);
+    const end = Math.min(total, start + maxButtons - 1);
 
     if (end - start < maxButtons - 1) {
       start = Math.max(1, end - maxButtons + 1);

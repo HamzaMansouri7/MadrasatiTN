@@ -473,5 +473,28 @@ export class FirebaseService {
     this.userProfile.set(null);
     this.saveSession(null);
   }
+
+  async getIdToken(): Promise<string | null> {
+    const user = this.auth.currentUser || this.currentUser();
+    if (!user) return null;
+    try {
+      return await user.getIdToken();
+    } catch (e) {
+      console.warn('Failed to retrieve Firebase ID token:', e);
+      return null;
+    }
+  }
+
+  async getAuthHeaders(extraHeaders: Record<string, string> = {}): Promise<Record<string, string>> {
+    const token = await this.getIdToken();
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+      ...extraHeaders,
+    };
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+    return headers;
+  }
 }
 
