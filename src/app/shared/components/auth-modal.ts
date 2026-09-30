@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
@@ -56,6 +56,81 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
           <!-- Body Content -->
           <div class="p-6 overflow-y-auto space-y-5 bg-[#FBF8F1]">
 
+            <!-- POST-GOOGLE COMPLETION STEP: Google gives no gender / subject / school -->
+            @if (completionMode()) {
+              <div class="space-y-4">
+                <div class="text-center space-y-1">
+                  <span class="material-icons text-3xl text-[#2D6A4F]">how_to_reg</span>
+                  <h3 class="font-display font-semibold text-[#14251D] text-base">
+                    {{ lang.tr('Complétez votre profil', 'أكمل ملفك الشخصي') }}
+                  </h3>
+                  <p class="text-xs text-[#5B6B60]">
+                    {{ lang.tr('Une dernière étape pour personnaliser votre espace.', 'خطوة أخيرة لتخصيص فضائك.') }}
+                  </p>
+                </div>
+
+                <div>
+                  <span class="block text-xs font-medium text-[#486581] mb-1">{{ lang.tr('Genre *', 'الجنس *') }}</span>
+                  <div class="grid grid-cols-2 gap-2">
+                    <button
+                      type="button"
+                      (click)="signupGender = 'male'"
+                      [class]="signupGender === 'male' ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]' : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
+                      class="text-xs p-3 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1.5">
+                      <span class="material-icons text-sm">man</span>
+                      {{ lang.tr('Homme', 'ذكر') }}
+                    </button>
+                    <button
+                      type="button"
+                      (click)="signupGender = 'female'"
+                      [class]="signupGender === 'female' ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]' : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
+                      class="text-xs p-3 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1.5">
+                      <span class="material-icons text-sm">woman</span>
+                      {{ lang.tr('Femme', 'أنثى') }}
+                    </button>
+                  </div>
+                </div>
+
+                @if (firebase.userProfile()?.role === 'teacher') {
+                  <div>
+                    <label for="cp-subject" class="block text-xs font-medium text-[#486581] mb-1">
+                      {{ lang.tr("Matière principale d'enseignement *", 'المادة الرئيسية للتدريس *') }}
+                    </label>
+                    <select
+                      id="cp-subject"
+                      [(ngModel)]="signupSubject"
+                      class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
+                      <option value="Mathématiques">Mathématiques (الرياضيات)</option>
+                      <option value="Langue Arabe">Langue Arabe (اللغة العربية)</option>
+                      <option value="Français">Français (اللغة الفرنسية)</option>
+                      <option value="Éveil Scientifique">Éveil Scientifique (الأيقاظ العلمي)</option>
+                      <option value="Éducation Islamique">Éducation Islamique (التربية الإسلامية)</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="cp-school" class="block text-xs font-medium text-[#486581] mb-1">
+                      {{ lang.tr('École primaire', 'المدرسة الابتدائية') }}
+                    </label>
+                    <input
+                      id="cp-school"
+                      type="text"
+                      [(ngModel)]="signupSchool"
+                      placeholder="Ex: École Habib Bourguiba"
+                      class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
+                  </div>
+                }
+
+                <button
+                  type="button"
+                  (click)="submitCompletion()"
+                  [disabled]="isLoading()"
+                  class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-sm py-3 rounded-[10px] shadow-xs transition-colors cursor-pointer disabled:opacity-50">
+                  {{ lang.tr('Terminer et accéder à mon espace', 'إنهاء والدخول إلى فضائي') }}
+                </button>
+              </div>
+            } @else {
+
             <!-- Google Sign-In Quick Action -->
             <button
               type="button"
@@ -84,9 +159,9 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             @if (store.authModalMode() === 'signup') {
               <div class="space-y-3">
                 <div>
-                  <label class="block text-xs font-semibold text-[#14251D] mb-2">
+                  <span class="block text-xs font-semibold text-[#14251D] mb-2">
                     {{ lang.t('authSignupAs') }} *
-                  </label>
+                  </span>
                   <div class="grid grid-cols-3 gap-2">
                     <button
                       type="button"
@@ -120,30 +195,60 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 <!-- Dynamic Fields by Role -->
                 <div class="space-y-3">
                   <div>
-                    <label class="block text-xs font-medium text-[#486581] mb-1">
+                    <label for="su-name" class="block text-xs font-medium text-[#486581] mb-1">
                       {{ store.authModalRole() === 'student' ? lang.t('authStudentName') : lang.t('authFullName') }} *
                     </label>
                     <input
+                      id="su-name"
                       type="text"
                       [(ngModel)]="signupName"
                       [placeholder]="namePlaceholder()"
                       class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
                   </div>
 
+                  <!-- Gender (drives gendered FR/AR labels: Enseignant/Enseignante, معلم/معلمة) -->
+                  <div>
+                    <span class="block text-xs font-medium text-[#486581] mb-1">{{ lang.tr('Genre *', 'الجنس *') }}</span>
+                    <div class="grid grid-cols-2 gap-2">
+                      <button
+                        type="button"
+                        (click)="signupGender = 'male'"
+                        [class]="signupGender === 'male'
+                          ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
+                          : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
+                        class="text-xs p-3 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1.5">
+                        <span class="material-icons text-sm">man</span>
+                        {{ lang.tr('Homme', 'ذكر') }}
+                      </button>
+                      <button
+                        type="button"
+                        (click)="signupGender = 'female'"
+                        [class]="signupGender === 'female'
+                          ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
+                          : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
+                        class="text-xs p-3 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1.5">
+                        <span class="material-icons text-sm">woman</span>
+                        {{ lang.tr('Femme', 'أنثى') }}
+                      </button>
+                    </div>
+                  </div>
+
                   @if (store.authModalRole() === 'teacher') {
                     <div class="space-y-2">
                       <div class="grid grid-cols-2 gap-2">
                         <div>
-                          <label class="block text-xs font-medium text-[#486581] mb-1">École primaire *</label>
+                          <label for="su-school" class="block text-xs font-medium text-[#486581] mb-1">École primaire *</label>
                           <input
+                            id="su-school"
                             type="text"
                             [(ngModel)]="signupSchool"
                             placeholder="Ex: École Habib Bourguiba"
                             class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
                         </div>
                         <div>
-                          <label class="block text-xs font-medium text-[#486581] mb-1">Gouvernorat *</label>
+                          <label for="su-gov" class="block text-xs font-medium text-[#486581] mb-1">Gouvernorat *</label>
                           <input
+                            id="su-gov"
                             type="text"
                             [(ngModel)]="signupGov"
                             placeholder="Ex: Ariana, Tunis, Sfax"
@@ -152,10 +257,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                       </div>
 
                       <div>
-                        <label class="block text-xs font-medium text-[#486581] mb-1">
-                          {{ lang.tr('Matière principale d\'enseignement *', 'المادة الرئيسية للتدريس *') }}
+                        <label for="su-subject" class="block text-xs font-medium text-[#486581] mb-1">
+                          {{ lang.tr("Matière principale d'enseignement *", 'المادة الرئيسية للتدريس *') }}
                         </label>
                         <select
+                          id="su-subject"
                           [(ngModel)]="signupSubject"
                           class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
                           <option value="Mathématiques">Mathématiques (الرياضيات)</option>
@@ -173,20 +279,22 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                     <div class="space-y-2">
                       <div class="grid grid-cols-2 gap-2">
                         <div>
-                          <label class="block text-xs font-medium text-[#486581] mb-1">
+                          <label for="su-phone" class="block text-xs font-medium text-[#486581] mb-1">
                             {{ lang.tr('Numéro de téléphone *', 'رقم الهاتف *') }}
                           </label>
                           <input
+                            id="su-phone"
                             type="tel"
                             [(ngModel)]="signupPhone"
                             placeholder="+216 98 123 456"
                             class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
                         </div>
                         <div>
-                          <label class="block text-xs font-medium text-[#486581] mb-1">
+                          <label for="su-child-grade" class="block text-xs font-medium text-[#486581] mb-1">
                             {{ lang.tr("Niveau de l'enfant *", "مستوى الطفل *") }}
                           </label>
                           <select
+                            id="su-child-grade"
                             [(ngModel)]="signupGrade"
                             class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
                             <option value="1ère Année">1ère Année (السنة الأولى)</option>
@@ -203,10 +311,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
                   @if (store.authModalRole() === 'student') {
                     <div>
-                      <label class="block text-xs font-medium text-[#486581] mb-1">
+                      <label for="su-student-grade" class="block text-xs font-medium text-[#486581] mb-1">
                         {{ lang.tr('Classe / Niveau', 'القسم / السنة الدراسية') }} *
                       </label>
                       <select
+                        id="su-student-grade"
                         [(ngModel)]="signupGrade"
                         class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
                         <option value="1ère Année">1ère Année Primaire (السنة الأولى)</option>
@@ -220,10 +329,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   }
 
                   <div>
-                    <label class="block text-xs font-medium text-[#486581] mb-1">
+                    <label for="su-email" class="block text-xs font-medium text-[#486581] mb-1">
                       {{ store.authModalRole() === 'student' ? lang.tr('Code secret ou Email parent', 'الرمز السري أو بريد الولي') : lang.tr('Adresse Email', 'البريد الإلكتروني') }} *
                     </label>
                     <input
+                      id="su-email"
                       type="email"
                       [(ngModel)]="signupEmail"
                       [placeholder]="store.authModalRole() === 'teacher' ? 'professeur@education.tn' : 'contact@famille.tn'"
@@ -231,10 +341,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   </div>
 
                   <div>
-                    <label class="block text-xs font-medium text-[#486581] mb-1">
+                    <label for="su-password" class="block text-xs font-medium text-[#486581] mb-1">
                       {{ store.authModalRole() === 'student' ? lang.tr('Code PIN (4 chiffres)', 'الرمز السري (4 أرقام)') : lang.tr('Mot de passe', 'كلمة العبور') }} *
                     </label>
                     <input
+                      id="su-password"
                       type="password"
                       [(ngModel)]="signupPassword"
                       placeholder="••••••••"
@@ -255,10 +366,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             @if (store.authModalMode() === 'login') {
               <div class="space-y-3">
                 <div>
-                  <label class="block text-xs font-medium text-[#5B6B60] mb-1">
+                  <label for="li-email" class="block text-xs font-medium text-[#5B6B60] mb-1">
                     {{ lang.t('authEmailOrUser') }}
                   </label>
                   <input
+                    id="li-email"
                     type="email"
                     [(ngModel)]="loginEmail"
                     placeholder="exemple@madrasati.tn"
@@ -267,7 +379,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
                 <div>
                   <div class="flex items-center justify-between mb-1">
-                    <label class="text-xs font-medium text-[#5B6B60]">
+                    <label for="li-password" class="text-xs font-medium text-[#5B6B60]">
                       {{ lang.tr('Mot de passe', 'كلمة العبور') }}
                     </label>
                     <a href="javascript:void(0)" class="text-[11px] text-[#8A5A00] hover:underline">
@@ -275,6 +387,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                     </a>
                   </div>
                   <input
+                    id="li-password"
                     type="password"
                     [(ngModel)]="loginPassword"
                     placeholder="••••••••"
@@ -323,6 +436,8 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               </div>
             }
 
+            }
+
           </div>
 
           <!-- Footer note -->
@@ -344,6 +459,7 @@ export class AuthModalComponent {
 
   // Signup fields
   signupName = '';
+  signupGender: 'male' | 'female' = 'male';
   signupEmail = '';
   signupPassword = '';
   signupSchool = '';
@@ -367,18 +483,57 @@ export class AuthModalComponent {
     return this.lang.tr('Prénom et Nom de l\'élève', 'اسم التلميذ واللقب');
   }
 
+  // Post-Google profile completion (Google gives no gender/subject/school)
+  readonly completionMode = signal<boolean>(false);
+
+  constructor() {
+    // A redirect-based Google login resumes after a full page reload:
+    // reopen the modal directly on the completion step.
+    effect(() => {
+      if (this.firebase.needsProfileCompletion()) {
+        this.firebase.needsProfileCompletion.set(false);
+        this.completionMode.set(true);
+        this.store.openLoginModal();
+      }
+    });
+  }
+
   async handleGoogleAuth() {
     this.isLoading.set(true);
     try {
-      const targetRole = this.store.authModalMode() === 'signup' 
-        ? this.store.authModalRole() 
+      const targetRole = this.store.authModalMode() === 'signup'
+        ? this.store.authModalRole()
         : (this.store.currentRole() === 'home' ? 'teacher' : this.store.currentRole());
-      
+
       const profile = await this.firebase.loginWithGoogle(targetRole as UserRole);
       if (profile) {
+        const needsGender = !profile.gender;
+        const needsSubject = profile.role === 'teacher' && !profile.primarySubject;
+        if (needsGender || needsSubject) {
+          // Keep the modal open on a short completion step instead of closing.
+          this.completionMode.set(true);
+          return;
+        }
         this.store.switchRole(profile.role);
         this.store.closeAuthModal();
       }
+    } finally {
+      this.isLoading.set(false);
+    }
+  }
+
+  async submitCompletion() {
+    this.isLoading.set(true);
+    try {
+      const role = this.firebase.userProfile()?.role || 'teacher';
+      await this.firebase.updateUserProfile({
+        gender: this.signupGender,
+        primarySubject: role === 'teacher' ? this.signupSubject : undefined,
+        school: this.signupSchool || undefined,
+      });
+      this.completionMode.set(false);
+      this.store.switchRole(role);
+      this.store.closeAuthModal();
     } finally {
       this.isLoading.set(false);
     }
@@ -397,6 +552,7 @@ export class AuthModalComponent {
         phone: this.signupPhone,
         grade: this.signupGrade,
         primarySubject: role === 'teacher' ? this.signupSubject : undefined,
+        gender: this.signupGender,
       });
       this.store.switchRole(profile.role);
       this.store.closeAuthModal();

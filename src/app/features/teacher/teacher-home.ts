@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal, effect } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread } from '@core';
 
 export interface GeneratedExerciseResult {
@@ -15,7 +15,29 @@ export interface GeneratedExerciseResult {
   imports: [],
   template: `
     <div class="space-y-6">
-      
+
+      <!-- Guest Mode Banner: teacher space is read-only until login -->
+      @if (!isAuthed()) {
+        <div class="rounded-[18px] bg-[#FFF4D8] dark:bg-[#3D2E10] border border-[#E0AA32]/50 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <span class="material-icons text-[#9E6A00] dark:text-[#E0AA32]">lock_person</span>
+            <div>
+              <p class="text-sm font-bold text-[#102A43] dark:text-white">
+                {{ lang.tr('Mode découverte — Espace Enseignant en lecture seule', 'وضع الاستكشاف — فضاء المعلم للقراءة فقط') }}
+              </p>
+              <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                {{ lang.tr('Connectez-vous pour publier vos fiches, répondre aux parents et gérer votre profil.', 'سجّل الدخول لنشر وثائقك والإجابة على الأولياء وإدارة ملفك.') }}
+              </p>
+            </div>
+          </div>
+          <button
+            (click)="store.openLoginModal()"
+            class="bg-[#0B2947] hover:bg-[#102A43] text-white font-bold px-5 py-2.5 rounded-[10px] text-xs cursor-pointer shadow-sm shrink-0">
+            {{ lang.tr('Se connecter / Créer un compte', 'تسجيل الدخول / إنشاء حساب') }}
+          </button>
+        </div>
+      }
+
       <!-- Welcome Header: Institutional Hero -->
       <div class="rounded-[24px] bg-[#0B2947] text-white p-7 sm:p-9 shadow-sm">
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
@@ -23,12 +45,26 @@ export interface GeneratedExerciseResult {
             <div class="flex flex-wrap items-center gap-2">
               <span class="inline-flex items-center gap-1.5 text-[#8CA9C4] text-xs font-medium">
                 <span class="material-icons text-sm text-[#E0AA32]">verified</span>
-                {{ lang.tr('Enseignante Certifiée — Éducation Nationale', 'معلمة معتمدة — وزارة التربية والتعليم') }}
+                {{ isFemale()
+                  ? lang.tr('Enseignante Certifiée — Éducation Nationale', 'معلمة معتمدة — وزارة التربية والتعليم')
+                  : lang.tr('Enseignant Certifié — Éducation Nationale', 'معلم معتمد — وزارة التربية والتعليم') }}
               </span>
+
+              @if (firebase.userProfile()?.title || editTitle()) {
+                <span class="bg-[#E0AA32]/15 text-[#E0AA32] text-xs px-2.5 py-0.5 rounded-full font-semibold border border-[#E0AA32]/30">
+                  {{ firebase.userProfile()?.title || editTitle() }}
+                </span>
+              }
+
+              @if (firebase.userProfile()?.speciality || editSpeciality()) {
+                <span class="bg-[#007CC2]/20 text-[#8CA9C4] text-xs px-2.5 py-0.5 rounded-full font-medium border border-[#007CC2]/40">
+                  {{ firebase.userProfile()?.speciality || editSpeciality() }}
+                </span>
+              }
 
               <button
                 (click)="openProfileModal()"
-                class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white border border-white/15 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer">
+                class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white border border-white/15 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer ml-auto">
                 <span class="material-icons text-sm text-[#E0AA32]">badge</span>
                 <span>{{ lang.tr('Mon Profil Public (4.9/5)', 'ملفي المهني (4.9/5)') }}</span>
               </button>
@@ -49,14 +85,14 @@ export interface GeneratedExerciseResult {
           <!-- Quick Actions Bar -->
           <div class="flex flex-wrap items-center gap-2.5 shrink-0">
             <button
-              (click)="store.setRole('editor')"
+              (click)="openStudio()"
               class="flex items-center gap-1.5 bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_fix_high</span>
               {{ lang.tr('Studio de Rédaction A4', 'استوديو التحرير والطباعة A4') }}
             </button>
 
             <button
-              (click)="store.setRole('editor')"
+              (click)="openStudio()"
               class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
@@ -161,39 +197,61 @@ export interface GeneratedExerciseResult {
       <!-- Main Hub Tabs -->
       <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#E3ECF2] dark:border-[#1A3145] overflow-hidden shadow-xs">
 
-        <!-- Tab Bar Header -->
-        <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] px-6 pt-3 flex flex-wrap gap-2">
-          <button
-            (click)="activeTab.set('courses')"
-            [class]="activeTab() === 'courses' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">menu_book</span>
-            <span>{{ lang.t('tabTeacherDocs') }} ({{ store.courses().length }})</span>
-          </button>
+        <!-- Tab Bar Header with Scope Filter Toggle -->
+        <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] px-6 pt-3 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex flex-wrap gap-2">
+            <button
+              (click)="activeTab.set('courses')"
+              [class]="activeTab() === 'courses' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+              <span class="material-icons text-base">menu_book</span>
+              <span>{{ lang.t('tabTeacherDocs') }} ({{ filteredCourses().length }})</span>
+            </button>
 
-          <button
-            (click)="activeTab.set('blog')"
-            [class]="activeTab() === 'blog' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">article</span>
-            <span>{{ lang.t('tabTeacherBlog') }} ({{ store.blogPosts().length }})</span>
-          </button>
+            <button
+              (click)="activeTab.set('blog')"
+              [class]="activeTab() === 'blog' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+              <span class="material-icons text-base">article</span>
+              <span>{{ lang.t('tabTeacherBlog') }} ({{ filteredBlogPosts().length }})</span>
+            </button>
 
-          <button
-            (click)="activeTab.set('qa')"
-            [class]="activeTab() === 'qa' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">forum</span>
-            <span>{{ lang.t('tabTeacherQA') }} ({{ store.questionThreads().length }})</span>
-          </button>
+            <button
+              (click)="activeTab.set('qa')"
+              [class]="activeTab() === 'qa' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+              <span class="material-icons text-base">forum</span>
+              <span>{{ lang.t('tabTeacherQA') }} ({{ store.questionThreads().length }})</span>
+            </button>
 
-          <button
-            (click)="activeTab.set('announcements')"
-            [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">campaign</span>
-            <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
-          </button>
+            <button
+              (click)="activeTab.set('announcements')"
+              [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+              <span class="material-icons text-base">campaign</span>
+              <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
+            </button>
+          </div>
+
+          <!-- Scope Filter: Mes Documents vs Toute la Banque CNP -->
+          <div class="mb-2 bg-[#E3ECF2]/80 dark:bg-[#0E1D2A] p-1 rounded-xl flex items-center gap-1">
+            <button
+              type="button"
+              (click)="docScopeFilter.set('mine')"
+              [class]="docScopeFilter() === 'mine' ? 'bg-[#007CC2] text-white font-bold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#102A43] font-medium'"
+              class="px-3 py-1.5 rounded-lg text-xs cursor-pointer transition-all flex items-center gap-1.5">
+              <span class="material-icons text-xs">folder_shared</span>
+              <span>{{ lang.tr('Mes fiches uniquement', 'منشوراتي فقط') }}</span>
+            </button>
+            <button
+              type="button"
+              (click)="docScopeFilter.set('all')"
+              [class]="docScopeFilter() === 'all' ? 'bg-[#007CC2] text-white font-bold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#102A43] font-medium'"
+              class="px-3 py-1.5 rounded-lg text-xs cursor-pointer transition-all flex items-center gap-1.5">
+              <span class="material-icons text-xs">library_books</span>
+              <span>{{ lang.tr('Toute la banque CNP', 'جميع وثائق CNP') }}</span>
+            </button>
+          </div>
         </div>
 
         <!-- Tab Body -->
@@ -212,14 +270,14 @@ export interface GeneratedExerciseResult {
                   </p>
                 </div>
                 <button
-                  (click)="store.setRole('editor')"
+                  (click)="openStudio()"
                   class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addCourseBtn') }}
                 </button>
               </div>
 
               <div class="grid md:grid-cols-2 gap-4">
-                @for (c of store.courses(); track c.id) {
+                @for (c of filteredCourses(); track c.id) {
                   <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-3 hover:border-[#007CC2]/40 transition-colors">
                     <div class="space-y-2">
                       <div class="flex items-center justify-between">
@@ -287,14 +345,14 @@ export interface GeneratedExerciseResult {
                   </p>
                 </div>
                 <button
-                  (click)="store.setRole('editor')"
+                  (click)="openStudio()"
                   class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">edit_note</span> {{ lang.t('writeArticleBtn') }}
                 </button>
               </div>
 
               <div class="grid md:grid-cols-2 gap-5">
-                @for (post of store.blogPosts(); track post.id) {
+                @for (post of filteredBlogPosts(); track post.id) {
                   <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[20px] p-6 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
                     <div class="space-y-3">
                       <div class="flex items-center justify-between">
@@ -1356,8 +1414,9 @@ export interface GeneratedExerciseResult {
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div class="space-y-1">
-                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Nom et Prénom', 'الاسم واللقب') }}</label>
+                  <label for="tp-display-name" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Nom et Prénom', 'الاسم واللقب') }}</label>
                   <input
+                    id="tp-display-name"
                     type="text"
                     [value]="editDisplayName()"
                     (input)="editDisplayName.set($any($event.target).value)"
@@ -1365,17 +1424,31 @@ export interface GeneratedExerciseResult {
                 </div>
 
                 <div class="space-y-1">
-                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Titre Professionnel', 'الرتبة والصفة') }}</label>
+                  <label for="tp-title" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Titre & Grade Professionnel', 'الرتبة والصفة المهنية') }}</label>
                   <input
+                    id="tp-title"
                     type="text"
                     [value]="editTitle()"
                     (input)="editTitle.set($any($event.target).value)"
+                    placeholder="Ex: أستاذ تعليم ابتدائي أول"
                     class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
                 </div>
 
                 <div class="space-y-1">
-                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Établissement Scolaire', 'المدرسة الإبتدائية') }}</label>
+                  <label for="tp-speciality" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Spécialité & Discipline Principale', 'الإختصاص والتخصص الرئيسي') }}</label>
                   <input
+                    id="tp-speciality"
+                    type="text"
+                    [value]="editSpeciality()"
+                    (input)="editSpeciality.set($any($event.target).value)"
+                    placeholder="Ex: Mathématiques & Éveil Scientifique"
+                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                </div>
+
+                <div class="space-y-1">
+                  <label for="tp-school" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Établissement Scolaire', 'المدرسة الإبتدائية') }}</label>
+                  <input
+                    id="tp-school"
                     type="text"
                     [value]="editSchool()"
                     (input)="editSchool.set($any($event.target).value)"
@@ -1383,8 +1456,9 @@ export interface GeneratedExerciseResult {
                 </div>
 
                 <div class="space-y-1">
-                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Délégation & Gouvernorat', 'المندوبية والولاية') }}</label>
+                  <label for="tp-delegation" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Délégation & Gouvernorat', 'المندوبية والولاية') }}</label>
                   <input
+                    id="tp-delegation"
                     type="text"
                     [value]="editDelegation()"
                     (input)="editDelegation.set($any($event.target).value)"
@@ -1401,7 +1475,7 @@ export interface GeneratedExerciseResult {
                 <div class="flex items-center gap-2.5">
                   <span class="material-icons text-[#23845B] text-xl">verified_user</span>
                   <div>
-                    <h4 class="font-bold text-[#102A43] dark:text-white">{{ lang.tr('Agrément Ministère de l\'Éducation', 'اعتماد وزارة التربية') }}</h4>
+                    <h4 class="font-bold text-[#102A43] dark:text-white">{{ lang.tr("Agrément Ministère de l'Éducation", 'اعتماد وزارة التربية') }}</h4>
                     <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Matricule CNP vérifié et conforme au programme officiel.', 'معرف معتمد ومطابق للبرامج الرسمية.') }}</p>
                   </div>
                 </div>
@@ -1410,8 +1484,9 @@ export interface GeneratedExerciseResult {
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="space-y-1">
-                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Matricule Enseignant CNP', 'معرف المعلم بالمركز الوطني') }}</label>
+                  <label for="tp-cnp-id" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Matricule Enseignant CNP', 'معرف المعلم بالمركز الوطني') }}</label>
                   <input
+                    id="tp-cnp-id"
                     type="text"
                     [value]="editCnpId()"
                     (input)="editCnpId.set($any($event.target).value)"
@@ -1419,8 +1494,9 @@ export interface GeneratedExerciseResult {
                 </div>
 
                 <div class="space-y-1">
-                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Texte du Filigrane A4', 'نص العلامة المائية للطباعة') }}</label>
+                  <label for="tp-watermark" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Texte du Filigrane A4', 'نص العلامة المائية للطباعة') }}</label>
                   <input
+                    id="tp-watermark"
                     type="text"
                     [value]="editCustomWatermark()"
                     (input)="editCustomWatermark.set($any($event.target).value)"
@@ -1454,7 +1530,27 @@ export interface GeneratedExerciseResult {
           @if (profileTab() === 'classes') {
             <div class="space-y-4 text-xs">
               <div class="space-y-2">
-                <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Niveaux et Années d\'Enseignement Active :', 'السنوات الدراسية المباشرة :') }}</label>
+                <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Matières Enseignées / الإختصاصات :", 'المواد والمضامين المباشرة :') }}</span>
+                <div class="flex flex-wrap gap-2">
+                  @for (s of ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais', 'Informatique', 'Éducation Islamique']; track s) {
+                    <button
+                      type="button"
+                      (click)="toggleTaughtSubject(s)"
+                      [class]="editTaughtSubjects().includes(s)
+                        ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
+                        : 'bg-[#F7F9FB] dark:bg-[#152737] text-[#627D98] dark:text-[#8CA9C4] border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                      class="px-3.5 py-1.5 rounded-xl border text-xs cursor-pointer transition-colors flex items-center gap-1">
+                      @if (editTaughtSubjects().includes(s)) {
+                        <span class="material-icons text-xs">check</span>
+                      }
+                      <span>{{ s }}</span>
+                    </button>
+                  }
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Niveaux et Années d'Enseignement Active :", 'السنوات الدراسية المباشرة :') }}</span>
                 <div class="flex flex-wrap gap-2">
                   @for (g of ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']; track g) {
                     <button
@@ -1519,7 +1615,7 @@ export interface GeneratedExerciseResult {
 
                 <!-- Dark / Light Theme Toggle -->
                 <div class="p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-xl border border-[#E3ECF2] dark:border-[#1A3145] space-y-2">
-                  <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr('Mode d\'Affichage', 'مظهر الواجهة') }}</span>
+                  <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Mode d'Affichage", 'مظهر الواجهة') }}</span>
                   <div class="flex gap-2">
                     <button
                       type="button"
@@ -1588,11 +1684,44 @@ export class TeacherHomeComponent {
 
   readonly editDisplayName = signal<string>('Enseignant Certifié');
   readonly editTitle = signal<string>('أستاذ تعليم ابتدائي أول');
+  readonly editSpeciality = signal<string>('Mathématiques & Éveil Scientifique');
   readonly editSchool = signal<string>('École Primaire Habib Bourguiba, Ariana');
   readonly editDelegation = signal<string>('Ariana Ville');
   readonly editCnpId = signal<string>('CNP-TN-2024-8841');
   readonly editCustomWatermark = signal<string>('Madrasati TN — Document Certifié');
   readonly editTaughtGrades = signal<string[]>(['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']);
+  readonly editTaughtSubjects = signal<string[]>(['Mathématiques', 'Éveil Scientifique', 'Français']);
+
+  // Document Scope Filter (Mes documents uniquement vs Toute la banque CNP)
+  readonly docScopeFilter = signal<'mine' | 'all'>('mine');
+
+  // Auth state: guest sees a read-only showcase; connected teacher gets his workspace.
+  readonly isAuthed = computed(() => !!this.firebase.currentUser() || !!this.firebase.userProfile());
+
+  // Gendered FR/AR labels (Enseignant/Enseignante, معلم/معلمة).
+  readonly isFemale = computed(() => this.firebase.userProfile()?.gender === 'female');
+
+  /** Gate creator actions behind login; opens the auth modal for guests. */
+  private requireAuth(): boolean {
+    if (this.isAuthed()) return true;
+    this.store.openLoginModal();
+    return false;
+  }
+
+  readonly filteredCourses = computed(() => {
+    const list = this.store.courses();
+    // Guests have no personal fiches — always show the full bank.
+    if (this.docScopeFilter() === 'all' || !this.isAuthed()) return list;
+    const currentName = this.firebase.userProfile()?.displayName;
+    return list.filter((c) => !!currentName && c.teacherName === currentName);
+  });
+
+  readonly filteredBlogPosts = computed(() => {
+    const list = this.store.blogPosts();
+    if (this.docScopeFilter() === 'all' || !this.isAuthed()) return list;
+    const currentName = this.firebase.userProfile()?.displayName;
+    return list.filter((p) => !!currentName && p.authorName === currentName);
+  });
 
   constructor() {
     effect(() => {
@@ -1603,14 +1732,17 @@ export class TeacherHomeComponent {
   }
 
   openProfileModal() {
+    if (!this.requireAuth()) return;
     const p = this.firebase.userProfile();
     this.editDisplayName.set(p?.displayName || 'Enseignant Certifié');
     this.editTitle.set(p?.title || 'أستاذ تعليم ابتدائي أول');
+    this.editSpeciality.set(p?.speciality || p?.primarySubject || 'Mathématiques & Éveil Scientifique');
     this.editSchool.set(p?.school || 'École Primaire Habib Bourguiba, Ariana');
     this.editDelegation.set(p?.delegation || 'Ariana Ville');
     this.editCnpId.set(p?.cnpId || 'CNP-TN-2024-8841');
     this.editCustomWatermark.set(p?.customWatermark || 'Madrasati TN — Document Certifié');
     if (p?.taughtGrades) this.editTaughtGrades.set(p.taughtGrades);
+    if (p?.subjects) this.editTaughtSubjects.set(p.subjects);
     this.profileSuccessMsg.set(null);
     this.teacherProfileModal.set(true);
   }
@@ -1631,15 +1763,29 @@ export class TeacherHomeComponent {
     }
   }
 
+  toggleTaughtSubject(subject: string) {
+    const current = this.editTaughtSubjects();
+    if (current.includes(subject)) {
+      if (current.length > 1) {
+        this.editTaughtSubjects.set(current.filter((s) => s !== subject));
+      }
+    } else {
+      this.editTaughtSubjects.set([...current, subject]);
+    }
+  }
+
   async saveTeacherProfileSettings() {
     await this.firebase.updateUserProfile({
       displayName: this.editDisplayName(),
       title: this.editTitle(),
+      speciality: this.editSpeciality(),
+      primarySubject: this.editSpeciality(),
       school: this.editSchool(),
       delegation: this.editDelegation(),
       cnpId: this.editCnpId(),
       customWatermark: this.editCustomWatermark(),
       taughtGrades: this.editTaughtGrades(),
+      subjects: this.editTaughtSubjects(),
     });
     this.profileSuccessMsg.set(this.lang.tr('Modifications enregistrées avec succès !', 'تم حفظ التعديلات بنجاح!'));
     setTimeout(() => this.profileSuccessMsg.set(null), 3000);
@@ -1699,7 +1845,13 @@ export class TeacherHomeComponent {
   }
 
   openModal(type: 'announcement' | 'course' | 'blogArticle' | 'ai') {
+    if (!this.requireAuth()) return;
     this.modalType.set(type);
+  }
+
+  openStudio() {
+    if (!this.requireAuth()) return;
+    this.store.setRole('editor');
   }
 
   closeModal() {
@@ -1761,6 +1913,7 @@ export class TeacherHomeComponent {
   }
 
   async handleCourseFileUpload(event: Event) {
+    if (!this.requireAuth()) return;
     const input = event.target as HTMLInputElement;
     if (!input.files || input.files.length === 0) return;
     const file = input.files[0];
@@ -1888,6 +2041,7 @@ export class TeacherHomeComponent {
   }
 
   submitAnswerToQuestion() {
+    if (!this.requireAuth()) return;
     const thread = this.replyingThread();
     if (!thread || !this.replyContent()) return;
 

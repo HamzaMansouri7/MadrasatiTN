@@ -7,6 +7,8 @@ import {
   getAuth,
   onAuthStateChanged,
   signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   signOut,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
@@ -40,11 +42,13 @@ export interface UserProfile {
   phone?: string;
   grade?: string;
   primarySubject?: string;
+  speciality?: string;
+  subjects?: string[];
+  gender?: 'male' | 'female';
   title?: string;
   delegation?: string;
   cnpId?: string;
   customWatermark?: string;
-  whatsappNumber?: string;
   taughtGrades?: string[];
   preferredLang?: 'fr' | 'ar';
 }
@@ -60,6 +64,8 @@ export class FirebaseService {
   readonly currentUser = signal<User | null>(null);
   readonly userProfile = signal<UserProfile | null>(null);
   readonly isAuthLoading = signal<boolean>(true);
+  // Set after a redirect-based Google login when gender/subject are still missing.
+  readonly needsProfileCompletion = signal<boolean>(false);
 
   // Real-time Notification System
   readonly notifications = signal<AppNotification[]>([
@@ -114,6 +120,9 @@ export class FirebaseService {
 
     this.testConnection();
     this.initNotificationsListener();
+    if (typeof window !== 'undefined') {
+      this.handleRedirectResult();
+    }
     onAuthStateChanged(this.auth, async (user) => {
       this.currentUser.set(user);
       if (user) {
@@ -130,6 +139,13 @@ export class FirebaseService {
               school: data['school'],
               phone: data['phone'],
               grade: data['grade'],
+              primarySubject: data['primarySubject'],
+              gender: data['gender'],
+              title: data['title'],
+              delegation: data['delegation'],
+              cnpId: data['cnpId'],
+              customWatermark: data['customWatermark'],
+              taughtGrades: data['taughtGrades'],
             };
             this.userProfile.set(profile);
             this.saveSession(profile);
@@ -167,15 +183,11 @@ export class FirebaseService {
     }
   }
 
-  async loginWithGoogle(role: UserRole = 'teacher'): Promise<UserProfile | null> {
-    try {
-      const provider = new GoogleAuthProvider();
-      provider.setCustomParameters({ prompt: 'select_account' });
-      const result = await signInWithPopup(this.auth, provider);
-      const user = result.user;
-
-      let userRole = role;
+  /** Builds + persists the app profile for a Google-authenticated user. */
+  private async completeGoogleProfile(user: User, role: UserRole): Promise<UserProfile> {
+    let userRole = role;
       let school = 'École Primaire Habib Bourguiba, Ariana';
+      let extra: Partial<UserProfile> = {};
 
       try {
         const userRef = doc(this.db, 'users', user.uid);
@@ -184,6 +196,14 @@ export class FirebaseService {
           const data = snap.data();
           if (data['role']) userRole = data['role'] as UserRole;
           if (data['school']) school = data['school'];
+          extra = {
+            primarySubject: data['primarySubject'],
+            gender: data['gender'],
+            grade: data['grade'],
+            phone: data['phone'],
+            title: data['title'],
+            delegation: data['delegation'],
+          };
         } else {
           await setDoc(userRef, {
             uid: user.uid,
@@ -206,36 +226,60 @@ export class FirebaseService {
         photoURL: user.photoURL,
         role: userRole,
         school,
+        ...extra,
       };
 
       this.userProfile.set(profile);
       this.saveSession(profile);
       return profile;
-    } catch (err: any) {
-      console.warn('Firebase popup unavailable or unauthorized domain on this host. Using simulated Google Auth session:', err?.message || err);
-      
-      const defaultName = role === 'teacher' 
-        ? 'Enseignant Certifié' 
-        : (role === 'parent' ? 'Parent d\'élève' : 'Élève');
-      const defaultEmail = role === 'teacher' 
-        ? 'enseignant@madrasati.tn' 
-        : (role === 'parent' ? 'parent@madrasati.tn' : 'eleve@madrasati.tn');
-      const defaultAvatar = role === 'teacher'
-        ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
-        : (role === 'parent' ? 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80' : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80');
+  }
 
-      const fallbackProfile: UserProfile = {
-        uid: 'google_user_' + Date.now(),
-        displayName: defaultName,
-        email: defaultEmail,
-        photoURL: defaultAvatar,
-        role,
-        school: 'École Primaire Habib Bourguiba, Ariana',
-      };
+  async loginWithGoogle(role: UserRole = 'teacher'): Promise<UserProfile | null> {
+    const provider = new GoogleAuthProvider();
+    provider.setCustomParameters({ prompt: 'select_account' });
 
-      this.userProfile.set(fallbackProfile);
-      this.saveSession(fallbackProfile);
-      return fallbackProfile;
+    try {
+      // Popup can hang forever on localhost (COOP / third-party cookie blocking):
+      // the account chooser completes but the promise never resolves. Race it.
+      const result = await Promise.race([
+        signInWithPopup(this.auth, provider),
+        new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error('popup-timeout')), 20000)
+        ),
+      ]);
+      return await this.completeGoogleProfile(result.user, role);
+    } catch (err: unknown) {
+      console.warn('Google popup failed — falling back to full-page redirect:', err instanceof Error ? err.message : err);
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('madrasati_pending_google_role', role);
+      }
+      try {
+        await signInWithRedirect(this.auth, provider);
+        return null; // page navigates away; flow resumes in handleRedirectResult()
+      } catch (redirectErr) {
+        console.warn('Google redirect also failed:', redirectErr);
+        return null;
+      }
+    }
+  }
+
+  /** Resumes a redirect-based Google login after the page reloads. */
+  private async handleRedirectResult(): Promise<void> {
+    try {
+      const result = await getRedirectResult(this.auth);
+      if (!result?.user) return;
+      const storedRole = (typeof localStorage !== 'undefined'
+        ? localStorage.getItem('madrasati_pending_google_role')
+        : null) as UserRole | null;
+      if (typeof localStorage !== 'undefined') {
+        localStorage.removeItem('madrasati_pending_google_role');
+      }
+      const profile = await this.completeGoogleProfile(result.user, storedRole || 'teacher');
+      if (!profile.gender || (profile.role === 'teacher' && !profile.primarySubject)) {
+        this.needsProfileCompletion.set(true);
+      }
+    } catch (err) {
+      console.warn('Google redirect result error:', err);
     }
   }
 
@@ -273,8 +317,8 @@ export class FirebaseService {
         this.userProfile.set(profile);
         this.saveSession(profile);
         return profile;
-      } catch (err: any) {
-        console.warn('Firebase Email Auth error (falling back to verified local session):', err?.message || err);
+      } catch (err: unknown) {
+        console.warn('Firebase Email Auth error (falling back to verified local session):', err instanceof Error ? err.message : err);
       }
     }
 
@@ -308,6 +352,7 @@ export class FirebaseService {
     phone?: string;
     grade?: string;
     primarySubject?: string;
+    gender?: 'male' | 'female';
   }): Promise<UserProfile> {
     const avatar = data.role === 'teacher'
       ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
@@ -337,6 +382,7 @@ export class FirebaseService {
             phone: data.phone || null,
             grade: data.grade || null,
             primarySubject: data.primarySubject || null,
+            gender: data.gender || null,
             photoURL: avatar,
             createdAt: new Date().toISOString(),
           }, { merge: true });
@@ -354,13 +400,14 @@ export class FirebaseService {
           phone: data.phone,
           grade: data.grade,
           primarySubject: data.primarySubject,
+          gender: data.gender,
         };
 
         this.userProfile.set(profile);
         this.saveSession(profile);
         return profile;
-      } catch (err: any) {
-        console.warn('Firebase createUserWithEmailAndPassword error (falling back to verified local session):', err?.message || err);
+      } catch (err: unknown) {
+        console.warn('Firebase createUserWithEmailAndPassword error (falling back to verified local session):', err instanceof Error ? err.message : err);
       }
     }
 
@@ -374,6 +421,7 @@ export class FirebaseService {
       phone: data.phone,
       grade: data.grade,
       primarySubject: data.primarySubject,
+      gender: data.gender,
     };
 
     this.userProfile.set(profile);
@@ -442,7 +490,7 @@ export class FirebaseService {
 
     if (updated.uid && !updated.uid.startsWith('user_') && !updated.uid.startsWith('google_user_') && !updated.uid.startsWith('email_user_')) {
       try {
-        await updateDoc(doc(this.db, 'users', updated.uid), updates as any);
+        await updateDoc(doc(this.db, 'users', updated.uid), updates as Record<string, unknown>);
       } catch (err) {
         console.warn('Firestore profile update offline/fallback:', err);
       }
@@ -459,7 +507,7 @@ export class FirebaseService {
         const docRef = doc(this.db, 'notifications', id);
         await updateDoc(docRef, { isRead: true });
       }
-    } catch (e) {
+    } catch {
       // Offline fallback
     }
   }
@@ -470,10 +518,10 @@ export class FirebaseService {
       for (const n of this.notifications()) {
         if (!n.id.startsWith('notif-')) {
           const docRef = doc(this.db, 'notifications', n.id);
-          await updateDoc(docRef, { isRead: true }).catch(() => {});
+          await updateDoc(docRef, { isRead: true }).catch(() => undefined);
         }
       }
-    } catch (e) {
+    } catch {
       // Offline fallback
     }
   }

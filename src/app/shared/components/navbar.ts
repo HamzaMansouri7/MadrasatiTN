@@ -21,8 +21,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   {{ lang.t('brandName') }}
                 </span>
                 <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] border border-[#007CC2]/20 shrink-0">
-                  <span>🇹🇳</span>
-                  <span>TN</span>
+                  <span class="font-black">TN</span>
                 </span>
               </div>
               <p class="text-[10px] sm:text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium leading-none hidden 2xl:block mt-0.5">
@@ -83,7 +82,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
           </nav>
 
           <!-- Right Action Bar: Search + Notifications + Language + Profile Avatar -->
-          <div class="flex items-center gap-1.5 sm:gap-2 xl:gap-3 ml-auto shrink-0">
+          <div class="flex items-center gap-1.5 sm:gap-2 xl:gap-3 ms-auto shrink-0">
             
             <!-- Global Quick Search Input -->
             <div class="hidden 2xl:flex items-center relative">
@@ -208,10 +207,10 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             <!-- Language Toggle Pill -->
             <button
               (click)="lang.toggleLanguage()"
+              [title]="lang.tr('Changer de langue', 'تغيير اللغة')"
               class="flex items-center gap-1.5 sm:gap-2 bg-white dark:bg-[#152737] hover:bg-[#F3FAFD] dark:hover:bg-[#1B344B] text-[#102A43] dark:text-white border border-[#CBD9E2] dark:border-[#254663] px-2.5 sm:px-3 h-[38px] sm:h-[40px] rounded-[10px] text-xs font-semibold cursor-pointer transition-colors shrink-0 shadow-2xs">
-              <span class="text-sm leading-none">{{ lang.isArabic() ? '🇹🇳' : '🇫🇷' }}</span>
-              <span class="text-xs font-bold">{{ lang.isArabic() ? 'AR' : 'FR' }}</span>
-              <span class="material-icons text-xs text-[#829AB1]">expand_more</span>
+              <span class="text-xs font-bold">{{ lang.isArabic() ? 'العربية' : 'Français' }}</span>
+              <span class="material-icons text-xs text-[#829AB1]">translate</span>
             </button>
 
             <!-- User Profile Avatar & Dropdown Menu OR Connexion CTA Button -->

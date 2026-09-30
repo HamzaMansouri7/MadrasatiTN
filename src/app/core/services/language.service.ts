@@ -105,7 +105,7 @@ export class LanguageService {
     noAttachment: { fr: 'Aucune pièce jointe', ar: 'بدون وثيقة مرفقة' },
     searchDocsPlaceholder: { fr: 'Rechercher un document, un examen ou un cours...', ar: 'ابحث عن درس، امتحان أو تلخيص...' },
     printA4Btn: { fr: 'Imprimer en A4', ar: 'طباعة فورية A4' },
-    shareWhatsAppBtn: { fr: 'Partager sur WhatsApp', ar: 'مشاركة عبر واتساب' },
+    shareLinkBtn: { fr: 'Copier le lien', ar: 'نسخ الرابط' },
 
     // Parent View
     parentTitle: { fr: 'Espace Parent', ar: 'فضاء الولي' },
@@ -151,8 +151,8 @@ export class LanguageService {
     heroBadge: { fr: 'Plateforme Éducative Primaire Tunisienne (1ère — 6ème)', ar: 'المنصة التعليمية للابتدائي التونسي (السنة 1 — 6)' },
     heroTitle: { fr: "L'école tunisienne moderne, connectée et sereine.", ar: 'المدرسة التونسية الحديثة، المتصلة والناجحة.' },
     heroSubtitle: {
-      fr: "Fini les devoirs éparpillés sur Facebook et les messages WhatsApp à minuit. Madrasati TN réunit les Enseignants, Parents et Élèves autour des 38 manuels officiels CNP, de devoirs imprimables en A4 et d'un suivi pédagogique rigoureux.",
-      ar: 'وداعاً للواجبات الضائعة في مجموعات الفيسبوك والرسائل العشوائية. تجمع مدرستي تونس المعلمين والأولياء والتلاميذ حول 38 كتاباً مدرسياً رسمياً، وواجبات قابلة للطباعة A4 ومتابعة دراسية دقيقة.',
+      fr: "Fini les devoirs éparpillés et les messages de dernière minute. Madrasati TN réunit les Enseignants, Parents et Élèves autour des 38 manuels officiels CNP, de devoirs imprimables en A4 et d'un suivi pédagogique rigoureux.",
+      ar: 'وداعاً للواجبات الضائعة والرسائل العشوائية في آخر لحظة. تجمع مدرستي تونس المعلمين والأولياء والتلاميذ حول 38 كتاباً مدرسياً رسمياً، وواجبات قابلة للطباعة A4 ومتابعة دراسية دقيقة.',
     },
     ctaFreeAccount: { fr: 'Créer un compte gratuit', ar: 'إنشاء حساب مجاني' },
     ctaLogin: { fr: 'Se connecter', ar: 'تسجيل الدخول' },
