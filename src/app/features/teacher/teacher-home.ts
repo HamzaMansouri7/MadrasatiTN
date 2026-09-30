@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, BlogPost, QuestionThread } from '@core';
+import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread } from '@core';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -56,7 +56,7 @@ export interface GeneratedExerciseResult {
             </button>
 
             <button
-              (click)="openModal('course')"
+              (click)="store.setRole('editor')"
               class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
@@ -212,7 +212,7 @@ export interface GeneratedExerciseResult {
                   </p>
                 </div>
                 <button
-                  (click)="openModal('course')"
+                  (click)="store.setRole('editor')"
                   class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addCourseBtn') }}
                 </button>
@@ -634,10 +634,10 @@ export interface GeneratedExerciseResult {
                   <span class="material-icons text-2xl">document_scanner</span>
                 </div>
                 <h4 class="text-xs font-bold text-[#102A43] dark:text-white">
-                  {{ lang.tr('Numériser un devoir / capture d\'écran / PDF', 'مسح ضوئي للامتحان أو الصورة أو PDF') }}
+                  {{ lang.tr("Numériser un devoir / capture d'écran / PDF", 'مسح ضوئي للامتحان أو الصورة أو PDF') }}
                 </h4>
                 <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">
-                  {{ isAiScanning() ? lang.tr('Analyse OCR & classification par Gemini 2.5 en cours...', 'جاري الفرز والتحليل الذكي بواسطة الذكاء الاصطناعي...') : (isUploading() ? lang.tr('Envoi vers le VPS...', 'جاري الرفع إلى الخادم...') : lang.tr('L\'IA extrait le texte, classifie la matière/niveau et applique votre filigrane officiel', 'يقوم الذكاء الاصطناعي باستخراج النص وتصنيف المادة وتطبيق علامتك المائية')) }}
+                  {{ isAiScanning() ? lang.tr('Analyse OCR & classification par Gemini 2.5 en cours...', 'جاري الفرز والتحليل الذكي بواسطة الذكاء الاصطناعي...') : (isUploading() ? lang.tr('Envoi vers le VPS...', 'جاري الرفع إلى الخادم...') : lang.tr("L'IA extrait le texte, classifie la matière/niveau et applique votre filigrane officiel", 'يقوم الذكاء الاصطناعي باستخراج النص وتصنيف المادة وتطبيق علامتك المائية')) }}
                 </p>
                 <input
                   id="file-upload"
@@ -1534,7 +1534,7 @@ export class TeacherHomeComponent {
       title: this.newCourseTitle(),
       subject: this.newCourseSubject(),
       grade: this.newCourseGrade(),
-      trimester: this.newCourseTrimester() as any,
+      trimester: this.newCourseTrimester() as Trimester,
       docType: this.newCourseDocType(),
       schoolYear: '2025-2026',
       teacherName,

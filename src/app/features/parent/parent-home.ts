@@ -184,7 +184,25 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
           <!-- TAB 1: A4 DOCUMENTS BANK & 1-CLICK PRINT -->
           @if (activeTab() === 'docs') {
             <div class="space-y-6">
-              
+
+              <!-- Exercices vs Manuels (parents look for exercises first) -->
+              <div class="bg-[#EEF4F8] dark:bg-[#0E1D2A] p-1.5 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145] inline-flex items-center gap-1.5 w-full sm:w-auto">
+                <button
+                  (click)="selectDocKind('exercices')"
+                  [class]="docKind() === 'exercices' ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#007CC2]'"
+                  class="flex-1 sm:flex-none px-4 py-2 rounded-[10px] text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer">
+                  <span class="material-icons text-sm">assignment</span>
+                  {{ lang.tr('Exercices & Devoirs', 'التمارين والامتحانات') }} ({{ exercicesCount() }})
+                </button>
+                <button
+                  (click)="selectDocKind('books')"
+                  [class]="docKind() === 'books' ? 'bg-[#23845B] text-white font-semibold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#23845B]'"
+                  class="flex-1 sm:flex-none px-4 py-2 rounded-[10px] text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer">
+                  <span class="material-icons text-sm">menu_book</span>
+                  {{ lang.tr('Manuels Officiels (CNP)', 'الكتب المدرسية الرسمية') }} ({{ booksCount() }})
+                </button>
+              </div>
+
               <!-- Filter Controls -->
               <div class="bg-[#F7F9FB] dark:bg-[#152737] p-4 rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] space-y-3">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -202,7 +220,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                   <div class="flex flex-wrap items-center gap-1.5">
                     @for (grade of gradesList; track grade) {
                       <button
-                        (click)="selectedGradeFilter.set(grade); currentPage.set(1)"
+                        (click)="selectGrade(grade)"
                         [class]="selectedGradeFilter() === grade
                           ? 'bg-[#007CC2] text-white font-semibold shadow-xs'
                           : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
@@ -217,7 +235,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                 <div class="flex flex-wrap items-center gap-1.5 pt-1">
                   @for (subj of subjectsList; track subj) {
                     <button
-                      (click)="selectedSubjectFilter.set(subj); currentPage.set(1)"
+                      (click)="selectSubject(subj)"
                       [class]="selectedSubjectFilter() === subj
                         ? 'bg-[#23845B] text-white font-semibold shadow-xs'
                         : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#23845B]'"
@@ -226,6 +244,26 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                     </button>
                   }
                 </div>
+
+                <!-- Topic Taxonomy Pills (Book → Chapter → Topic → Exercise) -->
+                @if (availableTopics().length > 1) {
+                  <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-[#E3ECF2] dark:border-[#1A3145]">
+                    <span class="text-[10px] font-semibold text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1 pr-1">
+                      <span class="material-icons text-xs text-[#8A5A00]">sell</span>
+                      {{ lang.tr('Thème / Chapitre :', 'المحور / الدرس :') }}
+                    </span>
+                    @for (topic of availableTopics(); track topic) {
+                      <button
+                        (click)="selectedTopicFilter.set(topic); currentPage.set(1)"
+                        [class]="selectedTopicFilter() === topic
+                          ? 'bg-[#8A5A00] text-white font-semibold shadow-xs'
+                          : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#8A5A00]'"
+                        class="px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer">
+                        {{ topic === 'all' ? lang.tr('Tous les thèmes', 'كل المحاور') : topic }}
+                      </button>
+                    }
+                  </div>
+                }
               </div>
 
               <!-- Documents Cards Grid -->
@@ -233,6 +271,25 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                 @for (c of paginatedCourses(); track c.id) {
                   <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-3 hover:shadow-md transition-all">
                     <div class="space-y-2">
+                      @if (c.imageUrls && c.imageUrls.length) {
+                        <button
+                          (click)="openPrintCourseModal(c)"
+                          class="block w-full relative rounded-[12px] overflow-hidden border border-[#E3ECF2] dark:border-[#1A3145] group cursor-pointer mb-1"
+                          [title]="lang.tr('Voir & imprimer', 'عرض وطباعة')">
+                          <img [src]="c.imageUrls[0]" [alt]="c.title" loading="lazy" class="w-full h-40 object-cover object-top transition-transform group-hover:scale-[1.03]" />
+                          @if (c.imageUrls.length > 1) {
+                            <span class="absolute top-2 right-2 bg-[#0B2947]/80 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+                              <span class="material-icons text-[11px]">collections</span>{{ c.imageUrls.length }}
+                            </span>
+                          }
+                          @if (c.hasCorrection) {
+                            <span class="absolute top-2 left-2 bg-[#23845B] text-white text-[9px] font-bold px-2 py-0.5 rounded-full">
+                              {{ lang.tr('Corrigé', 'إصلاح') }}
+                            </span>
+                          }
+                        </button>
+                      }
+
                       <div class="flex items-center justify-between">
                         <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                           {{ c.subject }}
@@ -245,6 +302,9 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                       </div>
 
                       <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-sm leading-snug">{{ c.title }}</h4>
+                      @if (c.theme) {
+                        <span class="inline-block bg-[#8A5A00]/10 text-[#8A5A00] dark:text-[#E0AA32] text-[10px] font-semibold px-2 py-0.5 rounded-full">{{ c.theme }}</span>
+                      }
                       <p class="text-xs text-[#486581] dark:text-[#8CA9C4] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
                     </div>
 
@@ -898,18 +958,67 @@ export class ParentHomeComponent {
   readonly pageSize = signal<number>(9);
   readonly currentPage = signal<number>(1);
 
+  // Parents look for exercises first — split the library from official textbooks.
+  readonly docKind = signal<'exercices' | 'books'>('exercices');
+  // Topic taxonomy (Book → Chapter → Topic → Exercise): the resource's theme.
+  readonly selectedTopicFilter = signal<string>('all');
+
+  private isBook(c: Course): boolean {
+    return !!c.pdfUrl;
+  }
+
+  readonly exercicesCount = computed(() => this.store.courses().filter((c) => !this.isBook(c)).length);
+  readonly booksCount = computed(() => this.store.courses().filter((c) => this.isBook(c)).length);
+
+  // Distinct topics available for the current kind + grade + subject selection.
+  readonly availableTopics = computed(() => {
+    const grade = this.selectedGradeFilter();
+    const subj = this.selectedSubjectFilter();
+    const kind = this.docKind();
+    const topics = new Set<string>();
+    for (const c of this.store.courses()) {
+      const matchKind = kind === 'books' ? this.isBook(c) : !this.isBook(c);
+      const matchGrade = grade === 'all' || c.grade === grade;
+      const matchSubj = subj === 'all' || c.subject === subj;
+      if (matchKind && matchGrade && matchSubj && c.theme) topics.add(c.theme);
+    }
+    return ['all', ...Array.from(topics).sort()];
+  });
+
   readonly filteredCourses = computed(() => {
     const q = this.searchDocQuery().toLowerCase().trim();
     const grade = this.selectedGradeFilter();
     const subj = this.selectedSubjectFilter();
+    const kind = this.docKind();
+    const topic = this.selectedTopicFilter();
 
     return this.store.courses().filter((c) => {
-      const matchQ = !q || c.title.toLowerCase().includes(q) || c.summary.toLowerCase().includes(q);
+      const matchKind = kind === 'books' ? this.isBook(c) : !this.isBook(c);
+      const matchQ = !q || c.title.toLowerCase().includes(q) || c.summary.toLowerCase().includes(q)
+        || (c.theme?.toLowerCase().includes(q) ?? false);
       const matchGrade = grade === 'all' || c.grade === grade;
       const matchSubj = subj === 'all' || c.subject === subj;
-      return matchQ && matchGrade && matchSubj;
+      const matchTopic = topic === 'all' || c.theme === topic;
+      return matchKind && matchQ && matchGrade && matchSubj && matchTopic;
     });
   });
+
+  // Reset topic when a broader filter changes, so stale topics don't hide results.
+  selectDocKind(kind: 'exercices' | 'books') {
+    this.docKind.set(kind);
+    this.selectedTopicFilter.set('all');
+    this.currentPage.set(1);
+  }
+  selectGrade(grade: string) {
+    this.selectedGradeFilter.set(grade);
+    this.selectedTopicFilter.set('all');
+    this.currentPage.set(1);
+  }
+  selectSubject(subj: string) {
+    this.selectedSubjectFilter.set(subj);
+    this.selectedTopicFilter.set('all');
+    this.currentPage.set(1);
+  }
 
   readonly totalPages = computed(() => {
     return Math.max(1, Math.ceil(this.filteredCourses().length / this.pageSize()));

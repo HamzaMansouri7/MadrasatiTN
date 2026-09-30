@@ -1,10 +1,11 @@
 # Madrasati TN (مدرستي تونس) — Architecture & Project Standards
 
 ## 1. Overview & Vision
-Madrasati TN is a modern, high-performance educational platform designed specifically for the Tunisian primary education system (1ère à 6ème Année). It unifies Teachers, Parents, and Students into structured, distraction-free workspaces, replacing fragmented Facebook groups and unorganized WhatsApp chats.
+Madrasati TN (مدرستي تونس) is a **collaborative Teacher–Parent Educational Resource Hub** for the Tunisian primary education system (1ère à 6ème Année). It is not an LMS or virtual school; it is a structured knowledge bank connecting official CNP textbooks, teacher-authored exercises/corrections, and parent home practice.
 
-- **Stack:** Angular 21 (Standalone, Signals, OnPush) + Tailwind CSS + Node.js/Express SSR + Google Gemini AI.
-- **National Curriculum Integration:** 38 official Tunisian student textbooks scraped and integrated from the Centre National Pédagogique (CNP).
+- **Knowledge Hierarchy:** `Book (CNP) ➔ Chapter ➔ Topic / Module ➔ Exercises ➔ Step-by-Step Corrections`.
+- **Core Loop:** Teachers publish & verify ➔ AI enriches (OCR, summaries, hints, variations) ➔ Parents discover & practice ➔ Resource-centric Teacher ↔ Parent communication.
+- **Stack:** Angular 21 (Standalone, Signals, OnPush) + Tailwind CSS + Express SSR + Google Gemini AI.
 - **Core Value Pillars:**
   1. A4 printable official ministry exam layout with teacher watermark & attribution.
   2. Free VPS disk-backed storage engine (`/api/upload`) eliminating third-party cloud costs.

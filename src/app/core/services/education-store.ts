@@ -19,6 +19,7 @@ import {
 } from '../models/education.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
+import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
 
 @Injectable({
   providedIn: 'root',
@@ -344,6 +345,7 @@ export class EducationStore {
   readonly courses = signal<Course[]>([
     ...CNP_PRIMARY_COURSES,
     ...LIBRARY_EXERCISES,
+    ...FIRST_GRADE_COURSES,
     {
       id: 'crs-1',
       title: 'La multiplication des grands nombres (jusqu\'à 999 999)',
@@ -440,6 +442,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
 
   // Public Exercises Repository (Searchable Bank)
   readonly exercisesBank = signal<ExerciseItem[]>([
+    ...FIRST_GRADE_EXERCISES,
     {
       id: 'bank-1',
       title: 'Devoir de Contrôle N°1 : Aires et Périmètres',
