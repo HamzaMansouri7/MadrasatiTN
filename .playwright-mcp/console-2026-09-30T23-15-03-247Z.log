@@ -1,0 +1,6 @@
+[     618ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Users/lassa/Documents/GitHub/MadrasatiTN/.angular/cache/21.2.24/app/vite/deps/chunk-USZEULDS.js?v=9d634737:17356
+[    1048ms] [WARNING] Firestore real-time notification listener note (using local cache): Missing or insufficient permissions. @ http://localhost:4200/main.js:2156
+[    1049ms] [LOG] Firebase Firestore connection verified. @ http://localhost:4200/main.js:1921
+[    7825ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:4200/:0
+[   16907ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.closed call. @ http://localhost:4200/@fs/C:/Users/lassa/Documents/GitHub/MadrasatiTN/.angular/cache/21.2.24/app/vite/deps/firebase_auth.js?v=9d634737:7167
+[   16908ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.closed call. @ http://localhost:4200/@fs/C:/Users/lassa/Documents/GitHub/MadrasatiTN/.angular/cache/21.2.24/app/vite/deps/firebase_auth.js?v=9d634737:7167

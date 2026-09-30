@@ -53,7 +53,7 @@ const verifyGoogleIdToken = async (idToken: string): Promise<VerifiedUser | null
 };
 
 // Server-Side Token Verification Middlewares
-const verifyAuthToken = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+export const verifyAuthToken = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
     if (process.env['NODE_ENV'] !== 'production' && !authHeader) {
@@ -75,7 +75,7 @@ const verifyAuthToken = async (req: AuthenticatedRequest, res: Response, next: N
   next();
 };
 
-const optionalAuthToken = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+export const optionalAuthToken = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   const authHeader = req.headers.authorization;
   if (authHeader && authHeader.startsWith('Bearer ')) {
     const idToken = authHeader.split('Bearer ')[1];
@@ -322,7 +322,7 @@ const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 // 1. Generate Exercise
 app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, topic, difficulty } = req.body;
+    const { grade, subject, topic, difficulty, format } = req.body;
 
     if (!ai) {
       res.status(500).json({
@@ -332,21 +332,38 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
     }
 
     const safeTopic = (topic || '').slice(0, 300);
+    const validFormats = ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'];
+    const requestedFormat = validFormats.includes(format) ? format : undefined;
+
     const prompt = `Tu es un expert pédagogique tunisien spécialisé dans le programme de l'enseignement primaire (1ère à 6ème année).
 Génère un exercice pédagogique de haute qualité adapté pour :
 - Niveau: ${grade || '4ème Année'}
 - Matière: ${subject || 'Mathématiques'}
 - Chapitre/Sujet: ${safeTopic || 'Résolution de problèmes'}
 - Difficulté: ${difficulty || 'Moyen'}
+${requestedFormat ? `- Format requis: ${requestedFormat}` : ''}
 
 Réponds STRICTEMENT au format JSON valide suivant :
 {
   "title": "Titre court de l'exercice",
-  "promptText": "Texte complet du problème ou de la question avec contexte réaliste (ex: marché, école, ferme en Tunisie)",
+  "promptText": "Texte complet de la consigne ou du problème",
   "solutionText": "Correction détaillée étape par étape avec le résultat final",
-  "hints": ["Indice 1 pour aider l'élève sans donner la réponse", "Indice 2"],
-  "points": 10
-}`;
+  "hints": ["Indice 1", "Indice 2"],
+  "points": 5,
+  "format": "${requestedFormat || 'free'}",
+  "qcmOptions": ["Option 1", "Option 2", "Option 3"],
+  "qcmCorrectIndex": 0,
+  "tfStatements": [{"text": "Affirmation 1", "answer": true}, {"text": "Affirmation 2", "answer": false}],
+  "gapText": "Texte explicatif avec mots à deviner entourés de [[mot1]] et [[mot2]]",
+  "matchingPairs": [{"left": "Élément A", "right": "Correspondance A"}, {"left": "Élément B", "right": "Correspondance B"}]
+}
+
+Instructions par format :
+- Si format est 'free' : promptText contient l'énoncé. Les champs spécifiques au format peuvent être omis.
+- Si format est 'qcm' : qcmOptions contient 3 à 4 choix, qcmCorrectIndex (0-indexed) indique la bonne réponse, promptText contient l'énoncé.
+- Si format est 'true_false' : tfStatements contient 3 à 5 affirmations avec 'text' et 'answer' (true/false).
+- Si format est 'fill_blanks' : gapText contient le texte avec les mots à cacher entourés de [[mot]].
+- Si format est 'matching' : matchingPairs contient 3 à 5 couples {left, right} appariés correctement.`;
 
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',

@@ -1,0 +1,143 @@
+- generic [ref=e3]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8] [cursor=pointer]:
+        - img "Madrasati Logo" [ref=e10]
+        - generic [ref=e12]:
+          - generic [ref=e13]: مدرستي
+          - generic [ref=e14]: TN
+      - navigation [ref=e16]:
+        - button "home الرئيسية" [ref=e17] [cursor=pointer]:
+          - generic [ref=e18]: home
+          - generic [ref=e19]: الرئيسية
+        - button "school فضاء المعلم" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: school
+          - generic [ref=e22]: فضاء المعلم
+        - button "family_restroom فضاء الولي" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: family_restroom
+          - generic [ref=e25]: فضاء الولي
+        - button "explore المكتبة والدليل" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: explore
+          - generic [ref=e28]: المكتبة والدليل
+      - generic [ref=e29]:
+        - button "notifications 2" [ref=e31] [cursor=pointer]:
+          - generic [ref=e32]: notifications
+          - generic [ref=e33]: "2"
+        - button "dark_mode" [ref=e34] [cursor=pointer]
+        - button "العربية translate" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: العربية
+          - generic [ref=e38]: translate
+        - button "login دخول" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: login
+          - generic [ref=e41]: دخول
+  - main [ref=e42]:
+    - generic [ref=e44]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: الجمهورية التونسية
+            - paragraph [ref=e52]: وزارة التربية – المنصة التعليمية الوطنية
+          - heading "المدرسة التونسية الحديثة، المتصلة والهادئة." [level=1] [ref=e53]
+          - paragraph [ref=e54]: منصة رقمية متكاملة للمعلمين والأولياء والتلاميذ. يمكنك الوصول إلى مواردك، وإدارة دروسك، ومتابعة التحصيل الدراسي والتعاون بكل بساطة.
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - generic [ref=e57]: menu_book
+              - generic [ref=e59]: موارد بيداغوجية
+            - generic [ref=e60]:
+              - generic [ref=e61]: groups
+              - generic [ref=e63]: متابعة التلاميذ
+            - generic [ref=e64]:
+              - generic [ref=e65]: verified_user
+              - generic [ref=e67]: أمان وموثوقية
+            - generic [ref=e68]:
+              - generic [ref=e69]: bolt
+              - generic [ref=e71]: سهل وفعال
+        - img "Madrasati TN — Évaluation officielle et manuels scolaires" [ref=e73]
+      - generic [ref=e74]:
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: tune
+            - generic [ref=e79]: فضاءات عمل مخصصة
+          - heading "اختر فضائك المخصص" [level=2] [ref=e80]
+          - paragraph [ref=e81]: أدوات مصممة خصيصاً لكل طرف في المنظومة التربوية
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]: school
+                - generic [ref=e89]: بيداغوجيا وطباعة A4
+              - heading "للمعلمين والمعلمات" [level=3] [ref=e90]
+              - paragraph [ref=e91]: نشر الدروس والواجبات والإعلانات الرسمية مع إنشاء أوراق تمارين معتمدة بعلامة مائية، جاهزة للطباعة A4.
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]: check
+                  - generic [ref=e96]: إنشاء أوراق A4 وفروض تأليفية
+                - generic [ref=e97]:
+                  - generic [ref=e98]: check
+                  - generic [ref=e100]: كتابة مقالات وتوجيهات بيداغوجية
+                - generic [ref=e101]:
+                  - generic [ref=e102]: check
+                  - generic [ref=e104]: إجابة وتوجيه أولياء الأمور
+            - generic [ref=e105]:
+              - button "دخول فضاء المعلم arrow_forward" [ref=e106] [cursor=pointer]:
+                - generic [ref=e107]: دخول فضاء المعلم
+                - generic [ref=e108]: arrow_forward
+              - button "التسجيل كمعلم(ة)" [ref=e109] [cursor=pointer]
+          - generic [ref=e110]:
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e114]: family_restroom
+                - generic [ref=e116]: بنك وثائق واستشارات
+              - heading "للأولياء" [level=3] [ref=e117]
+              - paragraph [ref=e118]: متابعة دراسية دقيقة وفورية لأبنائك، جدول الامتحانات والتواصل المباشر والمنظم مع الإطار التربوي.
+              - generic [ref=e119]:
+                - generic [ref=e120]:
+                  - generic [ref=e121]: check
+                  - generic [ref=e123]: تحميل وطباعة فورية A4 بنقرة واحدة
+                - generic [ref=e124]:
+                  - generic [ref=e125]: check
+                  - generic [ref=e127]: مطالعة نصائح وتوجيهات المعلمين
+                - generic [ref=e128]:
+                  - generic [ref=e129]: check
+                  - generic [ref=e131]: طلب وثائق وطرح أسئلة بيداغوجية
+            - generic [ref=e132]:
+              - button "دخول فضاء الولي arrow_forward" [ref=e133] [cursor=pointer]:
+                - generic [ref=e134]: دخول فضاء الولي
+                - generic [ref=e135]: arrow_forward
+              - button "التسجيل كولي أمر" [ref=e136] [cursor=pointer]
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - generic [ref=e141]: verified
+            - generic [ref=e142]: المركز الوطني البيداغوجي بتونس
+          - heading "40 كتاباً مدرسياً رسمياً، مرقمناً ومجانياً." [level=3] [ref=e143]
+          - paragraph [ref=e144]: جميع كتب التلميذ من السنة الأولى إلى السادسة أساسي في جميع المواد متوفرة بدقة عالية ومجاناً.
+          - button "collections_bookmark تصفح مكتبة الكتب المدرسية" [ref=e145] [cursor=pointer]:
+            - generic [ref=e146]: collections_bookmark
+            - text: تصفح مكتبة الكتب المدرسية
+        - generic [ref=e147]:
+          - button "1 سنة" [ref=e148] [cursor=pointer]:
+            - generic [ref=e149]: "1"
+            - generic [ref=e150]: سنة
+          - button "2 سنة" [ref=e151] [cursor=pointer]:
+            - generic [ref=e152]: "2"
+            - generic [ref=e153]: سنة
+          - button "3 سنة" [ref=e154] [cursor=pointer]:
+            - generic [ref=e155]: "3"
+            - generic [ref=e156]: سنة
+          - button "4 سنة" [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]: "4"
+            - generic [ref=e159]: سنة
+          - button "5 سنة" [ref=e160] [cursor=pointer]:
+            - generic [ref=e161]: "5"
+            - generic [ref=e162]: سنة
+          - button "6 سنة" [ref=e163] [cursor=pointer]:
+            - generic [ref=e164]: "6"
+            - generic [ref=e165]: سنة
+  - contentinfo [ref=e166]:
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - img "Madrasati" [ref=e169]
+        - generic [ref=e170]: مدرستي — المنصة التعليمية التونسية
+        - generic [ref=e171]: مجاني 100% للمدرسة التونسية 🇹🇳
+      - paragraph [ref=e172]: المنصة التعليمية الرسمية للمعلمين والتلاميذ والأولياء في تونس.

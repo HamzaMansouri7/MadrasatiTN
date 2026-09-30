@@ -14,6 +14,8 @@ export type EditorBlockType =
 
 export type CalloutVariant = 'info' | 'tip' | 'warning' | 'ministry';
 
+export type ExerciseFormat = 'free' | 'qcm' | 'true_false' | 'fill_blanks' | 'matching';
+
 export interface EditorBlock {
   id: string;
   type: EditorBlockType;
@@ -29,6 +31,12 @@ export interface EditorBlock {
   exercisePoints?: number;
   exerciseSolution?: string;
   showSolution?: boolean;
+  exerciseFormat?: ExerciseFormat;
+  qcmOptions?: string[];
+  qcmCorrectIndex?: number;
+  tfStatements?: { text: string; answer: boolean }[];
+  gapText?: string;
+  matchingPairs?: { left: string; right: string }[];
   // Image specific
   imageUrl?: string;
   imageCaption?: string;

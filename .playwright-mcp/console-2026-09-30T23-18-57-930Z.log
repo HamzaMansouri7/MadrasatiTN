@@ -1,0 +1,3 @@
+[    1256ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Users/lassa/Documents/GitHub/MadrasatiTN/.angular/cache/21.2.24/app/vite/deps/chunk-USZEULDS.js?v=9d634737:17356
+[    1581ms] [WARNING] Firestore real-time notification listener note (using local cache): Missing or insufficient permissions. @ http://localhost:4200/main.js:2156
+[    1582ms] [LOG] Firebase Firestore connection verified. @ http://localhost:4200/main.js:1921
