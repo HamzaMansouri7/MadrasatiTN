@@ -69,19 +69,6 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               </button>
             }
 
-            <!-- Student -->
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'student' || firebase.userProfile()?.role === 'teacher') {
-              <button
-                (click)="selectRole('student')"
-                [class]="store.currentRole() === 'student' 
-                  ? 'text-[#005F96] dark:text-[#168CCB] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60 dark:bg-[#102A43]/50' 
-                  : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#007CC2] hover:bg-[#F3FAFD] dark:hover:bg-[#152737] font-medium border-b-[3px] border-transparent'"
-                class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-                <span class="material-icons text-base xl:text-lg">auto_stories</span>
-                <span>{{ lang.t('roleStudent') }}</span>
-              </button>
-            }
-
             <!-- Public Discovery -->
             <button
               (click)="selectRole('public')"
@@ -269,15 +256,6 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 [class]="store.currentRole() === 'parent' ? 'bg-[#8A5A00] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
                 class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
                 {{ lang.t('roleParent') }}
-              </button>
-            }
-
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'student' || firebase.userProfile()?.role === 'teacher') {
-              <button
-                (click)="selectRole('student')"
-                [class]="store.currentRole() === 'student' ? 'bg-[#BF5B34] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-                class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-                {{ lang.t('roleStudent') }}
               </button>
             }
 

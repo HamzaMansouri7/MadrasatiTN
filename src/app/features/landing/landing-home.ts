@@ -99,7 +99,7 @@ import { EducationStore, LanguageService, UserRole } from '@core';
           </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
           @for (r of roles; track r.role) {
             <div class="group relative bg-white dark:bg-[#0E1D2A] rounded-2xl border border-[#E3ECF2] dark:border-[#1A3145] p-7 flex flex-col justify-between hover:shadow-xl hover:border-transparent transition-all duration-300 overflow-hidden hover:-translate-y-1">
               
@@ -228,7 +228,7 @@ export class LandingHomeComponent {
   ];
 
   readonly roles: {
-    role: 'teacher' | 'parent' | 'student';
+    role: 'teacher' | 'parent';
     icon: string;
     gradientFrom: string;
     gradientTo: string;
@@ -245,16 +245,16 @@ export class LandingHomeComponent {
       icon: 'school',
       gradientFrom: '#007CC2',
       gradientTo: '#0B2947',
-      badgeFr: 'Pédagogie & Évaluation',
-      badgeAr: 'بيداغوجيا وامتحانات',
+      badgeFr: 'Pédagogie & Évaluations A4',
+      badgeAr: 'بيداغوجيا وطباعة A4',
       titleKey: 'teacherSpaceTitle',
       descKey: 'teacherSpaceDesc',
       openKey: 'teacherOpenBtn',
       signupKey: 'teacherSignupBtn',
       points: [
         { fr: 'Génération A4 & devoirs de synthèse', ar: 'إنشاء أوراق A4 وفروض تأليفية' },
-        { fr: 'Filigrane & attribution enseignant', ar: 'علامة مائية وإسناد للمعلم' },
-        { fr: 'Téléversement de documents réels', ar: 'رفع وثائق حقيقية' },
+        { fr: 'Rédaction d\'articles & blog pédagogique', ar: 'كتابة مقالات وتوجيهات بيداغوجية' },
+        { fr: 'Réponse aux questions des parents', ar: 'إجابة وتوجيه أولياء الأمور' },
       ],
     },
     {
@@ -262,33 +262,16 @@ export class LandingHomeComponent {
       icon: 'family_restroom',
       gradientFrom: '#0D9488',
       gradientTo: '#115E59',
-      badgeFr: 'Suivi & Communication',
-      badgeAr: 'متابعة وتواصل',
+      badgeFr: 'Banque de Documents & Conseils',
+      badgeAr: 'بنك وثائق واستشارات',
       titleKey: 'parentSpaceTitle',
       descKey: 'parentSpaceDesc',
       openKey: 'parentOpenBtn',
       signupKey: 'parentSignupBtn',
       points: [
-        { fr: 'Suivi multi‑enfants (1ère à 6ème)', ar: 'متابعة عدة أبناء (1 إلى 6)' },
-        { fr: 'Messagerie officielle avec le maître', ar: 'مراسلة رسمية مع المعلم' },
-        { fr: 'Accusé de réception des devoirs', ar: 'إشعار باستلام الواجبات' },
-      ],
-    },
-    {
-      role: 'student',
-      icon: 'auto_stories',
-      gradientFrom: '#EA580C',
-      gradientTo: '#9A3412',
-      badgeFr: 'Devoirs & Tuteur IA',
-      badgeAr: 'واجبات ومساعد ذكي',
-      titleKey: 'studentSpaceTitle',
-      descKey: 'studentSpaceDesc',
-      openKey: 'studentOpenBtn',
-      signupKey: 'studentSignupBtn',
-      points: [
-        { fr: 'Photo de cahier & résolveur interactif', ar: 'صورة الكراس وحلّال تفاعلي' },
-        { fr: '40 manuels scolaires CNP intégrés', ar: '40 كتاباً مدرسياً مدمجاً' },
-        { fr: 'Tuteur IA bienveillant FR & AR', ar: 'مساعد ذكي لطيف بالفرنسية والعربية' },
+        { fr: 'Téléchargement & impression A4 1-clic', ar: 'تحميل وطباعة فورية A4 بنقرة واحدة' },
+        { fr: 'Lecture du blog des enseignants', ar: 'مطالعة نصائح وتوجيهات المعلمين' },
+        { fr: 'Demandes d\'exercices & questions au maître', ar: 'طلب وثائق وطرح أسئلة بيداغوجية' },
       ],
     },
   ];

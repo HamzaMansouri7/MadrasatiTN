@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, ExerciseItem, Homework } from '@core';
+import { EducationStore, LanguageService, FirebaseService, ExerciseItem, Homework } from '@core';
 
 export interface TutorExplanation {
   explanation: string;
@@ -24,7 +24,7 @@ export interface TutorExplanation {
             </div>
 
             <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
-              {{ lang.isArabic() ? ('مرحباً ' + store.activeStudent().name) : ('Bonjour ' + store.activeStudent().name) }}
+              {{ studentGreeting() }}
             </h1>
             <p class="text-[#8CA9C4] text-xs sm:text-sm max-w-lg">
               {{ lang.t('studentSub') }}
@@ -336,6 +336,23 @@ export interface TutorExplanation {
 export class StudentHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
+
+  isUserLoggedIn(): boolean {
+    return !!(this.firebase.userProfile() || this.firebase.currentUser());
+  }
+
+  studentGreeting(): string {
+    const profile = this.firebase.userProfile();
+    if (profile?.displayName) {
+      return this.lang.tr(`Bonjour ${profile.displayName}`, `مرحباً ${profile.displayName}`);
+    }
+    const user = this.firebase.currentUser();
+    if (user?.displayName) {
+      return this.lang.tr(`Bonjour ${user.displayName}`, `مرحباً ${user.displayName}`);
+    }
+    return this.lang.tr('Espace Élève', 'فضاء التلميذ');
+  }
 
   readonly activeHomeworkToSolve = signal<Homework | null>(null);
   readonly activePracticeExercise = signal<ExerciseItem | null>(null);
@@ -401,8 +418,8 @@ export class StudentHomeComponent {
     this.store.submitHomeworkAnswer(hw.id, this.studentAnswerText(), this.uploadedPhotoUrl() || undefined);
     this.activeHomeworkToSolve.set(null);
     const msg = this.lang.tr(
-      '🎉 Félicitations ' + this.store.activeStudent().name + ' ! Ton devoir a été soumis à l\'enseignant avec succès !',
-      '🎉 تهانينا يا أحمد! تم تسليم واجبك للمعلمة أمل بنجاح!'
+      '🎉 Félicitations ! Ton devoir a été soumis à l\'enseignant avec succès !',
+      '🎉 تهانينا! تم تسليم واجبك للمعلم بنجاح!'
     );
     alert(msg);
   }

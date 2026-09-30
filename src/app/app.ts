@@ -7,6 +7,7 @@ import {
   ParentHomeComponent,
   StudentHomeComponent,
   PublicDiscoveryComponent,
+  EditorStudioComponent,
 } from '@features';
 
 @Component({
@@ -19,6 +20,7 @@ import {
     ParentHomeComponent,
     StudentHomeComponent,
     PublicDiscoveryComponent,
+    EditorStudioComponent,
     AuthModalComponent,
   ],
   templateUrl: './app.html',

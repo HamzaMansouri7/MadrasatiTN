@@ -72,14 +72,43 @@ export class LanguageService {
     statViews: { fr: 'Consultations cours', ar: 'مشاهدات الدروس' },
     statConfirmations: { fr: 'Confirmation parents', ar: 'تأكيدات الأولياء' },
 
-    // Tabs
+    // Tabs & Workspace Sections
     tabAnnouncements: { fr: 'Annonces Officielles', ar: 'الإعلانات الرسمية' },
-    tabCourses: { fr: 'Cours & Fiches', ar: 'الدروس والملخصات' },
+    tabCourses: { fr: 'Cours & Fiches A4', ar: 'الدروس والملخصات A4' },
     tabHomeworks: { fr: 'Devoirs & Exercices', ar: 'الواجبات والتمارين' },
     tabSubmissions: { fr: 'Corrections Élèves', ar: 'تطبيقات التلاميذ والإصلاح' },
+    tabTeacherDocs: { fr: 'Fiches & Évaluations A4', ar: 'الوثائق والامتحانات A4' },
+    tabTeacherBlog: { fr: 'Blog Pédagogique', ar: 'المدونة البيداغوجية' },
+    tabTeacherQA: { fr: 'Questions & Demandes Parents', ar: 'أسئلة الأولياء والتوجيه' },
+    tabParentDocs: { fr: 'Banque de Documents A4', ar: 'بنك الوثائق والطباعة A4' },
+    tabParentBlog: { fr: 'Articles & Conseils Pédagogiques', ar: 'نصائح ومقالات المعلمين' },
+    tabParentQA: { fr: 'Poser une Question au Maître', ar: 'طرح سؤال / طلب وثيقة' },
+
+    // Blog & Q&A Hub
+    writeArticleBtn: { fr: 'Rédiger un Article', ar: 'كتابة مقال بيداغوجي' },
+    askQuestionBtn: { fr: 'Poser une Question', ar: 'طرح سؤال جديد' },
+    verifiedTeacherAnswer: { fr: 'Réponse certifiée par un enseignant', ar: 'إجابة معتمدة من معلم' },
+    readArticleBtn: { fr: 'Lire l\'article complet', ar: 'قراءة المقال كاملاً' },
+    attachedDocument: { fr: 'Document joint à imprimer', ar: 'وثيقة مرفقة جاهزة للطباعة' },
+    articleTitle: { fr: 'Titre de l\'article', ar: 'عنوان المقال' },
+    articleContent: { fr: 'Contenu pédagogique', ar: 'المحتوى البيداغوجي' },
+    articleCategory: { fr: 'Matière / Thème', ar: 'المادة / المحور' },
+    publishArticleBtn: { fr: 'Publier l\'article', ar: 'نشر المقال' },
+    commentsCount: { fr: 'Commentaires', ar: 'التعليقات' },
+    addComment: { fr: 'Ajouter un commentaire ou une question...', ar: 'أضف تعليقاً أو استفساراً...' },
+    sendCommentBtn: { fr: 'Commenter', ar: 'إرسال التعليق' },
+    questionTitle: { fr: 'Objet de la question / Demande', ar: 'موضوع السؤال / الطلب' },
+    questionContent: { fr: 'Détaillez votre besoin (notion incomprise, demande de fiche d\'exercices...)', ar: 'وضح استفسارك (درس غير مفهوم، طلب تمارين تدريبية...)' },
+    submitQuestionBtn: { fr: 'Envoyer la question aux enseignants', ar: 'إرسال السؤال إلى الإطار التربوي' },
+    replyToQuestionBtn: { fr: 'Répondre en tant qu\'enseignant', ar: 'تقديم إجابة تربوية' },
+    attachDocLabel: { fr: 'Joindre un document de la banque A4 (optionnel) :', ar: 'إرفاق وثيقة من بنك الامتحانات (اختياري):' },
+    noAttachment: { fr: 'Aucune pièce jointe', ar: 'بدون وثيقة مرفقة' },
+    searchDocsPlaceholder: { fr: 'Rechercher un document, un examen ou un cours...', ar: 'ابحث عن درس، امتحان أو تلخيص...' },
+    printA4Btn: { fr: 'Imprimer en A4', ar: 'طباعة فورية A4' },
+    shareWhatsAppBtn: { fr: 'Partager sur WhatsApp', ar: 'مشاركة عبر واتساب' },
 
     // Parent View
-    parentTitle: { fr: 'Espace Parent Réussite', ar: 'فضاء الولي المتابع' },
+    parentTitle: { fr: 'Espace Parent', ar: 'فضاء الولي' },
     switchChild: { fr: 'Changer d\'enfant :', ar: 'متابعة تلميذ آخر:' },
     announcementsTitle: { fr: 'Annonces des Enseignants', ar: 'إعلانات المعلمين' },
     announcementsSub: {

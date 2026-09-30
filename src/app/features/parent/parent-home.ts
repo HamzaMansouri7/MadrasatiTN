@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService } from '@core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, QuestionThread, GradeLevel, SubjectName } from '@core';
 
 @Component({
   selector: 'app-parent-home',
@@ -13,299 +13,720 @@ import { EducationStore, LanguageService, FirebaseService } from '@core';
         <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div class="space-y-2">
             <div class="inline-flex items-center gap-2 bg-[#E0AA32]/20 text-[#E0AA32] border border-[#E0AA32]/40 text-xs px-3 py-1 rounded-full font-semibold">
-              <span class="material-icons text-sm">verified_user</span> {{ lang.t('parentTitle') }}
+              <span class="material-icons text-sm">verified_user</span> {{ lang.tr('Espace Parent & Répertoire A4', 'فضاء الولي وبنك الوثائق A4') }}
             </div>
 
             <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
               {{ parentGreeting() }}
             </h1>
 
-            <div class="flex items-center gap-3 pt-1">
-              <img [src]="store.activeStudent().avatarUrl" alt="Student" class="w-11 h-11 rounded-full border-2 border-[#E0AA32] object-cover shadow-sm" />
-              <div>
-                <p class="font-semibold text-sm flex items-center gap-2 text-white">
-                  <span>{{ store.activeStudent().name }}</span>
-                  <span class="text-[11px] bg-[#E0AA32]/20 text-[#E0AA32] border border-[#E0AA32]/40 px-2 py-0.5 rounded-full font-semibold">
-                    {{ store.activeStudent().grade }}
-                  </span>
-                </p>
-                <p class="text-xs text-[#8CA9C4]">{{ store.activeStudent().school }}</p>
+            @if (isUserLoggedIn()) {
+              <div class="flex items-center gap-3 pt-1">
+                <div class="w-10 h-10 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold">
+                  {{ store.activeStudent().name.charAt(0) }}
+                </div>
+                <div>
+                  <p class="font-semibold text-sm flex items-center gap-2 text-white">
+                    <span>{{ store.activeStudent().name }}</span>
+                    <span class="text-[11px] bg-[#E0AA32]/20 text-[#E0AA32] border border-[#E0AA32]/40 px-2 py-0.5 rounded-full font-semibold">
+                      {{ store.activeStudent().grade }}
+                    </span>
+                  </p>
+                  <p class="text-xs text-[#8CA9C4]">{{ store.activeStudent().school }}</p>
+                </div>
               </div>
-            </div>
+            } @else {
+              <p class="text-xs sm:text-sm text-[#8CA9C4] max-w-xl leading-relaxed">
+                {{ lang.tr('Banque nationale de devoirs et résumés conformes A4, conseils pédagogiques des enseignants et espace d’entraide.', 'بنك الامتحانات والملخصات الرسمية A4، نصائح المربين وفضاء طرح الأسئلة والتوجيه المدرسي.') }}
+              </p>
+            }
           </div>
 
-          <!-- Sibling Switcher -->
-          <div class="bg-white/10 p-3 rounded-[14px] border border-white/15 space-y-1.5 shrink-0">
-            <p class="text-[11px] text-[#8CA9C4] font-semibold">
-              {{ lang.t('switchChild') }}
-            </p>
-            <div class="flex items-center gap-2">
-              @for (st of store.students(); track st.id) {
-                <button
-                  (click)="store.setActiveStudent(st.id)"
-                  [class]="store.activeStudentId() === st.id ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'bg-white/10 text-white hover:bg-white/20 font-medium'"
-                  class="px-3.5 py-1.5 rounded-[10px] text-xs transition-colors cursor-pointer flex items-center gap-2">
-                  <span class="material-icons text-sm">face</span>
-                  {{ st.name }}
-                </button>
-              }
+          <!-- Sibling Switcher or Quick CTA -->
+          @if (isUserLoggedIn() && store.students().length > 1) {
+            <div class="bg-white/10 p-3 rounded-[14px] border border-white/15 space-y-1.5 shrink-0">
+              <p class="text-[11px] text-[#8CA9C4] font-semibold">
+                {{ lang.t('switchChild') }}
+              </p>
+              <div class="flex items-center gap-2">
+                @for (st of store.students(); track st.id) {
+                  <button
+                    (click)="store.setActiveStudent(st.id)"
+                    [class]="store.activeStudentId() === st.id ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'bg-white/10 text-white hover:bg-white/20 font-medium'"
+                    class="px-3.5 py-1.5 rounded-[10px] text-xs transition-colors cursor-pointer flex items-center gap-2">
+                    <span class="material-icons text-sm">face</span>
+                    {{ st.name }}
+                  </button>
+                }
+              </div>
             </div>
-          </div>
+          } @else {
+            <div class="flex items-center gap-2.5 shrink-0">
+              <button
+                (click)="openModal('askQuestion')"
+                class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+                <span class="material-icons text-base">help_outline</span>
+                {{ lang.t('askQuestionBtn') }}
+              </button>
+            </div>
+          }
         </div>
       </div>
 
-      <!-- Today's Learning Summary & Progress Overview -->
-      <div class="grid md:grid-cols-3 gap-6">
+      <!-- Quick Category Quick-Nav -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <button
+          (click)="activeTab.set('docs')"
+          [class]="activeTab() === 'docs' ? 'ring-2 ring-[#007CC2]' : ''"
+          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabParentDocs') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+              <span class="material-icons text-lg">menu_book</span>
+            </div>
+          </div>
+          <div>
+            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.courses().length }}</p>
+            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Fiches A4 à imprimer', 'وثائق وامتحانات للطباعة') }}</p>
+          </div>
+        </button>
+
+        <button
+          (click)="activeTab.set('blog')"
+          [class]="activeTab() === 'blog' ? 'ring-2 ring-[#23845B]' : ''"
+          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabParentBlog') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#E8F6EF] dark:bg-[#153B2D] text-[#23845B] flex items-center justify-center">
+              <span class="material-icons text-lg">article</span>
+            </div>
+          </div>
+          <div>
+            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.blogPosts().length }}</p>
+            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Conseils d’enseignants', 'نصائح وإرشادات المعلمين') }}</p>
+          </div>
+        </button>
+
+        <button
+          (click)="activeTab.set('qa')"
+          [class]="activeTab() === 'qa' ? 'ring-2 ring-[#D19A24]' : ''"
+          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabParentQA') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] dark:bg-[#3D2E10] text-[#D19A24] flex items-center justify-center">
+              <span class="material-icons text-lg">forum</span>
+            </div>
+          </div>
+          <div>
+            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.questionThreads().length }}</p>
+            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Questions & Réponses', 'أسئلة واستفسارات مجابة') }}</p>
+          </div>
+        </button>
+
+        <button
+          (click)="activeTab.set('announcements')"
+          [class]="activeTab() === 'announcements' ? 'ring-2 ring-[#007CC2]' : ''"
+          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabAnnouncements') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+              <span class="material-icons text-lg">campaign</span>
+            </div>
+          </div>
+          <div>
+            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.classAnnouncements().length }}</p>
+            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Communications d’école', 'إعلانات وبلاغات رسمية') }}</p>
+          </div>
+        </button>
+      </div>
+
+      <!-- Main Workspace Section -->
+      <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#E3ECF2] dark:border-[#1A3145] overflow-hidden shadow-xs">
         
-        <!-- Left 2 Cols: Announcements & Agenda -->
-        <div class="md:col-span-2 space-y-6">
-          
-          <!-- Official Teacher Announcements (Replacing FB Groups) -->
-          <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-sm space-y-4">
-            <div class="flex items-center justify-between border-b border-[#F0EBDD] pb-3">
-              <div class="flex items-center gap-2">
-                <span class="material-icons text-[#C1121F]">campaign</span>
-                <div>
-                  <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">{{ lang.t('announcementsTitle') }}</h3>
-                  <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
-                    {{ lang.t('announcementsSub') }} — {{ store.activeStudent().name }} ({{ store.activeStudent().grade }})
-                  </p>
+        <!-- Tab Bar Header -->
+        <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] px-6 pt-3 flex flex-wrap gap-2">
+          <button
+            (click)="activeTab.set('docs')"
+            [class]="activeTab() === 'docs' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+            <span class="material-icons text-base">menu_book</span>
+            <span>{{ lang.t('tabParentDocs') }} ({{ filteredCourses().length }})</span>
+          </button>
+
+          <button
+            (click)="activeTab.set('blog')"
+            [class]="activeTab() === 'blog' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+            <span class="material-icons text-base">article</span>
+            <span>{{ lang.t('tabParentBlog') }} ({{ store.blogPosts().length }})</span>
+          </button>
+
+          <button
+            (click)="activeTab.set('qa')"
+            [class]="activeTab() === 'qa' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+            <span class="material-icons text-base">forum</span>
+            <span>{{ lang.t('tabParentQA') }} ({{ store.questionThreads().length }})</span>
+          </button>
+
+          <button
+            (click)="activeTab.set('announcements')"
+            [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
+            <span class="material-icons text-base">campaign</span>
+            <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
+          </button>
+        </div>
+
+        <!-- Tab Body -->
+        <div class="p-6">
+
+          <!-- TAB 1: A4 DOCUMENTS BANK & 1-CLICK PRINT -->
+          @if (activeTab() === 'docs') {
+            <div class="space-y-6">
+              
+              <!-- Filter Controls -->
+              <div class="bg-[#F7F9FB] dark:bg-[#152737] p-4 rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] space-y-3">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div class="relative grow max-w-md">
+                    <span class="material-icons absolute left-3 rtl:left-auto rtl:right-3 top-2.5 text-[#627D98] text-sm">search</span>
+                    <input
+                      type="text"
+                      [value]="searchDocQuery()"
+                      (input)="searchDocQuery.set($any($event.target).value)"
+                      [placeholder]="lang.t('searchDocsPlaceholder')"
+                      class="w-full pl-9 rtl:pl-3 rtl:pr-9 pr-3 py-2 text-xs bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] outline-none text-[#102A43] dark:text-white" />
+                  </div>
+
+                  <!-- Grade Filter Pills -->
+                  <div class="flex flex-wrap items-center gap-1.5">
+                    @for (grade of gradesList; track grade) {
+                      <button
+                        (click)="selectedGradeFilter.set(grade)"
+                        [class]="selectedGradeFilter() === grade
+                          ? 'bg-[#007CC2] text-white font-semibold shadow-xs'
+                          : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                        class="px-3 py-1.5 rounded-full text-xs font-medium transition-all cursor-pointer">
+                        {{ grade === 'all' ? lang.t('filterGradeAll') : grade }}
+                      </button>
+                    }
+                  </div>
+                </div>
+
+                <!-- Subject Filter Pills -->
+                <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                  @for (subj of subjectsList; track subj) {
+                    <button
+                      (click)="selectedSubjectFilter.set(subj)"
+                      [class]="selectedSubjectFilter() === subj
+                        ? 'bg-[#23845B] text-white font-semibold shadow-xs'
+                        : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#23845B]'"
+                      class="px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer">
+                      {{ subj === 'all' ? lang.t('filterSubjectAll') : subj }}
+                    </button>
+                  }
                 </div>
               </div>
-              <span class="bg-[#F2ECDE] text-[#8A5A00] font-semibold text-xs px-3 py-1 rounded-full border border-[#E7DFCF]">
-                {{ store.classAnnouncements().length }} {{ lang.tr('annonces actives', 'إعلانات جارية') }}
-              </span>
-            </div>
 
-            <div class="space-y-4">
-              @for (a of store.classAnnouncements(); track a.id) {
-                <div class="bg-[#FBF8F1] rounded-2xl p-4 border border-[#E7DFCF] space-y-3">
-                  <div class="flex items-start justify-between gap-3">
-                    <div class="flex items-center gap-2.5">
-                      <img [src]="a.teacherAvatar" alt="Teacher" class="w-9 h-9 rounded-full object-cover border border-[#E7DFCF]" />
-                      <div>
-                        <h4 class="font-semibold text-[#14251D] text-xs">{{ a.title }}</h4>
-                        <p class="text-[10px] text-[#6B7A70]">{{ a.teacherName }} • {{ a.date }}</p>
+              <!-- Documents Cards Grid -->
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                @for (c of filteredCourses(); track c.id) {
+                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-3 hover:shadow-md transition-all">
+                    <div class="space-y-2">
+                      <div class="flex items-center justify-between">
+                        <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                          {{ c.subject }}
+                        </span>
+                        @if (c.grade) {
+                          <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                            {{ c.grade }}
+                          </span>
+                        }
+                      </div>
+
+                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-sm leading-snug">{{ c.title }}</h4>
+                      <p class="text-xs text-[#486581] dark:text-[#8CA9C4] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
+                    </div>
+
+                    <div class="pt-3 border-t border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between gap-2">
+                      <div class="flex items-center gap-1.5">
+                        <button
+                          (click)="openPrintCourseModal(c)"
+                          class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 cursor-pointer shadow-xs">
+                          <span class="material-icons text-xs">print</span>
+                          {{ lang.t('printA4Btn') }}
+                        </button>
+                        <a
+                          [href]="getWhatsAppShareUrl(c)"
+                          target="_blank"
+                          rel="noopener"
+                          class="bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 transition-colors">
+                          <span class="material-icons text-xs">share</span>
+                          WA
+                        </a>
+                      </div>
+
+                      <button
+                        (click)="selectedCourseDetail.set(c)"
+                        class="text-xs font-semibold text-[#102A43] dark:text-white hover:text-[#007CC2] flex items-center gap-1 cursor-pointer">
+                        {{ lang.tr('Aperçu', 'معاينة') }} <span class="material-icons text-sm">arrow_forward</span>
+                      </button>
+                    </div>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- TAB 2: PEDAGOGICAL BLOG & ADVICE -->
+          @if (activeTab() === 'blog') {
+            <div class="space-y-6">
+              <div>
+                <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                  {{ lang.t('tabParentBlog') }}
+                </h3>
+                <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                  {{ lang.tr("Articles et méthodes rédigés par les enseignants du primaire tunisien pour vous guider à la maison.", 'مقالات وتوجيهات بيداغوجية موجهة للأولياء لمرافقة الأبناء في المنزل.') }}
+                </p>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-5">
+                @for (post of store.blogPosts(); track post.id) {
+                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[20px] p-6 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
+                    <div class="space-y-3">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                          <span class="bg-[#23845B]/10 text-[#23845B] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                            {{ post.subject || 'Pédagogie' }}
+                          </span>
+                          @if (post.grade) {
+                            <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                              {{ post.grade }}
+                            </span>
+                          }
+                        </div>
+                        <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1">
+                          <span class="material-icons text-xs">schedule</span>
+                          {{ post.readTimeMinutes }} min
+                        </span>
+                      </div>
+
+                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-base leading-snug">
+                        {{ post.title }}
+                      </h4>
+
+                      <p class="text-xs text-[#486581] dark:text-[#8CA9C4] leading-relaxed line-clamp-3">
+                        {{ post.excerpt }}
+                      </p>
+
+                      <div class="flex flex-wrap gap-1.5 pt-1">
+                        @for (tag of post.tags; track tag) {
+                          <span class="text-[10px] bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] px-2 py-0.5 rounded-md border border-[#E3ECF2] dark:border-[#1A3145]">
+                            #{{ tag }}
+                          </span>
+                        }
                       </div>
                     </div>
 
-                    @if (a.isPinned) {
-                      <span class="bg-[#C1121F]/10 text-[#C1121F] text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
-                        <span class="material-icons text-[12px]">push_pin</span> {{ lang.tr('Examen', 'امتحان') }}
-                      </span>
-                    }
-                  </div>
+                    <div class="pt-4 border-t border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between gap-3 text-xs">
+                      <div class="flex items-center gap-3">
+                        <button
+                          (click)="store.likeBlogPost(post.id)"
+                          class="flex items-center gap-1 text-[#D64545] font-semibold hover:opacity-80 cursor-pointer bg-white dark:bg-[#0E1D2A] px-2.5 py-1 rounded-full border border-[#E3ECF2] dark:border-[#1A3145]">
+                          <span class="material-icons text-sm">favorite</span>
+                          <span>{{ post.likesCount }}</span>
+                        </button>
+                        <span class="text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1 font-medium">
+                          <span class="material-icons text-sm">chat_bubble_outline</span>
+                          {{ post.comments.length }}
+                        </span>
+                      </div>
 
-                  <p class="text-xs text-[#14251D] bg-white p-3 rounded-xl border border-[#E7DFCF] leading-relaxed">
-                    {{ a.content }}
+                      <button
+                        (click)="selectedArticleDetail.set(post)"
+                        class="text-[#007CC2] font-semibold hover:underline flex items-center gap-1 cursor-pointer">
+                        {{ lang.tr('Lire l’article', 'قراءة المقال') }}
+                        <span class="material-icons text-sm">arrow_forward</span>
+                      </button>
+                    </div>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- TAB 3: POSER UNE QUESTION / DEMANDE DE FICHES -->
+          @if (activeTab() === 'qa') {
+            <div class="space-y-6">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                    {{ lang.t('tabParentQA') }}
+                  </h3>
+                  <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                    {{ lang.tr("Besoin d'aide sur une notion ou d'une fiche d'exercices particulière ? Posez votre question directement aux enseignants.", 'هل تبحث عن تمارين مخصصة أو شرح لدرس معين؟ اطرح سؤالك مباشرة على الإطار التربوي.') }}
                   </p>
-
-                  <div class="flex items-center justify-between pt-1">
-                    <button
-                      (click)="confirmRead(a.id)"
-                      [disabled]="confirmedIds().has(a.id)"
-                      [class]="confirmedIds().has(a.id)
-                        ? 'bg-[#F2ECDE] text-[#1B4332] font-semibold'
-                        : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold cursor-pointer'"
-                      class="text-xs px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 transition-colors">
-                      <span class="material-icons text-sm">check_circle</span>
-                      {{ confirmedIds().has(a.id) ? lang.t('readConfirmed') : lang.t('confirmReadBtn') }}
-                    </button>
-
-                    <span class="text-[11px] text-[#6B7A70]">
-                      {{ a.confirmedByParentsCount }} {{ lang.tr('parents ont validé', 'أولياء قاموا بالإعلام') }}
-                    </span>
-                  </div>
                 </div>
-              }
-            </div>
-          </div>
-
-          <!-- Active Homework & Deadlines -->
-          <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-sm space-y-4">
-            <div class="flex items-center justify-between border-b border-[#F0EBDD] pb-3">
-              <div class="flex items-center gap-2">
-                <span class="material-icons text-[#8A5A00]">assignment</span>
-                <h3 class="font-display font-semibold text-[#14251D] text-base">
-                  {{ lang.t('homeworksTitle') }} {{ store.activeStudent().name }}
-                </h3>
-              </div>
-            </div>
-
-            <div class="space-y-3">
-              @for (hw of store.classHomeworks(); track hw.id) {
-                <div class="bg-[#FBF8F1] p-4 rounded-2xl border border-[#E7DFCF] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <div class="space-y-1">
-                    <div class="flex items-center gap-2">
-                      <span class="bg-[#8A5A00]/10 text-[#8A5A00] text-[10px] font-semibold px-2 py-0.5 rounded-full">
-                        {{ hw.subject }}
-                      </span>
-                      <h4 class="font-semibold text-[#14251D] text-xs">{{ hw.title }}</h4>
-                    </div>
-                    <p class="text-xs text-[#5B6B60]">{{ hw.instructions }}</p>
-                  </div>
-
-                  <div class="shrink-0 text-right">
-                    <p class="text-xs text-[#C1121F] font-semibold flex items-center gap-1 justify-end">
-                      <span class="material-icons text-sm">schedule</span> {{ hw.dueDate }}
-                    </p>
-                    <span class="text-[11px] text-[#6B7A70]">
-                      {{ hw.exercises.length }} {{ lang.tr('exercices inclus', 'تمارين مرفقة') }}
-                    </span>
-                  </div>
-                </div>
-              }
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Right Col: Progress Metrics & Teacher Contacts -->
-        <div class="space-y-6">
-          
-          <!-- Subject Performance Cards -->
-          <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-sm space-y-4">
-            <div class="border-b border-[#F0EBDD] pb-3">
-              <h3 class="font-display font-semibold text-[#14251D] text-base">{{ lang.t('progressTitle') }}</h3>
-              <p class="text-xs text-[#5B6B60]">
-                {{ lang.tr('Progression moyenne dans le programme', 'المعدل والنسبة التقديرية لإنجاز البرنامج') }}
-              </p>
-            </div>
-
-            <div class="space-y-3">
-              @for (sp of store.activeStudent().subjectsProgress; track sp.subject) {
-                <div class="space-y-1">
-                  <div class="flex items-center justify-between text-xs font-semibold">
-                    <span class="text-[#14251D]">{{ sp.subject }}</span>
-                    <span class="font-display font-semibold text-[#14251D]">{{ sp.score }}%</span>
-                  </div>
-                  <div class="w-full bg-[#F2ECDE] h-2.5 rounded-full overflow-hidden">
-                    <div
-                      class="h-full rounded-full transition-all duration-500"
-                      [style.width.%]="sp.score"
-                      [style.backgroundColor]="sp.color"></div>
-                  </div>
-                </div>
-              }
-            </div>
-          </div>
-
-          <!-- Teacher Contact & Office Hours -->
-          <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-sm space-y-4">
-            <div class="border-b border-[#F0EBDD] pb-3">
-              <h3 class="font-display font-semibold text-[#14251D] text-base">{{ lang.t('teachersTitle') }}</h3>
-              <p class="text-xs text-[#5B6B60]">
-                {{ lang.tr('Contact direct et professionnel sans spam', 'التواصل المباشر مع المعلمين بكل تحفّظ ومهنية') }}
-              </p>
-            </div>
-
-            <div class="space-y-3">
-              @for (t of store.teachers(); track t.id) {
-                <div class="p-3 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <img [src]="t.avatarUrl" alt="Teacher" class="w-10 h-10 rounded-full object-cover border border-[#E7DFCF]" />
-                    <div>
-                      <h4 class="font-semibold text-[#14251D] text-xs">{{ t.name }}</h4>
-                      <p class="text-[10px] text-[#6B7A70]">{{ t.subjects.join(', ') }}</p>
-                    </div>
-                  </div>
-
-                  <button
-                    (click)="openTeacherContact(t)"
-                    class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#8A5A00] font-semibold text-[11px] px-3 py-1.5 rounded-xl border border-[#E7DFCF] flex items-center gap-1 cursor-pointer transition-colors">
-                    <span class="material-icons text-xs">chat</span> {{ lang.t('messageBtn') }}
-                  </button>
-                </div>
-              }
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- DIRECT TEACHER MESSAGING MODAL -->
-      @if (activeContactTeacher(); as teacher) {
-        <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
-          <div class="bg-white rounded-2xl max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm">
-            <div class="flex items-center justify-between border-b border-[#F0EBDD] pb-3">
-              <div class="flex items-center gap-2">
-                <span class="material-icons text-[#8A5A00]">forum</span>
-                <h3 class="font-display font-semibold text-[#14251D] text-base">
-                  {{ lang.tr('Contacter', 'مراسلة المعلم(ة)') }} {{ teacher.name }}
-                </h3>
-              </div>
-              <button (click)="activeContactTeacher.set(null)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
-                <span class="material-icons">close</span>
-              </button>
-            </div>
-
-            <div class="flex items-center gap-3 p-3 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF]">
-              <img [src]="teacher.avatarUrl" alt="Teacher" class="w-12 h-12 rounded-full object-cover border border-[#E7DFCF]" />
-              <div>
-                <p class="font-semibold text-[#14251D] text-xs">{{ teacher.name }}</p>
-                <p class="text-[11px] text-[#6B7A70]">{{ teacher.title }}</p>
-                <p class="text-[10px] text-[#1B4332] font-semibold mt-0.5">
-                  {{ lang.tr('Élève concerné :', 'التلميذ المعني:') }} <strong>{{ store.activeStudent().name }} ({{ store.activeStudent().grade }})</strong>
-                </p>
-              </div>
-            </div>
-
-            @if (messageSentSuccess()) {
-              <div class="bg-[#F2ECDE] p-4 rounded-2xl border border-[#E7DFCF] text-[#14251D] text-center space-y-2">
-                <span class="material-icons text-[#2D6A4F] text-3xl">check_circle</span>
-                <h4 class="font-display font-semibold text-sm">{{ lang.tr('Message transmis avec succès !', 'تم إرسال رسالتكم بنجاح!') }}</h4>
-                <p class="text-xs text-[#5B6B60]">
-                  {{ lang.tr("L'enseignant vous répondra durant ses heures de permanence sur Madrasati TN.", 'سيصلكم الرد في فضاء الأولياء خلال أوقات التواصل الرسمية.') }}
-                </p>
                 <button
-                  (click)="activeContactTeacher.set(null)"
-                  class="mt-2 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2 rounded-xl text-xs cursor-pointer transition-colors">
-                  {{ lang.tr('Fermer', 'إغلاق') }}
+                  (click)="openModal('askQuestion')"
+                  class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
+                  <span class="material-icons text-sm">help_outline</span>
+                  {{ lang.t('askQuestionBtn') }}
                 </button>
               </div>
-            } @else {
-              <div class="space-y-3 text-xs">
-                <div>
-                  <label class="block font-semibold text-[#14251D] mb-1">
-                    {{ lang.tr('Objet du message', 'موضوع الرسالة') }}
-                  </label>
-                  <select
-                    [value]="messageSubject()"
-                    (change)="messageSubject.set($any($event.target).value)"
-                    class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none">
-                    <option value="Question sur un devoir">Question sur un devoir / سؤال حول واجب</option>
-                    <option value="Absence ou retard prévisible">Absence ou retard prévisible / إشعار بغياب أو تأخير</option>
-                    <option value="Demande de rendez-vous">Demande de rendez-vous / طلب موعد لمقابلة المعلم</option>
-                    <option value="Évolution des résultats">Évolution des résultats / استفسار حول النتائج</option>
-                  </select>
-                </div>
 
-                <div>
-                  <label class="block font-semibold text-[#14251D] mb-1">
-                    {{ lang.tr('Votre message', 'نص الرسالة') }}
-                  </label>
-                  <textarea
-                    [value]="messageBody()"
-                    (input)="messageBody.set($any($event.target).value)"
-                    rows="4"
-                    placeholder="Rédigez votre message avec bienveillance et clarté..."
-                    class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none"></textarea>
-                </div>
+              <div class="space-y-4">
+                @for (thread of store.questionThreads(); track thread.id) {
+                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[20px] p-6 border border-[#E3ECF2] dark:border-[#1A3145] space-y-4">
+                    <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3 space-y-1">
+                      <div class="flex items-center gap-2">
+                        <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                          {{ thread.subject }}
+                        </span>
+                        <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                          {{ thread.grade }}
+                        </span>
+                        <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] font-medium">
+                          • {{ thread.parentName }} • {{ thread.createdAt }}
+                        </span>
+                      </div>
+                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-base">{{ thread.title }}</h4>
+                    </div>
 
-                <div class="flex items-center gap-2 pt-2">
-                  <button
-                    (click)="sendMessageToTeacher()"
-                    class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl cursor-pointer shadow-sm transition-colors">
-                    {{ lang.tr('Envoyer via la Plateforme', 'إرسال الرسالة عبر المنصة') }}
-                  </button>
-                </div>
+                    <p class="text-xs text-[#334E68] dark:text-[#D7E7F2] bg-white dark:bg-[#0E1D2A] p-4 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145] leading-relaxed">
+                      {{ thread.content }}
+                    </p>
+
+                    @if (thread.answers.length > 0) {
+                      <div class="space-y-2 pt-1">
+                        <p class="text-[11px] font-semibold text-[#102A43] dark:text-white flex items-center gap-1">
+                          <span class="material-icons text-xs text-[#23845B]">verified</span>
+                          {{ lang.tr('Réponses certifiées des enseignants :', 'الإجابات المعتمدة من المعلمين:') }}
+                        </p>
+
+                        @for (ans of thread.answers; track ans.id) {
+                          <div class="bg-[#E8F6EF] dark:bg-[#153B2D]/40 rounded-[14px] p-4 border border-[#23845B]/20 space-y-2 text-xs">
+                            <div class="flex items-center justify-between">
+                              <div class="flex items-center gap-2">
+                                <span class="font-semibold text-[#102A43] dark:text-white">{{ ans.teacherName }}</span>
+                                <span class="text-[10px] bg-[#23845B] text-white px-2 py-0.5 rounded-full font-medium">
+                                  {{ ans.teacherTitle }}
+                                </span>
+                              </div>
+                              <span class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ ans.createdAt }}</span>
+                            </div>
+
+                            <p class="text-[#102A43] dark:text-white leading-relaxed">{{ ans.content }}</p>
+
+                            @if (ans.attachedDocTitle) {
+                              <div class="inline-flex items-center gap-2 bg-white dark:bg-[#0E1D2A] text-[#007CC2] p-2.5 rounded-[10px] border border-[#007CC2]/30 font-medium text-[11px]">
+                                <span class="material-icons text-sm text-[#007CC2]">attach_file</span>
+                                <span>{{ lang.t('attachedDocument') }} : <strong class="text-[#102A43] dark:text-white">{{ ans.attachedDocTitle }}</strong></span>
+                              </div>
+                            }
+                          </div>
+                        }
+                      </div>
+                    } @else {
+                      <p class="text-xs text-[#627D98] dark:text-[#8CA9C4] italic">
+                        {{ lang.tr('En attente de réponse d’un enseignant référent...', 'في انتظار مراجعة وإجابة الإطار التربوي...') }}
+                      </p>
+                    }
+                  </div>
+                }
               </div>
-            }
+            </div>
+          }
+
+          <!-- TAB 4: OFFICIAL ANNOUNCEMENTS -->
+          @if (activeTab() === 'announcements') {
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                  {{ lang.t('announcementsTitle') }}
+                </h3>
+                <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                  {{ lang.t('announcementsSub') }}
+                </p>
+              </div>
+
+              <div class="space-y-4">
+                @for (a of store.classAnnouncements(); track a.id) {
+                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] space-y-3">
+                    <div class="flex items-start justify-between gap-3">
+                      <div>
+                        <h4 class="font-semibold text-[#102A43] dark:text-white text-xs">{{ a.title }}</h4>
+                        <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ a.teacherName }} • {{ a.date }}</p>
+                      </div>
+
+                      @if (a.isPinned) {
+                        <span class="bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+                          <span class="material-icons text-[12px]">push_pin</span> {{ lang.tr('Examen', 'امتحان') }}
+                        </span>
+                      }
+                    </div>
+
+                    <p class="text-xs text-[#334E68] dark:text-[#D7E7F2] bg-white dark:bg-[#0E1D2A] p-4 rounded-[12px] border border-[#E3ECF2] dark:border-[#1A3145] leading-relaxed">
+                      {{ a.content }}
+                    </p>
+
+                    <div class="flex items-center justify-between pt-1">
+                      <button
+                        (click)="confirmRead(a.id)"
+                        [disabled]="confirmedIds().has(a.id)"
+                        [class]="confirmedIds().has(a.id)
+                          ? 'bg-[#E8F6EF] text-[#23845B] font-semibold'
+                          : 'bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold cursor-pointer'"
+                        class="text-xs px-3.5 py-1.5 rounded-[8px] flex items-center gap-1.5 transition-colors">
+                        <span class="material-icons text-sm">check_circle</span>
+                        {{ confirmedIds().has(a.id) ? lang.t('readConfirmed') : lang.t('confirmReadBtn') }}
+                      </button>
+
+                      <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">
+                        {{ a.confirmedByParentsCount }} {{ lang.tr('parents ont validé', 'أولياء قاموا بالإعلام') }}
+                      </span>
+                    </div>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MODAL 1: ASK QUESTION MODAL -->
+    @if (modalType() === 'askQuestion') {
+      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="material-icons text-[#007CC2]">help_outline</span>
+              <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                {{ lang.t('askQuestionBtn') }}
+              </h3>
+            </div>
+            <button (click)="closeModal()" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+              <span class="material-icons">close</span>
+            </button>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div>
+              <label for="q-title" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                {{ lang.t('questionTitle') }} *
+              </label>
+              <input
+                id="q-title"
+                type="text"
+                [value]="newQTitle()"
+                (input)="newQTitle.set($any($event.target).value)"
+                placeholder="Ex: Demande de fiches d'exercices sur les fractions décimales"
+                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label for="q-subj" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                  {{ lang.tr('Matière', 'المادة') }}
+                </label>
+                <select
+                  id="q-subj"
+                  [value]="newQSubject()"
+                  (change)="newQSubject.set($any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  <option value="Mathématiques">Mathématiques / الرياضيات</option>
+                  <option value="Français">Français / الفرنسية</option>
+                  <option value="اللغة العربية">اللغة العربية</option>
+                  <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ العلمي</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="q-grade" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                  {{ lang.tr('Niveau', 'المستوى') }}
+                </label>
+                <select
+                  id="q-grade"
+                  [value]="newQGrade()"
+                  (change)="newQGrade.set($any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  <option value="4ème Année">4ème Année / السنة الرابعة</option>
+                  <option value="5ème Année">5ème Année / السنة الخامسة</option>
+                  <option value="6ème Année">6ème Année / السنة السادسة</option>
+                  <option value="1ère Année">1ère Année / السنة الأولى</option>
+                  <option value="2ème Année">2ème Année / السنة الثانية</option>
+                  <option value="3ème Année">3ème Année / السنة الثالثة</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="q-content" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                {{ lang.t('questionContent') }} *
+              </label>
+              <textarea
+                id="q-content"
+                [value]="newQContent()"
+                (input)="newQContent.set($any($event.target).value)"
+                rows="4"
+                placeholder="Décrivez votre besoin pour que les enseignants puissent vous orienter ou partager une ressource..."
+                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none leading-relaxed"></textarea>
+            </div>
+
+            <button
+              (click)="submitQuestion()"
+              class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
+              {{ lang.t('submitQuestionBtn') }}
+            </button>
           </div>
         </div>
-      }
-    </div>
+      </div>
+    }
+
+    <!-- MODAL 2: A4 PRINT MODAL -->
+    @if (printModalCourse(); as c) {
+      <div class="fixed inset-0 z-50 bg-[#0B2947]/80 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-3xl w-full p-6 space-y-4 shadow-2xl max-h-[92vh] overflow-y-auto text-[#102A43]">
+          <div class="no-print flex items-center justify-between border-b border-[#E3ECF2] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="material-icons text-[#007CC2]">print</span>
+              <div>
+                <h3 class="font-display font-semibold text-base">
+                  {{ lang.tr('Aperçu A4 Officiel (Ministère de l’Éducation)', 'معاينة وثيقة A4 الرسمية (وزارة التربية)') }}
+                </h3>
+                <p class="text-xs text-[#627D98]">{{ lang.tr('Prêt pour impression papier ou export PDF haute fidélité.', 'جاهز للطباعة الورقية أو الحفظ بصيغة PDF.') }}</p>
+              </div>
+            </div>
+            <button (click)="printModalCourse.set(null)" class="text-[#627D98] hover:text-[#102A43] cursor-pointer">
+              <span class="material-icons">close</span>
+            </button>
+          </div>
+
+          <!-- Official Document Frame (Print Target) -->
+          <div id="printable-document" class="print-document bg-white rounded-xl p-8 border-2 border-[#102A43] relative overflow-hidden space-y-4">
+            <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none rotate-[-25deg]">
+              <span class="text-5xl font-black uppercase text-[#007CC2] tracking-widest text-center">
+                MADRASATI TN <br /> COPIE CERTIFIÉE ENSEIGNANT
+              </span>
+            </div>
+
+            <!-- Official Ministry Header -->
+            <div class="border-b-2 border-[#102A43] pb-3">
+              <div class="flex items-center justify-between text-xs">
+                <div class="text-left font-bold text-[#102A43] leading-tight">
+                  <p>الجمهورية التونسية</p>
+                  <p>وزارة التربية والتعليم</p>
+                </div>
+                <div class="text-center font-bold">
+                  <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
+                  <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
+                </div>
+                <div class="text-right text-xs text-[#334E68] leading-tight">
+                  <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
+                  <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
+                </div>
+              </div>
+
+              <!-- Student Filling Box -->
+              <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
+                <p>الاسم واللقب: ....................................</p>
+                <p>القسم: {{ c.grade }}</p>
+                <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+              </div>
+            </div>
+
+            <!-- Course Content -->
+            <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
+              {{ c.content }}
+            </div>
+
+            <!-- Footer Attribution -->
+            <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
+              <span>Attribution Enseignant : {{ c.watermarkText || 'Enseignant Certifié' }}</span>
+              <span>Plateforme Nationale Madrasati TN</span>
+            </div>
+          </div>
+
+          <div class="no-print flex items-center justify-between gap-3 pt-2">
+            <button (click)="printModalCourse.set(null)" class="bg-[#F7F9FB] hover:bg-[#E3ECF2] text-[#334E68] font-semibold px-4 py-2.5 rounded-[10px] text-xs cursor-pointer border border-[#E3ECF2]">
+              {{ lang.tr('Fermer', 'إغلاق') }}
+            </button>
+
+            <button
+              (click)="triggerPrintDialog()"
+              class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-6 py-2.5 rounded-[10px] text-xs flex items-center gap-2 cursor-pointer shadow-sm">
+              <span class="material-icons text-base">print</span>
+              {{ lang.t('printBtn') }}
+            </button>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- MODAL 3: ARTICLE DETAIL & COMMENTS -->
+    @if (selectedArticleDetail(); as post) {
+      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-2xl w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="bg-[#23845B]/10 text-[#23845B] text-xs font-bold px-2.5 py-0.5 rounded-full">
+                {{ post.subject || 'Pédagogie' }}
+              </span>
+              <span class="text-xs text-[#627D98] dark:text-[#8CA9C4]">{{ post.publishedAt }}</span>
+            </div>
+            <button (click)="selectedArticleDetail.set(null)" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+              <span class="material-icons">close</span>
+            </button>
+          </div>
+
+          <div>
+            <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-xl">{{ post.title }}</h3>
+            <p class="text-xs text-[#23845B] font-medium mt-1">{{ post.authorName }} — {{ post.authorTitle }}</p>
+          </div>
+
+          <div class="prose prose-sm dark:prose-invert max-w-none text-xs text-[#334E68] dark:text-[#D7E7F2] leading-relaxed whitespace-pre-line bg-[#F7F9FB] dark:bg-[#152737] p-5 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145]">
+            {{ post.content }}
+          </div>
+
+          <!-- Comments Section -->
+          <div class="space-y-3 pt-2">
+            <h4 class="font-display font-semibold text-xs text-[#102A43] dark:text-white">
+              {{ lang.t('commentsCount') }} ({{ post.comments.length }})
+            </h4>
+
+            <div class="space-y-2">
+              @for (comm of post.comments; track comm.id) {
+                <div class="bg-[#F7F9FB] dark:bg-[#152737] p-3 rounded-[10px] text-xs border border-[#E3ECF2] dark:border-[#1A3145]">
+                  <div class="flex items-center justify-between">
+                    <span class="font-semibold text-[#102A43] dark:text-white">{{ comm.authorName }}</span>
+                    <span class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ comm.createdAt }}</span>
+                  </div>
+                  <p class="text-[#334E68] dark:text-[#D7E7F2] mt-1">{{ comm.content }}</p>
+                </div>
+              }
+            </div>
+
+            <!-- Add Comment Form -->
+            <div class="flex items-center gap-2 pt-2">
+              <input
+                type="text"
+                [value]="newCommentText()"
+                (input)="newCommentText.set($any($event.target).value)"
+                [placeholder]="lang.t('addComment')"
+                class="grow bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-xs text-[#102A43] dark:text-white outline-none" />
+              <button
+                (click)="submitComment(post.id)"
+                class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs cursor-pointer shadow-xs shrink-0">
+                {{ lang.t('sendCommentBtn') }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
   `,
 })
 export class ParentHomeComponent {
@@ -313,36 +734,106 @@ export class ParentHomeComponent {
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
 
-  readonly confirmedIds = signal<Set<string>>(new Set());
-  readonly activeContactTeacher = signal<any | null>(null);
-  readonly messageSubject = signal('Question sur un devoir');
-  readonly messageBody = signal('');
-  readonly messageSentSuccess = signal<boolean>(false);
+  readonly confirmedIds = signal<Set<string>>(new Set(['ann-1']));
+  readonly activeTab = signal<'docs' | 'blog' | 'qa' | 'announcements'>('docs');
+  readonly modalType = signal<'none' | 'askQuestion'>('none');
+
+  readonly searchDocQuery = signal('');
+  readonly selectedGradeFilter = signal<string>('all');
+  readonly selectedSubjectFilter = signal<string>('all');
+
+  readonly printModalCourse = signal<Course | null>(null);
+  readonly selectedCourseDetail = signal<Course | null>(null);
+  readonly selectedArticleDetail = signal<BlogPost | null>(null);
+
+  readonly gradesList: string[] = ['all', '1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'];
+  readonly subjectsList: string[] = ['all', 'Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique'];
+
+  // Ask Question Form
+  readonly newQTitle = signal('');
+  readonly newQSubject = signal<SubjectName>('Mathématiques');
+  readonly newQGrade = signal<GradeLevel>('4ème Année');
+  readonly newQContent = signal('');
+
+  // Comment Input Form
+  readonly newCommentText = signal('');
+
+  readonly filteredCourses = computed(() => {
+    const q = this.searchDocQuery().toLowerCase().trim();
+    const grade = this.selectedGradeFilter();
+    const subj = this.selectedSubjectFilter();
+
+    return this.store.courses().filter((c) => {
+      const matchQ = !q || c.title.toLowerCase().includes(q) || c.summary.toLowerCase().includes(q);
+      const matchGrade = grade === 'all' || c.grade === grade;
+      const matchSubj = subj === 'all' || c.subject === subj;
+      return matchQ && matchGrade && matchSubj;
+    });
+  });
+
+  isUserLoggedIn(): boolean {
+    return !!(this.firebase.userProfile() || this.firebase.currentUser());
+  }
 
   parentGreeting(): string {
-    const user = this.firebase.userProfile();
-    if (user && user.displayName) {
-      return this.lang.isArabic()
-        ? `مرحباً، ${user.displayName}`
-        : `Bienvenue, ${user.displayName}`;
+    const profile = this.firebase.userProfile();
+    if (profile?.displayName) {
+      return this.lang.tr(`Bonjour, ${profile.displayName}`, `مرحباً، ${profile.displayName}`);
     }
-    return this.lang.t('parentTitle');
+    return this.lang.tr('Espace Parent & Répertoire', 'فضاء الولي وبنك الوثائق');
+  }
+
+  openModal(type: 'askQuestion') {
+    this.modalType.set(type);
+  }
+
+  closeModal() {
+    this.modalType.set('none');
+  }
+
+  openPrintCourseModal(c: Course) {
+    this.printModalCourse.set(c);
+  }
+
+  triggerPrintDialog() {
+    if (typeof window !== 'undefined') {
+      window.print();
+    }
+  }
+
+  getWhatsAppShareUrl(c: Course): string {
+    const text = encodeURIComponent(`📘 Madrasati TN - ${c.title} (${c.subject} - ${c.grade || 'Primaire'})\nDocument disponible et imprimable sur la plateforme.`);
+    return `https://api.whatsapp.com/send?text=${text}`;
   }
 
   confirmRead(id: string) {
-    this.store.confirmAnnouncementRead(id);
-    const newSet = new Set(this.confirmedIds());
-    newSet.add(id);
-    this.confirmedIds.set(newSet);
+    const next = new Set(this.confirmedIds());
+    next.add(id);
+    this.confirmedIds.set(next);
   }
 
-  openTeacherContact(teacher: any) {
-    this.messageSentSuccess.set(false);
-    this.messageBody.set('');
-    this.activeContactTeacher.set(teacher);
+  submitQuestion() {
+    if (!this.newQTitle() || !this.newQContent()) return;
+    this.store.addQuestionThread({
+      title: this.newQTitle(),
+      subject: this.newQSubject(),
+      grade: this.newQGrade(),
+      content: this.newQContent(),
+      parentName: this.firebase.userProfile()?.displayName || 'Parent d’Élève',
+    });
+    this.closeModal();
+    this.newQTitle.set('');
+    this.newQContent.set('');
+    this.activeTab.set('qa');
   }
 
-  sendMessageToTeacher() {
-    this.messageSentSuccess.set(true);
+  submitComment(postId: string) {
+    if (!this.newCommentText()) return;
+    this.store.addBlogComment(postId, {
+      authorName: this.firebase.userProfile()?.displayName || 'Parent d’Élève',
+      authorRole: 'parent',
+      content: this.newCommentText(),
+    });
+    this.newCommentText.set('');
   }
 }

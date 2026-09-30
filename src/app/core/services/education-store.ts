@@ -1,15 +1,21 @@
 import { Injectable, computed, signal } from '@angular/core';
 import {
   Announcement,
+  BlogPost,
+  BlogComment,
   ClassGroup,
   Comment,
   Course,
   ExerciseItem,
   Homework,
+  QuestionThread,
+  QuestionAnswer,
   StudentProfile,
   Submission,
   TeacherProfile,
   UserRole,
+  SubjectName,
+  GradeLevel,
 } from '../models/education.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 
@@ -19,6 +25,10 @@ import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 export class EducationStore {
   // Current active role ('home' by default shows the landing page)
   readonly currentRole = signal<UserRole>('home');
+
+  setRole(role: UserRole) {
+    this.currentRole.set(role);
+  }
 
   // Multi-Palette & Mode Theme Engine
   readonly activePalette = signal<'green' | 'blue'>('green');
@@ -115,9 +125,9 @@ export class EducationStore {
           id: 'cmt-1-r1',
           targetId: 'crs-1',
           targetType: 'course',
-          authorName: 'Parent d\'Ahmed',
+          authorName: 'Parent d\'élève',
           authorRole: 'parent',
-          text: 'Merci Madame, Ahmed a bien compris les retenues grâce à cette fiche !',
+          text: 'Merci pour ce document clair et utile pour la révision.',
           createdAt: 'Il y a 1 jour',
           likes: 5,
         },
@@ -127,11 +137,11 @@ export class EducationStore {
       id: 'cmt-2',
       targetId: 'crs-1',
       targetType: 'course',
-      authorName: 'Sami K.',
-      authorRole: 'student',
-      text: 'Je ne comprends pas l\'étape 2, pourquoi on ajoute le zéro avant de multiplier par les dizaines ?',
-      createdAt: 'Il y a 1 jour',
-      likes: 3,
+      authorName: 'Parent d\'élève',
+      authorRole: 'parent',
+      text: 'Excellente fiche de révision, très bien structurée.',
+      createdAt: 'Il y a 3 jours',
+      likes: 8,
       replies: [],
     },
     {
@@ -257,9 +267,9 @@ export class EducationStore {
     },
     {
       id: 't-2',
-      name: 'M. Karim Hammami',
+      name: 'Enseignant Certifié (Français)',
       title: 'Enseignant de Français & Anglais (6ème Concours)',
-      school: 'École Primaire Ibn Khaldoun, Tunis',
+      school: 'École Primaire Tunisienne',
       avatarUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80',
       coursesCount: 18,
       exercisesCount: 215,
@@ -275,9 +285,9 @@ export class EducationStore {
     },
     {
       id: 't-3',
-      name: 'Mme Sonia Trabelsi',
+      name: 'Enseignante Certifiée (Arabe)',
       title: 'Enseignante de Langue Arabe (5ème & 6ème)',
-      school: 'École Primaire Monji Slim, Marsa',
+      school: 'École Primaire Tunisienne',
       avatarUrl: 'https://images.unsplash.com/photo-1580894732413-802c6769998b?w=150&auto=format&fit=crop&q=80',
       coursesCount: 31,
       exercisesCount: 410,
@@ -296,10 +306,10 @@ export class EducationStore {
   readonly students = signal<StudentProfile[]>([
     {
       id: 'st-1',
-      name: 'Ahmed Mansouri',
+      name: 'Élève',
       grade: '4ème Année',
-      school: 'École Primaire Habib Bourguiba, Ariana',
-      avatarUrl: 'https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=150&auto=format&fit=crop&q=80',
+      school: 'École Primaire Tunisienne',
+      avatarUrl: '',
       parentId: 'p-1',
       classId: 'c-4a',
       streakDays: 6,
@@ -374,7 +384,7 @@ Pour multiplier $3~452 \\times 24$ :
       trimester: 'Trimestre 1',
       docType: 'Fiche de Révision',
       schoolYear: '2025-2026',
-      teacherName: 'M. Karim Hammami',
+      teacherName: 'Enseignant Certifié (Français)',
       summary: 'Structure du récit court : Situation initiale, élément perturbateur, péripéties et situation finale.',
       content: `### Schéma Narratif pour le Primaire
 Pour réussir une production écrite de 6 à 8 lignes :
@@ -391,7 +401,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       upvotesCount: 35,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — M. Karim Hammami',
+      watermarkText: 'Madrasati TN — Document Pédagogique Conforme',
     },
     {
       id: 'crs-3',
@@ -402,7 +412,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       trimester: 'Trimestre 1',
       docType: 'Fiche de Révision',
       schoolYear: '2025-2026',
-      teacherName: 'Mme Sonia Trabelsi',
+      teacherName: 'Enseignante Certifiée (Arabe)',
       summary: 'شرح مبسط لمكونات الجملة الاسمية (المبتدأ والخبر) وتأثير إن وأخواتها عليها مع أمثلة وتطبيقات.',
       content: `### عناصر الدرس :
 1. **الجملة الاسمية** : تتكون من مبتدأ وخبر (كلاهما مرفوع).
@@ -419,7 +429,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       upvotesCount: 62,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — Mme Sonia Trabelsi',
+      watermarkText: 'Madrasati TN — Document Pédagogique Conforme',
     },
   ]);
 
@@ -446,7 +456,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       upvotesCount: 54,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
+      watermarkText: 'Madrasati TN — Document Pédagogique Conforme',
     },
     {
       id: 'bank-2',
@@ -466,7 +476,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       upvotesCount: 29,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — M. Karim Hammami',
+      watermarkText: 'Madrasati TN — Document Pédagogique Conforme',
     },
     {
       id: 'bank-3',
@@ -486,7 +496,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       upvotesCount: 88,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — Mme Sonia Trabelsi',
+      watermarkText: 'Madrasati TN — Document Pédagogique Conforme',
     },
     {
       id: 'bank-4',
@@ -992,6 +1002,275 @@ Pour réussir une production écrite de 6 à 8 lignes :
           ? { ...s, score, feedback, status: 'graded' }
           : s
       )
+    );
+  }
+
+  // ================= BLOG & PEDAGOGICAL ARTICLES =================
+  readonly blogPosts = signal<BlogPost[]>([
+    {
+      id: 'blog-1',
+      title: 'Guide Pratique : Comment préparer son enfant au Concours de 6ème (مناظرة السيزيام) ?',
+      titleAr: 'دليل عملي : كيف تجهز ابنك لاجتياز مناظرة السيزيام (السنة 6) بنجاح وهدوء ؟',
+      excerpt: 'Les 5 piliers essentiels recommandés par les maîtres d\'école pour organiser les révisions de fin de cycle primaire sans stress.',
+      excerptAr: 'الركائز الـ5 الأساسية الموصى بها من معلمي التعليم الابتدائي لتنظيم مراجعة نهاية المرحلة الابتدائية دون ضغط.',
+      content: `### 1. La régularité plutôt que l'intensité
+Il est crucial d'instaurer des sessions courtes (30 à 45 minutes) chaque jour plutôt que de longs marathons de travail le weekend.
+
+### 2. Maîtriser le barème officiel du Ministère
+Les épreuves de Mathématiques et de Langue Arabe reposent sur des compétences clés :
+- Résolution de problèmes à étapes multiples en Mathématiques
+- Production écrite structurée (schéma narratif) en Français et en Arabe
+
+### 3. Exploiter les fiches et manuels officiels CNP
+Les sujets de concours s'inspirent directement des manuels scolaires officiels tunisiens. Utilisez la banque de fiches A4 imprimables sur Madrasati TN pour des entraînements réels.`,
+      contentAr: `### 1. المواظبة اليومية خير من التكديس
+من الضروري اعتماد جلسات مراجعة مركزة وقصيرة (30 إلى 45 دقيقة يومياً) بدلاً من الإرهاق في نهاية الأسبوع.
+
+### 2. فهم سلم التقييم الرسمي لوزارة التربية
+ترتكز امتحانات المناظرة في الرياضيات واللغة العربية على كفايات محددة :
+- حل المسائل ذات المراحل المتعددة
+- الإنتاج الكتابي المنظم وفق الشواهد والروابط السليمة
+
+### 3. الاعتماد على المناهج والكتب الرسمية للمركز الوطني البيداغوجي (CNP)
+جميع مواضيع المناظرة تستند حرفياً إلى محاور البرامج الرسمية التونسية.`,
+      authorId: 't-1',
+      authorName: 'Enseignant Certifié (Mathématiques)',
+      authorTitle: 'Maître Principal d\'École Primaire',
+      authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+      subject: 'Mathématiques',
+      grade: '6ème Année',
+      tags: ['مناظرة', 'نصائح بيداغوجية', 'السادسة ابتدائي'],
+      publishedAt: 'Il y a 3 jours',
+      likesCount: 142,
+      readTimeMinutes: 4,
+      attachedCourseId: 'crs-1',
+      comments: [
+        {
+          id: 'b-c-1',
+          postId: 'blog-1',
+          authorName: 'Parent d\'élève',
+          authorRole: 'parent',
+          content: 'Merci infiniment pour ces conseils précieux ! Nous allons appliquer le planning dès ce trimestre.',
+          createdAt: 'Il y a 2 jours',
+          likesCount: 12,
+        },
+      ],
+    },
+    {
+      id: 'blog-2',
+      title: 'Calcul Mental et Pédagogie Active : 4 astuces pour la 3ème et 4ème Année',
+      titleAr: 'الحساب الذهني والبيداغوجيا النشيطة : 4 حيل لتلاميذ السنتين 3 و 4 ابتدائي',
+      excerpt: 'Comment aider votre enfant à mémoriser les tables de multiplication et développer des automatismes de calcul rapide.',
+      excerptAr: 'كيف تساعد طفلك على ترسيخ جداول الضرب وتنمية آليات الحساب السريع بكل متعة ودون تعقيد.',
+      content: `### Le constat
+Le calcul mental est la pierre angulaire de la réussite en mathématiques au primaire.
+
+### Les 4 astuces clés :
+1. **La décomposition par dizaines** : $14 \\times 5 = (10 \\times 5) + (4 \\times 5) = 50 + 20 = 70$.
+2. **Le jeu des cartes flash** : 5 minutes de rituel le matin ou le soir.
+3. **L'estimation avant le calcul posé** : Toujours demander "À ton avis, le résultat sera proche de combien ?".
+4. **La feuille d'entraînement A4 imprimable** : Imprimez chaque semaine une série chronométrée de 10 calculs.`,
+      contentAr: `### أهمية الحساب الذهني
+يمثل الحساب الذهني حجر الأساس للتفوق في الرياضيات في المرحلة الابتدائية.
+
+### الحيل الـ4 الأساسية :
+1. **التفكيك إلى عشرات وآحاد** : تسهيل الحساب ذهنياً عبر جمع المضاعفات.
+2. **البطاقات السريعة (Flashcards)** : 5 دقائق يومياً في شكل لعبة عائلية.
+3. **التخمين والتقدير المسبق** : تعويد التلميذ على توقع رتبة النتيجة قبل الحساب.
+4. **أوراق التدريب A4 المطبوعة** : تخصيص ورقة تدريب أسبوعية من بنك الوثائق.`,
+      authorId: 't-2',
+      authorName: 'Enseignant Certifié (Français)',
+      authorTitle: 'Enseignant Référent Primaire',
+      authorAvatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80',
+      subject: 'Mathématiques',
+      grade: '4ème Année',
+      tags: ['حساب ذهني', 'رياضيات', '4 ابتدائي'],
+      publishedAt: 'Il y a 5 jours',
+      likesCount: 98,
+      readTimeMinutes: 3,
+      comments: [],
+    },
+  ]);
+
+  // ================= PARENT-TEACHER Q&A THREADS =================
+  readonly questionThreads = signal<QuestionThread[]>([
+    {
+      id: 'q-1',
+      title: 'Demande d\'exercices complémentaires sur la géométrie (droites perpendiculaires)',
+      content: 'Bonjour chers enseignants, mon enfant en 4ème année a des difficultés à manipuler l\'équerre pour tracer des droites perpendiculaires. Auriez-vous une fiche avec des pas-à-pas illustrés ? Merci !',
+      subject: 'Mathématiques',
+      grade: '4ème Année',
+      parentName: 'Parent d\'élève (Ariana)',
+      createdAt: 'Hier à 16:30',
+      answers: [
+        {
+          id: 'ans-1',
+          threadId: 'q-1',
+          teacherId: 't-1',
+          teacherName: 'Enseignant Certifié',
+          teacherTitle: 'Maître Principal de Mathématiques',
+          teacherAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+          content: 'Bonjour ! C\'est une difficulté fréquente au premier trimestre. J\'ai publié une fiche pratique avec 6 exercices progressifs et repères visuels. Vous pouvez l\'imprimer directement ci-dessous.',
+          attachedDocId: 'crs-1',
+          attachedDocTitle: 'Fiche A4 : Géométrie et Tracés à l\'équerre (4ème)',
+          createdAt: 'Hier à 18:15',
+          isVerifiedAnswer: true,
+          likesCount: 15,
+        },
+      ],
+    },
+    {
+      id: 'q-2',
+      title: 'Comment structurer le paragraphe d\'expression écrite en Arabe (السنة الخامسة) ?',
+      content: 'السلام عليكم، أبحث عن منهجية مبسطة لمساعدة ابني على إنتاج نص سردي باللغة العربية دون الوقوع في التكرار واستعمال الروابط المناسبة.',
+      subject: 'اللغة العربية',
+      grade: '5ème Année',
+      parentName: 'ولي أمر (سوسة)',
+      createdAt: 'Il y a 2 jours',
+      answers: [
+        {
+          id: 'ans-2',
+          threadId: 'q-2',
+          teacherId: 't-3',
+          teacherName: 'Enseignante Certifiée (Arabe)',
+          teacherTitle: 'أستاذة لغة عربية بالتعليم الابتدائي',
+          teacherAvatar: 'https://images.unsplash.com/photo-1580894732413-802c6769998b?w=150&auto=format&fit=crop&q=80',
+          content: 'وعليكم السلام ورحمة الله. أفضل طريقة هي تدريب التلميذ على جدول المراحل الثلاث (وضع البداية، التحول وسير الأحداث، وضع النهاية) مع وضع قائمة بروابط الربط والزمان في أعلى الورقة.',
+          attachedDocId: 'crs-3',
+          attachedDocTitle: 'ملخص بيداغوجي : هيكل الإنتاج الكتابي للسنة 5',
+          createdAt: 'Il y a 2 jours',
+          isVerifiedAnswer: true,
+          likesCount: 28,
+        },
+      ],
+    },
+  ]);
+
+  addBlogPost(post: Omit<BlogPost, 'id' | 'publishedAt' | 'likesCount' | 'comments'>) {
+    const newPost: BlogPost = {
+      ...post,
+      id: 'blog-' + Date.now(),
+      publishedAt: 'À l\'instant',
+      likesCount: 1,
+      comments: [],
+    };
+    this.blogPosts.update((list) => [newPost, ...list]);
+  }
+
+  likeBlogPost(postId: string) {
+    this.blogPosts.update((list) =>
+      list.map((p) => (p.id === postId ? { ...p, likesCount: p.likesCount + 1 } : p))
+    );
+  }
+
+  addBlogComment(
+    postId: string,
+    commentOrContent: string | { authorName: string; authorRole: 'teacher' | 'parent'; content: string },
+    authorName?: string,
+    authorRole?: 'teacher' | 'parent'
+  ) {
+    const content = typeof commentOrContent === 'string' ? commentOrContent : commentOrContent.content;
+    const author = typeof commentOrContent === 'string' ? (authorName || 'Parent d\'élève') : commentOrContent.authorName;
+    const role = typeof commentOrContent === 'string' ? (authorRole || 'parent') : commentOrContent.authorRole;
+
+    const newComment: BlogComment = {
+      id: 'b-c-' + Date.now(),
+      postId,
+      authorName: author,
+      authorRole: role,
+      content,
+      createdAt: 'À l\'instant',
+      likesCount: 0,
+    };
+    this.blogPosts.update((list) =>
+      list.map((p) => (p.id === postId ? { ...p, comments: [...p.comments, newComment] } : p))
+    );
+  }
+
+  addQuestionThread(
+    threadOrTitle: string | { title: string; content: string; subject: SubjectName; grade: GradeLevel; parentName: string },
+    content?: string,
+    subject?: SubjectName,
+    grade?: GradeLevel,
+    parentName?: string
+  ) {
+    let tTitle: string;
+    let tContent: string;
+    let tSubject: SubjectName;
+    let tGrade: GradeLevel;
+    let tParent: string;
+
+    if (typeof threadOrTitle === 'string') {
+      tTitle = threadOrTitle;
+      tContent = content || '';
+      tSubject = subject || 'Mathématiques';
+      tGrade = grade || '4ème Année';
+      tParent = parentName || 'Parent d\'élève';
+    } else {
+      tTitle = threadOrTitle.title;
+      tContent = threadOrTitle.content;
+      tSubject = threadOrTitle.subject;
+      tGrade = threadOrTitle.grade;
+      tParent = threadOrTitle.parentName || 'Parent d\'élève';
+    }
+
+    const newThread: QuestionThread = {
+      id: 'q-' + Date.now(),
+      title: tTitle,
+      content: tContent,
+      subject: tSubject,
+      grade: tGrade,
+      parentName: tParent,
+      createdAt: 'À l\'instant',
+      answers: [],
+    };
+    this.questionThreads.update((list) => [newThread, ...list]);
+  }
+
+  addAnswerToQuestion(
+    threadId: string,
+    answerOrContent: string | { teacherName: string; teacherTitle: string; content: string; attachedDocId?: string; attachedDocTitle?: string; isVerifiedAnswer?: boolean },
+    teacherName?: string,
+    teacherTitle?: string,
+    attachedDocId?: string,
+    attachedDocTitle?: string
+  ) {
+    let aContent: string;
+    let aTeacherName: string;
+    let aTeacherTitle: string;
+    let aAttachedDocId: string | undefined;
+    let aAttachedDocTitle: string | undefined;
+
+    if (typeof answerOrContent === 'string') {
+      aContent = answerOrContent;
+      aTeacherName = teacherName || 'Enseignant Certifié';
+      aTeacherTitle = teacherTitle || 'Enseignant Référent';
+      aAttachedDocId = attachedDocId;
+      aAttachedDocTitle = attachedDocTitle;
+    } else {
+      aContent = answerOrContent.content;
+      aTeacherName = answerOrContent.teacherName || 'Enseignant Certifié';
+      aTeacherTitle = answerOrContent.teacherTitle || 'Enseignant Référent';
+      aAttachedDocId = answerOrContent.attachedDocId;
+      aAttachedDocTitle = answerOrContent.attachedDocTitle;
+    }
+
+    const newAns: QuestionAnswer = {
+      id: 'ans-' + Date.now(),
+      threadId,
+      teacherId: 't-current',
+      teacherName: aTeacherName,
+      teacherTitle: aTeacherTitle,
+      content: aContent,
+      attachedDocId: aAttachedDocId,
+      attachedDocTitle: aAttachedDocTitle,
+      createdAt: 'À l\'instant',
+      isVerifiedAnswer: true,
+      likesCount: 0,
+    };
+
+    this.questionThreads.update((list) =>
+      list.map((t) => (t.id === threadId ? { ...t, answers: [...t.answers, newAns] } : t))
     );
   }
 }

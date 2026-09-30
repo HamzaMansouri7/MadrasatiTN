@@ -1,4 +1,4 @@
-export type UserRole = 'home' | 'teacher' | 'parent' | 'student' | 'public';
+export type UserRole = 'home' | 'teacher' | 'parent' | 'student' | 'public' | 'editor';
 
 export type GradeLevel =
   | '1ère Année'
@@ -191,3 +191,65 @@ export interface StudentProfile {
     color: string;
   }[];
 }
+
+export interface BlogComment {
+  id: string;
+  postId: string;
+  authorName: string;
+  authorRole: 'teacher' | 'parent';
+  authorAvatar?: string;
+  content: string;
+  createdAt: string;
+  likesCount: number;
+}
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  titleAr?: string;
+  excerpt: string;
+  excerptAr?: string;
+  content: string;
+  contentAr?: string;
+  coverImage?: string;
+  authorId?: string;
+  authorName: string;
+  authorTitle: string;
+  authorAvatar?: string;
+  subject?: SubjectName;
+  grade?: GradeLevel;
+  tags: string[];
+  publishedAt: string;
+  likesCount: number;
+  readTimeMinutes: number;
+  comments: BlogComment[];
+  attachedCourseId?: string;
+}
+
+export interface QuestionAnswer {
+  id: string;
+  threadId: string;
+  teacherId?: string;
+  teacherName: string;
+  teacherTitle: string;
+  teacherAvatar?: string;
+  content: string;
+  attachedDocId?: string;
+  attachedDocTitle?: string;
+  createdAt: string;
+  isVerifiedAnswer: boolean;
+  likesCount: number;
+}
+
+export interface QuestionThread {
+  id: string;
+  title: string;
+  content: string;
+  subject: SubjectName;
+  grade: GradeLevel;
+  parentName: string;
+  parentAvatar?: string;
+  createdAt: string;
+  answers: QuestionAnswer[];
+}
+
