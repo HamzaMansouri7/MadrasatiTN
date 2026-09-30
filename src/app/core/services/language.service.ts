@@ -31,26 +31,27 @@ export class LanguageService {
   // Translations Dictionary
   readonly dictionary: Record<string, { fr: string; ar: string }> = {
     // Platform
-    brandName: { fr: 'Madrasati TN', ar: 'مدرستي تونس' },
-    brandSub: { fr: 'Espace Éducatif Réussite', ar: 'الفضاء التعليمي للنجاح' },
+    brandName: { fr: 'Madrasati', ar: 'مدرستي' },
+    brandSub: { fr: 'Plateforme Éducative Tunisienne', ar: 'المنصة التعليمية التونسية' },
     freeBadge: { fr: '100% Gratuit pour l\'École Tunisienne', ar: 'مجاني 100% للمدرسة التونسية' },
     tagline: {
-      fr: 'La plateforme éducative professionnelle remplaçant les groupes Facebook et WhatsApp en Tunisie.',
-      ar: 'المنصة التعليمية المهنية البديلة لمجموعات الفيسبوك والواتساب في تونس.',
+      fr: 'La plateforme éducative officielle pour les enseignants, élèves et parents en Tunisie.',
+      ar: 'المنصة التعليمية الرسمية للمعلمين والتلاميذ والأولياء في تونس.',
     },
 
-    // Roles
-    roleHome: { fr: '🏠 Accueil', ar: '🏠 الرئيسية' },
-    roleTeacher: { fr: '👨‍🏫 Enseignant', ar: '👨‍🏫 فضاء المعلم' },
-    roleParent: { fr: '👨‍👩‍👧 Parent', ar: '👨‍👩‍👧 فضاء الولي' },
-    roleStudent: { fr: '👦 Élève', ar: '👦 فضاء التلميذ' },
-    rolePublic: { fr: '🔎 Banque & Répertoire', ar: '🔎 المكتبة والدليل' },
+    // Roles (no baked-in emojis)
+    navHome: { fr: 'Accueil', ar: 'الرئيسية' },
+    roleHome: { fr: 'Accueil', ar: 'الرئيسية' },
+    roleTeacher: { fr: 'Enseignant', ar: 'فضاء المعلم' },
+    roleParent: { fr: 'Parent', ar: 'فضاء الولي' },
+    roleStudent: { fr: 'Élève', ar: 'فضاء التلميذ' },
+    rolePublic: { fr: 'Bibliothèque & Répertoire', ar: 'المكتبة والدليل' },
 
     // Teacher View
-    teacherWelcome: { fr: 'Bonjour, Mme Amel 👋', ar: 'مرحباً، السيدة أمل 👋' },
+    teacherWelcome: { fr: 'Bonjour, Mme Amel', ar: 'مرحباً، السيدة أمل' },
     teacherHeaderSub: {
-      fr: 'Votre espace enseignant professionnel. Toutes vos ressources, annonces et devoirs centralisés sans le bruit des réseaux sociaux.',
-      ar: 'فضاؤك المهني للتعليم. جميع الموارد والإعلانات والواجبات المدرسية منظمة وموحدة دون ضوضاء شبكات التواصل.',
+      fr: 'Votre espace enseignant professionnel. Toutes vos ressources, annonces et devoirs centralisés.',
+      ar: 'فضاؤك المهني للتعليم. جميع الموارد والإعلانات والواجبات المدرسية منظمة وموحدة.',
     },
     activeClassLabel: { fr: 'Classe active :', ar: 'الفصل الحالي:' },
     addAnnouncementBtn: { fr: '+ Annonce', ar: '+ إعلان جديد' },
@@ -79,15 +80,15 @@ export class LanguageService {
       ar: 'البلاغات والإشعارات الرسمية الصادرة عن المدرسة',
     },
     confirmReadBtn: { fr: 'Confirmer la lecture', ar: 'تأكيد الاطلاع والإعلام' },
-    readConfirmed: { fr: 'Bien pris en note ✔️', ar: 'تمت المصادقة والاطلاع ✔️' },
+    readConfirmed: { fr: 'Bien pris en note', ar: 'تمت المصادقة والاطلاع' },
     homeworksTitle: { fr: 'Devoirs à rendre', ar: 'الواجبات المدرسية المطلوبة' },
-    progressTitle: { fr: '📊 Suivi des Résultats', ar: '📊 متابعة النتائج والتحصيل' },
-    teachersTitle: { fr: '👨‍🏫 Enseignants Référents', ar: '👨‍🏫 الإطار التربوي المباشر' },
+    progressTitle: { fr: 'Suivi des Résultats', ar: 'متابعة النتائج والتحصيل' },
+    teachersTitle: { fr: 'Enseignants Référents', ar: 'الإطار التربوي المباشر' },
     messageBtn: { fr: 'Message', ar: 'مراسلة' },
 
     // Student View
     streakLabel: { fr: 'Jours de Série Consécutifs !', ar: 'أيام من المواظبة المتواصلة!' },
-    studentWelcome: { fr: 'Bonjour Ahmed ! 👋', ar: 'أهلاً بك يا أحمد ! 👋' },
+    studentWelcome: { fr: 'Bonjour Ahmed !', ar: 'أهلاً بك يا أحمد !' },
     studentSub: {
       fr: 'Bienvenue sur ton espace d\'apprentissage. Fais tes devoirs, entraîne-toi et demande de l\'aide à ton tuteur IA !',
       ar: 'مرحباً بك في فضاؤك التعليمي. أنجز واجباتك، تدرب على التمارين واطلب المساعدة من معلمك الذكي!',
@@ -100,7 +101,6 @@ export class LanguageService {
     askAiBtn: { fr: 'M\'expliquer la notion', ar: 'شرح المفهوم وتبسيطه' },
 
     // Navigation & Auth
-    navHome: { fr: 'Accueil', ar: 'الرئيسية' },
     navLogin: { fr: 'Connexion', ar: 'دخول' },
     navSignup: { fr: "S'inscrire", ar: 'تسجيل' },
     authSignupAs: { fr: "S'inscrire en tant que :", ar: 'التسجيل بصفة:' },
@@ -108,7 +108,7 @@ export class LanguageService {
     authFullName: { fr: 'Nom complet', ar: 'الاسم واللقب' },
     authEmailOrUser: { fr: "Adresse Email ou Nom d'utilisateur", ar: 'البريد الإلكتروني أو اسم المستخدم' },
     authMinistryCompliance: { fr: "100% Conforme au Ministère de l'Éducation Tunisien", ar: 'مطابق 100% لبرامج وزارة التربية التونسية' },
-    printBtn: { fr: "🖨️ Lancer l'Impression A4 / PDF", ar: '🖨️ طباعة الورقة بصيغة A4' },
+    printBtn: { fr: "Lancer l'Impression A4 / PDF", ar: 'طباعة الورقة بصيغة A4' },
     photoReady: { fr: "Photo prête à l'envoi", ar: 'الصورة جاهزة للإرسال' },
 
     // Landing Page
@@ -125,8 +125,8 @@ export class LanguageService {
     chooseSpaceSub: { fr: "Chaque utilisateur dispose d'outils sur-mesure adaptés à ses besoins scolaires", ar: 'أدوات مصممة خصيصاً لكل طرف في المنظومة التربوية' },
     teacherSpaceTitle: { fr: 'Pour les Enseignants', ar: 'للمعلمين والمعلمات' },
     teacherSpaceDesc: {
-      fr: "Publiez cours, devoirs et annonces officielles. Générez des feuilles d'exercices conformes avec filigrane et partagez-les en un clic sur WhatsApp.",
-      ar: 'نشر الدروس والواجبات المدرسية مع الطباعة الرسمية ومشاركتها في ثوان عبر الواتساب مع الأولياء.',
+      fr: "Publiez cours, devoirs et annonces officielles. Générez des feuilles d'exercices conformes avec filigrane, prêtes à imprimer en A4.",
+      ar: 'نشر الدروس والواجبات والإعلانات الرسمية مع إنشاء أوراق تمارين معتمدة بعلامة مائية، جاهزة للطباعة A4.',
     },
     teacherOpenBtn: { fr: "Ouvrir l'Espace Enseignant", ar: 'دخول فضاء المعلم' },
     teacherSignupBtn: { fr: "S'inscrire comme Enseignant", ar: 'التسجيل كمعلم(ة)' },

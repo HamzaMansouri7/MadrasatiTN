@@ -6,78 +6,78 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   template: `
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <header class="sticky top-0 z-40 bg-[#FBF8F1]/95 backdrop-blur-md border-b border-[#E7DFCF] shadow-xs">
       <div class="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
         <div class="flex items-center justify-between h-16 gap-2 sm:gap-4">
           
           <!-- Logo & Platform Identity -->
           <div (click)="selectRole('home')" class="flex items-center gap-2 sm:gap-2.5 shrink-0 cursor-pointer group">
-            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-emerald-500 text-white flex items-center justify-center shadow-sm font-bold text-lg sm:text-xl font-arabic group-hover:scale-105 transition-transform shrink-0">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center shadow-xs font-display font-semibold text-lg sm:text-xl shrink-0">
               م
             </div>
             <div>
               <div class="flex items-center gap-1.5">
-                <span class="font-extrabold text-slate-900 text-sm sm:text-base md:text-lg tracking-tight whitespace-nowrap">
+                <span class="font-display font-semibold text-[#14251D] text-sm sm:text-base md:text-lg tracking-tight whitespace-nowrap">
                   {{ lang.t('brandName') }}
                 </span>
-                <span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-rose-100 text-rose-700 border border-rose-200 shrink-0">
-                  TN 🇹🇳
+                <span class="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-[#F2ECDE] text-[#1B4332] border border-[#E7DFCF] shrink-0">
+                  TN
                 </span>
               </div>
-              <p class="text-[10px] text-slate-500 font-medium leading-none hidden sm:block">
+              <p class="text-[10px] text-[#5B6B60] font-normal leading-none hidden sm:block">
                 {{ lang.t('brandSub') }}
               </p>
             </div>
           </div>
 
           <!-- Role Switcher Tabs (Desktop Only: lg+) -->
-          <nav class="hidden lg:flex items-center gap-1 bg-slate-100 p-1.5 rounded-2xl border border-slate-200/60 shrink-0">
+          <nav class="hidden lg:flex items-center gap-1 bg-[#F2ECDE] p-1 rounded-xl border border-[#E7DFCF] shrink-0">
             <button
               (click)="selectRole('home')"
               [class]="store.currentRole() === 'home' 
-                ? 'bg-white text-slate-900 shadow-xs font-bold' 
-                : 'text-slate-600 hover:text-slate-900 font-medium'"
-              class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
-              <span class="material-icons text-base text-emerald-600">home</span>
+                ? 'bg-white text-[#14251D] shadow-xs font-semibold' 
+                : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
+              class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-colors cursor-pointer">
+              <span class="material-icons text-base text-[#1B4332]">home</span>
               <span>{{ lang.t('navHome') }}</span>
             </button>
             <button
               (click)="selectRole('teacher')"
               [class]="store.currentRole() === 'teacher' 
-                ? 'bg-white text-emerald-800 shadow-xs font-semibold' 
-                : 'text-slate-600 hover:text-slate-900 font-medium'"
-              class="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
-              <span class="material-icons text-base text-emerald-600">school</span>
+                ? 'bg-white text-[#1B4332] shadow-xs font-semibold' 
+                : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
+              class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs transition-colors cursor-pointer">
+              <span class="material-icons text-base text-[#1B4332]">school</span>
               <span>{{ lang.t('roleTeacher') }}</span>
             </button>
 
             <button
               (click)="selectRole('parent')"
               [class]="store.currentRole() === 'parent' 
-                ? 'bg-white text-indigo-800 shadow-xs font-semibold' 
-                : 'text-slate-600 hover:text-slate-900 font-medium'"
-              class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
-              <span class="material-icons text-base text-indigo-600">family_restroom</span>
+                ? 'bg-white text-[#8A5A00] shadow-xs font-semibold' 
+                : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
+              class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer">
+              <span class="material-icons text-base text-[#8A5A00]">family_restroom</span>
               <span>{{ lang.t('roleParent') }}</span>
             </button>
 
             <button
               (click)="selectRole('student')"
               [class]="store.currentRole() === 'student' 
-                ? 'bg-white text-amber-800 shadow-xs font-semibold' 
-                : 'text-slate-600 hover:text-slate-900 font-medium'"
-              class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
-              <span class="material-icons text-base text-amber-600">auto_stories</span>
+                ? 'bg-white text-[#BF5B34] shadow-xs font-semibold' 
+                : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
+              class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer">
+              <span class="material-icons text-base text-[#BF5B34]">auto_stories</span>
               <span>{{ lang.t('roleStudent') }}</span>
             </button>
 
             <button
               (click)="selectRole('public')"
               [class]="store.currentRole() === 'public' 
-                ? 'bg-white text-teal-800 shadow-xs font-semibold' 
-                : 'text-slate-600 hover:text-slate-900 font-medium'"
-              class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer">
-              <span class="material-icons text-base text-teal-600">explore</span>
+                ? 'bg-white text-[#2D6A4F] shadow-xs font-semibold' 
+                : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
+              class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer">
+              <span class="material-icons text-base text-[#2D6A4F]">explore</span>
               <span>{{ lang.t('rolePublic') }}</span>
             </button>
           </nav>
@@ -88,42 +88,42 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             <!-- Language Toggle Pill -->
             <button
               (click)="lang.toggleLanguage()"
-              class="flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300/80 px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-extrabold cursor-pointer transition-all shadow-2xs shrink-0">
-              <span class="material-icons text-sm text-emerald-700">translate</span>
+              class="flex items-center gap-1 bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-colors shrink-0">
+              <span class="material-icons text-sm text-[#1B4332]">translate</span>
               <span>{{ lang.isArabic() ? 'Fr' : 'عربي' }}</span>
             </button>
 
             <!-- Watchlist Quick Pill -->
             <button
               (click)="openWatchlist()"
-              class="flex items-center gap-1 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300/80 px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-extrabold cursor-pointer transition-all shadow-2xs shrink-0"
+              class="flex items-center gap-1 bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#8A5A00] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-colors shrink-0"
               [title]="lang.tr('Ma Watchlist & Favoris', 'قائمة المحفوظات')">
-              <span class="material-icons text-sm text-amber-600">bookmark</span>
+              <span class="material-icons text-sm text-[#8A5A00]">bookmark</span>
               <span class="hidden sm:inline">{{ lang.isArabic() ? 'محفوظاتي' : 'Favoris' }}</span>
-              <span class="bg-amber-600 text-white rounded-full px-1.5 py-0.2 text-[10px] font-black leading-tight">{{ store.totalWatchlistCount() }}</span>
+              <span class="bg-[#8A5A00] text-white rounded-full px-1.5 py-0.2 text-[10px] font-bold leading-tight">{{ store.totalWatchlistCount() }}</span>
             </button>
 
             <!-- Authentication Widget -->
             @if (firebase.userProfile(); as user) {
-              <div class="flex items-center gap-1.5 sm:gap-2 bg-slate-100/90 border border-slate-200/90 p-1 pl-1.5 pr-1.5 rounded-2xl shadow-2xs shrink-0">
+              <div class="flex items-center gap-1.5 sm:gap-2 bg-white border border-[#E7DFCF] p-1 pl-1.5 pr-1.5 rounded-xl shrink-0">
                 <img
                   [src]="user.photoURL || getUserAvatar()"
                   alt="User"
-                  class="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover border-2 border-emerald-500 shadow-xs shrink-0" />
+                  class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg object-cover border border-[#E7DFCF] shrink-0" />
                 <div class="text-left leading-tight max-w-[70px] sm:max-w-[100px] md:max-w-[130px] truncate">
-                  <p class="text-xs font-bold text-slate-800 truncate" [title]="user.displayName || getUserName()">
+                  <p class="text-xs font-semibold text-[#14251D] truncate" [title]="user.displayName || getUserName()">
                     {{ user.displayName || getUserName() }}
                   </p>
-                  <p class="text-[10px] text-emerald-700 font-semibold uppercase truncate">{{ user.role }} ✔️</p>
+                  <p class="text-[10px] text-[#2D6A4F] font-medium uppercase truncate">{{ user.role }}</p>
                 </div>
                 <!-- Permanent Always-Visible Logout Button -->
                 <button
                   type="button"
                   (click)="handleLogout()"
                   title="Se déconnecter"
-                  class="flex items-center gap-1 bg-rose-50 hover:bg-rose-100 active:bg-rose-200 text-rose-700 px-2 sm:px-2.5 py-1 rounded-xl text-xs font-bold cursor-pointer transition-colors border border-rose-200/80 shadow-2xs shrink-0">
+                  class="flex items-center gap-1 bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#BF5B34] px-2 sm:px-2.5 py-1 rounded-lg text-xs font-semibold cursor-pointer transition-colors border border-[#E7DFCF] shrink-0">
                   <span class="material-icons text-sm">logout</span>
-                  <span class="text-[11px] font-bold">{{ lang.isArabic() ? 'خروج' : 'Quitter' }}</span>
+                  <span class="text-[11px] font-semibold">{{ lang.isArabic() ? 'خروج' : 'Quitter' }}</span>
                 </button>
               </div>
             } @else {
@@ -131,7 +131,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <button
                 type="button"
                 (click)="store.openLoginModal()"
-                class="text-slate-700 hover:text-slate-950 font-bold text-xs px-2.5 py-1.5 rounded-xl hover:bg-slate-100 cursor-pointer transition-colors shrink-0">
+                class="text-[#14251D] hover:bg-[#F2ECDE] font-semibold text-xs px-2.5 py-1.5 rounded-xl cursor-pointer transition-colors shrink-0">
                 {{ lang.t('navLogin') }}
               </button>
 
@@ -139,7 +139,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <button
                 type="button"
                 (click)="store.openSignupModal('teacher')"
-                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-2.5 sm:px-3 py-1.5 rounded-xl shadow-xs cursor-pointer transition-all shrink-0">
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3 py-1.5 rounded-xl shadow-xs cursor-pointer transition-colors shrink-0">
                 {{ lang.t('navSignup') }}
               </button>
 
@@ -148,7 +148,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 type="button"
                 (click)="loginGoogle()"
                 title="Google Login"
-                class="flex items-center gap-1 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl transition-all cursor-pointer shadow-xs shrink-0">
+                class="flex items-center gap-1 bg-white hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] font-semibold text-xs p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl transition-colors cursor-pointer shadow-xs shrink-0">
                 <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                   <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -164,35 +164,35 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
         </div>
 
         <!-- Secondary/Mobile Role Selector Bar (for screens < lg) -->
-        <div class="flex lg:hidden items-center justify-between overflow-x-auto py-2 gap-2 no-scrollbar border-t border-slate-100">
+        <div class="flex lg:hidden items-center justify-between overflow-x-auto py-2 gap-2 no-scrollbar border-t border-[#E7DFCF]">
           <div class="flex items-center gap-1.5 shrink-0">
             <button
               (click)="selectRole('home')"
-              [class]="store.currentRole() === 'home' ? 'bg-slate-900 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              [class]="store.currentRole() === 'home' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('navHome') }}
             </button>
             <button
               (click)="selectRole('teacher')"
-              [class]="store.currentRole() === 'teacher' ? 'bg-emerald-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              [class]="store.currentRole() === 'teacher' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('roleTeacher') }}
             </button>
             <button
               (click)="selectRole('parent')"
-              [class]="store.currentRole() === 'parent' ? 'bg-indigo-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              [class]="store.currentRole() === 'parent' ? 'bg-[#8A5A00] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('roleParent') }}
             </button>
             <button
               (click)="selectRole('student')"
-              [class]="store.currentRole() === 'student' ? 'bg-amber-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              [class]="store.currentRole() === 'student' ? 'bg-[#BF5B34] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('roleStudent') }}
             </button>
             <button
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' ? 'bg-teal-600 text-white font-semibold' : 'bg-slate-100 text-slate-700'"
+              [class]="store.currentRole() === 'public' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('rolePublic') }}
             </button>
@@ -201,7 +201,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
           @if (firebase.userProfile()) {
             <button
               (click)="handleLogout()"
-              class="bg-rose-50 text-rose-700 border border-rose-200 px-2.5 py-1 rounded-lg text-xs font-bold whitespace-nowrap shrink-0 flex items-center gap-1 cursor-pointer">
+              class="bg-white text-[#BF5B34] border border-[#E7DFCF] px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap shrink-0 flex items-center gap-1 cursor-pointer">
               <span class="material-icons text-xs">logout</span>
               <span>{{ lang.isArabic() ? 'خروج' : 'Déconnexion' }}</span>
             </button>

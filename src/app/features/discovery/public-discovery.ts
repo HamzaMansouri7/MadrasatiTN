@@ -11,36 +11,32 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
     <div class="space-y-6">
       
       <!-- Hero Banner & AI Bulk Upload Zone -->
-      <div class="bg-gradient-to-br from-teal-900 via-slate-900 to-emerald-950 text-white rounded-3xl p-6 sm:p-8 shadow-md relative overflow-hidden">
-        <div class="absolute -right-10 -top-10 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="relative z-10 space-y-6">
-          <div class="max-w-3xl space-y-3">
-            <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs px-3 py-1 rounded-full font-bold">
-              🇹🇳 {{ lang.tr('La Bibliothèque Éducative Certifiée de Tunisie', 'المكتبة التعليمية المعتمدة في تونس') }}
+      <div class="bg-[#14251D] text-[#FBF8F1] rounded-[28px] p-6 sm:p-9 overflow-hidden">
+        <div class="space-y-7">
+          <div class="max-w-3xl space-y-4">
+            <div class="inline-flex items-center gap-2 text-[#9DBBA8] text-xs font-medium">
+              <span class="material-icons text-[16px]">verified</span>
+              {{ lang.tr('Bibliothèque officielle · Programmes CNP', 'المكتبة الرسمية · برامج المركز الوطني البيداغوجي') }}
             </div>
 
-            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight">
-              {{ lang.tr('De la confusion WhatsApp à la bibliothèque structurée.', 'من فوضى الواتساب إلى المكتبة التعليمية المنظمة.') }} <br />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300">
-                {{ lang.t('publicHeroTitle') }}
-              </span>
+            <h1 class="font-display text-[1.75rem] sm:text-[2.4rem] font-semibold tracking-[-0.01em] leading-[1.1]">
+              {{ lang.tr("La bibliothèque officielle de l’école primaire tunisienne.", 'المكتبة الرسمية للمدرسة الابتدائية التونسية.') }}
             </h1>
 
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            <p class="text-[#B7C7BC] text-sm leading-relaxed max-w-2xl">
               {{ publicSubText() }}
             </p>
           </div>
 
           <!-- FEATURE 1: AI Auto-Tagger Drag-and-Drop Bulk Upload Bar -->
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20 space-y-3">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-2">
-              <div class="flex items-center gap-2 text-amber-300 font-bold text-xs">
+          <div class="bg-white/[0.06] rounded-2xl p-4 border border-white/10 space-y-3">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-2.5">
+              <div class="flex items-center gap-2 text-[#F2C14E] font-semibold text-xs">
                 <span class="material-icons text-base">auto_awesome</span>
-                <span>{{ lang.tr('🤖 Gemini IA Auto-Tagger pour fichiers WhatsApp', '🤖 الذكاء الاصطناعي لتصنيف وثائق الواتساب تلقائياً') }}</span>
+                <span>{{ lang.tr('Classement automatique par IA', 'التصنيف التلقائي بالذكاء الاصطناعي') }}</span>
               </div>
-              <span class="text-[11px] text-emerald-200">
-                {{ lang.tr("Glissez-déposez des photos/PDFs : Gemini lit l'en-tête et étiquette tout !", 'اسحب وأسقط الملفات: يتعرف الذكاء الاصطناعي على العنوان والصنف تلقائياً!') }}
+              <span class="text-[11px] text-[#9DBBA8]">
+                {{ lang.tr("Déposez une photo ou un PDF : le titre, la matière et le niveau sont détectés.", 'أرفق صورة أو ملف PDF: يُكتشف العنوان والمادة والمستوى تلقائياً.') }}
               </span>
             </div>
 
@@ -49,17 +45,18 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                 (click)="fileInput.click()"
                 (dragover)="onDragOver($event)"
                 (drop)="onFileDrop($event)"
-                class="w-full bg-white/5 hover:bg-white/10 border-2 border-dashed border-white/30 hover:border-emerald-400 rounded-xl p-3 text-center transition-all cursor-pointer">
+                class="w-full bg-white/5 hover:bg-white/10 border-2 border-dashed border-white/30 hover:border-[#F2C14E] rounded-xl p-3 text-center transition-colors cursor-pointer">
                 <input
                   type="file"
                   #fileInput
                   (change)="handleFileUpload($event)"
                   accept=".pdf,image/*"
                   class="hidden" />
-                <p class="text-xs font-semibold text-white">
-                  📁 {{ uploadedFileName() ? uploadedFileName() : lang.tr('Cliquer ou déposer ici vos devoirs ou photos WhatsApp', 'اضغط هنا أو اسحب ملفات الفروض وصور الواتساب') }}
+                <p class="text-xs font-semibold text-white flex items-center justify-center gap-1.5">
+                  <span class="material-icons text-sm text-[#F2C14E]">folder_open</span>
+                  <span>{{ uploadedFileName() ? uploadedFileName() : lang.tr('Cliquer ou déposer ici vos devoirs ou photos de cahiers', 'اضغط هنا أو اسحب ملفات الفروض وصور الكراسات') }}</span>
                 </p>
-                <p class="text-[10px] text-slate-300">
+                <p class="text-[10px] text-[#9DBBA8]">
                   {{ lang.tr('Supporte PDF et photos de cahiers (sauvegardé sur serveur)', 'يدعم ملفات PDF وصور الكراسات (حفظ مباشر على السيرفر)') }}
                 </p>
               </div>
@@ -68,7 +65,7 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                 <button
                   [disabled]="isAutoTagging()"
                   (click)="fileInput.click()"
-                  class="w-full sm:w-auto bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs px-4 py-3 rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-xs">
+                  class="w-full sm:w-auto bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold text-xs px-4 py-3 rounded-xl transition-opacity cursor-pointer flex items-center justify-center gap-1.5 shadow-sm">
                   @if (isAutoTagging()) {
                     <span class="material-icons animate-spin text-sm">sync</span>
                     <span>{{ lang.tr('Upload & Analyse...', 'جاري الرفع والتحليل...') }}</span>
@@ -81,17 +78,20 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
             </div>
 
             @if (autoTagResult(); as tag) {
-              <div class="bg-emerald-950/80 p-3 rounded-xl border border-emerald-400/50 text-xs space-y-1.5">
-                <div class="flex items-center justify-between text-emerald-300 font-bold">
-                  <span>✔️ {{ lang.tr('Étiquetage IA Gemini Réussi !', 'تم التصنيف الآلي بنجاح!') }}</span>
-                  <span class="bg-emerald-500/30 px-2 py-0.5 rounded text-[10px]">{{ tag.docType }}</span>
+              <div class="bg-white/[0.06] p-3 rounded-xl border border-white/10 text-xs space-y-1.5">
+                <div class="flex items-center justify-between text-[#F2C14E] font-semibold">
+                  <span class="flex items-center gap-1">
+                    <span class="material-icons text-sm">check_circle</span>
+                    {{ lang.tr('Étiquetage IA Gemini Réussi !', 'تم التصنيف الآلي بنجاح!') }}
+                  </span>
+                  <span class="bg-[#F2C14E]/20 px-2 py-0.5 rounded text-[10px]">{{ tag.docType }}</span>
                 </div>
                 <p class="text-white font-semibold">{{ tag.suggestedTitle }}</p>
-                <div class="flex flex-wrap gap-2 text-[10px] text-slate-300">
-                  <span class="bg-white/10 px-2 py-0.5 rounded">📊 {{ tag.grade }}</span>
-                  <span class="bg-white/10 px-2 py-0.5 rounded">📘 {{ tag.subject }}</span>
-                  <span class="bg-white/10 px-2 py-0.5 rounded">📅 {{ tag.trimester }}</span>
-                  <span class="bg-white/10 px-2 py-0.5 rounded">✔️ {{ tag.hasCorrection ? 'Corrigé Inclus' : 'Sans Corrigé' }}</span>
+                <div class="flex flex-wrap gap-2 text-[10px] text-[#9DBBA8]">
+                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.grade }}</span>
+                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.subject }}</span>
+                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.trimester }}</span>
+                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.hasCorrection ? lang.tr('Corrigé Inclus', 'مصحوب بالإصلاح') : lang.tr('Sans Corrigé', 'بدون إصلاح') }}</span>
                 </div>
               </div>
             }
@@ -100,17 +100,17 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
       </div>
 
       <!-- FEATURE 2: Multi-Facet Search & Filter Hub Panel -->
-      <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-xs space-y-4">
-        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+      <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] space-y-4">
+        <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
           <div class="flex items-center gap-2">
-            <span class="material-icons text-emerald-600">tune</span>
-            <h3 class="font-extrabold text-slate-900 text-sm">
+            <span class="material-icons text-[#1B4332]">tune</span>
+            <h3 class="font-display font-semibold text-[#14251D] text-sm">
               {{ lang.tr('Centre de Recherche Multi-Critères (Multi-Facet Hub)', 'مركّب البحث والفلترة متعددة المعايير') }}
             </h3>
           </div>
           <button
             (click)="store.resetAllFilters()"
-            class="text-xs text-rose-600 hover:text-rose-700 font-bold flex items-center gap-1 cursor-pointer">
+            class="text-xs text-[#8A5A00] hover:text-[#C1121F] font-semibold flex items-center gap-1 cursor-pointer">
             <span class="material-icons text-sm">restart_alt</span>
             {{ lang.tr('Réinitialiser les filtres', 'إعادة ضبط الفلاتر') }}
           </button>
@@ -119,147 +119,147 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
         <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-xs">
           <!-- Filter 1: Grade -->
           <div>
-            <label for="filter-grade-select" class="block font-bold text-slate-700 mb-1">
-              {{ lang.tr('Niveau (1ère-6ème)', 'المستوى') }}
+            <label for="filter-grade-select" class="block font-medium text-[#4A5A50] mb-1">
+              {{ lang.tr('Niveau', 'المستوى') }}
             </label>
             <select
               id="filter-grade-select"
               [value]="store.selectedGradeFilter()"
               (change)="onGradeChange($event)"
-              class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2 font-semibold text-slate-800 outline-none">
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
               <option value="Tous">{{ lang.t('filterGradeAll') }}</option>
-              <option value="1ère Année">1ère Année / الأولى</option>
-              <option value="2ème Année">2ème Année / الثانية</option>
-              <option value="3ème Année">3ème Année / الثالثة</option>
-              <option value="4ème Année">4ème Année / الرابعة</option>
-              <option value="5ème Année">5ème Année / الخامسة</option>
-              <option value="6ème Année">6ème Année (Concours) / السادسة</option>
+              <option value="1ère Année">{{ lang.tr('1ère Année Primaire', 'السنة الأولى ابتدائي') }}</option>
+              <option value="2ème Année">{{ lang.tr('2ème Année Primaire', 'السنة الثانية ابتدائي') }}</option>
+              <option value="3ème Année">{{ lang.tr('3ème Année Primaire', 'السنة الثالثة ابتدائي') }}</option>
+              <option value="4ème Année">{{ lang.tr('4ème Année Primaire', 'السنة الرابعة ابتدائي') }}</option>
+              <option value="5ème Année">{{ lang.tr('5ème Année Primaire', 'السنة الخامسة ابتدائي') }}</option>
+              <option value="6ème Année">{{ lang.tr('6ème Année (Concours)', 'السنة السادسة (مناظرة)') }}</option>
             </select>
           </div>
 
           <!-- Filter 2: Trimester -->
           <div>
-            <label for="filter-trimester-select" class="block font-bold text-slate-700 mb-1">
+            <label for="filter-trimester-select" class="block font-medium text-[#4A5A50] mb-1">
               {{ lang.tr('Trimestre', 'الثلاثي') }}
             </label>
             <select
               id="filter-trimester-select"
               [value]="store.selectedTrimesterFilter()"
               (change)="onTrimesterChange($event)"
-              class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2 font-semibold text-slate-800 outline-none">
-              <option value="Tous">Tous les Trimestres</option>
-              <option value="Trimestre 1">Trimestre 1 / الثلاثي الأول</option>
-              <option value="Trimestre 2">Trimestre 2 / الثلاثي الثاني</option>
-              <option value="Trimestre 3">Trimestre 3 / الثلاثي الثالث</option>
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              <option value="Tous">{{ lang.tr('Tous les trimestres', 'جميع الثلاثيات') }}</option>
+              <option value="Trimestre 1">{{ lang.tr('Trimestre 1', 'الثلاثي الأول') }}</option>
+              <option value="Trimestre 2">{{ lang.tr('Trimestre 2', 'الثلاثي الثاني') }}</option>
+              <option value="Trimestre 3">{{ lang.tr('Trimestre 3', 'الثلاثي الثالث') }}</option>
             </select>
           </div>
 
           <!-- Filter 3: Subject -->
           <div>
-            <label for="filter-subject-select" class="block font-bold text-slate-700 mb-1">
+            <label for="filter-subject-select" class="block font-medium text-[#4A5A50] mb-1">
               {{ lang.tr('Matière', 'المادة') }}
             </label>
             <select
               id="filter-subject-select"
               [value]="store.selectedSubjectFilter()"
               (change)="onSubjectChange($event)"
-              class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2 font-semibold text-slate-800 outline-none">
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
               <option value="Tous">{{ lang.t('filterSubjectAll') }}</option>
-              <option value="Mathématiques">Mathématiques / الرياضيات</option>
-              <option value="Français">Français / الفرنسية</option>
-              <option value="اللغة العربية">اللغة العربية</option>
-              <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ العلمي</option>
+              <option value="Mathématiques">{{ lang.tr('Mathématiques', 'الرياضيات') }}</option>
+              <option value="Français">{{ lang.tr('Français', 'الفرنسية') }}</option>
+              <option value="اللغة العربية">{{ lang.tr('Langue Arabe', 'اللغة العربية') }}</option>
+              <option value="Éveil Scientifique">{{ lang.tr('Éveil Scientifique', 'الإيقاظ العلمي') }}</option>
             </select>
           </div>
 
           <!-- Filter 4: Doc Type -->
           <div>
-            <label for="filter-doctype-select" class="block font-bold text-slate-700 mb-1">
+            <label for="filter-doctype-select" class="block font-medium text-[#4A5A50] mb-1">
               {{ lang.tr('Type de document', 'صنف الوثيقة') }}
             </label>
             <select
               id="filter-doctype-select"
               [value]="store.selectedDocTypeFilter()"
               (change)="onDocTypeChange($event)"
-              class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2 font-semibold text-slate-800 outline-none">
-              <option value="Tous">Tous les types</option>
-              <option value="Devoir de Contrôle">Devoir de Contrôle / فرض مراقبة</option>
-              <option value="Devoir de Synthèse">Devoir de Synthèse / فرض تأليفي</option>
-              <option value="Fiche de Révision">Fiche de Révision / ملخص درس</option>
-              <option value="Série d'Exercices">Série d'Exercices / سلسلة تمارين</option>
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              <option value="Tous">{{ lang.tr('Tous les types', 'جميع الأصناف') }}</option>
+              <option value="Devoir de Contrôle">{{ lang.tr('Devoir de Contrôle', 'فرض مراقبة') }}</option>
+              <option value="Devoir de Synthèse">{{ lang.tr('Devoir de Synthèse', 'فرض تأليفي') }}</option>
+              <option value="Fiche de Révision">{{ lang.tr('Fiche de Révision', 'ملخص درس') }}</option>
+              <option value="Série d'Exercices">{{ lang.tr('Série d\'Exercices', 'سلسلة تمارين') }}</option>
             </select>
           </div>
 
           <!-- Filter 5: School Year -->
           <div>
-            <label for="filter-year-select" class="block font-bold text-slate-700 mb-1">
+            <label for="filter-year-select" class="block font-medium text-[#4A5A50] mb-1">
               {{ lang.tr('Année Scolaire', 'السنة الدراسية') }}
             </label>
             <select
               id="filter-year-select"
               [value]="store.selectedSchoolYearFilter()"
               (change)="onSchoolYearChange($event)"
-              class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2 font-semibold text-slate-800 outline-none">
-              <option value="Tous">Toutes les années</option>
-              <option value="2025-2026">2025-2026 (Actuelle)</option>
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              <option value="Tous">{{ lang.tr('Toutes les années', 'جميع السنوات') }}</option>
+              <option value="2025-2026">{{ lang.tr('2025-2026 (Actuelle)', '2025-2026 (الحالية)') }}</option>
               <option value="2024-2025">2024-2025</option>
             </select>
           </div>
         </div>
 
         <!-- Toggle Correction Checkbox & Search Keyword Input -->
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2 border-t border-slate-100">
-          <label class="flex items-center gap-2 cursor-pointer text-xs font-bold text-slate-800">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2 border-t border-[#E7DFCF]">
+          <label class="flex items-center gap-2 cursor-pointer text-xs font-medium text-[#14251D]">
             <input
               type="checkbox"
               [checked]="store.onlyWithCorrectionFilter()"
               (change)="onCorrectionToggle($event)"
-              class="w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500 cursor-pointer" />
-            <span>✔️ {{ lang.tr('Uniquement avec Corrigé Étape par Étape', 'فقط الوثائق المصحوبة بالإصلاح المفصل') }}</span>
+              class="w-4 h-4 rounded text-[#2D6A4F] focus:ring-[#2D6A4F] cursor-pointer" />
+            <span>{{ lang.tr('Uniquement avec Corrigé Étape par Étape', 'فقط الوثائق المصحوبة بالإصلاح المفصل') }}</span>
           </label>
 
           <div class="relative w-full sm:w-80">
-            <span class="material-icons absolute left-3 top-2.5 text-slate-400 text-sm">search</span>
+            <span class="material-icons absolute left-3 top-2.5 text-[#6B7A70] text-sm">search</span>
             <input
               type="text"
               [value]="store.searchQuery()"
               (input)="onSearchInput($event)"
               placeholder="Rechercher par mot-clé (ex: Multiplication...)"
-              class="w-full bg-slate-50 border border-slate-200 pl-9 pr-3 py-1.5 rounded-xl text-xs outline-none" />
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] pl-9 pr-3 py-1.5 rounded-xl text-xs outline-none" />
           </div>
         </div>
       </div>
 
       <!-- Main Directory Navigation Tabs -->
-      <div class="flex items-center gap-2 border-b border-slate-200 pb-2 overflow-x-auto no-scrollbar">
+      <div class="flex items-center gap-2 border-b border-[#E7DFCF] pb-2 overflow-x-auto no-scrollbar">
         <button
           (click)="activeSection.set('exercises')"
-          [class]="activeSection() === 'exercises' ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 text-slate-700 font-medium'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
+          [class]="activeSection() === 'exercises' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">fitness_center</span>
           <span>{{ lang.tr("Banque d'Examens & Séries", 'مكتبة الفروض والسلاسل') }} ({{ store.filteredExercisesBank().length }})</span>
         </button>
 
         <button
           (click)="activeSection.set('courses')"
-          [class]="activeSection() === 'courses' ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 text-slate-700 font-medium'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
+          [class]="activeSection() === 'courses' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">menu_book</span>
           <span>{{ lang.tr('Fiches & Cours', 'الملخصات والدروس') }} ({{ store.filteredCourses().length }})</span>
         </button>
 
         <button
           (click)="activeSection.set('teachers')"
-          [class]="activeSection() === 'teachers' ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 text-slate-700 font-medium'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
+          [class]="activeSection() === 'teachers' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">verified</span>
           <span>{{ lang.t('teachersDirectory') }} ({{ store.teachers().length }})</span>
         </button>
 
         <button
           (click)="activeSection.set('watchlist')"
-          [class]="activeSection() === 'watchlist' ? 'bg-amber-600 text-white font-bold shadow-xs' : 'bg-amber-50 hover:bg-amber-100 text-amber-900 font-semibold border border-amber-200/80'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-all cursor-pointer whitespace-nowrap">
+          [class]="activeSection() === 'watchlist' ? 'bg-[#8A5A00] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#8A5A00] font-medium border border-[#E7DFCF]'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">bookmark</span>
           <span>{{ lang.tr('⭐ Ma Watchlist', '⭐ قائمة محفوظاتي') }} ({{ store.totalWatchlistCount() }})</span>
         </button>
@@ -269,54 +269,54 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
       @if (activeSection() === 'exercises') {
         <div class="grid md:grid-cols-2 gap-6">
           @for (ex of store.filteredExercisesBank(); track ex.id) {
-            <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4 flex flex-col justify-between hover:border-slate-300 transition-all">
+            <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
               <div class="space-y-3">
                 <div class="flex items-center justify-between flex-wrap gap-1 text-[10px]">
                   <div class="flex items-center gap-2">
-                    <span class="bg-emerald-100 text-emerald-800 font-bold px-2.5 py-0.5 rounded-full">
+                    <span class="bg-[#1B4332]/10 text-[#1B4332] font-semibold px-2.5 py-0.5 rounded-full">
                       {{ ex.subject }}
                     </span>
-                    <span class="bg-slate-100 text-slate-700 font-semibold px-2 py-0.5 rounded-full">
+                    <span class="bg-[#F2ECDE] text-[#4A5A50] font-medium px-2 py-0.5 rounded-full">
                       {{ ex.grade }}
                     </span>
-                    <span class="bg-amber-100 text-amber-900 font-semibold px-2 py-0.5 rounded-full">
+                    <span class="bg-[#8A5A00]/10 text-[#8A5A00] font-medium px-2 py-0.5 rounded-full">
                       {{ ex.trimester || 'Trimestre 1' }}
                     </span>
                   </div>
-                  
-                  <span class="bg-indigo-50 text-indigo-800 font-bold px-2 py-0.5 rounded-md border border-indigo-200">
+
+                  <span class="bg-[#FBF8F1] text-[#1B4332] font-semibold px-2 py-0.5 rounded-md border border-[#E7DFCF]">
                     {{ ex.docType || 'Devoir' }}
                   </span>
                 </div>
 
-                <h3 class="font-bold text-slate-900 text-sm leading-snug">{{ ex.title }}</h3>
+                <h3 class="font-display font-semibold text-[#14251D] text-sm leading-snug">{{ ex.title }}</h3>
 
-                <p class="text-xs text-slate-700 bg-slate-50 p-3.5 rounded-2xl border border-slate-200 leading-relaxed font-mono">
+                <p class="text-xs text-[#4A5A50] bg-[#FBF8F1] p-3.5 rounded-2xl border border-[#E7DFCF] leading-relaxed font-mono">
                   "{{ ex.promptText }}"
                 </p>
 
                 <!-- Badges: Teacher Verified & Watermark Notice -->
                 <div class="flex items-center justify-between text-[11px] pt-1">
-                  <span class="flex items-center gap-1 text-emerald-700 font-bold">
+                  <span class="flex items-center gap-1 text-[#1B4332] font-semibold">
                     <span class="material-icons text-sm">verified</span>
                     {{ lang.tr('Corrigé Certifié Enseignant', 'إصلاح مؤكد ومعتمد') }}
                   </span>
 
-                  <span class="text-slate-400 italic">
+                  <span class="text-[#6B7A70] italic">
                     {{ ex.schoolYear || '2025-2026' }}
                   </span>
                 </div>
               </div>
 
               <!-- Action Bar: Upvoting, Reporting & One-Click PDF Watermark Print -->
-              <div class="pt-3 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2 text-xs">
+              <div class="pt-3 border-t border-[#E7DFCF] flex items-center justify-between flex-wrap gap-2 text-xs">
                 
                 <!-- FEATURE 4: Community Upvoting & Reporting -->
                 <div class="flex items-center gap-2">
                   <button
                     (click)="store.toggleUpvoteExercise(ex.id)"
-                    [class]="ex.isUpvoted ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold'"
-                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-all cursor-pointer">
+                    [class]="ex.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
+                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer">
                     <span class="material-icons text-xs">thumb_up</span>
                     <span>{{ ex.upvotesCount || 0 }}</span>
                   </button>
@@ -324,7 +324,7 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                   <button
                     (click)="reportDocument(ex)"
                     [disabled]="ex.isReported"
-                    [class]="ex.isReported ? 'text-rose-600 font-bold' : 'text-slate-400 hover:text-rose-600'"
+                    [class]="ex.isReported ? 'text-[#C1121F] font-semibold' : 'text-[#6B7A70] hover:text-[#C1121F]'"
                     title="Signaler un scan flou ou incomplet"
                     class="p-1 rounded-lg cursor-pointer transition-colors text-xs flex items-center gap-1">
                     <span class="material-icons text-sm">report_problem</span>
@@ -338,40 +338,32 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                 <div class="flex items-center gap-1.5 flex-wrap">
                   <button
                     (click)="store.toggleWatchlist(ex.id, 'exercise')"
-                    [class]="store.isWatched(ex.id, 'exercise') ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium border-slate-200'"
-                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-all cursor-pointer border shadow-2xs"
+                    [class]="store.isWatched(ex.id, 'exercise') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
+                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer border"
                     [title]="store.isWatched(ex.id, 'exercise') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
-                    <span class="material-icons text-xs" [class.text-amber-600]="store.isWatched(ex.id, 'exercise')">
+                    <span class="material-icons text-xs" [class.text-[#8A5A00]]="store.isWatched(ex.id, 'exercise')">
                       {{ store.isWatched(ex.id, 'exercise') ? 'bookmark' : 'bookmark_border' }}
                     </span>
                     <span>{{ store.isWatched(ex.id, 'exercise') ? 'Sauvegardé' : 'Favoris' }}</span>
                   </button>
 
                   <button
-                    (click)="shareOnWhatsApp(ex)"
-                    class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-2 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors shadow-2xs"
-                    title="Partager sur WhatsApp">
-                    <span class="material-icons text-xs">share</span>
-                    <span>WhatsApp</span>
-                  </button>
-
-                  <button
                     (click)="copyLink(ex)"
-                    class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold p-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer"
+                    class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium p-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer border border-[#E7DFCF]"
                     title="Copier le lien">
                     <span class="material-icons text-xs">content_copy</span>
                   </button>
 
                   <button
                     (click)="toggleSolution(ex.id)"
-                    class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 cursor-pointer px-2 py-1">
+                    class="text-xs font-semibold text-[#1B4332] hover:text-[#14251D] flex items-center gap-1 cursor-pointer px-2 py-1">
                     <span class="material-icons text-sm">visibility</span>
                     {{ openSolutionIds().has(ex.id) ? lang.tr('Masquer', 'إخفاء') : lang.tr('Voir Corrigé', 'عرض الإصلاح') }}
                   </button>
 
                   <button
                     (click)="openWatermarkPreviewModal(ex)"
-                    class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer shadow-2xs">
+                    class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors shadow-sm">
                     <span class="material-icons text-xs">print</span>
                     {{ lang.tr('Imprimer PDF', 'طباعة PDF') }}
                   </button>
@@ -379,15 +371,15 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
               </div>
 
               <!-- ── Q&A COMMENT TOGGLE BUTTON (exercise) ── -->
-              <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+              <div class="border-t border-[#E7DFCF] pt-3 flex items-center justify-between">
                 <button
                   (click)="toggleCommentPanel(ex.id)"
-                  [class]="openCommentIds().has(ex.id) ? 'bg-violet-100 text-violet-900 border-violet-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-600 border-slate-200 font-semibold'"
+                  [class]="openCommentIds().has(ex.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
                   class="px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 border transition-all cursor-pointer shadow-2xs">
                   <span class="material-icons text-sm">forum</span>
                   <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
                   @if (store.getComments(ex.id).length > 0) {
-                    <span class="bg-violet-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                    <span class="bg-[#1B4332] text-[#FBF8F1] text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
                       {{ store.getComments(ex.id).length }}
                     </span>
                   }
@@ -395,8 +387,8 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
               </div>
 
               @if (openCommentIds().has(ex.id)) {
-                <div class="bg-slate-50 border border-violet-200/70 rounded-2xl p-4 space-y-3 mt-1">
-                  <p class="text-[10px] font-bold text-violet-700 uppercase tracking-wide">💬 {{ lang.tr('Discussion & Q&A', 'نقاش وأسئلة') }}</p>
+                <div class="bg-[#FBF8F1] border border-[#E7DFCF] rounded-2xl p-4 space-y-3 mt-1">
+                  <p class="text-[10px] font-semibold text-[#1B4332] tracking-wide">💬 {{ lang.tr('Discussion & Q&A', 'نقاش وأسئلة') }}</p>
 
                   <!-- existing comments -->
                   @for (cmt of store.getComments(ex.id); track cmt.id) {
@@ -407,24 +399,24 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                         </div>
                         <div class="flex-1 min-w-0">
                           <div class="flex items-center gap-1.5 flex-wrap">
-                            <span class="font-bold text-slate-900 text-xs">{{ cmt.authorName }}</span>
-                            <span [class]="roleTagClass(cmt.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(cmt.authorRole) }}</span>
-                            <span class="text-[10px] text-slate-400">{{ cmt.createdAt }}</span>
+                            <span class="font-semibold text-[#14251D] text-xs">{{ cmt.authorName }}</span>
+                            <span [class]="roleTagClass(cmt.authorRole)" class="text-[9px] font-semibold px-1.5 py-0.5 rounded-md">{{ roleLabel(cmt.authorRole) }}</span>
+                            <span class="text-[10px] text-[#6B7A70]">{{ cmt.createdAt }}</span>
                           </div>
-                          <p class="text-xs text-slate-700 mt-0.5 leading-relaxed">{{ cmt.text }}</p>
+                          <p class="text-xs text-[#4A5A50] mt-0.5 leading-relaxed">{{ cmt.text }}</p>
                           <div class="flex items-center gap-3 mt-1">
-                            <button (click)="store.likeComment(cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors">
-                              <span class="material-icons text-xs" [class.text-rose-500]="cmt.isLiked">favorite</span>
+                            <button (click)="store.likeComment(cmt.id)" class="flex items-center gap-0.5 text-[10px] text-[#6B7A70] hover:text-[#C1121F] cursor-pointer transition-colors">
+                              <span class="material-icons text-xs" [class.text-[#C1121F]]="cmt.isLiked">favorite</span>
                               <span>{{ cmt.likes }}</span>
                             </button>
-                            <button (click)="setReplyTarget(cmt.id, ex.id)" class="text-[10px] text-violet-600 hover:text-violet-800 font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
+                            <button (click)="setReplyTarget(cmt.id, ex.id)" class="text-[10px] text-[#1B4332] hover:text-[#14251D] font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
                           </div>
                         </div>
                       </div>
 
                       <!-- replies -->
                       @if (cmt.replies && cmt.replies.length > 0) {
-                        <div class="ml-9 space-y-2 border-l-2 border-violet-100 pl-3">
+                        <div class="ml-9 space-y-2 border-l-2 border-[#E7DFCF] pl-3">
                           @for (reply of cmt.replies; track reply.id) {
                             <div class="flex gap-2 items-start">
                               <div [class]="roleBadgeClass(reply.authorRole)" class="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black shrink-0">
@@ -432,13 +424,13 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                               </div>
                               <div>
                                 <div class="flex items-center gap-1 flex-wrap">
-                                  <span class="font-bold text-slate-900 text-[11px]">{{ reply.authorName }}</span>
-                                  <span [class]="roleTagClass(reply.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(reply.authorRole) }}</span>
-                                  <span class="text-[10px] text-slate-400">{{ reply.createdAt }}</span>
+                                  <span class="font-semibold text-[#14251D] text-[11px]">{{ reply.authorName }}</span>
+                                  <span [class]="roleTagClass(reply.authorRole)" class="text-[9px] font-semibold px-1.5 py-0.5 rounded-md">{{ roleLabel(reply.authorRole) }}</span>
+                                  <span class="text-[10px] text-[#6B7A70]">{{ reply.createdAt }}</span>
                                 </div>
-                                <p class="text-[11px] text-slate-700 leading-relaxed">{{ reply.text }}</p>
-                                <button (click)="store.likeComment(reply.id, cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors mt-0.5">
-                                  <span class="material-icons text-xs" [class.text-rose-500]="reply.isLiked">favorite</span>
+                                <p class="text-[11px] text-[#4A5A50] leading-relaxed">{{ reply.text }}</p>
+                                <button (click)="store.likeComment(reply.id, cmt.id)" class="flex items-center gap-0.5 text-[10px] text-[#6B7A70] hover:text-[#C1121F] cursor-pointer transition-colors mt-0.5">
+                                  <span class="material-icons text-xs" [class.text-[#C1121F]]="reply.isLiked">favorite</span>
                                   <span>{{ reply.likes }}</span>
                                 </button>
                               </div>
@@ -454,31 +446,31 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                             [id]="'reply-input-' + cmt.id"
                             [(ngModel)]="replyText"
                             [placeholder]="lang.tr('Votre réponse...', 'ردّك هنا...')"
-                            class="flex-1 border border-violet-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                            class="flex-1 border border-[#E7DFCF] bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]"
                           />
-                          <button (click)="submitReply(cmt.id)" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer">{{ lang.tr('Envoyer', 'إرسال') }}</button>
-                          <button (click)="replyTargetId.set(null)" class="text-slate-400 hover:text-slate-600 text-[11px] cursor-pointer">✕</button>
+                          <button (click)="submitReply(cmt.id)" class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer transition-colors">{{ lang.tr('Envoyer', 'إرسال') }}</button>
+                          <button (click)="replyTargetId.set(null)" class="text-[#6B7A70] hover:text-[#14251D] text-[11px] cursor-pointer">✕</button>
                         </div>
                       }
                     </div>
                   }
 
                   <!-- new comment input -->
-                  <div class="flex gap-2 items-center pt-2 border-t border-violet-100">
+                  <div class="flex gap-2 items-center pt-2 border-t border-[#E7DFCF]">
                     <input
                       [id]="'cmt-input-ex-' + ex.id"
                       [(ngModel)]="newCommentText"
                       [placeholder]="lang.tr('Poser une question ou laisser un commentaire...', 'اطرح سؤالاً أو اترك تعليقاً...')"
-                      class="flex-1 border border-slate-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                      class="flex-1 border border-[#E7DFCF] bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]"
                     />
-                    <button (click)="submitComment(ex.id, 'exercise')" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer shrink-0">{{ lang.tr('Publier', 'نشر') }}</button>
+                    <button (click)="submitComment(ex.id, 'exercise')" class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer shrink-0 transition-colors">{{ lang.tr('Publier', 'نشر') }}</button>
                   </div>
                 </div>
               }
 
               @if (openSolutionIds().has(ex.id)) {
-                <div class="bg-emerald-50 text-emerald-900 p-4 rounded-2xl border border-emerald-200 text-xs space-y-1">
-                  <span class="font-bold">{{ lang.tr('Corrigé Détaillé certifié :', 'الإصلاح المفصل المعتمد:') }}</span>
+                <div class="bg-[#1B4332]/[0.06] text-[#14251D] p-4 rounded-2xl border border-[#E7DFCF] text-xs space-y-1">
+                  <span class="font-semibold text-[#1B4332]">{{ lang.tr('Corrigé Détaillé certifié :', 'الإصلاح المفصل المعتمد:') }}</span>
                   <p class="whitespace-pre-line">{{ ex.solutionText }}</p>
                 </div>
               }
@@ -491,33 +483,33 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
       @if (activeSection() === 'courses') {
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           @for (c of store.filteredCourses(); track c.id) {
-            <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4 flex flex-col justify-between hover:border-emerald-300 transition-all">
+            <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
               <div class="space-y-3">
                 <div class="flex items-center justify-between">
-                  <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                  <span class="bg-[#1B4332]/10 text-[#1B4332] text-[10px] font-semibold px-2.5 py-0.5 rounded-full">
                     {{ c.subject }}
                   </span>
                   <div class="flex items-center gap-1.5">
                     @if (c.pdfUrl) {
-                      <span class="bg-red-100 text-red-700 text-[9px] font-black px-2 py-0.5 rounded-full border border-red-200 flex items-center gap-0.5">
+                      <span class="bg-[#C1121F]/10 text-[#C1121F] text-[9px] font-semibold px-2 py-0.5 rounded-full border border-[#C1121F]/30 flex items-center gap-0.5">
                         <span class="material-icons text-[10px]">picture_as_pdf</span>
                         CNP Officiel
                       </span>
                     }
-                    <span class="text-[11px] font-semibold text-slate-400">{{ c.grade }}</span>
+                    <span class="text-[11px] font-medium text-[#6B7A70]">{{ c.grade }}</span>
                   </div>
                 </div>
 
-                <h3 class="font-bold text-slate-900 text-base leading-snug">{{ c.title }}</h3>
-                <p class="text-xs text-slate-600 leading-relaxed">{{ c.summary }}</p>
+                <h3 class="font-display font-semibold text-[#14251D] text-base leading-snug">{{ c.title }}</h3>
+                <p class="text-xs text-[#5B6B60] leading-relaxed">{{ c.summary }}</p>
               </div>
 
               <!-- action bar -->
-              <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
+              <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between flex-wrap gap-2">
                 <button
                   (click)="store.toggleUpvoteCourse(c.id)"
-                  [class]="c.isUpvoted ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold'"
-                  class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-all cursor-pointer">
+                  [class]="c.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
+                  class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer">
                   <span class="material-icons text-xs">thumb_up</span>
                   <span>{{ c.upvotesCount || 0 }}</span>
                 </button>
@@ -525,12 +517,12 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                 <!-- Q&A Button (course) -->
                 <button
                   (click)="toggleCommentPanel(c.id)"
-                  [class]="openCommentIds().has(c.id) ? 'bg-violet-100 text-violet-900 border-violet-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-600 border-slate-200 font-semibold'"
+                  [class]="openCommentIds().has(c.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
                   class="px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 border transition-all cursor-pointer shadow-2xs">
                   <span class="material-icons text-sm">forum</span>
                   <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
                   @if (store.getComments(c.id).length > 0) {
-                    <span class="bg-violet-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                    <span class="bg-[#1B4332] text-[#FBF8F1] text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
                       {{ store.getComments(c.id).length }}
                     </span>
                   }
@@ -539,10 +531,10 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                 <div class="flex items-center gap-2">
                   <button
                     (click)="store.toggleWatchlist(c.id, 'course')"
-                    [class]="store.isWatched(c.id, 'course') ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium border-slate-200'"
-                    class="px-2.5 py-2 rounded-xl text-xs flex items-center gap-1 transition-all cursor-pointer border shadow-2xs"
+                    [class]="store.isWatched(c.id, 'course') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
+                    class="px-2.5 py-2 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer border"
                     [title]="store.isWatched(c.id, 'course') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
-                    <span class="material-icons text-xs" [class.text-amber-600]="store.isWatched(c.id, 'course')">
+                    <span class="material-icons text-xs" [class.text-[#8A5A00]]="store.isWatched(c.id, 'course')">
                       {{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}
                     </span>
                     <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
@@ -553,14 +545,14 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                       [href]="c.pdfUrl"
                       target="_blank"
                       rel="noopener"
-                      class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow-xs transition-colors">
+                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow-sm transition-colors">
                       <span class="material-icons text-sm">download</span>
                       {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
                     </a>
                   } @else {
                     <button
                       (click)="viewCourseModal.set(c)"
-                      class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-3.5 py-2 rounded-xl cursor-pointer">
+                      class="bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl cursor-pointer transition-colors">
                       {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
                     </button>
                   }
@@ -569,8 +561,8 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
 
               <!-- ── Q&A PANEL (course) ── -->
               @if (openCommentIds().has(c.id)) {
-                <div class="bg-slate-50 border border-violet-200/70 rounded-2xl p-4 space-y-3">
-                  <p class="text-[10px] font-bold text-violet-700 uppercase tracking-wide">💬 {{ lang.tr('Discussion & Q&A', 'نقاش وأسئلة') }}</p>
+                <div class="bg-[#FBF8F1] border border-[#E7DFCF] rounded-2xl p-4 space-y-3">
+                  <p class="text-[10px] font-semibold text-[#1B4332] tracking-wide">💬 {{ lang.tr('Discussion & Q&A', 'نقاش وأسئلة') }}</p>
 
                   @for (cmt of store.getComments(c.id); track cmt.id) {
                     <div class="space-y-2">
@@ -580,23 +572,23 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                         </div>
                         <div class="flex-1 min-w-0">
                           <div class="flex items-center gap-1.5 flex-wrap">
-                            <span class="font-bold text-slate-900 text-xs">{{ cmt.authorName }}</span>
-                            <span [class]="roleTagClass(cmt.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(cmt.authorRole) }}</span>
-                            <span class="text-[10px] text-slate-400">{{ cmt.createdAt }}</span>
+                            <span class="font-semibold text-[#14251D] text-xs">{{ cmt.authorName }}</span>
+                            <span [class]="roleTagClass(cmt.authorRole)" class="text-[9px] font-semibold px-1.5 py-0.5 rounded-md">{{ roleLabel(cmt.authorRole) }}</span>
+                            <span class="text-[10px] text-[#6B7A70]">{{ cmt.createdAt }}</span>
                           </div>
-                          <p class="text-xs text-slate-700 mt-0.5 leading-relaxed">{{ cmt.text }}</p>
+                          <p class="text-xs text-[#4A5A50] mt-0.5 leading-relaxed">{{ cmt.text }}</p>
                           <div class="flex items-center gap-3 mt-1">
-                            <button (click)="store.likeComment(cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors">
-                              <span class="material-icons text-xs" [class.text-rose-500]="cmt.isLiked">favorite</span>
+                            <button (click)="store.likeComment(cmt.id)" class="flex items-center gap-0.5 text-[10px] text-[#6B7A70] hover:text-[#C1121F] cursor-pointer transition-colors">
+                              <span class="material-icons text-xs" [class.text-[#C1121F]]="cmt.isLiked">favorite</span>
                               <span>{{ cmt.likes }}</span>
                             </button>
-                            <button (click)="setReplyTarget(cmt.id, c.id)" class="text-[10px] text-violet-600 hover:text-violet-800 font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
+                            <button (click)="setReplyTarget(cmt.id, c.id)" class="text-[10px] text-[#1B4332] hover:text-[#14251D] font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
                           </div>
                         </div>
                       </div>
 
                       @if (cmt.replies && cmt.replies.length > 0) {
-                        <div class="ml-9 space-y-2 border-l-2 border-violet-100 pl-3">
+                        <div class="ml-9 space-y-2 border-l-2 border-[#E7DFCF] pl-3">
                           @for (reply of cmt.replies; track reply.id) {
                             <div class="flex gap-2 items-start">
                               <div [class]="roleBadgeClass(reply.authorRole)" class="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black shrink-0">
@@ -604,13 +596,13 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                               </div>
                               <div>
                                 <div class="flex items-center gap-1 flex-wrap">
-                                  <span class="font-bold text-slate-900 text-[11px]">{{ reply.authorName }}</span>
-                                  <span [class]="roleTagClass(reply.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(reply.authorRole) }}</span>
-                                  <span class="text-[10px] text-slate-400">{{ reply.createdAt }}</span>
+                                  <span class="font-semibold text-[#14251D] text-[11px]">{{ reply.authorName }}</span>
+                                  <span [class]="roleTagClass(reply.authorRole)" class="text-[9px] font-semibold px-1.5 py-0.5 rounded-md">{{ roleLabel(reply.authorRole) }}</span>
+                                  <span class="text-[10px] text-[#6B7A70]">{{ reply.createdAt }}</span>
                                 </div>
-                                <p class="text-[11px] text-slate-700 leading-relaxed">{{ reply.text }}</p>
-                                <button (click)="store.likeComment(reply.id, cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors mt-0.5">
-                                  <span class="material-icons text-xs" [class.text-rose-500]="reply.isLiked">favorite</span>
+                                <p class="text-[11px] text-[#4A5A50] leading-relaxed">{{ reply.text }}</p>
+                                <button (click)="store.likeComment(reply.id, cmt.id)" class="flex items-center gap-0.5 text-[10px] text-[#6B7A70] hover:text-[#C1121F] cursor-pointer transition-colors mt-0.5">
+                                  <span class="material-icons text-xs" [class.text-[#C1121F]]="reply.isLiked">favorite</span>
                                   <span>{{ reply.likes }}</span>
                                 </button>
                               </div>
@@ -625,23 +617,23 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                             [id]="'reply-input-c-' + cmt.id"
                             [(ngModel)]="replyText"
                             [placeholder]="lang.tr('Votre réponse...', 'ردّك هنا...')"
-                            class="flex-1 border border-violet-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                            class="flex-1 border border-[#E7DFCF] bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]"
                           />
-                          <button (click)="submitReply(cmt.id)" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer">{{ lang.tr('Envoyer', 'إرسال') }}</button>
-                          <button (click)="replyTargetId.set(null)" class="text-slate-400 hover:text-slate-600 text-[11px] cursor-pointer">✕</button>
+                          <button (click)="submitReply(cmt.id)" class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer transition-colors">{{ lang.tr('Envoyer', 'إرسال') }}</button>
+                          <button (click)="replyTargetId.set(null)" class="text-[#6B7A70] hover:text-[#14251D] text-[11px] cursor-pointer">✕</button>
                         </div>
                       }
                     </div>
                   }
 
-                  <div class="flex gap-2 items-center pt-2 border-t border-violet-100">
+                  <div class="flex gap-2 items-center pt-2 border-t border-[#E7DFCF]">
                     <input
                       [id]="'cmt-input-c-' + c.id"
                       [(ngModel)]="newCommentText"
                       [placeholder]="lang.tr('Poser une question ou commenter ce cours...', 'اطرح سؤالاً حول هذا الدرس...')"
-                      class="flex-1 border border-slate-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                      class="flex-1 border border-[#E7DFCF] bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]"
                     />
-                    <button (click)="submitComment(c.id, 'course')" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer shrink-0">{{ lang.tr('Publier', 'نشر') }}</button>
+                    <button (click)="submitComment(c.id, 'course')" class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer shrink-0 transition-colors">{{ lang.tr('Publier', 'نشر') }}</button>
                   </div>
                 </div>
               }
@@ -654,60 +646,60 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
       @if (activeSection() === 'teachers') {
         <div class="grid md:grid-cols-3 gap-6">
           @for (t of store.teachers(); track t.id) {
-            <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4 text-center hover:border-emerald-300 transition-all">
+            <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-xs space-y-4 text-center hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow">
               <div class="relative inline-block mx-auto">
-                <img [src]="t.avatarUrl" alt="Teacher" class="w-20 h-20 rounded-full object-cover border-4 border-emerald-500 shadow-sm" />
+                <img [src]="t.avatarUrl" alt="Teacher" class="w-20 h-20 rounded-full object-cover border-2 border-[#2D6A4F] shadow-xs" />
                 @if (t.verifiedBadge) {
-                  <span class="material-icons absolute bottom-0 right-0 bg-emerald-600 text-white rounded-full text-base p-0.5 border-2 border-white" title="Enseignant Certifié Éducation Nationale">
+                  <span class="material-icons absolute bottom-0 right-0 bg-[#1B4332] text-[#FBF8F1] rounded-full text-base p-0.5 border-2 border-white" title="Enseignant Certifié Éducation Nationale">
                     verified
                   </span>
                 }
               </div>
 
               <div>
-                <h3 class="font-black text-slate-900 text-base flex items-center justify-center gap-1">
+                <h3 class="font-display font-semibold text-[#14251D] text-base flex items-center justify-center gap-1.5">
                   {{ t.name }}
-                  <span class="text-rose-600 font-extrabold text-xs">TN 🇹🇳</span>
+                  <span class="text-[#1B4332] font-semibold bg-[#F2ECDE] border border-[#E7DFCF] px-1.5 py-0.5 rounded text-[10px]">TN</span>
                 </h3>
-                <p class="text-xs text-slate-500 font-medium">{{ t.title }}</p>
-                <p class="text-[11px] text-emerald-700 font-semibold mt-0.5">{{ t.school }}</p>
+                <p class="text-xs text-[#5B6B60] font-medium">{{ t.title }}</p>
+                <p class="text-[11px] text-[#2D6A4F] font-semibold mt-0.5">{{ t.school }}</p>
               </div>
 
-              <p class="text-xs text-slate-600 line-clamp-3 bg-slate-50 p-3 rounded-2xl border border-slate-200/60">
+              <p class="text-xs text-[#4A5A50] line-clamp-3 bg-[#FBF8F1] p-3 rounded-xl border border-[#E7DFCF]">
                 "{{ t.bio }}"
               </p>
 
               <!-- Credibility Metrics -->
-              <div class="grid grid-cols-3 gap-2 py-2 border-y border-slate-100 text-xs">
+              <div class="grid grid-cols-3 gap-2 py-2 border-y border-[#E7DFCF] text-xs">
                 <div>
-                  <p class="font-black text-slate-900">{{ t.totalUploads || t.coursesCount }}</p>
-                  <p class="text-[10px] text-slate-400">{{ lang.tr('Documents', 'وثائق') }}</p>
+                  <p class="font-display font-semibold text-[#14251D]">{{ t.totalUploads || t.coursesCount }}</p>
+                  <p class="text-[10px] text-[#6B7A70]">{{ lang.tr('Documents', 'وثائق') }}</p>
                 </div>
                 <div>
-                  <p class="font-black text-slate-900">{{ t.downloadableExercisesCount || t.exercisesCount }}</p>
-                  <p class="text-[10px] text-slate-400">{{ lang.tr('Exercices PDF', 'تمارين PDF') }}</p>
+                  <p class="font-display font-semibold text-[#14251D]">{{ t.downloadableExercisesCount || t.exercisesCount }}</p>
+                  <p class="text-[10px] text-[#6B7A70]">{{ lang.tr('Exercices PDF', 'تمارين PDF') }}</p>
                 </div>
                 <div>
-                  <p class="font-black text-slate-900 text-amber-500">⭐ {{ t.rating }}</p>
-                  <p class="text-[10px] text-slate-400">{{ t.reviewsCount }} {{ lang.tr('avis', 'تقييم') }}</p>
+                  <p class="font-display font-semibold text-[#8A5A00]">⭐ {{ t.rating }}</p>
+                  <p class="text-[10px] text-[#6B7A70]">{{ t.reviewsCount }} {{ lang.tr('avis', 'تقييم') }}</p>
                 </div>
               </div>
 
               <div class="flex items-center gap-2">
                 <button
                   (click)="store.toggleWatchlist(t.id, 'teacher')"
-                  [class]="store.isWatched(t.id, 'teacher') ? 'bg-amber-100 text-amber-900 border-amber-300' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200'"
-                  class="px-3 py-2.5 rounded-xl text-xs font-bold border flex items-center justify-center gap-1 cursor-pointer transition-all shadow-2xs"
+                  [class]="store.isWatched(t.id, 'teacher') ? 'bg-[#F2ECDE] text-[#8A5A00] border-[#8A5A00]/40' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]'"
+                  class="px-3 py-2.5 rounded-xl text-xs font-semibold border flex items-center justify-center gap-1 cursor-pointer transition-colors"
                   [title]="store.isWatched(t.id, 'teacher') ? 'Ne plus suivre' : 'Suivre cet enseignant'">
-                  <span class="material-icons text-sm" [class.text-amber-600]="store.isWatched(t.id, 'teacher')">
-                    {{ store.isWatched(t.id, 'teacher') ? 'star' : 'star_border' }}
+                  <span class="material-icons text-sm" [class.text-[#8A5A00]]="store.isWatched(t.id, 'teacher')">
+                    {{ store.isWatched(t.id, 'teacher') ? 'bookmark' : 'bookmark_border' }}
                   </span>
                   <span>{{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre', 'متابعة') }}</span>
                 </button>
 
                 <button
                   (click)="selectedTeacherModal.set(t)"
-                  class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-xl cursor-pointer flex items-center justify-center gap-1 transition-colors shadow-2xs">
+                  class="flex-1 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs py-2.5 rounded-xl cursor-pointer flex items-center justify-center gap-1 transition-colors shadow-xs">
                   <span class="material-icons text-sm">badge</span>
                   {{ lang.tr('Profil & Avis', 'عرض الملف والتقييمات') }}
                 </button>
@@ -717,39 +709,39 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
         </div>
       }
 
-      <!-- FEATURE 6: ⭐ WATCHLIST & FAVORITES HUB -->
+      <!-- FEATURE 6: WATCHLIST & FAVORITES HUB -->
       @if (activeSection() === 'watchlist') {
         <div class="space-y-6">
-          <div class="bg-gradient-to-r from-amber-500/10 via-amber-400/10 to-emerald-500/10 border border-amber-300/60 rounded-3xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="bg-[#14251D] text-[#FBF8F1] rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <div class="flex items-center gap-2">
-                <span class="material-icons text-amber-600 text-2xl">bookmark</span>
-                <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl">
-                  {{ lang.tr('⭐ Ma Watchlist Éducative — Documents Favoris', '⭐ قائمة محفوظاتي التعليمية') }}
+                <span class="material-icons text-[#F2C14E] text-2xl">bookmark</span>
+                <h3 class="font-display font-semibold text-lg sm:text-xl text-[#FBF8F1]">
+                  {{ lang.tr('Ma Watchlist Éducative — Documents Favoris', 'قائمة محفوظاتي التعليمية') }}
                 </h3>
               </div>
-              <p class="text-xs text-slate-600 mt-1">
+              <p class="text-xs text-[#B7C7BC] mt-1">
                 {{ lang.tr('Accédez immédiatement à vos cours, examens et enseignants favoris pour révision rapide ou impression.', 'الوصول المباشر إلى الدروس، الفروض والمعلمين المفضلين للمراجعة أو الطباعة.') }}
               </p>
             </div>
-            <div class="flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 px-3.5 py-2 rounded-2xl border border-amber-300 shrink-0">
-              <span class="material-icons text-sm text-amber-700">folder_special</span>
+            <div class="flex items-center gap-2 text-xs font-semibold text-[#14251D] bg-[#F2C14E] px-3.5 py-2 rounded-xl shrink-0">
+              <span class="material-icons text-sm">folder_special</span>
               <span>{{ store.totalWatchlistCount() }} {{ lang.tr('éléments sauvegardés', 'عناصر محفوظة') }}</span>
             </div>
           </div>
 
           @if (store.totalWatchlistCount() === 0) {
-            <div class="bg-white rounded-3xl p-12 text-center border border-slate-200 space-y-3">
-              <span class="material-icons text-5xl text-slate-300">bookmark_border</span>
-              <h4 class="font-extrabold text-slate-800 text-base">
+            <div class="bg-white rounded-2xl p-12 text-center border border-[#E7DFCF] space-y-3">
+              <span class="material-icons text-5xl text-[#6B7A70]">bookmark_border</span>
+              <h4 class="font-display font-semibold text-[#14251D] text-base">
                 {{ lang.tr('Votre watchlist est vide pour le moment', 'قائمة المحفوظات فارغة حالياً') }}
               </h4>
-              <p class="text-xs text-slate-500 max-w-md mx-auto">
+              <p class="text-xs text-[#5B6B60] max-w-md mx-auto">
                 {{ lang.tr('Cliquez sur le signet "Favoris" dans la Banque d\'Examens ou les Cours pour sauvegarder vos documents de révision.', 'انقر على رمز الحفظ في مكتبة الفروض أو الدروس لحفظ وثائق المراجعة.') }}
               </p>
               <button
                 (click)="activeSection.set('exercises')"
-                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl cursor-pointer shadow-xs inline-flex items-center gap-1.5">
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-5 py-2.5 rounded-xl cursor-pointer shadow-xs inline-flex items-center gap-1.5 transition-colors">
                 <span class="material-icons text-sm">explore</span>
                 <span>{{ lang.tr('Explorer la Banque d\'Examens', 'تصفح مكتبة الفروض') }}</span>
               </button>
@@ -758,30 +750,26 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
             <!-- 1. Watched Exercises -->
             @if (store.watchedExercises().length > 0) {
               <div class="space-y-3">
-                <h4 class="font-extrabold text-slate-900 text-sm flex items-center gap-2">
-                  <span class="material-icons text-amber-500 text-base">assignment</span>
+                <h4 class="font-display font-semibold text-[#14251D] text-sm flex items-center gap-2">
+                  <span class="material-icons text-[#8A5A00] text-base">assignment</span>
                   <span>{{ lang.tr('Examens & Séries Sauvegardés', 'الفروض والسلاسل المحفوظة') }} ({{ store.watchedExercises().length }})</span>
                 </h4>
                 <div class="grid md:grid-cols-2 gap-4">
                   @for (ex of store.watchedExercises(); track ex.id) {
-                    <div class="bg-white rounded-2xl p-4 border border-amber-200/80 shadow-xs space-y-3">
+                    <div class="bg-white rounded-2xl p-4 border border-[#E7DFCF] shadow-xs space-y-3">
                       <div class="flex items-center justify-between text-[10px]">
-                        <span class="bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">{{ ex.subject }} — {{ ex.grade }}</span>
-                        <button (click)="store.toggleWatchlist(ex.id, 'exercise')" class="text-rose-600 hover:text-rose-800 text-xs font-bold flex items-center gap-1 cursor-pointer">
+                        <span class="bg-[#F2ECDE] text-[#1B4332] font-semibold px-2 py-0.5 rounded-md">{{ ex.subject }} — {{ ex.grade }}</span>
+                        <button (click)="store.toggleWatchlist(ex.id, 'exercise')" class="text-[#BF5B34] hover:text-[#C1121F] text-xs font-semibold flex items-center gap-1 cursor-pointer">
                           <span class="material-icons text-sm">bookmark_remove</span>
                           <span>{{ lang.tr('Retirer', 'حذف') }}</span>
                         </button>
                       </div>
-                      <h5 class="font-bold text-slate-900 text-xs">{{ ex.title }}</h5>
-                      <p class="text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200 line-clamp-2">{{ ex.promptText }}</p>
-                      <div class="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
-                        <button (click)="openWatermarkPreviewModal(ex)" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer">
+                      <h5 class="font-semibold text-[#14251D] text-xs">{{ ex.title }}</h5>
+                      <p class="text-[11px] text-[#4A5A50] bg-[#FBF8F1] p-2.5 rounded-xl border border-[#E7DFCF] line-clamp-2">{{ ex.promptText }}</p>
+                      <div class="flex items-center justify-between pt-2 border-t border-[#E7DFCF] text-xs">
+                        <button (click)="openWatermarkPreviewModal(ex)" class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors">
                           <span class="material-icons text-xs">print</span>
                           <span>{{ lang.tr('Imprimer A4', 'طباعة A4') }}</span>
-                        </button>
-                        <button (click)="shareOnWhatsApp(ex)" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer">
-                          <span class="material-icons text-xs">share</span>
-                          <span>WhatsApp</span>
                         </button>
                       </div>
                     </div>
@@ -793,24 +781,24 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
             <!-- 2. Watched Courses -->
             @if (store.watchedCourses().length > 0) {
               <div class="space-y-3 pt-4">
-                <h4 class="font-extrabold text-slate-900 text-sm flex items-center gap-2">
-                  <span class="material-icons text-indigo-500 text-base">menu_book</span>
+                <h4 class="font-display font-semibold text-[#14251D] text-sm flex items-center gap-2">
+                  <span class="material-icons text-[#2D6A4F] text-base">menu_book</span>
                   <span>{{ lang.tr('Fiches & Cours Sauvegardés', 'الدروس والملخصات المحفوظة') }} ({{ store.watchedCourses().length }})</span>
                 </h4>
                 <div class="grid md:grid-cols-2 gap-4">
                   @for (c of store.watchedCourses(); track c.id) {
-                    <div class="bg-white rounded-2xl p-4 border border-indigo-200/80 shadow-xs space-y-3">
+                    <div class="bg-white rounded-2xl p-4 border border-[#E7DFCF] shadow-xs space-y-3">
                       <div class="flex items-center justify-between text-[10px]">
-                        <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded-full">{{ c.subject }} — {{ c.grade }}</span>
-                        <button (click)="store.toggleWatchlist(c.id, 'course')" class="text-rose-600 hover:text-rose-800 text-xs font-bold flex items-center gap-1 cursor-pointer">
+                        <span class="bg-[#F2ECDE] text-[#2D6A4F] font-semibold px-2 py-0.5 rounded-md">{{ c.subject }} — {{ c.grade }}</span>
+                        <button (click)="store.toggleWatchlist(c.id, 'course')" class="text-[#BF5B34] hover:text-[#C1121F] text-xs font-semibold flex items-center gap-1 cursor-pointer">
                           <span class="material-icons text-sm">bookmark_remove</span>
                           <span>{{ lang.tr('Retirer', 'حذف') }}</span>
                         </button>
                       </div>
-                      <h5 class="font-bold text-slate-900 text-xs">{{ c.title }}</h5>
-                      <p class="text-[11px] text-slate-600 line-clamp-2">{{ c.summary }}</p>
-                      <div class="flex justify-end pt-2 border-t border-slate-100">
-                        <button (click)="viewCourseModal.set(c)" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs cursor-pointer">
+                      <h5 class="font-semibold text-[#14251D] text-xs">{{ c.title }}</h5>
+                      <p class="text-[11px] text-[#4A5A50] line-clamp-2">{{ c.summary }}</p>
+                      <div class="flex justify-end pt-2 border-t border-[#E7DFCF]">
+                        <button (click)="viewCourseModal.set(c)" class="bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs cursor-pointer transition-colors">
                           {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
                         </button>
                       </div>
@@ -823,23 +811,23 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
             <!-- 3. Watched Teachers -->
             @if (store.watchedTeachers().length > 0) {
               <div class="space-y-3 pt-4">
-                <h4 class="font-extrabold text-slate-900 text-sm flex items-center gap-2">
-                  <span class="material-icons text-emerald-500 text-base">verified</span>
+                <h4 class="font-display font-semibold text-[#14251D] text-sm flex items-center gap-2">
+                  <span class="material-icons text-[#1B4332] text-base">verified</span>
                   <span>{{ lang.tr('Enseignants Suivis', 'المعلمون المتابعون') }} ({{ store.watchedTeachers().length }})</span>
                 </h4>
                 <div class="grid md:grid-cols-3 gap-4">
                   @for (t of store.watchedTeachers(); track t.id) {
-                    <div class="bg-white rounded-2xl p-4 border border-emerald-200/80 shadow-xs space-y-3 text-center">
-                      <img [src]="t.avatarUrl" alt="Avatar" class="w-16 h-16 rounded-full object-cover mx-auto border-2 border-emerald-500" />
+                    <div class="bg-white rounded-2xl p-4 border border-[#E7DFCF] shadow-xs space-y-3 text-center">
+                      <img [src]="t.avatarUrl" alt="Avatar" class="w-16 h-16 rounded-full object-cover mx-auto border-2 border-[#2D6A4F]" />
                       <div>
-                        <h5 class="font-bold text-slate-900 text-xs">{{ t.name }}</h5>
-                        <p class="text-[10px] text-slate-500">{{ t.school }}</p>
+                        <h5 class="font-semibold text-[#14251D] text-xs">{{ t.name }}</h5>
+                        <p class="text-[10px] text-[#6B7A70]">{{ t.school }}</p>
                       </div>
-                      <div class="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
-                        <button (click)="selectedTeacherModal.set(t)" class="text-emerald-700 font-bold hover:underline">
+                      <div class="flex items-center justify-between pt-2 border-t border-[#E7DFCF] text-xs">
+                        <button (click)="selectedTeacherModal.set(t)" class="text-[#2D6A4F] font-semibold hover:underline">
                           {{ lang.tr('Voir profil', 'الملف') }}
                         </button>
-                        <button (click)="store.toggleWatchlist(t.id, 'teacher')" class="text-rose-600 text-xs font-semibold cursor-pointer">
+                        <button (click)="store.toggleWatchlist(t.id, 'teacher')" class="text-[#BF5B34] text-xs font-semibold cursor-pointer">
                           {{ lang.tr('Ne plus suivre', 'إلغاء المتابعة') }}
                         </button>
                       </div>
@@ -856,25 +844,25 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
 
     <!-- MODAL: COURSE VIEW -->
     @if (viewCourseModal(); as c) {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-3xl w-full p-6 space-y-4 border border-slate-200 shadow-xl max-h-[92vh] overflow-y-auto">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-[#FBF8F1] rounded-2xl max-w-3xl w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl max-h-[92vh] overflow-y-auto">
 
           <!-- Header -->
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap">
-                <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">{{ c.subject }}</span>
-                <span class="text-[10px] text-slate-500">{{ c.grade }}</span>
+                <span class="bg-[#F2ECDE] text-[#1B4332] text-[10px] font-semibold px-2.5 py-0.5 rounded-md">{{ c.subject }}</span>
+                <span class="text-[10px] text-[#6B7A70]">{{ c.grade }}</span>
                 @if (c.pdfUrl) {
-                  <span class="bg-red-100 text-red-700 text-[9px] font-black px-2 py-0.5 rounded-full border border-red-200 flex items-center gap-0.5">
+                  <span class="bg-[#C1121F]/10 text-[#C1121F] text-[9px] font-semibold px-2 py-0.5 rounded-md border border-[#C1121F]/30 flex items-center gap-0.5">
                     <span class="material-icons text-[10px]">picture_as_pdf</span>
                     Livre Officiel CNP — Ministère de l’Éducation
                   </span>
                 }
               </div>
-              <h3 class="font-bold text-slate-900 text-lg mt-1 leading-tight">{{ c.title }}</h3>
+              <h3 class="font-display font-semibold text-[#14251D] text-lg mt-1 leading-tight">{{ c.title }}</h3>
             </div>
-            <button (click)="viewCourseModal.set(null)" class="text-slate-400 hover:text-slate-600 cursor-pointer ml-4 shrink-0">
+            <button (click)="viewCourseModal.set(null)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer ml-4 shrink-0">
               <span class="material-icons">close</span>
             </button>
           </div>
@@ -883,21 +871,21 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
           @if (c.pdfUrl) {
             <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <p class="text-xs text-slate-600 font-semibold">
+                <p class="text-xs text-[#5B6B60] font-medium">
                   📚 {{ lang.tr('Livre scolaire officiel du Centre National Pédagogique (CNP)', 'الكتاب المدرسي الرسمي للمركز الوطني البيداغوجي') }}
                 </p>
                 <a
                   [href]="c.pdfUrl"
                   target="_blank"
                   download
-                  class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-2 rounded-xl flex items-center gap-1.5 shadow-xs transition-colors shrink-0">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2 rounded-xl flex items-center gap-1.5 shadow-xs transition-colors shrink-0">
                   <span class="material-icons text-sm">download</span>
                   {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
                 </a>
               </div>
 
               <!-- PDF iframe preview -->
-              <div class="relative w-full rounded-2xl overflow-hidden border border-slate-200 bg-slate-100" style="height: 520px;">
+              <div class="relative w-full rounded-xl overflow-hidden border border-[#E7DFCF] bg-[#F2ECDE]" style="height: 520px;">
                 <iframe
                   [src]="getSafePdfUrl(c.pdfUrl)"
                   class="w-full h-full"
@@ -905,29 +893,29 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                   title="PDF Viewer">
                 </iframe>
                 <!-- Fallback if iframe blocked -->
-                <div class="absolute inset-0 flex flex-col items-center justify-center bg-slate-50 text-center p-6 pointer-events-none" style="display:none">
-                  <span class="material-icons text-5xl text-red-400 mb-2">picture_as_pdf</span>
-                  <p class="text-sm font-bold text-slate-700">{{ lang.tr('Prévisualisation non disponible dans ce navigateur', 'المعاينة غير متاحة') }}</p>
-                  <a [href]="c.pdfUrl" target="_blank" class="mt-3 bg-red-600 text-white font-bold text-xs px-4 py-2 rounded-xl pointer-events-auto">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-[#FBF8F1] text-center p-6 pointer-events-none" style="display:none">
+                  <span class="material-icons text-5xl text-[#BF5B34] mb-2">picture_as_pdf</span>
+                  <p class="text-sm font-semibold text-[#14251D]">{{ lang.tr('Prévisualisation non disponible dans ce navigateur', 'المعاينة غير متاحة') }}</p>
+                  <a [href]="c.pdfUrl" target="_blank" class="mt-3 bg-[#2D6A4F] text-[#FBF8F1] font-semibold text-xs px-4 py-2 rounded-xl pointer-events-auto">
                     {{ lang.tr('Ouvrir dans un nouvel onglet', 'فتح في تبويب جديد') }}
                   </a>
                 </div>
               </div>
 
-              <p class="text-[10px] text-slate-400 text-center">
+              <p class="text-[10px] text-[#6B7A70] text-center">
                 {{ lang.tr('Document officiel — Droits réservés à la République Tunisienne — Ministère de l’Éducation', 'وثيقة رسمية — جميع الحقوق محفوظة لوزارة التربية التونسية') }}
               </p>
             </div>
           } @else {
             <!-- Text content for teacher-created courses -->
-            <div class="prose prose-slate max-w-none text-xs leading-relaxed whitespace-pre-line bg-slate-50 p-4 rounded-2xl border border-slate-200 font-sans">
+            <div class="prose max-w-none text-xs leading-relaxed whitespace-pre-line bg-white p-4 rounded-xl border border-[#E7DFCF] font-sans text-[#14251D]">
               {{ c.content }}
             </div>
           }
 
-          <div class="flex justify-between items-center pt-2 border-t border-slate-100">
-            <span class="text-xs text-slate-500">{{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}</span>
-            <button (click)="viewCourseModal.set(null)" class="bg-slate-900 text-white font-bold text-xs px-4 py-2 rounded-xl cursor-pointer">
+          <div class="flex justify-between items-center pt-2 border-t border-[#E7DFCF]">
+            <span class="text-xs text-[#5B6B60]">{{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}</span>
+            <button (click)="viewCourseModal.set(null)" class="bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2 rounded-xl cursor-pointer transition-colors">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
           </div>
@@ -937,82 +925,82 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
 
     <!-- FEATURE 3: CREDIBILITY PROFILE MODAL WITH STAR RATING BREAKDOWN -->
     @if (selectedTeacherModal(); as t) {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 space-y-5 border border-slate-200 shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-[#FBF8F1] rounded-2xl max-w-lg w-full p-6 space-y-5 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-emerald-600 text-xl">verified</span>
-              <h3 class="font-extrabold text-slate-900 text-base">
+              <span class="material-icons text-[#1B4332] text-xl">verified</span>
+              <h3 class="font-display font-semibold text-[#14251D] text-base">
                 {{ lang.tr('Profil de Crédibilité Enseignant', 'الملف المهني والاعتماد التربوي') }}
               </h3>
             </div>
-            <button (click)="selectedTeacherModal.set(null)" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="selectedTeacherModal.set(null)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="text-center space-y-3">
-            <img [src]="t.avatarUrl" alt="Avatar" class="w-24 h-24 rounded-full object-cover border-4 border-emerald-500 mx-auto shadow-sm" />
+            <img [src]="t.avatarUrl" alt="Avatar" class="w-24 h-24 rounded-full object-cover border-2 border-[#2D6A4F] mx-auto shadow-xs" />
             <div>
-              <h3 class="font-black text-slate-900 text-lg flex items-center justify-center gap-1">
+              <h3 class="font-display font-semibold text-[#14251D] text-lg flex items-center justify-center gap-1">
                 {{ t.name }}
-                <span class="material-icons text-emerald-600 text-base">verified</span>
+                <span class="material-icons text-[#1B4332] text-base">verified</span>
               </h3>
-              <p class="text-xs text-emerald-700 font-bold">{{ t.title }}</p>
-              <p class="text-[11px] text-slate-500">{{ t.school }}</p>
+              <p class="text-xs text-[#2D6A4F] font-semibold">{{ t.title }}</p>
+              <p class="text-[11px] text-[#6B7A70]">{{ t.school }}</p>
             </div>
 
             <!-- Total Uploads & Verified Stats -->
-            <div class="grid grid-cols-3 gap-2 bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200 text-xs">
+            <div class="grid grid-cols-3 gap-2 bg-[#F2ECDE] p-3 rounded-xl border border-[#E7DFCF] text-xs">
               <div>
-                <p class="font-extrabold text-emerald-900 text-base">{{ t.totalUploads || 148 }}</p>
-                <p class="text-[10px] text-emerald-700 font-semibold">{{ lang.tr('Uploads WhatsApp', 'وثائق مرفوعة') }}</p>
+                <p class="font-display font-semibold text-[#14251D] text-base">{{ t.totalUploads || 148 }}</p>
+                <p class="text-[10px] text-[#5B6B60] font-medium">{{ lang.tr('Documents importés', 'وثائق مرفوعة') }}</p>
               </div>
               <div>
-                <p class="font-extrabold text-emerald-900 text-base">{{ t.downloadableExercisesCount || 310 }}</p>
-                <p class="text-[10px] text-emerald-700 font-semibold">{{ lang.tr('Exercices Validés', 'تمارين معتمدة') }}</p>
+                <p class="font-display font-semibold text-[#14251D] text-base">{{ t.downloadableExercisesCount || 310 }}</p>
+                <p class="text-[10px] text-[#5B6B60] font-medium">{{ lang.tr('Exercices Validés', 'تمارين معتمدة') }}</p>
               </div>
               <div>
-                <p class="font-extrabold text-amber-600 text-base">⭐ {{ t.rating }}</p>
-                <p class="text-[10px] text-amber-700 font-semibold">{{ t.reviewsCount }} {{ lang.tr('avis parents', 'تقييم ولي') }}</p>
+                <p class="font-display font-semibold text-[#8A5A00] text-base">⭐ {{ t.rating }}</p>
+                <p class="text-[10px] text-[#8A5A00] font-medium">{{ t.reviewsCount }} {{ lang.tr('avis parents', 'تقييم ولي') }}</p>
               </div>
             </div>
 
             <!-- Star Rating Breakdown -->
-            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs space-y-2 text-left">
-              <p class="font-bold text-slate-800">
+            <div class="bg-white p-4 rounded-xl border border-[#E7DFCF] text-xs space-y-2 text-left">
+              <p class="font-semibold text-[#14251D]">
                 ⭐ {{ lang.tr('Évaluation des Parents & Élèves (Breakdown 1-5 Étoiles)', 'تقييم الأولياء والتلاميذ (1-5 نجوم)') }}
               </p>
               <div class="space-y-1">
                 <div class="flex items-center gap-2">
-                  <span class="w-12 font-semibold text-slate-600">5 ★</span>
-                  <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-                    <div class="bg-amber-400 h-full rounded-full" style="width: 86%"></div>
+                  <span class="w-12 font-medium text-[#5B6B60]">5 ★</span>
+                  <div class="w-full bg-[#F2ECDE] h-2 rounded-full overflow-hidden">
+                    <div class="bg-[#F2C14E] h-full rounded-full" style="width: 86%"></div>
                   </div>
-                  <span class="font-bold text-slate-800">86%</span>
+                  <span class="font-semibold text-[#14251D]">86%</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="w-12 font-semibold text-slate-600">4 ★</span>
-                  <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-                    <div class="bg-amber-400 h-full rounded-full" style="width: 11%"></div>
+                  <span class="w-12 font-medium text-[#5B6B60]">4 ★</span>
+                  <div class="w-full bg-[#F2ECDE] h-2 rounded-full overflow-hidden">
+                    <div class="bg-[#F2C14E] h-full rounded-full" style="width: 11%"></div>
                   </div>
-                  <span class="font-bold text-slate-800">11%</span>
+                  <span class="font-semibold text-[#14251D]">11%</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="w-12 font-semibold text-slate-600">3 ★</span>
-                  <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-                    <div class="bg-amber-400 h-full rounded-full" style="width: 3%"></div>
+                  <span class="w-12 font-medium text-[#5B6B60]">3 ★</span>
+                  <div class="w-full bg-[#F2ECDE] h-2 rounded-full overflow-hidden">
+                    <div class="bg-[#F2C14E] h-full rounded-full" style="width: 3%"></div>
                   </div>
-                  <span class="font-bold text-slate-800">3%</span>
+                  <span class="font-semibold text-[#14251D]">3%</span>
                 </div>
               </div>
             </div>
 
-            <p class="text-xs text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200/80 leading-relaxed text-left">
+            <p class="text-xs text-[#4A5A50] bg-white p-3 rounded-xl border border-[#E7DFCF] leading-relaxed text-left">
               "{{ t.bio }}"
             </p>
 
-            <button (click)="selectedTeacherModal.set(null)" class="w-full bg-slate-900 text-white font-bold py-2.5 rounded-xl text-xs cursor-pointer">
+            <button (click)="selectedTeacherModal.set(null)" class="w-full bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
               {{ lang.tr('Fermer le profil', 'إغلاق الملف') }}
             </button>
           </div>
@@ -1021,82 +1009,81 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
     }
 
     <!-- FEATURE 5: ONE-CLICK PDF WATERMARK & PRINT PREVIEW MODAL -->
-    <!-- FEATURE 5: ONE-CLICK PDF WATERMARK & PRINT PREVIEW MODAL -->
     @if (watermarkPreviewModal(); as docEx) {
-      <div id="printable-modal" class="print-container fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 space-y-5 border border-slate-200 shadow-2xl max-h-[90vh] overflow-y-auto relative">
+      <div id="printable-modal" class="print-container fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-[#FBF8F1] rounded-2xl max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-2xl max-h-[90vh] overflow-y-auto relative">
           
           <!-- Watermark Header Banner -->
-          <div class="no-print bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white p-4 rounded-2xl flex items-center justify-between shadow-sm">
+          <div class="no-print bg-[#14251D] text-[#FBF8F1] p-4 rounded-xl flex items-center justify-between shadow-xs">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-amber-400">verified</span>
+              <span class="material-icons text-[#F2C14E]">verified</span>
               <div>
-                <h4 class="font-extrabold text-sm text-white">MADRASATI TN 🇹🇳 — FILIGRANE ET IMPRESSION PDF</h4>
-                <p class="text-[11px] text-emerald-200">
+                <h4 class="font-display font-semibold text-sm text-[#FBF8F1]">MADRASATI TN — FILIGRANE ET IMPRESSION PDF</h4>
+                <p class="text-[11px] text-[#9DBBA8]">
                   {{ docEx.watermarkText || 'Madrasati TN — Document Certifié — Mme Amel Ben Ali' }}
                 </p>
               </div>
             </div>
-            <button (click)="watermarkPreviewModal.set(null)" class="text-white/80 hover:text-white cursor-pointer">
+            <button (click)="watermarkPreviewModal.set(null)" class="text-[#B7C7BC] hover:text-[#FBF8F1] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <!-- Document Render Frame with Watermark Overlay -->
-          <div id="printable-document" class="print-document bg-slate-50 rounded-2xl p-6 border-2 border-slate-200 relative overflow-hidden space-y-4 font-mono text-xs shadow-inner">
+          <div id="printable-document" class="print-document bg-white rounded-xl p-6 border border-[#E7DFCF] relative overflow-hidden space-y-4 font-mono text-xs cartouche-rules">
             
             <!-- Diagonal Watermark Stamp -->
             <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-10 select-none rotate-[-25deg]">
-              <span class="text-4xl font-black uppercase text-emerald-900 tracking-widest text-center">
+              <span class="text-4xl font-display font-semibold uppercase text-[#1B4332] tracking-widest text-center">
                 MADRASATI TN <br /> COPIE CERTIFIÉE GRATUITE
               </span>
             </div>
 
             <!-- Official Header -->
-            <div class="border-b-2 border-slate-900 pb-3 font-sans">
+            <div class="border-b border-[#14251D] pb-3 font-sans">
               <div class="flex items-center justify-between text-xs">
-                <div class="text-left font-bold text-slate-900 leading-tight">
+                <div class="text-left font-semibold text-[#14251D] leading-tight">
                   <p>الجمهورية التونسية</p>
                   <p>وزارة التربية والتعليم</p>
-                  <p class="text-[10px] text-slate-500 font-normal">المندوبية الجهوية للتربية</p>
+                  <p class="text-[10px] text-[#5B6B60] font-normal">المندوبية الجهوية للتربية</p>
                 </div>
-                <div class="text-center font-bold">
-                  <p class="text-base text-emerald-900 font-black">{{ docEx.title }}</p>
-                  <p class="text-xs text-slate-600">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
+                <div class="text-center font-semibold">
+                  <p class="text-base text-[#1B4332] font-display font-semibold">{{ docEx.title }}</p>
+                  <p class="text-xs text-[#5B6B60]">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
                 </div>
-                <div class="text-right text-xs text-slate-700 leading-tight">
-                  <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded text-[10px]">
+                <div class="text-right text-xs text-[#14251D] leading-tight">
+                  <span class="bg-[#F2ECDE] text-[#1B4332] font-semibold px-2 py-0.5 rounded text-[10px] border border-[#E7DFCF]">
                     {{ docEx.docType || 'Devoir de Contrôle' }}
                   </span>
-                  <p class="text-[10px] text-slate-400 mt-1">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
+                  <p class="text-[10px] text-[#6B7A70] mt-1">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
                 </div>
               </div>
 
               <!-- Student Filling Block for Printed Exams -->
-              <div class="mt-3 pt-2 border-t border-dashed border-slate-400 grid grid-cols-3 gap-2 text-xs font-semibold">
+              <div class="mt-3 pt-2 border-t border-dashed border-[#E7DFCF] grid grid-cols-3 gap-2 text-xs font-semibold">
                 <p>الاسم واللقب: ....................................</p>
                 <p>القسم: {{ docEx.grade }}</p>
-                <p class="text-right font-bold text-emerald-900">العدد: .......... / 20</p>
+                <p class="text-right font-semibold text-[#1B4332]">العدد: .......... / 20</p>
               </div>
             </div>
 
             <!-- Exercise Body -->
             <div class="space-y-3 py-2 font-sans relative z-10">
-              <h3 class="font-extrabold text-slate-900 text-sm">{{ docEx.title }}</h3>
-              <p class="text-slate-800 leading-relaxed bg-white p-4 rounded-xl border border-slate-200 font-mono">
+              <h3 class="font-display font-semibold text-[#14251D] text-sm">{{ docEx.title }}</h3>
+              <p class="text-[#4A5A50] leading-relaxed bg-[#FBF8F1] p-4 rounded-xl border border-[#E7DFCF] font-mono">
                 {{ docEx.promptText }}
               </p>
 
               @if (docEx.solutionText) {
-                <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200 text-emerald-950 font-sans">
-                  <span class="font-bold">✔️ Corrigé Certifié :</span>
-                  <p class="whitespace-pre-line mt-1">{{ docEx.solutionText }}</p>
+                <div class="bg-[#F2ECDE] p-4 rounded-xl border border-[#E7DFCF] text-[#14251D] font-sans">
+                  <span class="font-semibold text-[#1B4332]">✔️ Corrigé Certifié :</span>
+                  <p class="whitespace-pre-line mt-1 text-xs text-[#4A5A50]">{{ docEx.solutionText }}</p>
                 </div>
               }
             </div>
 
             <!-- Official Footer Watermark Attribution -->
-            <div class="border-t border-slate-300 pt-3 text-[10px] text-slate-500 font-sans flex items-center justify-between">
+            <div class="border-t border-[#E7DFCF] pt-3 text-[10px] text-[#6B7A70] font-sans flex items-center justify-between">
               <span>Attribution Enseignant : {{ docEx.watermarkText }}</span>
               <span>Plateforme Madrasati TN</span>
             </div>
@@ -1104,13 +1091,13 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
 
           <!-- Actions -->
           <div class="no-print flex items-center justify-between gap-3 pt-2">
-            <button (click)="watermarkPreviewModal.set(null)" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl text-xs cursor-pointer">
+            <button (click)="watermarkPreviewModal.set(null)" class="bg-white hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 py-2.5 rounded-xl text-xs border border-[#E7DFCF] cursor-pointer transition-colors">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
 
             <button
               (click)="triggerPrintDialog()"
-              class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-md">
+              class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-sm transition-colors">
               <span class="material-icons text-base">print</span>
               {{ lang.t('printBtn') }}
             </button>
@@ -1199,20 +1186,20 @@ export class PublicDiscoveryComponent {
 
   roleBadgeClass(role: string): string {
     const map: Record<string, string> = {
-      teacher: 'bg-emerald-600 text-white',
-      parent: 'bg-blue-500 text-white',
-      student: 'bg-amber-400 text-slate-900',
-      public: 'bg-slate-300 text-slate-700',
+      teacher: 'bg-[#1B4332] text-[#FBF8F1]',
+      parent: 'bg-[#8A5A00] text-[#FBF8F1]',
+      student: 'bg-[#BF5B34] text-[#FBF8F1]',
+      public: 'bg-[#F2ECDE] text-[#14251D]',
     };
     return map[role] || map['public'];
   }
 
   roleTagClass(role: string): string {
     const map: Record<string, string> = {
-      teacher: 'bg-emerald-100 text-emerald-800',
-      parent: 'bg-blue-100 text-blue-800',
-      student: 'bg-amber-100 text-amber-900',
-      public: 'bg-slate-100 text-slate-600',
+      teacher: 'bg-[#F2ECDE] text-[#1B4332] border border-[#E7DFCF]',
+      parent: 'bg-[#F2ECDE] text-[#8A5A00] border border-[#E7DFCF]',
+      student: 'bg-[#F2ECDE] text-[#BF5B34] border border-[#E7DFCF]',
+      public: 'bg-[#F2ECDE] text-[#5B6B60] border border-[#E7DFCF]',
     };
     return map[role] || map['public'];
   }
@@ -1229,8 +1216,8 @@ export class PublicDiscoveryComponent {
 
   publicSubText(): string {
     return this.lang.tr(
-      'Fini la perte de documents dans les chaînes WhatsApp. Trouvez instantanément vos devoirs de contrôle, de synthèse et fiches de révision filigranés.',
-      'لا مزيد من ضياع الوثائق في مجموعات الواتساب. استرجع فروض المراقبة والتأليفية والسلاسل المصحوبة بالإصلاح بضغطة زر.'
+      'Retrouvez instantanément vos devoirs de contrôle, de synthèse et fiches de révision filigranés.',
+      'استرجع فروض المراقبة والتأليفية والسلاسل المصحوبة بالإصلاح بضغطة زر.'
     );
   }
 
@@ -1290,13 +1277,6 @@ export class PublicDiscoveryComponent {
   triggerPrintDialog() {
     if (typeof window !== 'undefined') {
       window.print();
-    }
-  }
-
-  shareOnWhatsApp(ex: ExerciseItem) {
-    if (typeof window !== 'undefined') {
-      const msg = `🇹🇳 *Madrasati TN - Document d'Exercices*\n📘 ${ex.title} (${ex.grade} - ${ex.subject})\n${ex.hasCorrection ? '✔️ Corrigé certifié inclus' : ''}\n\nAccédez au document complet: ${window.location.origin}`;
-      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
     }
   }
 

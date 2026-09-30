@@ -16,35 +16,31 @@ export interface GeneratedExerciseResult {
   template: `
     <div class="space-y-6">
       
-      <!-- Welcome Header: Sleek Educational SaaS Hero -->
-      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-800 via-teal-900 to-slate-950 text-white p-7 sm:p-9 shadow-lg border border-emerald-500/20">
-        <div class="absolute -right-16 -top-16 w-80 h-80 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute right-1/3 -bottom-16 w-64 h-64 bg-teal-400/10 rounded-full blur-2xl pointer-events-none"></div>
-
-        <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+      <!-- Welcome Header: "Cartouche officielle" institutional hero -->
+      <div class="rounded-[28px] bg-[#14251D] text-[#FBF8F1] p-7 sm:p-9 shadow-sm">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div class="space-y-3">
             <div class="flex flex-wrap items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 bg-emerald-500/25 text-emerald-200 border border-emerald-400/30 text-xs px-3 py-1 rounded-full font-bold backdrop-blur-xs">
-                <span class="material-icons text-sm text-emerald-300">verified</span>
+              <span class="inline-flex items-center gap-1.5 text-[#9DBBA8] text-xs font-medium">
+                <span class="material-icons text-sm">verified</span>
                 {{ lang.tr('Enseignante Certifiée — Éducation Nationale', 'معلمة معتمدة — وزارة التربية والتعليم') }}
               </span>
 
               <button
                 (click)="teacherProfileModal.set(true)"
-                class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-xs px-3 py-1 rounded-full font-bold transition-all cursor-pointer backdrop-blur-xs">
-                <span class="material-icons text-sm text-amber-400">badge</span>
-                <span>{{ lang.tr('Mon Profil Public ⭐ 4.9', 'ملفي المهني ⭐ 4.9') }}</span>
+                class="inline-flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-[#FBF8F1] border border-white/10 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer">
+                <span class="material-icons text-sm text-[#F2C14E]">badge</span>
+                <span>{{ lang.tr('Mon Profil Public (4.9/5)', 'ملفي المهني (4.9/5)') }}</span>
               </button>
             </div>
 
             <div>
-              <h1 class="text-2xl sm:text-3xl font-black tracking-tight text-white flex items-center gap-2">
+              <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-[#FBF8F1]">
                 {{ lang.t('teacherWelcome') }}
-                <span>👋</span>
               </h1>
-              <p class="text-emerald-100/80 text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
+              <p class="text-[#B7C7BC] text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
                 {{ teacherHeaderSub() }}
-                <span class="font-extrabold text-white underline decoration-emerald-400 underline-offset-4">{{ store.activeClass().name }}</span>
+                <span class="font-semibold text-[#FBF8F1] underline decoration-[#F2C14E] underline-offset-4">{{ store.activeClass().name }}</span>
                 — {{ store.activeClass().schoolName }}.
               </p>
             </div>
@@ -54,29 +50,29 @@ export interface GeneratedExerciseResult {
           <div class="flex flex-wrap items-center gap-2.5 shrink-0">
             <button
               (click)="openModal('announcement')"
-              class="flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold px-4 py-2.5 rounded-xl text-xs transition-all cursor-pointer shadow-md hover:shadow-emerald-500/20 hover:-translate-y-0.5">
+              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-xl text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">campaign</span>
               {{ lang.t('addAnnouncementBtn') }}
             </button>
 
             <button
               (click)="openModal('course')"
-              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-bold px-4 py-2.5 rounded-xl text-xs border border-white/20 transition-all cursor-pointer backdrop-blur-sm hover:-translate-y-0.5">
+              class="flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-xl text-xs border border-white/10 transition-colors cursor-pointer">
               <span class="material-icons text-base">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
             </button>
 
             <button
               (click)="openModal('homework')"
-              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-bold px-4 py-2.5 rounded-xl text-xs border border-white/20 transition-all cursor-pointer backdrop-blur-sm hover:-translate-y-0.5">
+              class="flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-xl text-xs border border-white/10 transition-colors cursor-pointer">
               <span class="material-icons text-base">assignment</span>
               {{ lang.t('addHomeworkBtn') }}
             </button>
 
             <button
               (click)="openModal('ai')"
-              class="flex items-center gap-1.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black px-4 py-2.5 rounded-xl text-xs transition-all cursor-pointer shadow-md shadow-amber-500/20 hover:-translate-y-0.5">
-              <span class="material-icons text-base animate-pulse">auto_awesome</span>
+              class="flex items-center gap-1.5 bg-[#F2C14E] hover:bg-[#e0b143] text-[#14251D] font-semibold px-4 py-2.5 rounded-xl text-xs transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-base">auto_awesome</span>
               {{ lang.t('aiAssistantBtn') }}
             </button>
           </div>
@@ -85,79 +81,91 @@ export interface GeneratedExerciseResult {
 
       <!-- Class Metric Cards & Quick Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs hover:shadow-md transition-all border-t-4 border-t-emerald-500 flex flex-col justify-between">
-          <div class="flex items-center justify-between text-slate-500 mb-2">
-            <span class="text-xs font-bold text-slate-700">{{ lang.t('statStudents') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
-              <span class="material-icons text-lg">groups</span>
+        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
+          <div class="h-1 bg-[#1B4332]"></div>
+          <div class="p-5 flex flex-col justify-between grow">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statStudents') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center">
+                <span class="material-icons text-lg">groups</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-3xl font-black text-slate-900 tracking-tight">{{ store.activeClass().studentCount }}</p>
-            <p class="text-[11px] text-emerald-600 font-bold mt-1 flex items-center gap-1">
-              <span class="material-icons text-xs">done_all</span>
-              {{ lang.tr('100% inscrits sans groupe FB', 'مسجلون بالكامل بدون فيسبوك') }}
-            </p>
+            <div>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.activeClass().studentCount }}</p>
+              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs">done_all</span>
+                {{ lang.tr('100% inscrits dans la classe', 'مسجلون بالكامل في القسم') }}
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs hover:shadow-md transition-all border-t-4 border-t-amber-500 flex flex-col justify-between">
-          <div class="flex items-center justify-between text-slate-500 mb-2">
-            <span class="text-xs font-bold text-slate-700">{{ lang.t('statSubmissions') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center">
-              <span class="material-icons text-lg">fact_check</span>
+        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
+          <div class="h-1 bg-[#2D6A4F]"></div>
+          <div class="p-5 flex flex-col justify-between grow">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statSubmissions') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
+                <span class="material-icons text-lg">fact_check</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-3xl font-black text-slate-900 tracking-tight">{{ store.submissions().length }}</p>
-            <p class="text-[11px] text-amber-600 font-bold mt-1 flex items-center gap-1">
-              <span class="material-icons text-xs">pending_actions</span>
-              {{ lang.tr('Soumissions reçues', 'تطبيقات مستلمة للتقييم') }}
-            </p>
+            <div>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.submissions().length }}</p>
+              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs">pending_actions</span>
+                {{ lang.tr('Soumissions reçues', 'تطبيقات مستلمة للتقييم') }}
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs hover:shadow-md transition-all border-t-4 border-t-indigo-500 flex flex-col justify-between">
-          <div class="flex items-center justify-between text-slate-500 mb-2">
-            <span class="text-xs font-bold text-slate-700">{{ lang.t('statViews') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
-              <span class="material-icons text-lg">visibility</span>
+        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
+          <div class="h-1 bg-[#8A5A00]"></div>
+          <div class="p-5 flex flex-col justify-between grow">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statViews') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#8A5A00]/10 text-[#8A5A00] flex items-center justify-center">
+                <span class="material-icons text-lg">visibility</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-3xl font-black text-slate-900 tracking-tight">342</p>
-            <p class="text-[11px] text-indigo-600 font-bold mt-1 flex items-center gap-1">
-              <span class="material-icons text-xs">trending_up</span>
-              {{ lang.tr('+18% cette semaine', '+18% هذا الأسبوع') }}
-            </p>
+            <div>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">342</p>
+              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs">trending_up</span>
+                {{ lang.tr('+18% cette semaine', '+18% هذا الأسبوع') }}
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs hover:shadow-md transition-all border-t-4 border-t-teal-500 flex flex-col justify-between">
-          <div class="flex items-center justify-between text-slate-500 mb-2">
-            <span class="text-xs font-bold text-slate-700">{{ lang.t('statConfirmations') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
-              <span class="material-icons text-lg">verified_user</span>
+        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
+          <div class="h-1 bg-[#BF5B34]"></div>
+          <div class="p-5 flex flex-col justify-between grow">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statConfirmations') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#BF5B34]/10 text-[#BF5B34] flex items-center justify-center">
+                <span class="material-icons text-lg">verified_user</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-3xl font-black text-slate-900 tracking-tight">24 <span class="text-slate-400 text-lg">/ 28</span></p>
-            <p class="text-[11px] text-teal-600 font-bold mt-1 flex items-center gap-1">
-              <span class="material-icons text-xs">check_circle</span>
-              {{ lang.tr("86% accusés de lecture", '86% نسبة اطلاع الأولياء') }}
-            </p>
+            <div>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">24 <span class="text-[#6B7A70] text-lg">/ 28</span></p>
+              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs">check_circle</span>
+                {{ lang.tr("86% accusés de lecture", '86% نسبة اطلاع الأولياء') }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Main Class Content Tabs -->
-      <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xs">
-        
+      <div class="bg-white rounded-[28px] border border-[#E7DFCF] overflow-hidden shadow-sm">
+
         <!-- Tab Bar Header -->
-        <div class="border-b border-slate-200 bg-slate-50/80 px-6 pt-4 flex flex-wrap gap-2">
+        <div class="border-b border-[#E7DFCF] bg-[#FBF8F1] px-6 pt-4 flex flex-wrap gap-2">
           <button
             (click)="activeTab.set('announcements')"
-            [class]="activeTab() === 'announcements' ? 'border-emerald-600 text-emerald-800 bg-white font-bold shadow-xs' : 'border-transparent text-slate-600 font-medium hover:text-slate-900'"
+            [class]="activeTab() === 'announcements' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
             <span class="material-icons text-base">campaign</span>
             <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
@@ -165,7 +173,7 @@ export interface GeneratedExerciseResult {
 
           <button
             (click)="activeTab.set('courses')"
-            [class]="activeTab() === 'courses' ? 'border-emerald-600 text-emerald-800 bg-white font-bold shadow-xs' : 'border-transparent text-slate-600 font-medium hover:text-slate-900'"
+            [class]="activeTab() === 'courses' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
             <span class="material-icons text-base">menu_book</span>
             <span>{{ lang.t('tabCourses') }} ({{ store.classCourses().length }})</span>
@@ -173,7 +181,7 @@ export interface GeneratedExerciseResult {
 
           <button
             (click)="activeTab.set('homeworks')"
-            [class]="activeTab() === 'homeworks' ? 'border-emerald-600 text-emerald-800 bg-white font-bold shadow-xs' : 'border-transparent text-slate-600 font-medium hover:text-slate-900'"
+            [class]="activeTab() === 'homeworks' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
             <span class="material-icons text-base">assignment</span>
             <span>{{ lang.t('tabHomeworks') }} ({{ store.classHomeworks().length }})</span>
@@ -181,7 +189,7 @@ export interface GeneratedExerciseResult {
 
           <button
             (click)="activeTab.set('submissions')"
-            [class]="activeTab() === 'submissions' ? 'border-emerald-600 text-emerald-800 bg-white font-bold shadow-xs' : 'border-transparent text-slate-600 font-medium hover:text-slate-900'"
+            [class]="activeTab() === 'submissions' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
             <span class="material-icons text-base">rate_review</span>
             <span>{{ lang.t('tabSubmissions') }} ({{ store.submissions().length }})</span>
@@ -196,28 +204,28 @@ export interface GeneratedExerciseResult {
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-slate-900">
+                  <h3 class="font-display font-semibold text-[#14251D]">
                     {{ lang.tr('Annonces diffusées aux parents et élèves', 'البلاغات الموجهة للأولياء والتلاميذ') }}
                   </h3>
-                  <p class="text-xs text-slate-500">
-                    {{ lang.tr('Finies les questions à répétition sur WhatsApp. Chaque annonce est datée et traçable.', 'لا مزيد من الأسئلة المكررة على الواتساب. كل إعلان موثق ومنظم.') }}
+                  <p class="text-xs text-[#5B6B60]">
+                    {{ lang.tr('Chaque annonce est datée, archivée et traçable.', 'كل إعلان مؤرخ وموثق ومنظم.') }}
                   </p>
                 </div>
                 <button
                   (click)="openModal('announcement')"
-                  class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-xs">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-sm">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addAnnouncementBtn') }}
                 </button>
               </div>
 
               @for (a of store.classAnnouncements(); track a.id) {
-                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/80 space-y-3 relative hover:border-slate-300 transition-all">
+                <div class="bg-[#FBF8F1] rounded-2xl p-5 border border-[#E7DFCF] space-y-3 relative hover:border-[#D8CEB8] transition-colors">
                   <div class="flex items-start justify-between gap-4">
                     <div class="flex items-center gap-3">
-                      <img [src]="a.teacherAvatar" alt="Teacher" class="w-10 h-10 rounded-full object-cover border border-slate-300 shadow-2xs" />
+                      <img [src]="a.teacherAvatar" alt="Teacher" class="w-10 h-10 rounded-full object-cover border border-[#E7DFCF]" />
                       <div>
                         <div class="flex items-center gap-2">
-                          <h4 class="font-bold text-slate-900 text-sm">{{ a.title }}</h4>
+                          <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ a.title }}</h4>
                           @if (a.isPinned) {
                             <span class="bg-rose-100 text-rose-700 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
                               <span class="material-icons text-[12px]">push_pin</span>
@@ -225,36 +233,28 @@ export interface GeneratedExerciseResult {
                             </span>
                           }
                         </div>
-                        <p class="text-[11px] text-slate-500 font-medium">{{ a.teacherName }} • {{ a.date }}</p>
+                        <p class="text-[11px] text-[#5B6B60] font-medium">{{ a.teacherName }} • {{ a.date }}</p>
                       </div>
                     </div>
 
                     <div class="flex items-center gap-2">
-                      <button
-                        (click)="shareAnnouncementOnWhatsApp(a)"
-                        class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-2.5 py-1 rounded-lg text-xs flex items-center gap-1 cursor-pointer transition-colors shadow-2xs"
-                        title="Partager sur WhatsApp">
-                        <span class="material-icons text-xs">share</span>
-                        <span>WhatsApp</span>
-                      </button>
-
                       <span [class]="getCategoryBadgeClass(a.category)" class="text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
                         {{ a.category }}
                       </span>
                     </div>
                   </div>
 
-                  <p class="text-xs text-slate-700 leading-relaxed whitespace-pre-line bg-white p-3.5 rounded-xl border border-slate-200/60 font-sans">
+                  <p class="text-xs text-[#4A5A50] leading-relaxed whitespace-pre-line bg-white p-3.5 rounded-xl border border-[#E7DFCF] font-sans">
                     {{ a.content }}
                   </p>
 
-                  <div class="flex items-center justify-between text-xs text-slate-500 pt-1">
-                    <span class="flex items-center gap-1 text-emerald-700 font-medium">
+                  <div class="flex items-center justify-between text-xs text-[#5B6B60] pt-1">
+                    <span class="flex items-center gap-1 text-[#1B4332] font-medium">
                       <span class="material-icons text-sm">check_circle</span>
                       {{ a.confirmedByParentsCount }} {{ lang.tr('parents ont confirmé la lecture', 'أولياء أكدوا اطلاعهم') }}
                     </span>
 
-                    <span class="text-[11px] text-slate-400">
+                    <span class="text-[11px] text-[#6B7A70]">
                       {{ lang.tr('Visibilité : Parents + Élèves de la classe', 'النطاق: أولياء وتلاميذ الفصل') }}
                     </span>
                   </div>
@@ -268,59 +268,52 @@ export interface GeneratedExerciseResult {
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-slate-900">{{ lang.t('tabCourses') }}</h3>
-                  <p class="text-xs text-slate-500">
+                  <h3 class="font-display font-semibold text-[#14251D]">{{ lang.t('tabCourses') }}</h3>
+                  <p class="text-xs text-[#5B6B60]">
                     {{ lang.tr("Un espace structuré par chapitre avec filigrane officiel et impression PDF immédiate.", 'مساحة منظمة بالفيليغران الرسمي وإمكانية الطباعة المباشرة بصيغة PDF.') }}
                   </p>
                 </div>
                 <button
                   (click)="openModal('course')"
-                  class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-xs">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-sm">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addCourseBtn') }}
                 </button>
               </div>
 
               <div class="grid md:grid-cols-2 gap-4">
                 @for (c of store.classCourses(); track c.id) {
-                  <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col justify-between space-y-3 hover:border-emerald-300 transition-all">
+                  <div class="bg-[#FBF8F1] rounded-2xl p-5 border border-[#E7DFCF] flex flex-col justify-between space-y-3 hover:border-[#2D6A4F]/40 transition-colors">
                     <div class="space-y-2">
                       <div class="flex items-center justify-between">
-                        <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                        <span class="bg-[#1B4332]/10 text-[#1B4332] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                           {{ c.subject }}
                         </span>
-                        <span class="text-[11px] text-slate-400">{{ c.createdAt }}</span>
+                        <span class="text-[11px] text-[#6B7A70]">{{ c.createdAt }}</span>
                       </div>
-                      <h4 class="font-bold text-slate-900 text-sm leading-snug">{{ c.title }}</h4>
-                      <p class="text-xs text-slate-600 line-clamp-2">{{ c.summary }}</p>
+                      <h4 class="font-display font-semibold text-[#14251D] text-sm leading-snug">{{ c.title }}</h4>
+                      <p class="text-xs text-[#5B6B60] line-clamp-2">{{ c.summary }}</p>
 
                       @if (c.pdfUrl) {
-                        <div class="inline-flex items-center gap-1 text-[11px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                        <div class="inline-flex items-center gap-1 text-[11px] text-[#1B4332] font-semibold bg-[#1B4332]/8 px-2 py-0.5 rounded border border-[#E7DFCF]">
                           <span class="material-icons text-xs">picture_as_pdf</span>
                           <span>Fichier PDF / Document joint</span>
                         </div>
                       }
                     </div>
 
-                    <div class="pt-3 border-t border-slate-200/80 flex items-center justify-between gap-2">
+                    <div class="pt-3 border-t border-[#E7DFCF] flex items-center justify-between gap-2">
                       <div class="flex items-center gap-1">
                         <button
                           (click)="openPrintCourseModal(c)"
-                          class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer shadow-2xs">
+                          class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer shadow-sm">
                           <span class="material-icons text-xs">print</span>
                           {{ lang.tr('Imprimer PDF', 'طباعة PDF') }}
-                        </button>
-
-                        <button
-                          (click)="shareCourseOnWhatsApp(c)"
-                          class="bg-emerald-100 hover:bg-emerald-200 text-emerald-900 font-bold px-2 py-1.5 rounded-xl text-xs flex items-center gap-0.5 cursor-pointer"
-                          title="Partager sur WhatsApp">
-                          <span class="material-icons text-xs">share</span>
                         </button>
                       </div>
 
                       <button
                         (click)="selectedCourseDetail.set(c)"
-                        class="text-xs font-bold text-slate-700 hover:text-slate-900 flex items-center gap-1 cursor-pointer">
+                        class="text-xs font-semibold text-[#14251D] hover:text-[#1B4332] flex items-center gap-1 cursor-pointer">
                         {{ lang.tr('Consulter', 'قراءة') }} <span class="material-icons text-sm">arrow_forward</span>
                       </button>
                     </div>
@@ -335,35 +328,35 @@ export interface GeneratedExerciseResult {
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-slate-900">{{ lang.t('tabHomeworks') }}</h3>
-                  <p class="text-xs text-slate-500">
+                  <h3 class="font-display font-semibold text-[#14251D]">{{ lang.t('tabHomeworks') }}</h3>
+                  <p class="text-xs text-[#5B6B60]">
                     {{ lang.tr('Définissez les exercices, la date limite et recevez les réponses des élèves.', 'حدد التمارين والموعد واستلم إنجازات التلاميذ.') }}
                   </p>
                 </div>
                 <button
                   (click)="openModal('homework')"
-                  class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-xs">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-sm">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addHomeworkBtn') }}
                 </button>
               </div>
 
               @for (hw of store.classHomeworks(); track hw.id) {
-                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 space-y-4">
-                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+                <div class="bg-[#FBF8F1] rounded-2xl p-5 border border-[#E7DFCF] space-y-4">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E7DFCF] pb-3">
                     <div>
                       <div class="flex items-center gap-2">
-                        <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                        <span class="bg-[#8A5A00]/10 text-[#8A5A00] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                           {{ hw.subject }}
                         </span>
-                        <h4 class="font-bold text-slate-900 text-sm">{{ hw.title }}</h4>
+                        <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ hw.title }}</h4>
                       </div>
-                      <p class="text-xs text-slate-500 mt-1">
-                        {{ lang.tr('À rendre pour :', 'أجل التسليم:') }} <span class="font-semibold text-rose-700">{{ hw.dueDate }}</span>
+                      <p class="text-xs text-[#5B6B60] mt-1">
+                        {{ lang.tr('À rendre pour :', 'أجل التسليم:') }} <span class="font-semibold text-[#BF5B34]">{{ hw.dueDate }}</span>
                       </p>
                     </div>
 
                     <div class="flex items-center gap-2">
-                      <span class="text-xs text-slate-600 font-medium bg-white px-3 py-1 rounded-xl border border-slate-200">
+                      <span class="text-xs text-[#4A5A50] font-medium bg-white px-3 py-1 rounded-xl border border-[#E7DFCF]">
                         {{ hw.submissionsCount }} / 28 {{ lang.tr('rendus', 'مستلم') }}
                       </span>
                     </div>
@@ -371,19 +364,19 @@ export interface GeneratedExerciseResult {
 
                   <!-- Exercise Items List inside Homework -->
                   <div class="space-y-2">
-                    <p class="text-xs font-bold text-slate-700">
+                    <p class="text-xs font-semibold text-[#14251D]">
                       {{ lang.tr('Liste des exercices inclus :', 'قائمة التمارين المرفقة:') }}
                     </p>
                     <div class="grid gap-2">
                       @for (ex of hw.exercises; track ex.id) {
-                        <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs space-y-1">
+                        <div class="bg-white p-3 rounded-xl border border-[#E7DFCF] text-xs space-y-1">
                           <div class="flex items-center justify-between">
-                            <span class="font-bold text-slate-800">{{ ex.title }}</span>
-                            <span class="text-[11px] text-emerald-700 font-semibold">{{ ex.points }} {{ lang.tr('points', 'نقاط') }}</span>
+                            <span class="font-semibold text-[#14251D]">{{ ex.title }}</span>
+                            <span class="text-[11px] text-[#1B4332] font-semibold">{{ ex.points }} {{ lang.tr('points', 'نقاط') }}</span>
                           </div>
-                          <p class="text-slate-600 italic">"{{ ex.promptText }}"</p>
-                          <div class="text-[11px] text-slate-500 pt-1">
-                            <span class="font-semibold text-slate-700">{{ lang.tr('Corrigé enseignant :', 'إصلاح المعلم:') }}</span> {{ ex.solutionText }}
+                          <p class="text-[#5B6B60] italic">"{{ ex.promptText }}"</p>
+                          <div class="text-[11px] text-[#5B6B60] pt-1">
+                            <span class="font-semibold text-[#14251D]">{{ lang.tr('Corrigé enseignant :', 'إصلاح المعلم:') }}</span> {{ ex.solutionText }}
                           </div>
                         </div>
                       }
@@ -398,59 +391,59 @@ export interface GeneratedExerciseResult {
           @if (activeTab() === 'submissions') {
             <div class="space-y-4">
               <div>
-                <h3 class="font-bold text-slate-900">
+                <h3 class="font-display font-semibold text-[#14251D]">
                   {{ lang.tr("Travaux et photos d'exercices reçus", 'التطبيقات والمحاولات المستلمة من التلاميذ') }}
                 </h3>
-                <p class="text-xs text-slate-500">
+                <p class="text-xs text-[#5B6B60]">
                   {{ lang.tr('Consultez les réponses saisies ou les photos de cahiers envoyées par les élèves et attribuez une note avec remarque.', 'راجع كتابات التلاميذ أو صور كراساتهم وسجل التقييم والترديد.') }}
                 </p>
               </div>
 
               @for (sub of store.submissions(); track sub.id) {
-                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 space-y-4">
+                <div class="bg-[#FBF8F1] rounded-2xl p-5 border border-[#E7DFCF] space-y-4">
                   <div class="flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                      <img [src]="sub.studentAvatar" alt="Student" class="w-10 h-10 rounded-full object-cover border border-slate-300" />
+                      <img [src]="sub.studentAvatar" alt="Student" class="w-10 h-10 rounded-full object-cover border border-[#E7DFCF]" />
                       <div>
-                        <h4 class="font-bold text-slate-900 text-sm">{{ sub.studentName }}</h4>
-                        <p class="text-[11px] text-slate-500">{{ lang.tr('Soumis le', 'تم الإرسال بتاريخ') }} {{ sub.submittedAt }}</p>
+                        <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ sub.studentName }}</h4>
+                        <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Soumis le', 'تم الإرسال بتاريخ') }} {{ sub.submittedAt }}</p>
                       </div>
                     </div>
 
                     @if (sub.status === 'graded') {
-                      <span class="bg-emerald-100 text-emerald-800 font-bold text-xs px-3 py-1 rounded-full">
+                      <span class="bg-[#1B4332]/10 text-[#1B4332] font-semibold text-xs px-3 py-1 rounded-full">
                         {{ lang.tr('Note :', 'العدد:') }} {{ sub.score }} / {{ sub.maxScore }}
                       </span>
                     } @else {
-                      <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-full">
+                      <span class="bg-[#8A5A00]/10 text-[#8A5A00] font-semibold text-xs px-3 py-1 rounded-full">
                         {{ lang.tr('En attente de correction', 'في انتظار الاصلاح') }}
                       </span>
                     }
                   </div>
 
-                  <div class="grid md:grid-cols-2 gap-4 bg-white p-4 rounded-xl border border-slate-200 text-xs">
+                  <div class="grid md:grid-cols-2 gap-4 bg-white p-4 rounded-xl border border-[#E7DFCF] text-xs">
                     <div>
-                      <p class="font-bold text-slate-800 mb-1">{{ lang.tr('Réponse rédigée :', 'الإجابة المكتوبة:') }}</p>
-                      <p class="text-slate-700 whitespace-pre-line">{{ sub.textAnswer || 'Aucune réponse texte.' }}</p>
+                      <p class="font-semibold text-[#14251D] mb-1">{{ lang.tr('Réponse rédigée :', 'الإجابة المكتوبة:') }}</p>
+                      <p class="text-[#4A5A50] whitespace-pre-line">{{ sub.textAnswer || 'Aucune réponse texte.' }}</p>
                     </div>
 
                     @if (sub.photoUrl) {
                       <div>
-                        <p class="font-bold text-slate-800 mb-1">{{ lang.tr('Photo du cahier :', 'صورة الكراسة:') }}</p>
-                        <img [src]="sub.photoUrl" alt="Photo cahier" class="rounded-xl border border-slate-300 h-32 w-full object-cover" />
+                        <p class="font-semibold text-[#14251D] mb-1">{{ lang.tr('Photo du cahier :', 'صورة الكراسة:') }}</p>
+                        <img [src]="sub.photoUrl" alt="Photo cahier" class="rounded-xl border border-[#E7DFCF] h-32 w-full object-cover" />
                       </div>
                     }
                   </div>
 
                   @if (sub.feedback) {
-                    <div class="bg-emerald-50 text-emerald-900 p-3 rounded-xl border border-emerald-200 text-xs">
-                      <span class="font-bold">{{ lang.tr("Remarque transmise à l'élève :", 'ملاحظة المعلم للتلميذ:') }}</span> {{ sub.feedback }}
+                    <div class="bg-[#1B4332]/8 text-[#1B4332] p-3 rounded-xl border border-[#E7DFCF] text-xs">
+                      <span class="font-semibold">{{ lang.tr("Remarque transmise à l'élève :", 'ملاحظة المعلم للتلميذ:') }}</span> {{ sub.feedback }}
                     </div>
                   } @else {
                     <div class="flex items-center gap-2 pt-2">
                       <button
                         (click)="gradingSubmission.set(sub)"
-                        class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2 rounded-xl flex items-center gap-1 cursor-pointer">
+                        class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2 rounded-xl flex items-center gap-1 cursor-pointer">
                         <span class="material-icons text-sm">edit</span> {{ lang.tr('Noter et Formuler un retour', 'إسناد عدد وتدوين ملاحظة') }}
                       </button>
                     </div>
@@ -467,21 +460,21 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 1: AI ASSISTANT MODAL FOR TEACHER -->
     @if (modalType() === 'ai') {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 space-y-5 border border-slate-200 shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-sm max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-amber-500 text-2xl">auto_awesome</span>
+              <span class="material-icons text-[#F2C14E] text-2xl">auto_awesome</span>
               <div>
-                <h3 class="font-bold text-slate-900 text-lg">
+                <h3 class="font-display font-semibold text-[#14251D] text-lg">
                   {{ lang.tr('Assistant Pédagogique IA Tunisie', 'المساعد البيداغوجي الذكي في تونس') }}
                 </h3>
-                <p class="text-xs text-slate-500">
+                <p class="text-xs text-[#5B6B60]">
                   {{ lang.tr("Générez un exercice sur-mesure ou une idée d'évaluation alignée au programme.", 'توليد تمارين واختبارات متطابقة مع البرنامج الرسمي.') }}
                 </p>
               </div>
             </div>
-            <button (click)="closeModal()" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="closeModal()" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
@@ -489,14 +482,14 @@ export interface GeneratedExerciseResult {
           <div class="space-y-4 text-xs">
             <div class="grid grid-cols-2 gap-3">
               <div>
-                <label for="ai-subject-select" class="block font-semibold text-slate-700 mb-1">
+                <label for="ai-subject-select" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Matière', 'المادة') }}
                 </label>
                 <select
                   id="ai-subject-select"
                   [value]="aiFormSubject()"
                   (change)="onAiSubjectChange($event)"
-                  class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none">
                   <option value="Mathématiques">Mathématiques / الرياضيات</option>
                   <option value="Français">Français / الفرنسية</option>
                   <option value="اللغة العربية">اللغة العربية</option>
@@ -505,14 +498,14 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label for="ai-difficulty-select" class="block font-semibold text-slate-700 mb-1">
+                <label for="ai-difficulty-select" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Difficulté', 'درجة الصعوبة') }}
                 </label>
                 <select
                   id="ai-difficulty-select"
                   [value]="aiFormDifficulty()"
                   (change)="onAiDifficultyChange($event)"
-                  class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none">
                   <option value="Facile">Facile / سهل</option>
                   <option value="Moyen">Moyen / متوسط</option>
                   <option value="Avancé">Avancé (Préparation Concours 6ème) / متقدم (مناظرة السادسة)</option>
@@ -521,7 +514,7 @@ export interface GeneratedExerciseResult {
             </div>
 
             <div>
-              <label for="ai-topic-input" class="block font-semibold text-slate-700 mb-1">
+              <label for="ai-topic-input" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Thème / Chapitre précis', 'المحور أو الدرس') }}
               </label>
               <input
@@ -530,13 +523,13 @@ export interface GeneratedExerciseResult {
                 [value]="aiFormTopic()"
                 (input)="onAiTopicInput($event)"
                 placeholder="Ex: La multiplication, الجملة الاسمية..."
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none" />
             </div>
 
             <button
               [disabled]="isAiLoading()"
               (click)="generateAiExercise()"
-              class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-xs disabled:opacity-50">
+              class="w-full bg-[#F2C14E] hover:bg-[#e0b143] text-[#14251D] font-semibold py-3 rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-sm disabled:opacity-50">
               @if (isAiLoading()) {
                 <span class="material-icons animate-spin text-sm">sync</span>
                 <span>{{ lang.tr("Génération par l'IA Gemini en cours...", 'جاري التوليد باستخدام الذكاء الاصطناعي...') }}</span>
@@ -548,25 +541,25 @@ export interface GeneratedExerciseResult {
 
             <!-- AI Result Box -->
             @if (generatedAiResult(); as result) {
-              <div class="bg-amber-50 rounded-2xl p-4 border border-amber-200 space-y-3 mt-4">
+              <div class="bg-[#F2ECDE] rounded-2xl p-4 border border-[#E7DFCF] space-y-3 mt-4">
                 <div class="flex items-center justify-between">
-                  <h4 class="font-bold text-amber-950 text-sm">{{ result.title }}</h4>
-                  <span class="bg-amber-200 text-amber-900 font-bold px-2 py-0.5 rounded-md text-[10px]">
+                  <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ result.title }}</h4>
+                  <span class="bg-[#F2C14E] text-[#14251D] font-semibold px-2 py-0.5 rounded-md text-[10px]">
                     {{ lang.tr('Généré avec succès', 'تم التوليد بنجاح') }}
                   </span>
                 </div>
 
-                <p class="text-slate-800 bg-white p-3 rounded-xl border border-amber-200/60 leading-relaxed font-mono text-[11px]">
+                <p class="text-[#14251D] bg-white p-3 rounded-xl border border-[#E7DFCF] leading-relaxed font-mono text-[11px]">
                   {{ result.promptText }}
                 </p>
 
-                <div class="bg-emerald-100/70 p-3 rounded-xl text-emerald-900">
-                  <span class="font-bold">{{ lang.tr('Solution :', 'الإصلاح:') }}</span> {{ result.solutionText }}
+                <div class="bg-[#1B4332]/8 p-3 rounded-xl text-[#1B4332]">
+                  <span class="font-semibold">{{ lang.tr('Solution :', 'الإصلاح:') }}</span> {{ result.solutionText }}
                 </div>
 
                 <button
                   (click)="saveGeneratedToBank()"
-                  class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl w-full cursor-pointer">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2 rounded-xl w-full cursor-pointer">
                   ➕ {{ lang.tr("Ajouter directement à la Banque d'Exercices", 'إضافة مباشرة لمكتبة التمارين') }}
                 </button>
               </div>
@@ -578,20 +571,20 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 2: CREATE ANNOUNCEMENT -->
     @if (modalType() === 'announcement') {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 space-y-4 border border-slate-200 shadow-xl">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-            <h3 class="font-bold text-slate-900 text-base">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+            <h3 class="font-display font-semibold text-[#14251D] text-base">
               {{ lang.tr('Publier une Annonce de Classe', 'نشر إعلان جديد للعموم') }}
             </h3>
-            <button (click)="closeModal()" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="closeModal()" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label for="announce-title-input" class="block font-semibold text-slate-700 mb-1">
+              <label for="announce-title-input" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr("Titre de l'annonce", 'عنوان الإعلان') }}
               </label>
               <input
@@ -600,18 +593,18 @@ export interface GeneratedExerciseResult {
                 [value]="newAnnounceTitle()"
                 (input)="onAnnounceTitleInput($event)"
                 placeholder="Ex: 📌 Devoir de contrôle à venir"
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none" />
             </div>
 
             <div>
-              <label for="announce-cat-select" class="block font-semibold text-slate-700 mb-1">
+              <label for="announce-cat-select" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Catégorie', 'الصنف') }}
               </label>
               <select
                 id="announce-cat-select"
                 [value]="newAnnounceCategory()"
                 (change)="onAnnounceCatChange($event)"
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none">
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none">
                 <option value="exam">Examen / Devoir de Synthèse - فرض تأليفي</option>
                 <option value="homework">Devoir à domicile - واجب منزلي</option>
                 <option value="supply">Fournitures & Matériel - أدوات ومستلزمات</option>
@@ -621,7 +614,7 @@ export interface GeneratedExerciseResult {
             </div>
 
             <div>
-              <label for="announce-content-textarea" class="block font-semibold text-slate-700 mb-1">
+              <label for="announce-content-textarea" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Contenu détaillé', 'تفاصيل الإعلان') }}
               </label>
               <textarea
@@ -630,11 +623,11 @@ export interface GeneratedExerciseResult {
                 (input)="onAnnounceContentInput($event)"
                 rows="4"
                 placeholder="Rédigez clairement votre information..."
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none"></textarea>
             </div>
 
             <div class="flex items-center gap-2 pt-2">
-              <button (click)="submitAnnouncement()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl cursor-pointer">
+              <button (click)="submitAnnouncement()" class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl cursor-pointer">
                 {{ lang.tr("Diffuser l'Annonce", 'نشر الإعلان الآن') }}
               </button>
             </div>
@@ -645,23 +638,23 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 3: CREATE COURSE WITH REAL UPLOAD & WATERMARK -->
     @if (modalType() === 'course') {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 space-y-4 border border-slate-200 shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-emerald-600">post_add</span>
-              <h3 class="font-bold text-slate-900 text-base">
+              <span class="material-icons text-[#2D6A4F]">post_add</span>
+              <h3 class="font-display font-semibold text-[#14251D] text-base">
                 {{ lang.tr('Publier un Cours ou Fiche de Révision', 'إضافة درس أو ملخص رسمي') }}
               </h3>
             </div>
-            <button (click)="closeModal()" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="closeModal()" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label class="block font-semibold text-slate-700 mb-1">
+              <label class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Titre du Cours', 'عنوان الدرس') }}
               </label>
               <input
@@ -669,16 +662,16 @@ export interface GeneratedExerciseResult {
                 [value]="newCourseTitle()"
                 (input)="newCourseTitle.set($any($event.target).value)"
                 placeholder="Ex: Les nombres décimaux et calcul mental"
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none" />
             </div>
 
             <div class="grid grid-cols-2 gap-3">
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Matière', 'المادة') }}</label>
+                <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Matière', 'المادة') }}</label>
                 <select
                   [value]="newCourseSubject()"
                   (change)="newCourseSubject.set($any($event.target).value)"
-                  class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none">
                   <option value="Mathématiques">Mathématiques</option>
                   <option value="Français">Français</option>
                   <option value="اللغة العربية">اللغة العربية</option>
@@ -689,11 +682,11 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Trimestre', 'الثلاثي') }}</label>
+                <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Trimestre', 'الثلاثي') }}</label>
                 <select
                   [value]="newCourseTrimester()"
                   (change)="newCourseTrimester.set($any($event.target).value)"
-                  class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none">
                   <option value="Trimestre 1">Trimestre 1</option>
                   <option value="Trimestre 2">Trimestre 2</option>
                   <option value="Trimestre 3">Trimestre 3</option>
@@ -702,19 +695,20 @@ export interface GeneratedExerciseResult {
             </div>
 
             <div>
-              <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Résumé pédagogique', 'ملخص تمهيدي') }}</label>
+              <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Résumé pédagogique', 'ملخص تمهيدي') }}</label>
               <input
                 type="text"
                 [value]="newCourseSummary()"
                 (input)="newCourseSummary.set($any($event.target).value)"
                 placeholder="Points essentiels à retenir..."
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none" />
             </div>
 
             <!-- REAL FILE UPLOAD BUTTON (DIRECT VPS DISK) -->
-            <div class="bg-emerald-50/60 p-3.5 rounded-2xl border border-emerald-200 space-y-2">
-              <label class="block font-bold text-emerald-900">
-                📁 {{ lang.tr('Attacher un document (PDF ou Image du devoir)', 'إرفاق وثيقة الدرس أو الفرض (PDF أو صورة)') }}
+            <div class="bg-[#1B4332]/6 p-3.5 rounded-2xl border border-[#E7DFCF] space-y-2">
+              <label class="block font-semibold text-[#1B4332] flex items-center gap-1.5">
+                <span class="material-icons text-base">attach_file</span>
+                {{ lang.tr('Attacher un document (PDF ou Image du devoir)', 'إرفاق وثيقة الدرس أو الفرض (PDF أو صورة)') }}
               </label>
               <div class="flex items-center gap-2">
                 <input
@@ -726,37 +720,37 @@ export interface GeneratedExerciseResult {
                 <button
                   type="button"
                   (click)="fileInput.click()"
-                  class="bg-white hover:bg-slate-100 text-slate-800 font-bold px-3 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer border border-emerald-300 shadow-2xs">
-                  <span class="material-icons text-sm text-emerald-700">cloud_upload</span>
+                  class="bg-white hover:bg-[#F2ECDE] text-[#14251D] font-semibold px-3 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer border border-[#E7DFCF] shadow-sm">
+                  <span class="material-icons text-sm text-[#2D6A4F]">cloud_upload</span>
                   {{ uploadedFileName() ? uploadedFileName() : lang.tr('Sélectionner le fichier...', 'اختيار الملف...') }}
                 </button>
                 @if (isUploading()) {
-                  <span class="text-xs text-emerald-700 animate-spin material-icons">sync</span>
-                  <span class="text-[11px] text-emerald-700">Envoi au serveur...</span>
+                  <span class="text-xs text-[#2D6A4F] animate-spin material-icons">sync</span>
+                  <span class="text-[11px] text-[#2D6A4F]">Envoi au serveur...</span>
                 } @else if (uploadedFileName()) {
-                  <span class="text-xs text-emerald-700 font-bold">✔️ Prêt</span>
+                  <span class="text-xs text-[#2D6A4F] font-semibold">✔️ Prêt</span>
                 }
               </div>
             </div>
 
             <div>
-              <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Contenu ou consignes du cours', 'محتوى الدرس أو التوجيهات') }}</label>
+              <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Contenu ou consignes du cours', 'محتوى الدرس أو التوجيهات') }}</label>
               <textarea
                 [value]="newCourseContent()"
                 (input)="newCourseContent.set($any($event.target).value)"
                 rows="4"
                 placeholder="Rédigez ou collez le contenu complet de la leçon..."
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none"></textarea>
             </div>
 
             <!-- Auto Watermark Notice -->
-            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-[11px] text-slate-600 flex items-center justify-between">
+            <div class="bg-[#FBF8F1] p-3 rounded-xl border border-[#E7DFCF] text-[11px] text-[#5B6B60] flex items-center justify-between">
               <span>Filigrane automatique : <strong>Madrasati TN — Document Certifié — Mme Amel Ben Ali</strong></span>
-              <span class="material-icons text-xs text-emerald-600">verified</span>
+              <span class="material-icons text-xs text-[#2D6A4F]">verified</span>
             </div>
 
             <div class="flex items-center gap-2 pt-2">
-              <button (click)="submitCourse()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl cursor-pointer shadow-xs">
+              <button (click)="submitCourse()" class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl cursor-pointer shadow-sm">
                 {{ lang.tr('Publier le Cours', 'نشر الدرس الآن') }}
               </button>
             </div>
@@ -767,35 +761,35 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 4: CREATE HOMEWORK -->
     @if (modalType() === 'homework') {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 space-y-4 border border-slate-200 shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-            <h3 class="font-bold text-slate-900 text-base">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+            <h3 class="font-display font-semibold text-[#14251D] text-base">
               {{ lang.tr('Assigner un Devoir à Domicile', 'تكليف بواجب منزلي جديد') }}
             </h3>
-            <button (click)="closeModal()" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="closeModal()" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Titre du Devoir', 'عنوان الواجب') }}</label>
+              <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Titre du Devoir', 'عنوان الواجب') }}</label>
               <input
                 type="text"
                 [value]="newHwTitle()"
                 (input)="newHwTitle.set($any($event.target).value)"
                 placeholder="Ex: Devoir maison N°2 : Géométrie et Calcul"
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none" />
             </div>
 
             <div class="grid grid-cols-2 gap-3">
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Matière', 'المادة') }}</label>
+                <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Matière', 'المادة') }}</label>
                 <select
                   [value]="newHwSubject()"
                   (change)="newHwSubject.set($any($event.target).value)"
-                  class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none">
                   <option value="Mathématiques">Mathématiques</option>
                   <option value="Français">Français</option>
                   <option value="اللغة العربية">اللغة العربية</option>
@@ -804,28 +798,28 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Date limite', 'آخر أجل للتسليم') }}</label>
+                <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Date limite', 'آخر أجل للتسليم') }}</label>
                 <input
                   type="text"
                   [value]="newHwDueDate()"
                   (input)="newHwDueDate.set($any($event.target).value)"
                   placeholder="Jeudi prochain à 18h00"
-                  class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none" />
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none" />
               </div>
             </div>
 
             <div>
-              <label class="block font-semibold text-slate-700 mb-1">{{ lang.tr('Consignes et Exercice à faire', 'التعليمات والتمرين المطلوب') }}</label>
+              <label class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Consignes et Exercice à faire', 'التعليمات والتمرين المطلوب') }}</label>
               <textarea
                 [value]="newHwInstructions()"
                 (input)="newHwInstructions.set($any($event.target).value)"
                 rows="4"
                 placeholder="Exercice 1 page 45 du livre officiel ou énoncé personnalisé..."
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none"></textarea>
             </div>
 
             <div class="flex items-center gap-2 pt-2">
-              <button (click)="submitHomework()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl cursor-pointer shadow-xs">
+              <button (click)="submitHomework()" class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl cursor-pointer shadow-sm">
                 {{ lang.tr('Assigner le devoir à la classe', 'تأكيد الواجب للقسم') }}
               </button>
             </div>
@@ -836,55 +830,48 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 5: COURSE DETAIL VIEW WITH PRINT & WHATSAPP -->
     @if (selectedCourseDetail(); as course) {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 space-y-4 border border-slate-200 shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-2xl w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div>
-              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+              <span class="bg-[#1B4332]/10 text-[#1B4332] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                 {{ course.subject }}
               </span>
-              <h3 class="font-bold text-slate-900 text-lg mt-1">{{ course.title }}</h3>
+              <h3 class="font-display font-semibold text-[#14251D] text-lg mt-1">{{ course.title }}</h3>
             </div>
-            <button (click)="selectedCourseDetail.set(null)" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="selectedCourseDetail.set(null)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
-          <div class="prose prose-slate max-w-none text-xs leading-relaxed whitespace-pre-line bg-slate-50 p-4 rounded-2xl border border-slate-200 font-sans">
+          <div class="prose prose-slate max-w-none text-xs leading-relaxed whitespace-pre-line bg-[#FBF8F1] p-4 rounded-2xl border border-[#E7DFCF] font-sans">
             {{ course.content }}
           </div>
 
           @if (course.pdfUrl) {
-            <div class="bg-emerald-50 p-3.5 rounded-2xl border border-emerald-200 flex items-center justify-between text-xs">
-              <div class="flex items-center gap-2 text-emerald-950 font-bold">
-                <span class="material-icons text-emerald-700">picture_as_pdf</span>
+            <div class="bg-[#1B4332]/8 p-3.5 rounded-2xl border border-[#E7DFCF] flex items-center justify-between text-xs">
+              <div class="flex items-center gap-2 text-[#1B4332] font-semibold">
+                <span class="material-icons text-[#2D6A4F]">picture_as_pdf</span>
                 <span>Document officiel / Fiche attachée</span>
               </div>
-              <a [href]="course.pdfUrl" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 shadow-2xs">
+              <a [href]="course.pdfUrl" target="_blank" class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 shadow-sm">
                 <span class="material-icons text-xs">download</span>
                 Télécharger
               </a>
             </div>
           }
 
-          <div class="flex items-center justify-between gap-2 pt-2 border-t border-slate-100">
+          <div class="flex items-center justify-between gap-2 pt-2 border-t border-[#E7DFCF]">
             <div class="flex items-center gap-2">
               <button
                 (click)="openPrintCourseModal(course)"
-                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow-xs">
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow-sm">
                 <span class="material-icons text-sm">print</span>
                 {{ lang.tr('🖨️ Imprimer avec Filigrane', '🖨️ طباعة بالفيليغران') }}
               </button>
-
-              <button
-                (click)="shareCourseOnWhatsApp(course)"
-                class="bg-emerald-100 hover:bg-emerald-200 text-emerald-900 font-bold px-3 py-2 rounded-xl text-xs flex items-center gap-1 cursor-pointer">
-                <span class="material-icons text-sm">share</span>
-                WhatsApp
-              </button>
             </div>
 
-            <button (click)="selectedCourseDetail.set(null)" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2 rounded-xl text-xs cursor-pointer">
+            <button (click)="selectedCourseDetail.set(null)" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-semibold px-4 py-2 rounded-xl text-xs cursor-pointer border border-[#E7DFCF]">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
           </div>
@@ -894,55 +881,55 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 6: 🖨️ DEDICATED A4 PRINT & WATERMARK MODAL (OFFICIAL TUNISIAN FORMAT) -->
     @if (printModalCourse(); as c) {
-      <div id="printable-modal" class="print-container fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 space-y-5 border border-slate-200 shadow-2xl max-h-[90vh] overflow-y-auto relative">
-          
-          <div class="no-print bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white p-4 rounded-2xl flex items-center justify-between shadow-sm">
+      <div id="printable-modal" class="print-container fixed inset-0 z-50 bg-[#14251D]/80 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-sm max-h-[90vh] overflow-y-auto relative">
+
+          <div class="no-print bg-[#14251D] text-[#FBF8F1] p-4 rounded-2xl flex items-center justify-between shadow-sm">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-amber-400">verified</span>
+              <span class="material-icons text-[#F2C14E]">verified</span>
               <div>
-                <h4 class="font-extrabold text-sm text-white">MADRASATI TN 🇹🇳 — APERÇU FILIGRANE & IMPRESSION</h4>
-                <p class="text-[11px] text-emerald-200">
+                <h4 class="font-display font-semibold text-sm text-[#FBF8F1]">MADRASATI TN 🇹🇳 — APERÇU FILIGRANE & IMPRESSION</h4>
+                <p class="text-[11px] text-[#B7C7BC]">
                   {{ c.watermarkText || 'Madrasati TN — Document Certifié — Mme Amel Ben Ali' }}
                 </p>
               </div>
             </div>
-            <button (click)="printModalCourse.set(null)" class="text-white/80 hover:text-white cursor-pointer">
+            <button (click)="printModalCourse.set(null)" class="text-[#FBF8F1]/80 hover:text-[#FBF8F1] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <!-- Official Document Frame (Target of @media print) -->
-          <div id="printable-document" class="print-document bg-slate-50 rounded-2xl p-6 border-2 border-slate-200 relative overflow-hidden space-y-4 shadow-inner">
+          <div id="printable-document" class="print-document bg-[#FBF8F1] rounded-2xl p-6 border-2 border-[#E7DFCF] relative overflow-hidden space-y-4">
             <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-10 select-none rotate-[-25deg]">
-              <span class="text-4xl font-black uppercase text-emerald-900 tracking-widest text-center">
+              <span class="text-4xl font-black uppercase text-[#1B4332] tracking-widest text-center">
                 MADRASATI TN <br /> COPIE CERTIFIÉE ENSEIGNANT
               </span>
             </div>
 
             <!-- Official Ministry Header -->
-            <div class="border-b-2 border-slate-900 pb-3 font-sans">
+            <div class="border-b-2 border-[#14251D] pb-3 font-sans">
               <div class="flex items-center justify-between text-xs">
-                <div class="text-left font-bold text-slate-900 leading-tight">
+                <div class="text-left font-bold text-[#14251D] leading-tight">
                   <p>الجمهورية التونسية</p>
                   <p>وزارة التربية والتعليم</p>
-                  <p class="text-[10px] text-slate-500 font-normal">المندوبية الجهوية للتربية بأريانة</p>
+                  <p class="text-[10px] text-[#5B6B60] font-normal">المندوبية الجهوية للتربية بأريانة</p>
                 </div>
                 <div class="text-center font-bold">
-                  <p class="text-base text-emerald-900 font-black">{{ c.title }}</p>
-                  <p class="text-xs text-slate-600">{{ c.grade }} • {{ c.subject }}</p>
+                  <p class="font-display text-base text-[#1B4332] font-semibold">{{ c.title }}</p>
+                  <p class="text-xs text-[#5B6B60]">{{ c.grade }} • {{ c.subject }}</p>
                 </div>
-                <div class="text-right text-xs text-slate-700 leading-tight">
+                <div class="text-right text-xs text-[#4A5A50] leading-tight">
                   <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
                   <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
                 </div>
               </div>
 
               <!-- Student Filling Box -->
-              <div class="mt-3 pt-2 border-t border-dashed border-slate-400 grid grid-cols-3 gap-2 text-xs font-semibold">
+              <div class="mt-3 pt-2 border-t border-dashed border-[#C8BEA8] grid grid-cols-3 gap-2 text-xs font-semibold">
                 <p>الاسم واللقب: ....................................</p>
                 <p>القسم: {{ c.grade }}</p>
-                <p class="text-right font-bold text-emerald-900">العدد: .......... / 20</p>
+                <p class="text-right font-bold text-[#1B4332]">العدد: .......... / 20</p>
               </div>
             </div>
 
@@ -952,20 +939,20 @@ export interface GeneratedExerciseResult {
             </div>
 
             <!-- Footer Attribution -->
-            <div class="border-t border-slate-300 pt-3 text-[10px] text-slate-500 font-sans flex items-center justify-between">
+            <div class="border-t border-[#E7DFCF] pt-3 text-[10px] text-[#5B6B60] font-sans flex items-center justify-between">
               <span>Attribution Enseignant : {{ c.watermarkText || 'Mme Amel Ben Ali' }}</span>
               <span>Plateforme Nationale Madrasati TN</span>
             </div>
           </div>
 
           <div class="no-print flex items-center justify-between gap-3 pt-2">
-            <button (click)="printModalCourse.set(null)" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl text-xs cursor-pointer">
+            <button (click)="printModalCourse.set(null)" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-semibold px-4 py-2.5 rounded-xl text-xs cursor-pointer border border-[#E7DFCF]">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
 
             <button
               (click)="triggerPrintDialog()"
-              class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-md">
+              class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-sm">
               <span class="material-icons text-base">print</span>
               {{ lang.t('printBtn') }}
             </button>
@@ -976,14 +963,14 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 7: TEACHER CREDENTIALS & PROFILE DRAWER -->
     @if (teacherProfileModal()) {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 space-y-5 border border-slate-200 shadow-2xl relative">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-            <span class="inline-flex items-center gap-1 text-emerald-800 font-black text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-lg w-full p-6 space-y-5 border border-[#E7DFCF] shadow-sm relative">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+            <span class="inline-flex items-center gap-1 text-[#1B4332] font-semibold text-xs uppercase tracking-wider bg-[#1B4332]/10 px-3 py-1 rounded-full">
               <span class="material-icons text-xs">verified</span>
               {{ lang.tr('Enseignante Agréée Ministère', 'معلمة معتمدة من وزارة التربية') }}
             </span>
-            <button (click)="teacherProfileModal.set(false)" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="teacherProfileModal.set(false)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
@@ -992,44 +979,46 @@ export interface GeneratedExerciseResult {
             <img
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80"
               alt="Mme Amel"
-              class="w-16 h-16 rounded-full object-cover border-2 border-emerald-500 shadow-sm" />
+              class="w-16 h-16 rounded-full object-cover border-2 border-[#2D6A4F] shadow-sm" />
             <div>
-              <h3 class="font-black text-slate-900 text-base">Mme Amel Ben Ali</h3>
-              <p class="text-xs text-slate-500 font-medium">Enseignante Principale (4ème & 5ème Année)</p>
-              <p class="text-[11px] text-emerald-700 font-bold mt-0.5">École Primaire Habib Bourguiba, Ariana</p>
+              <h3 class="font-display font-semibold text-[#14251D] text-base">Mme Amel Ben Ali</h3>
+              <p class="text-xs text-[#5B6B60] font-medium">Enseignante Principale (4ème & 5ème Année)</p>
+              <p class="text-[11px] text-[#1B4332] font-semibold mt-0.5">École Primaire Habib Bourguiba, Ariana</p>
             </div>
           </div>
 
-          <div class="grid grid-cols-4 gap-2 text-center p-3 bg-slate-50 rounded-2xl border border-slate-200/80">
+          <div class="grid grid-cols-4 gap-2 text-center p-3 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF]">
             <div>
-              <p class="font-black text-slate-900 text-sm">24</p>
-              <p class="text-[10px] text-slate-400">Cours</p>
+              <p class="font-display font-semibold text-[#14251D] text-sm">24</p>
+              <p class="text-[10px] text-[#6B7A70]">Cours</p>
             </div>
             <div>
-              <p class="font-black text-slate-900 text-sm">340</p>
-              <p class="text-[10px] text-slate-400">Exercices</p>
+              <p class="font-display font-semibold text-[#14251D] text-sm">340</p>
+              <p class="text-[10px] text-[#6B7A70]">Exercices</p>
             </div>
             <div>
-              <p class="font-black text-slate-900 text-sm">620</p>
-              <p class="text-[10px] text-slate-400">Élèves</p>
+              <p class="font-display font-semibold text-[#14251D] text-sm">620</p>
+              <p class="text-[10px] text-[#6B7A70]">Élèves</p>
             </div>
             <div>
-              <p class="font-black text-amber-500 text-sm">⭐ 4.9</p>
-              <p class="text-[10px] text-slate-400">128 avis</p>
+              <p class="font-display font-semibold text-[#8A5A00] text-sm flex items-center justify-center gap-1">
+                <span class="material-icons text-sm text-[#8A5A00]">star</span>4.9
+              </p>
+              <p class="text-[10px] text-[#6B7A70]">128 avis</p>
             </div>
           </div>
 
-          <div class="space-y-2 text-xs text-slate-700">
-            <h4 class="font-bold text-slate-900">Filigrane Automatique des Documents :</h4>
-            <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl font-mono text-[11px] text-emerald-950 flex items-center justify-between">
+          <div class="space-y-2 text-xs text-[#4A5A50]">
+            <h4 class="font-display font-semibold text-[#14251D]">Filigrane Automatique des Documents :</h4>
+            <div class="p-3 bg-[#1B4332]/8 border border-[#E7DFCF] rounded-xl font-mono text-[11px] text-[#1B4332] flex items-center justify-between">
               <span>Madrasati TN — Document Certifié — Mme Amel Ben Ali</span>
-              <span class="material-icons text-emerald-700 text-sm">lock</span>
+              <span class="material-icons text-[#2D6A4F] text-sm">lock</span>
             </div>
           </div>
 
           <button
             (click)="teacherProfileModal.set(false)"
-            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-xs cursor-pointer shadow-xs">
+            class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs cursor-pointer shadow-sm">
             {{ lang.tr('Fermer', 'إغلاق') }}
           </button>
         </div>
@@ -1038,20 +1027,20 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 8: GRADING SUBMISSION MODAL -->
     @if (gradingSubmission(); as sub) {
-      <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-md w-full p-6 space-y-4 border border-slate-200 shadow-xl">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-            <h3 class="font-bold text-slate-900 text-base">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-md w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+            <h3 class="font-display font-semibold text-[#14251D] text-base">
               {{ lang.tr('Corriger le devoir de', 'إصلاح واجب التلميذ') }} {{ sub.studentName }}
             </h3>
-            <button (click)="gradingSubmission.set(null)" class="text-slate-400 hover:text-slate-600 cursor-pointer">
+            <button (click)="gradingSubmission.set(null)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label for="grade-score-input" class="block font-semibold text-slate-700 mb-1">
+              <label for="grade-score-input" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Note attribuée (sur 20)', 'العدد المسند (من 20)') }}
               </label>
               <input
@@ -1061,11 +1050,11 @@ export interface GeneratedExerciseResult {
                 (input)="onGradeScoreInput($event)"
                 min="0"
                 max="20"
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none font-bold text-emerald-800" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none font-semibold text-[#1B4332]" />
             </div>
 
             <div>
-              <label for="grade-feedback-textarea" class="block font-semibold text-slate-700 mb-1">
+              <label for="grade-feedback-textarea" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr("Remarque & Conseils pour l'élève", 'ملاحظات وتوجيهات للتلميذ') }}
               </label>
               <textarea
@@ -1074,10 +1063,10 @@ export interface GeneratedExerciseResult {
                 (input)="onGradeFeedbackInput($event)"
                 rows="3"
                 placeholder="Ex: Bravo pour la démarche ! Fais attention aux unités à la fin..."
-                class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 outline-none"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 outline-none"></textarea>
             </div>
 
-            <button (click)="submitGrading()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl cursor-pointer">
+            <button (click)="submitGrading()" class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl cursor-pointer shadow-sm">
               {{ lang.tr('Valider la correction', 'تأكيد وحفظ الإصلاح') }}
             </button>
           </div>
@@ -1151,13 +1140,13 @@ export class TeacherHomeComponent {
       case 'exam':
         return 'bg-rose-100 text-rose-800 border border-rose-200';
       case 'homework':
-        return 'bg-amber-100 text-amber-800 border border-amber-200';
+        return 'bg-[#8A5A00]/10 text-[#8A5A00] border border-[#E7DFCF]';
       case 'supply':
-        return 'bg-indigo-100 text-indigo-800 border border-indigo-200';
+        return 'bg-[#1B4332]/10 text-[#1B4332] border border-[#E7DFCF]';
       case 'urgent':
         return 'bg-red-500 text-white font-black';
       default:
-        return 'bg-slate-100 text-slate-800 border border-slate-200';
+        return 'bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF]';
     }
   }
 
@@ -1273,20 +1262,6 @@ export class TeacherHomeComponent {
   triggerPrintDialog() {
     if (typeof window !== 'undefined') {
       window.print();
-    }
-  }
-
-  shareAnnouncementOnWhatsApp(a: Announcement) {
-    if (typeof window !== 'undefined') {
-      const msg = `📢 *Madrasati TN - Annonce Officielle*\n🏫 Classe: ${this.store.activeClass().name}\n👩‍🏫 Enseignante: ${a.teacherName}\n\n*${a.title}*\n${a.content}\n\nAccédez à votre espace: ${window.location.origin}`;
-      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
-    }
-  }
-
-  shareCourseOnWhatsApp(c: Course) {
-    if (typeof window !== 'undefined') {
-      const msg = `📘 *Madrasati TN - Fiche Pédagogique*\n📌 ${c.title} (${c.grade} - ${c.subject})\n✍️ Enseignant: ${c.teacherName}\n\nConsultez le document ici: ${window.location.origin}`;
-      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
     }
   }
 

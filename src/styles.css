@@ -1,13 +1,92 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "./styles/tokens.css";
 @import "tailwindcss";
+
+@theme {
+  --color-ink: #14251D;
+  --color-pine: #1B4332;
+  --color-pine-btn: #2D6A4F;
+  --color-paper: #FBF8F1;
+  --color-paper-2: #F2ECDE;
+  --color-rule: #E7DFCF;
+
+  --color-gold: #8A5A00;
+  --color-gold-hi: #F2C14E;
+  --color-terracotta: #BF5B34;
+  --color-seal: #C1121F;
+
+  --color-muted-paper: #5B6B60;
+  --color-faint-paper: #6B7A70;
+  --color-muted-dark: #B7C7BC;
+  --color-faint-dark: #9DBBA8;
+
+  --font-display: 'Fraunces', 'Noto Kufi Arabic', Georgia, serif;
+  --font-sans: 'Public Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+}
 
 @layer base {
   body {
-    font-family: 'Plus Jakarta Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-sans);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
   }
 }
 
-/* Custom scrollbar for clean UI */
+/* Fraunces for Latin display, Noto Kufi for Arabic display — schoolbook/ministry authority */
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* Ministry "cartouche" ledger — faint ruled lines like an official exam sheet */
+.cartouche-rules {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 37px,
+    rgba(27, 67, 50, 0.06) 37px,
+    rgba(27, 67, 50, 0.06) 38px
+  );
+}
+
+/* Tunisian flag seal: red disc, white ring, crescent + star */
+.tn-seal {
+  position: relative;
+  background: #c1121f;
+  border-radius: 9999px;
+  box-shadow: 0 0 0 2px #fbf8f1, 0 0 0 3px rgba(193, 18, 31, 0.35);
+}
+.tn-seal::before {
+  content: '';
+  position: absolute;
+  inset: 22%;
+  border-radius: 9999px;
+  background: #fff;
+}
+.tn-seal::after {
+  content: '';
+  position: absolute;
+  inset: 26%;
+  border-radius: 9999px;
+  background: #c1121f;
+  box-shadow: 0.14em -0.02em 0 -0.01em #fff; /* offset disc → white crescent */
+}
+
+/* Diagonal watermark stamp on the faux A4 preview */
+.sheet-watermark {
+  transform: rotate(-45deg);
+  color: rgba(27, 67, 50, 0.08);
+  letter-spacing: 0.15em;
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-in {
+    animation: none !important;
+  }
+}
+
+/* Custom scrollbar for clean institutional UI */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -16,11 +95,11 @@
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: var(--color-rule);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: var(--color-muted-paper);
 }
 
 /* Glass & Card styles */

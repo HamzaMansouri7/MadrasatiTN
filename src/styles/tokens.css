@@ -1,0 +1,30 @@
+/**
+ * Madrasati TN — Design Tokens ("Cartouche officielle")
+ * Single source of truth for all color, surface, border, and typography tokens.
+ */
+
+:root {
+  /* Surface & Backgrounds */
+  --color-ink: #14251D;
+  --color-pine: #1B4332;
+  --color-pine-btn: #2D6A4F;
+  --color-paper: #FBF8F1;
+  --color-paper-2: #F2ECDE;
+  --color-rule: #E7DFCF;
+
+  /* Role & Identity Accents */
+  --color-gold: #8A5A00;
+  --color-gold-hi: #F2C14E;
+  --color-terracotta: #BF5B34;
+  --color-seal: #C1121F;
+
+  /* Typography Colors */
+  --color-muted-paper: #5B6B60;
+  --color-faint-paper: #6B7A70;
+  --color-muted-dark: #B7C7BC;
+  --color-faint-dark: #9DBBA8;
+
+  /* Font Families */
+  --font-display: 'Fraunces', 'Noto Kufi Arabic', Georgia, serif;
+  --font-sans: 'Public Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+}

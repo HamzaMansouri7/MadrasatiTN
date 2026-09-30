@@ -44,3 +44,7 @@ Env: server AI endpoints require `GEMINI_API_KEY`; if unset, `ai` is null and `/
 
 - `ChangeDetectionStrategy.OnPush` on every component; modern control flow only (`@if`/`@for`/`@switch`).
 - Print/A4/watermark logic lives in [styles.css](src/styles.css) `@media print` — see GEMINI.md §5 before touching print layout.
+
+## UI / Design (mandatory)
+
+Any UI work must follow [DESIGN.md](DESIGN.md) — the "Cartouche officielle" design system. Workflow: **(1)** invoke the `frontend-design` and `ui-ux-pro-max` skills first, **(2)** then apply DESIGN.md's exact tokens (tokens win over skill defaults), **(3)** match the landing page ([landing-home.ts](src/app/features/landing/landing-home.ts)) pixel-for-pixel — same hex, radius, spacing, `font-display` headings. No indigo/purple, no gradient heroes, no emoji-as-icon, no WhatsApp share copy.
