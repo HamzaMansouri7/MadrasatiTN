@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal, effect } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread } from '@core';
 
 export interface GeneratedExerciseResult {
@@ -27,7 +27,7 @@ export interface GeneratedExerciseResult {
               </span>
 
               <button
-                (click)="teacherProfileModal.set(true)"
+                (click)="openProfileModal()"
                 class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white border border-white/15 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer">
                 <span class="material-icons text-sm text-[#E0AA32]">badge</span>
                 <span>{{ lang.tr('Mon Profil Public (4.9/5)', 'ملفي المهني (4.9/5)') }}</span>
@@ -254,14 +254,12 @@ export interface GeneratedExerciseResult {
                           <span class="material-icons text-xs">print</span>
                           {{ lang.t('printA4Btn') }}
                         </button>
-                        <a
-                          [href]="getWhatsAppShareUrl(c)"
-                          target="_blank"
-                          rel="noopener"
-                          class="bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 transition-colors">
-                          <span class="material-icons text-xs">share</span>
-                          WhatsApp
-                        </a>
+                        <button
+                          (click)="copyDocLink(c)"
+                          class="bg-[#F7F9FB] dark:bg-[#0E1D2A] hover:bg-[#E3ECF2] text-[#486581] dark:text-[#8CA9C4] font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E3ECF2] dark:border-[#1A3145] transition-colors cursor-pointer">
+                          <span class="material-icons text-xs">link</span>
+                          {{ lang.tr('Copier le lien', 'نسخ الرابط') }}
+                        </button>
                       </div>
 
                       <button
@@ -1144,30 +1142,32 @@ export interface GeneratedExerciseResult {
                 </span>
               </div>
 
-              <!-- Official Ministry Header -->
-              <div class="border-b-2 border-[#102A43] pb-3">
-                <div class="flex items-center justify-between text-xs">
-                  <div class="text-left font-bold text-[#102A43] leading-tight">
-                    <p>الجمهورية التونسية</p>
-                    <p>وزارة التربية والتعليم</p>
+              <!-- Dynamic Ministry Cartouche — only for text docs; scans carry their own header -->
+              @if (!c.imageUrls || !c.imageUrls.length) {
+                <div class="border-b-2 border-[#102A43] pb-3">
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="text-left font-bold text-[#102A43] leading-tight">
+                      <p>الجمهورية التونسية</p>
+                      <p>وزارة التربية والتعليم</p>
+                    </div>
+                    <div class="text-center font-bold">
+                      <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
+                      <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
+                    </div>
+                    <div class="text-right text-xs text-[#334E68] leading-tight">
+                      <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
+                      <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
+                    </div>
                   </div>
-                  <div class="text-center font-bold">
-                    <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
-                    <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
-                  </div>
-                  <div class="text-right text-xs text-[#334E68] leading-tight">
-                    <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
-                    <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
-                  </div>
-                </div>
 
-                <!-- Student Filling Box -->
-                <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
-                  <p>الاسم واللقب: ....................................</p>
-                  <p>القسم: {{ c.grade }}</p>
-                  <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+                  <!-- Student Filling Box -->
+                  <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
+                    <p>الاسم واللقب: ....................................</p>
+                    <p>القسم: {{ c.grade }}</p>
+                    <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+                  </div>
                 </div>
-              </div>
+              }
 
               <!-- Scanned document pages (community library) -->
               @if (c.imageUrls && c.imageUrls.length) {
@@ -1258,61 +1258,304 @@ export interface GeneratedExerciseResult {
       </div>
     }
 
-    <!-- MODAL 8: TEACHER CREDENTIALS & PROFILE DRAWER -->
+    <!-- MODAL 8: TEACHER CREDENTIALS & PROFILE / SETTINGS DRAWER -->
     @if (teacherProfileModal()) {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-md w-full p-6 space-y-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl relative">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
-            <span class="inline-flex items-center gap-1 text-[#23845B] font-semibold text-xs uppercase tracking-wider bg-[#23845B]/10 px-3 py-1 rounded-full">
-              <span class="material-icons text-xs">verified</span>
-              {{ lang.tr('Enseignante Agréée Ministère', 'معلمة معتمدة من وزارة التربية') }}
-            </span>
-            <button (click)="teacherProfileModal.set(false)" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
-              <span class="material-icons">close</span>
+      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-2xl relative my-8">
+          
+          <!-- Header -->
+          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-[#007CC2]/10 text-[#007CC2] flex items-center justify-center">
+                <span class="material-icons">manage_accounts</span>
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-[#102A43] dark:text-white text-lg">
+                  {{ lang.tr('Profil & Paramètres Enseignant', 'الملف الشخصي وإعدادات المعلم') }}
+                </h3>
+                <p class="text-xs text-[#627D98] dark:text-[#8CA9C4]">
+                  {{ lang.tr('Identité, Filigrane A4, CNP & Préférences', 'الهوية، العلامة المائية A4، الاعتماد والإعدادات') }}
+                </p>
+              </div>
+            </div>
+
+            <button (click)="closeProfileModal()" class="w-8 h-8 rounded-full bg-[#F7F9FB] dark:bg-[#152737] text-[#627D98] hover:text-[#102A43] dark:hover:text-white flex items-center justify-center cursor-pointer transition-colors">
+              <span class="material-icons text-lg">close</span>
             </button>
           </div>
 
-          <div class="flex items-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-[#007CC2] text-white flex items-center justify-center text-xl font-bold">
-              م
+          <!-- Notification Toast -->
+          @if (profileSuccessMsg()) {
+            <div class="p-3 bg-[#23845B]/10 border border-[#23845B]/30 rounded-xl text-xs text-[#23845B] dark:text-[#38D996] font-semibold flex items-center gap-2">
+              <span class="material-icons text-base">check_circle</span>
+              <span>{{ profileSuccessMsg() }}</span>
             </div>
-            <div>
-              <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">{{ lang.tr('Enseignant Certifié', 'معلم معتمد') }}</h3>
-              <p class="text-xs text-[#627D98] dark:text-[#8CA9C4] font-medium">{{ lang.tr('Enseignante Principale', 'أستاذ تعليم ابتدائي أول') }}</p>
-              <p class="text-[11px] text-[#007CC2] font-semibold mt-0.5">École Primaire Habib Bourguiba, Ariana</p>
-            </div>
+          }
+
+          <!-- Tabs Navigation -->
+          <div class="flex border-b border-[#E3ECF2] dark:border-[#1A3145] gap-1 overflow-x-auto pb-1">
+            <button
+              (click)="profileTab.set('profile')"
+              [class]="profileTab() === 'profile' 
+                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
+                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
+              <span class="material-icons text-sm">person</span>
+              <span>{{ lang.tr('Profil & Établissement', 'الهوية والمؤسسة') }}</span>
+            </button>
+
+            <button
+              (click)="profileTab.set('watermark')"
+              [class]="profileTab() === 'watermark' 
+                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
+                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
+              <span class="material-icons text-sm">verified</span>
+              <span>{{ lang.tr('Filigrane & CNP', 'العلامة المائية والاعتماد') }}</span>
+            </button>
+
+            <button
+              (click)="profileTab.set('classes')"
+              [class]="profileTab() === 'classes' 
+                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
+                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
+              <span class="material-icons text-sm">school</span>
+              <span>{{ lang.tr('Niveaux Enseignés', 'السنوات والمواد') }}</span>
+            </button>
+
+            <button
+              (click)="profileTab.set('settings')"
+              [class]="profileTab() === 'settings' 
+                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
+                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
+              <span class="material-icons text-sm">settings</span>
+              <span>{{ lang.tr('Paramètres', 'الإعدادات') }}</span>
+            </button>
           </div>
 
-          <div class="grid grid-cols-3 gap-2 text-center p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145]">
-            <div>
-              <p class="font-display font-semibold text-[#102A43] dark:text-white text-sm">{{ store.courses().length }}</p>
-              <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Fiches A4</p>
+          <!-- TAB 1: PROFIL & IDENTITE -->
+          @if (profileTab() === 'profile') {
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-2xl border border-[#E3ECF2] dark:border-[#1A3145]">
+                <div class="w-14 h-14 rounded-full bg-[#007CC2] text-white flex items-center justify-center text-xl font-bold shrink-0 shadow-md">
+                  {{ editDisplayName().substring(0, 1) || 'م' }}
+                </div>
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2">
+                    <span class="font-bold text-[#102A43] dark:text-white text-sm">{{ editDisplayName() }}</span>
+                    <span class="text-[10px] bg-[#23845B]/10 text-[#23845B] font-semibold px-2 py-0.5 rounded-full">
+                      ✓ {{ lang.tr('Compte Vérifié', 'حساب معتمد') }}
+                    </span>
+                  </div>
+                  <p class="text-xs text-[#627D98] dark:text-[#8CA9C4]">{{ editTitle() }}</p>
+                  <p class="text-[11px] text-[#007CC2] font-semibold">{{ editSchool() }}</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div class="space-y-1">
+                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Nom et Prénom', 'الاسم واللقب') }}</label>
+                  <input
+                    type="text"
+                    [value]="editDisplayName()"
+                    (input)="editDisplayName.set($any($event.target).value)"
+                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Titre Professionnel', 'الرتبة والصفة') }}</label>
+                  <input
+                    type="text"
+                    [value]="editTitle()"
+                    (input)="editTitle.set($any($event.target).value)"
+                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Établissement Scolaire', 'المدرسة الإبتدائية') }}</label>
+                  <input
+                    type="text"
+                    [value]="editSchool()"
+                    (input)="editSchool.set($any($event.target).value)"
+                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Délégation & Gouvernorat', 'المندوبية والولاية') }}</label>
+                  <input
+                    type="text"
+                    [value]="editDelegation()"
+                    (input)="editDelegation.set($any($event.target).value)"
+                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="font-display font-semibold text-[#102A43] dark:text-white text-sm">{{ store.blogPosts().length }}</p>
-              <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Articles</p>
+          }
+
+          <!-- TAB 2: FILIGRANE & CNP -->
+          @if (profileTab() === 'watermark') {
+            <div class="space-y-4 text-xs">
+              <div class="p-3.5 bg-[#23845B]/10 border border-[#23845B]/20 rounded-2xl flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <span class="material-icons text-[#23845B] text-xl">verified_user</span>
+                  <div>
+                    <h4 class="font-bold text-[#102A43] dark:text-white">{{ lang.tr('Agrément Ministère de l\'Éducation', 'اعتماد وزارة التربية') }}</h4>
+                    <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Matricule CNP vérifié et conforme au programme officiel.', 'معرف معتمد ومطابق للبرامج الرسمية.') }}</p>
+                  </div>
+                </div>
+                <span class="bg-[#23845B] text-white font-mono text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">VALIDE</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="space-y-1">
+                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Matricule Enseignant CNP', 'معرف المعلم بالمركز الوطني') }}</label>
+                  <input
+                    type="text"
+                    [value]="editCnpId()"
+                    (input)="editCnpId.set($any($event.target).value)"
+                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white font-mono focus:outline-none focus:border-[#007CC2]" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Texte du Filigrane A4', 'نص العلامة المائية للطباعة') }}</label>
+                  <input
+                    type="text"
+                    [value]="editCustomWatermark()"
+                    (input)="editCustomWatermark.set($any($event.target).value)"
+                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                </div>
+              </div>
+
+              <!-- Live Watermark Preview -->
+              <div class="space-y-1.5">
+                <span class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Aperçu du Filigrane sur Feuille A4 :', 'معاينة العلامة المائية على ورقة الاختبار :') }}</span>
+                <div class="relative p-6 bg-white dark:bg-[#102334] rounded-xl border border-dashed border-[#007CC2]/40 text-center overflow-hidden">
+                  <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-15 rotate-[-25deg] select-none">
+                    <span class="font-mono text-2xl font-black tracking-widest text-[#007CC2]">
+                      {{ editCustomWatermark() || 'Madrasati TN — Document Certifié' }}
+                    </span>
+                  </div>
+                  <div class="relative z-10 space-y-1">
+                    <p class="text-[11px] font-bold text-[#102A43] dark:text-white uppercase tracking-wider">الجمهورية التونسية — وزارة التربية</p>
+                    <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Évaluation Imprimable A4 (Attribution : {{ editDisplayName() }})</p>
+                    <div class="mt-2 inline-flex items-center gap-1 text-[10px] text-[#23845B] bg-[#23845B]/10 px-2 py-0.5 rounded-full font-semibold">
+                      <span class="material-icons text-[12px]">lock</span>
+                      {{ editCnpId() }}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="font-display font-semibold text-[#D19A24] text-sm flex items-center justify-center gap-1">
-                <span class="material-icons text-sm text-[#E0AA32]">star</span>4.9
-              </p>
-              <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">128 avis</p>
+          }
+
+          <!-- TAB 3: CLASSES & ENSEIGNEMENT -->
+          @if (profileTab() === 'classes') {
+            <div class="space-y-4 text-xs">
+              <div class="space-y-2">
+                <label class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Niveaux et Années d\'Enseignement Active :', 'السنوات الدراسية المباشرة :') }}</label>
+                <div class="flex flex-wrap gap-2">
+                  @for (g of ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']; track g) {
+                    <button
+                      type="button"
+                      (click)="toggleTaughtGrade(g)"
+                      [class]="editTaughtGrades().includes(g)
+                        ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
+                        : 'bg-[#F7F9FB] dark:bg-[#152737] text-[#627D98] dark:text-[#8CA9C4] border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                      class="px-3.5 py-1.5 rounded-xl border text-xs cursor-pointer transition-colors flex items-center gap-1">
+                      @if (editTaughtGrades().includes(g)) {
+                        <span class="material-icons text-xs">check</span>
+                      }
+                      <span>{{ g }}</span>
+                    </button>
+                  }
+                </div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-2 text-center p-4 bg-[#F7F9FB] dark:bg-[#152737] rounded-2xl border border-[#E3ECF2] dark:border-[#1A3145]">
+                <div>
+                  <p class="font-display font-bold text-[#102A43] dark:text-white text-base">{{ store.courses().length }}</p>
+                  <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Fiches A4 Publiées</p>
+                </div>
+                <div>
+                  <p class="font-display font-bold text-[#102A43] dark:text-white text-base">{{ store.blogPosts().length }}</p>
+                  <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Articles de Conseils</p>
+                </div>
+                <div>
+                  <p class="font-display font-bold text-[#D19A24] text-base flex items-center justify-center gap-1">
+                    <span class="material-icons text-sm text-[#E0AA32]">star</span>4.9
+                  </p>
+                  <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">128 Évaluations Parents</p>
+                </div>
+              </div>
             </div>
+          }
+
+          <!-- TAB 4: PARAMETRES -->
+          @if (profileTab() === 'settings') {
+            <div class="space-y-4 text-xs">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <!-- Language Selector -->
+                <div class="p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-xl border border-[#E3ECF2] dark:border-[#1A3145] space-y-2">
+                  <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Langue d'affichage", "لغة الواجهة") }}</span>
+                  <div class="flex gap-2">
+                    <button
+                      type="button"
+                      (click)="lang.setLanguage('fr')"
+                      [class]="lang.lang() === 'fr' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors">
+                      Français
+                    </button>
+                    <button
+                      type="button"
+                      (click)="lang.setLanguage('ar')"
+                      [class]="lang.lang() === 'ar' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors">
+                      العربية
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Dark / Light Theme Toggle -->
+                <div class="p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-xl border border-[#E3ECF2] dark:border-[#1A3145] space-y-2">
+                  <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr('Mode d\'Affichage', 'مظهر الواجهة') }}</span>
+                  <div class="flex gap-2">
+                    <button
+                      type="button"
+                      (click)="store.setMode('light')"
+                      [class]="store.activeMode() === 'light' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors flex items-center justify-center gap-1">
+                      <span class="material-icons text-sm">light_mode</span> Clair
+                    </button>
+                    <button
+                      type="button"
+                      (click)="store.setMode('dark')"
+                      [class]="store.activeMode() === 'dark' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors flex items-center justify-center gap-1">
+                      <span class="material-icons text-sm">dark_mode</span> Sombre
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          }
+
+          <!-- Actions Footer -->
+          <div class="flex items-center gap-3 pt-3 border-t border-[#E3ECF2] dark:border-[#1A3145]">
+            <button
+              (click)="saveTeacherProfileSettings()"
+              class="flex-1 bg-[#007CC2] hover:bg-[#006EAD] text-white font-bold py-2.5 rounded-xl text-xs cursor-pointer shadow-md transition-all flex items-center justify-center gap-1.5">
+              <span class="material-icons text-base">save</span>
+              <span>{{ lang.tr('Enregistrer les modifications', 'حفظ التعديلات') }}</span>
+            </button>
+            <button
+              (click)="closeProfileModal()"
+              class="px-4 bg-[#F7F9FB] dark:bg-[#152737] hover:bg-[#E3ECF2] text-[#627D98] dark:text-[#8CA9C4] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
+              {{ lang.tr('Fermer', 'إغلاق') }}
+            </button>
           </div>
 
-          <div class="space-y-2 text-xs text-[#334E68] dark:text-[#D7E7F2]">
-            <h4 class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Filigrane Officiel :', 'العلامة المائية المعتمدة :') }}</h4>
-            <div class="p-3 bg-[#007CC2]/10 border border-[#007CC2]/20 rounded-[10px] font-mono text-[11px] text-[#007CC2] flex items-center justify-between">
-              <span>Madrasati TN — Document Certifié</span>
-              <span class="material-icons text-sm">lock</span>
-            </div>
-          </div>
-
-          <button
-            (click)="teacherProfileModal.set(false)"
-            class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold py-2.5 rounded-[10px] text-xs cursor-pointer shadow-sm">
-            {{ lang.tr('Fermer', 'إغلاق') }}
-          </button>
         </div>
       </div>
     }
@@ -1338,6 +1581,69 @@ export class TeacherHomeComponent {
   readonly printModalCourse = signal<Course | null>(null);
   readonly teacherProfileModal = signal<boolean>(false);
   readonly replyingThread = signal<QuestionThread | null>(null);
+
+  // Teacher Profile & Settings State
+  readonly profileTab = signal<'profile' | 'watermark' | 'classes' | 'settings'>('profile');
+  readonly profileSuccessMsg = signal<string | null>(null);
+
+  readonly editDisplayName = signal<string>('Enseignant Certifié');
+  readonly editTitle = signal<string>('أستاذ تعليم ابتدائي أول');
+  readonly editSchool = signal<string>('École Primaire Habib Bourguiba, Ariana');
+  readonly editDelegation = signal<string>('Ariana Ville');
+  readonly editCnpId = signal<string>('CNP-TN-2024-8841');
+  readonly editCustomWatermark = signal<string>('Madrasati TN — Document Certifié');
+  readonly editTaughtGrades = signal<string[]>(['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']);
+
+  constructor() {
+    effect(() => {
+      if (this.store.isTeacherProfileModalOpen()) {
+        this.openProfileModal();
+      }
+    });
+  }
+
+  openProfileModal() {
+    const p = this.firebase.userProfile();
+    this.editDisplayName.set(p?.displayName || 'Enseignant Certifié');
+    this.editTitle.set(p?.title || 'أستاذ تعليم ابتدائي أول');
+    this.editSchool.set(p?.school || 'École Primaire Habib Bourguiba, Ariana');
+    this.editDelegation.set(p?.delegation || 'Ariana Ville');
+    this.editCnpId.set(p?.cnpId || 'CNP-TN-2024-8841');
+    this.editCustomWatermark.set(p?.customWatermark || 'Madrasati TN — Document Certifié');
+    if (p?.taughtGrades) this.editTaughtGrades.set(p.taughtGrades);
+    this.profileSuccessMsg.set(null);
+    this.teacherProfileModal.set(true);
+  }
+
+  closeProfileModal() {
+    this.teacherProfileModal.set(false);
+    this.store.closeTeacherProfileModal();
+  }
+
+  toggleTaughtGrade(grade: string) {
+    const current = this.editTaughtGrades();
+    if (current.includes(grade)) {
+      if (current.length > 1) {
+        this.editTaughtGrades.set(current.filter((g) => g !== grade));
+      }
+    } else {
+      this.editTaughtGrades.set([...current, grade]);
+    }
+  }
+
+  async saveTeacherProfileSettings() {
+    await this.firebase.updateUserProfile({
+      displayName: this.editDisplayName(),
+      title: this.editTitle(),
+      school: this.editSchool(),
+      delegation: this.editDelegation(),
+      cnpId: this.editCnpId(),
+      customWatermark: this.editCustomWatermark(),
+      taughtGrades: this.editTaughtGrades(),
+    });
+    this.profileSuccessMsg.set(this.lang.tr('Modifications enregistrées avec succès !', 'تم حفظ التعديلات بنجاح!'));
+    setTimeout(() => this.profileSuccessMsg.set(null), 3000);
+  }
 
   // Announcement Form
   readonly newAnnounceTitle = signal('📌 Rappel : Devoir de Mathématiques');
@@ -1419,9 +1725,10 @@ export class TeacherHomeComponent {
     }
   }
 
-  getWhatsAppShareUrl(c: Course): string {
-    const text = encodeURIComponent(`📘 Madrasati TN - ${c.title} (${c.subject} - ${c.grade || 'Primaire'})\nDocument conforme téléchargeable et imprimable sur la plateforme.`);
-    return `https://api.whatsapp.com/send?text=${text}`;
+  copyDocLink(c: Course) {
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(`${window.location.origin}?doc=${c.id}`);
+    }
   }
 
   onAiSubjectChange(e: Event) {

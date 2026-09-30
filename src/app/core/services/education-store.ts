@@ -84,6 +84,17 @@ export class EducationStore {
     this.isAuthModalOpen.set(false);
   }
 
+  // Teacher Profile & Settings Modal State
+  readonly isTeacherProfileModalOpen = signal<boolean>(false);
+
+  openTeacherProfileModal() {
+    this.isTeacherProfileModalOpen.set(true);
+  }
+
+  closeTeacherProfileModal() {
+    this.isTeacherProfileModalOpen.set(false);
+  }
+
   // Currently selected class in Teacher/Class views
   readonly activeClassId = signal<string>('c-4a');
 

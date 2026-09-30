@@ -327,14 +327,12 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                           <span class="material-icons text-xs">print</span>
                           {{ lang.t('printA4Btn') }}
                         </button>
-                        <a
-                          [href]="getWhatsAppShareUrl(c)"
-                          target="_blank"
-                          rel="noopener"
-                          class="bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 transition-colors">
-                          <span class="material-icons text-xs">share</span>
-                          WA
-                        </a>
+                        <button
+                          (click)="copyDocLink(c)"
+                          class="bg-[#F7F9FB] dark:bg-[#0E1D2A] hover:bg-[#E3ECF2] text-[#486581] dark:text-[#8CA9C4] font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E3ECF2] dark:border-[#1A3145] transition-colors cursor-pointer">
+                          <span class="material-icons text-xs">link</span>
+                          {{ lang.tr('Copier le lien', 'نسخ الرابط') }}
+                        </button>
                       </div>
 
                       <button
@@ -796,30 +794,32 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                 </span>
               </div>
 
-              <!-- Official Ministry Header -->
-              <div class="border-b-2 border-[#102A43] pb-3">
-                <div class="flex items-center justify-between text-xs">
-                  <div class="text-left font-bold text-[#102A43] leading-tight">
-                    <p>الجمهورية التونسية</p>
-                    <p>وزارة التربية والتعليم</p>
+              <!-- Dynamic Ministry Cartouche — only for text docs; scans carry their own header -->
+              @if (!c.imageUrls || !c.imageUrls.length) {
+                <div class="border-b-2 border-[#102A43] pb-3">
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="text-left font-bold text-[#102A43] leading-tight">
+                      <p>الجمهورية التونسية</p>
+                      <p>وزارة التربية والتعليم</p>
+                    </div>
+                    <div class="text-center font-bold">
+                      <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
+                      <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
+                    </div>
+                    <div class="text-right text-xs text-[#334E68] leading-tight">
+                      <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
+                      <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
+                    </div>
                   </div>
-                  <div class="text-center font-bold">
-                    <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
-                    <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
-                  </div>
-                  <div class="text-right text-xs text-[#334E68] leading-tight">
-                    <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
-                    <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
-                  </div>
-                </div>
 
-                <!-- Student Filling Box -->
-                <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
-                  <p>الاسم واللقب: ....................................</p>
-                  <p>القسم: {{ c.grade }}</p>
-                  <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+                  <!-- Student Filling Box -->
+                  <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
+                    <p>الاسم واللقب: ....................................</p>
+                    <p>القسم: {{ c.grade }}</p>
+                    <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+                  </div>
                 </div>
-              </div>
+              }
 
               <!-- Scanned document pages (community library) -->
               @if (c.imageUrls && c.imageUrls.length) {
@@ -1091,9 +1091,10 @@ export class ParentHomeComponent {
     }
   }
 
-  getWhatsAppShareUrl(c: Course): string {
-    const text = encodeURIComponent(`📘 Madrasati TN - ${c.title} (${c.subject} - ${c.grade || 'Primaire'})\nDocument disponible et imprimable sur la plateforme.`);
-    return `https://api.whatsapp.com/send?text=${text}`;
+  copyDocLink(c: Course) {
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(`${window.location.origin}?doc=${c.id}`);
+    }
   }
 
   confirmRead(id: string) {

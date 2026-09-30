@@ -39,6 +39,14 @@ export interface UserProfile {
   school?: string;
   phone?: string;
   grade?: string;
+  primarySubject?: string;
+  title?: string;
+  delegation?: string;
+  cnpId?: string;
+  customWatermark?: string;
+  whatsappNumber?: string;
+  taughtGrades?: string[];
+  preferredLang?: 'fr' | 'ar';
 }
 
 @Injectable({
@@ -299,6 +307,7 @@ export class FirebaseService {
     school?: string;
     phone?: string;
     grade?: string;
+    primarySubject?: string;
   }): Promise<UserProfile> {
     const avatar = data.role === 'teacher'
       ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
@@ -327,6 +336,7 @@ export class FirebaseService {
             school: data.school || 'École Primaire Tunisienne',
             phone: data.phone || null,
             grade: data.grade || null,
+            primarySubject: data.primarySubject || null,
             photoURL: avatar,
             createdAt: new Date().toISOString(),
           }, { merge: true });
@@ -343,6 +353,7 @@ export class FirebaseService {
           school: data.school || 'École Primaire Tunisienne',
           phone: data.phone,
           grade: data.grade,
+          primarySubject: data.primarySubject,
         };
 
         this.userProfile.set(profile);
@@ -362,6 +373,7 @@ export class FirebaseService {
       school: data.school || 'École Primaire Tunisienne',
       phone: data.phone,
       grade: data.grade,
+      primarySubject: data.primarySubject,
     };
 
     this.userProfile.set(profile);
@@ -410,6 +422,32 @@ export class FirebaseService {
         localStorage.removeItem('madrasati_user');
       }
     }
+  }
+
+  async updateUserProfile(updates: Partial<UserProfile>): Promise<UserProfile> {
+    const current = this.userProfile();
+    const updated: UserProfile = current
+      ? { ...current, ...updates }
+      : {
+          uid: 'user_' + Date.now(),
+          displayName: updates.displayName || 'Enseignant Certifié',
+          email: updates.email || 'enseignant@madrasati.tn',
+          photoURL: updates.photoURL || null,
+          role: 'teacher',
+          ...updates,
+        };
+
+    this.userProfile.set(updated);
+    this.saveSession(updated);
+
+    if (updated.uid && !updated.uid.startsWith('user_') && !updated.uid.startsWith('google_user_') && !updated.uid.startsWith('email_user_')) {
+      try {
+        await updateDoc(doc(this.db, 'users', updated.uid), updates as any);
+      } catch (err) {
+        console.warn('Firestore profile update offline/fallback:', err);
+      }
+    }
+    return updated;
   }
 
   async markNotificationAsRead(id: string): Promise<void> {

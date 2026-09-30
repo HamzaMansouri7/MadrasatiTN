@@ -131,36 +131,73 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   </div>
 
                   @if (store.authModalRole() === 'teacher') {
-                    <div class="grid grid-cols-2 gap-2">
-                      <div>
-                        <label class="block text-xs font-medium text-[#486581] mb-1">École primaire *</label>
-                        <input
-                          type="text"
-                          [(ngModel)]="signupSchool"
-                          placeholder="Ex: École Habib Bourguiba"
-                          class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                    <div class="space-y-2">
+                      <div class="grid grid-cols-2 gap-2">
+                        <div>
+                          <label class="block text-xs font-medium text-[#486581] mb-1">École primaire *</label>
+                          <input
+                            type="text"
+                            [(ngModel)]="signupSchool"
+                            placeholder="Ex: École Habib Bourguiba"
+                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                        </div>
+                        <div>
+                          <label class="block text-xs font-medium text-[#486581] mb-1">Gouvernorat *</label>
+                          <input
+                            type="text"
+                            [(ngModel)]="signupGov"
+                            placeholder="Ex: Ariana, Tunis, Sfax"
+                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                        </div>
                       </div>
+
                       <div>
-                        <label class="block text-xs font-medium text-[#486581] mb-1">Gouvernorat *</label>
-                        <input
-                          type="text"
-                          [(ngModel)]="signupGov"
-                          placeholder="Ex: Ariana, Tunis, Sfax"
-                          class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                        <label class="block text-xs font-medium text-[#486581] mb-1">
+                          {{ lang.tr('Matière principale d\'enseignement *', 'المادة الرئيسية للتدريس *') }}
+                        </label>
+                        <select
+                          [(ngModel)]="signupSubject"
+                          class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
+                          <option value="Mathématiques">Mathématiques (الرياضيات)</option>
+                          <option value="Langue Arabe">Langue Arabe (اللغة العربية)</option>
+                          <option value="Français">Français (اللغة الفرنسية)</option>
+                          <option value="Éveil Scientifique">Éveil Scientifique (الأيقاظ العلمي)</option>
+                          <option value="Éducation Islamique">Éducation Islamique (التربية الإسلامية)</option>
+                          <option value="Sciences de la Vie">Sciences de la Vie (علوم الحياة والأرض)</option>
+                        </select>
                       </div>
                     </div>
                   }
 
                   @if (store.authModalRole() === 'parent') {
-                    <div>
-                      <label class="block text-xs font-medium text-[#486581] mb-1">
-                        {{ lang.tr('Numéro de contact / WhatsApp', 'رقم الهاتف / الواتساب') }} *
-                      </label>
-                      <input
-                        type="tel"
-                        [(ngModel)]="signupPhone"
-                        placeholder="+216 98 123 456"
-                        class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                    <div class="space-y-2">
+                      <div class="grid grid-cols-2 gap-2">
+                        <div>
+                          <label class="block text-xs font-medium text-[#486581] mb-1">
+                            {{ lang.tr('Numéro de téléphone *', 'رقم الهاتف *') }}
+                          </label>
+                          <input
+                            type="tel"
+                            [(ngModel)]="signupPhone"
+                            placeholder="+216 98 123 456"
+                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
+                        </div>
+                        <div>
+                          <label class="block text-xs font-medium text-[#486581] mb-1">
+                            {{ lang.tr("Niveau de l'enfant *", "مستوى الطفل *") }}
+                          </label>
+                          <select
+                            [(ngModel)]="signupGrade"
+                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
+                            <option value="1ère Année">1ère Année (السنة الأولى)</option>
+                            <option value="2ème Année">2ème Année (السنة الثانية)</option>
+                            <option value="3ème Année">3ème Année (السنة الثالثة)</option>
+                            <option value="4ème Année">4ème Année (السنة الرابعة)</option>
+                            <option value="5ème Année">5ème Année (السنة الخامسة)</option>
+                            <option value="6ème Année">6ème Année (السنة السادسة)</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                   }
 
@@ -313,6 +350,7 @@ export class AuthModalComponent {
   signupGov = '';
   signupPhone = '';
   signupGrade = '4ème Année';
+  signupSubject = 'Mathématiques';
 
   // Login fields
   loginEmail = '';
@@ -358,6 +396,7 @@ export class AuthModalComponent {
         school: this.signupSchool,
         phone: this.signupPhone,
         grade: this.signupGrade,
+        primarySubject: role === 'teacher' ? this.signupSubject : undefined,
       });
       this.store.switchRole(profile.role);
       this.store.closeAuthModal();

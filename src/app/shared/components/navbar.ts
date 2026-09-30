@@ -278,7 +278,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
                     <button
                       type="button"
-                      (click)="profileMenuOpen.set(false); store.openLoginModal()"
+                      (click)="handleProfileClick()"
                       class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
                       <span class="material-icons text-base text-[#007CC2]">settings</span>
                       <span>{{ lang.tr('Paramètres', 'الإعدادات') }}</span>
@@ -398,9 +398,10 @@ export class NavbarComponent {
       this.store.openLoginModal();
       return;
     }
-    const role = this.firebase.userProfile()?.role;
-    if (role) {
-      this.store.switchRole(role);
+    const role = this.firebase.userProfile()?.role || 'teacher';
+    this.store.switchRole(role);
+    if (role === 'teacher') {
+      this.store.openTeacherProfileModal();
     }
   }
 
