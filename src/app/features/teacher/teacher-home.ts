@@ -1051,18 +1051,23 @@ export interface GeneratedExerciseResult {
       </div>
     }
 
-    <!-- MODAL 6: A4 PRINT MODAL -->
+    <!-- MODAL 6: A4 PRINT & PDF BOOK MODAL -->
     @if (printModalCourse(); as c) {
       <div class="fixed inset-0 z-50 bg-[#0B2947]/80 backdrop-blur-xs flex items-center justify-center p-4">
         <div class="bg-white rounded-[24px] max-w-3xl w-full p-6 space-y-4 shadow-2xl max-h-[92vh] overflow-y-auto text-[#102A43]">
+          
           <div class="no-print flex items-center justify-between border-b border-[#E3ECF2] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-[#007CC2]">print</span>
+              <span class="material-icons text-[#007CC2] text-xl">
+                {{ c.pdfUrl ? 'menu_book' : 'print' }}
+              </span>
               <div>
                 <h3 class="font-display font-semibold text-base">
-                  {{ lang.tr('Aperçu A4 Officiel (Ministère de l’Éducation)', 'معاينة وثيقة A4 الرسمية (وزارة التربية)') }}
+                  {{ c.pdfUrl ? lang.tr('Manuel Scolaire Officiel (CNP)', 'الكتاب المدرسي الرسمي (المركز الوطني البيداغوجي)') : lang.tr('Aperçu A4 Officiel (Ministère de l’Éducation)', 'معاينة وثيقة A4 الرسمية (وزارة التربية)') }}
                 </h3>
-                <p class="text-xs text-[#627D98]">{{ lang.tr('Prêt pour impression papier ou export PDF haute fidélité.', 'جاهز للطباعة الورقية أو الحفظ بصيغة PDF.') }}</p>
+                <p class="text-xs text-[#627D98]">
+                  {{ c.pdfUrl ? lang.tr('Livre complet disponible en téléchargement direct haute qualité ou impression.', 'الكتاب المدرسي متوفر كاملاً للتحميل المباشر والطباعة عالية الدقة.') : lang.tr('Prêt pour impression papier ou export PDF haute fidélité.', 'جاهز للطباعة الورقية أو الحفظ بصيغة PDF.') }}
+                </p>
               </div>
             </div>
             <button (click)="printModalCourse.set(null)" class="text-[#627D98] hover:text-[#102A43] cursor-pointer">
@@ -1070,50 +1075,112 @@ export interface GeneratedExerciseResult {
             </button>
           </div>
 
-          <!-- Official Document Frame (Print Target) -->
-          <div id="printable-document" class="print-document bg-white rounded-xl p-8 border-2 border-[#102A43] relative overflow-hidden space-y-4">
-            <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none rotate-[-25deg]">
-              <span class="text-5xl font-black uppercase text-[#007CC2] tracking-widest text-center">
-                MADRASATI TN <br /> COPIE CERTIFIÉE ENSEIGNANT
-              </span>
-            </div>
+          <!-- If Full PDF Book available (e.g. Official CNP Textbooks) -->
+          @if (c.pdfUrl) {
+            <div class="bg-[#F7F9FB] rounded-2xl p-6 border border-[#E3ECF2] space-y-4 text-center">
+              <div class="w-14 h-14 rounded-2xl bg-[#007CC2]/10 text-[#007CC2] flex items-center justify-center mx-auto shadow-inner">
+                <span class="material-icons text-3xl">picture_as_pdf</span>
+              </div>
 
-            <!-- Official Ministry Header -->
-            <div class="border-b-2 border-[#102A43] pb-3">
-              <div class="flex items-center justify-between text-xs">
-                <div class="text-left font-bold text-[#102A43] leading-tight">
-                  <p>الجمهورية التونسية</p>
-                  <p>وزارة التربية والتعليم</p>
+              <div>
+                <span class="inline-flex items-center gap-1 text-[11px] font-bold px-3 py-1 rounded-full bg-[#E0AA32]/15 text-[#9E6A00] mb-2">
+                  <span class="material-icons text-xs">verified</span>
+                  {{ lang.tr('Édition Officielle du Centre National Pédagogique (CNP)', 'النسخة الرسمية المعتمدة من المركز الوطني البيداغوجي') }}
+                </span>
+                <h2 class="font-display font-bold text-lg sm:text-xl text-[#102A43]">
+                  {{ c.title }}
+                </h2>
+                <p class="text-xs text-[#486581] max-w-lg mx-auto mt-1 leading-relaxed">
+                  {{ c.summary }}
+                </p>
+              </div>
+
+              <!-- Action Download / Reader Buttons -->
+              <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+                <a
+                  [href]="c.pdfUrl"
+                  target="_blank"
+                  rel="noopener"
+                  download
+                  class="bg-[#23845B] hover:bg-[#1C6949] text-white font-bold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 shadow-md cursor-pointer transition-all hover:scale-102">
+                  <span class="material-icons text-xl">download</span>
+                  <span>{{ lang.tr('Télécharger le Manuel Complet (PDF)', 'تحميل الكتاب المدرسي كاملاً بصيغة PDF') }}</span>
+                </a>
+
+                <a
+                  [href]="c.pdfUrl"
+                  target="_blank"
+                  rel="noopener"
+                  class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-5 py-3.5 rounded-xl text-xs flex items-center gap-2 shadow-xs cursor-pointer transition-colors">
+                  <span class="material-icons text-base">open_in_new</span>
+                  <span>{{ lang.tr('Lire / Feuilleter en ligne', 'قراءة وتصفح الكتاب مباشرة') }}</span>
+                </a>
+              </div>
+
+              <!-- Quick Info Pill Strip -->
+              <div class="grid grid-cols-3 gap-2 pt-3 border-t border-[#E3ECF2] max-w-md mx-auto text-xs text-[#486581]">
+                <div class="p-2 rounded-lg bg-white border border-[#E3ECF2]">
+                  <p class="text-[10px] text-[#829AB1]">{{ lang.tr('Niveau', 'المستوى') }}</p>
+                  <p class="font-bold text-[#102A43]">{{ c.grade }}</p>
                 </div>
-                <div class="text-center font-bold">
-                  <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
-                  <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
+                <div class="p-2 rounded-lg bg-white border border-[#E3ECF2]">
+                  <p class="text-[10px] text-[#829AB1]">{{ lang.tr('Matière', 'المادة') }}</p>
+                  <p class="font-bold text-[#102A43]">{{ c.subject }}</p>
                 </div>
-                <div class="text-right text-xs text-[#334E68] leading-tight">
-                  <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
-                  <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
+                <div class="p-2 rounded-lg bg-white border border-[#E3ECF2]">
+                  <p class="text-[10px] text-[#829AB1]">{{ lang.tr('Année', 'السنة') }}</p>
+                  <p class="font-bold text-[#102A43]">{{ c.schoolYear || '2025-2026' }}</p>
+                </div>
+              </div>
+            </div>
+          }
+
+          <!-- Official Document Frame (Print Target) for custom sheets or print preview -->
+          @if (!c.pdfUrl || c.content.length > 50) {
+            <div id="printable-document" class="print-document bg-white rounded-xl p-8 border-2 border-[#102A43] relative overflow-hidden space-y-4">
+              <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none rotate-[-25deg]">
+                <span class="text-5xl font-black uppercase text-[#007CC2] tracking-widest text-center">
+                  MADRASATI TN <br /> COPIE CERTIFIÉE ENSEIGNANT
+                </span>
+              </div>
+
+              <!-- Official Ministry Header -->
+              <div class="border-b-2 border-[#102A43] pb-3">
+                <div class="flex items-center justify-between text-xs">
+                  <div class="text-left font-bold text-[#102A43] leading-tight">
+                    <p>الجمهورية التونسية</p>
+                    <p>وزارة التربية والتعليم</p>
+                  </div>
+                  <div class="text-center font-bold">
+                    <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
+                    <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
+                  </div>
+                  <div class="text-right text-xs text-[#334E68] leading-tight">
+                    <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
+                    <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
+                  </div>
+                </div>
+
+                <!-- Student Filling Box -->
+                <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
+                  <p>الاسم واللقب: ....................................</p>
+                  <p>القسم: {{ c.grade }}</p>
+                  <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
                 </div>
               </div>
 
-              <!-- Student Filling Box -->
-              <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
-                <p>الاسم واللقب: ....................................</p>
-                <p>القسم: {{ c.grade }}</p>
-                <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+              <!-- Course Content -->
+              <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
+                {{ c.content }}
+              </div>
+
+              <!-- Footer Attribution -->
+              <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
+                <span>Attribution Enseignant : {{ c.watermarkText || 'Enseignant Certifié' }}</span>
+                <span>Plateforme Nationale Madrasati TN</span>
               </div>
             </div>
-
-            <!-- Course Content -->
-            <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
-              {{ c.content }}
-            </div>
-
-            <!-- Footer Attribution -->
-            <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
-              <span>Attribution Enseignant : {{ c.watermarkText || 'Enseignant Certifié' }}</span>
-              <span>Plateforme Nationale Madrasati TN</span>
-            </div>
-          </div>
+          }
 
           <div class="no-print flex items-center justify-between gap-3 pt-2">
             <button (click)="printModalCourse.set(null)" class="bg-[#F7F9FB] hover:bg-[#E3ECF2] text-[#334E68] font-semibold px-4 py-2.5 rounded-[10px] text-xs cursor-pointer border border-[#E3ECF2]">
