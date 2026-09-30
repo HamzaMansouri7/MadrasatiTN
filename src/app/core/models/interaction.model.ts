@@ -27,6 +27,9 @@ export interface InteractionPayload {
   text?: string;
   reason?: string;
   parentCommentId?: string;
+  // accept-specific (replaces text/reason abuse)
+  threadId?: string;
+  answerAuthorId?: string;
 }
 
 export interface Interaction {

@@ -188,11 +188,18 @@ export class InteractionService {
   }
 
   acceptAnswer(threadId: string, answerId: string, targetAuthorId: string) {
+    // Bug 3 fix: idempotency — if this answerId was already accepted, do not append again
+    const alreadyAccepted = this.interactions().some(
+      (act) => act.type === 'accept' && act.targetId === answerId
+    );
+    if (alreadyAccepted) return;
+
+    // Bug 4 fix: use typed payload fields, not text/reason abuse
     return this.recordInteraction({
       type: 'accept',
       targetType: 'answer',
       targetId: answerId,
-      payload: { text: threadId, reason: targetAuthorId },
+      payload: { threadId, answerAuthorId: targetAuthorId },
     });
   }
 
@@ -235,19 +242,38 @@ export class InteractionService {
       let accepts = 0;
       let votes = 0;
       let publications = 0;
+      let followersCount = 0;
 
       for (const act of allActs) {
+        // Actor-side contributions
         if (act.actorId === userId) {
           if (act.type === 'comment' || act.type === 'answer') score += 5;
           if (act.type === 'rating') score += 2;
+          // Bug 2 fix: count publications authored by this user
+          if (act.type === 'favorite' && act.payload?.text === 'publish') {
+            publications += 1;
+            score += 5;
+          }
         }
-        if (act.type === 'accept' && act.payload?.reason === userId) {
+
+        // Bug 4 fix: acceptAnswer now stores answerAuthorId (not reason)
+        if (act.type === 'accept' && act.payload?.answerAuthorId === userId) {
           score += 15;
           accepts += 1;
         }
+
+        // Votes received on answers by this user
         if (act.type === 'vote' && act.targetId === userId) {
           score += 2;
           votes += 1;
+        }
+
+        // Bug 1 fix: followers = follow events targeting this userId
+        if (act.type === 'follow' && act.targetId === userId && act.payload?.text === 'follow') {
+          followersCount += 1;
+        }
+        if (act.type === 'follow' && act.targetId === userId && act.payload?.text === 'unfollow') {
+          followersCount = Math.max(0, followersCount - 1);
         }
       }
 
@@ -256,8 +282,9 @@ export class InteractionService {
       else if (score >= 100) level = 'مساهم نشيط';
 
       const badges: string[] = ['Pédagogue Verified'];
-      if (accepts >= 5) badges.push('Répondeur d\'Élite');
+      if (accepts >= 5) badges.push("Répondeur d'Élite");
       if (score >= 150) badges.push('Top Contributeur');
+      if (followersCount >= 10) badges.push('Enseignant Influent');
 
       const ledger: UserReputationLedger = {
         userId,
@@ -266,7 +293,7 @@ export class InteractionService {
         acceptedAnswersCount: accepts,
         usefulVotesCount: votes,
         publicationsCount: publications,
-        followersCount: this.followingSet().size,
+        followersCount,
         badges,
       };
 

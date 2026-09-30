@@ -26,6 +26,8 @@ import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-
   providedIn: 'root',
 })
 export class EducationStore {
+  private readonly interactionService = inject(InteractionService);
+
   // Current active role ('home' by default shows the landing page)
   readonly currentRole = signal<UserRole>('home');
 
@@ -1296,5 +1298,34 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
     this.questionThreads.update((list) =>
       list.map((t) => (t.id === threadId ? { ...t, answers: [...t.answers, newAns] } : t))
     );
+  }
+
+  markAnswerAsSolved(threadId: string, answerId: string) {
+    // Store-level idempotency: no-op if already solved with the same answerId
+    const existing = this.questionThreads().find((t) => t.id === threadId);
+    if (existing?.isSolved && existing.solvedAnswerId === answerId) return;
+
+    let targetTeacherId = 't-1';
+    this.questionThreads.update((threads) =>
+      threads.map((t) => {
+        if (t.id !== threadId) return t;
+        const updatedAnswers = t.answers.map((ans) => {
+          if (ans.id === answerId) {
+            targetTeacherId = ans.teacherId || 't-1';
+            return { ...ans, isAcceptedAnswer: true };
+          }
+          return { ...ans, isAcceptedAnswer: false };
+        });
+        return {
+          ...t,
+          isSolved: true,
+          solvedAnswerId: answerId,
+          answers: updatedAnswers,
+        };
+      })
+    );
+
+    // InteractionService.acceptAnswer is also idempotent (deduplicates by answerId)
+    this.interactionService.acceptAnswer(threadId, answerId, targetTeacherId);
   }
 }

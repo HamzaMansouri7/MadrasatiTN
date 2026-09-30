@@ -673,7 +673,79 @@ Réponds STRICTEMENT au format JSON valide suivant :
   }
 });
 
+// 5. Variant Exercise Generator (Idea 11 — Variante IA)
+app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
+  try {
+    const { grade, subject, topic, format, originalPromptText, role } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+      return;
+    }
+
+    const safeOriginal = (originalPromptText || '').slice(0, 1500);
+    const safeTopic = (topic || '').slice(0, 200);
+    const validFormats = ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'];
+    const targetFormat = validFormats.includes(format) ? format : 'free';
+    const isParent = role === 'parent';
+
+    const prompt = `Tu es un expert pédagogique tunisien. Génère une VARIANTE de l'exercice suivant pour le niveau ${grade || '4ème Année'} (${subject || 'Mathématiques'}).
+
+Exercice original :
+"${safeOriginal || safeTopic}"
+
+Règles STRICTES pour la variante :
+- MÊME format : ${targetFormat}
+- MÊME niveau de difficulté et MÊME compétence ciblée
+- Change uniquement : les chiffres, les noms propres, les quantités, la mise en situation
+- NE change PAS la structure ni le type de raisonnement requis
+${isParent ? '- Variante immédiate non publiée : "aiVerified": false' : '- Pour validation enseignant avant publication : "aiVerified": false'}
+
+Réponds STRICTEMENT au format JSON valide :
+{
+  "title": "Titre court de la variante",
+  "promptText": "Texte complet de la consigne variante",
+  "solutionText": "Correction détaillée de la variante",
+  "hints": ["Indice 1"],
+  "points": 5,
+  "format": "${targetFormat}",
+  "qcmOptions": [],
+  "qcmCorrectIndex": 0,
+  "tfStatements": [],
+  "gapText": "",
+  "matchingPairs": [],
+  "aiGenerated": true,
+  "aiVerified": false
+}
+
+Instructions par format :
+- free : promptText complet. Champs spécifiques omis.
+- qcm : qcmOptions (3-4 choix), qcmCorrectIndex, promptText.
+- true_false : tfStatements (3-5 affirmations {text, answer}).
+- fill_blanks : gapText avec [[mot]] pour les mots cachés.
+- matching : matchingPairs (3-5 couples {left, right}).`;
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+    });
+
+    const text = response.text || '';
+    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const data = JSON.parse(cleanedText);
+
+    res.json({ success: true, variant: data });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la génération de la variante';
+    console.error('Error in /api/ai/variant:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
 const angularApp = new AngularNodeAppEngine();
+
 
 /**
  * Serve static files from /browser

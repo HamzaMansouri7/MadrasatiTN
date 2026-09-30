@@ -78,7 +78,7 @@ Tout passe par `/api/ai/*` (originGuard + rate-limit + daily-cap + [plus tard] a
 | generate-exercise (+format) | Studio, A7 pack | existant, étendu |
 | variant | Idea 11 | même topic/format, chiffres changés |
 | explain-concept | A1 tuteur | + injection du contenu de la page (grounding) |
-| photo-correct | A2 | Gemini Vision vs corrigé |
+| photo-correct / photo-solve | A2 | Gemini Vision : parent photographie un exercice → résolution pas-à-pas + détection niveau/matière/topic → renvoie exercices similaires (via index ⑤). **Demande réelle confirmée** (posts FB parents type "نجحني سنة خامسة تونس" : photo d'énoncé + "شكون ينجم يعاوني"). |
 | summarize / translate / adapt-level | A3 A4 A5 | 3 petits endpoints texte |
 | quality-check | A6 | étend auto-tag-document |
 | illustrate | A8 | scène → flash-image; schéma → **SVG texte** |
