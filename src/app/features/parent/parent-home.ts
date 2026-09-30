@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService } from '@core';
+import { EducationStore, LanguageService, FirebaseService } from '@core';
 
 @Component({
   selector: 'app-parent-home',
@@ -9,38 +9,42 @@ import { EducationStore, LanguageService } from '@core';
     <div class="space-y-6">
       
       <!-- Parent Header Banner -->
-      <div class="bg-[#14251D] text-[#FBF8F1] rounded-[28px] p-6 sm:p-8 relative overflow-hidden">
+      <div class="bg-[#0B2947] text-white rounded-[24px] p-6 sm:p-8 relative overflow-hidden shadow-sm">
         <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div class="space-y-2">
-            <div class="inline-flex items-center gap-2 bg-[#8A5A00]/20 text-[#F2C14E] border border-[#8A5A00]/40 text-xs px-3 py-1 rounded-full font-semibold">
+            <div class="inline-flex items-center gap-2 bg-[#E0AA32]/20 text-[#E0AA32] border border-[#E0AA32]/40 text-xs px-3 py-1 rounded-full font-semibold">
               <span class="material-icons text-sm">verified_user</span> {{ lang.t('parentTitle') }}
             </div>
 
+            <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
+              {{ parentGreeting() }}
+            </h1>
+
             <div class="flex items-center gap-3 pt-1">
-              <img [src]="store.activeStudent().avatarUrl" alt="Student" class="w-14 h-14 rounded-full border-2 border-[#8A5A00] object-cover shadow-sm" />
+              <img [src]="store.activeStudent().avatarUrl" alt="Student" class="w-11 h-11 rounded-full border-2 border-[#E0AA32] object-cover shadow-sm" />
               <div>
-                <h1 class="font-display text-2xl font-semibold tracking-tight flex items-center gap-2">
-                  {{ store.activeStudent().name }}
-                  <span class="text-xs bg-[#8A5A00]/30 text-[#F2C14E] border border-[#8A5A00]/40 px-2.5 py-0.5 rounded-full font-semibold">
+                <p class="font-semibold text-sm flex items-center gap-2 text-white">
+                  <span>{{ store.activeStudent().name }}</span>
+                  <span class="text-[11px] bg-[#E0AA32]/20 text-[#E0AA32] border border-[#E0AA32]/40 px-2 py-0.5 rounded-full font-semibold">
                     {{ store.activeStudent().grade }}
                   </span>
-                </h1>
-                <p class="text-xs text-[#B7C7BC]">{{ store.activeStudent().school }}</p>
+                </p>
+                <p class="text-xs text-[#8CA9C4]">{{ store.activeStudent().school }}</p>
               </div>
             </div>
           </div>
 
           <!-- Sibling Switcher -->
-          <div class="bg-white/10 p-3 rounded-2xl border border-white/20 space-y-1.5 shrink-0">
-            <p class="text-[11px] text-[#9DBBA8] font-semibold">
+          <div class="bg-white/10 p-3 rounded-[14px] border border-white/15 space-y-1.5 shrink-0">
+            <p class="text-[11px] text-[#8CA9C4] font-semibold">
               {{ lang.t('switchChild') }}
             </p>
             <div class="flex items-center gap-2">
               @for (st of store.students(); track st.id) {
                 <button
                   (click)="store.setActiveStudent(st.id)"
-                  [class]="store.activeStudentId() === st.id ? 'bg-[#FBF8F1] text-[#14251D] font-semibold shadow-sm' : 'bg-white/10 text-[#FBF8F1] hover:bg-white/20 font-medium'"
-                  class="px-3.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-2">
+                  [class]="store.activeStudentId() === st.id ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'bg-white/10 text-white hover:bg-white/20 font-medium'"
+                  class="px-3.5 py-1.5 rounded-[10px] text-xs transition-colors cursor-pointer flex items-center gap-2">
                   <span class="material-icons text-sm">face</span>
                   {{ st.name }}
                 </button>
@@ -62,9 +66,9 @@ import { EducationStore, LanguageService } from '@core';
               <div class="flex items-center gap-2">
                 <span class="material-icons text-[#C1121F]">campaign</span>
                 <div>
-                  <h3 class="font-display font-semibold text-[#14251D] text-base">{{ lang.t('announcementsTitle') }}</h3>
-                  <p class="text-xs text-[#5B6B60]">
-                    {{ lang.t('announcementsSub') }} {{ store.activeStudent().name }}
+                  <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">{{ lang.t('announcementsTitle') }}</h3>
+                  <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                    {{ lang.t('announcementsSub') }} — {{ store.activeStudent().name }} ({{ store.activeStudent().grade }})
                   </p>
                 </div>
               </div>
@@ -307,12 +311,23 @@ import { EducationStore, LanguageService } from '@core';
 export class ParentHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
 
   readonly confirmedIds = signal<Set<string>>(new Set());
   readonly activeContactTeacher = signal<any | null>(null);
   readonly messageSubject = signal('Question sur un devoir');
   readonly messageBody = signal('');
   readonly messageSentSuccess = signal<boolean>(false);
+
+  parentGreeting(): string {
+    const user = this.firebase.userProfile();
+    if (user && user.displayName) {
+      return this.lang.isArabic()
+        ? `مرحباً، ${user.displayName}`
+        : `Bienvenue, ${user.displayName}`;
+    }
+    return this.lang.t('parentTitle');
+  }
 
   confirmRead(id: string) {
     this.store.confirmAnnouncementRead(id);

@@ -1,35 +1,124 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Noto+Kufi+Arabic:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');
 @import "./styles/tokens.css";
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #14251D;
-  --color-pine: #1B4332;
-  --color-pine-btn: #2D6A4F;
-  --color-paper: #FBF8F1;
-  --color-paper-2: #F2ECDE;
-  --color-rule: #E7DFCF;
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-active: var(--color-primary-active);
+  --color-primary-soft: var(--color-primary-soft);
+  --color-primary-lighter: var(--color-primary-lighter);
 
-  --color-gold: #8A5A00;
-  --color-gold-hi: #F2C14E;
-  --color-terracotta: #BF5B34;
-  --color-seal: #C1121F;
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
 
-  --color-muted-paper: #5B6B60;
-  --color-faint-paper: #6B7A70;
-  --color-muted-dark: #B7C7BC;
-  --color-faint-dark: #9DBBA8;
+  --color-gold: var(--color-gold);
+  --color-gold-hover: var(--color-gold-hover);
+  --color-gold-dark: var(--color-gold-dark);
+  --color-gold-soft: var(--color-gold-soft);
 
-  --font-display: 'Fraunces', 'Noto Kufi Arabic', Georgia, serif;
-  --font-sans: 'Public Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+  --color-success: var(--color-success);
+  --color-success-soft: var(--color-success-soft);
+  --color-warning: var(--color-warning);
+  --color-warning-soft: var(--color-warning-soft);
+  --color-danger: var(--color-danger);
+  --color-danger-soft: var(--color-danger-soft);
+  --color-exam: var(--color-exam);
+  --color-exam-soft: var(--color-exam-soft);
+
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-surface-soft: var(--color-surface-soft);
+  --color-surface-warm: var(--color-surface-warm);
+
+  --color-text-main: var(--color-text);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-disabled: var(--color-text-disabled);
+
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+
+  /* Legacy bridges */
+  --color-ink: var(--color-ink);
+  --color-pine: var(--color-pine);
+  --color-pine-btn: var(--color-pine-btn);
+  --color-paper: var(--color-paper);
+  --color-paper-2: var(--color-paper-2);
+  --color-rule: var(--color-rule);
+  --color-muted-paper: var(--color-muted-paper);
+  --color-faint-paper: var(--color-faint-paper);
+  --color-seal: var(--color-seal);
+
+  --font-display: 'Lora', 'Fraunces', 'Noto Kufi Arabic', Georgia, serif;
+  --font-sans: 'Inter', 'Source Sans 3', 'Public Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
 }
 
 @layer base {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     font-family: var(--font-sans);
-    background-color: var(--color-paper);
-    color: var(--color-ink);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
+}
+
+/* Universal Theme Token Bridge for Hex Utilities */
+.bg-\[\#FBF8F1\] { background-color: var(--color-background) !important; }
+.bg-\[\#F2ECDE\] { background-color: var(--color-surface-soft) !important; }
+.text-\[\#14251D\] { color: var(--color-text) !important; }
+.bg-\[\#14251D\] { background-color: var(--color-navy-950) !important; }
+.bg-\[\#1B4332\] { background-color: var(--color-navy-950) !important; }
+.text-\[\#1B4332\] { color: var(--color-primary) !important; }
+.bg-\[\#2D6A4F\] { background-color: var(--color-primary) !important; }
+.text-\[\#2D6A4F\] { color: var(--color-primary) !important; }
+.border-\[\#E7DFCF\] { border-color: var(--color-border) !important; }
+.text-\[\#5B6B60\] { color: var(--color-text-secondary) !important; }
+.text-\[\#6B7A70\] { color: var(--color-text-muted) !important; }
+.text-\[\#4A5A50\] { color: var(--color-text-secondary) !important; }
+
+/* Dark Mode Overrides */
+[data-mode="dark"] {
+  color-scheme: dark;
+}
+
+[data-mode="dark"] .bg-white {
+  background-color: var(--color-paper-2) !important;
+  color: var(--color-ink) !important;
+  border-color: var(--color-rule) !important;
+}
+
+[data-mode="dark"] .bg-\[\#14251D\] {
+  background-color: var(--color-pine) !important;
+  color: #FFFFFF !important;
+}
+
+[data-mode="dark"] .cartouche-rules {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 37px,
+    rgba(255, 255, 255, 0.04) 37px,
+    rgba(255, 255, 255, 0.04) 38px
+  );
+}
+
+[data-mode="dark"] input:not([type="checkbox"]):not([type="radio"]),
+[data-mode="dark"] select,
+[data-mode="dark"] textarea {
+  background-color: var(--color-paper-2) !important;
+  color: var(--color-ink) !important;
+  border-color: var(--color-rule) !important;
 }
 
 /* Fraunces for Latin display, Noto Kufi for Arabic display — schoolbook/ministry authority */

@@ -48,7 +48,7 @@ export class LanguageService {
     rolePublic: { fr: 'Bibliothèque & Répertoire', ar: 'المكتبة والدليل' },
 
     // Teacher View
-    teacherWelcome: { fr: 'Bonjour, Mme Amel', ar: 'مرحباً، السيدة أمل' },
+    teacherWelcome: { fr: 'Espace Enseignant', ar: 'فضاء المعلم' },
     teacherHeaderSub: {
       fr: 'Votre espace enseignant professionnel. Toutes vos ressources, annonces et devoirs centralisés.',
       ar: 'فضاؤك المهني للتعليم. جميع الموارد والإعلانات والواجبات المدرسية منظمة وموحدة.',
@@ -88,7 +88,7 @@ export class LanguageService {
 
     // Student View
     streakLabel: { fr: 'Jours de Série Consécutifs !', ar: 'أيام من المواظبة المتواصلة!' },
-    studentWelcome: { fr: 'Bonjour Ahmed !', ar: 'أهلاً بك يا أحمد !' },
+    studentWelcome: { fr: 'Espace Élève & Réussite', ar: 'فضاء التلميذ والواجبات' },
     studentSub: {
       fr: 'Bienvenue sur ton espace d\'apprentissage. Fais tes devoirs, entraîne-toi et demande de l\'aide à ton tuteur IA !',
       ar: 'مرحباً بك في فضاؤك التعليمي. أنجز واجباتك، تدرب على التمارين واطلب المساعدة من معلمك الذكي!',

@@ -15,30 +15,30 @@ export interface TutorExplanation {
     <div class="space-y-6">
       
       <!-- Student Banner -->
-      <div class="bg-[#14251D] text-[#FBF8F1] rounded-[28px] p-6 sm:p-8 relative overflow-hidden animate-in fade-in duration-500">
+      <div class="bg-[#0B2947] text-white rounded-[24px] p-6 sm:p-8 relative overflow-hidden shadow-sm animate-in fade-in duration-500">
         <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div class="space-y-2">
-            <div class="inline-flex items-center gap-2 bg-white/10 text-[#FBF8F1] border border-white/15 text-xs px-3 py-1 rounded-full font-medium">
-              <span class="material-icons text-sm">local_fire_department</span>
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/15 text-xs px-3 py-1 rounded-full font-medium">
+              <span class="material-icons text-sm text-[#E0AA32]">local_fire_department</span>
               {{ store.activeStudent().streakDays }} {{ lang.t('streakLabel') }}
             </div>
 
-            <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+            <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
               {{ lang.isArabic() ? ('مرحباً ' + store.activeStudent().name) : ('Bonjour ' + store.activeStudent().name) }}
             </h1>
-            <p class="text-[#B7C7BC] text-xs sm:text-sm max-w-lg">
+            <p class="text-[#8CA9C4] text-xs sm:text-sm max-w-lg">
               {{ lang.t('studentSub') }}
             </p>
           </div>
 
           <!-- Gamification Points Card -->
-          <div class="bg-white/5 p-4 rounded-2xl border border-white/10 text-center shrink-0">
-            <p class="text-[11px] text-[#9DBBA8] font-medium flex items-center justify-center gap-1">
-              <span class="material-icons text-sm text-[#F2C14E]">emoji_events</span>
+          <div class="bg-white/10 p-4 rounded-[14px] border border-white/15 text-center shrink-0">
+            <p class="text-[11px] text-[#8CA9C4] font-medium flex items-center justify-center gap-1">
+              <span class="material-icons text-sm text-[#E0AA32]">emoji_events</span>
               {{ lang.t('successPoints') }}
             </p>
-            <p class="font-display text-3xl font-semibold text-[#F2C14E] my-0.5">{{ store.activeStudent().totalPoints }}</p>
-            <p class="text-[11px] font-medium text-[#B7C7BC]">
+            <p class="font-display text-3xl font-bold text-[#E0AA32] my-0.5">{{ store.activeStudent().totalPoints }}</p>
+            <p class="text-[11px] font-medium text-[#8CA9C4]">
               42 {{ lang.tr('exercices résolus', 'تمرين منجز بنجاح') }}
             </p>
           </div>
@@ -401,7 +401,7 @@ export class StudentHomeComponent {
     this.store.submitHomeworkAnswer(hw.id, this.studentAnswerText(), this.uploadedPhotoUrl() || undefined);
     this.activeHomeworkToSolve.set(null);
     const msg = this.lang.tr(
-      '🎉 Félicitations Ahmed ! Ton devoir a été soumis à Mme Amel avec succès !',
+      '🎉 Félicitations ' + this.store.activeStudent().name + ' ! Ton devoir a été soumis à l\'enseignant avec succès !',
       '🎉 تهانينا يا أحمد! تم تسليم واجبك للمعلمة أمل بنجاح!'
     );
     alert(msg);

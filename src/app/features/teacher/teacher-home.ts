@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, Announcement, Course, Homework, SubjectName, Submission } from '@core';
+import { EducationStore, LanguageService, FirebaseService, Announcement, Course, Homework, SubjectName, Submission } from '@core';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -17,30 +17,30 @@ export interface GeneratedExerciseResult {
     <div class="space-y-6">
       
       <!-- Welcome Header: "Cartouche officielle" institutional hero -->
-      <div class="rounded-[28px] bg-[#14251D] text-[#FBF8F1] p-7 sm:p-9 shadow-sm">
+      <div class="rounded-[24px] bg-[#0B2947] text-white p-7 sm:p-9 shadow-sm">
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div class="space-y-3">
             <div class="flex flex-wrap items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 text-[#9DBBA8] text-xs font-medium">
-                <span class="material-icons text-sm">verified</span>
+              <span class="inline-flex items-center gap-1.5 text-[#8CA9C4] text-xs font-medium">
+                <span class="material-icons text-sm text-[#E0AA32]">verified</span>
                 {{ lang.tr('Enseignante Certifiée — Éducation Nationale', 'معلمة معتمدة — وزارة التربية والتعليم') }}
               </span>
 
               <button
                 (click)="teacherProfileModal.set(true)"
-                class="inline-flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-[#FBF8F1] border border-white/10 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer">
-                <span class="material-icons text-sm text-[#F2C14E]">badge</span>
+                class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white border border-white/15 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer">
+                <span class="material-icons text-sm text-[#E0AA32]">badge</span>
                 <span>{{ lang.tr('Mon Profil Public (4.9/5)', 'ملفي المهني (4.9/5)') }}</span>
               </button>
             </div>
 
             <div>
-              <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-[#FBF8F1]">
-                {{ lang.t('teacherWelcome') }}
+              <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
+                {{ teacherGreeting() }}
               </h1>
-              <p class="text-[#B7C7BC] text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
+              <p class="text-[#D7E7F2] text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
                 {{ teacherHeaderSub() }}
-                <span class="font-semibold text-[#FBF8F1] underline decoration-[#F2C14E] underline-offset-4">{{ store.activeClass().name }}</span>
+                <span class="font-semibold text-white underline decoration-[#E0AA32] underline-offset-4">{{ store.activeClass().name }}</span>
                 — {{ store.activeClass().schoolName }}.
               </p>
             </div>
@@ -50,28 +50,28 @@ export interface GeneratedExerciseResult {
           <div class="flex flex-wrap items-center gap-2.5 shrink-0">
             <button
               (click)="openModal('announcement')"
-              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-xl text-xs transition-colors cursor-pointer shadow-sm">
+              class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">campaign</span>
               {{ lang.t('addAnnouncementBtn') }}
             </button>
 
             <button
               (click)="openModal('course')"
-              class="flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-xl text-xs border border-white/10 transition-colors cursor-pointer">
+              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer">
               <span class="material-icons text-base">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
             </button>
 
             <button
               (click)="openModal('homework')"
-              class="flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-xl text-xs border border-white/10 transition-colors cursor-pointer">
+              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer">
               <span class="material-icons text-base">assignment</span>
               {{ lang.t('addHomeworkBtn') }}
             </button>
 
             <button
               (click)="openModal('ai')"
-              class="flex items-center gap-1.5 bg-[#F2C14E] hover:bg-[#e0b143] text-[#14251D] font-semibold px-4 py-2.5 rounded-xl text-xs transition-colors cursor-pointer shadow-sm">
+              class="flex items-center gap-1.5 bg-[#E0AA32] hover:bg-[#D19A24] text-[#102A43] font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_awesome</span>
               {{ lang.t('aiAssistantBtn') }}
             </button>
@@ -81,76 +81,76 @@ export interface GeneratedExerciseResult {
 
       <!-- Class Metric Cards & Quick Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
-          <div class="h-1 bg-[#1B4332]"></div>
+        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#007CC2]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statStudents') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('statStudents') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
                 <span class="material-icons text-lg">groups</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.activeClass().studentCount }}</p>
-              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs">done_all</span>
+              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.activeClass().studentCount }}</p>
+              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#007CC2]">done_all</span>
                 {{ lang.tr('100% inscrits dans la classe', 'مسجلون بالكامل في القسم') }}
               </p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
-          <div class="h-1 bg-[#2D6A4F]"></div>
+        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#23845B]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statSubmissions') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('statSubmissions') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#E8F6EF] dark:bg-[#153B2D] text-[#23845B] flex items-center justify-center">
                 <span class="material-icons text-lg">fact_check</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.submissions().length }}</p>
-              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs">pending_actions</span>
+              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.submissions().length }}</p>
+              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#23845B]">pending_actions</span>
                 {{ lang.tr('Soumissions reçues', 'تطبيقات مستلمة للتقييم') }}
               </p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
-          <div class="h-1 bg-[#8A5A00]"></div>
+        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#D19A24]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statViews') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#8A5A00]/10 text-[#8A5A00] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('statViews') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] dark:bg-[#3D2E10] text-[#D19A24] flex items-center justify-center">
                 <span class="material-icons text-lg">visibility</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">342</p>
-              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs">trending_up</span>
+              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">342</p>
+              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#D19A24]">trending_up</span>
                 {{ lang.tr('+18% cette semaine', '+18% هذا الأسبوع') }}
               </p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white rounded-2xl border border-[#E7DFCF] shadow-sm hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow overflow-hidden flex flex-col">
-          <div class="h-1 bg-[#BF5B34]"></div>
+        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#D64545]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statConfirmations') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#BF5B34]/10 text-[#BF5B34] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('statConfirmations') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#FDECEC] dark:bg-[#3D1414] text-[#D64545] flex items-center justify-center">
                 <span class="material-icons text-lg">verified_user</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">24 <span class="text-[#6B7A70] text-lg">/ 28</span></p>
-              <p class="text-[11px] text-[#5B6B60] font-semibold mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs">check_circle</span>
+              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">24 <span class="text-[#829AB1] text-lg">/ 28</span></p>
+              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#D64545]">check_circle</span>
                 {{ lang.tr("86% accusés de lecture", '86% نسبة اطلاع الأولياء') }}
               </p>
             </div>
@@ -159,38 +159,38 @@ export interface GeneratedExerciseResult {
       </div>
 
       <!-- Main Class Content Tabs -->
-      <div class="bg-white rounded-[28px] border border-[#E7DFCF] overflow-hidden shadow-sm">
+      <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#E3ECF2] dark:border-[#1A3145] overflow-hidden shadow-xs">
 
         <!-- Tab Bar Header -->
-        <div class="border-b border-[#E7DFCF] bg-[#FBF8F1] px-6 pt-4 flex flex-wrap gap-2">
+        <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] px-6 pt-3 flex flex-wrap gap-2">
           <button
             (click)="activeTab.set('announcements')"
-            [class]="activeTab() === 'announcements' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
+            [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">campaign</span>
             <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
           </button>
 
           <button
             (click)="activeTab.set('courses')"
-            [class]="activeTab() === 'courses' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
+            [class]="activeTab() === 'courses' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">menu_book</span>
             <span>{{ lang.t('tabCourses') }} ({{ store.classCourses().length }})</span>
           </button>
 
           <button
             (click)="activeTab.set('homeworks')"
-            [class]="activeTab() === 'homeworks' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
+            [class]="activeTab() === 'homeworks' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">assignment</span>
             <span>{{ lang.t('tabHomeworks') }} ({{ store.classHomeworks().length }})</span>
           </button>
 
           <button
             (click)="activeTab.set('submissions')"
-            [class]="activeTab() === 'submissions' ? 'border-[#1B4332] text-[#1B4332] bg-white font-semibold shadow-sm' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#14251D]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-xl">
+            [class]="activeTab() === 'submissions' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">rate_review</span>
             <span>{{ lang.t('tabSubmissions') }} ({{ store.submissions().length }})</span>
           </button>
@@ -745,7 +745,7 @@ export interface GeneratedExerciseResult {
 
             <!-- Auto Watermark Notice -->
             <div class="bg-[#FBF8F1] p-3 rounded-xl border border-[#E7DFCF] text-[11px] text-[#5B6B60] flex items-center justify-between">
-              <span>Filigrane automatique : <strong>Madrasati TN — Document Certifié — Mme Amel Ben Ali</strong></span>
+              <span>Filigrane automatique : <strong>Madrasati TN — Document Certifié — Enseignant Certifié</strong></span>
               <span class="material-icons text-xs text-[#2D6A4F]">verified</span>
             </div>
 
@@ -890,7 +890,7 @@ export interface GeneratedExerciseResult {
               <div>
                 <h4 class="font-display font-semibold text-sm text-[#FBF8F1]">MADRASATI TN 🇹🇳 — APERÇU FILIGRANE & IMPRESSION</h4>
                 <p class="text-[11px] text-[#B7C7BC]">
-                  {{ c.watermarkText || 'Madrasati TN — Document Certifié — Mme Amel Ben Ali' }}
+                  {{ c.watermarkText || 'Madrasati TN — Document Certifié — Enseignant Certifié' }}
                 </p>
               </div>
             </div>
@@ -940,7 +940,7 @@ export interface GeneratedExerciseResult {
 
             <!-- Footer Attribution -->
             <div class="border-t border-[#E7DFCF] pt-3 text-[10px] text-[#5B6B60] font-sans flex items-center justify-between">
-              <span>Attribution Enseignant : {{ c.watermarkText || 'Mme Amel Ben Ali' }}</span>
+              <span>Attribution Enseignant : {{ c.watermarkText || 'Enseignant Certifié' }}</span>
               <span>Plateforme Nationale Madrasati TN</span>
             </div>
           </div>
@@ -978,10 +978,10 @@ export interface GeneratedExerciseResult {
           <div class="flex items-center gap-4">
             <img
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80"
-              alt="Mme Amel"
+              alt="Enseignant Certifié"
               class="w-16 h-16 rounded-full object-cover border-2 border-[#2D6A4F] shadow-sm" />
             <div>
-              <h3 class="font-display font-semibold text-[#14251D] text-base">Mme Amel Ben Ali</h3>
+              <h3 class="font-display font-semibold text-[#14251D] text-base">Enseignant Certifié</h3>
               <p class="text-xs text-[#5B6B60] font-medium">Enseignante Principale (4ème & 5ème Année)</p>
               <p class="text-[11px] text-[#1B4332] font-semibold mt-0.5">École Primaire Habib Bourguiba, Ariana</p>
             </div>
@@ -1011,7 +1011,7 @@ export interface GeneratedExerciseResult {
           <div class="space-y-2 text-xs text-[#4A5A50]">
             <h4 class="font-display font-semibold text-[#14251D]">Filigrane Automatique des Documents :</h4>
             <div class="p-3 bg-[#1B4332]/8 border border-[#E7DFCF] rounded-xl font-mono text-[11px] text-[#1B4332] flex items-center justify-between">
-              <span>Madrasati TN — Document Certifié — Mme Amel Ben Ali</span>
+              <span>Madrasati TN — Document Certifié — Enseignant Certifié</span>
               <span class="material-icons text-[#2D6A4F] text-sm">lock</span>
             </div>
           </div>
@@ -1078,6 +1078,15 @@ export interface GeneratedExerciseResult {
 export class TeacherHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
+
+  teacherGreeting(): string {
+    const profile = this.firebase.userProfile();
+    if (profile?.displayName) {
+      return this.lang.tr(`Bonjour, ${profile.displayName}`, `مرحباً، ${profile.displayName}`);
+    }
+    return this.lang.tr('Espace Enseignant', 'فضاء المعلم');
+  }
 
   readonly activeTab = signal<'announcements' | 'courses' | 'homeworks' | 'submissions'>('announcements');
   readonly modalType = signal<'none' | 'announcement' | 'course' | 'homework' | 'ai'>('none');
@@ -1239,7 +1248,7 @@ export class TeacherHomeComponent {
       summary: this.newCourseSummary(),
       content: this.newCourseContent() || 'Document de révision officiel préparé pour la classe.',
       pdfUrl: this.uploadedFileUrl() || undefined,
-      watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
+      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
     });
     this.closeModal();
   }

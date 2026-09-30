@@ -118,15 +118,15 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
 
         <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-xs">
           <!-- Filter 1: Grade -->
-          <div>
-            <label for="filter-grade-select" class="block font-medium text-[#4A5A50] mb-1">
+          <div class="min-w-0">
+            <label for="filter-grade-select" class="block font-medium text-[#486581] mb-1 truncate">
               {{ lang.tr('Niveau', 'المستوى') }}
             </label>
             <select
               id="filter-grade-select"
               [value]="store.selectedGradeFilter()"
               (change)="onGradeChange($event)"
-              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.t('filterGradeAll') }}</option>
               <option value="1ère Année">{{ lang.tr('1ère Année Primaire', 'السنة الأولى ابتدائي') }}</option>
               <option value="2ème Année">{{ lang.tr('2ème Année Primaire', 'السنة الثانية ابتدائي') }}</option>
@@ -138,15 +138,15 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
           </div>
 
           <!-- Filter 2: Trimester -->
-          <div>
-            <label for="filter-trimester-select" class="block font-medium text-[#4A5A50] mb-1">
+          <div class="min-w-0">
+            <label for="filter-trimester-select" class="block font-medium text-[#486581] mb-1 truncate">
               {{ lang.tr('Trimestre', 'الثلاثي') }}
             </label>
             <select
               id="filter-trimester-select"
               [value]="store.selectedTrimesterFilter()"
               (change)="onTrimesterChange($event)"
-              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.tr('Tous les trimestres', 'جميع الثلاثيات') }}</option>
               <option value="Trimestre 1">{{ lang.tr('Trimestre 1', 'الثلاثي الأول') }}</option>
               <option value="Trimestre 2">{{ lang.tr('Trimestre 2', 'الثلاثي الثاني') }}</option>
@@ -155,15 +155,15 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
           </div>
 
           <!-- Filter 3: Subject -->
-          <div>
-            <label for="filter-subject-select" class="block font-medium text-[#4A5A50] mb-1">
+          <div class="min-w-0">
+            <label for="filter-subject-select" class="block font-medium text-[#486581] mb-1 truncate">
               {{ lang.tr('Matière', 'المادة') }}
             </label>
             <select
               id="filter-subject-select"
               [value]="store.selectedSubjectFilter()"
               (change)="onSubjectChange($event)"
-              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.t('filterSubjectAll') }}</option>
               <option value="Mathématiques">{{ lang.tr('Mathématiques', 'الرياضيات') }}</option>
               <option value="Français">{{ lang.tr('Français', 'الفرنسية') }}</option>
@@ -173,33 +173,33 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
           </div>
 
           <!-- Filter 4: Doc Type -->
-          <div>
-            <label for="filter-doctype-select" class="block font-medium text-[#4A5A50] mb-1">
+          <div class="min-w-0">
+            <label for="filter-doctype-select" class="block font-medium text-[#486581] mb-1 truncate">
               {{ lang.tr('Type de document', 'صنف الوثيقة') }}
             </label>
             <select
               id="filter-doctype-select"
               [value]="store.selectedDocTypeFilter()"
               (change)="onDocTypeChange($event)"
-              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.tr('Tous les types', 'جميع الأصناف') }}</option>
               <option value="Devoir de Contrôle">{{ lang.tr('Devoir de Contrôle', 'فرض مراقبة') }}</option>
               <option value="Devoir de Synthèse">{{ lang.tr('Devoir de Synthèse', 'فرض تأليفي') }}</option>
               <option value="Fiche de Révision">{{ lang.tr('Fiche de Révision', 'ملخص درس') }}</option>
-              <option value="Série d'Exercices">{{ lang.tr('Série d\'Exercices', 'سلسلة تمارين') }}</option>
+              <option value="Série d'Exercices">{{ lang.tr("Série d'Exercices", 'سلسلة تمارين') }}</option>
             </select>
           </div>
 
           <!-- Filter 5: School Year -->
-          <div>
-            <label for="filter-year-select" class="block font-medium text-[#4A5A50] mb-1">
+          <div class="min-w-0">
+            <label for="filter-year-select" class="block font-medium text-[#486581] mb-1 truncate">
               {{ lang.tr('Année Scolaire', 'السنة الدراسية') }}
             </label>
             <select
               id="filter-year-select"
               [value]="store.selectedSchoolYearFilter()"
               (change)="onSchoolYearChange($event)"
-              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 font-medium text-[#14251D] outline-none">
+              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.tr('Toutes les années', 'جميع السنوات') }}</option>
               <option value="2025-2026">{{ lang.tr('2025-2026 (Actuelle)', '2025-2026 (الحالية)') }}</option>
               <option value="2024-2025">2024-2025</option>
@@ -737,13 +737,13 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
                 {{ lang.tr('Votre watchlist est vide pour le moment', 'قائمة المحفوظات فارغة حالياً') }}
               </h4>
               <p class="text-xs text-[#5B6B60] max-w-md mx-auto">
-                {{ lang.tr('Cliquez sur le signet "Favoris" dans la Banque d\'Examens ou les Cours pour sauvegarder vos documents de révision.', 'انقر على رمز الحفظ في مكتبة الفروض أو الدروس لحفظ وثائق المراجعة.') }}
+                {{ lang.tr("Cliquez sur le signet Favoris dans la Banque d'Examens ou les Cours pour sauvegarder vos documents de révision.", 'انقر على رمز الحفظ في مكتبة الفروض أو الدروس لحفظ وثائق المراجعة.') }}
               </p>
               <button
                 (click)="activeSection.set('exercises')"
-                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-5 py-2.5 rounded-xl cursor-pointer shadow-xs inline-flex items-center gap-1.5 transition-colors">
+                class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs px-5 py-2.5 rounded-[10px] cursor-pointer shadow-xs inline-flex items-center gap-1.5 transition-colors">
                 <span class="material-icons text-sm">explore</span>
-                <span>{{ lang.tr('Explorer la Banque d\'Examens', 'تصفح مكتبة الفروض') }}</span>
+                <span>{{ lang.tr("Explorer la Banque d'Examens", 'تصفح مكتبة الفروض') }}</span>
               </button>
             </div>
           } @else {
@@ -1020,7 +1020,7 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
               <div>
                 <h4 class="font-display font-semibold text-sm text-[#FBF8F1]">MADRASATI TN — FILIGRANE ET IMPRESSION PDF</h4>
                 <p class="text-[11px] text-[#9DBBA8]">
-                  {{ docEx.watermarkText || 'Madrasati TN — Document Certifié — Mme Amel Ben Ali' }}
+                  {{ docEx.watermarkText || 'Madrasati TN — Document Certifié — Enseignant Certifié' }}
                 </p>
               </div>
             </div>

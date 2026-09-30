@@ -20,6 +20,38 @@ export class EducationStore {
   // Current active role ('home' by default shows the landing page)
   readonly currentRole = signal<UserRole>('home');
 
+  // Multi-Palette & Mode Theme Engine
+  readonly activePalette = signal<'green' | 'blue'>('green');
+  readonly activeMode = signal<'light' | 'dark'>('light');
+
+  setPalette(palette: 'green' | 'blue') {
+    this.activePalette.set(palette);
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-palette', palette);
+    }
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('madrasati_palette', palette);
+    }
+  }
+
+  togglePalette() {
+    this.setPalette(this.activePalette() === 'green' ? 'blue' : 'green');
+  }
+
+  setMode(mode: 'light' | 'dark') {
+    this.activeMode.set(mode);
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-mode', mode);
+    }
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('madrasati_mode', mode);
+    }
+  }
+
+  toggleMode() {
+    this.setMode(this.activeMode() === 'light' ? 'dark' : 'light');
+  }
+
   // Auth Modal State
   readonly isAuthModalOpen = signal<boolean>(false);
   readonly authModalMode = signal<'login' | 'signup'>('login');
@@ -72,7 +104,7 @@ export class EducationStore {
       id: 'cmt-1',
       targetId: 'crs-1',
       targetType: 'course',
-      authorName: 'Mme Amel Ben Ali',
+      authorName: 'Enseignant Certifié',
       authorRole: 'teacher',
       authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
       text: 'Bonne lecture à tous ! N\'hésitez pas à poser vos questions sur les étapes de calcul — je réponds chaque soir.',
@@ -106,7 +138,7 @@ export class EducationStore {
       id: 'cmt-3',
       targetId: 'bank-1',
       targetType: 'exercise',
-      authorName: 'Mme Amel Ben Ali',
+      authorName: 'Enseignant Certifié',
       authorRole: 'teacher',
       authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
       text: 'Attention ! Pour l\'aire du carré, n\'oubliez pas d\'écrire l\'unité m² (mètres carrés) sinon vous perdez 0.5 point.',
@@ -156,10 +188,10 @@ export class EducationStore {
     },
     {
       id: 'c-4a',
-      name: '4ème A — Classe Mme Amel',
+      name: '4ème Année A (Primaire)',
       grade: '4ème Année',
       teacherId: 't-1',
-      teacherName: 'Mme Amel Ben Ali',
+      teacherName: 'Enseignant(e) Référent(e)',
       teacherAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
       schoolName: 'École Primaire Habib Bourguiba, Ariana',
       studentCount: 28,
@@ -168,10 +200,10 @@ export class EducationStore {
     },
     {
       id: 'c-4b',
-      name: '4ème B — Classe Mme Amel',
+      name: '4ème Année B (Primaire)',
       grade: '4ème Année',
       teacherId: 't-1',
-      teacherName: 'Mme Amel Ben Ali',
+      teacherName: 'Enseignant(e) Référent(e)',
       teacherAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
       schoolName: 'École Primaire Habib Bourguiba, Ariana',
       studentCount: 31,
@@ -180,10 +212,10 @@ export class EducationStore {
     },
     {
       id: 'c-5a',
-      name: '5ème A — Classe Mme Faten',
+      name: '5ème Année A (Primaire)',
       grade: '5ème Année',
       teacherId: 't-7',
-      teacherName: 'Mme Faten Zaouali',
+      teacherName: 'Enseignant(e) Référent(e)',
       teacherAvatar: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=150&auto=format&fit=crop&q=80',
       schoolName: 'École Primaire Habib Bourguiba, Ariana',
       studentCount: 30,
@@ -192,10 +224,10 @@ export class EducationStore {
     },
     {
       id: 'c-6c',
-      name: '6ème C — Classe M. Karim',
+      name: '6ème Année C (Primaire)',
       grade: '6ème Année',
       teacherId: 't-2',
-      teacherName: 'M. Karim Hammami',
+      teacherName: 'Enseignant(e) Référent(e)',
       teacherAvatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80',
       schoolName: 'École Primaire Ibn Khaldoun, Tunis',
       studentCount: 26,
@@ -207,7 +239,7 @@ export class EducationStore {
   readonly teachers = signal<TeacherProfile[]>([
     {
       id: 't-1',
-      name: 'Mme Amel Ben Ali',
+      name: 'Enseignant Certifié',
       title: 'Enseignante Principale (4ème & 5ème Année)',
       school: 'École Primaire Habib Bourguiba, Ariana',
       avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
@@ -287,7 +319,7 @@ export class EducationStore {
       id: 'a-1',
       title: '📌 Devoir de Synthèse N°1 : Mathématiques',
       classId: 'c-4a',
-      teacherName: 'Mme Amel Ben Ali',
+      teacherName: 'Enseignant Certifié',
       teacherAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
       content: 'Chers parents et élèves, le Devoir de Synthèse N°1 aura lieu jeudi prochain à 09h00. Les chapitres concernés sont : La multiplication des nombres de 0 à 999 999, la géométrie des droites perpendiculaires et la résolution de problèmes à deux étapes.',
       category: 'exam',
@@ -309,7 +341,7 @@ export class EducationStore {
       trimester: 'Trimestre 1',
       docType: 'Fiche de Révision',
       schoolYear: '2025-2026',
-      teacherName: 'Mme Amel Ben Ali',
+      teacherName: 'Enseignant Certifié',
       summary: 'Technique opératoire de la multiplication à 2 et 3 chiffres, retenues et estimation du résultat.',
       content: `### Objective du cours
 A la fin de cette leçon, l'élève de 4ème année sera capable de :
@@ -331,7 +363,7 @@ Pour multiplier $3~452 \\times 24$ :
       upvotesCount: 48,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
+      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
     },
     {
       id: 'crs-2',
@@ -414,7 +446,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       upvotesCount: 54,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
+      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
     },
     {
       id: 'bank-2',
@@ -474,7 +506,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       upvotesCount: 42,
       isUpvoted: false,
       reportedCount: 0,
-      watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
+      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
     },
   ]);
 
@@ -584,6 +616,20 @@ Pour réussir une production écrite de 6 à 8 lignes :
   constructor() {
     if (typeof localStorage !== 'undefined') {
       try {
+        const savedPalette = localStorage.getItem('madrasati_palette') as 'green' | 'blue' | null;
+        if (savedPalette && (savedPalette === 'green' || savedPalette === 'blue')) {
+          this.setPalette(savedPalette);
+        } else if (typeof document !== 'undefined') {
+          document.documentElement.setAttribute('data-palette', 'green');
+        }
+
+        const savedMode = localStorage.getItem('madrasati_mode') as 'light' | 'dark' | null;
+        if (savedMode && (savedMode === 'light' || savedMode === 'dark')) {
+          this.setMode(savedMode);
+        } else if (typeof document !== 'undefined') {
+          document.documentElement.setAttribute('data-mode', 'light');
+        }
+
         const savedWl = localStorage.getItem('madrasati_watchlist');
         if (savedWl) this.watchlist.set(JSON.parse(savedWl));
         const savedCmt = localStorage.getItem('madrasati_comments');
@@ -826,7 +872,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
           points: 10,
           upvotesCount: 1,
           isUpvoted: true,
-          watermarkText: 'Madrasati TN — Auto-Tagué par Gemini IA — Mme Amel Ben Ali',
+          watermarkText: 'Madrasati TN — Auto-Tagué par Gemini IA — Enseignant Certifié',
         };
 
         this.exercisesBank.update((list) => [newEx, ...list]);
@@ -905,7 +951,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
         schoolYear: '2025-2026',
         hasCorrection: true,
         upvotesCount: 1,
-        watermarkText: 'Madrasati TN — Document Certifié — Mme Amel Ben Ali',
+        watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
       },
       ...list,
     ]);

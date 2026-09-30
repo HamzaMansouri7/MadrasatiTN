@@ -1,30 +1,119 @@
 /**
- * Madrasati TN — Design Tokens ("Cartouche officielle")
- * Single source of truth for all color, surface, border, and typography tokens.
+ * Madrasati TN — Full Design System Tokens
+ * Institutional Trust × Modern SaaS × Calm Academic Atmosphere
  */
 
 :root {
-  /* Surface & Backgrounds */
-  --color-ink: #14251D;
-  --color-pine: #1B4332;
-  --color-pine-btn: #2D6A4F;
-  --color-paper: #FBF8F1;
-  --color-paper-2: #F2ECDE;
-  --color-rule: #E7DFCF;
+  /* Brand / Primary Action */
+  --color-primary: #007CC2;
+  --color-primary-hover: #006EAD;
+  --color-primary-active: #005F96;
+  --color-primary-soft: #E8F5FC;
+  --color-primary-lighter: #F3FAFD;
 
-  /* Role & Identity Accents */
-  --color-gold: #8A5A00;
-  --color-gold-hi: #F2C14E;
-  --color-terracotta: #BF5B34;
+  /* Institutional Navy */
+  --color-navy-950: #0B2947;
+  --color-navy-900: #103A61;
+  --color-navy-800: #164E78;
+  --color-navy-700: #1D628F;
+
+  /* Gold / Achievement / AI */
+  --color-gold: #E0AA32;
+  --color-gold-hover: #D19A24;
+  --color-gold-dark: #B98216;
+  --color-gold-soft: #FFF4D8;
+
+  /* Semantic */
+  --color-success: #23845B;
+  --color-success-soft: #E8F6EF;
+  --color-warning: #B7791F;
+  --color-warning-soft: #FFF5DD;
+  --color-danger: #D64545;
+  --color-danger-soft: #FDECEC;
+  --color-info: #007CC2;
+  --color-info-soft: #E8F5FC;
+  --color-exam: #D9486E;
+  --color-exam-soft: #FCEBF0;
+
+  /* Background & Surface System */
+  --color-background: #F7F9FB;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F3F6F8;
+  --color-surface-warm: #FCFBF7;
+
+  /* Text Hierarchy */
+  --color-text: #102A43;
+  --color-text-secondary: #486581;
+  --color-text-muted: #829AB1;
+  --color-text-disabled: #9FB3C8;
+  --color-text-on-dark: #FFFFFF;
+  --color-text-on-primary: #FFFFFF;
+
+  /* Borders & Rules */
+  --color-border: #E3ECF2;
+  --color-border-strong: #CBD9E2;
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(16, 42, 67, 0.05);
+  --shadow-md: 0 4px 12px rgba(16, 42, 67, 0.08);
+  --shadow-lg: 0 12px 32px rgba(16, 42, 67, 0.12);
+
+  /* Legacy Bridge Tokens (Mapped to modern palette) */
+  --color-ink: var(--color-text);
+  --color-pine: var(--color-navy-950);
+  --color-pine-btn: var(--color-primary);
+  --color-paper: var(--color-background);
+  --color-paper-2: var(--color-surface);
+  --color-rule: var(--color-border);
+  --color-muted-paper: var(--color-text-secondary);
+  --color-faint-paper: var(--color-text-muted);
   --color-seal: #C1121F;
+  --color-terracotta: var(--color-exam);
 
-  /* Typography Colors */
-  --color-muted-paper: #5B6B60;
-  --color-faint-paper: #6B7A70;
-  --color-muted-dark: #B7C7BC;
-  --color-faint-dark: #9DBBA8;
+  /* Typography */
+  --font-display: 'Lora', 'Merriweather', 'Fraunces', 'Noto Kufi Arabic', Georgia, serif;
+  --font-sans: 'Inter', 'Source Sans 3', 'Public Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+}
 
-  /* Font Families */
-  --font-display: 'Fraunces', 'Noto Kufi Arabic', Georgia, serif;
-  --font-sans: 'Public Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+/* Dark Mode Tokens */
+html[data-mode="dark"] {
+  --color-background: #081119;
+  --color-surface: #0E1D2A;
+  --color-surface-soft: #152737;
+  --color-surface-warm: #11202D;
+
+  --color-text: #F0F6FC;
+  --color-text-secondary: #8CA9C4;
+  --color-text-muted: #6784A0;
+  --color-text-disabled: #415A72;
+
+  --color-border: #1A3145;
+  --color-border-strong: #254663;
+
+  --color-navy-950: #0E1D2A;
+  --color-navy-900: #152737;
+  --color-navy-800: #1B344B;
+  --color-navy-700: #2563EB;
+
+  --color-primary: #168CCB;
+  --color-primary-hover: #299DE0;
+  --color-primary-active: #007CC2;
+  --color-primary-soft: #102A43;
+  --color-primary-lighter: #0B2033;
+
+  --color-ink: #F0F6FC;
+  --color-pine: #152737;
+  --color-pine-btn: #168CCB;
+  --color-paper: #081119;
+  --color-paper-2: #0E1D2A;
+  --color-rule: #1A3145;
+  --color-muted-paper: #8CA9C4;
+  --color-faint-paper: #6784A0;
 }
