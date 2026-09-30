@@ -25,7 +25,10 @@ app.use('/uploads', express.static(uploadsFolder));
 
 const angularApp = new AngularNodeAppEngine();
 
-// Free VPS Storage: Direct File Upload
+// Free VPS Storage: Direct File Upload with validation
+const ALLOWED_EXTENSIONS = new Set(['pdf', 'png', 'jpg', 'jpeg', 'webp', 'docx']);
+const MAX_UPLOAD_BYTES = 15 * 1024 * 1024; // 15MB limit
+
 app.post('/api/upload', (req, res): void => {
   try {
     const { filename, base64Data, contentType } = req.body;
@@ -34,18 +37,35 @@ app.post('/api/upload', (req, res): void => {
       return;
     }
 
-    const ext = filename?.split('.').pop() || (contentType?.includes('pdf') ? 'pdf' : 'jpg');
+    // Strip base64 prefix if present
+    const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
+    const buffer = Buffer.from(base64Clean, 'base64');
+
+    if (buffer.length > MAX_UPLOAD_BYTES) {
+      res.status(413).json({ error: 'Fichier trop volumineux (limite 15 Mo)' });
+      return;
+    }
+
+    let ext = (filename?.split('.').pop() || '').toLowerCase();
+    if (!ext || !ALLOWED_EXTENSIONS.has(ext)) {
+      ext = contentType?.includes('pdf') ? 'pdf' : contentType?.includes('png') ? 'png' : 'jpg';
+    }
+
+    if (!ALLOWED_EXTENSIONS.has(ext)) {
+      res.status(400).json({ error: 'Format de fichier non autorisé. Formats acceptés : PDF, PNG, JPG, WEBP, DOCX.' });
+      return;
+    }
+
     const cleanName = `${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
     const filePath = join(uploadsFolder, cleanName);
 
-    // Strip base64 prefix if present
-    const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
-    writeFileSync(filePath, Buffer.from(base64Clean, 'base64'));
+    writeFileSync(filePath, buffer);
 
     res.json({
       success: true,
       url: `/uploads/${cleanName}`,
       filename: cleanName,
+      size: buffer.length,
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur d\'upload';

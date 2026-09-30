@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, Comment } from '@core';
+import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment } from '@core';
 
 @Component({
   selector: 'app-public-discovery',
@@ -1111,6 +1111,7 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, 
 export class PublicDiscoveryComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
   private readonly sanitizer = inject(DomSanitizer);
 
   getSafePdfUrl(url: string): SafeResourceUrl {
@@ -1308,6 +1309,15 @@ export class PublicDiscoveryComponent {
   }
 
   async uploadAndProcessFile(file: File) {
+    if (!this.firebase.userProfile() && !this.firebase.currentUser()) {
+      alert(this.lang.tr(
+        '⚠️ Authentification requise : Veuillez vous connecter avec un compte Enseignant pour téléverser et certifier des documents.',
+        '⚠️ يرجى تسجيل الدخول بحساب المعلم لرفع الوثائق وتوثيقها في المكتبة.'
+      ));
+      this.store.openLoginModal();
+      return;
+    }
+
     this.isAutoTagging.set(true);
     this.uploadedFileName.set(file.name);
     try {
@@ -1330,9 +1340,17 @@ export class PublicDiscoveryComponent {
       const upData = await upRes.json();
       const uploadedUrl = upData?.url || '';
 
+      const teacherName =
+        this.firebase.userProfile()?.displayName ||
+        this.firebase.currentUser()?.displayName ||
+        'Enseignant Certifié';
+
       const result = await this.store.autoTagAndAddDocument(
         file.name,
-        `Document scolaire officiel uploadé: ${file.name}`
+        `Document scolaire officiel uploadé: ${file.name}`,
+        teacherName,
+        base64Data,
+        file.type
       );
 
       if (result) {

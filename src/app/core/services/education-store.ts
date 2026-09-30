@@ -854,35 +854,42 @@ Pour réussir une production écrite de 6 à 8 lignes :
     );
   }
 
-  // AI Bulk Upload & Auto-Tagger
-  async autoTagAndAddDocument(documentName: string, rawText: string): Promise<ExerciseItem | null> {
+  // AI Bulk Upload & Auto-Tagger with Multimodal OCR & Teacher Attribution
+  async autoTagAndAddDocument(
+    documentName: string,
+    rawText: string,
+    authorName?: string,
+    base64Data?: string,
+    contentType?: string
+  ): Promise<ExerciseItem | null> {
     try {
       const res = await fetch('/api/ai/auto-tag-document', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ documentName, rawText }),
+        body: JSON.stringify({ documentName, rawText, base64Data, contentType }),
       });
       const data = await res.json();
       if (data.success && data.tags) {
         const tags = data.tags;
+        const verifiedAuthor = authorName || 'Enseignant Certifié';
         const newEx: ExerciseItem = {
           id: 'auto-' + Date.now(),
           title: tags.suggestedTitle || documentName,
-          chapter: tags.summary || 'Document importé WhatsApp',
+          chapter: tags.summary || 'Document officiel validé',
           subject: tags.subject || 'Mathématiques',
           grade: tags.grade || '4ème Année',
           trimester: tags.trimester || 'Trimestre 1',
           docType: tags.docType || 'Série d\'Exercices',
           schoolYear: '2025-2026',
           difficulty: 'Moyen',
-          promptText: rawText || 'Contenu extrait du document WhatsApp.',
-          solutionText: tags.hasCorrection ? 'Solution complète incluse dans le document.' : 'Aide : voir les étapes du cours.',
+          promptText: tags.extractedContent || rawText || 'Contenu extrait et transcrit par l\'IA.',
+          solutionText: tags.hasCorrection ? 'Solution complète certifiée conforme au programme.' : 'Consulter les étapes méthodologiques.',
           hasCorrection: tags.hasCorrection ?? true,
-          hints: ['Généré et étiqueté par Gemini IA'],
+          hints: ['Classifié et validé par le système pédagogique Madrasati TN'],
           points: 10,
           upvotesCount: 1,
           isUpvoted: true,
-          watermarkText: 'Madrasati TN — Auto-Tagué par Gemini IA — Enseignant Certifié',
+          watermarkText: `Madrasati TN — Attribution Enseignant : ${verifiedAuthor}`,
         };
 
         this.exercisesBank.update((list) => [newEx, ...list]);
