@@ -1,4 +1,5 @@
-import { Injectable, computed, signal } from '@angular/core';
+import { Injectable, computed, signal, inject } from '@angular/core';
+import { InteractionService } from './interaction.service';
 import {
   Announcement,
   BlogPost,

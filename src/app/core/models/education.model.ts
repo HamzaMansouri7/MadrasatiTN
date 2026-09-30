@@ -250,6 +250,7 @@ export interface QuestionAnswer {
   attachedDocTitle?: string;
   createdAt: string;
   isVerifiedAnswer: boolean;
+  isAcceptedAnswer?: boolean;
   likesCount: number;
 }
 
@@ -262,6 +263,8 @@ export interface QuestionThread {
   parentName: string;
   parentAvatar?: string;
   createdAt: string;
+  isSolved?: boolean;
+  solvedAnswerId?: string;
   answers: QuestionAnswer[];
 }
 
