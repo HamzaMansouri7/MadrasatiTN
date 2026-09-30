@@ -6,10 +6,17 @@ export type LanguageCode = 'fr' | 'ar';
   providedIn: 'root',
 })
 export class LanguageService {
-  readonly lang = signal<LanguageCode>('fr');
+  readonly lang = signal<LanguageCode>('ar');
 
   readonly isArabic = computed(() => this.lang() === 'ar');
   readonly dir = computed(() => (this.lang() === 'ar' ? 'rtl' : 'ltr'));
+
+  constructor() {
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = 'ar';
+      document.documentElement.dir = 'rtl';
+    }
+  }
 
   setLanguage(code: LanguageCode) {
     this.lang.set(code);
