@@ -193,7 +193,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Que
                     <input
                       type="text"
                       [value]="searchDocQuery()"
-                      (input)="searchDocQuery.set($any($event.target).value)"
+                      (input)="searchDocQuery.set($any($event.target).value); currentPage.set(1)"
                       [placeholder]="lang.t('searchDocsPlaceholder')"
                       class="w-full pl-9 rtl:pl-3 rtl:pr-9 pr-3 py-2 text-xs bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] outline-none text-[#102A43] dark:text-white" />
                   </div>
@@ -202,7 +202,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Que
                   <div class="flex flex-wrap items-center gap-1.5">
                     @for (grade of gradesList; track grade) {
                       <button
-                        (click)="selectedGradeFilter.set(grade)"
+                        (click)="selectedGradeFilter.set(grade); currentPage.set(1)"
                         [class]="selectedGradeFilter() === grade
                           ? 'bg-[#007CC2] text-white font-semibold shadow-xs'
                           : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
@@ -217,7 +217,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Que
                 <div class="flex flex-wrap items-center gap-1.5 pt-1">
                   @for (subj of subjectsList; track subj) {
                     <button
-                      (click)="selectedSubjectFilter.set(subj)"
+                      (click)="selectedSubjectFilter.set(subj); currentPage.set(1)"
                       [class]="selectedSubjectFilter() === subj
                         ? 'bg-[#23845B] text-white font-semibold shadow-xs'
                         : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#23845B]'"
@@ -230,7 +230,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Que
 
               <!-- Documents Cards Grid -->
               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                @for (c of filteredCourses(); track c.id) {
+                @for (c of paginatedCourses(); track c.id) {
                   <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-3 hover:shadow-md transition-all">
                     <div class="space-y-2">
                       <div class="flex items-center justify-between">
@@ -275,6 +275,52 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Que
                   </div>
                 }
               </div>
+
+              <!-- Pagination Controls -->
+              @if (filteredCourses().length > pageSize()) {
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-[#E3ECF2] dark:border-[#1A3145] text-xs">
+                  <span class="text-[#627D98] dark:text-[#8CA9C4] font-medium">
+                    {{ lang.tr('Affichage de', 'عرض') }}
+                    <strong class="text-[#102A43] dark:text-white">{{ (currentPage() - 1) * pageSize() + 1 }}</strong>
+                    -
+                    <strong class="text-[#102A43] dark:text-white">{{ getEndItemIndex() }}</strong>
+                    {{ lang.tr('sur', 'من أصل') }}
+                    <strong class="text-[#007CC2]">{{ filteredCourses().length }}</strong>
+                    {{ lang.tr('documents', 'وثيقة') }}
+                  </span>
+
+                  <div class="flex items-center gap-1.5">
+                    <button
+                      (click)="goToPage(currentPage() - 1)"
+                      [disabled]="currentPage() === 1"
+                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
+                      <span class="material-icons text-sm rtl:rotate-180">chevron_left</span>
+                      <span>{{ lang.tr('Précédent', 'السابق') }}</span>
+                    </button>
+
+                    <div class="flex items-center gap-1">
+                      @for (p of pageNumbers(); track p) {
+                        <button
+                          (click)="goToPage(p)"
+                          [class]="currentPage() === p
+                            ? 'bg-[#007CC2] text-white font-bold shadow-xs'
+                            : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                          class="w-8 h-8 rounded-[8px] text-xs font-semibold flex items-center justify-center transition-all cursor-pointer">
+                          {{ p }}
+                        </button>
+                      }
+                    </div>
+
+                    <button
+                      (click)="goToPage(currentPage() + 1)"
+                      [disabled]="currentPage() === totalPages()"
+                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
+                      <span>{{ lang.tr('Suivant', 'التالي') }}</span>
+                      <span class="material-icons text-sm rtl:rotate-180">chevron_right</span>
+                    </button>
+                  </div>
+                </div>
+              }
             </div>
           }
 
@@ -758,6 +804,10 @@ export class ParentHomeComponent {
   // Comment Input Form
   readonly newCommentText = signal('');
 
+  // Pagination
+  readonly pageSize = signal<number>(9);
+  readonly currentPage = signal<number>(1);
+
   readonly filteredCourses = computed(() => {
     const q = this.searchDocQuery().toLowerCase().trim();
     const grade = this.selectedGradeFilter();
@@ -770,6 +820,44 @@ export class ParentHomeComponent {
       return matchQ && matchGrade && matchSubj;
     });
   });
+
+  readonly totalPages = computed(() => {
+    return Math.max(1, Math.ceil(this.filteredCourses().length / this.pageSize()));
+  });
+
+  readonly paginatedCourses = computed(() => {
+    const start = (this.currentPage() - 1) * this.pageSize();
+    return this.filteredCourses().slice(start, start + this.pageSize());
+  });
+
+  readonly pageNumbers = computed(() => {
+    const total = this.totalPages();
+    const current = this.currentPage();
+    const pages: number[] = [];
+    const maxButtons = 5;
+
+    let start = Math.max(1, current - 2);
+    let end = Math.min(total, start + maxButtons - 1);
+
+    if (end - start < maxButtons - 1) {
+      start = Math.max(1, end - maxButtons + 1);
+    }
+
+    for (let i = start; i <= end; i++) {
+      pages.push(i);
+    }
+    return pages;
+  });
+
+  goToPage(page: number) {
+    if (page >= 1 && page <= this.totalPages()) {
+      this.currentPage.set(page);
+    }
+  }
+
+  getEndItemIndex(): number {
+    return Math.min(this.currentPage() * this.pageSize(), this.filteredCourses().length);
+  }
 
   isUserLoggedIn(): boolean {
     return !!(this.firebase.userProfile() || this.firebase.currentUser());
