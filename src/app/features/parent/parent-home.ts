@@ -962,7 +962,10 @@ export class ParentHomeComponent {
   }
 
   triggerPrintDialog() {
-    if (typeof window !== 'undefined') {
+    const course = this.printModalCourse();
+    if (course?.pdfUrl && typeof window !== 'undefined') {
+      window.open(course.pdfUrl, '_blank');
+    } else if (typeof window !== 'undefined') {
       window.print();
     }
   }

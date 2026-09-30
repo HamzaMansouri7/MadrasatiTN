@@ -204,50 +204,83 @@
 
 /* 🖨️ A4 PRINT OPTIMIZATIONS FOR MADRASATI TN */
 @media print {
-  /* 1. Hide EVERYTHING on the page by default */
-  body > * {
-    display: none !important;
-  }
-
-  /* 2. Show ONLY the element tagged .print-page-only */
-  .print-page-only,
-  .print-page-only * {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  /* 3. Make the print element fill the full page cleanly */
-  .print-page-only {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
+  /* 1. Global Page & Body Reset */
+  html, body {
     background: #ffffff !important;
     color: #000000 !important;
-    padding: 10mm !important;
     margin: 0 !important;
-    box-shadow: none !important;
-    border: none !important;
-    overflow: visible !important;
-    font-size: 11pt !important;
-    z-index: 99999 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
   }
 
-  /* 4. Hide UI-only elements inside the print area */
-  .print-page-only button,
-  .print-page-only .no-print {
-    display: none !important;
+  /* 2. Hide everything by default to prevent dashboard clutter */
+  body * {
+    visibility: hidden;
   }
 
-  /* 5. Printable watermark stamp */
-  .print-watermark {
-    opacity: 0.12 !important;
+  /* 3. Make only the printable document and its children visible */
+  #printable-document,
+  #printable-document *,
+  .print-document,
+  .print-document * {
+    visibility: visible;
+  }
+
+  /* 4. Position and size the printable sheet cleanly on A4 paper */
+  #printable-document,
+  .print-document {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 6mm 8mm !important;
+    border: 2px solid #000000 !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
     color: #000000 !important;
+    box-shadow: none !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* 5. Force high-contrast text and crisp borders in print */
+  #printable-document h1,
+  #printable-document h2,
+  #printable-document h3,
+  #printable-document h4,
+  #printable-document p,
+  #printable-document span,
+  #printable-document div {
+    color: #000000 !important;
+  }
+
+  /* 6. Subtle watermark stamp */
+  .print-watermark {
+    opacity: 0.08 !important;
+    color: #000000 !important;
+  }
+
+  /* 7. Hide all UI controls explicitly */
+  header,
+  nav,
+  app-navbar,
+  .no-print,
+  button,
+  input,
+  select,
+  textarea {
+    display: none !important;
+    visibility: hidden !important;
   }
 
   @page {
     size: A4 portrait;
-    margin: 10mm;
+    margin: 8mm;
   }
 }
 
