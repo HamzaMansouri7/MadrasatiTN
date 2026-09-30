@@ -2,6 +2,7 @@ import { Injectable, computed, signal } from '@angular/core';
 import {
   Announcement,
   ClassGroup,
+  Comment,
   Course,
   ExerciseItem,
   Homework,
@@ -64,6 +65,56 @@ export class EducationStore {
     exercises: ['ex-1'],
     teachers: ['t-1'],
   });
+
+  // Comments / Q&A State
+  readonly comments = signal<Comment[]>([
+    {
+      id: 'cmt-1',
+      targetId: 'crs-1',
+      targetType: 'course',
+      authorName: 'Mme Amel Ben Ali',
+      authorRole: 'teacher',
+      authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+      text: 'Bonne lecture à tous ! N\'hésitez pas à poser vos questions sur les étapes de calcul — je réponds chaque soir.',
+      createdAt: 'Il y a 2 jours',
+      likes: 14,
+      replies: [
+        {
+          id: 'cmt-1-r1',
+          targetId: 'crs-1',
+          targetType: 'course',
+          authorName: 'Parent d\'Ahmed',
+          authorRole: 'parent',
+          text: 'Merci Madame, Ahmed a bien compris les retenues grâce à cette fiche !',
+          createdAt: 'Il y a 1 jour',
+          likes: 5,
+        },
+      ],
+    },
+    {
+      id: 'cmt-2',
+      targetId: 'crs-1',
+      targetType: 'course',
+      authorName: 'Sami K.',
+      authorRole: 'student',
+      text: 'Je ne comprends pas l\'étape 2, pourquoi on ajoute le zéro avant de multiplier par les dizaines ?',
+      createdAt: 'Il y a 1 jour',
+      likes: 3,
+      replies: [],
+    },
+    {
+      id: 'cmt-3',
+      targetId: 'bank-1',
+      targetType: 'exercise',
+      authorName: 'Mme Amel Ben Ali',
+      authorRole: 'teacher',
+      authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+      text: 'Attention ! Pour l\'aire du carré, n\'oubliez pas d\'écrire l\'unité m² (mètres carrés) sinon vous perdez 0.5 point.',
+      createdAt: 'Il y a 3 jours',
+      likes: 22,
+      replies: [],
+    },
+  ]);
 
   // Mock Data Collections
   readonly classes = signal<ClassGroup[]>([
@@ -533,14 +584,93 @@ Pour réussir une production écrite de 6 à 8 lignes :
   constructor() {
     if (typeof localStorage !== 'undefined') {
       try {
-        const saved = localStorage.getItem('madrasati_watchlist');
-        if (saved) {
-          this.watchlist.set(JSON.parse(saved));
-        }
+        const savedWl = localStorage.getItem('madrasati_watchlist');
+        if (savedWl) this.watchlist.set(JSON.parse(savedWl));
+        const savedCmt = localStorage.getItem('madrasati_comments');
+        if (savedCmt) this.comments.set(JSON.parse(savedCmt));
       } catch (e) {
-        console.warn('Failed to load watchlist from localStorage', e);
+        console.warn('Failed to load from localStorage', e);
       }
     }
+  }
+
+  // ── Comment / Q&A Methods ──────────────────────────────────────────────────
+
+  getComments(targetId: string): Comment[] {
+    return this.comments().filter((c) => c.targetId === targetId);
+  }
+
+  addComment(targetId: string, targetType: 'course' | 'exercise', text: string, authorName: string, authorRole: Comment['authorRole'], authorAvatar?: string) {
+    const newComment: Comment = {
+      id: 'cmt-' + Date.now(),
+      targetId,
+      targetType,
+      authorName,
+      authorRole,
+      authorAvatar,
+      text,
+      createdAt: 'À l\'instant',
+      likes: 0,
+      replies: [],
+    };
+    this.comments.update((list) => {
+      const updated = [newComment, ...list];
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('madrasati_comments', JSON.stringify(updated));
+      }
+      return updated;
+    });
+  }
+
+  addReply(parentCommentId: string, text: string, authorName: string, authorRole: Comment['authorRole'], authorAvatar?: string) {
+    this.comments.update((list) => {
+      const updated = list.map((c) => {
+        if (c.id === parentCommentId) {
+          const reply: Comment = {
+            id: 'cmt-' + Date.now(),
+            targetId: c.targetId,
+            targetType: c.targetType,
+            authorName,
+            authorRole,
+            authorAvatar,
+            text,
+            createdAt: 'À l\'instant',
+            likes: 0,
+          };
+          return { ...c, replies: [...(c.replies || []), reply] };
+        }
+        return c;
+      });
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('madrasati_comments', JSON.stringify(updated));
+      }
+      return updated;
+    });
+  }
+
+  likeComment(commentId: string, parentId?: string) {
+    this.comments.update((list) => {
+      const updated = list.map((c) => {
+        if (!parentId && c.id === commentId) {
+          return { ...c, likes: c.likes + (c.isLiked ? -1 : 1), isLiked: !c.isLiked };
+        }
+        if (parentId && c.id === parentId) {
+          return {
+            ...c,
+            replies: (c.replies || []).map((r) =>
+              r.id === commentId
+                ? { ...r, likes: r.likes + (r.isLiked ? -1 : 1), isLiked: !r.isLiked }
+                : r
+            ),
+          };
+        }
+        return c;
+      });
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('madrasati_comments', JSON.stringify(updated));
+      }
+      return updated;
+    });
   }
 
   isWatched(id: string, type: 'course' | 'exercise' | 'teacher'): boolean {

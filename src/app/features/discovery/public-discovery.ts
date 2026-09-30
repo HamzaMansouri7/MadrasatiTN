@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile } from '@core';
+import { ChangeDetectionStrategy, Component, inject, signal, computed } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile, Comment } from '@core';
 
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
+  imports: [FormsModule],
   template: `
     <div class="space-y-6">
       
@@ -376,6 +377,104 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
                 </div>
               </div>
 
+              <!-- ── Q&A COMMENT TOGGLE BUTTON (exercise) ── -->
+              <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                <button
+                  (click)="toggleCommentPanel(ex.id)"
+                  [class]="openCommentIds().has(ex.id) ? 'bg-violet-100 text-violet-900 border-violet-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-600 border-slate-200 font-semibold'"
+                  class="px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 border transition-all cursor-pointer shadow-2xs">
+                  <span class="material-icons text-sm">forum</span>
+                  <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
+                  @if (store.getComments(ex.id).length > 0) {
+                    <span class="bg-violet-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                      {{ store.getComments(ex.id).length }}
+                    </span>
+                  }
+                </button>
+              </div>
+
+              @if (openCommentIds().has(ex.id)) {
+                <div class="bg-slate-50 border border-violet-200/70 rounded-2xl p-4 space-y-3 mt-1">
+                  <p class="text-[10px] font-bold text-violet-700 uppercase tracking-wide">💬 {{ lang.tr('Discussion & Q&A', 'نقاش وأسئلة') }}</p>
+
+                  <!-- existing comments -->
+                  @for (cmt of store.getComments(ex.id); track cmt.id) {
+                    <div class="space-y-2">
+                      <div class="flex gap-2.5 items-start">
+                        <div [class]="roleBadgeClass(cmt.authorRole)" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-black shrink-0">
+                          {{ cmt.authorName.charAt(0) }}
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="font-bold text-slate-900 text-xs">{{ cmt.authorName }}</span>
+                            <span [class]="roleTagClass(cmt.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(cmt.authorRole) }}</span>
+                            <span class="text-[10px] text-slate-400">{{ cmt.createdAt }}</span>
+                          </div>
+                          <p class="text-xs text-slate-700 mt-0.5 leading-relaxed">{{ cmt.text }}</p>
+                          <div class="flex items-center gap-3 mt-1">
+                            <button (click)="store.likeComment(cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors">
+                              <span class="material-icons text-xs" [class.text-rose-500]="cmt.isLiked">favorite</span>
+                              <span>{{ cmt.likes }}</span>
+                            </button>
+                            <button (click)="setReplyTarget(cmt.id, ex.id)" class="text-[10px] text-violet-600 hover:text-violet-800 font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- replies -->
+                      @if (cmt.replies && cmt.replies.length > 0) {
+                        <div class="ml-9 space-y-2 border-l-2 border-violet-100 pl-3">
+                          @for (reply of cmt.replies; track reply.id) {
+                            <div class="flex gap-2 items-start">
+                              <div [class]="roleBadgeClass(reply.authorRole)" class="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black shrink-0">
+                                {{ reply.authorName.charAt(0) }}
+                              </div>
+                              <div>
+                                <div class="flex items-center gap-1 flex-wrap">
+                                  <span class="font-bold text-slate-900 text-[11px]">{{ reply.authorName }}</span>
+                                  <span [class]="roleTagClass(reply.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(reply.authorRole) }}</span>
+                                  <span class="text-[10px] text-slate-400">{{ reply.createdAt }}</span>
+                                </div>
+                                <p class="text-[11px] text-slate-700 leading-relaxed">{{ reply.text }}</p>
+                                <button (click)="store.likeComment(reply.id, cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors mt-0.5">
+                                  <span class="material-icons text-xs" [class.text-rose-500]="reply.isLiked">favorite</span>
+                                  <span>{{ reply.likes }}</span>
+                                </button>
+                              </div>
+                            </div>
+                          }
+                        </div>
+                      }
+
+                      <!-- reply input (shown if this comment is the reply target) -->
+                      @if (replyTargetId() === cmt.id) {
+                        <div class="ml-9 flex gap-2 items-center">
+                          <input
+                            [id]="'reply-input-' + cmt.id"
+                            [(ngModel)]="replyText"
+                            [placeholder]="lang.tr('Votre réponse...', 'ردّك هنا...')"
+                            class="flex-1 border border-violet-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                          />
+                          <button (click)="submitReply(cmt.id)" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer">{{ lang.tr('Envoyer', 'إرسال') }}</button>
+                          <button (click)="replyTargetId.set(null)" class="text-slate-400 hover:text-slate-600 text-[11px] cursor-pointer">✕</button>
+                        </div>
+                      }
+                    </div>
+                  }
+
+                  <!-- new comment input -->
+                  <div class="flex gap-2 items-center pt-2 border-t border-violet-100">
+                    <input
+                      [id]="'cmt-input-ex-' + ex.id"
+                      [(ngModel)]="newCommentText"
+                      [placeholder]="lang.tr('Poser une question ou laisser un commentaire...', 'اطرح سؤالاً أو اترك تعليقاً...')"
+                      class="flex-1 border border-slate-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                    />
+                    <button (click)="submitComment(ex.id, 'exercise')" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer shrink-0">{{ lang.tr('Publier', 'نشر') }}</button>
+                  </div>
+                </div>
+              }
+
               @if (openSolutionIds().has(ex.id)) {
                 <div class="bg-emerald-50 text-emerald-900 p-4 rounded-2xl border border-emerald-200 text-xs space-y-1">
                   <span class="font-bold">{{ lang.tr('Corrigé Détaillé certifié :', 'الإصلاح المفصل المعتمد:') }}</span>
@@ -404,13 +503,28 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
                 <p class="text-xs text-slate-600 leading-relaxed">{{ c.summary }}</p>
               </div>
 
-              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <!-- action bar -->
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
                 <button
                   (click)="store.toggleUpvoteCourse(c.id)"
                   [class]="c.isUpvoted ? 'bg-emerald-600 text-white font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold'"
                   class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-all cursor-pointer">
                   <span class="material-icons text-xs">thumb_up</span>
                   <span>{{ c.upvotesCount || 0 }}</span>
+                </button>
+
+                <!-- Q&A Button (course) -->
+                <button
+                  (click)="toggleCommentPanel(c.id)"
+                  [class]="openCommentIds().has(c.id) ? 'bg-violet-100 text-violet-900 border-violet-300 font-bold' : 'bg-slate-100 hover:bg-slate-200 text-slate-600 border-slate-200 font-semibold'"
+                  class="px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 border transition-all cursor-pointer shadow-2xs">
+                  <span class="material-icons text-sm">forum</span>
+                  <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
+                  @if (store.getComments(c.id).length > 0) {
+                    <span class="bg-violet-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                      {{ store.getComments(c.id).length }}
+                    </span>
+                  }
                 </button>
 
                 <div class="flex items-center gap-2">
@@ -432,6 +546,85 @@ import { EducationStore, LanguageService, Course, ExerciseItem, TeacherProfile }
                   </button>
                 </div>
               </div>
+
+              <!-- ── Q&A PANEL (course) ── -->
+              @if (openCommentIds().has(c.id)) {
+                <div class="bg-slate-50 border border-violet-200/70 rounded-2xl p-4 space-y-3">
+                  <p class="text-[10px] font-bold text-violet-700 uppercase tracking-wide">💬 {{ lang.tr('Discussion & Q&A', 'نقاش وأسئلة') }}</p>
+
+                  @for (cmt of store.getComments(c.id); track cmt.id) {
+                    <div class="space-y-2">
+                      <div class="flex gap-2.5 items-start">
+                        <div [class]="roleBadgeClass(cmt.authorRole)" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-black shrink-0">
+                          {{ cmt.authorName.charAt(0) }}
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="font-bold text-slate-900 text-xs">{{ cmt.authorName }}</span>
+                            <span [class]="roleTagClass(cmt.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(cmt.authorRole) }}</span>
+                            <span class="text-[10px] text-slate-400">{{ cmt.createdAt }}</span>
+                          </div>
+                          <p class="text-xs text-slate-700 mt-0.5 leading-relaxed">{{ cmt.text }}</p>
+                          <div class="flex items-center gap-3 mt-1">
+                            <button (click)="store.likeComment(cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors">
+                              <span class="material-icons text-xs" [class.text-rose-500]="cmt.isLiked">favorite</span>
+                              <span>{{ cmt.likes }}</span>
+                            </button>
+                            <button (click)="setReplyTarget(cmt.id, c.id)" class="text-[10px] text-violet-600 hover:text-violet-800 font-semibold cursor-pointer">{{ lang.tr('Répondre', 'رد') }}</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      @if (cmt.replies && cmt.replies.length > 0) {
+                        <div class="ml-9 space-y-2 border-l-2 border-violet-100 pl-3">
+                          @for (reply of cmt.replies; track reply.id) {
+                            <div class="flex gap-2 items-start">
+                              <div [class]="roleBadgeClass(reply.authorRole)" class="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black shrink-0">
+                                {{ reply.authorName.charAt(0) }}
+                              </div>
+                              <div>
+                                <div class="flex items-center gap-1 flex-wrap">
+                                  <span class="font-bold text-slate-900 text-[11px]">{{ reply.authorName }}</span>
+                                  <span [class]="roleTagClass(reply.authorRole)" class="text-[9px] font-bold px-1.5 py-0.5 rounded-md">{{ roleLabel(reply.authorRole) }}</span>
+                                  <span class="text-[10px] text-slate-400">{{ reply.createdAt }}</span>
+                                </div>
+                                <p class="text-[11px] text-slate-700 leading-relaxed">{{ reply.text }}</p>
+                                <button (click)="store.likeComment(reply.id, cmt.id)" class="flex items-center gap-0.5 text-[10px] text-slate-400 hover:text-rose-500 cursor-pointer transition-colors mt-0.5">
+                                  <span class="material-icons text-xs" [class.text-rose-500]="reply.isLiked">favorite</span>
+                                  <span>{{ reply.likes }}</span>
+                                </button>
+                              </div>
+                            </div>
+                          }
+                        </div>
+                      }
+
+                      @if (replyTargetId() === cmt.id) {
+                        <div class="ml-9 flex gap-2 items-center">
+                          <input
+                            [id]="'reply-input-c-' + cmt.id"
+                            [(ngModel)]="replyText"
+                            [placeholder]="lang.tr('Votre réponse...', 'ردّك هنا...')"
+                            class="flex-1 border border-violet-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                          />
+                          <button (click)="submitReply(cmt.id)" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer">{{ lang.tr('Envoyer', 'إرسال') }}</button>
+                          <button (click)="replyTargetId.set(null)" class="text-slate-400 hover:text-slate-600 text-[11px] cursor-pointer">✕</button>
+                        </div>
+                      }
+                    </div>
+                  }
+
+                  <div class="flex gap-2 items-center pt-2 border-t border-violet-100">
+                    <input
+                      [id]="'cmt-input-c-' + c.id"
+                      [(ngModel)]="newCommentText"
+                      [placeholder]="lang.tr('Poser une question ou commenter ce cours...', 'اطرح سؤالاً حول هذا الدرس...')"
+                      class="flex-1 border border-slate-300 bg-white rounded-xl px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+                    />
+                    <button (click)="submitComment(c.id, 'course')" class="bg-violet-600 hover:bg-violet-700 text-white font-bold text-[11px] px-3 py-1.5 rounded-xl cursor-pointer shrink-0">{{ lang.tr('Publier', 'نشر') }}</button>
+                  </div>
+                </div>
+              }
             </div>
           }
         </div>
@@ -863,6 +1056,7 @@ export class PublicDiscoveryComponent {
 
   readonly activeSection = signal<'exercises' | 'courses' | 'teachers' | 'watchlist'>('exercises');
   readonly openSolutionIds = signal<Set<string>>(new Set());
+  readonly openCommentIds = signal<Set<string>>(new Set());
 
   readonly viewCourseModal = signal<Course | null>(null);
   readonly selectedTeacherModal = signal<TeacherProfile | null>(null);
@@ -877,6 +1071,85 @@ export class PublicDiscoveryComponent {
     docType: string;
     hasCorrection: boolean;
   } | null>(null);
+
+  // Comment Q&A state
+  newCommentText = '';
+  replyText = '';
+  readonly replyTargetId = signal<string | null>(null);
+
+  toggleCommentPanel(targetId: string) {
+    const newSet = new Set(this.openCommentIds());
+    if (newSet.has(targetId)) {
+      newSet.delete(targetId);
+    } else {
+      newSet.add(targetId);
+      this.replyTargetId.set(null);
+    }
+    this.openCommentIds.set(newSet);
+  }
+
+  setReplyTarget(commentId: string, _targetId: string) {
+    this.replyTargetId.set(commentId);
+    this.replyText = '';
+  }
+
+  submitComment(targetId: string, targetType: 'course' | 'exercise') {
+    const text = this.newCommentText.trim();
+    if (!text) return;
+    // Use logged-in user data if available, else fall back to 'Public'
+    const user = typeof localStorage !== 'undefined'
+      ? JSON.parse(localStorage.getItem('madrasati_user') || 'null')
+      : null;
+    const authorName = user?.name || this.lang.tr('Visiteur', 'زائر');
+    const authorRole = (user?.role as Comment['authorRole']) || 'public';
+    const authorAvatar = user?.avatarUrl;
+    this.store.addComment(targetId, targetType, text, authorName, authorRole, authorAvatar);
+    this.newCommentText = '';
+  }
+
+  submitReply(parentCommentId: string) {
+    const text = this.replyText.trim();
+    if (!text) return;
+    const user = typeof localStorage !== 'undefined'
+      ? JSON.parse(localStorage.getItem('madrasati_user') || 'null')
+      : null;
+    const authorName = user?.name || this.lang.tr('Visiteur', 'زائر');
+    const authorRole = (user?.role as Comment['authorRole']) || 'public';
+    const authorAvatar = user?.avatarUrl;
+    this.store.addReply(parentCommentId, text, authorName, authorRole, authorAvatar);
+    this.replyText = '';
+    this.replyTargetId.set(null);
+  }
+
+  roleBadgeClass(role: string): string {
+    const map: Record<string, string> = {
+      teacher: 'bg-emerald-600 text-white',
+      parent: 'bg-blue-500 text-white',
+      student: 'bg-amber-400 text-slate-900',
+      public: 'bg-slate-300 text-slate-700',
+    };
+    return map[role] || map['public'];
+  }
+
+  roleTagClass(role: string): string {
+    const map: Record<string, string> = {
+      teacher: 'bg-emerald-100 text-emerald-800',
+      parent: 'bg-blue-100 text-blue-800',
+      student: 'bg-amber-100 text-amber-900',
+      public: 'bg-slate-100 text-slate-600',
+    };
+    return map[role] || map['public'];
+  }
+
+  roleLabel(role: string): string {
+    const map: Record<string, string> = {
+      teacher: this.lang.tr('Enseignant ✓', 'معلم ✓'),
+      parent: this.lang.tr('Parent', 'ولي أمر'),
+      student: this.lang.tr('Élève', 'تلميذ'),
+      public: this.lang.tr('Visiteur', 'زائر'),
+    };
+    return map[role] || map['public'];
+  }
 
   publicSubText(): string {
     return this.lang.tr(

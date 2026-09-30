@@ -339,6 +339,7 @@ export class FirebaseService {
     } catch {
       // Ignore if not initialized
     }
+    this.currentUser.set(null);
     this.userProfile.set(null);
     this.saveSession(null);
   }

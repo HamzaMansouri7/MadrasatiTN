@@ -160,6 +160,20 @@ export interface TeacherProfile {
   };
 }
 
+export interface Comment {
+  id: string;
+  targetId: string;      // course id or exercise id
+  targetType: 'course' | 'exercise';
+  authorName: string;
+  authorRole: 'teacher' | 'parent' | 'student' | 'public';
+  authorAvatar?: string;
+  text: string;
+  createdAt: string;
+  likes: number;
+  isLiked?: boolean;
+  replies?: Comment[];
+}
+
 export interface StudentProfile {
   id: string;
   name: string;
