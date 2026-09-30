@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
+  <!-- Brand Mark -->
+  <g transform="translate(4, 4)">
+    <rect width="56" height="56" rx="14" fill="#0B2947"/>
+    <rect x="1.5" y="1.5" width="53" height="53" rx="12.5" stroke="#E0AA32" stroke-width="1.5" stroke-opacity="0.3"/>
+    
+    <!-- Open Book -->
+    <path d="M10 38C16 34 23 34 28 37C33 34 40 34 46 38V20C40 16 33 16 28 19C23 16 16 16 10 20V38Z" fill="#007CC2" fill-opacity="0.3"/>
+    <path d="M10 38C16 34 23 34 28 37V19C23 16 16 16 10 20V38Z" fill="#FFFFFF" fill-opacity="0.95"/>
+    <path d="M46 38C40 34 33 34 28 37V19C33 16 40 16 46 20V38Z" fill="#D7E7F2"/>
+    <path d="M28 19V37" stroke="#0B2947" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Star Beacon -->
+    <circle cx="28" cy="12" r="3.5" fill="#E0AA32"/>
+    <circle cx="28" cy="12" r="1.5" fill="#C1121F"/>
+  </g>
+
+  <!-- Typography: Madrasati -->
+  <text x="72" y="34" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#0B2947" letter-spacing="-0.5">Madrasati</text>
+  <text x="174" y="34" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#007CC2">TN</text>
+  
+  <!-- Subtitle -->
+  <text x="72" y="48" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#627D98" letter-spacing="0.5">ÉDUCATION TUNISIE</text>
+</svg>

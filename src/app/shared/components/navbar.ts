@@ -12,16 +12,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
           
           <!-- Logo & Platform Identity -->
           <div (click)="selectRole('home')" class="flex items-center gap-2.5 sm:gap-3 shrink-0 cursor-pointer group">
-            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] bg-[#0B2947] text-white flex items-center justify-center shadow-sm font-display font-bold text-lg shrink-0 group-hover:scale-102 transition-transform">
-              P
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] bg-[#0B2947] p-1 flex items-center justify-center shadow-sm shrink-0 group-hover:scale-102 transition-transform">
+              <img src="/favicon.svg" alt="Madrasati Logo" class="w-full h-full object-contain" />
             </div>
             <div>
               <div class="flex items-center gap-1.5 sm:gap-2">
                 <span class="font-display font-bold text-[#102A43] dark:text-white text-sm sm:text-base xl:text-lg tracking-tight whitespace-nowrap">
                   {{ lang.t('brandName') }}
                 </span>
-                <span class="text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] shrink-0">
-                  TN ▾
+                <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] border border-[#007CC2]/20 shrink-0">
+                  <span>🇹🇳</span>
+                  <span>TN</span>
                 </span>
               </div>
               <p class="text-[10px] sm:text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium leading-none hidden 2xl:block mt-0.5">
@@ -95,16 +96,103 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 class="w-36 2xl:w-48 pl-9 pr-3.5 rtl:pl-3.5 rtl:pr-9 h-[40px] bg-[#F7F9FB] dark:bg-[#152737] hover:bg-white focus:bg-white dark:hover:bg-[#1B344B] text-[#102A43] dark:text-white text-xs rounded-[10px] border border-[#CBD9E2] dark:border-[#254663] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all placeholder-[#829AB1]" />
             </div>
 
-            <!-- Notifications Bell -->
-            <button
-              type="button"
-              [title]="lang.tr('Notifications officielles', 'الإشعارات الرسمية')"
-              class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white dark:bg-[#152737] hover:bg-[#F3FAFD] dark:hover:bg-[#1B344B] text-[#102A43] dark:text-white border border-[#CBD9E2] dark:border-[#254663] flex items-center justify-center cursor-pointer transition-colors shrink-0 shadow-2xs">
-              <span class="material-icons text-base sm:text-lg text-[#102A43] dark:text-white">notifications</span>
-              <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#D64545] text-white text-[9px] font-bold flex items-center justify-center shadow-xs">
-                3
-              </span>
-            </button>
+            <!-- Notifications Bell & Dropdown Flyout -->
+            <div class="relative shrink-0">
+              <button
+                type="button"
+                (click)="notifDropdownOpen.set(!notifDropdownOpen()); profileMenuOpen.set(false)"
+                [title]="lang.tr('Notifications officielles', 'الإشعارات الرسمية')"
+                class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white dark:bg-[#152737] hover:bg-[#F3FAFD] dark:hover:bg-[#1B344B] text-[#102A43] dark:text-white border border-[#CBD9E2] dark:border-[#254663] flex items-center justify-center cursor-pointer transition-colors shrink-0 shadow-2xs">
+                <span class="material-icons text-base sm:text-lg text-[#102A43] dark:text-white">notifications</span>
+                @if (firebase.unreadNotificationsCount() > 0) {
+                  <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#D64545] text-white text-[9px] font-bold flex items-center justify-center shadow-xs animate-pulse">
+                    {{ firebase.unreadNotificationsCount() }}
+                  </span>
+                }
+              </button>
+
+              <!-- Notification Dropdown Panel -->
+              @if (notifDropdownOpen()) {
+                <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-80 sm:w-96 bg-white dark:bg-[#0E1D2A] border border-[#CBD9E2] dark:border-[#254663] rounded-2xl shadow-2xl z-50 overflow-hidden animate-in">
+                  
+                  <!-- Header -->
+                  <div class="p-3.5 bg-[#F7F9FB] dark:bg-[#152737] border-b border-[#E6EEF3] dark:border-[#1A3145] flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <span class="material-icons text-base text-[#007CC2]">notifications_active</span>
+                      <span class="font-display font-bold text-xs sm:text-sm text-[#102A43] dark:text-white">
+                        {{ lang.tr('Notifications officielles', 'الإشعارات الرسمية') }}
+                      </span>
+                      @if (firebase.unreadNotificationsCount() > 0) {
+                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB]">
+                          {{ firebase.unreadNotificationsCount() }} {{ lang.tr('non lues', 'غير مقروءة') }}
+                        </span>
+                      }
+                    </div>
+
+                    @if (firebase.unreadNotificationsCount() > 0) {
+                      <button
+                        type="button"
+                        (click)="firebase.markAllNotificationsAsRead()"
+                        class="text-[11px] text-[#007CC2] hover:underline font-semibold cursor-pointer">
+                        {{ lang.tr('Tout lire', 'تحديد الكل') }}
+                      </button>
+                    }
+                  </div>
+
+                  <!-- Notifications List -->
+                  <div class="max-h-[380px] overflow-y-auto divide-y divide-[#E6EEF3] dark:divide-[#1A3145]">
+                    @for (notif of firebase.notifications(); track notif.id) {
+                      <div
+                        (click)="handleNotificationClick(notif)"
+                        [class]="notif.isRead ? 'bg-white dark:bg-[#0E1D2A] opacity-75' : 'bg-[#F0F8FF]/70 dark:bg-[#102A43]/40'"
+                        class="p-3.5 hover:bg-[#F3FAFD] dark:hover:bg-[#152737] transition-colors cursor-pointer flex gap-3 items-start">
+                        
+                        <!-- Type Icon -->
+                        <div
+                          [class]="notif.type === 'new_doc' ? 'bg-[#007CC2]/10 text-[#007CC2]' : (notif.type === 'qa_reply' ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600')"
+                          class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                          <span class="material-icons text-base">{{ notif.icon || 'notifications' }}</span>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-center justify-between gap-1 mb-0.5">
+                            <h4 class="text-xs font-semibold text-[#102A43] dark:text-white truncate">
+                              {{ notif.title }}
+                            </h4>
+                            @if (!notif.isRead) {
+                              <span class="w-2 h-2 rounded-full bg-[#007CC2] shrink-0"></span>
+                            }
+                          </div>
+                          <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] line-clamp-2 leading-relaxed mb-1">
+                            {{ notif.message }}
+                          </p>
+                          <span class="text-[10px] text-[#829AB1] dark:text-[#627D98]">
+                            {{ notif.createdAt }}
+                          </span>
+                        </div>
+                      </div>
+                    } @empty {
+                      <div class="p-8 text-center text-[#829AB1]">
+                        <span class="material-icons text-3xl mb-1 text-[#829AB1]/60">notifications_none</span>
+                        <p class="text-xs">{{ lang.tr('Aucune notification pour le moment', 'لا توجد إشعارات حالياً') }}</p>
+                      </div>
+                    }
+                  </div>
+
+                  <!-- Footer Broadcast Action -->
+                  <div class="p-2.5 bg-[#F7F9FB] dark:bg-[#152737] border-t border-[#E6EEF3] dark:border-[#1A3145] text-center">
+                    <button
+                      type="button"
+                      (click)="notifDropdownOpen.set(false); selectRole('parent')"
+                      class="text-xs text-[#007CC2] dark:text-[#168CCB] font-semibold hover:underline cursor-pointer">
+                      {{ lang.tr('Voir la banque de documents', 'عرض بنك الوثائق الرسمي') }} →
+                    </button>
+                  </div>
+
+                </div>
+              }
+            </div>
 
             <!-- Mode Switcher Pill -->
             <button
@@ -286,6 +374,15 @@ export class NavbarComponent {
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
   readonly profileMenuOpen = signal<boolean>(false);
+  readonly notifDropdownOpen = signal<boolean>(false);
+
+  async handleNotificationClick(notif: any) {
+    await this.firebase.markNotificationAsRead(notif.id);
+    this.notifDropdownOpen.set(false);
+    if (notif.linkRole) {
+      this.store.switchRole(notif.linkRole);
+    }
+  }
 
   selectRole(role: UserRole) {
     this.store.switchRole(role);

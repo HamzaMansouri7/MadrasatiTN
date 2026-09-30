@@ -1,4 +1,4 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, computed } from '@angular/core';
 import { initializeApp } from 'firebase/app';
 import {
   Auth,
@@ -14,14 +14,21 @@ import {
 } from 'firebase/auth';
 import {
   Firestore,
+  collection,
   doc,
   getDoc,
   getDocFromServer,
   getFirestore,
   setDoc,
+  addDoc,
+  onSnapshot,
+  query,
+  orderBy,
+  limit,
+  updateDoc,
 } from 'firebase/firestore';
 import firebaseConfig from '../../../../firebase-applet-config.json';
-import { UserRole } from '../models/education.model';
+import { UserRole, AppNotification } from '../models/education.model';
 
 export interface UserProfile {
   uid: string;
@@ -46,6 +53,44 @@ export class FirebaseService {
   readonly userProfile = signal<UserProfile | null>(null);
   readonly isAuthLoading = signal<boolean>(true);
 
+  // Real-time Notification System
+  readonly notifications = signal<AppNotification[]>([
+    {
+      id: 'notif-1',
+      type: 'new_doc',
+      title: 'Nouvelle Évaluation A4 disponible',
+      message: 'Une fiche d\'exercices et évaluation de Mathématiques (4ème Année) a été publiée.',
+      createdAt: 'Il y a 10 min',
+      isRead: false,
+      linkRole: 'parent',
+      icon: 'menu_book',
+    },
+    {
+      id: 'notif-2',
+      type: 'qa_reply',
+      title: 'Réponse certifiée d\'un enseignant',
+      message: 'Un enseignant a répondu à votre question sur les fractions et a joint une fiche de révision.',
+      createdAt: 'Il y a 35 min',
+      isRead: false,
+      linkRole: 'parent',
+      icon: 'forum',
+    },
+    {
+      id: 'notif-3',
+      type: 'announcement',
+      title: 'Bataillon d\'examens officiels',
+      message: 'Le calendrier des devoirs de contrôle du premier trimestre a été diffusé.',
+      createdAt: 'Hier à 18h',
+      isRead: true,
+      linkRole: 'parent',
+      icon: 'campaign',
+    },
+  ]);
+
+  readonly unreadNotificationsCount = computed(() => {
+    return this.notifications().filter((n) => !n.isRead).length;
+  });
+
   constructor() {
     // Restore session from localStorage if available
     if (typeof localStorage !== 'undefined') {
@@ -60,6 +105,7 @@ export class FirebaseService {
     }
 
     this.testConnection();
+    this.initNotificationsListener();
     onAuthStateChanged(this.auth, async (user) => {
       this.currentUser.set(user);
       if (user) {
@@ -323,6 +369,39 @@ export class FirebaseService {
     return profile;
   }
 
+  private initNotificationsListener() {
+    try {
+      const notifsCol = collection(this.db, 'notifications');
+      const q = query(notifsCol, orderBy('timestamp', 'desc'), limit(20));
+      onSnapshot(
+        q,
+        (snapshot) => {
+          if (!snapshot.empty) {
+            const firestoreNotifs: AppNotification[] = snapshot.docs.map((d) => {
+              const data = d.data();
+              return {
+                id: d.id,
+                type: data['type'] || 'announcement',
+                title: data['title'] || 'Notification',
+                message: data['message'] || '',
+                createdAt: data['createdAt'] || 'Récemment',
+                isRead: data['isRead'] || false,
+                linkRole: data['linkRole'],
+                icon: data['icon'] || 'notifications',
+              };
+            });
+            this.notifications.set(firestoreNotifs);
+          }
+        },
+        (err) => {
+          console.warn('Firestore real-time notification listener note (using local cache):', err?.message);
+        }
+      );
+    } catch (e) {
+      console.warn('Notifications listener init error:', e);
+    }
+  }
+
   private saveSession(profile: UserProfile | null) {
     if (typeof localStorage !== 'undefined') {
       if (profile) {
@@ -330,6 +409,57 @@ export class FirebaseService {
       } else {
         localStorage.removeItem('madrasati_user');
       }
+    }
+  }
+
+  async markNotificationAsRead(id: string): Promise<void> {
+    this.notifications.update((list) =>
+      list.map((n) => (n.id === id ? { ...n, isRead: true } : n))
+    );
+    try {
+      if (!id.startsWith('notif-')) {
+        const docRef = doc(this.db, 'notifications', id);
+        await updateDoc(docRef, { isRead: true });
+      }
+    } catch (e) {
+      // Offline fallback
+    }
+  }
+
+  async markAllNotificationsAsRead(): Promise<void> {
+    this.notifications.update((list) => list.map((n) => ({ ...n, isRead: true })));
+    try {
+      for (const n of this.notifications()) {
+        if (!n.id.startsWith('notif-')) {
+          const docRef = doc(this.db, 'notifications', n.id);
+          await updateDoc(docRef, { isRead: true }).catch(() => {});
+        }
+      }
+    } catch (e) {
+      // Offline fallback
+    }
+  }
+
+  async addNotification(notif: Omit<AppNotification, 'id' | 'createdAt' | 'isRead'>): Promise<void> {
+    const localId = 'notif-' + Date.now();
+    const newNotif: AppNotification = {
+      ...notif,
+      id: localId,
+      createdAt: 'À l\'instant',
+      isRead: false,
+    };
+    this.notifications.update((list) => [newNotif, ...list]);
+
+    try {
+      const notifsCol = collection(this.db, 'notifications');
+      await addDoc(notifsCol, {
+        ...notif,
+        createdAt: 'À l\'instant',
+        timestamp: Date.now(),
+        isRead: false,
+      });
+    } catch (err) {
+      console.warn('Could not write notification to Firestore (retained in local state):', err);
     }
   }
 

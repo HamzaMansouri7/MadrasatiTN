@@ -253,3 +253,20 @@ export interface QuestionThread {
   answers: QuestionAnswer[];
 }
 
+export type NotificationType = 'qa_reply' | 'new_doc' | 'announcement' | 'blog_comment' | 'exam';
+
+export interface AppNotification {
+  id: string;
+  targetRole?: UserRole | 'all';
+  type: NotificationType;
+  title: string;
+  message: string;
+  createdAt: string;
+  isRead: boolean;
+  linkRole?: UserRole;
+  targetDocId?: string;
+  targetThreadId?: string;
+  icon?: string;
+}
+
+

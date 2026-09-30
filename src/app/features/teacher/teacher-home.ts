@@ -1274,6 +1274,13 @@ export class TeacherHomeComponent {
       content: this.newAnnounceContent(),
       isPinned: this.newAnnounceCategory() === 'exam',
     });
+    this.firebase.addNotification({
+      type: this.newAnnounceCategory() === 'exam' ? 'exam' : 'announcement',
+      title: this.newAnnounceTitle(),
+      message: this.newAnnounceContent(),
+      linkRole: 'parent',
+      icon: this.newAnnounceCategory() === 'exam' ? 'event_note' : 'campaign',
+    });
     this.closeModal();
   }
 
@@ -1326,6 +1333,13 @@ export class TeacherHomeComponent {
       pdfUrl: this.uploadedFileUrl() || undefined,
       watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
     });
+    this.firebase.addNotification({
+      type: 'new_doc',
+      title: `Nouvelle fiche : ${this.newCourseTitle()}`,
+      message: `${this.newCourseSubject()} (${this.newCourseGrade()}) - Ajoutée à la banque de documents.`,
+      linkRole: 'parent',
+      icon: 'menu_book',
+    });
     this.closeModal();
   }
 
@@ -1342,6 +1356,13 @@ export class TeacherHomeComponent {
       authorName: this.firebase.userProfile()?.displayName || 'Enseignant Certifié',
       authorTitle: 'Enseignant Certifié',
       readTimeMinutes: Math.max(2, Math.ceil(this.newArticleContent().split(' ').length / 180)),
+    });
+    this.firebase.addNotification({
+      type: 'announcement',
+      title: `Article : ${this.newArticleTitle()}`,
+      message: `Publié sur le blog pédagogique de la plateforme.`,
+      linkRole: 'teacher',
+      icon: 'article',
     });
     this.closeModal();
   }
@@ -1363,6 +1384,14 @@ export class TeacherHomeComponent {
       attachedDocId: this.selectedAttachCourseId() || undefined,
       attachedDocTitle,
       isVerifiedAnswer: true,
+    });
+
+    this.firebase.addNotification({
+      type: 'qa_reply',
+      title: `Réponse d'un enseignant à votre question`,
+      message: `Sujet : ${thread.subject} - ${thread.title.slice(0, 45)}...`,
+      linkRole: 'parent',
+      icon: 'forum',
     });
 
     this.replyingThread.set(null);

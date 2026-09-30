@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Squircle Background -->
+  <rect width="64" height="64" rx="16" fill="#0B2947"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="#E0AA32" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Open Book Wings -->
+  <path d="M12 43C18 39 26 39 32 42C38 39 46 39 52 43V23C46 19 38 19 32 22C26 19 18 19 12 23V43Z" fill="#007CC2" fill-opacity="0.25"/>
+  <path d="M12 43C18 39 26 39 32 42V22C26 19 18 19 12 23V43Z" fill="#FFFFFF" fill-opacity="0.95"/>
+  <path d="M52 43C46 39 38 39 32 42V22C38 19 46 19 52 23V43Z" fill="#D7E7F2"/>
+
+  <!-- Book Spine Spine Line -->
+  <path d="M32 22V42" stroke="#0B2947" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Stylized Arabic Meem / Knowledge Beacon with Gold Star -->
+  <circle cx="32" cy="15" r="4" fill="#E0AA32"/>
+  <path d="M32 10V12M32 18V20M27 15H29M35 15H37" stroke="#E0AA32" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Tunisian Red Accent Dot -->
+  <circle cx="32" cy="15" r="1.8" fill="#C1121F"/>
+</svg>

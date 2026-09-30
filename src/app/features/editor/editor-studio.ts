@@ -1030,6 +1030,14 @@ export class EditorStudioComponent {
       watermarkText: this.docWatermark(),
     });
 
+    this.firebase.addNotification({
+      type: 'new_doc',
+      title: `Nouveau document : ${this.docTitle()}`,
+      message: `${this.docSubject()} (${this.docGrade()}) - Prêt pour impression A4 et partage WhatsApp.`,
+      linkRole: 'parent',
+      icon: 'menu_book',
+    });
+
     this.publishModalOpen.set(false);
     this.store.setRole('teacher');
   }
@@ -1046,6 +1054,14 @@ export class EditorStudioComponent {
       authorName: this.firebase.userProfile()?.displayName || 'Enseignant Certifié',
       authorTitle: 'Enseignant Certifié',
       readTimeMinutes: Math.max(2, Math.ceil(content.split(' ').length / 180)),
+    });
+
+    this.firebase.addNotification({
+      type: 'announcement',
+      title: `Nouvel article pédagogique : ${this.docTitle()}`,
+      message: `Publié par ${this.firebase.userProfile()?.displayName || 'un enseignant certifié'}.`,
+      linkRole: 'teacher',
+      icon: 'article',
     });
 
     this.publishModalOpen.set(false);
