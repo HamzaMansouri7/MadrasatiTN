@@ -1262,6 +1262,12 @@ app.get('/generate', (req: Request, res: Response, next): void => {
   }
 });
 
+app.get(['/favicon.ico', '/favicon.svg'], (req: Request, res: Response) => {
+  res.setHeader('Cache-Control', 'public, max-age=86400, must-revalidate');
+  const fileName = req.path.endsWith('.svg') ? 'favicon.svg' : 'favicon.ico';
+  res.sendFile(join(browserDistFolder, fileName));
+});
+
 /**
  * Handle all other requests by rendering the Angular application.
  */
