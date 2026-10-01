@@ -847,6 +847,7 @@ Génère ${n} exercices NOUVEAUX et variés, du même style et du même thème q
 - Thème: ${topic || 'conforme au programme officiel'}
 - Palette de couleurs à réutiliser: ${palette.join(', ') || 'couleurs vives et enfantines'}
 - Style d'illustration: ${(dna.illustrationStyle || 'cartoon mignon, couleurs vives').toString().slice(0, 200)}
+- Langue de rédaction : Si la matière est l'Arabe (اللغة العربية), l'Éducation Islamique (التربية الإسلامية), l'Histoire, l'Éveil Scientifique en 1ère/2ème année, ou si le thème est en arabe, TOUS les titres ("title"), énoncés ("promptText"), consignes, options et corrections DOIVENT être rédigés en langue arabe tunisienne standard (العربية الفصحى). Si la matière est le Français, rédige en français adapté au programme tunisien.
 
 Réponds STRICTEMENT au format JSON valide suivant :
 {

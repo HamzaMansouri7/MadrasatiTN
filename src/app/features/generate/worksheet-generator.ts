@@ -116,10 +116,10 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     if (!img || this.analyzing()) return;
     this.analyzing.set(true);
     this.startThinking([
-      this.lang.tr('Lecture de la fiche…', '…قراءة الورقة'),
-      this.lang.tr('Détection des couleurs et du style…', '…استخراج الألوان والنمط'),
-      this.lang.tr('Identification du niveau et de la matière…', '…تحديد المستوى والمادة'),
-      this.lang.tr('Analyse de la mise en page…', '…تحليل التنسيق'),
+      this.lang.tr('Lecture de la fiche…', 'قراءة محتوى الورقة…'),
+      this.lang.tr('Détection des couleurs et du style…', 'استخراج الألوان والنمط…'),
+      this.lang.tr('Identification du niveau et de la matière…', 'تحديد المستوى والمادة…'),
+      this.lang.tr('Analyse de la mise en page…', 'تحليل التنسيق والهيكلة…'),
     ]);
     try {
       const dna = await this.store.analyzeWorksheet(img, this.contentType, 'worksheet-upload');
@@ -135,10 +135,10 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     if (!dna || this.generating()) return;
     this.generating.set(true);
     this.startThinking([
-      this.lang.tr('Conception des exercices…', '…تصميم التمارين'),
-      this.lang.tr('Adaptation au programme tunisien…', '…التكييف مع البرنامج التونسي'),
-      this.lang.tr('Rédaction des consignes…', '…صياغة التعليمات'),
-      this.lang.tr('Préparation des corrigés…', '…إعداد الإصلاح'),
+      this.lang.tr('Conception des exercices…', 'تصميم التمارين البيداغوجية…'),
+      this.lang.tr('Adaptation au programme tunisien…', 'مطابقة البرنامج الرسمي التونسي…'),
+      this.lang.tr('Rédaction des consignes…', 'صياغة التعليمات والأسئلة…'),
+      this.lang.tr('Préparation des corrigés…', 'إعداد شبكة الإصلاح…'),
     ]);
     try {
       const list = await this.store.generateSimilarExercises(dna, this.count());
@@ -155,9 +155,9 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     const style = this.dna()?.illustrationStyle || 'educational';
     this.illustrating.set(true);
     this.startThinking([
-      this.lang.tr('Dessin des illustrations…', '…رسم الصور'),
-      this.lang.tr('Application de la palette de couleurs…', '…تطبيق لوحة الألوان'),
-      this.lang.tr('Rendu adapté aux enfants…', '…إخراج مناسب للأطفال'),
+      this.lang.tr('Dessin des illustrations…', 'رسم الصور التوضيحية…'),
+      this.lang.tr('Application de la palette de couleurs…', 'تطبيق لوحة الألوان المكتشفة…'),
+      this.lang.tr('Rendu adapté aux enfants…', 'إخراج جذاب ومناسب للأطفال…'),
     ]);
     try {
       await Promise.all(

@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
 
 @Component({
@@ -72,12 +73,23 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             <!-- Public Discovery -->
             <button
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' 
+              [class]="store.currentRole() === 'public' && !isGeneratorRoute()
                 ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
                 : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
               <span class="material-icons text-base xl:text-lg">explore</span>
               <span>{{ lang.t('rolePublic') }}</span>
+            </button>
+
+            <!-- Worksheet Generator Studio -->
+            <button
+              (click)="navigateToGenerator()"
+              [class]="isGeneratorRoute()
+                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg text-amber-500">auto_awesome</span>
+              <span>{{ lang.t('generatorNav') }}</span>
             </button>
           </nav>
 
@@ -196,11 +208,14 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
             <!-- Language Toggle Pill -->
             <button
+              type="button"
               (click)="lang.toggleLanguage()"
-              [title]="lang.tr('Changer de langue', 'تغيير اللغة')"
-              class="flex items-center gap-1.5 sm:gap-2 bg-white hover:bg-[#F3FAFD] text-[#102A43] border border-[#CBD9E2] px-2.5 sm:px-3 h-[38px] sm:h-[40px] rounded-[10px] text-xs font-semibold cursor-pointer transition-colors shrink-0 shadow-2xs">
-              <span class="text-xs font-bold">{{ lang.isArabic() ? 'العربية' : 'Français' }}</span>
-              <span class="material-icons text-xs text-[#829AB1]">translate</span>
+              [title]="lang.t('changeLanguage')"
+              class="flex items-center gap-1.5 bg-white hover:bg-[#F3FAFD] text-[#102A43] border border-[#CBD9E2] px-2.5 sm:px-3 h-[38px] sm:h-[40px] rounded-[10px] text-xs font-semibold cursor-pointer transition-colors shrink-0 shadow-2xs">
+              <span [class.text-[#007CC2]]="lang.isArabic()" [class.font-bold]="lang.isArabic()" [class.opacity-50]="!lang.isArabic()">عربي</span>
+              <span class="text-slate-300">|</span>
+              <span [class.text-[#007CC2]]="!lang.isArabic()" [class.font-bold]="!lang.isArabic()" [class.opacity-50]="lang.isArabic()">FR</span>
+              <span class="material-icons text-xs text-[#829AB1] ml-0.5">translate</span>
             </button>
 
             <!-- User Profile Avatar & Dropdown Menu OR Connexion CTA Button -->
@@ -362,8 +377,17 @@ export class NavbarComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  readonly router = inject(Router);
   readonly profileMenuOpen = signal<boolean>(false);
   readonly notifDropdownOpen = signal<boolean>(false);
+
+  isGeneratorRoute(): boolean {
+    return this.router.url.includes('/generate');
+  }
+
+  navigateToGenerator() {
+    this.router.navigateByUrl('/generate');
+  }
 
   async handleNotificationClick(notif: any) {
     await this.firebase.markNotificationAsRead(notif.id);
