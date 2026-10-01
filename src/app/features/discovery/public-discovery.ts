@@ -11,15 +11,15 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
     <div class="space-y-6">
       
       <!-- Hero Banner & AI Bulk Upload Zone -->
-      <div class="bg-[#14251D] text-[#FBF8F1] rounded-[28px] p-6 sm:p-9 overflow-hidden">
-        <div class="space-y-7">
-          <div class="max-w-3xl space-y-4">
+      <div class="bg-[#14251D] text-[#FBF8F1] rounded-[24px] p-4 sm:p-6 overflow-hidden">
+        <div class="space-y-5">
+          <div class="max-w-3xl space-y-2">
             <div class="inline-flex items-center gap-2 text-[#9DBBA8] text-xs font-medium">
               <span class="material-icons text-[16px]">verified</span>
               {{ lang.tr('Bibliothèque officielle · Programmes CNP', 'المكتبة الرسمية · برامج المركز الوطني البيداغوجي') }}
             </div>
 
-            <h1 class="font-display text-[1.75rem] sm:text-[2.4rem] font-semibold tracking-[-0.01em] leading-[1.1]">
+            <h1 class="font-display text-[1.5rem] sm:text-[2rem] font-semibold tracking-[-0.01em] leading-[1.1]">
               {{ lang.tr("La bibliothèque officielle de l’école primaire tunisienne.", 'المكتبة الرسمية للمدرسة الابتدائية التونسية.') }}
             </h1>
 
@@ -308,16 +308,16 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                 </div>
               </div>
 
-              <!-- Action Bar: Upvoting, Reporting & One-Click PDF Watermark Print -->
-              <div class="pt-3 border-t border-[#E7DFCF] flex items-center justify-between flex-wrap gap-2 text-xs">
-                
-                <!-- FEATURE 4: Community Upvoting & Reporting -->
-                <div class="flex items-center gap-2">
+              <!-- Action Bar: all actions on one compact line -->
+              <div class="pt-3 border-t border-[#E7DFCF] flex items-center justify-between flex-wrap gap-1 text-[11px]">
+
+                <!-- Upvote & Report -->
+                <div class="flex items-center gap-1">
                   <button
                     (click)="store.toggleUpvoteExercise(ex.id)"
                     [class]="ex.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer">
-                    <span class="material-icons text-xs">thumb_up</span>
+                    class="px-2 py-1 rounded-lg flex items-center gap-1 transition-colors cursor-pointer">
+                    <span class="material-icons text-[13px]">thumb_up</span>
                     <span>{{ ex.upvotesCount || 0 }}</span>
                   </button>
 
@@ -326,22 +326,19 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                     [disabled]="ex.isReported"
                     [class]="ex.isReported ? 'text-[#C1121F] font-semibold' : 'text-[#6B7A70] hover:text-[#C1121F]'"
                     title="Signaler un scan flou ou incomplet"
-                    class="p-1 rounded-lg cursor-pointer transition-colors text-xs flex items-center gap-1">
-                    <span class="material-icons text-sm">report_problem</span>
-                    @if (ex.isReported) {
-                      <span class="text-[10px]">{{ lang.tr('Signalé', 'تم الإبلاغ') }}</span>
-                    }
+                    class="p-1 rounded-lg cursor-pointer transition-colors flex items-center gap-1">
+                    <span class="material-icons text-[14px]">report_problem</span>
                   </button>
                 </div>
 
-                <!-- FEATURE 5: One-Click PDF Watermark & Print Preview -->
-                <div class="flex items-center gap-1.5 flex-wrap">
+                <!-- Favoris · Copy · Corrigé · PDF · Q&A -->
+                <div class="flex items-center gap-1 flex-wrap">
                   <button
                     (click)="store.toggleWatchlist(ex.id, 'exercise')"
                     [class]="store.isWatched(ex.id, 'exercise') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
-                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer border"
+                    class="px-1.5 py-0.5 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer border"
                     [title]="store.isWatched(ex.id, 'exercise') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
-                    <span class="material-icons text-xs" [class.text-[#8A5A00]]="store.isWatched(ex.id, 'exercise')">
+                    <span class="material-icons text-[12px]" [class.text-[#8A5A00]]="store.isWatched(ex.id, 'exercise')">
                       {{ store.isWatched(ex.id, 'exercise') ? 'bookmark' : 'bookmark_border' }}
                     </span>
                     <span>{{ store.isWatched(ex.id, 'exercise') ? 'Sauvegardé' : 'Favoris' }}</span>
@@ -349,41 +346,38 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
 
                   <button
                     (click)="copyLink(ex)"
-                    class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium p-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer border border-[#E7DFCF]"
+                    class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium p-1 rounded-md flex items-center cursor-pointer border border-[#E7DFCF]"
                     title="Copier le lien">
-                    <span class="material-icons text-xs">content_copy</span>
+                    <span class="material-icons text-[12px]">content_copy</span>
                   </button>
 
                   <button
                     (click)="toggleSolution(ex.id)"
-                    class="text-xs font-semibold text-[#1B4332] hover:text-[#14251D] flex items-center gap-1 cursor-pointer px-2 py-1">
-                    <span class="material-icons text-sm">visibility</span>
+                    class="font-semibold text-[11px] text-[#1B4332] hover:text-[#14251D] flex items-center gap-1 cursor-pointer px-1.5 py-0.5">
+                    <span class="material-icons text-[12px]">visibility</span>
                     {{ openSolutionIds().has(ex.id) ? lang.tr('Masquer', 'إخفاء') : lang.tr('Voir Corrigé', 'عرض الإصلاح') }}
                   </button>
 
                   <button
+                    (click)="toggleCommentPanel(ex.id)"
+                    [class]="openCommentIds().has(ex.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
+                    class="px-1.5 py-0.5 text-[11px] rounded-md flex items-center gap-1 border transition-all cursor-pointer">
+                    <span class="material-icons text-[12px]">forum</span>
+                    <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
+                    @if (store.getComments(ex.id).length > 0) {
+                      <span class="bg-[#1B4332] text-[#FBF8F1] text-[9px] font-semibold px-1 rounded-full">
+                        {{ store.getComments(ex.id).length }}
+                      </span>
+                    }
+                  </button>
+
+                  <button
                     (click)="openWatermarkPreviewModal(ex)"
-                    class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors">
-                    <span class="material-icons text-xs">print</span>
+                    class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-0.5 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
+                    <span class="material-icons text-[12px]">print</span>
                     {{ lang.tr('Imprimer PDF', 'طباعة PDF') }}
                   </button>
                 </div>
-              </div>
-
-              <!-- ── Q&A COMMENT TOGGLE BUTTON (exercise) ── -->
-              <div class="border-t border-[#E7DFCF] pt-3 flex items-center justify-between">
-                <button
-                  (click)="toggleCommentPanel(ex.id)"
-                  [class]="openCommentIds().has(ex.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
-                  class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 border transition-all cursor-pointer">
-                  <span class="material-icons text-xs">forum</span>
-                  <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
-                  @if (store.getComments(ex.id).length > 0) {
-                    <span class="bg-[#1B4332] text-[#FBF8F1] text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
-                      {{ store.getComments(ex.id).length }}
-                    </span>
-                  }
-                </button>
               </div>
 
               @if (openCommentIds().has(ex.id)) {
@@ -530,20 +524,12 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               </div>
 
               <!-- action bar -->
-              <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between flex-wrap gap-2">
-                <button
-                  (click)="store.toggleUpvoteCourse(c.id)"
-                  [class]="c.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-                  class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer">
-                  <span class="material-icons text-xs">thumb_up</span>
-                  <span>{{ c.upvotesCount || 0 }}</span>
-                </button>
-
+              <div class="pt-4 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5">
                 <!-- Q&A Button (course) -->
                 <button
                   (click)="toggleCommentPanel(c.id)"
                   [class]="openCommentIds().has(c.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
-                  class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 border transition-all cursor-pointer">
+                  class="w-full justify-center px-1.5 py-1 rounded-md text-[11px] flex items-center gap-1 border transition-all cursor-pointer">
                   <span class="material-icons text-xs">forum</span>
                   <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
                   @if (store.getComments(c.id).length > 0) {
@@ -553,42 +539,50 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                   }
                 </button>
 
-                <div class="flex items-center gap-2">
-                  <button
-                    (click)="store.toggleWatchlist(c.id, 'course')"
-                    [class]="store.isWatched(c.id, 'course') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
-                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer border"
-                    [title]="store.isWatched(c.id, 'course') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
-                    <span class="material-icons text-xs" [class.text-[#8A5A00]]="store.isWatched(c.id, 'course')">
-                      {{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}
-                    </span>
-                    <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
-                  </button>
+                <button
+                  (click)="store.toggleUpvoteCourse(c.id)"
+                  [class]="c.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
+                  class="w-full justify-center px-1.5 py-1 rounded-md text-[11px] flex items-center gap-1 transition-colors cursor-pointer">
+                  <span class="material-icons text-xs">thumb_up</span>
+                  <span>{{ c.upvotesCount || 0 }}</span>
+                </button>
 
-                  @if (c.pdfUrl) {
-                    <a
-                      [href]="c.pdfUrl"
-                      target="_blank"
-                      rel="noopener"
-                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-2.5 py-1.5 rounded-xl flex items-center gap-1 transition-colors">
-                      <span class="material-icons text-xs">download</span>
-                      {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
-                    </a>
-                  } @else if (c.imageUrls && c.imageUrls.length) {
-                    <button
-                      (click)="openImageDoc(c)"
-                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-2.5 py-1.5 rounded-xl flex items-center gap-1 cursor-pointer transition-colors">
-                      <span class="material-icons text-xs">print</span>
-                      {{ lang.tr('Voir & Imprimer A4', 'عرض وطباعة') }}
-                    </button>
-                  } @else {
-                    <button
-                      (click)="viewCourseModal.set(c)"
-                      class="bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-2.5 py-1.5 rounded-xl cursor-pointer transition-colors">
-                      {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
-                    </button>
-                  }
-                </div>
+                <!-- PDF/Print Button -->
+                @if (c.pdfUrl) {
+                  <a
+                    [href]="c.pdfUrl"
+                    target="_blank"
+                    rel="noopener"
+                    class="w-full justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1 rounded-md flex items-center gap-1 transition-colors">
+                    <span class="material-icons text-xs">download</span>
+                    {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
+                  </a>
+                } @else if (c.imageUrls && c.imageUrls.length) {
+                  <button
+                    (click)="openImageDoc(c)"
+                    class="w-full justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
+                    <span class="material-icons text-xs">print</span>
+                    {{ lang.tr('Voir & Imprimer', 'عرض وطباعة') }}
+                  </button>
+                } @else {
+                  <button
+                    (click)="viewCourseModal.set(c)"
+                    class="w-full justify-center bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
+                    <span class="material-icons text-xs">menu_book</span>
+                    {{ lang.tr('Consulter', 'قراءة الملخص') }}
+                  </button>
+                }
+
+                <button
+                  (click)="store.toggleWatchlist(c.id, 'course')"
+                  [class]="store.isWatched(c.id, 'course') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
+                  class="w-full justify-center px-1.5 py-1 rounded-md text-[11px] flex items-center gap-1 transition-colors cursor-pointer border"
+                  [title]="store.isWatched(c.id, 'course') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
+                  <span class="material-icons text-xs" [class.text-[#8A5A00]]="store.isWatched(c.id, 'course')">
+                    {{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}
+                  </span>
+                  <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
+                </button>
               </div>
 
               <!-- ── Q&A PANEL (course) ── -->
