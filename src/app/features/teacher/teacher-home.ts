@@ -39,8 +39,8 @@ export interface GeneratedExerciseResult {
       }
 
       <!-- Welcome Header: Institutional Hero -->
-      <div class="rounded-[24px] bg-[#0B2947] text-white p-7 sm:p-9 shadow-sm">
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+      <div class="rounded-[24px] bg-[#0B2947] text-white p-6 sm:p-7 shadow-sm">
+        <div class="space-y-5">
           <div class="space-y-3">
             <div class="flex flex-wrap items-center gap-2">
               <span class="inline-flex items-center gap-1.5 text-[#8CA9C4] text-xs font-medium">
@@ -83,7 +83,7 @@ export interface GeneratedExerciseResult {
           </div>
 
           <!-- Quick Actions Bar -->
-          <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+          <div class="flex flex-wrap items-center gap-2.5 pt-5 border-t border-white/10">
             <button
               (click)="openStudio()"
               class="flex items-center gap-1.5 bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
