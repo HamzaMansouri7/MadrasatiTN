@@ -74,6 +74,66 @@ export class EducationStore {
   // signal and opens the matching exercise in its printable preview modal.
   readonly pendingDocId = signal<string | null>(null);
 
+  // Deep-linked and active blog post for detail/reader view
+  readonly selectedBlogPost = signal<BlogPost | null>(null);
+  readonly editingBlogPost = signal<BlogPost | null>(null);
+
+  // App-wide toast notification system
+  readonly toast = signal<{ message: string; type: 'success' | 'info' | 'error' } | null>(null);
+  private toastTimer: ReturnType<typeof setTimeout> | null = null;
+
+  showToast(message: string, type: 'success' | 'info' | 'error' = 'success', durationMs = 3500) {
+    if (this.toastTimer) clearTimeout(this.toastTimer);
+    this.toast.set({ message, type });
+    if (typeof window !== 'undefined') {
+      this.toastTimer = setTimeout(() => {
+        this.toast.set(null);
+      }, durationMs);
+    }
+  }
+
+  hideToast() {
+    if (this.toastTimer) clearTimeout(this.toastTimer);
+    this.toast.set(null);
+  }
+
+  openBlogPost(post: BlogPost) {
+    this.selectedBlogPost.set(post);
+    this.currentRole.set('public');
+    if (this.router && this.router.url.split('?')[0] !== '/discovery') {
+      this.router.navigateByUrl('/discovery?blog=' + encodeURIComponent(post.id));
+    }
+  }
+
+  closeBlogPost() {
+    this.selectedBlogPost.set(null);
+    if (this.router && this.router.url.includes('blog=')) {
+      this.router.navigateByUrl('/discovery');
+    }
+  }
+
+  openSharedBlogPost(id: string) {
+    if (!id) return;
+    const found = this.blogPosts().find((p) => p.id === id);
+    if (found) {
+      this.selectedBlogPost.set(found);
+    } else {
+      this.loadBlogPosts().then(() => {
+        const p = this.blogPosts().find((item) => item.id === id);
+        if (p) this.selectedBlogPost.set(p);
+      });
+    }
+    this.currentRole.set('public');
+    if (this.router && this.router.url.split('?')[0] !== '/discovery') {
+      this.router.navigateByUrl('/discovery?blog=' + encodeURIComponent(id));
+    }
+  }
+
+  editBlogPost(post: BlogPost) {
+    this.editingBlogPost.set(post);
+    this.setRole('article-editor');
+  }
+
   openSharedDoc(id: string) {
     if (!id) return;
     this.pendingDocId.set(id);
@@ -773,6 +833,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
     }
 
     this.loadTeachers();
+    this.loadBlogPosts();
   }
 
   /** Pull teacher directory from Firestore; keep seeded list as fallback if empty/unreachable. */
@@ -1195,6 +1256,29 @@ Pour réussir une production écrite de 6 à 8 lignes :
     }
   }
 
+  // Load published blog posts from Firestore and merge with seed posts
+  private blogPostsLoaded = false;
+  async loadBlogPosts(): Promise<void> {
+    if (this.blogPostsLoaded) return;
+    if (typeof window === 'undefined') return;
+    this.blogPostsLoaded = true;
+    try {
+      const remotePosts = await this.firebase.fetchBlogPosts();
+      if (remotePosts && remotePosts.length > 0) {
+        this.blogPosts.update((localList) => {
+          const remoteMap = new Map(remotePosts.map((p) => [p.id, p]));
+          const merged = localList.map((p) => remoteMap.get(p.id) || p);
+          const localIds = new Set(localList.map((p) => p.id));
+          const newRemotes = remotePosts.filter((p) => !localIds.has(p.id));
+          return [...newRemotes, ...merged];
+        });
+      }
+    } catch (err) {
+      console.warn('Error loading blog posts from Firebase:', err);
+      this.blogPostsLoaded = false;
+    }
+  }
+
   // Phase 2 — generate one illustration for an exercise (returns a /uploads URL).
   async generateIllustration(promptText: string, style = 'educational'): Promise<string | null> {
     try {
@@ -1467,7 +1551,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
     },
   ]);
 
-  addBlogPost(post: Omit<BlogPost, 'id' | 'publishedAt' | 'likesCount' | 'comments'>) {
+  async addBlogPost(post: Omit<BlogPost, 'id' | 'publishedAt' | 'likesCount' | 'comments'>): Promise<BlogPost> {
     const newPost: BlogPost = {
       ...post,
       id: 'blog-' + Date.now(),
@@ -1476,20 +1560,45 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
       comments: [],
     };
     this.blogPosts.update((list) => [newPost, ...list]);
+    await this.firebase.saveBlogPost(newPost);
+    return newPost;
   }
 
-  likeBlogPost(postId: string) {
+  async updateBlogPost(post: BlogPost): Promise<void> {
     this.blogPosts.update((list) =>
-      list.map((p) => (p.id === postId ? { ...p, likesCount: p.likesCount + 1 } : p))
+      list.map((p) => (p.id === post.id ? post : p))
     );
+    if (this.selectedBlogPost()?.id === post.id) {
+      this.selectedBlogPost.set(post);
+    }
+    await this.firebase.saveBlogPost(post);
   }
 
-  addBlogComment(
+  async likeBlogPost(postId: string): Promise<void> {
+    let targetPost: BlogPost | null = null;
+    this.blogPosts.update((list) =>
+      list.map((p) => {
+        if (p.id === postId) {
+          targetPost = { ...p, likesCount: p.likesCount + 1 };
+          return targetPost;
+        }
+        return p;
+      })
+    );
+    if (this.selectedBlogPost()?.id === postId && targetPost) {
+      this.selectedBlogPost.set(targetPost);
+    }
+    if (targetPost) {
+      await this.firebase.saveBlogPost(targetPost);
+    }
+  }
+
+  async addBlogComment(
     postId: string,
     commentOrContent: string | { authorName: string; authorRole: 'teacher' | 'parent'; content: string },
     authorName?: string,
     authorRole?: 'teacher' | 'parent'
-  ) {
+  ): Promise<void> {
     const content = typeof commentOrContent === 'string' ? commentOrContent : commentOrContent.content;
     const author = typeof commentOrContent === 'string' ? (authorName || 'Parent d\'élève') : commentOrContent.authorName;
     const role = typeof commentOrContent === 'string' ? (authorRole || 'parent') : commentOrContent.authorRole;
@@ -1503,9 +1612,22 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
       createdAt: 'À l\'instant',
       likesCount: 0,
     };
+    let targetPost: BlogPost | null = null;
     this.blogPosts.update((list) =>
-      list.map((p) => (p.id === postId ? { ...p, comments: [...p.comments, newComment] } : p))
+      list.map((p) => {
+        if (p.id === postId) {
+          targetPost = { ...p, comments: [...p.comments, newComment] };
+          return targetPost;
+        }
+        return p;
+      })
     );
+    if (this.selectedBlogPost()?.id === postId && targetPost) {
+      this.selectedBlogPost.set(targetPost);
+    }
+    if (targetPost) {
+      await this.firebase.saveBlogPost(targetPost);
+    }
   }
 
   addQuestionThread(

@@ -461,7 +461,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                       </div>
 
                       <button
-                        (click)="selectedArticleDetail.set(post)"
+                        (click)="store.openBlogPost(post)"
                         class="text-[#007CC2] font-semibold hover:underline flex items-center gap-1 cursor-pointer">
                         {{ lang.tr('Lire l’article', 'قراءة المقال') }}
                         <span class="material-icons text-sm">arrow_forward</span>

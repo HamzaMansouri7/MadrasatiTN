@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment } from '@core';
+import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost } from '@core';
+import { BlogReaderComponent } from './blog-reader.component';
 
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule],
+  imports: [FormsModule, BlogReaderComponent],
   template: `
     <div class="space-y-6">
       
@@ -681,83 +682,109 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
 
       <!-- SECTION 3: PEDAGOGICAL BLOG & ARTICLES -->
       @if (activeSection() === 'blog') {
-        <div class="space-y-6">
-          <div class="grid md:grid-cols-2 gap-6">
-            @for (post of store.filteredBlogPosts(); track post.id) {
-              <article class="bg-white rounded-2xl border border-[#E7DFCF] overflow-hidden flex flex-col justify-between transition-all hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
-                @if (post.coverImage) {
-                  <div class="h-44 w-full overflow-hidden bg-[#F8F5EE] border-b border-[#E7DFCF]">
-                    <img [src]="post.coverImage" [alt]="post.title" class="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
-                  </div>
-                }
-                <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                  <div class="space-y-3">
-                    <div class="flex items-center justify-between flex-wrap gap-2 text-[10px]">
+        @if (store.selectedBlogPost()) {
+          <app-blog-reader />
+        } @else {
+          <div class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              @for (post of store.filteredBlogPosts(); track post.id) {
+                <article class="bg-white rounded-2xl border border-[#E7DFCF] overflow-hidden flex flex-col justify-between transition-all hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] group">
+                  @if (post.coverImage) {
+                    <div
+                      (click)="store.openBlogPost(post)"
+                      class="h-44 w-full overflow-hidden bg-[#F8F5EE] border-b border-[#E7DFCF] cursor-pointer">
+                      <img [src]="post.coverImage" [alt]="post.title" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300" />
+                    </div>
+                  }
+                  <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                    <div class="space-y-3">
+                      <div class="flex items-center justify-between flex-wrap gap-2 text-[10px]">
+                        <div class="flex items-center gap-2">
+                          @if (post.subject) {
+                            <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2.5 py-0.5 rounded-full">
+                              {{ lang.translateSubject(post.subject) }}
+                            </span>
+                          }
+                          @if (post.grade) {
+                            <span class="bg-[#F2ECDE] text-[#4A5A50] font-medium px-2 py-0.5 rounded-full">
+                              {{ lang.translateGrade(post.grade) }}
+                            </span>
+                          }
+                        </div>
+                        <span class="text-[#6B7A70] flex items-center gap-1">
+                          <span class="material-icons text-xs">schedule</span>
+                          {{ post.readTimeMinutes }} min
+                        </span>
+                      </div>
+
+                      <h3
+                        (click)="store.openBlogPost(post)"
+                        class="font-display font-semibold text-[#14251D] text-base leading-snug cursor-pointer group-hover:text-[#2D6A4F] transition-colors">
+                        {{ lang.isArabic() && post.titleAr ? post.titleAr : post.title }}
+                      </h3>
+
+                      <p
+                        (click)="store.openBlogPost(post)"
+                        class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3 cursor-pointer">
+                        {{ cleanExcerpt(lang.isArabic() && post.excerptAr ? post.excerptAr : post.excerpt) }}
+                      </p>
+
+                      @if (post.tags.length) {
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                          @for (tag of post.tags; track tag) {
+                            <span class="text-[10px] text-[#2D6A4F] bg-[#E8F5FC] px-2 py-0.5 rounded-md font-medium">#{{ tag }}</span>
+                          }
+                        </div>
+                      }
+                    </div>
+
+                    <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between text-xs">
                       <div class="flex items-center gap-2">
-                        @if (post.subject) {
-                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2.5 py-0.5 rounded-full">
-                            {{ post.subject }}
-                          </span>
-                        }
-                        @if (post.grade) {
-                          <span class="bg-[#F2ECDE] text-[#4A5A50] font-medium px-2 py-0.5 rounded-full">
-                            {{ post.grade }}
-                          </span>
-                        }
+                        <div class="w-7 h-7 rounded-full bg-[#1B4332] text-[#FBF8F1] font-bold text-xs flex items-center justify-center overflow-hidden">
+                          @if (post.authorAvatar) {
+                            <img [src]="post.authorAvatar" [alt]="post.authorName" class="w-full h-full object-cover" />
+                          } @else {
+                            {{ (post.authorName || 'E')[0] }}
+                          }
+                        </div>
+                        <div>
+                          <p class="font-semibold text-[#14251D] text-xs leading-none">{{ post.authorName }}</p>
+                          <p class="text-[10px] text-[#6B7A70]">{{ post.authorTitle }}</p>
+                        </div>
                       </div>
-                      <span class="text-[#6B7A70] flex items-center gap-1">
-                        <span class="material-icons text-xs">schedule</span>
-                        {{ post.readTimeMinutes }} min
-                      </span>
-                    </div>
 
-                    <h3 class="font-display font-semibold text-[#14251D] text-base leading-snug">
-                      {{ lang.isArabic() && post.titleAr ? post.titleAr : post.title }}
-                    </h3>
+                      <div class="flex items-center gap-2">
+                        <button
+                          type="button"
+                          (click)="store.openBlogPost(post)"
+                          class="flex items-center gap-1 text-[#2D6A4F] hover:text-[#1B4332] font-semibold text-xs bg-[#2D6A4F]/10 hover:bg-[#2D6A4F]/20 px-2.5 py-1 rounded-lg transition-colors cursor-pointer">
+                          <span>{{ lang.t('readArticle') }}</span>
+                          <span class="material-icons text-xs" [class.rotate-180]="lang.isArabic()">arrow_forward</span>
+                        </button>
 
-                    <p class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3">
-                      {{ cleanExcerpt(lang.isArabic() && post.excerptAr ? post.excerptAr : post.excerpt) }}
-                    </p>
+                        <button
+                          type="button"
+                          (click)="shareBlogCard(post)"
+                          class="flex items-center text-[#6B7A70] hover:text-[#2D6A4F] p-1 rounded-md transition-colors cursor-pointer"
+                          [title]="lang.t('shareArticle')">
+                          <span class="material-icons text-base">share</span>
+                        </button>
 
-                    @if (post.tags?.length) {
-                      <div class="flex flex-wrap gap-1.5 pt-1">
-                        @for (tag of post.tags; track tag) {
-                          <span class="text-[10px] text-[#2D6A4F] bg-[#E8F5FC] px-2 py-0.5 rounded-md font-medium">#{{ tag }}</span>
-                        }
+                        <button
+                          type="button"
+                          (click)="store.likeBlogPost(post.id)"
+                          class="flex items-center gap-1 text-[#6B7A70] hover:text-[#C1121F] cursor-pointer">
+                          <span class="material-icons text-sm text-[#C1121F]">favorite</span>
+                          <span class="text-xs font-semibold">{{ post.likesCount }}</span>
+                        </button>
                       </div>
-                    }
-                  </div>
-
-                  <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between text-xs">
-                    <div class="flex items-center gap-2">
-                      <div class="w-7 h-7 rounded-full bg-[#1B4332] text-[#FBF8F1] font-bold text-xs flex items-center justify-center overflow-hidden">
-                        @if (post.authorAvatar) {
-                          <img [src]="post.authorAvatar" [alt]="post.authorName" class="w-full h-full object-cover" />
-                        } @else {
-                          {{ (post.authorName || 'E')[0] }}
-                        }
-                      </div>
-                      <div>
-                        <p class="font-semibold text-[#14251D] text-xs leading-none">{{ post.authorName }}</p>
-                        <p class="text-[10px] text-[#6B7A70]">{{ post.authorTitle }}</p>
-                      </div>
-                    </div>
-
-                    <div class="flex items-center gap-3">
-                      <button
-                        type="button"
-                        (click)="store.likeBlogPost(post.id)"
-                        class="flex items-center gap-1 text-[#6B7A70] hover:text-[#C1121F] cursor-pointer">
-                        <span class="material-icons text-sm text-[#C1121F]">favorite</span>
-                        <span class="text-xs font-semibold">{{ post.likesCount }}</span>
-                      </button>
                     </div>
                   </div>
-                </div>
-              </article>
-            }
+                </article>
+              }
+            </div>
           </div>
-        </div>
+        }
       }
 
       <!-- FEATURE 3: Teacher Credibility Profiles Directory -->
@@ -1318,6 +1345,14 @@ export class PublicDiscoveryComponent {
   constructor() {
     // Merge community-published worksheets into the library grid + blog feed.
     this.store.loadPublishedWorksheets();
+    this.store.loadBlogPosts();
+
+    // Auto-switch to blog tab whenever a blog post is opened (e.g. from direct URL)
+    effect(() => {
+      if (this.store.selectedBlogPost()) {
+        this.activeSection.set('blog');
+      }
+    });
 
     // Phase 3 — when a shared link (?doc=ID) resolves, open that exercise's printable modal.
     effect(() => {
@@ -1330,6 +1365,29 @@ export class PublicDiscoveryComponent {
         this.store.pendingDocId.set(null);
       }
     });
+  }
+
+  async shareBlogCard(post: BlogPost) {
+    const url = typeof window !== 'undefined'
+      ? `${window.location.origin}/discovery?blog=${encodeURIComponent(post.id)}`
+      : '';
+    const title = this.lang.isArabic() && post.titleAr ? post.titleAr : post.title;
+
+    if (typeof navigator !== 'undefined' && navigator.share) {
+      try {
+        await navigator.share({
+          title,
+          text: post.excerpt,
+          url,
+        });
+        return;
+      } catch (err) {}
+    }
+
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      await navigator.clipboard.writeText(url);
+      this.store.showToast(this.lang.t('toastLinkCopied'), 'info');
+    }
   }
 
   getSafePdfUrl(url: string): SafeResourceUrl {

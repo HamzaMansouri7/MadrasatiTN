@@ -618,7 +618,8 @@ export class FirebaseService {
   /** Save blog post to Firestore collection `blog_posts`. */
   async saveBlogPost(post: BlogPost): Promise<void> {
     try {
-      await setDoc(doc(this.db, 'blog_posts', post.id), post);
+      const sanitized = JSON.parse(JSON.stringify(post));
+      await setDoc(doc(this.db, 'blog_posts', post.id), sanitized, { merge: true });
     } catch (err) {
       console.warn('Could not write blog post to Firestore (retained in local state):', err);
     }

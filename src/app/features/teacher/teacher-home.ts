@@ -411,7 +411,7 @@ export interface GeneratedExerciseResult {
                       </div>
 
                       <button
-                        (click)="selectedArticleDetail.set(post)"
+                        (click)="store.openBlogPost(post)"
                         class="text-[#2D6A4F] font-semibold hover:underline flex items-center gap-1 cursor-pointer">
                         {{ lang.tr('Lire l’article', 'قراءة المقال') }}
                         <span class="material-icons text-sm">arrow_forward</span>
@@ -1866,10 +1866,10 @@ export class TeacherHomeComponent {
     this.closeModal();
   }
 
-  submitBlogArticle() {
+  async submitBlogArticle() {
     if (!this.newArticleTitle() || !this.newArticleContent()) return;
     const tagsArr = this.newArticleTags().split(',').map((t) => t.trim()).filter(Boolean);
-    this.store.addBlogPost({
+    await this.store.addBlogPost({
       title: this.newArticleTitle(),
       excerpt: this.newArticleExcerpt() || this.newArticleContent().slice(0, 120) + '...',
       content: this.newArticleContent(),
@@ -1887,6 +1887,7 @@ export class TeacherHomeComponent {
       linkRole: 'teacher',
       icon: 'article',
     });
+    this.store.showToast(this.lang.t('toastPublished'), 'success');
     this.closeModal();
   }
 

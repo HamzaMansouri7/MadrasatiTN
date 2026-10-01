@@ -44,8 +44,8 @@
           type="button"
           (click)="publishArticle()"
           class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-sm transition-colors min-h-[44px]">
-          <span class="material-icons text-sm">publish</span>
-          <span>{{ lang.tr('Publier sur le Blog', 'نشر على المدونة') }}</span>
+          <span class="material-icons text-sm">{{ editingPostId() ? 'save' : 'publish' }}</span>
+          <span>{{ publishButtonLabel() }}</span>
         </button>
       </div>
     </div>

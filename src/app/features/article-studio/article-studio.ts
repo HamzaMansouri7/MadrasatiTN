@@ -23,6 +23,7 @@ import {
   InteractionService,
   TUNISIAN_CURRICULUM_CHAPTERS,
   CurriculumChapter,
+  BlogPost,
 } from '@core';
 
 export interface ChatMessage {
@@ -65,6 +66,13 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly isUploadingImg = signal<boolean>(false);
   readonly isDirectEditing = signal<boolean>(false);
   readonly userInput = signal<string>('');
+  readonly editingPostId = signal<string | null>(null);
+
+  readonly publishButtonLabel = computed(() =>
+    this.editingPostId()
+      ? this.lang.tr("Mettre à jour l'article", 'تحديث المقال')
+      : this.lang.tr('Publier sur le Blog', 'نشر على المدونة')
+  );
 
   readonly messages = signal<ChatMessage[]>([]);
 
@@ -148,7 +156,24 @@ export class ArticleStudioComponent implements OnDestroy {
   }
 
   constructor() {
-    if (typeof localStorage !== 'undefined') {
+    const editing = this.store.editingBlogPost();
+    if (editing) {
+      this.editingPostId.set(editing.id);
+      this.article.set({
+        title: editing.title,
+        summary: editing.excerpt,
+        subject: editing.subject || 'Mathématiques',
+        grade: editing.grade || '4ème Année',
+        chapter: editing.chapter || '',
+        coverImageUrl: editing.coverImage || '',
+        contentMarkdown: editing.content,
+      });
+      if (editing.tags && editing.tags.length > 0) {
+        this.customTags.set([...editing.tags]);
+      }
+      if (editing.grade) this.selectedGrade.set(editing.grade);
+      if (editing.subject) this.selectedSubject.set(editing.subject);
+    } else if (typeof localStorage !== 'undefined') {
       const userKey = this.getArticleDraftStorageKey();
       const raw = localStorage.getItem(userKey) || localStorage.getItem('madrasati_article_draft');
       if (raw) {
@@ -307,6 +332,8 @@ export class ArticleStudioComponent implements OnDestroy {
 
   ngOnDestroy() {
     this.tiptapEditor?.destroy();
+    // Clear edit context so a later "new article" open doesn't inherit a stale post.
+    this.store.editingBlogPost.set(null);
   }
 
   onGradeChange(grade: string) {
@@ -614,6 +641,7 @@ export class ArticleStudioComponent implements OnDestroy {
       localStorage.setItem(this.getArticleDraftStorageKey(), JSON.stringify(this.article()));
     }
     this.isSaved.set(true);
+    this.store.showToast(this.lang.t('toastDraftSaved'), 'info');
   }
 
   updateArticleContent(val: string) {
@@ -630,7 +658,7 @@ export class ArticleStudioComponent implements OnDestroy {
     this.isDirectEditing.update((v) => !v);
   }
 
-  publishArticle() {
+  async publishArticle() {
     const art = this.article();
     const content = art.contentMarkdown || 'Article en cours de rédaction';
     const title = art.title || 'Article Pédagogique Sans Titre';
@@ -656,33 +684,69 @@ export class ArticleStudioComponent implements OnDestroy {
     const rawExcerpt = art.summary || content;
     const cleanExcerpt = stripFormatting(rawExcerpt).slice(0, 180) + (rawExcerpt.length > 180 ? '...' : '');
 
-    this.store.addBlogPost({
-      title,
-      excerpt: cleanExcerpt,
-      content,
-      coverImage: art.coverImageUrl || undefined,
-      subject: art.subject as any,
-      grade: art.grade as any,
-      chapter: chapterLabel,
-      tags,
-      authorId: this.firebase.userProfile()?.uid,
-      authorName: this.authorName(),
-      authorTitle: isAr ? 'مربٍ معتمد' : 'Enseignant Certifié',
-      readTimeMinutes: this.estimatedReadingTime(),
-    });
+    const editId = this.editingPostId();
+    if (editId) {
+      const existing = this.store.blogPosts().find((p) => p.id === editId);
+      const updatedPost: BlogPost = {
+        id: editId,
+        title,
+        titleAr: isAr ? title : existing?.titleAr,
+        excerpt: cleanExcerpt,
+        excerptAr: isAr ? cleanExcerpt : existing?.excerptAr,
+        content,
+        contentAr: isAr ? content : existing?.contentAr,
+        coverImage: art.coverImageUrl || existing?.coverImage,
+        subject: art.subject as any,
+        grade: art.grade as any,
+        chapter: chapterLabel,
+        tags,
+        authorId: existing?.authorId || this.firebase.userProfile()?.uid,
+        authorName: existing?.authorName || this.authorName(),
+        authorTitle: existing?.authorTitle || (isAr ? 'مربٍ معتمد' : 'Enseignant Certifié'),
+        authorAvatar: existing?.authorAvatar,
+        publishedAt: existing?.publishedAt || 'À l\'instant',
+        likesCount: existing?.likesCount || 1,
+        readTimeMinutes: this.estimatedReadingTime(),
+        comments: existing?.comments || [],
+      };
+      await this.store.updateBlogPost(updatedPost);
+      this.store.editingBlogPost.set(null);
+      this.editingPostId.set(null);
+      this.store.showToast(this.lang.t('toastUpdated'), 'success');
+      this.store.openBlogPost(updatedPost);
+    } else {
+      const newPost = await this.store.addBlogPost({
+        title,
+        titleAr: isAr ? title : undefined,
+        excerpt: cleanExcerpt,
+        excerptAr: isAr ? cleanExcerpt : undefined,
+        content,
+        contentAr: isAr ? content : undefined,
+        coverImage: art.coverImageUrl || undefined,
+        subject: art.subject as any,
+        grade: art.grade as any,
+        chapter: chapterLabel,
+        tags,
+        authorId: this.firebase.userProfile()?.uid,
+        authorName: this.authorName(),
+        authorTitle: isAr ? 'مربٍ معتمد' : 'Enseignant Certifié',
+        readTimeMinutes: this.estimatedReadingTime(),
+      });
 
-    this.firebase.addNotification({
-      type: 'announcement',
-      title: isAr ? `مقال بيداغوجي جديد: ${title}` : `Nouvel article publié : ${title}`,
-      message: isAr
-        ? `بقلم ${this.authorName()} على المدونة التربوية.`
-        : `Publié par ${this.authorName()} sur le blog pédagogique.`,
-      linkRole: 'public',
-      icon: 'article',
-    });
+      this.firebase.addNotification({
+        type: 'announcement',
+        title: isAr ? `مقال بيداغوجي جديد: ${title}` : `Nouvel article publié : ${title}`,
+        message: isAr
+          ? `بقلم ${this.authorName()} على المدونة التربوية.`
+          : `Publié par ${this.authorName()} sur le blog pédagogique.`,
+        linkRole: 'public',
+        icon: 'article',
+      });
 
-    this.interactionSvc.recordPublication(title);
-    this.store.setRole('public');
+      this.interactionSvc.recordPublication(title);
+      this.store.showToast(this.lang.t('toastPublished'), 'success');
+      this.store.openBlogPost(newPost);
+    }
   }
 
   exitStudio() {

@@ -249,6 +249,19 @@ export class LanguageService {
     generatorShareFacebook: { fr: 'Partager sur Facebook', ar: 'المشاركة على فيسبوك' },
     generatorHints: { fr: 'Indice', ar: 'إرشادات' },
     changeLanguage: { fr: 'Changer de langue', ar: 'تغيير اللغة' },
+    toastPublished: { fr: 'Article publié avec succès sur le blog !', ar: 'تم نشر المقال بنجاح على المدونة !' },
+    toastDraftSaved: { fr: 'Brouillon enregistré avec succès.', ar: 'تم حفظ المسودة بنجاح.' },
+    toastLinkCopied: { fr: 'Lien copié dans le presse-papiers !', ar: 'تم نسخ الرابط إلى الحافظة !' },
+    toastUpdated: { fr: 'Article mis à jour avec succès.', ar: 'تم تحديث المقال بنجاح.' },
+    toastCommentAdded: { fr: 'Commentaire ajouté avec succès.', ar: 'تمت إضافة التعليق بنجاح.' },
+    readArticle: { fr: "Lire l'article", ar: 'قراءة المقال' },
+    editArticle: { fr: "Modifier l'article", ar: 'تعديل المقال' },
+    shareArticle: { fr: 'Partager', ar: 'مشاركة' },
+    backToArticles: { fr: 'Retour aux articles', ar: 'العودة إلى المقالات' },
+    commentsTitle: { fr: 'Commentaires & Discussions', ar: 'التعليقات والمناقشات' },
+    addCommentPlaceholder: { fr: 'Partagez votre avis pédagogique...', ar: 'شارك برأيك البيداغوجي أو استفسارك...' },
+    publishCommentBtn: { fr: 'Commenter', ar: 'نشر التعليق' },
+    noCommentsYet: { fr: 'Aucun commentaire pour le moment. Soyez le premier à réagir !', ar: 'لا توجد تعليقات بعد. كن أول من يشارك برأيه !' },
   };
 
   translateGrade(grade?: string | null): string {

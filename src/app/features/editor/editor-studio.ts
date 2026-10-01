@@ -1010,13 +1010,13 @@ export class EditorStudioComponent {
     this.store.setRole('teacher');
   }
 
-  publishAsBlogArticle() {
+  async publishAsBlogArticle() {
     const content = this.getCompiledContentText();
     const user = this.firebase.userProfile();
     const authorName = user?.displayName || 'Enseignant Certifié';
     const authorId = user?.uid;
 
-    this.store.addBlogPost({
+    await this.store.addBlogPost({
       title: this.docTitle(),
       excerpt: content.slice(0, 150) + '...',
       content,
@@ -1040,6 +1040,7 @@ export class EditorStudioComponent {
     // Record publication in interaction journal for publicationsCount ledger
     this.interactionSvc.recordPublication(this.docTitle());
 
+    this.store.showToast(this.lang.t('toastPublished'), 'success');
     this.publishModalOpen.set(false);
     this.store.setRole('teacher');
   }

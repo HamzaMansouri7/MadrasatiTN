@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/cor
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
-import { NavbarComponent, AuthModalComponent } from '@shared';
+import { NavbarComponent, AuthModalComponent, ToastComponent } from '@shared';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ import { NavbarComponent, AuthModalComponent } from '@shared';
     NavbarComponent,
     RouterOutlet,
     AuthModalComponent,
+    ToastComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
@@ -52,11 +53,15 @@ export class App {
         }
       });
 
-    // Phase 3 — resolve a shared deep link (?doc=ID) on initial load.
+    // Phase 3 — resolve a shared deep link (?doc=ID or ?blog=ID) on initial load.
     if (typeof window !== 'undefined') {
-      const docId = new URLSearchParams(window.location.search).get('doc');
+      const searchParams = new URLSearchParams(window.location.search);
+      const docId = searchParams.get('doc');
+      const blogId = searchParams.get('blog');
       if (docId && !this.store.pendingDocId()) {
         this.store.openSharedDoc(docId);
+      } else if (blogId && !this.store.selectedBlogPost()) {
+        this.store.openSharedBlogPost(blogId);
       }
     }
   }
