@@ -1,0 +1,215 @@
+<div class="space-y-6 pb-16">
+  <!-- Top Navigation Bar -->
+  <div class="bg-[#0B2947] text-white rounded-[24px] p-5 shadow-sm">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <button
+          (click)="exitStudio()"
+          class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors cursor-pointer text-white"
+          title="Retour">
+          <span class="material-icons text-xl rtl:rotate-180">arrow_back</span>
+        </button>
+
+        <div class="min-w-0">
+          <div class="flex items-center gap-2">
+            <span class="bg-[#7C3AED] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
+              ✍️ Studio Article IA
+            </span>
+            <span class="text-[11px] text-[#8CA9C4] inline-flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full" [class]="isSaved() ? 'bg-[#4ADE80]' : 'bg-[#E0AA32] animate-pulse'"></span>
+              {{ isSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Modifications...', 'تعديل...') }}
+            </span>
+          </div>
+          <h1 dir="auto" class="font-display text-xl sm:text-2xl font-semibold text-white mt-1 truncate max-w-[60vw]">
+            {{ article().title || lang.tr('Nouvel Article Pédagogique', 'مقال تربوي جديد') }}
+          </h1>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2">
+        <button
+          (click)="saveDraft()"
+          class="bg-white/10 hover:bg-white/20 text-white px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
+          <span class="material-icons text-sm">save</span>
+          <span>{{ lang.tr('Sauvegarder', 'حفظ مسودة') }}</span>
+        </button>
+
+        <button
+          (click)="publishArticle()"
+          class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow-sm transition-colors">
+          <span class="material-icons text-sm">publish</span>
+          <span>{{ lang.tr('Publier sur le Blog', 'نشر على المدونة') }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bento Split Layout: Chat Co-Pilot (Left 40%) vs Medium Reading Canvas (Right 60%) -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+    
+    <!-- LEFT PANEL: CHAT CO-PILOT -->
+    <div class="lg:col-span-5 bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs flex flex-col h-[750px] overflow-hidden">
+      <!-- Chat Header -->
+      <div class="p-4 border-b border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between bg-[#F7F9FB] dark:bg-[#152737]">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-[#E0AA32] text-[#0B2947] flex items-center justify-center font-bold">
+            <span class="material-icons text-base">auto_awesome</span>
+          </div>
+          <div>
+            <p class="font-bold text-xs text-[#102A43] dark:text-white">Assistant Rédaction IA</p>
+            <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Co-pilote éditorial Madrasati TN</p>
+          </div>
+        </div>
+        <button
+          (click)="resetConversation()"
+          class="text-[#627D98] hover:text-[#D64545] p-1 cursor-pointer transition-colors"
+          title="Recommencer">
+          <span class="material-icons text-sm">refresh</span>
+        </button>
+      </div>
+
+      <!-- Messages Stream -->
+      <div class="flex-1 p-4 overflow-y-auto space-y-3.5 article-chat-scroll text-xs">
+        @for (msg of messages(); track $index) {
+          <div class="flex gap-2.5" [class]="msg.role === 'user' ? 'justify-end' : 'justify-start'">
+            @if (msg.role === 'assistant') {
+              <div class="w-7 h-7 rounded-full bg-[#E0AA32] text-[#0B2947] flex items-center justify-center shrink-0 mt-0.5">
+                <span class="material-icons text-xs">auto_awesome</span>
+              </div>
+            }
+
+            <div
+              dir="auto"
+              class="max-w-[85%] rounded-2xl p-3 leading-relaxed whitespace-pre-line"
+              [class]="msg.role === 'user' 
+                ? 'bg-[#007CC2] text-white rounded-br-xs' 
+                : 'bg-[#F0F4F8] dark:bg-[#1A3145] text-[#102A43] dark:text-white rounded-bl-xs border border-[#E3ECF2] dark:border-[#224059]'">
+              {{ msg.content }}
+            </div>
+
+            @if (msg.role === 'user') {
+              <div class="w-7 h-7 rounded-full bg-[#007CC2] text-white flex items-center justify-center shrink-0 mt-0.5">
+                <span class="material-icons text-xs">person</span>
+              </div>
+            }
+          </div>
+        }
+
+        @if (isLoading()) {
+          <div class="flex gap-2.5 items-center text-[#627D98] italic text-xs">
+            <span class="material-icons animate-spin text-sm text-[#E0AA32]">sync</span>
+            <span>L’IA rédige et met à jour l’article...</span>
+          </div>
+        }
+      </div>
+
+      <!-- Suggestion Chips -->
+      @if (suggestedChips().length > 0 && !isLoading()) {
+        <div class="px-4 py-2 border-t border-[#E3ECF2]/60 dark:border-[#1A3145] bg-[#F7F9FB]/60 dark:bg-[#152737]/60 flex flex-wrap gap-1.5">
+          @for (chip of suggestedChips(); track chip) {
+            <button
+              (click)="sendQuickPrompt(chip)"
+              class="text-[11px] bg-white dark:bg-[#0E1D2A] text-[#007CC2] border border-[#007CC2]/30 hover:bg-[#E8F5FC] px-2.5 py-1 rounded-full font-medium transition-colors cursor-pointer text-left">
+              💡 {{ chip }}
+            </button>
+          }
+        </div>
+      }
+
+      <!-- Bottom Chat Input Dock -->
+      <div class="p-3 border-t border-[#E3ECF2] dark:border-[#1A3145] bg-white dark:bg-[#0E1D2A] space-y-2">
+        <div class="flex items-center gap-1.5">
+          <!-- Local File Attachment -->
+          <label class="p-2 rounded-xl text-[#627D98] hover:text-[#007CC2] hover:bg-gray-100 dark:hover:bg-[#152737] cursor-pointer transition-colors" title="Attacher une image">
+            <span class="material-icons text-lg">attach_file</span>
+            <input type="file" (change)="handleImageAttachment($event)" accept="image/png,image/jpeg,image/webp" class="hidden" />
+          </label>
+
+          <!-- Imagen AI Illustration Trigger -->
+          <button
+            type="button"
+            (click)="generateAiCover()"
+            [disabled]="isGeneratingImg()"
+            class="p-2 rounded-xl text-[#E0AA32] hover:bg-[#FFF4D8] dark:hover:bg-[#3D2E10] cursor-pointer transition-colors disabled:opacity-50"
+            title="Générer illustration IA (Imagen 3)">
+            <span class="material-icons text-lg">brush</span>
+          </button>
+
+          <!-- Input Textarea -->
+          <textarea dir="auto"
+            [value]="userInput()"
+            (input)="userInput.set($any($event.target).value)"
+            (keydown.enter)="onEnterPress($event)"
+            rows="2"
+            [placeholder]="lang.tr('Demandez à l’IA (ex: Rédige une introduction captivante)...', 'اطلب من المساعد الذكي...')"
+            class="flex-1 bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-xl p-2 text-xs text-[#102A43] dark:text-white outline-none resize-none"></textarea>
+
+          <!-- Send Button -->
+          <button
+            (click)="sendMessage()"
+            [disabled]="isLoading() || !userInput().trim()"
+            class="w-9 h-9 rounded-xl bg-[#007CC2] hover:bg-[#006EAD] text-white flex items-center justify-center cursor-pointer disabled:opacity-40 transition-colors shrink-0 shadow-xs">
+            <span class="material-icons text-sm rtl:rotate-180">send</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL: MEDIUM-STYLE READING CANVAS -->
+    <div class="lg:col-span-7 bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#CBD2D9] dark:border-[#1A3145] shadow-md p-8 sm:p-12 min-h-[750px] space-y-6">
+      <!-- Article Cover Image -->
+      @if (article().coverImageUrl) {
+        <div class="relative rounded-2xl overflow-hidden max-h-72 border border-[#E3ECF2]">
+          <img [src]="article().coverImageUrl" alt="Cover" class="w-full h-full object-cover" />
+          <button
+            (click)="removeCoverImage()"
+            class="absolute top-3 right-3 bg-black/60 hover:bg-black text-white p-1 rounded-full cursor-pointer transition-colors">
+            <span class="material-icons text-sm">close</span>
+          </button>
+        </div>
+      }
+
+      <!-- Metadata Pills -->
+      <div class="flex flex-wrap items-center gap-2 text-xs">
+        <span class="bg-[#E8F5FC] text-[#007CC2] font-semibold px-2.5 py-0.5 rounded-full">
+          {{ article().subject || 'Pédagogie Générale' }}
+        </span>
+        <span class="bg-[#E8F6EF] text-[#23845B] font-semibold px-2.5 py-0.5 rounded-full">
+          {{ article().grade || 'Enseignement Primaire' }}
+        </span>
+        <span class="text-[#627D98] text-[11px]">
+          • {{ estimatedReadingTime() }} min de lecture
+        </span>
+      </div>
+
+      <!-- Article Title -->
+      <h1 dir="auto" class="font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white leading-tight">
+        {{ article().title || 'Titre de l’article...' }}
+      </h1>
+
+      <!-- Author Attribution Strip -->
+      <div class="flex items-center gap-3 py-3 border-y border-[#E3ECF2] dark:border-[#1A3145] text-xs">
+        <div class="w-9 h-9 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold">
+          {{ (authorName() || 'E')[0].toUpperCase() }}
+        </div>
+        <div>
+          <p class="font-bold text-[#102A43] dark:text-white">{{ authorName() }}</p>
+          <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">Enseignant certifié • Plateforme Madrasati TN</p>
+        </div>
+      </div>
+
+      <!-- Article Markdown Body Preview -->
+      <div dir="auto" class="article-reading-prose dark:text-gray-200">
+        @if (article().contentMarkdown) {
+          <div [innerHTML]="renderedArticleHtml()"></div>
+        } @else {
+          <p class="text-gray-400 italic">
+            L'article est encore vide. Utilisez l'assistant conversationnel à gauche pour générer ou esquisser le contenu...
+          </p>
+        }
+      </div>
+    </div>
+
+  </div>
+</div>

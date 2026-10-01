@@ -822,6 +822,133 @@ Instructions par format :
   }
 });
 
+// Endpoint: Conversational Article Assistant Co-Pilot
+app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
+  try {
+    const { messages = [], currentArticle = {}, userPrompt = '' } = req.body;
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+      return;
+    }
+
+    const conversationHistoryStr = messages
+      .map((m: { role: string; content: string }) => `${m.role === 'user' ? 'Enseignant' : 'Assistant IA'}: ${m.content}`)
+      .join('\n');
+
+    const prompt = `Tu es un conseiller pédagogique senior pour l'enseignement primaire en Tunisie (Madrasati TN).
+Tu dialogues avec un enseignant pour co-rédiger un article de blog pédagogique percutant, clair et inspirant, destiné soit à d'autres enseignants, soit aux parents d'élèves.
+
+Historique de la conversation :
+${conversationHistoryStr}
+
+Demande actuelle de l'enseignant :
+"${userPrompt}"
+
+État actuel de l'article en cours de rédaction :
+- Titre : ${currentArticle.title || 'Sans titre'}
+- Matière : ${currentArticle.subject || 'Général'}
+- Niveau scolaire : ${currentArticle.grade || 'Primaire'}
+- Résumé : ${currentArticle.summary || ''}
+- Contenu Markdown actuel :
+${currentArticle.contentMarkdown || '(Vide)'}
+
+Mission :
+1. Réponds cordialement et de façon constructive à la demande de l'enseignant dans le champ "replyText".
+2. Mets à jour et enrichis l'article dans le champ "updatedArticle" (utilise le format Markdown soigné avec titres ##, listes, encadrés > [!TIP] ou > [!NOTE], et exemples de la vie quotidienne tunisienne).
+3. Propose 3 à 4 puces d'actions suivantes sous "suggestedChips" (ex: "Ajouter un conseil pour les parents", "Rédiger une conclusion", "Proposer une activité pratique").
+
+Format de sortie STRICT : JSON uniquement, sans markdown wrapper :
+{
+  "replyText": "...",
+  "updatedArticle": {
+    "title": "...",
+    "summary": "...",
+    "subject": "...",
+    "grade": "...",
+    "contentMarkdown": "..."
+  },
+  "suggestedChips": ["...", "...", "..."]
+}`;
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+    });
+
+    const text = response.text || '';
+    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const data = JSON.parse(cleanedText);
+
+    res.json({ success: true, ...data });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la génération de l\'article';
+    console.error('Error in /api/ai/chat-article:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
+// Endpoint: AI Illustration Generator (Google Imagen 3 / SVG fallbacks)
+app.post('/api/ai/generate-illustration', async (req: Request, res: Response) => {
+  try {
+    const { promptText = '', style = 'educational' } = req.body;
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+      return;
+    }
+
+    // Try Imagen 3 first
+    try {
+      const imgResponse = await ai.models.generateImages({
+        model: 'imagen-3.0-generate-002',
+        prompt: `Educational illustration for Tunisian primary school students. High quality, clear, colorful, friendly: ${promptText}`,
+        config: {
+          numberOfImages: 1,
+          outputMimeType: 'image/jpeg',
+          aspectRatio: '16:9',
+        },
+      });
+
+      const firstImage = imgResponse.generatedImages?.[0];
+      const base64Data = firstImage?.image?.imageBytes;
+      if (base64Data) {
+        const filename = `illustration_${randomUUID()}.jpg`;
+        const filepath = join(uploadsFolder, filename);
+        writeFileSync(filepath, Buffer.from(base64Data, 'base64'));
+
+        const imageUrl = `/uploads/${filename}`;
+        res.json({ success: true, imageUrl });
+        return;
+      }
+    } catch (imagenErr) {
+      console.warn('Imagen 3 direct call fallback, generating high-res curated SVG illustration:', imagenErr);
+    }
+
+    // Fallback: Gemini creates a rich SVG vector illustration saved as .svg
+    const svgPrompt = `Create a clean, modern, pedagogical SVG illustration for Tunisian school children about: "${promptText}".
+Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use viewBox="0 0 800 450", smooth gradients, friendly rounded shapes. No markdown formatting.`;
+
+    const svgResponse = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: svgPrompt,
+    });
+
+    const rawSvg = (svgResponse.text || '').replace(/```xml/g, '').replace(/```svg/g, '').replace(/```/g, '').trim();
+    const filename = `illustration_${randomUUID()}.svg`;
+    const filepath = join(uploadsFolder, filename);
+    writeFileSync(filepath, rawSvg, 'utf8');
+
+    res.json({ success: true, imageUrl: `/uploads/${filename}` });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la création de l\'illustration';
+    console.error('Error in /api/ai/generate-illustration:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
 const angularApp = new AngularNodeAppEngine();
 
 

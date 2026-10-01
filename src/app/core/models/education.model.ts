@@ -1,4 +1,4 @@
-export type UserRole = 'home' | 'teacher' | 'parent' | 'student' | 'public' | 'editor';
+export type UserRole = 'home' | 'teacher' | 'parent' | 'student' | 'public' | 'editor' | 'article-editor';
 
 export type GradeLevel =
   | '1ère Année'

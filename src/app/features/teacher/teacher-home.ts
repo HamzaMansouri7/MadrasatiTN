@@ -88,7 +88,14 @@ export interface GeneratedExerciseResult {
               (click)="openStudio()"
               class="flex items-center gap-1.5 bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_fix_high</span>
-              {{ lang.tr('Studio de Rédaction A4', 'استوديو التحرير والطباعة A4') }}
+              {{ lang.tr('Studio Examens A4', 'استوديو التحرير والطباعة A4') }}
+            </button>
+
+            <button
+              (click)="openArticleStudio()"
+              class="flex items-center gap-1.5 bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-base">chat</span>
+              {{ lang.tr('Rédiger Article (IA Chat)', 'كتابة مقال (مساعد ذكي)') }}
             </button>
 
             <button
@@ -1852,6 +1859,11 @@ export class TeacherHomeComponent {
   openStudio() {
     if (!this.requireAuth()) return;
     this.store.setRole('editor');
+  }
+
+  openArticleStudio() {
+    if (!this.requireAuth()) return;
+    this.store.setRole('article-editor');
   }
 
   closeModal() {

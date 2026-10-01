@@ -8,6 +8,7 @@ import {
   StudentHomeComponent,
   PublicDiscoveryComponent,
   EditorStudioComponent,
+  ArticleStudioComponent,
 } from '@features';
 
 @Component({
@@ -21,6 +22,7 @@ import {
     StudentHomeComponent,
     PublicDiscoveryComponent,
     EditorStudioComponent,
+    ArticleStudioComponent,
     AuthModalComponent,
   ],
   templateUrl: './app.html',
