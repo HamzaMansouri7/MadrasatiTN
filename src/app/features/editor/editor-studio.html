@@ -796,25 +796,25 @@
                       (click)="insertBlockAt(idx - 1, 'exercise')"
                       class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F5FC] text-[#007CC2] hover:bg-[#D7E7F2] flex items-center gap-1 cursor-pointer">
                       <span class="material-icons text-xs">assignment</span>
-                      <span>+ Exercice</span>
+                      <span>+ {{ lang.tr('Exercice', 'تمرين') }}</span>
                     </button>
                     <button
                       (click)="insertBlockAt(idx - 1, 'paragraph')"
                       class="px-2.5 py-1 rounded-lg text-xs font-medium text-[#102A43] hover:bg-gray-100 flex items-center gap-1 cursor-pointer">
                       <span class="material-icons text-xs">notes</span>
-                      <span>+ Texte</span>
+                      <span>+ {{ lang.tr('Texte', 'نص') }}</span>
                     </button>
                     <button
                       (click)="insertBlockAt(idx - 1, 'callout')"
                       class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F6EF] text-[#23845B] hover:bg-[#D0EFE2] flex items-center gap-1 cursor-pointer">
                       <span class="material-icons text-xs">lightbulb</span>
-                      <span>+ Conseil</span>
+                      <span>+ {{ lang.tr('Conseil', 'نصيحة') }}</span>
                     </button>
                     <button
                       (click)="activeInsertIndex.set(null); openAiPromptModal()"
                       class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#E0AA32] text-[#0B2947] hover:bg-[#D19A24] flex items-center gap-1 cursor-pointer">
                       <span class="material-icons text-xs">auto_awesome</span>
-                      <span>IA</span>
+                      <span>{{ lang.tr('IA', 'ذكاء اصطناعي') }}</span>
                     </button>
                   </div>
                 }

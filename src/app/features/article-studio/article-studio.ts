@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, InteractionService } from '@core';
 
 export interface ChatMessage {
@@ -34,27 +34,50 @@ export class ArticleStudioComponent {
   readonly isDirectEditing = signal<boolean>(false);
   readonly userInput = signal<string>('');
 
-  readonly messages = signal<ChatMessage[]>([
-    {
-      role: 'assistant',
-      content: 'Bonjour ! Je suis votre co-pilote de rédaction pédagogique. De quel sujet souhaitez-vous traiter aujourd’hui dans votre article ? (Ex: Méthodes de calcul mental, astuces de lecture, aide aux devoirs...)',
-    },
-  ]);
+  readonly messages = signal<ChatMessage[]>([]);
 
   readonly article = signal<ArticleDraft>({
     title: '',
     summary: '',
-    subject: 'Mathématiques',
+    subject: 'اللغة العربية',
     grade: '4ème Année',
     coverImageUrl: '',
     contentMarkdown: '',
   });
 
-  readonly suggestedChips = signal<string[]>([
-    'Comment surmonter le blocage en calcul mental (3ème/4ème)',
-    '3 Astuces pour aider son enfant en dictée arabe',
-    'Conseils pratiques pour la révision du Trimestre 1',
-  ]);
+  readonly suggestedChips = signal<string[]>([]);
+
+  constructor() {
+    effect(() => {
+      const isAr = this.lang.isArabic();
+      // Initialize first message if empty
+      if (this.messages().length === 0) {
+        this.messages.set([
+          {
+            role: 'assistant',
+            content: isAr
+              ? 'مرحباً بك زميلي المربي ! أنا مساعدك البيداغوجي الذكي. ما هو الموضوع أو المهارة التي ترغب في صياغة مقال أو نصائح حولها اليوم ؟ (مثال: معالجة صعوبات الحساب الذهني، تحسين مهارات التعبير والإنتاج الكتابي، مرافقة الأولياء...)'
+              : 'Bonjour ! Je suis votre co-pilote de rédaction pédagogique. De quel sujet souhaitez-vous traiter aujourd’hui dans votre article ? (Ex: Méthodes de calcul mental, astuces de lecture, aide aux devoirs...)',
+          },
+        ]);
+      }
+
+      // Initialize suggested chips based on language
+      this.suggestedChips.set(
+        isAr
+          ? [
+              'كيفية تجاوز تعثر التلاميذ في الحساب الذهني (السنوات 3 و 4)',
+              '3 نصائح عملية لمساعدة الولي على تدريب طفله على الإملاء',
+              'خطة بيداغوجية لمراجعة دروس الثلاثي الأول بدون ضغط',
+            ]
+          : [
+              'Comment surmonter le blocage en calcul mental (3ème/4ème)',
+              '3 Astuces pour aider son enfant en dictée arabe',
+              'Conseils pratiques pour la révision du Trimestre 1',
+            ]
+      );
+    });
+  }
 
   readonly authorName = computed(() => {
     return this.firebase.userProfile()?.displayName || 'Enseignant Certifié';

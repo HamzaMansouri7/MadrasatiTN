@@ -13,7 +13,7 @@
         <div class="min-w-0">
           <div class="flex items-center gap-2">
             <span class="bg-[#7C3AED] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
-              ✍️ Studio d'Articles Pédagogiques
+              ✍️ {{ lang.tr('Studio d’Articles Pédagogiques', 'استوديو المقالات البيداغوجية') }}
             </span>
             <span class="text-[11px] text-[#8CA9C4] inline-flex items-center gap-1">
               <span class="w-1.5 h-1.5 rounded-full" [class]="isSaved() ? 'bg-[#4ADE80]' : 'bg-[#E0AA32] animate-pulse'"></span>
@@ -57,14 +57,14 @@
             <span class="material-icons text-base">auto_awesome</span>
           </div>
           <div>
-            <p class="font-bold text-xs text-[#102A43] dark:text-white">Assistant Rédaction IA</p>
-            <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Co-pilote éditorial Madrasati TN</p>
+            <p class="font-bold text-xs text-[#102A43] dark:text-white">{{ lang.tr('Assistant Rédaction IA', 'المساعد الذكي لكتابة المقالات') }}</p>
+            <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Co-pilote éditorial Madrasati TN', 'المرافق البيداغوجي لمدرستي تونس') }}</p>
           </div>
         </div>
         <button
           (click)="resetConversation()"
           class="text-[#627D98] hover:text-[#D64545] p-1 cursor-pointer transition-colors"
-          title="Recommencer">
+          [title]="lang.tr('Recommencer', 'بدء محادثة جديدة')">
           <span class="material-icons text-sm">refresh</span>
         </button>
       </div>
@@ -99,7 +99,7 @@
         @if (isLoading()) {
           <div class="flex gap-2.5 items-center text-[#627D98] italic text-xs">
             <span class="material-icons animate-spin text-sm text-[#E0AA32]">sync</span>
-            <span>L’IA rédige et met à jour l’article...</span>
+            <span>{{ lang.tr('L’IA rédige et met à jour l’article...', 'المساعد الذكي يقوم بصياغة وتحيين المقال...') }}</span>
           </div>
         }
       </div>
@@ -110,7 +110,7 @@
           @for (chip of suggestedChips(); track chip) {
             <button
               (click)="sendQuickPrompt(chip)"
-              class="text-[11px] bg-white dark:bg-[#0E1D2A] text-[#007CC2] border border-[#007CC2]/30 hover:bg-[#E8F5FC] px-2.5 py-1 rounded-full font-medium transition-colors cursor-pointer text-left">
+              class="text-[11px] bg-white dark:bg-[#0E1D2A] text-[#007CC2] border border-[#007CC2]/30 hover:bg-[#E8F5FC] px-2.5 py-1 rounded-full font-medium transition-colors cursor-pointer text-left rtl:text-right">
               💡 {{ chip }}
             </button>
           }
@@ -121,7 +121,7 @@
       <div class="p-3 border-t border-[#E3ECF2] dark:border-[#1A3145] bg-white dark:bg-[#0E1D2A] space-y-2">
         <div class="flex items-center gap-1.5">
           <!-- Local File Attachment -->
-          <label class="p-2 rounded-xl text-[#627D98] hover:text-[#007CC2] hover:bg-gray-100 dark:hover:bg-[#152737] cursor-pointer transition-colors" title="Attacher une image">
+          <label class="p-2 rounded-xl text-[#627D98] hover:text-[#007CC2] hover:bg-gray-100 dark:hover:bg-[#152737] cursor-pointer transition-colors" [title]="lang.tr('Attacher une image', 'إرفاق صورة')">
             <span class="material-icons text-lg">attach_file</span>
             <input type="file" (change)="handleImageAttachment($event)" accept="image/png,image/jpeg,image/webp" class="hidden" />
           </label>
@@ -132,7 +132,7 @@
             (click)="generateAiCover()"
             [disabled]="isGeneratingImg()"
             class="p-2 rounded-xl text-[#E0AA32] hover:bg-[#FFF4D8] dark:hover:bg-[#3D2E10] cursor-pointer transition-colors disabled:opacity-50"
-            title="Générer illustration IA (Imagen 3)">
+            [title]="lang.tr('Générer illustration IA (Imagen 3)', 'توليد رسم توضيحي بالذكاء الاصطناعي')">
             <span class="material-icons text-lg">brush</span>
           </button>
 
@@ -142,14 +142,15 @@
             (input)="userInput.set($any($event.target).value)"
             (keydown.enter)="onEnterPress($event)"
             rows="2"
-            [placeholder]="lang.tr('Demandez à l’IA (ex: Rédige une introduction captivante)...', 'اطلب من المساعد الذكي...')"
+            [placeholder]="lang.tr('Demandez à l’IA (ex: Rédige une introduction captivante)...', 'اطلب من المساعد الذكي (مثال: صغ مقدمة مشوقة للمقال)...')"
             class="flex-1 bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-xl p-2 text-xs text-[#102A43] dark:text-white outline-none resize-none"></textarea>
 
           <!-- Send Button -->
           <button
             (click)="sendMessage()"
             [disabled]="isLoading() || !userInput().trim()"
-            class="w-9 h-9 rounded-xl bg-[#007CC2] hover:bg-[#006EAD] text-white flex items-center justify-center cursor-pointer disabled:opacity-40 transition-colors shrink-0 shadow-xs">
+            class="w-9 h-9 rounded-xl bg-[#007CC2] hover:bg-[#006EAD] text-white flex items-center justify-center cursor-pointer disabled:opacity-40 transition-colors shrink-0 shadow-xs"
+            [title]="lang.tr('Envoyer', 'إرسال')">
             <span class="material-icons text-sm rtl:rotate-180">send</span>
           </button>
         </div>
@@ -173,13 +174,13 @@
       <!-- Metadata Pills -->
       <div class="flex flex-wrap items-center gap-2 text-xs">
         <span class="bg-[#E8F5FC] text-[#007CC2] font-semibold px-2.5 py-0.5 rounded-full">
-          {{ article().subject || 'Pédagogie Générale' }}
+          {{ article().subject || lang.tr('Pédagogie Générale', 'بيداغوجيا عامة') }}
         </span>
         <span class="bg-[#E8F6EF] text-[#23845B] font-semibold px-2.5 py-0.5 rounded-full">
-          {{ article().grade || 'Enseignement Primaire' }}
+          {{ article().grade || lang.tr('Enseignement Primaire', 'التعليم الابتدائي') }}
         </span>
         <span class="text-[#627D98] text-[11px]">
-          • {{ estimatedReadingTime() }} min de lecture
+          • {{ estimatedReadingTime() }} {{ lang.tr('min de lecture', 'دقائق قراءة') }}
         </span>
       </div>
 
@@ -190,11 +191,11 @@
             type="text"
             [value]="article().title"
             (input)="updateArticleTitle($any($event.target).value)"
-            placeholder="Titre de l'article..."
+            [placeholder]="lang.tr('Titre de l’article...', 'عنوان المقال...')"
             class="w-full font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white bg-[#F7F9FB] dark:bg-[#152737] border border-[#007CC2]/40 rounded-xl p-2 outline-none" />
         } @else {
           <h1 dir="auto" class="font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white leading-tight">
-            {{ article().title || 'Titre de l’article...' }}
+            {{ article().title || lang.tr('Titre de l’article...', 'عنوان المقال...') }}
           </h1>
         }
 
@@ -203,9 +204,9 @@
           (click)="toggleDirectEdit()"
           [class]="isDirectEditing() ? 'bg-[#007CC2] text-white font-bold' : 'bg-gray-100 hover:bg-gray-200 dark:bg-[#1A3145] text-[#486581] dark:text-white'"
           class="shrink-0 px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
-          [title]="isDirectEditing() ? 'Voir le rendu' : 'Modifier directement'">
+          [title]="isDirectEditing() ? lang.tr('Voir le rendu', 'معاينة المقال') : lang.tr('Modifier directement', 'تعديل مباشر')">
           <span class="material-icons text-sm">{{ isDirectEditing() ? 'visibility' : 'edit' }}</span>
-          <span>{{ isDirectEditing() ? 'Aperçu' : 'Éditer' }}</span>
+          <span>{{ isDirectEditing() ? lang.tr('Aperçu', 'معاينة') : lang.tr('Éditer', 'تعديل') }}</span>
         </button>
       </div>
 
@@ -216,7 +217,7 @@
         </div>
         <div>
           <p class="font-bold text-[#102A43] dark:text-white">{{ authorName() }}</p>
-          <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">Enseignant certifié • Plateforme Madrasati TN</p>
+          <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Enseignant certifié • Plateforme Madrasati TN', 'مربٍ معتمد • منصة مدرستي تونس') }}</p>
         </div>
       </div>
 
@@ -226,7 +227,7 @@
           [value]="article().contentMarkdown"
           (input)="updateArticleContent($any($event.target).value)"
           rows="16"
-          placeholder="Rédigez votre article en Markdown ou demandez à l'assistant à gauche..."
+          [placeholder]="lang.tr('Rédigez votre article en Markdown ou demandez à l’assistant à gauche...', 'اكتب مقالك هنا أو اطلب مساعدة المساعد الذكي...')"
           class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] rounded-xl p-4 text-sm text-[#102A43] dark:text-white outline-none leading-relaxed font-mono resize-y"></textarea>
       } @else {
         <div dir="auto" class="article-reading-prose dark:text-gray-200">
@@ -234,7 +235,7 @@
             <div [innerHTML]="renderedArticleHtml()"></div>
           } @else {
             <p class="text-gray-400 italic">
-              L'article est encore vide. Utilisez l'assistant conversationnel à gauche pour générer ou esquisser le contenu, ou cliquez sur "Éditer" en haut à droite.
+              {{ lang.tr('L’article est encore vide. Utilisez l’assistant conversationnel à gauche pour générer ou esquisser le contenu, ou cliquez sur "Éditer" en haut à droite.', 'المقال فارغ حالياً. يمكنك استخدام المساعد الذكي على اليمين لتوليد الأفكار، أو النقر على "تعديل" لكتابة النص مباشرة.') }}
             </p>
           }
         </div>
