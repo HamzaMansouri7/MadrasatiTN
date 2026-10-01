@@ -1,7 +1,9 @@
 <div [dir]="lang.dir()" class="min-h-screen w-full max-w-full overflow-x-hidden bg-paper text-ink flex flex-col font-sans transition-colors">
   <app-navbar />
 
-  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <main
+    class="flex-1 w-full mx-auto px-4 sm:px-6 lg:px-8 py-6"
+    [class]="store.currentRole() === 'editor' ? 'max-w-[1600px]' : 'max-w-7xl'">
     @switch (store.currentRole()) {
       @case ('home') {
         <app-landing-home />

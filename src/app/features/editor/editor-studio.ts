@@ -92,71 +92,94 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
 
       <!-- Document Metadata Header -->
       <div class="bg-white dark:bg-[#0E1D2A] rounded-[20px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs space-y-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
-          <div class="lg:col-span-2">
-            <label for="doc-title-input" class="block font-semibold text-[#102A43] dark:text-white mb-1">
-              {{ lang.tr('Titre du Document / Article', 'عنوان الوثيقة أو المقال') }} *
-            </label>
-            <input
-              id="doc-title-input"
-              type="text"
-              [value]="docTitle()"
-              (input)="onDocTitleInput($event)"
-              placeholder="Ex: Évaluation Trimestrielle N°1 : Mathématiques et Problèmes"
-              class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white font-semibold outline-none" />
-          </div>
-
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
           <div>
-            <label for="doc-type-select" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+            <span class="block font-semibold text-[#102A43] dark:text-white mb-1">
               {{ lang.tr('Type de document', 'نوع الوثيقة') }}
-            </label>
-            <select
-              id="doc-type-select"
-              [value]="docType()"
-              (change)="onDocTypeChange($event)"
-              class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
-              <option value="exam">Évaluation / Examen A4 (امتحان رسمي)</option>
-              <option value="course">Cours & Résumé A4 (درس وتلخيص)</option>
-              <option value="exercise_sheet">Fiche d'Exercices (تمارين تطبيقية)</option>
-              <option value="article">Article de Blog Pédagogique (مقال توجيهي)</option>
-            </select>
+            </span>
+            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Type de document', 'نوع الوثيقة')">
+              @for (opt of docTypeOptions; track opt.value) {
+                <button
+                  type="button"
+                  role="radio"
+                  [attr.aria-checked]="docType() === opt.value"
+                  (click)="setDocType(opt.value)"
+                  [class]="docType() === opt.value
+                    ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
+                    : 'border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] text-[#486581] dark:text-[#9DBBD4] hover:border-[#007CC2]/50'"
+                  class="flex items-center gap-2 rounded-[10px] border p-2.5 text-right transition-all cursor-pointer min-h-11">
+                  <span
+                    [class]="docType() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white dark:bg-[#1A3145] text-[#007CC2]'"
+                    class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
+                  <span class="min-w-0">
+                    <span class="block text-xs font-semibold leading-tight dark:text-white">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                    <span class="block text-[10px] opacity-70 leading-tight">{{ opt.sub }}</span>
+                  </span>
+                </button>
+              }
+            </div>
           </div>
 
           <div>
-            <label for="doc-subject-select" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+            <span class="block font-semibold text-[#102A43] dark:text-white mb-1">
               {{ lang.tr('Matière', 'المادة') }}
-            </label>
-            <select
-              id="doc-subject-select"
-              [value]="docSubject()"
-              (change)="onDocSubjectChange($event)"
-              class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
-              <option value="Mathématiques">Mathématiques / الرياضيات</option>
-              <option value="Français">Français / الفرنسية</option>
-              <option value="اللغة العربية">اللغة العربية</option>
-              <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ العلمي</option>
-              <option value="Histoire & Géographie">Histoire-Géo / التاريخ والجغرافيا</option>
-              <option value="Anglais">Anglais / الإنجليزية</option>
-            </select>
+            </span>
+            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Matière', 'المادة')">
+              @for (opt of docSubjectOptions; track opt.value) {
+                <button
+                  type="button"
+                  role="radio"
+                  [attr.aria-checked]="docSubject() === opt.value"
+                  (click)="setDocSubject(opt.value)"
+                  [class]="docSubject() === opt.value
+                    ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
+                    : 'border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] text-[#486581] dark:text-[#9DBBD4] hover:border-[#007CC2]/50'"
+                  class="flex items-center gap-2 rounded-[10px] border p-2 text-right transition-all cursor-pointer min-h-11">
+                  <span
+                    [class]="docSubject() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white dark:bg-[#1A3145] text-[#007CC2]'"
+                    class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
+                  <span class="text-xs font-semibold leading-tight dark:text-white min-w-0 truncate">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                </button>
+              }
+            </div>
           </div>
 
           <div>
-            <label for="doc-grade-select" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+            <span class="block font-semibold text-[#102A43] dark:text-white mb-1">
               {{ lang.tr('Niveau Scolaire', 'المستوى الدراسي') }}
-            </label>
-            <select
-              id="doc-grade-select"
-              [value]="docGrade()"
-              (change)="onDocGradeChange($event)"
-              class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
-              <option value="1ère Année">1ère Année / الأولى ابتدائي</option>
-              <option value="2ème Année">2ème Année / الثانية ابتدائي</option>
-              <option value="3ème Année">3ème Année / الثالثة ابتدائي</option>
-              <option value="4ème Année">4ème Année / الرابعة ابتدائي</option>
-              <option value="5ème Année">5ème Année / الخامسة ابتدائي</option>
-              <option value="6ème Année">6ème Année / السادسة ابتدائي (مناظرة)</option>
-            </select>
+            </span>
+            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Niveau Scolaire', 'المستوى الدراسي')">
+              @for (opt of docGradeOptions; track opt.value) {
+                <button
+                  type="button"
+                  role="radio"
+                  [attr.aria-checked]="docGrade() === opt.value"
+                  (click)="setDocGrade(opt.value)"
+                  [class]="docGrade() === opt.value
+                    ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
+                    : 'border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] text-[#486581] dark:text-[#9DBBD4] hover:border-[#007CC2]/50'"
+                  class="flex items-center gap-2 rounded-[10px] border p-2 text-right transition-all cursor-pointer min-h-11">
+                  <span
+                    [class]="docGrade() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white dark:bg-[#1A3145] text-[#007CC2]'"
+                    class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
+                  <span class="text-xs font-semibold leading-tight dark:text-white min-w-0 truncate">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                </button>
+              }
+            </div>
           </div>
+        </div>
+
+        <div class="text-xs">
+          <label for="doc-title-input" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+            {{ lang.tr('Titre du Document / Article', 'عنوان الوثيقة أو المقال') }} *
+          </label>
+          <input
+            id="doc-title-input"
+            type="text"
+            [value]="docTitle()"
+            (input)="onDocTitleInput($event)"
+            placeholder="Ex: Évaluation Trimestrielle N°1 : Mathématiques et Problèmes"
+            class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white font-semibold outline-none" />
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs pt-1 border-t border-[#E3ECF2] dark:border-[#1A3145]">
@@ -1541,8 +1564,45 @@ export class EditorStudioComponent {
     this.docTitle.set((e.target as HTMLInputElement).value);
   }
 
+  readonly docTypeOptions: { value: DocumentType; icon: string; fr: string; ar: string; sub: string }[] = [
+    { value: 'exam', icon: 'assignment', fr: 'Examen A4', ar: 'امتحان رسمي', sub: 'Évaluation / Examen' },
+    { value: 'course', icon: 'menu_book', fr: 'Cours & Résumé', ar: 'درس وتلخيص', sub: 'Cours A4' },
+    { value: 'exercise_sheet', icon: 'fact_check', fr: "Fiche d'Exercices", ar: 'تمارين تطبيقية', sub: 'Exercices' },
+    { value: 'article', icon: 'article', fr: 'Article de Blog', ar: 'مقال توجيهي', sub: 'Blog pédagogique' },
+  ];
+
+  setDocType(t: DocumentType) {
+    this.docType.set(t);
+  }
+
   onDocTypeChange(e: Event) {
     this.docType.set((e.target as HTMLSelectElement).value as DocumentType);
+  }
+
+  readonly docSubjectOptions: { value: SubjectName; icon: string; fr: string; ar: string }[] = [
+    { value: 'Mathématiques', icon: 'calculate', fr: 'Mathématiques', ar: 'الرياضيات' },
+    { value: 'Français', icon: 'translate', fr: 'Français', ar: 'الفرنسية' },
+    { value: 'اللغة العربية', icon: 'auto_stories', fr: 'Langue Arabe', ar: 'اللغة العربية' },
+    { value: 'Éveil Scientifique', icon: 'science', fr: 'Éveil Scientifique', ar: 'الإيقاظ العلمي' },
+    { value: 'Histoire & Géographie', icon: 'public', fr: 'Histoire-Géo', ar: 'التاريخ والجغرافيا' },
+    { value: 'Anglais', icon: 'language', fr: 'Anglais', ar: 'الإنجليزية' },
+  ];
+
+  readonly docGradeOptions: { value: GradeLevel; icon: string; fr: string; ar: string }[] = [
+    { value: '1ère Année', icon: 'looks_one', fr: '1ère Année', ar: 'الأولى ابتدائي' },
+    { value: '2ème Année', icon: 'looks_two', fr: '2ème Année', ar: 'الثانية ابتدائي' },
+    { value: '3ème Année', icon: 'looks_3', fr: '3ème Année', ar: 'الثالثة ابتدائي' },
+    { value: '4ème Année', icon: 'looks_4', fr: '4ème Année', ar: 'الرابعة ابتدائي' },
+    { value: '5ème Année', icon: 'looks_5', fr: '5ème Année', ar: 'الخامسة ابتدائي' },
+    { value: '6ème Année', icon: 'looks_6', fr: '6ème Année', ar: 'السادسة (مناظرة)' },
+  ];
+
+  setDocSubject(s: SubjectName) {
+    this.docSubject.set(s);
+  }
+
+  setDocGrade(g: GradeLevel) {
+    this.docGrade.set(g);
   }
 
   onDocSubjectChange(e: Event) {
