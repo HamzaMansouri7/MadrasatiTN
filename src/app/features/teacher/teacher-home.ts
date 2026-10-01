@@ -141,7 +141,7 @@ export interface GeneratedExerciseResult {
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.courses().length }}</p>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ filteredCourses().length }}</p>
               <p class="text-[11px] text-[#5B6B60] font-medium mt-1 flex items-center gap-1">
                 <span class="material-icons text-xs text-[#2D6A4F]">print</span>
                 {{ lang.tr('Prêts à imprimer', 'جاهزة للطباعة والتحميل') }}
@@ -160,7 +160,7 @@ export interface GeneratedExerciseResult {
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.blogPosts().length }}</p>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ filteredBlogPosts().length }}</p>
               <p class="text-[11px] text-[#5B6B60] font-medium mt-1 flex items-center gap-1">
                 <span class="material-icons text-xs text-[#2D6A4F]">groups</span>
                 {{ lang.tr('Conseils publiés', 'نصائح منشورة للأولياء') }}
@@ -1585,11 +1585,11 @@ export interface GeneratedExerciseResult {
 
               <div class="grid grid-cols-3 gap-2 text-center p-4 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF]">
                 <div>
-                  <p class="font-display font-bold text-[#14251D] text-base">{{ store.courses().length }}</p>
+                  <p class="font-display font-bold text-[#14251D] text-base">{{ filteredCourses().length }}</p>
                   <p class="text-[10px] text-[#5B6B60]">Fiches A4 Publiées</p>
                 </div>
                 <div>
-                  <p class="font-display font-bold text-[#14251D] text-base">{{ store.blogPosts().length }}</p>
+                  <p class="font-display font-bold text-[#14251D] text-base">{{ filteredBlogPosts().length }}</p>
                   <p class="text-[10px] text-[#5B6B60]">Articles de Conseils</p>
                 </div>
                 <div>
@@ -1703,17 +1703,30 @@ export class TeacherHomeComponent {
 
   readonly filteredCourses = computed(() => {
     const list = this.store.courses();
-    // Guests have no personal fiches — always show the full bank.
     if (this.docScopeFilter() === 'all' || !this.isAuthed()) return list;
-    const currentName = this.firebase.userProfile()?.displayName;
-    return list.filter((c) => !!currentName && c.teacherName === currentName);
+    const profile = this.firebase.userProfile();
+    const currentUid = profile?.uid;
+    const currentName = profile?.displayName?.trim().toLowerCase();
+
+    return list.filter((c) => {
+      if (currentUid && c.authorId === currentUid) return true;
+      if (currentName && c.teacherName && c.teacherName.trim().toLowerCase() === currentName) return true;
+      return !c.authorId && (c.teacherName === 'Enseignant Certifié' || c.teacherName === 'Prof. Habib Ben Amor');
+    });
   });
 
   readonly filteredBlogPosts = computed(() => {
     const list = this.store.blogPosts();
     if (this.docScopeFilter() === 'all' || !this.isAuthed()) return list;
-    const currentName = this.firebase.userProfile()?.displayName;
-    return list.filter((p) => !!currentName && p.authorName === currentName);
+    const profile = this.firebase.userProfile();
+    const currentUid = profile?.uid;
+    const currentName = profile?.displayName?.trim().toLowerCase();
+
+    return list.filter((p) => {
+      if (currentUid && p.authorId === currentUid) return true;
+      if (currentName && p.authorName && p.authorName.trim().toLowerCase() === currentName) return true;
+      return !p.authorId && (p.authorName === 'Enseignant Certifié' || p.authorName === 'Prof. Habib Ben Amor');
+    });
   });
 
   constructor() {

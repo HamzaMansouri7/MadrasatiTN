@@ -177,6 +177,7 @@ export interface Course {
   trimester?: Trimester;
   docType?: DocType;
   schoolYear?: string;
+  authorId?: string;
   teacherName: string;
   summary: string;
   content: string;

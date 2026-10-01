@@ -1047,6 +1047,17 @@
 
   </div>
 
+  <!-- TOAST (action feedback) -->
+  @if (toastMsg()) {
+    <div role="status" aria-live="polite"
+         class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 print:hidden
+                bg-[#0B2947] text-white text-xs font-semibold px-4 py-2.5 rounded-xl
+                shadow-2xl flex items-center gap-2 border border-[#23845B]/40">
+      <span class="material-icons text-base text-[#4ADE80]">check_circle</span>
+      <span>{{ toastMsg() }}</span>
+    </div>
+  }
+
   <!-- FLOATING BOTTOM DOCK (Gamma/Figma Style) -->
   <aside aria-label="Floating Studio Controls" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 print:hidden">
     <div class="floating-studio-dock rounded-2xl p-2 flex items-center gap-2 shadow-2xl">
@@ -1067,7 +1078,7 @@
       </button>
 
       <button
-        (click)="saveDraft()"
+        (click)="manualSave()"
         class="text-white hover:bg-white/10 text-xs font-semibold px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer">
         <span class="material-icons text-base">save</span>
         <span class="hidden sm:inline">{{ lang.tr('Sauvegarder', 'حفظ المسودة') }}</span>
@@ -1116,7 +1127,7 @@
             </button>
 
             <button
-              (click)="saveDraft(); publishModalOpen.set(false)"
+              (click)="manualSave(); publishModalOpen.set(false)"
               class="w-full p-3.5 rounded-[12px] bg-[#E8F6EF] hover:bg-[#D0EFE2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#23845B]/30 transition-colors">
               <div class="w-9 h-9 rounded-full bg-[#23845B] text-white flex items-center justify-center shrink-0">
                 <span class="material-icons text-base">bookmark</span>

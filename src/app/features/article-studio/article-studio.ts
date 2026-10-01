@@ -647,6 +647,7 @@ export class ArticleStudioComponent implements OnDestroy {
       grade: art.grade as any,
       chapter: chapterLabel,
       tags,
+      authorId: this.firebase.userProfile()?.uid,
       authorName: this.authorName(),
       authorTitle: isAr ? 'مربٍ معتمد' : 'Enseignant Certifié',
       readTimeMinutes: this.estimatedReadingTime(),

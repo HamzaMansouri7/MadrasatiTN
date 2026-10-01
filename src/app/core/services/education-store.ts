@@ -1198,13 +1198,15 @@ Pour réussir une production écrite de 6 à 8 lignes :
 
   addCourse(courseData: Partial<Course>) {
     const activeC = this.activeClass();
+    const teacherName = courseData.teacherName || activeC.teacherName;
     const newC: Course = {
       id: 'crs-' + Date.now(),
       title: courseData.title || 'Nouveau Cours',
       classId: activeC.id,
       subject: courseData.subject || 'Mathématiques',
       grade: courseData.grade || activeC.grade,
-      teacherName: activeC.teacherName,
+      authorId: courseData.authorId,
+      teacherName: teacherName,
       summary: courseData.summary || '',
       content: courseData.content || '',
       viewsCount: 1,
@@ -1212,7 +1214,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
       tags: courseData.tags || ['Nouveau'],
       hasCorrection: true,
       upvotesCount: 1,
-      watermarkText: `Madrasati TN — Document Certifié — ${activeC.teacherName}`,
+      watermarkText: courseData.watermarkText || `Madrasati TN — Document Certifié — ${teacherName}`,
     };
 
     this.courses.update((list) => [newC, ...list]);

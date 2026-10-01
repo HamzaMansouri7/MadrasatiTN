@@ -163,6 +163,22 @@ export class EditorStudioComponent {
     if (this.selectedBlockId() === id) this.selectedBlockId.set(null);
   }
   readonly isAutoSaved = signal<boolean>(true);
+  readonly toastMsg = signal<string>('');
+  private toastTimer: ReturnType<typeof setTimeout> | null = null;
+
+  showToast(msg: string) {
+    this.toastMsg.set(msg);
+    if (this.toastTimer) clearTimeout(this.toastTimer);
+    if (typeof setTimeout !== 'undefined') {
+      this.toastTimer = setTimeout(() => this.toastMsg.set(''), 2600);
+    }
+  }
+
+  manualSave() {
+    this.saveDraft();
+    this.showToast(this.lang.tr('Brouillon enregistré ✓', 'تم حفظ المسودة ✓'));
+  }
+
   readonly publishModalOpen = signal<boolean>(false);
   readonly aiModalOpen = signal<boolean>(false);
   readonly isAiLoading = signal<boolean>(false);
@@ -573,6 +589,7 @@ export class EditorStudioComponent {
 
   triggerPrintDialog() {
     if (typeof window !== 'undefined') {
+      this.showToast(this.lang.tr('Ouverture de l’impression A4…', 'جارٍ فتح الطباعة A4…'));
       window.print();
     }
   }
@@ -960,26 +977,33 @@ export class EditorStudioComponent {
 
   publishAsDocumentBank() {
     const content = this.getCompiledContentText();
+    const user = this.firebase.userProfile();
+    const authorName = user?.displayName || 'Enseignant Certifié';
+    const authorId = user?.uid;
+    const watermark = user?.customWatermark || this.docWatermark() || `Madrasati TN — Document Certifié — ${authorName}`;
+
     this.store.addCourse({
       title: this.docTitle(),
       subject: this.docSubject(),
       grade: this.docGrade(),
       trimester: this.docTrimester(),
       schoolYear: this.docSchoolYear(),
-      summary: `${this.docSubject()} - ${this.docGrade()} - Document préparé avec l'en-tête officiel républicain.`,
+      summary: `${this.docSubject()} - ${this.docGrade()} - Document préparé par ${authorName}.`,
       content,
-      watermarkText: this.docWatermark(),
+      authorId,
+      teacherName: authorName,
+      watermarkText: watermark,
     });
 
     this.firebase.addNotification({
       type: 'new_doc',
       title: `Nouveau document : ${this.docTitle()}`,
-      message: `${this.docSubject()} (${this.docGrade()}) - Prêt pour impression A4 et téléchargement.`,
+      message: `${this.docSubject()} (${this.docGrade()}) par ${authorName} - Prêt pour impression A4 et téléchargement.`,
       linkRole: 'parent',
       icon: 'menu_book',
     });
 
-    // Bug 2 fix: record publication in interaction journal for publicationsCount ledger
+    // Record publication in interaction journal for publicationsCount ledger
     this.interactionSvc.recordPublication(this.docTitle());
 
     this.publishModalOpen.set(false);
@@ -988,6 +1012,10 @@ export class EditorStudioComponent {
 
   publishAsBlogArticle() {
     const content = this.getCompiledContentText();
+    const user = this.firebase.userProfile();
+    const authorName = user?.displayName || 'Enseignant Certifié';
+    const authorId = user?.uid;
+
     this.store.addBlogPost({
       title: this.docTitle(),
       excerpt: content.slice(0, 150) + '...',
@@ -995,7 +1023,8 @@ export class EditorStudioComponent {
       subject: this.docSubject(),
       grade: this.docGrade(),
       tags: [this.docSubject(), this.docGrade(), 'Pédagogie'],
-      authorName: this.firebase.userProfile()?.displayName || 'Enseignant Certifié',
+      authorId,
+      authorName: authorName,
       authorTitle: 'Enseignant Certifié',
       readTimeMinutes: Math.max(2, Math.ceil(content.split(' ').length / 180)),
     });
@@ -1003,12 +1032,12 @@ export class EditorStudioComponent {
     this.firebase.addNotification({
       type: 'announcement',
       title: `Nouvel article pédagogique : ${this.docTitle()}`,
-      message: `Publié par ${this.firebase.userProfile()?.displayName || 'un enseignant certifié'}.`,
+      message: `Publié par ${authorName}.`,
       linkRole: 'teacher',
       icon: 'article',
     });
 
-    // Bug 2 fix: record publication in interaction journal for publicationsCount ledger
+    // Record publication in interaction journal for publicationsCount ledger
     this.interactionSvc.recordPublication(this.docTitle());
 
     this.publishModalOpen.set(false);
