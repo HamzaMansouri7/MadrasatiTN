@@ -367,7 +367,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                     <button
                       (click)="copyLink(ex)"
                       class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium p-1 rounded-md flex items-center cursor-pointer border border-[#E7DFCF]"
-                      title="Copier le lien">
+                      [title]="lang.tr('Copier le lien', 'نسخ الرابط')">
                       <span class="material-icons text-[12px]">content_copy</span>
                     </button>
 
@@ -375,7 +375,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                       (click)="reportDocument(ex)"
                       [disabled]="ex.isReported"
                       [class]="ex.isReported ? 'text-[#C1121F] font-semibold' : 'text-[#6B7A70] hover:text-[#C1121F]'"
-                      title="Signaler un scan flou ou incomplet"
+                      [title]="lang.tr('Signaler un scan flou ou incomplet', 'الإبلاغ عن مسح ضوئي غير واضح')"
                       class="p-1 rounded-md cursor-pointer transition-colors flex items-center gap-1">
                       <span class="material-icons text-[12px]">report_problem</span>
                     </button>
@@ -679,7 +679,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               <div class="relative inline-block mx-auto">
                 <img [src]="t.avatarUrl" alt="Teacher" class="w-20 h-20 rounded-full object-cover border-2 border-[#2D6A4F] shadow-xs" />
                 @if (t.verifiedBadge) {
-                  <span class="material-icons absolute bottom-0 right-0 bg-[#1B4332] text-[#FBF8F1] rounded-full text-base p-0.5 border-2 border-white" title="Enseignant Certifié Éducation Nationale">
+                  <span class="material-icons absolute bottom-0 right-0 bg-[#1B4332] text-[#FBF8F1] rounded-full text-base p-0.5 border-2 border-white" [title]="lang.tr('Enseignant Certifié Éducation Nationale', 'مربٍ معتمد لدى وزارة التربية')">
                     verified
                   </span>
                 }

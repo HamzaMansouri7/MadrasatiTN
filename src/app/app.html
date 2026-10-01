@@ -4,29 +4,7 @@
   <main
     class="flex-1 w-full mx-auto px-4 sm:px-6 lg:px-8 py-6"
     [class]="store.currentRole() === 'editor' ? 'max-w-[1600px]' : 'max-w-7xl'">
-    @switch (store.currentRole()) {
-      @case ('home') {
-        <app-landing-home />
-      }
-      @case ('teacher') {
-        <app-teacher-home />
-      }
-      @case ('parent') {
-        <app-parent-home />
-      }
-      @case ('student') {
-        <app-student-home />
-      }
-      @case ('public') {
-        <app-public-discovery />
-      }
-      @case ('editor') {
-        <app-editor-studio />
-      }
-      @case ('article-editor') {
-        <app-article-studio />
-      }
-    }
+    <router-outlet />
   </main>
 
   <!-- Global Auth & Signup Modal -->

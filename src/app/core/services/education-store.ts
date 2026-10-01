@@ -1,4 +1,5 @@
 import { Injectable, computed, signal, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { InteractionService } from './interaction.service';
 import {
   Announcement,
@@ -27,16 +28,39 @@ import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-
 })
 export class EducationStore {
   private readonly interactionService = inject(InteractionService);
+  private readonly router = inject(Router, { optional: true });
 
   // Current active role ('home' by default shows the landing page)
   readonly currentRole = signal<UserRole>('home');
   readonly previousRole = signal<UserRole>('teacher');
 
+  private navigateForRole(role: UserRole) {
+    if (!this.router) return;
+    const pathMap: Record<UserRole, string> = {
+      'home': '/',
+      'teacher': '/teacher',
+      'parent': '/parent',
+      'student': '/student',
+      'public': '/discovery',
+      'editor': '/editor',
+      'article-editor': '/article-studio',
+    };
+    const target = pathMap[role] ?? '/';
+    if (this.router.url.split('?')[0] !== target) {
+      this.router.navigateByUrl(target);
+    }
+  }
+
   setRole(role: UserRole) {
-    if (this.currentRole() !== 'editor') {
+    if (this.currentRole() !== 'editor' && this.currentRole() !== 'article-editor') {
       this.previousRole.set(this.currentRole());
     }
     this.currentRole.set(role);
+    this.navigateForRole(role);
+  }
+
+  switchRole(role: UserRole) {
+    this.setRole(role);
   }
 
   // Multi-Palette & Mode Theme Engine
@@ -836,10 +860,6 @@ Pour réussir une production écrite de 6 à 8 lignes :
   }
 
   // Actions
-  switchRole(role: UserRole) {
-    this.currentRole.set(role);
-  }
-
   setActiveClass(classId: string) {
     this.activeClassId.set(classId);
   }

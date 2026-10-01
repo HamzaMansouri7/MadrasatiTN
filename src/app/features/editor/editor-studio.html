@@ -7,7 +7,7 @@
         <button
           (click)="exitStudio()"
           class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors cursor-pointer text-white"
-          title="Retour">
+          [title]="lang.tr('Retour', 'رجوع')">
           <span class="material-icons text-xl rtl:rotate-180">arrow_back</span>
         </button>
 
@@ -371,13 +371,13 @@
                   <button
                     (click)="duplicateBlock(idx)"
                     class="p-1 text-[#627D98] hover:text-[#007CC2] cursor-pointer"
-                    title="Dupliquer">
+                    [title]="lang.tr('Dupliquer', 'مضاعفة')">
                     <span class="material-icons text-sm">content_copy</span>
                   </button>
                   <button
                     (click)="deleteBlock(block.id)"
                     class="p-1 text-[#D64545] hover:opacity-80 cursor-pointer"
-                    title="Supprimer">
+                    [title]="lang.tr('Supprimer', 'حذف')">
                     <span class="material-icons text-sm">delete</span>
                   </button>
                 </div>
@@ -785,7 +785,7 @@
                   type="button"
                   (click)="activeInsertIndex.set(activeInsertIndex() === (idx - 1) ? null : (idx - 1))"
                   class="opacity-0 group-hover/divider:opacity-100 focus:opacity-100 transition-opacity bg-white hover:bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/40 rounded-full w-6 h-6 flex items-center justify-center shadow-xs cursor-pointer z-30"
-                  title="Insérer un élément ici">
+                  [title]="lang.tr('Insérer un élément ici', 'إدراج عنصر هنا')">
                   <span class="material-icons text-sm">add</span>
                 </button>
 
@@ -839,13 +839,13 @@
                   <button
                     (click)="$event.stopPropagation(); duplicateBlock(idx)"
                     class="p-0.5 text-[#627D98] hover:text-[#007CC2] cursor-pointer"
-                    title="Dupliquer">
+                    [title]="lang.tr('Dupliquer', 'مضاعفة')">
                     <span class="material-icons text-[14px]">content_copy</span>
                   </button>
                   <button
                     (click)="$event.stopPropagation(); deleteBlockById(b.id)"
                     class="p-0.5 text-[#D64545] hover:opacity-80 cursor-pointer"
-                    title="Supprimer">
+                    [title]="lang.tr('Supprimer', 'حذف')">
                     <span class="material-icons text-[14px]">delete</span>
                   </button>
                 </div>

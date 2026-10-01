@@ -39,8 +39,8 @@ export class ArticleStudioComponent {
   readonly article = signal<ArticleDraft>({
     title: '',
     summary: '',
-    subject: 'اللغة العربية',
-    grade: '4ème Année',
+    subject: this.lang.isArabic() ? 'اللغة العربية' : 'Français',
+    grade: this.lang.isArabic() ? 'السنة الرابعة' : '4ème Année',
     coverImageUrl: '',
     contentMarkdown: '',
   });
@@ -72,7 +72,7 @@ export class ArticleStudioComponent {
             ]
           : [
               'Comment surmonter le blocage en calcul mental (3ème/4ème)',
-              '3 Astuces pour aider son enfant en dictée arabe',
+              '3 Astuces pour aider son enfant en dictée',
               'Conseils pratiques pour la révision du Trimestre 1',
             ]
       );
@@ -80,7 +80,7 @@ export class ArticleStudioComponent {
   }
 
   readonly authorName = computed(() => {
-    return this.firebase.userProfile()?.displayName || 'Enseignant Certifié';
+    return this.firebase.userProfile()?.displayName || (this.lang.isArabic() ? 'مربٍ معتمد' : 'Enseignant Certifié');
   });
 
   readonly estimatedReadingTime = computed(() => {
@@ -119,6 +119,7 @@ export class ArticleStudioComponent {
           messages: this.messages(),
           currentArticle: this.article(),
           userPrompt: text,
+          language: this.lang.lang(),
         }),
       });
 
@@ -139,14 +140,26 @@ export class ArticleStudioComponent {
       } else {
         this.messages.update((msgs) => [
           ...msgs,
-          { role: 'assistant', content: 'Désolé, une erreur est survenue lors de la rédaction. Veuillez réessayer.' },
+          {
+            role: 'assistant',
+            content: this.lang.tr(
+              'Désolé, une erreur est survenue lors de la rédaction. Veuillez réessayer.',
+              'عذراً، حدث خطأ أثناء صياغة المقال. يرجى إعادة المحاولة.'
+            ),
+          },
         ]);
       }
     } catch (err) {
       console.error('Chat error:', err);
       this.messages.update((msgs) => [
         ...msgs,
-        { role: 'assistant', content: 'Impossible de joindre le serveur IA actuellement.' },
+        {
+          role: 'assistant',
+          content: this.lang.tr(
+            'Impossible de joindre le serveur IA actuellement.',
+            'تعذر الاتصال بخادم الذكاء الاصطناعي حالياً.'
+          ),
+        },
       ]);
     } finally {
       this.isLoading.set(false);
@@ -255,23 +268,26 @@ export class ArticleStudioComponent {
     const content = art.contentMarkdown || 'Article en cours de rédaction';
     const title = art.title || 'Article Pédagogique Sans Titre';
 
+    const isAr = this.lang.isArabic();
     this.store.addBlogPost({
       title,
       excerpt: art.summary || content.slice(0, 160) + '...',
       content,
       subject: art.subject as any,
       grade: art.grade as any,
-      tags: [art.subject, art.grade, 'Pédagogie'],
+      tags: [art.subject, art.grade, isAr ? 'بيداغوجيا' : 'Pédagogie'],
       authorName: this.authorName(),
-      authorTitle: 'Enseignant Certifié',
+      authorTitle: isAr ? 'مربٍ معتمد' : 'Enseignant Certifié',
       readTimeMinutes: this.estimatedReadingTime(),
     });
 
     this.firebase.addNotification({
       type: 'announcement',
-      title: `Nouvel article publié : ${title}`,
-      message: `Publié par ${this.authorName()} sur le blog pédagogique.`,
-      linkRole: 'teacher',
+      title: isAr ? `مقال بيداغوجي جديد: ${title}` : `Nouvel article publié : ${title}`,
+      message: isAr
+        ? `بقلم ${this.authorName()} على المدونة التربوية.`
+        : `Publié par ${this.authorName()} sur le blog pédagogique.`,
+      linkRole: 'public',
       icon: 'article',
     });
 

@@ -825,7 +825,7 @@ Instructions par format :
 // Endpoint: Conversational Article Assistant Co-Pilot
 app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
   try {
-    const { messages = [], currentArticle = {}, userPrompt = '' } = req.body;
+    const { messages = [], currentArticle = {}, userPrompt = '', language = 'ar' } = req.body;
     if (!ai) {
       res.status(500).json({ error: 'Clé API Gemini non configurée.' });
       return;
@@ -835,12 +835,20 @@ app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
       .map((m: { role: string; content: string }) => `${m.role === 'user' ? 'Enseignant' : 'Assistant IA'}: ${m.content}`)
       .join('\n');
 
+    const isArabicMode = language === 'ar' || /[\u0600-\u06FF]/.test(userPrompt);
+
     const prompt = `Tu es un conseiller pédagogique senior pour l'enseignement primaire en Tunisie (Madrasati TN).
 Tu dialogues avec un enseignant pour co-rédiger un article de blog pédagogique percutant, clair et inspirant, destiné soit à d'autres enseignants, soit aux parents d'élèves.
 
-RÈGLE LINGUISTIQUE ESSENTIELLE :
-- Si la demande de l'enseignant est en ARABE (ou que l'interface est en Arabe), réponds OBLIGATOIREMENT en ARABE littéraire clair, et rédige l'article et les suggestions (suggestedChips) en ARABE.
-- Si la demande est en FRANÇAIS, réponds et rédige en FRANÇAIS.
+RÈGLE LINGUISTIQUE CRITIQUE ET ABSOLUE :
+${isArabicMode
+  ? `- L'ENSEIGNANT UTILISE L'INTERFACE EN ARABE. TOUT DOIT ÊTRE EN ARABE LITTÉRAIRE TUNISIEN ÉDUCATIF.
+- "replyText" DOIT être en Arabe élégant et bienveillant.
+- "updatedArticle.title", "updatedArticle.summary", "updatedArticle.subject", "updatedArticle.grade" et "updatedArticle.contentMarkdown" DOIVENT ÊTRE EN ARABE.
+- Les puces d'actions "suggestedChips" DOIVENT ÊTRE EN ARABE.`
+  : `- L'ENSEIGNANT UTILISE L'INTERFACE EN FRANÇAIS.
+- Rédige "replyText", l'article et les "suggestedChips" en FRANÇAIS soigné.`
+}
 
 Historique de la conversation :
 ${conversationHistoryStr}
