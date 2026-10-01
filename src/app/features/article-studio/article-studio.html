@@ -1,43 +1,48 @@
 <div class="space-y-6 pb-16">
-  <!-- Top Navigation Bar -->
-  <div class="bg-[#0B2947] text-white rounded-[24px] p-5 shadow-sm">
+  <!-- Top Navigation Bar (Cartouche Ink Header) -->
+  <div class="bg-[#14251D] text-[#FBF8F1] rounded-[28px] p-5 sm:p-6 shadow-sm">
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3.5">
         <button
+          type="button"
           (click)="exitStudio()"
-          class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors cursor-pointer text-white"
-          [title]="lang.tr('Retour', 'رجوع')">
+          class="w-11 h-11 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors cursor-pointer text-[#FBF8F1]"
+          [title]="lang.tr('Retour', 'رجوع')"
+          aria-label="Retour">
           <span class="material-icons text-xl rtl:rotate-180">arrow_back</span>
         </button>
 
         <div class="min-w-0">
-          <div class="flex items-center gap-2">
-            <span class="bg-[#7C3AED] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
-              ✍️ {{ lang.tr('Studio d’Articles Pédagogiques', 'استوديو المقالات البيداغوجية') }}
+          <div class="flex items-center gap-2.5">
+            <span class="bg-[#2D6A4F] text-[#FBF8F1] text-[11px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap flex items-center gap-1.5">
+              <span class="material-icons text-xs">edit_note</span>
+              <span>{{ lang.tr('Studio d’Articles Pédagogiques', 'استوديو المقالات البيداغوجية') }}</span>
             </span>
-            <span class="text-[11px] text-[#8CA9C4] inline-flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full" [class]="isSaved() ? 'bg-[#4ADE80]' : 'bg-[#E0AA32] animate-pulse'"></span>
+            <span class="text-[11px] text-[#9DBBA8] inline-flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full" [class]="isSaved() ? 'bg-[#4ADE80]' : 'bg-[#F2C14E] animate-pulse'"></span>
               {{ isSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Modifications...', 'تعديل...') }}
             </span>
           </div>
-          <h1 dir="auto" class="font-display text-xl sm:text-2xl font-semibold text-white mt-1 truncate max-w-[60vw]">
+          <h1 dir="auto" class="font-display text-xl sm:text-2xl font-semibold text-[#FBF8F1] mt-1 truncate max-w-[60vw]">
             {{ article().title || lang.tr('Nouvel Article Pédagogique', 'مقال تربوي جديد') }}
           </h1>
         </div>
       </div>
 
       <!-- Action Buttons -->
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2.5">
         <button
+          type="button"
           (click)="saveDraft()"
-          class="bg-white/10 hover:bg-white/20 text-white px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
+          class="bg-white/10 hover:bg-white/20 text-[#FBF8F1] px-4 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 cursor-pointer transition-colors min-h-[44px]">
           <span class="material-icons text-sm">save</span>
           <span>{{ lang.tr('Sauvegarder', 'حفظ مسودة') }}</span>
         </button>
 
         <button
+          type="button"
           (click)="publishArticle()"
-          class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow-sm transition-colors">
+          class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-sm transition-colors min-h-[44px]">
           <span class="material-icons text-sm">publish</span>
           <span>{{ lang.tr('Publier sur le Blog', 'نشر على المدونة') }}</span>
         </button>
@@ -45,16 +50,16 @@
     </div>
   </div>
 
-  <!-- Curriculum Grounding & Pedagogical Mode Bar -->
-  <div class="bg-white dark:bg-[#0E1D2A] rounded-[20px] p-4 sm:p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs space-y-3.5">
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+  <!-- Curriculum Grounding & Pedagogical Mode Bar (Cartouche Paper Panel) -->
+  <div class="bg-[#FBF8F1] rounded-2xl p-4 sm:p-5 border border-[#E7DFCF] space-y-4">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#E7DFCF] pb-3">
       <!-- Mode Tabs -->
-      <div class="flex items-center bg-[#F0F4F8] dark:bg-[#152737] p-1 rounded-xl">
+      <div class="flex items-center bg-[#F2ECDE] p-1 rounded-xl">
         <button
           type="button"
           (click)="setMode('curriculum')"
-          [class]="mode() === 'curriculum' ? 'bg-white dark:bg-[#007CC2] text-[#007CC2] dark:text-white shadow-xs font-bold' : 'text-[#627D98] dark:text-[#8CA9C4] font-medium hover:text-[#102A43]'"
-          class="px-3 py-1.5 rounded-lg text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+          [class]="mode() === 'curriculum' ? 'bg-[#14251D] text-[#FBF8F1] shadow-sm font-semibold' : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
+          class="min-h-[40px] px-3.5 py-2 rounded-lg text-xs flex items-center gap-2 transition-all cursor-pointer">
           <span class="material-icons text-sm">menu_book</span>
           <span>{{ lang.tr('Programme Officiel (CNP)', 'المنهاج والدروس الرسمية (CNP)') }}</span>
         </button>
@@ -62,15 +67,15 @@
         <button
           type="button"
           (click)="setMode('free')"
-          [class]="mode() === 'free' ? 'bg-white dark:bg-[#007CC2] text-[#007CC2] dark:text-white shadow-xs font-bold' : 'text-[#627D98] dark:text-[#8CA9C4] font-medium hover:text-[#102A43]'"
-          class="px-3 py-1.5 rounded-lg text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+          [class]="mode() === 'free' ? 'bg-[#14251D] text-[#FBF8F1] shadow-sm font-semibold' : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
+          class="min-h-[40px] px-3.5 py-2 rounded-lg text-xs flex items-center gap-2 transition-all cursor-pointer">
           <span class="material-icons text-sm">local_offer</span>
           <span>{{ lang.tr('Blog Libre & الوسوم (#Tags)', 'مقال حر وتوجيه تربوي (وسوم #)') }}</span>
         </button>
       </div>
 
-      <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1">
-        <span class="material-icons text-xs text-[#007CC2]">tune</span>
+      <span class="text-xs text-[#5B6B60] flex items-center gap-1.5">
+        <span class="material-icons text-xs text-[#2D6A4F]">tune</span>
         @if (mode() === 'curriculum') {
           {{ lang.tr('Alignement strict sur les manuels tunisiens', 'مطابقة دقيقة لكتب وبرامج وزارة التربية') }}
         } @else {
@@ -81,16 +86,16 @@
 
     @if (mode() === 'curriculum') {
       <!-- 3-Tier Cascading Selectors for Curriculum Mode -->
-      <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+      <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5">
         <!-- Grade Dropdown -->
         <div class="sm:col-span-3">
-          <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+          <label class="block text-xs font-semibold text-[#5B6B60] mb-1.5">
             {{ lang.tr('Niveau Scolaire', 'المستوى الدراسي') }}
           </label>
           <select
             [value]="selectedGrade()"
             (change)="onGradeChange($any($event.target).value)"
-            class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
+            class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] cursor-pointer min-h-[44px]">
             @for (g of gradesList; track g.id) {
               <option [value]="g.id">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
             }
@@ -99,13 +104,13 @@
 
         <!-- Subject Dropdown -->
         <div class="sm:col-span-3">
-          <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+          <label class="block text-xs font-semibold text-[#5B6B60] mb-1.5">
             {{ lang.tr('Matière', 'المادة التعليمية') }}
           </label>
           <select
             [value]="selectedSubject()"
             (change)="onSubjectChange($any($event.target).value)"
-            class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
+            class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] cursor-pointer min-h-[44px]">
             @for (s of subjectsList; track s.id) {
               <option [value]="s.id">{{ lang.isArabic() ? s.labelAr : s.labelFr }}</option>
             }
@@ -114,13 +119,13 @@
 
         <!-- Chapter / Axis Dropdown -->
         <div class="sm:col-span-6">
-          <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+          <label class="block text-xs font-semibold text-[#5B6B60] mb-1.5">
             {{ lang.tr('Chapitre ou Thème Officiel', 'المحور أو الدرس المعتمد') }}
           </label>
           <select
             [value]="selectedChapterId()"
             (change)="onChapterChange($any($event.target).value)"
-            class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] truncate cursor-pointer">
+            class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] truncate cursor-pointer min-h-[44px]">
             @for (ch of availableChapters(); track ch.id) {
               <option [value]="ch.id">
                 {{ ch.trimester }} • {{ lang.isArabic() ? ch.titleAr : ch.titleFr }}
@@ -135,13 +140,13 @@
 
       <!-- Active Competency Banner -->
       @if (activeChapterObj()) {
-        <div class="bg-[#F0F8FF] dark:bg-[#102A43]/50 border border-[#007CC2]/20 rounded-xl p-2.5 flex items-start gap-2 text-xs">
-          <span class="material-icons text-base text-[#007CC2] shrink-0 mt-0.5">verified</span>
+        <div class="bg-[#F2ECDE] border border-[#E7DFCF] rounded-xl p-3 flex items-start gap-2.5 text-xs">
+          <span class="material-icons text-base text-[#2D6A4F] shrink-0 mt-0.5">verified</span>
           <div class="min-w-0">
-            <span class="font-bold text-[#007CC2] dark:text-[#168CCB]">
+            <span class="font-bold text-[#1B4332]">
               {{ lang.tr('Compétence ministérielle ciblée :', 'الكفاءة الوزارية المستهدفة :') }}
             </span>
-            <span class="text-[#334E68] dark:text-[#CBD9E2] ms-1">
+            <span class="text-[#14251D] ms-1">
               {{ lang.isArabic() ? activeChapterObj()?.keyCompetencyAr : activeChapterObj()?.keyCompetencyFr }}
             </span>
           </div>
@@ -149,17 +154,17 @@
       }
     } @else {
       <!-- Free Blog Mode & Interactive Tags Engine -->
-      <div class="space-y-3">
-        <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-end">
+      <div class="space-y-3.5">
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-end">
           <!-- Grade Scope -->
           <div class="sm:col-span-4">
-            <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+            <label class="block text-xs font-semibold text-[#5B6B60] mb-1.5">
               {{ lang.tr('Public ou Niveau ciblé', 'الفئة أو المستوى المستهدف') }}
             </label>
             <select
               [value]="selectedGrade()"
               (change)="onGradeChange($any($event.target).value)"
-              class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
+              class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] cursor-pointer min-h-[44px]">
               @for (g of gradesList; track g.id) {
                 <option [value]="g.id">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
               }
@@ -168,24 +173,24 @@
 
           <!-- Add Custom Tag Input -->
           <div class="sm:col-span-8">
-            <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+            <label class="block text-xs font-semibold text-[#5B6B60] mb-1.5">
               {{ lang.tr('Ajouter un tag / label personnalisé', 'إضافة وسم أو تصنيف مخصص') }}
             </label>
             <div class="flex items-center gap-2">
               <div class="relative flex-1">
-                <span class="absolute start-3 top-1/2 -translate-y-1/2 text-xs font-bold text-[#627D98]">#</span>
+                <span class="absolute start-3 top-1/2 -translate-y-1/2 text-xs font-bold text-[#5B6B60]">#</span>
                 <input
                   type="text"
                   [value]="newTagInput()"
                   (input)="newTagInput.set($any($event.target).value)"
                   (keydown)="onTagKeyDown($event)"
                   [placeholder]="lang.tr('Ex: نصائح_الامتحانات, تحفيز, رياضة...', 'مثال: نصائح_الامتحانات، مشاريع_القسم، تحفيز...')"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl ps-7 pe-3 py-2 outline-none font-medium focus:border-[#007CC2]" />
+                  class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl ps-8 pe-3 py-2.5 outline-none font-medium focus:border-[#2D6A4F] min-h-[44px]" />
               </div>
               <button
                 type="button"
                 (click)="addTag()"
-                class="bg-[#007CC2] hover:bg-[#00669E] text-white px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1 cursor-pointer transition-colors shrink-0">
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] px-4 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors shrink-0 min-h-[44px]">
                 <span class="material-icons text-sm">add</span>
                 <span>{{ lang.tr('Ajouter', 'إضافة') }}</span>
               </button>
@@ -194,33 +199,35 @@
         </div>
 
         <!-- Active Selected Tags Chips -->
-        <div class="flex flex-wrap items-center gap-1.5 pt-1">
-          <span class="text-[11px] font-bold text-[#486581] dark:text-[#8CA9C4] me-1">
+        <div class="flex flex-wrap items-center gap-2 pt-1">
+          <span class="text-xs font-semibold text-[#5B6B60] me-1">
             {{ lang.tr('Tags sélectionnés :', 'الوسوم المختارة :') }}
           </span>
           @for (tag of customTags(); track tag) {
-            <span class="inline-flex items-center gap-1 bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] border border-[#007CC2]/30 px-2.5 py-1 rounded-full text-xs font-semibold">
+            <span class="inline-flex items-center gap-1.5 bg-[#F2ECDE] text-[#1B4332] border border-[#E7DFCF] px-3 py-1.5 rounded-full text-xs font-semibold min-h-[32px]">
               #{{ tag }}
               <button
                 type="button"
                 (click)="removeTag(tag)"
-                class="hover:text-red-500 transition-colors cursor-pointer ms-0.5"
-                [title]="lang.tr('Supprimer le tag', 'حذف الوسم')">
-                <span class="material-icons text-[14px]">close</span>
+                class="text-[#5B6B60] hover:text-[#C1121F] transition-colors cursor-pointer ms-0.5 p-0.5"
+                [title]="lang.tr('Supprimer le tag', 'حذف الوسم')"
+                aria-label="Supprimer le tag">
+                <span class="material-icons text-xs">close</span>
               </button>
             </span>
           }
           @if (customTags().length === 0) {
-            <span class="text-[11px] text-[#8CA9C4] italic">
+            <span class="text-xs text-[#6B7A70] italic">
               {{ lang.tr('Aucun tag sélectionné (cliquez sur les suggestions ci-dessous)', 'لم تختر وسوماً بعد (انقر على الاقتراحات أسفله)') }}
             </span>
           }
         </div>
 
         <!-- Quick Preset Tag Chips -->
-        <div class="flex flex-wrap items-center gap-1.5 pt-1 border-t border-dashed border-[#E3ECF2] dark:border-[#1A3145]">
-          <span class="text-[10px] uppercase font-bold text-[#8CA9C4] tracking-wider me-1">
-            ⚡ {{ lang.tr('Suggestions :', 'اقتراحات سريعة :') }}
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-[#E7DFCF]">
+          <span class="text-[11px] font-semibold text-[#5B6B60] me-1 flex items-center gap-1">
+            <span class="material-icons text-xs text-[#8A5A00]">bolt</span>
+            <span>{{ lang.tr('Suggestions :', 'اقتراحات سريعة :') }}</span>
           </span>
           @for (item of quickPresetTags; track item.ar) {
             @let tagText = lang.isArabic() ? item.ar : item.fr;
@@ -228,11 +235,11 @@
             <button
               type="button"
               (click)="toggleQuickTag(tagText)"
-              [class]="isSelected ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]' : 'bg-[#F0F4F8] hover:bg-[#E2E8F0] dark:bg-[#152737] text-[#486581] dark:text-[#CBD9E2] border-transparent'"
-              class="border text-[11px] px-2.5 py-0.5 rounded-full transition-all cursor-pointer flex items-center gap-1">
+              [class]="isSelected ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold border-[#1B4332]' : 'bg-white hover:bg-[#F2ECDE] text-[#5B6B60] border-[#E7DFCF]'"
+              class="border text-xs px-3 py-1 rounded-full transition-all cursor-pointer flex items-center gap-1 min-h-[32px]">
               <span>#{{ tagText }}</span>
               @if (isSelected) {
-                <span class="material-icons text-[12px]">check</span>
+                <span class="material-icons text-xs">check</span>
               }
             </button>
           }
@@ -245,23 +252,25 @@
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
     
     <!-- LEFT PANEL: CHAT CO-PILOT -->
-    <div class="lg:col-span-5 bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs flex flex-col h-[750px] overflow-hidden">
+    <div class="lg:col-span-5 bg-white rounded-[28px] border border-[#E7DFCF] shadow-sm flex flex-col h-[750px] overflow-hidden">
       <!-- Chat Header -->
-      <div class="p-4 border-b border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between bg-[#F7F9FB] dark:bg-[#152737]">
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 rounded-full bg-[#E0AA32] text-[#0B2947] flex items-center justify-center font-bold">
+      <div class="p-4 border-b border-[#E7DFCF] flex items-center justify-between bg-[#FBF8F1]">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-full bg-[#14251D] text-[#F2C14E] flex items-center justify-center font-semibold">
             <span class="material-icons text-base">auto_awesome</span>
           </div>
           <div>
-            <p class="font-bold text-xs text-[#102A43] dark:text-white">{{ lang.tr('Assistant Rédaction IA', 'المساعد الذكي لكتابة المقالات') }}</p>
-            <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Co-pilote éditorial Madrasati TN', 'المرافق البيداغوجي لمدرستي تونس') }}</p>
+            <p class="font-semibold text-xs text-[#14251D]">{{ lang.tr('Assistant Rédaction IA', 'المساعد الذكي لكتابة المقالات') }}</p>
+            <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Co-pilote éditorial Madrasati TN', 'المرافق البيداغوجي لمدرستي تونس') }}</p>
           </div>
         </div>
         <button
+          type="button"
           (click)="resetConversation()"
-          class="text-[#627D98] hover:text-[#D64545] p-1 cursor-pointer transition-colors"
-          [title]="lang.tr('Recommencer', 'بدء محادثة جديدة')">
-          <span class="material-icons text-sm">refresh</span>
+          class="w-9 h-9 flex items-center justify-center rounded-xl text-[#5B6B60] hover:text-[#C1121F] hover:bg-[#F2ECDE] cursor-pointer transition-colors"
+          [title]="lang.tr('Recommencer', 'بدء محادثة جديدة')"
+          aria-label="Recommencer">
+          <span class="material-icons text-base">refresh</span>
         </button>
       </div>
 
@@ -270,22 +279,22 @@
         @for (msg of messages(); track $index) {
           <div class="flex gap-2.5" [class]="msg.role === 'user' ? 'justify-end' : 'justify-start'">
             @if (msg.role === 'assistant') {
-              <div class="w-7 h-7 rounded-full bg-[#E0AA32] text-[#0B2947] flex items-center justify-center shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-full bg-[#14251D] text-[#F2C14E] flex items-center justify-center shrink-0 mt-0.5">
                 <span class="material-icons text-xs">auto_awesome</span>
               </div>
             }
 
             <div
               dir="auto"
-              class="max-w-[85%] rounded-2xl p-3 leading-relaxed whitespace-pre-line"
+              class="max-w-[85%] rounded-2xl p-3.5 leading-relaxed whitespace-pre-line text-xs"
               [class]="msg.role === 'user' 
-                ? 'bg-[#007CC2] text-white rounded-br-xs' 
-                : 'bg-[#F0F4F8] dark:bg-[#1A3145] text-[#102A43] dark:text-white rounded-bl-xs border border-[#E3ECF2] dark:border-[#224059]'">
+                ? 'bg-[#14251D] text-[#FBF8F1] rounded-br-xs' 
+                : 'bg-[#FBF8F1] text-[#14251D] rounded-bl-xs border border-[#E7DFCF]'">
               {{ msg.content }}
             </div>
 
             @if (msg.role === 'user') {
-              <div class="w-7 h-7 rounded-full bg-[#007CC2] text-white flex items-center justify-center shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-full bg-[#2D6A4F] text-[#FBF8F1] flex items-center justify-center shrink-0 mt-0.5">
                 <span class="material-icons text-xs">person</span>
               </div>
             }
@@ -293,8 +302,8 @@
         }
 
         @if (isLoading()) {
-          <div class="flex gap-2.5 items-center text-[#627D98] italic text-xs">
-            <span class="material-icons animate-spin text-sm text-[#E0AA32]">sync</span>
+          <div class="flex gap-2.5 items-center text-[#5B6B60] italic text-xs py-1">
+            <span class="material-icons animate-spin text-sm text-[#2D6A4F]">sync</span>
             <span>{{ lang.tr('L’IA rédige et met à jour l’article...', 'المساعد الذكي يقوم بصياغة وتحيين المقال...') }}</span>
           </div>
         }
@@ -302,23 +311,28 @@
 
       <!-- Suggestion Chips -->
       @if (suggestedChips().length > 0 && !isLoading()) {
-        <div class="px-4 py-2 border-t border-[#E3ECF2]/60 dark:border-[#1A3145] bg-[#F7F9FB]/60 dark:bg-[#152737]/60 flex flex-wrap gap-1.5">
+        <div class="px-4 py-2.5 border-t border-[#E7DFCF] bg-[#FBF8F1] flex flex-wrap gap-2">
           @for (chip of suggestedChips(); track chip) {
             <button
+              type="button"
               (click)="sendQuickPrompt(chip)"
-              class="text-[11px] bg-white dark:bg-[#0E1D2A] text-[#007CC2] border border-[#007CC2]/30 hover:bg-[#E8F5FC] px-2.5 py-1 rounded-full font-medium transition-colors cursor-pointer text-left rtl:text-right">
-              💡 {{ chip }}
+              class="text-xs bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#1B4332] border border-[#E7DFCF] px-3 py-1.5 rounded-full font-medium transition-colors cursor-pointer text-left rtl:text-right flex items-center gap-1.5">
+              <span class="material-icons text-xs text-[#8A5A00]">lightbulb</span>
+              <span>{{ chip }}</span>
             </button>
           }
         </div>
       }
 
       <!-- Bottom Chat Input Dock -->
-      <div class="p-3 border-t border-[#E3ECF2] dark:border-[#1A3145] bg-white dark:bg-[#0E1D2A] space-y-2">
-        <div class="flex items-center gap-1.5">
+      <div class="p-3 border-t border-[#E7DFCF] bg-[#FBF8F1] space-y-2">
+        <div class="flex items-center gap-2">
           <!-- Local File Attachment -->
-          <label class="p-2 rounded-xl text-[#627D98] hover:text-[#007CC2] hover:bg-gray-100 dark:hover:bg-[#152737] cursor-pointer transition-colors" [title]="lang.tr('Attacher une image', 'إرفاق صورة')">
-            <span class="material-icons text-lg">attach_file</span>
+          <label
+            class="w-11 h-11 rounded-xl text-[#5B6B60] hover:text-[#1B4332] hover:bg-[#F2ECDE] flex items-center justify-center cursor-pointer transition-colors shrink-0"
+            [title]="lang.tr('Attacher une image', 'إرفاق صورة')"
+            aria-label="Attacher une image">
+            <span class="material-icons text-xl">attach_file</span>
             <input type="file" (change)="handleImageAttachment($event)" accept="image/png,image/jpeg,image/webp" class="hidden" />
           </label>
 
@@ -327,9 +341,10 @@
             type="button"
             (click)="generateAiCover()"
             [disabled]="isGeneratingImg()"
-            class="p-2 rounded-xl text-[#E0AA32] hover:bg-[#FFF4D8] dark:hover:bg-[#3D2E10] cursor-pointer transition-colors disabled:opacity-50"
-            [title]="lang.tr('Générer illustration IA (Imagen 3)', 'توليد رسم توضيحي بالذكاء الاصطناعي')">
-            <span class="material-icons text-lg">brush</span>
+            class="w-11 h-11 rounded-xl text-[#8A5A00] hover:bg-[#F2ECDE] flex items-center justify-center cursor-pointer transition-colors disabled:opacity-40 shrink-0"
+            [title]="lang.tr('Générer illustration IA', 'توليد رسم توضيحي بالذكاء الاصطناعي')"
+            aria-label="Générer illustration IA">
+            <span class="material-icons text-xl">brush</span>
           </button>
 
           <!-- Input Textarea -->
@@ -339,29 +354,34 @@
             (keydown.enter)="onEnterPress($event)"
             rows="2"
             [placeholder]="lang.tr('Demandez à l’IA (ex: Rédige une introduction captivante)...', 'اطلب من المساعد الذكي (مثال: صغ مقدمة مشوقة للمقال)...')"
-            class="flex-1 bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-xl p-2 text-xs text-[#102A43] dark:text-white outline-none resize-none"></textarea>
+            class="flex-1 bg-white border border-[#E7DFCF] rounded-xl p-2.5 text-xs text-[#14251D] outline-none resize-none focus:border-[#2D6A4F] leading-relaxed"></textarea>
 
           <!-- Send Button -->
           <button
+            type="button"
             (click)="sendMessage()"
             [disabled]="isLoading() || !userInput().trim()"
-            class="w-9 h-9 rounded-xl bg-[#007CC2] hover:bg-[#006EAD] text-white flex items-center justify-center cursor-pointer disabled:opacity-40 transition-colors shrink-0 shadow-xs"
-            [title]="lang.tr('Envoyer', 'إرسال')">
-            <span class="material-icons text-sm rtl:rotate-180">send</span>
+            class="w-11 h-11 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center cursor-pointer disabled:opacity-40 transition-colors shrink-0 shadow-sm"
+            [title]="lang.tr('Envoyer', 'إرسال')"
+            aria-label="Envoyer">
+            <span class="material-icons text-base rtl:rotate-180">send</span>
           </button>
         </div>
       </div>
     </div>
 
     <!-- RIGHT PANEL: MEDIUM-STYLE READING CANVAS -->
-    <div class="lg:col-span-7 bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#CBD2D9] dark:border-[#1A3145] shadow-md p-8 sm:p-12 min-h-[750px] space-y-6">
+    <div class="lg:col-span-7 bg-white rounded-[28px] border border-[#E7DFCF] shadow-sm p-8 sm:p-12 min-h-[750px] space-y-6">
       <!-- Article Cover Image -->
       @if (article().coverImageUrl) {
-        <div class="relative rounded-2xl overflow-hidden max-h-72 border border-[#E3ECF2]">
+        <div class="relative rounded-2xl overflow-hidden max-h-72 border border-[#E7DFCF]">
           <img [src]="article().coverImageUrl" alt="Cover" class="w-full h-full object-cover" />
           <button
+            type="button"
             (click)="removeCoverImage()"
-            class="absolute top-3 right-3 bg-black/60 hover:bg-black text-white p-1 rounded-full cursor-pointer transition-colors">
+            class="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#14251D]/80 hover:bg-[#14251D] text-white flex items-center justify-center cursor-pointer transition-colors"
+            [title]="lang.tr('Supprimer la couverture', 'حذف الصورة')"
+            aria-label="Supprimer la couverture">
             <span class="material-icons text-sm">close</span>
           </button>
         </div>
@@ -369,28 +389,29 @@
 
       <!-- Metadata Pills -->
       <div class="flex flex-wrap items-center gap-2 text-xs">
-        <span class="bg-[#E8F5FC] text-[#007CC2] font-semibold px-2.5 py-0.5 rounded-full">
+        <span class="bg-[#F2ECDE] text-[#1B4332] font-semibold px-3 py-1 rounded-full">
           {{ article().subject || lang.tr('Pédagogie Générale', 'بيداغوجيا عامة') }}
         </span>
-        <span class="bg-[#E8F6EF] text-[#23845B] font-semibold px-2.5 py-0.5 rounded-full">
+        <span class="bg-[#FBF8F1] text-[#5B6B60] border border-[#E7DFCF] font-semibold px-3 py-1 rounded-full">
           {{ article().grade || lang.tr('Enseignement Primaire', 'التعليم الابتدائي') }}
         </span>
         @if (article().chapter && !isFreeTopic()) {
-          <span class="bg-[#F3E8FF] text-[#7C3AED] dark:bg-[#2E1A47] dark:text-[#C084FC] font-semibold px-2.5 py-0.5 rounded-full truncate max-w-[280px]" [title]="article().chapter!">
-            📌 {{ article().chapter }}
+          <span class="bg-[#F2ECDE] text-[#8A5A00] font-semibold px-3 py-1 rounded-full truncate max-w-[280px] flex items-center gap-1" [title]="article().chapter!">
+            <span class="material-icons text-xs">push_pin</span>
+            <span>{{ article().chapter }}</span>
           </span>
         }
         @for (tag of customTags(); track tag) {
-          <span class="bg-[#EFF6FF] text-[#2563EB] dark:bg-[#1E3A8A]/40 dark:text-[#93C5FD] font-semibold px-2.5 py-0.5 rounded-full text-[11px]">
+          <span class="bg-[#FBF8F1] text-[#1B4332] border border-[#E7DFCF] font-semibold px-2.5 py-0.5 rounded-full text-xs">
             #{{ tag }}
           </span>
         }
-        <span class="text-[#627D98] text-[11px]">
+        <span class="text-[#6B7A70] text-xs">
           • {{ estimatedReadingTime() }} {{ lang.tr('min de lecture', 'دقائق قراءة') }}
         </span>
       </div>
 
-      <!-- Title & Edit Mode Toggle -->
+      <!-- Title & Single Edit Mode Toggle -->
       <div class="flex items-start justify-between gap-4">
         @if (isDirectEditing()) {
           <input dir="auto"
@@ -398,9 +419,9 @@
             [value]="article().title"
             (input)="updateArticleTitle($any($event.target).value)"
             [placeholder]="lang.tr('Titre de l’article...', 'عنوان المقال...')"
-            class="w-full font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white bg-[#F7F9FB] dark:bg-[#152737] border border-[#007CC2]/40 rounded-xl p-2 outline-none" />
+            class="w-full font-display font-semibold text-2xl sm:text-3xl text-[#14251D] bg-[#FBF8F1] border border-[#2D6A4F] rounded-xl p-3 outline-none" />
         } @else {
-          <h1 dir="auto" class="font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white leading-tight">
+          <h1 dir="auto" class="font-display font-semibold text-2xl sm:text-3xl text-[#14251D] leading-tight">
             {{ article().title || lang.tr('Titre de l’article...', 'عنوان المقال...') }}
           </h1>
         }
@@ -408,34 +429,36 @@
         <button
           type="button"
           (click)="toggleDirectEdit()"
-          [class]="isDirectEditing() ? 'bg-[#007CC2] text-white font-bold' : 'bg-gray-100 hover:bg-gray-200 dark:bg-[#1A3145] text-[#486581] dark:text-white'"
-          class="shrink-0 px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
-          [title]="isDirectEditing() ? lang.tr('Voir le rendu', 'معاينة المقال') : lang.tr('Modifier directement', 'تعديل مباشر')">
-          <span class="material-icons text-sm">{{ isDirectEditing() ? 'visibility' : 'edit' }}</span>
+          [class]="isDirectEditing() ? 'bg-[#14251D] text-[#FBF8F1]' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF]'"
+          class="shrink-0 min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
+          [title]="isDirectEditing() ? lang.tr('Voir le rendu visuel', 'معاينة المقال') : lang.tr('Modifier directement', 'تعديل مباشر')"
+          aria-label="Basculer le mode d'édition">
+          <span class="material-icons text-base">{{ isDirectEditing() ? 'visibility' : 'edit' }}</span>
           <span>{{ isDirectEditing() ? lang.tr('Aperçu', 'معاينة') : lang.tr('Éditer', 'تعديل') }}</span>
         </button>
       </div>
 
       <!-- Author Attribution Strip -->
-      <div class="flex items-center gap-3 py-3 border-y border-[#E3ECF2] dark:border-[#1A3145] text-xs">
-        <div class="w-9 h-9 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold">
+      <div class="flex items-center gap-3 py-3 border-y border-[#E7DFCF] text-xs">
+        <div class="w-9 h-9 rounded-full bg-[#14251D] text-[#F2C14E] flex items-center justify-center font-semibold text-xs">
           {{ (authorName() || 'E')[0].toUpperCase() }}
         </div>
         <div>
-          <p class="font-bold text-[#102A43] dark:text-white">{{ authorName() }}</p>
-          <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Enseignant certifié • Plateforme Madrasati TN', 'مربٍ معتمد • منصة مدرستي تونس') }}</p>
+          <p class="font-semibold text-xs text-[#14251D]">{{ authorName() }}</p>
+          <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Enseignant certifié • Plateforme Madrasati TN', 'مربٍ معتمد • منصة مدرستي تونس') }}</p>
         </div>
       </div>
 
       <!-- Rich Text & Inline Media Toolbar -->
-      <div class="flex flex-wrap items-center justify-between gap-2 p-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145]">
+      <div class="flex flex-wrap items-center justify-between gap-2 p-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF]">
         <div class="flex items-center flex-wrap gap-1">
           <!-- Heading 2 -->
           <button
             type="button"
             (click)="toggleHeading(2)"
-            class="px-2.5 py-1 rounded-lg text-xs font-bold hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
-            [title]="lang.tr('Titre de section H2', 'عنوان قسم رئيسي H2')">
+            class="min-h-[36px] min-w-[36px] px-2.5 py-1.5 rounded-lg text-xs font-semibold hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            [title]="lang.tr('Titre de section H2', 'عنوان قسم رئيسي H2')"
+            aria-label="Titre H2">
             H2
           </button>
 
@@ -443,65 +466,72 @@
           <button
             type="button"
             (click)="toggleHeading(3)"
-            class="px-2.5 py-1 rounded-lg text-xs font-bold hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
-            [title]="lang.tr('Sous-titre H3', 'عنوان فرعي H3')">
+            class="min-h-[36px] min-w-[36px] px-2.5 py-1.5 rounded-lg text-xs font-semibold hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            [title]="lang.tr('Sous-titre H3', 'عنوان فرعي H3')"
+            aria-label="Titre H3">
             H3
           </button>
 
-          <div class="w-px h-4 bg-[#CBD2D9] dark:bg-[#254663] mx-1"></div>
+          <div class="w-px h-5 bg-[#E7DFCF] mx-1"></div>
 
           <!-- Bold -->
           <button
             type="button"
             (click)="toggleBold()"
-            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
-            [title]="lang.tr('Gras', 'غامق')">
-            <span class="material-icons text-sm font-bold">format_bold</span>
+            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            [title]="lang.tr('Gras', 'غامق')"
+            aria-label="Gras">
+            <span class="material-icons text-base">format_bold</span>
           </button>
 
           <!-- Italic -->
           <button
             type="button"
             (click)="toggleItalic()"
-            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
-            [title]="lang.tr('Italique', 'مائل')">
-            <span class="material-icons text-sm">format_italic</span>
+            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            [title]="lang.tr('Italique', 'مائل')"
+            aria-label="Italique">
+            <span class="material-icons text-base">format_italic</span>
           </button>
 
           <!-- Bullet List -->
           <button
             type="button"
             (click)="toggleBulletList()"
-            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
-            [title]="lang.tr('Liste à puces', 'قائمة نقطية')">
-            <span class="material-icons text-sm">format_list_bulleted</span>
+            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            [title]="lang.tr('Liste à puces', 'قائمة نقطية')"
+            aria-label="Liste à puces">
+            <span class="material-icons text-base">format_list_bulleted</span>
           </button>
 
           <!-- Ordered List -->
           <button
             type="button"
             (click)="toggleOrderedList()"
-            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
-            [title]="lang.tr('Liste numérotée', 'قائمة مرقمة')">
-            <span class="material-icons text-sm">format_list_numbered</span>
+            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            [title]="lang.tr('Liste numérotée', 'قائمة مرقمة')"
+            aria-label="Liste numérotée">
+            <span class="material-icons text-base">format_list_numbered</span>
           </button>
 
           <!-- Blockquote -->
           <button
             type="button"
             (click)="toggleBlockquote()"
-            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
-            [title]="lang.tr('Citation / Remarque', 'اقتباس / تنبيه')">
-            <span class="material-icons text-sm">format_quote</span>
+            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            [title]="lang.tr('Citation / Remarque', 'اقتباس / تنبيه')"
+            aria-label="Citation">
+            <span class="material-icons text-base">format_quote</span>
           </button>
 
-          <div class="w-px h-4 bg-[#CBD2D9] dark:bg-[#254663] mx-1"></div>
+          <div class="w-px h-5 bg-[#E7DFCF] mx-1"></div>
 
           <!-- Inline Image Upload Button -->
           <label
-            class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#E8F5FC] hover:bg-[#D7EBF8] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] text-xs font-semibold cursor-pointer transition-colors"
-            [title]="lang.tr('Insérer une image dans l’article', 'إدراج صورة توضيحية داخل المقال')">
-            <span class="material-icons text-sm">image</span>
+            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#1B4332] text-xs font-semibold cursor-pointer transition-colors min-h-[36px]"
+            [title]="lang.tr('Insérer une image dans l’article', 'إدراج صورة توضيحية داخل المقال')"
+            aria-label="Insérer une image">
+            <span class="material-icons text-base">image</span>
             <span>{{ lang.tr('Ajouter image', 'إدراج صورة') }}</span>
             <input
               type="file"
@@ -509,18 +539,6 @@
               accept="image/png,image/jpeg,image/webp"
               class="hidden" />
           </label>
-        </div>
-
-        <div class="flex items-center gap-2">
-          <!-- Toggle Raw Markdown View -->
-          <button
-            type="button"
-            (click)="toggleDirectEdit()"
-            class="text-[11px] text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium cursor-pointer flex items-center gap-1"
-            [title]="isDirectEditing() ? lang.tr('Mode Visuel (TipTap)', 'الوضع المرئي') : lang.tr('Mode Code Markdown', 'وضع النص الخام Markdown')">
-            <span class="material-icons text-xs">{{ isDirectEditing() ? 'visibility' : 'code' }}</span>
-            <span>{{ isDirectEditing() ? lang.tr('Éditeur Visuel', 'المحرر المرئي') : 'Markdown' }}</span>
-          </button>
         </div>
       </div>
 
@@ -538,7 +556,7 @@
           (input)="updateArticleContent($any($event.target).value)"
           rows="16"
           [placeholder]="lang.tr('Rédigez votre article en Markdown...', 'اكتب مقالك بصيغة Markdown...')"
-          class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] rounded-xl p-4 text-sm text-[#102A43] dark:text-white outline-none leading-relaxed font-mono resize-y"></textarea>
+          class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-4 text-xs font-mono text-[#14251D] outline-none leading-relaxed resize-y focus:border-[#2D6A4F]"></textarea>
       }
     </div>
 
