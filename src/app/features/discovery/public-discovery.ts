@@ -130,7 +130,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               id="filter-grade-select"
               [value]="store.selectedGradeFilter()"
               (change)="onGradeChange($event)"
-              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
+              class="w-full min-w-0 bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] p-2 font-medium text-[#102A43] outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.t('filterGradeAll') }}</option>
               <option value="1ère Année">{{ lang.tr('1ère Année Primaire', 'السنة الأولى ابتدائي') }}</option>
               <option value="2ème Année">{{ lang.tr('2ème Année Primaire', 'السنة الثانية ابتدائي') }}</option>
@@ -150,7 +150,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               id="filter-trimester-select"
               [value]="store.selectedTrimesterFilter()"
               (change)="onTrimesterChange($event)"
-              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
+              class="w-full min-w-0 bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] p-2 font-medium text-[#102A43] outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.tr('Tous les trimestres', 'جميع الثلاثيات') }}</option>
               <option value="Trimestre 1">{{ lang.tr('Trimestre 1', 'الثلاثي الأول') }}</option>
               <option value="Trimestre 2">{{ lang.tr('Trimestre 2', 'الثلاثي الثاني') }}</option>
@@ -167,7 +167,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               id="filter-doctype-select"
               [value]="store.selectedDocTypeFilter()"
               (change)="onDocTypeChange($event)"
-              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
+              class="w-full min-w-0 bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] p-2 font-medium text-[#102A43] outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.tr('Tous les types', 'جميع الأصناف') }}</option>
               <option value="Devoir de Contrôle">{{ lang.tr('Devoir de Contrôle', 'فرض مراقبة') }}</option>
               <option value="Devoir de Synthèse">{{ lang.tr('Devoir de Synthèse', 'فرض تأليفي') }}</option>
@@ -185,7 +185,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               id="filter-year-select"
               [value]="store.selectedSchoolYearFilter()"
               (change)="onSchoolYearChange($event)"
-              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
+              class="w-full min-w-0 bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] p-2 font-medium text-[#102A43] outline-none focus:border-[#007CC2] text-xs">
               <option value="Tous">{{ lang.tr('Toutes les années', 'جميع السنوات') }}</option>
               <option value="2025-2026">{{ lang.tr('2025-2026 (Actuelle)', '2025-2026 (الحالية)') }}</option>
               <option value="2024-2025">2024-2025</option>

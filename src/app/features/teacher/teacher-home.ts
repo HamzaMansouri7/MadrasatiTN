@@ -1619,27 +1619,6 @@ export interface GeneratedExerciseResult {
                     </button>
                   </div>
                 </div>
-
-                <!-- Dark / Light Theme Toggle -->
-                <div class="p-3 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] space-y-2">
-                  <span class="font-semibold text-[#14251D] block">{{ lang.tr("Mode d'Affichage", 'مظهر الواجهة') }}</span>
-                  <div class="flex gap-2">
-                    <button
-                      type="button"
-                      (click)="store.setMode('light')"
-                      [class]="store.activeMode() === 'light' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold' : 'bg-white text-[#14251D] border border-[#E7DFCF]'"
-                      class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors flex items-center justify-center gap-1">
-                      <span class="material-icons text-sm">light_mode</span> Clair
-                    </button>
-                    <button
-                      type="button"
-                      (click)="store.setMode('dark')"
-                      [class]="store.activeMode() === 'dark' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold' : 'bg-white text-[#14251D] border border-[#E7DFCF]'"
-                      class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors flex items-center justify-center gap-1">
-                      <span class="material-icons text-sm">dark_mode</span> Sombre
-                    </button>
-                  </div>
-                </div>
               </div>
             </div>
           }

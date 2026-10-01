@@ -6,7 +6,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   template: `
-    <header class="sticky top-0 z-40 bg-white dark:bg-[#0E1D2A] border-b border-[#E6EEF3] dark:border-[#1A3145] transition-colors">
+    <header class="sticky top-0 z-40 bg-white border-b border-[#E6EEF3] transition-colors">
       <div class="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-[76px] gap-2 lg:gap-4">
           
@@ -17,14 +17,14 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             </div>
             <div>
               <div class="flex items-center gap-1.5 sm:gap-2">
-                <span class="font-display font-bold text-[#102A43] dark:text-white text-sm sm:text-base xl:text-lg tracking-tight whitespace-nowrap">
+                <span class="font-display font-bold text-[#102A43] text-sm sm:text-base xl:text-lg tracking-tight whitespace-nowrap">
                   {{ lang.t('brandName') }}
                 </span>
-                <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] border border-[#007CC2]/20 shrink-0">
+                <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/20 shrink-0">
                   <span class="font-black">TN</span>
                 </span>
               </div>
-              <p class="text-[10px] sm:text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium leading-none hidden 2xl:block mt-0.5">
+              <p class="text-[10px] sm:text-[11px] text-[#486581] font-medium leading-none hidden 2xl:block mt-0.5">
                 {{ lang.t('brandSub') }}
               </p>
             </div>
@@ -36,8 +36,8 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             <button
               (click)="selectRole('home')"
               [class]="store.currentRole() === 'home' 
-                ? 'text-[#005F96] dark:text-[#168CCB] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60 dark:bg-[#102A43]/50' 
-                : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#007CC2] hover:bg-[#F3FAFD] dark:hover:bg-[#152737] font-medium border-b-[3px] border-transparent'"
+                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
               <span class="material-icons text-base xl:text-lg">home</span>
               <span>{{ lang.t('navHome') }}</span>
@@ -48,8 +48,8 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <button
                 (click)="selectRole('teacher')"
                 [class]="store.currentRole() === 'teacher' 
-                  ? 'text-[#005F96] dark:text-[#168CCB] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60 dark:bg-[#102A43]/50' 
-                  : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#007CC2] hover:bg-[#F3FAFD] dark:hover:bg-[#152737] font-medium border-b-[3px] border-transparent'"
+                  ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                  : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
                 class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
                 <span class="material-icons text-base xl:text-lg">school</span>
                 <span>{{ lang.t('roleTeacher') }}</span>
@@ -61,8 +61,8 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <button
                 (click)="selectRole('parent')"
                 [class]="store.currentRole() === 'parent' 
-                  ? 'text-[#005F96] dark:text-[#168CCB] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60 dark:bg-[#102A43]/50' 
-                  : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#007CC2] hover:bg-[#F3FAFD] dark:hover:bg-[#152737] font-medium border-b-[3px] border-transparent'"
+                  ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                  : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
                 class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
                 <span class="material-icons text-base xl:text-lg">family_restroom</span>
                 <span>{{ lang.t('roleParent') }}</span>
@@ -73,8 +73,8 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             <button
               (click)="selectRole('public')"
               [class]="store.currentRole() === 'public' 
-                ? 'text-[#005F96] dark:text-[#168CCB] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60 dark:bg-[#102A43]/50' 
-                : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#007CC2] hover:bg-[#F3FAFD] dark:hover:bg-[#152737] font-medium border-b-[3px] border-transparent'"
+                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
               <span class="material-icons text-base xl:text-lg">explore</span>
               <span>{{ lang.t('rolePublic') }}</span>
@@ -92,7 +92,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 [value]="store.searchQuery()"
                 (input)="store.searchQuery.set($any($event.target).value)"
                 [placeholder]="lang.tr('Rechercher...', 'بحث...')"
-                class="w-36 2xl:w-48 pl-9 pr-3.5 rtl:pl-3.5 rtl:pr-9 h-[40px] bg-[#F7F9FB] dark:bg-[#152737] hover:bg-white focus:bg-white dark:hover:bg-[#1B344B] text-[#102A43] dark:text-white text-xs rounded-[10px] border border-[#CBD9E2] dark:border-[#254663] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all placeholder-[#829AB1]" />
+                class="w-36 2xl:w-48 pl-9 pr-3.5 rtl:pl-3.5 rtl:pr-9 h-[40px] bg-[#F7F9FB] hover:bg-white focus:bg-white text-[#102A43] text-xs rounded-[10px] border border-[#CBD9E2] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all placeholder-[#829AB1]" />
             </div>
 
             <!-- Notifications Bell & Dropdown Flyout -->
@@ -101,8 +101,8 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 type="button"
                 (click)="notifDropdownOpen.set(!notifDropdownOpen()); profileMenuOpen.set(false)"
                 [title]="lang.tr('Notifications officielles', 'الإشعارات الرسمية')"
-                class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white dark:bg-[#152737] hover:bg-[#F3FAFD] dark:hover:bg-[#1B344B] text-[#102A43] dark:text-white border border-[#CBD9E2] dark:border-[#254663] flex items-center justify-center cursor-pointer transition-colors shrink-0 shadow-2xs">
-                <span class="material-icons text-base sm:text-lg text-[#102A43] dark:text-white">notifications</span>
+                class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white hover:bg-[#F3FAFD] text-[#102A43] border border-[#CBD9E2] flex items-center justify-center cursor-pointer transition-colors shrink-0 shadow-2xs">
+                <span class="material-icons text-base sm:text-lg text-[#102A43]">notifications</span>
                 @if (firebase.unreadNotificationsCount() > 0) {
                   <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#D64545] text-white text-[9px] font-bold flex items-center justify-center shadow-xs animate-pulse">
                     {{ firebase.unreadNotificationsCount() }}
@@ -112,17 +112,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
               <!-- Notification Dropdown Panel -->
               @if (notifDropdownOpen()) {
-                <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-80 sm:w-96 bg-white dark:bg-[#0E1D2A] border border-[#CBD9E2] dark:border-[#254663] rounded-2xl shadow-2xl z-50 overflow-hidden animate-in">
+                <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-80 sm:w-96 bg-white border border-[#CBD9E2] rounded-2xl shadow-2xl z-50 overflow-hidden animate-in">
                   
                   <!-- Header -->
-                  <div class="p-3.5 bg-[#F7F9FB] dark:bg-[#152737] border-b border-[#E6EEF3] dark:border-[#1A3145] flex items-center justify-between">
+                  <div class="p-3.5 bg-[#F7F9FB] border-b border-[#E6EEF3] flex items-center justify-between">
                     <div class="flex items-center gap-2">
                       <span class="material-icons text-base text-[#007CC2]">notifications_active</span>
-                      <span class="font-display font-bold text-xs sm:text-sm text-[#102A43] dark:text-white">
+                      <span class="font-display font-bold text-xs sm:text-sm text-[#102A43]">
                         {{ lang.tr('Notifications officielles', 'الإشعارات الرسمية') }}
                       </span>
                       @if (firebase.unreadNotificationsCount() > 0) {
-                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB]">
+                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#E8F5FC] text-[#007CC2]">
                           {{ firebase.unreadNotificationsCount() }} {{ lang.tr('non lues', 'غير مقروءة') }}
                         </span>
                       }
@@ -139,12 +139,12 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   </div>
 
                   <!-- Notifications List -->
-                  <div class="max-h-[380px] overflow-y-auto divide-y divide-[#E6EEF3] dark:divide-[#1A3145]">
+                  <div class="max-h-[380px] overflow-y-auto divide-y divide-[#E6EEF3]">
                     @for (notif of firebase.notifications(); track notif.id) {
                       <div
                         (click)="handleNotificationClick(notif)"
-                        [class]="notif.isRead ? 'bg-white dark:bg-[#0E1D2A] opacity-75' : 'bg-[#F0F8FF]/70 dark:bg-[#102A43]/40'"
-                        class="p-3.5 hover:bg-[#F3FAFD] dark:hover:bg-[#152737] transition-colors cursor-pointer flex gap-3 items-start">
+                        [class]="notif.isRead ? 'bg-white opacity-75' : 'bg-[#F0F8FF]/70'"
+                        class="p-3.5 hover:bg-[#F3FAFD] transition-colors cursor-pointer flex gap-3 items-start">
                         
                         <!-- Type Icon -->
                         <div
@@ -156,17 +156,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                         <!-- Content -->
                         <div class="flex-1 min-w-0">
                           <div class="flex items-center justify-between gap-1 mb-0.5">
-                            <h4 class="text-xs font-semibold text-[#102A43] dark:text-white truncate">
+                            <h4 class="text-xs font-semibold text-[#102A43] truncate">
                               {{ notif.title }}
                             </h4>
                             @if (!notif.isRead) {
                               <span class="w-2 h-2 rounded-full bg-[#007CC2] shrink-0"></span>
                             }
                           </div>
-                          <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] line-clamp-2 leading-relaxed mb-1">
+                          <p class="text-[11px] text-[#486581] line-clamp-2 leading-relaxed mb-1">
                             {{ notif.message }}
                           </p>
-                          <span class="text-[10px] text-[#829AB1] dark:text-[#627D98]">
+                          <span class="text-[10px] text-[#829AB1]">
                             {{ notif.createdAt }}
                           </span>
                         </div>
@@ -180,11 +180,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   </div>
 
                   <!-- Footer Broadcast Action -->
-                  <div class="p-2.5 bg-[#F7F9FB] dark:bg-[#152737] border-t border-[#E6EEF3] dark:border-[#1A3145] text-center">
+                  <div class="p-2.5 bg-[#F7F9FB] border-t border-[#E6EEF3] text-center">
                     <button
                       type="button"
                       (click)="notifDropdownOpen.set(false); selectRole('parent')"
-                      class="text-xs text-[#007CC2] dark:text-[#168CCB] font-semibold hover:underline cursor-pointer">
+                      class="text-xs text-[#007CC2] font-semibold hover:underline cursor-pointer">
                       {{ lang.tr('Voir la banque de documents', 'عرض بنك الوثائق الرسمي') }} →
                     </button>
                   </div>
@@ -193,22 +193,12 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               }
             </div>
 
-            <!-- Mode Switcher Pill -->
-            <button
-              type="button"
-              (click)="store.toggleMode()"
-              [title]="store.activeMode() === 'light' ? lang.tr('Passer au mode sombre', 'الوضع الليلي') : lang.tr('Passer au mode clair', 'الوضع النهاري')"
-              class="w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white dark:bg-[#152737] hover:bg-[#F3FAFD] dark:hover:bg-[#1B344B] border border-[#CBD9E2] dark:border-[#254663] flex items-center justify-center text-[#102A43] dark:text-white cursor-pointer transition-colors shadow-2xs shrink-0">
-              <span class="material-icons text-sm sm:text-base text-[#007CC2]">
-                {{ store.activeMode() === 'light' ? 'dark_mode' : 'light_mode' }}
-              </span>
-            </button>
 
             <!-- Language Toggle Pill -->
             <button
               (click)="lang.toggleLanguage()"
               [title]="lang.tr('Changer de langue', 'تغيير اللغة')"
-              class="flex items-center gap-1.5 sm:gap-2 bg-white dark:bg-[#152737] hover:bg-[#F3FAFD] dark:hover:bg-[#1B344B] text-[#102A43] dark:text-white border border-[#CBD9E2] dark:border-[#254663] px-2.5 sm:px-3 h-[38px] sm:h-[40px] rounded-[10px] text-xs font-semibold cursor-pointer transition-colors shrink-0 shadow-2xs">
+              class="flex items-center gap-1.5 sm:gap-2 bg-white hover:bg-[#F3FAFD] text-[#102A43] border border-[#CBD9E2] px-2.5 sm:px-3 h-[38px] sm:h-[40px] rounded-[10px] text-xs font-semibold cursor-pointer transition-colors shrink-0 shadow-2xs">
               <span class="text-xs font-bold">{{ lang.isArabic() ? 'العربية' : 'Français' }}</span>
               <span class="material-icons text-xs text-[#829AB1]">translate</span>
             </button>
@@ -224,7 +214,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                     <img
                       [src]="getUserAvatar()!"
                       alt="User Avatar"
-                      class="w-8 h-8 rounded-full object-cover border border-[#CBD9E2] dark:border-[#254663] shadow-2xs" />
+                      class="w-8 h-8 rounded-full object-cover border border-[#CBD9E2] shadow-2xs" />
                   } @else {
                     <div class="w-8 h-8 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold text-xs">
                       {{ getUserName().charAt(0) }}
@@ -235,28 +225,28 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
                 <!-- Profile Dropdown Flyout Card -->
                 @if (profileMenuOpen()) {
-                  <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-64 bg-white dark:bg-[#0E1D2A] border border-[#CBD9E2] dark:border-[#254663] rounded-2xl shadow-xl p-2 z-50 text-xs space-y-1 animate-in">
+                  <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-64 bg-white border border-[#CBD9E2] rounded-2xl shadow-xl p-2 z-50 text-xs space-y-1 animate-in">
                     
                     <!-- Top User Identification Block -->
                     <div
                       (click)="handleProfileClick()"
-                      class="flex items-center justify-between p-2 rounded-xl hover:bg-[#F7F9FB] dark:hover:bg-[#152737] cursor-pointer transition-colors">
+                      class="flex items-center justify-between p-2 rounded-xl hover:bg-[#F7F9FB] cursor-pointer transition-colors">
                       <div class="flex items-center gap-2.5 min-w-0">
                         @if (getUserAvatar()) {
                           <img
                             [src]="getUserAvatar()!"
                             alt="User"
-                            class="w-9 h-9 rounded-full object-cover border border-[#CBD9E2] dark:border-[#254663] shrink-0" />
+                            class="w-9 h-9 rounded-full object-cover border border-[#CBD9E2] shrink-0" />
                         } @else {
                           <div class="w-9 h-9 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold text-sm shrink-0">
                             {{ getUserName().charAt(0) }}
                           </div>
                         }
                         <div class="min-w-0 text-left rtl:text-right">
-                          <p class="font-display font-semibold text-[#102A43] dark:text-white text-xs truncate">
+                          <p class="font-display font-semibold text-[#102A43] text-xs truncate">
                             {{ getUserName() }}
                           </p>
-                          <p class="text-[10px] text-[#007CC2] dark:text-[#168CCB] font-medium truncate">
+                          <p class="text-[10px] text-[#007CC2] font-medium truncate">
                             {{ getUserSubtitle() }}
                           </p>
                         </div>
@@ -264,13 +254,13 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                       <span class="material-icons text-sm text-[#829AB1]">chevron_right</span>
                     </div>
 
-                    <div class="border-t border-[#E6EEF3] dark:border-[#1A3145] my-1"></div>
+                    <div class="border-t border-[#E6EEF3] my-1"></div>
 
                     <!-- Menu Actions -->
                     <button
                       type="button"
                       (click)="handleProfileClick()"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
+                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
                       <span class="material-icons text-base text-[#007CC2]">person</span>
                       <span>{{ lang.tr('Mon profil', 'ملفي الشخصي') }}</span>
                     </button>
@@ -278,7 +268,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                     <button
                       type="button"
                       (click)="handleProfileClick()"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
+                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
                       <span class="material-icons text-base text-[#007CC2]">settings</span>
                       <span>{{ lang.tr('Paramètres', 'الإعدادات') }}</span>
                     </button>
@@ -286,17 +276,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                     <button
                       type="button"
                       (click)="profileMenuOpen.set(false); selectRole('public')"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
+                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
                       <span class="material-icons text-base text-[#007CC2]">help</span>
                       <span>{{ lang.tr('Aide & Documentation', 'المساعدة والدليل') }}</span>
                     </button>
 
-                    <div class="border-t border-[#E6EEF3] dark:border-[#1A3145] my-1"></div>
+                    <div class="border-t border-[#E6EEF3] my-1"></div>
 
                     <button
                       type="button"
                       (click)="profileMenuOpen.set(false); handleLogout()"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#D64545] hover:bg-rose-50 dark:hover:bg-rose-950/30 font-semibold cursor-pointer transition-colors text-left rtl:text-right">
+                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#D64545] hover:bg-rose-50 font-semibold cursor-pointer transition-colors text-left rtl:text-right">
                       <span class="material-icons text-base text-[#D64545]">logout</span>
                       <span>{{ lang.tr('Se déconnecter', 'تسجيل الخروج') }}</span>
                     </button>

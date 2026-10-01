@@ -6,6 +6,31 @@
   transition: all 0.2s ease-in-out;
 }
 
+/* CDK drag-drop — block reorder (Cartouche) */
+.editor-block-card.cdk-drag-preview {
+  border-radius: 1rem;
+  border: 1px solid #e7dfcf;
+  box-shadow: 0 18px 45px -20px rgba(20, 38, 29, 0.45);
+  background: #ffffff;
+}
+.editor-block-placeholder {
+  min-height: 56px;
+  border: 2px dashed #2d6a4f;
+  border-radius: 1rem;
+  background: #f2ecde;
+}
+.cdk-drag-animating,
+.editor-block-card:not(.cdk-drag-dragging) {
+  transition: transform 180ms cubic-bezier(0, 0, 0.2, 1);
+}
+.cdk-drop-list-dragging .editor-block-card.cdk-drag-dragging {
+  opacity: 0.4;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cdk-drag-animating,
+  .editor-block-card { transition: none !important; }
+}
+
 /* Notion-style hover insertion line */
 .canvas-insert-divider {
   position: relative;

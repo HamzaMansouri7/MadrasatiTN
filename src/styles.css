@@ -87,40 +87,6 @@
 .text-\[\#6B7A70\] { color: var(--color-text-muted) !important; }
 .text-\[\#4A5A50\] { color: var(--color-text-secondary) !important; }
 
-/* Dark Mode Overrides */
-[data-mode="dark"] {
-  color-scheme: dark;
-}
-
-[data-mode="dark"] .bg-white {
-  background-color: var(--color-paper-2) !important;
-  color: var(--color-ink) !important;
-  border-color: var(--color-rule) !important;
-}
-
-[data-mode="dark"] .bg-\[\#14251D\] {
-  background-color: var(--color-pine) !important;
-  color: #FFFFFF !important;
-}
-
-[data-mode="dark"] .cartouche-rules {
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent 37px,
-    rgba(255, 255, 255, 0.04) 37px,
-    rgba(255, 255, 255, 0.04) 38px
-  );
-}
-
-[data-mode="dark"] input:not([type="checkbox"]):not([type="radio"]),
-[data-mode="dark"] select,
-[data-mode="dark"] textarea {
-  background-color: var(--color-paper-2) !important;
-  color: var(--color-ink) !important;
-  border-color: var(--color-rule) !important;
-}
-
 /* Fraunces for Latin display, Noto Kufi for Arabic display — schoolbook/ministry authority */
 .font-display {
   font-family: var(--font-display);

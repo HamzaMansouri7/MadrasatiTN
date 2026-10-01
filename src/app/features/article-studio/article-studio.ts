@@ -210,7 +210,7 @@ export class ArticleStudioComponent implements OnDestroy {
       content: this.article().contentMarkdown ? this.parseSimpleMarkdown(this.article().contentMarkdown) : '',
       editorProps: {
         attributes: {
-          class: 'prose dark:prose-invert max-w-none outline-none min-h-[460px] leading-relaxed',
+          class: 'prose max-w-none outline-none min-h-[460px] leading-relaxed',
           dir: 'auto',
         },
       },

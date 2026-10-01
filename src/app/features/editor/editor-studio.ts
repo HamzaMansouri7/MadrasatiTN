@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, GradeLevel, SubjectName, InteractionService } from '@core';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './editor.model';
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
@@ -315,6 +316,16 @@ export class EditorStudioComponent {
     this.blocks.update((list) =>
       list.map((b) => (b.id === id ? { ...b, showSolution: !b.showSolution } : b))
     );
+  }
+
+  onBlockDrop(event: CdkDragDrop<EditorBlock[]>) {
+    if (event.previousIndex === event.currentIndex) return;
+    this.blocks.update((list) => {
+      const copy = [...list];
+      moveItemInArray(copy, event.previousIndex, event.currentIndex);
+      return copy;
+    });
+    this.activeInsertIndex.set(null);
   }
 
   moveBlockUp(idx: number) {

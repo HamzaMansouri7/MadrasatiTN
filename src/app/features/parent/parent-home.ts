@@ -81,76 +81,76 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
         <button
           (click)="activeTab.set('docs')"
           [class]="activeTab() === 'docs' ? 'ring-2 ring-[#007CC2]' : ''"
-          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          class="bg-white rounded-[18px] p-5 border border-[#E3ECF2] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
           <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabParentDocs') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+            <span class="text-xs font-semibold text-[#102A43]">{{ lang.t('tabParentDocs') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] text-[#007CC2] flex items-center justify-center">
               <span class="material-icons text-lg">menu_book</span>
             </div>
           </div>
           <div>
-            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.courses().length }}</p>
-            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Fiches A4 à imprimer', 'وثائق وامتحانات للطباعة') }}</p>
+            <p class="font-display text-2xl font-semibold text-[#102A43] tracking-tight">{{ store.courses().length }}</p>
+            <p class="text-[11px] text-[#486581] mt-0.5">{{ lang.tr('Fiches A4 à imprimer', 'وثائق وامتحانات للطباعة') }}</p>
           </div>
         </button>
 
         <button
           (click)="activeTab.set('blog')"
           [class]="activeTab() === 'blog' ? 'ring-2 ring-[#23845B]' : ''"
-          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          class="bg-white rounded-[18px] p-5 border border-[#E3ECF2] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
           <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabParentBlog') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-[#E8F6EF] dark:bg-[#153B2D] text-[#23845B] flex items-center justify-center">
+            <span class="text-xs font-semibold text-[#102A43]">{{ lang.t('tabParentBlog') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#E8F6EF] text-[#23845B] flex items-center justify-center">
               <span class="material-icons text-lg">article</span>
             </div>
           </div>
           <div>
-            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.blogPosts().length }}</p>
-            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Conseils d’enseignants', 'نصائح وإرشادات المعلمين') }}</p>
+            <p class="font-display text-2xl font-semibold text-[#102A43] tracking-tight">{{ store.blogPosts().length }}</p>
+            <p class="text-[11px] text-[#486581] mt-0.5">{{ lang.tr('Conseils d’enseignants', 'نصائح وإرشادات المعلمين') }}</p>
           </div>
         </button>
 
         <button
           (click)="activeTab.set('qa')"
           [class]="activeTab() === 'qa' ? 'ring-2 ring-[#D19A24]' : ''"
-          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          class="bg-white rounded-[18px] p-5 border border-[#E3ECF2] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
           <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabParentQA') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] dark:bg-[#3D2E10] text-[#D19A24] flex items-center justify-center">
+            <span class="text-xs font-semibold text-[#102A43]">{{ lang.t('tabParentQA') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] text-[#D19A24] flex items-center justify-center">
               <span class="material-icons text-lg">forum</span>
             </div>
           </div>
           <div>
-            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.questionThreads().length }}</p>
-            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Questions & Réponses', 'أسئلة واستفسارات مجابة') }}</p>
+            <p class="font-display text-2xl font-semibold text-[#102A43] tracking-tight">{{ store.questionThreads().length }}</p>
+            <p class="text-[11px] text-[#486581] mt-0.5">{{ lang.tr('Questions & Réponses', 'أسئلة واستفسارات مجابة') }}</p>
           </div>
         </button>
 
         <button
           (click)="activeTab.set('announcements')"
           [class]="activeTab() === 'announcements' ? 'ring-2 ring-[#007CC2]' : ''"
-          class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
+          class="bg-white rounded-[18px] p-5 border border-[#E3ECF2] shadow-xs hover:shadow-md transition-all text-left rtl:text-right flex flex-col justify-between cursor-pointer">
           <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('tabAnnouncements') }}</span>
-            <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+            <span class="text-xs font-semibold text-[#102A43]">{{ lang.t('tabAnnouncements') }}</span>
+            <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] text-[#007CC2] flex items-center justify-center">
               <span class="material-icons text-lg">campaign</span>
             </div>
           </div>
           <div>
-            <p class="font-display text-2xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.classAnnouncements().length }}</p>
-            <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">{{ lang.tr('Communications d’école', 'إعلانات وبلاغات رسمية') }}</p>
+            <p class="font-display text-2xl font-semibold text-[#102A43] tracking-tight">{{ store.classAnnouncements().length }}</p>
+            <p class="text-[11px] text-[#486581] mt-0.5">{{ lang.tr('Communications d’école', 'إعلانات وبلاغات رسمية') }}</p>
           </div>
         </button>
       </div>
 
       <!-- Main Workspace Section -->
-      <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#E3ECF2] dark:border-[#1A3145] overflow-hidden shadow-xs">
+      <div class="bg-white rounded-[24px] border border-[#E3ECF2] overflow-hidden shadow-xs">
         
         <!-- Tab Bar Header -->
-        <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] px-6 pt-3 flex flex-wrap gap-2">
+        <div class="border-b border-[#E3ECF2] bg-[#F7F9FB] px-6 pt-3 flex flex-wrap gap-2">
           <button
             (click)="activeTab.set('docs')"
-            [class]="activeTab() === 'docs' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            [class]="activeTab() === 'docs' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">menu_book</span>
             <span>{{ lang.t('tabParentDocs') }} ({{ filteredCourses().length }})</span>
@@ -158,7 +158,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
           <button
             (click)="activeTab.set('blog')"
-            [class]="activeTab() === 'blog' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            [class]="activeTab() === 'blog' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">article</span>
             <span>{{ lang.t('tabParentBlog') }} ({{ store.blogPosts().length }})</span>
@@ -166,7 +166,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
           <button
             (click)="activeTab.set('qa')"
-            [class]="activeTab() === 'qa' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            [class]="activeTab() === 'qa' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">forum</span>
             <span>{{ lang.t('tabParentQA') }} ({{ store.questionThreads().length }})</span>
@@ -174,7 +174,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
           <button
             (click)="activeTab.set('announcements')"
-            [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+            [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
             class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
             <span class="material-icons text-base">campaign</span>
             <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
@@ -189,17 +189,17 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
             <div class="space-y-6">
 
               <!-- Exercices vs Manuels (parents look for exercises first) -->
-              <div class="bg-[#EEF4F8] dark:bg-[#0E1D2A] p-1.5 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145] inline-flex items-center gap-1.5 w-full sm:w-auto">
+              <div class="bg-[#EEF4F8] p-1.5 rounded-[14px] border border-[#E3ECF2] inline-flex items-center gap-1.5 w-full sm:w-auto">
                 <button
                   (click)="selectDocKind('exercices')"
-                  [class]="docKind() === 'exercices' ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#007CC2]'"
+                  [class]="docKind() === 'exercices' ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'text-[#486581] hover:text-[#007CC2]'"
                   class="flex-1 sm:flex-none px-4 py-2 rounded-[10px] text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer">
                   <span class="material-icons text-sm">assignment</span>
                   {{ lang.tr('Exercices & Devoirs', 'التمارين والامتحانات') }} ({{ exercicesCount() }})
                 </button>
                 <button
                   (click)="selectDocKind('books')"
-                  [class]="docKind() === 'books' ? 'bg-[#23845B] text-white font-semibold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#23845B]'"
+                  [class]="docKind() === 'books' ? 'bg-[#23845B] text-white font-semibold shadow-xs' : 'text-[#486581] hover:text-[#23845B]'"
                   class="flex-1 sm:flex-none px-4 py-2 rounded-[10px] text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer">
                   <span class="material-icons text-sm">menu_book</span>
                   {{ lang.tr('Manuels Officiels (CNP)', 'الكتب المدرسية الرسمية') }} ({{ booksCount() }})
@@ -207,7 +207,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               </div>
 
               <!-- Filter Controls -->
-              <div class="bg-[#F7F9FB] dark:bg-[#152737] p-4 rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] space-y-3">
+              <div class="bg-[#F7F9FB] p-4 rounded-[18px] border border-[#E3ECF2] space-y-3">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div class="relative grow max-w-md">
                     <span class="material-icons absolute left-3 rtl:left-auto rtl:right-3 top-2.5 text-[#627D98] text-sm">search</span>
@@ -216,7 +216,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                       [value]="searchDocQuery()"
                       (input)="searchDocQuery.set($any($event.target).value); currentPage.set(1)"
                       [placeholder]="lang.t('searchDocsPlaceholder')"
-                      class="w-full pl-9 rtl:pl-3 rtl:pr-9 pr-3 py-2 text-xs bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] outline-none text-[#102A43] dark:text-white" />
+                      class="w-full pl-9 rtl:pl-3 rtl:pr-9 pr-3 py-2 text-xs bg-white border border-[#E3ECF2] rounded-[10px] outline-none text-[#102A43]" />
                   </div>
 
                   <!-- Grade Filter Pills -->
@@ -226,7 +226,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                         (click)="selectGrade(grade)"
                         [class]="selectedGradeFilter() === grade
                           ? 'bg-[#007CC2] text-white font-semibold shadow-xs'
-                          : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                          : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#007CC2]'"
                         class="px-3 py-1.5 rounded-full text-xs font-medium transition-all cursor-pointer">
                         {{ grade === 'all' ? lang.t('filterGradeAll') : grade }}
                       </button>
@@ -241,7 +241,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                       (click)="selectSubject(subj)"
                       [class]="selectedSubjectFilter() === subj
                         ? 'bg-[#23845B] text-white font-semibold shadow-xs'
-                        : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#23845B]'"
+                        : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#23845B]'"
                       class="px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer">
                       {{ subj === 'all' ? lang.t('filterSubjectAll') : subj }}
                     </button>
@@ -250,8 +250,8 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
                 <!-- Topic Taxonomy Pills (Book → Chapter → Topic → Exercise) -->
                 @if (availableTopics().length > 1) {
-                  <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-[#E3ECF2] dark:border-[#1A3145]">
-                    <span class="text-[10px] font-semibold text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1 pr-1">
+                  <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-[#E3ECF2]">
+                    <span class="text-[10px] font-semibold text-[#627D98] flex items-center gap-1 pr-1">
                       <span class="material-icons text-xs text-[#8A5A00]">sell</span>
                       {{ lang.tr('Thème / Chapitre :', 'المحور / الدرس :') }}
                     </span>
@@ -260,7 +260,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                         (click)="selectedTopicFilter.set(topic); currentPage.set(1)"
                         [class]="selectedTopicFilter() === topic
                           ? 'bg-[#8A5A00] text-white font-semibold shadow-xs'
-                          : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#8A5A00]'"
+                          : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#8A5A00]'"
                         class="px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer">
                         {{ topic === 'all' ? lang.tr('Tous les thèmes', 'كل المحاور') : topic }}
                       </button>
@@ -272,12 +272,12 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               <!-- Documents Cards Grid -->
               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @for (c of paginatedCourses(); track c.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-3 hover:shadow-md transition-all">
+                  <div class="bg-[#F7F9FB] rounded-[18px] p-5 border border-[#E3ECF2] flex flex-col justify-between space-y-3 hover:shadow-md transition-all">
                     <div class="space-y-2">
                       @if (c.imageUrls && c.imageUrls.length) {
                         <button
                           (click)="openPrintCourseModal(c)"
-                          class="block w-full relative rounded-[12px] overflow-hidden border border-[#E3ECF2] dark:border-[#1A3145] group cursor-pointer mb-1"
+                          class="block w-full relative rounded-[12px] overflow-hidden border border-[#E3ECF2] group cursor-pointer mb-1"
                           [title]="lang.tr('Voir & imprimer', 'عرض وطباعة')">
                           <img [src]="c.imageUrls[0]" [alt]="c.title" loading="lazy" class="w-full h-40 object-cover object-top transition-transform group-hover:scale-[1.03]" />
                           @if (c.imageUrls.length > 1) {
@@ -298,20 +298,20 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                           {{ c.subject }}
                         </span>
                         @if (c.grade) {
-                          <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                          <span class="bg-[#E0AA32]/15 text-[#9E6A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
                             {{ c.grade }}
                           </span>
                         }
                       </div>
 
-                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-sm leading-snug">{{ c.title }}</h4>
+                      <h4 class="font-display font-semibold text-[#102A43] text-sm leading-snug">{{ c.title }}</h4>
                       @if (c.theme) {
-                        <span class="inline-block bg-[#8A5A00]/10 text-[#8A5A00] dark:text-[#E0AA32] text-[10px] font-semibold px-2 py-0.5 rounded-full">{{ c.theme }}</span>
+                        <span class="inline-block bg-[#8A5A00]/10 text-[#8A5A00] text-[10px] font-semibold px-2 py-0.5 rounded-full">{{ c.theme }}</span>
                       }
-                      <p class="text-xs text-[#486581] dark:text-[#8CA9C4] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
+                      <p class="text-xs text-[#486581] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
                     </div>
 
-                    <div class="pt-3 border-t border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between gap-2">
+                    <div class="pt-3 border-t border-[#E3ECF2] flex items-center justify-between gap-2">
                       <div class="flex items-center gap-1.5 flex-wrap">
                         @if (c.pdfUrl) {
                           <a
@@ -332,7 +332,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                         </button>
                         <button
                           (click)="copyDocLink(c)"
-                          class="bg-[#F7F9FB] dark:bg-[#0E1D2A] hover:bg-[#E3ECF2] text-[#486581] dark:text-[#8CA9C4] font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E3ECF2] dark:border-[#1A3145] transition-colors cursor-pointer">
+                          class="bg-[#F7F9FB] hover:bg-[#E3ECF2] text-[#486581] font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E3ECF2] transition-colors cursor-pointer">
                           <span class="material-icons text-xs">link</span>
                           {{ lang.tr('Copier le lien', 'نسخ الرابط') }}
                         </button>
@@ -340,7 +340,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
                       <button
                         (click)="openPrintCourseModal(c)"
-                        class="text-xs font-semibold text-[#102A43] dark:text-white hover:text-[#007CC2] flex items-center gap-1 cursor-pointer shrink-0">
+                        class="text-xs font-semibold text-[#102A43] hover:text-[#007CC2] flex items-center gap-1 cursor-pointer shrink-0">
                         {{ lang.tr('Aperçu', 'معاينة') }} <span class="material-icons text-sm">arrow_forward</span>
                       </button>
                     </div>
@@ -350,12 +350,12 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
               <!-- Pagination Controls -->
               @if (filteredCourses().length > pageSize()) {
-                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-[#E3ECF2] dark:border-[#1A3145] text-xs">
-                  <span class="text-[#627D98] dark:text-[#8CA9C4] font-medium">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-[#E3ECF2] text-xs">
+                  <span class="text-[#627D98] font-medium">
                     {{ lang.tr('Affichage de', 'عرض') }}
-                    <strong class="text-[#102A43] dark:text-white">{{ (currentPage() - 1) * pageSize() + 1 }}</strong>
+                    <strong class="text-[#102A43]">{{ (currentPage() - 1) * pageSize() + 1 }}</strong>
                     -
-                    <strong class="text-[#102A43] dark:text-white">{{ getEndItemIndex() }}</strong>
+                    <strong class="text-[#102A43]">{{ getEndItemIndex() }}</strong>
                     {{ lang.tr('sur', 'من أصل') }}
                     <strong class="text-[#007CC2]">{{ filteredCourses().length }}</strong>
                     {{ lang.tr('documents', 'وثيقة') }}
@@ -365,7 +365,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                     <button
                       (click)="goToPage(currentPage() - 1)"
                       [disabled]="currentPage() === 1"
-                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
+                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] text-[#102A43] hover:bg-[#F7F9FB] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
                       <span class="material-icons text-sm rtl:rotate-180">chevron_left</span>
                       <span>{{ lang.tr('Précédent', 'السابق') }}</span>
                     </button>
@@ -376,7 +376,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                           (click)="goToPage(p)"
                           [class]="currentPage() === p
                             ? 'bg-[#007CC2] text-white font-bold shadow-xs'
-                            : 'bg-white dark:bg-[#0E1D2A] text-[#486581] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                            : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#007CC2]'"
                           class="w-8 h-8 rounded-[8px] text-xs font-semibold flex items-center justify-center transition-all cursor-pointer">
                           {{ p }}
                         </button>
@@ -386,7 +386,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                     <button
                       (click)="goToPage(currentPage() + 1)"
                       [disabled]="currentPage() === totalPages()"
-                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white hover:bg-[#F7F9FB] dark:hover:bg-[#152737] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
+                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] text-[#102A43] hover:bg-[#F7F9FB] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
                       <span>{{ lang.tr('Suivant', 'التالي') }}</span>
                       <span class="material-icons text-sm rtl:rotate-180">chevron_right</span>
                     </button>
@@ -400,17 +400,17 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
           @if (activeTab() === 'blog') {
             <div class="space-y-6">
               <div>
-                <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                <h3 class="font-display font-semibold text-[#102A43] text-base">
                   {{ lang.t('tabParentBlog') }}
                 </h3>
-                <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                <p class="text-xs text-[#486581]">
                   {{ lang.tr("Articles et méthodes rédigés par les enseignants du primaire tunisien pour vous guider à la maison.", 'مقالات وتوجيهات بيداغوجية موجهة للأولياء لمرافقة الأبناء في المنزل.') }}
                 </p>
               </div>
 
               <div class="grid md:grid-cols-2 gap-5">
                 @for (post of store.blogPosts(); track post.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[20px] p-6 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
+                  <div class="bg-[#F7F9FB] rounded-[20px] p-6 border border-[#E3ECF2] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
                     <div class="space-y-3">
                       <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2">
@@ -418,43 +418,43 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                             {{ post.subject || 'Pédagogie' }}
                           </span>
                           @if (post.grade) {
-                            <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                            <span class="bg-[#E0AA32]/15 text-[#9E6A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
                               {{ post.grade }}
                             </span>
                           }
                         </div>
-                        <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1">
+                        <span class="text-[11px] text-[#627D98] flex items-center gap-1">
                           <span class="material-icons text-xs">schedule</span>
                           {{ post.readTimeMinutes }} min
                         </span>
                       </div>
 
-                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-base leading-snug">
+                      <h4 class="font-display font-semibold text-[#102A43] text-base leading-snug">
                         {{ post.title }}
                       </h4>
 
-                      <p class="text-xs text-[#486581] dark:text-[#8CA9C4] leading-relaxed line-clamp-3">
+                      <p class="text-xs text-[#486581] leading-relaxed line-clamp-3">
                         {{ post.excerpt }}
                       </p>
 
                       <div class="flex flex-wrap gap-1.5 pt-1">
                         @for (tag of post.tags; track tag) {
-                          <span class="text-[10px] bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] px-2 py-0.5 rounded-md border border-[#E3ECF2] dark:border-[#1A3145]">
+                          <span class="text-[10px] bg-white text-[#627D98] px-2 py-0.5 rounded-md border border-[#E3ECF2]">
                             #{{ tag }}
                           </span>
                         }
                       </div>
                     </div>
 
-                    <div class="pt-4 border-t border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between gap-3 text-xs">
+                    <div class="pt-4 border-t border-[#E3ECF2] flex items-center justify-between gap-3 text-xs">
                       <div class="flex items-center gap-3">
                         <button
                           (click)="store.likeBlogPost(post.id)"
-                          class="flex items-center gap-1 text-[#D64545] font-semibold hover:opacity-80 cursor-pointer bg-white dark:bg-[#0E1D2A] px-2.5 py-1 rounded-full border border-[#E3ECF2] dark:border-[#1A3145]">
+                          class="flex items-center gap-1 text-[#D64545] font-semibold hover:opacity-80 cursor-pointer bg-white px-2.5 py-1 rounded-full border border-[#E3ECF2]">
                           <span class="material-icons text-sm">favorite</span>
                           <span>{{ post.likesCount }}</span>
                         </button>
-                        <span class="text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1 font-medium">
+                        <span class="text-[#627D98] flex items-center gap-1 font-medium">
                           <span class="material-icons text-sm">chat_bubble_outline</span>
                           {{ post.comments.length }}
                         </span>
@@ -478,10 +478,10 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
             <div class="space-y-6">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                  <h3 class="font-display font-semibold text-[#102A43] text-base">
                     {{ lang.t('tabParentQA') }}
                   </h3>
-                  <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                  <p class="text-xs text-[#486581]">
                     {{ lang.tr("Besoin d'aide sur une notion ou d'une fiche d'exercices particulière ? Posez votre question directement aux enseignants.", 'هل تبحث عن تمارين مخصصة أو شرح لدرس معين؟ اطرح سؤالك مباشرة على الإطار التربوي.') }}
                   </p>
                 </div>
@@ -495,58 +495,58 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
               <div class="space-y-4">
                 @for (thread of store.questionThreads(); track thread.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[20px] p-6 border border-[#E3ECF2] dark:border-[#1A3145] space-y-4">
-                    <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3 space-y-1">
+                  <div class="bg-[#F7F9FB] rounded-[20px] p-6 border border-[#E3ECF2] space-y-4">
+                    <div class="border-b border-[#E3ECF2] pb-3 space-y-1">
                       <div class="flex items-center gap-2">
                         <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                           {{ thread.subject }}
                         </span>
-                        <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                        <span class="bg-[#E0AA32]/15 text-[#9E6A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
                           {{ thread.grade }}
                         </span>
-                        <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] font-medium">
+                        <span class="text-[11px] text-[#627D98] font-medium">
                           • {{ thread.parentName }} • {{ thread.createdAt }}
                         </span>
                       </div>
-                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-base">{{ thread.title }}</h4>
+                      <h4 class="font-display font-semibold text-[#102A43] text-base">{{ thread.title }}</h4>
                     </div>
 
-                    <p class="text-xs text-[#334E68] dark:text-[#D7E7F2] bg-white dark:bg-[#0E1D2A] p-4 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145] leading-relaxed">
+                    <p class="text-xs text-[#334E68] bg-white p-4 rounded-[14px] border border-[#E3ECF2] leading-relaxed">
                       {{ thread.content }}
                     </p>
 
                     @if (thread.answers.length > 0) {
                       <div class="space-y-2 pt-1">
-                        <p class="text-[11px] font-semibold text-[#102A43] dark:text-white flex items-center gap-1">
+                        <p class="text-[11px] font-semibold text-[#102A43] flex items-center gap-1">
                           <span class="material-icons text-xs text-[#23845B]">verified</span>
                           {{ lang.tr('Réponses certifiées des enseignants :', 'الإجابات المعتمدة من المعلمين:') }}
                         </p>
 
                         @for (ans of thread.answers; track ans.id) {
-                          <div class="bg-[#E8F6EF] dark:bg-[#153B2D]/40 rounded-[14px] p-4 border border-[#23845B]/20 space-y-2 text-xs">
+                          <div class="bg-[#E8F6EF] rounded-[14px] p-4 border border-[#23845B]/20 space-y-2 text-xs">
                             <div class="flex items-center justify-between">
                               <div class="flex items-center gap-2">
-                                <span class="font-semibold text-[#102A43] dark:text-white">{{ ans.teacherName }}</span>
+                                <span class="font-semibold text-[#102A43]">{{ ans.teacherName }}</span>
                                 <span class="text-[10px] bg-[#23845B] text-white px-2 py-0.5 rounded-full font-medium">
                                   {{ ans.teacherTitle }}
                                 </span>
                               </div>
-                              <span class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ ans.createdAt }}</span>
+                              <span class="text-[10px] text-[#627D98]">{{ ans.createdAt }}</span>
                             </div>
 
-                            <p class="text-[#102A43] dark:text-white leading-relaxed">{{ ans.content }}</p>
+                            <p class="text-[#102A43] leading-relaxed">{{ ans.content }}</p>
 
                             @if (ans.attachedDocTitle) {
-                              <div class="inline-flex items-center gap-2 bg-white dark:bg-[#0E1D2A] text-[#007CC2] p-2.5 rounded-[10px] border border-[#007CC2]/30 font-medium text-[11px]">
+                              <div class="inline-flex items-center gap-2 bg-white text-[#007CC2] p-2.5 rounded-[10px] border border-[#007CC2]/30 font-medium text-[11px]">
                                 <span class="material-icons text-sm text-[#007CC2]">attach_file</span>
-                                <span>{{ lang.t('attachedDocument') }} : <strong class="text-[#102A43] dark:text-white">{{ ans.attachedDocTitle }}</strong></span>
+                                <span>{{ lang.t('attachedDocument') }} : <strong class="text-[#102A43]">{{ ans.attachedDocTitle }}</strong></span>
                               </div>
                             }
                           </div>
                         }
                       </div>
                     } @else {
-                      <p class="text-xs text-[#627D98] dark:text-[#8CA9C4] italic">
+                      <p class="text-xs text-[#627D98] italic">
                         {{ lang.tr('En attente de réponse d’un enseignant référent...', 'في انتظار مراجعة وإجابة الإطار التربوي...') }}
                       </p>
                     }
@@ -560,31 +560,31 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
           @if (activeTab() === 'announcements') {
             <div class="space-y-4">
               <div>
-                <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                <h3 class="font-display font-semibold text-[#102A43] text-base">
                   {{ lang.t('announcementsTitle') }}
                 </h3>
-                <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                <p class="text-xs text-[#486581]">
                   {{ lang.t('announcementsSub') }}
                 </p>
               </div>
 
               <div class="space-y-4">
                 @for (a of store.classAnnouncements(); track a.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] space-y-3">
+                  <div class="bg-[#F7F9FB] rounded-[18px] p-5 border border-[#E3ECF2] space-y-3">
                     <div class="flex items-start justify-between gap-3">
                       <div>
-                        <h4 class="font-semibold text-[#102A43] dark:text-white text-xs">{{ a.title }}</h4>
-                        <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ a.teacherName }} • {{ a.date }}</p>
+                        <h4 class="font-semibold text-[#102A43] text-xs">{{ a.title }}</h4>
+                        <p class="text-[10px] text-[#627D98]">{{ a.teacherName }} • {{ a.date }}</p>
                       </div>
 
                       @if (a.isPinned) {
-                        <span class="bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+                        <span class="bg-rose-100 text-rose-700 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
                           <span class="material-icons text-[12px]">push_pin</span> {{ lang.tr('Examen', 'امتحان') }}
                         </span>
                       }
                     </div>
 
-                    <p class="text-xs text-[#334E68] dark:text-[#D7E7F2] bg-white dark:bg-[#0E1D2A] p-4 rounded-[12px] border border-[#E3ECF2] dark:border-[#1A3145] leading-relaxed">
+                    <p class="text-xs text-[#334E68] bg-white p-4 rounded-[12px] border border-[#E3ECF2] leading-relaxed">
                       {{ a.content }}
                     </p>
 
@@ -600,7 +600,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                         {{ confirmedIds().has(a.id) ? lang.t('readConfirmed') : lang.t('confirmReadBtn') }}
                       </button>
 
-                      <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">
+                      <span class="text-[11px] text-[#627D98]">
                         {{ a.confirmedByParentsCount }} {{ lang.tr('parents ont validé', 'أولياء قاموا بالإعلام') }}
                       </span>
                     </div>
@@ -618,22 +618,22 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
     <!-- MODAL 1: ASK QUESTION MODAL -->
     @if (modalType() === 'askQuestion') {
       <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+        <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E3ECF2] pb-3">
             <div class="flex items-center gap-2">
               <span class="material-icons text-[#007CC2]">help_outline</span>
-              <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+              <h3 class="font-display font-semibold text-[#102A43] text-base">
                 {{ lang.t('askQuestionBtn') }}
               </h3>
             </div>
-            <button (click)="closeModal()" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="closeModal()" class="text-[#627D98] hover:text-[#102A43] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label for="q-title" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="q-title" class="block font-semibold text-[#102A43] mb-1">
                 {{ lang.t('questionTitle') }} *
               </label>
               <input
@@ -642,19 +642,19 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                 [value]="newQTitle()"
                 (input)="newQTitle.set($any($event.target).value)"
                 placeholder="Ex: Demande de fiches d'exercices sur les fractions décimales"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+                class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none" />
             </div>
 
             <div class="grid grid-cols-2 gap-3">
               <div>
-                <label for="q-subj" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="q-subj" class="block font-semibold text-[#102A43] mb-1">
                   {{ lang.tr('Matière', 'المادة') }}
                 </label>
                 <select
                   id="q-subj"
                   [value]="newQSubject()"
                   (change)="newQSubject.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none">
                   <option value="Mathématiques">Mathématiques / الرياضيات</option>
                   <option value="Français">Français / الفرنسية</option>
                   <option value="اللغة العربية">اللغة العربية</option>
@@ -663,14 +663,14 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               </div>
 
               <div>
-                <label for="q-grade" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="q-grade" class="block font-semibold text-[#102A43] mb-1">
                   {{ lang.tr('Niveau', 'المستوى') }}
                 </label>
                 <select
                   id="q-grade"
                   [value]="newQGrade()"
                   (change)="newQGrade.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none">
                   <option value="4ème Année">4ème Année / السنة الرابعة</option>
                   <option value="5ème Année">5ème Année / السنة الخامسة</option>
                   <option value="6ème Année">6ème Année / السنة السادسة</option>
@@ -682,7 +682,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
             </div>
 
             <div>
-              <label for="q-content" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="q-content" class="block font-semibold text-[#102A43] mb-1">
                 {{ lang.t('questionContent') }} *
               </label>
               <textarea
@@ -691,7 +691,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                 (input)="newQContent.set($any($event.target).value)"
                 rows="4"
                 placeholder="Décrivez votre besoin pour que les enseignants puissent vous orienter ou partager une ressource..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none leading-relaxed"></textarea>
+                class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none leading-relaxed"></textarea>
             </div>
 
             <button
@@ -869,42 +869,42 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
     <!-- MODAL 3: ARTICLE DETAIL & COMMENTS -->
     @if (selectedArticleDetail(); as post) {
       <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-2xl w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-6 space-y-4 border border-[#E3ECF2] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E3ECF2] pb-3">
             <div class="flex items-center gap-2">
               <span class="bg-[#23845B]/10 text-[#23845B] text-xs font-bold px-2.5 py-0.5 rounded-full">
                 {{ post.subject || 'Pédagogie' }}
               </span>
-              <span class="text-xs text-[#627D98] dark:text-[#8CA9C4]">{{ post.publishedAt }}</span>
+              <span class="text-xs text-[#627D98]">{{ post.publishedAt }}</span>
             </div>
-            <button (click)="selectedArticleDetail.set(null)" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="selectedArticleDetail.set(null)" class="text-[#627D98] hover:text-[#102A43] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div>
-            <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-xl">{{ post.title }}</h3>
+            <h3 class="font-display font-semibold text-[#102A43] text-xl">{{ post.title }}</h3>
             <p class="text-xs text-[#23845B] font-medium mt-1">{{ post.authorName }} — {{ post.authorTitle }}</p>
           </div>
 
-          <div class="prose prose-sm dark:prose-invert max-w-none text-xs text-[#334E68] dark:text-[#D7E7F2] leading-relaxed whitespace-pre-line bg-[#F7F9FB] dark:bg-[#152737] p-5 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145]">
+          <div class="prose prose-sm max-w-none text-xs text-[#334E68] leading-relaxed whitespace-pre-line bg-[#F7F9FB] p-5 rounded-[14px] border border-[#E3ECF2]">
             {{ post.content }}
           </div>
 
           <!-- Comments Section -->
           <div class="space-y-3 pt-2">
-            <h4 class="font-display font-semibold text-xs text-[#102A43] dark:text-white">
+            <h4 class="font-display font-semibold text-xs text-[#102A43]">
               {{ lang.t('commentsCount') }} ({{ post.comments.length }})
             </h4>
 
             <div class="space-y-2">
               @for (comm of post.comments; track comm.id) {
-                <div class="bg-[#F7F9FB] dark:bg-[#152737] p-3 rounded-[10px] text-xs border border-[#E3ECF2] dark:border-[#1A3145]">
+                <div class="bg-[#F7F9FB] p-3 rounded-[10px] text-xs border border-[#E3ECF2]">
                   <div class="flex items-center justify-between">
-                    <span class="font-semibold text-[#102A43] dark:text-white">{{ comm.authorName }}</span>
-                    <span class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ comm.createdAt }}</span>
+                    <span class="font-semibold text-[#102A43]">{{ comm.authorName }}</span>
+                    <span class="text-[10px] text-[#627D98]">{{ comm.createdAt }}</span>
                   </div>
-                  <p class="text-[#334E68] dark:text-[#D7E7F2] mt-1">{{ comm.content }}</p>
+                  <p class="text-[#334E68] mt-1">{{ comm.content }}</p>
                 </div>
               }
             </div>
@@ -916,7 +916,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
                 [value]="newCommentText()"
                 (input)="newCommentText.set($any($event.target).value)"
                 [placeholder]="lang.t('addComment')"
-                class="grow bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-xs text-[#102A43] dark:text-white outline-none" />
+                class="grow bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-xs text-[#102A43] outline-none" />
               <button
                 (click)="submitComment(post.id)"
                 class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs cursor-pointer shadow-xs shrink-0">

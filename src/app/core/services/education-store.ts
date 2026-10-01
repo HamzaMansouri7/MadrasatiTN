@@ -63,9 +63,8 @@ export class EducationStore {
     this.setRole(role);
   }
 
-  // Multi-Palette & Mode Theme Engine
+  // Multi-Palette Theme Engine
   readonly activePalette = signal<'green' | 'blue'>('green');
-  readonly activeMode = signal<'light' | 'dark'>('light');
 
   setPalette(palette: 'green' | 'blue') {
     this.activePalette.set(palette);
@@ -79,20 +78,6 @@ export class EducationStore {
 
   togglePalette() {
     this.setPalette(this.activePalette() === 'green' ? 'blue' : 'green');
-  }
-
-  setMode(mode: 'light' | 'dark') {
-    this.activeMode.set(mode);
-    if (typeof document !== 'undefined') {
-      document.documentElement.setAttribute('data-mode', mode);
-    }
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem('madrasati_mode', mode);
-    }
-  }
-
-  toggleMode() {
-    this.setMode(this.activeMode() === 'light' ? 'dark' : 'light');
   }
 
   // Auth Modal State
@@ -726,13 +711,6 @@ Pour réussir une production écrite de 6 à 8 lignes :
           this.setPalette(savedPalette);
         } else if (typeof document !== 'undefined') {
           document.documentElement.setAttribute('data-palette', 'green');
-        }
-
-        const savedMode = localStorage.getItem('madrasati_mode') as 'light' | 'dark' | null;
-        if (savedMode && (savedMode === 'light' || savedMode === 'dark')) {
-          this.setMode(savedMode);
-        } else if (typeof document !== 'undefined') {
-          document.documentElement.setAttribute('data-mode', 'light');
         }
 
         const savedWl = localStorage.getItem('madrasati_watchlist');

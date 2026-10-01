@@ -11,7 +11,7 @@ import { EducationStore, LanguageService, UserRole } from '@core';
     <div class="space-y-14">
 
       <!-- ============ HERO — "Cartouche officielle" ============ -->
-      <section class="relative overflow-hidden rounded-[24px] bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs animate-in fade-in duration-500">
+      <section class="relative overflow-hidden rounded-[24px] bg-white border border-[#E3ECF2] shadow-xs animate-in fade-in duration-500">
         <!-- Background Subtle Radial Glow & Arabesque Ornament -->
         <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#007CC2]/5 blur-3xl pointer-events-none"></div>
         <div class="absolute top-0 right-0 w-64 h-64 opacity-5 pointer-events-none" style="background-image: radial-gradient(#007CC2 1px, transparent 1px); background-size: 16px 16px;"></div>
@@ -24,48 +24,48 @@ import { EducationStore, LanguageService, UserRole } from '@core';
             <div class="flex items-center gap-3">
               <span class="tn-seal w-9 h-9 shrink-0" aria-hidden="true"></span>
               <div class="leading-tight text-[11px]">
-                <p class="font-display font-semibold text-[#102A43] dark:text-white">
+                <p class="font-display font-semibold text-[#102A43]">
                   {{ lang.tr('République Tunisienne', 'الجمهورية التونسية') }}
                 </p>
-                <p class="text-[#486581] dark:text-[#8CA9C4]">
+                <p class="text-[#486581]">
                   {{ lang.tr("Ministère de l'Éducation – Plateforme éducative nationale", 'وزارة التربية – المنصة التعليمية الوطنية') }}
                 </p>
               </div>
             </div>
 
-            <h1 class="font-display text-3xl sm:text-4xl lg:text-[3.1rem] font-bold text-[#0B2947] dark:text-white tracking-tight leading-[1.12]">
+            <h1 class="font-display text-3xl sm:text-4xl lg:text-[3.1rem] font-bold text-[#0B2947] tracking-tight leading-[1.12]">
               {{ lang.tr("L'école tunisienne moderne, connectée et sereine.", 'المدرسة التونسية الحديثة، المتصلة والهادئة.') }}
             </h1>
 
-            <p class="text-sm sm:text-[15px] text-[#486581] dark:text-[#8CA9C4] leading-relaxed max-w-xl">
+            <p class="text-sm sm:text-[15px] text-[#486581] leading-relaxed max-w-xl">
               {{ lang.tr("Une plateforme numérique pour les enseignants, les parents et les élèves. Accédez à vos ressources, gérez vos cours, suivez les progrès et collaborez en toute simplicité, au service d'une éducation de qualité.", 'منصة رقمية متكاملة للمعلمين والأولياء والتلاميذ. يمكنك الوصول إلى مواردك، وإدارة دروسك، ومتابعة التحصيل الدراسي والتعاون بكل بساطة.') }}
             </p>
 
             <!-- 4 Feature Badges in Horizontal Row -->
-            <div class="flex flex-wrap items-center gap-x-6 gap-y-3 pt-6 border-t border-[#E3ECF2] dark:border-[#1A3145]">
-              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43] dark:text-white">
-                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+            <div class="flex flex-wrap items-center gap-x-6 gap-y-3 pt-6 border-t border-[#E3ECF2]">
+              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43]">
+                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] text-[#007CC2] flex items-center justify-center">
                   <span class="material-icons text-base">menu_book</span>
                 </div>
                 <span>{{ lang.tr('Ressources pédagogiques', 'موارد بيداغوجية') }}</span>
               </div>
 
-              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43] dark:text-white">
-                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43]">
+                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] text-[#007CC2] flex items-center justify-center">
                   <span class="material-icons text-base">groups</span>
                 </div>
                 <span>{{ lang.tr('Suivi des élèves', 'متابعة التلاميذ') }}</span>
               </div>
 
-              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43] dark:text-white">
-                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43]">
+                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] text-[#007CC2] flex items-center justify-center">
                   <span class="material-icons text-base">verified_user</span>
                 </div>
                 <span>{{ lang.tr('Sécurité & Confiance', 'أمان وموثوقية') }}</span>
               </div>
 
-              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43] dark:text-white">
-                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+              <div class="flex items-center gap-2 text-xs font-semibold text-[#102A43]">
+                <div class="w-7 h-7 rounded-lg bg-[#E8F5FC] text-[#007CC2] flex items-center justify-center">
                   <span class="material-icons text-base">bolt</span>
                 </div>
                 <span>{{ lang.tr('Simple et efficace', 'سهل وفعال') }}</span>
@@ -88,20 +88,20 @@ import { EducationStore, LanguageService, UserRole } from '@core';
       <section class="space-y-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] dark:text-[#168CCB] text-xs font-bold mb-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8F5FC] text-[#007CC2] text-xs font-bold mb-3">
               <span class="material-icons text-sm">tune</span>
               <span>{{ lang.tr('Espaces de Travail Dédiés', 'فضاءات عمل مخصصة') }}</span>
             </div>
-            <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#102A43] dark:text-white tracking-tight">
+            <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#102A43] tracking-tight">
               {{ lang.t('chooseSpaceTitle') }}
             </h2>
-            <p class="text-sm sm:text-base text-[#486581] dark:text-[#8CA9C4] mt-1.5">{{ lang.t('chooseSpaceSub') }}</p>
+            <p class="text-sm sm:text-base text-[#486581] mt-1.5">{{ lang.t('chooseSpaceSub') }}</p>
           </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
           @for (r of roles; track r.role) {
-            <div class="group relative bg-white dark:bg-[#0E1D2A] rounded-2xl border border-[#E3ECF2] dark:border-[#1A3145] p-7 flex flex-col justify-between hover:shadow-xl hover:border-transparent transition-all duration-300 overflow-hidden hover:-translate-y-1">
+            <div class="group relative bg-white rounded-2xl border border-[#E3ECF2] p-7 flex flex-col justify-between hover:shadow-xl hover:border-transparent transition-all duration-300 overflow-hidden hover:-translate-y-1">
               
               <!-- Ambient background subtle gradient glow on hover -->
               <div class="absolute -top-20 -right-20 w-48 h-48 rounded-full opacity-0 group-hover:opacity-100 blur-2xl transition-opacity pointer-events-none"
@@ -128,18 +128,18 @@ import { EducationStore, LanguageService, UserRole } from '@core';
                 </div>
 
                 <!-- Title & Description -->
-                <h3 class="font-display text-xl font-bold text-[#102A43] dark:text-white mt-5">
+                <h3 class="font-display text-xl font-bold text-[#102A43] mt-5">
                   {{ lang.t(r.titleKey) }}
                 </h3>
 
-                <p class="text-xs sm:text-[13px] text-[#486581] dark:text-[#8CA9C4] leading-relaxed mt-2.5">
+                <p class="text-xs sm:text-[13px] text-[#486581] leading-relaxed mt-2.5">
                   {{ lang.t(r.descKey) }}
                 </p>
 
                 <!-- Key Capabilities / Feature Pills -->
-                <div class="mt-6 pt-5 border-t border-[#E3ECF2] dark:border-[#1A3145] space-y-3">
+                <div class="mt-6 pt-5 border-t border-[#E3ECF2] space-y-3">
                   @for (pt of r.points; track pt.fr) {
-                    <div class="flex items-center gap-2.5 text-xs text-[#243B53] dark:text-[#CBD9E2]">
+                    <div class="flex items-center gap-2.5 text-xs text-[#243B53]">
                       <div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
                            [style.background]="r.gradientFrom + '15'" [style.color]="r.gradientFrom">
                         <span class="material-icons text-xs font-bold">check</span>
@@ -151,7 +151,7 @@ import { EducationStore, LanguageService, UserRole } from '@core';
               </div>
 
               <!-- Action CTAs -->
-              <div class="mt-8 pt-5 border-t border-[#E3ECF2] dark:border-[#1A3145] space-y-2.5">
+              <div class="mt-8 pt-5 border-t border-[#E3ECF2] space-y-2.5">
                 <button
                   type="button"
                   (click)="enterWorkspace(r.role)"
@@ -164,7 +164,7 @@ import { EducationStore, LanguageService, UserRole } from '@core';
                 <button
                   type="button"
                   (click)="store.openSignupModal(r.role)"
-                  class="w-full bg-white dark:bg-[#152737] hover:bg-[#F3FAFD] dark:hover:bg-[#1B344B] text-[#164E78] dark:text-[#8CA9C4] font-medium py-2.5 px-4 rounded-xl text-xs transition-colors cursor-pointer border border-[#CBD9E2] dark:border-[#254663]">
+                  class="w-full bg-white hover:bg-[#F3FAFD] text-[#164E78] font-medium py-2.5 px-4 rounded-xl text-xs transition-colors cursor-pointer border border-[#CBD9E2]">
                   {{ lang.t(r.signupKey) }}
                 </button>
               </div>
