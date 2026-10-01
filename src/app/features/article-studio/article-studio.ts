@@ -57,10 +57,6 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly interactionSvc = inject(InteractionService);
   private readonly location = inject(Location);
 
-  exitStudio(): void {
-    this.location.back();
-  }
-
   tiptapEditor: Editor | null = null;
 
   readonly isSaved = signal<boolean>(true);
@@ -671,7 +667,7 @@ export class ArticleStudioComponent implements OnDestroy {
   }
 
   exitStudio() {
-    this.store.setRole(this.store.previousRole());
+    this.location.back();
   }
 
   private parseSimpleMarkdown(markdown: string): string {

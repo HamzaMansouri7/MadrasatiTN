@@ -18,10 +18,6 @@ export class EditorStudioComponent {
   readonly interactionSvc = inject(InteractionService);
   private readonly location = inject(Location);
 
-  exitStudio(): void {
-    this.location.back();
-  }
-
   readonly viewMode = signal<'editor' | 'split' | 'preview'>('preview');
   readonly showMetadataPanel = signal<boolean>(false);
 
@@ -937,7 +933,7 @@ export class EditorStudioComponent {
   }
 
   exitStudio() {
-    this.store.setRole(this.store.previousRole());
+    this.location.back();
   }
 }
 
