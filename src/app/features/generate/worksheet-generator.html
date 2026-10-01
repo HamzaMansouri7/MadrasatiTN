@@ -9,6 +9,20 @@
     </p>
   </header>
 
+  @if (busy()) {
+    <div class="ai-thinking no-print flex items-center gap-4 bg-white border border-[#E7DFCF] rounded-[14px] p-5 mb-5" [style.border-color]="accent()">
+      <span class="ai-spinner" [style.border-top-color]="accent()"></span>
+      <div class="flex-1">
+        <div class="flex items-center gap-2">
+          <span class="material-icons text-[18px]" [style.color]="accent()">auto_awesome</span>
+          <span class="font-display font-semibold text-[#14251D]">{{ lang.tr('L\'IA travaille', 'الذكاء الاصطناعي يعمل') }}</span>
+          <span class="ai-dots"><i></i><i></i><i></i></span>
+        </div>
+        <p class="text-sm text-[#5B6B60] mt-1 ai-fade">{{ thinking() }}</p>
+      </div>
+    </div>
+  }
+
   @if (shared()) {
     <header class="mb-6">
       <h1 class="font-display text-2xl font-bold text-[#14251D]">{{ sharedTitle() }}</h1>
