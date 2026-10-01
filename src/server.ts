@@ -825,7 +825,15 @@ Instructions par format :
 // Endpoint: Conversational Article Assistant Co-Pilot
 app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
   try {
-    const { messages = [], currentArticle = {}, userPrompt = '', language = 'ar', chapter = '' } = req.body;
+    const {
+      messages = [],
+      currentArticle = {},
+      userPrompt = '',
+      language = 'ar',
+      chapter = '',
+      isFreeTopic = false,
+      tags = [],
+    } = req.body;
     if (!ai) {
       res.status(500).json({ error: 'Clé API Gemini non configurée.' });
       return;
@@ -837,15 +845,24 @@ app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
 
     const isArabicMode = language === 'ar' || /[\u0600-\u06FF]/.test(userPrompt);
     const activeChapter = chapter || currentArticle.chapter || '';
+    const tagsStr = Array.isArray(tags) && tags.length > 0 ? tags.map((t: string) => `#${t}`).join(', ') : '';
+
+    const frameworkSection = isFreeTopic
+      ? `MODE : BLOG PÉDAGOGIQUE LIBRE & ORIENTATION ÉDUCATIVE (Non contraint à un exercice unique de manuel)
+- Thématiques & الوسوم (Tags) ciblés : ${tagsStr || 'نصائح_تربوية, توجيه_الأولياء, مهارات_التعلم'}
+- Public visé : Familles, parents et élèves de l'école primaire tunisienne.
+Concentre tes conseils, méthodes d'apprentissage, gestion du temps et remédiations sur ces thématiques libres et pratiques.`
+      : `CADRE CURRICULAIRE OFFICIEL TUNISIEN (CNP) :
+- Matière : ${currentArticle.subject || 'Général'}
+- Niveau scolaire : ${currentArticle.grade || 'Primaire'}
+${activeChapter ? `- Chapitre / Axe ciblé du programme : "${activeChapter}"` : ''}
+${tagsStr ? `- Tags associés : ${tagsStr}` : ''}
+Tu dois fonder tes explications, exemples, remédiations et activités sur les compétences requises par le programme officiel du Ministère de l'Éducation tunisien.`;
 
     const prompt = `Tu es un conseiller pédagogique senior pour l'enseignement primaire en Tunisie (Madrasati TN).
 Tu dialogues avec un enseignant pour co-rédiger un article de blog pédagogique percutant, clair et inspirant, destiné soit à d'autres enseignants, soit aux parents d'élèves.
 
-CADRE CURRICULAIRE OFFICIEL TUNISIEN (CNP) :
-- Matière : ${currentArticle.subject || 'Général'}
-- Niveau scolaire : ${currentArticle.grade || 'Primaire'}
-${activeChapter ? `- Chapitre / Axe ciblé du programme : "${activeChapter}"` : ''}
-Tu dois fonder tes explications, exemples, remédiations et activités sur les compétences requises par le programme officiel du Ministère de l'Éducation tunisien.
+${frameworkSection}
 
 RÈGLE LINGUISTIQUE CRITIQUE ET ABSOLUE :
 ${isArabicMode

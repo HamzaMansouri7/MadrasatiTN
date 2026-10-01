@@ -71,7 +71,32 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly selectedSubject = signal<string>('Mathématiques');
   readonly selectedChapterId = signal<string>('math-4-ch1');
 
+  readonly mode = signal<'curriculum' | 'free'>('curriculum');
+  readonly customTags = signal<string[]>(['نصائح_للأولياء', 'التوجيه_التربوي']);
+  readonly newTagInput = signal<string>('');
+
+  readonly quickPresetTags = [
+    { ar: 'نصائح_للأولياء', fr: 'Conseils_Parents' },
+    { ar: 'التربية_الإيجابية', fr: 'Éducation_Positive' },
+    { ar: 'تنظيم_الوقت', fr: 'Gestion_du_Temps' },
+    { ar: 'صعوبات_التعلم', fr: 'Difficultés_Apprentissage' },
+    { ar: 'الصحة_المدرسية', fr: 'Santé_Scolaire' },
+    { ar: 'التحفيز_الدراسي', fr: 'Motivation_Scolaire' },
+    { ar: 'المطالعة_الحرة', fr: 'Lecture_Autonome' },
+    { ar: 'التواصل_المدرسي', fr: 'Communication_École' },
+  ];
+
+  readonly isFreeTopic = computed(() => {
+    return (
+      this.mode() === 'free' ||
+      this.selectedGrade() === 'all' ||
+      this.selectedSubject() === 'general' ||
+      this.selectedChapterId() === 'free'
+    );
+  });
+
   readonly gradesList = [
+    { id: 'all', labelAr: '🌐 جميع المستويات (نصائح عامة)', labelFr: '🌐 Tous niveaux (Conseils généraux)' },
     { id: '1ère Année', labelAr: 'السنة الأولى', labelFr: '1ère Année' },
     { id: '2ème Année', labelAr: 'السنة الثانية', labelFr: '2ème Année' },
     { id: '3ème Année', labelAr: 'السنة الثالثة', labelFr: '3ème Année' },
@@ -81,6 +106,7 @@ export class ArticleStudioComponent implements OnDestroy {
   ];
 
   readonly subjectsList = [
+    { id: 'general', labelAr: '💡 بيداغوجيا وتوجيه تربوي عام', labelFr: '💡 Pédagogie & Conseils éducatifs' },
     { id: 'Mathématiques', labelAr: 'الرياضيات', labelFr: 'Mathématiques' },
     { id: 'اللغة العربية', labelAr: 'اللغة العربية', labelFr: 'Langue Arabe' },
     { id: 'Français', labelAr: 'الفرنسية', labelFr: 'Français' },
@@ -93,10 +119,12 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly availableChapters = computed<CurriculumChapter[]>(() => {
     const gr = this.selectedGrade();
     const sb = this.selectedSubject();
+    if (gr === 'all' || sb === 'general') return [];
     return TUNISIAN_CURRICULUM_CHAPTERS.filter((c) => c.grade === gr && c.subject === sb);
   });
 
   readonly activeChapterObj = computed<CurriculumChapter | undefined>(() => {
+    if (this.isFreeTopic()) return undefined;
     return this.availableChapters().find((c) => c.id === this.selectedChapterId()) || this.availableChapters()[0];
   });
 
@@ -265,6 +293,14 @@ export class ArticleStudioComponent implements OnDestroy {
 
   onChapterChange(chapterId: string) {
     this.selectedChapterId.set(chapterId);
+    if (chapterId === 'free') {
+      const isAr = this.lang.isArabic();
+      this.article.update((a) => ({
+        ...a,
+        chapter: isAr ? 'مقال حر / نصائح عامة' : 'Article libre / Conseils généraux',
+      }));
+      return;
+    }
     const ch = this.availableChapters().find((c) => c.id === chapterId);
     if (ch) {
       const isAr = this.lang.isArabic();
@@ -275,12 +311,95 @@ export class ArticleStudioComponent implements OnDestroy {
   }
 
   private syncChapterSelection() {
+    if (this.isFreeTopic()) {
+      this.selectedChapterId.set('free');
+      const isAr = this.lang.isArabic();
+      this.article.update((a) => ({
+        ...a,
+        chapter: isAr ? 'مقال حر / نصائح عامة' : 'Article libre / Conseils généraux',
+      }));
+      this.suggestedChips.set(
+        isAr
+          ? [
+              '3 نصائح لمساعدة الأولياء على تنظيم وقت أبنائهم في المنزل',
+              'كيفية التعامل مع التلميذ الخجول أو المتردد في الفصل',
+              'خطوات عملية لغرس حب المطالعة والقراءة لدى أطفال الابتدائي',
+              'خطة أسبوعية لتجاوز صعوبات التعلم دون توتر عائلي',
+            ]
+          : [
+              '3 Conseils pour aider les parents à structurer le temps à la maison',
+              'Comment accompagner un enfant timide ou anxieux en classe',
+              'Étapes pratiques pour donner le goût de la lecture aux élèves',
+              'Méthodes bienveillantes pour surmonter les blocages scolaires',
+            ]
+      );
+      return;
+    }
+
     const list = this.availableChapters();
     if (list.length > 0) {
       this.onChapterChange(list[0].id);
     } else {
       this.selectedChapterId.set('');
       this.article.update((a) => ({ ...a, chapter: '' }));
+    }
+  }
+
+  setMode(m: 'curriculum' | 'free') {
+    this.mode.set(m);
+    const isAr = this.lang.isArabic();
+    if (m === 'free') {
+      this.article.update((a) => ({
+        ...a,
+        chapter: isAr ? 'تدوينة حرة وتوجيه تربوي' : 'Article libre & Orientation éducative',
+      }));
+      this.suggestedChips.set(
+        isAr
+          ? [
+              'نصائح ذهبية للأولياء لتنظيم أوقات المذاكرة المنزلية',
+              'كيفية تشجيع الطفل على المطالعة الحرة وبناء الشغف المعرفي',
+              'طرق التغلب على القلق الامتحاني وصعوبات التعلم لدى الناشئة',
+            ]
+          : [
+              'Conseils aux parents pour organiser le travail et le sommeil',
+              'Développer le plaisir de la lecture autonome chez l’enfant',
+              'Surmonter l’anxiété scolaire et motiver les élèves',
+            ]
+      );
+    } else {
+      const ch = this.activeChapterObj();
+      if (ch) {
+        this.article.update((a) => ({ ...a, chapter: isAr ? ch.titleAr : ch.titleFr }));
+        this.suggestedChips.set(isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr);
+      }
+    }
+  }
+
+  addTag(rawTag?: string) {
+    const tag = (rawTag !== undefined ? rawTag : this.newTagInput()).trim().replace(/^#/, '');
+    if (!tag) return;
+    if (!this.customTags().includes(tag)) {
+      this.customTags.update((tags) => [...tags, tag]);
+    }
+    this.newTagInput.set('');
+  }
+
+  removeTag(tag: string) {
+    this.customTags.update((tags) => tags.filter((t) => t !== tag));
+  }
+
+  toggleQuickTag(tag: string) {
+    if (this.customTags().includes(tag)) {
+      this.removeTag(tag);
+    } else {
+      this.addTag(tag);
+    }
+  }
+
+  onTagKeyDown(event: KeyboardEvent) {
+    if (event.key === 'Enter' || event.key === ',') {
+      event.preventDefault();
+      this.addTag();
     }
   }
 
@@ -325,6 +444,8 @@ export class ArticleStudioComponent implements OnDestroy {
           currentArticle: this.article(),
           userPrompt: text,
           language: this.lang.lang(),
+          isFreeTopic: this.isFreeTopic(),
+          tags: this.customTags(),
           chapter: this.activeChapterObj()
             ? (this.lang.isArabic() ? this.activeChapterObj()!.titleAr : this.activeChapterObj()!.titleFr)
             : (this.article().chapter || ''),
@@ -481,14 +602,22 @@ export class ArticleStudioComponent implements OnDestroy {
     const title = art.title || 'Article Pédagogique Sans Titre';
 
     const isAr = this.lang.isArabic();
+    const tags = this.isFreeTopic()
+      ? (this.customTags().length > 0 ? this.customTags() : [isAr ? 'نصائح_تربوية' : 'Conseils'])
+      : [art.subject, art.grade, ...this.customTags()];
+
+    const chapterLabel = this.isFreeTopic()
+      ? (this.customTags().length > 0 ? '#' + this.customTags().join(' #') : (isAr ? 'مقال حر وتوجيه تربوي' : 'Conseils & Pédagogie libre'))
+      : art.chapter;
+
     this.store.addBlogPost({
       title,
       excerpt: art.summary || content.slice(0, 160) + '...',
       content,
       subject: art.subject as any,
       grade: art.grade as any,
-      chapter: art.chapter,
-      tags: [art.subject, art.grade, isAr ? 'بيداغوجيا' : 'Pédagogie'],
+      chapter: chapterLabel,
+      tags,
       authorName: this.authorName(),
       authorTitle: isAr ? 'مربٍ معتمد' : 'Enseignant Certifié',
       readTimeMinutes: this.estimatedReadingTime(),

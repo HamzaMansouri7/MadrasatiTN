@@ -45,89 +45,197 @@
     </div>
   </div>
 
-  <!-- Curriculum Grounding Bar (Official CNP Alignment) -->
+  <!-- Curriculum Grounding & Pedagogical Mode Bar -->
   <div class="bg-white dark:bg-[#0E1D2A] rounded-[20px] p-4 sm:p-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs space-y-3.5">
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E3ECF2] dark:border-[#1A3145] pb-2.5">
-      <div class="flex items-center gap-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-[#007CC2]"></span>
-        <span class="text-xs font-bold text-[#102A43] dark:text-white uppercase tracking-wider">
-          📚 {{ lang.tr('Cadre Curriculaire Officiel (CNP Tunisie)', 'السياق البيداغوجي الرسمي (البرنامج التونسي)') }}
-        </span>
-        <span class="text-[10px] bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] font-semibold px-2 py-0.5 rounded-md">
-          {{ lang.tr('Conforme Ministère', 'مطابق لبرامج وزارة التربية') }}
-        </span>
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+      <!-- Mode Tabs -->
+      <div class="flex items-center bg-[#F0F4F8] dark:bg-[#152737] p-1 rounded-xl">
+        <button
+          type="button"
+          (click)="setMode('curriculum')"
+          [class]="mode() === 'curriculum' ? 'bg-white dark:bg-[#007CC2] text-[#007CC2] dark:text-white shadow-xs font-bold' : 'text-[#627D98] dark:text-[#8CA9C4] font-medium hover:text-[#102A43]'"
+          class="px-3 py-1.5 rounded-lg text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+          <span class="material-icons text-sm">menu_book</span>
+          <span>{{ lang.tr('Programme Officiel (CNP)', 'المنهاج والدروس الرسمية (CNP)') }}</span>
+        </button>
+
+        <button
+          type="button"
+          (click)="setMode('free')"
+          [class]="mode() === 'free' ? 'bg-white dark:bg-[#007CC2] text-[#007CC2] dark:text-white shadow-xs font-bold' : 'text-[#627D98] dark:text-[#8CA9C4] font-medium hover:text-[#102A43]'"
+          class="px-3 py-1.5 rounded-lg text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+          <span class="material-icons text-sm">local_offer</span>
+          <span>{{ lang.tr('Blog Libre & الوسوم (#Tags)', 'مقال حر وتوجيه تربوي (وسوم #)') }}</span>
+        </button>
       </div>
 
       <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1">
         <span class="material-icons text-xs text-[#007CC2]">tune</span>
-        {{ lang.tr('Sélectionnez pour guider l’IA avec précision', 'حدد المعطيات لتوجيه الذكاء الاصطناعي بدقة') }}
+        @if (mode() === 'curriculum') {
+          {{ lang.tr('Alignement strict sur les manuels tunisiens', 'مطابقة دقيقة لكتب وبرامج وزارة التربية') }}
+        } @else {
+          {{ lang.tr('Conseils, pédagogie, vie scolaire et tags libres', 'نصائح للأولياء، توجيه مدرسي ووسوم حرة') }}
+        }
       </span>
     </div>
 
-    <!-- 3-Tier Cascading Selectors -->
-    <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
-      <!-- Grade Dropdown -->
-      <div class="sm:col-span-3">
-        <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
-          {{ lang.tr('Niveau Scolaire', 'المستوى الدراسي') }}
-        </label>
-        <select
-          [value]="selectedGrade()"
-          (change)="onGradeChange($any($event.target).value)"
-          class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
-          @for (g of gradesList; track g.id) {
-            <option [value]="g.id">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
-          }
-        </select>
+    @if (mode() === 'curriculum') {
+      <!-- 3-Tier Cascading Selectors for Curriculum Mode -->
+      <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+        <!-- Grade Dropdown -->
+        <div class="sm:col-span-3">
+          <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+            {{ lang.tr('Niveau Scolaire', 'المستوى الدراسي') }}
+          </label>
+          <select
+            [value]="selectedGrade()"
+            (change)="onGradeChange($any($event.target).value)"
+            class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
+            @for (g of gradesList; track g.id) {
+              <option [value]="g.id">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
+            }
+          </select>
+        </div>
+
+        <!-- Subject Dropdown -->
+        <div class="sm:col-span-3">
+          <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+            {{ lang.tr('Matière', 'المادة التعليمية') }}
+          </label>
+          <select
+            [value]="selectedSubject()"
+            (change)="onSubjectChange($any($event.target).value)"
+            class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
+            @for (s of subjectsList; track s.id) {
+              <option [value]="s.id">{{ lang.isArabic() ? s.labelAr : s.labelFr }}</option>
+            }
+          </select>
+        </div>
+
+        <!-- Chapter / Axis Dropdown -->
+        <div class="sm:col-span-6">
+          <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+            {{ lang.tr('Chapitre ou Thème Officiel', 'المحور أو الدرس المعتمد') }}
+          </label>
+          <select
+            [value]="selectedChapterId()"
+            (change)="onChapterChange($any($event.target).value)"
+            class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] truncate cursor-pointer">
+            @for (ch of availableChapters(); track ch.id) {
+              <option [value]="ch.id">
+                {{ ch.trimester }} • {{ lang.isArabic() ? ch.titleAr : ch.titleFr }}
+              </option>
+            }
+            @if (availableChapters().length === 0) {
+              <option value="">{{ lang.tr('Général / Pédagogie transversale', 'عام / بيداغوجيا شاملة') }}</option>
+            }
+          </select>
+        </div>
       </div>
 
-      <!-- Subject Dropdown -->
-      <div class="sm:col-span-3">
-        <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
-          {{ lang.tr('Matière', 'المادة التعليمية') }}
-        </label>
-        <select
-          [value]="selectedSubject()"
-          (change)="onSubjectChange($any($event.target).value)"
-          class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
-          @for (s of subjectsList; track s.id) {
-            <option [value]="s.id">{{ lang.isArabic() ? s.labelAr : s.labelFr }}</option>
-          }
-        </select>
-      </div>
+      <!-- Active Competency Banner -->
+      @if (activeChapterObj()) {
+        <div class="bg-[#F0F8FF] dark:bg-[#102A43]/50 border border-[#007CC2]/20 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+          <span class="material-icons text-base text-[#007CC2] shrink-0 mt-0.5">verified</span>
+          <div class="min-w-0">
+            <span class="font-bold text-[#007CC2] dark:text-[#168CCB]">
+              {{ lang.tr('Compétence ministérielle ciblée :', 'الكفاءة الوزارية المستهدفة :') }}
+            </span>
+            <span class="text-[#334E68] dark:text-[#CBD9E2] ms-1">
+              {{ lang.isArabic() ? activeChapterObj()?.keyCompetencyAr : activeChapterObj()?.keyCompetencyFr }}
+            </span>
+          </div>
+        </div>
+      }
+    } @else {
+      <!-- Free Blog Mode & Interactive Tags Engine -->
+      <div class="space-y-3">
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-end">
+          <!-- Grade Scope -->
+          <div class="sm:col-span-4">
+            <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+              {{ lang.tr('Public ou Niveau ciblé', 'الفئة أو المستوى المستهدف') }}
+            </label>
+            <select
+              [value]="selectedGrade()"
+              (change)="onGradeChange($any($event.target).value)"
+              class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] cursor-pointer">
+              @for (g of gradesList; track g.id) {
+                <option [value]="g.id">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
+              }
+            </select>
+          </div>
 
-      <!-- Chapter / Axis Dropdown -->
-      <div class="sm:col-span-6">
-        <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
-          {{ lang.tr('Chapitre ou Thème Officiel', 'المحور أو الدرس المعتمد') }}
-        </label>
-        <select
-          [value]="selectedChapterId()"
-          (change)="onChapterChange($any($event.target).value)"
-          class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl px-3 py-2 outline-none font-medium focus:border-[#007CC2] truncate cursor-pointer">
-          @for (ch of availableChapters(); track ch.id) {
-            <option [value]="ch.id">
-              {{ ch.trimester }} • {{ lang.isArabic() ? ch.titleAr : ch.titleFr }}
-            </option>
-          }
-          @if (availableChapters().length === 0) {
-            <option value="">{{ lang.tr('Général / Pédagogie transversale', 'عام / بيداغوجيا شاملة') }}</option>
-          }
-        </select>
-      </div>
-    </div>
+          <!-- Add Custom Tag Input -->
+          <div class="sm:col-span-8">
+            <label class="block text-[11px] font-semibold text-[#486581] dark:text-[#8CA9C4] mb-1">
+              {{ lang.tr('Ajouter un tag / label personnalisé', 'إضافة وسم أو تصنيف مخصص') }}
+            </label>
+            <div class="flex items-center gap-2">
+              <div class="relative flex-1">
+                <span class="absolute start-3 top-1/2 -translate-y-1/2 text-xs font-bold text-[#627D98]">#</span>
+                <input
+                  type="text"
+                  [value]="newTagInput()"
+                  (input)="newTagInput.set($any($event.target).value)"
+                  (keydown)="onTagKeyDown($event)"
+                  [placeholder]="lang.tr('Ex: نصائح_الامتحانات, تحفيز, رياضة...', 'مثال: نصائح_الامتحانات، مشاريع_القسم، تحفيز...')"
+                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] text-xs text-[#102A43] dark:text-white rounded-xl ps-7 pe-3 py-2 outline-none font-medium focus:border-[#007CC2]" />
+              </div>
+              <button
+                type="button"
+                (click)="addTag()"
+                class="bg-[#007CC2] hover:bg-[#00669E] text-white px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1 cursor-pointer transition-colors shrink-0">
+                <span class="material-icons text-sm">add</span>
+                <span>{{ lang.tr('Ajouter', 'إضافة') }}</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
-    <!-- Active Competency Banner -->
-    @if (activeChapterObj()) {
-      <div class="bg-[#F0F8FF] dark:bg-[#102A43]/50 border border-[#007CC2]/20 rounded-xl p-2.5 flex items-start gap-2 text-xs">
-        <span class="material-icons text-base text-[#007CC2] shrink-0 mt-0.5">verified</span>
-        <div class="min-w-0">
-          <span class="font-bold text-[#007CC2] dark:text-[#168CCB]">
-            {{ lang.tr('Compétence ministérielle ciblée :', 'الكفاءة الوزارية المستهدفة :') }}
+        <!-- Active Selected Tags Chips -->
+        <div class="flex flex-wrap items-center gap-1.5 pt-1">
+          <span class="text-[11px] font-bold text-[#486581] dark:text-[#8CA9C4] me-1">
+            {{ lang.tr('Tags sélectionnés :', 'الوسوم المختارة :') }}
           </span>
-          <span class="text-[#334E68] dark:text-[#CBD9E2] ms-1">
-            {{ lang.isArabic() ? activeChapterObj()?.keyCompetencyAr : activeChapterObj()?.keyCompetencyFr }}
+          @for (tag of customTags(); track tag) {
+            <span class="inline-flex items-center gap-1 bg-[#E8F5FC] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] border border-[#007CC2]/30 px-2.5 py-1 rounded-full text-xs font-semibold">
+              #{{ tag }}
+              <button
+                type="button"
+                (click)="removeTag(tag)"
+                class="hover:text-red-500 transition-colors cursor-pointer ms-0.5"
+                [title]="lang.tr('Supprimer le tag', 'حذف الوسم')">
+                <span class="material-icons text-[14px]">close</span>
+              </button>
+            </span>
+          }
+          @if (customTags().length === 0) {
+            <span class="text-[11px] text-[#8CA9C4] italic">
+              {{ lang.tr('Aucun tag sélectionné (cliquez sur les suggestions ci-dessous)', 'لم تختر وسوماً بعد (انقر على الاقتراحات أسفله)') }}
+            </span>
+          }
+        </div>
+
+        <!-- Quick Preset Tag Chips -->
+        <div class="flex flex-wrap items-center gap-1.5 pt-1 border-t border-dashed border-[#E3ECF2] dark:border-[#1A3145]">
+          <span class="text-[10px] uppercase font-bold text-[#8CA9C4] tracking-wider me-1">
+            ⚡ {{ lang.tr('Suggestions :', 'اقتراحات سريعة :') }}
           </span>
+          @for (item of quickPresetTags; track item.ar) {
+            @let tagText = lang.isArabic() ? item.ar : item.fr;
+            @let isSelected = customTags().includes(tagText);
+            <button
+              type="button"
+              (click)="toggleQuickTag(tagText)"
+              [class]="isSelected ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]' : 'bg-[#F0F4F8] hover:bg-[#E2E8F0] dark:bg-[#152737] text-[#486581] dark:text-[#CBD9E2] border-transparent'"
+              class="border text-[11px] px-2.5 py-0.5 rounded-full transition-all cursor-pointer flex items-center gap-1">
+              <span>#{{ tagText }}</span>
+              @if (isSelected) {
+                <span class="material-icons text-[12px]">check</span>
+              }
+            </button>
+          }
         </div>
       </div>
     }
@@ -267,9 +375,14 @@
         <span class="bg-[#E8F6EF] text-[#23845B] font-semibold px-2.5 py-0.5 rounded-full">
           {{ article().grade || lang.tr('Enseignement Primaire', 'التعليم الابتدائي') }}
         </span>
-        @if (article().chapter) {
+        @if (article().chapter && !isFreeTopic()) {
           <span class="bg-[#F3E8FF] text-[#7C3AED] dark:bg-[#2E1A47] dark:text-[#C084FC] font-semibold px-2.5 py-0.5 rounded-full truncate max-w-[280px]" [title]="article().chapter!">
             📌 {{ article().chapter }}
+          </span>
+        }
+        @for (tag of customTags(); track tag) {
+          <span class="bg-[#EFF6FF] text-[#2563EB] dark:bg-[#1E3A8A]/40 dark:text-[#93C5FD] font-semibold px-2.5 py-0.5 rounded-full text-[11px]">
+            #{{ tag }}
           </span>
         }
         <span class="text-[#627D98] text-[11px]">
