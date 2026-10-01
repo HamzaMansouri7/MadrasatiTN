@@ -459,9 +459,15 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
                 <!-- 1-Click Fast Demo Logins -->
                 <div class="pt-4 border-t border-[#E7DFCF]">
-                  <p class="text-[11px] font-semibold text-[#5B6B60] text-center mb-2.5">
-                    {{ lang.tr('Accès rapide Démo 1-Clic :', 'دخول فوري تجريبي بنقرة واحدة:') }}
-                  </p>
+                  <div class="p-2.5 rounded-xl bg-[#F2ECDE]/70 border border-[#E7DFCF] text-center mb-2.5">
+                    <p class="text-[11px] font-semibold text-[#8A5A00] flex items-center justify-center gap-1.5">
+                      <span class="material-icons text-xs">science</span>
+                      {{ lang.tr('Accès rapide Démo 1-Clic (Sans Inscription)', 'دخول تجريبي سريع بنقرة واحدة (بدون تسجیل)') }}
+                    </p>
+                    <p class="text-[10px] text-[#5B6B60] mt-0.5">
+                      {{ lang.tr('Pour tester les fonctionnalités sans créer de compte', 'لتجربة الخصائص فوراً دون إنشاء حساب') }}
+                    </p>
+                  </div>
                   <div class="grid grid-cols-3 gap-2">
                     <button
                       type="button"

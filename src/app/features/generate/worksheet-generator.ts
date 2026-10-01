@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService } from '@core';
+import { EducationStore, LanguageService, FirebaseService, WorksheetDoc } from '@core';
 import { WorksheetDna, GeneratedExercise } from '@core';
 
 /**
@@ -16,6 +16,7 @@ import { WorksheetDna, GeneratedExercise } from '@core';
 export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
 
   readonly sourceImage = signal<string | null>(null);
   readonly dna = signal<WorksheetDna | null>(null);
@@ -32,9 +33,23 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
 
   // Phase 3b — sharing + shared read-only view.
   readonly shared = signal(false);
+  readonly sharedDoc = signal<WorksheetDoc | null>(null);
   readonly sharedTitle = signal('');
   readonly saving = signal(false);
   readonly shareUrl = signal<string | null>(null);
+
+  // Teacher Identity & Watermark Attribution Signals
+  readonly teacherName = computed(() => {
+    return this.sharedDoc()?.authorName || this.firebase.userProfile()?.displayName || 'Salwa';
+  });
+
+  readonly customWatermark = computed(() => {
+    return this.sharedDoc()?.customWatermark || this.firebase.userProfile()?.customWatermark || 'Madrasati TN — Document Certifié';
+  });
+
+  readonly school = computed(() => {
+    return this.sharedDoc()?.school || this.firebase.userProfile()?.school || 'المدرسة الابتدائية التونسية';
+  });
 
   private contentType = 'image/jpeg';
 
@@ -67,6 +82,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     const doc = await this.store.getWorksheet(sheetId);
     if (doc) {
       this.shared.set(true);
+      this.sharedDoc.set(doc);
       this.sharedTitle.set(doc.title);
       this.dna.set({ palette: doc.palette, topic: doc.topic, grade: doc.grade as WorksheetDna['grade'], subject: doc.subject as WorksheetDna['subject'] });
       this.exercises.set(doc.exercises || []);
@@ -86,6 +102,9 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
         topic: d?.topic,
         palette: d?.palette,
         exercises: list,
+        authorName: this.teacherName(),
+        customWatermark: this.customWatermark(),
+        school: this.school(),
       });
       if (result && typeof window !== 'undefined') {
         const full = window.location.origin + result.shareUrl;

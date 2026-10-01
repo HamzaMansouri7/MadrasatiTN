@@ -1055,6 +1055,9 @@ Pour réussir une production écrite de 6 à 8 lignes :
     topic?: string;
     palette?: string[];
     exercises: GeneratedExercise[];
+    authorName?: string;
+    customWatermark?: string;
+    school?: string;
   }): Promise<{ id: string; shareUrl: string } | null> {
     try {
       const res = await fetch('/api/docs', {

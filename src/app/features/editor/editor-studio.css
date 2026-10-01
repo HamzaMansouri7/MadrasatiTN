@@ -66,8 +66,26 @@
   box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
 }
 
+/* A4 print-margin guide overlay (15mm) — screen only */
+.a4-margins::after {
+  content: '';
+  position: absolute;
+  inset: 15mm;
+  border: 1px dashed rgba(0, 124, 194, 0.35);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Pro 3-pane panes: full width when stacked on mobile */
+.studio-pane {
+  min-width: 0;
+}
+
 /* A4 Print media query parity */
 @media print {
+  .a4-margins::after { display: none !important; }
+
   .no-print,
   .print\\:hidden,
   .canvas-insert-divider,

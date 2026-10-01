@@ -9,9 +9,8 @@ export const authGuard: CanActivateFn = (route, state) => {
   const router = inject(Router);
 
   const user = firebase.userProfile() || firebase.currentUser();
-  const hasLocalSession = typeof localStorage !== 'undefined' && !!localStorage.getItem('madrasati_user');
 
-  if (user || hasLocalSession) {
+  if (user) {
     return true;
   }
 

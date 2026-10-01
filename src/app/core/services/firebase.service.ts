@@ -1,4 +1,5 @@
-import { Injectable, signal, computed } from '@angular/core';
+import { Injectable, signal, computed, inject } from '@angular/core';
+import { LanguageService } from './language.service';
 import { initializeApp } from 'firebase/app';
 import {
   Auth,
@@ -57,6 +58,7 @@ export interface UserProfile {
   providedIn: 'root',
 })
 export class FirebaseService {
+  readonly lang = inject(LanguageService);
   readonly app = initializeApp(firebaseConfig);
   readonly db: Firestore = getFirestore(this.app, firebaseConfig.firestoreDatabaseId);
   readonly auth: Auth = getAuth(this.app);
@@ -239,27 +241,36 @@ export class FirebaseService {
     provider.setCustomParameters({ prompt: 'select_account' });
 
     try {
-      // Popup can hang forever on localhost (COOP / third-party cookie blocking):
-      // the account chooser completes but the promise never resolves. Race it.
-      const result = await Promise.race([
-        signInWithPopup(this.auth, provider),
-        new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error('popup-timeout')), 20000)
-        ),
-      ]);
+      const result = await signInWithPopup(this.auth, provider);
       return await this.completeGoogleProfile(result.user, role);
     } catch (err: unknown) {
-      console.warn('Google popup failed — falling back to full-page redirect:', err instanceof Error ? err.message : err);
-      if (typeof localStorage !== 'undefined') {
-        localStorage.setItem('madrasati_pending_google_role', role);
+      const code = (err as { code?: string })?.code || '';
+      console.warn('Google Auth popup error:', code, err);
+
+      if (code === 'auth/popup-closed-by-user') {
+        throw new Error(this.lang.tr('Connexion Google annulée.', 'تم إلغاء تسجيل الدخول بـ Google.'));
       }
-      try {
-        await signInWithRedirect(this.auth, provider);
-        return null; // page navigates away; flow resumes in handleRedirectResult()
-      } catch (redirectErr) {
-        console.warn('Google redirect also failed:', redirectErr);
-        return null;
+
+      if (code === 'auth/unauthorized-domain') {
+        throw new Error(this.lang.tr(
+          'Ce domaine n\'est pas autorisé dans Firebase Console (Authentication > Settings > Authorized domains).',
+          'هذا النطاق غير مصرح به في إعدادات فيربايس (Authorized domains).'
+        ));
       }
+
+      if (code === 'auth/popup-blocked') {
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('madrasati_pending_google_role', role);
+        }
+        try {
+          await signInWithRedirect(this.auth, provider);
+          return null;
+        } catch (redirectErr) {
+          throw new Error(this.formatAuthError(redirectErr));
+        }
+      }
+
+      throw new Error(this.formatAuthError(err));
     }
   }
 
