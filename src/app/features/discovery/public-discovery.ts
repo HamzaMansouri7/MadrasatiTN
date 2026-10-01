@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost } from '@core';
+import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, SubjectName } from '@core';
 import { BlogReaderComponent } from './blog-reader.component';
 
 @Component({
@@ -114,7 +114,7 @@ import { BlogReaderComponent } from './blog-reader.component';
             </h3>
           </div>
           <button
-            (click)="store.resetAllFilters()"
+            (click)="onResetFilters()"
             class="text-xs text-[#8A5A00] hover:text-[#C1121F] font-semibold flex items-center gap-1 cursor-pointer">
             <span class="material-icons text-sm">restart_alt</span>
             {{ lang.tr('Réinitialiser les filtres', 'إعادة ضبط الفلاتر') }}
@@ -998,7 +998,7 @@ import { BlogReaderComponent } from './blog-reader.component';
               </div>
               @if (store.selectedSubjects().size) {
                 <button
-                  (click)="store.clearSubjects()"
+                  (click)="onClearSubjects()"
                   class="text-[11px] text-[#8A5A00] hover:text-[#C1121F] font-semibold cursor-pointer">
                   {{ lang.tr('Effacer', 'مسح') }}
                 </button>
@@ -1014,7 +1014,7 @@ import { BlogReaderComponent } from './blog-reader.component';
                     <input
                       type="checkbox"
                       [checked]="f.selected"
-                      (change)="store.toggleSubject(f.subject)"
+                      (change)="onSubjectToggle(f.subject)"
                       class="w-4 h-4 rounded text-[#1B4332] focus:ring-[#1B4332] cursor-pointer shrink-0" />
                     <span class="text-xs font-medium text-[#14251D] truncate">{{ subjectLabel(f.subject) }}</span>
                   </span>
@@ -1510,10 +1510,12 @@ export class PublicDiscoveryComponent {
   }
 
   onSearchInput(event: Event) {
+    this.activeSection.set('exercises');
     this.store.setSearchQuery((event.target as HTMLInputElement).value);
   }
 
   onGradeChange(event: Event) {
+    this.activeSection.set('exercises');
     this.store.setGradeFilter((event.target as HTMLSelectElement).value);
   }
 
@@ -1528,19 +1530,38 @@ export class PublicDiscoveryComponent {
   }
 
   onTrimesterChange(event: Event) {
+    this.activeSection.set('exercises');
     this.store.setTrimesterFilter((event.target as HTMLSelectElement).value);
   }
 
   onDocTypeChange(event: Event) {
+    this.activeSection.set('exercises');
     this.store.setDocTypeFilter((event.target as HTMLSelectElement).value);
   }
 
   onSchoolYearChange(event: Event) {
+    this.activeSection.set('exercises');
     this.store.setSchoolYearFilter((event.target as HTMLSelectElement).value);
   }
 
   onCorrectionToggle(event: Event) {
+    this.activeSection.set('exercises');
     this.store.setOnlyWithCorrectionFilter((event.target as HTMLInputElement).checked);
+  }
+
+  onSubjectToggle(subject: string) {
+    this.activeSection.set('exercises');
+    this.store.toggleSubject(subject);
+  }
+
+  onClearSubjects() {
+    this.activeSection.set('exercises');
+    this.store.clearSubjects();
+  }
+
+  onResetFilters() {
+    this.activeSection.set('exercises');
+    this.store.resetAllFilters();
   }
 
   toggleSolution(id: string) {
