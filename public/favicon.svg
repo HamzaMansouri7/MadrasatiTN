@@ -1,20 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <!-- Rounded Squircle Background -->
-  <rect width="64" height="64" rx="16" fill="#0B2947"/>
-  <rect x="2" y="2" width="60" height="60" rx="14" stroke="#E0AA32" stroke-width="1.5" stroke-opacity="0.3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Open Book - bottom base -->
+  <path d="M10 72 C10 72 30 58 50 62 C70 58 90 72 90 72 L90 82 C90 82 70 70 50 74 C30 70 10 82 10 82 Z" fill="#0B2947"/>
+  <!-- Left page -->
+  <path d="M10 45 C10 45 30 38 50 42 L50 74 C30 70 10 82 10 82 Z" fill="#F5F0E0"/>
+  <!-- Right page -->
+  <path d="M50 42 C70 38 90 45 90 45 L90 82 C70 70 50 74 50 74 Z" fill="#E8E0CC"/>
+  <!-- Gold page edges left -->
+  <path d="M10 45 C10 45 30 38 50 42 L50 74 C30 70 10 82 Z" fill="none" stroke="#E0AA32" stroke-width="1.5"/>
+  <!-- Gold page edges right -->
+  <path d="M50 42 C70 38 90 45 90 82 C70 70 50 74 Z" fill="none" stroke="#E0AA32" stroke-width="1.5"/>
+  <!-- Book spine -->
+  <path d="M50 42 L50 74" stroke="#0B2947" stroke-width="2" stroke-linecap="round"/>
+  <!-- Book cover left -->
+  <path d="M8 44 C8 44 28 37 50 41 L50 75 C28 71 8 83 8 83 Z" fill="none" stroke="#0B2947" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Book cover right -->
+  <path d="M92 44 C92 44 72 37 50 41 L50 75 C72 71 92 83 92 83 Z" fill="none" stroke="#0B2947" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Gold gilded pages lines left -->
+  <path d="M15 67 C25 63 38 61 50 63" stroke="#E0AA32" stroke-width="0.8" stroke-opacity="0.7"/>
+  <path d="M13 71 C23 67 37 65 50 67" stroke="#E0AA32" stroke-width="0.8" stroke-opacity="0.7"/>
+  <!-- Gold gilded pages lines right -->
+  <path d="M85 67 C75 63 62 61 50 63" stroke="#E0AA32" stroke-width="0.8" stroke-opacity="0.7"/>
+  <path d="M87 71 C77 67 63 65 50 67" stroke="#E0AA32" stroke-width="0.8" stroke-opacity="0.7"/>
 
-  <!-- Open Book Wings -->
-  <path d="M12 43C18 39 26 39 32 42C38 39 46 39 52 43V23C46 19 38 19 32 22C26 19 18 19 12 23V43Z" fill="#007CC2" fill-opacity="0.25"/>
-  <path d="M12 43C18 39 26 39 32 42V22C26 19 18 19 12 23V43Z" fill="#FFFFFF" fill-opacity="0.95"/>
-  <path d="M52 43C46 39 38 39 32 42V22C38 19 46 19 52 23V43Z" fill="#D7E7F2"/>
+  <!-- Fez Hat (Chechia) - sitting on book spine center -->
+  <!-- Fez body -->
+  <path d="M34 57 Q34 40 50 40 Q66 40 66 57 Z" fill="#C1121F"/>
+  <!-- Fez brim (flat circle) -->
+  <ellipse cx="50" cy="57" rx="17" ry="4" fill="#A00E18"/>
+  <!-- Fez top flat -->
+  <ellipse cx="50" cy="40" rx="9" ry="2.5" fill="#A00E18"/>
+  <!-- Fez shading stripe -->
+  <path d="M36 52 Q38 42 50 41 Q62 42 64 52" stroke="#8B0B14" stroke-width="0.8" fill="none" stroke-opacity="0.5"/>
+  <path d="M35 55 Q37 45 50 44 Q63 45 65 55" stroke="#8B0B14" stroke-width="0.8" fill="none" stroke-opacity="0.4"/>
+  <!-- Tassel string -->
+  <line x1="50" y1="40" x2="53" y2="48" stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Tassel -->
+  <path d="M51 47 Q55 50 54 55 Q53 58 56 60" stroke="#1A1A1A" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <line x1="54" y1="55" x2="55" y2="61" stroke="#1A1A1A" stroke-width="0.9" stroke-linecap="round"/>
+  <line x1="53" y1="56" x2="52" y2="62" stroke="#1A1A1A" stroke-width="0.9" stroke-linecap="round"/>
 
-  <!-- Book Spine Spine Line -->
-  <path d="M32 22V42" stroke="#0B2947" stroke-width="1.5" stroke-linecap="round"/>
-
-  <!-- Stylized Arabic Meem / Knowledge Beacon with Gold Star -->
-  <circle cx="32" cy="15" r="4" fill="#E0AA32"/>
-  <path d="M32 10V12M32 18V20M27 15H29M35 15H37" stroke="#E0AA32" stroke-width="1" stroke-linecap="round"/>
-
-  <!-- Tunisian Red Accent Dot -->
-  <circle cx="32" cy="15" r="1.8" fill="#C1121F"/>
+  <!-- Snake wrapped around fountain pen -->
+  <!-- Pen body -->
+  <path d="M62 10 L58 32" stroke="#0B2947" stroke-width="4" stroke-linecap="round"/>
+  <!-- Pen nib -->
+  <path d="M58 32 L55 38 L61 34 Z" fill="#E0AA32"/>
+  <!-- Pen clip -->
+  <path d="M63 12 L65 28" stroke="#007CC2" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Pen band -->
+  <path d="M59.5 26 Q63.5 25 64 27" stroke="#E0AA32" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Snake body -->
+  <path d="M64 20 Q70 24 64 30 Q58 36 64 40 Q68 43 63 47 Q59 50 62 55" 
+        stroke="#007CC2" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Snake head -->
+  <ellipse cx="62" cy="18" rx="4" ry="3" fill="#007CC2" transform="rotate(-20 62 18)"/>
+  <!-- Snake eye -->
+  <circle cx="63" cy="17" r="1" fill="white"/>
+  <circle cx="63.3" cy="17" r="0.5" fill="#0B2947"/>
+  <!-- Snake tongue -->
+  <path d="M60 20 L57 22 M57 22 L55 21 M57 22 L55 23" stroke="#C1121F" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- Snake scale dots -->
+  <circle cx="65" cy="26" r="1" fill="#005F96" fill-opacity="0.6"/>
+  <circle cx="63" cy="33" r="1" fill="#005F96" fill-opacity="0.6"/>
+  <circle cx="65" cy="40" r="1" fill="#005F96" fill-opacity="0.6"/>
+  <circle cx="63" cy="47" r="1" fill="#005F96" fill-opacity="0.6"/>
 </svg>

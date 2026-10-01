@@ -398,6 +398,14 @@ export class NavbarComponent {
   }
 
   selectRole(role: UserRole) {
+    if (role === 'home' || role === 'public') {
+      this.store.switchRole(role);
+      return;
+    }
+    if (!this.isUserLoggedIn()) {
+      this.store.openSignupModal(role as 'teacher' | 'parent' | 'student');
+      return;
+    }
     this.store.switchRole(role);
   }
 

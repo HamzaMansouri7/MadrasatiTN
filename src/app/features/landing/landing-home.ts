@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EducationStore, LanguageService, UserRole } from '@core';
+import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
 
 @Component({
   selector: 'app-landing-home',
@@ -217,6 +217,7 @@ import { EducationStore, LanguageService, UserRole } from '@core';
 export class LandingHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
 
   readonly grades = ['1', '2', '3', '4', '5', '6'];
 
@@ -277,6 +278,14 @@ export class LandingHomeComponent {
   ];
 
   enterWorkspace(role: UserRole) {
+    if (role === 'home' || role === 'public') {
+      this.store.switchRole(role);
+      return;
+    }
+    if (!this.firebase.userProfile() && !this.firebase.currentUser()) {
+      this.store.openSignupModal(role as 'teacher' | 'parent' | 'student');
+      return;
+    }
     this.store.switchRole(role);
   }
 }

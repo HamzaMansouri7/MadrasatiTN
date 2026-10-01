@@ -118,6 +118,9 @@ export interface WorksheetDoc {
   topic?: string;
   palette?: string[];
   exercises: GeneratedExercise[];
+  authorName?: string;
+  customWatermark?: string;
+  school?: string;
   createdAt?: string;
 }
 
