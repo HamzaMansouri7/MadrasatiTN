@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } 
 import { Location } from '@angular/common';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, GradeLevel, SubjectName, InteractionService } from '@core';
-import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './editor.model';
+import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
 @Component({
   selector: 'app-editor-studio',
@@ -21,6 +21,11 @@ export class EditorStudioComponent {
   readonly viewMode = signal<'editor' | 'split' | 'preview'>('preview');
   readonly showMetadataPanel = signal<boolean>(false);
 
+  // Pro 3-pane: which pane is visible on mobile (desktop shows all three).
+  readonly mobilePane = signal<'inspector' | 'canvas' | 'outline'>('canvas');
+  // A4 print-margin guides toggle in the canvas toolbar.
+  readonly showPrintMargins = signal<boolean>(true);
+
   // Phase 3: Studio shell derived from docType
   // Shell A = exam / exercise_sheet / course / summary → 3-col A4 layout
   // Shell B = article → Medium-style centered prose canvas
@@ -35,12 +40,87 @@ export class EditorStudioComponent {
   // Click-to-edit directly inside the A4 preview (Gamma-style ergonomics).
   readonly editingBlockId = signal<string | null>(null);
 
+  // Pro 3-pane: currently inspected block (left Inspector pane binds to this).
+  readonly selectedBlockId = signal<string | null>(null);
+  readonly selectedBlock = computed<EditorBlock | null>(() => {
+    const id = this.selectedBlockId();
+    return id ? this.blocks().find((b) => b.id === id) ?? null : null;
+  });
+
+  readonly difficultyOptions: { value: ExerciseDifficulty; fr: string; ar: string }[] = [
+    { value: 'Facile', fr: 'Facile', ar: 'سهل' },
+    { value: 'Moyen', fr: 'Moyen', ar: 'متوسط' },
+    { value: 'Difficile', fr: 'Difficile', ar: 'صعب' },
+  ];
+
+  selectBlock(id: string) {
+    this.selectedBlockId.set(id);
+  }
+
+  // Sum of an exercise block's barème criteria (for Inspector live total).
+  criteriaTotal(b: EditorBlock): number {
+    return (b.exerciseCriteria || []).reduce((sum, c) => sum + (c.points || 0), 0);
+  }
+
+  setDifficulty(id: string, value: ExerciseDifficulty) {
+    this.updateBlockField(id, 'exerciseDifficulty', value);
+  }
+
+  addCriterion(id: string) {
+    this.blocks.update((list) =>
+      list.map((b) => {
+        if (b.id !== id) return b;
+        const criteria = [...(b.exerciseCriteria || [])];
+        criteria.push({ label: `Critère ${criteria.length + 1}`, points: 1, detail: '' });
+        return { ...b, exerciseCriteria: criteria };
+      })
+    );
+  }
+
+  updateCriterion(id: string, idx: number, field: 'label' | 'points' | 'detail', value: string | number) {
+    this.blocks.update((list) =>
+      list.map((b) => {
+        if (b.id !== id) return b;
+        const criteria = [...(b.exerciseCriteria || [])];
+        if (criteria[idx]) criteria[idx] = { ...criteria[idx], [field]: value };
+        return { ...b, exerciseCriteria: criteria };
+      })
+    );
+  }
+
+  removeCriterion(id: string, idx: number) {
+    this.blocks.update((list) =>
+      list.map((b) => {
+        if (b.id !== id) return b;
+        const criteria = [...(b.exerciseCriteria || [])];
+        criteria.splice(idx, 1);
+        return { ...b, exerciseCriteria: criteria };
+      })
+    );
+  }
+
+  // Outline-tree icon per block type.
+  getBlockIcon(type: EditorBlockType): string {
+    switch (type) {
+      case 'paragraph': return 'notes';
+      case 'heading1': return 'title';
+      case 'heading2': return 'text_fields';
+      case 'heading3': return 'segment';
+      case 'exercise': return 'assignment';
+      case 'callout': return 'lightbulb';
+      case 'cartouche': return 'verified';
+      case 'image': return 'image';
+      case 'divider': return 'horizontal_rule';
+      default: return 'crop_square';
+    }
+  }
 
   isInlineEditable(b: EditorBlock): boolean {
     return b.type !== 'image' && b.type !== 'divider' && b.type !== 'cartouche';
   }
 
   startInlineEdit(b: EditorBlock) {
+    this.selectedBlockId.set(b.id);
     if (!this.isInlineEditable(b)) return;
     this.editingBlockId.set(b.id);
     // Focus the freshly rendered inline control (autofocus attr is a11y-banned).
@@ -80,6 +160,7 @@ export class EditorStudioComponent {
 
   deleteBlockById(id: string) {
     this.blocks.update((list) => list.filter((b) => b.id !== id));
+    if (this.selectedBlockId() === id) this.selectedBlockId.set(null);
   }
   readonly isAutoSaved = signal<boolean>(true);
   readonly publishModalOpen = signal<boolean>(false);
@@ -304,6 +385,7 @@ export class EditorStudioComponent {
       calloutTitle: type === 'callout' ? 'Conseil Pédagogique' : undefined,
     };
     this.blocks.update((list) => [...list, newBlock]);
+    this.selectedBlockId.set(newBlock.id);
   }
 
   updateBlockContent(id: string, content: string) {
@@ -371,6 +453,7 @@ export class EditorStudioComponent {
 
   deleteBlock(id: string) {
     this.blocks.update((list) => list.filter((b) => b.id !== id));
+    if (this.selectedBlockId() === id) this.selectedBlockId.set(null);
   }
 
   onDocTitleInput(e: Event) {

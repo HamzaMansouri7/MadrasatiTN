@@ -1,4 +1,4 @@
-<div class="space-y-6 pb-24 relative">
+<div class="space-y-5 pb-28 relative">
 
   <!-- Studio Top Navigation & Publishing Bar -->
   <div class="bg-[#0B2947] text-white rounded-[24px] p-5 shadow-sm">
@@ -41,30 +41,28 @@
 
       <!-- Studio Actions -->
       <div class="flex flex-wrap items-center gap-2">
-        <!-- View Mode Switcher -->
-        <div class="bg-white/10 p-1 rounded-xl flex items-center gap-1 border border-white/15">
+        <!-- Mobile pane toggles (Inspector / Outline) -->
+        <div class="flex lg:hidden bg-white/10 p-1 rounded-xl items-center gap-1 border border-white/15">
           <button
-            (click)="viewMode.set('preview')"
-            [class]="viewMode() === 'preview' ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'text-[#8CA9C4] hover:text-white'"
+            (click)="mobilePane.set(mobilePane() === 'inspector' ? 'canvas' : 'inspector')"
+            [class]="mobilePane() === 'inspector' ? 'bg-[#007CC2] text-white font-semibold' : 'text-[#8CA9C4] hover:text-white'"
             class="px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1.5 transition-all cursor-pointer">
-            <span class="material-icons text-sm">auto_stories</span>
-            <span>{{ lang.tr('Page A4 Directe', 'صفحة A4 مباشرة') }}</span>
+            <span class="material-icons text-sm">tune</span>
+            <span>{{ lang.tr('Inspecteur', 'المفتّش') }}</span>
           </button>
-
           <button
-            (click)="viewMode.set('split')"
-            [class]="viewMode() === 'split' ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'text-[#8CA9C4] hover:text-white'"
-            class="hidden md:flex px-3 py-1.5 rounded-[8px] text-xs items-center gap-1.5 transition-all cursor-pointer">
-            <span class="material-icons text-sm">vertical_split</span>
-            <span>{{ lang.tr('Côte à côte', 'عرض مزدوج') }}</span>
-          </button>
-
-          <button
-            (click)="viewMode.set('editor')"
-            [class]="viewMode() === 'editor' ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'text-[#8CA9C4] hover:text-white'"
+            (click)="mobilePane.set(mobilePane() === 'canvas' ? 'canvas' : 'canvas')"
+            [class]="mobilePane() === 'canvas' ? 'bg-[#007CC2] text-white font-semibold' : 'text-[#8CA9C4] hover:text-white'"
             class="px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1.5 transition-all cursor-pointer">
-            <span class="material-icons text-sm">edit_note</span>
-            <span>{{ lang.tr('Formulaires', 'استمارات') }}</span>
+            <span class="material-icons text-sm">description</span>
+            <span>{{ lang.tr('Page', 'الصفحة') }}</span>
+          </button>
+          <button
+            (click)="mobilePane.set(mobilePane() === 'outline' ? 'canvas' : 'outline')"
+            [class]="mobilePane() === 'outline' ? 'bg-[#007CC2] text-white font-semibold' : 'text-[#8CA9C4] hover:text-white'"
+            class="px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1.5 transition-all cursor-pointer">
+            <span class="material-icons text-sm">account_tree</span>
+            <span>{{ lang.tr('Structure', 'الهيكل') }}</span>
           </button>
         </div>
 
@@ -74,7 +72,7 @@
           [class]="showMetadataPanel() ? 'bg-white text-[#0B2947]' : 'bg-white/10 hover:bg-white/20 text-white'"
           class="border border-white/20 px-3 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
           <span class="material-icons text-sm">tune</span>
-          <span>{{ lang.tr('Configuration', 'الإعدادات') }}</span>
+          <span class="hidden sm:inline">{{ lang.tr('Configuration', 'الإعدادات') }}</span>
           <span class="material-icons text-xs">{{ showMetadataPanel() ? 'expand_less' : 'expand_more' }}</span>
         </button>
 
@@ -83,10 +81,10 @@
           (click)="triggerPrintDialog()"
           class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
           <span class="material-icons text-sm">print</span>
-          <span>{{ lang.t('printBtn') }}</span>
+          <span class="hidden sm:inline">{{ lang.t('printBtn') }}</span>
         </button>
 
-        <!-- Publish Button Dropdown Trigger -->
+        <!-- Publish Button -->
         <button
           (click)="publishModalOpen.set(true)"
           class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow-sm">
@@ -269,865 +267,783 @@
     </div>
   }
 
-  <!-- Studio Work Area -->
-  <div class="grid" [class]="viewMode() === 'split' ? 'lg:grid-cols-2 gap-6' : 'grid-cols-1'">
+  <!-- PRO 3-PANE STUDIO: Inspector | A4 Canvas | Outline Tree -->
+  <div class="studio-grid lg:grid lg:grid-cols-[300px_minmax(0,1fr)_300px] lg:gap-4 lg:items-start">
 
-    <!-- LEFT COLUMN: FORM-BASED BLOCK EDITOR (Visible in editor or split mode) -->
-    @if (viewMode() === 'editor' || viewMode() === 'split') {
-      <div class="space-y-4">
-        <!-- Block Palette Drawer (grouped, Cartouche) -->
-        <div class="bg-white rounded-2xl p-3.5 border border-[#E7DFCF] shadow-sm sticky top-4 z-20 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-[11px] font-semibold text-[#5B6B60] flex items-center gap-1.5">
-              <span class="material-icons text-sm text-[#2D6A4F]">dashboard_customize</span>
-              {{ lang.tr('Palette de blocs', 'لوحة الكتل') }}
-            </span>
-            <button
-              (click)="openAiPromptModal()"
-              class="bg-[#F2C14E] hover:bg-[#D9A93C] text-[#14251D] px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-semibold shadow-sm transition-colors cursor-pointer min-h-[36px]">
-              <span class="material-icons text-sm">auto_awesome</span>
-              <span>IA Gemini</span>
-            </button>
+    <!-- ============ LEFT PANE: INSPECTOR ============ -->
+    <aside
+      [class.hidden]="mobilePane() !== 'inspector'"
+      class="studio-pane lg:block lg:sticky lg:top-4 bg-white rounded-2xl border border-[#E3ECF2] shadow-sm overflow-hidden print:hidden">
+      <div class="px-4 py-3 border-b border-[#E3ECF2] bg-[#F7F9FB] flex items-center gap-2">
+        <span class="material-icons text-base text-[#007CC2]">tune</span>
+        <h2 class="text-xs font-semibold text-[#102A43]">{{ lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
+        @if (selectedBlock()) {
+          <span class="ms-auto text-[10px] font-semibold text-[#627D98] uppercase tracking-wider">{{ getBlockTypeLabel(selectedBlock()!.type) }}</span>
+        }
+      </div>
+
+      <div class="p-4 space-y-4 text-xs max-h-[calc(100vh-140px)] overflow-y-auto">
+        @if (!selectedBlock()) {
+          <!-- Empty state -->
+          <div class="text-center py-8 px-2 space-y-2">
+            <span class="material-icons text-3xl text-[#CBD2D9]">ads_click</span>
+            <p class="font-semibold text-[#486581]">{{ lang.tr('Aucun bloc sélectionné', 'لم يتم اختيار أي كتلة') }}</p>
+            <p class="text-[11px] text-[#627D98] leading-relaxed">
+              {{ lang.tr('Cliquez sur un élément de la page ou de la structure pour modifier ses propriétés et son barème.', 'انقر على عنصر في الصفحة أو في الهيكل لتعديل خصائصه وسلّمه.') }}
+            </p>
           </div>
+        } @else {
+          @let sb = selectedBlock()!;
 
-          <!-- Group: Structure -->
-          <div class="space-y-1.5">
-            <span class="text-[10px] font-semibold text-[#6B7A70] tracking-wide px-0.5">{{ lang.tr('Structure', 'البنية') }}</span>
-            <div class="flex flex-wrap items-center gap-1.5">
-              <button (click)="addBlock('heading1')" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-medium transition-colors cursor-pointer min-h-[36px]">
-                <span class="material-icons text-sm">title</span>{{ lang.tr('Titre H1', 'عنوان رئيسي') }}
+          @switch (sb.type) {
+            @case ('exercise') {
+              <!-- Rubrique / title -->
+              <div>
+                <span class="block font-semibold text-[#102A43] mb-1">{{ lang.tr('Titre (Rubrique)', 'عنوان الكتلة') }}</span>
+                <input dir="auto" type="text"
+                  [value]="sb.exerciseTitle || ''"
+                  (input)="updateBlockField(sb.id, 'exerciseTitle', $any($event.target).value)"
+                  [placeholder]="lang.t('editorExerciseTitlePlaceholder')"
+                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 font-semibold text-[#102A43] outline-none" />
+              </div>
+
+              <!-- Difficulty + total points -->
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Difficulté', 'مستوى الصعوبة') }}</span>
+                  <div class="flex flex-col gap-1">
+                    @for (d of difficultyOptions; track d.value) {
+                      <button type="button"
+                        (click)="setDifficulty(sb.id, d.value)"
+                        [class]="(sb.exerciseDifficulty || 'Moyen') === d.value ? 'bg-[#007CC2] text-white font-semibold border-[#007CC2]' : 'bg-white text-[#486581] border-[#E3ECF2] hover:border-[#007CC2]/50'"
+                        class="border rounded-lg px-2 py-1.5 text-[11px] transition-colors cursor-pointer text-start">
+                        {{ lang.tr(d.fr, d.ar) }}
+                      </button>
+                    }
+                  </div>
+                </div>
+                <div>
+                  <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Barème total', 'العدد الإجمالي') }}</span>
+                  <div class="flex items-center gap-1.5 bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2">
+                    <input type="number" min="1" max="20"
+                      [value]="sb.exercisePoints || 5"
+                      (input)="updateBlockField(sb.id, 'exercisePoints', +$any($event.target).value)"
+                      class="w-full bg-transparent text-xl font-bold text-center text-[#23845B] outline-none" />
+                    <span class="text-[11px] font-bold text-[#627D98]">pts</span>
+                  </div>
+                  <p class="text-[10px] text-[#627D98] mt-1 text-center">{{ lang.tr('sur', 'من') }} 20</p>
+                </div>
+              </div>
+
+              <!-- Barème criteria -->
+              <div class="pt-3 border-t border-[#E3ECF2] space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-[#102A43]">{{ lang.tr('Critères de barème', 'توزيع معايير التقييم') }}</span>
+                  @if (sb.exerciseCriteria?.length) {
+                    <span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
+                      [class]="criteriaTotal(sb) === (sb.exercisePoints || 0) ? 'bg-[#E8F6EF] text-[#23845B]' : 'bg-[#FFF4D8] text-[#9E6A00]'">
+                      {{ lang.tr('somme', 'مجموع') }} {{ criteriaTotal(sb) }} pts
+                    </span>
+                  }
+                </div>
+                @for (c of sb.exerciseCriteria || []; track $index; let cIdx = $index) {
+                  <div class="bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 space-y-1.5">
+                    <div class="flex items-center gap-1.5">
+                      <input dir="auto" type="text"
+                        [value]="c.label"
+                        (input)="updateCriterion(sb.id, cIdx, 'label', $any($event.target).value)"
+                        [placeholder]="lang.tr('Critère ' + (cIdx + 1), 'المعيار ' + (cIdx + 1))"
+                        class="grow bg-white border border-[#E3ECF2] rounded-md p-1.5 font-semibold text-[#102A43] outline-none" />
+                      <input type="number" min="0" max="20"
+                        [value]="c.points"
+                        (input)="updateCriterion(sb.id, cIdx, 'points', +$any($event.target).value)"
+                        class="w-12 bg-white border border-[#E3ECF2] rounded-md p-1.5 font-bold text-center text-[#23845B] outline-none" />
+                      <button type="button" (click)="removeCriterion(sb.id, cIdx)"
+                        class="w-7 h-7 flex items-center justify-center rounded-md text-[#627D98] hover:text-[#C1121F] hover:bg-white cursor-pointer shrink-0"
+                        [title]="lang.tr('Supprimer', 'حذف')">
+                        <span class="material-icons text-sm">close</span>
+                      </button>
+                    </div>
+                    <input dir="auto" type="text"
+                      [value]="c.detail || ''"
+                      (input)="updateCriterion(sb.id, cIdx, 'detail', $any($event.target).value)"
+                      [placeholder]="lang.tr('Description du critère…', 'وصف المعيار…')"
+                      class="w-full bg-white border border-[#E3ECF2] rounded-md p-1.5 text-[11px] text-[#486581] outline-none" />
+                  </div>
+                }
+                <button type="button" (click)="addCriterion(sb.id)"
+                  class="w-full border border-dashed border-[#007CC2]/40 hover:border-[#007CC2] hover:bg-[#E8F5FC] text-[#007CC2] rounded-[10px] py-2 font-semibold flex items-center justify-center gap-1.5 cursor-pointer transition-colors">
+                  <span class="material-icons text-sm">add</span>{{ lang.tr('Ajouter un critère', 'إضافة معيار تقييم') }}
+                </button>
+              </div>
+
+              <!-- Gemini AI suggestions -->
+              <div class="pt-3 border-t border-[#E3ECF2] space-y-2">
+                <span class="font-semibold text-[#9E6A00] flex items-center gap-1.5">
+                  <span class="material-icons text-sm text-[#E0AA32]">auto_awesome</span>
+                  {{ lang.tr('Suggestions IA (Gemini)', 'اقتراحات الذكاء الاصطناعي') }}
+                </span>
+                <div class="space-y-1.5">
+                  <button type="button" (click)="transformExercise(sb, 'tunisian_context')" [disabled]="isTransformingId() === sb.id"
+                    class="w-full flex items-center justify-between bg-[#FFFDF6] hover:bg-[#FFF4D8] border border-[#E0AA32]/30 text-[#9E6A00] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
+                    <span class="flex items-center gap-1.5"><span class="material-icons text-sm">public</span>{{ lang.tr('Contexte tunisien', 'سياق تونسي واقعي') }}</span>
+                    <span class="material-icons text-sm">chevron_left</span>
+                  </button>
+                  <button type="button" (click)="transformExercise(sb, 'simplify_vocab')" [disabled]="isTransformingId() === sb.id"
+                    class="w-full flex items-center justify-between bg-[#FBFEFC] hover:bg-[#E8F6EF] border border-[#23845B]/30 text-[#23845B] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
+                    <span class="flex items-center gap-1.5"><span class="material-icons text-sm">eco</span>{{ lang.tr('Simplifier le vocabulaire', 'تبسيط الصياغة') }}</span>
+                    <span class="material-icons text-sm">chevron_left</span>
+                  </button>
+                  <button type="button" (click)="generateVariant(sb)" [disabled]="isVariantLoading()"
+                    class="w-full flex items-center justify-between bg-[#FCFBFF] hover:bg-[#F3E8FF] border border-[#7C3AED]/30 text-[#7C3AED] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
+                    <span class="flex items-center gap-1.5">
+                      @if (isVariantLoading()) { <span class="material-icons text-sm animate-spin">sync</span> } @else { <span class="material-icons text-sm">bolt</span> }
+                      {{ lang.tr('Générer une variante', 'توليد نسخة بديلة') }}
+                    </span>
+                    <span class="material-icons text-sm">chevron_left</span>
+                  </button>
+                </div>
+                @if (isTransformingId() === sb.id) {
+                  <div class="flex items-center gap-1.5 text-[10px] text-[#007CC2] italic">
+                    <span class="material-icons animate-spin text-[12px]">sync</span>
+                    <span>{{ lang.tr('Transformation IA en cours...', 'جارٍ التحويل بالذكاء الاصطناعي...') }}</span>
+                  </div>
+                }
+              </div>
+
+              <!-- Display / print options -->
+              <div class="pt-3 border-t border-[#E3ECF2] space-y-2">
+                <span class="font-semibold text-[#102A43]">{{ lang.tr('Options d’affichage & impression', 'خيارات العرض والطباعة') }}</span>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" [checked]="sb.showSolution"
+                    (change)="toggleSolution(sb.id)"
+                    class="w-4 h-4 accent-[#23845B] cursor-pointer" />
+                  <span class="text-[#486581]">{{ lang.tr('Afficher le corrigé / solution', 'عرض الحل النموذجي') }}</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" [checked]="sb.showBaremeFrame !== false"
+                    (change)="updateBlockField(sb.id, 'showBaremeFrame', $any($event.target).checked)"
+                    class="w-4 h-4 accent-[#007CC2] cursor-pointer" />
+                  <span class="text-[#486581]">{{ lang.tr('Encadrer le barème (points)', 'إظهار إطار النقاط') }}</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" [checked]="sb.showPedagogicalGrid"
+                    (change)="updateBlockField(sb.id, 'showPedagogicalGrid', $any($event.target).checked)"
+                    class="w-4 h-4 accent-[#007CC2] cursor-pointer" />
+                  <span class="text-[#486581]">{{ lang.tr('Inclure la grille pédagogique', 'تضمين الشبكة البيداغوجية') }}</span>
+                </label>
+              </div>
+            }
+            @case ('callout') {
+              <div>
+                <span class="block font-semibold text-[#102A43] mb-1">{{ lang.tr('Titre de l’encadré', 'عنوان الملاحظة') }}</span>
+                <input dir="auto" type="text"
+                  [value]="sb.calloutTitle || ''"
+                  (input)="updateBlockField(sb.id, 'calloutTitle', $any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 font-semibold text-[#23845B] outline-none" />
+              </div>
+              <div>
+                <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Contenu', 'المحتوى') }}</span>
+                <textarea dir="auto" rows="4"
+                  [value]="sb.content"
+                  (input)="updateBlockContent(sb.id, $any($event.target).value)"
+                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none"></textarea>
+              </div>
+            }
+            @case ('image') {
+              <div class="space-y-3">
+                @if (sb.imageUrl) {
+                  <div class="relative rounded-lg overflow-hidden border border-[#E3ECF2]">
+                    <img [src]="sb.imageUrl" alt="Illustration" class="w-full h-32 object-cover" />
+                    <button (click)="updateBlockField(sb.id, 'imageUrl', '')"
+                      class="absolute top-2 right-2 bg-black/60 hover:bg-black text-white p-1 rounded-full cursor-pointer">
+                      <span class="material-icons text-xs">close</span>
+                    </button>
+                  </div>
+                } @else {
+                  <div class="border-2 border-dashed border-[#E3ECF2] rounded-lg p-4 text-center bg-[#F7F9FB]">
+                    <label class="cursor-pointer block">
+                      <span class="material-icons text-2xl text-[#007CC2]">add_photo_alternate</span>
+                      <p class="text-[11px] font-semibold text-[#102A43] mt-1">{{ lang.tr('Uploader une image (VPS)', 'رفع صورة من الجهاز') }}</p>
+                      <input type="file" (change)="handleBlockImageUpload(sb.id, $event)" accept="image/png,image/jpeg,image/webp" class="hidden" />
+                    </label>
+                  </div>
+                }
+                <div>
+                  <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Légende', 'التسمية التوضيحية') }}</span>
+                  <input dir="auto" type="text"
+                    [value]="sb.imageCaption || ''"
+                    (input)="updateBlockField(sb.id, 'imageCaption', $any($event.target).value)"
+                    class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 text-[#102A43] outline-none" />
+                </div>
+                @if (imageUploadError()) { <p class="text-[11px] text-[#C1121F]">{{ imageUploadError() }}</p> }
+              </div>
+            }
+            @case ('divider') {
+              <p class="text-[11px] text-[#627D98] leading-relaxed">{{ lang.tr('Séparateur visuel — aucune propriété à configurer.', 'فاصل بصري — لا توجد خصائص للتعديل.') }}</p>
+            }
+            @case ('cartouche') {
+              <p class="text-[11px] text-[#627D98] leading-relaxed">{{ lang.tr('En-tête officiel républicain — modifiez les informations dans Configuration.', 'الترويسة الرسمية — عدّل المعلومات من الإعدادات.') }}</p>
+              <button (click)="showMetadataPanel.set(true)"
+                class="w-full bg-[#E8F5FC] hover:bg-[#D7E7F2] text-[#007CC2] rounded-[10px] py-2 font-semibold cursor-pointer flex items-center justify-center gap-1.5">
+                <span class="material-icons text-sm">tune</span>{{ lang.tr('Ouvrir la configuration', 'فتح الإعدادات') }}
               </button>
-              <button (click)="addBlock('heading2')" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-medium transition-colors cursor-pointer min-h-[36px]">
-                <span class="material-icons text-sm">text_fields</span>{{ lang.tr('Titre H2', 'عنوان فرعي') }}
-              </button>
-              <button (click)="addBlock('divider')" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-medium transition-colors cursor-pointer min-h-[36px]">
-                <span class="material-icons text-sm">horizontal_rule</span>{{ lang.tr('Séparateur', 'فاصل') }}
-              </button>
+            }
+            @default {
+              <div>
+                <span class="block font-semibold text-[#102A43] mb-1">{{ lang.tr('Texte du bloc', 'نص الكتلة') }}</span>
+                <textarea dir="auto" rows="6"
+                  [value]="sb.content"
+                  (input)="updateBlockContent(sb.id, $any($event.target).value)"
+                  [placeholder]="lang.tr('Saisissez le contenu…', 'اكتب المحتوى…')"
+                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none leading-relaxed"></textarea>
+              </div>
+            }
+          }
+
+          <!-- Delete selected block -->
+          <div class="pt-3 border-t border-[#E3ECF2] flex items-center justify-between">
+            <button (click)="deleteBlockById(sb.id)"
+              class="text-[#C1121F] hover:text-[#9E0E18] font-semibold flex items-center gap-1.5 cursor-pointer">
+              <span class="material-icons text-sm">delete</span>{{ lang.tr('Supprimer le bloc', 'حذف الكتلة') }}
+            </button>
+            <span class="inline-flex items-center gap-1 text-[10px] text-[#23845B] font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#4ADE80]"></span>{{ lang.tr('Auto-enregistré', 'حفظ تلقائي') }}
+            </span>
+          </div>
+        }
+      </div>
+    </aside>
+
+    <!-- ============ CENTER PANE: LIVE A4 PRINT CANVAS ============ -->
+    <div
+      [class.hidden]="mobilePane() !== 'canvas'"
+      class="studio-pane lg:block space-y-4 w-full">
+      <!-- A4 toolbar strip -->
+      <div class="hidden lg:flex items-center justify-between bg-white rounded-xl border border-[#E3ECF2] px-4 py-2 text-xs text-[#627D98] shadow-xs print:hidden">
+        <span class="flex items-center gap-1.5 font-semibold text-[#102A43]">
+          <span class="material-icons text-sm text-[#007CC2]">description</span>A4 · 210 × 297 mm
+        </span>
+        <span class="flex items-center gap-3">
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" [checked]="showPrintMargins()" (change)="showPrintMargins.set($any($event.target).checked)" class="w-3.5 h-3.5 accent-[#007CC2] cursor-pointer" />
+            {{ lang.tr('Marges d’impression (15mm)', 'هوامش الطباعة (15mm)') }}
+          </label>
+          @if (totalExamPoints() > 0) {
+            <span class="font-bold text-[#23845B]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
+          }
+        </span>
+      </div>
+
+      <!-- LIVE A4 PAPER CONTAINER -->
+      <div id="printable-document" class="print-document bg-white rounded-xl p-8 sm:p-12 border border-[#CBD2D9] text-[#102A43] relative overflow-hidden min-h-[840px] space-y-6" [class.a4-margins]="showPrintMargins()">
+
+        <!-- 45 DEGREE WATERMARK -->
+        <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none rotate-[-25deg]">
+          <span class="text-5xl font-black uppercase text-[#007CC2] tracking-widest text-center leading-tight">
+            MADRASATI TN <br /> {{ docWatermark() }}
+          </span>
+        </div>
+
+        <!-- DUAL-MODE A4 HEADER -->
+        @if (isParentMode()) {
+          <!-- Parent Home Practice Header -->
+          <div class="border-b-2 border-[#E0AA32] pb-4">
+            <div class="flex items-center justify-between text-xs">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] border border-[#E0AA32]/50 text-[#9E6A00] flex items-center justify-center font-bold">
+                  <span class="material-icons text-base">home</span>
+                </div>
+                <div>
+                  <p class="font-bold text-[#102A43] text-sm">
+                    {{ lang.tr('Cahier d’Entraînement Maison', 'دفتر التمارين المنزلية') }}
+                  </p>
+                  <p class="text-[11px] text-[#627D98]">Madrasati TN • {{ docSubject() }}</p>
+                </div>
+              </div>
+
+              <div class="text-center font-bold">
+                <p class="font-display text-base text-[#007CC2]">{{ docTitle() || 'Fiche de Révision' }}</p>
+                <span class="inline-block bg-[#E8F5FC] text-[#007CC2] text-[10px] px-2 py-0.5 rounded-full font-semibold">
+                  {{ docGrade() }}
+                </span>
+              </div>
+
+              <div class="text-right text-xs text-[#627D98] leading-tight">
+                <p>{{ docTrimester() }}</p>
+                <p class="text-[10px]">Année {{ docSchoolYear() }}</p>
+              </div>
+            </div>
+
+            <!-- Child Personalized Dedication Box -->
+            <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] flex items-center justify-between text-xs">
+              <p class="font-semibold text-[#102A43]">
+                {{ lang.tr('Dédié à :', 'مخصص لـ :') }} <span class="font-bold text-[#007CC2]">{{ activeChildName() || 'Mon Enfant' }}</span>
+              </p>
+              <p class="text-[11px] text-[#627D98] italic">
+                {{ lang.tr('🌟 Travaille à ton rythme et avec confiance !', '🌟 ثابر وتقدم بثقة واجتهاد !') }}
+              </p>
             </div>
           </div>
+        } @else if (hasCartoucheBlock()) {
+          <!-- Official Republican Cartouche for Teachers -->
+          <div class="border-b-2 border-[#102A43] pb-4">
+            <div class="flex items-center justify-between text-xs">
+              <div class="text-left font-bold leading-tight">
+                <p>الجمهورية التونسية</p>
+                <p>وزارة التربية والتعليم</p>
+                <p class="text-[10px] text-[#486581] font-normal">{{ docSchool() }}</p>
+              </div>
 
-          <!-- Group: Contenu -->
-          <div class="space-y-1.5">
-            <span class="text-[10px] font-semibold text-[#6B7A70] tracking-wide px-0.5">{{ lang.tr('Contenu', 'المحتوى') }}</span>
-            <div class="flex flex-wrap items-center gap-1.5">
-              <button (click)="addBlock('paragraph')" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-medium transition-colors cursor-pointer min-h-[36px]">
-                <span class="material-icons text-sm">notes</span>{{ lang.tr('Texte', 'نص') }}
-              </button>
-              @if (studioShell() === 'A') {
-                <button (click)="addBlock('callout')" class="bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#1B4332] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-semibold transition-colors cursor-pointer min-h-[36px]">
-                  <span class="material-icons text-sm">lightbulb</span>{{ lang.tr('Conseil', 'ملاحظة') }}
-                </button>
+              <div class="text-center font-bold">
+                <p class="font-display text-lg text-[#007CC2] font-semibold">{{ docTitle() || 'Évaluation & Devoir' }}</p>
+                <p class="text-xs text-[#486581]">{{ docGrade() }} • {{ docSubject() }}</p>
+                @if (totalExamPoints() > 0) {
+                  <p class="text-[11px] font-bold text-[#23845B] mt-0.5">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</p>
+                }
+              </div>
+
+              <div class="text-right text-xs text-[#334E68] leading-tight">
+                <p>{{ docTrimester() }}</p>
+                <p>السنة الدراسية: {{ docSchoolYear() }}</p>
+              </div>
+            </div>
+
+            <!-- Student Identification Box -->
+            <div class="mt-4 pt-2.5 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
+              <p>الاسم واللقب: ....................................</p>
+              <p>القسم: {{ docGrade() }}</p>
+              <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+            </div>
+          </div>
+        } @else {
+          <!-- Standard Header if no Cartouche -->
+          <div class="border-b border-[#E3ECF2] pb-3 flex items-center justify-between text-xs">
+            <div>
+              <h2 class="font-display font-bold text-lg text-[#102A43]">{{ docTitle() || 'Document Pédagogique' }}</h2>
+              <p class="text-[#627D98]">{{ docSubject() }} — {{ docGrade() }}</p>
+            </div>
+            <div class="text-right">
+              <span class="text-[11px] text-[#627D98] block">{{ docTrimester() }}</span>
+              @if (totalExamPoints() > 0) {
+                <span class="text-[11px] font-bold text-[#23845B]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
               }
             </div>
           </div>
+        }
 
-          @if (studioShell() === 'A') {
-            <!-- Group: Exercices -->
-            <div class="space-y-1.5">
-              <span class="text-[10px] font-semibold text-[#6B7A70] tracking-wide px-0.5">{{ lang.tr('Exercices', 'التمارين') }}</span>
-              <div class="flex flex-wrap items-center gap-1.5">
-                <button (click)="addBlock('exercise')" class="bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#1B4332] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-semibold transition-colors cursor-pointer min-h-[36px]">
-                  <span class="material-icons text-sm">assignment</span>{{ lang.tr('Exercice', 'تمرين') }}
+        <!-- RENDERED BLOCKS PREVIEW & INLINE EDITING -->
+        <div class="space-y-4 text-xs leading-relaxed relative z-10">
+          @for (b of blocks(); track b.id; let idx = $index) {
+
+            <!-- NOTION/GAMMA STYLE INLINE HOVER DIVIDER (Top of block) -->
+            <div class="canvas-insert-divider group/divider print:hidden">
+              <button
+                type="button"
+                (click)="activeInsertIndex.set(activeInsertIndex() === (idx - 1) ? null : (idx - 1))"
+                class="opacity-0 group-hover/divider:opacity-100 focus:opacity-100 transition-opacity bg-white hover:bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/40 rounded-full w-6 h-6 flex items-center justify-center shadow-xs cursor-pointer z-30"
+                [title]="lang.tr('Insérer un élément ici', 'إدراج عنصر هنا')">
+                <span class="material-icons text-sm">add</span>
+              </button>
+
+              <!-- Insertion Popover Menu -->
+              @if (activeInsertIndex() === (idx - 1)) {
+                <div class="absolute top-7 bg-white rounded-xl border border-[#CBD2D9] shadow-xl p-1.5 flex items-center gap-1 z-40 animate-fade-in">
+                  <button
+                    (click)="insertBlockAt(idx - 1, 'exercise')"
+                    class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F5FC] text-[#007CC2] hover:bg-[#D7E7F2] flex items-center gap-1 cursor-pointer">
+                    <span class="material-icons text-xs">assignment</span>
+                    <span>+ {{ lang.tr('Exercice', 'تمرين') }}</span>
+                  </button>
+                  <button
+                    (click)="insertBlockAt(idx - 1, 'paragraph')"
+                    class="px-2.5 py-1 rounded-lg text-xs font-medium text-[#102A43] hover:bg-gray-100 flex items-center gap-1 cursor-pointer">
+                    <span class="material-icons text-xs">notes</span>
+                    <span>+ {{ lang.tr('Texte', 'نص') }}</span>
+                  </button>
+                  <button
+                    (click)="insertBlockAt(idx - 1, 'callout')"
+                    class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F6EF] text-[#23845B] hover:bg-[#D0EFE2] flex items-center gap-1 cursor-pointer">
+                    <span class="material-icons text-xs">lightbulb</span>
+                    <span>+ {{ lang.tr('Conseil', 'نصيحة') }}</span>
+                  </button>
+                  <button
+                    (click)="activeInsertIndex.set(null); openAiPromptModal()"
+                    class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#E0AA32] text-[#0B2947] hover:bg-[#D19A24] flex items-center gap-1 cursor-pointer">
+                    <span class="material-icons text-xs">auto_awesome</span>
+                    <span>{{ lang.tr('IA', 'ذكاء اصطناعي') }}</span>
+                  </button>
+                </div>
+              }
+            </div>
+
+            <!-- BLOCK CONTAINER WITH HOVER ACTIONS + SELECTION -->
+            <div
+              (click)="startInlineEdit(b)"
+              (keydown.enter)="startInlineEdit(b)"
+              [tabindex]="editingBlockId() === b.id ? -1 : 0"
+              role="button"
+              [class.cursor-text]="isInlineEditable(b)"
+              class="group/pv relative rounded-md outline-none transition-shadow print:shadow-none p-1 -m-1"
+              [class.hover:ring-1]="editingBlockId() !== b.id && selectedBlockId() !== b.id"
+              [class.hover:ring-[#007CC2]]="editingBlockId() !== b.id && selectedBlockId() !== b.id"
+              [class.ring-2]="editingBlockId() === b.id || selectedBlockId() === b.id"
+              [class.ring-[#007CC2]]="editingBlockId() === b.id || selectedBlockId() === b.id"
+              [attr.data-editing]="editingBlockId() === b.id ? 'true' : null">
+
+              <!-- Selected block badge -->
+              @if (selectedBlockId() === b.id) {
+                <span class="absolute -top-2.5 -start-1.5 z-20 bg-[#007CC2] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-sm print:hidden flex items-center gap-1">
+                  <span class="material-icons text-[10px]">radio_button_checked</span>{{ lang.tr('Sélectionné', 'محدَّد') }}
+                </span>
+              }
+
+              <!-- Block Floating Quick Actions (Trash / Duplicate) -->
+              <div class="absolute -top-3.5 right-2 z-20 hidden group-hover/pv:flex items-center gap-1 bg-white border border-[#CBD2D9] rounded-lg shadow-sm px-1.5 py-0.5 print:hidden">
+                <button
+                  (click)="$event.stopPropagation(); duplicateBlock(idx)"
+                  class="p-0.5 text-[#627D98] hover:text-[#007CC2] cursor-pointer"
+                  [title]="lang.tr('Dupliquer', 'مضاعفة')">
+                  <span class="material-icons text-[14px]">content_copy</span>
+                </button>
+                <button
+                  (click)="$event.stopPropagation(); deleteBlockById(b.id)"
+                  class="p-0.5 text-[#D64545] hover:opacity-80 cursor-pointer"
+                  [title]="lang.tr('Supprimer', 'حذف')">
+                  <span class="material-icons text-[14px]">delete</span>
                 </button>
               </div>
-            </div>
-          }
 
-          <!-- Group: Média -->
-          <div class="space-y-1.5">
-            <span class="text-[10px] font-semibold text-[#6B7A70] tracking-wide px-0.5">{{ lang.tr('Média', 'وسائط') }}</span>
-            <div class="flex flex-wrap items-center gap-1.5">
-              <button (click)="addBlock('image')" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 font-medium transition-colors cursor-pointer min-h-[36px]">
-                <span class="material-icons text-sm">image</span>{{ lang.tr('Image', 'صورة') }}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Block List Canvas (drag-drop reorder) -->
-        <div class="space-y-3" cdkDropList (cdkDropListDropped)="onBlockDrop($event)">
-          @for (block of blocks(); track block.id; let idx = $index) {
-            <div cdkDrag class="editor-block-card group bg-white rounded-2xl p-4 border border-[#E7DFCF] shadow-sm hover:border-[#2D6A4F]/50 transition-all relative">
-              <div class="editor-block-placeholder" *cdkDragPlaceholder></div>
-              <div class="flex items-center justify-between pb-2 mb-2 border-b border-[#E7DFCF] text-xs">
-                <div class="flex items-center gap-1.5">
-                  <button
-                    cdkDragHandle
-                    type="button"
-                    class="cursor-grab active:cursor-grabbing text-[#9DBBA8] hover:text-[#2D6A4F] p-0.5 transition-colors"
-                    [title]="lang.tr('Glisser pour réordonner', 'اسحب لإعادة الترتيب')"
-                    aria-label="Réordonner le bloc">
-                    <span class="material-icons text-base">drag_indicator</span>
-                  </button>
-                  <span class="w-5 h-5 rounded-full bg-[#F2ECDE] text-[#5B6B60] flex items-center justify-center font-mono text-[10px] font-bold">
-                    {{ idx + 1 }}
-                  </span>
-                  <span class="text-[10px] font-semibold text-[#5B6B60] uppercase tracking-wider">
-                    {{ getBlockTypeLabel(block.type) }}
-                  </span>
-                </div>
-
-                <div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity">
-                  <button
-                    (click)="duplicateBlock(idx)"
-                    class="w-7 h-7 flex items-center justify-center rounded-lg text-[#5B6B60] hover:text-[#1B4332] hover:bg-[#F2ECDE] cursor-pointer transition-colors"
-                    [title]="lang.tr('Dupliquer', 'مضاعفة')"
-                    aria-label="Dupliquer">
-                    <span class="material-icons text-sm">content_copy</span>
-                  </button>
-                  <button
-                    (click)="deleteBlock(block.id)"
-                    class="w-7 h-7 flex items-center justify-center rounded-lg text-[#5B6B60] hover:text-[#C1121F] hover:bg-[#F2ECDE] cursor-pointer transition-colors"
-                    [title]="lang.tr('Supprimer', 'حذف')"
-                    aria-label="Supprimer">
-                    <span class="material-icons text-sm">delete</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- BLOCK FORMS -->
-              @switch (block.type) {
+              @switch (b.type) {
                 @case ('paragraph') {
-                  <textarea dir="auto"
-                    [value]="block.content"
-                    (input)="updateBlockContent(block.id, $any($event.target).value)"
-                    rows="3"
-                    [placeholder]="lang.tr('Rédigez votre paragraphe de cours, explications ou consigne...', 'اكتب فقرة الدرس، الشرح أو التعليمة...')"
-                    class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-3 text-xs text-[#102A43] outline-none leading-relaxed"></textarea>
+                  @if (editingBlockId() === b.id) {
+                    <textarea dir="auto"
+                      [value]="b.content"
+                      (input)="updateBlockContent(b.id, $any($event.target).value)"
+                      (blur)="stopInlineEdit()"
+                      (keydown.escape)="stopInlineEdit()"
+                      (click)="$event.stopPropagation()"
+                      rows="3"
+                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-2 text-xs text-[#102A43] outline-none leading-relaxed"></textarea>
+                  } @else {
+                    <p dir="auto" class="text-[#102A43] whitespace-pre-line min-h-[1em]">{{ b.content || '…' }}</p>
+                  }
                 }
                 @case ('heading1') {
-                  <input dir="auto"
-                    type="text"
-                    [value]="block.content"
-                    (input)="updateBlockContent(block.id, $any($event.target).value)"
-                    [placeholder]="lang.tr('Titre Principal (H1)...', 'عنوان رئيسي (H1)...')"
-                    class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-3 text-base font-bold text-[#102A43] outline-none" />
+                  @if (editingBlockId() === b.id) {
+                    <input dir="auto"
+                      type="text"
+                      [value]="b.content"
+                      (input)="updateBlockContent(b.id, $any($event.target).value)"
+                      (blur)="stopInlineEdit()"
+                      (keydown.escape)="stopInlineEdit()"
+                      (keydown.enter)="stopInlineEdit()"
+                      (click)="$event.stopPropagation()"
+                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-display font-bold text-base text-[#102A43] outline-none" />
+                  } @else {
+                    <h2 dir="auto" class="font-display font-bold text-base text-[#102A43] pt-2 border-b border-[#102A43]/20 pb-1">{{ b.content || '…' }}</h2>
+                  }
                 }
                 @case ('heading2') {
-                  <input dir="auto"
-                    type="text"
-                    [value]="block.content"
-                    (input)="updateBlockContent(block.id, $any($event.target).value)"
-                    [placeholder]="lang.tr('Sous-titre de Chapitre (H2)...', 'عنوان فرعي للفصل (H2)...')"
-                    class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-sm font-semibold text-[#007CC2] outline-none" />
+                  @if (editingBlockId() === b.id) {
+                    <input dir="auto"
+                      type="text"
+                      [value]="b.content"
+                      (input)="updateBlockContent(b.id, $any($event.target).value)"
+                      (blur)="stopInlineEdit()"
+                      (keydown.escape)="stopInlineEdit()"
+                      (keydown.enter)="stopInlineEdit()"
+                      (click)="$event.stopPropagation()"
+                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-display font-semibold text-sm text-[#007CC2] outline-none" />
+                  } @else {
+                    <h3 dir="auto" class="font-display font-semibold text-sm text-[#007CC2] pt-1">{{ b.content || '…' }}</h3>
+                  }
                 }
                 @case ('heading3') {
-                  <input dir="auto"
-                    type="text"
-                    [value]="block.content"
-                    (input)="updateBlockContent(block.id, $any($event.target).value)"
-                    [placeholder]="lang.tr('Section / Étape (H3)...', 'قسم / مرحلة (H3)...')"
-                    class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 text-xs font-semibold text-[#102A43] outline-none" />
+                  @if (editingBlockId() === b.id) {
+                    <input dir="auto"
+                      type="text"
+                      [value]="b.content"
+                      (input)="updateBlockContent(b.id, $any($event.target).value)"
+                      (blur)="stopInlineEdit()"
+                      (keydown.escape)="stopInlineEdit()"
+                      (keydown.enter)="stopInlineEdit()"
+                      (click)="$event.stopPropagation()"
+                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-semibold text-xs text-[#102A43] outline-none" />
+                  } @else {
+                    <h4 dir="auto" class="font-semibold text-xs text-[#102A43]">{{ b.content || '…' }}</h4>
+                  }
                 }
                 @case ('exercise') {
-                  <div class="space-y-3 bg-[#F7F9FB] p-3.5 rounded-[12px] border border-[#E3ECF2]">
-                    <div class="flex items-center justify-between gap-3">
-                      <input dir="auto"
-                        type="text"
-                        [value]="block.exerciseTitle || 'Exercice N°' + (idx + 1)"
-                        (input)="updateBlockField(block.id, 'exerciseTitle', $any($event.target).value)"
-                        [placeholder]="lang.t('editorExerciseTitlePlaceholder')"
-                        class="grow bg-white border border-[#E3ECF2] rounded-[8px] p-2 text-xs font-semibold text-[#102A43] outline-none" />
-                      
-                      <div class="flex items-center gap-1.5 shrink-0">
-                        <span class="text-[11px] font-semibold text-[#23845B]">{{ lang.tr('Barème :', 'العدد :') }}</span>
+                  <div class="bg-[#F7F9FB] rounded-lg p-3.5 space-y-2" [class.border]="b.showBaremeFrame !== false" [class.border-[#CBD2D9]]="b.showBaremeFrame !== false">
+                    @if (editingBlockId() === b.id) {
+                      <div class="flex items-center justify-between gap-2">
+                        <input dir="auto"
+                          type="text"
+                          [value]="b.exerciseTitle || ''"
+                          (input)="updateBlockField(b.id, 'exerciseTitle', $any($event.target).value)"
+                          (keydown.escape)="stopInlineEdit()"
+                          (click)="$event.stopPropagation()"
+                          class="grow bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 text-xs font-semibold text-[#102A43] outline-none" />
                         <input
                           type="number"
-                          [value]="block.exercisePoints || 5"
-                          (input)="updateBlockField(block.id, 'exercisePoints', +$any($event.target).value)"
+                          [value]="b.exercisePoints || 5"
+                          (input)="updateBlockField(b.id, 'exercisePoints', +$any($event.target).value)"
+                          (click)="$event.stopPropagation()"
                           min="1"
                           max="20"
-                          class="w-16 bg-white border border-[#E3ECF2] rounded-[8px] p-2 text-xs font-bold text-center text-[#23845B] outline-none" />
-                        <span class="text-xs text-[#627D98] font-bold">pts</span>
+                          class="w-14 bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 text-xs font-bold text-center text-[#23845B] outline-none" />
                       </div>
-                    </div>
+                      <textarea dir="auto"
+                        [value]="(b.exerciseFormat === 'fill_blanks' ? b.gapText : b.content) || ''"
+                        (input)="updateBlockContent(b.id, $any($event.target).value); b.exerciseFormat === 'fill_blanks' && updateBlockField(b.id, 'gapText', $any($event.target).value)"
+                        (blur)="stopInlineEdit()"
+                        (keydown.escape)="stopInlineEdit()"
+                        (click)="$event.stopPropagation()"
+                        rows="3"
+                        class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-2 text-xs text-[#334E68] outline-none"></textarea>
+                    } @else {
+                      <div class="flex items-center justify-between font-semibold">
+                        <span class="text-[#102A43]">{{ b.exerciseTitle || 'Exercice' }}</span>
+                        <span class="text-[#23845B] font-bold">({{ b.exercisePoints || 5 }} points)</span>
+                      </div>
 
-                    <div class="flex flex-wrap items-center gap-1 pt-1 border-t border-[#E3ECF2]">
-                      <span class="text-[10px] font-semibold text-[#627D98] me-1">{{ lang.tr('Format :', 'النوع :') }}</span>
-                      <button
-                        (click)="setExerciseFormat(block.id, 'free')"
-                        [class]="(block.exerciseFormat || 'free') === 'free' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white text-[#627D98] border border-[#E3ECF2]'"
-                        class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                        {{ lang.tr('Libre', 'حر') }}
-                      </button>
-                      <button
-                        (click)="setExerciseFormat(block.id, 'qcm')"
-                        [class]="block.exerciseFormat === 'qcm' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white text-[#627D98] border border-[#E3ECF2]'"
-                        class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                        {{ lang.tr('QCM', 'خيارات') }}
-                      </button>
-                      <button
-                        (click)="setExerciseFormat(block.id, 'true_false')"
-                        [class]="block.exerciseFormat === 'true_false' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white text-[#627D98] border border-[#E3ECF2]'"
-                        class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                        {{ lang.tr('Vrai-Faux', 'صواب-خطأ') }}
-                      </button>
-                      <button
-                        (click)="setExerciseFormat(block.id, 'fill_blanks')"
-                        [class]="block.exerciseFormat === 'fill_blanks' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white text-[#627D98] border border-[#E3ECF2]'"
-                        class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                        {{ lang.tr('Trous', 'فراغات') }}
-                      </button>
-                      <button
-                        (click)="setExerciseFormat(block.id, 'matching')"
-                        [class]="block.exerciseFormat === 'matching' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white text-[#627D98] border border-[#E3ECF2]'"
-                        class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                        {{ lang.tr('Flèches', 'أسهم') }}
-                      </button>
-                    </div>
-
-                    @switch (block.exerciseFormat || 'free') {
-                      @case ('free') {
-                        <textarea dir="auto"
-                          [value]="block.content"
-                          (input)="updateBlockContent(block.id, $any($event.target).value)"
-                          rows="3"
-                          [placeholder]="lang.t('editorPromptPlaceholder')"
-                          class="w-full bg-white border border-[#E3ECF2] rounded-[8px] p-2.5 text-xs text-[#102A43] outline-none"></textarea>
-                      }
-                      @case ('qcm') {
-                        <div class="space-y-2">
-                          <textarea dir="auto"
-                            [value]="block.content"
-                            (input)="updateBlockContent(block.id, $any($event.target).value)"
-                            rows="2"
-                            [placeholder]="lang.tr('Énoncé de la question QCM...', 'نص سؤال الخيارات المتعددة...')"
-                            class="w-full bg-white border border-[#E3ECF2] rounded-[8px] p-2 text-xs text-[#102A43] outline-none"></textarea>
-                          <div class="space-y-1.5">
-                            <span class="text-[11px] font-semibold text-[#627D98]">{{ lang.tr('Options de réponse :', 'خيارات الإجابة :') }}</span>
-                            @for (opt of block.qcmOptions || []; track $index; let optIdx = $index) {
-                              <div class="flex items-center gap-2">
-                                <button
-                                  (click)="setQcmCorrect(block.id, optIdx)"
-                                  [class]="(block.qcmCorrectIndex ?? 0) === optIdx ? 'bg-[#23845B] text-white' : 'bg-gray-100 text-gray-500'"
-                                  class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 cursor-pointer">
-                                  {{ getOptionLetter(optIdx) }}
-                                </button>
-                                <input
-                                  type="text"
-                                  [value]="opt"
-                                  (input)="updateQcmOption(block.id, optIdx, $any($event.target).value)"
-                                  class="grow bg-white border border-[#E3ECF2] rounded-[6px] p-1.5 text-xs text-[#102A43] outline-none" />
+                      <!-- Format specific preview rendering -->
+                      @switch (b.exerciseFormat || 'free') {
+                        @case ('free') {
+                          <p dir="auto" class="text-[#334E68] whitespace-pre-line">{{ b.content || '…' }}</p>
+                        }
+                        @case ('qcm') {
+                          @if (b.content) {
+                            <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-1">{{ b.content }}</p>
+                          }
+                          <div class="grid grid-cols-2 gap-2 text-xs pt-1">
+                            @for (opt of b.qcmOptions || []; track $index) {
+                              <div class="flex items-start gap-1.5">
+                                <span class="text-sm text-[#486581]">☐</span>
+                                <span class="font-semibold text-[#102A43]">{{ getOptionLetter($index) }})</span>
+                                <span class="text-[#334E68]">{{ opt }}</span>
                               </div>
                             }
                           </div>
-                        </div>
-                      }
-                      @case ('true_false') {
-                        <div class="space-y-2">
-                          <textarea dir="auto"
-                            [value]="block.content"
-                            (input)="updateBlockContent(block.id, $any($event.target).value)"
-                            rows="2"
-                            [placeholder]="lang.tr('Consigne (ex: Réponds par Vrai ou Faux)...', 'التعليمة...')"
-                            class="w-full bg-white border border-[#E3ECF2] rounded-[8px] p-2 text-xs text-[#102A43] outline-none"></textarea>
-                          <div class="space-y-1.5">
-                            @for (st of block.tfStatements || []; track $index; let stIdx = $index) {
-                              <div class="flex items-center gap-2">
-                                <span class="text-xs font-mono text-[#627D98] shrink-0">{{ stIdx + 1 }}.</span>
-                                <input
-                                  type="text"
-                                  [value]="st.text"
-                                  (input)="updateTfStatement(block.id, stIdx, $any($event.target).value)"
-                                  class="grow bg-white border border-[#E3ECF2] rounded-[6px] p-1.5 text-xs text-[#102A43] outline-none" />
-                                <button
-                                  (click)="toggleTfAnswer(block.id, stIdx)"
-                                  [class]="st.answer ? 'bg-[#23845B] text-white' : 'bg-[#D64545] text-white'"
-                                  class="px-2 py-1 rounded text-[10px] font-bold shrink-0 cursor-pointer">
-                                  {{ st.answer ? 'Vrai' : 'Faux' }}
-                                </button>
+                        }
+                        @case ('true_false') {
+                          @if (b.content) {
+                            <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-1.5">{{ b.content }}</p>
+                          }
+                          <div class="space-y-1.5 text-xs">
+                            @for (st of b.tfStatements || []; track $index) {
+                              <div class="flex items-center justify-between py-1 border-b border-dashed border-[#CBD2D9]/60">
+                                <span class="text-[#102A43]">{{ $index + 1 }}. {{ st.text }}</span>
+                                <span class="font-semibold text-[#627D98] shrink-0 ms-2">( صواب / خطأ )</span>
                               </div>
                             }
                           </div>
-                        </div>
+                        }
+                        @case ('fill_blanks') {
+                          <p dir="auto" class="text-[#334E68] whitespace-pre-line leading-relaxed font-mono">
+                            {{ renderGapTextPreview(b.gapText || b.content) }}
+                          </p>
+                        }
+                        @case ('matching') {
+                          @if (b.content) {
+                            <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
+                          }
+                          <div class="grid grid-cols-2 gap-6 text-xs pt-1">
+                            <div class="space-y-3">
+                              @for (pair of b.matchingPairs || []; track $index) {
+                                <div class="p-2 bg-white rounded border border-[#E3ECF2] font-semibold text-[#102A43]">
+                                  {{ $index + 1 }}. {{ pair.left }}
+                                </div>
+                              }
+                            </div>
+                            <div class="space-y-3">
+                              @for (rightText of getShuffledMatchingRights(b.id, b.matchingPairs); track $index) {
+                                <div class="p-2 bg-white rounded border border-[#E3ECF2] text-[#334E68]">
+                                  • {{ rightText }}
+                                </div>
+                              }
+                            </div>
+                          </div>
+                        }
                       }
-                      @case ('fill_blanks') {
-                        <div class="space-y-2">
-                          <textarea dir="auto"
-                            [value]="block.gapText || block.content"
-                            (input)="updateBlockField(block.id, 'gapText', $any($event.target).value); updateBlockContent(block.id, $any($event.target).value)"
-                            rows="3"
-                            [placeholder]="lang.t('editorGapTextPlaceholder')"
-                            class="w-full bg-white border border-[#E3ECF2] rounded-[8px] p-2 text-xs text-[#102A43] outline-none"></textarea>
-                          <p class="text-[11px] text-[#007CC2] italic">💡 {{ lang.tr('Entourez les mots à cacher avec [[mot]]', 'أحط الكلمات المخفية بـ [[كلمة]]') }}</p>
-                        </div>
-                      }
-                      @case ('matching') {
-                        <div class="space-y-2">
-                          <textarea dir="auto"
-                            [value]="block.content"
-                            (input)="updateBlockContent(block.id, $any($event.target).value)"
-                            rows="2"
-                            placeholder="Consigne d'appariement..."
-                            class="w-full bg-white border border-[#E3ECF2] rounded-[8px] p-2 text-xs text-[#102A43] outline-none"></textarea>
-                          @for (pair of block.matchingPairs || []; track $index; let pairIdx = $index) {
-                            <div class="flex items-center gap-2">
-                              <input
-                                type="text"
-                                [value]="pair.left"
-                                (input)="updateMatchingPair(block.id, pairIdx, 'left', $any($event.target).value)"
-                                placeholder="Gauche"
-                                class="w-1/2 bg-white border border-[#E3ECF2] rounded-[6px] p-1.5 text-xs text-[#102A43] outline-none" />
-                              <span class="text-[#007CC2] font-bold">↔</span>
-                              <input
-                                type="text"
-                                [value]="pair.right"
-                                (input)="updateMatchingPair(block.id, pairIdx, 'right', $any($event.target).value)"
-                                placeholder="Droite"
-                                class="w-1/2 bg-white border border-[#E3ECF2] rounded-[6px] p-1.5 text-xs text-[#102A43] outline-none" />
+
+                      <!-- Barème criteria grid (pedagogical) -->
+                      @if (b.showPedagogicalGrid && b.exerciseCriteria?.length) {
+                        <div class="mt-2 pt-2 border-t border-dashed border-[#CBD2D9] space-y-1">
+                          <p class="text-[10px] font-bold uppercase tracking-wider text-[#627D98]">{{ lang.tr('Barème', 'سلّم التقييم') }}</p>
+                          @for (c of b.exerciseCriteria || []; track $index) {
+                            <div class="flex items-center justify-between text-[11px]">
+                              <span class="text-[#334E68]">{{ c.label }}@if (c.detail) { <span class="text-[#627D98]"> — {{ c.detail }}</span> }</span>
+                              <span class="font-bold text-[#23845B] shrink-0 ms-2">{{ c.points }} pts</span>
                             </div>
                           }
                         </div>
                       }
-                    }
 
-                    <!-- Solution & AI Quick Transformations -->
-                    <div class="space-y-1.5 pt-2 border-t border-[#E3ECF2]">
-                      <div class="flex flex-wrap gap-1.5">
-                        <button
-                          type="button"
-                          (click)="transformExercise(block, 'tunisian_context')"
-                          [disabled]="isTransformingId() === block.id"
-                          class="text-[10px] bg-white hover:bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/30 px-2 py-1 rounded-md transition-colors cursor-pointer">
-                          <span>🇹🇳 Vie tunisienne</span>
-                        </button>
-                        <button
-                          type="button"
-                          (click)="transformExercise(block, 'simplify_vocab')"
-                          [disabled]="isTransformingId() === block.id"
-                          class="text-[10px] bg-white hover:bg-[#E8F6EF] text-[#23845B] border border-[#23845B]/30 px-2 py-1 rounded-md transition-colors cursor-pointer">
-                          <span>🌱 Simplifier vocabulaire</span>
-                        </button>
-                        <button
-                          type="button"
-                          (click)="transformExercise(block, 'add_trap')"
-                          [disabled]="isTransformingId() === block.id"
-                          class="text-[10px] bg-white hover:bg-[#FFF4D8] text-[#9E6A00] border border-[#E0AA32]/30 px-2 py-1 rounded-md transition-colors cursor-pointer">
-                          <span>⚠️ Question piège</span>
-                        </button>
-                        <button
-                          type="button"
-                          (click)="transformExercise(block, 'to_qcm')"
-                          [disabled]="isTransformingId() === block.id"
-                          class="text-[10px] bg-white hover:bg-[#EEE8FF] text-[#7C3AED] border border-[#7C3AED]/30 px-2 py-1 rounded-md transition-colors cursor-pointer">
-                          <span>🔄 En QCM</span>
-                        </button>
-
-                        <button
-                          type="button"
-                          (click)="generateVariant(block)"
-                          [disabled]="isVariantLoading()"
-                          class="text-[10px] bg-white hover:bg-[#F3E8FF] text-[#7C3AED] border border-[#7C3AED]/30 px-2 py-1 rounded-md transition-colors cursor-pointer flex items-center gap-1 disabled:opacity-40">
-                          @if (isVariantLoading()) {
-                            <span class="material-icons animate-spin text-[12px]">sync</span>
+                      <!-- Corrigé / Teacher Solution Rendering -->
+                      @if (b.showSolution || b.exerciseSolution) {
+                        <div class="mt-2 pt-2 border-t border-dashed border-[#23845B]/30 bg-[#E8F6EF]/50 p-2 rounded text-[11px] text-[#23845B] space-y-1 font-mono">
+                          <p class="font-bold uppercase tracking-wider">Solution / Corrigé :</p>
+                          @if (b.exerciseSolution) {
+                            <p class="whitespace-pre-line">{{ b.exerciseSolution }}</p>
                           }
-                          <span>{{ lang.tr('Variante IA', 'نسخة بديلة بالذكاء') }}</span>
-                        </button>
-                      </div>
-
-                      @if (isTransformingId() === block.id) {
-                        <div class="flex items-center gap-1.5 text-[10px] text-[#007CC2] italic pt-1">
-                          <span class="material-icons animate-spin text-[12px]">sync</span>
-                          <span>{{ lang.tr('Transformation IA en cours...', 'جارٍ التحويل بالذكاء الاصطناعي...') }}</span>
                         </div>
                       }
-                    </div>
+                    }
                   </div>
                 }
                 @case ('callout') {
-                  <div class="bg-[#E8F6EF] p-3.5 rounded-[12px] border border-[#23845B]/30 space-y-2">
-                    <input dir="auto"
-                      type="text"
-                      [value]="block.calloutTitle || 'Conseil Pédagogique'"
-                      (input)="updateBlockField(block.id, 'calloutTitle', $any($event.target).value)"
-                      class="w-full bg-white border border-[#23845B]/30 rounded-[8px] p-1.5 text-xs font-semibold text-[#23845B] outline-none" />
-                    <textarea dir="auto"
-                      [value]="block.content"
-                      (input)="updateBlockContent(block.id, $any($event.target).value)"
-                      rows="2"
-                      placeholder="Rédigez la règle essentielle ou le conseil..."
-                      class="w-full bg-white border border-[#23845B]/30 rounded-[8px] p-2 text-xs text-[#102A43] outline-none"></textarea>
-                  </div>
-                }
-                @case ('image') {
-                  <div class="space-y-3 bg-[#F7F9FB] p-3.5 rounded-[12px] border border-[#E3ECF2]">
-                    @if (block.imageUrl) {
-                      <div class="relative rounded-lg overflow-hidden border border-[#E3ECF2]">
-                        <img [src]="block.imageUrl" alt="Illustration" class="w-full h-48 object-cover" />
-                        <button
-                          (click)="updateBlockField(block.id, 'imageUrl', '')"
-                          class="absolute top-2 right-2 bg-black/60 hover:bg-black text-white p-1 rounded-full cursor-pointer">
-                          <span class="material-icons text-xs">close</span>
-                        </button>
-                      </div>
-                    } @else {
-                      <div class="border-2 border-dashed border-[#E3ECF2] rounded-lg p-4 text-center bg-white">
-                        <label class="cursor-pointer block">
-                          <span class="material-icons text-2xl text-[#007CC2]">add_photo_alternate</span>
-                          <p class="text-xs font-semibold text-[#102A43] mt-1">
-                            {{ lang.tr('Uploader une illustration (Stockage VPS direct)', 'رفع صورة توضيحية من الجهاز') }}
-                          </p>
-                          <input
-                            type="file"
-                            (change)="handleBlockImageUpload(block.id, $event)"
-                            accept="image/png,image/jpeg,image/webp"
-                            class="hidden" />
-                        </label>
-                      </div>
-                    }
-                    <input dir="auto"
-                      type="text"
-                      [value]="block.imageCaption || ''"
-                      (input)="updateBlockField(block.id, 'imageCaption', $any($event.target).value)"
-                      placeholder="Légende de l'image..."
-                      class="w-full bg-white border border-[#E3ECF2] rounded-[8px] p-2 text-xs text-[#102A43] outline-none" />
-                  </div>
-                }
-                @case ('divider') {
-                  <div class="py-2">
-                    <hr class="border-t-2 border-dashed border-[#E3ECF2]" />
-                  </div>
-                }
-              }
-            </div>
-
-            <!-- Inline insert between blocks -->
-            @if (!$last) {
-              <div class="relative h-3 group/ins flex items-center justify-center -my-1.5">
-                <button
-                  type="button"
-                  (click)="activeInsertIndex.set(activeInsertIndex() === idx ? null : idx)"
-                  class="opacity-0 group-hover/ins:opacity-100 focus:opacity-100 w-6 h-6 rounded-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center shadow-sm transition-all cursor-pointer z-10"
-                  [title]="lang.tr('Insérer un bloc ici', 'إدراج كتلة هنا')"
-                  aria-label="Insérer un bloc">
-                  <span class="material-icons text-sm">{{ activeInsertIndex() === idx ? 'close' : 'add' }}</span>
-                </button>
-                @if (activeInsertIndex() === idx) {
-                  <div class="absolute top-7 start-1/2 -translate-x-1/2 rtl:translate-x-1/2 bg-white border border-[#E7DFCF] rounded-xl shadow-md p-1.5 flex items-center gap-1 z-30">
-                    <button (click)="insertBlockAt(idx, 'paragraph')" class="px-2.5 py-1.5 rounded-lg text-xs text-[#14251D] hover:bg-[#F2ECDE] flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap">
-                      <span class="material-icons text-sm">notes</span>{{ lang.tr('Texte', 'نص') }}
-                    </button>
-                    <button (click)="insertBlockAt(idx, 'heading2')" class="px-2.5 py-1.5 rounded-lg text-xs text-[#14251D] hover:bg-[#F2ECDE] flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap">
-                      <span class="material-icons text-sm">text_fields</span>{{ lang.tr('Titre', 'عنوان') }}
-                    </button>
-                    @if (studioShell() === 'A') {
-                      <button (click)="insertBlockAt(idx, 'exercise')" class="px-2.5 py-1.5 rounded-lg text-xs text-[#1B4332] hover:bg-[#F2ECDE] flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap">
-                        <span class="material-icons text-sm">assignment</span>{{ lang.tr('Exercice', 'تمرين') }}
-                      </button>
-                      <button (click)="insertBlockAt(idx, 'callout')" class="px-2.5 py-1.5 rounded-lg text-xs text-[#1B4332] hover:bg-[#F2ECDE] flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap">
-                        <span class="material-icons text-sm">lightbulb</span>{{ lang.tr('Conseil', 'ملاحظة') }}
-                      </button>
-                    }
-                  </div>
-                }
-              </div>
-            }
-          }
-        </div>
-      </div>
-    }
-
-    <!-- RIGHT COLUMN / FULL WIDTH: LIVE A4 PRINT CANVAS PREVIEW -->
-    @if (viewMode() === 'preview' || viewMode() === 'split') {
-      <div class="space-y-4 max-w-4xl mx-auto w-full">
-        <!-- LIVE A4 PAPER CONTAINER -->
-        <div id="printable-document" class="print-document bg-white rounded-xl p-8 sm:p-12 border border-[#CBD2D9] text-[#102A43] relative overflow-hidden min-h-[840px] space-y-6">
-          
-          <!-- 45 DEGREE WATERMARK -->
-          <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none rotate-[-25deg]">
-            <span class="text-5xl font-black uppercase text-[#007CC2] tracking-widest text-center leading-tight">
-              MADRASATI TN <br /> {{ docWatermark() }}
-            </span>
-          </div>
-
-          <!-- DUAL-MODE A4 HEADER -->
-          @if (isParentMode()) {
-            <!-- Parent Home Practice Header -->
-            <div class="border-b-2 border-[#E0AA32] pb-4">
-              <div class="flex items-center justify-between text-xs">
-                <div class="flex items-center gap-2">
-                  <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] border border-[#E0AA32]/50 text-[#9E6A00] flex items-center justify-center font-bold">
-                    <span class="material-icons text-base">home</span>
-                  </div>
-                  <div>
-                    <p class="font-bold text-[#102A43] text-sm">
-                      {{ lang.tr('Cahier d’Entraînement Maison', 'دفتر التمارين المنزلية') }}
-                    </p>
-                    <p class="text-[11px] text-[#627D98]">Madrasati TN • {{ docSubject() }}</p>
-                  </div>
-                </div>
-
-                <div class="text-center font-bold">
-                  <p class="font-display text-base text-[#007CC2]">{{ docTitle() || 'Fiche de Révision' }}</p>
-                  <span class="inline-block bg-[#E8F5FC] text-[#007CC2] text-[10px] px-2 py-0.5 rounded-full font-semibold">
-                    {{ docGrade() }}
-                  </span>
-                </div>
-
-                <div class="text-right text-xs text-[#627D98] leading-tight">
-                  <p>{{ docTrimester() }}</p>
-                  <p class="text-[10px]">Année {{ docSchoolYear() }}</p>
-                </div>
-              </div>
-
-              <!-- Child Personalized Dedication Box -->
-              <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] flex items-center justify-between text-xs">
-                <p class="font-semibold text-[#102A43]">
-                  {{ lang.tr('Dédié à :', 'مخصص لـ :') }} <span class="font-bold text-[#007CC2]">{{ activeChildName() || 'Mon Enfant' }}</span>
-                </p>
-                <p class="text-[11px] text-[#627D98] italic">
-                  {{ lang.tr('🌟 Travaille à ton rythme et avec confiance !', '🌟 ثابر وتقدم بثقة واجتهاد !') }}
-                </p>
-              </div>
-            </div>
-          } @else if (hasCartoucheBlock()) {
-            <!-- Official Republican Cartouche for Teachers -->
-            <div class="border-b-2 border-[#102A43] pb-4">
-              <div class="flex items-center justify-between text-xs">
-                <div class="text-left font-bold leading-tight">
-                  <p>الجمهورية التونسية</p>
-                  <p>وزارة التربية والتعليم</p>
-                  <p class="text-[10px] text-[#486581] font-normal">{{ docSchool() }}</p>
-                </div>
-
-                <div class="text-center font-bold">
-                  <p class="font-display text-lg text-[#007CC2] font-semibold">{{ docTitle() || 'Évaluation & Devoir' }}</p>
-                  <p class="text-xs text-[#486581]">{{ docGrade() }} • {{ docSubject() }}</p>
-                  @if (totalExamPoints() > 0) {
-                    <p class="text-[11px] font-bold text-[#23845B] mt-0.5">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</p>
-                  }
-                </div>
-
-                <div class="text-right text-xs text-[#334E68] leading-tight">
-                  <p>{{ docTrimester() }}</p>
-                  <p>السنة الدراسية: {{ docSchoolYear() }}</p>
-                </div>
-              </div>
-
-              <!-- Student Identification Box -->
-              <div class="mt-4 pt-2.5 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
-                <p>الاسم واللقب: ....................................</p>
-                <p>القسم: {{ docGrade() }}</p>
-                <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
-              </div>
-            </div>
-          } @else {
-            <!-- Standard Header if no Cartouche -->
-            <div class="border-b border-[#E3ECF2] pb-3 flex items-center justify-between text-xs">
-              <div>
-                <h2 class="font-display font-bold text-lg text-[#102A43]">{{ docTitle() || 'Document Pédagogique' }}</h2>
-                <p class="text-[#627D98]">{{ docSubject() }} — {{ docGrade() }}</p>
-              </div>
-              <div class="text-right">
-                <span class="text-[11px] text-[#627D98] block">{{ docTrimester() }}</span>
-                @if (totalExamPoints() > 0) {
-                  <span class="text-[11px] font-bold text-[#23845B]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
-                }
-              </div>
-            </div>
-          }
-
-          <!-- RENDERED BLOCKS PREVIEW & INLINE EDITING -->
-          <div class="space-y-4 text-xs leading-relaxed relative z-10">
-            @for (b of blocks(); track b.id; let idx = $index) {
-              
-              <!-- NOTION/GAMMA STYLE INLINE HOVER DIVIDER (Top of block) -->
-              <div class="canvas-insert-divider group/divider print:hidden">
-                <button
-                  type="button"
-                  (click)="activeInsertIndex.set(activeInsertIndex() === (idx - 1) ? null : (idx - 1))"
-                  class="opacity-0 group-hover/divider:opacity-100 focus:opacity-100 transition-opacity bg-white hover:bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/40 rounded-full w-6 h-6 flex items-center justify-center shadow-xs cursor-pointer z-30"
-                  [title]="lang.tr('Insérer un élément ici', 'إدراج عنصر هنا')">
-                  <span class="material-icons text-sm">add</span>
-                </button>
-
-                <!-- Insertion Popover Menu -->
-                @if (activeInsertIndex() === (idx - 1)) {
-                  <div class="absolute top-7 bg-white rounded-xl border border-[#CBD2D9] shadow-xl p-1.5 flex items-center gap-1 z-40 animate-fade-in">
-                    <button
-                      (click)="insertBlockAt(idx - 1, 'exercise')"
-                      class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F5FC] text-[#007CC2] hover:bg-[#D7E7F2] flex items-center gap-1 cursor-pointer">
-                      <span class="material-icons text-xs">assignment</span>
-                      <span>+ {{ lang.tr('Exercice', 'تمرين') }}</span>
-                    </button>
-                    <button
-                      (click)="insertBlockAt(idx - 1, 'paragraph')"
-                      class="px-2.5 py-1 rounded-lg text-xs font-medium text-[#102A43] hover:bg-gray-100 flex items-center gap-1 cursor-pointer">
-                      <span class="material-icons text-xs">notes</span>
-                      <span>+ {{ lang.tr('Texte', 'نص') }}</span>
-                    </button>
-                    <button
-                      (click)="insertBlockAt(idx - 1, 'callout')"
-                      class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F6EF] text-[#23845B] hover:bg-[#D0EFE2] flex items-center gap-1 cursor-pointer">
-                      <span class="material-icons text-xs">lightbulb</span>
-                      <span>+ {{ lang.tr('Conseil', 'نصيحة') }}</span>
-                    </button>
-                    <button
-                      (click)="activeInsertIndex.set(null); openAiPromptModal()"
-                      class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#E0AA32] text-[#0B2947] hover:bg-[#D19A24] flex items-center gap-1 cursor-pointer">
-                      <span class="material-icons text-xs">auto_awesome</span>
-                      <span>{{ lang.tr('IA', 'ذكاء اصطناعي') }}</span>
-                    </button>
-                  </div>
-                }
-              </div>
-
-              <!-- BLOCK CONTAINER WITH HOVER ACTIONS -->
-              <div
-                (click)="startInlineEdit(b)"
-                (keydown.enter)="startInlineEdit(b)"
-                [tabindex]="editingBlockId() === b.id ? -1 : 0"
-                role="button"
-                [class.cursor-text]="isInlineEditable(b)"
-                class="group/pv relative rounded-md outline-none transition-shadow print:shadow-none p-1 -m-1"
-                [class.hover:ring-1]="isInlineEditable(b) && editingBlockId() !== b.id"
-                [class.hover:ring-[#007CC2]]="isInlineEditable(b) && editingBlockId() !== b.id"
-                [class.ring-2]="editingBlockId() === b.id"
-                [class.ring-[#007CC2]]="editingBlockId() === b.id"
-                [attr.data-editing]="editingBlockId() === b.id ? 'true' : null">
-
-                <!-- Block Floating Quick Actions (Trash / Duplicate) -->
-                <div class="absolute -top-3.5 right-2 z-20 hidden group-hover/pv:flex items-center gap-1 bg-white border border-[#CBD2D9] rounded-lg shadow-sm px-1.5 py-0.5 print:hidden">
-                  <button
-                    (click)="$event.stopPropagation(); duplicateBlock(idx)"
-                    class="p-0.5 text-[#627D98] hover:text-[#007CC2] cursor-pointer"
-                    [title]="lang.tr('Dupliquer', 'مضاعفة')">
-                    <span class="material-icons text-[14px]">content_copy</span>
-                  </button>
-                  <button
-                    (click)="$event.stopPropagation(); deleteBlockById(b.id)"
-                    class="p-0.5 text-[#D64545] hover:opacity-80 cursor-pointer"
-                    [title]="lang.tr('Supprimer', 'حذف')">
-                    <span class="material-icons text-[14px]">delete</span>
-                  </button>
-                </div>
-
-                @switch (b.type) {
-                  @case ('paragraph') {
+                  <div class="bg-[#E8F6EF] rounded-lg p-3 border-s-4 border-[#23845B] space-y-1">
                     @if (editingBlockId() === b.id) {
+                      <input dir="auto"
+                        type="text"
+                        [value]="b.calloutTitle || ''"
+                        (input)="updateBlockField(b.id, 'calloutTitle', $any($event.target).value)"
+                        (keydown.escape)="stopInlineEdit()"
+                        (click)="$event.stopPropagation()"
+                        class="w-full bg-white border border-[#23845B]/40 rounded p-1.5 text-xs font-semibold text-[#23845B] outline-none" />
                       <textarea dir="auto"
                         [value]="b.content"
                         (input)="updateBlockContent(b.id, $any($event.target).value)"
                         (blur)="stopInlineEdit()"
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
-                        rows="3"
-                        class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-2 text-xs text-[#102A43] outline-none leading-relaxed"></textarea>
+                        rows="2"
+                        class="w-full bg-white border border-[#23845B]/40 rounded p-2 text-xs text-[#102A43] outline-none"></textarea>
                     } @else {
-                      <p dir="auto" class="text-[#102A43] whitespace-pre-line min-h-[1em]">{{ b.content || '…' }}</p>
+                      <p class="font-semibold text-[#23845B]">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
+                      <p dir="auto" class="text-[#102A43]">{{ b.content || '…' }}</p>
                     }
-                  }
-                  @case ('heading1') {
-                    @if (editingBlockId() === b.id) {
-                      <input dir="auto"
-                        type="text"
-                        [value]="b.content"
-                        (input)="updateBlockContent(b.id, $any($event.target).value)"
-                        (blur)="stopInlineEdit()"
-                        (keydown.escape)="stopInlineEdit()"
-                        (keydown.enter)="stopInlineEdit()"
-                        (click)="$event.stopPropagation()"
-                        class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-display font-bold text-base text-[#102A43] outline-none" />
-                    } @else {
-                      <h2 dir="auto" class="font-display font-bold text-base text-[#102A43] pt-2 border-b border-[#102A43]/20 pb-1">{{ b.content || '…' }}</h2>
-                    }
-                  }
-                  @case ('heading2') {
-                    @if (editingBlockId() === b.id) {
-                      <input dir="auto"
-                        type="text"
-                        [value]="b.content"
-                        (input)="updateBlockContent(b.id, $any($event.target).value)"
-                        (blur)="stopInlineEdit()"
-                        (keydown.escape)="stopInlineEdit()"
-                        (keydown.enter)="stopInlineEdit()"
-                        (click)="$event.stopPropagation()"
-                        class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-display font-semibold text-sm text-[#007CC2] outline-none" />
-                    } @else {
-                      <h3 dir="auto" class="font-display font-semibold text-sm text-[#007CC2] pt-1">{{ b.content || '…' }}</h3>
-                    }
-                  }
-                  @case ('heading3') {
-                    @if (editingBlockId() === b.id) {
-                      <input dir="auto"
-                        type="text"
-                        [value]="b.content"
-                        (input)="updateBlockContent(b.id, $any($event.target).value)"
-                        (blur)="stopInlineEdit()"
-                        (keydown.escape)="stopInlineEdit()"
-                        (keydown.enter)="stopInlineEdit()"
-                        (click)="$event.stopPropagation()"
-                        class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-semibold text-xs text-[#102A43] outline-none" />
-                    } @else {
-                      <h4 dir="auto" class="font-semibold text-xs text-[#102A43]">{{ b.content || '…' }}</h4>
-                    }
-                  }
-                  @case ('exercise') {
-                    <div class="bg-[#F7F9FB] rounded-lg p-3.5 border border-[#CBD2D9] space-y-2">
-                      @if (editingBlockId() === b.id) {
-                        <div class="flex items-center justify-between gap-2">
-                          <input dir="auto"
-                            type="text"
-                            [value]="b.exerciseTitle || ''"
-                            (input)="updateBlockField(b.id, 'exerciseTitle', $any($event.target).value)"
-                            (keydown.escape)="stopInlineEdit()"
-                            (click)="$event.stopPropagation()"
-                            class="grow bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 text-xs font-semibold text-[#102A43] outline-none" />
-                          <input
-                            type="number"
-                            [value]="b.exercisePoints || 5"
-                            (input)="updateBlockField(b.id, 'exercisePoints', +$any($event.target).value)"
-                            (click)="$event.stopPropagation()"
-                            min="1"
-                            max="20"
-                            class="w-14 bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 text-xs font-bold text-center text-[#23845B] outline-none" />
-                        </div>
-                        <textarea dir="auto"
-                          [value]="(b.exerciseFormat === 'fill_blanks' ? b.gapText : b.content) || ''"
-                          (input)="updateBlockContent(b.id, $any($event.target).value); b.exerciseFormat === 'fill_blanks' && updateBlockField(b.id, 'gapText', $any($event.target).value)"
-                          (blur)="stopInlineEdit()"
-                          (keydown.escape)="stopInlineEdit()"
-                          (click)="$event.stopPropagation()"
-                          rows="3"
-                          class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-2 text-xs text-[#334E68] outline-none"></textarea>
-                      } @else {
-                        <div class="flex items-center justify-between font-semibold">
-                          <span class="text-[#102A43]">{{ b.exerciseTitle || 'Exercice' }}</span>
-                          <span class="text-[#23845B] font-bold">({{ b.exercisePoints || 5 }} points)</span>
-                        </div>
-
-                        <!-- Format specific preview rendering -->
-                        @switch (b.exerciseFormat || 'free') {
-                          @case ('free') {
-                            <p dir="auto" class="text-[#334E68] whitespace-pre-line">{{ b.content || '…' }}</p>
-                          }
-                          @case ('qcm') {
-                            @if (b.content) {
-                              <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-1">{{ b.content }}</p>
-                            }
-                            <div class="grid grid-cols-2 gap-2 text-xs pt-1">
-                              @for (opt of b.qcmOptions || []; track $index) {
-                                <div class="flex items-start gap-1.5">
-                                  <span class="text-sm text-[#486581]">☐</span>
-                                  <span class="font-semibold text-[#102A43]">{{ getOptionLetter($index) }})</span>
-                                  <span class="text-[#334E68]">{{ opt }}</span>
-                                </div>
-                              }
-                            </div>
-                          }
-                          @case ('true_false') {
-                            @if (b.content) {
-                              <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-1.5">{{ b.content }}</p>
-                            }
-                            <div class="space-y-1.5 text-xs">
-                              @for (st of b.tfStatements || []; track $index) {
-                                <div class="flex items-center justify-between py-1 border-b border-dashed border-[#CBD2D9]/60">
-                                  <span class="text-[#102A43]">{{ $index + 1 }}. {{ st.text }}</span>
-                                  <span class="font-semibold text-[#627D98] shrink-0 ms-2">( صواب / خطأ )</span>
-                                </div>
-                              }
-                            </div>
-                          }
-                          @case ('fill_blanks') {
-                            <p dir="auto" class="text-[#334E68] whitespace-pre-line leading-relaxed font-mono">
-                              {{ renderGapTextPreview(b.gapText || b.content) }}
-                            </p>
-                          }
-                          @case ('matching') {
-                            @if (b.content) {
-                              <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
-                            }
-                            <div class="grid grid-cols-2 gap-6 text-xs pt-1">
-                              <div class="space-y-3">
-                                @for (pair of b.matchingPairs || []; track $index) {
-                                  <div class="p-2 bg-white rounded border border-[#E3ECF2] font-semibold text-[#102A43]">
-                                    {{ $index + 1 }}. {{ pair.left }}
-                                  </div>
-                                }
-                              </div>
-                              <div class="space-y-3">
-                                @for (rightText of getShuffledMatchingRights(b.id, b.matchingPairs); track $index) {
-                                  <div class="p-2 bg-white rounded border border-[#E3ECF2] text-[#334E68]">
-                                    • {{ rightText }}
-                                  </div>
-                                }
-                              </div>
-                            </div>
-                          }
-                        }
-
-                        <!-- Corrigé / Teacher Solution Rendering -->
-                        @if (b.showSolution || b.exerciseSolution) {
-                          <div class="mt-2 pt-2 border-t border-dashed border-[#23845B]/30 bg-[#E8F6EF]/50 p-2 rounded text-[11px] text-[#23845B] space-y-1 font-mono">
-                            <p class="font-bold uppercase tracking-wider">Solution / Corrigé :</p>
-                            @if (b.exerciseSolution) {
-                              <p class="whitespace-pre-line">{{ b.exerciseSolution }}</p>
-                            }
-                          </div>
-                        }
+                  </div>
+                }
+                @case ('image') {
+                  @if (b.imageUrl) {
+                    <div class="text-center py-2">
+                      <img [src]="b.imageUrl" alt="Illustration" class="max-h-48 rounded mx-auto border border-[#E3ECF2]" />
+                      @if (b.imageCaption) {
+                        <p class="text-[10px] text-[#627D98] mt-1 italic">{{ b.imageCaption }}</p>
                       }
                     </div>
-                  }
-                  @case ('callout') {
-                    <div class="bg-[#E8F6EF] rounded-lg p-3 border-s-4 border-[#23845B] space-y-1">
-                      @if (editingBlockId() === b.id) {
-                        <input dir="auto"
-                          type="text"
-                          [value]="b.calloutTitle || ''"
-                          (input)="updateBlockField(b.id, 'calloutTitle', $any($event.target).value)"
-                          (keydown.escape)="stopInlineEdit()"
-                          (click)="$event.stopPropagation()"
-                          class="w-full bg-white border border-[#23845B]/40 rounded p-1.5 text-xs font-semibold text-[#23845B] outline-none" />
-                        <textarea dir="auto"
-                          [value]="b.content"
-                          (input)="updateBlockContent(b.id, $any($event.target).value)"
-                          (blur)="stopInlineEdit()"
-                          (keydown.escape)="stopInlineEdit()"
-                          (click)="$event.stopPropagation()"
-                          rows="2"
-                          class="w-full bg-white border border-[#23845B]/40 rounded p-2 text-xs text-[#102A43] outline-none"></textarea>
-                      } @else {
-                        <p class="font-semibold text-[#23845B]">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
-                        <p dir="auto" class="text-[#102A43]">{{ b.content || '…' }}</p>
-                      }
-                    </div>
-                  }
-                  @case ('image') {
-                    @if (b.imageUrl) {
-                      <div class="text-center py-2">
-                        <img [src]="b.imageUrl" alt="Illustration" class="max-h-48 rounded mx-auto border border-[#E3ECF2]" />
-                        @if (b.imageCaption) {
-                          <p class="text-[10px] text-[#627D98] mt-1 italic">{{ b.imageCaption }}</p>
-                        }
-                      </div>
-                    }
-                  }
-                  @case ('divider') {
-                    <hr class="border-t border-[#E3ECF2]" />
+                  } @else {
+                    <p class="text-[11px] text-[#627D98] italic text-center py-3">{{ lang.tr('Image vide — ajoutez-en une depuis l’Inspecteur.', 'صورة فارغة — أضفها من المفتّش.') }}</p>
                   }
                 }
-              </div>
-            }
-
-            <!-- Canvas Bottom Add Block Button -->
-            <div class="pt-2 print:hidden flex items-center justify-center">
-              <button
-                (click)="insertBlockAt(blocks().length - 1, 'exercise')"
-                class="px-4 py-2.5 rounded-xl border border-dashed border-[#007CC2]/40 hover:border-[#007CC2] bg-[#E8F5FC]/60 hover:bg-[#E8F5FC] text-[#007CC2] font-semibold text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
-                <span class="material-icons text-sm">add</span>
-                <span>{{ lang.tr('Ajouter un exercice suivant', 'إضافة تمرين جديد') }}</span>
-              </button>
+                @case ('divider') {
+                  <hr class="border-t border-[#E3ECF2]" />
+                }
+              }
             </div>
-          </div>
+          }
 
-          <!-- FOOTER WATERMARK & ATTRIBUTION -->
-          <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
-            <span>Attribution : {{ docWatermark() }}</span>
-            <span>Plateforme Nationale Madrasati TN</span>
+          <!-- Canvas Bottom Add Block Button -->
+          <div class="pt-2 print:hidden flex items-center justify-center">
+            <button
+              (click)="insertBlockAt(blocks().length - 1, 'exercise')"
+              class="px-4 py-2.5 rounded-xl border border-dashed border-[#007CC2]/40 hover:border-[#007CC2] bg-[#E8F5FC]/60 hover:bg-[#E8F5FC] text-[#007CC2] font-semibold text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
+              <span class="material-icons text-sm">add</span>
+              <span>{{ lang.tr('Ajouter un exercice suivant', 'إضافة تمرين جديد') }}</span>
+            </button>
           </div>
         </div>
+
+        <!-- FOOTER WATERMARK & ATTRIBUTION -->
+        <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
+          <span>Attribution : {{ docWatermark() }}</span>
+          <span>Plateforme Nationale Madrasati TN</span>
+        </div>
       </div>
-    }
+    </div>
+
+    <!-- ============ RIGHT PANE: OUTLINE TREE + PALETTE ============ -->
+    <aside
+      [class.hidden]="mobilePane() !== 'outline'"
+      class="studio-pane lg:block lg:sticky lg:top-4 bg-white rounded-2xl border border-[#E3ECF2] shadow-sm overflow-hidden print:hidden">
+      <div class="px-4 py-3 border-b border-[#E3ECF2] bg-[#F7F9FB] flex items-center gap-2">
+        <span class="material-icons text-base text-[#007CC2]">account_tree</span>
+        <h2 class="text-xs font-semibold text-[#102A43]">{{ lang.tr('Structure du document', 'هيكل الوثيقة') }}</h2>
+        <span class="ms-auto text-[10px] font-semibold text-[#627D98]">{{ blocks().length }} {{ lang.tr('blocs', 'كتلة') }}</span>
+      </div>
+
+      <div class="max-h-[calc(100vh-260px)] overflow-y-auto">
+        <!-- Outline tree (drag to reorder) -->
+        <ul class="p-2 space-y-1" cdkDropList (cdkDropListDropped)="onBlockDrop($event)">
+          @for (block of blocks(); track block.id; let idx = $index) {
+            <li cdkDrag
+              (click)="selectBlock(block.id)"
+              (keydown.enter)="selectBlock(block.id)"
+              (keydown.space)="selectBlock(block.id)"
+              tabindex="0"
+              role="button"
+              [attr.aria-pressed]="selectedBlockId() === block.id"
+              [class]="selectedBlockId() === block.id ? 'bg-[#E8F5FC] border-[#007CC2]' : 'bg-white border-transparent hover:bg-[#F7F9FB]'"
+              class="group/row flex items-center gap-2 rounded-lg border px-2 py-1.5 cursor-pointer transition-colors outline-none focus-visible:ring-2 focus-visible:ring-[#007CC2]">
+              <div class="editor-block-placeholder" *cdkDragPlaceholder></div>
+              <button cdkDragHandle type="button"
+                (click)="$event.stopPropagation()"
+                class="cursor-grab active:cursor-grabbing text-[#CBD2D9] hover:text-[#007CC2] shrink-0"
+                [title]="lang.tr('Glisser pour réordonner', 'اسحب لإعادة الترتيب')"
+                aria-label="Réordonner">
+                <span class="material-icons text-sm">drag_indicator</span>
+              </button>
+              <span class="material-icons text-sm shrink-0" [class]="selectedBlockId() === block.id ? 'text-[#007CC2]' : 'text-[#627D98]'">{{ getBlockIcon(block.type) }}</span>
+              <span class="min-w-0 grow">
+                <span dir="auto" class="block text-[11px] font-semibold text-[#102A43] truncate">
+                  {{ block.type === 'exercise' ? (block.exerciseTitle || getBlockTypeLabel(block.type)) : (block.content || getBlockTypeLabel(block.type)) }}
+                </span>
+                <span class="block text-[9px] text-[#627D98] uppercase tracking-wide">{{ getBlockTypeLabel(block.type) }}</span>
+              </span>
+              @if (block.type === 'exercise') {
+                <span class="shrink-0 text-[10px] font-bold text-[#23845B] bg-[#E8F6EF] px-1.5 py-0.5 rounded-full">{{ block.exercisePoints || 5 }} pts</span>
+              }
+            </li>
+          }
+        </ul>
+      </div>
+
+      <!-- Add element palette -->
+      <div class="p-3 border-t border-[#E3ECF2] space-y-2 bg-[#FBFCFD]">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-semibold text-[#102A43] flex items-center gap-1.5">
+            <span class="material-icons text-sm text-[#2D6A4F]">add_box</span>{{ lang.tr('Ajouter un élément', 'إضافة عنصر') }}
+          </span>
+          <button (click)="openAiPromptModal()"
+            class="bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] px-2.5 py-1 rounded-lg text-[11px] flex items-center gap-1 font-semibold shadow-sm cursor-pointer">
+            <span class="material-icons text-xs">auto_awesome</span>IA
+          </button>
+        </div>
+        <div class="grid grid-cols-2 gap-1.5">
+          <button (click)="addBlock('heading1')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+            <span class="material-icons text-sm">title</span>{{ lang.tr('Titre', 'عنوان') }}
+          </button>
+          <button (click)="addBlock('paragraph')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+            <span class="material-icons text-sm">notes</span>{{ lang.tr('Texte', 'نص') }}
+          </button>
+          @if (studioShell() === 'A') {
+            <button (click)="addBlock('exercise')" class="bg-[#E8F5FC] hover:bg-[#D7E7F2] text-[#007CC2] border border-[#007CC2]/20 px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-semibold cursor-pointer">
+              <span class="material-icons text-sm">assignment</span>{{ lang.tr('Exercice', 'تمرين') }}
+            </button>
+            <button (click)="addBlock('callout')" class="bg-[#E8F6EF] hover:bg-[#D0EFE2] text-[#23845B] border border-[#23845B]/20 px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-semibold cursor-pointer">
+              <span class="material-icons text-sm">lightbulb</span>{{ lang.tr('Conseil', 'ملاحظة') }}
+            </button>
+          }
+          <button (click)="addBlock('image')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+            <span class="material-icons text-sm">image</span>{{ lang.tr('Image', 'صورة') }}
+          </button>
+          <button (click)="addBlock('divider')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+            <span class="material-icons text-sm">horizontal_rule</span>{{ lang.tr('Séparateur', 'فاصل') }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Total points footer -->
+      @if (totalExamPoints() > 0) {
+        <div class="px-4 py-3 border-t border-[#E3ECF2] bg-[#0B2947] text-white flex items-center justify-between">
+          <span class="text-[11px] font-semibold text-[#8CA9C4]">{{ lang.tr('Total du barème', 'المجموع العام') }}</span>
+          <span class="font-display font-bold text-lg" [class]="totalExamPoints() === 20 ? 'text-[#4ADE80]' : 'text-[#E0AA32]'">{{ totalExamPoints() }} / 20</span>
+        </div>
+      }
+    </aside>
 
   </div>
 

@@ -16,6 +16,14 @@ export type CalloutVariant = 'info' | 'tip' | 'warning' | 'ministry';
 
 export type ExerciseFormat = 'free' | 'qcm' | 'true_false' | 'fill_blanks' | 'matching';
 
+export type ExerciseDifficulty = 'Facile' | 'Moyen' | 'Difficile';
+
+export interface ExerciseCriterion {
+  label: string;
+  points: number;
+  detail?: string;
+}
+
 export interface EditorBlock {
   id: string;
   type: EditorBlockType;
@@ -30,6 +38,10 @@ export interface EditorBlock {
   exerciseTitle?: string;
   exercisePoints?: number;
   exerciseSolution?: string;
+  exerciseDifficulty?: ExerciseDifficulty;
+  exerciseCriteria?: ExerciseCriterion[];
+  showBaremeFrame?: boolean;
+  showPedagogicalGrid?: boolean;
   parentGuide?: string;
   teacherNotes?: string;
   showSolution?: boolean;
