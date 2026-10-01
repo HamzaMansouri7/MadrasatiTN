@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { Location } from '@angular/common';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, GradeLevel, SubjectName, InteractionService } from '@core';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './editor.model';
@@ -15,6 +16,11 @@ export class EditorStudioComponent {
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
   readonly interactionSvc = inject(InteractionService);
+  private readonly location = inject(Location);
+
+  exitStudio(): void {
+    this.location.back();
+  }
 
   readonly viewMode = signal<'editor' | 'split' | 'preview'>('preview');
   readonly showMetadataPanel = signal<boolean>(false);

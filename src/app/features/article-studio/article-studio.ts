@@ -11,7 +11,7 @@ import {
   afterNextRender,
   PLATFORM_ID,
 } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, Location } from '@angular/common';
 import { Editor } from '@tiptap/core';
 import StarterKit from '@tiptap/starter-kit';
 import Image from '@tiptap/extension-image';
@@ -55,6 +55,11 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
   readonly interactionSvc = inject(InteractionService);
+  private readonly location = inject(Location);
+
+  exitStudio(): void {
+    this.location.back();
+  }
 
   tiptapEditor: Editor | null = null;
 
