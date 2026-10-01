@@ -235,6 +235,7 @@ export interface BlogPost {
   authorAvatar?: string;
   subject?: SubjectName;
   grade?: GradeLevel;
+  chapter?: string;
   tags: string[];
   publishedAt: string;
   likesCount: number;

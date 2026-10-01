@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, InteractionService } from '@core';
+import { EducationStore, LanguageService, FirebaseService, InteractionService, TUNISIAN_CURRICULUM_CHAPTERS, CurriculumChapter } from '@core';
 
 export interface ChatMessage {
   role: 'user' | 'assistant';
@@ -11,6 +11,7 @@ export interface ArticleDraft {
   summary: string;
   subject: string;
   grade: string;
+  chapter?: string;
   coverImageUrl?: string;
   contentMarkdown: string;
 }
@@ -36,11 +37,46 @@ export class ArticleStudioComponent {
 
   readonly messages = signal<ChatMessage[]>([]);
 
+  // Curriculum Grounding Selectors
+  readonly selectedGrade = signal<string>('4ème Année');
+  readonly selectedSubject = signal<string>('Mathématiques');
+  readonly selectedChapterId = signal<string>('math-4-ch1');
+
+  readonly gradesList = [
+    { id: '1ère Année', labelAr: 'السنة الأولى', labelFr: '1ère Année' },
+    { id: '2ème Année', labelAr: 'السنة الثانية', labelFr: '2ème Année' },
+    { id: '3ème Année', labelAr: 'السنة الثالثة', labelFr: '3ème Année' },
+    { id: '4ème Année', labelAr: 'السنة الرابعة', labelFr: '4ème Année' },
+    { id: '5ème Année', labelAr: 'السنة الخامسة', labelFr: '5ème Année' },
+    { id: '6ème Année', labelAr: 'السنة السادسة (مناظرة)', labelFr: '6ème Année (Concours)' },
+  ];
+
+  readonly subjectsList = [
+    { id: 'Mathématiques', labelAr: 'الرياضيات', labelFr: 'Mathématiques' },
+    { id: 'اللغة العربية', labelAr: 'اللغة العربية', labelFr: 'Langue Arabe' },
+    { id: 'Français', labelAr: 'الفرنسية', labelFr: 'Français' },
+    { id: 'Éveil Scientifique', labelAr: 'الإيقاظ العلمي', labelFr: 'Éveil Scientifique' },
+    { id: 'Histoire & Géographie', labelAr: 'التاريخ والجغرافيا', labelFr: 'Histoire & Géo' },
+    { id: 'Éducation Islamique', labelAr: 'التربية الإسلامية', labelFr: 'Éducation Islamique' },
+    { id: 'Anglais', labelAr: 'الإنجليزية', labelFr: 'Anglais' },
+  ];
+
+  readonly availableChapters = computed<CurriculumChapter[]>(() => {
+    const gr = this.selectedGrade();
+    const sb = this.selectedSubject();
+    return TUNISIAN_CURRICULUM_CHAPTERS.filter((c) => c.grade === gr && c.subject === sb);
+  });
+
+  readonly activeChapterObj = computed<CurriculumChapter | undefined>(() => {
+    return this.availableChapters().find((c) => c.id === this.selectedChapterId()) || this.availableChapters()[0];
+  });
+
   readonly article = signal<ArticleDraft>({
     title: '',
     summary: '',
-    subject: this.lang.isArabic() ? 'اللغة العربية' : 'Français',
-    grade: this.lang.isArabic() ? 'السنة الرابعة' : '4ème Année',
+    subject: 'Mathématiques',
+    grade: '4ème Année',
+    chapter: 'الأعداد ذات 5 و 6 أرقام: القراءة والكتابة والتفكيك والترتيب',
     coverImageUrl: '',
     contentMarkdown: '',
   });
@@ -50,33 +86,72 @@ export class ArticleStudioComponent {
   constructor() {
     effect(() => {
       const isAr = this.lang.isArabic();
+      const ch = this.activeChapterObj();
+
       // Initialize first message if empty
       if (this.messages().length === 0) {
         this.messages.set([
           {
             role: 'assistant',
             content: isAr
-              ? 'مرحباً بك زميلي المربي ! أنا مساعدك البيداغوجي الذكي. ما هو الموضوع أو المهارة التي ترغب في صياغة مقال أو نصائح حولها اليوم ؟ (مثال: معالجة صعوبات الحساب الذهني، تحسين مهارات التعبير والإنتاج الكتابي، مرافقة الأولياء...)'
-              : 'Bonjour ! Je suis votre co-pilote de rédaction pédagogique. De quel sujet souhaitez-vous traiter aujourd’hui dans votre article ? (Ex: Méthodes de calcul mental, astuces de lecture, aide aux devoirs...)',
+              ? 'مرحباً بك زميلي المربي ! أنا مساعدك البيداغوجي الذكي. حدد من الشريط أعلاه المادة والمحور الرسمي الذي ترغب في معالجته، وسأقترح عليك خططاً تعليمية وصياغات ملهمة مطابقة للبرنامج التونسي.'
+              : 'Bonjour ! Je suis votre co-pilote de rédaction pédagogique. Sélectionnez ci-dessus la matière et le chapitre officiel à traiter pour générer des conseils et contenus parfaitement alignés sur les programmes tunisiens.',
           },
         ]);
       }
 
-      // Initialize suggested chips based on language
-      this.suggestedChips.set(
-        isAr
-          ? [
-              'كيفية تجاوز تعثر التلاميذ في الحساب الذهني (السنوات 3 و 4)',
-              '3 نصائح عملية لمساعدة الولي على تدريب طفله على الإملاء',
-              'خطة بيداغوجية لمراجعة دروس الثلاثي الأول بدون ضغط',
-            ]
-          : [
-              'Comment surmonter le blocage en calcul mental (3ème/4ème)',
-              '3 Astuces pour aider son enfant en dictée',
-              'Conseils pratiques pour la révision du Trimestre 1',
-            ]
-      );
+      // Update chips from active chapter or fallback
+      if (ch) {
+        this.suggestedChips.set(isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr);
+      } else {
+        this.suggestedChips.set(
+          isAr
+            ? [
+                'كيفية تجاوز تعثر التلاميذ في الحساب الذهني (السنوات 3 و 4)',
+                '3 نصائح عملية لمساعدة الولي على تدريب طفله على الإملاء',
+                'خطة بيداغوجية لمراجعة دروس الثلاثي الأول بدون ضغط',
+              ]
+            : [
+                'Comment surmonter le blocage en calcul mental (3ème/4ème)',
+                '3 Astuces pour aider son enfant en dictée',
+                'Conseils pratiques pour la révision du Trimestre 1',
+              ]
+        );
+      }
     });
+  }
+
+  onGradeChange(grade: string) {
+    this.selectedGrade.set(grade);
+    this.article.update((a) => ({ ...a, grade }));
+    this.syncChapterSelection();
+  }
+
+  onSubjectChange(subject: string) {
+    this.selectedSubject.set(subject);
+    this.article.update((a) => ({ ...a, subject }));
+    this.syncChapterSelection();
+  }
+
+  onChapterChange(chapterId: string) {
+    this.selectedChapterId.set(chapterId);
+    const ch = this.availableChapters().find((c) => c.id === chapterId);
+    if (ch) {
+      const isAr = this.lang.isArabic();
+      const chTitle = isAr ? ch.titleAr : ch.titleFr;
+      this.article.update((a) => ({ ...a, chapter: chTitle }));
+      this.suggestedChips.set(isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr);
+    }
+  }
+
+  private syncChapterSelection() {
+    const list = this.availableChapters();
+    if (list.length > 0) {
+      this.onChapterChange(list[0].id);
+    } else {
+      this.selectedChapterId.set('');
+      this.article.update((a) => ({ ...a, chapter: '' }));
+    }
   }
 
   readonly authorName = computed(() => {
@@ -120,6 +195,9 @@ export class ArticleStudioComponent {
           currentArticle: this.article(),
           userPrompt: text,
           language: this.lang.lang(),
+          chapter: this.activeChapterObj()
+            ? (this.lang.isArabic() ? this.activeChapterObj()!.titleAr : this.activeChapterObj()!.titleFr)
+            : (this.article().chapter || ''),
         }),
       });
 
@@ -275,6 +353,7 @@ export class ArticleStudioComponent {
       content,
       subject: art.subject as any,
       grade: art.grade as any,
+      chapter: art.chapter,
       tags: [art.subject, art.grade, isAr ? 'بيداغوجيا' : 'Pédagogie'],
       authorName: this.authorName(),
       authorTitle: isAr ? 'مربٍ معتمد' : 'Enseignant Certifié',

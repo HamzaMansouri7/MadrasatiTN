@@ -825,7 +825,7 @@ Instructions par format :
 // Endpoint: Conversational Article Assistant Co-Pilot
 app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
   try {
-    const { messages = [], currentArticle = {}, userPrompt = '', language = 'ar' } = req.body;
+    const { messages = [], currentArticle = {}, userPrompt = '', language = 'ar', chapter = '' } = req.body;
     if (!ai) {
       res.status(500).json({ error: 'Clé API Gemini non configurée.' });
       return;
@@ -836,9 +836,16 @@ app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
       .join('\n');
 
     const isArabicMode = language === 'ar' || /[\u0600-\u06FF]/.test(userPrompt);
+    const activeChapter = chapter || currentArticle.chapter || '';
 
     const prompt = `Tu es un conseiller pédagogique senior pour l'enseignement primaire en Tunisie (Madrasati TN).
 Tu dialogues avec un enseignant pour co-rédiger un article de blog pédagogique percutant, clair et inspirant, destiné soit à d'autres enseignants, soit aux parents d'élèves.
+
+CADRE CURRICULAIRE OFFICIEL TUNISIEN (CNP) :
+- Matière : ${currentArticle.subject || 'Général'}
+- Niveau scolaire : ${currentArticle.grade || 'Primaire'}
+${activeChapter ? `- Chapitre / Axe ciblé du programme : "${activeChapter}"` : ''}
+Tu dois fonder tes explications, exemples, remédiations et activités sur les compétences requises par le programme officiel du Ministère de l'Éducation tunisien.
 
 RÈGLE LINGUISTIQUE CRITIQUE ET ABSOLUE :
 ${isArabicMode
@@ -860,6 +867,7 @@ Demande actuelle de l'enseignant :
 - Titre : ${currentArticle.title || 'Sans titre'}
 - Matière : ${currentArticle.subject || 'Général'}
 - Niveau scolaire : ${currentArticle.grade || 'Primaire'}
+- Chapitre : ${activeChapter || 'Général'}
 - Résumé : ${currentArticle.summary || ''}
 - Contenu Markdown actuel :
 ${currentArticle.contentMarkdown || '(Vide)'}
