@@ -18,65 +18,65 @@ export interface GeneratedExerciseResult {
 
       <!-- Guest Mode Banner: teacher space is read-only until login -->
       @if (!isAuthed()) {
-        <div class="rounded-[18px] bg-[#FFF4D8] dark:bg-[#3D2E10] border border-[#E0AA32]/50 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="rounded-[18px] bg-[#F2ECDE] border border-[#F2C14E]/50 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div class="flex items-center gap-3">
-            <span class="material-icons text-[#9E6A00] dark:text-[#E0AA32]">lock_person</span>
+            <span class="material-icons text-[#8A5A00]">lock_person</span>
             <div>
-              <p class="text-sm font-bold text-[#102A43] dark:text-white">
+              <p class="text-sm font-bold text-[#14251D]">
                 {{ lang.tr('Mode découverte — Espace Enseignant en lecture seule', 'وضع الاستكشاف — فضاء المعلم للقراءة فقط') }}
               </p>
-              <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+              <p class="text-xs text-[#5B6B60]">
                 {{ lang.tr('Connectez-vous pour publier vos fiches, répondre aux parents et gérer votre profil.', 'سجّل الدخول لنشر وثائقك والإجابة على الأولياء وإدارة ملفك.') }}
               </p>
             </div>
           </div>
           <button
             (click)="store.openLoginModal()"
-            class="bg-[#0B2947] hover:bg-[#102A43] text-white font-bold px-5 py-2.5 rounded-[10px] text-xs cursor-pointer shadow-sm shrink-0">
+            class="bg-[#14251D] hover:bg-[#14251D] text-[#FBF8F1] font-bold px-5 py-2.5 rounded-[10px] text-xs cursor-pointer shadow-sm shrink-0">
             {{ lang.tr('Se connecter / Créer un compte', 'تسجيل الدخول / إنشاء حساب') }}
           </button>
         </div>
       }
 
       <!-- Welcome Header: Institutional Hero -->
-      <div class="rounded-[24px] bg-[#0B2947] text-white p-6 sm:p-7 shadow-sm">
+      <div class="rounded-[24px] bg-[#14251D] text-[#FBF8F1] p-6 sm:p-7 shadow-sm">
         <div class="space-y-5">
           <div class="space-y-3">
             <div class="flex flex-wrap items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 text-[#8CA9C4] text-xs font-medium">
-                <span class="material-icons text-sm text-[#E0AA32]">verified</span>
+              <span class="inline-flex items-center gap-1.5 text-[#9DBBA8] text-xs font-medium">
+                <span class="material-icons text-sm text-[#F2C14E]">verified</span>
                 {{ isFemale()
                   ? lang.tr('Enseignante Certifiée — Éducation Nationale', 'معلمة معتمدة — وزارة التربية والتعليم')
                   : lang.tr('Enseignant Certifié — Éducation Nationale', 'معلم معتمد — وزارة التربية والتعليم') }}
               </span>
 
               @if (firebase.userProfile()?.title || editTitle()) {
-                <span class="bg-[#E0AA32]/15 text-[#E0AA32] text-xs px-2.5 py-0.5 rounded-full font-semibold border border-[#E0AA32]/30">
+                <span class="bg-[#F2C14E]/15 text-[#F2C14E] text-xs px-2.5 py-0.5 rounded-full font-semibold border border-[#F2C14E]/30">
                   {{ firebase.userProfile()?.title || editTitle() }}
                 </span>
               }
 
               @if (firebase.userProfile()?.speciality || editSpeciality()) {
-                <span class="bg-[#007CC2]/20 text-[#8CA9C4] text-xs px-2.5 py-0.5 rounded-full font-medium border border-[#007CC2]/40">
+                <span class="bg-[#2D6A4F]/20 text-[#9DBBA8] text-xs px-2.5 py-0.5 rounded-full font-medium border border-[#2D6A4F]/40">
                   {{ firebase.userProfile()?.speciality || editSpeciality() }}
                 </span>
               }
 
               <button
                 (click)="openProfileModal()"
-                class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white border border-white/15 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer ml-auto">
-                <span class="material-icons text-sm text-[#E0AA32]">badge</span>
+                class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-[#FBF8F1] border border-white/15 text-xs px-3 py-1 rounded-full font-semibold transition-colors cursor-pointer ml-auto">
+                <span class="material-icons text-sm text-[#F2C14E]">badge</span>
                 <span>{{ lang.tr('Mon Profil Public (4.9/5)', 'ملفي المهني (4.9/5)') }}</span>
               </button>
             </div>
 
             <div>
-              <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
+              <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-[#FBF8F1]">
                 {{ teacherGreeting() }}
               </h1>
-              <p class="text-[#D7E7F2] text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
+              <p class="text-[#B7C7BC] text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
                 {{ teacherHeaderSub() }}
-                <span class="font-semibold text-white underline decoration-[#E0AA32] underline-offset-4">{{ store.activeClass().name }}</span>
+                <span class="font-semibold text-[#FBF8F1] underline decoration-[#F2C14E] underline-offset-4">{{ store.activeClass().name }}</span>
                 — {{ store.activeClass().schoolName }}.
               </p>
             </div>
@@ -86,35 +86,35 @@ export interface GeneratedExerciseResult {
           <div class="flex flex-wrap items-center gap-2.5 pt-5 border-t border-white/10">
             <button
               (click)="openStudio()"
-              class="flex items-center gap-1.5 bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              class="flex items-center gap-1.5 bg-[#F2C14E] hover:bg-[#D9A93C] text-[#14251D] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_fix_high</span>
               {{ lang.tr('Studio Examens A4', 'استوديو التحرير والطباعة A4') }}
             </button>
 
             <button
               (click)="openArticleStudio()"
-              class="flex items-center gap-1.5 bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">article</span>
               {{ lang.tr('Rédiger un Article', 'كتابة مقال بيداغوجي') }}
             </button>
 
             <button
               (click)="openStudio()"
-              class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
             </button>
 
             <button
               (click)="openModal('announcement')"
-              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer">
+              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer">
               <span class="material-icons text-base">campaign</span>
               {{ lang.t('addAnnouncementBtn') }}
             </button>
 
             <button
               (click)="openModal('ai')"
-              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer shadow-sm">
+              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_awesome</span>
               {{ lang.t('aiAssistantBtn') }}
             </button>
@@ -124,76 +124,76 @@ export interface GeneratedExerciseResult {
 
       <!-- Metric Cards & Quick Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
-          <div class="h-1.5 bg-[#007CC2]"></div>
+        <div class="bg-white rounded-[18px] border border-[#E7DFCF] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#2D6A4F]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Fiches & Docs A4', 'الوثائق والامتحانات A4') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Fiches & Docs A4', 'الوثائق والامتحانات A4') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#F2ECDE] text-[#2D6A4F] flex items-center justify-center">
                 <span class="material-icons text-lg">menu_book</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.courses().length }}</p>
-              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs text-[#007CC2]">print</span>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.courses().length }}</p>
+              <p class="text-[11px] text-[#5B6B60] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#2D6A4F]">print</span>
                 {{ lang.tr('Prêts à imprimer', 'جاهزة للطباعة والتحميل') }}
               </p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
-          <div class="h-1.5 bg-[#23845B]"></div>
+        <div class="bg-white rounded-[18px] border border-[#E7DFCF] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#2D6A4F]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Articles Pédagogiques', 'المقالات البيداغوجية') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#E8F6EF] dark:bg-[#153B2D] text-[#23845B] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Articles Pédagogiques', 'المقالات البيداغوجية') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#F2ECDE] text-[#2D6A4F] flex items-center justify-center">
                 <span class="material-icons text-lg">article</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.blogPosts().length }}</p>
-              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs text-[#23845B]">groups</span>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.blogPosts().length }}</p>
+              <p class="text-[11px] text-[#5B6B60] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#2D6A4F]">groups</span>
                 {{ lang.tr('Conseils publiés', 'نصائح منشورة للأولياء') }}
               </p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
-          <div class="h-1.5 bg-[#D19A24]"></div>
+        <div class="bg-white rounded-[18px] border border-[#E7DFCF] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#D9A93C]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Questions Parents', 'أسئلة واستفسارات الأولياء') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] dark:bg-[#3D2E10] text-[#D19A24] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Questions Parents', 'أسئلة واستفسارات الأولياء') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#F2ECDE] text-[#D9A93C] flex items-center justify-center">
                 <span class="material-icons text-lg">forum</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">{{ store.questionThreads().length }}</p>
-              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs text-[#D19A24]">mark_chat_read</span>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">{{ store.questionThreads().length }}</p>
+              <p class="text-[11px] text-[#5B6B60] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#D9A93C]">mark_chat_read</span>
                 {{ lang.tr('Demandes de fiches & soutien', 'طلبات مراجعة ووثائق') }}
               </p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
-          <div class="h-1.5 bg-[#D64545]"></div>
+        <div class="bg-white rounded-[18px] border border-[#E7DFCF] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col">
+          <div class="h-1.5 bg-[#C1121F]"></div>
           <div class="p-5 flex flex-col justify-between grow">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-semibold text-[#102A43] dark:text-white">{{ lang.t('statConfirmations') }}</span>
-              <div class="w-8 h-8 rounded-lg bg-[#FDECEC] dark:bg-[#3D1414] text-[#D64545] flex items-center justify-center">
+              <span class="text-xs font-semibold text-[#14251D]">{{ lang.t('statConfirmations') }}</span>
+              <div class="w-8 h-8 rounded-lg bg-[#F2ECDE] text-[#C1121F] flex items-center justify-center">
                 <span class="material-icons text-lg">verified_user</span>
               </div>
             </div>
             <div>
-              <p class="font-display text-3xl font-semibold text-[#102A43] dark:text-white tracking-tight">86%</p>
-              <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] font-medium mt-1 flex items-center gap-1">
-                <span class="material-icons text-xs text-[#D64545]">check_circle</span>
+              <p class="font-display text-3xl font-semibold text-[#14251D] tracking-tight">86%</p>
+              <p class="text-[11px] text-[#5B6B60] font-medium mt-1 flex items-center gap-1">
+                <span class="material-icons text-xs text-[#C1121F]">check_circle</span>
                 {{ lang.tr("Accusés de réception", 'نسبة اطلاع الأولياء') }}
               </p>
             </div>
@@ -202,14 +202,14 @@ export interface GeneratedExerciseResult {
       </div>
 
       <!-- Main Hub Tabs -->
-      <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] border border-[#E3ECF2] dark:border-[#1A3145] overflow-hidden shadow-xs">
+      <div class="bg-white rounded-[24px] border border-[#E7DFCF] overflow-hidden shadow-xs">
 
         <!-- Tab Bar Header with Scope Filter Toggle -->
-        <div class="border-b border-[#E3ECF2] dark:border-[#1A3145] bg-[#F7F9FB] dark:bg-[#152737] px-6 pt-3 flex flex-wrap items-center justify-between gap-3">
+        <div class="border-b border-[#E7DFCF] bg-[#FBF8F1] px-6 pt-3 flex flex-wrap items-center justify-between gap-3">
           <div class="flex flex-wrap gap-2">
             <button
               (click)="activeTab.set('courses')"
-              [class]="activeTab() === 'courses' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              [class]="activeTab() === 'courses' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
               class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
               <span class="material-icons text-base">menu_book</span>
               <span>{{ lang.t('tabTeacherDocs') }} ({{ filteredCourses().length }})</span>
@@ -217,7 +217,7 @@ export interface GeneratedExerciseResult {
 
             <button
               (click)="activeTab.set('blog')"
-              [class]="activeTab() === 'blog' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              [class]="activeTab() === 'blog' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
               class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
               <span class="material-icons text-base">article</span>
               <span>{{ lang.t('tabTeacherBlog') }} ({{ filteredBlogPosts().length }})</span>
@@ -225,7 +225,7 @@ export interface GeneratedExerciseResult {
 
             <button
               (click)="activeTab.set('qa')"
-              [class]="activeTab() === 'qa' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              [class]="activeTab() === 'qa' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
               class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
               <span class="material-icons text-base">forum</span>
               <span>{{ lang.t('tabTeacherQA') }} ({{ store.questionThreads().length }})</span>
@@ -233,7 +233,7 @@ export interface GeneratedExerciseResult {
 
             <button
               (click)="activeTab.set('announcements')"
-              [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white dark:bg-[#0E1D2A] font-semibold shadow-xs' : 'border-transparent text-[#486581] dark:text-[#8CA9C4] font-medium hover:text-[#007CC2]'"
+              [class]="activeTab() === 'announcements' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
               class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
               <span class="material-icons text-base">campaign</span>
               <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
@@ -241,11 +241,11 @@ export interface GeneratedExerciseResult {
           </div>
 
           <!-- Scope Filter: Mes Documents vs Toute la Banque CNP -->
-          <div class="mb-2 bg-[#E3ECF2]/80 dark:bg-[#0E1D2A] p-1 rounded-xl flex items-center gap-1">
+          <div class="mb-2 bg-[#E7DFCF]/80 p-1 rounded-xl flex items-center gap-1">
             <button
               type="button"
               (click)="docScopeFilter.set('mine')"
-              [class]="docScopeFilter() === 'mine' ? 'bg-[#007CC2] text-white font-bold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#102A43] font-medium'"
+              [class]="docScopeFilter() === 'mine' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
               class="px-3 py-1.5 rounded-lg text-xs cursor-pointer transition-all flex items-center gap-1.5">
               <span class="material-icons text-xs">folder_shared</span>
               <span>{{ lang.tr('Mes fiches uniquement', 'منشوراتي فقط') }}</span>
@@ -253,7 +253,7 @@ export interface GeneratedExerciseResult {
             <button
               type="button"
               (click)="docScopeFilter.set('all')"
-              [class]="docScopeFilter() === 'all' ? 'bg-[#007CC2] text-white font-bold shadow-xs' : 'text-[#486581] dark:text-[#8CA9C4] hover:text-[#102A43] font-medium'"
+              [class]="docScopeFilter() === 'all' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D] font-medium'"
               class="px-3 py-1.5 rounded-lg text-xs cursor-pointer transition-all flex items-center gap-1.5">
               <span class="material-icons text-xs">library_books</span>
               <span>{{ lang.tr('Toute la banque CNP', 'جميع وثائق CNP') }}</span>
@@ -269,59 +269,59 @@ export interface GeneratedExerciseResult {
             <div class="space-y-5">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                  <h3 class="font-display font-semibold text-[#14251D] text-base">
                     {{ lang.t('tabTeacherDocs') }}
                   </h3>
-                  <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                  <p class="text-xs text-[#5B6B60]">
                     {{ lang.tr("Publiez des fiches conformes avec filigrane officiel et impression A4 en 1-clic.", 'نشر وثائق وامتحانات مطابقة للبرنامج مع فيليغران رسمي وطباعة A4 فورية.') }}
                   </p>
                 </div>
                 <button
                   (click)="openStudio()"
-                  class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addCourseBtn') }}
                 </button>
               </div>
 
               <div class="grid md:grid-cols-2 gap-4">
                 @for (c of filteredCourses(); track c.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-3 hover:border-[#007CC2]/40 transition-colors">
+                  <div class="bg-[#FBF8F1] rounded-[18px] p-5 border border-[#E7DFCF] flex flex-col justify-between space-y-3 hover:border-[#2D6A4F]/40 transition-colors">
                     <div class="space-y-2">
                       <div class="flex items-center justify-between">
                         <div class="flex items-center gap-1.5">
-                          <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                             {{ c.subject }}
                           </span>
                           @if (c.grade) {
-                            <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                            <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
                               {{ c.grade }}
                             </span>
                           }
                         </div>
-                        <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">{{ c.createdAt }}</span>
+                        <span class="text-[11px] text-[#5B6B60]">{{ c.createdAt }}</span>
                       </div>
-                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-sm leading-snug">{{ c.title }}</h4>
-                      <p class="text-xs text-[#486581] dark:text-[#8CA9C4] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
+                      <h4 class="font-display font-semibold text-[#14251D] text-sm leading-snug">{{ c.title }}</h4>
+                      <p class="text-xs text-[#5B6B60] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
 
                       @if (c.pdfUrl) {
-                        <div class="inline-flex items-center gap-1 text-[11px] text-[#007CC2] font-semibold bg-[#E8F5FC] dark:bg-[#102A43] px-2.5 py-1 rounded-md border border-[#007CC2]/20">
+                        <div class="inline-flex items-center gap-1 text-[11px] text-[#2D6A4F] font-semibold bg-[#F2ECDE] px-2.5 py-1 rounded-md border border-[#2D6A4F]/20">
                           <span class="material-icons text-xs">picture_as_pdf</span>
                           <span>{{ lang.tr('Fichier VPS / Document joint', 'ملف مرفق على الخادم') }}</span>
                         </div>
                       }
                     </div>
 
-                    <div class="pt-3 border-t border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between gap-2">
+                    <div class="pt-3 border-t border-[#E7DFCF] flex items-center justify-between gap-2">
                       <div class="flex items-center gap-2">
                         <button
                           (click)="openPrintCourseModal(c)"
-                          class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 cursor-pointer shadow-xs">
+                          class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 cursor-pointer shadow-xs">
                           <span class="material-icons text-xs">print</span>
                           {{ lang.t('printA4Btn') }}
                         </button>
                         <button
                           (click)="copyDocLink(c)"
-                          class="bg-[#F7F9FB] dark:bg-[#0E1D2A] hover:bg-[#E3ECF2] text-[#486581] dark:text-[#8CA9C4] font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E3ECF2] dark:border-[#1A3145] transition-colors cursor-pointer">
+                          class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#5B6B60] font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E7DFCF] transition-colors cursor-pointer">
                           <span class="material-icons text-xs">link</span>
                           {{ lang.tr('Copier le lien', 'نسخ الرابط') }}
                         </button>
@@ -329,7 +329,7 @@ export interface GeneratedExerciseResult {
 
                       <button
                         (click)="openPrintCourseModal(c)"
-                        class="text-xs font-semibold text-[#102A43] dark:text-white hover:text-[#007CC2] flex items-center gap-1 cursor-pointer">
+                        class="text-xs font-semibold text-[#14251D] hover:text-[#2D6A4F] flex items-center gap-1 cursor-pointer">
                         {{ lang.tr('Aperçu', 'معاينة') }} <span class="material-icons text-sm">arrow_forward</span>
                       </button>
                     </div>
@@ -344,53 +344,53 @@ export interface GeneratedExerciseResult {
             <div class="space-y-5">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                  <h3 class="font-display font-semibold text-[#14251D] text-base">
                     {{ lang.t('tabTeacherBlog') }}
                   </h3>
-                  <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                  <p class="text-xs text-[#5B6B60]">
                     {{ lang.tr("Partagez vos méthodes d'enseignement, conseils de révision et réflexions avec la communauté des parents.", 'شارك طرائق التدريس، نصائح المراجعة والتوجيهات البيداغوجية مع مجتمع الأولياء.') }}
                   </p>
                 </div>
                 <button
                   (click)="openStudio()"
-                  class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">edit_note</span> {{ lang.t('writeArticleBtn') }}
                 </button>
               </div>
 
               <div class="grid md:grid-cols-2 gap-5">
                 @for (post of filteredBlogPosts(); track post.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[20px] p-6 border border-[#E3ECF2] dark:border-[#1A3145] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
+                  <div class="bg-[#FBF8F1] rounded-[20px] p-6 border border-[#E7DFCF] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
                     <div class="space-y-3">
                       <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2">
-                          <span class="bg-[#23845B]/10 text-[#23845B] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                             {{ post.subject || 'Pédagogie' }}
                           </span>
                           @if (post.grade) {
-                            <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                            <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
                               {{ post.grade }}
                             </span>
                           }
                         </div>
-                        <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1">
+                        <span class="text-[11px] text-[#5B6B60] flex items-center gap-1">
                           <span class="material-icons text-xs">schedule</span>
                           {{ post.readTimeMinutes }} min {{ lang.tr('de lecture', 'قراءة') }}
                         </span>
                       </div>
 
-                      <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-base leading-snug">
+                      <h4 class="font-display font-semibold text-[#14251D] text-base leading-snug">
                         {{ post.title }}
                       </h4>
 
-                      <p class="text-xs text-[#486581] dark:text-[#8CA9C4] leading-relaxed line-clamp-3">
+                      <p class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3">
                         {{ post.excerpt }}
                       </p>
 
                       <!-- Tags -->
                       <div class="flex flex-wrap gap-1.5 pt-1">
                         @for (tag of post.tags; track tag) {
-                          <span class="text-[10px] bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] px-2 py-0.5 rounded-md border border-[#E3ECF2] dark:border-[#1A3145]">
+                          <span class="text-[10px] bg-white text-[#5B6B60] px-2 py-0.5 rounded-md border border-[#E7DFCF]">
                             #{{ tag }}
                           </span>
                         }
@@ -398,15 +398,15 @@ export interface GeneratedExerciseResult {
                     </div>
 
                     <!-- Post Footer -->
-                    <div class="pt-4 border-t border-[#E3ECF2] dark:border-[#1A3145] flex items-center justify-between gap-3 text-xs">
+                    <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between gap-3 text-xs">
                       <div class="flex items-center gap-3">
                         <button
                           (click)="store.likeBlogPost(post.id)"
-                          class="flex items-center gap-1 text-[#D64545] font-semibold hover:opacity-80 cursor-pointer bg-white dark:bg-[#0E1D2A] px-2.5 py-1 rounded-full border border-[#E3ECF2] dark:border-[#1A3145]">
+                          class="flex items-center gap-1 text-[#C1121F] font-semibold hover:opacity-80 cursor-pointer bg-white px-2.5 py-1 rounded-full border border-[#E7DFCF]">
                           <span class="material-icons text-sm">favorite</span>
                           <span>{{ post.likesCount }}</span>
                         </button>
-                        <span class="text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1 font-medium">
+                        <span class="text-[#5B6B60] flex items-center gap-1 font-medium">
                           <span class="material-icons text-sm">chat_bubble_outline</span>
                           {{ post.comments.length }} {{ lang.tr('commentaires', 'تعليقات') }}
                         </span>
@@ -414,7 +414,7 @@ export interface GeneratedExerciseResult {
 
                       <button
                         (click)="selectedArticleDetail.set(post)"
-                        class="text-[#007CC2] font-semibold hover:underline flex items-center gap-1 cursor-pointer">
+                        class="text-[#2D6A4F] font-semibold hover:underline flex items-center gap-1 cursor-pointer">
                         {{ lang.tr('Lire l’article', 'قراءة المقال') }}
                         <span class="material-icons text-sm">arrow_forward</span>
                       </button>
@@ -429,72 +429,72 @@ export interface GeneratedExerciseResult {
           @if (activeTab() === 'qa') {
             <div class="space-y-5">
               <div>
-                <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                <h3 class="font-display font-semibold text-[#14251D] text-base">
                   {{ lang.t('tabTeacherQA') }}
                 </h3>
-                <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                <p class="text-xs text-[#5B6B60]">
                   {{ lang.tr("Consultez les demandes de soutien et questions des parents, et répondez-y en joignant des fiches d'exercices adaptées.", 'تصفح استفسارات الأولياء وطلبات الدعم مع إمكانية إرفاق وثيقة مراجعة جاهزة للطباعة.') }}
                 </p>
               </div>
 
               <div class="space-y-4">
                 @for (thread of store.questionThreads(); track thread.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[20px] p-6 border border-[#E3ECF2] dark:border-[#1A3145] space-y-4">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+                  <div class="bg-[#FBF8F1] rounded-[20px] p-6 border border-[#E7DFCF] space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E7DFCF] pb-3">
                       <div class="space-y-1">
                         <div class="flex items-center gap-2">
-                          <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                             {{ thread.subject }}
                           </span>
-                          <span class="bg-[#E0AA32]/15 text-[#9E6A00] dark:text-[#E0AA32] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                          <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
                             {{ thread.grade }}
                           </span>
-                          <span class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] font-medium">
+                          <span class="text-[11px] text-[#5B6B60] font-medium">
                             • {{ thread.parentName }} • {{ thread.createdAt }}
                           </span>
                         </div>
-                        <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-base">{{ thread.title }}</h4>
+                        <h4 class="font-display font-semibold text-[#14251D] text-base">{{ thread.title }}</h4>
                       </div>
 
                       <button
                         (click)="replyingThread.set(thread)"
-                        class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs px-3.5 py-2 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-xs self-start sm:self-auto">
+                        class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-xs self-start sm:self-auto">
                         <span class="material-icons text-sm">reply</span>
                         {{ lang.t('replyToQuestionBtn') }}
                       </button>
                     </div>
 
                     <!-- Question Body -->
-                    <p class="text-xs text-[#334E68] dark:text-[#D7E7F2] bg-white dark:bg-[#0E1D2A] p-4 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145] leading-relaxed">
+                    <p class="text-xs text-[#14251D] bg-white p-4 rounded-[14px] border border-[#E7DFCF] leading-relaxed">
                       {{ thread.content }}
                     </p>
 
                     <!-- Existing Answers -->
                     @if (thread.answers.length > 0) {
                       <div class="space-y-2 pt-1">
-                        <p class="text-[11px] font-semibold text-[#102A43] dark:text-white flex items-center gap-1">
-                          <span class="material-icons text-xs text-[#23845B]">verified</span>
+                        <p class="text-[11px] font-semibold text-[#14251D] flex items-center gap-1">
+                          <span class="material-icons text-xs text-[#2D6A4F]">verified</span>
                           {{ lang.tr('Réponses des enseignants :', 'إجابات الإطار التربوي:') }}
                         </p>
 
                         @for (ans of thread.answers; track ans.id) {
-                          <div class="bg-[#E8F6EF] dark:bg-[#153B2D]/40 rounded-[14px] p-4 border border-[#23845B]/20 space-y-2 text-xs">
+                          <div class="bg-[#F2ECDE] rounded-[14px] p-4 border border-[#2D6A4F]/20 space-y-2 text-xs">
                             <div class="flex items-center justify-between">
                               <div class="flex items-center gap-2">
-                                <span class="font-semibold text-[#102A43] dark:text-white">{{ ans.teacherName }}</span>
-                                <span class="text-[10px] bg-[#23845B] text-white px-2 py-0.5 rounded-full font-medium">
+                                <span class="font-semibold text-[#14251D]">{{ ans.teacherName }}</span>
+                                <span class="text-[10px] bg-[#2D6A4F] text-[#FBF8F1] px-2 py-0.5 rounded-full font-medium">
                                   {{ ans.teacherTitle }}
                                 </span>
                               </div>
-                              <span class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ ans.createdAt }}</span>
+                              <span class="text-[10px] text-[#5B6B60]">{{ ans.createdAt }}</span>
                             </div>
 
-                            <p class="text-[#102A43] dark:text-white leading-relaxed">{{ ans.content }}</p>
+                            <p class="text-[#14251D] leading-relaxed">{{ ans.content }}</p>
 
                             @if (ans.attachedDocTitle) {
-                              <div class="inline-flex items-center gap-2 bg-white dark:bg-[#0E1D2A] text-[#007CC2] p-2.5 rounded-[10px] border border-[#007CC2]/30 font-medium text-[11px]">
-                                <span class="material-icons text-sm text-[#007CC2]">attach_file</span>
-                                <span>{{ lang.t('attachedDocument') }} : <strong class="text-[#102A43] dark:text-white">{{ ans.attachedDocTitle }}</strong></span>
+                              <div class="inline-flex items-center gap-2 bg-white text-[#2D6A4F] p-2.5 rounded-[10px] border border-[#2D6A4F]/30 font-medium text-[11px]">
+                                <span class="material-icons text-sm text-[#2D6A4F]">attach_file</span>
+                                <span>{{ lang.t('attachedDocument') }} : <strong class="text-[#14251D]">{{ ans.attachedDocTitle }}</strong></span>
                               </div>
                             }
                           </div>
@@ -512,35 +512,35 @@ export interface GeneratedExerciseResult {
             <div class="space-y-5">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+                  <h3 class="font-display font-semibold text-[#14251D] text-base">
                     {{ lang.tr('Annonces diffusées aux parents', 'البلاغات والإشعارات الرسمية للأولياء') }}
                   </h3>
-                  <p class="text-xs text-[#486581] dark:text-[#8CA9C4]">
+                  <p class="text-xs text-[#5B6B60]">
                     {{ lang.tr('Chaque annonce est datée, archivée et traçable avec accusé de lecture.', 'كل إعلان مؤرخ وموثق مع إمكانية متابعة نسبة اطلاع الأولياء.') }}
                   </p>
                 </div>
                 <button
                   (click)="openModal('announcement')"
-                  class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addAnnouncementBtn') }}
                 </button>
               </div>
 
               <div class="space-y-4">
                 @for (a of store.classAnnouncements(); track a.id) {
-                  <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-5 border border-[#E3ECF2] dark:border-[#1A3145] space-y-3">
+                  <div class="bg-[#FBF8F1] rounded-[18px] p-5 border border-[#E7DFCF] space-y-3">
                     <div class="flex items-start justify-between gap-4">
                       <div>
                         <div class="flex items-center gap-2">
-                          <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-sm">{{ a.title }}</h4>
+                          <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ a.title }}</h4>
                           @if (a.isPinned) {
-                            <span class="bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                            <span class="bg-[#C1121F]/10 text-[#C1121F] text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
                               <span class="material-icons text-[12px]">push_pin</span>
                               {{ lang.tr('Épinglé', 'مثبت') }}
                             </span>
                           }
                         </div>
-                        <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4] font-medium mt-0.5">{{ a.teacherName }} • {{ a.date }}</p>
+                        <p class="text-[11px] text-[#5B6B60] font-medium mt-0.5">{{ a.teacherName }} • {{ a.date }}</p>
                       </div>
 
                       <span [class]="getCategoryBadgeClass(a.category)" class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
@@ -548,12 +548,12 @@ export interface GeneratedExerciseResult {
                       </span>
                     </div>
 
-                    <p class="text-xs text-[#334E68] dark:text-[#D7E7F2] leading-relaxed whitespace-pre-line bg-white dark:bg-[#0E1D2A] p-4 rounded-[12px] border border-[#E3ECF2] dark:border-[#1A3145]">
+                    <p class="text-xs text-[#14251D] leading-relaxed whitespace-pre-line bg-white p-4 rounded-[12px] border border-[#E7DFCF]">
                       {{ a.content }}
                     </p>
 
-                    <div class="flex items-center justify-between text-xs text-[#627D98] dark:text-[#8CA9C4] pt-1">
-                      <span class="flex items-center gap-1 text-[#23845B] font-medium">
+                    <div class="flex items-center justify-between text-xs text-[#5B6B60] pt-1">
+                      <span class="flex items-center gap-1 text-[#2D6A4F] font-medium">
                         <span class="material-icons text-sm">check_circle</span>
                         {{ a.confirmedByParentsCount }} {{ lang.tr('parents ont confirmé la lecture', 'أولياء أكدوا اطلاعهم') }}
                       </span>
@@ -571,21 +571,21 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 1: AI ASSISTANT -->
     @if (modalType() === 'ai') {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-[#E0AA32] text-2xl">auto_awesome</span>
+              <span class="material-icons text-[#F2C14E] text-2xl">auto_awesome</span>
               <div>
-                <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-lg">
+                <h3 class="font-display font-semibold text-[#14251D] text-lg">
                   {{ lang.tr('Assistant Pédagogique IA Tunisie', 'المساعد البيداغوجي الذكي في تونس') }}
                 </h3>
-                <p class="text-xs text-[#627D98] dark:text-[#8CA9C4]">
+                <p class="text-xs text-[#5B6B60]">
                   {{ lang.tr("Générez un exercice ou une évaluation alignée au programme officiel tunisien.", 'توليد تمارين واختبارات متطابقة مع البرنامج الرسمي التونسي.') }}
                 </p>
               </div>
             </div>
-            <button (click)="closeModal()" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
@@ -593,14 +593,14 @@ export interface GeneratedExerciseResult {
           <div class="space-y-4 text-xs">
             <div class="grid grid-cols-2 gap-3">
               <div>
-                <label for="ai-subject" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="ai-subject" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Matière', 'المادة') }}
                 </label>
                 <select
                   id="ai-subject"
                   [value]="aiFormSubject()"
                   (change)="onAiSubjectChange($event)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
                   <option value="Mathématiques">Mathématiques / الرياضيات</option>
                   <option value="Français">Français / الفرنسية</option>
                   <option value="اللغة العربية">اللغة العربية</option>
@@ -609,14 +609,14 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label for="ai-diff" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="ai-diff" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Difficulté', 'درجة الصعوبة') }}
                 </label>
                 <select
                   id="ai-diff"
                   [value]="aiFormDifficulty()"
                   (change)="onAiDifficultyChange($event)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
                   <option value="Facile">Facile / سهل</option>
                   <option value="Moyen">Moyen / متوسط</option>
                   <option value="Avancé">Avancé (Concours 6ème) / متقدم (مناظرة السادسة)</option>
@@ -625,7 +625,7 @@ export interface GeneratedExerciseResult {
             </div>
 
             <div>
-              <label for="ai-topic" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="ai-topic" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Thème / Chapitre précis', 'المحور أو الدرس') }}
               </label>
               <input
@@ -634,13 +634,13 @@ export interface GeneratedExerciseResult {
                 [value]="aiFormTopic()"
                 (input)="onAiTopicInput($event)"
                 placeholder="Ex: La multiplication, الجملة الاسمية..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
             </div>
 
             <button
               [disabled]="isAiLoading()"
               (click)="generateAiExercise()"
-              class="w-full bg-[#E0AA32] hover:bg-[#D19A24] text-[#102A43] font-semibold py-3 rounded-[10px] flex items-center justify-center gap-2 cursor-pointer shadow-sm disabled:opacity-50">
+              class="w-full bg-[#F2C14E] hover:bg-[#D9A93C] text-[#14251D] font-semibold py-3 rounded-[10px] flex items-center justify-center gap-2 cursor-pointer shadow-sm disabled:opacity-50">
               @if (isAiLoading()) {
                 <span class="material-icons animate-spin text-sm">sync</span>
                 <span>{{ lang.tr("Génération par l'IA Gemini en cours...", 'جاري التوليد باستخدام الذكاء الاصطناعي...') }}</span>
@@ -651,19 +651,19 @@ export interface GeneratedExerciseResult {
             </button>
 
             @if (generatedAiResult(); as result) {
-              <div class="bg-[#F7F9FB] dark:bg-[#152737] rounded-[18px] p-4 border border-[#E3ECF2] dark:border-[#1A3145] space-y-3 mt-4">
+              <div class="bg-[#FBF8F1] rounded-[18px] p-4 border border-[#E7DFCF] space-y-3 mt-4">
                 <div class="flex items-center justify-between">
-                  <h4 class="font-display font-semibold text-[#102A43] dark:text-white text-sm">{{ result.title }}</h4>
-                  <span class="bg-[#23845B]/10 text-[#23845B] font-semibold px-2 py-0.5 rounded-md text-[10px]">
+                  <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ result.title }}</h4>
+                  <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2 py-0.5 rounded-md text-[10px]">
                     {{ lang.tr('Généré avec succès', 'تم التوليد بنجاح') }}
                   </span>
                 </div>
 
-                <p class="text-[#102A43] dark:text-white bg-white dark:bg-[#0E1D2A] p-3 rounded-[10px] border border-[#E3ECF2] dark:border-[#1A3145] leading-relaxed font-mono text-[11px]">
+                <p class="text-[#14251D] bg-white p-3 rounded-[10px] border border-[#E7DFCF] leading-relaxed font-mono text-[11px]">
                   {{ result.promptText }}
                 </p>
 
-                <div class="bg-[#23845B]/10 p-3 rounded-[10px] text-[#23845B]">
+                <div class="bg-[#2D6A4F]/10 p-3 rounded-[10px] text-[#2D6A4F]">
                   <span class="font-semibold">{{ lang.tr('Solution :', 'الإصلاح:') }}</span> {{ result.solutionText }}
                 </div>
               </div>
@@ -675,31 +675,31 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 2: CREATE COURSE / A4 DOCUMENT -->
     @if (modalType() === 'course') {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-[#007CC2]">post_add</span>
-              <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+              <span class="material-icons text-[#2D6A4F]">post_add</span>
+              <h3 class="font-display font-semibold text-[#14251D] text-base">
                 {{ lang.tr('Publier un Document ou Examen A4', 'نشر وثيقة، تلخيص أو امتحان A4') }}
               </h3>
             </div>
-            <button (click)="closeModal()" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <!-- VPS Direct Upload & AI Multimodal Scanner Zone -->
-            <div class="border-2 border-dashed border-[#007CC2]/40 rounded-[18px] p-4 text-center bg-[#F3FAFD] dark:bg-[#102A43]/40 space-y-2">
+            <div class="border-2 border-dashed border-[#2D6A4F]/40 rounded-[18px] p-4 text-center bg-[#F2ECDE] space-y-2">
               <label for="file-upload" class="cursor-pointer block">
-                <div class="w-12 h-12 rounded-full bg-[#007CC2]/10 text-[#007CC2] flex items-center justify-center mx-auto mb-2">
+                <div class="w-12 h-12 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center mx-auto mb-2">
                   <span class="material-icons text-2xl">document_scanner</span>
                 </div>
-                <h4 class="text-xs font-bold text-[#102A43] dark:text-white">
+                <h4 class="text-xs font-bold text-[#14251D]">
                   {{ lang.tr("Numériser un devoir / capture d'écran / PDF", 'مسح ضوئي للامتحان أو الصورة أو PDF') }}
                 </h4>
-                <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4] mt-0.5">
+                <p class="text-[11px] text-[#5B6B60] mt-0.5">
                   {{ isAiScanning() ? lang.tr('Analyse OCR & classification par Gemini 2.5 en cours...', 'جاري الفرز والتحليل الذكي بواسطة الذكاء الاصطناعي...') : (isUploading() ? lang.tr('Envoi vers le VPS...', 'جاري الرفع إلى الخادم...') : lang.tr("L'IA extrait le texte, classifie la matière/niveau et applique votre filigrane officiel", 'يقوم الذكاء الاصطناعي باستخراج النص وتصنيف المادة وتطبيق علامتك المائية')) }}
                 </p>
                 <input
@@ -711,26 +711,26 @@ export interface GeneratedExerciseResult {
               </label>
 
               @if (isAiScanning()) {
-                <div class="flex items-center justify-center gap-2 text-xs text-[#007CC2] font-semibold py-1 animate-pulse">
+                <div class="flex items-center justify-center gap-2 text-xs text-[#2D6A4F] font-semibold py-1 animate-pulse">
                   <span class="material-icons animate-spin text-sm">sync</span>
                   <span>{{ lang.tr('OCR & Classification intelligente...', 'معالجة ضوئية وفهرسة...') }}</span>
                 </div>
               }
 
               @if (aiDetectedBadge()) {
-                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold border border-emerald-500/20">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] text-[11px] font-bold border border-[#2D6A4F]/20">
                   <span class="material-icons text-xs">auto_awesome</span>
                   <span>{{ aiDetectedBadge() }}</span>
                 </div>
               }
 
               @if (uploadedFileName()) {
-                <span class="text-[11px] text-[#23845B] font-semibold block">✓ {{ uploadedFileName() }}</span>
+                <span class="text-[11px] text-[#2D6A4F] font-semibold block">✓ {{ uploadedFileName() }}</span>
               }
             </div>
 
             <div>
-              <label for="course-title" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="course-title" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Titre officiel du document', 'العنوان الرسمي للوثيقة') }} *
               </label>
               <input
@@ -739,20 +739,20 @@ export interface GeneratedExerciseResult {
                 [value]="newCourseTitle()"
                 (input)="newCourseTitle.set($any($event.target).value)"
                 placeholder="Ex: Devoir de Contrôle N°1 : Mathématiques et Géométrie"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none font-semibold" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none font-semibold" />
             </div>
 
             <!-- 4-Facet Strict Classification Matrix to Protect Library -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
               <div>
-                <label for="course-subj" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="course-subj" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Matière', 'المادة') }} *
                 </label>
                 <select
                   id="course-subj"
                   [value]="newCourseSubject()"
                   (change)="newCourseSubject.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
                   <option value="Mathématiques">Mathématiques / الرياضيات</option>
                   <option value="Français">Français / الفرنسية</option>
                   <option value="اللغة العربية">اللغة العربية</option>
@@ -763,14 +763,14 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label for="course-grade" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="course-grade" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Niveau', 'المستوى') }} *
                 </label>
                 <select
                   id="course-grade"
                   [value]="newCourseGrade()"
                   (change)="newCourseGrade.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
                   <option value="1ère Année">1ère Année / السنة الأولى</option>
                   <option value="2ème Année">2ème Année / السنة الثانية</option>
                   <option value="3ème Année">3ème Année / السنة الثالثة</option>
@@ -781,14 +781,14 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label for="course-trim" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="course-trim" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Trimestre', 'الثلاثي') }} *
                 </label>
                 <select
                   id="course-trim"
                   [value]="newCourseTrimester()"
                   (change)="newCourseTrimester.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
                   <option value="Trimestre 1">Trimestre 1 / الثلاثي الأول</option>
                   <option value="Trimestre 2">Trimestre 2 / الثلاثي الثاني</option>
                   <option value="Trimestre 3">Trimestre 3 / الثلاثي الثالث</option>
@@ -796,14 +796,14 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label for="course-doctype" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="course-doctype" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Type', 'النوع') }} *
                 </label>
                 <select
                   id="course-doctype"
                   [value]="newCourseDocType()"
                   (change)="newCourseDocType.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
                   <option value="Devoir de Contrôle">Devoir de Contrôle / مراقبة</option>
                   <option value="Devoir de Synthèse">Devoir de Synthèse / تأليفي</option>
                   <option value="Fiche de Révision">Fiche de Révision / تقييم</option>
@@ -813,7 +813,7 @@ export interface GeneratedExerciseResult {
             </div>
 
             <div>
-              <label for="course-summary" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="course-summary" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Résumé pédagogique', 'ملخص تربوي موجز') }}
               </label>
               <input
@@ -822,15 +822,15 @@ export interface GeneratedExerciseResult {
                 [value]="newCourseSummary()"
                 (input)="newCourseSummary.set($any($event.target).value)"
                 placeholder="Ex: Fiche d'exercices et problèmes d'évaluation pour le 1er trimestre."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
             </div>
 
             <div>
               <div class="flex items-center justify-between mb-1">
-                <label for="course-content" class="block font-semibold text-[#102A43] dark:text-white">
+                <label for="course-content" class="block font-semibold text-[#14251D]">
                   {{ lang.tr('Contenu A4 imprimable & transcrit par OCR', 'المحتوى المستخرج القابل للطباعة A4') }}
                 </label>
-                <span class="text-[10px] text-[#829AB1]">
+                <span class="text-[10px] text-[#5B6B60]">
                   {{ lang.tr('Format Markdown supporté', 'يدعم التنسيق المتقدم') }}
                 </span>
               </div>
@@ -840,30 +840,30 @@ export interface GeneratedExerciseResult {
                 (input)="newCourseContent.set($any($event.target).value)"
                 rows="5"
                 placeholder="Rédigez ou laissez l'IA transcrire automatiquement les exercices depuis votre photo..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none font-mono text-[11px] leading-relaxed"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none font-mono text-[11px] leading-relaxed"></textarea>
             </div>
 
             <!-- Identity Attribution & Watermark Badge Preview -->
-            <div class="p-3 bg-[#E8F5FC]/80 dark:bg-[#102A43]/50 border border-[#007CC2]/20 rounded-[12px] flex items-center justify-between gap-3 text-xs">
+            <div class="p-3 bg-[#F2ECDE]/80 border border-[#2D6A4F]/20 rounded-[12px] flex items-center justify-between gap-3 text-xs">
               <div class="flex items-center gap-2">
-                <span class="material-icons text-base text-[#007CC2]">verified_user</span>
+                <span class="material-icons text-base text-[#2D6A4F]">verified_user</span>
                 <div>
-                  <p class="font-bold text-[#102A43] dark:text-white">
+                  <p class="font-bold text-[#14251D]">
                     {{ getTeacherName() }}
                   </p>
-                  <p class="text-[10px] text-[#486581] dark:text-[#8CA9C4]">
+                  <p class="text-[10px] text-[#5B6B60]">
                     {{ getTeacherSchool() }} • {{ lang.tr('Filigrane officiel appliqué automatiquement', 'العلامة المائية تطبق تلقائياً') }}
                   </p>
                 </div>
               </div>
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#007CC2] text-white">
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#2D6A4F] text-[#FBF8F1]">
                 A4 Impress
               </span>
             </div>
 
             <button
               (click)="submitCourse()"
-              class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
+              class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
               {{ lang.tr('Publier le Document A4 Certifié', 'نشر وتوثيق الوثيقة الرسمية') }}
             </button>
           </div>
@@ -873,23 +873,23 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 3: COMPOSE BLOG ARTICLE -->
     @if (modalType() === 'blogArticle') {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-[#23845B]">edit_note</span>
-              <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+              <span class="material-icons text-[#2D6A4F]">edit_note</span>
+              <h3 class="font-display font-semibold text-[#14251D] text-base">
                 {{ lang.t('writeArticleBtn') }}
               </h3>
             </div>
-            <button (click)="closeModal()" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label for="article-title" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="article-title" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.t('articleTitle') }} *
               </label>
               <input
@@ -898,19 +898,19 @@ export interface GeneratedExerciseResult {
                 [value]="newArticleTitle()"
                 (input)="newArticleTitle.set($any($event.target).value)"
                 placeholder="Ex: 5 conseils pour maîtriser la division euclidienne"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
             </div>
 
             <div class="grid grid-cols-2 gap-3">
               <div>
-                <label for="article-subj" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="article-subj" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.t('articleCategory') }}
                 </label>
                 <select
                   id="article-subj"
                   [value]="newArticleSubject()"
                   (change)="newArticleSubject.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
                   <option value="Mathématiques">Mathématiques / الرياضيات</option>
                   <option value="Français">Français / الفرنسية</option>
                   <option value="اللغة العربية">اللغة العربية</option>
@@ -919,14 +919,14 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div>
-                <label for="article-grade" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+                <label for="article-grade" class="block font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Niveau ciblé', 'المستوى المستهدف') }}
                 </label>
                 <select
                   id="article-grade"
                   [value]="newArticleGrade()"
                   (change)="newArticleGrade.set($any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
                   <option value="4ème Année">4ème Année / السنة الرابعة</option>
                   <option value="5ème Année">5ème Année / السنة الخامسة</option>
                   <option value="6ème Année">6ème Année / السنة السادسة</option>
@@ -938,7 +938,7 @@ export interface GeneratedExerciseResult {
             </div>
 
             <div>
-              <label for="article-excerpt" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="article-excerpt" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr("Résumé introductif (visible dans l'aperçu)", 'مقدمة المقال') }}
               </label>
               <input
@@ -947,11 +947,11 @@ export interface GeneratedExerciseResult {
                 [value]="newArticleExcerpt()"
                 (input)="newArticleExcerpt.set($any($event.target).value)"
                 placeholder="Ex: Une méthode simple en 3 étapes pour aider votre enfant à la maison..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
             </div>
 
             <div>
-              <label for="article-content" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="article-content" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.t('articleContent') }} *
               </label>
               <textarea
@@ -960,11 +960,11 @@ export interface GeneratedExerciseResult {
                 (input)="newArticleContent.set($any($event.target).value)"
                 rows="6"
                 placeholder="Rédigez vos explications et conseils pédagogiques détaillés..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none leading-relaxed"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none leading-relaxed"></textarea>
             </div>
 
             <div>
-              <label for="article-tags" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="article-tags" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Mots-clés (séparés par des virgules)', 'الكلمات المفتاحية (مفصولة بفاصلة)') }}
               </label>
               <input
@@ -973,12 +973,12 @@ export interface GeneratedExerciseResult {
                 [value]="newArticleTags()"
                 (input)="newArticleTags.set($any($event.target).value)"
                 placeholder="Ex: Révision, Mathématiques, Astuces"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
             </div>
 
             <button
               (click)="submitBlogArticle()"
-              class="w-full bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
+              class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
               {{ lang.t('publishArticleBtn') }}
             </button>
           </div>
@@ -988,28 +988,28 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 4: REPLY TO PARENT QUESTION -->
     @if (replyingThread(); as thread) {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-[#007CC2]">reply</span>
-              <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+              <span class="material-icons text-[#2D6A4F]">reply</span>
+              <h3 class="font-display font-semibold text-[#14251D] text-base">
                 {{ lang.t('replyToQuestionBtn') }}
               </h3>
             </div>
-            <button (click)="replyingThread.set(null)" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="replyingThread.set(null)" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
-          <div class="bg-[#F7F9FB] dark:bg-[#152737] p-3.5 rounded-[12px] border border-[#E3ECF2] dark:border-[#1A3145] text-xs">
-            <p class="font-semibold text-[#102A43] dark:text-white">{{ thread.title }}</p>
-            <p class="text-[#627D98] dark:text-[#8CA9C4] mt-1">{{ thread.content }}</p>
+          <div class="bg-[#FBF8F1] p-3.5 rounded-[12px] border border-[#E7DFCF] text-xs">
+            <p class="font-semibold text-[#14251D]">{{ thread.title }}</p>
+            <p class="text-[#5B6B60] mt-1">{{ thread.content }}</p>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label for="reply-content" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="reply-content" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Votre réponse pédagogique', 'إجابتك وتوجيهك التربوي') }} *
               </label>
               <textarea
@@ -1018,18 +1018,18 @@ export interface GeneratedExerciseResult {
                 (input)="replyContent.set($any($event.target).value)"
                 rows="4"
                 placeholder="Rédigez votre réponse claire et bienveillante..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none"></textarea>
             </div>
 
             <div>
-              <label for="reply-attach" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="reply-attach" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.t('attachDocLabel') }}
               </label>
               <select
                 id="reply-attach"
                 [value]="selectedAttachCourseId()"
                 (change)="selectedAttachCourseId.set($any($event.target).value)"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
                 <option value="">-- {{ lang.t('noAttachment') }} --</option>
                 @for (c of store.courses(); track c.id) {
                   <option [value]="c.id">{{ c.title }} ({{ c.subject }})</option>
@@ -1039,7 +1039,7 @@ export interface GeneratedExerciseResult {
 
             <button
               (click)="submitAnswerToQuestion()"
-              class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
+              class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
               {{ lang.tr('Valider et Envoyer la Réponse', 'إرسال الإجابة الرسمية') }}
             </button>
           </div>
@@ -1049,20 +1049,20 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 5: CREATE ANNOUNCEMENT -->
     @if (modalType() === 'announcement') {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
-            <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-base">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+            <h3 class="font-display font-semibold text-[#14251D] text-base">
               {{ lang.tr('Publier une Annonce Officielle', 'نشر إعلان رسمي') }}
             </h3>
-            <button (click)="closeModal()" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div class="space-y-3 text-xs">
             <div>
-              <label for="announce-title" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="announce-title" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr("Titre de l'annonce", 'عنوان الإعلان') }}
               </label>
               <input
@@ -1071,18 +1071,18 @@ export interface GeneratedExerciseResult {
                 [value]="newAnnounceTitle()"
                 (input)="newAnnounceTitle.set($any($event.target).value)"
                 placeholder="Ex: 📌 Devoir de contrôle à venir"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none" />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
             </div>
 
             <div>
-              <label for="announce-cat" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="announce-cat" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Catégorie', 'الصنف') }}
               </label>
               <select
                 id="announce-cat"
                 [value]="newAnnounceCategory()"
                 (change)="newAnnounceCategory.set($any($event.target).value)"
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none">
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
                 <option value="exam">Examen / Devoir de Synthèse - فرض تأليفي</option>
                 <option value="homework">Devoir à domicile - واجب منزلي</option>
                 <option value="supply">Fournitures & Matériel - أدوات ومستلزمات</option>
@@ -1092,7 +1092,7 @@ export interface GeneratedExerciseResult {
             </div>
 
             <div>
-              <label for="announce-content" class="block font-semibold text-[#102A43] dark:text-white mb-1">
+              <label for="announce-content" class="block font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Contenu détaillé', 'تفاصيل الإعلان') }}
               </label>
               <textarea
@@ -1101,12 +1101,12 @@ export interface GeneratedExerciseResult {
                 (input)="newAnnounceContent.set($any($event.target).value)"
                 rows="4"
                 placeholder="Rédigez clairement votre information..."
-                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-[#102A43] dark:text-white outline-none"></textarea>
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none"></textarea>
             </div>
 
             <button
               (click)="submitAnnouncement()"
-              class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold py-2.5 rounded-[10px] cursor-pointer">
+              class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-[10px] cursor-pointer">
               {{ lang.tr("Diffuser l'Annonce", 'نشر الإعلان الآن') }}
             </button>
           </div>
@@ -1116,44 +1116,44 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 6: A4 PRINT & PDF BOOK MODAL -->
     @if (printModalCourse(); as c) {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/80 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-[24px] max-w-3xl w-full p-6 space-y-4 shadow-2xl max-h-[92vh] overflow-y-auto text-[#102A43]">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/80 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-3xl w-full p-6 space-y-4 shadow-2xl max-h-[92vh] overflow-y-auto text-[#14251D]">
           
-          <div class="no-print flex items-center justify-between border-b border-[#E3ECF2] pb-3">
+          <div class="no-print flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="material-icons text-[#007CC2] text-xl">
+              <span class="material-icons text-[#2D6A4F] text-xl">
                 {{ c.pdfUrl ? 'menu_book' : 'print' }}
               </span>
               <div>
                 <h3 class="font-display font-semibold text-base">
                   {{ c.pdfUrl ? lang.tr('Manuel Scolaire Officiel (CNP)', 'الكتاب المدرسي الرسمي (المركز الوطني البيداغوجي)') : lang.tr('Aperçu A4 Officiel (Ministère de l’Éducation)', 'معاينة وثيقة A4 الرسمية (وزارة التربية)') }}
                 </h3>
-                <p class="text-xs text-[#627D98]">
+                <p class="text-xs text-[#5B6B60]">
                   {{ c.pdfUrl ? lang.tr('Livre complet disponible en téléchargement direct haute qualité ou impression.', 'الكتاب المدرسي متوفر كاملاً للتحميل المباشر والطباعة عالية الدقة.') : lang.tr('Prêt pour impression papier ou export PDF haute fidélité.', 'جاهز للطباعة الورقية أو الحفظ بصيغة PDF.') }}
                 </p>
               </div>
             </div>
-            <button (click)="printModalCourse.set(null)" class="text-[#627D98] hover:text-[#102A43] cursor-pointer">
+            <button (click)="printModalCourse.set(null)" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <!-- If Full PDF Book available (e.g. Official CNP Textbooks) -->
           @if (c.pdfUrl) {
-            <div class="bg-[#F7F9FB] rounded-2xl p-6 border border-[#E3ECF2] space-y-4 text-center">
-              <div class="w-14 h-14 rounded-2xl bg-[#007CC2]/10 text-[#007CC2] flex items-center justify-center mx-auto shadow-inner">
+            <div class="bg-[#FBF8F1] rounded-2xl p-6 border border-[#E7DFCF] space-y-4 text-center">
+              <div class="w-14 h-14 rounded-2xl bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center mx-auto shadow-inner">
                 <span class="material-icons text-3xl">picture_as_pdf</span>
               </div>
 
               <div>
-                <span class="inline-flex items-center gap-1 text-[11px] font-bold px-3 py-1 rounded-full bg-[#E0AA32]/15 text-[#9E6A00] mb-2">
+                <span class="inline-flex items-center gap-1 text-[11px] font-bold px-3 py-1 rounded-full bg-[#F2C14E]/15 text-[#8A5A00] mb-2">
                   <span class="material-icons text-xs">verified</span>
                   {{ lang.tr('Édition Officielle du Centre National Pédagogique (CNP)', 'النسخة الرسمية المعتمدة من المركز الوطني البيداغوجي') }}
                 </span>
-                <h2 class="font-display font-bold text-lg sm:text-xl text-[#102A43]">
+                <h2 class="font-display font-bold text-lg sm:text-xl text-[#14251D]">
                   {{ c.title }}
                 </h2>
-                <p class="text-xs text-[#486581] max-w-lg mx-auto mt-1 leading-relaxed">
+                <p class="text-xs text-[#5B6B60] max-w-lg mx-auto mt-1 leading-relaxed">
                   {{ c.summary }}
                 </p>
               </div>
@@ -1165,7 +1165,7 @@ export interface GeneratedExerciseResult {
                   target="_blank"
                   rel="noopener"
                   download
-                  class="bg-[#23845B] hover:bg-[#1C6949] text-white font-bold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 shadow-md cursor-pointer transition-all hover:scale-102">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 shadow-md cursor-pointer transition-all hover:scale-102">
                   <span class="material-icons text-xl">download</span>
                   <span>{{ lang.tr('Télécharger le Manuel Complet (PDF)', 'تحميل الكتاب المدرسي كاملاً بصيغة PDF') }}</span>
                 </a>
@@ -1174,25 +1174,25 @@ export interface GeneratedExerciseResult {
                   [href]="c.pdfUrl"
                   target="_blank"
                   rel="noopener"
-                  class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-5 py-3.5 rounded-xl text-xs flex items-center gap-2 shadow-xs cursor-pointer transition-colors">
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 py-3.5 rounded-xl text-xs flex items-center gap-2 shadow-xs cursor-pointer transition-colors">
                   <span class="material-icons text-base">open_in_new</span>
                   <span>{{ lang.tr('Lire / Feuilleter en ligne', 'قراءة وتصفح الكتاب مباشرة') }}</span>
                 </a>
               </div>
 
               <!-- Quick Info Pill Strip -->
-              <div class="grid grid-cols-3 gap-2 pt-3 border-t border-[#E3ECF2] max-w-md mx-auto text-xs text-[#486581]">
-                <div class="p-2 rounded-lg bg-white border border-[#E3ECF2]">
-                  <p class="text-[10px] text-[#829AB1]">{{ lang.tr('Niveau', 'المستوى') }}</p>
-                  <p class="font-bold text-[#102A43]">{{ c.grade }}</p>
+              <div class="grid grid-cols-3 gap-2 pt-3 border-t border-[#E7DFCF] max-w-md mx-auto text-xs text-[#5B6B60]">
+                <div class="p-2 rounded-lg bg-white border border-[#E7DFCF]">
+                  <p class="text-[10px] text-[#5B6B60]">{{ lang.tr('Niveau', 'المستوى') }}</p>
+                  <p class="font-bold text-[#14251D]">{{ c.grade }}</p>
                 </div>
-                <div class="p-2 rounded-lg bg-white border border-[#E3ECF2]">
-                  <p class="text-[10px] text-[#829AB1]">{{ lang.tr('Matière', 'المادة') }}</p>
-                  <p class="font-bold text-[#102A43]">{{ c.subject }}</p>
+                <div class="p-2 rounded-lg bg-white border border-[#E7DFCF]">
+                  <p class="text-[10px] text-[#5B6B60]">{{ lang.tr('Matière', 'المادة') }}</p>
+                  <p class="font-bold text-[#14251D]">{{ c.subject }}</p>
                 </div>
-                <div class="p-2 rounded-lg bg-white border border-[#E3ECF2]">
-                  <p class="text-[10px] text-[#829AB1]">{{ lang.tr('Année', 'السنة') }}</p>
-                  <p class="font-bold text-[#102A43]">{{ c.schoolYear || '2025-2026' }}</p>
+                <div class="p-2 rounded-lg bg-white border border-[#E7DFCF]">
+                  <p class="text-[10px] text-[#5B6B60]">{{ lang.tr('Année', 'السنة') }}</p>
+                  <p class="font-bold text-[#14251D]">{{ c.schoolYear || '2025-2026' }}</p>
                 </div>
               </div>
             </div>
@@ -1200,36 +1200,36 @@ export interface GeneratedExerciseResult {
 
           <!-- Official Document Frame (Print Target) for custom sheets or print preview -->
           @if (!c.pdfUrl || c.content.length > 50) {
-            <div id="printable-document" class="print-document bg-white rounded-xl p-8 border-2 border-[#102A43] relative overflow-hidden space-y-4">
+            <div id="printable-document" class="print-document bg-white rounded-xl p-8 border-2 border-[#14251D] relative overflow-hidden space-y-4">
               <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none rotate-[-25deg]">
-                <span class="text-5xl font-black uppercase text-[#007CC2] tracking-widest text-center">
+                <span class="text-5xl font-semibold uppercase text-[#2D6A4F] tracking-widest text-center">
                   MADRASATI TN <br /> COPIE CERTIFIÉE ENSEIGNANT
                 </span>
               </div>
 
               <!-- Dynamic Ministry Cartouche — only for text docs; scans carry their own header -->
               @if (!c.imageUrls || !c.imageUrls.length) {
-                <div class="border-b-2 border-[#102A43] pb-3">
+                <div class="border-b-2 border-[#14251D] pb-3">
                   <div class="flex items-center justify-between text-xs">
-                    <div class="text-left font-bold text-[#102A43] leading-tight">
+                    <div class="text-left font-bold text-[#14251D] leading-tight">
                       <p>الجمهورية التونسية</p>
                       <p>وزارة التربية والتعليم</p>
                     </div>
                     <div class="text-center font-bold">
-                      <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
-                      <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
+                      <p class="font-display text-base text-[#2D6A4F] font-semibold">{{ c.title }}</p>
+                      <p class="text-xs text-[#5B6B60]">{{ c.grade }} • {{ c.subject }}</p>
                     </div>
-                    <div class="text-right text-xs text-[#334E68] leading-tight">
+                    <div class="text-right text-xs text-[#14251D] leading-tight">
                       <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
                       <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
                     </div>
                   </div>
 
                   <!-- Student Filling Box -->
-                  <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
+                  <div class="mt-3 pt-2 border-t border-dashed border-[#E7DFCF] grid grid-cols-3 gap-2 text-xs font-semibold">
                     <p>الاسم واللقب: ....................................</p>
                     <p>القسم: {{ c.grade }}</p>
-                    <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+                    <p class="text-right font-bold text-[#2D6A4F]">العدد: .......... / 20</p>
                   </div>
                 </div>
               }
@@ -1238,7 +1238,7 @@ export interface GeneratedExerciseResult {
               @if (c.imageUrls && c.imageUrls.length) {
                 <div class="space-y-3 py-3 relative z-10">
                   @for (url of c.imageUrls; track url; let i = $index) {
-                    <figure class="print-page rounded-lg overflow-hidden border border-[#E3ECF2]">
+                    <figure class="print-page rounded-lg overflow-hidden border border-[#E7DFCF]">
                       <img [src]="url" [alt]="c.title + ' — page ' + (i + 1)" class="w-full h-auto" />
                     </figure>
                   }
@@ -1247,13 +1247,13 @@ export interface GeneratedExerciseResult {
 
               <!-- Course Content -->
               @if (!c.imageUrls || !c.imageUrls.length) {
-                <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#102A43]">
+                <div class="text-xs leading-relaxed whitespace-pre-line py-3 relative z-10 text-[#14251D]">
                   {{ c.content }}
                 </div>
               }
 
               <!-- Footer Attribution -->
-              <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
+              <div class="border-t border-[#E7DFCF] pt-3 text-[10px] text-[#5B6B60] flex items-center justify-between">
                 <span>Attribution Enseignant : {{ c.watermarkText || 'Enseignant Certifié' }}</span>
                 <span>Plateforme Nationale Madrasati TN</span>
               </div>
@@ -1261,13 +1261,13 @@ export interface GeneratedExerciseResult {
           }
 
           <div class="no-print flex items-center justify-between gap-3 pt-2">
-            <button (click)="printModalCourse.set(null)" class="bg-[#F7F9FB] hover:bg-[#E3ECF2] text-[#334E68] font-semibold px-4 py-2.5 rounded-[10px] text-xs cursor-pointer border border-[#E3ECF2]">
+            <button (click)="printModalCourse.set(null)" class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#14251D] font-semibold px-4 py-2.5 rounded-[10px] text-xs cursor-pointer border border-[#E7DFCF]">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
 
             <button
               (click)="triggerPrintDialog()"
-              class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-6 py-2.5 rounded-[10px] text-xs flex items-center gap-2 cursor-pointer shadow-sm">
+              class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-2.5 rounded-[10px] text-xs flex items-center gap-2 cursor-pointer shadow-sm">
               <span class="material-icons text-base">print</span>
               {{ lang.t('printBtn') }}
             </button>
@@ -1278,43 +1278,43 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 7: READ ARTICLE DETAIL -->
     @if (selectedArticleDetail(); as post) {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-2xl w-full p-6 space-y-4 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-3">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
             <div class="flex items-center gap-2">
-              <span class="bg-[#23845B]/10 text-[#23845B] text-xs font-bold px-2.5 py-0.5 rounded-full">
+              <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-xs font-bold px-2.5 py-0.5 rounded-full">
                 {{ post.subject || 'Pédagogie' }}
               </span>
-              <span class="text-xs text-[#627D98] dark:text-[#8CA9C4]">{{ post.publishedAt }}</span>
+              <span class="text-xs text-[#5B6B60]">{{ post.publishedAt }}</span>
             </div>
-            <button (click)="selectedArticleDetail.set(null)" class="text-[#627D98] hover:text-[#102A43] dark:hover:text-white cursor-pointer">
+            <button (click)="selectedArticleDetail.set(null)" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
               <span class="material-icons">close</span>
             </button>
           </div>
 
           <div>
-            <h3 class="font-display font-semibold text-[#102A43] dark:text-white text-xl">{{ post.title }}</h3>
-            <p class="text-xs text-[#23845B] font-medium mt-1">{{ post.authorName }} — {{ post.authorTitle }}</p>
+            <h3 class="font-display font-semibold text-[#14251D] text-xl">{{ post.title }}</h3>
+            <p class="text-xs text-[#2D6A4F] font-medium mt-1">{{ post.authorName }} — {{ post.authorTitle }}</p>
           </div>
 
-          <div class="prose prose-sm dark:prose-invert max-w-none text-xs text-[#334E68] dark:text-[#D7E7F2] leading-relaxed whitespace-pre-line bg-[#F7F9FB] dark:bg-[#152737] p-5 rounded-[14px] border border-[#E3ECF2] dark:border-[#1A3145]">
+          <div class="prose prose-sm max-w-none text-xs text-[#14251D] leading-relaxed whitespace-pre-line bg-[#FBF8F1] p-5 rounded-[14px] border border-[#E7DFCF]">
             {{ post.content }}
           </div>
 
           <!-- Comments on article -->
           <div class="space-y-3 pt-2">
-            <h4 class="font-display font-semibold text-xs text-[#102A43] dark:text-white">
+            <h4 class="font-display font-semibold text-xs text-[#14251D]">
               {{ lang.t('commentsCount') }} ({{ post.comments.length }})
             </h4>
 
             <div class="space-y-2">
               @for (comm of post.comments; track comm.id) {
-                <div class="bg-[#F7F9FB] dark:bg-[#152737] p-3 rounded-[10px] text-xs border border-[#E3ECF2] dark:border-[#1A3145]">
+                <div class="bg-[#FBF8F1] p-3 rounded-[10px] text-xs border border-[#E7DFCF]">
                   <div class="flex items-center justify-between">
-                    <span class="font-semibold text-[#102A43] dark:text-white">{{ comm.authorName }}</span>
-                    <span class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">{{ comm.createdAt }}</span>
+                    <span class="font-semibold text-[#14251D]">{{ comm.authorName }}</span>
+                    <span class="text-[10px] text-[#5B6B60]">{{ comm.createdAt }}</span>
                   </div>
-                  <p class="text-[#334E68] dark:text-[#D7E7F2] mt-1">{{ comm.content }}</p>
+                  <p class="text-[#14251D] mt-1">{{ comm.content }}</p>
                 </div>
               }
             </div>
@@ -1325,45 +1325,45 @@ export interface GeneratedExerciseResult {
 
     <!-- MODAL 8: TEACHER CREDENTIALS & PROFILE / SETTINGS DRAWER -->
     @if (teacherProfileModal()) {
-      <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-white dark:bg-[#0E1D2A] rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E3ECF2] dark:border-[#1A3145] shadow-2xl relative my-8">
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-2xl relative my-8">
           
           <!-- Header -->
-          <div class="flex items-center justify-between border-b border-[#E3ECF2] dark:border-[#1A3145] pb-4">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-4">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#007CC2]/10 text-[#007CC2] flex items-center justify-center">
+              <div class="w-10 h-10 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
                 <span class="material-icons">manage_accounts</span>
               </div>
               <div>
-                <h3 class="font-display font-bold text-[#102A43] dark:text-white text-lg">
+                <h3 class="font-display font-bold text-[#14251D] text-lg">
                   {{ lang.tr('Profil & Paramètres Enseignant', 'الملف الشخصي وإعدادات المعلم') }}
                 </h3>
-                <p class="text-xs text-[#627D98] dark:text-[#8CA9C4]">
+                <p class="text-xs text-[#5B6B60]">
                   {{ lang.tr('Identité, Filigrane A4, CNP & Préférences', 'الهوية، العلامة المائية A4، الاعتماد والإعدادات') }}
                 </p>
               </div>
             </div>
 
-            <button (click)="closeProfileModal()" class="w-8 h-8 rounded-full bg-[#F7F9FB] dark:bg-[#152737] text-[#627D98] hover:text-[#102A43] dark:hover:text-white flex items-center justify-center cursor-pointer transition-colors">
+            <button (click)="closeProfileModal()" class="w-8 h-8 rounded-full bg-[#FBF8F1] text-[#5B6B60] hover:text-[#14251D] flex items-center justify-center cursor-pointer transition-colors">
               <span class="material-icons text-lg">close</span>
             </button>
           </div>
 
           <!-- Notification Toast -->
           @if (profileSuccessMsg()) {
-            <div class="p-3 bg-[#23845B]/10 border border-[#23845B]/30 rounded-xl text-xs text-[#23845B] dark:text-[#38D996] font-semibold flex items-center gap-2">
+            <div class="p-3 bg-[#2D6A4F]/10 border border-[#2D6A4F]/30 rounded-xl text-xs text-[#2D6A4F] font-semibold flex items-center gap-2">
               <span class="material-icons text-base">check_circle</span>
               <span>{{ profileSuccessMsg() }}</span>
             </div>
           }
 
           <!-- Tabs Navigation -->
-          <div class="flex border-b border-[#E3ECF2] dark:border-[#1A3145] gap-1 overflow-x-auto pb-1">
+          <div class="flex border-b border-[#E7DFCF] gap-1 overflow-x-auto pb-1">
             <button
               (click)="profileTab.set('profile')"
               [class]="profileTab() === 'profile' 
-                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
-                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+                ? 'border-[#2D6A4F] text-[#2D6A4F] bg-[#2D6A4F]/10 font-bold' 
+                : 'border-transparent text-[#5B6B60] hover:text-[#14251D] font-medium'"
               class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
               <span class="material-icons text-sm">person</span>
               <span>{{ lang.tr('Profil & Établissement', 'الهوية والمؤسسة') }}</span>
@@ -1372,8 +1372,8 @@ export interface GeneratedExerciseResult {
             <button
               (click)="profileTab.set('watermark')"
               [class]="profileTab() === 'watermark' 
-                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
-                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+                ? 'border-[#2D6A4F] text-[#2D6A4F] bg-[#2D6A4F]/10 font-bold' 
+                : 'border-transparent text-[#5B6B60] hover:text-[#14251D] font-medium'"
               class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
               <span class="material-icons text-sm">verified</span>
               <span>{{ lang.tr('Filigrane & CNP', 'العلامة المائية والاعتماد') }}</span>
@@ -1382,8 +1382,8 @@ export interface GeneratedExerciseResult {
             <button
               (click)="profileTab.set('classes')"
               [class]="profileTab() === 'classes' 
-                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
-                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+                ? 'border-[#2D6A4F] text-[#2D6A4F] bg-[#2D6A4F]/10 font-bold' 
+                : 'border-transparent text-[#5B6B60] hover:text-[#14251D] font-medium'"
               class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
               <span class="material-icons text-sm">school</span>
               <span>{{ lang.tr('Niveaux Enseignés', 'السنوات والمواد') }}</span>
@@ -1392,8 +1392,8 @@ export interface GeneratedExerciseResult {
             <button
               (click)="profileTab.set('settings')"
               [class]="profileTab() === 'settings' 
-                ? 'border-[#007CC2] text-[#007CC2] bg-[#007CC2]/10 font-bold' 
-                : 'border-transparent text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium'"
+                ? 'border-[#2D6A4F] text-[#2D6A4F] bg-[#2D6A4F]/10 font-bold' 
+                : 'border-transparent text-[#5B6B60] hover:text-[#14251D] font-medium'"
               class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs border-b-2 cursor-pointer transition-all whitespace-nowrap">
               <span class="material-icons text-sm">settings</span>
               <span>{{ lang.tr('Paramètres', 'الإعدادات') }}</span>
@@ -1403,73 +1403,73 @@ export interface GeneratedExerciseResult {
           <!-- TAB 1: PROFIL & IDENTITE -->
           @if (profileTab() === 'profile') {
             <div class="space-y-4">
-              <div class="flex items-center gap-4 p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-2xl border border-[#E3ECF2] dark:border-[#1A3145]">
-                <div class="w-14 h-14 rounded-full bg-[#007CC2] text-white flex items-center justify-center text-xl font-bold shrink-0 shadow-md">
+              <div class="flex items-center gap-4 p-3 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF]">
+                <div class="w-14 h-14 rounded-full bg-[#2D6A4F] text-[#FBF8F1] flex items-center justify-center text-xl font-bold shrink-0 shadow-md">
                   {{ editDisplayName().substring(0, 1) || 'م' }}
                 </div>
                 <div class="space-y-1">
                   <div class="flex items-center gap-2">
-                    <span class="font-bold text-[#102A43] dark:text-white text-sm">{{ editDisplayName() }}</span>
-                    <span class="text-[10px] bg-[#23845B]/10 text-[#23845B] font-semibold px-2 py-0.5 rounded-full">
+                    <span class="font-bold text-[#14251D] text-sm">{{ editDisplayName() }}</span>
+                    <span class="text-[10px] bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2 py-0.5 rounded-full">
                       ✓ {{ lang.tr('Compte Vérifié', 'حساب معتمد') }}
                     </span>
                   </div>
-                  <p class="text-xs text-[#627D98] dark:text-[#8CA9C4]">{{ editTitle() }}</p>
-                  <p class="text-[11px] text-[#007CC2] font-semibold">{{ editSchool() }}</p>
+                  <p class="text-xs text-[#5B6B60]">{{ editTitle() }}</p>
+                  <p class="text-[11px] text-[#2D6A4F] font-semibold">{{ editSchool() }}</p>
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div class="space-y-1">
-                  <label for="tp-display-name" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Nom et Prénom', 'الاسم واللقب') }}</label>
+                  <label for="tp-display-name" class="font-semibold text-[#14251D]">{{ lang.tr('Nom et Prénom', 'الاسم واللقب') }}</label>
                   <input
                     id="tp-display-name"
                     type="text"
                     [value]="editDisplayName()"
                     (input)="editDisplayName.set($any($event.target).value)"
-                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
                 <div class="space-y-1">
-                  <label for="tp-title" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Titre & Grade Professionnel', 'الرتبة والصفة المهنية') }}</label>
+                  <label for="tp-title" class="font-semibold text-[#14251D]">{{ lang.tr('Titre & Grade Professionnel', 'الرتبة والصفة المهنية') }}</label>
                   <input
                     id="tp-title"
                     type="text"
                     [value]="editTitle()"
                     (input)="editTitle.set($any($event.target).value)"
                     placeholder="Ex: أستاذ تعليم ابتدائي أول"
-                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
                 <div class="space-y-1">
-                  <label for="tp-speciality" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Spécialité & Discipline Principale', 'الإختصاص والتخصص الرئيسي') }}</label>
+                  <label for="tp-speciality" class="font-semibold text-[#14251D]">{{ lang.tr('Spécialité & Discipline Principale', 'الإختصاص والتخصص الرئيسي') }}</label>
                   <input
                     id="tp-speciality"
                     type="text"
                     [value]="editSpeciality()"
                     (input)="editSpeciality.set($any($event.target).value)"
                     placeholder="Ex: Mathématiques & Éveil Scientifique"
-                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
                 <div class="space-y-1">
-                  <label for="tp-school" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Établissement Scolaire', 'المدرسة الإبتدائية') }}</label>
+                  <label for="tp-school" class="font-semibold text-[#14251D]">{{ lang.tr('Établissement Scolaire', 'المدرسة الإبتدائية') }}</label>
                   <input
                     id="tp-school"
                     type="text"
                     [value]="editSchool()"
                     (input)="editSchool.set($any($event.target).value)"
-                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
                 <div class="space-y-1">
-                  <label for="tp-delegation" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Délégation & Gouvernorat', 'المندوبية والولاية') }}</label>
+                  <label for="tp-delegation" class="font-semibold text-[#14251D]">{{ lang.tr('Délégation & Gouvernorat', 'المندوبية والولاية') }}</label>
                   <input
                     id="tp-delegation"
                     type="text"
                     [value]="editDelegation()"
                     (input)="editDelegation.set($any($event.target).value)"
-                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
               </div>
             </div>
@@ -1478,52 +1478,52 @@ export interface GeneratedExerciseResult {
           <!-- TAB 2: FILIGRANE & CNP -->
           @if (profileTab() === 'watermark') {
             <div class="space-y-4 text-xs">
-              <div class="p-3.5 bg-[#23845B]/10 border border-[#23845B]/20 rounded-2xl flex items-center justify-between">
+              <div class="p-3.5 bg-[#2D6A4F]/10 border border-[#2D6A4F]/20 rounded-2xl flex items-center justify-between">
                 <div class="flex items-center gap-2.5">
-                  <span class="material-icons text-[#23845B] text-xl">verified_user</span>
+                  <span class="material-icons text-[#2D6A4F] text-xl">verified_user</span>
                   <div>
-                    <h4 class="font-bold text-[#102A43] dark:text-white">{{ lang.tr("Agrément Ministère de l'Éducation", 'اعتماد وزارة التربية') }}</h4>
-                    <p class="text-[11px] text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Matricule CNP vérifié et conforme au programme officiel.', 'معرف معتمد ومطابق للبرامج الرسمية.') }}</p>
+                    <h4 class="font-bold text-[#14251D]">{{ lang.tr("Agrément Ministère de l'Éducation", 'اعتماد وزارة التربية') }}</h4>
+                    <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Matricule CNP vérifié et conforme au programme officiel.', 'معرف معتمد ومطابق للبرامج الرسمية.') }}</p>
                   </div>
                 </div>
-                <span class="bg-[#23845B] text-white font-mono text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">VALIDE</span>
+                <span class="bg-[#2D6A4F] text-[#FBF8F1] font-mono text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">VALIDE</span>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="space-y-1">
-                  <label for="tp-cnp-id" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Matricule Enseignant CNP', 'معرف المعلم بالمركز الوطني') }}</label>
+                  <label for="tp-cnp-id" class="font-semibold text-[#14251D]">{{ lang.tr('Matricule Enseignant CNP', 'معرف المعلم بالمركز الوطني') }}</label>
                   <input
                     id="tp-cnp-id"
                     type="text"
                     [value]="editCnpId()"
                     (input)="editCnpId.set($any($event.target).value)"
-                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white font-mono focus:outline-none focus:border-[#007CC2]" />
+                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] font-mono focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
                 <div class="space-y-1">
-                  <label for="tp-watermark" class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Texte du Filigrane A4', 'نص العلامة المائية للطباعة') }}</label>
+                  <label for="tp-watermark" class="font-semibold text-[#14251D]">{{ lang.tr('Texte du Filigrane A4', 'نص العلامة المائية للطباعة') }}</label>
                   <input
                     id="tp-watermark"
                     type="text"
                     [value]="editCustomWatermark()"
                     (input)="editCustomWatermark.set($any($event.target).value)"
-                    class="w-full px-3 py-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] text-[#102A43] dark:text-white focus:outline-none focus:border-[#007CC2]" />
+                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
               </div>
 
               <!-- Live Watermark Preview -->
               <div class="space-y-1.5">
-                <span class="font-semibold text-[#102A43] dark:text-white">{{ lang.tr('Aperçu du Filigrane sur Feuille A4 :', 'معاينة العلامة المائية على ورقة الاختبار :') }}</span>
-                <div class="relative p-6 bg-white dark:bg-[#102334] rounded-xl border border-dashed border-[#007CC2]/40 text-center overflow-hidden">
+                <span class="font-semibold text-[#14251D]">{{ lang.tr('Aperçu du Filigrane sur Feuille A4 :', 'معاينة العلامة المائية على ورقة الاختبار :') }}</span>
+                <div class="relative p-6 bg-white rounded-xl border border-dashed border-[#2D6A4F]/40 text-center overflow-hidden">
                   <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-15 rotate-[-25deg] select-none">
-                    <span class="font-mono text-2xl font-black tracking-widest text-[#007CC2]">
+                    <span class="font-mono text-2xl font-semibold tracking-widest text-[#2D6A4F]">
                       {{ editCustomWatermark() || 'Madrasati TN — Document Certifié' }}
                     </span>
                   </div>
                   <div class="relative z-10 space-y-1">
-                    <p class="text-[11px] font-bold text-[#102A43] dark:text-white uppercase tracking-wider">الجمهورية التونسية — وزارة التربية</p>
-                    <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Évaluation Imprimable A4 (Attribution : {{ editDisplayName() }})</p>
-                    <div class="mt-2 inline-flex items-center gap-1 text-[10px] text-[#23845B] bg-[#23845B]/10 px-2 py-0.5 rounded-full font-semibold">
+                    <p class="text-[11px] font-bold text-[#14251D] uppercase tracking-wider">الجمهورية التونسية — وزارة التربية</p>
+                    <p class="text-[10px] text-[#5B6B60]">Évaluation Imprimable A4 (Attribution : {{ editDisplayName() }})</p>
+                    <div class="mt-2 inline-flex items-center gap-1 text-[10px] text-[#2D6A4F] bg-[#2D6A4F]/10 px-2 py-0.5 rounded-full font-semibold">
                       <span class="material-icons text-[12px]">lock</span>
                       {{ editCnpId() }}
                     </div>
@@ -1537,15 +1537,15 @@ export interface GeneratedExerciseResult {
           @if (profileTab() === 'classes') {
             <div class="space-y-4 text-xs">
               <div class="space-y-2">
-                <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Matières Enseignées / الإختصاصات :", 'المواد والمضامين المباشرة :') }}</span>
+                <span class="font-semibold text-[#14251D] block">{{ lang.tr("Matières Enseignées / الإختصاصات :", 'المواد والمضامين المباشرة :') }}</span>
                 <div class="flex flex-wrap gap-2">
                   @for (s of ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais', 'Informatique', 'Éducation Islamique']; track s) {
                     <button
                       type="button"
                       (click)="toggleTaughtSubject(s)"
                       [class]="editTaughtSubjects().includes(s)
-                        ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
-                        : 'bg-[#F7F9FB] dark:bg-[#152737] text-[#627D98] dark:text-[#8CA9C4] border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                        ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold border-[#2D6A4F]'
+                        : 'bg-[#FBF8F1] text-[#5B6B60] border-[#E7DFCF] hover:border-[#2D6A4F]'"
                       class="px-3.5 py-1.5 rounded-xl border text-xs cursor-pointer transition-colors flex items-center gap-1">
                       @if (editTaughtSubjects().includes(s)) {
                         <span class="material-icons text-xs">check</span>
@@ -1557,15 +1557,15 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div class="space-y-2">
-                <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Niveaux et Années d'Enseignement Active :", 'السنوات الدراسية المباشرة :') }}</span>
+                <span class="font-semibold text-[#14251D] block">{{ lang.tr("Niveaux et Années d'Enseignement Active :", 'السنوات الدراسية المباشرة :') }}</span>
                 <div class="flex flex-wrap gap-2">
                   @for (g of ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']; track g) {
                     <button
                       type="button"
                       (click)="toggleTaughtGrade(g)"
                       [class]="editTaughtGrades().includes(g)
-                        ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
-                        : 'bg-[#F7F9FB] dark:bg-[#152737] text-[#627D98] dark:text-[#8CA9C4] border-[#E3ECF2] dark:border-[#1A3145] hover:border-[#007CC2]'"
+                        ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold border-[#2D6A4F]'
+                        : 'bg-[#FBF8F1] text-[#5B6B60] border-[#E7DFCF] hover:border-[#2D6A4F]'"
                       class="px-3.5 py-1.5 rounded-xl border text-xs cursor-pointer transition-colors flex items-center gap-1">
                       @if (editTaughtGrades().includes(g)) {
                         <span class="material-icons text-xs">check</span>
@@ -1576,20 +1576,20 @@ export interface GeneratedExerciseResult {
                 </div>
               </div>
 
-              <div class="grid grid-cols-3 gap-2 text-center p-4 bg-[#F7F9FB] dark:bg-[#152737] rounded-2xl border border-[#E3ECF2] dark:border-[#1A3145]">
+              <div class="grid grid-cols-3 gap-2 text-center p-4 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF]">
                 <div>
-                  <p class="font-display font-bold text-[#102A43] dark:text-white text-base">{{ store.courses().length }}</p>
-                  <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Fiches A4 Publiées</p>
+                  <p class="font-display font-bold text-[#14251D] text-base">{{ store.courses().length }}</p>
+                  <p class="text-[10px] text-[#5B6B60]">Fiches A4 Publiées</p>
                 </div>
                 <div>
-                  <p class="font-display font-bold text-[#102A43] dark:text-white text-base">{{ store.blogPosts().length }}</p>
-                  <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">Articles de Conseils</p>
+                  <p class="font-display font-bold text-[#14251D] text-base">{{ store.blogPosts().length }}</p>
+                  <p class="text-[10px] text-[#5B6B60]">Articles de Conseils</p>
                 </div>
                 <div>
-                  <p class="font-display font-bold text-[#D19A24] text-base flex items-center justify-center gap-1">
-                    <span class="material-icons text-sm text-[#E0AA32]">star</span>4.9
+                  <p class="font-display font-bold text-[#D9A93C] text-base flex items-center justify-center gap-1">
+                    <span class="material-icons text-sm text-[#F2C14E]">star</span>4.9
                   </p>
-                  <p class="text-[10px] text-[#627D98] dark:text-[#8CA9C4]">128 Évaluations Parents</p>
+                  <p class="text-[10px] text-[#5B6B60]">128 Évaluations Parents</p>
                 </div>
               </div>
             </div>
@@ -1600,20 +1600,20 @@ export interface GeneratedExerciseResult {
             <div class="space-y-4 text-xs">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <!-- Language Selector -->
-                <div class="p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-xl border border-[#E3ECF2] dark:border-[#1A3145] space-y-2">
-                  <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Langue d'affichage", "لغة الواجهة") }}</span>
+                <div class="p-3 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] space-y-2">
+                  <span class="font-semibold text-[#14251D] block">{{ lang.tr("Langue d'affichage", "لغة الواجهة") }}</span>
                   <div class="flex gap-2">
                     <button
                       type="button"
                       (click)="lang.setLanguage('fr')"
-                      [class]="lang.lang() === 'fr' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      [class]="lang.lang() === 'fr' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold' : 'bg-white text-[#14251D] border border-[#E7DFCF]'"
                       class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors">
                       Français
                     </button>
                     <button
                       type="button"
                       (click)="lang.setLanguage('ar')"
-                      [class]="lang.lang() === 'ar' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      [class]="lang.lang() === 'ar' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold' : 'bg-white text-[#14251D] border border-[#E7DFCF]'"
                       class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors">
                       العربية
                     </button>
@@ -1621,20 +1621,20 @@ export interface GeneratedExerciseResult {
                 </div>
 
                 <!-- Dark / Light Theme Toggle -->
-                <div class="p-3 bg-[#F7F9FB] dark:bg-[#152737] rounded-xl border border-[#E3ECF2] dark:border-[#1A3145] space-y-2">
-                  <span class="font-semibold text-[#102A43] dark:text-white block">{{ lang.tr("Mode d'Affichage", 'مظهر الواجهة') }}</span>
+                <div class="p-3 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] space-y-2">
+                  <span class="font-semibold text-[#14251D] block">{{ lang.tr("Mode d'Affichage", 'مظهر الواجهة') }}</span>
                   <div class="flex gap-2">
                     <button
                       type="button"
                       (click)="store.setMode('light')"
-                      [class]="store.activeMode() === 'light' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      [class]="store.activeMode() === 'light' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold' : 'bg-white text-[#14251D] border border-[#E7DFCF]'"
                       class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors flex items-center justify-center gap-1">
                       <span class="material-icons text-sm">light_mode</span> Clair
                     </button>
                     <button
                       type="button"
                       (click)="store.setMode('dark')"
-                      [class]="store.activeMode() === 'dark' ? 'bg-[#007CC2] text-white font-bold' : 'bg-white dark:bg-[#0E1D2A] text-[#102A43] dark:text-white border border-[#E3ECF2] dark:border-[#1A3145]'"
+                      [class]="store.activeMode() === 'dark' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-bold' : 'bg-white text-[#14251D] border border-[#E7DFCF]'"
                       class="flex-1 py-1.5 rounded-lg text-xs cursor-pointer transition-colors flex items-center justify-center gap-1">
                       <span class="material-icons text-sm">dark_mode</span> Sombre
                     </button>
@@ -1645,16 +1645,16 @@ export interface GeneratedExerciseResult {
           }
 
           <!-- Actions Footer -->
-          <div class="flex items-center gap-3 pt-3 border-t border-[#E3ECF2] dark:border-[#1A3145]">
+          <div class="flex items-center gap-3 pt-3 border-t border-[#E7DFCF]">
             <button
               (click)="saveTeacherProfileSettings()"
-              class="flex-1 bg-[#007CC2] hover:bg-[#006EAD] text-white font-bold py-2.5 rounded-xl text-xs cursor-pointer shadow-md transition-all flex items-center justify-center gap-1.5">
+              class="flex-1 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold py-2.5 rounded-xl text-xs cursor-pointer shadow-md transition-all flex items-center justify-center gap-1.5">
               <span class="material-icons text-base">save</span>
               <span>{{ lang.tr('Enregistrer les modifications', 'حفظ التعديلات') }}</span>
             </button>
             <button
               (click)="closeProfileModal()"
-              class="px-4 bg-[#F7F9FB] dark:bg-[#152737] hover:bg-[#E3ECF2] text-[#627D98] dark:text-[#8CA9C4] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
+              class="px-4 bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#5B6B60] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
           </div>
@@ -1877,15 +1877,15 @@ export class TeacherHomeComponent {
   getCategoryBadgeClass(category: string): string {
     switch (category) {
       case 'exam':
-        return 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 border border-rose-200';
+        return 'bg-[#C1121F]/10 text-[#C1121F] border border-[#C1121F]/30';
       case 'homework':
-        return 'bg-[#E0AA32]/10 text-[#9E6A00] dark:text-[#E0AA32] border border-[#E0AA32]/30';
+        return 'bg-[#F2C14E]/10 text-[#8A5A00] border border-[#F2C14E]/30';
       case 'supply':
-        return 'bg-[#23845B]/10 text-[#23845B] border border-[#23845B]/30';
+        return 'bg-[#2D6A4F]/10 text-[#2D6A4F] border border-[#2D6A4F]/30';
       case 'urgent':
-        return 'bg-red-500 text-white font-bold';
+        return 'bg-[#C1121F] text-[#FBF8F1] font-bold';
       default:
-        return 'bg-[#E3ECF2] dark:bg-[#1A3145] text-[#102A43] dark:text-white';
+        return 'bg-[#E7DFCF] text-[#14251D]';
     }
   }
 

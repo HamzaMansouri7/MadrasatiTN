@@ -332,8 +332,12 @@
             class="w-11 h-11 rounded-xl text-[#5B6B60] hover:text-[#1B4332] hover:bg-[#F2ECDE] flex items-center justify-center cursor-pointer transition-colors shrink-0"
             [title]="lang.tr('Attacher une image', 'إرفاق صورة')"
             aria-label="Attacher une image">
-            <span class="material-icons text-xl">attach_file</span>
-            <input type="file" (change)="handleImageAttachment($event)" accept="image/png,image/jpeg,image/webp" class="hidden" />
+            @if (isUploadingImg()) {
+              <span class="material-icons text-xl animate-spin text-[#2D6A4F]">sync</span>
+            } @else {
+              <span class="material-icons text-xl">attach_file</span>
+            }
+            <input type="file" (change)="handleImageAttachment($event)" accept="image/png,image/jpeg,image/webp" class="hidden" [disabled]="isUploadingImg()" />
           </label>
 
           <!-- Imagen AI Illustration Trigger -->
@@ -344,7 +348,11 @@
             class="w-11 h-11 rounded-xl text-[#8A5A00] hover:bg-[#F2ECDE] flex items-center justify-center cursor-pointer transition-colors disabled:opacity-40 shrink-0"
             [title]="lang.tr('Générer illustration IA', 'توليد رسم توضيحي بالذكاء الاصطناعي')"
             aria-label="Générer illustration IA">
-            <span class="material-icons text-xl">brush</span>
+            @if (isGeneratingImg()) {
+              <span class="material-icons text-xl animate-spin">sync</span>
+            } @else {
+              <span class="material-icons text-xl">brush</span>
+            }
           </button>
 
           <!-- Input Textarea -->
@@ -531,13 +539,18 @@
             class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#1B4332] text-xs font-semibold cursor-pointer transition-colors min-h-[40px]"
             [title]="lang.tr('Insérer une image dans l’article', 'إدراج صورة توضيحية داخل المقال')"
             aria-label="Insérer une image">
-            <span class="material-icons text-base">image</span>
-            <span>{{ lang.tr('Ajouter image', 'إدراج صورة') }}</span>
+            @if (isUploadingImg()) {
+              <span class="material-icons text-base animate-spin">sync</span>
+            } @else {
+              <span class="material-icons text-base">image</span>
+            }
+            <span>{{ isUploadingImg() ? lang.tr('Envoi...', 'جارٍ الرفع...') : lang.tr('Ajouter image', 'إدراج صورة') }}</span>
             <input
               type="file"
               (change)="handleInlineImageUpload($event)"
               accept="image/png,image/jpeg,image/webp"
-              class="hidden" />
+              class="hidden"
+              [disabled]="isUploadingImg()" />
           </label>
         </div>
       </div>

@@ -610,7 +610,25 @@
                           class="text-[10px] bg-white dark:bg-[#102A43] hover:bg-[#EEE8FF] text-[#7C3AED] border border-[#7C3AED]/30 px-2 py-1 rounded-md transition-colors cursor-pointer">
                           <span>🔄 En QCM</span>
                         </button>
+
+                        <button
+                          type="button"
+                          (click)="generateVariant(block)"
+                          [disabled]="isVariantLoading()"
+                          class="text-[10px] bg-white dark:bg-[#102A43] hover:bg-[#F3E8FF] text-[#7C3AED] border border-[#7C3AED]/30 px-2 py-1 rounded-md transition-colors cursor-pointer flex items-center gap-1 disabled:opacity-40">
+                          @if (isVariantLoading()) {
+                            <span class="material-icons animate-spin text-[12px]">sync</span>
+                          }
+                          <span>{{ lang.tr('Variante IA', 'نسخة بديلة بالذكاء') }}</span>
+                        </button>
                       </div>
+
+                      @if (isTransformingId() === block.id) {
+                        <div class="flex items-center gap-1.5 text-[10px] text-[#007CC2] italic pt-1">
+                          <span class="material-icons animate-spin text-[12px]">sync</span>
+                          <span>{{ lang.tr('Transformation IA en cours...', 'جارٍ التحويل بالذكاء الاصطناعي...') }}</span>
+                        </div>
+                      }
                     </div>
                   </div>
                 }

@@ -61,6 +61,7 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly isSaved = signal<boolean>(true);
   readonly isLoading = signal<boolean>(false);
   readonly isGeneratingImg = signal<boolean>(false);
+  readonly isUploadingImg = signal<boolean>(false);
   readonly isDirectEditing = signal<boolean>(false);
   readonly userInput = signal<string>('');
 
@@ -257,6 +258,7 @@ export class ArticleStudioComponent implements OnDestroy {
     const reader = new FileReader();
     reader.onload = async () => {
       const base64 = (reader.result as string).split(',')[1];
+      this.isUploadingImg.set(true);
       try {
         const res = await fetch('/api/upload', {
           method: 'POST',
@@ -269,6 +271,8 @@ export class ArticleStudioComponent implements OnDestroy {
         }
       } catch (err) {
         console.error('Image upload failed', err);
+      } finally {
+        this.isUploadingImg.set(false);
       }
     };
     reader.readAsDataURL(file);
@@ -537,6 +541,7 @@ export class ArticleStudioComponent implements OnDestroy {
     const reader = new FileReader();
     reader.onload = async () => {
       const base64Data = (reader.result as string).split(',')[1];
+      this.isUploadingImg.set(true);
       try {
         const res = await fetch('/api/upload', {
           method: 'POST',
@@ -557,9 +562,12 @@ export class ArticleStudioComponent implements OnDestroy {
         }
       } catch (err) {
         console.error('Upload error:', err);
+      } finally {
+        this.isUploadingImg.set(false);
       }
     };
     reader.readAsDataURL(file);
+    input.value = '';
   }
 
   removeCoverImage() {
