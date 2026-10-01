@@ -625,5 +625,27 @@
     "docType": "Série d'Exercices",
     "isCorrection": false,
     "sizeBytes": 238336
+  },
+  {
+    "original": "1e_Ar_Lettre_Baa_Matching.png",
+    "renamed": "1e_Ar_Lettre_Baa_Matching.png",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\1ere_Primaire\\Arabe\\1e_Ar_Lettre_Baa_Matching.png",
+    "title": "العربية 1ère : الحرف ب (تمرين الوصل)",
+    "subject": "اللغة العربية",
+    "grade": "1ère Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 132656
+  },
+  {
+    "original": "1e_Ar_Lettre_Meem.png",
+    "renamed": "1e_Ar_Lettre_Meem.png",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\1ere_Primaire\\Arabe\\1e_Ar_Lettre_Meem.png",
+    "title": "العربية 1ère : الحرف م",
+    "subject": "اللغة العربية",
+    "grade": "1ère Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 156795
   }
 ]
