@@ -202,7 +202,7 @@
   background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
 }
 
-/* 🖨️ A4 PRINT OPTIMIZATIONS FOR MADRASATI TN */
+/* 🖨️ A4 PRINT ENGINE FOR MADRASATI TN */
 @media print {
   /* 1. Global Page & Body Reset */
   html, body {
@@ -212,43 +212,112 @@
     padding: 0 !important;
     width: 100% !important;
     height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
   }
 
-  /* 2. Hide everything by default to prevent dashboard clutter */
+  /* 2. Hide all non-printable chrome completely from layout flow */
+  header,
+  footer,
+  nav,
+  app-navbar,
+  app-auth-modal,
+  .no-print,
+  button,
+  input,
+  select,
+  textarea,
+  .print\:hidden {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* 3. Hide all default DOM elements */
   body * {
     visibility: hidden;
   }
 
-  /* 3. Make only the printable document and its children visible */
+  /* 4. Whitelist all printable targets and their descendants */
   #printable-document,
   #printable-document *,
   .print-document,
-  .print-document * {
-    visibility: visible;
+  .print-document *,
+  #image-doc-printable,
+  #image-doc-printable *,
+  .print-page,
+  .print-page *,
+  .print-watermark,
+  .print-watermark * {
+    visibility: visible !important;
   }
 
-  /* 4. Position and size the printable sheet cleanly on A4 paper */
+  /* 5. Anchor printable containers cleanly to top of page */
   #printable-document,
-  .print-document {
+  .print-document,
+  #image-doc-printable {
     position: absolute !important;
     left: 0 !important;
     top: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 6mm 8mm !important;
-    border: 2px solid #000000 !important;
-    border-radius: 0 !important;
     background: #ffffff !important;
     color: #000000 !important;
     box-shadow: none !important;
+    display: block !important;
+  }
+
+  #printable-document,
+  .print-document {
+    padding: 6mm 8mm !important;
+    border: 1.5px solid #000000 !important;
+    border-radius: 0 !important;
     font-size: 11pt !important;
     line-height: 1.5 !important;
     page-break-inside: avoid;
     break-inside: avoid;
   }
 
-  /* 5. Force high-contrast text and crisp borders in print */
+  /* 6. Scanned Worksheets & Multi-Page Print Layout */
+  #image-doc-printable {
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .print-page {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 10mm 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    display: block !important;
+  }
+
+  .print-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  .print-page img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 270mm !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+
+  /* 7. Force high-contrast text and subtle watermark */
   #printable-document h1,
   #printable-document h2,
   #printable-document h3,
@@ -259,23 +328,9 @@
     color: #000000 !important;
   }
 
-  /* 6. Subtle watermark stamp */
   .print-watermark {
     opacity: 0.08 !important;
     color: #000000 !important;
-  }
-
-  /* 7. Hide all UI controls explicitly */
-  header,
-  nav,
-  app-navbar,
-  .no-print,
-  button,
-  input,
-  select,
-  textarea {
-    display: none !important;
-    visibility: hidden !important;
   }
 
   @page {

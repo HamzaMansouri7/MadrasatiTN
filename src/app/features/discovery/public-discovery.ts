@@ -1405,9 +1405,83 @@ export class PublicDiscoveryComponent {
   }
 
   printImageDoc() {
-    if (typeof window !== 'undefined') {
-      window.print();
+    const doc = this.imageDocModal();
+    if (!doc || typeof window === 'undefined') return;
+
+    if (doc.imageUrls && doc.imageUrls.length > 0) {
+      const printWindow = window.open('', '_blank');
+      if (printWindow) {
+        const imagesHtml = doc.imageUrls
+          .map(
+            (url, index) => `
+          <div class="print-sheet">
+            <img src="${url}" alt="${doc.title} — Page ${index + 1}" />
+          </div>`
+          )
+          .join('');
+
+        printWindow.document.write(`<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>${doc.title}</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 8mm;
     }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      background: #ffffff;
+      width: 100%;
+      height: auto;
+    }
+    .print-sheet {
+      width: 100%;
+      page-break-after: always;
+      break-after: page;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+    .print-sheet:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+    img {
+      max-width: 100%;
+      max-height: 275mm;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  ${imagesHtml}
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        window.focus();
+        window.print();
+      }, 300);
+    };
+  </script>
+</body>
+</html>`);
+        printWindow.document.close();
+        return;
+      }
+    }
+
+    window.print();
   }
 
   copyLink(ex: ExerciseItem) {
