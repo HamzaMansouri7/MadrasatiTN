@@ -185,7 +185,9 @@ export class EditorStudioComponent {
   }
 
   private getDraftStorageKey(): string {
-    return this.isParentMode() ? 'madrasati_studio_parent_draft' : 'madrasati_studio_teacher_draft';
+    const uid = this.firebase.userProfile()?.uid || 'guest';
+    const prefix = this.isParentMode() ? 'madrasati_studio_parent_draft' : 'madrasati_studio_teacher_draft';
+    return `${prefix}_${uid}`;
   }
 
   saveDraft() {
@@ -207,7 +209,9 @@ export class EditorStudioComponent {
 
   loadDraft() {
     if (typeof localStorage !== 'undefined') {
-      const raw = localStorage.getItem(this.getDraftStorageKey());
+      const userKey = this.getDraftStorageKey();
+      const legacyKey = this.isParentMode() ? 'madrasati_studio_parent_draft' : 'madrasati_studio_teacher_draft';
+      const raw = localStorage.getItem(userKey) || localStorage.getItem(legacyKey);
       if (raw) {
         try {
           const draft = JSON.parse(raw);

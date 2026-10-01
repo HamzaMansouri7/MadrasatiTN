@@ -396,6 +396,7 @@ export class NavbarComponent {
 
   async handleLogout() {
     await this.firebase.logout();
+    this.store.clearUserSession();
     this.store.switchRole('home');
   }
 

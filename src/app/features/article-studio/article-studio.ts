@@ -141,7 +141,27 @@ export class ArticleStudioComponent implements OnDestroy {
 
   readonly suggestedChips = signal<string[]>([]);
 
+  private getArticleDraftStorageKey(): string {
+    const uid = this.firebase.userProfile()?.uid || 'guest';
+    return `madrasati_article_draft_${uid}`;
+  }
+
   constructor() {
+    if (typeof localStorage !== 'undefined') {
+      const userKey = this.getArticleDraftStorageKey();
+      const raw = localStorage.getItem(userKey) || localStorage.getItem('madrasati_article_draft');
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === 'object') {
+            this.article.set({ ...this.article(), ...parsed });
+          }
+        } catch {
+          // ignore invalid draft
+        }
+      }
+    }
+
     afterNextRender(() => {
       if (isPlatformBrowser(this.platformId) && this.tiptapContainerRef?.nativeElement) {
         this.initTipTap();
@@ -585,7 +605,7 @@ export class ArticleStudioComponent implements OnDestroy {
 
   saveDraft() {
     if (typeof localStorage !== 'undefined') {
-      localStorage.setItem('madrasati_article_draft', JSON.stringify(this.article()));
+      localStorage.setItem(this.getArticleDraftStorageKey(), JSON.stringify(this.article()));
     }
     this.isSaved.set(true);
   }

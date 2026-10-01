@@ -56,6 +56,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
           <!-- Body Content -->
           <div class="p-6 overflow-y-auto space-y-5 bg-[#FBF8F1]">
 
+            <!-- Error Banner -->
+            @if (errorMessage()) {
+              <div class="p-3.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-start gap-2.5 animate-in fade-in shadow-xs">
+                <span class="material-icons text-base shrink-0 text-red-600 mt-0.5">error_outline</span>
+                <span class="flex-1 font-medium leading-relaxed">{{ errorMessage() }}</span>
+                <button type="button" (click)="errorMessage.set(null)" class="text-red-500 hover:text-red-800 cursor-pointer">
+                  <span class="material-icons text-sm">close</span>
+                </button>
+              </div>
+            }
+
             <!-- POST-GOOGLE COMPLETION STEP: Google gives no gender / subject / school -->
             @if (completionMode()) {
               <div class="space-y-4">
@@ -67,6 +78,38 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   <p class="text-xs text-[#5B6B60]">
                     {{ lang.tr('Une dernière étape pour personnaliser votre espace.', 'خطوة أخيرة لتخصيص فضائك.') }}
                   </p>
+                </div>
+
+                <div>
+                  <span class="block text-xs font-semibold text-[#14251D] mb-2">
+                    {{ lang.t('authSignupAs') }} *
+                  </span>
+                  <div class="grid grid-cols-3 gap-2">
+                    <button
+                      type="button"
+                      (click)="selectedCompletionRole.set('teacher')"
+                      [class]="selectedCompletionRole() === 'teacher' ? 'border-[#1B4332] bg-[#F2ECDE] text-[#1B4332] ring-2 ring-[#1B4332]' : 'border-[#CBD9E2] text-[#5B6B60]'"
+                      class="p-2 rounded-xl border text-center cursor-pointer flex flex-col items-center bg-white text-xs">
+                      <span class="material-icons text-base mb-0.5 text-[#1B4332]">school</span>
+                      {{ lang.tr('Enseignant', 'معلم(ة)') }}
+                    </button>
+                    <button
+                      type="button"
+                      (click)="selectedCompletionRole.set('parent')"
+                      [class]="selectedCompletionRole() === 'parent' ? 'border-[#8A5A00] bg-[#F2ECDE] text-[#8A5A00] ring-2 ring-[#8A5A00]' : 'border-[#CBD9E2] text-[#5B6B60]'"
+                      class="p-2 rounded-xl border text-center cursor-pointer flex flex-col items-center bg-white text-xs">
+                      <span class="material-icons text-base mb-0.5 text-[#8A5A00]">family_restroom</span>
+                      {{ lang.tr('Parent', 'ولي أمر') }}
+                    </button>
+                    <button
+                      type="button"
+                      (click)="selectedCompletionRole.set('student')"
+                      [class]="selectedCompletionRole() === 'student' ? 'border-[#BF5B34] bg-[#F2ECDE] text-[#BF5B34] ring-2 ring-[#BF5B34]' : 'border-[#CBD9E2] text-[#5B6B60]'"
+                      class="p-2 rounded-xl border text-center cursor-pointer flex flex-col items-center bg-white text-xs">
+                      <span class="material-icons text-base mb-0.5 text-[#BF5B34]">auto_stories</span>
+                      {{ lang.tr('Élève', 'تلميذ(ة)') }}
+                    </button>
+                  </div>
                 </div>
 
                 <div>
@@ -91,7 +134,32 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   </div>
                 </div>
 
-                @if (firebase.userProfile()?.role === 'teacher') {
+                @if (selectedCompletionRole() === 'teacher') {
+                  <div class="grid grid-cols-2 gap-2">
+                    <div>
+                      <label for="cp-school" class="block text-xs font-medium text-[#486581] mb-1">
+                        {{ lang.tr('École primaire *', 'المدرسة الابتدائية *') }}
+                      </label>
+                      <input
+                        id="cp-school"
+                        type="text"
+                        [(ngModel)]="signupSchool"
+                        placeholder="Ex: École Habib Bourguiba"
+                        class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
+                    </div>
+                    <div>
+                      <label for="cp-gov" class="block text-xs font-medium text-[#486581] mb-1">
+                        {{ lang.tr('Gouvernorat *', 'الولاية *') }}
+                      </label>
+                      <input
+                        id="cp-gov"
+                        type="text"
+                        [(ngModel)]="signupGov"
+                        placeholder="Ex: Ariana, Tunis, Sfax"
+                        class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
+                    </div>
+                  </div>
+
                   <div>
                     <label for="cp-subject" class="block text-xs font-medium text-[#486581] mb-1">
                       {{ lang.tr("Matière principale d'enseignement *", 'المادة الرئيسية للتدريس *') }}
@@ -106,18 +174,6 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                       <option value="Éveil Scientifique">Éveil Scientifique (الأيقاظ العلمي)</option>
                       <option value="Éducation Islamique">Éducation Islamique (التربية الإسلامية)</option>
                     </select>
-                  </div>
-
-                  <div>
-                    <label for="cp-school" class="block text-xs font-medium text-[#486581] mb-1">
-                      {{ lang.tr('École primaire', 'المدرسة الابتدائية') }}
-                    </label>
-                    <input
-                      id="cp-school"
-                      type="text"
-                      [(ngModel)]="signupSchool"
-                      placeholder="Ex: École Habib Bourguiba"
-                      class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
                   </div>
                 }
 
@@ -342,7 +398,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
                   <div>
                     <label for="su-password" class="block text-xs font-medium text-[#486581] mb-1">
-                      {{ store.authModalRole() === 'student' ? lang.tr('Code PIN (4 chiffres)', 'الرمز السري (4 أرقام)') : lang.tr('Mot de passe', 'كلمة العبور') }} *
+                      {{ store.authModalRole() === 'student' ? lang.tr('Code PIN ou Mot de passe (min 6 car.)', 'الرمز السري أو كلمة المرور (6 أحرف/أرقام على الأقل)') : lang.tr('Mot de passe (min 6 caractères)', 'كلمة العبور (6 أحرف على الأقل)') }} *
                     </label>
                     <input
                       id="su-password"
@@ -456,6 +512,7 @@ export class AuthModalComponent {
   readonly firebase = inject(FirebaseService);
 
   readonly isLoading = signal<boolean>(false);
+  readonly errorMessage = signal<string | null>(null);
 
   // Signup fields
   signupName = '';
@@ -485,13 +542,22 @@ export class AuthModalComponent {
 
   // Post-Google profile completion (Google gives no gender/subject/school)
   readonly completionMode = signal<boolean>(false);
+  readonly selectedCompletionRole = signal<UserRole>('teacher');
 
   constructor() {
+    // Reset error when switching auth modal mode
+    effect(() => {
+      this.store.authModalMode();
+      this.errorMessage.set(null);
+    });
+
     // A redirect-based Google login resumes after a full page reload:
     // reopen the modal directly on the completion step.
     effect(() => {
       if (this.firebase.needsProfileCompletion()) {
         this.firebase.needsProfileCompletion.set(false);
+        const currentProfileRole = this.firebase.userProfile()?.role || 'teacher';
+        this.selectedCompletionRole.set(currentProfileRole);
         this.completionMode.set(true);
         this.store.openLoginModal();
       }
@@ -499,6 +565,7 @@ export class AuthModalComponent {
   }
 
   async handleGoogleAuth() {
+    this.errorMessage.set(null);
     this.isLoading.set(true);
     try {
       const targetRole = this.store.authModalMode() === 'signup'
@@ -507,6 +574,7 @@ export class AuthModalComponent {
 
       const profile = await this.firebase.loginWithGoogle(targetRole as UserRole);
       if (profile) {
+        this.selectedCompletionRole.set(profile.role);
         const needsGender = !profile.gender;
         const needsSubject = profile.role === 'teacher' && !profile.primarySubject;
         if (needsGender || needsSubject) {
@@ -517,63 +585,128 @@ export class AuthModalComponent {
         this.store.switchRole(profile.role);
         this.store.closeAuthModal();
       }
+    } catch (err: unknown) {
+      this.errorMessage.set(err instanceof Error ? err.message : 'Erreur lors de la connexion Google');
     } finally {
       this.isLoading.set(false);
     }
   }
 
   async submitCompletion() {
+    this.errorMessage.set(null);
+    const role = this.selectedCompletionRole();
+
+    if (role === 'teacher' && (!this.signupSchool.trim() || !this.signupGov.trim())) {
+      this.errorMessage.set(this.lang.tr('Veuillez renseigner votre école et votre gouvernorat.', 'يرجى إدخال المدرسة والولاية.'));
+      return;
+    }
+
     this.isLoading.set(true);
     try {
-      const role = this.firebase.userProfile()?.role || 'teacher';
       await this.firebase.updateUserProfile({
+        role,
         gender: this.signupGender,
         primarySubject: role === 'teacher' ? this.signupSubject : undefined,
-        school: this.signupSchool || undefined,
+        school: this.signupSchool.trim() || undefined,
+        delegation: this.signupGov.trim() || undefined,
       });
       this.completionMode.set(false);
       this.store.switchRole(role);
       this.store.closeAuthModal();
+    } catch (err: unknown) {
+      this.errorMessage.set(err instanceof Error ? err.message : 'Erreur lors de la mise à jour du profil');
     } finally {
       this.isLoading.set(false);
     }
   }
 
   async handleSignupSubmit() {
+    this.errorMessage.set(null);
+
+    // Validation
+    const name = this.signupName.trim();
+    const email = this.signupEmail.trim();
+    const password = this.signupPassword.trim();
+    const role = this.store.authModalRole();
+
+    if (!name) {
+      this.errorMessage.set(this.lang.tr('Veuillez renseigner votre nom complet.', 'يرجى إدخال الاسم واللقب.'));
+      return;
+    }
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      this.errorMessage.set(this.lang.tr('Veuillez saisir une adresse email valide.', 'يرجى إدخال بريد إلكتروني صالح.'));
+      return;
+    }
+
+    if (!password || password.length < 6) {
+      this.errorMessage.set(this.lang.tr('Le mot de passe / code doit comporter au moins 6 caractères.', 'كلمة المرور / الرمز السري يجب أن تتكون من 6 أحرف/أرقام على الأقل.'));
+      return;
+    }
+
+    if (role === 'teacher' && (!this.signupSchool.trim() || !this.signupGov.trim())) {
+      this.errorMessage.set(this.lang.tr('Veuillez renseigner votre école et votre gouvernorat.', 'يرجى إدخال المدرسة والولاية.'));
+      return;
+    }
+
+    if (role === 'parent' && !this.signupPhone.trim()) {
+      this.errorMessage.set(this.lang.tr('Veuillez renseigner votre numéro de téléphone.', 'يرجى إدخال رقم الهاتف للتواصل.'));
+      return;
+    }
+
     this.isLoading.set(true);
     try {
-      const role = this.store.authModalRole();
       const profile = await this.firebase.signup({
-        displayName: this.signupName || 'Nouvel Utilisateur',
-        email: this.signupEmail || 'user@madrasati.tn',
-        password: this.signupPassword,
+        displayName: name,
+        email,
+        password,
         role,
-        school: this.signupSchool,
-        phone: this.signupPhone,
+        school: this.signupSchool.trim() || undefined,
+        delegation: this.signupGov.trim() || undefined,
+        phone: this.signupPhone.trim() || undefined,
         grade: this.signupGrade,
         primarySubject: role === 'teacher' ? this.signupSubject : undefined,
         gender: this.signupGender,
       });
       this.store.switchRole(profile.role);
       this.store.closeAuthModal();
+    } catch (err: unknown) {
+      this.errorMessage.set(err instanceof Error ? err.message : 'Erreur lors de la création du compte');
     } finally {
       this.isLoading.set(false);
     }
   }
 
   async handleEmailLogin() {
+    this.errorMessage.set(null);
+    const email = this.loginEmail.trim();
+    const password = this.loginPassword.trim();
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      this.errorMessage.set(this.lang.tr('Veuillez renseigner une adresse email valide.', 'يرجى إدخال بريد إلكتروني صالح.'));
+      return;
+    }
+
+    if (!password) {
+      this.errorMessage.set(this.lang.tr('Veuillez saisir votre mot de passe.', 'يرجى إدخال كلمة المرور.'));
+      return;
+    }
+
     this.isLoading.set(true);
     try {
       const targetRole = this.store.currentRole() === 'home' ? 'teacher' : this.store.currentRole();
-      const profile = await this.firebase.loginWithEmail(this.loginEmail, this.loginPassword, targetRole);
+      const profile = await this.firebase.loginWithEmail(email, password, targetRole);
       this.store.switchRole(profile.role);
       this.store.closeAuthModal();
+    } catch (err: unknown) {
+      this.errorMessage.set(err instanceof Error ? err.message : 'Identifiants ou mot de passe incorrects');
     } finally {
       this.isLoading.set(false);
     }
   }
 
   async quickDemoLogin(role: 'teacher' | 'parent' | 'student') {
+    this.errorMessage.set(null);
     this.isLoading.set(true);
     try {
       if (role === 'teacher') {
@@ -587,6 +720,8 @@ export class AuthModalComponent {
         this.store.switchRole('student');
       }
       this.store.closeAuthModal();
+    } catch (err: unknown) {
+      this.errorMessage.set(err instanceof Error ? err.message : 'Erreur accès démo');
     } finally {
       this.isLoading.set(false);
     }

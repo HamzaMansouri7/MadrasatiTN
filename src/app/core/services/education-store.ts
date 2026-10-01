@@ -723,6 +723,13 @@ Pour réussir une production écrite de 6 à 8 lignes :
     }
   }
 
+  clearUserSession() {
+    this.watchlist.set({ courses: [], exercises: [], teachers: [] });
+    if (typeof localStorage !== 'undefined') {
+      localStorage.removeItem('madrasati_watchlist');
+    }
+  }
+
   // ── Comment / Q&A Methods ──────────────────────────────────────────────────
 
   getComments(targetId: string): Comment[] {

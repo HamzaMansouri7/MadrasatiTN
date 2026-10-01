@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/core';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { EducationStore, LanguageService, UserRole } from '@core';
+import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
 import { NavbarComponent, AuthModalComponent } from '@shared';
 
 @Component({
@@ -18,9 +18,18 @@ import { NavbarComponent, AuthModalComponent } from '@shared';
 export class App {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
   private readonly router = inject(Router);
 
   constructor() {
+    // When Google redirect authentication finishes, route to user's assigned role
+    effect(() => {
+      const redirectedProfile = this.firebase.onRedirectAuth();
+      if (redirectedProfile) {
+        this.store.switchRole(redirectedProfile.role);
+      }
+    });
+
     // Keep store currentRole synchronized when user navigates directly via URL or browser Back/Forward
     this.router.events
       .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))

@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { authGuard } from '@core';
 
 export const routes: Routes = [
   {
@@ -9,18 +10,21 @@ export const routes: Routes = [
   },
   {
     path: 'teacher',
+    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/teacher/teacher-home').then((m) => m.TeacherHomeComponent),
     title: 'فضاء المعلم | Espace Enseignant - Madrasati TN',
   },
   {
     path: 'parent',
+    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/parent/parent-home').then((m) => m.ParentHomeComponent),
     title: 'فضاء الولي | Espace Parent - Madrasati TN',
   },
   {
     path: 'student',
+    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/student/student-home').then((m) => m.StudentHomeComponent),
     title: 'فضاء التلميذ | Espace Élève - Madrasati TN',
@@ -33,12 +37,14 @@ export const routes: Routes = [
   },
   {
     path: 'editor',
+    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/editor/editor-studio').then((m) => m.EditorStudioComponent),
     title: 'استوديو الوثائق | Studio Imprimable A4 - Madrasati TN',
   },
   {
     path: 'article-studio',
+    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/article-studio/article-studio').then((m) => m.ArticleStudioComponent),
     title: 'استوديو المقالات | Rédaction Pédagogique - Madrasati TN',

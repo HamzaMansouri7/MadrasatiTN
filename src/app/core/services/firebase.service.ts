@@ -263,6 +263,31 @@ export class FirebaseService {
     }
   }
 
+  readonly onRedirectAuth = signal<UserProfile | null>(null);
+
+  /** Maps Firebase error codes to readable bilingual messages */
+  formatAuthError(err: unknown): string {
+    const code = (err as { code?: string })?.code || '';
+    switch (code) {
+      case 'auth/email-already-in-use':
+        return 'Cette adresse e-mail est déjà associée à un compte (البريد الإلكتروني مستخدم بالفعل).';
+      case 'auth/invalid-email':
+        return 'Adresse e-mail invalide (عنوان البريد الإلكتروني غير صالح).';
+      case 'auth/weak-password':
+        return 'Le mot de passe doit comporter au moins 6 caractères (كلمة المرور يجب أن تتكون من 6 أحرف على الأقل).';
+      case 'auth/user-not-found':
+      case 'auth/wrong-password':
+      case 'auth/invalid-credential':
+        return 'Identifiants incorrects ou mot de passe erroné (البريد الإلكتروني أو كلمة المرور غير صحيحة).';
+      case 'auth/too-many-requests':
+        return 'Trop de tentatives infructueuses. Veuillez réessayer plus tard (محاولات كثيرة خاطئة، يرجى المحاولة لاحقاً).';
+      case 'auth/network-request-failed':
+        return 'Erreur de connexion au serveur Firebase (خطأ في الاتصال بالخادم).';
+      default:
+        return (err instanceof Error ? err.message : 'Une erreur est survenue lors de l\'authentification.');
+    }
+  }
+
   /** Resumes a redirect-based Google login after the page reloads. */
   private async handleRedirectResult(): Promise<void> {
     try {
@@ -277,6 +302,8 @@ export class FirebaseService {
       const profile = await this.completeGoogleProfile(result.user, storedRole || 'teacher');
       if (!profile.gender || (profile.role === 'teacher' && !profile.primarySubject)) {
         this.needsProfileCompletion.set(true);
+      } else {
+        this.onRedirectAuth.set(profile);
       }
     } catch (err) {
       console.warn('Google redirect result error:', err);
@@ -284,7 +311,7 @@ export class FirebaseService {
   }
 
   async loginWithEmail(email: string, password?: string, targetRole: UserRole = 'teacher'): Promise<UserProfile> {
-    if (password && password.length >= 6) {
+    if (password !== undefined) {
       try {
         const credential = await signInWithEmailAndPassword(this.auth, email, password);
         const user = credential.user;
@@ -292,6 +319,7 @@ export class FirebaseService {
         let userRole = targetRole;
         let school = 'École Primaire Habib Bourguiba, Ariana';
         let displayName = user.displayName;
+        let extra: Partial<UserProfile> = {};
 
         try {
           const userDoc = await getDoc(doc(this.db, 'users', user.uid));
@@ -300,6 +328,13 @@ export class FirebaseService {
             if (data['role']) userRole = data['role'] as UserRole;
             if (data['school']) school = data['school'];
             if (data['displayName']) displayName = data['displayName'];
+            extra = {
+              primarySubject: data['primarySubject'],
+              gender: data['gender'],
+              grade: data['grade'],
+              phone: data['phone'],
+              delegation: data['delegation'],
+            };
           }
         } catch (dbErr) {
           console.warn('Could not read user profile from Firestore:', dbErr);
@@ -312,16 +347,19 @@ export class FirebaseService {
           photoURL: user.photoURL,
           role: userRole,
           school,
+          ...extra,
         };
 
         this.userProfile.set(profile);
         this.saveSession(profile);
         return profile;
       } catch (err: unknown) {
-        console.warn('Firebase Email Auth error (falling back to verified local session):', err instanceof Error ? err.message : err);
+        console.error('Firebase Email Auth error:', err);
+        throw new Error(this.formatAuthError(err));
       }
     }
 
+    // Fast 1-click Demo Account (when password is omitted)
     const defaultName = targetRole === 'teacher' 
       ? 'Enseignant Certifié' 
       : (targetRole === 'parent' ? 'Parent d\'élève' : 'Élève');
@@ -330,7 +368,7 @@ export class FirebaseService {
       : (targetRole === 'parent' ? 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80' : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80');
 
     const profile: UserProfile = {
-      uid: 'email_user_' + Date.now(),
+      uid: 'demo_user_' + targetRole + '_' + Date.now(),
       displayName: defaultName,
       email,
       photoURL: defaultAvatar,
@@ -349,6 +387,7 @@ export class FirebaseService {
     password?: string;
     role: UserRole;
     school?: string;
+    delegation?: string;
     phone?: string;
     grade?: string;
     primarySubject?: string;
@@ -358,7 +397,7 @@ export class FirebaseService {
       ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
       : (data.role === 'parent' ? 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80' : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80');
 
-    if (data.password && data.password.length >= 6) {
+    if (data.password !== undefined) {
       try {
         const credential = await createUserWithEmailAndPassword(this.auth, data.email, data.password);
         const user = credential.user;
@@ -379,6 +418,7 @@ export class FirebaseService {
             email: data.email,
             role: data.role,
             school: data.school || 'École Primaire Tunisienne',
+            delegation: data.delegation || null,
             phone: data.phone || null,
             grade: data.grade || null,
             primarySubject: data.primarySubject || null,
@@ -397,6 +437,7 @@ export class FirebaseService {
           photoURL: avatar,
           role: data.role,
           school: data.school || 'École Primaire Tunisienne',
+          delegation: data.delegation,
           phone: data.phone,
           grade: data.grade,
           primarySubject: data.primarySubject,
@@ -407,7 +448,8 @@ export class FirebaseService {
         this.saveSession(profile);
         return profile;
       } catch (err: unknown) {
-        console.warn('Firebase createUserWithEmailAndPassword error (falling back to verified local session):', err instanceof Error ? err.message : err);
+        console.error('Firebase createUserWithEmailAndPassword error:', err);
+        throw new Error(this.formatAuthError(err));
       }
     }
 
@@ -418,6 +460,7 @@ export class FirebaseService {
       photoURL: avatar,
       role: data.role,
       school: data.school || 'École Primaire Tunisienne',
+      delegation: data.delegation,
       phone: data.phone,
       grade: data.grade,
       primarySubject: data.primarySubject,
