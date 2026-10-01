@@ -6,16 +6,27 @@ export type LanguageCode = 'fr' | 'ar';
   providedIn: 'root',
 })
 export class LanguageService {
-  readonly lang = signal<LanguageCode>('ar');
+  readonly lang = signal<LanguageCode>(this.getInitialLanguage());
 
   readonly isArabic = computed(() => this.lang() === 'ar');
   readonly dir = computed(() => (this.lang() === 'ar' ? 'rtl' : 'ltr'));
 
   constructor() {
     if (typeof document !== 'undefined') {
-      document.documentElement.lang = 'ar';
-      document.documentElement.dir = 'rtl';
+      const initial = this.lang();
+      document.documentElement.lang = initial;
+      document.documentElement.dir = initial === 'ar' ? 'rtl' : 'ltr';
     }
+  }
+
+  private getInitialLanguage(): LanguageCode {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('madrasati_lang');
+        if (saved === 'fr' || saved === 'ar') return saved;
+      } catch {}
+    }
+    return 'ar';
   }
 
   setLanguage(code: LanguageCode) {
@@ -23,6 +34,9 @@ export class LanguageService {
     if (typeof document !== 'undefined') {
       document.documentElement.lang = code;
       document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
+      try {
+        localStorage.setItem('madrasati_lang', code);
+      } catch {}
     }
   }
 
@@ -206,7 +220,65 @@ export class LanguageService {
     editorPromptPlaceholder: { fr: "Énoncé du problème ou consigne pour l'élève...", ar: "نص المسألة أو التعليمة للتلميذ..." },
     editorTfStatementPlaceholder: { fr: "Rédigez l'affirmation...", ar: "اكتب الإفادة..." },
     editorGapTextPlaceholder: { fr: "Ex: Le soleil se lève à l'[[est]] et se couche à l'[[ouest]].", ar: "مثال: تشرق الشمس من الـ[[شرق]] وتغرب من الـ[[غرب]]." },
+
+    // Worksheet Generator (Phase 2 & 3)
+    generatorNav: { fr: 'Générateur de Fiches', ar: 'مولّد الأوراق' },
+    generatorTitle: { fr: 'Générateur de fiches similaires', ar: 'مولّد الأوراق والتمارين المشابهة' },
+    generatorSubtitle: {
+      fr: "Importez une fiche ou un exercice, l'IA en recrée de nouveaux dans le même style pédagogique.",
+      ar: 'استورد ورقة تمارين، وسيقوم الذكاء الاصطناعي بإنشاء أوراق جديدة بنفس الأسلوب البيداغوجي.',
+    },
+    generatorSharedBadge: { fr: 'Fiche partagée · Madrasati TN', ar: 'ورقة تمارين مشتركة · مدرستي تونس' },
+    generatorChooseImage: { fr: 'Choisir une image', ar: 'اختيار صورة أو ورقة' },
+    generatorAnalyzeStyle: { fr: 'Analyser le style', ar: 'تحليل الأسلوب والنمط' },
+    generatorAnalyzing: { fr: 'Analyse…', ar: 'جارٍ التحليل…' },
+    generatorCount: { fr: 'Nombre d\'exercices', ar: 'عدد التمارين' },
+    generatorGenerate: { fr: 'Générer les exercices', ar: 'توليد التمارين' },
+    generatorGenerating: { fr: 'Génération…', ar: 'جارٍ التوليد…' },
+    generatorAddImages: { fr: 'Ajouter des illustrations', ar: 'إضافة رسومات توضيحية' },
+    generatorIllustrating: { fr: 'Illustration…', ar: 'جارٍ الرسم…' },
+    generatorShare: { fr: 'Partager', ar: 'مشاركة' },
+    generatorSharing: { fr: 'Partage…', ar: 'جارٍ إنشاء الرابط…' },
+    generatorPrintA4: { fr: 'Imprimer A4', ar: 'طباعة A4 رسمية' },
+    generatorLinkCopied: { fr: 'Lien copié ✓', ar: 'تم نسخ الرابط ✓' },
+    generatorHints: { fr: 'Indice', ar: 'إرشادات' },
+    changeLanguage: { fr: 'Changer de langue', ar: 'تغيير اللغة' },
   };
+
+  translateGrade(grade?: string | null): string {
+    if (!grade) return '';
+    const map: Record<string, { fr: string; ar: string }> = {
+      '1ère Année': { fr: '1ère Année', ar: 'السنة الأولى ابتدائي' },
+      '2ème Année': { fr: '2ème Année', ar: 'السنة الثانية ابتدائي' },
+      '3ème Année': { fr: '3ème Année', ar: 'السنة الثالثة ابتدائي' },
+      '4ème Année': { fr: '4ème Année', ar: 'السنة الرابعة ابتدائي' },
+      '5ème Année': { fr: '5ème Année', ar: 'السنة الخامسة ابتدائي' },
+      '6ème Année': { fr: '6ème Année', ar: 'السنة السادسة ابتدائي' },
+      '7ème de base': { fr: '7ème de base', ar: 'السنة السابعة أساسي' },
+      '8ème de base': { fr: '8ème de base', ar: 'السنة الثامنة أساسي' },
+      '9ème de base': { fr: '9ème de base', ar: 'السنة التاسعة أساسي' },
+      'Baccalauréat': { fr: 'Baccalauréat', ar: 'البكالوريا' },
+    };
+    const found = map[grade];
+    if (!found) return grade;
+    return this.lang() === 'ar' ? found.ar : found.fr;
+  }
+
+  translateSubject(subject?: string | null): string {
+    if (!subject) return '';
+    const norm = subject.toLowerCase().trim();
+    if (norm.includes('math')) return this.lang() === 'ar' ? 'الرياضيات' : 'Mathématiques';
+    if (norm.includes('fran')) return this.lang() === 'ar' ? 'اللغة الفرنسية' : 'Français';
+    if (norm.includes('arab') || norm.includes('عرب')) return this.lang() === 'ar' ? 'اللغة العربية' : 'Arabe';
+    if (norm.includes('scien') || norm.includes('éveil') || norm.includes('ايقاظ') || norm.includes('إيقاظ')) {
+      return this.lang() === 'ar' ? 'الإيقاظ العلمي' : 'Éveil Scientifique';
+    }
+    if (norm.includes('islam') || norm.includes('إسلام')) return this.lang() === 'ar' ? 'التربية الإسلامية' : 'Éducation Islamique';
+    if (norm.includes('hist') || norm.includes('géo') || norm.includes('تاريخ')) return this.lang() === 'ar' ? 'التاريخ والجغرافيا' : 'Histoire & Géo';
+    if (norm.includes('angl') || norm.includes('إنكليز') || norm.includes('إنجليز')) return this.lang() === 'ar' ? 'اللغة الإنجليزية' : 'Anglais';
+    if (norm.includes('info') || norm.includes('إعلام')) return this.lang() === 'ar' ? 'الإعلامية' : 'Informatique';
+    return subject;
+  }
 
   t(key: string): string {
     const entry = this.dictionary[key];

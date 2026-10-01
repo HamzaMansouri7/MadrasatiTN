@@ -56,11 +56,24 @@
   .ai-spinner, .ai-dots i { animation: none; }
 }
 
+/* Fillable blank for fill-in-the-gap exercises */
+.gap-blank {
+  display: inline-block;
+  border-bottom: 2px solid #1B4332;
+  min-width: 48px;
+  height: 1.1em;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+
 @media print {
   .no-print {
     display: none !important;
   }
   .print-sheet article {
     break-inside: avoid;
+  }
+  .gap-blank {
+    border-bottom-color: #000 !important;
   }
 }

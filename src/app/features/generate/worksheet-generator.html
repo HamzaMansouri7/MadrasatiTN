@@ -2,10 +2,10 @@
   <!-- Header -->
   <header class="mb-6 no-print">
     <h1 class="font-display text-2xl font-bold text-[#14251D]">
-      {{ lang.tr('Générateur de fiches similaires', 'مولّد الأوراق المشابهة') }}
+      {{ lang.t('generatorTitle') }}
     </h1>
     <p class="text-sm text-[#5B6B60] mt-1">
-      {{ lang.tr('Importe une fiche, l\'IA en recrée de nouvelles dans le même style.', 'استورد ورقة، والذكاء الاصطناعي ينشئ أوراقًا جديدة بنفس الأسلوب.') }}
+      {{ lang.t('generatorSubtitle') }}
     </p>
   </header>
 
@@ -15,7 +15,7 @@
       <div class="flex-1">
         <div class="flex items-center gap-2">
           <span class="material-icons text-[18px]" [style.color]="accent()">auto_awesome</span>
-          <span class="font-display font-semibold text-[#14251D]">{{ lang.tr('L\'IA travaille', 'الذكاء الاصطناعي يعمل') }}</span>
+          <span class="font-display font-semibold text-[#14251D]">{{ lang.tr('L’IA travaille…', 'الذكاء الاصطناعي يعمل…') }}</span>
           <span class="ai-dots"><i></i><i></i><i></i></span>
         </div>
         <p class="text-sm text-[#5B6B60] mt-1 ai-fade">{{ thinking() }}</p>
@@ -26,7 +26,7 @@
   @if (shared()) {
     <header class="mb-6">
       <h1 class="font-display text-2xl font-bold text-[#14251D]">{{ sharedTitle() }}</h1>
-      <p class="text-sm text-[#5B6B60] mt-1">{{ lang.tr('Fiche partagée · Madrasati TN', 'ورقة مشتركة · مدرستي') }}</p>
+      <p class="text-sm text-[#5B6B60] mt-1">{{ lang.t('generatorSharedBadge') }}</p>
     </header>
   }
 
@@ -38,7 +38,7 @@
         <input type="file" accept="image/*" class="hidden" (change)="onFileSelected($event)" />
         <span class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm hover:bg-[#EAE2D0]">
           <span class="material-icons text-base">image</span>
-          {{ lang.tr('Choisir une image', 'اختر صورة') }}
+          {{ lang.t('generatorChooseImage') }}
         </span>
       </label>
 
@@ -49,8 +49,8 @@
             type="button"
             (click)="analyze()"
             [disabled]="analyzing()"
-            class="px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60">
-            {{ analyzing() ? lang.tr('Analyse…', '…تحليل') : lang.tr('Analyser le style', 'حلّل الأسلوب') }}
+            class="px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60 cursor-pointer">
+            {{ analyzing() ? lang.t('generatorAnalyzing') : lang.t('generatorAnalyzeStyle') }}
           </button>
         </div>
       }
@@ -62,7 +62,7 @@
     <section class="bg-white border border-[#E7DFCF] rounded-[14px] p-5 mb-5 no-print">
       <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
         <span class="text-[#14251D] font-semibold">{{ d.topic || d.title }}</span>
-        <span class="text-[#5B6B60]">{{ d.grade }} · {{ d.subject }}</span>
+        <span class="text-[#5B6B60]">{{ lang.translateGrade(d.grade) }} · {{ lang.translateSubject(d.subject) }}</span>
         <div class="flex items-center gap-1">
           @for (c of d.palette || []; track c) {
             <span class="w-5 h-5 rounded-full border border-[#E7DFCF]" [style.background]="c"></span>
@@ -71,9 +71,9 @@
       </div>
 
       <div class="flex items-center gap-3 mt-4">
-        <label class="text-sm text-[#5B6B60]">{{ lang.tr('Nombre', 'العدد') }}</label>
+        <label class="text-sm text-[#5B6B60]">{{ lang.t('generatorCount') }}</label>
         <select
-          class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm"
+          class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm bg-white"
           [value]="count()"
           (change)="count.set(+$any($event.target).value)">
           @for (n of [1,2,3,4,5,6]; track n) { <option [value]="n">{{ n }}</option> }
@@ -82,8 +82,8 @@
           type="button"
           (click)="generate()"
           [disabled]="generating()"
-          class="px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60">
-          {{ generating() ? lang.tr('Génération…', '…توليد') : lang.tr('Générer', 'توليد') }}
+          class="px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60 cursor-pointer">
+          {{ generating() ? lang.t('generatorGenerating') : lang.t('generatorGenerate') }}
         </button>
       </div>
     </section>
@@ -94,18 +94,18 @@
   @if (exercises().length > 0) {
     <div class="flex flex-wrap justify-end gap-2 mb-3 no-print">
       @if (!shared()) {
-        <button type="button" (click)="illustrate()" [disabled]="illustrating()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm disabled:opacity-60">
+        <button type="button" (click)="illustrate()" [disabled]="illustrating()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm disabled:opacity-60 cursor-pointer">
           <span class="material-icons text-base">palette</span>
-          {{ illustrating() ? lang.tr('Illustration…', '…رسم') : lang.tr('Ajouter des images', 'أضف صورًا') }}
+          {{ illustrating() ? lang.t('generatorIllustrating') : lang.t('generatorAddImages') }}
         </button>
-        <button type="button" (click)="share()" [disabled]="saving()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60">
+        <button type="button" (click)="share()" [disabled]="saving()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60 cursor-pointer">
           <span class="material-icons text-base">share</span>
-          {{ saving() ? lang.tr('Partage…', '…مشاركة') : lang.tr('Partager', 'مشاركة') }}
+          {{ saving() ? lang.t('generatorSharing') : lang.t('generatorShare') }}
         </button>
       }
-      <button type="button" (click)="print()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm">
+      <button type="button" (click)="print()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm cursor-pointer">
         <span class="material-icons text-base">print</span>
-        {{ lang.tr('Imprimer A4', 'طباعة A4') }}
+        {{ lang.t('generatorPrintA4') }}
       </button>
     </div>
 
@@ -113,7 +113,7 @@
       <div class="flex items-center gap-2 mb-3 p-3 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-sm no-print">
         <span class="material-icons text-base text-[#1B4332]">link</span>
         <input readonly [value]="url" class="flex-1 bg-transparent text-[#14251D] outline-none" />
-        <span class="text-xs text-[#5B6B60]">{{ lang.tr('Lien copié ✓', 'تم نسخ الرابط ✓') }}</span>
+        <span class="text-xs text-[#5B6B60]">{{ lang.t('generatorLinkCopied') }}</span>
       </div>
     }
 
@@ -154,12 +154,20 @@
                 </div>
               }
               @case ('fill_blanks') {
-                <p class="text-[#14251D] whitespace-pre-line">{{ ex.gapText }}</p>
+                <p class="text-[#14251D] leading-8">
+                  @for (part of gapParts(ex.gapText); track $index) {
+                    @if (part.blank) {
+                      <span class="gap-blank" [style.min-width.px]="part.len * 11 + 24" [style.border-color]="accent()"></span>
+                    } @else {
+                      <span>{{ part.t }}</span>
+                    }
+                  }
+                </p>
               }
             }
 
             @if (ex.hints?.length) {
-              <p class="text-xs text-[#5B6B60]">💡 {{ (ex.hints || []).join(' · ') }}</p>
+              <p class="text-xs text-[#5B6B60]">💡 {{ lang.t('generatorHints') }} : {{ (ex.hints || []).join(' · ') }}</p>
             }
           </div>
         </article>

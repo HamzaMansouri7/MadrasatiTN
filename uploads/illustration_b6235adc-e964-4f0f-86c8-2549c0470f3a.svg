@@ -1,0 +1,87 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFDDC2"/>
+      <stop offset="100%" style="stop-color:#F5CBA7"/>
+    </linearGradient>
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BCE2F9"/>
+      <stop offset="100%" style="stop-color:#9BD4F6"/>
+    </linearGradient>
+    <linearGradient id="pantsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#80A5D8"/>
+      <stop offset="100%" style="stop-color:#658CCF"/>
+    </linearGradient>
+    <linearGradient id="calendarGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F0F0F0"/>
+    </linearGradient>
+    <linearGradient id="buttonGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BCE2F9"/>
+      <stop offset="100%" style="stop-color:#9BD4F6"/>
+    </linearGradient>
+    <linearGradient id="buttonGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8F6CD"/>
+      <stop offset="100%" style="stop-color:#AEE0B4"/>
+    </linearGradient>
+    <linearGradient id="buttonGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BCE2F9"/>
+      <stop offset="100%" style="stop-color:#9BD4F6"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Child's Head -->
+  <circle cx="220" cy="150" r="80" fill="url(#skinGradient)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+  <!-- Hair (simple shape) -->
+  <path d="M160 110 Q190 60 220 80 T280 110 Q260 160 220 160 Q180 160 160 110 Z" fill="#7B3F00" stroke="#222" stroke-width="6" stroke-linejoin="round" filter="url(#shadow)"/>
+  <!-- Eyes -->
+  <circle cx="195" cy="140" r="10" fill="white" stroke="#222" stroke-width="3"/>
+  <circle cx="245" cy="140" r="10" fill="white" stroke="#222" stroke-width="3"/>
+  <circle cx="195" cy="142" r="5" fill="#222"/>
+  <circle cx="245" cy="142" r="5" fill="#222"/>
+  <!-- Mouth (smile) -->
+  <path d="M200 180 Q220 195 240 180" fill="none" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Body -->
+  <rect x="170" y="220" width="100" height="120" rx="20" ry="20" fill="url(#shirtGradient)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+  
+  <!-- Arms -->
+  <path d="M170 230 Q120 200 130 280 Q140 310 170 300 Z" fill="url(#skinGradient)" stroke="#222" stroke-width="6" stroke-linejoin="round" filter="url(#shadow)"/> <!-- Left arm -->
+  <path d="M270 230 Q320 200 310 280 Q300 310 270 300 Z" fill="url(#skinGradient)" stroke="#222" stroke-width="6" stroke-linejoin="round" filter="url(#shadow)"/> <!-- Right arm -->
+  
+  <!-- Hands -->
+  <circle cx="120" cy="285" r="25" fill="url(#skinGradient)" stroke="#222" stroke-width="6" filter="url(#shadow)"/> <!-- Left hand -->
+  <circle cx="320" cy="285" r="25" fill="url(#skinGradient)" stroke="#222" stroke-width="6" filter="url(#shadow)"/> <!-- Right hand -->
+  
+  <!-- Legs -->
+  <rect x="180" y="340" width="40" height="70" rx="15" ry="15" fill="url(#pantsGradient)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+  <rect x="225" y="340" width="40" height="70" rx="15" ry="15" fill="url(#pantsGradient)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+
+  <!-- Calendar Page -->
+  <rect x="250" y="270" width="100" height="120" rx="15" ry="15" fill="url(#calendarGradient)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+  <text x="265" y="305" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#333">15</text>
+  <text x="260" y="340" font-family="Arial, sans-serif" font-size="20" fill="#666">May</text>
+  <text x="260" y="370" font-family="Arial, sans-serif" font-size="20" fill="#666">2024</text>
+
+  <!-- Activity Buttons -->
+  <!-- Button 1: School Building -->
+  <circle cx="550" cy="120" r="60" fill="url(#buttonGradient1)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+  <path d="M550 80 L520 100 V160 H580 V100 L550 80 Z M530 110 H540 V130 H530 Z M560 110 H570 V130 H560 Z" fill="#222" stroke-linejoin="round"/>
+  <rect x="548" y="150" width="10" height="20" fill="#222"/> <!-- Door -->
+
+  <!-- Button 2: Soccer Ball -->
+  <circle cx="550" cy="250" r="60" fill="url(#buttonGradient2)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+  <circle cx="550" cy="250" r="40" fill="white" stroke="#222" stroke-width="5"/>
+  <path d="M550 210 L525 225 L530 250 L525 275 L550 290 L575 275 L570 250 L575 225 Z" fill="#222"/>
+
+  <!-- Button 3: Family Picnic -->
+  <circle cx="550" cy="380" r="60" fill="url(#buttonGradient3)" stroke="#222" stroke-width="6" filter="url(#shadow)"/>
+  <rect x="510" y="375" width="80" height="15" rx="5" ry="5" fill="#222"/> <!-- Picnic blanket -->
+  <circle cx="525" cy="370" r="10" fill="url(#skinGradient)" stroke="#222" stroke-width="3"/> <!-- Head 1 -->
+  <circle cx="575" cy="370" r="10" fill="url(#skinGradient)" stroke="#222" stroke-width="3"/> <!-- Head 2 -->
+  <circle cx="550" cy="360" r="8" fill="url(#skinGradient)" stroke="#222" stroke-width="3"/> <!-- Head 3 (child) -->
+  <path d="M545 350 L555 350 L555 365 L545 365 Z" fill="#222"/> <!-- Blanket food indicator -->
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="segmentGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D9C4F8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C3AEEC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="segmentGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE8A6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EED08E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="segmentGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BCE2F9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6CCED;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Head -->
+  <g filter="url(#shadow)">
+    <circle cx="90" cy="225" r="50" fill="url(#segmentGradient1)" stroke="#3A2750" stroke-width="4"/>
+    <!-- Eyes -->
+    <circle cx="75" cy="210" r="10" fill="white" stroke="#3A2750" stroke-width="2"/>
+    <circle cx="75" cy="210" r="4" fill="#3A2750"/>
+    <circle cx="105" cy="210" r="10" fill="white" stroke="#3A2750" stroke-width="2"/>
+    <circle cx="105" cy="210" r="4" fill="#3A2750"/>
+    <!-- Smile -->
+    <path d="M75 235 Q90 245 105 235" fill="none" stroke="#3A2750" stroke-width="3" stroke-linecap="round"/>
+    <!-- Antennae -->
+    <path d="M70 175 Q60 155 80 160" fill="none" stroke="#3A2750" stroke-width="4" stroke-linecap="round"/>
+    <path d="M110 175 Q120 155 100 160" fill="none" stroke="#3A2750" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="80" cy="160" r="5" fill="#3A2750"/>
+    <circle cx="100" cy="160" r="5" fill="#3A2750"/>
+  </g>
+
+  <!-- Body segments -->
+  <g filter="url(#shadow)">
+    <!-- Segment 1 (Janvier) -->
+    <circle cx="150" cy="225" r="45" fill="url(#segmentGradient2)" stroke="#3A2750" stroke-width="4"/>
+    <text x="150" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Janvier</text>
+
+    <!-- Segment 2 (Février) -->
+    <circle cx="205" cy="225" r="45" fill="url(#segmentGradient3)" stroke="#3A2750" stroke-width="4"/>
+    <text x="205" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Février</text>
+
+    <!-- Segment 3 (Mars) -->
+    <circle cx="260" cy="225" r="45" fill="url(#segmentGradient1)" stroke="#3A2750" stroke-width="4"/>
+    <text x="260" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Mars</text>
+
+    <!-- Segment 4 (Empty) -->
+    <circle cx="315" cy="225" r="45" fill="url(#segmentGradient2)" stroke="#3A2750" stroke-width="4"/>
+    <text x="315" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle" opacity="0.4">?</text>
+
+    <!-- Segment 5 (Mai) -->
+    <circle cx="370" cy="225" r="45" fill="url(#segmentGradient3)" stroke="#3A2750" stroke-width="4"/>
+    <text x="370" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Mai</text>
+
+    <!-- Segment 6 (Juin) -->
+    <circle cx="425" cy="225" r="45" fill="url(#segmentGradient1)" stroke="#3A2750" stroke-width="4"/>
+    <text x="425" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Juin</text>
+
+    <!-- Segment 7 (Empty) -->
+    <circle cx="480" cy="225" r="45" fill="url(#segmentGradient2)" stroke="#3A2750" stroke-width="4"/>
+    <text x="480" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle" opacity="0.4">?</text>
+
+    <!-- Segment 8 (Août) -->
+    <circle cx="535" cy="225" r="45" fill="url(#segmentGradient3)" stroke="#3A2750" stroke-width="4"/>
+    <text x="535" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Août</text>
+
+    <!-- Segment 9 (Septembre) -->
+    <circle cx="590" cy="225" r="45" fill="url(#segmentGradient1)" stroke="#3A2750" stroke-width="4"/>
+    <text x="590" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Septembre</text>
+
+    <!-- Segment 10 (Empty) -->
+    <circle cx="645" cy="225" r="45" fill="url(#segmentGradient2)" stroke="#3A2750" stroke-width="4"/>
+    <text x="645" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle" opacity="0.4">?</text>
+
+    <!-- Segment 11 (Novembre) -->
+    <circle cx="700" cy="225" r="45" fill="url(#segmentGradient3)" stroke="#3A2750" stroke-width="4"/>
+    <text x="700" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Novembre</text>
+
+    <!-- Segment 12 (Décembre) -->
+    <circle cx="755" cy="225" r="45" fill="url(#segmentGradient1)" stroke="#3A2750" stroke-width="4"/>
+    <text x="755" y="230" font-family="Sniglet, sans-serif" font-size="20" fill="#3A2750" text-anchor="middle">Décembre</text>
+  </g>
+</svg>

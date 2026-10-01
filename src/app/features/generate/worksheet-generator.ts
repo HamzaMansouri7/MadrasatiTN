@@ -183,6 +183,20 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     return this.dna()?.palette?.[0] || '#1B4332';
   }
 
+  // Split "Texte [[mot]] suite" into renderable parts; [[mot]] becomes a blank
+  // (the answer is hidden so the sheet is fillable; length hints the word size).
+  gapParts(text: string | undefined): { t: string; blank: boolean; len: number }[] {
+    if (!text) return [];
+    return text.split(/(\[\[[^\]]+\]\])/g).filter(Boolean).map((seg) => {
+      const m = seg.match(/^\[\[([^\]]+)\]\]$/);
+      return m ? { t: '', blank: true, len: m[1].length } : { t: seg, blank: false, len: 0 };
+    });
+  }
+
+  blankUnderscores(len: number): string {
+    return ' '.repeat(Math.max(4, Math.min(len + 2, 14)));
+  }
+
   print() {
     if (typeof window !== 'undefined') window.print();
   }
