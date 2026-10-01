@@ -31,6 +31,7 @@ export class ArticleStudioComponent {
   readonly isSaved = signal<boolean>(true);
   readonly isLoading = signal<boolean>(false);
   readonly isGeneratingImg = signal<boolean>(false);
+  readonly isDirectEditing = signal<boolean>(false);
   readonly userInput = signal<string>('');
 
   readonly messages = signal<ChatMessage[]>([
@@ -210,6 +211,20 @@ export class ArticleStudioComponent {
       localStorage.setItem('madrasati_article_draft', JSON.stringify(this.article()));
     }
     this.isSaved.set(true);
+  }
+
+  updateArticleContent(val: string) {
+    this.article.update((a) => ({ ...a, contentMarkdown: val }));
+    this.isSaved.set(false);
+  }
+
+  updateArticleTitle(val: string) {
+    this.article.update((a) => ({ ...a, title: val }));
+    this.isSaved.set(false);
+  }
+
+  toggleDirectEdit() {
+    this.isDirectEditing.update((v) => !v);
   }
 
   publishArticle() {

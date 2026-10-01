@@ -13,7 +13,7 @@
         <div class="min-w-0">
           <div class="flex items-center gap-2">
             <span class="bg-[#7C3AED] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
-              ✍️ Studio Article IA
+              ✍️ Studio d'Articles Pédagogiques
             </span>
             <span class="text-[11px] text-[#8CA9C4] inline-flex items-center gap-1">
               <span class="w-1.5 h-1.5 rounded-full" [class]="isSaved() ? 'bg-[#4ADE80]' : 'bg-[#E0AA32] animate-pulse'"></span>
@@ -183,10 +183,31 @@
         </span>
       </div>
 
-      <!-- Article Title -->
-      <h1 dir="auto" class="font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white leading-tight">
-        {{ article().title || 'Titre de l’article...' }}
-      </h1>
+      <!-- Title & Edit Mode Toggle -->
+      <div class="flex items-start justify-between gap-4">
+        @if (isDirectEditing()) {
+          <input dir="auto"
+            type="text"
+            [value]="article().title"
+            (input)="updateArticleTitle($any($event.target).value)"
+            placeholder="Titre de l'article..."
+            class="w-full font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white bg-[#F7F9FB] dark:bg-[#152737] border border-[#007CC2]/40 rounded-xl p-2 outline-none" />
+        } @else {
+          <h1 dir="auto" class="font-display font-extrabold text-2xl sm:text-3xl text-[#102A43] dark:text-white leading-tight">
+            {{ article().title || 'Titre de l’article...' }}
+          </h1>
+        }
+
+        <button
+          type="button"
+          (click)="toggleDirectEdit()"
+          [class]="isDirectEditing() ? 'bg-[#007CC2] text-white font-bold' : 'bg-gray-100 hover:bg-gray-200 dark:bg-[#1A3145] text-[#486581] dark:text-white'"
+          class="shrink-0 px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+          [title]="isDirectEditing() ? 'Voir le rendu' : 'Modifier directement'">
+          <span class="material-icons text-sm">{{ isDirectEditing() ? 'visibility' : 'edit' }}</span>
+          <span>{{ isDirectEditing() ? 'Aperçu' : 'Éditer' }}</span>
+        </button>
+      </div>
 
       <!-- Author Attribution Strip -->
       <div class="flex items-center gap-3 py-3 border-y border-[#E3ECF2] dark:border-[#1A3145] text-xs">
@@ -199,16 +220,25 @@
         </div>
       </div>
 
-      <!-- Article Markdown Body Preview -->
-      <div dir="auto" class="article-reading-prose dark:text-gray-200">
-        @if (article().contentMarkdown) {
-          <div [innerHTML]="renderedArticleHtml()"></div>
-        } @else {
-          <p class="text-gray-400 italic">
-            L'article est encore vide. Utilisez l'assistant conversationnel à gauche pour générer ou esquisser le contenu...
-          </p>
-        }
-      </div>
+      <!-- Article Markdown Body (Editable or Rendered) -->
+      @if (isDirectEditing()) {
+        <textarea dir="auto"
+          [value]="article().contentMarkdown"
+          (input)="updateArticleContent($any($event.target).value)"
+          rows="16"
+          placeholder="Rédigez votre article en Markdown ou demandez à l'assistant à gauche..."
+          class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] rounded-xl p-4 text-sm text-[#102A43] dark:text-white outline-none leading-relaxed font-mono resize-y"></textarea>
+      } @else {
+        <div dir="auto" class="article-reading-prose dark:text-gray-200">
+          @if (article().contentMarkdown) {
+            <div [innerHTML]="renderedArticleHtml()"></div>
+          } @else {
+            <p class="text-gray-400 italic">
+              L'article est encore vide. Utilisez l'assistant conversationnel à gauche pour générer ou esquisser le contenu, ou cliquez sur "Éditer" en haut à droite.
+            </p>
+          }
+        </div>
+      }
     </div>
 
   </div>

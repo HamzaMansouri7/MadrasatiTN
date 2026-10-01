@@ -94,8 +94,8 @@ export interface GeneratedExerciseResult {
             <button
               (click)="openArticleStudio()"
               class="flex items-center gap-1.5 bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">chat</span>
-              {{ lang.tr('Rédiger Article (IA Chat)', 'كتابة مقال (مساعد ذكي)') }}
+              <span class="material-icons text-base">article</span>
+              {{ lang.tr('Rédiger un Article', 'كتابة مقال بيداغوجي') }}
             </button>
 
             <button
