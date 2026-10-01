@@ -43,33 +43,36 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
           </div>
 
           <!-- Sibling Switcher or Quick CTA -->
-          @if (isUserLoggedIn() && store.students().length > 1) {
-            <div class="bg-white/10 p-3 rounded-[14px] border border-white/15 space-y-1.5 shrink-0">
-              <p class="text-[11px] text-[#8CA9C4] font-semibold">
-                {{ lang.t('switchChild') }}
-              </p>
-              <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+            <button
+              (click)="openParentStudio()"
+              class="flex items-center gap-1.5 bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-base">auto_fix_high</span>
+              <span>{{ lang.tr('Générer Fiche d’Entraînement ✨', 'توليد ورقة تمارين منزلية ✨') }}</span>
+            </button>
+
+            @if (isUserLoggedIn() && store.students().length > 1) {
+              <div class="bg-white/10 p-2 rounded-[12px] border border-white/15 flex items-center gap-1.5">
+                <span class="text-[11px] text-[#8CA9C4] font-medium hidden sm:inline">{{ lang.t('switchChild') }}:</span>
                 @for (st of store.students(); track st.id) {
                   <button
                     (click)="store.setActiveStudent(st.id)"
-                    [class]="store.activeStudentId() === st.id ? 'bg-[#007CC2] text-white font-semibold shadow-xs' : 'bg-white/10 text-white hover:bg-white/20 font-medium'"
-                    class="px-3.5 py-1.5 rounded-[10px] text-xs transition-colors cursor-pointer flex items-center gap-2">
-                    <span class="material-icons text-sm">face</span>
+                    [class]="store.activeStudentId() === st.id ? 'bg-[#007CC2] text-white font-semibold' : 'text-white/80 hover:text-white'"
+                    class="px-2.5 py-1 rounded-[8px] text-xs transition-colors cursor-pointer flex items-center gap-1">
+                    <span class="material-icons text-xs">face</span>
                     {{ st.name }}
                   </button>
                 }
               </div>
-            </div>
-          } @else {
-            <div class="flex items-center gap-2.5 shrink-0">
+            } @else {
               <button
                 (click)="openModal('askQuestion')"
                 class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
                 <span class="material-icons text-base">help_outline</span>
                 {{ lang.t('askQuestionBtn') }}
               </button>
-            </div>
-          }
+            }
+          </div>
         </div>
       </div>
 
@@ -1191,6 +1194,10 @@ export class ParentHomeComponent {
     this.newQTitle.set('');
     this.newQContent.set('');
     this.activeTab.set('qa');
+  }
+
+  openParentStudio() {
+    this.store.setRole('editor');
   }
 
   submitComment(postId: string) {

@@ -30,6 +30,8 @@ export interface EditorBlock {
   exerciseTitle?: string;
   exercisePoints?: number;
   exerciseSolution?: string;
+  parentGuide?: string;
+  teacherNotes?: string;
   showSolution?: boolean;
   exerciseFormat?: ExerciseFormat;
   qcmOptions?: string[];

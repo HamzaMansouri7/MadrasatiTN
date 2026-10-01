@@ -93,4 +93,23 @@ Notification/email résumant les nouveautés des enseignants suivis.
 - **A7. Pack auto** — "Génère un pack révision T1 Maths 4e" assemblé depuis la banque (lié Idea 12).
 - **A8. Illustration auto d'exercice** — bouton Studio : scènes d'énoncé (marché, ferme…) via gemini-2.5-flash-image (quota free tier à confirmer) ; schémas précis (géométrie, droites graduées, fractions) via **SVG généré par le modèle texte** — exact, net en A4, léger. Jamais d'image IA pour un schéma mathématique.
 
+## Idea 16 — Dual-Mode Universal Creation Studio (Teacher vs Parent)
+Le Studio est partagé par les enseignants ET les parents avec adaptation dynamique selon le rôle :
+- **Enseignant (Éditeur Officiel) :** En-tête officiel ministère (`الجمهورية التونسية - وزارة التربية`), filigrane nominatif enseignant, barème chiffré (/20), publication directe dans la banque publique, export corrigé officiel.
+- **Parent (Atelier Révision Maison) :** En-tête personnalisé bienveillant (*"Cahier d'entraînement de [Prénom] — 5ème Année"*), filigrane protection (*"Entraînement Maison — Madrasati TN"*), pas de barème scolaire stressant, sauvegarde privée dans le profil de l'enfant (non publié dans la banque publique).
+
 <!-- next ideas appended below -->
+
+## IA — fonctionnalités validées (suite)
+- **A9. Barre d'outils IA flottante intra-exercice (Teacher & Parent) :** Sur chaque carte exercice dans le canevas :
+  - `[✨ Variante similaire]` : Génère un clone pédagogique avec nouvelles valeurs/noms.
+  - `[🖼️ Image / SVG]` : Illustration de situation (marché, école) ou schéma mathématique vectoriel SVG net pour l'impression A4.
+  - `[🔍 Corrigé adapté au rôle]` : 
+    - *Pour Enseignant* : barème détaillé, variantes de réponses acceptées, critères officiels d'évaluation.
+    - *Pour Parent* : solution directe + guide pédagogique étape par étape ("Comment lui expliquer son erreur sans le bloquer").
+- **A10. Chips de prompts contextuels pré-remplis :** Suggestions directes en 1 clic sous chaque exercice selon la matière :
+  - *"Rendre plus concret avec la vie quotidienne tunisienne (dinars, villes, prénoms)"*
+  - *"Simplifier le vocabulaire pour un élève en difficulté"*
+  - *"Ajouter un piège classique d'examen trimestriel"*
+  - *"Transformer en QCM ou exercice à relier"*
+

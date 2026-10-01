@@ -30,8 +30,12 @@ export class EducationStore {
 
   // Current active role ('home' by default shows the landing page)
   readonly currentRole = signal<UserRole>('home');
+  readonly previousRole = signal<UserRole>('teacher');
 
   setRole(role: UserRole) {
+    if (this.currentRole() !== 'editor') {
+      this.previousRole.set(this.currentRole());
+    }
     this.currentRole.set(role);
   }
 

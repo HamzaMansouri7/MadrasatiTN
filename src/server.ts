@@ -319,10 +319,10 @@ const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
  * Hardened AI Assistant Endpoints with Origin Guard & Rate Limiting
  */
 
-// 1. Generate Exercise
+// 1. Generate Exercise (Dual-Mode: Teacher vs Parent)
 app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, topic, difficulty, format } = req.body;
+    const { grade, subject, topic, difficulty, format, role, childName } = req.body;
 
     if (!ai) {
       res.status(500).json({
@@ -334,8 +334,19 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
     const safeTopic = (topic || '').slice(0, 300);
     const validFormats = ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'];
     const requestedFormat = validFormats.includes(format) ? format : undefined;
+    const isParent = role === 'parent';
 
-    const prompt = `Tu es un expert pédagogique tunisien spécialisé dans le programme de l'enseignement primaire (1ère à 6ème année).
+    const systemContext = isParent
+      ? `Tu es un guide pédagogique bienveillant aidant un parent tunisien à faire réviser son enfant (${childName || "l'élève"}). Crée un exercice stimulant, motivant et clair avec des situations concrètes du quotidien tunisien.`
+      : `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie. Conçois un exercice rigoureux conforme au programme officiel tunisien pour évaluation scolaire.`;
+
+    const correctionGuidance = isParent
+      ? `"solutionText": "Solution claire avec démarche de calcul ou règle grammaticale simple",
+  "parentGuide": "Conseil pratique étape par étape pour aider l'enfant à comprendre sans le bloquer"`
+      : `"solutionText": "Correction type officielle et barème de notation détaillé étape par étape",
+  "teacherNotes": "Compétences officielles visées et critères d'évaluation ministériels"`;
+
+    const prompt = `${systemContext}
 Génère un exercice pédagogique de haute qualité adapté pour :
 - Niveau: ${grade || '4ème Année'}
 - Matière: ${subject || 'Mathématiques'}
@@ -347,8 +358,8 @@ Réponds STRICTEMENT au format JSON valide suivant :
 {
   "title": "Titre court de l'exercice",
   "promptText": "Texte complet de la consigne ou du problème",
-  "solutionText": "Correction détaillée étape par étape avec le résultat final",
-  "hints": ["Indice 1", "Indice 2"],
+  ${correctionGuidance},
+  "hints": ["Indice 1 pour l'élève", "Indice 2"],
   "points": 5,
   "format": "${requestedFormat || 'free'}",
   "qcmOptions": ["Option 1", "Option 2", "Option 3"],
@@ -379,6 +390,73 @@ Instructions par format :
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de la génération';
     console.error('Error in /api/ai/generate-exercise:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
+// 1a. Transform / Refine Exercise with Contextual Prompts (A10)
+app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
+  try {
+    const { originalBlock, transformType, customInstruction, grade, subject } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API non configurée' });
+      return;
+    }
+
+    let instructionText = '';
+    switch (transformType) {
+      case 'tunisian_context':
+        instructionText = 'Adapte le contexte à la vie quotidienne tunisienne (utiliser des villes tunisiennes comme Sfax, Sousse, Bizerte, des dinars et millimes, ou des prénoms tunisiens comme Youssef, Mariem, Aziz). Garde la même structure pédagogique.';
+        break;
+      case 'simplify_vocab':
+        instructionText = 'Simplifie le vocabulaire et les consignes pour un élève qui a des difficultés de lecture ou de compréhension, tout en conservant le niveau mathématique/disciplinaire.';
+        break;
+      case 'add_trap':
+        instructionText = 'Ajoute un piège classique ou une subtilité fréquente d\'examen trimestriel tunisien pour pousser l\'élève à réfléchir avec plus d\'attention.';
+        break;
+      case 'to_qcm':
+        instructionText = 'Transforme cet exercice en QCM à choix multiples (3 ou 4 options avec 1 seule bonne réponse claire).';
+        break;
+      default:
+        instructionText = customInstruction || 'Améliore la formulation pédagogique.';
+    }
+
+    const prompt = `Tu es un expert pédagogique pour l'école primaire tunisienne (${grade || 'Primaire'}, ${subject || 'Général'}).
+Exercice original :
+${JSON.stringify(originalBlock)}
+
+Consigne de transformation STRICTE :
+${instructionText}
+
+Réponds STRICTEMENT au format JSON valide avec la même structure que l'original :
+{
+  "title": "Titre transformé",
+  "promptText": "Nouvelle consigne transformée",
+  "solutionText": "Nouveau corrigé adapté",
+  "format": "free" | "qcm" | "true_false" | "fill_blanks" | "matching",
+  "qcmOptions": [],
+  "qcmCorrectIndex": 0,
+  "tfStatements": [],
+  "gapText": "",
+  "matchingPairs": []
+}`;
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+    });
+
+    const text = response.text || '';
+    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const data = JSON.parse(cleanedText);
+
+    res.json({ success: true, transformed: data });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la transformation';
+    console.error('Error in /api/ai/transform-exercise:', err);
     res.status(500).json({ error: message });
     return;
   }

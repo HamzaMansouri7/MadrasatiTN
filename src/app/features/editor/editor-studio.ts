@@ -21,8 +21,13 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
 
             <div class="min-w-0">
               <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
-                <!-- Shell A = Exam/Exercise/Course ; Shell B = Article Medium -->
-                @if (studioShell() === 'A') {
+                <!-- Studio Mode Tag: Teacher Exam vs Parent Home Practice vs Article -->
+                @if (isParentMode()) {
+                  <span class="bg-[#FFF4D8] text-[#9E6A00] dark:bg-[#3D2E10] dark:text-[#E0AA32] text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap border border-[#E0AA32]/40 flex items-center gap-1">
+                    <span class="material-icons text-xs">home</span>
+                    {{ lang.tr('Atelier Maison — Révision', 'ورشة التمارين المنزلية') }}
+                  </span>
+                } @else if (studioShell() === 'A') {
                   <span class="bg-[#E0AA32] text-[#0B2947] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
                     Studio A4 — {{ lang.tr('Exam / Exercice', 'امتحان / تمرين') }}
                   </span>
@@ -199,28 +204,40 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
           </div>
 
           <div>
-            <label for="doc-school-input" class="block font-semibold text-[#627D98] dark:text-[#8CA9C4] mb-1">
-              {{ lang.tr('Établissement / École', 'المدرسة الابتدائية') }}
-            </label>
-            <input
-              id="doc-school-input"
-              type="text"
-              [value]="docSchool()"
-              (input)="onDocSchoolInput($event)"
-              placeholder="Ex: École Primaire Habib Bourguiba"
-              class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none" />
+            @if (isParentMode()) {
+              <label for="doc-school-input" class="block font-semibold text-[#627D98] dark:text-[#8CA9C4] mb-1">
+                {{ lang.tr('Prénom de l’enfant', 'اسم التلميذ') }}
+              </label>
+              <input
+                id="doc-school-input"
+                type="text"
+                [value]="activeChildName()"
+                readonly
+                class="w-full bg-[#FFF4D8] dark:bg-[#3D2E10] border border-[#E0AA32]/40 rounded-[10px] p-2 text-[#9E6A00] dark:text-[#E0AA32] font-bold outline-none" />
+            } @else {
+              <label for="doc-school-input" class="block font-semibold text-[#627D98] dark:text-[#8CA9C4] mb-1">
+                {{ lang.tr('Établissement / École', 'المدرسة الابتدائية') }}
+              </label>
+              <input
+                id="doc-school-input"
+                type="text"
+                [value]="docSchool()"
+                (input)="onDocSchoolInput($event)"
+                placeholder="Ex: École Primaire Habib Bourguiba"
+                class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#102A43] dark:text-white outline-none" />
+            }
           </div>
 
           <div>
             <label for="doc-watermark-input" class="block font-semibold text-[#627D98] dark:text-[#8CA9C4] mb-1">
-              {{ lang.tr('Filigrane officiel & Attribution', 'العلامة المائية والإسناد') }}
+              {{ isParentMode() ? lang.tr('Mention en filigrane', 'العلامة المائية') : lang.tr('Filigrane officiel & Attribution', 'العلامة المائية والإسناد') }}
             </label>
             <input
               id="doc-watermark-input"
               type="text"
               [value]="docWatermark()"
               (input)="onDocWatermarkInput($event)"
-              placeholder="Madrasati TN — Document Certifié"
+              [placeholder]="isParentMode() ? 'Entraînement Maison — Madrasati TN' : 'Madrasati TN — Document Certifié'"
               class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-[#007CC2] font-semibold outline-none" />
           </div>
         </div>
@@ -307,12 +324,14 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                   {{ lang.tr('Encadré / Conseil', 'ملاحظة بيداغوجية') }}
                 </button>
 
-                <button
-                  (click)="addBlock('cartouche')"
-                  class="bg-[#FFF4D8] dark:bg-[#3D2E10] hover:bg-[#FFE8B2] text-[#9E6A00] dark:text-[#E0AA32] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
-                  <span class="material-icons text-xs">badge</span>
-                  {{ lang.tr('En-tête Ministère', 'كارتوش الوزارة') }}
-                </button>
+                @if (!isParentMode()) {
+                  <button
+                    (click)="addBlock('cartouche')"
+                    class="bg-[#FFF4D8] dark:bg-[#3D2E10] hover:bg-[#FFE8B2] text-[#9E6A00] dark:text-[#E0AA32] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
+                    <span class="material-icons text-xs">badge</span>
+                    {{ lang.tr('En-tête Ministère', 'كارتوش الوزارة') }}
+                  </button>
+                }
               }
 
               <!-- Shell-B only: Article-specific blocks -->
@@ -662,23 +681,75 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                           }
                         }
 
-                        <!-- Teacher Solution & Hints Accordion -->
+                        <!-- Teacher Solution & Hints Accordion (Dual Mode: Teacher vs Parent) -->
                         <div class="space-y-1.5 pt-1">
                           <button
                             (click)="toggleSolution(block.id)"
                             class="text-[11px] font-semibold text-[#007CC2] flex items-center gap-1 cursor-pointer">
                             <span class="material-icons text-xs">{{ block.showSolution ? 'expand_less' : 'expand_more' }}</span>
-                            <span>{{ block.showSolution ? lang.tr('Masquer le corrigé enseignant', 'إخفاء الإصلاح') : lang.tr('+ Ajouter / Voir le corrigé enseignant', '+ إضافة / تعديل الإصلاح النموذجي') }}</span>
+                            <span>{{ block.showSolution 
+                              ? (isParentMode() ? lang.tr('Masquer le guide parent', 'إخفاء دليل الولي') : lang.tr('Masquer le corrigé', 'إخفاء الإصلاح'))
+                              : (isParentMode() ? lang.tr('💡 Guide & Solution pour les parents', '💡 دليل وحلول خاصة بالأولياء') : lang.tr('+ Ajouter / Voir le corrigé enseignant', '+ إضافة / تعديل الإصلاح النموذجي')) }}</span>
                           </button>
 
                           @if (block.showSolution) {
-                            <textarea dir="auto"
-                              [value]="block.exerciseSolution || ''"
-                              (input)="updateBlockField(block.id, 'exerciseSolution', $any($event.target).value)"
-                              rows="2"
-                              placeholder="Corrigé modèle et méthode de résolution (visible uniquement pour validation ou corrigé type)..."
-                              class="w-full bg-[#E8F6EF] dark:bg-[#153B2D]/40 border border-[#23845B]/30 rounded-[8px] p-2.5 text-xs text-[#23845B] dark:text-[#68D391] outline-none font-mono"></textarea>
+                            <div class="space-y-2">
+                              <textarea dir="auto"
+                                [value]="block.exerciseSolution || ''"
+                                (input)="updateBlockField(block.id, 'exerciseSolution', $any($event.target).value)"
+                                rows="2"
+                                [placeholder]="isParentMode() ? 'Solution claire et réponse finale...' : 'Corrigé modèle et méthode de résolution (visible uniquement pour validation ou corrigé type)...'"
+                                class="w-full bg-[#E8F6EF] dark:bg-[#153B2D]/40 border border-[#23845B]/30 rounded-[8px] p-2.5 text-xs text-[#23845B] dark:text-[#68D391] outline-none font-mono"></textarea>
+
+                              @if (isParentMode() && block.parentGuide) {
+                                <div class="bg-[#FFF4D8] dark:bg-[#3D2E10] border border-[#E0AA32]/40 rounded-lg p-2.5 text-xs text-[#9E6A00] dark:text-[#E0AA32] flex items-start gap-2">
+                                  <span class="material-icons text-sm shrink-0">tips_and_updates</span>
+                                  <div>
+                                    <span class="font-bold block">{{ lang.tr('Conseil d’accompagnement :', 'نصيحة لمرافقة طفلك :') }}</span>
+                                    <p class="leading-relaxed">{{ block.parentGuide }}</p>
+                                  </div>
+                                </div>
+                              }
+                            </div>
                           }
+                        </div>
+
+                        <!-- Contextual Prompt Transformation Chips (A10) -->
+                        <div class="space-y-1.5 pt-2 border-t border-[#E3ECF2] dark:border-[#1A3145]">
+                          <span class="text-[10px] font-semibold text-[#627D98] dark:text-[#8CA9C4] flex items-center gap-1">
+                            <span class="material-icons text-xs text-[#E0AA32]">bolt</span>
+                            {{ lang.tr('Transformations rapides par IA :', 'تحسينات سريعة بالذكاء الاصطناعي :') }}
+                          </span>
+                          <div class="flex flex-wrap gap-1.5">
+                            <button
+                              type="button"
+                              (click)="transformExercise(block, 'tunisian_context')"
+                              [disabled]="isTransformingId() === block.id"
+                              class="text-[10px] bg-white dark:bg-[#102A43] hover:bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/30 px-2 py-1 rounded-md transition-colors cursor-pointer flex items-center gap-1 disabled:opacity-50">
+                              <span>🇹🇳 Vie tunisienne (Dinars, villes)</span>
+                            </button>
+                            <button
+                              type="button"
+                              (click)="transformExercise(block, 'simplify_vocab')"
+                              [disabled]="isTransformingId() === block.id"
+                              class="text-[10px] bg-white dark:bg-[#102A43] hover:bg-[#E8F6EF] text-[#23845B] border border-[#23845B]/30 px-2 py-1 rounded-md transition-colors cursor-pointer flex items-center gap-1 disabled:opacity-50">
+                              <span>🌱 Simplifier vocabulaire</span>
+                            </button>
+                            <button
+                              type="button"
+                              (click)="transformExercise(block, 'add_trap')"
+                              [disabled]="isTransformingId() === block.id"
+                              class="text-[10px] bg-white dark:bg-[#102A43] hover:bg-[#FFF4D8] text-[#9E6A00] border border-[#E0AA32]/30 px-2 py-1 rounded-md transition-colors cursor-pointer flex items-center gap-1 disabled:opacity-50">
+                              <span>⚠️ Piège classique d'examen</span>
+                            </button>
+                            <button
+                              type="button"
+                              (click)="transformExercise(block, 'to_qcm')"
+                              [disabled]="isTransformingId() === block.id"
+                              class="text-[10px] bg-white dark:bg-[#102A43] hover:bg-[#F3E8FF] text-[#7C3AED] border border-[#7C3AED]/30 px-2 py-1 rounded-md transition-colors cursor-pointer flex items-center gap-1 disabled:opacity-50">
+                              <span>🔘 Convertir en QCM</span>
+                            </button>
+                          </div>
                         </div>
 
                         <!-- Variante IA (Idea 11) -->
@@ -832,8 +903,48 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                 </span>
               </div>
 
-              <!-- REPUBLICAN CARTOUCHE -->
-              @if (hasCartoucheBlock()) {
+              <!-- DUAL-MODE A4 HEADER (Idea 16) -->
+              @if (isParentMode()) {
+                <!-- Parent Home Practice Header -->
+                <div class="border-b-2 border-[#E0AA32] pb-4">
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="flex items-center gap-2">
+                      <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] border border-[#E0AA32]/50 text-[#9E6A00] flex items-center justify-center font-bold">
+                        <span class="material-icons text-base">home</span>
+                      </div>
+                      <div>
+                        <p class="font-bold text-[#102A43] text-sm">
+                          {{ lang.tr('Cahier d’Entraînement Maison', 'دفتر التمارين المنزلية') }}
+                        </p>
+                        <p class="text-[11px] text-[#627D98]">Madrasati TN • {{ docSubject() }}</p>
+                      </div>
+                    </div>
+
+                    <div class="text-center font-bold">
+                      <p class="font-display text-base text-[#007CC2]">{{ docTitle() || 'Fiche de Révision' }}</p>
+                      <span class="inline-block bg-[#E8F5FC] text-[#007CC2] text-[10px] px-2 py-0.5 rounded-full font-semibold">
+                        {{ docGrade() }}
+                      </span>
+                    </div>
+
+                    <div class="text-right text-xs text-[#627D98] leading-tight">
+                      <p>{{ docTrimester() }}</p>
+                      <p class="text-[10px]">Année {{ docSchoolYear() }}</p>
+                    </div>
+                  </div>
+
+                  <!-- Child Personalized Dedication Box -->
+                  <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] flex items-center justify-between text-xs">
+                    <p class="font-semibold text-[#102A43]">
+                      {{ lang.tr('Dédié à :', 'مخصص لـ :') }} <span class="font-bold text-[#007CC2]">{{ activeChildName() || 'Mon Enfant' }}</span>
+                    </p>
+                    <p class="text-[11px] text-[#627D98] italic">
+                      {{ lang.tr('🌟 Travaille à ton rythme et avec confiance !', '🌟 ثابر وتقدم بثقة واجتهاد !') }}
+                    </p>
+                  </div>
+                </div>
+              } @else if (hasCartoucheBlock()) {
+                <!-- Official Republican Cartouche for Teachers -->
                 <div class="border-b-2 border-[#102A43] pb-4">
                   <div class="flex items-center justify-between text-xs">
                     <div class="text-left font-bold leading-tight">
@@ -1165,29 +1276,55 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
               {{ lang.tr("Choisissez l'emplacement de publication dans l'écosystème Madrasati TN :", 'اختر مكان النشر على منصة مدرستي تونس:') }}
             </p>
 
-            <button
-              (click)="publishAsDocumentBank()"
-              class="w-full p-3.5 rounded-[12px] bg-[#E8F5FC] dark:bg-[#102A43] hover:bg-[#D7E7F2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#007CC2]/30 transition-colors">
-              <div class="w-9 h-9 rounded-full bg-[#007CC2] text-white flex items-center justify-center shrink-0">
-                <span class="material-icons text-base">print</span>
-              </div>
-              <div>
-                <p class="font-semibold text-[#007CC2]">{{ lang.tr('Banque de Documents & Impression A4', 'بنك الوثائق والامتحانات A4') }}</p>
-                <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4]">{{ lang.tr('Accessible pour les parents avec impression 1-clic', 'متاح للأولياء للتحميل والطباعة الفورية') }}</p>
-              </div>
-            </button>
+            @if (isParentMode()) {
+              <button
+                (click)="triggerPrintDialog(); publishModalOpen.set(false)"
+                class="w-full p-3.5 rounded-[12px] bg-[#FFF4D8] dark:bg-[#3D2E10] hover:bg-[#FDE8B5] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#E0AA32]/40 transition-colors">
+                <div class="w-9 h-9 rounded-full bg-[#E0AA32] text-[#0B2947] flex items-center justify-center shrink-0">
+                  <span class="material-icons text-base">print</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#0B2947] dark:text-[#E0AA32]">{{ lang.tr('Imprimer immédiatement en A4', 'طباعة فورية بصيغة A4') }}</p>
+                  <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4]">{{ lang.tr('Document personnalisé prêt pour le travail à la maison', 'ورقة تمارين جاهزة للمراجعة المنزلية') }}</p>
+                </div>
+              </button>
 
-            <button
-              (click)="publishAsBlogArticle()"
-              class="w-full p-3.5 rounded-[12px] bg-[#E8F6EF] dark:bg-[#153B2D] hover:bg-[#D0EFE2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#23845B]/30 transition-colors">
-              <div class="w-9 h-9 rounded-full bg-[#23845B] text-white flex items-center justify-center shrink-0">
-                <span class="material-icons text-base">article</span>
-              </div>
-              <div>
-                <p class="font-semibold text-[#23845B]">{{ lang.tr('Blog & Conseils Pédagogiques', 'المدونة والمقالات البيداغوجية') }}</p>
-                <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4]">{{ lang.tr('Publié pour lecture et commentaires des parents', 'متاح للقراءة وتفاعل الأولياء بالتعليقات') }}</p>
-              </div>
-            </button>
+              <button
+                (click)="saveDraft(); publishModalOpen.set(false)"
+                class="w-full p-3.5 rounded-[12px] bg-[#E8F6EF] dark:bg-[#153B2D] hover:bg-[#D0EFE2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#23845B]/30 transition-colors">
+                <div class="w-9 h-9 rounded-full bg-[#23845B] text-white flex items-center justify-center shrink-0">
+                  <span class="material-icons text-base">bookmark</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#23845B]">{{ lang.tr('Conserver dans le cahier de l’enfant', 'حفظ في سجل تمارين الطفل') }}</p>
+                  <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4]">{{ lang.tr('Sauvegardé en privé pour révision ultérieure', 'حفظ خاص وغير معلن على المنصة') }}</p>
+                </div>
+              </button>
+            } @else {
+              <button
+                (click)="publishAsDocumentBank()"
+                class="w-full p-3.5 rounded-[12px] bg-[#E8F5FC] dark:bg-[#102A43] hover:bg-[#D7E7F2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#007CC2]/30 transition-colors">
+                <div class="w-9 h-9 rounded-full bg-[#007CC2] text-white flex items-center justify-center shrink-0">
+                  <span class="material-icons text-base">print</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#007CC2]">{{ lang.tr('Banque de Documents & Impression A4', 'بنك الوثائق والامتحانات A4') }}</p>
+                  <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4]">{{ lang.tr('Accessible pour les parents avec impression 1-clic', 'متاح للأولياء للتحميل والطباعة الفورية') }}</p>
+                </div>
+              </button>
+
+              <button
+                (click)="publishAsBlogArticle()"
+                class="w-full p-3.5 rounded-[12px] bg-[#E8F6EF] dark:bg-[#153B2D] hover:bg-[#D0EFE2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#23845B]/30 transition-colors">
+                <div class="w-9 h-9 rounded-full bg-[#23845B] text-white flex items-center justify-center shrink-0">
+                  <span class="material-icons text-base">article</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#23845B]">{{ lang.tr('Blog & Conseils Pédagogiques', 'المدونة والمقالات البيداغوجية') }}</p>
+                  <p class="text-[11px] text-[#486581] dark:text-[#8CA9C4]">{{ lang.tr('Publié pour lecture et commentaires des parents', 'متاح للقراءة وتفاعل الأولياء بالتعليقات') }}</p>
+                </div>
+              </button>
+            }
           </div>
         </div>
       </div>
@@ -1224,16 +1361,29 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
             </div>
 
             <div class="flex flex-wrap gap-2 pt-1">
-              <button
-                (click)="aiPromptQuery.set('Génère une série de 3 exercices gradués sur la multiplication et la division avec corrigé')"
-                class="bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
-                💡 3 Exercices gradués
-              </button>
-              <button
-                (click)="aiPromptQuery.set('Rédige 4 conseils concrets pour aider un parent à faire réviser la dictée arabe à la maison')"
-                class="bg-[#E8F6EF] dark:bg-[#153B2D] text-[#23845B] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
-                💡 Conseils parents dictée
-              </button>
+              @if (isParentMode()) {
+                <button
+                  (click)="aiPromptQuery.set('Génère 3 exercices ludiques et clairs sur les fractions avec exemples de la vie quotidienne')"
+                  class="bg-[#FFF4D8] dark:bg-[#3D2E10] text-[#9E6A00] dark:text-[#E0AA32] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer border border-[#E0AA32]/30">
+                  💡 3 Exercices révision maison
+                </button>
+                <button
+                  (click)="aiPromptQuery.set('Génère une petite évaluation douce de 10 minutes avec corrigé et astuces pour expliquer à mon enfant')"
+                  class="bg-[#E8F6EF] dark:bg-[#153B2D] text-[#23845B] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer border border-[#23845B]/30">
+                  💡 Évaluation 10 min + guide
+                </button>
+              } @else {
+                <button
+                  (click)="aiPromptQuery.set('Génère une série de 3 exercices gradués sur la multiplication et la division avec corrigé')"
+                  class="bg-[#E8F5FC] dark:bg-[#102A43] text-[#007CC2] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
+                  💡 3 Exercices gradués
+                </button>
+                <button
+                  (click)="aiPromptQuery.set('Rédige 4 conseils concrets pour aider un parent à faire réviser la dictée arabe à la maison')"
+                  class="bg-[#E8F6EF] dark:bg-[#153B2D] text-[#23845B] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
+                  💡 Conseils parents dictée
+                </button>
+              }
             </div>
 
             <button
@@ -1316,6 +1466,11 @@ export class EditorStudioComponent {
   readonly docSchool = signal<string>('École Primaire Habib Bourguiba');
   readonly docWatermark = signal<string>('Madrasati TN — Document Certifié');
 
+  // Dual-Mode Studio Signals (Teacher vs Parent - Idea 16)
+  readonly isParentMode = computed(() => this.store.previousRole() === 'parent');
+  readonly activeChildName = computed(() => this.store.activeStudent()?.name || 'Mon Enfant');
+  readonly isTransformingId = signal<string | null>(null);
+
   // Computed live exam points sum
   readonly totalExamPoints = computed(() => {
     return this.blocks()
@@ -1371,7 +1526,12 @@ export class EditorStudioComponent {
   constructor() {
     this.loadDraft();
     const user = this.firebase.userProfile() || this.firebase.currentUser();
-    if (user?.displayName) {
+    if (this.isParentMode()) {
+      const child = this.store.activeStudent();
+      this.docWatermark.set(`Entraînement Maison — ${child?.name || 'Élève'}`);
+      this.docTitle.set(`Fiche d'Entraînement — ${this.docSubject()}`);
+      if (child?.grade) this.docGrade.set(child.grade as GradeLevel);
+    } else if (user?.displayName) {
       this.docWatermark.set(`Madrasati TN — Enseignant : ${user.displayName}`);
     }
     this.draftLoaded = true;
@@ -1391,6 +1551,10 @@ export class EditorStudioComponent {
     });
   }
 
+  private getDraftStorageKey(): string {
+    return this.isParentMode() ? 'madrasati_studio_parent_draft' : 'madrasati_studio_teacher_draft';
+  }
+
   saveDraft() {
     if (typeof localStorage !== 'undefined') {
       const draft = {
@@ -1403,14 +1567,14 @@ export class EditorStudioComponent {
         watermark: this.docWatermark(),
         blocks: this.blocks(),
       };
-      localStorage.setItem('madrasati_studio_draft', JSON.stringify(draft));
+      localStorage.setItem(this.getDraftStorageKey(), JSON.stringify(draft));
       this.isAutoSaved.set(true);
     }
   }
 
   loadDraft() {
     if (typeof localStorage !== 'undefined') {
-      const raw = localStorage.getItem('madrasati_studio_draft');
+      const raw = localStorage.getItem(this.getDraftStorageKey());
       if (raw) {
         try {
           const draft = JSON.parse(raw);
@@ -1725,6 +1889,8 @@ export class EditorStudioComponent {
             subject: this.docSubject(),
             topic: prompt,
             difficulty: 'Moyen',
+            role: this.isParentMode() ? 'parent' : 'teacher',
+            childName: this.activeChildName(),
           }),
         });
         const data = await res.json();
@@ -1736,6 +1902,8 @@ export class EditorStudioComponent {
           this.updateBlockContent(lastBlock.id, generated.promptText || '');
           this.updateBlockField(lastBlock.id, 'exerciseSolution', generated.solutionText || '');
           this.updateBlockField(lastBlock.id, 'exercisePoints', generated.points || 5);
+          if (generated.parentGuide) this.updateBlockField(lastBlock.id, 'parentGuide', generated.parentGuide);
+          if (generated.teacherNotes) this.updateBlockField(lastBlock.id, 'teacherNotes', generated.teacherNotes);
           if (generated.format) this.updateBlockField(lastBlock.id, 'exerciseFormat', generated.format);
           if (generated.qcmOptions) this.updateBlockField(lastBlock.id, 'qcmOptions', generated.qcmOptions);
           if (typeof generated.qcmCorrectIndex === 'number') this.updateBlockField(lastBlock.id, 'qcmCorrectIndex', generated.qcmCorrectIndex);
@@ -1750,6 +1918,42 @@ export class EditorStudioComponent {
       console.error('AI generation error:', err);
     } finally {
       this.isAiLoading.set(false);
+    }
+  }
+
+  async transformExercise(block: EditorBlock, transformType: 'tunisian_context' | 'simplify_vocab' | 'add_trap' | 'to_qcm') {
+    if (this.isTransformingId()) return;
+    this.isTransformingId.set(block.id);
+
+    try {
+      const res = await fetch('/api/ai/transform-exercise', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          originalBlock: block,
+          transformType,
+          grade: this.docGrade(),
+          subject: this.docSubject(),
+        }),
+      });
+      const data = await res.json();
+
+      if (data.success && data.transformed) {
+        const t = data.transformed;
+        if (t.title) this.updateBlockField(block.id, 'exerciseTitle', t.title);
+        if (t.promptText) this.updateBlockContent(block.id, t.promptText);
+        if (t.solutionText) this.updateBlockField(block.id, 'exerciseSolution', t.solutionText);
+        if (t.format) this.updateBlockField(block.id, 'exerciseFormat', t.format);
+        if (t.qcmOptions?.length) this.updateBlockField(block.id, 'qcmOptions', t.qcmOptions);
+        if (typeof t.qcmCorrectIndex === 'number') this.updateBlockField(block.id, 'qcmCorrectIndex', t.qcmCorrectIndex);
+        if (t.tfStatements?.length) this.updateBlockField(block.id, 'tfStatements', t.tfStatements);
+        if (t.gapText) this.updateBlockField(block.id, 'gapText', t.gapText);
+        if (t.matchingPairs?.length) this.updateBlockField(block.id, 'matchingPairs', t.matchingPairs);
+      }
+    } catch (err) {
+      console.error('Transform exercise error:', err);
+    } finally {
+      this.isTransformingId.set(null);
     }
   }
 
@@ -2080,7 +2284,7 @@ export class EditorStudioComponent {
   }
 
   exitStudio() {
-    this.store.setRole('teacher');
+    this.store.setRole(this.store.previousRole());
   }
 }
 
