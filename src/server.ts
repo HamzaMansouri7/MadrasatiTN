@@ -891,6 +891,19 @@ Instructions :
 
 // 4d. Persist a shared worksheet (Phase 3b) so a ?sheet=ID link resolves for any visitor.
 const SHEET_ID_RE = /^[A-Za-z0-9_-]{6,64}$/;
+// Lightweight published index: lets the library + blog list shared worksheets
+// without reading every doc file.
+const docsIndexPath = join(docsFolder, 'index.json');
+
+function readDocsIndex(): Array<Record<string, unknown>> {
+  if (!existsSync(docsIndexPath)) return [];
+  try {
+    const arr = JSON.parse(readFileSync(docsIndexPath, 'utf8'));
+    return Array.isArray(arr) ? arr : [];
+  } catch {
+    return [];
+  }
+}
 
 app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
   try {
@@ -911,6 +924,23 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
       createdAt: new Date().toISOString(),
     };
     writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
+
+    // Append a summary to the published index (newest first), with a thumbnail.
+    const thumb = (doc.exercises as Array<{ imageUrl?: string }>).find((e) => e.imageUrl)?.imageUrl || '';
+    const index = readDocsIndex();
+    index.unshift({
+      id,
+      title: doc.title,
+      grade: doc.grade,
+      subject: doc.subject,
+      topic: doc.topic,
+      palette: doc.palette,
+      thumb,
+      exerciseCount: doc.exercises.length,
+      createdAt: doc.createdAt,
+    });
+    writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
+
     res.json({ success: true, id, shareUrl: `/generate?sheet=${id}` });
     return;
   } catch (err: unknown) {
@@ -919,6 +949,11 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
     res.status(500).json({ error: message });
     return;
   }
+});
+
+// List published worksheets for the library grid + blog feed.
+app.get('/api/docs', (_req: Request, res: Response): void => {
+  res.json({ success: true, docs: readDocsIndex() });
 });
 
 app.get('/api/docs/:id', (req: Request, res: Response): void => {

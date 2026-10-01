@@ -241,6 +241,12 @@ export class LanguageService {
     generatorSharing: { fr: 'Partage…', ar: 'جارٍ إنشاء الرابط…' },
     generatorPrintA4: { fr: 'Imprimer A4', ar: 'طباعة A4 رسمية' },
     generatorLinkCopied: { fr: 'Lien copié ✓', ar: 'تم نسخ الرابط ✓' },
+    generatorPublished: { fr: 'Fiche publiée dans la bibliothèque et le blog ✓', ar: 'تم نشر الورقة في المكتبة والمدونة ✓' },
+    generatorShareLink: { fr: 'Lien de partage', ar: 'رابط المشاركة' },
+    generatorEmbedCode: { fr: 'Code d\'intégration (embed)', ar: 'شيفرة التضمين (embed)' },
+    generatorCopy: { fr: 'Copier', ar: 'نسخ' },
+    generatorCopied: { fr: 'Copié ✓', ar: 'تم ✓' },
+    generatorShareFacebook: { fr: 'Partager sur Facebook', ar: 'المشاركة على فيسبوك' },
     generatorHints: { fr: 'Indice', ar: 'إرشادات' },
     changeLanguage: { fr: 'Changer de langue', ar: 'تغيير اللغة' },
   };

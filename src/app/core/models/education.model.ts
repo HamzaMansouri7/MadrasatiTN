@@ -64,6 +64,20 @@ export interface ExerciseItem {
   isReported?: boolean;
   theme?: string;
   watermarkText?: string;
+  sheetId?: string;        // links a community card to a shared worksheet (/generate?sheet=ID)
+}
+
+// Summary row from the published-worksheets index (GET /api/docs).
+export interface WorksheetSummary {
+  id: string;
+  title: string;
+  grade?: string;
+  subject?: string;
+  topic?: string;
+  palette?: string[];
+  thumb?: string;
+  exerciseCount?: number;
+  createdAt?: string;
 }
 
 // Phase 1 — style-clone pipeline (analyze worksheet image → generate similar).

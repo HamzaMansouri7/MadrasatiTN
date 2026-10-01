@@ -197,6 +197,39 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     return ' '.repeat(Math.max(4, Math.min(len + 2, 14)));
   }
 
+  readonly copied = signal<'link' | 'embed' | null>(null);
+
+  embedSnippet(): string {
+    const url = this.shareUrl();
+    if (!url) return '';
+    return `<iframe src="${url}" width="100%" height="900" style="border:1px solid #E7DFCF;border-radius:14px" loading="lazy"></iframe>`;
+  }
+
+  private async copyText(text: string, which: 'link' | 'embed') {
+    if (!text || typeof navigator === 'undefined') return;
+    try {
+      await navigator.clipboard.writeText(text);
+      this.copied.set(which);
+      setTimeout(() => this.copied.set(null), 2000);
+    } catch { /* clipboard may be blocked */ }
+  }
+
+  copyShareLink() {
+    const url = this.shareUrl();
+    if (url) this.copyText(url, 'link');
+  }
+
+  copyEmbed() {
+    this.copyText(this.embedSnippet(), 'embed');
+  }
+
+  shareOnFacebook() {
+    const url = this.shareUrl();
+    if (url && typeof window !== 'undefined') {
+      window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), '_blank', 'noopener,width=680,height=640');
+    }
+  }
+
   print() {
     if (typeof window !== 'undefined') window.print();
   }

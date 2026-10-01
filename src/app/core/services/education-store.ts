@@ -21,6 +21,8 @@ import {
   WorksheetDna,
   GeneratedExercise,
   WorksheetDoc,
+  WorksheetSummary,
+  DocType,
 } from '../models/education.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
@@ -1079,6 +1081,81 @@ Pour réussir une production écrite de 6 à 8 lignes :
       console.error('Error in getWorksheet:', err);
     }
     return null;
+  }
+
+  // Published community worksheets, loaded once and merged into the library grid + blog.
+  private publishedLoaded = false;
+  async loadPublishedWorksheets(): Promise<void> {
+    if (this.publishedLoaded) return;
+    // Browser only — relative fetch has no base URL during SSR prerender.
+    if (typeof window === 'undefined') return;
+    this.publishedLoaded = true;
+    try {
+      const res = await fetch('/api/docs');
+      if (!res.ok) return;
+      const data = await res.json();
+      const docs: WorksheetSummary[] = Array.isArray(data.docs) ? data.docs : [];
+      if (docs.length === 0) return;
+
+      // Merge into the library grid as resource cards (skip ids already present).
+      this.exercisesBank.update((list) => {
+        const existing = new Set(list.map((e) => e.id));
+        const mapped: ExerciseItem[] = docs
+          .filter((w) => !existing.has(w.id))
+          .map((w) => ({
+            id: w.id,
+            sheetId: w.id,
+            title: w.title,
+            chapter: w.topic || 'Fiche communautaire',
+            topic: w.topic,
+            subject: (w.subject || 'Français') as SubjectName,
+            grade: (w.grade || '1ère Année') as GradeLevel,
+            docType: "Série d'Exercices" as DocType,
+            difficulty: 'Moyen' as const,
+            promptText: `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
+            photoUrl: w.thumb || undefined,
+            solutionText: '',
+            hasCorrection: true,
+            hints: [],
+            points: (w.exerciseCount || 1) * 5,
+            theme: w.topic,
+            watermarkText: 'Madrasati TN — Fiche Communautaire',
+          }));
+        return [...mapped, ...list];
+      });
+
+      // Merge into the blog feed as posts.
+      this.blogPosts.update((list) => {
+        const existing = new Set(list.map((p) => p.id));
+        const mapped: BlogPost[] = docs
+          .filter((w) => !existing.has('ws-' + w.id))
+          .map((w) => ({
+            id: 'ws-' + w.id,
+            title: w.title,
+            titleAr: w.title,
+            excerpt: `Nouvelle fiche d'exercices (${w.exerciseCount || ''}) — ${w.topic || ''}.`.trim(),
+            excerptAr: `ورقة تمارين جديدة — ${w.topic || ''}.`.trim(),
+            content: `Fiche communautaire générée sur Madrasati TN. [Ouvrir la fiche](/generate?sheet=${w.id})`,
+            contentAr: `ورقة مُنشأة على منصة مدرستي. [فتح الورقة](/generate?sheet=${w.id})`,
+            authorId: 'community',
+            authorName: 'Ressource Communautaire — Madrasati TN',
+            authorTitle: 'Fiche partagée',
+            authorAvatar: '/favicon.svg',
+            subject: (w.subject || 'Français') as SubjectName,
+            grade: (w.grade || '1ère Année') as GradeLevel,
+            tags: [w.subject, w.grade, w.topic].filter(Boolean) as string[],
+            publishedAt: w.createdAt || '',
+            likesCount: 0,
+            readTimeMinutes: 2,
+            coverImage: w.thumb || undefined,
+            comments: [],
+          }));
+        return [...mapped, ...list];
+      });
+    } catch (err) {
+      console.error('Error in loadPublishedWorksheets:', err);
+      this.publishedLoaded = false;
+    }
   }
 
   // Phase 2 — generate one illustration for an exercise (returns a /uploads URL).

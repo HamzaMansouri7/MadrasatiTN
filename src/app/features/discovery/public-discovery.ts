@@ -1227,6 +1227,9 @@ export class PublicDiscoveryComponent {
   private readonly sanitizer = inject(DomSanitizer);
 
   constructor() {
+    // Merge community-published worksheets into the library grid + blog feed.
+    this.store.loadPublishedWorksheets();
+
     // Phase 3 — when a shared link (?doc=ID) resolves, open that exercise's printable modal.
     effect(() => {
       const id = this.store.pendingDocId();
