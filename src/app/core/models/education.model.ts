@@ -42,6 +42,8 @@ export interface ExerciseItem {
   id: string;
   title: string;
   chapter: string;
+  topic?: string;          // e.g. 'La multiplication', 'Les fractions'
+  linkedCourseId?: string; // References a Course.id for Book→Chapter→Topic hierarchy
   subject: SubjectName;
   grade: GradeLevel;
   trimester?: Trimester;
@@ -109,6 +111,9 @@ export interface Course {
   id: string;
   title: string;
   classId: string;
+  chapter?: string;        // CNP chapter label (e.g. 'Chapitre 3 : Géométrie')
+  topic?: string;          // Finer topic within chapter (e.g. 'Les droites perpendiculaires')
+  linkedCourseId?: string; // For exercises: references the parent Course.id
   subject: SubjectName;
   grade: GradeLevel;
   trimester?: Trimester;

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, GradeLevel, SubjectName } from '@core';
+import { EducationStore, LanguageService, FirebaseService, GradeLevel, SubjectName, InteractionService } from '@core';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './editor.model';
 
 @Component({
@@ -21,9 +21,16 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
 
             <div class="min-w-0">
               <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
-                <span class="bg-[#E0AA32] text-[#0B2947] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
-                  {{ lang.tr('Studio A4', 'استوديو A4') }}
-                </span>
+                <!-- Shell A = Exam/Exercise/Course ; Shell B = Article Medium -->
+                @if (studioShell() === 'A') {
+                  <span class="bg-[#E0AA32] text-[#0B2947] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
+                    Studio A4 — {{ lang.tr('Exam / Exercice', 'امتحان / تمرين') }}
+                  </span>
+                } @else {
+                  <span class="bg-[#7C3AED] text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
+                    Studio B — {{ lang.tr('Article Medium', 'مقال تربوي') }}
+                  </span>
+                }
                 <span class="text-[11px] text-[#8CA9C4] inline-flex items-center gap-1 whitespace-nowrap">
                   <span class="w-1.5 h-1.5 rounded-full" [class]="isAutoSaved() ? 'bg-[#4ADE80]' : 'bg-[#E0AA32] animate-pulse'"></span>
                   {{ isAutoSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Modifications...', 'تعديلات جارية...') }}
@@ -226,6 +233,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
           <div class="space-y-4">
             
             <!-- Floating Quick Block Insertion Toolbar -->
+            <!-- Shell-A: all blocks | Shell-B: text/heading/callout/quote/image/divider only -->
             <div class="bg-white dark:bg-[#0E1D2A] rounded-[18px] p-3 border border-[#E3ECF2] dark:border-[#1A3145] shadow-xs flex flex-wrap items-center gap-1.5 sticky top-4 z-20">
               <span class="text-[11px] font-semibold text-[#627D98] dark:text-[#8CA9C4] px-2 flex items-center gap-1">
                 <span class="material-icons text-sm text-[#007CC2]">add_circle</span>
@@ -260,26 +268,39 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                 {{ lang.tr('Séparateur', 'فاصل') }}
               </button>
 
-              <button
-                (click)="addBlock('exercise')"
-                class="bg-[#E8F5FC] dark:bg-[#102A43] hover:bg-[#D7E7F2] text-[#007CC2] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
-                <span class="material-icons text-xs">assignment</span>
-                {{ lang.tr('Exercice + Barème', 'تمرين مع عدد') }}
-              </button>
+              <!-- Shell-A only: Exam/Exercise-specific blocks -->
+              @if (studioShell() === 'A') {
+                <button
+                  (click)="addBlock('exercise')"
+                  class="bg-[#E8F5FC] dark:bg-[#102A43] hover:bg-[#D7E7F2] text-[#007CC2] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
+                  <span class="material-icons text-xs">assignment</span>
+                  {{ lang.tr('Exercice + Barème', 'تمرين مع عدد') }}
+                </button>
 
-              <button
-                (click)="addBlock('callout')"
-                class="bg-[#E8F6EF] dark:bg-[#153B2D] hover:bg-[#D0EFE2] text-[#23845B] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
-                <span class="material-icons text-xs">lightbulb</span>
-                {{ lang.tr('Encadré / Conseil', 'ملاحظة بيداغوجية') }}
-              </button>
+                <button
+                  (click)="addBlock('callout')"
+                  class="bg-[#E8F6EF] dark:bg-[#153B2D] hover:bg-[#D0EFE2] text-[#23845B] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
+                  <span class="material-icons text-xs">lightbulb</span>
+                  {{ lang.tr('Encadré / Conseil', 'ملاحظة بيداغوجية') }}
+                </button>
 
-              <button
-                (click)="addBlock('cartouche')"
-                class="bg-[#FFF4D8] dark:bg-[#3D2E10] hover:bg-[#FFE8B2] text-[#9E6A00] dark:text-[#E0AA32] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
-                <span class="material-icons text-xs">badge</span>
-                {{ lang.tr('En-tête Ministère', 'كارتوش الوزارة') }}
-              </button>
+                <button
+                  (click)="addBlock('cartouche')"
+                  class="bg-[#FFF4D8] dark:bg-[#3D2E10] hover:bg-[#FFE8B2] text-[#9E6A00] dark:text-[#E0AA32] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
+                  <span class="material-icons text-xs">badge</span>
+                  {{ lang.tr('En-tête Ministère', 'كارتوش الوزارة') }}
+                </button>
+              }
+
+              <!-- Shell-B only: Article-specific blocks -->
+              @if (studioShell() === 'B') {
+                <button
+                  (click)="addBlock('callout')"
+                  class="bg-[#EEE8FF] hover:bg-[#DDD0FF] text-[#7C3AED] px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 font-semibold transition-colors cursor-pointer">
+                  <span class="material-icons text-xs">format_quote</span>
+                  {{ lang.tr('Encadré Citation', 'اقتباس بيداغوجي') }}
+                </button>
+              }
 
               <button
                 (click)="addBlock('image')"
@@ -354,7 +375,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                         [value]="block.content"
                         (input)="updateBlockContent(block.id, $any($event.target).value)"
                         rows="3"
-                        placeholder="Rédigez votre paragraphe de cours, explications ou consigne..."
+                        [placeholder]="lang.tr('Rédigez votre paragraphe de cours, explications ou consigne...', 'اكتب فقرة الدرس، الشرح أو التعليمة...')"
                         class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-3 text-xs text-[#102A43] dark:text-white outline-none leading-relaxed"></textarea>
                     }
 
@@ -364,7 +385,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                         type="text"
                         [value]="block.content"
                         (input)="updateBlockContent(block.id, $any($event.target).value)"
-                        placeholder="Titre Principal (H1)..."
+                        [placeholder]="lang.tr('Titre Principal (H1)...', 'عنوان رئيسي (H1)...')"
                         class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-3 text-base font-bold text-[#102A43] dark:text-white outline-none" />
                     }
 
@@ -374,7 +395,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                         type="text"
                         [value]="block.content"
                         (input)="updateBlockContent(block.id, $any($event.target).value)"
-                        placeholder="Sous-titre de Chapitre (H2)..."
+                        [placeholder]="lang.tr('Sous-titre de Chapitre (H2)...', 'عنوان فرعي للفصل (H2)...')"
                         class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2.5 text-sm font-semibold text-[#007CC2] outline-none" />
                     }
 
@@ -384,7 +405,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                         type="text"
                         [value]="block.content"
                         (input)="updateBlockContent(block.id, $any($event.target).value)"
-                        placeholder="Section / Étape (H3)..."
+                        [placeholder]="lang.tr('Section / Étape (H3)...', 'قسم / مرحلة (H3)...')"
                         class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[10px] p-2 text-xs font-semibold text-[#102A43] dark:text-white outline-none" />
                     }
 
@@ -396,11 +417,11 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                             type="text"
                             [value]="block.exerciseTitle || 'Exercice N°' + (idx + 1)"
                             (input)="updateBlockField(block.id, 'exerciseTitle', $any($event.target).value)"
-                            placeholder="Titre de l'exercice..."
+                            [placeholder]="lang.t('editorExerciseTitlePlaceholder')"
                             class="grow bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[8px] p-2 text-xs font-semibold text-[#102A43] dark:text-white outline-none" />
                           
                           <div class="flex items-center gap-1.5 shrink-0">
-                            <span class="text-[11px] font-semibold text-[#23845B]">Barème :</span>
+                            <span class="text-[11px] font-semibold text-[#23845B]">{{ lang.tr('Barème :', 'العدد :') }}</span>
                             <input
                               type="number"
                               [value]="block.exercisePoints || 5"
@@ -414,36 +435,36 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
 
                         <!-- Format Selector Pills -->
                         <div class="flex flex-wrap items-center gap-1 pt-1 border-t border-[#E3ECF2] dark:border-[#1A3145]">
-                          <span class="text-[10px] font-semibold text-[#627D98] dark:text-[#8CA9C4] me-1">Format :</span>
+                          <span class="text-[10px] font-semibold text-[#627D98] dark:text-[#8CA9C4] me-1">{{ lang.tr('Format :', 'النوع :') }}</span>
                           <button
                             (click)="setExerciseFormat(block.id, 'free')"
                             [class]="(block.exerciseFormat || 'free') === 'free' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145]'"
                             class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                            Libre
+                            {{ lang.tr('Libre', 'حر') }}
                           </button>
                           <button
                             (click)="setExerciseFormat(block.id, 'qcm')"
                             [class]="block.exerciseFormat === 'qcm' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145]'"
                             class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                            QCM
+                            {{ lang.tr('QCM', 'خيارات') }}
                           </button>
                           <button
                             (click)="setExerciseFormat(block.id, 'true_false')"
                             [class]="block.exerciseFormat === 'true_false' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145]'"
                             class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                            Vrai-Faux
+                            {{ lang.tr('Vrai-Faux', 'صواب-خطأ') }}
                           </button>
                           <button
                             (click)="setExerciseFormat(block.id, 'fill_blanks')"
                             [class]="block.exerciseFormat === 'fill_blanks' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145]'"
                             class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                            Trous
+                            {{ lang.tr('Trous', 'فراغات') }}
                           </button>
                           <button
                             (click)="setExerciseFormat(block.id, 'matching')"
                             [class]="block.exerciseFormat === 'matching' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white dark:bg-[#0E1D2A] text-[#627D98] dark:text-[#8CA9C4] border border-[#E3ECF2] dark:border-[#1A3145]'"
                             class="px-2 py-0.5 rounded-md text-[11px] transition-colors cursor-pointer">
-                            Flèches
+                            {{ lang.tr('Flèches', 'أسهم') }}
                           </button>
                         </div>
 
@@ -454,7 +475,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                               [value]="block.content"
                               (input)="updateBlockContent(block.id, $any($event.target).value)"
                               rows="3"
-                              placeholder="Énoncé du problème ou consigne pour l'élève..."
+                              [placeholder]="lang.t('editorPromptPlaceholder')"
                               class="w-full bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[8px] p-2.5 text-xs text-[#102A43] dark:text-white outline-none"></textarea>
                           }
 
@@ -464,11 +485,11 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                                 [value]="block.content"
                                 (input)="updateBlockContent(block.id, $any($event.target).value)"
                                 rows="2"
-                                placeholder="Énoncé de la question QCM..."
+                                [placeholder]="lang.tr('Énoncé de la question QCM...', 'نص سؤال الخيارات المتعددة...')"
                                 class="w-full bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[8px] p-2 text-xs text-[#102A43] dark:text-white outline-none"></textarea>
 
                               <div class="space-y-1.5">
-                                <span class="text-[11px] font-semibold text-[#627D98] dark:text-[#8CA9C4]">Options de réponse (choisir la bonne réponse) :</span>
+                                <span class="text-[11px] font-semibold text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Options de réponse (choisir la bonne réponse) :', 'خيارات الإجابة (اختر الإجابة الصحيحة) :') }}</span>
                                 @for (opt of block.qcmOptions || []; track $index; let optIdx = $index) {
                                   <div class="flex items-center gap-2">
                                     <button
@@ -499,7 +520,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                                     (click)="addQcmOption(block.id)"
                                     class="text-[11px] font-semibold text-[#007CC2] flex items-center gap-1 cursor-pointer pt-1">
                                     <span class="material-icons text-xs">add</span>
-                                    <span>Ajouter une option (max 5)</span>
+                                    <span>{{ lang.tr('Ajouter une option (max 5)', 'إضافة خيار (أقصى 5)') }}</span>
                                   </button>
                                 }
                               </div>
@@ -512,11 +533,11 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                                 [value]="block.content"
                                 (input)="updateBlockContent(block.id, $any($event.target).value)"
                                 rows="2"
-                                placeholder="Consigne (ex: Réponds par Vrai ou Faux)..."
+                                [placeholder]="lang.tr('Consigne (ex: Réponds par Vrai ou Faux)...', 'التعليمة (مثال: أجب بصواب أو خطأ)...')"
                                 class="w-full bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[8px] p-2 text-xs text-[#102A43] dark:text-white outline-none"></textarea>
 
                               <div class="space-y-1.5">
-                                <span class="text-[11px] font-semibold text-[#627D98] dark:text-[#8CA9C4]">Affirmations :</span>
+                                <span class="text-[11px] font-semibold text-[#627D98] dark:text-[#8CA9C4]">{{ lang.tr('Affirmations :', 'الإفادات :') }}</span>
                                 @for (st of block.tfStatements || []; track $index; let stIdx = $index) {
                                   <div class="flex items-center gap-2">
                                     <span class="text-xs font-mono text-[#627D98] shrink-0">{{ stIdx + 1 }}.</span>
@@ -525,7 +546,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                                       type="text"
                                       [value]="st.text"
                                       (input)="updateTfStatement(block.id, stIdx, $any($event.target).value)"
-                                      placeholder="Rédigez l'affirmation..."
+                                      [placeholder]="lang.t('editorTfStatementPlaceholder')"
                                       class="grow bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[6px] p-1.5 text-xs text-[#102A43] dark:text-white outline-none" />
                                     <button
                                       (click)="toggleTfAnswer(block.id, stIdx)"
@@ -546,7 +567,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                                   (click)="addTfStatement(block.id)"
                                   class="text-[11px] font-semibold text-[#007CC2] flex items-center gap-1 cursor-pointer pt-1">
                                   <span class="material-icons text-xs">add</span>
-                                  <span>Ajouter une affirmation</span>
+                                  <span>{{ lang.tr('Ajouter une affirmation', 'إضافة إفادة') }}</span>
                                 </button>
                               </div>
                             </div>
@@ -555,17 +576,17 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                           @case ('fill_blanks') {
                             <div class="space-y-2">
                               <label [for]="'gap-text-' + block.id" class="block text-[11px] font-semibold text-[#627D98] dark:text-[#8CA9C4]">
-                                Texte avec mots à cacher :
+                                {{ lang.tr('Texte avec mots à cacher :', 'نص به كلمات مخفية :') }}
                               </label>
                               <textarea dir="auto"
                                 [id]="'gap-text-' + block.id"
                                 [value]="block.gapText || block.content"
                                 (input)="updateBlockField(block.id, 'gapText', $any($event.target).value); updateBlockContent(block.id, $any($event.target).value)"
                                 rows="3"
-                                placeholder="Ex: Le soleil se lève à l'[[est]] et se couche à l'[[ouest]]."
+                                [placeholder]="lang.t('editorGapTextPlaceholder')"
                                 class="w-full bg-white dark:bg-[#0E1D2A] border border-[#E3ECF2] dark:border-[#1A3145] rounded-[8px] p-2 text-xs text-[#102A43] dark:text-white outline-none leading-relaxed"></textarea>
                               <p class="text-[11px] text-[#007CC2] italic">
-                                💡 Entourez les mots à cacher avec [[mot]]
+                                💡 {{ lang.tr('Entourez les mots à cacher avec [[mot]]', 'أحط الكلمات المخفية بـ [[كلمة]]') }}
                               </p>
                             </div>
                           }
@@ -634,6 +655,28 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat } from './ed
                               rows="2"
                               placeholder="Corrigé modèle et méthode de résolution (visible uniquement pour validation ou corrigé type)..."
                               class="w-full bg-[#E8F6EF] dark:bg-[#153B2D]/40 border border-[#23845B]/30 rounded-[8px] p-2.5 text-xs text-[#23845B] dark:text-[#68D391] outline-none font-mono"></textarea>
+                          }
+                        </div>
+
+                        <!-- Variante IA (Idea 11) -->
+                        <div class="flex items-center justify-between pt-2 border-t border-[#E3ECF2] dark:border-[#1A3145]">
+                          <button
+                            (click)="generateVariant(block)"
+                            [disabled]="isVariantLoading()"
+                            class="flex items-center gap-1.5 bg-gradient-to-r from-[#7C3AED] to-[#5B21B6] hover:from-[#6D28D9] hover:to-[#4C1D95] disabled:opacity-50 text-white px-3 py-1.5 rounded-[8px] text-[11px] font-bold cursor-pointer transition-all shadow-sm">
+                            @if (isVariantLoading()) {
+                              <span class="material-icons text-xs animate-spin">refresh</span>
+                              <span>{{ lang.tr('Génération...', 'جارٍ التوليد...') }}</span>
+                            } @else {
+                              <span class="material-icons text-xs">auto_awesome</span>
+                              <span>{{ lang.tr('Générer une variante ✨', 'توليد نسخة مشابهة ✨') }}</span>
+                            }
+                          </button>
+                          @if (lastVariantBlockId() === block.id) {
+                            <span class="text-[10px] text-[#23845B] flex items-center gap-1 font-semibold">
+                              <span class="material-icons text-xs">check_circle</span>
+                              {{ lang.tr('Variante ajoutée ↓', 'تمت الإضافة ↓') }}
+                            </span>
                           }
                         </div>
                       </div>
@@ -1192,11 +1235,24 @@ export class EditorStudioComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  readonly interactionSvc = inject(InteractionService);
 
   readonly viewMode = signal<'editor' | 'split' | 'preview'>('split');
 
+  // Phase 3: Studio shell derived from docType
+  // Shell A = exam / exercise_sheet / course / summary → 3-col A4 layout
+  // Shell B = article → Medium-style centered prose canvas
+  readonly studioShell = computed<'A' | 'B'>(() =>
+    this.docType() === 'article' ? 'B' : 'A'
+  );
+
+  // Variante IA state (Idea 11)
+  readonly isVariantLoading = signal<boolean>(false);
+  readonly lastVariantBlockId = signal<string | null>(null);
+
   // Click-to-edit directly inside the A4 preview (Gamma-style ergonomics).
   readonly editingBlockId = signal<string | null>(null);
+
 
   isInlineEditable(b: EditorBlock): boolean {
     return b.type !== 'image' && b.type !== 'divider' && b.type !== 'cartouche';
@@ -1637,7 +1693,51 @@ export class EditorStudioComponent {
     }
   }
 
+  async generateVariant(sourceBlock: EditorBlock) {
+    if (this.isVariantLoading()) return;
+    this.isVariantLoading.set(true);
+    this.lastVariantBlockId.set(null);
+
+    try {
+      const res = await fetch('/api/ai/variant', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          grade: this.docGrade(),
+          subject: this.docSubject(),
+          topic: sourceBlock.exerciseTitle || '',
+          format: sourceBlock.exerciseFormat || 'free',
+          originalPromptText: sourceBlock.content || '',
+          role: 'teacher',
+        }),
+      });
+      const data = await res.json();
+
+      if (data.success && data.variant) {
+        const v = data.variant;
+        this.addBlock('exercise');
+        const newBlock = this.blocks()[this.blocks().length - 1];
+        this.updateBlockField(newBlock.id, 'exerciseTitle', `${v.title} (Variante IA ✨)`);
+        this.updateBlockContent(newBlock.id, v.promptText || '');
+        this.updateBlockField(newBlock.id, 'exerciseSolution', v.solutionText || '');
+        this.updateBlockField(newBlock.id, 'exercisePoints', v.points || sourceBlock.exercisePoints || 5);
+        if (v.format) this.updateBlockField(newBlock.id, 'exerciseFormat', v.format);
+        if (v.qcmOptions?.length) this.updateBlockField(newBlock.id, 'qcmOptions', v.qcmOptions);
+        if (typeof v.qcmCorrectIndex === 'number') this.updateBlockField(newBlock.id, 'qcmCorrectIndex', v.qcmCorrectIndex);
+        if (v.tfStatements?.length) this.updateBlockField(newBlock.id, 'tfStatements', v.tfStatements);
+        if (v.gapText) this.updateBlockField(newBlock.id, 'gapText', v.gapText);
+        if (v.matchingPairs?.length) this.updateBlockField(newBlock.id, 'matchingPairs', v.matchingPairs);
+        this.lastVariantBlockId.set(sourceBlock.id);
+      }
+    } catch (err) {
+      console.error('Variant generation error:', err);
+    } finally {
+      this.isVariantLoading.set(false);
+    }
+  }
+
   setExerciseFormat(blockId: string, format: ExerciseFormat) {
+
     this.blocks.update((list) =>
       list.map((b) => {
         if (b.id !== blockId) return b;
@@ -1883,6 +1983,9 @@ export class EditorStudioComponent {
       icon: 'menu_book',
     });
 
+    // Bug 2 fix: record publication in interaction journal for publicationsCount ledger
+    this.interactionSvc.recordPublication(this.docTitle());
+
     this.publishModalOpen.set(false);
     this.store.setRole('teacher');
   }
@@ -1909,6 +2012,9 @@ export class EditorStudioComponent {
       icon: 'article',
     });
 
+    // Bug 2 fix: record publication in interaction journal for publicationsCount ledger
+    this.interactionSvc.recordPublication(this.docTitle());
+
     this.publishModalOpen.set(false);
     this.store.setRole('teacher');
   }
@@ -1917,3 +2023,4 @@ export class EditorStudioComponent {
     this.store.setRole('teacher');
   }
 }
+

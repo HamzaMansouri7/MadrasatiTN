@@ -10,6 +10,7 @@ export type InteractionType =
   | 'vote'
   | 'follow'
   | 'favorite'
+  | 'publish'
   | 'report';
 
 export type TargetType =

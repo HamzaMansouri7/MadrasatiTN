@@ -108,6 +108,8 @@ export class EducationStore {
   readonly searchQuery = signal<string>('');
   readonly selectedGradeFilter = signal<string>('Tous');
   readonly selectedSubjectFilter = signal<string>('Tous');
+  // Multi-select subject facet (sidebar checkboxes). Empty set = all subjects.
+  readonly selectedSubjects = signal<Set<string>>(new Set<string>());
   readonly selectedTrimesterFilter = signal<string>('Tous');
   readonly selectedDocTypeFilter = signal<string>('Tous');
   readonly selectedSchoolYearFilter = signal<string>('Tous');
@@ -565,39 +567,49 @@ Pour réussir une production écrite de 6 à 8 lignes :
     return this.homeworks().filter((h) => h.classId === cid);
   });
 
-  // Multi-Facet Filtering Engine for Courses Library
-  readonly filteredCourses = computed(() => {
+  // Official CNP textbooks are tagged 'CNP' (المركز الوطني البيداغوجي).
+  private isCnpBook(course: Course): boolean {
+    return course.tags?.includes('CNP') ?? false;
+  }
+
+  private matchesCourseFilters(course: Course): boolean {
     const q = this.searchQuery().toLowerCase().trim();
     const g = this.selectedGradeFilter();
-    const s = this.selectedSubjectFilter();
     const t = this.selectedTrimesterFilter();
     const d = this.selectedDocTypeFilter();
     const y = this.selectedSchoolYearFilter();
     const onlyCor = this.onlyWithCorrectionFilter();
+    const subs = this.selectedSubjects();
 
-    return this.courses().filter((course) => {
-      const matchQ =
-        !q ||
-        course.title.toLowerCase().includes(q) ||
-        course.summary.toLowerCase().includes(q) ||
-        course.tags.some((tag) => tag.toLowerCase().includes(q));
+    const matchQ =
+      !q ||
+      course.title.toLowerCase().includes(q) ||
+      course.summary.toLowerCase().includes(q) ||
+      course.tags.some((tag) => tag.toLowerCase().includes(q));
+    const matchG = g === 'Tous' || course.grade === g;
+    const matchS = subs.size === 0 || subs.has(course.subject);
+    const matchT = t === 'Tous' || course.trimester === t;
+    const matchD = d === 'Tous' || course.docType === d;
+    const matchY = y === 'Tous' || course.schoolYear === y;
+    const matchCor = !onlyCor || course.hasCorrection === true;
 
-      const matchG = g === 'Tous' || course.grade === g;
-      const matchS = s === 'Tous' || course.subject === s;
-      const matchT = t === 'Tous' || course.trimester === t;
-      const matchD = d === 'Tous' || course.docType === d;
-      const matchY = y === 'Tous' || course.schoolYear === y;
-      const matchCor = !onlyCor || course.hasCorrection === true;
+    return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor;
+  }
 
-      return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor;
-    });
-  });
+  // Community/teacher courses & fiches — CNP official books excluded (own tab).
+  readonly filteredCourses = computed(() =>
+    this.courses().filter((c) => !this.isCnpBook(c) && this.matchesCourseFilters(c))
+  );
+
+  // Official CNP textbooks only.
+  readonly filteredCnpBooks = computed(() =>
+    this.courses().filter((c) => this.isCnpBook(c) && this.matchesCourseFilters(c))
+  );
 
   // Multi-Facet Filtering Engine for Exercises Bank
   readonly filteredExercisesBank = computed(() => {
     const q = this.searchQuery().toLowerCase().trim();
     const g = this.selectedGradeFilter();
-    const s = this.selectedSubjectFilter();
     const t = this.selectedTrimesterFilter();
     const d = this.selectedDocTypeFilter();
     const y = this.selectedSchoolYearFilter();
@@ -610,8 +622,9 @@ Pour réussir une production écrite de 6 à 8 lignes :
         ex.promptText.toLowerCase().includes(q) ||
         ex.chapter.toLowerCase().includes(q);
 
+      const subs = this.selectedSubjects();
       const matchG = g === 'Tous' || ex.grade === g;
-      const matchS = s === 'Tous' || ex.subject === s;
+      const matchS = subs.size === 0 || subs.has(ex.subject);
       const matchT = t === 'Tous' || ex.trimester === t;
       const matchD = d === 'Tous' || ex.docType === d;
       const matchY = y === 'Tous' || ex.schoolYear === y;
@@ -619,6 +632,41 @@ Pour réussir une production écrite de 6 à 8 lignes :
 
       return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor;
     });
+  });
+
+  // Subject facets for the sidebar: canonical subjects + live availability counts.
+  // Counts respect every other active filter but ignore the subject selection itself,
+  // so the numbers show what each subject *would* add — "clear vision" before clicking.
+  readonly subjectFacets = computed(() => {
+    const subjects = ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique'];
+    const q = this.searchQuery().toLowerCase().trim();
+    const g = this.selectedGradeFilter();
+    const t = this.selectedTrimesterFilter();
+    const d = this.selectedDocTypeFilter();
+    const y = this.selectedSchoolYearFilter();
+    const onlyCor = this.onlyWithCorrectionFilter();
+
+    const matchesNonSubject = (item: {
+      subject: string; grade: string; trimester?: string; docType?: string;
+      schoolYear?: string; hasCorrection?: boolean; title: string;
+    }) => {
+      const matchG = g === 'Tous' || item.grade === g;
+      const matchT = t === 'Tous' || item.trimester === t;
+      const matchD = d === 'Tous' || item.docType === d;
+      const matchY = y === 'Tous' || item.schoolYear === y;
+      const matchCor = !onlyCor || item.hasCorrection === true;
+      const matchQ = !q || item.title.toLowerCase().includes(q);
+      return matchG && matchT && matchD && matchY && matchCor && matchQ;
+    };
+
+    const pool = [...this.exercisesBank(), ...this.courses()].filter(matchesNonSubject);
+    const selected = this.selectedSubjects();
+
+    return subjects.map((subject) => ({
+      subject,
+      count: pool.filter((item) => item.subject === subject).length,
+      selected: selected.has(subject),
+    }));
   });
 
   // Watchlist Computeds
@@ -809,6 +857,17 @@ Pour réussir une production écrite de 6 à 8 lignes :
     this.selectedSubjectFilter.set(s);
   }
 
+  toggleSubject(subject: string) {
+    const next = new Set(this.selectedSubjects());
+    if (next.has(subject)) next.delete(subject);
+    else next.add(subject);
+    this.selectedSubjects.set(next);
+  }
+
+  clearSubjects() {
+    this.selectedSubjects.set(new Set<string>());
+  }
+
   setTrimesterFilter(t: string) {
     this.selectedTrimesterFilter.set(t);
   }
@@ -829,6 +888,7 @@ Pour réussir une production écrite de 6 à 8 lignes :
     this.searchQuery.set('');
     this.selectedGradeFilter.set('Tous');
     this.selectedSubjectFilter.set('Tous');
+    this.selectedSubjects.set(new Set<string>());
     this.selectedTrimesterFilter.set('Tous');
     this.selectedDocTypeFilter.set('Tous');
     this.selectedSchoolYearFilter.set('Tous');

@@ -212,6 +212,16 @@ export class InteractionService {
     });
   }
 
+  // Records a teacher publication event — feeds publicationsCount in the reputation ledger
+  recordPublication(docTitle: string) {
+    return this.recordInteraction({
+      type: 'publish',
+      targetType: 'resource',
+      targetId: `doc-${Date.now()}`,
+      payload: { text: docTitle },
+    });
+  }
+
   private recordInteraction(params: {
     type: InteractionType;
     targetType: TargetType;
@@ -250,7 +260,7 @@ export class InteractionService {
           if (act.type === 'comment' || act.type === 'answer') score += 5;
           if (act.type === 'rating') score += 2;
           // Bug 2 fix: count publications authored by this user
-          if (act.type === 'favorite' && act.payload?.text === 'publish') {
+          if (act.type === 'publish') {
             publications += 1;
             score += 5;
           }

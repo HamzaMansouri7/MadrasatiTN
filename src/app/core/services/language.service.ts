@@ -200,6 +200,12 @@ export class LanguageService {
     filterGradeAll: { fr: 'Tous les Niveaux', ar: 'جميع المستويات' },
     filterSubjectAll: { fr: 'Toutes les Matières', ar: 'جميع المواد' },
     teachersDirectory: { fr: 'Répertoire des Enseignants Certifiés', ar: 'دليل المعلمين المعتمدين' },
+
+    // Editor Studio Fixes (Rule 6: Apostrophes in attributes)
+    editorExerciseTitlePlaceholder: { fr: "Titre de l'exercice...", ar: "عنوان التمرين..." },
+    editorPromptPlaceholder: { fr: "Énoncé du problème ou consigne pour l'élève...", ar: "نص المسألة أو التعليمة للتلميذ..." },
+    editorTfStatementPlaceholder: { fr: "Rédigez l'affirmation...", ar: "اكتب الإفادة..." },
+    editorGapTextPlaceholder: { fr: "Ex: Le soleil se lève à l'[[est]] et se couche à l'[[ouest]].", ar: "مثال: تشرق الشمس من الـ[[شرق]] وتغرب من الـ[[غرب]]." },
   };
 
   t(key: string): string {

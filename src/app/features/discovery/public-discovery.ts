@@ -120,7 +120,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
           </button>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-xs">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
           <!-- Filter 1: Grade -->
           <div class="min-w-0">
             <label for="filter-grade-select" class="block font-medium text-[#486581] mb-1 truncate">
@@ -155,24 +155,6 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               <option value="Trimestre 1">{{ lang.tr('Trimestre 1', 'الثلاثي الأول') }}</option>
               <option value="Trimestre 2">{{ lang.tr('Trimestre 2', 'الثلاثي الثاني') }}</option>
               <option value="Trimestre 3">{{ lang.tr('Trimestre 3', 'الثلاثي الثالث') }}</option>
-            </select>
-          </div>
-
-          <!-- Filter 3: Subject -->
-          <div class="min-w-0">
-            <label for="filter-subject-select" class="block font-medium text-[#486581] mb-1 truncate">
-              {{ lang.tr('Matière', 'المادة') }}
-            </label>
-            <select
-              id="filter-subject-select"
-              [value]="store.selectedSubjectFilter()"
-              (change)="onSubjectChange($event)"
-              class="w-full min-w-0 bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD9E2] dark:border-[#254663] rounded-[10px] p-2 font-medium text-[#102A43] dark:text-white outline-none focus:border-[#007CC2] text-xs">
-              <option value="Tous">{{ lang.t('filterSubjectAll') }}</option>
-              <option value="Mathématiques">{{ lang.tr('Mathématiques', 'الرياضيات') }}</option>
-              <option value="Français">{{ lang.tr('Français', 'الفرنسية') }}</option>
-              <option value="اللغة العربية">{{ lang.tr('Langue Arabe', 'اللغة العربية') }}</option>
-              <option value="Éveil Scientifique">{{ lang.tr('Éveil Scientifique', 'الإيقاظ العلمي') }}</option>
             </select>
           </div>
 
@@ -234,6 +216,12 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
         </div>
       </div>
 
+      <!-- Content: subject rail + results -->
+      <div class="flex flex-col lg:flex-row gap-6 items-start">
+
+        <!-- Main results column -->
+        <div class="flex-1 min-w-0 space-y-6 order-last lg:order-none">
+
       <!-- Main Directory Navigation Tabs -->
       <div class="flex items-center gap-2 border-b border-[#E7DFCF] pb-2 overflow-x-auto no-scrollbar">
         <button
@@ -250,6 +238,14 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
           class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
           <span class="material-icons text-sm">menu_book</span>
           <span>{{ lang.tr('Fiches & Cours', 'الملخصات والدروس') }} ({{ store.filteredCourses().length }})</span>
+        </button>
+
+        <button
+          (click)="activeSection.set('cnp')"
+          [class]="activeSection() === 'cnp' ? 'bg-[#C1121F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#C1121F] font-medium border border-[#E7DFCF]'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
+          <span class="material-icons text-sm">auto_stories</span>
+          <span>{{ lang.tr('Manuels CNP', 'الكتب الرسمية CNP') }} ({{ store.filteredCnpBooks().length }})</span>
         </button>
 
         <button
@@ -367,7 +363,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
 
                   <button
                     (click)="openWatermarkPreviewModal(ex)"
-                    class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors shadow-sm">
+                    class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 cursor-pointer transition-colors">
                     <span class="material-icons text-xs">print</span>
                     {{ lang.tr('Imprimer PDF', 'طباعة PDF') }}
                   </button>
@@ -379,8 +375,8 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                 <button
                   (click)="toggleCommentPanel(ex.id)"
                   [class]="openCommentIds().has(ex.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
-                  class="px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 border transition-all cursor-pointer shadow-2xs">
-                  <span class="material-icons text-sm">forum</span>
+                  class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 border transition-all cursor-pointer">
+                  <span class="material-icons text-xs">forum</span>
                   <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
                   @if (store.getComments(ex.id).length > 0) {
                     <span class="bg-[#1B4332] text-[#FBF8F1] text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
@@ -484,9 +480,9 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
       }
 
       <!-- SECTION 2: COURSES LIBRARY -->
-      @if (activeSection() === 'courses') {
+      @if (activeSection() === 'courses' || activeSection() === 'cnp') {
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          @for (c of store.filteredCourses(); track c.id) {
+          @for (c of (activeSection() === 'cnp' ? store.filteredCnpBooks() : store.filteredCourses()); track c.id) {
             <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
               <div class="space-y-3">
                 @if (c.imageUrls && c.imageUrls.length) {
@@ -547,8 +543,8 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                 <button
                   (click)="toggleCommentPanel(c.id)"
                   [class]="openCommentIds().has(c.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
-                  class="px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 border transition-all cursor-pointer shadow-2xs">
-                  <span class="material-icons text-sm">forum</span>
+                  class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 border transition-all cursor-pointer">
+                  <span class="material-icons text-xs">forum</span>
                   <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
                   @if (store.getComments(c.id).length > 0) {
                     <span class="bg-[#1B4332] text-[#FBF8F1] text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
@@ -561,7 +557,7 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                   <button
                     (click)="store.toggleWatchlist(c.id, 'course')"
                     [class]="store.isWatched(c.id, 'course') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
-                    class="px-2.5 py-2 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer border"
+                    class="px-2.5 py-1.5 rounded-xl text-xs flex items-center gap-1 transition-colors cursor-pointer border"
                     [title]="store.isWatched(c.id, 'course') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
                     <span class="material-icons text-xs" [class.text-[#8A5A00]]="store.isWatched(c.id, 'course')">
                       {{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}
@@ -574,21 +570,21 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
                       [href]="c.pdfUrl"
                       target="_blank"
                       rel="noopener"
-                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow-sm transition-colors">
-                      <span class="material-icons text-sm">download</span>
+                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-2.5 py-1.5 rounded-xl flex items-center gap-1 transition-colors">
+                      <span class="material-icons text-xs">download</span>
                       {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
                     </a>
                   } @else if (c.imageUrls && c.imageUrls.length) {
                     <button
                       (click)="openImageDoc(c)"
-                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow-sm cursor-pointer transition-colors">
-                      <span class="material-icons text-sm">print</span>
+                      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-2.5 py-1.5 rounded-xl flex items-center gap-1 cursor-pointer transition-colors">
+                      <span class="material-icons text-xs">print</span>
                       {{ lang.tr('Voir & Imprimer A4', 'عرض وطباعة') }}
                     </button>
                   } @else {
                     <button
                       (click)="viewCourseModal.set(c)"
-                      class="bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl cursor-pointer transition-colors">
+                      class="bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-2.5 py-1.5 rounded-xl cursor-pointer transition-colors">
                       {{ lang.tr('Consulter la Fiche', 'قراءة الملخص') }}
                     </button>
                   }
@@ -875,6 +871,53 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
           }
         </div>
       }
+
+        </div>
+        <!-- end main results column -->
+
+        <!-- Subject facet rail (renders on the left in RTL / Arabic) -->
+        <aside class="w-full lg:w-56 shrink-0 order-first lg:order-none">
+          <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] space-y-3 lg:sticky lg:top-4">
+            <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+              <div class="flex items-center gap-2">
+                <span class="material-icons text-[#1B4332] text-base">category</span>
+                <h3 class="font-display font-semibold text-[#14251D] text-sm">{{ lang.tr('Matière', 'المادة') }}</h3>
+              </div>
+              @if (store.selectedSubjects().size) {
+                <button
+                  (click)="store.clearSubjects()"
+                  class="text-[11px] text-[#8A5A00] hover:text-[#C1121F] font-semibold cursor-pointer">
+                  {{ lang.tr('Effacer', 'مسح') }}
+                </button>
+              }
+            </div>
+
+            <div class="space-y-1.5">
+              @for (f of store.subjectFacets(); track f.subject) {
+                <label
+                  class="flex items-center justify-between gap-2 px-2 py-2.5 rounded-xl cursor-pointer transition-colors"
+                  [class]="f.selected ? 'bg-[#1B4332]/10' : 'hover:bg-[#FBF8F1]'">
+                  <span class="flex items-center gap-2 min-w-0">
+                    <input
+                      type="checkbox"
+                      [checked]="f.selected"
+                      (change)="store.toggleSubject(f.subject)"
+                      class="w-4 h-4 rounded text-[#1B4332] focus:ring-[#1B4332] cursor-pointer shrink-0" />
+                    <span class="text-xs font-medium text-[#14251D] truncate">{{ subjectLabel(f.subject) }}</span>
+                  </span>
+                  <span
+                    class="text-[10px] font-semibold px-1.5 py-0.5 rounded-full shrink-0"
+                    [class]="f.count ? 'bg-[#F2ECDE] text-[#4A5A50]' : 'bg-[#F2ECDE]/50 text-[#B7C7BC]'">
+                    {{ f.count }}
+                  </span>
+                </label>
+              }
+            </div>
+          </div>
+        </aside>
+
+      </div>
+      <!-- end content: subject rail + results -->
 
     </div>
 
@@ -1190,7 +1233,7 @@ export class PublicDiscoveryComponent {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
-  readonly activeSection = signal<'exercises' | 'courses' | 'teachers' | 'watchlist'>('exercises');
+  readonly activeSection = signal<'exercises' | 'courses' | 'cnp' | 'teachers' | 'watchlist'>('exercises');
   readonly openSolutionIds = signal<Set<string>>(new Set());
   readonly openCommentIds = signal<Set<string>>(new Set());
 
@@ -1303,8 +1346,14 @@ export class PublicDiscoveryComponent {
     this.store.setGradeFilter((event.target as HTMLSelectElement).value);
   }
 
-  onSubjectChange(event: Event) {
-    this.store.setSubjectFilter((event.target as HTMLSelectElement).value);
+  subjectLabel(subject: string): string {
+    switch (subject) {
+      case 'Mathématiques': return this.lang.tr('Mathématiques', 'الرياضيات');
+      case 'Français': return this.lang.tr('Français', 'الفرنسية');
+      case 'اللغة العربية': return this.lang.tr('Langue Arabe', 'اللغة العربية');
+      case 'Éveil Scientifique': return this.lang.tr('Éveil Scientifique', 'الإيقاظ العلمي');
+      default: return subject;
+    }
   }
 
   onTrimesterChange(event: Event) {
