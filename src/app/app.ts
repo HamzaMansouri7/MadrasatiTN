@@ -42,6 +42,7 @@ export class App {
           '/student': 'student',
           '/discovery': 'public',
           '/editor': 'editor',
+          '/generate': 'editor',
           '/article-studio': 'article-editor',
           '/studio': 'article-editor',
         };
@@ -50,6 +51,14 @@ export class App {
           this.store.currentRole.set(matchedRole);
         }
       });
+
+    // Phase 3 — resolve a shared deep link (?doc=ID) on initial load.
+    if (typeof window !== 'undefined') {
+      const docId = new URLSearchParams(window.location.search).get('doc');
+      if (docId && !this.store.pendingDocId()) {
+        this.store.openSharedDoc(docId);
+      }
+    }
   }
 }
 

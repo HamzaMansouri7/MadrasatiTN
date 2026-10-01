@@ -99,6 +99,13 @@ export interface GeneratedExerciseResult {
             </button>
 
             <button
+              (click)="openGenerator()"
+              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-base">auto_awesome</span>
+              {{ lang.tr('Fiches similaires IA', 'أوراق مشابهة بالذكاء') }}
+            </button>
+
+            <button
               (click)="openStudio()"
               class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">cloud_upload</span>
@@ -1843,6 +1850,11 @@ export class TeacherHomeComponent {
   openArticleStudio() {
     if (!this.requireAuth()) return;
     this.store.setRole('article-editor');
+  }
+
+  openGenerator() {
+    if (!this.requireAuth()) return;
+    this.store.openGenerator();
   }
 
   closeModal() {

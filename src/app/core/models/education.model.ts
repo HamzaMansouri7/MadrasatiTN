@@ -66,6 +66,47 @@ export interface ExerciseItem {
   watermarkText?: string;
 }
 
+// Phase 1 — style-clone pipeline (analyze worksheet image → generate similar).
+export interface WorksheetDna {
+  title?: string;
+  grade?: GradeLevel;
+  subject?: SubjectName;
+  topic?: string;
+  language?: 'fr' | 'ar' | 'en' | 'mixed';
+  palette?: string[];
+  layoutStyle?: string;
+  illustrationStyle?: string;
+  sections?: { heading: string; kind: string; itemsCount?: number }[];
+}
+
+export interface GeneratedExercise {
+  title: string;
+  promptText: string;
+  solutionText?: string;
+  hints?: string[];
+  points?: number;
+  format?: 'free' | 'qcm' | 'true_false' | 'fill_blanks' | 'matching';
+  qcmOptions?: string[];
+  qcmCorrectIndex?: number;
+  tfStatements?: { text: string; answer: boolean }[];
+  gapText?: string;
+  matchingPairs?: { left: string; right: string }[];
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
+// Phase 3b — a persisted, shareable worksheet (one printable sheet of exercises).
+export interface WorksheetDoc {
+  id: string;
+  title: string;
+  grade?: string;
+  subject?: string;
+  topic?: string;
+  palette?: string[];
+  exercises: GeneratedExercise[];
+  createdAt?: string;
+}
+
 export interface Homework {
   id: string;
   title: string;

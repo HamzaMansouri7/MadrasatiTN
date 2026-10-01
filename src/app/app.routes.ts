@@ -50,6 +50,13 @@ export const routes: Routes = [
     title: 'استوديو المقالات | Rédaction Pédagogique - Madrasati TN',
   },
   {
+    path: 'generate',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./features/generate/worksheet-generator').then((m) => m.WorksheetGeneratorComponent),
+    title: 'مولّد الأوراق | Générateur de fiches - Madrasati TN',
+  },
+  {
     path: 'studio',
     redirectTo: 'article-studio',
     pathMatch: 'full',

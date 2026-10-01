@@ -18,6 +18,9 @@ import {
   UserRole,
   SubjectName,
   GradeLevel,
+  WorksheetDna,
+  GeneratedExercise,
+  WorksheetDoc,
 } from '../models/education.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
@@ -61,6 +64,27 @@ export class EducationStore {
 
   switchRole(role: UserRole) {
     this.setRole(role);
+  }
+
+  // Phase 3 — deep-linked shared document (?doc=ID). public-discovery watches this
+  // signal and opens the matching exercise in its printable preview modal.
+  readonly pendingDocId = signal<string | null>(null);
+
+  openSharedDoc(id: string) {
+    if (!id) return;
+    this.pendingDocId.set(id);
+    this.currentRole.set('public');
+    if (this.router && this.router.url.split('?')[0] !== '/discovery') {
+      this.router.navigateByUrl('/discovery?doc=' + encodeURIComponent(id));
+    }
+  }
+
+  // Worksheet style-clone studio lives at /generate (shares the 'editor' workspace chrome).
+  openGenerator() {
+    this.currentRole.set('editor');
+    if (this.router && this.router.url.split('?')[0] !== '/generate') {
+      this.router.navigateByUrl('/generate');
+    }
   }
 
   // Multi-Palette Theme Engine
@@ -985,6 +1009,90 @@ Pour réussir une production écrite de 6 à 8 lignes :
       }
     } catch (err) {
       console.error('Error in autoTagAndAddDocument:', err);
+    }
+    return null;
+  }
+
+  // Phase 1a — analyze an uploaded worksheet image, extract its visual "DNA".
+  async analyzeWorksheet(base64Data: string, contentType?: string, documentName?: string): Promise<WorksheetDna | null> {
+    try {
+      const res = await fetch('/api/ai/analyze-worksheet', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ base64Data, contentType, documentName }),
+      });
+      const data = await res.json();
+      if (data.success && data.dna) return data.dna as WorksheetDna;
+    } catch (err) {
+      console.error('Error in analyzeWorksheet:', err);
+    }
+    return null;
+  }
+
+  // Phase 1b — generate N new exercises in the same style/topic from the DNA.
+  async generateSimilarExercises(dna: WorksheetDna, count = 3): Promise<GeneratedExercise[]> {
+    try {
+      const res = await fetch('/api/ai/generate-similar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ dna, count }),
+      });
+      const data = await res.json();
+      if (data.success && Array.isArray(data.exercises)) return data.exercises as GeneratedExercise[];
+    } catch (err) {
+      console.error('Error in generateSimilarExercises:', err);
+    }
+    return [];
+  }
+
+  // Phase 3b — persist a worksheet server-side; returns its share URL (?sheet=ID).
+  async saveWorksheet(payload: {
+    title?: string;
+    grade?: string;
+    subject?: string;
+    topic?: string;
+    palette?: string[];
+    exercises: GeneratedExercise[];
+  }): Promise<{ id: string; shareUrl: string } | null> {
+    try {
+      const res = await fetch('/api/docs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (data.success && data.id) return { id: data.id, shareUrl: data.shareUrl };
+    } catch (err) {
+      console.error('Error in saveWorksheet:', err);
+    }
+    return null;
+  }
+
+  // Phase 3b — fetch a persisted worksheet so a shared link renders for any visitor.
+  async getWorksheet(id: string): Promise<WorksheetDoc | null> {
+    try {
+      const res = await fetch('/api/docs/' + encodeURIComponent(id));
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (data.success && data.doc) return data.doc as WorksheetDoc;
+    } catch (err) {
+      console.error('Error in getWorksheet:', err);
+    }
+    return null;
+  }
+
+  // Phase 2 — generate one illustration for an exercise (returns a /uploads URL).
+  async generateIllustration(promptText: string, style = 'educational'): Promise<string | null> {
+    try {
+      const res = await fetch('/api/ai/generate-illustration', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ promptText, style }),
+      });
+      const data = await res.json();
+      if (data.success && data.imageUrl) return data.imageUrl as string;
+    } catch (err) {
+      console.error('Error in generateIllustration:', err);
     }
     return null;
   }

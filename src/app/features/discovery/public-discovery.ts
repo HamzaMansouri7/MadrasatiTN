@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment } from '@core';
@@ -1225,6 +1225,20 @@ export class PublicDiscoveryComponent {
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
   private readonly sanitizer = inject(DomSanitizer);
+
+  constructor() {
+    // Phase 3 — when a shared link (?doc=ID) resolves, open that exercise's printable modal.
+    effect(() => {
+      const id = this.store.pendingDocId();
+      if (!id) return;
+      const ex = this.store.exercisesBank().find((e) => e.id === id);
+      if (ex) {
+        this.activeSection.set('exercises');
+        this.watermarkPreviewModal.set(ex);
+        this.store.pendingDocId.set(null);
+      }
+    });
+  }
 
   getSafePdfUrl(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);

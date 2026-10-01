@@ -112,4 +112,18 @@ Le Studio est partagé par les enseignants ET les parents avec adaptation dynami
   - *"Simplifier le vocabulaire pour un élève en difficulté"*
   - *"Ajouter un piège classique d'examen trimestriel"*
   - *"Transformer en QCM ou exercice à relier"*
+- **A11. Moteur Universel de Fiches d'Exercices Visuelles (1-Click Universal Visual Worksheet Engine) :**
+  - **Portée Universelle (1ère à 6ème Année — Toutes Matières) :** Générateur générique paramétrable par `{ classe, matière, trimestre, chapitre/thème, type_exercice, niveau_difficulté }`.
+  - **Adaptation Automatique du Rendu Visuel selon le Niveau :**
+    - *Cycle 1 (1ère / 2ème Année) :* Fiches visuelles pré-lecteurs (reliage par flèches, cercles phonétiques, puzzles de syllabes, intrus, dessins d'objets du quotidien).
+    - *Cycle 2 (3ème / 4ème Année) :* Compréhension écrite, tableaux de grammaire/conjugaison, schémas de sciences (éveil), horloges et fractions visuelles.
+    - *Cycle 3 (5ème / 6ème Année — Concours Pilote) :* Situations-problèmes mathématiques complexes, figures géométriques cotées, graphiques, barème ministériel officiel /20.
+  - **Pipeline Technique 100% Automatisé :**
+    1. Gemini 2.5 Flash génère la structure pédagogique conforme aux programmes officiels CNP.
+    2. Modèle génère les illustrations vectorielles SVG sur mesure (objets du quotidien pour langues, schémas vectoriels précis pour maths/sciences).
+    3. Puppeteer-Core / Edge capture instantanément la fiche au format A4 2x Retina PNG.
+  - **Rendu & Distribution :** 1 Exercice = 1 Image haute résolution prête à imprimer ou partager en 1 clic sur WhatsApp, sauvegardée localement sur le disque du VPS (`/uploads/exercises/`) à coût zéro infrastructure.
+
+
+
 

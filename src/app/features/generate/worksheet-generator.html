@@ -1,0 +1,155 @@
+<div class="w-full max-w-5xl mx-auto">
+  <!-- Header -->
+  <header class="mb-6 no-print">
+    <h1 class="font-display text-2xl font-bold text-[#14251D]">
+      {{ lang.tr('Générateur de fiches similaires', 'مولّد الأوراق المشابهة') }}
+    </h1>
+    <p class="text-sm text-[#5B6B60] mt-1">
+      {{ lang.tr('Importe une fiche, l\'IA en recrée de nouvelles dans le même style.', 'استورد ورقة، والذكاء الاصطناعي ينشئ أوراقًا جديدة بنفس الأسلوب.') }}
+    </p>
+  </header>
+
+  @if (shared()) {
+    <header class="mb-6">
+      <h1 class="font-display text-2xl font-bold text-[#14251D]">{{ sharedTitle() }}</h1>
+      <p class="text-sm text-[#5B6B60] mt-1">{{ lang.tr('Fiche partagée · Madrasati TN', 'ورقة مشتركة · مدرستي') }}</p>
+    </header>
+  }
+
+  <!-- Step 1: upload + analyze -->
+  @if (!shared()) {
+  <section class="bg-white border border-[#E7DFCF] rounded-[14px] p-5 mb-5 no-print">
+    <div class="flex flex-col sm:flex-row gap-4 items-start">
+      <label class="shrink-0 cursor-pointer">
+        <input type="file" accept="image/*" class="hidden" (change)="onFileSelected($event)" />
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm hover:bg-[#EAE2D0]">
+          <span class="material-icons text-base">image</span>
+          {{ lang.tr('Choisir une image', 'اختر صورة') }}
+        </span>
+      </label>
+
+      @if (sourceImage(); as img) {
+        <div class="flex items-center gap-4">
+          <img [src]="img" alt="source" class="w-28 h-28 object-cover rounded-[10px] border border-[#E7DFCF]" />
+          <button
+            type="button"
+            (click)="analyze()"
+            [disabled]="analyzing()"
+            class="px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60">
+            {{ analyzing() ? lang.tr('Analyse…', '…تحليل') : lang.tr('Analyser le style', 'حلّل الأسلوب') }}
+          </button>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- Step 2: DNA + generate -->
+  @if (dna(); as d) {
+    <section class="bg-white border border-[#E7DFCF] rounded-[14px] p-5 mb-5 no-print">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+        <span class="text-[#14251D] font-semibold">{{ d.topic || d.title }}</span>
+        <span class="text-[#5B6B60]">{{ d.grade }} · {{ d.subject }}</span>
+        <div class="flex items-center gap-1">
+          @for (c of d.palette || []; track c) {
+            <span class="w-5 h-5 rounded-full border border-[#E7DFCF]" [style.background]="c"></span>
+          }
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 mt-4">
+        <label class="text-sm text-[#5B6B60]">{{ lang.tr('Nombre', 'العدد') }}</label>
+        <select
+          class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm"
+          [value]="count()"
+          (change)="count.set(+$any($event.target).value)">
+          @for (n of [1,2,3,4,5,6]; track n) { <option [value]="n">{{ n }}</option> }
+        </select>
+        <button
+          type="button"
+          (click)="generate()"
+          [disabled]="generating()"
+          class="px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60">
+          {{ generating() ? lang.tr('Génération…', '…توليد') : lang.tr('Générer', 'توليد') }}
+        </button>
+      </div>
+    </section>
+  }
+  }
+
+  <!-- Step 3: results (printable A4) -->
+  @if (exercises().length > 0) {
+    <div class="flex flex-wrap justify-end gap-2 mb-3 no-print">
+      @if (!shared()) {
+        <button type="button" (click)="illustrate()" [disabled]="illustrating()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm disabled:opacity-60">
+          <span class="material-icons text-base">palette</span>
+          {{ illustrating() ? lang.tr('Illustration…', '…رسم') : lang.tr('Ajouter des images', 'أضف صورًا') }}
+        </button>
+        <button type="button" (click)="share()" [disabled]="saving()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-60">
+          <span class="material-icons text-base">share</span>
+          {{ saving() ? lang.tr('Partage…', '…مشاركة') : lang.tr('Partager', 'مشاركة') }}
+        </button>
+      }
+      <button type="button" (click)="print()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm">
+        <span class="material-icons text-base">print</span>
+        {{ lang.tr('Imprimer A4', 'طباعة A4') }}
+      </button>
+    </div>
+
+    @if (shareUrl(); as url) {
+      <div class="flex items-center gap-2 mb-3 p-3 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-sm no-print">
+        <span class="material-icons text-base text-[#1B4332]">link</span>
+        <input readonly [value]="url" class="flex-1 bg-transparent text-[#14251D] outline-none" />
+        <span class="text-xs text-[#5B6B60]">{{ lang.tr('Lien copié ✓', 'تم نسخ الرابط ✓') }}</span>
+      </div>
+    }
+
+    <section class="print-sheet space-y-4" [style.--accent]="accent()">
+      @for (ex of exercises(); track $index) {
+        <article class="bg-white border border-[#E7DFCF] rounded-[14px] overflow-hidden">
+          <header class="px-4 py-2 text-white font-display font-semibold" [style.background]="accent()">
+            {{ $index + 1 }}. {{ ex.title }}
+          </header>
+          <div class="p-4 space-y-3">
+            @if (ex.imageUrl) {
+              <img [src]="ex.imageUrl" [alt]="ex.title" class="w-full max-h-64 object-contain rounded-[10px] border border-[#E7DFCF] bg-white" />
+            }
+            <p class="text-[#14251D] whitespace-pre-line">{{ ex.promptText }}</p>
+
+            @switch (ex.format) {
+              @case ('qcm') {
+                <ul class="space-y-1">
+                  @for (opt of ex.qcmOptions || []; track $index) {
+                    <li class="flex items-center gap-2 text-[#14251D]">
+                      <span class="w-4 h-4 rounded-full border-2" [style.border-color]="accent()"></span>{{ opt }}
+                    </li>
+                  }
+                </ul>
+              }
+              @case ('true_false') {
+                <ul class="space-y-1">
+                  @for (s of ex.tfStatements || []; track $index) {
+                    <li class="text-[#14251D]">▢ {{ s.text }}</li>
+                  }
+                </ul>
+              }
+              @case ('matching') {
+                <div class="grid grid-cols-2 gap-2">
+                  @for (p of ex.matchingPairs || []; track $index) {
+                    <div class="text-[#14251D]">{{ p.left }} — ______</div>
+                  }
+                </div>
+              }
+              @case ('fill_blanks') {
+                <p class="text-[#14251D] whitespace-pre-line">{{ ex.gapText }}</p>
+              }
+            }
+
+            @if (ex.hints?.length) {
+              <p class="text-xs text-[#5B6B60]">💡 {{ (ex.hints || []).join(' · ') }}</p>
+            }
+          </div>
+        </article>
+      }
+    </section>
+  }
+</div>

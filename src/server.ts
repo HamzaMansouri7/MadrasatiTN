@@ -7,14 +7,19 @@ import {
 import express, { Request, Response, NextFunction } from 'express';
 import { join } from 'node:path';
 import { GoogleGenAI } from '@google/genai';
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 const uploadsFolder = join(process.cwd(), 'uploads');
+// Persisted shared worksheets (zero-cost JSON on disk, same pattern as /uploads).
+const docsFolder = join(process.cwd(), 'docs');
 
 if (!existsSync(uploadsFolder)) {
   mkdirSync(uploadsFolder, { recursive: true });
+}
+if (!existsSync(docsFolder)) {
+  mkdirSync(docsFolder, { recursive: true });
 }
 
 // 0. Pure Google Identity Token Verification (Zero Vite SSR bundling issues)
@@ -751,6 +756,190 @@ Réponds STRICTEMENT au format JSON valide suivant :
   }
 });
 
+// 4b. Worksheet Style Analyzer (Phase 1a) — vision reads an uploaded worksheet image
+// and extracts its "design DNA": topic, palette, layout, so we can clone the style.
+app.post('/api/ai/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
+  try {
+    const { base64Data, contentType, documentName } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée dans le serveur backend.' });
+      return;
+    }
+
+    if (!base64Data || typeof base64Data !== 'string') {
+      res.status(400).json({ error: 'Image requise (base64Data) pour analyser la fiche.' });
+      return;
+    }
+
+    const safeDocName = (documentName || '').slice(0, 200);
+    const prompt = `Tu es un expert en design pédagogique pour l'école primaire tunisienne (1ère à 6ème année).
+Analyse cette image de fiche d'exercices / affiche scolaire et extrais son "ADN visuel" afin de pouvoir générer d'autres fiches dans EXACTEMENT le même style.
+Nom du fichier : "${safeDocName}"
+
+Réponds STRICTEMENT au format JSON valide suivant :
+{
+  "title": "Titre de la fiche détecté",
+  "grade": "1ère Année" | "2ème Année" | "3ème Année" | "4ème Année" | "5ème Année" | "6ème Année",
+  "subject": "Mathématiques" | "Français" | "اللغة العربية" | "Éveil Scientifique" | "Histoire & Géographie" | "Anglais",
+  "topic": "Thème/chapitre précis (ex: Addition jusqu'à 10, Greetings, Phonics Tt)",
+  "language": "fr" | "ar" | "en" | "mixed",
+  "palette": ["#RRGGBB", "#RRGGBB", "#RRGGBB", "#RRGGBB"],
+  "layoutStyle": "Description courte de la mise en page (ex: grille de 4 cartes colorées arrondies, en-tête festif, clipart par mot)",
+  "illustrationStyle": "Style des dessins (ex: cartoon mignon, contours arrondis, couleurs vives, fond blanc)",
+  "sections": [
+    { "heading": "Titre de section détecté", "kind": "words" | "sentences" | "qcm" | "matching" | "phonics" | "commands" | "free", "itemsCount": 3 }
+  ]
+}
+
+Instructions :
+- palette : 3 à 6 couleurs HEX dominantes réellement présentes dans l'image.
+- sections : liste fidèle des blocs/leçons visibles, dans l'ordre.`;
+
+    const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
+    const mime = contentType || (base64Data.startsWith('data:image/png') ? 'image/png' : 'image/jpeg');
+    const contents: ({ inlineData: { mimeType: string; data: string } } | { text: string })[] = [
+      { inlineData: { mimeType: mime.startsWith('image/') ? mime : 'image/jpeg', data: base64Clean } },
+      { text: prompt },
+    ];
+
+    const response = await ai.models.generateContent({ model: 'gemini-2.5-flash', contents });
+    const text = response.text || '';
+    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const data = JSON.parse(cleanedText);
+
+    res.json({ success: true, dna: data });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de l\'analyse de la fiche';
+    console.error('Error in /api/ai/analyze-worksheet:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
+// 4c. Similar Worksheet Generator (Phase 1b) — takes the design DNA and generates
+// N new exercises on the same topic, reusing the detected palette/style.
+app.post('/api/ai/generate-similar', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
+  try {
+    const { dna, count } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée dans le serveur backend.' });
+      return;
+    }
+
+    if (!dna || typeof dna !== 'object') {
+      res.status(400).json({ error: 'ADN visuel requis (dna) — appelle /api/ai/analyze-worksheet d\'abord.' });
+      return;
+    }
+
+    const n = Math.min(Math.max(parseInt(count, 10) || 3, 1), 8);
+    const grade = (dna.grade || '1ère Année').toString().slice(0, 40);
+    const subject = (dna.subject || 'Mathématiques').toString().slice(0, 40);
+    const topic = (dna.topic || '').toString().slice(0, 200);
+    const palette = Array.isArray(dna.palette) ? dna.palette.slice(0, 6) : [];
+
+    const prompt = `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie.
+Génère ${n} exercices NOUVEAUX et variés, du même style et du même thème qu'une fiche existante, pour l'école primaire tunisienne.
+- Niveau: ${grade}
+- Matière: ${subject}
+- Thème: ${topic || 'conforme au programme officiel'}
+- Palette de couleurs à réutiliser: ${palette.join(', ') || 'couleurs vives et enfantines'}
+- Style d'illustration: ${(dna.illustrationStyle || 'cartoon mignon, couleurs vives').toString().slice(0, 200)}
+
+Réponds STRICTEMENT au format JSON valide suivant :
+{
+  "exercises": [
+    {
+      "title": "Titre court de l'exercice",
+      "promptText": "Énoncé complet et clair adapté au niveau",
+      "solutionText": "Correction type",
+      "hints": ["Indice 1"],
+      "points": 5,
+      "format": "free" | "qcm" | "true_false" | "fill_blanks" | "matching",
+      "qcmOptions": ["Option 1", "Option 2", "Option 3"],
+      "qcmCorrectIndex": 0,
+      "tfStatements": [{"text": "Affirmation", "answer": true}],
+      "gapText": "Texte avec [[mot]] à deviner",
+      "matchingPairs": [{"left": "A", "right": "B"}],
+      "imagePrompt": "Description en anglais d'une illustration cartoon pour cet exercice (sans texte dans l'image)"
+    }
+  ]
+}
+
+Instructions :
+- Fournis exactement ${n} exercices dans "exercises".
+- Varie les formats quand c'est pertinent ; remplis uniquement les champs utiles au format choisi.
+- imagePrompt : courte description en anglais, style enfant, fond blanc, PAS de texte dans l'image.`;
+
+    const response = await ai.models.generateContent({ model: 'gemini-2.5-flash', contents: prompt });
+    const text = response.text || '';
+    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const data = JSON.parse(cleanedText);
+
+    res.json({ success: true, exercises: data.exercises || [], palette, grade, subject, topic });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la génération des exercices similaires';
+    console.error('Error in /api/ai/generate-similar:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
+// 4d. Persist a shared worksheet (Phase 3b) so a ?sheet=ID link resolves for any visitor.
+const SHEET_ID_RE = /^[A-Za-z0-9_-]{6,64}$/;
+
+app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
+  try {
+    const { title, grade, subject, topic, palette, exercises } = req.body;
+    if (!Array.isArray(exercises) || exercises.length === 0) {
+      res.status(400).json({ error: 'Aucun exercice à enregistrer.' });
+      return;
+    }
+    const id = randomUUID();
+    const doc = {
+      id,
+      title: (title || 'Fiche Madrasati TN').toString().slice(0, 200),
+      grade: (grade || '').toString().slice(0, 40),
+      subject: (subject || '').toString().slice(0, 40),
+      topic: (topic || '').toString().slice(0, 200),
+      palette: Array.isArray(palette) ? palette.slice(0, 6) : [],
+      exercises: exercises.slice(0, 20),
+      createdAt: new Date().toISOString(),
+    };
+    writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
+    res.json({ success: true, id, shareUrl: `/generate?sheet=${id}` });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de l\'enregistrement de la fiche';
+    console.error('Error in POST /api/docs:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
+app.get('/api/docs/:id', (req: Request, res: Response): void => {
+  const id = String(req.params['id'] || '');
+  if (!SHEET_ID_RE.test(id)) {
+    res.status(400).json({ error: 'Identifiant invalide.' });
+    return;
+  }
+  const filePath = join(docsFolder, `${id}.json`);
+  if (!existsSync(filePath)) {
+    res.status(404).json({ error: 'Fiche introuvable.' });
+    return;
+  }
+  try {
+    const doc = JSON.parse(readFileSync(filePath, 'utf8'));
+    res.json({ success: true, doc });
+  } catch (err: unknown) {
+    console.error('Error in GET /api/docs/:id:', err);
+    res.status(500).json({ error: 'Erreur lors de la lecture de la fiche.' });
+  }
+});
+
 // 5. Variant Exercise Generator (Idea 11 — Variante IA)
 app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
@@ -999,6 +1188,79 @@ app.use(
     redirect: false,
   }),
 );
+
+/**
+ * Phase 4 — per-document Open Graph tags for social crawlers (Facebook, etc.).
+ * When a crawler fetches /generate?sheet=ID we inject the worksheet's title + preview
+ * image so the shared link renders a polished card. Humans fall through to normal SSR.
+ */
+const CRAWLER_UA_RE = /facebookexternalhit|facebot|twitterbot|whatsapp|linkedinbot|slackbot|telegrambot|discordbot|pinterest|embedly|redditbot|google-inspectiontool|bingbot/i;
+
+function escapeHtmlAttr(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+app.get('/generate', (req: Request, res: Response, next): void => {
+  const ua = req.get('user-agent') || '';
+  const sheetId = String((req.query['sheet'] as string) || '');
+  if (!CRAWLER_UA_RE.test(ua) || !SHEET_ID_RE.test(sheetId)) {
+    next();
+    return;
+  }
+
+  const filePath = join(docsFolder, `${sheetId}.json`);
+  if (!existsSync(filePath)) {
+    next();
+    return;
+  }
+
+  try {
+    const doc = JSON.parse(readFileSync(filePath, 'utf8'));
+    const indexPath = join(browserDistFolder, 'index.html');
+    let html = readFileSync(indexPath, 'utf8');
+
+    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
+    const host = req.get('x-forwarded-host') || req.get('host') || '';
+    const origin = `${proto}://${host}`;
+
+    const title = escapeHtmlAttr(`${doc.title || 'Fiche d\'exercices'} — Madrasati TN`);
+    const descParts = [doc.grade, doc.subject, doc.topic].filter(Boolean).join(' · ');
+    const description = escapeHtmlAttr(
+      descParts
+        ? `${descParts}. Fiche d'exercices gratuite — Madrasati TN.`
+        : 'Fiche d\'exercices gratuite pour l\'école primaire tunisienne — Madrasati TN.',
+    );
+    const firstImg = (doc.exercises || []).find((e: { imageUrl?: string }) => e.imageUrl)?.imageUrl;
+    const imageUrl = escapeHtmlAttr(firstImg ? `${origin}${firstImg}` : `${origin}/favicon.svg`);
+    const pageUrl = escapeHtmlAttr(`${origin}/generate?sheet=${sheetId}`);
+
+    // Drop the generic OG/twitter tags, then inject the per-document ones.
+    html = html.replace(/\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi, '');
+
+    const ogBlock = `
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+    <meta property="og:image" content="${imageUrl}" />
+    <meta property="og:url" content="${pageUrl}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${title}" />
+    <meta name="twitter:description" content="${description}" />
+    <meta name="twitter:image" content="${imageUrl}" />`;
+
+    html = html.replace('</head>', `${ogBlock}\n  </head>`);
+
+    res.set('Content-Type', 'text/html; charset=utf-8');
+    res.send(html);
+  } catch (err) {
+    console.error('Error injecting OG tags for sheet:', err);
+    next();
+  }
+});
 
 /**
  * Handle all other requests by rendering the Angular application.

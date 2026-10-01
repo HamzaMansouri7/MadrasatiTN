@@ -493,5 +493,137 @@
     "docType": "Corrigé Officiel",
     "isCorrection": true,
     "sizeBytes": 88402
+  },
+  {
+    "original": "5e-grammaire-complement-absolu.jpeg",
+    "renamed": "5e_Ar_Grammaire_Complement_Absolu.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\College_Arabe\\Arabe\\5e_Ar_Grammaire_Complement_Absolu.jpg",
+    "title": "العربية 5ème : المفعول المطلق (complément absolu)",
+    "subject": "اللغة العربية",
+    "grade": "5ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 259986
+  },
+  {
+    "original": "5e-grammaire-complement-objet-direct.jpeg",
+    "renamed": "5e_Ar_Grammaire_Complement_Objet_Direct.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\College_Arabe\\Arabe\\5e_Ar_Grammaire_Complement_Objet_Direct.jpg",
+    "title": "العربية 5ème : المفعول به (complément d'objet direct)",
+    "subject": "اللغة العربية",
+    "grade": "5ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 267794
+  },
+  {
+    "original": "5e-conjugaison-etre-et-avoir.jpeg",
+    "renamed": "5e_Fr_Conjugaison_Etre_Et_Avoir.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\5eme_Primaire\\Francais\\5e_Fr_Conjugaison_Etre_Et_Avoir.jpg",
+    "title": "Conjugaison 5ème : Être et Avoir",
+    "subject": "Français",
+    "grade": "5ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 295254
+  },
+  {
+    "original": "conjugaison-imparfait.jpeg",
+    "renamed": "4e_Fr_Conjugaison_Imparfait.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\4eme_Primaire\\Francais\\4e_Fr_Conjugaison_Imparfait.jpg",
+    "title": "Conjugaison : L'imparfait",
+    "subject": "Français",
+    "grade": "4ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 289142
+  },
+  {
+    "original": "conjugaison-passe-compose.jpeg",
+    "renamed": "4e_Fr_Conjugaison_Passe_Compose.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\4eme_Primaire\\Francais\\4e_Fr_Conjugaison_Passe_Compose.jpg",
+    "title": "Conjugaison : Le passé composé",
+    "subject": "Français",
+    "grade": "4ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 305706
+  },
+  {
+    "original": "lecture-tableau-syllabes-niveau1.jpeg",
+    "renamed": "1e_Fr_Lecture_Tableau_Syllabes_Niveau1.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\1ere_Primaire\\Francais\\1e_Fr_Lecture_Tableau_Syllabes_Niveau1.jpg",
+    "title": "Lecture 1ère : Tableau de syllabes (niveau 1)",
+    "subject": "Français",
+    "grade": "1ère Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 161962
+  },
+  {
+    "original": "lecture-tableau-syllabes-niveau2.jpeg",
+    "renamed": "1e_Fr_Lecture_Tableau_Syllabes_Niveau2.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\1ere_Primaire\\Francais\\1e_Fr_Lecture_Tableau_Syllabes_Niveau2.jpg",
+    "title": "Lecture 1ère : Tableau de syllabes (niveau 2)",
+    "subject": "Français",
+    "grade": "1ère Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 308597
+  },
+  {
+    "original": "production-ecrite-exprimer-son-opinion.jpeg",
+    "renamed": "6e_Fr_Production_Ecrite_Exprimer_Opinion.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\6eme_Primaire\\Francais\\6e_Fr_Production_Ecrite_Exprimer_Opinion.jpg",
+    "title": "Production écrite 6ème : Exprimer son opinion",
+    "subject": "Français",
+    "grade": "6ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 293134
+  },
+  {
+    "original": "2e-diviseurs.jpeg",
+    "renamed": "2e_Math_Diviseurs.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\2eme_Primaire\\Mathematiques\\2e_Math_Diviseurs.jpg",
+    "title": "Mathématiques 2ème : Les diviseurs",
+    "subject": "Mathématiques",
+    "grade": "2ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 266210
+  },
+  {
+    "original": "5e-6e-multiples-et-diviseurs.jpeg",
+    "renamed": "5e_Math_Multiples_Et_Diviseurs.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\5eme_Primaire\\Mathematiques\\5e_Math_Multiples_Et_Diviseurs.jpg",
+    "title": "Mathématiques 5ème-6ème : Multiples et diviseurs",
+    "subject": "Mathématiques",
+    "grade": "5ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 318637
+  },
+  {
+    "original": "5e-6e-simplification-fractions.jpeg",
+    "renamed": "5e_Math_Simplification_Fractions.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\5eme_Primaire\\Mathematiques\\5e_Math_Simplification_Fractions.jpg",
+    "title": "Mathématiques 5ème-6ème : Simplification de fractions",
+    "subject": "Mathématiques",
+    "grade": "5ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 291182
+  },
+  {
+    "original": "appareil-digestif.jpeg",
+    "renamed": "5e_Sci_Appareil_Digestif.jpg",
+    "path": "C:\\Users\\lassa\\Documents\\GitHub\\MadrasatiTN\\exercices\\5eme_Primaire\\Sciences\\5e_Sci_Appareil_Digestif.jpg",
+    "title": "Éveil Scientifique : L'appareil digestif",
+    "subject": "Éveil Scientifique",
+    "grade": "5ème Année",
+    "docType": "Série d'Exercices",
+    "isCorrection": false,
+    "sizeBytes": 238336
   }
 ]

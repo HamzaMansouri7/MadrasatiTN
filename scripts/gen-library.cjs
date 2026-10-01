@@ -93,8 +93,18 @@ function deduceThemeAndTrimester(title, renamed, rel) {
     theme = 'Géographie : Les pays du Maghreb Arabe';
   } else if (str.includes('saison') || str.includes('jour') || str.includes('mois')) {
     theme = 'Vocabulaire : Repères temporels';
-  } else if (str.includes('luiz') || str.includes('lecture')) {
+  } else if (str.includes('conjugaison') || str.includes('imparfait') || str.includes('passe') || str.includes('passé') || str.includes('etre') || str.includes('être') || str.includes('avoir')) {
+    theme = 'Conjugaison';
+  } else if (str.includes('fraction') || str.includes('diviseur') || str.includes('multiple')) {
+    theme = 'Nombres : Multiples, diviseurs et fractions';
+  } else if (str.includes('digestif') || str.includes('digestion') || str.includes('corps') || str.includes('respiratoire')) {
+    theme = 'Le corps humain';
+  } else if (str.includes('syllabe') || str.includes('luiz') || str.includes('lecture')) {
     theme = 'Lecture & Compréhension de texte';
+  } else if (str.includes('opinion') || str.includes('production')) {
+    theme = 'Production écrite';
+  } else if (str.includes('complement') || str.includes('complément') || str.includes('مفعول')) {
+    theme = 'Grammaire : Structure de la phrase';
   }
 
   return { theme, trimester };

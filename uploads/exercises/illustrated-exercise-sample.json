@@ -1,0 +1,49 @@
+{
+  "classification": {
+    "grade": "1ère Année",
+    "subject": "اللغة العربية",
+    "trimester": "Trimestre 1",
+    "unit": "الوحدة 1 : مدرستي وأسرتي",
+    "lesson": "حرف الميم (م)",
+    "competency": "الوعي الصوتي والبصري"
+  },
+  "title": "أُحِيطُ الصُّورَةَ الَّتِي أَسْمَعُ فِي اسْمِهَا حَرْفَ المِيمِ [م]",
+  "instructions": "أَنْظُرُ إِلَى الصُّوَرِ، ثُمَّ أُحِيطُ بِدَائِرَةٍ حَمْرَاءَ الصُّوَرَ الَّتِي أَسْمَعُ فِي اسْمِهَا حَرْفَ المِيمِ [م].",
+  "items": [
+    {
+      "id": "item-1",
+      "word": "مَوْزٌ",
+      "hasTargetLetter": true,
+      "svgPrompt": "A single cute, friendly ripe yellow banana for kindergarten children, clean vector cartoon style, thick outlines, isolated on white background",
+      "imagePath": "/uploads/exercises/item_item-1_1790874027394.svg"
+    },
+    {
+      "id": "item-2",
+      "word": "قَلَمٌ",
+      "hasTargetLetter": true,
+      "svgPrompt": "A colorful friendly school pencil/pen for 1st grade students, cute cartoon vector style, isolated on white background",
+      "imagePath": "/uploads/exercises/item_item-2_1790874033343.svg"
+    },
+    {
+      "id": "item-3",
+      "word": "بَابٌ",
+      "hasTargetLetter": false,
+      "svgPrompt": "A simple cute wooden school door, cartoon vector style, isolated on white background",
+      "imagePath": "/uploads/exercises/item_item-3_1790874036639.svg"
+    },
+    {
+      "id": "item-4",
+      "word": "مِقَصٌّ",
+      "hasTargetLetter": true,
+      "svgPrompt": "A cute safe kid scissors for school crafts, red and yellow, cartoon vector style, isolated on white background",
+      "imagePath": "/uploads/exercises/item_item-4_1790874042493.svg"
+    }
+  ],
+  "correctAnswers": [
+    "مَوْزٌ",
+    "قَلَمٌ",
+    "مِقَصٌّ"
+  ],
+  "solution": "الصُّوَرُ الصَّحِيحَةُ هِيَ: مَوْزٌ (مَـ)، قَلَمٌ (ـمٌ)، مِقَصٌّ (مِـ). بَيْنَمَا 'بَابٌ' يَبْدَأُ بِحَرْفِ البَاءِ.",
+  "points": 5
+}

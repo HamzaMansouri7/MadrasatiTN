@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-sheet article {
+    break-inside: avoid;
+  }
+}
