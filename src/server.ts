@@ -267,14 +267,17 @@ const MAX_UPLOAD_BYTES = 15 * 1024 * 1024; // 15MB
 
 app.post('/api/upload', originGuard, uploadRateLimiter, (req, res): void => {
   try {
-    const { filename, base64Data, contentType } = req.body;
-    if (!base64Data || typeof base64Data !== 'string') {
+    const rawData = req.body.base64Data || req.body.fileData;
+    const rawName = req.body.filename || req.body.fileName;
+    const rawType = req.body.contentType || req.body.fileType || req.body.mimeType;
+
+    if (!rawData || typeof rawData !== 'string') {
       res.status(400).json({ error: 'Aucun fichier transmis ou format invalide' });
       return;
     }
 
     // Strip base64 prefix if present
-    const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
+    const base64Clean = rawData.replace(/^data:[^;]+;base64,/, '');
     const buffer = Buffer.from(base64Clean, 'base64');
 
     if (buffer.length > MAX_UPLOAD_BYTES) {
@@ -282,9 +285,9 @@ app.post('/api/upload', originGuard, uploadRateLimiter, (req, res): void => {
       return;
     }
 
-    let ext = (filename?.split('.').pop() || '').toLowerCase();
+    let ext = ((rawName || '').split('.').pop() || '').toLowerCase();
     if (!ext || !ALLOWED_EXTENSIONS.has(ext)) {
-      ext = contentType?.includes('pdf') ? 'pdf' : contentType?.includes('png') ? 'png' : 'jpg';
+      ext = rawType?.includes('pdf') ? 'pdf' : rawType?.includes('png') ? 'png' : 'jpg';
     }
 
     if (!ALLOWED_EXTENSIONS.has(ext)) {

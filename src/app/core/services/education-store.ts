@@ -1,6 +1,7 @@
 import { Injectable, computed, signal, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { InteractionService } from './interaction.service';
+import { FirebaseService } from './firebase.service';
 import {
   Announcement,
   BlogPost,
@@ -33,6 +34,7 @@ import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-
 })
 export class EducationStore {
   private readonly interactionService = inject(InteractionService);
+  private readonly firebase = inject(FirebaseService);
   private readonly router = inject(Router, { optional: true });
 
   // Current active role ('home' by default shows the landing page)
@@ -645,6 +647,28 @@ Pour réussir une production écrite de 6 à 8 lignes :
     this.courses().filter((c) => this.isCnpBook(c) && this.matchesCourseFilters(c))
   );
 
+  // Pedagogical Blog & Articles filtering engine for Public Library
+  readonly filteredBlogPosts = computed(() => {
+    const q = this.searchQuery().toLowerCase().trim();
+    const g = this.selectedGradeFilter();
+    const subs = this.selectedSubjects();
+
+    return this.blogPosts().filter((post) => {
+      const matchQ =
+        !q ||
+        post.title.toLowerCase().includes(q) ||
+        (post.titleAr && post.titleAr.toLowerCase().includes(q)) ||
+        post.excerpt.toLowerCase().includes(q) ||
+        post.content.toLowerCase().includes(q) ||
+        post.authorName.toLowerCase().includes(q);
+
+      const matchG = g === 'Tous' || post.grade === g;
+      const matchS = subs.size === 0 || (post.subject && subs.has(post.subject));
+
+      return matchQ && matchG && matchS;
+    });
+  });
+
   // Multi-Facet Filtering Engine for Exercises Bank
   readonly filteredExercisesBank = computed(() => {
     const q = this.searchQuery().toLowerCase().trim();
@@ -746,6 +770,16 @@ Pour réussir une production écrite de 6 à 8 lignes :
       } catch (e) {
         console.warn('Failed to load from localStorage', e);
       }
+    }
+
+    this.loadTeachers();
+  }
+
+  /** Pull teacher directory from Firestore; keep seeded list as fallback if empty/unreachable. */
+  private async loadTeachers(): Promise<void> {
+    const remote = await this.firebase.fetchTeachers();
+    if (remote.length > 0) {
+      this.teachers.set(remote);
     }
   }
 
@@ -1318,6 +1352,7 @@ Les sujets de concours s'inspirent directement des manuels scolaires officiels t
 
 ### 3. الاعتماد على المناهج والكتب الرسمية للمركز الوطني البيداغوجي (CNP)
 جميع مواضيع المناظرة تستند حرفياً إلى محاور البرامج الرسمية التونسية.`,
+      coverImage: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop&q=80',
       authorId: 't-1',
       authorName: 'Enseignant Certifié (Mathématiques)',
       authorTitle: 'Maître Principal d\'École Primaire',
@@ -1363,6 +1398,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
 2. **البطاقات السريعة (Flashcards)** : 5 دقائق يومياً في شكل لعبة عائلية.
 3. **التخمين والتقدير المسبق** : تعويد التلميذ على توقع رتبة النتيجة قبل الحساب.
 4. **أوراق التدريب A4 المطبوعة** : تخصيص ورقة تدريب أسبوعية من بنك الوثائق.`,
+      coverImage: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop&q=80',
       authorId: 't-2',
       authorName: 'Enseignant Certifié (Français)',
       authorTitle: 'Enseignant Référent Primaire',

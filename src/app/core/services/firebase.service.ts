@@ -20,6 +20,7 @@ import {
   collection,
   doc,
   getDoc,
+  getDocs,
   getDocFromServer,
   getFirestore,
   setDoc,
@@ -31,7 +32,7 @@ import {
   updateDoc,
 } from 'firebase/firestore';
 import firebaseConfig from '../../../../firebase-applet-config.json';
-import { UserRole, AppNotification } from '../models/education.model';
+import { UserRole, AppNotification, TeacherProfile, BlogPost } from '../models/education.model';
 
 export interface UserProfile {
   uid: string;
@@ -600,6 +601,37 @@ export class FirebaseService {
       });
     } catch (err) {
       console.warn('Could not write notification to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Load verified teacher profiles from the `teachers` collection. Empty array if none/unreachable. */
+  async fetchTeachers(): Promise<TeacherProfile[]> {
+    try {
+      const snap = await getDocs(collection(this.db, 'teachers'));
+      return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<TeacherProfile, 'id'>) }));
+    } catch (err) {
+      console.warn('Could not load teachers from Firestore:', err);
+      return [];
+    }
+  }
+
+  /** Save blog post to Firestore collection `blog_posts`. */
+  async saveBlogPost(post: BlogPost): Promise<void> {
+    try {
+      await setDoc(doc(this.db, 'blog_posts', post.id), post);
+    } catch (err) {
+      console.warn('Could not write blog post to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Load blog posts from Firestore collection `blog_posts`. */
+  async fetchBlogPosts(): Promise<BlogPost[]> {
+    try {
+      const snap = await getDocs(collection(this.db, 'blog_posts'));
+      return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<BlogPost, 'id'>) }));
+    } catch (err) {
+      console.warn('Could not load blog posts from Firestore:', err);
+      return [];
     }
   }
 

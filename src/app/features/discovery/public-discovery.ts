@@ -241,6 +241,14 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
         </button>
 
         <button
+          (click)="activeSection.set('blog')"
+          [class]="activeSection() === 'blog' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
+          <span class="material-icons text-sm">article</span>
+          <span>{{ lang.tr('Articles & Conseils', 'المدونة والمقالات البيداغوجية') }} ({{ store.filteredBlogPosts().length }})</span>
+        </button>
+
+        <button
           (click)="activeSection.set('cnp')"
           [class]="activeSection() === 'cnp' ? 'bg-[#C1121F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#C1121F] font-medium border border-[#E7DFCF]'"
           class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
@@ -668,6 +676,87 @@ import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem,
               }
             </div>
           }
+        </div>
+      }
+
+      <!-- SECTION 3: PEDAGOGICAL BLOG & ARTICLES -->
+      @if (activeSection() === 'blog') {
+        <div class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            @for (post of store.filteredBlogPosts(); track post.id) {
+              <article class="bg-white rounded-2xl border border-[#E7DFCF] overflow-hidden flex flex-col justify-between transition-all hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
+                @if (post.coverImage) {
+                  <div class="h-44 w-full overflow-hidden bg-[#F8F5EE] border-b border-[#E7DFCF]">
+                    <img [src]="post.coverImage" [alt]="post.title" class="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
+                  </div>
+                }
+                <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between flex-wrap gap-2 text-[10px]">
+                      <div class="flex items-center gap-2">
+                        @if (post.subject) {
+                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2.5 py-0.5 rounded-full">
+                            {{ post.subject }}
+                          </span>
+                        }
+                        @if (post.grade) {
+                          <span class="bg-[#F2ECDE] text-[#4A5A50] font-medium px-2 py-0.5 rounded-full">
+                            {{ post.grade }}
+                          </span>
+                        }
+                      </div>
+                      <span class="text-[#6B7A70] flex items-center gap-1">
+                        <span class="material-icons text-xs">schedule</span>
+                        {{ post.readTimeMinutes }} min
+                      </span>
+                    </div>
+
+                    <h3 class="font-display font-semibold text-[#14251D] text-base leading-snug">
+                      {{ lang.isArabic() && post.titleAr ? post.titleAr : post.title }}
+                    </h3>
+
+                    <p class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3">
+                      {{ cleanExcerpt(lang.isArabic() && post.excerptAr ? post.excerptAr : post.excerpt) }}
+                    </p>
+
+                    @if (post.tags?.length) {
+                      <div class="flex flex-wrap gap-1.5 pt-1">
+                        @for (tag of post.tags; track tag) {
+                          <span class="text-[10px] text-[#2D6A4F] bg-[#E8F5FC] px-2 py-0.5 rounded-md font-medium">#{{ tag }}</span>
+                        }
+                      </div>
+                    }
+                  </div>
+
+                  <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between text-xs">
+                    <div class="flex items-center gap-2">
+                      <div class="w-7 h-7 rounded-full bg-[#1B4332] text-[#FBF8F1] font-bold text-xs flex items-center justify-center overflow-hidden">
+                        @if (post.authorAvatar) {
+                          <img [src]="post.authorAvatar" [alt]="post.authorName" class="w-full h-full object-cover" />
+                        } @else {
+                          {{ (post.authorName || 'E')[0] }}
+                        }
+                      </div>
+                      <div>
+                        <p class="font-semibold text-[#14251D] text-xs leading-none">{{ post.authorName }}</p>
+                        <p class="text-[10px] text-[#6B7A70]">{{ post.authorTitle }}</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <button
+                        type="button"
+                        (click)="store.likeBlogPost(post.id)"
+                        class="flex items-center gap-1 text-[#6B7A70] hover:text-[#C1121F] cursor-pointer">
+                        <span class="material-icons text-sm text-[#C1121F]">favorite</span>
+                        <span class="text-xs font-semibold">{{ post.likesCount }}</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            }
+          </div>
         </div>
       }
 
@@ -1247,7 +1336,17 @@ export class PublicDiscoveryComponent {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
-  readonly activeSection = signal<'exercises' | 'courses' | 'cnp' | 'teachers' | 'watchlist'>('exercises');
+  cleanExcerpt(text?: string): string {
+    if (!text) return '';
+    return text
+      .replace(/<[^>]*>/g, '')
+      .replace(/^[#\s=->]+/gm, '')
+      .replace(/[*_`]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  readonly activeSection = signal<'exercises' | 'courses' | 'blog' | 'cnp' | 'teachers' | 'watchlist'>('exercises');
   readonly openSolutionIds = signal<Set<string>>(new Set());
   readonly openCommentIds = signal<Set<string>>(new Set());
 

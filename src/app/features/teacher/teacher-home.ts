@@ -113,13 +113,6 @@ export interface GeneratedExerciseResult {
             </button>
 
             <button
-              (click)="openModal('announcement')"
-              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer">
-              <span class="material-icons text-base">campaign</span>
-              {{ lang.t('addAnnouncementBtn') }}
-            </button>
-
-            <button
               (click)="openModal('ai')"
               class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_awesome</span>
@@ -236,14 +229,6 @@ export interface GeneratedExerciseResult {
               class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
               <span class="material-icons text-base">forum</span>
               <span>{{ lang.t('tabTeacherQA') }} ({{ store.questionThreads().length }})</span>
-            </button>
-
-            <button
-              (click)="activeTab.set('announcements')"
-              [class]="activeTab() === 'announcements' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
-              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-              <span class="material-icons text-base">campaign</span>
-              <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
             </button>
           </div>
 
@@ -367,42 +352,48 @@ export interface GeneratedExerciseResult {
 
               <div class="grid md:grid-cols-2 gap-5">
                 @for (post of filteredBlogPosts(); track post.id) {
-                  <div class="bg-[#FBF8F1] rounded-[20px] p-6 border border-[#E7DFCF] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
-                    <div class="space-y-3">
-                      <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-2">
-                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                            {{ post.subject || 'Pédagogie' }}
+                  <div class="bg-[#FBF8F1] rounded-[20px] border border-[#E7DFCF] overflow-hidden flex flex-col justify-between hover:shadow-md transition-all">
+                    @if (post.coverImage) {
+                      <div class="h-40 w-full overflow-hidden bg-[#F2ECDE] border-b border-[#E7DFCF]">
+                        <img [src]="post.coverImage" [alt]="post.title" class="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
+                      </div>
+                    }
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                      <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                          <div class="flex items-center gap-2">
+                            <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                              {{ post.subject || 'Pédagogie' }}
+                            </span>
+                            @if (post.grade) {
+                              <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                                {{ post.grade }}
+                              </span>
+                            }
+                          </div>
+                          <span class="text-[11px] text-[#5B6B60] flex items-center gap-1">
+                            <span class="material-icons text-xs">schedule</span>
+                            {{ post.readTimeMinutes }} min {{ lang.tr('de lecture', 'قراءة') }}
                           </span>
-                          @if (post.grade) {
-                            <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                              {{ post.grade }}
+                        </div>
+
+                        <h4 class="font-display font-semibold text-[#14251D] text-base leading-snug">
+                          {{ post.title }}
+                        </h4>
+
+                        <p class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3">
+                          {{ cleanExcerpt(post.excerpt) }}
+                        </p>
+
+                        <!-- Tags -->
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                          @for (tag of post.tags; track tag) {
+                            <span class="text-[10px] bg-white text-[#5B6B60] px-2 py-0.5 rounded-md border border-[#E7DFCF]">
+                              #{{ tag }}
                             </span>
                           }
                         </div>
-                        <span class="text-[11px] text-[#5B6B60] flex items-center gap-1">
-                          <span class="material-icons text-xs">schedule</span>
-                          {{ post.readTimeMinutes }} min {{ lang.tr('de lecture', 'قراءة') }}
-                        </span>
                       </div>
-
-                      <h4 class="font-display font-semibold text-[#14251D] text-base leading-snug">
-                        {{ post.title }}
-                      </h4>
-
-                      <p class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3">
-                        {{ post.excerpt }}
-                      </p>
-
-                      <!-- Tags -->
-                      <div class="flex flex-wrap gap-1.5 pt-1">
-                        @for (tag of post.tags; track tag) {
-                          <span class="text-[10px] bg-white text-[#5B6B60] px-2 py-0.5 rounded-md border border-[#E7DFCF]">
-                            #{{ tag }}
-                          </span>
-                        }
-                      </div>
-                    </div>
 
                     <!-- Post Footer -->
                     <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between gap-3 text-xs">
@@ -427,7 +418,8 @@ export interface GeneratedExerciseResult {
                       </button>
                     </div>
                   </div>
-                }
+                </div>
+              }
               </div>
             </div>
           }
@@ -515,62 +507,6 @@ export interface GeneratedExerciseResult {
           }
 
           <!-- TAB 4: OFFICIAL ANNOUNCEMENTS -->
-          @if (activeTab() === 'announcements') {
-            <div class="space-y-5">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div>
-                  <h3 class="font-display font-semibold text-[#14251D] text-base">
-                    {{ lang.tr('Annonces diffusées aux parents', 'البلاغات والإشعارات الرسمية للأولياء') }}
-                  </h3>
-                  <p class="text-xs text-[#5B6B60]">
-                    {{ lang.tr('Chaque annonce est datée, archivée et traçable avec accusé de lecture.', 'كل إعلان مؤرخ وموثق مع إمكانية متابعة نسبة اطلاع الأولياء.') }}
-                  </p>
-                </div>
-                <button
-                  (click)="openModal('announcement')"
-                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
-                  <span class="material-icons text-sm">add</span> {{ lang.t('addAnnouncementBtn') }}
-                </button>
-              </div>
-
-              <div class="space-y-4">
-                @for (a of store.classAnnouncements(); track a.id) {
-                  <div class="bg-[#FBF8F1] rounded-[18px] p-5 border border-[#E7DFCF] space-y-3">
-                    <div class="flex items-start justify-between gap-4">
-                      <div>
-                        <div class="flex items-center gap-2">
-                          <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ a.title }}</h4>
-                          @if (a.isPinned) {
-                            <span class="bg-[#C1121F]/10 text-[#C1121F] text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
-                              <span class="material-icons text-[12px]">push_pin</span>
-                              {{ lang.tr('Épinglé', 'مثبت') }}
-                            </span>
-                          }
-                        </div>
-                        <p class="text-[11px] text-[#5B6B60] font-medium mt-0.5">{{ a.teacherName }} • {{ a.date }}</p>
-                      </div>
-
-                      <span [class]="getCategoryBadgeClass(a.category)" class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                        {{ a.category }}
-                      </span>
-                    </div>
-
-                    <p class="text-xs text-[#14251D] leading-relaxed whitespace-pre-line bg-white p-4 rounded-[12px] border border-[#E7DFCF]">
-                      {{ a.content }}
-                    </p>
-
-                    <div class="flex items-center justify-between text-xs text-[#5B6B60] pt-1">
-                      <span class="flex items-center gap-1 text-[#2D6A4F] font-medium">
-                        <span class="material-icons text-sm">check_circle</span>
-                        {{ a.confirmedByParentsCount }} {{ lang.tr('parents ont confirmé la lecture', 'أولياء أكدوا اطلاعهم') }}
-                      </span>
-                    </div>
-                  </div>
-                }
-              </div>
-            </div>
-          }
-
         </div>
       </div>
 
@@ -1055,72 +991,6 @@ export interface GeneratedExerciseResult {
     }
 
     <!-- MODAL 5: CREATE ANNOUNCEMENT -->
-    @if (modalType() === 'announcement') {
-      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl">
-          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
-            <h3 class="font-display font-semibold text-[#14251D] text-base">
-              {{ lang.tr('Publier une Annonce Officielle', 'نشر إعلان رسمي') }}
-            </h3>
-            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
-              <span class="material-icons">close</span>
-            </button>
-          </div>
-
-          <div class="space-y-3 text-xs">
-            <div>
-              <label for="announce-title" class="block font-semibold text-[#14251D] mb-1">
-                {{ lang.tr("Titre de l'annonce", 'عنوان الإعلان') }}
-              </label>
-              <input
-                id="announce-title"
-                type="text"
-                [value]="newAnnounceTitle()"
-                (input)="newAnnounceTitle.set($any($event.target).value)"
-                placeholder="Ex: 📌 Devoir de contrôle à venir"
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
-            </div>
-
-            <div>
-              <label for="announce-cat" class="block font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Catégorie', 'الصنف') }}
-              </label>
-              <select
-                id="announce-cat"
-                [value]="newAnnounceCategory()"
-                (change)="newAnnounceCategory.set($any($event.target).value)"
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
-                <option value="exam">Examen / Devoir de Synthèse - فرض تأليفي</option>
-                <option value="homework">Devoir à domicile - واجب منزلي</option>
-                <option value="supply">Fournitures & Matériel - أدوات ومستلزمات</option>
-                <option value="urgent">Urgent - عاجل</option>
-                <option value="general">Général - عام</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="announce-content" class="block font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Contenu détaillé', 'تفاصيل الإعلان') }}
-              </label>
-              <textarea
-                id="announce-content"
-                [value]="newAnnounceContent()"
-                (input)="newAnnounceContent.set($any($event.target).value)"
-                rows="4"
-                placeholder="Rédigez clairement votre information..."
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none"></textarea>
-            </div>
-
-            <button
-              (click)="submitAnnouncement()"
-              class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-[10px] cursor-pointer">
-              {{ lang.tr("Diffuser l'Annonce", 'نشر الإعلان الآن') }}
-            </button>
-          </div>
-        </div>
-      </div>
-    }
-
     <!-- MODAL 6: A4 PRINT & PDF BOOK MODAL -->
     @if (printModalCourse(); as c) {
       <div class="fixed inset-0 z-50 bg-[#14251D]/80 backdrop-blur-xs flex items-center justify-center p-4">
@@ -1663,8 +1533,8 @@ export class TeacherHomeComponent {
     return this.lang.tr('Espace Enseignant', 'فضاء المعلم');
   }
 
-  readonly activeTab = signal<'courses' | 'blog' | 'qa' | 'announcements'>('courses');
-  readonly modalType = signal<'none' | 'announcement' | 'course' | 'blogArticle' | 'ai'>('none');
+  readonly activeTab = signal<'courses' | 'blog' | 'qa'>('courses');
+  readonly modalType = signal<'none' | 'course' | 'blogArticle' | 'ai'>('none');
   
   readonly selectedArticleDetail = signal<BlogPost | null>(null);
   readonly printModalCourse = signal<Course | null>(null);
@@ -1797,10 +1667,6 @@ export class TeacherHomeComponent {
     setTimeout(() => this.profileSuccessMsg.set(null), 3000);
   }
 
-  // Announcement Form
-  readonly newAnnounceTitle = signal('📌 Rappel : Devoir de Mathématiques');
-  readonly newAnnounceCategory = signal<'exam' | 'homework' | 'supply' | 'urgent' | 'general'>('homework');
-  readonly newAnnounceContent = signal('N\'oubliez pas d\'effectuer la série N°3 sur la multiplication pour demain.');
 
   // Course / A4 Doc Form
   readonly newCourseTitle = signal('');
@@ -1850,7 +1716,7 @@ export class TeacherHomeComponent {
     );
   }
 
-  openModal(type: 'announcement' | 'course' | 'blogArticle' | 'ai') {
+  openModal(type: 'course' | 'blogArticle' | 'ai') {
     if (!this.requireAuth()) return;
     this.modalType.set(type);
   }
@@ -1878,21 +1744,6 @@ export class TeacherHomeComponent {
     this.aiDetectedBadge.set(null);
   }
 
-  getCategoryBadgeClass(category: string): string {
-    switch (category) {
-      case 'exam':
-        return 'bg-[#C1121F]/10 text-[#C1121F] border border-[#C1121F]/30';
-      case 'homework':
-        return 'bg-[#F2C14E]/10 text-[#8A5A00] border border-[#F2C14E]/30';
-      case 'supply':
-        return 'bg-[#2D6A4F]/10 text-[#2D6A4F] border border-[#2D6A4F]/30';
-      case 'urgent':
-        return 'bg-[#C1121F] text-[#FBF8F1] font-bold';
-      default:
-        return 'bg-[#E7DFCF] text-[#14251D]';
-    }
-  }
-
   copyDocLink(c: Course) {
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       navigator.clipboard.writeText(`${window.location.origin}?doc=${c.id}`);
@@ -1909,23 +1760,6 @@ export class TeacherHomeComponent {
 
   onAiTopicInput(e: Event) {
     this.aiFormTopic.set((e.target as HTMLInputElement).value);
-  }
-
-  submitAnnouncement() {
-    this.store.addAnnouncement({
-      title: this.newAnnounceTitle(),
-      category: this.newAnnounceCategory(),
-      content: this.newAnnounceContent(),
-      isPinned: this.newAnnounceCategory() === 'exam',
-    });
-    this.firebase.addNotification({
-      type: this.newAnnounceCategory() === 'exam' ? 'exam' : 'announcement',
-      title: this.newAnnounceTitle(),
-      message: this.newAnnounceContent(),
-      linkRole: 'parent',
-      icon: this.newAnnounceCategory() === 'exam' ? 'event_note' : 'campaign',
-    });
-    this.closeModal();
   }
 
   async handleCourseFileUpload(event: Event) {
@@ -2199,5 +2033,15 @@ export class TeacherHomeComponent {
     } finally {
       this.isAiLoading.set(false);
     }
+  }
+
+  cleanExcerpt(text?: string): string {
+    if (!text) return '';
+    return text
+      .replace(/<[^>]*>/g, '')
+      .replace(/^[#\s=->]+/gm, '')
+      .replace(/[*_`]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
   }
 }

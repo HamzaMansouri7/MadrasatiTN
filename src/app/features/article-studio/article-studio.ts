@@ -278,13 +278,18 @@ export class ArticleStudioComponent implements OnDestroy {
     const file = input.files[0];
     const reader = new FileReader();
     reader.onload = async () => {
-      const base64 = (reader.result as string).split(',')[1];
+      const base64Data = (reader.result as string).split(',')[1];
       this.isUploadingImg.set(true);
       try {
+        const authHeaders = await this.firebase.getAuthHeaders();
         const res = await fetch('/api/upload', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ fileData: base64, fileName: file.name, fileType: file.type }),
+          headers: authHeaders,
+          body: JSON.stringify({
+            filename: file.name,
+            base64Data,
+            contentType: file.type,
+          }),
         });
         const data = await res.json();
         if (data.url) {
@@ -639,10 +644,23 @@ export class ArticleStudioComponent implements OnDestroy {
       ? (this.customTags().length > 0 ? '#' + this.customTags().join(' #') : (isAr ? 'مقال حر وتوجيه تربوي' : 'Conseils & Pédagogie libre'))
       : art.chapter;
 
+    // Strip raw HTML tags and Markdown symbols for clean plain-text excerpt
+    const stripFormatting = (raw: string) =>
+      raw
+        .replace(/<[^>]*>/g, '')
+        .replace(/^[#\s=->]+/gm, '')
+        .replace(/[*_`]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    const rawExcerpt = art.summary || content;
+    const cleanExcerpt = stripFormatting(rawExcerpt).slice(0, 180) + (rawExcerpt.length > 180 ? '...' : '');
+
     this.store.addBlogPost({
       title,
-      excerpt: art.summary || content.slice(0, 160) + '...',
+      excerpt: cleanExcerpt,
       content,
+      coverImage: art.coverImageUrl || undefined,
       subject: art.subject as any,
       grade: art.grade as any,
       chapter: chapterLabel,

@@ -34,6 +34,7 @@
         <button
           type="button"
           (click)="saveDraft()"
+          [title]="lang.tr('Enregistrer un brouillon local', 'حفظ مسودة محلية')"
           class="bg-white/10 hover:bg-white/20 text-[#FBF8F1] px-4 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 cursor-pointer transition-colors min-h-[44px]">
           <span class="material-icons text-sm">save</span>
           <span>{{ lang.tr('Sauvegarder', 'حفظ مسودة') }}</span>
