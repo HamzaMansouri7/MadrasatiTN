@@ -1,5 +1,29 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, InteractionService, TUNISIAN_CURRICULUM_CHAPTERS, CurriculumChapter } from '@core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  effect,
+  inject,
+  signal,
+  ElementRef,
+  ViewChild,
+  OnDestroy,
+  afterNextRender,
+  PLATFORM_ID,
+} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Editor } from '@tiptap/core';
+import StarterKit from '@tiptap/starter-kit';
+import Image from '@tiptap/extension-image';
+import Placeholder from '@tiptap/extension-placeholder';
+import {
+  EducationStore,
+  LanguageService,
+  FirebaseService,
+  InteractionService,
+  TUNISIAN_CURRICULUM_CHAPTERS,
+  CurriculumChapter,
+} from '@core';
 
 export interface ChatMessage {
   role: 'user' | 'assistant';
@@ -23,11 +47,16 @@ export interface ArticleDraft {
   templateUrl: './article-studio.html',
   styleUrl: './article-studio.css',
 })
-export class ArticleStudioComponent {
+export class ArticleStudioComponent implements OnDestroy {
+  @ViewChild('tiptapContainer') tiptapContainerRef?: ElementRef<HTMLDivElement>;
+
+  private readonly platformId = inject(PLATFORM_ID);
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
   readonly interactionSvc = inject(InteractionService);
+
+  tiptapEditor: Editor | null = null;
 
   readonly isSaved = signal<boolean>(true);
   readonly isLoading = signal<boolean>(false);
@@ -84,6 +113,12 @@ export class ArticleStudioComponent {
   readonly suggestedChips = signal<string[]>([]);
 
   constructor() {
+    afterNextRender(() => {
+      if (isPlatformBrowser(this.platformId) && this.tiptapContainerRef?.nativeElement) {
+        this.initTipTap();
+      }
+    });
+
     effect(() => {
       const isAr = this.lang.isArabic();
       const ch = this.activeChapterObj();
@@ -119,6 +154,101 @@ export class ArticleStudioComponent {
         );
       }
     });
+  }
+
+  initTipTap() {
+    if (this.tiptapEditor || !this.tiptapContainerRef?.nativeElement) return;
+    this.tiptapEditor = new Editor({
+      element: this.tiptapContainerRef.nativeElement,
+      extensions: [
+        StarterKit.configure({
+          heading: { levels: [2, 3] },
+        }),
+        Image.configure({
+          inline: false,
+          allowBase64: true,
+          HTMLAttributes: {
+            class: 'rounded-2xl max-w-full my-4 border border-[#E3ECF2] shadow-sm',
+          },
+        }),
+        Placeholder.configure({
+          placeholder: () =>
+            this.lang.isArabic()
+              ? 'ابدأ بكتابة مقالك هنا... يمكنك إدراج صور من شريط الأدوات أو سحبها مباشرة إلى المحرر 🖼️'
+              : 'Rédigez votre article ici... Insérez des images depuis la barre d’outils ou glissez-les directement 🖼️',
+        }),
+      ],
+      content: this.article().contentMarkdown ? this.parseSimpleMarkdown(this.article().contentMarkdown) : '',
+      editorProps: {
+        attributes: {
+          class: 'prose dark:prose-invert max-w-none outline-none min-h-[460px] leading-relaxed',
+          dir: 'auto',
+        },
+      },
+      onUpdate: ({ editor }) => {
+        const html = editor.getHTML();
+        this.article.update((a) => ({ ...a, contentMarkdown: html }));
+        this.isSaved.set(false);
+      },
+    });
+  }
+
+  toggleBold() {
+    this.tiptapEditor?.chain().focus().toggleBold().run();
+  }
+
+  toggleItalic() {
+    this.tiptapEditor?.chain().focus().toggleItalic().run();
+  }
+
+  toggleHeading(level: 2 | 3) {
+    this.tiptapEditor?.chain().focus().toggleHeading({ level }).run();
+  }
+
+  toggleBulletList() {
+    this.tiptapEditor?.chain().focus().toggleBulletList().run();
+  }
+
+  toggleOrderedList() {
+    this.tiptapEditor?.chain().focus().toggleOrderedList().run();
+  }
+
+  toggleBlockquote() {
+    this.tiptapEditor?.chain().focus().toggleBlockquote().run();
+  }
+
+  insertInlineImage(url: string) {
+    if (!url || !this.tiptapEditor) return;
+    this.tiptapEditor.chain().focus().setImage({ src: url }).run();
+  }
+
+  async handleInlineImageUpload(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) return;
+    const file = input.files[0];
+    const reader = new FileReader();
+    reader.onload = async () => {
+      const base64 = (reader.result as string).split(',')[1];
+      try {
+        const res = await fetch('/api/upload', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ fileData: base64, fileName: file.name, fileType: file.type }),
+        });
+        const data = await res.json();
+        if (data.url) {
+          this.insertInlineImage(data.url);
+        }
+      } catch (err) {
+        console.error('Image upload failed', err);
+      }
+    };
+    reader.readAsDataURL(file);
+    input.value = '';
+  }
+
+  ngOnDestroy() {
+    this.tiptapEditor?.destroy();
   }
 
   onGradeChange(grade: string) {
@@ -211,6 +341,10 @@ export class ArticleStudioComponent {
             ...art,
             ...data.updatedArticle,
           }));
+          if (this.tiptapEditor && data.updatedArticle.contentMarkdown) {
+            const html = this.parseSimpleMarkdown(data.updatedArticle.contentMarkdown);
+            this.tiptapEditor.commands.setContent(html);
+          }
         }
         if (data.suggestedChips && Array.isArray(data.suggestedChips)) {
           this.suggestedChips.set(data.suggestedChips);

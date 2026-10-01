@@ -314,24 +314,118 @@
         </div>
       </div>
 
-      <!-- Article Markdown Body (Editable or Rendered) -->
+      <!-- Rich Text & Inline Media Toolbar -->
+      <div class="flex flex-wrap items-center justify-between gap-2 p-2 rounded-xl bg-[#F7F9FB] dark:bg-[#152737] border border-[#E3ECF2] dark:border-[#1A3145]">
+        <div class="flex items-center flex-wrap gap-1">
+          <!-- Heading 2 -->
+          <button
+            type="button"
+            (click)="toggleHeading(2)"
+            class="px-2.5 py-1 rounded-lg text-xs font-bold hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
+            [title]="lang.tr('Titre de section H2', 'عنوان قسم رئيسي H2')">
+            H2
+          </button>
+
+          <!-- Heading 3 -->
+          <button
+            type="button"
+            (click)="toggleHeading(3)"
+            class="px-2.5 py-1 rounded-lg text-xs font-bold hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
+            [title]="lang.tr('Sous-titre H3', 'عنوان فرعي H3')">
+            H3
+          </button>
+
+          <div class="w-px h-4 bg-[#CBD2D9] dark:bg-[#254663] mx-1"></div>
+
+          <!-- Bold -->
+          <button
+            type="button"
+            (click)="toggleBold()"
+            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
+            [title]="lang.tr('Gras', 'غامق')">
+            <span class="material-icons text-sm font-bold">format_bold</span>
+          </button>
+
+          <!-- Italic -->
+          <button
+            type="button"
+            (click)="toggleItalic()"
+            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
+            [title]="lang.tr('Italique', 'مائل')">
+            <span class="material-icons text-sm">format_italic</span>
+          </button>
+
+          <!-- Bullet List -->
+          <button
+            type="button"
+            (click)="toggleBulletList()"
+            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
+            [title]="lang.tr('Liste à puces', 'قائمة نقطية')">
+            <span class="material-icons text-sm">format_list_bulleted</span>
+          </button>
+
+          <!-- Ordered List -->
+          <button
+            type="button"
+            (click)="toggleOrderedList()"
+            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
+            [title]="lang.tr('Liste numérotée', 'قائمة مرقمة')">
+            <span class="material-icons text-sm">format_list_numbered</span>
+          </button>
+
+          <!-- Blockquote -->
+          <button
+            type="button"
+            (click)="toggleBlockquote()"
+            class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-white dark:hover:bg-[#1E3A5F] text-[#102A43] dark:text-white transition-colors cursor-pointer"
+            [title]="lang.tr('Citation / Remarque', 'اقتباس / تنبيه')">
+            <span class="material-icons text-sm">format_quote</span>
+          </button>
+
+          <div class="w-px h-4 bg-[#CBD2D9] dark:bg-[#254663] mx-1"></div>
+
+          <!-- Inline Image Upload Button -->
+          <label
+            class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#E8F5FC] hover:bg-[#D7EBF8] text-[#007CC2] dark:bg-[#102A43] dark:text-[#168CCB] text-xs font-semibold cursor-pointer transition-colors"
+            [title]="lang.tr('Insérer une image dans l’article', 'إدراج صورة توضيحية داخل المقال')">
+            <span class="material-icons text-sm">image</span>
+            <span>{{ lang.tr('Ajouter image', 'إدراج صورة') }}</span>
+            <input
+              type="file"
+              (change)="handleInlineImageUpload($event)"
+              accept="image/png,image/jpeg,image/webp"
+              class="hidden" />
+          </label>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Toggle Raw Markdown View -->
+          <button
+            type="button"
+            (click)="toggleDirectEdit()"
+            class="text-[11px] text-[#627D98] hover:text-[#102A43] dark:hover:text-white font-medium cursor-pointer flex items-center gap-1"
+            [title]="isDirectEditing() ? lang.tr('Mode Visuel (TipTap)', 'الوضع المرئي') : lang.tr('Mode Code Markdown', 'وضع النص الخام Markdown')">
+            <span class="material-icons text-xs">{{ isDirectEditing() ? 'visibility' : 'code' }}</span>
+            <span>{{ isDirectEditing() ? lang.tr('Éditeur Visuel', 'المحرر المرئي') : 'Markdown' }}</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- TipTap Rich Editor Canvas (Visible when !isDirectEditing()) -->
+      <div
+        [class.hidden]="isDirectEditing()"
+        class="article-tiptap-surface min-h-[480px] bg-transparent outline-none">
+        <div #tiptapContainer dir="auto" class="outline-none"></div>
+      </div>
+
+      <!-- Raw Markdown Fallback (Visible when isDirectEditing()) -->
       @if (isDirectEditing()) {
         <textarea dir="auto"
           [value]="article().contentMarkdown"
           (input)="updateArticleContent($any($event.target).value)"
           rows="16"
-          [placeholder]="lang.tr('Rédigez votre article en Markdown ou demandez à l’assistant à gauche...', 'اكتب مقالك هنا أو اطلب مساعدة المساعد الذكي...')"
+          [placeholder]="lang.tr('Rédigez votre article en Markdown...', 'اكتب مقالك بصيغة Markdown...')"
           class="w-full bg-[#F7F9FB] dark:bg-[#152737] border border-[#CBD2D9] dark:border-[#1A3145] rounded-xl p-4 text-sm text-[#102A43] dark:text-white outline-none leading-relaxed font-mono resize-y"></textarea>
-      } @else {
-        <div dir="auto" class="article-reading-prose dark:text-gray-200">
-          @if (article().contentMarkdown) {
-            <div [innerHTML]="renderedArticleHtml()"></div>
-          } @else {
-            <p class="text-gray-400 italic">
-              {{ lang.tr('L’article est encore vide. Utilisez l’assistant conversationnel à gauche pour générer ou esquisser le contenu, ou cliquez sur "Éditer" en haut à droite.', 'المقال فارغ حالياً. يمكنك استخدام المساعد الذكي على اليمين لتوليد الأفكار، أو النقر على "تعديل" لكتابة النص مباشرة.') }}
-            </p>
-          }
-        </div>
       }
     </div>
 
