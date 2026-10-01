@@ -217,7 +217,7 @@
             </span>
           }
           @if (customTags().length === 0) {
-            <span class="text-xs text-[#6B7A70] italic">
+            <span class="text-xs text-[#5B6B60] italic">
               {{ lang.tr('Aucun tag sélectionné (cliquez sur les suggestions ci-dessous)', 'لم تختر وسوماً بعد (انقر على الاقتراحات أسفله)') }}
             </span>
           }
@@ -379,7 +379,7 @@
           <button
             type="button"
             (click)="removeCoverImage()"
-            class="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#14251D]/80 hover:bg-[#14251D] text-white flex items-center justify-center cursor-pointer transition-colors"
+            class="absolute top-3 end-3 w-8 h-8 rounded-full bg-[#14251D]/80 hover:bg-[#14251D] text-white flex items-center justify-center cursor-pointer transition-colors"
             [title]="lang.tr('Supprimer la couverture', 'حذف الصورة')"
             aria-label="Supprimer la couverture">
             <span class="material-icons text-sm">close</span>
@@ -456,7 +456,7 @@
           <button
             type="button"
             (click)="toggleHeading(2)"
-            class="min-h-[36px] min-w-[36px] px-2.5 py-1.5 rounded-lg text-xs font-semibold hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            class="min-h-[40px] min-w-[40px] px-2.5 py-1.5 rounded-lg text-xs font-semibold hover:bg-white text-[#14251D] transition-colors cursor-pointer"
             [title]="lang.tr('Titre de section H2', 'عنوان قسم رئيسي H2')"
             aria-label="Titre H2">
             H2
@@ -466,7 +466,7 @@
           <button
             type="button"
             (click)="toggleHeading(3)"
-            class="min-h-[36px] min-w-[36px] px-2.5 py-1.5 rounded-lg text-xs font-semibold hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            class="min-h-[40px] min-w-[40px] px-2.5 py-1.5 rounded-lg text-xs font-semibold hover:bg-white text-[#14251D] transition-colors cursor-pointer"
             [title]="lang.tr('Sous-titre H3', 'عنوان فرعي H3')"
             aria-label="Titre H3">
             H3
@@ -478,7 +478,7 @@
           <button
             type="button"
             (click)="toggleBold()"
-            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            class="min-h-[40px] min-w-[40px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
             [title]="lang.tr('Gras', 'غامق')"
             aria-label="Gras">
             <span class="material-icons text-base">format_bold</span>
@@ -488,7 +488,7 @@
           <button
             type="button"
             (click)="toggleItalic()"
-            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            class="min-h-[40px] min-w-[40px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
             [title]="lang.tr('Italique', 'مائل')"
             aria-label="Italique">
             <span class="material-icons text-base">format_italic</span>
@@ -498,7 +498,7 @@
           <button
             type="button"
             (click)="toggleBulletList()"
-            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            class="min-h-[40px] min-w-[40px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
             [title]="lang.tr('Liste à puces', 'قائمة نقطية')"
             aria-label="Liste à puces">
             <span class="material-icons text-base">format_list_bulleted</span>
@@ -508,7 +508,7 @@
           <button
             type="button"
             (click)="toggleOrderedList()"
-            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            class="min-h-[40px] min-w-[40px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
             [title]="lang.tr('Liste numérotée', 'قائمة مرقمة')"
             aria-label="Liste numérotée">
             <span class="material-icons text-base">format_list_numbered</span>
@@ -518,7 +518,7 @@
           <button
             type="button"
             (click)="toggleBlockquote()"
-            class="min-h-[36px] min-w-[36px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
+            class="min-h-[40px] min-w-[40px] rounded-lg flex items-center justify-center hover:bg-white text-[#14251D] transition-colors cursor-pointer"
             [title]="lang.tr('Citation / Remarque', 'اقتباس / تنبيه')"
             aria-label="Citation">
             <span class="material-icons text-base">format_quote</span>
@@ -528,7 +528,7 @@
 
           <!-- Inline Image Upload Button -->
           <label
-            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#1B4332] text-xs font-semibold cursor-pointer transition-colors min-h-[36px]"
+            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#1B4332] text-xs font-semibold cursor-pointer transition-colors min-h-[40px]"
             [title]="lang.tr('Insérer une image dans l’article', 'إدراج صورة توضيحية داخل المقال')"
             aria-label="Insérer une image">
             <span class="material-icons text-base">image</span>
