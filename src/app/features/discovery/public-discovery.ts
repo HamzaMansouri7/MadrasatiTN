@@ -762,80 +762,6 @@ import { BdLibraryComponent } from '../bd/bd-library';
       }
 
       <!-- FEATURE 3: Teacher Credibility Profiles Directory -->
-      @if (activeSection() === 'teachers') {
-        @if (store.teachers().length === 0) {
-          <div class="bg-white rounded-2xl border border-[#E7DFCF] p-10 text-center space-y-2">
-            <span class="material-icons text-3xl text-[#9DBBA8]" aria-hidden="true">school</span>
-            <p class="text-sm text-[#5B6B60]">
-              {{ lang.tr('Les enseignants inscrits apparaîtront ici après leur prochaine connexion.', 'سيظهر المعلمون المسجّلون هنا بعد تسجيل دخولهم القادم.') }}
-            </p>
-          </div>
-        }
-        <div class="grid md:grid-cols-3 gap-6">
-          @for (t of store.teachers(); track t.id) {
-            <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-xs space-y-4 text-center hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow">
-              <div class="relative inline-block mx-auto">
-                <img [src]="t.avatarUrl" alt="Teacher" class="w-20 h-20 rounded-full object-cover border-2 border-[#2D6A4F] shadow-xs" />
-                @if (t.verifiedBadge) {
-                  <span class="material-icons absolute bottom-0 right-0 bg-[#1B4332] text-[#FBF8F1] rounded-full text-base p-0.5 border-2 border-white" [title]="lang.tr('Enseignant Certifié Éducation Nationale', 'مربٍ معتمد لدى وزارة التربية')">
-                    verified
-                  </span>
-                }
-              </div>
-
-              <div>
-                <h3 class="font-display font-semibold text-[#14251D] text-base flex items-center justify-center gap-1.5">
-                  {{ t.name }}
-                  <span class="text-[#1B4332] font-semibold bg-[#F2ECDE] border border-[#E7DFCF] px-1.5 py-0.5 rounded text-[10px]">TN</span>
-                </h3>
-                <p class="text-xs text-[#5B6B60] font-medium">{{ t.title }}</p>
-                <p class="text-[11px] text-[#2D6A4F] font-semibold mt-0.5">{{ t.school }}</p>
-              </div>
-
-              <p class="text-xs text-[#4A5A50] line-clamp-3 bg-[#FBF8F1] p-3 rounded-xl border border-[#E7DFCF]">
-                "{{ t.bio }}"
-              </p>
-
-              <!-- Credibility Metrics -->
-              <div class="grid grid-cols-3 gap-2 py-2 border-y border-[#E7DFCF] text-xs">
-                <div>
-                  <p class="font-display font-semibold text-[#14251D]">{{ t.totalUploads || t.coursesCount }}</p>
-                  <p class="text-[10px] text-[#6B7A70]">{{ lang.tr('Documents', 'وثائق') }}</p>
-                </div>
-                <div>
-                  <p class="font-display font-semibold text-[#14251D]">{{ t.downloadableExercisesCount || t.exercisesCount }}</p>
-                  <p class="text-[10px] text-[#6B7A70]">{{ lang.tr('Exercices PDF', 'تمارين PDF') }}</p>
-                </div>
-                <div>
-                  <p class="font-display font-semibold text-[#8A5A00]">⭐ {{ t.rating }}</p>
-                  <p class="text-[10px] text-[#6B7A70]">{{ t.reviewsCount }} {{ lang.tr('avis', 'تقييم') }}</p>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-2">
-                <button
-                  (click)="store.toggleWatchlist(t.id, 'teacher')"
-                  [class]="store.isWatched(t.id, 'teacher') ? 'bg-[#F2ECDE] text-[#8A5A00] border-[#8A5A00]/40' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]'"
-                  class="px-3 py-2.5 rounded-xl text-xs font-semibold border flex items-center justify-center gap-1 cursor-pointer transition-colors"
-                  [title]="store.isWatched(t.id, 'teacher') ? 'Ne plus suivre' : 'Suivre cet enseignant'">
-                  <span class="material-icons text-sm" [class.text-[#8A5A00]]="store.isWatched(t.id, 'teacher')">
-                    {{ store.isWatched(t.id, 'teacher') ? 'bookmark' : 'bookmark_border' }}
-                  </span>
-                  <span>{{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre', 'متابعة') }}</span>
-                </button>
-
-                <button
-                  (click)="selectedTeacherModal.set(t)"
-                  class="flex-1 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs py-2.5 rounded-xl cursor-pointer flex items-center justify-center gap-1 transition-colors shadow-xs">
-                  <span class="material-icons text-sm">badge</span>
-                  {{ lang.tr('Profil & Avis', 'عرض الملف والتقييمات') }}
-                </button>
-              </div>
-            </div>
-          }
-        </div>
-      }
-
       <!-- FEATURE 6: WATCHLIST & FAVORITES HUB -->
       @if (activeSection() === 'watchlist') {
         <div class="space-y-6">
@@ -1484,7 +1410,6 @@ export class PublicDiscoveryComponent {
     { key: 'blog', icon: 'article', labelFr: 'Articles & Conseils', labelAr: 'المدونة والمقالات', accent: '#2D6A4F' },
     { key: 'cnp', icon: 'auto_stories', labelFr: 'Manuels CNP', labelAr: 'الكتب الرسمية CNP', accent: '#C1121F' },
     { key: 'bd', icon: 'photo_library', labelFr: 'Bandes Dessinées', labelAr: 'شريط مصوّر', accent: '#BF5B34' },
-    { key: 'teachers', icon: 'verified', labelFr: 'Annuaire des Enseignants', labelAr: 'دليل المعلمين', accent: '#1B4332' },
     { key: 'watchlist', icon: 'bookmark', labelFr: 'Ma Watchlist', labelAr: 'قائمة محفوظاتي', accent: '#8A5A00' },
   ];
 

@@ -49,6 +49,12 @@ export const routes: Routes = [
     title: 'لخّصلي | Résumé de cours - Madrasati TN',
   },
   {
+    path: 'teachers',
+    loadComponent: () =>
+      import('./features/teachers/teachers-home').then((m) => m.TeachersHomeComponent),
+    title: 'دليل المعلمين | Annuaire des Enseignants - Madrasati TN',
+  },
+  {
     path: 'editor',
     canActivate: [authGuard],
     loadComponent: () =>

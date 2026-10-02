@@ -81,6 +81,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <span>{{ lang.t('rolePublic') }}</span>
             </button>
 
+            <!-- Teacher Directory -->
+            <button
+              (click)="navigateToTeachers()"
+              [class]="isTeachersRoute()
+                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60'
+                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg">verified</span>
+              <span>{{ lang.tr('Enseignants', 'المعلمون') }}</span>
+            </button>
+
             <!-- Worksheet Generator Studio -->
             <button
               (click)="navigateToGenerator()"
@@ -393,6 +404,14 @@ export class NavbarComponent {
 
   navigateToGenerator() {
     this.router.navigateByUrl('/generate');
+  }
+
+  isTeachersRoute(): boolean {
+    return this.router.url.includes('/teachers');
+  }
+
+  navigateToTeachers() {
+    this.router.navigateByUrl('/teachers');
   }
 
   async handleNotificationClick(notif: { id: string; linkRole?: string }) {

@@ -44,6 +44,7 @@ export class App {
           '/discovery': 'public',
           '/solve': 'public',
           '/summarize': 'public',
+          '/teachers': 'public',
           '/editor': 'editor',
           '/generate': 'editor',
           '/article-studio': 'article-editor',
