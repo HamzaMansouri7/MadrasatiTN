@@ -73,7 +73,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             <!-- Public Discovery -->
             <button
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isGeneratorRoute()
+              [class]="store.currentRole() === 'public' && !isGeneratorRoute() && !isBdRoute()
                 ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
                 : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
@@ -383,6 +383,10 @@ export class NavbarComponent {
 
   isGeneratorRoute(): boolean {
     return this.router.url.includes('/generate');
+  }
+
+  isBdRoute(): boolean {
+    return this.router.url.startsWith('/bd');
   }
 
   navigateToGenerator() {

@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, SubjectName } from '@core';
 import { BlogReaderComponent } from './blog-reader.component';
+import { BdLibraryComponent } from '../bd/bd-library';
 
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule, BlogReaderComponent],
+  imports: [FormsModule, BlogReaderComponent, BdLibraryComponent],
   template: `
     <div class="space-y-6">
       
@@ -258,6 +259,14 @@ import { BlogReaderComponent } from './blog-reader.component';
         </button>
 
         <button
+          (click)="activeSection.set('bd')"
+          [class]="activeSection() === 'bd' ? 'bg-[#BF5B34] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#BF5B34] font-medium border border-[#E7DFCF]'"
+          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
+          <span class="material-icons text-sm">photo_library</span>
+          <span>{{ lang.t('bdNav') }}</span>
+        </button>
+
+        <button
           (click)="activeSection.set('teachers')"
           [class]="activeSection() === 'teachers' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
           class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
@@ -273,6 +282,11 @@ import { BlogReaderComponent } from './blog-reader.component';
           <span>{{ lang.tr('⭐ Ma Watchlist', '⭐ قائمة محفوظاتي') }} ({{ store.totalWatchlistCount() }})</span>
         </button>
       </div>
+
+      <!-- SECTION: BANDES DESSINÉES (official CNP comic pages) -->
+      @if (activeSection() === 'bd') {
+        <app-bd-library />
+      }
 
       <!-- SECTION 1: EXERCISES & EXAMS BANK WITH UPVOTING, REPORTING & WATERMARK -->
       @if (activeSection() === 'exercises') {
@@ -1404,7 +1418,7 @@ export class PublicDiscoveryComponent {
       .trim();
   }
 
-  readonly activeSection = signal<'exercises' | 'courses' | 'blog' | 'cnp' | 'teachers' | 'watchlist'>('exercises');
+  readonly activeSection = signal<'exercises' | 'courses' | 'blog' | 'cnp' | 'bd' | 'teachers' | 'watchlist'>('exercises');
   readonly openSolutionIds = signal<Set<string>>(new Set());
   readonly openCommentIds = signal<Set<string>>(new Set());
 

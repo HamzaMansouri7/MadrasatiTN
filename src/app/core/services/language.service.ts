@@ -68,6 +68,25 @@ export class LanguageService {
     roleStudent: { fr: 'Élève', ar: 'فضاء التلميذ' },
     rolePublic: { fr: 'Bibliothèque & Répertoire', ar: 'المكتبة والدليل' },
 
+    // Bandes Dessinées library
+    bdNav: { fr: 'Bandes Dessinées', ar: 'شريط مصوّر' },
+    bdTitle: { fr: 'Bandes dessinées officielles', ar: 'الشرائط المصوّرة الرسمية' },
+    bdSub: {
+      fr: 'Les planches du manuel officiel (CNP), classées par niveau. Lisez-les avec votre enfant, imprimez-les ou partagez-les.',
+      ar: 'صفحات الكتاب الرسمي (المركز الوطني البيداغوجي) مرتبة حسب المستوى. اقرأها مع طفلك أو اطبعها أو شاركها.',
+    },
+    bdPages: { fr: 'planches', ar: 'صفحة' },
+    bdAllGrades: { fr: 'Tous les niveaux', ar: 'كل المستويات' },
+    bdLoading: { fr: 'Chargement des planches…', ar: 'جارٍ تحميل الصفحات…' },
+    bdEmpty: { fr: 'Aucune planche disponible pour ce niveau pour le moment.', ar: 'لا توجد صفحات متاحة لهذا المستوى حاليًا.' },
+    bdPrint: { fr: 'Imprimer', ar: 'طباعة' },
+    bdShare: { fr: 'Partager', ar: 'مشاركة' },
+    bdCopyLink: { fr: 'Copier le lien', ar: 'نسخ الرابط' },
+    bdLinkCopied: { fr: 'Lien copié !', ar: 'تم نسخ الرابط!' },
+    bdClose: { fr: 'Fermer', ar: 'إغلاق' },
+    bdPrev: { fr: 'Planche précédente', ar: 'الصفحة السابقة' },
+    bdNext: { fr: 'Planche suivante', ar: 'الصفحة التالية' },
+
     // Teacher View
     teacherWelcome: { fr: 'Espace Enseignant', ar: 'فضاء المعلم' },
     teacherHeaderSub: {
