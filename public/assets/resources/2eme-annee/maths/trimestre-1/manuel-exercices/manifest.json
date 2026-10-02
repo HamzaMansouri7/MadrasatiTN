@@ -1,0 +1,2446 @@
+{
+  "source": "CNP 102210",
+  "count": 122,
+  "items": [
+    {
+      "id": "cnp-102210-p01",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 1",
+      "file": "ex_2eme_maths_t1_p01.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p01.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=1",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p02",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 2",
+      "file": "ex_2eme_maths_t1_p02.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p02.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=2",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p03",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 3",
+      "file": "ex_2eme_maths_t1_p03.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p03.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=3",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p04",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 4",
+      "file": "ex_2eme_maths_t1_p04.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p04.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=4",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p05",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 5",
+      "file": "ex_2eme_maths_t1_p05.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p05.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=5",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p06",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 6",
+      "file": "ex_2eme_maths_t1_p06.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p06.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=6",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p07",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 7",
+      "file": "ex_2eme_maths_t1_p07.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p07.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=7",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p08",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 8",
+      "file": "ex_2eme_maths_t1_p08.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p08.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=8",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p09",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 9",
+      "file": "ex_2eme_maths_t1_p09.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p09.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=9",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p10",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 10",
+      "file": "ex_2eme_maths_t1_p10.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p10.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=10",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p11",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 11",
+      "file": "ex_2eme_maths_t1_p11.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p11.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=11",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p12",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 12",
+      "file": "ex_2eme_maths_t1_p12.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p12.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=12",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p13",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 13",
+      "file": "ex_2eme_maths_t1_p13.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p13.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=13",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p14",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 14",
+      "file": "ex_2eme_maths_t1_p14.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p14.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=14",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p15",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 15",
+      "file": "ex_2eme_maths_t1_p15.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p15.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=15",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p16",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 16",
+      "file": "ex_2eme_maths_t1_p16.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p16.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=16",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p17",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 17",
+      "file": "ex_2eme_maths_t1_p17.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p17.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=17",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p18",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 18",
+      "file": "ex_2eme_maths_t1_p18.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p18.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=18",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p19",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 19",
+      "file": "ex_2eme_maths_t1_p19.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p19.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=19",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p20",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 20",
+      "file": "ex_2eme_maths_t1_p20.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p20.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=20",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p21",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 21",
+      "file": "ex_2eme_maths_t1_p21.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p21.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=21",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p22",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 22",
+      "file": "ex_2eme_maths_t1_p22.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p22.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=22",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p23",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 23",
+      "file": "ex_2eme_maths_t1_p23.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p23.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=23",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p24",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 24",
+      "file": "ex_2eme_maths_t1_p24.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p24.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=24",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p25",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 25",
+      "file": "ex_2eme_maths_t1_p25.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p25.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=25",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p26",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 26",
+      "file": "ex_2eme_maths_t1_p26.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p26.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=26",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p27",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 27",
+      "file": "ex_2eme_maths_t1_p27.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p27.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=27",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p28",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 28",
+      "file": "ex_2eme_maths_t1_p28.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p28.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=28",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p29",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 29",
+      "file": "ex_2eme_maths_t1_p29.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p29.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=29",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p30",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 30",
+      "file": "ex_2eme_maths_t1_p30.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p30.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=30",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p31",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 31",
+      "file": "ex_2eme_maths_t1_p31.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p31.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=31",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p32",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 32",
+      "file": "ex_2eme_maths_t1_p32.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p32.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=32",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p33",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 33",
+      "file": "ex_2eme_maths_t1_p33.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p33.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=33",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p34",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 34",
+      "file": "ex_2eme_maths_t1_p34.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p34.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=34",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p35",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 35",
+      "file": "ex_2eme_maths_t1_p35.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p35.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=35",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p36",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 36",
+      "file": "ex_2eme_maths_t1_p36.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p36.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=36",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p37",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 37",
+      "file": "ex_2eme_maths_t1_p37.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p37.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=37",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p38",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 38",
+      "file": "ex_2eme_maths_t1_p38.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p38.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=38",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p39",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 39",
+      "file": "ex_2eme_maths_t1_p39.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p39.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=39",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p40",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 40",
+      "file": "ex_2eme_maths_t1_p40.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p40.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=40",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p41",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 41",
+      "file": "ex_2eme_maths_t1_p41.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p41.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=41",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p42",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 42",
+      "file": "ex_2eme_maths_t1_p42.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p42.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=42",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p43",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 43",
+      "file": "ex_2eme_maths_t1_p43.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p43.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=43",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p44",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 44",
+      "file": "ex_2eme_maths_t1_p44.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p44.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=44",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p45",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 45",
+      "file": "ex_2eme_maths_t1_p45.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p45.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=45",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p46",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 46",
+      "file": "ex_2eme_maths_t1_p46.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p46.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=46",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p47",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 47",
+      "file": "ex_2eme_maths_t1_p47.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p47.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=47",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p48",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 48",
+      "file": "ex_2eme_maths_t1_p48.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p48.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=48",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p49",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 49",
+      "file": "ex_2eme_maths_t1_p49.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p49.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=49",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p50",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 50",
+      "file": "ex_2eme_maths_t1_p50.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p50.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=50",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p51",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 51",
+      "file": "ex_2eme_maths_t1_p51.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p51.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=51",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p52",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 52",
+      "file": "ex_2eme_maths_t1_p52.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p52.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=52",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p53",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 53",
+      "file": "ex_2eme_maths_t1_p53.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p53.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=53",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p54",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 54",
+      "file": "ex_2eme_maths_t1_p54.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p54.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=54",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p55",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 55",
+      "file": "ex_2eme_maths_t1_p55.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p55.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=55",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p56",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 56",
+      "file": "ex_2eme_maths_t1_p56.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p56.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=56",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p57",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 57",
+      "file": "ex_2eme_maths_t1_p57.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p57.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=57",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p58",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 58",
+      "file": "ex_2eme_maths_t1_p58.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p58.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=58",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p59",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 59",
+      "file": "ex_2eme_maths_t1_p59.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p59.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=59",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p60",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 60",
+      "file": "ex_2eme_maths_t1_p60.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p60.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=60",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p61",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 61",
+      "file": "ex_2eme_maths_t1_p61.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p61.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=61",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p62",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 62",
+      "file": "ex_2eme_maths_t1_p62.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p62.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=62",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p63",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 63",
+      "file": "ex_2eme_maths_t1_p63.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p63.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=63",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p64",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 64",
+      "file": "ex_2eme_maths_t1_p64.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p64.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=64",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p65",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 65",
+      "file": "ex_2eme_maths_t1_p65.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p65.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=65",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p66",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 66",
+      "file": "ex_2eme_maths_t1_p66.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p66.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=66",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p67",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 67",
+      "file": "ex_2eme_maths_t1_p67.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p67.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=67",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p68",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 68",
+      "file": "ex_2eme_maths_t1_p68.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p68.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=68",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p69",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 69",
+      "file": "ex_2eme_maths_t1_p69.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p69.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=69",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p70",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 70",
+      "file": "ex_2eme_maths_t1_p70.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p70.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=70",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p71",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 71",
+      "file": "ex_2eme_maths_t1_p71.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p71.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=71",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p72",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 72",
+      "file": "ex_2eme_maths_t1_p72.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p72.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=72",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p73",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 73",
+      "file": "ex_2eme_maths_t1_p73.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p73.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=73",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p74",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 74",
+      "file": "ex_2eme_maths_t1_p74.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p74.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=74",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p75",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 75",
+      "file": "ex_2eme_maths_t1_p75.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p75.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=75",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p76",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 76",
+      "file": "ex_2eme_maths_t1_p76.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p76.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=76",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p77",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 77",
+      "file": "ex_2eme_maths_t1_p77.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p77.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=77",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p78",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 78",
+      "file": "ex_2eme_maths_t1_p78.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p78.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=78",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p79",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 79",
+      "file": "ex_2eme_maths_t1_p79.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p79.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=79",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p80",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 80",
+      "file": "ex_2eme_maths_t1_p80.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p80.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=80",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p81",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 81",
+      "file": "ex_2eme_maths_t1_p81.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p81.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=81",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p82",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 82",
+      "file": "ex_2eme_maths_t1_p82.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p82.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=82",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p83",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 83",
+      "file": "ex_2eme_maths_t1_p83.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p83.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=83",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p84",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 84",
+      "file": "ex_2eme_maths_t1_p84.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p84.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=84",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p85",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 85",
+      "file": "ex_2eme_maths_t1_p85.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p85.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=85",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p86",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 86",
+      "file": "ex_2eme_maths_t1_p86.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p86.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=86",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p87",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 87",
+      "file": "ex_2eme_maths_t1_p87.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p87.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=87",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p88",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 88",
+      "file": "ex_2eme_maths_t1_p88.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p88.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=88",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p89",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 89",
+      "file": "ex_2eme_maths_t1_p89.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p89.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=89",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p90",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 90",
+      "file": "ex_2eme_maths_t1_p90.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p90.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=90",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p91",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 91",
+      "file": "ex_2eme_maths_t1_p91.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p91.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=91",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p92",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 92",
+      "file": "ex_2eme_maths_t1_p92.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p92.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=92",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p93",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 93",
+      "file": "ex_2eme_maths_t1_p93.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p93.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=93",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p94",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 94",
+      "file": "ex_2eme_maths_t1_p94.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p94.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=94",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p95",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 95",
+      "file": "ex_2eme_maths_t1_p95.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p95.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=95",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p96",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 96",
+      "file": "ex_2eme_maths_t1_p96.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p96.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=96",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p97",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 97",
+      "file": "ex_2eme_maths_t1_p97.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p97.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=97",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p98",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 98",
+      "file": "ex_2eme_maths_t1_p98.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p98.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=98",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p99",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 99",
+      "file": "ex_2eme_maths_t1_p99.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p99.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=99",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p100",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 100",
+      "file": "ex_2eme_maths_t1_p100.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p100.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=100",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p101",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 101",
+      "file": "ex_2eme_maths_t1_p101.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p101.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=101",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p102",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 102",
+      "file": "ex_2eme_maths_t1_p102.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p102.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=102",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p103",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 103",
+      "file": "ex_2eme_maths_t1_p103.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p103.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=103",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p104",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 104",
+      "file": "ex_2eme_maths_t1_p104.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p104.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=104",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p105",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 105",
+      "file": "ex_2eme_maths_t1_p105.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p105.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=105",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p106",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 106",
+      "file": "ex_2eme_maths_t1_p106.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p106.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=106",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p107",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 107",
+      "file": "ex_2eme_maths_t1_p107.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p107.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=107",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p108",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 108",
+      "file": "ex_2eme_maths_t1_p108.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p108.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=108",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p109",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 109",
+      "file": "ex_2eme_maths_t1_p109.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p109.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=109",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p110",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 110",
+      "file": "ex_2eme_maths_t1_p110.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p110.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=110",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p111",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 111",
+      "file": "ex_2eme_maths_t1_p111.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p111.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=111",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p112",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 112",
+      "file": "ex_2eme_maths_t1_p112.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p112.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=112",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p113",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 113",
+      "file": "ex_2eme_maths_t1_p113.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p113.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=113",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p114",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 114",
+      "file": "ex_2eme_maths_t1_p114.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p114.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=114",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p115",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 115",
+      "file": "ex_2eme_maths_t1_p115.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p115.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=115",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p116",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 116",
+      "file": "ex_2eme_maths_t1_p116.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p116.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=116",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p117",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 117",
+      "file": "ex_2eme_maths_t1_p117.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p117.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=117",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p118",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 118",
+      "file": "ex_2eme_maths_t1_p118.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p118.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=118",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p119",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 119",
+      "file": "ex_2eme_maths_t1_p119.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p119.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=119",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p120",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 120",
+      "file": "ex_2eme_maths_t1_p120.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p120.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=120",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p121",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 121",
+      "file": "ex_2eme_maths_t1_p121.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p121.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=121",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-102210-p122",
+      "grade": "2eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "manuel-exercices",
+      "title": "كتاب الرياضيات صفحة 122",
+      "file": "ex_2eme_maths_t1_p122.webp",
+      "relPath": "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/ex_2eme_maths_t1_p122.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/102210P00.pdf#page=122",
+      "labels": [
+        "cnp",
+        "102210",
+        "maths",
+        "manuel-exercices",
+        "2eme-annee"
+      ]
+    }
+  ]
+}

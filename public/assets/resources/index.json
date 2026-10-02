@@ -1,0 +1,13 @@
+{
+  "manifests": [
+    "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/manifest.json",
+    "assets/resources/1ere-annee/arabe/trimestre-1/cahier-exercices/manifest.json",
+    "assets/resources/1ere-annee/arabe/trimestre-1/lecture/manifest.json",
+    "assets/resources/1ere-annee/arabe/trimestre-2/bandes-dessinees/manifest.json",
+    "assets/resources/1ere-annee/maths/trimestre-1/manuel-exercices/manifest.json",
+    "assets/resources/1ere-annee/maths/trimestre-2/manuel-exercices/manifest.json",
+    "assets/resources/2eme-annee/arabe/trimestre-1/cahier-exercices/manifest.json",
+    "assets/resources/2eme-annee/arabe/trimestre-1/lecture/manifest.json",
+    "assets/resources/2eme-annee/maths/trimestre-1/manuel-exercices/manifest.json"
+  ]
+}

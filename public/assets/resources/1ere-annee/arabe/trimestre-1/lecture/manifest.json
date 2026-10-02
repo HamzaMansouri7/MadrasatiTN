@@ -1,0 +1,2266 @@
+{
+  "source": "CNP 101110",
+  "count": 113,
+  "items": [
+    {
+      "id": "cnp-101110-p01",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 1",
+      "file": "lesson_1ere_arabe_t1_p01.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p01.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=1",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p02",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 2",
+      "file": "lesson_1ere_arabe_t1_p02.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p02.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=2",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p03",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 3",
+      "file": "lesson_1ere_arabe_t1_p03.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p03.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=3",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p04",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 4",
+      "file": "lesson_1ere_arabe_t1_p04.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p04.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=4",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p05",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 5",
+      "file": "lesson_1ere_arabe_t1_p05.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p05.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=5",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p06",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 6",
+      "file": "lesson_1ere_arabe_t1_p06.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p06.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=6",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p07",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 7",
+      "file": "lesson_1ere_arabe_t1_p07.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p07.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=7",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p08",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 8",
+      "file": "lesson_1ere_arabe_t1_p08.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p08.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=8",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p09",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 9",
+      "file": "lesson_1ere_arabe_t1_p09.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p09.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=9",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p10",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 10",
+      "file": "lesson_1ere_arabe_t1_p10.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p10.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=10",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p11",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 11",
+      "file": "lesson_1ere_arabe_t1_p11.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p11.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=11",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p12",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 12",
+      "file": "lesson_1ere_arabe_t1_p12.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p12.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=12",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p13",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 13",
+      "file": "lesson_1ere_arabe_t1_p13.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p13.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=13",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p14",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 14",
+      "file": "lesson_1ere_arabe_t1_p14.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p14.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=14",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p15",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 15",
+      "file": "lesson_1ere_arabe_t1_p15.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p15.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=15",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p16",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 16",
+      "file": "lesson_1ere_arabe_t1_p16.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p16.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=16",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p17",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 17",
+      "file": "lesson_1ere_arabe_t1_p17.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p17.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=17",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p18",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 18",
+      "file": "lesson_1ere_arabe_t1_p18.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p18.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=18",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p19",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 19",
+      "file": "lesson_1ere_arabe_t1_p19.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p19.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=19",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p20",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 20",
+      "file": "lesson_1ere_arabe_t1_p20.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p20.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=20",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p21",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 21",
+      "file": "lesson_1ere_arabe_t1_p21.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p21.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=21",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p22",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 22",
+      "file": "lesson_1ere_arabe_t1_p22.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p22.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=22",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p23",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 23",
+      "file": "lesson_1ere_arabe_t1_p23.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p23.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=23",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p24",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 24",
+      "file": "lesson_1ere_arabe_t1_p24.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p24.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=24",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p25",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 25",
+      "file": "lesson_1ere_arabe_t1_p25.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p25.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=25",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p26",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 26",
+      "file": "lesson_1ere_arabe_t1_p26.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p26.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=26",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p27",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 27",
+      "file": "lesson_1ere_arabe_t1_p27.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p27.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=27",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p28",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 28",
+      "file": "lesson_1ere_arabe_t1_p28.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p28.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=28",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p29",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 29",
+      "file": "lesson_1ere_arabe_t1_p29.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p29.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=29",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p30",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 30",
+      "file": "lesson_1ere_arabe_t1_p30.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p30.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=30",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p31",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 31",
+      "file": "lesson_1ere_arabe_t1_p31.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p31.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=31",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p32",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 32",
+      "file": "lesson_1ere_arabe_t1_p32.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p32.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=32",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p33",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 33",
+      "file": "lesson_1ere_arabe_t1_p33.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p33.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=33",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p34",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 34",
+      "file": "lesson_1ere_arabe_t1_p34.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p34.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=34",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p35",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 35",
+      "file": "lesson_1ere_arabe_t1_p35.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p35.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=35",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p36",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 36",
+      "file": "lesson_1ere_arabe_t1_p36.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p36.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=36",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p37",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 37",
+      "file": "lesson_1ere_arabe_t1_p37.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p37.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=37",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p38",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 38",
+      "file": "lesson_1ere_arabe_t1_p38.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p38.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=38",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p39",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 39",
+      "file": "lesson_1ere_arabe_t1_p39.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p39.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=39",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p40",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 40",
+      "file": "lesson_1ere_arabe_t1_p40.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p40.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=40",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p41",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 41",
+      "file": "lesson_1ere_arabe_t1_p41.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p41.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=41",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p42",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 42",
+      "file": "lesson_1ere_arabe_t1_p42.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p42.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=42",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p43",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 43",
+      "file": "lesson_1ere_arabe_t1_p43.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p43.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=43",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p44",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 44",
+      "file": "lesson_1ere_arabe_t1_p44.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p44.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=44",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p45",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 45",
+      "file": "lesson_1ere_arabe_t1_p45.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p45.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=45",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p46",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 46",
+      "file": "lesson_1ere_arabe_t1_p46.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p46.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=46",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p47",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 47",
+      "file": "lesson_1ere_arabe_t1_p47.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p47.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=47",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p48",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 48",
+      "file": "lesson_1ere_arabe_t1_p48.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p48.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=48",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p49",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 49",
+      "file": "lesson_1ere_arabe_t1_p49.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p49.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=49",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p50",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 50",
+      "file": "lesson_1ere_arabe_t1_p50.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p50.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=50",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p51",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 51",
+      "file": "lesson_1ere_arabe_t1_p51.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p51.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=51",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p52",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 52",
+      "file": "lesson_1ere_arabe_t1_p52.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p52.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=52",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p53",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 53",
+      "file": "lesson_1ere_arabe_t1_p53.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p53.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=53",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p54",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 54",
+      "file": "lesson_1ere_arabe_t1_p54.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p54.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=54",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p55",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 55",
+      "file": "lesson_1ere_arabe_t1_p55.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p55.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=55",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p56",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 56",
+      "file": "lesson_1ere_arabe_t1_p56.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p56.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=56",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p57",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 57",
+      "file": "lesson_1ere_arabe_t1_p57.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p57.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=57",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p58",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 58",
+      "file": "lesson_1ere_arabe_t1_p58.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p58.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=58",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p59",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 59",
+      "file": "lesson_1ere_arabe_t1_p59.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p59.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=59",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p60",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 60",
+      "file": "lesson_1ere_arabe_t1_p60.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p60.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=60",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p61",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 61",
+      "file": "lesson_1ere_arabe_t1_p61.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p61.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=61",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p62",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 62",
+      "file": "lesson_1ere_arabe_t1_p62.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p62.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=62",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p63",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 63",
+      "file": "lesson_1ere_arabe_t1_p63.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p63.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=63",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p64",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 64",
+      "file": "lesson_1ere_arabe_t1_p64.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p64.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=64",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p65",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 65",
+      "file": "lesson_1ere_arabe_t1_p65.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p65.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=65",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p66",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 66",
+      "file": "lesson_1ere_arabe_t1_p66.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p66.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=66",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p67",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 67",
+      "file": "lesson_1ere_arabe_t1_p67.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p67.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=67",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p68",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 68",
+      "file": "lesson_1ere_arabe_t1_p68.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p68.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=68",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p69",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 69",
+      "file": "lesson_1ere_arabe_t1_p69.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p69.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=69",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p70",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 70",
+      "file": "lesson_1ere_arabe_t1_p70.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p70.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=70",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p71",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 71",
+      "file": "lesson_1ere_arabe_t1_p71.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p71.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=71",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p72",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 72",
+      "file": "lesson_1ere_arabe_t1_p72.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p72.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=72",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p73",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 73",
+      "file": "lesson_1ere_arabe_t1_p73.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p73.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=73",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p74",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 74",
+      "file": "lesson_1ere_arabe_t1_p74.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p74.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=74",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p75",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 75",
+      "file": "lesson_1ere_arabe_t1_p75.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p75.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=75",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p76",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 76",
+      "file": "lesson_1ere_arabe_t1_p76.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p76.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=76",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p77",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 77",
+      "file": "lesson_1ere_arabe_t1_p77.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p77.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=77",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p78",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 78",
+      "file": "lesson_1ere_arabe_t1_p78.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p78.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=78",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p79",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 79",
+      "file": "lesson_1ere_arabe_t1_p79.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p79.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=79",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p80",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 80",
+      "file": "lesson_1ere_arabe_t1_p80.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p80.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=80",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p81",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 81",
+      "file": "lesson_1ere_arabe_t1_p81.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p81.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=81",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p82",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 82",
+      "file": "lesson_1ere_arabe_t1_p82.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p82.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=82",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p83",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 83",
+      "file": "lesson_1ere_arabe_t1_p83.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p83.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=83",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p84",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 84",
+      "file": "lesson_1ere_arabe_t1_p84.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p84.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=84",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p85",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 85",
+      "file": "lesson_1ere_arabe_t1_p85.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p85.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=85",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p86",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 86",
+      "file": "lesson_1ere_arabe_t1_p86.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p86.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=86",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p87",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 87",
+      "file": "lesson_1ere_arabe_t1_p87.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p87.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=87",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p88",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 88",
+      "file": "lesson_1ere_arabe_t1_p88.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p88.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=88",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p89",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 89",
+      "file": "lesson_1ere_arabe_t1_p89.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p89.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=89",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p90",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 90",
+      "file": "lesson_1ere_arabe_t1_p90.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p90.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=90",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p91",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 91",
+      "file": "lesson_1ere_arabe_t1_p91.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p91.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=91",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p92",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 92",
+      "file": "lesson_1ere_arabe_t1_p92.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p92.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=92",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p93",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 93",
+      "file": "lesson_1ere_arabe_t1_p93.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p93.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=93",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p94",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 94",
+      "file": "lesson_1ere_arabe_t1_p94.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p94.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=94",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p95",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 95",
+      "file": "lesson_1ere_arabe_t1_p95.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p95.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=95",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p96",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 96",
+      "file": "lesson_1ere_arabe_t1_p96.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p96.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=96",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p97",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 97",
+      "file": "lesson_1ere_arabe_t1_p97.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p97.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=97",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p98",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 98",
+      "file": "lesson_1ere_arabe_t1_p98.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p98.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=98",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p99",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 99",
+      "file": "lesson_1ere_arabe_t1_p99.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p99.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=99",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p100",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 100",
+      "file": "lesson_1ere_arabe_t1_p100.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p100.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=100",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p101",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 101",
+      "file": "lesson_1ere_arabe_t1_p101.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p101.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=101",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p102",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 102",
+      "file": "lesson_1ere_arabe_t1_p102.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p102.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=102",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p103",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 103",
+      "file": "lesson_1ere_arabe_t1_p103.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p103.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=103",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p104",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 104",
+      "file": "lesson_1ere_arabe_t1_p104.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p104.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=104",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p105",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 105",
+      "file": "lesson_1ere_arabe_t1_p105.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p105.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=105",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p106",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 106",
+      "file": "lesson_1ere_arabe_t1_p106.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p106.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=106",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p107",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 107",
+      "file": "lesson_1ere_arabe_t1_p107.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p107.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=107",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p108",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 108",
+      "file": "lesson_1ere_arabe_t1_p108.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p108.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=108",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p109",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 109",
+      "file": "lesson_1ere_arabe_t1_p109.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p109.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=109",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p110",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 110",
+      "file": "lesson_1ere_arabe_t1_p110.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p110.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=110",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p111",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 111",
+      "file": "lesson_1ere_arabe_t1_p111.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p111.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=111",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p112",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 112",
+      "file": "lesson_1ere_arabe_t1_p112.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p112.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=112",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    },
+    {
+      "id": "cnp-101110-p113",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "lecture",
+      "trimester": 1,
+      "topic": "lecture",
+      "title": "كتاب القراءة صفحة 113",
+      "file": "lesson_1ere_arabe_t1_p113.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/lecture/lesson_1ere_arabe_t1_p113.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=113",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "lecture",
+        "1ere-annee"
+      ]
+    }
+  ]
+}

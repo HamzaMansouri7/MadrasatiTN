@@ -1,0 +1,846 @@
+{
+  "source": "CNP 501110P01",
+  "count": 42,
+  "items": [
+    {
+      "id": "cnp-501110P01-p01",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 1",
+      "file": "bd_1ere_arabe_t1_p01.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p01.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=1",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p02",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 2",
+      "file": "bd_1ere_arabe_t1_p02.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p02.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=2",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p03",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 3",
+      "file": "bd_1ere_arabe_t1_p03.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p03.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=3",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p04",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 4",
+      "file": "bd_1ere_arabe_t1_p04.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p04.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=4",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p05",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 5",
+      "file": "bd_1ere_arabe_t1_p05.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p05.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=5",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p06",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 6",
+      "file": "bd_1ere_arabe_t1_p06.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p06.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=6",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p07",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 7",
+      "file": "bd_1ere_arabe_t1_p07.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p07.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=7",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p08",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 8",
+      "file": "bd_1ere_arabe_t1_p08.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p08.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=8",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p09",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 9",
+      "file": "bd_1ere_arabe_t1_p09.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p09.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=9",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p10",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 10",
+      "file": "bd_1ere_arabe_t1_p10.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p10.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=10",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p11",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 11",
+      "file": "bd_1ere_arabe_t1_p11.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p11.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=11",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p12",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 12",
+      "file": "bd_1ere_arabe_t1_p12.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p12.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=12",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p13",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 13",
+      "file": "bd_1ere_arabe_t1_p13.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p13.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=13",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p14",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 14",
+      "file": "bd_1ere_arabe_t1_p14.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p14.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=14",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p15",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 15",
+      "file": "bd_1ere_arabe_t1_p15.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p15.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=15",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p16",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 16",
+      "file": "bd_1ere_arabe_t1_p16.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p16.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=16",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p17",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 17",
+      "file": "bd_1ere_arabe_t1_p17.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p17.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=17",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p18",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 18",
+      "file": "bd_1ere_arabe_t1_p18.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p18.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=18",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p19",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 19",
+      "file": "bd_1ere_arabe_t1_p19.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p19.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=19",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p20",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 20",
+      "file": "bd_1ere_arabe_t1_p20.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p20.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=20",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p21",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 21",
+      "file": "bd_1ere_arabe_t1_p21.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p21.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=21",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p22",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 22",
+      "file": "bd_1ere_arabe_t1_p22.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p22.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=22",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p23",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 23",
+      "file": "bd_1ere_arabe_t1_p23.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p23.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=23",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p24",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 24",
+      "file": "bd_1ere_arabe_t1_p24.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p24.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=24",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p25",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 25",
+      "file": "bd_1ere_arabe_t1_p25.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p25.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=25",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p26",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 26",
+      "file": "bd_1ere_arabe_t1_p26.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p26.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=26",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p27",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 27",
+      "file": "bd_1ere_arabe_t1_p27.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p27.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=27",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p28",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 28",
+      "file": "bd_1ere_arabe_t1_p28.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p28.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=28",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p29",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 29",
+      "file": "bd_1ere_arabe_t1_p29.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p29.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=29",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p30",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 30",
+      "file": "bd_1ere_arabe_t1_p30.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p30.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=30",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p31",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 31",
+      "file": "bd_1ere_arabe_t1_p31.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p31.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=31",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p32",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 32",
+      "file": "bd_1ere_arabe_t1_p32.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p32.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=32",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p33",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 33",
+      "file": "bd_1ere_arabe_t1_p33.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p33.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=33",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p34",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 34",
+      "file": "bd_1ere_arabe_t1_p34.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p34.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=34",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p35",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 35",
+      "file": "bd_1ere_arabe_t1_p35.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p35.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=35",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p36",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 36",
+      "file": "bd_1ere_arabe_t1_p36.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p36.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=36",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p37",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 37",
+      "file": "bd_1ere_arabe_t1_p37.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p37.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=37",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p38",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 38",
+      "file": "bd_1ere_arabe_t1_p38.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p38.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=38",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p39",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 39",
+      "file": "bd_1ere_arabe_t1_p39.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p39.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=39",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p40",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 40",
+      "file": "bd_1ere_arabe_t1_p40.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p40.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=40",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p41",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 41",
+      "file": "bd_1ere_arabe_t1_p41.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p41.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=41",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    },
+    {
+      "id": "cnp-501110P01-p42",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "أنيسي - شريط مصور صفحة 42",
+      "file": "bd_1ere_arabe_t1_p42.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/bd_1ere_arabe_t1_p42.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501110P01.pdf#page=42",
+      "labels": [
+        "cnp",
+        "anisi",
+        "bande_dessinee",
+        "expression_orale",
+        "1ere_annee"
+      ]
+    }
+  ]
+}
