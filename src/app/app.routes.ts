@@ -36,6 +36,12 @@ export const routes: Routes = [
     title: 'المكتبة والدليل | Bibliothèque CNP - Madrasati TN',
   },
   {
+    path: 'solve',
+    loadComponent: () =>
+      import('./features/solve/solve-home').then((m) => m.SolveHomeComponent),
+    title: 'صوّر التمرين واحصل على الحل | Photo-Solution - Madrasati TN',
+  },
+  {
     path: 'editor',
     canActivate: [authGuard],
     loadComponent: () =>

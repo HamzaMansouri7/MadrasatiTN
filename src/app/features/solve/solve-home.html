@@ -1,0 +1,118 @@
+<div class="max-w-2xl mx-auto space-y-7 animate-in fade-in duration-500">
+
+  <!-- Title -->
+  <div class="text-center space-y-2 pt-2">
+    <h1 class="font-display font-semibold text-2xl sm:text-3xl text-[#14251D]">{{ lang.t('solveTitle') }}</h1>
+    <p class="text-sm text-[#5B6B60] max-w-[56ch] mx-auto">{{ lang.t('solveSub') }}</p>
+  </div>
+
+  <!-- The drop zone IS the hero -->
+  @if (state() === 'idle' || state() === 'error') {
+    <label
+      (dragover)="onDragOver($event)"
+      (drop)="onFileDrop($event)"
+      class="block bg-white rounded-[28px] border-2 border-dashed border-[#E7DFCF] hover:border-[#2D6A4F] p-10 sm:p-14 text-center cursor-pointer transition-colors">
+      <input type="file" accept="image/*" capture="environment" class="hidden" (change)="onFileSelected($event)" />
+      <span class="material-icons text-5xl text-[#2D6A4F]" aria-hidden="true">photo_camera</span>
+      <p class="font-display font-semibold text-lg text-[#14251D] mt-3">{{ lang.t('solveDropTitle') }}</p>
+      <p class="text-sm text-[#5B6B60] mt-1">{{ lang.t('solveDropHint') }}</p>
+      <span class="inline-flex items-center gap-2 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors mt-5 shadow-sm">
+        <span class="material-icons text-base" aria-hidden="true">add_a_photo</span>
+        {{ lang.t('solvePickBtn') }}
+      </span>
+    </label>
+
+    @if (state() === 'error') {
+      <div class="bg-white rounded-2xl border border-[#C1121F]/30 p-4 text-center space-y-1">
+        <p class="text-sm font-semibold text-[#C1121F]">{{ lang.t('solveErrorTitle') }}</p>
+        <p class="text-xs text-[#5B6B60]">{{ errorMessage() || lang.t('solveErrorHint') }}</p>
+      </div>
+    }
+  }
+
+  <!-- Analyzing -->
+  @if (state() === 'analyzing') {
+    <div class="bg-white rounded-[28px] border border-[#E7DFCF] p-8 text-center space-y-4">
+      @if (previewUrl(); as url) {
+        <img [src]="url" alt="" class="max-h-56 mx-auto rounded-xl border border-[#E7DFCF] object-contain" />
+      }
+      <div class="flex items-center justify-center gap-2 text-[#1B4332] font-semibold text-sm">
+        <span class="material-icons animate-spin text-base" aria-hidden="true">sync</span>
+        {{ lang.t('solveAnalyzing') }}
+      </div>
+      <p class="text-xs text-[#6B7A70]">{{ lang.t('solveAnalyzingHint') }}</p>
+    </div>
+  }
+
+  <!-- Solution -->
+  @if (state() === 'done' && result(); as r) {
+    <div class="space-y-4">
+
+      <!-- Detected exercise -->
+      <div class="bg-white rounded-2xl border border-[#E7DFCF] p-5 space-y-3">
+        <div class="flex items-center justify-between gap-2 flex-wrap">
+          <p class="font-display font-semibold text-sm text-[#14251D]">{{ lang.t('solveDetected') }}</p>
+          <div class="flex items-center gap-1.5 text-[10px] font-semibold">
+            <span class="bg-[#1B4332]/10 text-[#1B4332] px-2.5 py-0.5 rounded-full">{{ r.subject }}</span>
+            <span class="bg-[#F2ECDE] text-[#4A5A50] px-2 py-0.5 rounded-full">{{ r.grade }}</span>
+          </div>
+        </div>
+        <p class="text-sm text-[#4A5A50] bg-[#FBF8F1] p-3.5 rounded-xl border border-[#E7DFCF] leading-relaxed whitespace-pre-line">{{ r.extractedText }}</p>
+      </div>
+
+      <!-- Step-by-step solution -->
+      <div class="bg-white rounded-2xl border border-[#E7DFCF] p-5 space-y-3">
+        <div class="flex items-center gap-2">
+          <span class="material-icons text-[#2D6A4F] text-base" aria-hidden="true">task_alt</span>
+          <p class="font-display font-semibold text-sm text-[#14251D]">{{ lang.t('solveSolution') }}</p>
+        </div>
+        <p class="text-sm text-[#14251D] leading-relaxed whitespace-pre-line">{{ r.solutionText }}</p>
+      </div>
+
+      <!-- Parent guide (gold panel) -->
+      <div class="bg-[#8A5A00]/5 rounded-2xl border border-[#8A5A00]/25 p-5 space-y-3">
+        <div class="flex items-center gap-2">
+          <span class="material-icons text-[#8A5A00] text-base" aria-hidden="true">family_restroom</span>
+          <p class="font-display font-semibold text-sm text-[#8A5A00]">{{ lang.t('solveParentGuide') }}</p>
+        </div>
+        <p class="text-sm text-[#4A5A50] leading-relaxed whitespace-pre-line">{{ r.parentGuide }}</p>
+        @if (r.checkQuestion) {
+          <p class="text-xs text-[#5B6B60] border-t border-[#8A5A00]/15 pt-3">
+            <span class="font-semibold">{{ lang.t('solveCheckQuestion') }}</span> {{ r.checkQuestion }}
+          </p>
+        }
+      </div>
+
+      <!-- Actions -->
+      <div class="flex flex-col sm:flex-row gap-2">
+        <button
+          (click)="copySolution()"
+          class="flex-1 bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-5 py-3.5 rounded-xl text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center justify-center gap-2">
+          <span class="material-icons text-base" aria-hidden="true">content_copy</span>
+          {{ solutionCopied() ? lang.t('solveCopied') : lang.t('solveCopy') }}
+        </button>
+        <button
+          (click)="reset()"
+          class="flex-1 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-sm">
+          <span class="material-icons text-base" aria-hidden="true">add_a_photo</span>
+          {{ lang.t('solveAnother') }}
+        </button>
+      </div>
+
+      <!-- Soft signup nudge (never blocking) -->
+      @if (showSignupNudge()) {
+        <div class="bg-[#14251D] rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p class="text-sm text-[#B7C7BC]">{{ lang.t('solveNudge') }}</p>
+          <button
+            (click)="openSignup()"
+            class="bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-2.5 rounded-xl text-sm transition-opacity cursor-pointer shrink-0">
+            {{ lang.t('solveNudgeBtn') }}
+          </button>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- Quiet reassurance line -->
+  <p class="text-center text-[11px] text-[#6B7A70]">{{ lang.t('solveFooter') }}</p>
+</div>

@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
 
 @Component({
@@ -40,6 +41,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             <p class="text-sm sm:text-[15px] text-[#486581] leading-relaxed max-w-xl">
               {{ lang.tr("Une plateforme numérique pour les enseignants, les parents et les élèves. Accédez à vos ressources, gérez vos cours, suivez les progrès et collaborez en toute simplicité, au service d'une éducation de qualité.", 'منصة رقمية متكاملة للمعلمين والأولياء والتلاميذ. يمكنك الوصول إلى مواردك، وإدارة دروسك، ومتابعة التحصيل الدراسي والتعاون بكل بساطة.') }}
             </p>
+
+            <!-- Primary CTA: the zero-friction solver -->
+            <div class="flex flex-wrap items-center gap-3">
+              <button
+                (click)="goSolve()"
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
+                <span class="material-icons text-base" aria-hidden="true">photo_camera</span>
+                {{ lang.t('solveTitle') }}
+              </button>
+              <span class="text-xs text-[#486581]">{{ lang.t('solveFooter') }}</span>
+            </div>
 
             <!-- 4 Feature Badges in Horizontal Row -->
             <div class="flex flex-wrap items-center gap-x-6 gap-y-3 pt-6 border-t border-[#E3ECF2]">
@@ -276,6 +288,12 @@ export class LandingHomeComponent {
       ],
     },
   ];
+
+  private readonly router = inject(Router);
+
+  goSolve() {
+    this.router.navigateByUrl('/solve');
+  }
 
   enterWorkspace(role: UserRole) {
     if (role === 'home' || role === 'public') {

@@ -42,6 +42,7 @@ export class App {
           '/parent': 'parent',
           '/student': 'student',
           '/discovery': 'public',
+          '/solve': 'public',
           '/editor': 'editor',
           '/generate': 'editor',
           '/article-studio': 'article-editor',

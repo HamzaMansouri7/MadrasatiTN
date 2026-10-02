@@ -94,6 +94,31 @@ export class LanguageService {
     bdPostCopied: { fr: 'Publication copiée !', ar: 'تم نسخ المنشور!' },
     bdDraft: { fr: 'Brouillon — en attente de validation', ar: 'مسودة — بانتظار التوثيق' },
 
+    // Photo-Solve (public solver)
+    solveTitle: { fr: 'Photographiez l’exercice, recevez la solution', ar: 'صوّر التمرين واحصل على الحل' },
+    solveSub: {
+      fr: 'Prenez une photo du cahier ou du livre : la solution détaillée et des conseils pour accompagner votre enfant, en quelques secondes.',
+      ar: 'التقط صورة من الكراس أو الكتاب: الحل المفصل خطوة بخطوة ونصائح لمرافقة طفلك، في ثوانٍ.',
+    },
+    solveDropTitle: { fr: 'Déposez la photo de l’exercice ici', ar: 'ضع صورة التمرين هنا' },
+    solveDropHint: { fr: 'Photo du cahier, du livre ou capture d’écran — JPG/PNG', ar: 'صورة من الكراس أو الكتاب أو لقطة شاشة — JPG/PNG' },
+    solvePickBtn: { fr: 'Prendre / choisir une photo', ar: 'التقط أو اختر صورة' },
+    solveAnalyzing: { fr: 'Lecture de l’exercice et résolution…', ar: 'جارٍ قراءة التمرين وحلّه…' },
+    solveAnalyzingHint: { fr: 'Quelques secondes — la solution est vérifiée deux fois.', ar: 'ثوانٍ قليلة — الحل يُراجع مرتين قبل العرض.' },
+    solveDetected: { fr: 'Exercice détecté', ar: 'التمرين المستخرج' },
+    solveSolution: { fr: 'Solution étape par étape', ar: 'الحل خطوة بخطوة' },
+    solveParentGuide: { fr: 'Conseils pour accompagner votre enfant', ar: 'نصائح لمرافقة طفلك' },
+    solveCheckQuestion: { fr: 'Question de vérification :', ar: 'سؤال للتثبت:' },
+    solveCopy: { fr: 'Copier la solution', ar: 'نسخ الحل' },
+    solveCopied: { fr: 'Solution copiée !', ar: 'تم نسخ الحل!' },
+    solveAnother: { fr: 'Résoudre un autre exercice', ar: 'حلّ تمرينًا آخر' },
+    solveErrorTitle: { fr: 'La photo n’a pas pu être résolue', ar: 'تعذّر حلّ هذه الصورة' },
+    solveErrorHint: { fr: 'Reprenez la photo de plus près, avec un bon éclairage, puis réessayez.', ar: 'أعد التقاط الصورة عن قرب وبإضاءة جيدة ثم حاول من جديد.' },
+    solveNudge: { fr: 'Créez un compte gratuit pour garder vos solutions et suivre le niveau de votre enfant.', ar: 'أنشئ حسابًا مجانيًا لحفظ الحلول ومتابعة مستوى طفلك.' },
+    solveNudgeBtn: { fr: 'Créer un compte gratuit', ar: 'إنشاء حساب مجاني' },
+    solveFooter: { fr: 'Gratuit, sans inscription. Conforme au programme officiel tunisien.', ar: 'مجاني وبدون تسجيل. مطابق للبرنامج الرسمي التونسي.' },
+    solveNav: { fr: 'Photo-Solution', ar: 'صوّر واحلّ' },
+
     // Teacher View
     teacherWelcome: { fr: 'Espace Enseignant', ar: 'فضاء المعلم' },
     teacherHeaderSub: {

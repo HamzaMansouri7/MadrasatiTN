@@ -940,6 +940,67 @@ Réponds STRICTEMENT au format JSON valide suivant :
   }
 });
 
+// 3b. Photo-Solve (public, zero-friction): parent snaps a photo of an exercise →
+// one multimodal call extracts the text and produces a verified step-by-step solution
+// + a parent guide. The acquisition feature — guarded but NOT behind login.
+const PHOTO_SOLVE_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    extractedText: STR,
+    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
+    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
+    solutionText: STR,
+    parentGuide: STR,
+    checkQuestion: STR,
+  },
+  required: ['extractedText', 'grade', 'subject', 'solutionText', 'parentGuide'],
+};
+
+app.post('/api/ai/photo-solve', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
+  try {
+    const { base64Data, contentType, language } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+      return;
+    }
+    if (!base64Data || typeof base64Data !== 'string' || base64Data.length > 16 * 1024 * 1024) {
+      res.status(400).json({ error: 'Photo requise (base64Data, max 16 Mo).' });
+      return;
+    }
+
+    const lang = resolveLang(language);
+    const prompt = `Tu es un enseignant tunisien chevronné du primaire. Un parent vient de photographier un exercice (cahier, livre ou devoir).
+${langRule(lang)}
+NOTE : le corrigé doit être rédigé dans la LANGUE DE L'EXERCICE photographié (arabe si l'énoncé est en arabe, français si en français).
+
+Mission :
+1. "extractedText" : transcris fidèlement l'énoncé photographié (texte seul, sans décor).
+2. "grade" / "subject" : déduis le niveau et la matière du programme tunisien.
+3. "solutionText" : corrigé étape par étape, clair et pédagogique, résultat final mis en évidence.
+   AUTO-VÉRIFICATION OBLIGATOIRE : refais chaque calcul une deuxième fois avant de répondre ; le corrigé doit être exact à 100%.
+4. "parentGuide" : 2-3 conseils concrets pour que le parent accompagne l'enfant SANS lui donner la réponse directement.
+5. "checkQuestion" : une petite question de vérification à poser à l'enfant après.`;
+
+    const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
+    const mime = (contentType || 'image/jpeg').startsWith('image/') ? (contentType || 'image/jpeg') : 'image/jpeg';
+    const contents: GeminiPart[] = [
+      { inlineData: { mimeType: mime, data: base64Clean } },
+      { text: prompt },
+    ];
+
+    const data = await aiGenerateJSON(ai, contents, PHOTO_SOLVE_SCHEMA, 0.2);
+
+    res.json({ success: true, result: data });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la résolution de la photo';
+    console.error('Error in /api/ai/photo-solve:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
 // 4b. Worksheet Style Analyzer (Phase 1a) — vision reads an uploaded worksheet image
 // and extracts its "design DNA": topic, palette, layout, so we can clone the style.
 app.post('/api/ai/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
