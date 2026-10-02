@@ -12,7 +12,7 @@ import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/firs
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
 import { SEED_BANK_EXERCISES, SEED_COURSES } from './app/core/data/seed-docs.data';
-import { existsSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync, readFileSync, readdirSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
@@ -1867,6 +1867,91 @@ app.get('/generate', (req: Request, res: Response, next): void => {
     console.error('Error injecting OG tags for sheet:', err);
     next();
   }
+});
+
+app.get('/robots.txt', (req: Request, res: Response) => {
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.setHeader('Cache-Control', 'public, max-age=86400');
+  const robotsTxt = `User-agent: *
+Allow: /
+Allow: /discovery
+Allow: /generate
+Allow: /summarize
+Allow: /blog
+Disallow: /teacher
+Disallow: /parent
+Disallow: /student
+
+Sitemap: https://madrastihub.com/sitemap.xml
+`;
+  res.send(robotsTxt);
+});
+
+app.get('/sitemap.xml', (req: Request, res: Response) => {
+  res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+  res.setHeader('Cache-Control', 'public, max-age=3600');
+
+  const baseUrl = 'https://madrastihub.com';
+  const lastMod = new Date().toISOString().split('T')[0];
+
+  const staticUrls = [
+    { url: `${baseUrl}/`, priority: '1.0', changefreq: 'daily' },
+    { url: `${baseUrl}/discovery`, priority: '0.9', changefreq: 'daily' },
+    { url: `${baseUrl}/generate`, priority: '0.8', changefreq: 'weekly' },
+    { url: `${baseUrl}/summarize`, priority: '0.8', changefreq: 'weekly' },
+  ];
+
+  // Dynamic CNP Books
+  const cnpUrls = (CNP_PRIMARY_COURSES || []).map((c: any) => ({
+    url: `${baseUrl}/discovery?book=${encodeURIComponent(c.id)}`,
+    priority: '0.8',
+    changefreq: 'monthly',
+  }));
+
+  // Dynamic Exercises
+  const allExercises = [...(LIBRARY_EXERCISES || []), ...(FIRST_GRADE_EXERCISES || [])];
+  
+  // Read disk-persisted community documents
+  if (existsSync(docsFolder)) {
+    try {
+      const files = readdirSync(docsFolder);
+      for (const f of files) {
+        if (f.endsWith('.json')) {
+          const raw = readFileSync(join(docsFolder, f), 'utf-8');
+          const doc = JSON.parse(raw);
+          if (doc && doc.id) {
+            allExercises.push(doc);
+          }
+        }
+      }
+    } catch (e) {
+      console.error('Error reading docs for sitemap:', e);
+    }
+  }
+
+  const exerciseUrls = allExercises.map((ex: any) => ({
+    url: `${baseUrl}/discovery?ex=${encodeURIComponent(ex.id)}`,
+    priority: '0.7',
+    changefreq: 'weekly',
+  }));
+
+  const allUrls = [...staticUrls, ...cnpUrls, ...exerciseUrls];
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${allUrls
+  .map(
+    (item) => `  <url>
+    <loc>${item.url}</loc>
+    <lastmod>${lastMod}</lastmod>
+    <changefreq>${item.changefreq}</changefreq>
+    <priority>${item.priority}</priority>
+  </url>`
+  )
+  .join('\n')}
+</urlset>`;
+
+  res.send(xml);
 });
 
 app.get(['/favicon.ico', '/favicon.svg'], (req: Request, res: Response) => {

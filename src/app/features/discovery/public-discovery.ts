@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost } from '@core';
+import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost } from '@core';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -1374,9 +1374,41 @@ export class PublicDiscoveryComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  readonly seo = inject(SeoService);
   private readonly sanitizer = inject(DomSanitizer);
 
   constructor() {
+    // Dynamic SEO & Schema.org JSON-LD updates
+    effect(() => {
+      const ex = this.watermarkPreviewModal();
+      if (ex) {
+        this.seo.updateSeo({
+          title: `${ex.title} - ${ex.grade} ${ex.subject}`,
+          description: `Document et exercice d'évaluation ${ex.title} pour ${ex.grade} (${ex.subject}). Copie certifiée gratuite sur Madrasati TN.`,
+          keywords: `${ex.title}, ${ex.grade}, ${ex.subject}, devoirs tunisie, امتحانات ابتدائي`,
+          jsonLd: {
+            '@context': 'https://schema.org',
+            '@type': 'EducationalResource',
+            name: ex.title,
+            educationalLevel: ex.grade,
+            learningResourceType: ex.docType || 'Worksheet',
+            inLanguage: ['ar', 'fr'],
+            isAccessibleForFree: true,
+            provider: {
+              '@type': 'Organization',
+              name: 'Madrasati TN',
+              url: 'https://madrastihub.com',
+            },
+          },
+        });
+      } else {
+        this.seo.updateSeo({
+          title: 'Bibliothèque & Guide Pédagogique (المكتبة والدليل)',
+          description: '38 livres officiels du المركز الوطني للبيداجوجيا (CNP) et banque d\'exercices certifiés pour le primaire en Tunisie.',
+        });
+      }
+    });
+
     // Merge community-published worksheets into the library grid + blog feed.
     this.store.loadPublishedWorksheets();
     this.store.loadBlogPosts();

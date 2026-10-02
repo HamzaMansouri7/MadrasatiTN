@@ -5,6 +5,7 @@ export * from './services/education-store';
 export * from './services/interaction.service';
 export * from './services/firebase.service';
 export * from './services/language.service';
+export * from './services/seo.service';
 export * from './guards/auth.guard';
 export * from './utils/image.util';
 export * from './data/cnp-books.data';
