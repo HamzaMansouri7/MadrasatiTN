@@ -135,6 +135,42 @@
         </button>
       </div>
 
+      <!-- Pedagogy panel: visual keywords + official structures (zero-hallucination) -->
+      @if (item.pedagogy; as ped) {
+        <div class="px-4 sm:px-6 pb-3">
+          <div class="max-w-3xl mx-auto bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] p-4 space-y-3" dir="rtl">
+            <div class="flex items-center justify-between gap-2">
+              <p class="font-display font-semibold text-[#14251D] text-sm">{{ lang.t('bdPedagogyTitle') }}</p>
+              @if (ped.verifiedBy) {
+                <span class="flex items-center gap-1 text-[11px] font-semibold text-[#1B4332] bg-[#1B4332]/10 px-2 py-0.5 rounded-full">
+                  <span class="material-icons text-[13px]" aria-hidden="true">verified</span>{{ lang.t('bdVerified') }}
+                </span>
+              } @else {
+                <span class="text-[11px] font-medium text-[#8A5A00] bg-[#8A5A00]/10 px-2 py-0.5 rounded-full">{{ lang.t('bdDraft') }}</span>
+              }
+            </div>
+
+            @if (ped.keywords.length) {
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-[11px] font-semibold text-[#5B6B60] shrink-0">{{ lang.t('bdKeywords') }}</span>
+                @for (k of ped.keywords; track k) {
+                  <span class="text-xs font-medium text-[#14251D] bg-[#F2ECDE] border border-[#E7DFCF] px-2.5 py-1 rounded-full">{{ k }}</span>
+                }
+              </div>
+            }
+
+            @if (ped.structures.length) {
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-[11px] font-semibold text-[#5B6B60] shrink-0">{{ lang.t('bdStructures') }}</span>
+                @for (s of ped.structures; track s) {
+                  <span class="text-xs font-medium text-[#1B4332] bg-[#1B4332]/5 border border-[#1B4332]/15 px-2.5 py-1 rounded-full">{{ s }}</span>
+                }
+              </div>
+            }
+          </div>
+        </div>
+      }
+
       <!-- Cartouche page counter -->
       <div class="pb-4 text-center">
         <span class="font-display font-semibold text-[#F2C14E] text-lg">{{ (selectedIndex() ?? 0) + 1 }}</span>

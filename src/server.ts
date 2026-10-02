@@ -7,7 +7,7 @@ import {
 import express, { Request, Response, NextFunction } from 'express';
 import { join } from 'node:path';
 import { GoogleGenAI, Type } from '@google/genai';
-import { retrieveContext } from './server/knowledge-source';
+import { retrieveContext, registerSources } from './server/knowledge-source';
 import { existsSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 
@@ -1422,7 +1422,17 @@ function escapeHtmlAttr(value: string): string {
 
 // OG tags for shared BD pages (/discovery?bd=ITEM_ID) — same crawler-only pattern as /generate.
 const BD_ID_RE = /^[A-Za-z0-9_-]{4,80}$/;
-interface BdManifestItem { id: string; title?: string; grade?: string; subject?: string; topic?: string; relPath?: string }
+interface BdManifestItem {
+  id: string;
+  title?: string;
+  grade?: string;
+  subject?: string;
+  topic?: string;
+  relPath?: string;
+  trimester?: number;
+  ref?: string;
+  pedagogy?: { keywords?: string[]; structures?: string[]; verifiedBy?: string | null };
+}
 let bdItemsCache: BdManifestItem[] | null = null;
 
 function loadBdItems(): BdManifestItem[] {
@@ -1442,6 +1452,37 @@ function loadBdItems(): BdManifestItem[] {
     bdItemsCache = [];
   }
   return bdItemsCache;
+}
+
+// Annotated BD pages feed the AI grounding layer: an exercise about "الحديقة"
+// can cite the official silent-comic page that teaches those exact words.
+const BD_GRADE_LABELS: Record<string, string> = {
+  '1ere-annee': '1ère Année', '2eme-annee': '2ème Année', '3eme-annee': '3ème Année',
+  '4eme-annee': '4ème Année', '5eme-annee': '5ème Année', '6eme-annee': '6ème Année',
+};
+const BD_SUBJECT_LABELS: Record<string, string> = {
+  'arabe': 'اللغة العربية', 'francais': 'Français', 'maths': 'Mathématiques',
+  'eveil-scientifique': 'Éveil Scientifique', 'anglais': 'Anglais',
+  'histoire-geo': 'Histoire & Géographie',
+};
+try {
+  registerSources(
+    loadBdItems()
+      .filter((i) => (i.pedagogy?.keywords?.length ?? 0) > 0)
+      .map((i) => ({
+        id: `bdpage-${i.id}`,
+        origin: 'bd-page',
+        grade: BD_GRADE_LABELS[i.grade || ''] || i.grade || '',
+        subject: BD_SUBJECT_LABELS[i.subject || ''] || i.subject || '',
+        trimester: i.trimester ? `Trimestre ${i.trimester}` : undefined,
+        lang: 'ar' as const,
+        title: i.title || i.id,
+        text: [...(i.pedagogy?.keywords || []), ...(i.pedagogy?.structures || [])].join('، '),
+        ref: i.ref,
+      })),
+  );
+} catch (err) {
+  console.warn('BD grounding registration skipped:', err);
 }
 
 app.get('/discovery', (req: Request, res: Response, next): void => {

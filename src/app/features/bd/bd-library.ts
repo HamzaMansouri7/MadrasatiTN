@@ -15,6 +15,15 @@ export interface BdItem {
   lang: string;
   ref: string;
   labels: string[];
+  /** Zero-hallucination oral-expression support (see RESOURCE-PIPELINE.md §3b). */
+  pedagogy?: {
+    /** Objects/actions physically visible in the image (vision-extracted). */
+    keywords: string[];
+    /** Official grammar patterns for the module (curriculum-sourced). */
+    structures: string[];
+    /** Teacher uid once validated; null = draft. */
+    verifiedBy?: string | null;
+  };
 }
 
 interface ResourceManifest {

@@ -86,6 +86,11 @@ export class LanguageService {
     bdClose: { fr: 'Fermer', ar: 'إغلاق' },
     bdPrev: { fr: 'Planche précédente', ar: 'الصفحة السابقة' },
     bdNext: { fr: 'Planche suivante', ar: 'الصفحة التالية' },
+    bdPedagogyTitle: { fr: 'Aide à l’expression orale', ar: 'دعم التعبير الشفوي' },
+    bdKeywords: { fr: 'Mots-clés :', ar: 'المفردات المفتاحية:' },
+    bdStructures: { fr: 'Structures :', ar: 'التراكيب اللغوية:' },
+    bdVerified: { fr: 'Vérifié par un enseignant', ar: 'موثّق من معلم' },
+    bdDraft: { fr: 'Brouillon — en attente de validation', ar: 'مسودة — بانتظار التوثيق' },
 
     // Teacher View
     teacherWelcome: { fr: 'Espace Enseignant', ar: 'فضاء المعلم' },
