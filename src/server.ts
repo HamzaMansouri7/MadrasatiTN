@@ -1263,12 +1263,14 @@ function readDocsIndex(): Record<string, unknown>[] {
 
 app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
   try {
-    const { title, grade, subject, topic, palette, exercises, authorName, customWatermark, school } = req.body;
+    const { title, grade, subject, topic, palette, exercises, authorName, authorRole, customWatermark, school } = req.body;
     if (!Array.isArray(exercises) || exercises.length === 0) {
       res.status(400).json({ error: 'Aucun exercice à enregistrer.' });
       return;
     }
     const id = randomUUID();
+    // Attribution: a parent-made sheet must never carry a teacher label.
+    const role = ['teacher', 'parent', 'ai', 'community'].includes(authorRole) ? authorRole : 'community';
     const doc = {
       id,
       title: (title || 'Fiche Madrasati TN').toString().slice(0, 200),
@@ -1277,8 +1279,9 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
       topic: (topic || '').toString().slice(0, 200),
       palette: Array.isArray(palette) ? palette.slice(0, 6) : [],
       exercises: exercises.slice(0, 20),
-      authorName: (authorName || 'Enseignant Certifié').toString().slice(0, 100),
-      customWatermark: (customWatermark || 'Madrasati TN — Document Certifié').toString().slice(0, 150),
+      authorName: (authorName || 'Communauté Madrasati').toString().slice(0, 100),
+      authorRole: role,
+      customWatermark: (customWatermark || 'Madrasati TN — Fiche Communautaire').toString().slice(0, 150),
       school: (school || 'المدرسة الابتدائية التونسية').toString().slice(0, 150),
       createdAt: new Date().toISOString(),
     };
@@ -1296,6 +1299,7 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
       palette: doc.palette,
       thumb,
       authorName: doc.authorName,
+      authorRole: doc.authorRole,
       exerciseCount: doc.exercises.length,
       createdAt: doc.createdAt,
     });

@@ -175,7 +175,7 @@
 
           <div class="text-right text-xs leading-tight">
             <p class="font-bold text-[#007CC2] text-sm sm:text-base">{{ teacherName() }}</p>
-            <p class="text-[11px] text-[#5B6B60]">معلم(ة) مباشر(ة)</p>
+            <p class="text-[11px] text-[#5B6B60]">{{ authorRole() === 'teacher' ? 'معلم(ة) مباشر(ة)' : (authorRole() === 'parent' ? 'ولي أمر — ورقة منزلية' : 'مساهمة مجتمعية') }}</p>
             <p class="text-[10px] text-[#829AB1] font-mono mt-0.5">{{ customWatermark() }}</p>
           </div>
         </div>
@@ -250,7 +250,7 @@
       <footer class="mt-6 pt-3 border-t border-[#E7DFCF] flex items-center justify-between text-[11px] text-[#5B6B60] relative z-10">
         <span>المنصة التعليمية التونسية — Madrasati TN</span>
         <span class="font-bold text-[#14251D]">
-          {{ lang.tr('Fiche créée & certifiée par :', 'ورقة إعداد واجتهاد المعلم(ة) :') }} {{ teacherName() }}
+          {{ authorCreditLabel() }} {{ teacherName() }}
         </span>
         <span class="font-mono text-[#829AB1]">{{ customWatermark() }}</span>
       </footer>

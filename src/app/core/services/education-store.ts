@@ -967,6 +967,7 @@ export class EducationStore {
     palette?: string[];
     exercises: GeneratedExercise[];
     authorName?: string;
+    authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
     customWatermark?: string;
     school?: string;
   }): Promise<{ id: string; shareUrl: string } | null> {
@@ -1035,10 +1036,13 @@ export class EducationStore {
             promptText: `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
             photoUrl: w.thumb || undefined,
             solutionText: '',
-            hasCorrection: true,
+            hasCorrection: w.authorRole === 'teacher',
             hints: [],
             points: (w.exerciseCount || 1) * 5,
             theme: w.topic,
+            teacherName: w.authorName
+              ? `${w.authorName}${this.worksheetRoleSuffix(w.authorRole)}`
+              : undefined,
             watermarkText: 'Madrasati TN — Fiche Communautaire',
           }));
         return [...mapped, ...list];
@@ -1058,8 +1062,8 @@ export class EducationStore {
             content: `Fiche communautaire générée sur Madrasati TN. [Ouvrir la fiche](/generate?sheet=${w.id})`,
             contentAr: `ورقة مُنشأة على منصة مدرستي. [فتح الورقة](/generate?sheet=${w.id})`,
             authorId: 'community',
-            authorName: 'Ressource Communautaire — Madrasati TN',
-            authorTitle: 'Fiche partagée',
+            authorName: w.authorName || 'Ressource Communautaire — Madrasati TN',
+            authorTitle: this.worksheetRoleTitle(w.authorRole),
             authorAvatar: '/favicon.svg',
             subject: (w.subject || 'Français') as SubjectName,
             grade: (w.grade || '1ère Année') as GradeLevel,
@@ -1076,6 +1080,22 @@ export class EducationStore {
       console.error('Error in loadPublishedWorksheets:', err);
       this.publishedLoaded = false;
     }
+  }
+
+  // Attribution labels — a parent- or AI-made sheet must read differently
+  // from a teacher's (teachers-are-authors rule; AR primary).
+  private worksheetRoleSuffix(role?: string): string {
+    if (role === 'parent') return ' — ولي أمر';
+    if (role === 'ai') return ' — مساعد مدرستي AI';
+    if (role === 'teacher') return '';
+    return ' — مساهمة مجتمعية';
+  }
+
+  private worksheetRoleTitle(role?: string): string {
+    if (role === 'teacher') return 'معلّم(ة) — فيشة موثّقة';
+    if (role === 'parent') return 'ولي أمر — فيشة منزلية';
+    if (role === 'ai') return 'مساعد مدرستي AI';
+    return 'Fiche partagée';
   }
 
   // Load published blog posts from Firestore and merge with seed posts

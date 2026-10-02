@@ -80,6 +80,8 @@ export interface WorksheetSummary {
   thumb?: string;
   exerciseCount?: number;
   createdAt?: string;
+  authorName?: string;
+  authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
 }
 
 // Phase 1 — style-clone pipeline (analyze worksheet image → generate similar).
@@ -121,6 +123,7 @@ export interface WorksheetDoc {
   palette?: string[];
   exercises: GeneratedExercise[];
   authorName?: string;
+  authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
   customWatermark?: string;
   school?: string;
   createdAt?: string;

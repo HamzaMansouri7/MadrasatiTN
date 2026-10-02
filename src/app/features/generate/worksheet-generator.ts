@@ -51,6 +51,27 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     return this.sharedDoc()?.school || this.firebase.userProfile()?.school || 'المدرسة الابتدائية التونسية';
   });
 
+  // Attribution role: teacher sheets keep the certified wording; parent and
+  // anonymous sheets are labelled as family/community contributions.
+  readonly authorRole = computed<'teacher' | 'parent' | 'community'>(() => {
+    const shared = this.sharedDoc();
+    if (shared) {
+      const r = shared.authorRole;
+      return r === 'teacher' || r === 'parent' ? r : (r ? 'community' : 'teacher');
+    }
+    const profileRole = this.firebase.userProfile()?.role;
+    if (profileRole === 'teacher') return 'teacher';
+    if (profileRole === 'parent') return 'parent';
+    return 'community';
+  });
+
+  readonly authorCreditLabel = computed(() => {
+    const role = this.authorRole();
+    if (role === 'teacher') return this.lang.tr('Fiche créée & certifiée par :', 'ورقة إعداد واجتهاد المعلم(ة) :');
+    if (role === 'parent') return this.lang.tr('Fiche familiale préparée par :', 'ورقة منزلية من إعداد الولي :');
+    return this.lang.tr('Contribution communautaire par :', 'مساهمة مجتمعية من إعداد :');
+  });
+
   private contentType = 'image/jpeg';
 
   private startThinking(messages: string[]) {
@@ -103,6 +124,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
         palette: d?.palette,
         exercises: list,
         authorName: this.teacherName(),
+        authorRole: this.firebase.userProfile() ? this.authorRole() : 'community',
         customWatermark: this.customWatermark(),
         school: this.school(),
       });

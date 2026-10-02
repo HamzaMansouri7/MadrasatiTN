@@ -211,6 +211,14 @@ import { BdLibraryComponent } from '../bd/bd-library';
 
                 <h3 class="font-display font-semibold text-[#14251D] text-sm leading-snug">{{ ex.title }}</h3>
 
+                @if (ex.photoUrl) {
+                  <img
+                    [src]="ex.photoUrl"
+                    [alt]="ex.title"
+                    loading="lazy"
+                    class="w-full max-h-44 object-cover rounded-2xl border border-[#E7DFCF] bg-[#FBF8F1]" />
+                }
+
                 <p class="text-xs text-[#4A5A50] bg-[#FBF8F1] p-3.5 rounded-2xl border border-[#E7DFCF] leading-relaxed font-mono">
                   "{{ ex.promptText }}"
                 </p>
@@ -1262,11 +1270,11 @@ import { BdLibraryComponent } from '../bd/bd-library';
 
     <!-- FEATURE 5: ONE-CLICK PDF WATERMARK & PRINT PREVIEW MODAL -->
     @if (watermarkPreviewModal(); as docEx) {
-      <div id="printable-modal" class="print-container fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-[#FBF8F1] rounded-2xl max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-2xl max-h-[90vh] overflow-y-auto relative">
+      <div id="printable-modal" class="print-container fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+        <div class="bg-[#FBF8F1] rounded-2xl max-w-3xl w-full p-4 sm:p-6 space-y-4 border border-[#E7DFCF] shadow-2xl max-h-[90vh] flex flex-col relative my-auto">
           
           <!-- Watermark Header Banner -->
-          <div class="no-print bg-[#14251D] text-[#FBF8F1] p-4 rounded-xl flex items-center justify-between shadow-xs">
+          <div class="no-print bg-[#14251D] text-[#FBF8F1] p-4 rounded-xl flex items-center justify-between shadow-xs shrink-0">
             <div class="flex items-center gap-2">
               <span class="material-icons text-[#F2C14E]">verified</span>
               <div>
@@ -1282,67 +1290,69 @@ import { BdLibraryComponent } from '../bd/bd-library';
           </div>
 
           <!-- Document Render Frame with Watermark Overlay -->
-          <div id="printable-document" class="print-document bg-white rounded-xl p-6 border border-[#E7DFCF] relative overflow-hidden space-y-4 font-mono text-xs cartouche-rules">
-            
-            <!-- Diagonal Watermark Stamp -->
-            <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-10 select-none rotate-[-25deg]">
-              <span class="text-4xl font-display font-semibold uppercase text-[#1B4332] tracking-widest text-center">
-                MADRASATI TN <br /> COPIE CERTIFIÉE GRATUITE
-              </span>
-            </div>
+          <div class="overflow-y-auto flex-1 pr-1 space-y-4">
+            <div id="printable-document" class="print-document bg-white rounded-xl p-6 border border-[#E7DFCF] relative overflow-hidden space-y-4 font-sans text-xs cartouche-rules">
+              
+              <!-- Diagonal Watermark Stamp -->
+              <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-10 select-none rotate-[-25deg]">
+                <span class="text-4xl font-display font-semibold uppercase text-[#1B4332] tracking-widest text-center">
+                  MADRASATI TN <br /> COPIE CERTIFIÉE GRATUITE
+                </span>
+              </div>
 
-            <!-- Official Header -->
-            <div class="border-b border-[#14251D] pb-3 font-sans">
-              <div class="flex items-center justify-between text-xs">
-                <div class="text-left font-semibold text-[#14251D] leading-tight">
-                  <p>الجمهورية التونسية</p>
-                  <p>وزارة التربية والتعليم</p>
-                  <p class="text-[10px] text-[#5B6B60] font-normal">المندوبية الجهوية للتربية</p>
+              <!-- Official Header -->
+              <div class="border-b border-[#14251D] pb-3 font-sans">
+                <div class="flex items-center justify-between text-xs">
+                  <div class="text-left font-semibold text-[#14251D] leading-tight">
+                    <p>الجمهورية التونسية</p>
+                    <p>وزارة التربية والتعليم</p>
+                    <p class="text-[10px] text-[#5B6B60] font-normal">المندوبية الجهوية للتربية</p>
+                  </div>
+                  <div class="text-center font-semibold">
+                    <p class="text-base text-[#1B4332] font-display font-semibold">{{ docEx.title }}</p>
+                    <p class="text-xs text-[#5B6B60]">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
+                  </div>
+                  <div class="text-right text-xs text-[#14251D] leading-tight">
+                    <span class="bg-[#F2ECDE] text-[#1B4332] font-semibold px-2 py-0.5 rounded text-[10px] border border-[#E7DFCF]">
+                      {{ docEx.docType || 'Devoir de Contrôle' }}
+                    </span>
+                    <p class="text-[10px] text-[#6B7A70] mt-1">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
+                  </div>
                 </div>
-                <div class="text-center font-semibold">
-                  <p class="text-base text-[#1B4332] font-display font-semibold">{{ docEx.title }}</p>
-                  <p class="text-xs text-[#5B6B60]">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
-                </div>
-                <div class="text-right text-xs text-[#14251D] leading-tight">
-                  <span class="bg-[#F2ECDE] text-[#1B4332] font-semibold px-2 py-0.5 rounded text-[10px] border border-[#E7DFCF]">
-                    {{ docEx.docType || 'Devoir de Contrôle' }}
-                  </span>
-                  <p class="text-[10px] text-[#6B7A70] mt-1">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
+
+                <!-- Student Filling Block for Printed Exams -->
+                <div class="mt-3 pt-2 border-t border-dashed border-[#E7DFCF] grid grid-cols-3 gap-2 text-xs font-semibold">
+                  <p>الاسم واللقب: ....................................</p>
+                  <p>القسم: {{ docEx.grade }}</p>
+                  <p class="text-right font-semibold text-[#1B4332]">العدد: .......... / 20</p>
                 </div>
               </div>
 
-              <!-- Student Filling Block for Printed Exams -->
-              <div class="mt-3 pt-2 border-t border-dashed border-[#E7DFCF] grid grid-cols-3 gap-2 text-xs font-semibold">
-                <p>الاسم واللقب: ....................................</p>
-                <p>القسم: {{ docEx.grade }}</p>
-                <p class="text-right font-semibold text-[#1B4332]">العدد: .......... / 20</p>
+              <!-- Exercise Body -->
+              <div class="space-y-3 py-2 font-sans relative z-10">
+                <h3 class="font-display font-semibold text-[#14251D] text-sm">{{ docEx.title }}</h3>
+                <p class="text-[#4A5A50] leading-relaxed bg-[#FBF8F1] p-4 rounded-xl border border-[#E7DFCF] font-sans text-xs whitespace-pre-line">
+                  {{ docEx.promptText }}
+                </p>
+
+                @if (docEx.solutionText) {
+                  <div class="bg-[#F2ECDE] p-4 rounded-xl border border-[#E7DFCF] text-[#14251D] font-sans">
+                    <span class="font-semibold text-[#1B4332]">✔️ Corrigé Certifié :</span>
+                    <p class="whitespace-pre-line mt-1 text-xs text-[#4A5A50]">{{ docEx.solutionText }}</p>
+                  </div>
+                }
               </div>
-            </div>
 
-            <!-- Exercise Body -->
-            <div class="space-y-3 py-2 font-sans relative z-10">
-              <h3 class="font-display font-semibold text-[#14251D] text-sm">{{ docEx.title }}</h3>
-              <p class="text-[#4A5A50] leading-relaxed bg-[#FBF8F1] p-4 rounded-xl border border-[#E7DFCF] font-mono">
-                {{ docEx.promptText }}
-              </p>
-
-              @if (docEx.solutionText) {
-                <div class="bg-[#F2ECDE] p-4 rounded-xl border border-[#E7DFCF] text-[#14251D] font-sans">
-                  <span class="font-semibold text-[#1B4332]">✔️ Corrigé Certifié :</span>
-                  <p class="whitespace-pre-line mt-1 text-xs text-[#4A5A50]">{{ docEx.solutionText }}</p>
-                </div>
-              }
-            </div>
-
-            <!-- Official Footer Watermark Attribution -->
-            <div class="border-t border-[#E7DFCF] pt-3 text-[10px] text-[#6B7A70] font-sans flex items-center justify-between">
-              <span>Attribution Enseignant : {{ docEx.watermarkText }}</span>
-              <span>Plateforme Madrasati TN</span>
+              <!-- Official Footer Watermark Attribution -->
+              <div class="border-t border-[#E7DFCF] pt-3 text-[10px] text-[#6B7A70] font-sans flex items-center justify-between">
+                <span>Attribution Enseignant : {{ docEx.watermarkText }}</span>
+                <span>Plateforme Madrasati TN</span>
+              </div>
             </div>
           </div>
 
           <!-- Actions -->
-          <div class="no-print flex items-center justify-between gap-3 pt-2">
+          <div class="no-print flex items-center justify-between gap-3 pt-2 shrink-0">
             <button (click)="watermarkPreviewModal.set(null)" class="bg-white hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 py-2.5 rounded-xl text-xs border border-[#E7DFCF] cursor-pointer transition-colors">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>

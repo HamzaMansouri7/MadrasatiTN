@@ -214,6 +214,7 @@ export class SummarizeHomeComponent {
           },
         ],
         authorName: 'Madrasati TN AI',
+        authorRole: 'ai',
         customWatermark: 'Madrasati TN — ملخص مادة',
       });
 
