@@ -193,7 +193,7 @@ import { BdLibraryComponent } from '../bd/bd-library';
           <div class="flex flex-wrap gap-2 items-center">
             <select
               [value]="recitationGradeFilter()"
-              (change)="recitationGradeFilter.set(($event.target as HTMLSelectElement).value)"
+              (change)="recitationGradeFilter.set($any($event.target).value)"
               class="bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] px-3 py-1.5 text-xs font-medium text-[#102A43] outline-none focus:border-[#7B4F1E]">
               <option value="Tous">{{ lang.tr('Tous les niveaux', 'جميع المستويات') }}</option>
               <option value="1ere-annee">{{ lang.tr('1ère Année', 'السنة الأولى') }}</option>
@@ -206,7 +206,7 @@ import { BdLibraryComponent } from '../bd/bd-library';
 
             <select
               [value]="recitationTrimesterFilter()"
-              (change)="recitationTrimesterFilter.set(+($event.target as HTMLSelectElement).value)"
+              (change)="recitationTrimesterFilter.set(+$any($event.target).value)"
               class="bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] px-3 py-1.5 text-xs font-medium text-[#102A43] outline-none focus:border-[#7B4F1E]">
               <option [value]="0">{{ lang.tr('Tous les trimestres', 'جميع الثلاثيات') }}</option>
               <option [value]="1">{{ lang.tr('Trimestre 1', 'الثلاثي الأول') }}</option>
