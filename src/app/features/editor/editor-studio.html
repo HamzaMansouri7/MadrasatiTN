@@ -206,15 +206,16 @@
 
         <div>
           @if (isParentMode()) {
-            <label for="doc-school-input" class="block font-semibold text-[#627D98] mb-1">
+            <label for="doc-child-input" class="block font-semibold text-[#627D98] mb-1">
               {{ lang.tr('Prénom de l’enfant', 'اسم التلميذ') }}
             </label>
             <input
-              id="doc-school-input"
+              id="doc-child-input"
               type="text"
               [value]="activeChildName()"
-              readonly
-              class="w-full bg-[#FFF4D8] border border-[#E0AA32]/40 rounded-[10px] p-2 text-[#9E6A00] font-bold outline-none" />
+              (input)="onChildNameInput($event)"
+              placeholder="Ex: Élève / أمل"
+              class="w-full bg-[#FFF4D8] border border-[#E0AA32]/40 rounded-[10px] p-2 text-[#9E6A00] font-bold outline-none focus:ring-2 focus:ring-[#E0AA32]" />
           } @else {
             <label for="doc-school-input" class="block font-semibold text-[#627D98] mb-1">
               {{ lang.tr('Établissement / École', 'المدرسة الابتدائية') }}

@@ -10,7 +10,7 @@ export interface SeoConfig {
   ogUrl?: string;
   author?: string;
   lang?: 'ar' | 'fr';
-  jsonLd?: Record<string, any>;
+  jsonLd?: Record<string, unknown>;
 }
 
 @Injectable({
@@ -63,7 +63,7 @@ export class SeoService {
     }
   }
 
-  setJsonLd(schemaData: Record<string, any>) {
+  setJsonLd(schemaData: Record<string, unknown>) {
     if (typeof window === 'undefined' || !this.document) return;
 
     if (!this.jsonLdScriptEl) {

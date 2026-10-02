@@ -1899,10 +1899,11 @@ app.get('/sitemap.xml', (req: Request, res: Response) => {
     { url: `${baseUrl}/discovery`, priority: '0.9', changefreq: 'daily' },
     { url: `${baseUrl}/generate`, priority: '0.8', changefreq: 'weekly' },
     { url: `${baseUrl}/summarize`, priority: '0.8', changefreq: 'weekly' },
+    { url: `${baseUrl}/teachers`, priority: '0.7', changefreq: 'weekly' },
   ];
 
   // Dynamic CNP Books
-  const cnpUrls = (CNP_PRIMARY_COURSES || []).map((c: any) => ({
+  const cnpUrls = (CNP_PRIMARY_COURSES || []).map((c: { id: string }) => ({
     url: `${baseUrl}/discovery?book=${encodeURIComponent(c.id)}`,
     priority: '0.8',
     changefreq: 'monthly',
@@ -1929,7 +1930,7 @@ app.get('/sitemap.xml', (req: Request, res: Response) => {
     }
   }
 
-  const exerciseUrls = allExercises.map((ex: any) => ({
+  const exerciseUrls = allExercises.map((ex: { id: string }) => ({
     url: `${baseUrl}/discovery?ex=${encodeURIComponent(ex.id)}`,
     priority: '0.7',
     changefreq: 'weekly',

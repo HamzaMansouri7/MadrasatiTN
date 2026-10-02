@@ -200,7 +200,8 @@ export class EditorStudioComponent {
 
   // Dual-Mode Studio Signals (Teacher vs Parent - Idea 16)
   readonly isParentMode = computed(() => this.store.previousRole() === 'parent');
-  readonly activeChildName = computed(() => this.store.activeStudent()?.name || 'Mon Enfant');
+  readonly customChildName = signal<string>('');
+  readonly activeChildName = computed(() => this.customChildName() || this.store.activeStudent()?.name || 'Élève');
   readonly isTransformingId = signal<string | null>(null);
 
   // Computed live exam points sum
@@ -278,6 +279,7 @@ export class EditorStudioComponent {
       this.docTrimester();
       this.docSchool();
       this.docWatermark();
+      this.customChildName();
       this.blocks();
       if (this.draftLoaded) this.saveDraft();
     });
@@ -299,6 +301,7 @@ export class EditorStudioComponent {
         trimester: this.docTrimester(),
         school: this.docSchool(),
         watermark: this.docWatermark(),
+        childName: this.customChildName(),
         blocks: this.blocks(),
       };
       localStorage.setItem(this.getDraftStorageKey(), JSON.stringify(draft));
@@ -321,6 +324,7 @@ export class EditorStudioComponent {
           if (draft.trimester) this.docTrimester.set(draft.trimester);
           if (draft.school) this.docSchool.set(draft.school);
           if (draft.watermark) this.docWatermark.set(draft.watermark);
+          if (draft.childName) this.customChildName.set(draft.childName);
           if (Array.isArray(draft.blocks) && draft.blocks.length > 0) this.blocks.set(draft.blocks);
         } catch (e) {
           console.error('Failed to parse draft', e);
@@ -531,6 +535,10 @@ export class EditorStudioComponent {
 
   onDocSchoolInput(e: Event) {
     this.docSchool.set((e.target as HTMLInputElement).value);
+  }
+
+  onChildNameInput(e: Event) {
+    this.customChildName.set((e.target as HTMLInputElement).value);
   }
 
   onDocWatermarkInput(e: Event) {
