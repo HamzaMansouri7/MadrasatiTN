@@ -616,6 +616,9 @@ export class EditorStudioComponent {
             purpose: prompt,
             details: `${this.docSubject()} - ${this.docGrade()}`,
             targetAudience: `${this.docGrade()} — parents et élèves`,
+            grade: this.docGrade(),
+            subject: this.docSubject(),
+            language: this.lang.lang(),
           }),
         });
         const data = await res.json();
@@ -640,6 +643,7 @@ export class EditorStudioComponent {
             difficulty: 'Moyen',
             role: this.isParentMode() ? 'parent' : 'teacher',
             childName: this.activeChildName(),
+            language: this.lang.lang(),
           }),
         });
         const data = await res.json();
@@ -683,6 +687,8 @@ export class EditorStudioComponent {
           transformType,
           grade: this.docGrade(),
           subject: this.docSubject(),
+          topic: block.exerciseTitle || '',
+          language: this.lang.lang(),
         }),
       });
       const data = await res.json();
@@ -722,6 +728,7 @@ export class EditorStudioComponent {
           format: sourceBlock.exerciseFormat || 'free',
           originalPromptText: sourceBlock.content || '',
           role: 'teacher',
+          language: this.lang.lang(),
         }),
       });
       const data = await res.json();

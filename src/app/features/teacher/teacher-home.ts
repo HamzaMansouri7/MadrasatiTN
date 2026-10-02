@@ -2023,6 +2023,7 @@ export class TeacherHomeComponent {
           subject: this.aiFormSubject(),
           topic: this.aiFormTopic(),
           difficulty: this.aiFormDifficulty(),
+          language: this.lang.lang(),
         }),
       });
       const data = await res.json();

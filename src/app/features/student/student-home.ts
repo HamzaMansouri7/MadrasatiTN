@@ -452,6 +452,7 @@ export class StudentHomeComponent {
           concept: this.tutorQuestion(),
           grade: this.store.activeStudent().grade,
           subject: 'Général',
+          language: this.lang.lang(),
         }),
       });
       const data = await res.json();

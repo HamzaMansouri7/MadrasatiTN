@@ -6,7 +6,8 @@ import {
 } from '@angular/ssr/node';
 import express, { Request, Response, NextFunction } from 'express';
 import { join } from 'node:path';
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenAI, Type } from '@google/genai';
+import { retrieveContext } from './server/knowledge-source';
 import { existsSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 
@@ -324,13 +325,205 @@ const apiKey = process.env['GEMINI_API_KEY'] || '';
 const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 
 /**
+ * Shared AI helpers — structured JSON output, retry, dual-language (AR default),
+ * and official CNP curriculum grounding via the KnowledgeSource layer.
+ */
+type GeminiPart = { inlineData: { mimeType: string; data: string } } | { text: string };
+
+/** JSON-mode generation with responseSchema + 1 retry on transient/parse failure. */
+async function aiGenerateJSON(
+  client: GoogleGenAI,
+  contents: string | GeminiPart[],
+  schema?: object,
+  temperature = 0.4,
+): Promise<Record<string, unknown>> {
+  const config: Record<string, unknown> = { responseMimeType: 'application/json', temperature };
+  if (schema) config['responseSchema'] = schema;
+  let lastErr: unknown;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const response = await client.models.generateContent({ model: 'gemini-2.5-flash', contents, config });
+      const text = (response.text || '').replace(/```json/g, '').replace(/```/g, '').trim();
+      return JSON.parse(text);
+    } catch (err) {
+      lastErr = err;
+    }
+  }
+  throw lastErr;
+}
+
+/** Arabic is the primary language in Tunisia — default 'ar' unless caller asks 'fr'. */
+const resolveLang = (raw: unknown): 'ar' | 'fr' => (raw === 'fr' ? 'fr' : 'ar');
+
+/** Absolute output-language rule injected into every generative prompt. */
+const langRule = (lang: 'ar' | 'fr'): string =>
+  lang === 'ar'
+    ? `RÈGLE LINGUISTIQUE ABSOLUE : l'arabe est la langue principale. Rédige TOUS les champs texte (titres, énoncés, consignes, corrections, indices, conseils) en ARABE LITTÉRAIRE scolaire tunisien (العربية الفصحى المدرسية). EXCEPTION : si la matière est le Français, rédige en français ; si c'est l'Anglais, en anglais.`
+    : `RÈGLE LINGUISTIQUE ABSOLUE : rédige TOUS les champs texte en FRANÇAIS clair et soigné, conforme au programme tunisien. EXCEPTION : matière Anglais → anglais ; matière اللغة العربية → arabe.`;
+
+/** Official curriculum grounding block (empty string when no match). */
+const buildGrounding = (q: { grade?: string; subject?: string; trimester?: string; topic?: string; lang: 'ar' | 'fr' }): string => {
+  const { block } = retrieveContext(q);
+  return block ? `\n${block}\n` : '';
+};
+
+// --- Response schemas (Gemini structured output) ---
+const STR = { type: Type.STRING } as const;
+const NUM = { type: Type.NUMBER } as const;
+const INT = { type: Type.INTEGER } as const;
+const BOOL = { type: Type.BOOLEAN } as const;
+const STR_ARR = { type: Type.ARRAY, items: STR } as const;
+
+const EXERCISE_PROPS = {
+  title: STR,
+  promptText: STR,
+  solutionText: STR,
+  parentGuide: STR,
+  teacherNotes: STR,
+  hints: STR_ARR,
+  points: NUM,
+  format: { type: Type.STRING, enum: ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'] },
+  qcmOptions: STR_ARR,
+  qcmCorrectIndex: INT,
+  tfStatements: {
+    type: Type.ARRAY,
+    items: { type: Type.OBJECT, properties: { text: STR, answer: BOOL }, required: ['text', 'answer'] },
+  },
+  gapText: STR,
+  matchingPairs: {
+    type: Type.ARRAY,
+    items: { type: Type.OBJECT, properties: { left: STR, right: STR }, required: ['left', 'right'] },
+  },
+};
+
+const EXERCISE_SCHEMA = {
+  type: Type.OBJECT,
+  properties: EXERCISE_PROPS,
+  required: ['title', 'promptText', 'solutionText', 'format'],
+};
+
+const EXAM_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    examTitle: STR,
+    sections: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: { heading: STR, exerciseTitle: STR, points: NUM, promptText: STR, solutionText: STR, hints: STR_ARR },
+        required: ['heading', 'exerciseTitle', 'points', 'promptText', 'solutionText'],
+      },
+    },
+  },
+  required: ['examTitle', 'sections'],
+};
+
+const SOLVE_SCHEMA = {
+  type: Type.OBJECT,
+  properties: { solutionText: STR, teacherNotes: STR, recommendedPoints: NUM },
+  required: ['solutionText', 'teacherNotes', 'recommendedPoints'],
+};
+
+const ANNOUNCE_SCHEMA = {
+  type: Type.OBJECT,
+  properties: { title: STR, content: STR },
+  required: ['title', 'content'],
+};
+
+const EXPLAIN_SCHEMA = {
+  type: Type.OBJECT,
+  properties: { explanation: STR, analogy: STR, checkQuestion: STR },
+  required: ['explanation', 'analogy', 'checkQuestion'],
+};
+
+const TAG_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    suggestedTitle: STR,
+    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
+    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
+    trimester: { type: Type.STRING, enum: ['Trimestre 1', 'Trimestre 2', 'Trimestre 3'] },
+    docType: { type: Type.STRING, enum: ['Devoir de Contrôle', 'Devoir de Synthèse', 'Fiche de Révision', "Série d'Exercices"] },
+    hasCorrection: BOOL,
+    summary: STR,
+    extractedContent: STR,
+  },
+  required: ['suggestedTitle', 'grade', 'subject', 'trimester', 'docType', 'hasCorrection', 'summary', 'extractedContent'],
+};
+
+const DNA_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    title: STR,
+    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
+    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
+    topic: STR,
+    language: { type: Type.STRING, enum: ['fr', 'ar', 'en', 'mixed'] },
+    palette: STR_ARR,
+    layoutStyle: STR,
+    illustrationStyle: STR,
+    sections: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: {
+          heading: STR,
+          kind: { type: Type.STRING, enum: ['words', 'sentences', 'qcm', 'matching', 'phonics', 'commands', 'free'] },
+          itemsCount: INT,
+        },
+        required: ['heading', 'kind'],
+      },
+    },
+  },
+  required: ['title', 'grade', 'subject', 'topic', 'language', 'palette', 'layoutStyle', 'illustrationStyle', 'sections'],
+};
+
+const SIMILAR_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    exercises: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: { ...EXERCISE_PROPS, imagePrompt: STR },
+        required: ['title', 'promptText', 'solutionText', 'format'],
+      },
+    },
+  },
+  required: ['exercises'],
+};
+
+const CHAT_ARTICLE_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    replyText: STR,
+    updatedArticle: {
+      type: Type.OBJECT,
+      properties: { title: STR, summary: STR, subject: STR, grade: STR, contentMarkdown: STR },
+      required: ['title', 'summary', 'subject', 'grade', 'contentMarkdown'],
+    },
+    suggestedChips: STR_ARR,
+  },
+  required: ['replyText', 'updatedArticle', 'suggestedChips'],
+};
+
+/** Clamp qcmCorrectIndex into range so a model drift can never break the UI. */
+function sanitizeExercise<T extends { qcmOptions?: string[]; qcmCorrectIndex?: number }>(ex: T): T {
+  if (Array.isArray(ex.qcmOptions) && ex.qcmOptions.length > 0) {
+    const idx = typeof ex.qcmCorrectIndex === 'number' ? ex.qcmCorrectIndex : 0;
+    ex.qcmCorrectIndex = Math.min(Math.max(idx, 0), ex.qcmOptions.length - 1);
+  }
+  return ex;
+}
+
+/**
  * Hardened AI Assistant Endpoints with Origin Guard & Rate Limiting
  */
 
 // 1. Generate Exercise (Dual-Mode: Teacher vs Parent)
 app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, topic, difficulty, format, role, childName } = req.body;
+    const { grade, subject, topic, difficulty, format, role, childName, language, trimester } = req.body;
 
     if (!ai) {
       res.status(500).json({
@@ -339,11 +532,13 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
       return;
     }
 
+    const lang = resolveLang(language);
     const safeTopic = (topic || '').slice(0, 300);
     const validFormats = ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'];
     const requestedFormat = validFormats.includes(format) ? format : undefined;
     const isParent = role === 'parent';
 
+    const grounding = buildGrounding({ grade, subject, trimester, topic: safeTopic, lang });
     const systemContext = isParent
       ? `Tu es un guide pédagogique bienveillant aidant un parent tunisien à faire réviser son enfant (${childName || "l'élève"}). Crée un exercice stimulant, motivant et clair avec des situations concrètes du quotidien tunisien.`
       : `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie. Conçois un exercice rigoureux conforme au programme officiel tunisien pour évaluation scolaire.`;
@@ -355,6 +550,7 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
   "teacherNotes": "Compétences officielles visées et critères d'évaluation ministériels"`;
 
     const prompt = `${systemContext}
+${grounding}${langRule(lang)}
 Génère un exercice pédagogique de haute qualité adapté pour :
 - Niveau: ${grade || '4ème Année'}
 - Matière: ${subject || 'Mathématiques'}
@@ -384,16 +580,9 @@ Instructions par format :
 - Si format est 'fill_blanks' : gapText contient le texte avec les mots à cacher entourés de [[mot]].
 - Si format est 'matching' : matchingPairs contient 3 à 5 couples {left, right} appariés correctement.`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
+    const data = await aiGenerateJSON(ai, prompt, EXERCISE_SCHEMA, 0.4);
 
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
-
-    res.json({ success: true, exercise: data });
+    res.json({ success: true, exercise: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de la génération';
@@ -406,12 +595,15 @@ Instructions par format :
 // 1a. Transform / Refine Exercise with Contextual Prompts (A10)
 app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { originalBlock, transformType, customInstruction, grade, subject } = req.body;
+    const { originalBlock, transformType, customInstruction, grade, subject, language, trimester, topic } = req.body;
 
     if (!ai) {
       res.status(500).json({ error: 'Clé API non configurée' });
       return;
     }
+
+    const lang = resolveLang(language);
+    const grounding = buildGrounding({ grade, subject, trimester, topic: (topic || '').slice(0, 300), lang });
 
     let instructionText = '';
     switch (transformType) {
@@ -432,6 +624,8 @@ app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard,
     }
 
     const prompt = `Tu es un expert pédagogique pour l'école primaire tunisienne (${grade || 'Primaire'}, ${subject || 'Général'}).
+${grounding}${langRule(lang)}
+NOTE : conserve la langue de l'exercice original si elle diffère (ex: exercice en français pour la matière Français).
 Exercice original :
 ${JSON.stringify(originalBlock)}
 
@@ -451,16 +645,9 @@ Réponds STRICTEMENT au format JSON valide avec la même structure que l'origina
   "matchingPairs": []
 }`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
+    const data = await aiGenerateJSON(ai, prompt, EXERCISE_SCHEMA, 0.4);
 
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
-
-    res.json({ success: true, transformed: data });
+    res.json({ success: true, transformed: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de la transformation';
@@ -473,15 +660,18 @@ Réponds STRICTEMENT au format JSON valide avec la même structure que l'origina
 // 1b. Generate Full 20-Point Tunisian Exam with Multiple Blocks
 app.post('/api/ai/generate-full-exam', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, trimester, topics } = req.body;
+    const { grade, subject, trimester, topics, language } = req.body;
 
     if (!ai) {
       res.status(500).json({ error: 'Clé API non disponible' });
       return;
     }
 
+    const lang = resolveLang(language);
     const safeTopics = (topics || '').slice(0, 300);
+    const grounding = buildGrounding({ grade, subject, trimester, topic: safeTopics, lang });
     const prompt = `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie.
+${grounding}${langRule(lang)}
 Génère une Évaluation Somnative / Devoir de Synthèse officiel complet pour l'enseignement primaire tunisien.
 - Niveau : ${grade || '4ème Année'}
 - Matière : ${subject || 'Mathématiques'}
@@ -524,14 +714,17 @@ Réponds STRICTEMENT au format JSON valide suivant :
   ]
 }`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
+    const data = await aiGenerateJSON(ai, prompt, EXAM_SCHEMA, 0.4);
 
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    // Enforce the official 6+6+8 = 20 points barème server-side (model can drift).
+    const sections = data['sections'] as { points?: number }[] | undefined;
+    if (Array.isArray(sections) && sections.length === 3) {
+      const total = sections.reduce((sum, s) => sum + (Number(s.points) || 0), 0);
+      if (total !== 20) {
+        const official = [6, 6, 8];
+        sections.forEach((s, i) => (s.points = official[i]));
+      }
+    }
 
     res.json({ success: true, exam: data });
     return;
@@ -546,16 +739,21 @@ Réponds STRICTEMENT au format JSON valide suivant :
 // 1c. Solve / Correct Exercise with Step-by-Step AI Explanation
 app.post('/api/ai/solve-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { promptText, grade, subject } = req.body;
+    const { promptText, grade, subject, language, trimester, topic } = req.body;
 
     if (!ai) {
       res.status(500).json({ error: 'Clé API non disponible' });
       return;
     }
 
+    const lang = resolveLang(language);
     const safePrompt = (promptText || '').slice(0, 1500);
+    const grounding = buildGrounding({ grade, subject, trimester, topic: (topic || safePrompt).slice(0, 300), lang });
     const prompt = `Tu es un enseignant tunisien chevronné. Rédige le corrigé officiel, rigoureux et didactique de l'exercice suivant pour le niveau ${grade || 'Primaire'} (${subject || 'Général'}) :
+${grounding}${langRule(lang)}
 "${safePrompt}"
+
+AUTO-VÉRIFICATION OBLIGATOIRE : avant de répondre, refais chaque calcul / vérifie chaque réponse une deuxième fois. Si un résultat intermédiaire ne colle pas, corrige-le. Le corrigé final doit être exact à 100%.
 
 Réponds STRICTEMENT au format JSON valide suivant :
 {
@@ -564,14 +762,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
   "recommendedPoints": 5
 }`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
-
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    const data = await aiGenerateJSON(ai, prompt, SOLVE_SCHEMA, 0.2);
 
     res.json({ success: true, result: data });
     return;
@@ -586,16 +777,20 @@ Réponds STRICTEMENT au format JSON valide suivant :
 // 2. Draft Announcement for Teacher
 app.post('/api/ai/draft-announcement', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { purpose, details, targetAudience } = req.body;
+    const { purpose, details, targetAudience, language, grade, subject, trimester } = req.body;
 
     if (!ai) {
       res.status(500).json({ error: 'Clé API non disponible' });
       return;
     }
 
+    const lang = resolveLang(language);
     const safePurpose = (purpose || '').slice(0, 300);
     const safeDetails = (details || '').slice(0, 500);
-    const prompt = `Rédige une annonce scolaire professionnelle, bienveillante et claire en français pour un enseignant primaire en Tunisie.
+    // Prose docs (editor) pass grade/subject → ground them; pure announcements skip.
+    const grounding = grade || subject ? buildGrounding({ grade, subject, trimester, topic: safePurpose, lang }) : '';
+    const prompt = `Rédige un texte scolaire professionnel, bienveillant et clair pour un enseignant primaire en Tunisie.
+${grounding}${langRule(lang)}
 Objectif: ${safePurpose || 'Devoir de synthèse à venir'}
 Détails: ${safeDetails || 'Réviser la multiplication et la géométrie'}
 Destinataires: ${targetAudience || 'Parents et élèves de 4ème Année'}
@@ -606,14 +801,7 @@ Format JSON requis :
   "content": "Message clair, poli et structuré"
 }`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
-
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    const data = await aiGenerateJSON(ai, prompt, ANNOUNCE_SCHEMA, 0.6);
 
     res.json({ success: true, result: data });
     return;
@@ -628,15 +816,18 @@ Format JSON requis :
 // 3. Explain Concept for Student (Tutor AI)
 app.post('/api/ai/explain-concept', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { concept, grade, subject } = req.body;
+    const { concept, grade, subject, language, trimester } = req.body;
 
     if (!ai) {
       res.status(500).json({ error: 'Clé API non disponible' });
       return;
     }
 
+    const lang = resolveLang(language);
     const safeConcept = (concept || '').slice(0, 300);
+    const grounding = buildGrounding({ grade, subject, trimester, topic: safeConcept, lang });
     const prompt = `Tu es un tuteur pédagogique très encouragant pour un enfant tunisien en ${grade || '4ème année'}.
+${grounding}${langRule(lang)}
 Explique la notion suivante de façon très simple et captivante :
 Matière: ${subject || 'Sciences'}
 Notion: ${safeConcept || 'La photosynthèse'}
@@ -648,14 +839,7 @@ Format JSON :
   "checkQuestion": "Question rapide avec réponse"
 }`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
-
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    const data = await aiGenerateJSON(ai, prompt, EXPLAIN_SCHEMA, 0.6);
 
     res.json({ success: true, result: data });
     return;
@@ -740,14 +924,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
     }
     contents.push({ text: prompt });
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents,
-    });
-
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    const data = await aiGenerateJSON(ai, contents, TAG_SCHEMA, 0.2);
 
     res.json({ success: true, tags: data });
     return;
@@ -806,10 +983,7 @@ Instructions :
       { text: prompt },
     ];
 
-    const response = await ai.models.generateContent({ model: 'gemini-2.5-flash', contents });
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    const data = await aiGenerateJSON(ai, contents, DNA_SCHEMA, 0.2);
 
     res.json({ success: true, dna: data });
     return;
@@ -842,9 +1016,16 @@ app.post('/api/ai/generate-similar', originGuard, aiRateLimiter, aiDailyGuard, a
     const subject = (dna.subject || 'Mathématiques').toString().slice(0, 40);
     const topic = (dna.topic || '').toString().slice(0, 200);
     const palette = Array.isArray(dna.palette) ? dna.palette.slice(0, 6) : [];
+    const dnaLang = dna.language === 'fr' ? 'fr' as const : 'ar' as const;
+    const grounding = buildGrounding({ grade, subject, topic, lang: dnaLang });
+    const originalSections = Array.isArray(dna.sections)
+      ? dna.sections.map((s: { heading?: string }) => s.heading).filter(Boolean).join(' | ').slice(0, 400)
+      : '';
 
     const prompt = `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie.
+${grounding}
 Génère ${n} exercices NOUVEAUX et variés, du même style et du même thème qu'une fiche existante, pour l'école primaire tunisienne.
+${originalSections ? `IMPORTANT — ANTI-DOUBLON : la fiche originale contient déjà ces sections : "${originalSections}". Tes exercices doivent être DIFFÉRENTS (autres valeurs, autres mots, autres situations), jamais des copies.` : ''}
 - Niveau: ${grade}
 - Matière: ${subject}
 - Thème: ${topic || 'conforme au programme officiel'}
@@ -877,12 +1058,12 @@ Instructions :
 - Varie les formats quand c'est pertinent ; remplis uniquement les champs utiles au format choisi.
 - imagePrompt : courte description en anglais, style enfant, fond blanc, PAS de texte dans l'image.`;
 
-    const response = await ai.models.generateContent({ model: 'gemini-2.5-flash', contents: prompt });
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    const data = await aiGenerateJSON(ai, prompt, SIMILAR_SCHEMA, 0.6);
+    const exercises = Array.isArray(data['exercises'])
+      ? (data['exercises'] as { qcmOptions?: string[]; qcmCorrectIndex?: number }[]).map(sanitizeExercise)
+      : [];
 
-    res.json({ success: true, exercises: data.exercises || [], palette, grade, subject, topic });
+    res.json({ success: true, exercises, palette, grade, subject, topic });
     return;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de la génération des exercices similaires';
@@ -898,7 +1079,7 @@ const SHEET_ID_RE = /^[A-Za-z0-9_-]{6,64}$/;
 // without reading every doc file.
 const docsIndexPath = join(docsFolder, 'index.json');
 
-function readDocsIndex(): Array<Record<string, unknown>> {
+function readDocsIndex(): Record<string, unknown>[] {
   if (!existsSync(docsIndexPath)) return [];
   try {
     const arr = JSON.parse(readFileSync(docsIndexPath, 'utf8'));
@@ -932,7 +1113,7 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
     writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
 
     // Append a summary to the published index (newest first), with a thumbnail.
-    const thumb = (doc.exercises as Array<{ imageUrl?: string }>).find((e) => e.imageUrl)?.imageUrl || '';
+    const thumb = (doc.exercises as { imageUrl?: string }[]).find((e) => e.imageUrl)?.imageUrl || '';
     const index = readDocsIndex();
     index.unshift({
       id,
@@ -986,12 +1167,14 @@ app.get('/api/docs/:id', (req: Request, res: Response): void => {
 // 5. Variant Exercise Generator (Idea 11 — Variante IA)
 app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, topic, format, originalPromptText, role } = req.body;
+    const { grade, subject, topic, format, originalPromptText, role, language, trimester } = req.body;
 
     if (!ai) {
       res.status(500).json({ error: 'Clé API Gemini non configurée.' });
       return;
     }
+
+    const lang = resolveLang(language);
 
     const safeOriginal = (originalPromptText || '').slice(0, 1500);
     const safeTopic = (topic || '').slice(0, 200);
@@ -1000,6 +1183,7 @@ app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req
     const isParent = role === 'parent';
 
     const prompt = `Tu es un expert pédagogique tunisien. Génère une VARIANTE de l'exercice suivant pour le niveau ${grade || '4ème Année'} (${subject || 'Mathématiques'}).
+${buildGrounding({ grade, subject, trimester, topic: safeTopic, lang })}NOTE LINGUISTIQUE : rédige la variante dans la MÊME langue que l'exercice original.
 
 Exercice original :
 "${safeOriginal || safeTopic}"
@@ -1035,16 +1219,11 @@ Instructions par format :
 - fill_blanks : gapText avec [[mot]] pour les mots cachés.
 - matching : matchingPairs (3-5 couples {left, right}).`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
+    const data = await aiGenerateJSON(ai, prompt, EXERCISE_SCHEMA, 0.5);
+    data['aiGenerated'] = true;
+    data['aiVerified'] = false;
 
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
-
-    res.json({ success: true, variant: data });
+    res.json({ success: true, variant: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de la génération de la variante';
@@ -1055,7 +1234,7 @@ Instructions par format :
 });
 
 // Endpoint: Conversational Article Assistant Co-Pilot
-app.post('/api/ai/chat-article', async (req: Request, res: Response) => {
+app.post('/api/ai/chat-article', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response) => {
   try {
     const {
       messages = [],
@@ -1089,6 +1268,7 @@ Concentre tes conseils, méthodes d'apprentissage, gestion du temps et remédiat
 - Niveau scolaire : ${currentArticle.grade || 'Primaire'}
 ${activeChapter ? `- Chapitre / Axe ciblé du programme : "${activeChapter}"` : ''}
 ${tagsStr ? `- Tags associés : ${tagsStr}` : ''}
+${buildGrounding({ grade: currentArticle.grade, subject: currentArticle.subject, topic: activeChapter || (userPrompt || '').slice(0, 300), lang: isArabicMode ? 'ar' : 'fr' })}
 Tu dois fonder tes explications, exemples, remédiations et activités sur les compétences requises par le programme officiel du Ministère de l'Éducation tunisien.`;
 
     const prompt = `Tu es un conseiller pédagogique senior pour l'enseignement primaire en Tunisie (Madrasati TN).
@@ -1139,14 +1319,7 @@ Format de sortie STRICT : JSON uniquement, sans markdown wrapper :
   "suggestedChips": ["...", "...", "..."]
 }`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
-
-    const text = response.text || '';
-    const cleanedText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const data = JSON.parse(cleanedText);
+    const data = await aiGenerateJSON(ai, prompt, CHAT_ARTICLE_SCHEMA, 0.7);
 
     res.json({ success: true, ...data });
     return;
@@ -1159,9 +1332,9 @@ Format de sortie STRICT : JSON uniquement, sans markdown wrapper :
 });
 
 // Endpoint: AI Illustration Generator (Google Imagen 3 / SVG fallbacks)
-app.post('/api/ai/generate-illustration', async (req: Request, res: Response) => {
+app.post('/api/ai/generate-illustration', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response) => {
   try {
-    const { promptText = '', style = 'educational' } = req.body;
+    const { promptText = '' } = req.body;
     if (!ai) {
       res.status(500).json({ error: 'Clé API Gemini non configurée.' });
       return;
@@ -1246,6 +1419,85 @@ function escapeHtmlAttr(value: string): string {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 }
+
+// OG tags for shared BD pages (/bd?p=ITEM_ID) — same crawler-only pattern as /generate.
+const BD_ID_RE = /^[A-Za-z0-9_-]{4,80}$/;
+interface BdManifestItem { id: string; title?: string; grade?: string; subject?: string; topic?: string; relPath?: string }
+let bdItemsCache: BdManifestItem[] | null = null;
+
+function loadBdItems(): BdManifestItem[] {
+  if (bdItemsCache) return bdItemsCache;
+  try {
+    const idx = JSON.parse(readFileSync(join(browserDistFolder, 'assets/resources/index.json'), 'utf8'));
+    const paths: string[] = Array.isArray(idx.manifests) ? idx.manifests : [];
+    bdItemsCache = paths.flatMap((p) => {
+      try {
+        const m = JSON.parse(readFileSync(join(browserDistFolder, p), 'utf8'));
+        return Array.isArray(m.items) ? (m.items as BdManifestItem[]) : [];
+      } catch {
+        return [];
+      }
+    });
+  } catch {
+    bdItemsCache = [];
+  }
+  return bdItemsCache;
+}
+
+app.get('/bd', (req: Request, res: Response, next): void => {
+  const ua = req.get('user-agent') || '';
+  const itemId = String((req.query['p'] as string) || '');
+  if (!CRAWLER_UA_RE.test(ua) || !BD_ID_RE.test(itemId)) {
+    next();
+    return;
+  }
+
+  const item = loadBdItems().find((i) => i.id === itemId);
+  if (!item) {
+    next();
+    return;
+  }
+
+  try {
+    const indexPath = join(browserDistFolder, 'index.html');
+    let html = readFileSync(indexPath, 'utf8');
+
+    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
+    const host = req.get('x-forwarded-host') || req.get('host') || '';
+    const origin = `${proto}://${host}`;
+
+    const title = escapeHtmlAttr(`${item.title || 'Bande dessinée'} — Madrasati TN`);
+    const descParts = [item.grade, item.subject, item.topic].filter(Boolean).join(' · ');
+    const description = escapeHtmlAttr(
+      descParts
+        ? `${descParts}. Planche officielle du manuel CNP — Madrasati TN.`
+        : 'Bande dessinée officielle pour l\'école primaire tunisienne — Madrasati TN.',
+    );
+    const imageUrl = escapeHtmlAttr(item.relPath ? `${origin}/${item.relPath}` : `${origin}/favicon.svg`);
+    const pageUrl = escapeHtmlAttr(`${origin}/bd?p=${itemId}`);
+
+    html = html.replace(/\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi, '');
+
+    const ogBlock = `
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+    <meta property="og:image" content="${imageUrl}" />
+    <meta property="og:url" content="${pageUrl}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${title}" />
+    <meta name="twitter:description" content="${description}" />
+    <meta name="twitter:image" content="${imageUrl}" />`;
+
+    html = html.replace('</head>', `${ogBlock}\n  </head>`);
+
+    res.set('Content-Type', 'text/html; charset=utf-8');
+    res.send(html);
+  } catch (err) {
+    console.error('Error injecting OG tags for BD page:', err);
+    next();
+  }
+});
 
 app.get('/generate', (req: Request, res: Response, next): void => {
   const ua = req.get('user-agent') || '';
