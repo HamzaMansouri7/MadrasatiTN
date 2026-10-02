@@ -270,6 +270,15 @@ import { BdLibraryComponent } from '../bd/bd-library';
                   <span>{{ store.isWatched(ex.id, 'exercise') ? 'Sauvegardé' : 'Favoris' }}</span>
                 </button>
 
+                <!-- Copier Post -->
+                <button
+                  (click)="copyExercisePost(ex)"
+                  class="col-span-2 w-full justify-center bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF] px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer"
+                  [title]="lang.tr('Copier comme publication sociale', 'نسخ كمنشور لتسهيل المشاركة')">
+                  <span class="material-icons text-[12px]">post_add</span>
+                  <span>{{ copiedPostId() === ex.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور') }}</span>
+                </button>
+
                 <!-- Metrics & Utilities Row -->
                 <div class="col-span-2 flex items-center justify-between pt-1.5 border-t border-[#E7DFCF]/50 mt-0.5">
                   <button
@@ -516,6 +525,15 @@ import { BdLibraryComponent } from '../bd/bd-library';
                     {{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}
                   </span>
                   <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
+                </button>
+
+                <!-- Copier Post -->
+                <button
+                  (click)="copyCoursePost(c)"
+                  class="col-span-2 w-full justify-center bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF] px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer"
+                  [title]="lang.tr('Copier comme publication sociale', 'نسخ كمنشور لتسهيل المشاركة')">
+                  <span class="material-icons text-xs">post_add</span>
+                  <span>{{ copiedPostId() === c.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور') }}</span>
                 </button>
               </div>
 
@@ -1692,6 +1710,44 @@ export class PublicDiscoveryComponent {
     if (typeof navigator !== 'undefined') {
       navigator.clipboard.writeText(`${window.location.origin}?doc=${ex.id}`);
       alert(this.lang.tr('🔗 Lien copié dans le presse-papier !', '🔗 تم نسخ رابط الوثيقة بنجاح!'));
+    }
+  }
+
+  readonly copiedPostId = signal<string | null>(null);
+
+  /** Copy a ready-to-paste social post for an exercise: title, level, subject, excerpt, link. */
+  async copyExercisePost(ex: ExerciseItem) {
+    if (typeof navigator === 'undefined') return;
+    const url = `${window.location.origin}/?doc=${ex.id}`;
+    const meta = [ex.grade, ex.subject, ex.trimester, ex.docType].filter(Boolean).join(' · ');
+    const excerpt = (ex.promptText || '').slice(0, 140);
+    const post = this.lang.isArabic()
+      ? `📝 ${ex.title}\n🎓 ${meta}\n«${excerpt}…»\n\n${ex.hasCorrection === false ? '' : 'مع الإصلاح المفصل — '}مجانًا على مكتبة مدرستي:\n${url}`
+      : `📝 ${ex.title}\n🎓 ${meta}\n« ${excerpt}… »\n\n${ex.hasCorrection === false ? '' : 'Corrigé détaillé inclus — '}gratuit sur la bibliothèque Madrasati :\n${url}`;
+    try {
+      await navigator.clipboard.writeText(post);
+      this.copiedPostId.set(ex.id);
+      setTimeout(() => this.copiedPostId.set(null), 2500);
+    } catch (err) {
+      console.error('Clipboard error:', err);
+    }
+  }
+
+  /** Copy a ready-to-paste social post for a course: title, level, subject, summary, link. */
+  async copyCoursePost(c: Course) {
+    if (typeof navigator === 'undefined') return;
+    const url = `${window.location.origin}/?doc=${c.id}`;
+    const meta = [c.grade, c.subject, c.trimester, c.docType].filter(Boolean).join(' · ');
+    const excerpt = (c.summary || c.title || '').slice(0, 140);
+    const post = this.lang.isArabic()
+      ? `📚 ${c.title}\n🎓 ${meta}\n«${excerpt}…»\n\n${c.hasCorrection === false ? '' : 'مع الإصلاح — '}مجانًا على مكتبة مدرستي:\n${url}`
+      : `📚 ${c.title}\n🎓 ${meta}\n« ${excerpt}… »\n\n${c.hasCorrection === false ? '' : 'Corrigé inclus — '}gratuit sur la bibliothèque Madrasati :\n${url}`;
+    try {
+      await navigator.clipboard.writeText(post);
+      this.copiedPostId.set(c.id);
+      setTimeout(() => this.copiedPostId.set(null), 2500);
+    } catch (err) {
+      console.error('Clipboard error:', err);
     }
   }
 

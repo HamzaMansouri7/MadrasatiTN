@@ -8,6 +8,10 @@ import express, { Request, Response, NextFunction } from 'express';
 import { join } from 'node:path';
 import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
+import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
+import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
+import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
+import { SEED_BANK_EXERCISES, SEED_COURSES } from './app/core/data/seed-docs.data';
 import { existsSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 
@@ -1537,6 +1541,80 @@ app.get('/discovery', (req: Request, res: Response, next): void => {
     res.send(html);
   } catch (err) {
     console.error('Error injecting OG tags for BD page:', err);
+    next();
+  }
+});
+
+// OG tags for shared document/course links (/?doc=ID) — crawler-only, generic fallback when unknown.
+app.get('/', (req: Request, res: Response, next): void => {
+  const ua = req.get('user-agent') || '';
+  const docId = String((req.query['doc'] as string) || '');
+  if (!CRAWLER_UA_RE.test(ua) || !docId || !BD_ID_RE.test(docId)) {
+    next();
+    return;
+  }
+
+  try {
+    const allDocs: {
+      id: string;
+      title: string;
+      grade?: string;
+      subject?: string;
+      trimester?: string;
+      docType?: string;
+      promptText?: string;
+      summary?: string;
+      photoUrl?: string;
+      imageUrls?: string[];
+      hasCorrection?: boolean;
+    }[] = [
+      ...FIRST_GRADE_EXERCISES,
+      ...FIRST_GRADE_COURSES,
+      ...LIBRARY_EXERCISES,
+      ...CNP_PRIMARY_COURSES,
+      ...SEED_BANK_EXERCISES,
+      ...SEED_COURSES,
+    ];
+
+    const doc = allDocs.find((d) => d.id === docId);
+    const indexPath = join(browserDistFolder, 'index.html');
+    let html = readFileSync(indexPath, 'utf8');
+
+    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
+    const host = req.get('x-forwarded-host') || req.get('host') || '';
+    const origin = `${proto}://${host}`;
+
+    const title = escapeHtmlAttr(`${doc?.title || 'Document officiel'} — Madrasati TN`);
+    const descParts = doc ? [doc.grade, doc.subject, doc.trimester, doc.docType].filter(Boolean).join(' · ') : '';
+    const textSnippet = doc?.promptText ? ` ${doc.promptText.slice(0, 120)}…` : doc?.summary ? ` ${doc.summary.slice(0, 120)}…` : '';
+    const description = escapeHtmlAttr(
+      descParts
+        ? `${descParts}.${textSnippet} ${doc?.hasCorrection ? 'Corrigé inclus — ' : ''}Madrasati TN.`
+        : 'Document pédagogique officiel avec corrigé pour l\'école primaire tunisienne — Madrasati TN.',
+    );
+    const docImg = doc?.photoUrl || (doc?.imageUrls && doc.imageUrls[0]);
+    const imageUrl = escapeHtmlAttr(docImg ? `${origin}${docImg.startsWith('/') ? '' : '/'}${docImg}` : `${origin}/favicon.svg`);
+    const pageUrl = escapeHtmlAttr(`${origin}/?doc=${docId}`);
+
+    html = html.replace(/\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi, '');
+
+    const ogBlock = `
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+    <meta property="og:image" content="${imageUrl}" />
+    <meta property="og:url" content="${pageUrl}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${title}" />
+    <meta name="twitter:description" content="${description}" />
+    <meta name="twitter:image" content="${imageUrl}" />`;
+
+    html = html.replace('</head>', `${ogBlock}\n  </head>`);
+
+    res.set('Content-Type', 'text/html; charset=utf-8');
+    res.send(html);
+  } catch (err) {
+    console.error('Error injecting OG tags for shared document:', err);
     next();
   }
 });
