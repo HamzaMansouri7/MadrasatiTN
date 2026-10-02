@@ -145,7 +145,32 @@ export class BdLibraryComponent {
   }
 
   printCurrent() {
-    if (this.selectedItem()) window.print();
+    const item = this.selectedItem();
+    if (!item || typeof window === 'undefined') return;
+    // Dedicated print window: exactly one A4 sheet, image scaled to fit, source line under it.
+    const w = window.open('', '_blank', 'width=900,height=700');
+    if (!w) return;
+    const ped = item.pedagogy;
+    const chips = (arr: string[]) => arr.map((k) => `<span>${k}</span>`).join('');
+    const pedagogyHtml = ped?.keywords?.length
+      ? `<div class="ped"><strong>${this.lang.t('bdKeywords')}</strong> ${chips(ped.keywords)}` +
+        (ped.structures?.length ? `<br/><strong>${this.lang.t('bdStructures')}</strong> ${chips(ped.structures)}` : '') +
+        `</div>`
+      : '';
+    w.document.write(`<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><title>${item.title}</title>
+<style>
+  @page { size: A4 portrait; margin: 8mm; }
+  body { margin: 0; font-family: 'Noto Sans Arabic', sans-serif; color: #14251D; }
+  img { display: block; width: 100%; max-height: 230mm; object-fit: contain; }
+  .ped { margin-top: 3mm; font-size: 10pt; line-height: 1.9; }
+  .ped span { border: 0.3mm solid #E7DFCF; border-radius: 3mm; padding: 0.5mm 2.5mm; margin: 0 1mm; display: inline-block; }
+  .src { margin-top: 2mm; text-align: center; font-size: 8pt; color: #5B6B60; }
+</style></head><body>
+  <img src="${window.location.origin}/${item.relPath}" onload="setTimeout(function(){window.print();window.close();},150)" />
+  ${pedagogyHtml}
+  <p class="src">${item.title} — Madrasati TN · ${item.ref}</p>
+</body></html>`);
+    w.document.close();
   }
 
   shareUrl(): string {

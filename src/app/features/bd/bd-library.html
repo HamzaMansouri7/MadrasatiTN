@@ -178,14 +178,5 @@
       </div>
     </div>
 
-    <!-- Print-only A4 output (whitelisted by the global @media print engine) -->
-    <div id="image-doc-printable" class="hidden">
-      <div class="print-page">
-        <img [src]="item.relPath" [alt]="item.title" style="width:100%; display:block;" />
-        <p class="print-watermark" style="text-align:center; font-size:9pt; margin-top:4mm;">
-          {{ item.title }} — Madrasati TN · {{ item.ref }}
-        </p>
-      </div>
-    </div>
   }
 </div>
