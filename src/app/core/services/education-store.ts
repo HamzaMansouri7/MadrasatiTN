@@ -365,62 +365,8 @@ export class EducationStore {
     },
   ]);
 
-  readonly teachers = signal<TeacherProfile[]>([
-    {
-      id: 't-1',
-      name: 'Enseignant Certifié',
-      title: 'Enseignante Principale (4ème & 5ème Année)',
-      school: 'École Primaire Habib Bourguiba, Ariana',
-      avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
-      coursesCount: 24,
-      exercisesCount: 340,
-      studentsCount: 620,
-      totalUploads: 148,
-      downloadableExercisesCount: 310,
-      rating: 4.9,
-      reviewsCount: 128,
-      verifiedBadge: true,
-      subjects: ['Mathématiques', 'Éveil Scientifique'],
-      bio: 'Enseignante passionnée depuis 12 ans. Spécialisée dans la pédagogie active des mathématiques et l’apprentissage logique pour le primaire tunisien.',
-      starRatingBreakdown: { 5: 110, 4: 14, 3: 3, 2: 1, 1: 0 },
-    },
-    {
-      id: 't-2',
-      name: 'Enseignant Certifié (Français)',
-      title: 'Enseignant de Français & Anglais (6ème Concours)',
-      school: 'École Primaire Tunisienne',
-      avatarUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80',
-      coursesCount: 18,
-      exercisesCount: 215,
-      studentsCount: 480,
-      totalUploads: 92,
-      downloadableExercisesCount: 195,
-      rating: 4.8,
-      reviewsCount: 94,
-      verifiedBadge: true,
-      subjects: ['Français', 'Anglais'],
-      bio: 'Formateur certifié en langue française. Auteur de fiches de lecture et de préparation au Concours de 6ème.',
-      starRatingBreakdown: { 5: 78, 4: 12, 3: 3, 2: 1, 1: 0 },
-    },
-    {
-      id: 't-3',
-      name: 'Enseignante Certifiée (Arabe)',
-      title: 'Enseignante de Langue Arabe (5ème & 6ème)',
-      school: 'École Primaire Tunisienne',
-      avatarUrl: 'https://images.unsplash.com/photo-1580894732413-802c6769998b?w=150&auto=format&fit=crop&q=80',
-      coursesCount: 31,
-      exercisesCount: 410,
-      studentsCount: 890,
-      totalUploads: 210,
-      downloadableExercisesCount: 380,
-      rating: 5.0,
-      reviewsCount: 210,
-      verifiedBadge: true,
-      subjects: ['اللغة العربية', 'Éducation Islamique'],
-      bio: 'أستاذة تعليم ابتدائي. متخصصة في قواعد اللغة العربية والإنتاج الكتابي للمرحلة الابتدائية.',
-      starRatingBreakdown: { 5: 198, 4: 10, 3: 2, 2: 0, 1: 0 },
-    },
-  ]);
+  // Real teachers only — filled from Firestore `teachers` collection (see loadTeachers).
+  readonly teachers = signal<TeacherProfile[]>([]);
 
   readonly students = signal<StudentProfile[]>([
     {

@@ -30,78 +30,6 @@ import { BdLibraryComponent } from '../bd/bd-library';
             </p>
           </div>
 
-          <!-- FEATURE 1: AI Auto-Tagger Drag-and-Drop Bulk Upload Bar -->
-          <div class="bg-white/[0.06] rounded-2xl p-4 border border-white/10 space-y-3">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-2.5">
-              <div class="flex items-center gap-2 text-[#F2C14E] font-semibold text-xs">
-                <span class="material-icons text-base">auto_awesome</span>
-                <span>{{ lang.tr('Classement automatique par IA', 'التصنيف التلقائي بالذكاء الاصطناعي') }}</span>
-              </div>
-              <span class="text-[11px] text-[#9DBBA8]">
-                {{ lang.tr("Déposez une photo ou un PDF : le titre, la matière et le niveau sont détectés.", 'أرفق صورة أو ملف PDF: يُكتشف العنوان والمادة والمستوى تلقائياً.') }}
-              </span>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-center gap-3">
-              <div
-                role="button"
-                tabindex="0"
-                (click)="fileInput.click()"
-                (keydown.enter)="fileInput.click()"
-                (keydown.space)="fileInput.click()"
-                (dragover)="onDragOver($event)"
-                (drop)="onFileDrop($event)"
-                class="w-full bg-white/5 hover:bg-white/10 border-2 border-dashed border-white/30 hover:border-[#F2C14E] rounded-xl p-3 text-center transition-colors cursor-pointer">
-                <input
-                  type="file"
-                  #fileInput
-                  (change)="handleFileUpload($event)"
-                  accept=".pdf,image/*"
-                  class="hidden" />
-                <p class="text-xs font-semibold text-white flex items-center justify-center gap-1.5">
-                  <span class="material-icons text-sm text-[#F2C14E]">folder_open</span>
-                  <span>{{ uploadedFileName() ? uploadedFileName() : lang.tr('Cliquer ou déposer ici vos devoirs ou photos de cahiers', 'اضغط هنا أو اسحب ملفات الفروض وصور الكراسات') }}</span>
-                </p>
-                <p class="text-[10px] text-[#9DBBA8]">
-                  {{ lang.tr('Supporte PDF et photos de cahiers (sauvegardé sur serveur)', 'يدعم ملفات PDF وصور الكراسات (حفظ مباشر على السيرفر)') }}
-                </p>
-              </div>
-
-              <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto">
-                <button
-                  [disabled]="isAutoTagging()"
-                  (click)="fileInput.click()"
-                  class="w-full sm:w-auto bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold text-xs px-4 py-3 rounded-xl transition-opacity cursor-pointer flex items-center justify-center gap-1.5 shadow-sm">
-                  @if (isAutoTagging()) {
-                    <span class="material-icons animate-spin text-sm">sync</span>
-                    <span>{{ lang.tr('Upload & Analyse...', 'جاري الرفع والتحليل...') }}</span>
-                  } @else {
-                    <span class="material-icons text-sm">cloud_upload</span>
-                    <span>{{ lang.tr('Sélectionner Fichier', 'اختيار ملف للرفع') }}</span>
-                  }
-                </button>
-              </div>
-            </div>
-
-            @if (autoTagResult(); as tag) {
-              <div class="bg-white/[0.06] p-3 rounded-xl border border-white/10 text-xs space-y-1.5">
-                <div class="flex items-center justify-between text-[#F2C14E] font-semibold">
-                  <span class="flex items-center gap-1">
-                    <span class="material-icons text-sm">check_circle</span>
-                    {{ lang.tr('Étiquetage IA Gemini Réussi !', 'تم التصنيف الآلي بنجاح!') }}
-                  </span>
-                  <span class="bg-[#F2C14E]/20 px-2 py-0.5 rounded text-[10px]">{{ tag.docType }}</span>
-                </div>
-                <p class="text-white font-semibold">{{ tag.suggestedTitle }}</p>
-                <div class="flex flex-wrap gap-2 text-[10px] text-[#9DBBA8]">
-                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.grade }}</span>
-                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.subject }}</span>
-                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.trimester }}</span>
-                  <span class="bg-white/10 px-2 py-0.5 rounded">{{ tag.hasCorrection ? lang.tr('Corrigé Inclus', 'مصحوب بالإصلاح') : lang.tr('Sans Corrigé', 'بدون إصلاح') }}</span>
-                </div>
-              </div>
-            }
-          </div>
         </div>
       </div>
 
@@ -270,12 +198,26 @@ import { BdLibraryComponent } from '../bd/bd-library';
                   "{{ ex.promptText }}"
                 </p>
 
-                <!-- Badges: Teacher Verified & Watermark Notice -->
+                <!-- Author attribution (clickable when the teacher has a public card) -->
                 <div class="flex items-center justify-between text-[11px] pt-1">
-                  <span class="flex items-center gap-1 text-[#1B4332] font-semibold">
-                    <span class="material-icons text-sm">verified</span>
-                    {{ lang.tr('Corrigé Certifié Enseignant', 'إصلاح مؤكد ومعتمد') }}
-                  </span>
+                  @if (ex.teacherName && findAuthor(ex.teacherName, ex.teacherId); as author) {
+                    <button
+                      (click)="selectedTeacherModal.set(author)"
+                      class="flex items-center gap-1 text-[#1B4332] font-semibold hover:underline underline-offset-2 cursor-pointer">
+                      <span class="material-icons text-sm">verified</span>
+                      {{ lang.tr('Par', 'من إعداد') }} {{ ex.teacherName }}
+                    </button>
+                  } @else if (ex.teacherName) {
+                    <span class="flex items-center gap-1 text-[#5B6B60] font-medium">
+                      <span class="material-icons text-sm text-[#1B4332]">verified</span>
+                      {{ lang.tr('Par', 'من إعداد') }} {{ ex.teacherName }}
+                    </span>
+                  } @else {
+                    <span class="flex items-center gap-1 text-[#1B4332] font-semibold">
+                      <span class="material-icons text-sm">verified</span>
+                      {{ lang.tr('Corrigé Certifié Enseignant', 'إصلاح مؤكد ومعتمد') }}
+                    </span>
+                  }
 
                   <span class="text-[#6B7A70] italic">
                     {{ ex.schoolYear || '2025-2026' }}
@@ -499,6 +441,20 @@ import { BdLibraryComponent } from '../bd/bd-library';
 
                 <h3 class="font-display font-semibold text-[#14251D] text-base leading-snug">{{ c.title }}</h3>
                 <p class="text-xs text-[#5B6B60] leading-relaxed">{{ c.summary }}</p>
+
+                @if (findAuthor(c.teacherName, c.authorId); as author) {
+                  <button
+                    (click)="selectedTeacherModal.set(author)"
+                    class="flex items-center gap-1 text-[11px] text-[#1B4332] font-semibold hover:underline underline-offset-2 cursor-pointer">
+                    <span class="material-icons text-sm">verified</span>
+                    {{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}
+                  </button>
+                } @else {
+                  <span class="flex items-center gap-1 text-[11px] text-[#5B6B60] font-medium">
+                    <span class="material-icons text-sm">person</span>
+                    {{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}
+                  </span>
+                }
               </div>
 
               <!-- action bar -->
@@ -755,6 +711,14 @@ import { BdLibraryComponent } from '../bd/bd-library';
 
       <!-- FEATURE 3: Teacher Credibility Profiles Directory -->
       @if (activeSection() === 'teachers') {
+        @if (store.teachers().length === 0) {
+          <div class="bg-white rounded-2xl border border-[#E7DFCF] p-10 text-center space-y-2">
+            <span class="material-icons text-3xl text-[#9DBBA8]" aria-hidden="true">school</span>
+            <p class="text-sm text-[#5B6B60]">
+              {{ lang.tr('Les enseignants inscrits apparaîtront ici après leur prochaine connexion.', 'سيظهر المعلمون المسجّلون هنا بعد تسجيل دخولهم القادم.') }}
+            </p>
+          </div>
+        }
         <div class="grid md:grid-cols-3 gap-6">
           @for (t of store.teachers(); track t.id) {
             <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-xs space-y-4 text-center hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow">
@@ -1105,7 +1069,15 @@ import { BdLibraryComponent } from '../bd/bd-library';
           }
 
           <div class="flex justify-between items-center pt-2 border-t border-[#E7DFCF]">
-            <span class="text-xs text-[#5B6B60]">{{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}</span>
+            @if (findAuthor(c.teacherName, c.authorId); as author) {
+              <button
+                (click)="viewCourseModal.set(null); selectedTeacherModal.set(author)"
+                class="text-xs text-[#1B4332] font-semibold hover:underline underline-offset-2 cursor-pointer">
+                {{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}
+              </button>
+            } @else {
+              <span class="text-xs text-[#5B6B60]">{{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}</span>
+            }
             <button (click)="viewCourseModal.set(null)" class="bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2 rounded-xl cursor-pointer transition-colors">
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
@@ -1227,9 +1199,18 @@ import { BdLibraryComponent } from '../bd/bd-library';
               "{{ t.bio }}"
             </p>
 
-            <button (click)="selectedTeacherModal.set(null)" class="w-full bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
-              {{ lang.tr('Fermer le profil', 'إغلاق الملف') }}
-            </button>
+            <div class="flex gap-2">
+              <button
+                (click)="store.toggleWatchlist(t.id, 'teacher')"
+                [class]="store.isWatched(t.id, 'teacher') ? 'bg-[#F2ECDE] text-[#8A5A00] border border-[#8A5A00]/40' : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1]'"
+                class="flex-1 font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors flex items-center justify-center gap-1.5">
+                <span class="material-icons text-sm">{{ store.isWatched(t.id, 'teacher') ? 'bookmark' : 'bookmark_border' }}</span>
+                {{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre cet enseignant', 'متابعة هذا المعلم') }}
+              </button>
+              <button (click)="selectedTeacherModal.set(null)" class="flex-1 bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
+                {{ lang.tr('Fermer le profil', 'إغلاق الملف') }}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1423,6 +1404,17 @@ export class PublicDiscoveryComponent {
 
   readonly activeShelf = computed(() => this.sections.find((s) => s.key === this.activeSection()) ?? null);
 
+  /** Resolve a resource's author to a real teacher card (by id first, then exact name). */
+  findAuthor(teacherName?: string, teacherId?: string): TeacherProfile | null {
+    if (!teacherName && !teacherId) return null;
+    const list = this.store.teachers();
+    return (
+      (teacherId ? list.find((t) => t.id === teacherId) : undefined) ??
+      (teacherName ? list.find((t) => t.name === teacherName) : undefined) ??
+      null
+    );
+  }
+
   sectionCount(key: string): number | null {
     switch (key) {
       case 'exercises': return this.store.filteredExercisesBank().length;
@@ -1441,16 +1433,6 @@ export class PublicDiscoveryComponent {
   readonly imageDocModal = signal<Course | null>(null);
   readonly selectedTeacherModal = signal<TeacherProfile | null>(null);
   readonly watermarkPreviewModal = signal<ExerciseItem | null>(null);
-
-  readonly isAutoTagging = signal<boolean>(false);
-  readonly autoTagResult = signal<{
-    suggestedTitle: string;
-    grade: string;
-    subject: string;
-    trimester: string;
-    docType: string;
-    hasCorrection: boolean;
-  } | null>(null);
 
   // Comment Q&A state
   newCommentText = '';
@@ -1612,8 +1594,6 @@ export class PublicDiscoveryComponent {
     alert(msg);
   }
 
-  readonly uploadedFileName = signal<string | null>(null);
-
   openWatermarkPreviewModal(ex: ExerciseItem) {
     this.watermarkPreviewModal.set(ex);
   }
@@ -1715,115 +1695,4 @@ export class PublicDiscoveryComponent {
     }
   }
 
-  onDragOver(e: DragEvent) {
-    e.preventDefault();
-  }
-
-  onFileDrop(e: DragEvent) {
-    e.preventDefault();
-    if (e.dataTransfer?.files && e.dataTransfer.files.length > 0) {
-      this.uploadAndProcessFile(e.dataTransfer.files[0]);
-    } else {
-      this.simulateBulkUpload();
-    }
-  }
-
-  async handleFileUpload(event: Event) {
-    const input = event.target as HTMLInputElement;
-    if (!input.files || input.files.length === 0) return;
-    const file = input.files[0];
-    await this.uploadAndProcessFile(file);
-  }
-
-  async uploadAndProcessFile(file: File) {
-    if (!this.firebase.userProfile() && !this.firebase.currentUser()) {
-      alert(this.lang.tr(
-        '⚠️ Authentification requise : Veuillez vous connecter avec un compte Enseignant pour téléverser et certifier des documents.',
-        '⚠️ يرجى تسجيل الدخول بحساب المعلم لرفع الوثائق وتوثيقها في المكتبة.'
-      ));
-      this.store.openLoginModal();
-      return;
-    }
-
-    this.isAutoTagging.set(true);
-    this.uploadedFileName.set(file.name);
-    try {
-      const reader = new FileReader();
-      const base64Promise = new Promise<string>((resolve) => {
-        reader.onload = () => resolve(reader.result as string);
-        reader.readAsDataURL(file);
-      });
-      const base64Data = await base64Promise;
-
-      const authHeaders = await this.firebase.getAuthHeaders();
-      const upRes = await fetch('/api/upload', {
-        method: 'POST',
-        headers: authHeaders,
-        body: JSON.stringify({
-          filename: file.name,
-          base64Data,
-          contentType: file.type,
-        }),
-      });
-      const upData = await upRes.json();
-      const uploadedUrl = upData?.url || '';
-
-      const teacherName =
-        this.firebase.userProfile()?.displayName ||
-        this.firebase.currentUser()?.displayName ||
-        'Enseignant Certifié';
-
-      const result = await this.store.autoTagAndAddDocument(
-        file.name,
-        `Document scolaire officiel uploadé: ${file.name}`,
-        teacherName,
-        base64Data,
-        file.type
-      );
-
-      if (result) {
-        if (uploadedUrl) {
-          result.photoUrl = uploadedUrl;
-        }
-        this.autoTagResult.set({
-          suggestedTitle: result.title,
-          grade: result.grade,
-          subject: result.subject,
-          trimester: result.trimester || 'Trimestre 1',
-          docType: result.docType || 'Série d\'Exercices',
-          hasCorrection: result.hasCorrection ?? true,
-        });
-      }
-    } catch (err) {
-      console.error('File upload error:', err);
-      this.simulateBulkUpload();
-    } finally {
-      this.isAutoTagging.set(false);
-    }
-  }
-
-  async simulateBulkUpload() {
-    this.isAutoTagging.set(true);
-    try {
-      const result = await this.store.autoTagAndAddDocument(
-        'Devoir_Synthese_N1_Maths_4eme_T1.pdf',
-        'École Primaire Habib Bourguiba - Devoir de Synthèse N°1 - Mathématiques 4ème Année - Trimestre 1. Exercice 1: Multiplication. Exercice 2: Géométrie. Corrigé inclus.'
-      );
-
-      if (result) {
-        this.autoTagResult.set({
-          suggestedTitle: result.title,
-          grade: result.grade,
-          subject: result.subject,
-          trimester: result.trimester || 'Trimestre 1',
-          docType: result.docType || 'Devoir de Synthèse',
-          hasCorrection: result.hasCorrection ?? true,
-        });
-      }
-    } catch (err) {
-      console.error(err);
-    } finally {
-      this.isAutoTagging.set(false);
-    }
-  }
 }

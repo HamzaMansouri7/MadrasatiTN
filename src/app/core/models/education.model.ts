@@ -65,6 +65,8 @@ export interface ExerciseItem {
   theme?: string;
   watermarkText?: string;
   sheetId?: string;        // links a community card to a shared worksheet (/generate?sheet=ID)
+  teacherId?: string;      // author attribution → public `teachers` card
+  teacherName?: string;
 }
 
 // Summary row from the published-worksheets index (GET /api/docs).

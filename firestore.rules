@@ -27,6 +27,12 @@ service cloud.firestore {
       allow create, update: if isOwner(userId);
     }
 
+    // Public teacher directory cards (mirrored from users by the app)
+    match /teachers/{userId} {
+      allow read: if true;
+      allow create, update: if isOwner(userId);
+    }
+
     // Classes Collection
     match /classes/{classId} {
       allow read: if true;

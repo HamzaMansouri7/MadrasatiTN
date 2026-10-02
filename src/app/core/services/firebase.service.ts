@@ -152,6 +152,7 @@ export class FirebaseService {
             };
             this.userProfile.set(profile);
             this.saveSession(profile);
+            void this.syncTeacherCard(profile); // backfill/refresh the public directory card
             this.isAuthLoading.set(false);
             return;
           }
@@ -458,6 +459,7 @@ export class FirebaseService {
 
         this.userProfile.set(profile);
         this.saveSession(profile);
+        void this.syncTeacherCard(profile);
         return profile;
       } catch (err: unknown) {
         console.error('Firebase createUserWithEmailAndPassword error:', err);
@@ -549,6 +551,7 @@ export class FirebaseService {
       } catch (err) {
         console.warn('Firestore profile update offline/fallback:', err);
       }
+      void this.syncTeacherCard(updated);
     }
     return updated;
   }
@@ -601,6 +604,33 @@ export class FirebaseService {
       });
     } catch (err) {
       console.warn('Could not write notification to Firestore (retained in local state):', err);
+    }
+  }
+
+  /**
+   * Mirror a teacher's PUBLIC card into the `teachers` collection (world-readable,
+   * see firestore.rules). Called on login/signup/profile-update so the public
+   * directory always reflects real registered teachers — no emails, no phone.
+   */
+  async syncTeacherCard(profile: UserProfile): Promise<void> {
+    if (profile.role !== 'teacher' || !profile.uid) return;
+    try {
+      await setDoc(doc(this.db, 'teachers', profile.uid), {
+        name: profile.displayName || 'Enseignant(e)',
+        title: profile.title || profile.primarySubject || 'Enseignant(e) du primaire',
+        school: profile.school || 'École Primaire Tunisienne',
+        avatarUrl: profile.photoURL || '',
+        subjects: profile.primarySubject ? [profile.primarySubject] : [],
+        verifiedBadge: true,
+        coursesCount: 0,
+        exercisesCount: 0,
+        studentsCount: 0,
+        rating: 0,
+        reviewsCount: 0,
+        updatedAt: new Date().toISOString(),
+      }, { merge: true });
+    } catch (err) {
+      console.warn('Could not sync public teacher card:', err);
     }
   }
 
