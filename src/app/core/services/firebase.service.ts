@@ -666,6 +666,87 @@ export class FirebaseService {
     }
   }
 
+  /** Persist a course doc to `courses` collection. */
+  async saveCourse(course: Record<string, unknown>): Promise<void> {
+    try {
+      const id = course['id'] as string;
+      await setDoc(doc(this.db, 'courses', id), { ...course, updatedAt: new Date().toISOString() }, { merge: true });
+    } catch (err) {
+      console.warn('Could not write course to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Generic read-back for persisted user content (courses, exercises, …). */
+  async fetchUserContent(collectionName: string): Promise<Record<string, unknown>[]> {
+    try {
+      const snap = await getDocs(collection(this.db, collectionName));
+      return snap.docs.map((d) => ({ ...d.data(), id: d.id } as Record<string, unknown>));
+    } catch (err) {
+      console.warn(`Could not load ${collectionName} from Firestore:`, err);
+      return [];
+    }
+  }
+
+  /** Persist a homework doc to `homeworks` collection. */
+  async saveHomework(hw: Record<string, unknown>): Promise<void> {
+    try {
+      const id = hw['id'] as string;
+      await setDoc(doc(this.db, 'homeworks', id), { ...hw, updatedAt: new Date().toISOString() }, { merge: true });
+    } catch (err) {
+      console.warn('Could not write homework to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Persist an exercise to `exercises` collection. */
+  async saveExercise(ex: Record<string, unknown>): Promise<void> {
+    try {
+      const id = ex['id'] as string;
+      await setDoc(doc(this.db, 'exercises', id), { ...ex, updatedAt: new Date().toISOString() }, { merge: true });
+    } catch (err) {
+      console.warn('Could not write exercise to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Persist an announcement to `announcements` collection. */
+  async saveAnnouncement(ann: Record<string, unknown>): Promise<void> {
+    try {
+      const id = ann['id'] as string;
+      await setDoc(doc(this.db, 'announcements', id), { ...ann, updatedAt: new Date().toISOString() }, { merge: true });
+    } catch (err) {
+      console.warn('Could not write announcement to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Persist a Q&A thread (and its answers array) to `question_threads` collection. */
+  async saveQuestionThread(thread: Record<string, unknown>): Promise<void> {
+    try {
+      const id = thread['id'] as string;
+      const sanitized = JSON.parse(JSON.stringify(thread));
+      await setDoc(doc(this.db, 'question_threads', id), { ...sanitized, updatedAt: new Date().toISOString() }, { merge: true });
+    } catch (err) {
+      console.warn('Could not write question thread to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Persist a submission to `submissions` collection. */
+  async saveSubmission(sub: Record<string, unknown>): Promise<void> {
+    try {
+      const id = sub['id'] as string;
+      await setDoc(doc(this.db, 'submissions', id), { ...sub, updatedAt: new Date().toISOString() }, { merge: true });
+    } catch (err) {
+      console.warn('Could not write submission to Firestore (retained in local state):', err);
+    }
+  }
+
+  /** Update a submission field (grade/feedback/status). */
+  async updateSubmission(id: string, updates: Record<string, unknown>): Promise<void> {
+    try {
+      await updateDoc(doc(this.db, 'submissions', id), updates);
+    } catch (err) {
+      console.warn('Could not update submission in Firestore:', err);
+    }
+  }
+
   async logout(): Promise<void> {
     try {
       await signOut(this.auth);

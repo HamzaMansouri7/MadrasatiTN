@@ -24,7 +24,7 @@ export class LanguageService {
       try {
         const saved = localStorage.getItem('madrasati_lang');
         if (saved === 'fr' || saved === 'ar') return saved;
-      } catch {}
+      } catch { /* SSR: localStorage unavailable */ }
     }
     return 'ar';
   }
@@ -36,7 +36,7 @@ export class LanguageService {
       document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
       try {
         localStorage.setItem('madrasati_lang', code);
-      } catch {}
+      } catch { /* SSR: localStorage unavailable */ }
     }
   }
 

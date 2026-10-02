@@ -1,4 +1,4 @@
-import { Injectable, computed, signal, inject } from '@angular/core';
+import { Injectable, computed, signal, inject, WritableSignal } from '@angular/core';
 import { Router } from '@angular/router';
 import { InteractionService } from './interaction.service';
 import { FirebaseService } from './firebase.service';
@@ -614,6 +614,7 @@ export class EducationStore {
 
     this.loadTeachers();
     this.loadBlogPosts();
+    this.loadPersistedContent();
   }
 
   /** Pull teacher directory from Firestore; keep seeded list as fallback if empty/unreachable. */
@@ -622,6 +623,41 @@ export class EducationStore {
     if (remote.length > 0) {
       this.teachers.set(remote);
     }
+  }
+
+  /**
+   * Read back user-authored content persisted by the save* write paths.
+   * Remote docs win over seeds on id collision and are prepended (newest first
+   * by updatedAt), so authored items survive a refresh.
+   */
+  private async loadPersistedContent(): Promise<void> {
+    const mergeInto = <T extends { id: string }>(
+      sig: WritableSignal<T[]>,
+      remote: Record<string, unknown>[],
+    ): void => {
+      if (remote.length === 0) return;
+      const sorted = [...remote].sort((a, b) =>
+        String(b['updatedAt'] || '').localeCompare(String(a['updatedAt'] || '')),
+      ) as unknown as T[];
+      const remoteIds = new Set(sorted.map((r) => r.id));
+      sig.update((local) => [...sorted, ...local.filter((l) => !remoteIds.has(l.id))]);
+    };
+
+    const [courses, exercises, announcements, homeworks, submissions, threads] = await Promise.all([
+      this.firebase.fetchUserContent('courses'),
+      this.firebase.fetchUserContent('exercises'),
+      this.firebase.fetchUserContent('announcements'),
+      this.firebase.fetchUserContent('homeworks'),
+      this.firebase.fetchUserContent('submissions'),
+      this.firebase.fetchUserContent('question_threads'),
+    ]);
+
+    mergeInto(this.courses, courses);
+    mergeInto(this.exercisesBank, exercises);
+    mergeInto(this.announcements, announcements);
+    mergeInto(this.homeworks, homeworks);
+    mergeInto(this.submissions, submissions);
+    mergeInto(this.questionThreads, threads);
   }
 
   clearUserSession() {
@@ -1092,6 +1128,7 @@ export class EducationStore {
     };
 
     this.announcements.update((list) => [newA, ...list]);
+    void this.firebase.saveAnnouncement(newA as unknown as Record<string, unknown>);
   }
 
   addCourse(courseData: Partial<Course>) {
@@ -1116,6 +1153,7 @@ export class EducationStore {
     };
 
     this.courses.update((list) => [newC, ...list]);
+    void this.firebase.saveCourse(newC as unknown as Record<string, unknown>);
   }
 
   addHomework(hwData: Partial<Homework>) {
@@ -1133,21 +1171,21 @@ export class EducationStore {
       status: 'pending',
     };
     this.homeworks.update((list) => [newH, ...list]);
+    void this.firebase.saveHomework(newH as unknown as Record<string, unknown>);
   }
 
   addExerciseToBank(ex: ExerciseItem) {
-    this.exercisesBank.update((list) => [
-      {
-        ...ex,
-        trimester: ex.trimester || 'Trimestre 1',
-        docType: ex.docType || 'Série d\'Exercices',
-        schoolYear: '2025-2026',
-        hasCorrection: true,
-        upvotesCount: 1,
-        watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
-      },
-      ...list,
-    ]);
+    const enriched = {
+      ...ex,
+      trimester: ex.trimester || 'Trimestre 1',
+      docType: ex.docType || "Série d'Exercices",
+      schoolYear: '2025-2026',
+      hasCorrection: true,
+      upvotesCount: 1,
+      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
+    };
+    this.exercisesBank.update((list) => [enriched, ...list]);
+    void this.firebase.saveExercise(enriched as unknown as Record<string, unknown>);
   }
 
   confirmAnnouncementRead(announcementId: string) {
@@ -1158,6 +1196,8 @@ export class EducationStore {
           : a
       )
     );
+    const updated = this.announcements().find((a) => a.id === announcementId);
+    if (updated) void this.firebase.saveAnnouncement(updated as unknown as Record<string, unknown>);
   }
 
   submitHomeworkAnswer(hwId: string, textAnswer: string, photoUrl?: string) {
@@ -1176,6 +1216,7 @@ export class EducationStore {
     };
 
     this.submissions.update((list) => [newSub, ...list]);
+    void this.firebase.saveSubmission(newSub as unknown as Record<string, unknown>);
   }
 
   gradeSubmission(submissionId: string, score: number, feedback: string) {
@@ -1186,6 +1227,7 @@ export class EducationStore {
           : s
       )
     );
+    void this.firebase.updateSubmission(submissionId, { score, feedback, status: 'graded' });
   }
 
   // ================= BLOG & PEDAGOGICAL ARTICLES =================
@@ -1448,6 +1490,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
       answers: [],
     };
     this.questionThreads.update((list) => [newThread, ...list]);
+    void this.firebase.saveQuestionThread(newThread as unknown as Record<string, unknown>);
   }
 
   addAnswerToQuestion(
@@ -1495,6 +1538,8 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
     this.questionThreads.update((list) =>
       list.map((t) => (t.id === threadId ? { ...t, answers: [...t.answers, newAns] } : t))
     );
+    const updated = this.questionThreads().find((t) => t.id === threadId);
+    if (updated) void this.firebase.saveQuestionThread(updated as unknown as Record<string, unknown>);
   }
 
   markAnswerAsSolved(threadId: string, answerId: string) {
@@ -1524,5 +1569,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
 
     // InteractionService.acceptAnswer is also idempotent (deduplicates by answerId)
     this.interactionService.acceptAnswer(threadId, answerId, targetTeacherId);
+    const updated = this.questionThreads().find((t) => t.id === threadId);
+    if (updated) void this.firebase.saveQuestionThread(updated as unknown as Record<string, unknown>);
   }
 }

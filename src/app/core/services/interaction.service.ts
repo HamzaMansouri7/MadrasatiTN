@@ -3,7 +3,6 @@ import {
   Interaction,
   InteractionType,
   TargetType,
-  ResourceInteractionSummary,
   UserReputationLedger,
 } from '../models/interaction.model';
 import { UserRole } from '../models/education.model';
@@ -226,7 +225,7 @@ export class InteractionService {
     type: InteractionType;
     targetType: TargetType;
     targetId: string;
-    payload?: any;
+    payload?: Record<string, unknown>;
   }): Interaction {
     const newEntry: Interaction = {
       id: `act-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,

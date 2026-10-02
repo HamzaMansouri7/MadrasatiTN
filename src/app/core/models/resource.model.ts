@@ -7,7 +7,7 @@ export interface EditorBlock {
   id: string;
   type: 'paragraph' | 'heading' | 'qcm' | 'true_false' | 'fill_blank' | 'match_arrows' | 'image' | 'callout';
   content: string;
-  data?: any;
+  data?: Record<string, unknown>;
 }
 
 export interface ResourceMeta {

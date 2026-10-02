@@ -10,11 +10,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (store.isAuthModalOpen()) {
-      <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#14251D]/60 backdrop-blur-xs animate-in fade-in duration-200">
-        <div class="bg-[#FBF8F1] rounded-2xl shadow-xl border border-[#E7DFCF] max-w-lg w-full overflow-hidden flex flex-col max-h-[92vh]">
+      <div class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-[#14251D]/60 backdrop-blur-xs animate-in fade-in duration-200">
+        <div class="bg-[#FBF8F1] rounded-2xl shadow-2xl border border-[#E7DFCF] max-w-2xl w-full overflow-hidden flex flex-col max-h-[96vh]">
           
           <!-- Header Banner -->
-          <div class="bg-[#14251D] p-6 text-[#FBF8F1] relative">
+          <div class="bg-[#14251D] p-4 sm:px-6 sm:py-4 text-[#FBF8F1] relative">
             <button
               (click)="store.closeAuthModal()"
               class="absolute top-4 right-4 text-[#B7C7BC] hover:text-[#FBF8F1] p-1.5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer"
@@ -35,7 +35,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
             </div>
 
             <!-- Mode Switcher Tabs -->
-            <div class="flex bg-[#1B4332]/40 p-1 rounded-xl mt-4 border border-[#1B4332]/50">
+            <div class="flex bg-[#1B4332]/40 p-1 rounded-xl mt-3 border border-[#1B4332]/50">
               <button
                 type="button"
                 (click)="store.authModalMode.set('login')"
@@ -54,7 +54,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
           </div>
 
           <!-- Body Content -->
-          <div class="p-6 overflow-y-auto space-y-5 bg-[#FBF8F1]">
+          <div class="p-4 sm:p-5 overflow-y-auto space-y-3.5 bg-[#FBF8F1]">
 
             <!-- Error Banner -->
             @if (errorMessage()) {
@@ -84,7 +84,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   <span class="block text-xs font-semibold text-[#14251D] mb-2">
                     {{ lang.t('authSignupAs') }} *
                   </span>
-                  <div class="grid grid-cols-3 gap-2">
+                  <div class="grid grid-cols-2 gap-2">
                     <button
                       type="button"
                       (click)="selectedCompletionRole.set('teacher')"
@@ -100,14 +100,6 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                       class="p-2 rounded-xl border text-center cursor-pointer flex flex-col items-center bg-white text-xs">
                       <span class="material-icons text-base mb-0.5 text-[#8A5A00]">family_restroom</span>
                       {{ lang.tr('Parent', 'ولي أمر') }}
-                    </button>
-                    <button
-                      type="button"
-                      (click)="selectedCompletionRole.set('student')"
-                      [class]="selectedCompletionRole() === 'student' ? 'border-[#BF5B34] bg-[#F2ECDE] text-[#BF5B34] ring-2 ring-[#BF5B34]' : 'border-[#CBD9E2] text-[#5B6B60]'"
-                      class="p-2 rounded-xl border text-center cursor-pointer flex flex-col items-center bg-white text-xs">
-                      <span class="material-icons text-base mb-0.5 text-[#BF5B34]">auto_stories</span>
-                      {{ lang.tr('Élève', 'تلميذ(ة)') }}
                     </button>
                   </div>
                 </div>
@@ -218,7 +210,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   <span class="block text-xs font-semibold text-[#14251D] mb-2">
                     {{ lang.t('authSignupAs') }} *
                   </span>
-                  <div class="grid grid-cols-3 gap-2">
+                  <div class="grid grid-cols-2 gap-2">
                     <button
                       type="button"
                       (click)="store.authModalRole.set('teacher')"
@@ -236,79 +228,77 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                       <span class="material-icons text-xl mb-1 text-[#8A5A00]">family_restroom</span>
                       <span class="text-xs font-semibold">{{ lang.tr('Parent', 'ولي أمر') }}</span>
                     </button>
-
-                    <button
-                      type="button"
-                      (click)="store.authModalRole.set('student')"
-                      [class]="store.authModalRole() === 'student' ? 'border-[#BF5B34] bg-[#F2ECDE] text-[#BF5B34] ring-2 ring-[#BF5B34]' : 'border-[#E7DFCF] hover:bg-[#F2ECDE] text-[#5B6B60]'"
-                      class="p-2.5 rounded-xl border text-center transition-colors cursor-pointer flex flex-col items-center bg-white">
-                      <span class="material-icons text-xl mb-1 text-[#BF5B34]">auto_stories</span>
-                      <span class="text-xs font-semibold">{{ lang.tr('Élève', 'تلميذ(ة)') }}</span>
-                    </button>
                   </div>
                 </div>
 
                 <!-- Dynamic Fields by Role -->
-                <div class="space-y-3">
-                  <div>
-                    <label for="su-name" class="block text-xs font-medium text-[#486581] mb-1">
-                      {{ store.authModalRole() === 'student' ? lang.t('authStudentName') : lang.t('authFullName') }} *
-                    </label>
-                    <input
-                      id="su-name"
-                      type="text"
-                      [(ngModel)]="signupName"
-                      [placeholder]="namePlaceholder()"
-                      class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
-                  </div>
+                <div class="space-y-2.5">
+                  <!-- Name & Gender in 2 columns -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <div>
+                      <label for="su-name" class="block text-xs font-medium text-[#486581] mb-1">
+                        {{ lang.t('authFullName') }} *
+                      </label>
+                      <input
+                        id="su-name"
+                        type="text"
+                        [(ngModel)]="signupName"
+                        [placeholder]="namePlaceholder()"
+                        class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                    </div>
 
-                  <!-- Gender (drives gendered FR/AR labels: Enseignant/Enseignante, معلم/معلمة) -->
-                  <div>
-                    <span class="block text-xs font-medium text-[#486581] mb-1">{{ lang.tr('Genre *', 'الجنس *') }}</span>
-                    <div class="grid grid-cols-2 gap-2">
-                      <button
-                        type="button"
-                        (click)="signupGender = 'male'"
-                        [class]="signupGender === 'male'
-                          ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
-                          : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
-                        class="text-xs p-3 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1.5">
-                        <span class="material-icons text-sm">man</span>
-                        {{ lang.tr('Homme', 'ذكر') }}
-                      </button>
-                      <button
-                        type="button"
-                        (click)="signupGender = 'female'"
-                        [class]="signupGender === 'female'
-                          ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
-                          : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
-                        class="text-xs p-3 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1.5">
-                        <span class="material-icons text-sm">woman</span>
-                        {{ lang.tr('Femme', 'أنثى') }}
-                      </button>
+                    <!-- Gender -->
+                    <div>
+                      <span class="block text-xs font-medium text-[#486581] mb-1">{{ lang.tr('Genre *', 'الجنس *') }}</span>
+                      <div class="grid grid-cols-2 gap-1.5">
+                        <button
+                          type="button"
+                          (click)="signupGender = 'male'"
+                          [class]="signupGender === 'male'
+                            ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
+                            : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
+                          class="text-xs py-2 px-2 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1">
+                          <span class="material-icons text-sm">man</span>
+                          {{ lang.tr('Homme', 'ذكر') }}
+                        </button>
+                        <button
+                          type="button"
+                          (click)="signupGender = 'female'"
+                          [class]="signupGender === 'female'
+                            ? 'bg-[#007CC2] text-white font-bold border-[#007CC2]'
+                            : 'bg-white text-[#486581] border-[#CBD9E2] hover:border-[#007CC2]'"
+                          class="text-xs py-2 px-2 rounded-[10px] border transition-all cursor-pointer flex items-center justify-center gap-1">
+                          <span class="material-icons text-sm">woman</span>
+                          {{ lang.tr('Femme', 'أنثى') }}
+                        </button>
+                      </div>
                     </div>
                   </div>
 
                   @if (store.authModalRole() === 'teacher') {
-                    <div class="space-y-2">
-                      <div class="grid grid-cols-2 gap-2">
+                    <div class="space-y-2.5">
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         <div>
-                          <label for="su-school" class="block text-xs font-medium text-[#486581] mb-1">École primaire *</label>
+                          <label for="su-school" class="block text-xs font-medium text-[#486581] mb-1">
+                            {{ lang.tr('École primaire *', 'المدرسة الابتدائية *') }}
+                          </label>
                           <input
                             id="su-school"
                             type="text"
                             [(ngModel)]="signupSchool"
-                            placeholder="Ex: École Habib Bourguiba"
-                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                            [placeholder]="lang.tr('Ex: École Bourguiba', 'مثال: مدرسة بورقيبة')"
+                            class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
                         </div>
                         <div>
-                          <label for="su-gov" class="block text-xs font-medium text-[#486581] mb-1">Gouvernorat *</label>
+                          <label for="su-gov" class="block text-xs font-medium text-[#486581] mb-1">
+                            {{ lang.tr('Gouvernorat *', 'الولاية *') }}
+                          </label>
                           <input
                             id="su-gov"
                             type="text"
                             [(ngModel)]="signupGov"
-                            placeholder="Ex: Ariana, Tunis, Sfax"
-                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
+                            [placeholder]="lang.tr('Ex: Ariana, Tunis, Sfax', 'مثال: أريانة، تونس، صفاقس')"
+                            class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
                         </div>
                       </div>
 
@@ -319,7 +309,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                         <select
                           id="su-subject"
                           [(ngModel)]="signupSubject"
-                          class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
+                          class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
                           <option value="Mathématiques">Mathématiques (الرياضيات)</option>
                           <option value="Langue Arabe">Langue Arabe (اللغة العربية)</option>
                           <option value="Français">Français (اللغة الفرنسية)</option>
@@ -332,86 +322,68 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   }
 
                   @if (store.authModalRole() === 'parent') {
-                    <div class="space-y-2">
-                      <div class="grid grid-cols-2 gap-2">
-                        <div>
-                          <label for="su-phone" class="block text-xs font-medium text-[#486581] mb-1">
-                            {{ lang.tr('Numéro de téléphone *', 'رقم الهاتف *') }}
-                          </label>
-                          <input
-                            id="su-phone"
-                            type="tel"
-                            [(ngModel)]="signupPhone"
-                            placeholder="+216 98 123 456"
-                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
-                        </div>
-                        <div>
-                          <label for="su-child-grade" class="block text-xs font-medium text-[#486581] mb-1">
-                            {{ lang.tr("Niveau de l'enfant *", "مستوى الطفل *") }}
-                          </label>
-                          <select
-                            id="su-child-grade"
-                            [(ngModel)]="signupGrade"
-                            class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
-                            <option value="1ère Année">1ère Année (السنة الأولى)</option>
-                            <option value="2ème Année">2ème Année (السنة الثانية)</option>
-                            <option value="3ème Année">3ème Année (السنة الثالثة)</option>
-                            <option value="4ème Année">4ème Année (السنة الرابعة)</option>
-                            <option value="5ème Année">5ème Année (السنة الخامسة)</option>
-                            <option value="6ème Année">6ème Année (السنة السادسة)</option>
-                          </select>
-                        </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      <div>
+                        <label for="su-phone" class="block text-xs font-medium text-[#486581] mb-1">
+                          {{ lang.tr('Numéro de téléphone *', 'رقم الهاتف *') }}
+                        </label>
+                        <input
+                          id="su-phone"
+                          type="tel"
+                          [(ngModel)]="signupPhone"
+                          placeholder="+216 98 123 456"
+                          class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] outline-none transition-all" />
+                      </div>
+                      <div>
+                        <label for="su-child-grade" class="block text-xs font-medium text-[#486581] mb-1">
+                          {{ lang.tr("Niveau de l'enfant *", "مستوى الطفل *") }}
+                        </label>
+                        <select
+                          id="su-child-grade"
+                          [(ngModel)]="signupGrade"
+                          class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
+                          <option value="1ère Année">1ère Année (السنة الأولى)</option>
+                          <option value="2ème Année">2ème Année (السنة الثانية)</option>
+                          <option value="3ème Année">3ème Année (السنة الثالثة)</option>
+                          <option value="4ème Année">4ème Année (السنة الرابعة)</option>
+                          <option value="5ème Année">5ème Année (السنة الخامسة)</option>
+                          <option value="6ème Année">6ème Année (السنة السادسة)</option>
+                        </select>
                       </div>
                     </div>
                   }
 
-                  @if (store.authModalRole() === 'student') {
+                  <!-- Email & Password in 2 columns -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     <div>
-                      <label for="su-student-grade" class="block text-xs font-medium text-[#486581] mb-1">
-                        {{ lang.tr('Classe / Niveau', 'القسم / السنة الدراسية') }} *
+                      <label for="su-email" class="block text-xs font-medium text-[#486581] mb-1">
+                        {{ lang.tr('Adresse Email', 'البريد الإلكتروني') }} *
                       </label>
-                      <select
-                        id="su-student-grade"
-                        [(ngModel)]="signupGrade"
-                        class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2]">
-                        <option value="1ère Année">1ère Année Primaire (السنة الأولى)</option>
-                        <option value="2ème Année">2ème Année Primaire (السنة الثانية)</option>
-                        <option value="3ème Année">3ème Année Primaire (السنة الثالثة)</option>
-                        <option value="4ème Année">4ème Année Primaire (السنة الرابعة)</option>
-                        <option value="5ème Année">5ème Année Primaire (السنة الخامسة)</option>
-                        <option value="6ème Année">6ème Année Primaire (السنة السادسة)</option>
-                      </select>
+                      <input
+                        id="su-email"
+                        type="email"
+                        [(ngModel)]="signupEmail"
+                        [placeholder]="store.authModalRole() === 'teacher' ? 'professeur@education.tn' : 'contact@famille.tn'"
+                        class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
                     </div>
-                  }
 
-                  <div>
-                    <label for="su-email" class="block text-xs font-medium text-[#486581] mb-1">
-                      {{ store.authModalRole() === 'student' ? lang.tr('Code secret ou Email parent', 'الرمز السري أو بريد الولي') : lang.tr('Adresse Email', 'البريد الإلكتروني') }} *
-                    </label>
-                    <input
-                      id="su-email"
-                      type="email"
-                      [(ngModel)]="signupEmail"
-                      [placeholder]="store.authModalRole() === 'teacher' ? 'professeur@education.tn' : 'contact@famille.tn'"
-                      class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] placeholder:text-[#829AB1] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all" />
-                  </div>
-
-                  <div>
-                    <label for="su-password" class="block text-xs font-medium text-[#486581] mb-1">
-                      {{ store.authModalRole() === 'student' ? lang.tr('Code PIN ou Mot de passe (min 6 car.)', 'الرمز السري أو كلمة المرور (6 أحرف/أرقام على الأقل)') : lang.tr('Mot de passe (min 6 caractères)', 'كلمة العبور (6 أحرف على الأقل)') }} *
-                    </label>
-                    <input
-                      id="su-password"
-                      type="password"
-                      [(ngModel)]="signupPassword"
-                      placeholder="••••••••"
-                      class="w-full text-xs p-3 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2] transition-all" />
+                    <div>
+                      <label for="su-password" class="block text-xs font-medium text-[#486581] mb-1">
+                        {{ lang.tr('Mot de passe (min 6 car.)', 'كلمة العبور (6 أحرف على الأقل)') }} *
+                      </label>
+                      <input
+                        id="su-password"
+                        type="password"
+                        [(ngModel)]="signupPassword"
+                        placeholder="••••••••"
+                        class="w-full text-xs p-2.5 bg-white border border-[#CBD9E2] rounded-[10px] text-[#102A43] outline-none focus:border-[#007CC2] transition-all" />
+                    </div>
                   </div>
 
                   <button
                     type="button"
                     (click)="handleSignupSubmit()"
-                    class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-sm py-3 rounded-[10px] shadow-xs transition-colors cursor-pointer mt-2">
+                    class="w-full bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-xs sm:text-sm py-2.5 rounded-[10px] shadow-xs transition-colors cursor-pointer mt-1">
                     {{ lang.tr('Créer mon espace gratuitement', 'إنشاء الفضاء مجاناً') }}
                   </button>
                 </div>

@@ -3,7 +3,8 @@ import { CanActivateFn, Router } from '@angular/router';
 import { FirebaseService } from '../services/firebase.service';
 import { EducationStore } from '../services/education-store';
 
-export const authGuard: CanActivateFn = (route, state) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const authGuard: CanActivateFn = (_route, _state) => {
   const firebase = inject(FirebaseService);
   const store = inject(EducationStore);
   const router = inject(Router);

@@ -198,21 +198,40 @@ const createRateLimiter = (maxRequests: number, windowMs: number, label: string)
 };
 
 const uploadRateLimiter = createRateLimiter(10, 15 * 60 * 1000, 'Uploads limités à 10 par 15 min');
-const aiRateLimiter = createRateLimiter(30, 60 * 1000, 'Requêtes IA limitées à 30 par minute');
 
-// Global daily guard for the shared Gemini free-tier quota (1500 RPD).
-// Per-IP limits don't stop many IPs collectively draining it; this hard-caps
-// server-wide AI calls with a safety margin under the free-tier ceiling.
+// Per-IP guards sized against the shared Gemini free tier (15 RPM / 1500 RPD):
+// 8/min keeps two busy users under the global RPM; 60/day stops a single IP
+// from draining the server-wide daily pool.
+const aiPerIpMinuteLimiter = createRateLimiter(8, 60 * 1000, 'Requêtes IA limitées à 8 par minute');
+const aiPerIpDailyLimiter = createRateLimiter(60, 24 * 60 * 60 * 1000, 'Quota IA personnel du jour atteint');
+const aiRateLimiter = (req: Request, res: Response, next: NextFunction): void => {
+  aiPerIpMinuteLimiter(req, res, () => aiPerIpDailyLimiter(req, res, next));
+};
+
+// Global guards for the shared Gemini free-tier quota (15 RPM / 1500 RPD).
+// Per-IP limits don't stop many IPs collectively draining it; these hard-cap
+// server-wide AI calls with a safety margin under the free-tier ceilings.
 const AI_DAILY_CAP = 1200;
+const AI_MINUTE_CAP = 12;
 let aiDailyUsage = { day: '', count: 0 };
+let aiMinuteUsage = { minute: '', count: 0 };
 const aiDailyGuard = (_req: Request, res: Response, next: NextFunction): void => {
-  const today = new Date().toISOString().slice(0, 10);
+  const now = new Date().toISOString();
+  const today = now.slice(0, 10);
+  const thisMinute = now.slice(0, 16);
   if (aiDailyUsage.day !== today) aiDailyUsage = { day: today, count: 0 };
+  if (aiMinuteUsage.minute !== thisMinute) aiMinuteUsage = { minute: thisMinute, count: 0 };
   if (aiDailyUsage.count >= AI_DAILY_CAP) {
     res.status(503).json({ error: "Quota IA quotidien atteint. Réessayez demain." });
     return;
   }
+  if (aiMinuteUsage.count >= AI_MINUTE_CAP) {
+    res.setHeader('Retry-After', 60);
+    res.status(429).json({ error: 'Service IA très sollicité. Réessayez dans une minute.' });
+    return;
+  }
   aiDailyUsage.count++;
+  aiMinuteUsage.count++;
   next();
 };
 

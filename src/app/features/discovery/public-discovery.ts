@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, SubjectName } from '@core';
+import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost } from '@core';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -649,6 +649,9 @@ import { BdLibraryComponent } from '../bd/bd-library';
                   @if (post.coverImage) {
                     <div
                       (click)="store.openBlogPost(post)"
+                      (keydown.enter)="store.openBlogPost(post)"
+                      role="button"
+                      tabindex="0"
                       class="h-44 w-full overflow-hidden bg-[#F8F5EE] border-b border-[#E7DFCF] cursor-pointer">
                       <img [src]="post.coverImage" [alt]="post.title" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300" />
                     </div>
@@ -676,12 +679,18 @@ import { BdLibraryComponent } from '../bd/bd-library';
 
                       <h3
                         (click)="store.openBlogPost(post)"
+                        (keydown.enter)="store.openBlogPost(post)"
+                        role="button"
+                        tabindex="0"
                         class="font-display font-semibold text-[#14251D] text-base leading-snug cursor-pointer group-hover:text-[#2D6A4F] transition-colors">
                         {{ lang.isArabic() && post.titleAr ? post.titleAr : post.title }}
                       </h3>
 
                       <p
                         (click)="store.openBlogPost(post)"
+                        (keydown.enter)="store.openBlogPost(post)"
+                        role="button"
+                        tabindex="0"
                         class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3 cursor-pointer">
                         {{ cleanExcerpt(lang.isArabic() && post.excerptAr ? post.excerptAr : post.excerpt) }}
                       </p>
@@ -1401,7 +1410,7 @@ export class PublicDiscoveryComponent {
           url,
         });
         return;
-      } catch (err) {}
+      } catch { /* share cancelled — fallback to clipboard */ }
     }
 
     if (typeof navigator !== 'undefined' && navigator.clipboard) {

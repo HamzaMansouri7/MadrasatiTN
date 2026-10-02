@@ -696,8 +696,8 @@ export class ArticleStudioComponent implements OnDestroy {
         content,
         contentAr: isAr ? content : existing?.contentAr,
         coverImage: art.coverImageUrl || existing?.coverImage,
-        subject: art.subject as any,
-        grade: art.grade as any,
+        subject: art.subject as unknown as import('@core/models/education.model').SubjectName,
+        grade: art.grade as unknown as import('@core/models/education.model').GradeLevel,
         chapter: chapterLabel,
         tags,
         authorId: existing?.authorId || this.firebase.userProfile()?.uid,
@@ -723,8 +723,8 @@ export class ArticleStudioComponent implements OnDestroy {
         content,
         contentAr: isAr ? content : undefined,
         coverImage: art.coverImageUrl || undefined,
-        subject: art.subject as any,
-        grade: art.grade as any,
+        subject: art.subject as unknown as import('@core/models/education.model').SubjectName,
+        grade: art.grade as unknown as import('@core/models/education.model').GradeLevel,
         chapter: chapterLabel,
         tags,
         authorId: this.firebase.userProfile()?.uid,
@@ -754,13 +754,13 @@ export class ArticleStudioComponent implements OnDestroy {
   }
 
   private parseSimpleMarkdown(markdown: string): string {
-    let html = markdown
+    const html = markdown
       .replace(/^### (.*$)/gim, '<h3>$1</h3>')
       .replace(/^## (.*$)/gim, '<h2>$1</h2>')
       .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-      .replace(/^\> \[\!NOTE\]\n\> (.*$)/gim, '<blockquote class="border-s-4 border-[#007CC2] p-2 bg-[#F0F4F8] my-2">ℹ️ $1</blockquote>')
-      .replace(/^\> \[\!TIP\]\n\> (.*$)/gim, '<blockquote class="border-s-4 border-[#23845B] p-2 bg-[#E8F6EF] my-2">💡 $1</blockquote>')
-      .replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>')
+      .replace(/^> \[!NOTE\][^\n]*\n> (.*$)/gim, '<blockquote class="border-s-4 border-[#007CC2] p-2 bg-[#F0F4F8] my-2">ℹ️ $1</blockquote>')
+      .replace(/^> \[!TIP\][^\n]*\n> (.*$)/gim, '<blockquote class="border-s-4 border-[#23845B] p-2 bg-[#E8F6EF] my-2">💡 $1</blockquote>')
+      .replace(/^> (.*$)/gim, '<blockquote>$1</blockquote>')
       .replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>')
       .replace(/\*(.*)\*/gim, '<em>$1</em>')
       .replace(/\n$/gim, '<br />');

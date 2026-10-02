@@ -12,7 +12,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
         <div class="flex items-center justify-between h-[76px] gap-2 lg:gap-4">
           
           <!-- Logo & Platform Identity -->
-          <div (click)="selectRole('home')" class="flex items-center gap-2.5 sm:gap-3 shrink-0 cursor-pointer group">
+          <div (click)="selectRole('home')" (keydown.enter)="selectRole('home')" role="button" tabindex="0" class="flex items-center gap-2.5 sm:gap-3 shrink-0 cursor-pointer group">
             <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] bg-[#0B2947] p-1 flex items-center justify-center shadow-sm shrink-0 group-hover:scale-102 transition-transform">
               <img src="/favicon.svg" alt="Madrasati Logo" class="w-full h-full object-contain" />
             </div>
@@ -155,6 +155,9 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                     @for (notif of firebase.notifications(); track notif.id) {
                       <div
                         (click)="handleNotificationClick(notif)"
+                        (keydown.enter)="handleNotificationClick(notif)"
+                        role="button"
+                        tabindex="0"
                         [class]="notif.isRead ? 'bg-white opacity-75' : 'bg-[#F0F8FF]/70'"
                         class="p-3.5 hover:bg-[#F3FAFD] transition-colors cursor-pointer flex gap-3 items-start">
                         
@@ -245,6 +248,9 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                     <!-- Top User Identification Block -->
                     <div
                       (click)="handleProfileClick()"
+                      (keydown.enter)="handleProfileClick()"
+                      role="button"
+                      tabindex="0"
                       class="flex items-center justify-between p-2 rounded-xl hover:bg-[#F7F9FB] cursor-pointer transition-colors">
                       <div class="flex items-center gap-2.5 min-w-0">
                         @if (getUserAvatar()) {
@@ -389,11 +395,11 @@ export class NavbarComponent {
     this.router.navigateByUrl('/generate');
   }
 
-  async handleNotificationClick(notif: any) {
+  async handleNotificationClick(notif: { id: string; linkRole?: string }) {
     await this.firebase.markNotificationAsRead(notif.id);
     this.notifDropdownOpen.set(false);
     if (notif.linkRole) {
-      this.store.switchRole(notif.linkRole);
+      this.store.switchRole(notif.linkRole as import('@core').UserRole);
     }
   }
 

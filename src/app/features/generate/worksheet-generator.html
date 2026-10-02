@@ -71,8 +71,9 @@
       </div>
 
       <div class="flex items-center gap-3 mt-4">
-        <label class="text-sm text-[#5B6B60]">{{ lang.t('generatorCount') }}</label>
+        <label for="wg-count" class="text-sm text-[#5B6B60]">{{ lang.t('generatorCount') }}</label>
         <select
+          id="wg-count"
           class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm bg-white"
           [value]="count()"
           (change)="count.set(+$any($event.target).value)">
@@ -118,10 +119,10 @@
 
         <!-- Copy link -->
         <div>
-          <label class="block text-xs text-[#5B6B60] mb-1">{{ lang.t('generatorShareLink') }}</label>
+          <label for="wg-share-link" class="block text-xs text-[#5B6B60] mb-1">{{ lang.t('generatorShareLink') }}</label>
           <div class="flex items-center gap-2 p-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF]">
             <span class="material-icons text-base text-[#1B4332]">link</span>
-            <input readonly [value]="url" class="flex-1 bg-transparent text-[#14251D] text-sm outline-none" />
+            <input id="wg-share-link" readonly [value]="url" class="flex-1 bg-transparent text-[#14251D] text-sm outline-none" />
             <button type="button" (click)="copyShareLink()" class="shrink-0 px-3 py-1.5 rounded-[8px] bg-[#1B4332] text-white text-xs font-semibold cursor-pointer">
               {{ copied() === 'link' ? lang.t('generatorCopied') : lang.t('generatorCopy') }}
             </button>
@@ -130,10 +131,10 @@
 
         <!-- Embed code -->
         <div>
-          <label class="block text-xs text-[#5B6B60] mb-1">{{ lang.t('generatorEmbedCode') }}</label>
+          <label for="wg-embed-code" class="block text-xs text-[#5B6B60] mb-1">{{ lang.t('generatorEmbedCode') }}</label>
           <div class="flex items-start gap-2 p-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF]">
             <span class="material-icons text-base text-[#1B4332] mt-1">code</span>
-            <textarea readonly rows="2" class="flex-1 bg-transparent text-[#14251D] text-xs font-mono outline-none resize-none">{{ embedSnippet() }}</textarea>
+            <textarea id="wg-embed-code" readonly rows="2" class="flex-1 bg-transparent text-[#14251D] text-xs font-mono outline-none resize-none">{{ embedSnippet() }}</textarea>
             <button type="button" (click)="copyEmbed()" class="shrink-0 px-3 py-1.5 rounded-[8px] bg-[#1B4332] text-white text-xs font-semibold cursor-pointer">
               {{ copied() === 'embed' ? lang.t('generatorCopied') : lang.t('generatorCopy') }}
             </button>

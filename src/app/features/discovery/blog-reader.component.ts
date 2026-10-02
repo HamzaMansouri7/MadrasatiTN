@@ -166,10 +166,11 @@ import { BlogPost, EducationStore, FirebaseService, LanguageService } from '@cor
           <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] shadow-xs space-y-3">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label class="block text-xs font-medium text-[#5B6B60] mb-1">
+                <label for="br-comment-author" class="block text-xs font-medium text-[#5B6B60] mb-1">
                   {{ lang.isArabic() ? 'اسم المعلق' : 'Votre nom' }}
                 </label>
                 <input
+                  id="br-comment-author"
                   type="text"
                   [value]="newCommentAuthor()"
                   (input)="newCommentAuthor.set($any($event.target).value)"
@@ -177,10 +178,11 @@ import { BlogPost, EducationStore, FirebaseService, LanguageService } from '@cor
                   [placeholder]="lang.tr('Ex: Mohamed, Enseignant ou Parent', 'مثال: الأستاذ محمد / ولي تلميذ')" />
               </div>
               <div>
-                <label class="block text-xs font-medium text-[#5B6B60] mb-1">
+                <label for="br-comment-role" class="block text-xs font-medium text-[#5B6B60] mb-1">
                   {{ lang.isArabic() ? 'الصفة' : 'Rôle' }}
                 </label>
                 <select
+                  id="br-comment-role"
                   [value]="newCommentRole()"
                   (change)="newCommentRole.set($any($event.target).value)"
                   class="w-full px-3 py-2 text-xs rounded-xl border border-[#D5CDBD] focus:border-[#2D6A4F] outline-none bg-white">
@@ -289,8 +291,7 @@ export class BlogReaderComponent {
           url,
         });
         return;
-      } catch (err) {
-        // Fallback to clipboard
+      } catch { /* share cancelled — fallback to clipboard */
       }
     }
 
