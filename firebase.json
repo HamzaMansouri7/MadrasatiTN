@@ -1,0 +1,6 @@
+{
+  "firestore": {
+    "database": "ai-studio-madrasatitnespac-a4b979e0-5cdd-42d7-9e1c-5c2b8126cade",
+    "rules": "firestore.rules"
+  }
+}
