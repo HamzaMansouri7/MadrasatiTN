@@ -36,12 +36,6 @@ export const routes: Routes = [
     title: 'المكتبة والدليل | Bibliothèque CNP - Madrasati TN',
   },
   {
-    path: 'bd',
-    loadComponent: () =>
-      import('./features/bd/bd-library').then((m) => m.BdLibraryComponent),
-    title: 'شريط مصوّر | Bandes Dessinées - Madrasati TN',
-  },
-  {
     path: 'editor',
     canActivate: [authGuard],
     loadComponent: () =>

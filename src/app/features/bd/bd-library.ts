@@ -85,8 +85,8 @@ export class BdLibraryComponent {
       );
       this.items.set(manifests.filter((m): m is ResourceManifest => !!m).flatMap((m) => m.items));
 
-      // Deep link: /bd?p=<itemId> opens the reader directly on that page.
-      const target = new URLSearchParams(window.location.search).get('p');
+      // Deep link: /discovery?bd=<itemId> opens the reader directly on that page.
+      const target = new URLSearchParams(window.location.search).get('bd');
       if (target) {
         const pos = this.filteredItems().findIndex((i) => i.id === target);
         if (pos >= 0) this.selectedIndex.set(pos);
@@ -142,7 +142,7 @@ export class BdLibraryComponent {
   shareUrl(): string {
     const item = this.selectedItem();
     if (!item || typeof window === 'undefined') return '';
-    return `${window.location.origin}/bd?p=${item.id}`;
+    return `${window.location.origin}/discovery?bd=${item.id}`;
   }
 
   async copyLink() {

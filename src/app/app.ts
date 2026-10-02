@@ -42,7 +42,6 @@ export class App {
           '/parent': 'parent',
           '/student': 'student',
           '/discovery': 'public',
-          '/bd': 'public',
           '/editor': 'editor',
           '/generate': 'editor',
           '/article-studio': 'article-editor',

@@ -1420,7 +1420,7 @@ function escapeHtmlAttr(value: string): string {
     .replace(/>/g, '&gt;');
 }
 
-// OG tags for shared BD pages (/bd?p=ITEM_ID) — same crawler-only pattern as /generate.
+// OG tags for shared BD pages (/discovery?bd=ITEM_ID) — same crawler-only pattern as /generate.
 const BD_ID_RE = /^[A-Za-z0-9_-]{4,80}$/;
 interface BdManifestItem { id: string; title?: string; grade?: string; subject?: string; topic?: string; relPath?: string }
 let bdItemsCache: BdManifestItem[] | null = null;
@@ -1444,9 +1444,9 @@ function loadBdItems(): BdManifestItem[] {
   return bdItemsCache;
 }
 
-app.get('/bd', (req: Request, res: Response, next): void => {
+app.get('/discovery', (req: Request, res: Response, next): void => {
   const ua = req.get('user-agent') || '';
-  const itemId = String((req.query['p'] as string) || '');
+  const itemId = String((req.query['bd'] as string) || '');
   if (!CRAWLER_UA_RE.test(ua) || !BD_ID_RE.test(itemId)) {
     next();
     return;
@@ -1474,7 +1474,7 @@ app.get('/bd', (req: Request, res: Response, next): void => {
         : 'Bande dessinée officielle pour l\'école primaire tunisienne — Madrasati TN.',
     );
     const imageUrl = escapeHtmlAttr(item.relPath ? `${origin}/${item.relPath}` : `${origin}/favicon.svg`);
-    const pageUrl = escapeHtmlAttr(`${origin}/bd?p=${itemId}`);
+    const pageUrl = escapeHtmlAttr(`${origin}/discovery?bd=${itemId}`);
 
     html = html.replace(/\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi, '');
 

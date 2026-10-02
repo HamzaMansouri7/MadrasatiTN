@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, SubjectName } from '@core';
@@ -224,64 +224,16 @@ import { BdLibraryComponent } from '../bd/bd-library';
         <!-- Main results column -->
         <div class="flex-1 min-w-0 space-y-6 order-last lg:order-none">
 
-      <!-- Main Directory Navigation Tabs -->
-      <div class="flex items-center gap-2 border-b border-[#E7DFCF] pb-2 overflow-x-auto no-scrollbar">
-        <button
-          (click)="activeSection.set('exercises')"
-          [class]="activeSection() === 'exercises' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="material-icons text-sm">fitness_center</span>
-          <span>{{ lang.tr("Banque d'Examens & Séries", 'مكتبة الفروض والسلاسل') }} ({{ store.filteredExercisesBank().length }})</span>
-        </button>
-
-        <button
-          (click)="activeSection.set('courses')"
-          [class]="activeSection() === 'courses' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="material-icons text-sm">menu_book</span>
-          <span>{{ lang.tr('Fiches & Cours', 'الملخصات والدروس') }} ({{ store.filteredCourses().length }})</span>
-        </button>
-
-        <button
-          (click)="activeSection.set('blog')"
-          [class]="activeSection() === 'blog' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="material-icons text-sm">article</span>
-          <span>{{ lang.tr('Articles & Conseils', 'المدونة والمقالات البيداغوجية') }} ({{ store.filteredBlogPosts().length }})</span>
-        </button>
-
-        <button
-          (click)="activeSection.set('cnp')"
-          [class]="activeSection() === 'cnp' ? 'bg-[#C1121F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#C1121F] font-medium border border-[#E7DFCF]'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="material-icons text-sm">auto_stories</span>
-          <span>{{ lang.tr('Manuels CNP', 'الكتب الرسمية CNP') }} ({{ store.filteredCnpBooks().length }})</span>
-        </button>
-
-        <button
-          (click)="activeSection.set('bd')"
-          [class]="activeSection() === 'bd' ? 'bg-[#BF5B34] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#BF5B34] font-medium border border-[#E7DFCF]'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="material-icons text-sm">photo_library</span>
-          <span>{{ lang.t('bdNav') }}</span>
-        </button>
-
-        <button
-          (click)="activeSection.set('teachers')"
-          [class]="activeSection() === 'teachers' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="material-icons text-sm">verified</span>
-          <span>{{ lang.t('teachersDirectory') }} ({{ store.teachers().length }})</span>
-        </button>
-
-        <button
-          (click)="activeSection.set('watchlist')"
-          [class]="activeSection() === 'watchlist' ? 'bg-[#8A5A00] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#8A5A00] font-medium border border-[#E7DFCF]'"
-          class="px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap">
-          <span class="material-icons text-sm">bookmark</span>
-          <span>{{ lang.tr('⭐ Ma Watchlist', '⭐ قائمة محفوظاتي') }} ({{ store.totalWatchlistCount() }})</span>
-        </button>
-      </div>
+      <!-- Active shelf heading (section selection lives in the library rail) -->
+      @if (activeShelf(); as shelf) {
+        <div class="flex items-center gap-2.5 border-b border-[#E7DFCF] pb-3">
+          <span class="material-icons text-lg" [style.color]="shelf.accent">{{ shelf.icon }}</span>
+          <h2 class="font-display font-semibold text-[#14251D] text-base">{{ lang.tr(shelf.labelFr, shelf.labelAr) }}</h2>
+          @if (sectionCount(shelf.key) !== null) {
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#F2ECDE] text-[#4A5A50]">{{ sectionCount(shelf.key) }}</span>
+          }
+        </div>
+      }
 
       <!-- SECTION: BANDES DESSINÉES (official CNP comic pages) -->
       @if (activeSection() === 'bd') {
@@ -1002,9 +954,42 @@ import { BdLibraryComponent } from '../bd/bd-library';
         </div>
         <!-- end main results column -->
 
-        <!-- Subject facet rail (renders on the left in RTL / Arabic) -->
-        <aside class="w-full lg:w-56 shrink-0 order-first lg:order-none">
+        <!-- Library rail: shelves (content types) + subject facets (left in RTL / Arabic) -->
+        <aside class="w-full lg:w-60 shrink-0 order-first lg:order-none space-y-4">
+
+          <!-- Shelves — data-driven: new content type = one row in the sections registry, zero layout change -->
           <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] space-y-3 lg:sticky lg:top-4">
+            <div class="flex items-center gap-2 border-b border-[#E7DFCF] pb-3">
+              <span class="material-icons text-[#1B4332] text-base">shelves</span>
+              <h3 class="font-display font-semibold text-[#14251D] text-sm">{{ lang.tr('Rayons de la bibliothèque', 'أقسام المكتبة') }}</h3>
+            </div>
+
+            <nav class="grid grid-cols-2 lg:grid-cols-1 gap-1.5" [attr.aria-label]="lang.tr('Rayons', 'الأقسام')">
+              @for (s of sections; track s.key) {
+                <button
+                  (click)="activeSection.set(s.key)"
+                  [attr.aria-current]="activeSection() === s.key ? 'true' : null"
+                  [style.border-inline-start-color]="activeSection() === s.key ? s.accent : 'transparent'"
+                  [class]="activeSection() === s.key
+                    ? 'bg-[#F2ECDE] text-[#14251D] font-semibold'
+                    : 'text-[#4A5A50] font-medium hover:bg-[#FBF8F1]'"
+                  class="w-full flex items-center justify-between gap-2 px-2.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer border-s-[3px] border-transparent min-h-[44px]">
+                  <span class="flex items-center gap-2 min-w-0">
+                    <span class="material-icons text-base shrink-0" [style.color]="s.accent" aria-hidden="true">{{ s.icon }}</span>
+                    <span class="truncate text-start">{{ lang.tr(s.labelFr, s.labelAr) }}</span>
+                  </span>
+                  @if (sectionCount(s.key) !== null) {
+                    <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-[#F2ECDE] text-[#4A5A50] shrink-0">
+                      {{ sectionCount(s.key) }}
+                    </span>
+                  }
+                </button>
+              }
+            </nav>
+          </div>
+
+          <!-- Subject facet rail -->
+          <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] space-y-3">
             <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
               <div class="flex items-center gap-2">
                 <span class="material-icons text-[#1B4332] text-base">category</span>
@@ -1361,6 +1346,11 @@ export class PublicDiscoveryComponent {
     this.store.loadPublishedWorksheets();
     this.store.loadBlogPosts();
 
+    // Shared BD deep link (?bd=<itemId>) lands straight on the BD tab.
+    if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('bd')) {
+      this.activeSection.set('bd');
+    }
+
     // Auto-switch to blog tab whenever a blog post is opened (e.g. from direct URL)
     effect(() => {
       if (this.store.selectedBlogPost()) {
@@ -1419,6 +1409,31 @@ export class PublicDiscoveryComponent {
   }
 
   readonly activeSection = signal<'exercises' | 'courses' | 'blog' | 'cnp' | 'bd' | 'teachers' | 'watchlist'>('exercises');
+
+  /** Library shelves — data-driven: adding a content type = one entry here + one @if section. */
+  readonly sections: { key: 'exercises' | 'courses' | 'blog' | 'cnp' | 'bd' | 'teachers' | 'watchlist'; icon: string; labelFr: string; labelAr: string; accent: string }[] = [
+    { key: 'exercises', icon: 'fitness_center', labelFr: "Banque d'Examens & Séries", labelAr: 'مكتبة الفروض والسلاسل', accent: '#1B4332' },
+    { key: 'courses', icon: 'menu_book', labelFr: 'Fiches & Cours', labelAr: 'الملخصات والدروس', accent: '#2D6A4F' },
+    { key: 'blog', icon: 'article', labelFr: 'Articles & Conseils', labelAr: 'المدونة والمقالات', accent: '#2D6A4F' },
+    { key: 'cnp', icon: 'auto_stories', labelFr: 'Manuels CNP', labelAr: 'الكتب الرسمية CNP', accent: '#C1121F' },
+    { key: 'bd', icon: 'photo_library', labelFr: 'Bandes Dessinées', labelAr: 'شريط مصوّر', accent: '#BF5B34' },
+    { key: 'teachers', icon: 'verified', labelFr: 'Annuaire des Enseignants', labelAr: 'دليل المعلمين', accent: '#1B4332' },
+    { key: 'watchlist', icon: 'bookmark', labelFr: 'Ma Watchlist', labelAr: 'قائمة محفوظاتي', accent: '#8A5A00' },
+  ];
+
+  readonly activeShelf = computed(() => this.sections.find((s) => s.key === this.activeSection()) ?? null);
+
+  sectionCount(key: string): number | null {
+    switch (key) {
+      case 'exercises': return this.store.filteredExercisesBank().length;
+      case 'courses': return this.store.filteredCourses().length;
+      case 'blog': return this.store.filteredBlogPosts().length;
+      case 'cnp': return this.store.filteredCnpBooks().length;
+      case 'teachers': return this.store.teachers().length;
+      case 'watchlist': return this.store.totalWatchlistCount();
+      default: return null; // bd counts load inside its own component
+    }
+  }
   readonly openSolutionIds = signal<Set<string>>(new Set());
   readonly openCommentIds = signal<Set<string>>(new Set());
 
