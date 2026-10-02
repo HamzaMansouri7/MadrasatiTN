@@ -1,0 +1,53 @@
+{
+  "source": "CNP 101410 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "4eme-annee",
+  "trimester": 3,
+  "count": 2,
+  "items": [
+    {
+      "id": "cnp-101410-recitation-p131",
+      "grade": "4eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 3,
+      "topic": "recitation",
+      "title": "الكلب والحمامة (قصيد)",
+      "file": "recitation_4eme_t3_p131_al_kalb_wa_al_hamama.webp",
+      "relPath": "assets/resources/4eme-annee/arabe/trimestre-3/recitation/recitation_4eme_t3_p131_al_kalb_wa_al_hamama.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101410P00.pdf#page=131",
+      "labels": [
+        "cnp",
+        "101410",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "4eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101410-recitation-p152",
+      "grade": "4eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 3,
+      "topic": "recitation",
+      "title": "النهر المتجمد (شعر)",
+      "file": "recitation_4eme_t3_p152_an_nahr_al_moutajammid.webp",
+      "relPath": "assets/resources/4eme-annee/arabe/trimestre-3/recitation/recitation_4eme_t3_p152_an_nahr_al_moutajammid.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101410P00.pdf#page=152",
+      "labels": [
+        "cnp",
+        "101410",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "4eme-annee"
+      ]
+    }
+  ]
+}

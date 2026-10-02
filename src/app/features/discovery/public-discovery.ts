@@ -185,6 +185,113 @@ import { BdLibraryComponent } from '../bd/bd-library';
         <app-bd-library />
       }
 
+      <!-- SECTION: RÉCITATIONS & محفوظات (CNP poetry pages as WebP) -->
+      @if (activeSection() === 'recitation') {
+        <div class="space-y-5">
+
+          <!-- Filter bar -->
+          <div class="flex flex-wrap gap-2 items-center">
+            <select
+              [value]="recitationGradeFilter()"
+              (change)="recitationGradeFilter.set(($event.target as HTMLSelectElement).value)"
+              class="bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] px-3 py-1.5 text-xs font-medium text-[#102A43] outline-none focus:border-[#7B4F1E]">
+              <option value="Tous">{{ lang.tr('Tous les niveaux', 'جميع المستويات') }}</option>
+              <option value="1ere-annee">{{ lang.tr('1ère Année', 'السنة الأولى') }}</option>
+              <option value="2eme-annee">{{ lang.tr('2ème Année', 'السنة الثانية') }}</option>
+              <option value="3eme-annee">{{ lang.tr('3ème Année', 'السنة الثالثة') }}</option>
+              <option value="4eme-annee">{{ lang.tr('4ème Année', 'السنة الرابعة') }}</option>
+              <option value="5eme-annee">{{ lang.tr('5ème Année', 'السنة الخامسة') }}</option>
+              <option value="6eme-annee">{{ lang.tr('6ème Année', 'السنة السادسة') }}</option>
+            </select>
+
+            <select
+              [value]="recitationTrimesterFilter()"
+              (change)="recitationTrimesterFilter.set(+($event.target as HTMLSelectElement).value)"
+              class="bg-[#F7F9FB] border border-[#CBD9E2] rounded-[10px] px-3 py-1.5 text-xs font-medium text-[#102A43] outline-none focus:border-[#7B4F1E]">
+              <option [value]="0">{{ lang.tr('Tous les trimestres', 'جميع الثلاثيات') }}</option>
+              <option [value]="1">{{ lang.tr('Trimestre 1', 'الثلاثي الأول') }}</option>
+              <option [value]="2">{{ lang.tr('Trimestre 2', 'الثلاثي الثاني') }}</option>
+              <option [value]="3">{{ lang.tr('Trimestre 3', 'الثلاثي الثالث') }}</option>
+            </select>
+
+            <span class="text-xs text-[#4A5A50] font-medium">
+              {{ filteredRecitations().length }} {{ lang.tr('محفوظة', 'محفوظة') }}
+            </span>
+          </div>
+
+          <!-- Grid -->
+          @if (!recitationLoaded()) {
+            <div class="flex items-center justify-center py-12 text-[#4A5A50] gap-3">
+              <span class="material-icons animate-spin text-[#7B4F1E]">autorenew</span>
+              <span class="text-sm">{{ lang.tr('Chargement des récitations...', 'جارٍ تحميل المحفوظات...') }}</span>
+            </div>
+          } @else if (filteredRecitations().length === 0) {
+            <div class="text-center py-12 text-[#6B7A70] text-sm">
+              {{ lang.tr('Aucune récitation trouvée pour ce filtre.', 'لا توجد محفوظات لهذا الفلتر.') }}
+            </div>
+          } @else {
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              @for (r of filteredRecitations(); track r.id) {
+                <button
+                  (click)="recitationLightbox.set('/' + r.relPath)"
+                  class="group bg-white rounded-2xl border border-[#E7DFCF] overflow-hidden flex flex-col transition-shadow hover:shadow-[0_12px_32px_-16px_rgba(123,79,30,0.4)] cursor-pointer text-left">
+                  <div class="relative overflow-hidden bg-[#FBF8F1]">
+                    <img
+                      [src]="'/' + r.relPath"
+                      [alt]="r.title"
+                      loading="lazy"
+                      class="w-full aspect-[3/4] object-cover object-top transition-transform group-hover:scale-[1.04] duration-300" />
+                    <span class="absolute inset-0 bg-[#14251D]/0 group-hover:bg-[#14251D]/10 transition-colors flex items-center justify-center">
+                      <span class="material-icons text-white opacity-0 group-hover:opacity-100 transition-opacity text-3xl drop-shadow">zoom_in</span>
+                    </span>
+                  </div>
+                  <div class="p-2.5 space-y-1 flex-1">
+                    <p class="text-[11px] font-semibold text-[#14251D] leading-snug line-clamp-2" dir="rtl">{{ r.title }}</p>
+                    <div class="flex items-center gap-1 flex-wrap">
+                      <span class="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-[#7B4F1E]/10 text-[#7B4F1E]">
+                        T{{ r.trimester }}
+                      </span>
+                      <span class="text-[9px] font-medium text-[#6B7A70]">
+                        {{ r.grade.replace('-annee','').replace('ere','ère').replace('eme','ème') }}
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              }
+            </div>
+          }
+        </div>
+
+        <!-- Lightbox -->
+        @if (recitationLightbox(); as imgSrc) {
+          <div
+            class="fixed inset-0 z-50 bg-[#0A1A12]/90 backdrop-blur-sm flex items-center justify-center p-4"
+            (click)="recitationLightbox.set(null)">
+            <div class="relative max-w-2xl w-full" (click)="$event.stopPropagation()">
+              <button
+                (click)="recitationLightbox.set(null)"
+                class="absolute -top-10 right-0 text-[#FBF8F1] hover:text-[#F2C14E] cursor-pointer flex items-center gap-1 text-xs font-semibold">
+                <span class="material-icons text-sm">close</span>
+                {{ lang.tr('Fermer', 'إغلاق') }}
+              </button>
+              <img
+                [src]="imgSrc"
+                alt="Récitation"
+                class="w-full h-auto max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10" />
+              <div class="flex justify-center mt-3">
+                <a
+                  [href]="imgSrc"
+                  download
+                  class="bg-[#7B4F1E] hover:bg-[#5C3A15] text-[#FBF8F1] font-semibold text-xs px-5 py-2.5 rounded-xl flex items-center gap-2 transition-colors">
+                  <span class="material-icons text-sm">download</span>
+                  {{ lang.tr('Télécharger WebP', 'تحميل الصورة') }}
+                </a>
+              </div>
+            </div>
+          </div>
+        }
+      }
+
       <!-- SECTION 1: EXERCISES & EXAMS BANK WITH UPVOTING, REPORTING & WATERMARK -->
       @if (activeSection() === 'exercises') {
         <div class="grid md:grid-cols-2 gap-6">
@@ -1351,6 +1458,13 @@ export class PublicDiscoveryComponent {
       }
     });
 
+    // Lazy-load recitations the first time the section is activated
+    effect(() => {
+      if (this.activeSection() === 'recitation') {
+        this.loadRecitations();
+      }
+    });
+
     // Phase 3 — when a shared link (?doc=ID) resolves, open that exercise's printable modal.
     effect(() => {
       const id = this.store.pendingDocId();
@@ -1401,12 +1515,13 @@ export class PublicDiscoveryComponent {
       .trim();
   }
 
-  readonly activeSection = signal<'exercises' | 'courses' | 'blog' | 'cnp' | 'bd' | 'teachers' | 'watchlist'>('exercises');
+  readonly activeSection = signal<'exercises' | 'courses' | 'blog' | 'cnp' | 'bd' | 'teachers' | 'watchlist' | 'recitation'>('exercises');
 
   /** Library shelves — data-driven: adding a content type = one entry here + one @if section. */
-  readonly sections: { key: 'exercises' | 'courses' | 'blog' | 'cnp' | 'bd' | 'teachers' | 'watchlist'; icon: string; labelFr: string; labelAr: string; accent: string }[] = [
+  readonly sections: { key: 'exercises' | 'courses' | 'blog' | 'cnp' | 'bd' | 'teachers' | 'watchlist' | 'recitation'; icon: string; labelFr: string; labelAr: string; accent: string }[] = [
     { key: 'exercises', icon: 'fitness_center', labelFr: "Banque d'Examens & Séries", labelAr: 'مكتبة الفروض والسلاسل', accent: '#1B4332' },
     { key: 'courses', icon: 'menu_book', labelFr: 'Fiches & Cours', labelAr: 'الملخصات والدروس', accent: '#2D6A4F' },
+    { key: 'recitation', icon: 'record_voice_over', labelFr: 'Récitations & Poèmes', labelAr: 'المحفوظات والأناشيد', accent: '#7B4F1E' },
     { key: 'blog', icon: 'article', labelFr: 'Articles & Conseils', labelAr: 'المدونة والمقالات', accent: '#2D6A4F' },
     { key: 'cnp', icon: 'auto_stories', labelFr: 'Manuels CNP', labelAr: 'الكتب الرسمية CNP', accent: '#C1121F' },
     { key: 'bd', icon: 'photo_library', labelFr: 'Bandes Dessinées', labelAr: 'شريط مصوّر', accent: '#BF5B34' },
@@ -1434,7 +1549,46 @@ export class PublicDiscoveryComponent {
       case 'cnp': return this.store.filteredCnpBooks().length;
       case 'teachers': return this.store.teachers().length;
       case 'watchlist': return this.store.totalWatchlistCount();
+      case 'recitation': return this.recitationItems().length;
       default: return null; // bd counts load inside its own component
+    }
+  }
+
+  // ─── Recitation / محفوظات state ───────────────────────────────────────────
+  readonly recitationItems = signal<{
+    id: string; grade: string; trimester: number; title: string;
+    file: string; relPath: string; lang: string; ref: string;
+  }[]>([]);
+  readonly recitationLightbox = signal<string | null>(null);
+  readonly recitationGradeFilter = signal<string>('Tous');
+  readonly recitationTrimesterFilter = signal<number>(0);
+  readonly recitationLoaded = signal(false);
+
+  readonly filteredRecitations = computed(() => {
+    const grade = this.recitationGradeFilter();
+    const tri   = this.recitationTrimesterFilter();
+    return this.recitationItems().filter(r =>
+      (grade === 'Tous' || r.grade === grade) &&
+      (tri === 0        || r.trimester === tri)
+    );
+  });
+
+  async loadRecitations() {
+    if (this.recitationLoaded()) return;
+    try {
+      const idx = await fetch('/assets/resources/index.json').then(r => r.json());
+      const recManifests: string[] = (idx.manifests as string[]).filter((m: string) => m.includes('/recitation/'));
+      const all: ReturnType<typeof this.recitationItems>[] = [];
+      await Promise.all(recManifests.map(async (rel) => {
+        try {
+          const m = await fetch(`/${rel}`).then(r => r.json());
+          (m.items ?? []).forEach((item: any) => all.push(item as any));
+        } catch { /* skip broken manifest */ }
+      }));
+      this.recitationItems.set(all as any);
+      this.recitationLoaded.set(true);
+    } catch (e) {
+      console.error('Recitation load failed', e);
     }
   }
   readonly openSolutionIds = signal<Set<string>>(new Set());

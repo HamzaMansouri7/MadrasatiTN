@@ -1,0 +1,75 @@
+{
+  "source": "CNP 101611 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "6eme-annee",
+  "trimester": 2,
+  "count": 3,
+  "items": [
+    {
+      "id": "cnp-101611-recitation-p108",
+      "grade": "6eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "الذئب والكلب (قصيد)",
+      "file": "recitation_6eme_t2_p108_ath_thieb_wa_al_kalb.webp",
+      "relPath": "assets/resources/6eme-annee/arabe/trimestre-2/recitation/recitation_6eme_t2_p108_ath_thieb_wa_al_kalb.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101611P00.pdf#page=108",
+      "labels": [
+        "cnp",
+        "101611",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "6eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101611-recitation-p157",
+      "grade": "6eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "الراديو (شعر)",
+      "file": "recitation_6eme_t2_p157_ar_radio.webp",
+      "relPath": "assets/resources/6eme-annee/arabe/trimestre-2/recitation/recitation_6eme_t2_p157_ar_radio.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101611P00.pdf#page=157",
+      "labels": [
+        "cnp",
+        "101611",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "6eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101611-recitation-p191",
+      "grade": "6eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "إلى أبناء المدارس (قصيدة)",
+      "file": "recitation_6eme_t2_p191_ila_abnaa_al_madaris.webp",
+      "relPath": "assets/resources/6eme-annee/arabe/trimestre-2/recitation/recitation_6eme_t2_p191_ila_abnaa_al_madaris.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101611P00.pdf#page=191",
+      "labels": [
+        "cnp",
+        "101611",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "6eme-annee"
+      ]
+    }
+  ]
+}

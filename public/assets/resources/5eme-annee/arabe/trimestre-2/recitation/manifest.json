@@ -1,0 +1,75 @@
+{
+  "source": "CNP 101509 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "5eme-annee",
+  "trimester": 2,
+  "count": 3,
+  "items": [
+    {
+      "id": "cnp-101509-recitation-p078",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "حنوّ الجدّة (قصيدة)",
+      "file": "recitation_5eme_t2_p078_hinw_al_jadda.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-2/recitation/recitation_5eme_t2_p078_hinw_al_jadda.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=78",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101509-recitation-p099",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "زهرة اللوز (قصيدة)",
+      "file": "recitation_5eme_t2_p099_zahrat_al_lawz.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-2/recitation/recitation_5eme_t2_p099_zahrat_al_lawz.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=99",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101509-recitation-p122",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "كم تشتكي (قصيدة)",
+      "file": "recitation_5eme_t2_p122_kam_tashtaki.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-2/recitation/recitation_5eme_t2_p122_kam_tashtaki.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=122",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "source": "CNP 101509 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "5eme-annee",
+  "trimester": 3,
+  "count": 2,
+  "items": [
+    {
+      "id": "cnp-101509-recitation-p144",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 3,
+      "topic": "recitation",
+      "title": "القاطرة (قصيدة)",
+      "file": "recitation_5eme_t3_p144_al_qatira.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-3/recitation/recitation_5eme_t3_p144_al_qatira.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=144",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101509-recitation-p166",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 3,
+      "topic": "recitation",
+      "title": "علي الخوان (قصيدة)",
+      "file": "recitation_5eme_t3_p166_ala_al_khiwan.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-3/recitation/recitation_5eme_t3_p166_ala_al_khiwan.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=166",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    }
+  ]
+}

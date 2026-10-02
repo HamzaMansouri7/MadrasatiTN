@@ -1,0 +1,75 @@
+{
+  "source": "CNP 101509 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "5eme-annee",
+  "trimester": 1,
+  "count": 3,
+  "items": [
+    {
+      "id": "cnp-101509-recitation-p016",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "القُبّرة وابنها (قصيدة)",
+      "file": "recitation_5eme_t1_p016_al_qoubbara_wa_ibnouha.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-1/recitation/recitation_5eme_t1_p016_al_qoubbara_wa_ibnouha.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=16",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101509-recitation-p036",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "نصيحة أب (قصيدة)",
+      "file": "recitation_5eme_t1_p036_naseehat_ab.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-1/recitation/recitation_5eme_t1_p036_naseehat_ab.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=36",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101509-recitation-p057",
+      "grade": "5eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "العنزة وابنها (قصيدة)",
+      "file": "recitation_5eme_t1_p057_al_anza_wa_ibnouha.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-1/recitation/recitation_5eme_t1_p057_al_anza_wa_ibnouha.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101509P00.pdf#page=57",
+      "labels": [
+        "cnp",
+        "101509",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "5eme-annee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source": "CNP 101215 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "2eme-annee",
+  "trimester": 3,
+  "count": 1,
+  "items": [
+    {
+      "id": "cnp-101215-recitation-p108",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 3,
+      "topic": "recitation",
+      "title": "شهر رمضان (نشيد)",
+      "file": "recitation_2eme_t3_p108_shahr_ramadan.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-3/recitation/recitation_2eme_t3_p108_shahr_ramadan.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101215P00.pdf#page=108",
+      "labels": [
+        "cnp",
+        "101215",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "2eme-annee"
+      ]
+    }
+  ]
+}

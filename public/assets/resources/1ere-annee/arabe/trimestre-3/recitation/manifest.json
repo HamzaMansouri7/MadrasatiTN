@@ -1,0 +1,31 @@
+{
+  "source": "CNP 101110 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "1ere-annee",
+  "trimester": 3,
+  "count": 1,
+  "items": [
+    {
+      "id": "cnp-101110-recitation-p108",
+      "grade": "1ere-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 3,
+      "topic": "recitation",
+      "title": "عيد الأمهات (نشيد)",
+      "file": "recitation_1ere_t3_p108_eid_al_ommahat.webp",
+      "relPath": "assets/resources/1ere-annee/arabe/trimestre-3/recitation/recitation_1ere_t3_p108_eid_al_ommahat.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101110P00.pdf#page=108",
+      "labels": [
+        "cnp",
+        "101110",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "1ere-annee"
+      ]
+    }
+  ]
+}

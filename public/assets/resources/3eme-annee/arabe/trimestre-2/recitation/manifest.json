@@ -1,0 +1,31 @@
+{
+  "source": "CNP 101315 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "3eme-annee",
+  "trimester": 2,
+  "count": 1,
+  "items": [
+    {
+      "id": "cnp-101315-recitation-p078",
+      "grade": "3eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "الحمامة والنملة (قصيد)",
+      "file": "recitation_3eme_t2_p078_al_hamama_wa_an_namla.webp",
+      "relPath": "assets/resources/3eme-annee/arabe/trimestre-2/recitation/recitation_3eme_t2_p078_al_hamama_wa_an_namla.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101315P01.pdf#page=78",
+      "labels": [
+        "cnp",
+        "101315",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "3eme-annee"
+      ]
+    }
+  ]
+}

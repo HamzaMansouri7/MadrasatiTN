@@ -617,8 +617,13 @@ export class EducationStore {
     this.loadPersistedContent();
   }
 
-  /** Pull teacher directory from Firestore; keep seeded list as fallback if empty/unreachable. */
-  private async loadTeachers(): Promise<void> {
+  /**
+   * Pull teacher directory from Firestore; keep seeded list as fallback if
+   * empty/unreachable. Public so the /teachers page can re-fetch on mount —
+   * the constructor call runs before auth/syncTeacherCard, so freshly written
+   * cards would otherwise not appear until a full reload.
+   */
+  async loadTeachers(): Promise<void> {
     const remote = await this.firebase.fetchTeachers();
     if (remote.length > 0) {
       this.teachers.set(remote);

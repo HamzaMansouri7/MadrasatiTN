@@ -1,0 +1,75 @@
+{
+  "source": "CNP 101315 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "3eme-annee",
+  "trimester": 1,
+  "count": 3,
+  "items": [
+    {
+      "id": "cnp-101315-recitation-p016",
+      "grade": "3eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "شكوى (قصيد)",
+      "file": "recitation_3eme_t1_p016_shakwa.webp",
+      "relPath": "assets/resources/3eme-annee/arabe/trimestre-1/recitation/recitation_3eme_t1_p016_shakwa.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101315P01.pdf#page=16",
+      "labels": [
+        "cnp",
+        "101315",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "3eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101315-recitation-p036",
+      "grade": "3eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "الفلاح (قصيد)",
+      "file": "recitation_3eme_t1_p036_al_fallah.webp",
+      "relPath": "assets/resources/3eme-annee/arabe/trimestre-1/recitation/recitation_3eme_t1_p036_al_fallah.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101315P01.pdf#page=36",
+      "labels": [
+        "cnp",
+        "101315",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "3eme-annee"
+      ]
+    },
+    {
+      "id": "cnp-101315-recitation-p056",
+      "grade": "3eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "أغنية (قصيد)",
+      "file": "recitation_3eme_t1_p056_oughniya.webp",
+      "relPath": "assets/resources/3eme-annee/arabe/trimestre-1/recitation/recitation_3eme_t1_p056_oughniya.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101315P01.pdf#page=56",
+      "labels": [
+        "cnp",
+        "101315",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "3eme-annee"
+      ]
+    }
+  ]
+}

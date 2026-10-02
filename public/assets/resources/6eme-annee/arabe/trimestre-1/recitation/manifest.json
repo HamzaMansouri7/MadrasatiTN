@@ -1,0 +1,31 @@
+{
+  "source": "CNP 101611 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "6eme-annee",
+  "trimester": 1,
+  "count": 1,
+  "items": [
+    {
+      "id": "cnp-101611-recitation-p073",
+      "grade": "6eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "الربيع (شعر)",
+      "file": "recitation_6eme_t1_p073_ar_rabii_6.webp",
+      "relPath": "assets/resources/6eme-annee/arabe/trimestre-1/recitation/recitation_6eme_t1_p073_ar_rabii_6.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101611P00.pdf#page=73",
+      "labels": [
+        "cnp",
+        "101611",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "6eme-annee"
+      ]
+    }
+  ]
+}

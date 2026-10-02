@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { EducationStore, LanguageService, TeacherProfile } from '@core';
 
@@ -168,8 +168,14 @@ import { EducationStore, LanguageService, TeacherProfile } from '@core';
     }
   `,
 })
-export class TeachersHomeComponent {
+export class TeachersHomeComponent implements OnInit {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly selectedTeacher = signal<TeacherProfile | null>(null);
+
+  ngOnInit() {
+    // Fresh read on mount — the store's startup fetch runs before auth, so a
+    // teacher card written at login may not be in the initial snapshot.
+    void this.store.loadTeachers();
+  }
 }

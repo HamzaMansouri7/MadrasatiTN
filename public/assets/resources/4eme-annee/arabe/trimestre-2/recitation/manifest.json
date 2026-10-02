@@ -1,0 +1,31 @@
+{
+  "source": "CNP 101410 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "4eme-annee",
+  "trimester": 2,
+  "count": 1,
+  "items": [
+    {
+      "id": "cnp-101410-recitation-p110",
+      "grade": "4eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 2,
+      "topic": "recitation",
+      "title": "أمي (محفوظات)",
+      "file": "recitation_4eme_t2_p110_ommi_4.webp",
+      "relPath": "assets/resources/4eme-annee/arabe/trimestre-2/recitation/recitation_4eme_t2_p110_ommi_4.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101410P00.pdf#page=110",
+      "labels": [
+        "cnp",
+        "101410",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "4eme-annee"
+      ]
+    }
+  ]
+}

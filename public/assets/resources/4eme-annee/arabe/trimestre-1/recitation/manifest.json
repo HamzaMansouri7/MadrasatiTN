@@ -1,0 +1,31 @@
+{
+  "source": "CNP 101410 — كتب القراءة الرسمية",
+  "subject": "اللغة العربية — المحفوظات والأناشيد",
+  "grade": "4eme-annee",
+  "trimester": 1,
+  "count": 1,
+  "items": [
+    {
+      "id": "cnp-101410-recitation-p009",
+      "grade": "4eme-annee",
+      "subject": "arabe",
+      "subSubject": "recitation",
+      "trimester": 1,
+      "topic": "recitation",
+      "title": "نشيد النحل (قصيد)",
+      "file": "recitation_4eme_t1_p009_nasheed_an_nahl.webp",
+      "relPath": "assets/resources/4eme-annee/arabe/trimestre-1/recitation/recitation_4eme_t1_p009_nasheed_an_nahl.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/101410P00.pdf#page=9",
+      "labels": [
+        "cnp",
+        "101410",
+        "arabe",
+        "recitation",
+        "محفوظات",
+        "شعر",
+        "4eme-annee"
+      ]
+    }
+  ]
+}
