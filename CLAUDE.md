@@ -26,7 +26,7 @@ Env: server AI endpoints require `GEMINI_API_KEY`; if unset, `ai` is null and `/
 
 ## Architecture — the non-obvious parts
 
-**No Angular Router for navigation.** [app.routes.ts](src/app/app.routes.ts) is empty. The whole app is one shell ([app.ts](src/app/app.ts)) that switches workspaces via `@switch (store.currentRole())` in [app.html](src/app/app.html) — cases: `home` / `teacher` / `parent` / `student` / `public`. To add a "page", add a role case + feature component, not a route.
+**Router + role store hybrid.** [app.routes.ts](src/app/app.routes.ts) defines lazy routes (`/`, `/teacher`, `/parent`, `/student`, `/discovery`, `/bd`, `/editor`, `/article-studio`, `/generate`); [app.ts](src/app/app.ts) keeps `store.currentRole()` synced with the URL via `routeToRoleMap`. New page = lazy route + entry in that map.
 
 **Single global signal store.** [education-store.ts](src/app/core/services/education-store.ts) (~950 lines) holds all app state as Angular signals + `computed` derivations (activeClass, classCourses, filteredExercisesBank, watchlist, etc.). Injected everywhere. State changes go through store methods, not local component state.
 
@@ -34,7 +34,9 @@ Env: server AI endpoints require `GEMINI_API_KEY`; if unset, `ai` is null and `/
 
 **Zero-cost file storage.** Uploads are base64-POSTed to `/api/upload`, written to VPS disk under `/uploads`, static-served — no Firebase Storage. See [server.ts](src/server.ts).
 
-**AI is server-side only.** 4 Express endpoints (`generate-exercise`, `draft-announcement`, `explain-concept`, `auto-tag-document`) call `gemini-2.5-flash` via `@google/genai`. Key never reaches the client.
+**AI is server-side only.** 12 Express endpoints under `/api/ai/*` call `gemini-2.5-flash` via `@google/genai` — all through the shared `aiGenerateJSON` helper (JSON mode + responseSchema + 1 retry) and grounded in the official curriculum via the KnowledgeSource layer ([src/server/knowledge-source.ts](src/server/knowledge-source.ts)). Extend grounding by adding adapters/sources there — never inline curriculum text in endpoint prompts. `language` param defaults to `'ar'` (Arabic is primary). Key never reaches the client.
+
+**Extracted curriculum resources** (sliced CNP book pages) live in `public/assets/resources/<grade>/<subject>/<trimester>/<topic>/` with a per-topic `manifest.json`, all registered in `public/assets/resources/index.json` (loaded by the `/bd` viewer). Extraction rules: [RESOURCE-PIPELINE.md](RESOURCE-PIPELINE.md); images are WebP max 1600px (`scripts/optimize_resources.py`).
 
 **Import via barrels + aliases.** Always `@core` / `@shared` / `@features` (tsconfig paths). `src/app/{services,models,data}/*` are legacy re-export shims pointing at `core/*` — don't add code there; import from `@core`.
 

@@ -1,0 +1,75 @@
+﻿# Resource Extraction Pipeline — instructions for the extraction agent (Antigravity)
+
+Standing rules for slicing CNP/official PDFs into Madrasati TN knowledge resources.
+I (the owner) give you per batch: **PDF file(s) or URL + grade + subject + trimester + topic + CNP code + language**. You do everything below. Nothing else.
+
+## 1. Target structure (STRICT — never invent another layout)
+
+```
+public/assets/resources/<grade>/<subject>/<trimester>/<topic>/
+├── <files>.png|.webp
+├── manifest.json
+└── README.md
+```
+
+Slug values (lowercase, kebab-case, no accents, no Arabic in paths):
+- grade: `1ere-annee` … `6eme-annee`
+- subject: `arabe` | `francais` | `maths` | `eveil-scientifique` | `anglais` | `histoire-geo` | `education-islamique`
+- trimester: `trimestre-1` | `trimestre-2` | `trimestre-3`
+- topic: short kebab slug I give you (e.g. `bandes-dessinees`)
+
+## 2. File naming (rename EVERYTHING, no original names survive)
+
+`<type>_<grade-short>_<subject>_t<n>_p<page:02d>.png`
+Example: `bd_1ere_arabe_t1_p07.png`
+type prefixes: `bd` (bande dessinée), `ex` (exercise), `lesson`, `poster`, `eval`.
+
+## 3. manifest.json (MUST match the app's KnowledgeSource shape)
+
+```json
+{
+  "source": "CNP <code>",
+  "count": N,
+  "items": [{
+    "id": "cnp-<code>-p01",
+    "grade": "1ere-annee",
+    "subject": "arabe",
+    "subSubject": "communication_orale",
+    "trimester": 1,
+    "topic": "bandes-dessinees",
+    "title": "<Arabic or French human title, page number included>",
+    "file": "bd_1ere_arabe_t1_p01.png",
+    "relPath": "assets/resources/.../bd_1ere_arabe_t1_p01.png",
+    "lang": "ar",
+    "ref": "https://www.cnp.com.tn/arabic/PDF/<code>.pdf#page=1",
+    "labels": ["cnp", "<book-name>", "<type>", "<grade_tag>"]
+  }]
+}
+```
+
+`id` unique, `ref` always points at exact source page (legal trace + dedupe key).
+
+## 4. README.md per topic folder (small, 10 lines max)
+
+- What the resource is (1 line, AR + FR)
+- Source: CNP code + PDF URL
+- Grade / subject / trimester / topic
+- Count of items + naming pattern
+- Date extracted
+
+## 4b. Register in the app index (REQUIRED — the app reads this)
+
+Append the new manifest's relative path to `public/assets/resources/index.json` → `manifests[]`.
+The BD/resources viewer (`/bd`) loads every manifest listed there. Not listed = invisible in the app.
+
+## 5. Quality rules
+
+- Delete byte-identical duplicates outright (keep near-duplicates).
+- Page images: **WebP q82, max width 1600px**, no upscaling. If you extract PNGs, finish with `python scripts/optimize_resources.py` (converts + updates manifests automatically).
+- Skip blank/cover/colophon pages — only pedagogical content.
+- Never commit; leave changes in working tree for review.
+- If grade/subject/trimester is ambiguous from the PDF, STOP and ask — do not guess.
+
+## 6. Side mission (when idle)
+
+Hunt more Tunisian primary resources (official or high-quality free sites). For each candidate: report URL + what it covers (grade/subject) + licence/ownership note. Do NOT scrape before owner approves the site.

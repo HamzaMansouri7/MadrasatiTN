@@ -48,3 +48,6 @@ Thumbs.db
 
 # Runtime-persisted shared worksheets
 docs/
+
+# Source PDFs for resource extraction (re-downloadable from CNP)
+/_sources/
