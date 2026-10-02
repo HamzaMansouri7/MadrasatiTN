@@ -977,7 +977,13 @@ export class EducationStore {
         body: JSON.stringify(payload),
       });
       const data = await res.json();
-      if (data.success && data.id) return { id: data.id, shareUrl: data.shareUrl };
+      if (data.success && data.id) {
+        // Invalidate the once-per-session published cache so the new sheet
+        // shows up in the library grid + blog feed without a full reload.
+        this.publishedLoaded = false;
+        void this.loadPublishedWorksheets();
+        return { id: data.id, shareUrl: data.shareUrl };
+      }
     } catch (err) {
       console.error('Error in saveWorksheet:', err);
     }

@@ -197,36 +197,30 @@ export class SummarizeHomeComponent {
     if (!r) return;
 
     try {
-      // Save sheet via POST /api/docs so it can be shared via persistent URL
-      const docPayload = {
+      // Persist via the store so the published-worksheets cache is refreshed
+      // and the summary appears in the library/blog immediately. The exercise
+      // shape must match GeneratedExercise — the /generate?sheet= viewer
+      // renders ex.title + ex.promptText (whitespace-pre-line).
+      const saved = await this.store.saveWorksheet({
         title: r.title,
         grade: r.grade,
         subject: r.subject,
         topic: r.title,
-        // Shape must match GeneratedExercise — the /generate?sheet= viewer
-        // renders ex.title + ex.promptText (whitespace-pre-line).
         exercises: [
           {
             title: r.title,
             promptText: this.buildFullText(r, false),
             format: 'free',
-          }
+          },
         ],
         authorName: 'Madrasati TN AI',
         customWatermark: 'Madrasati TN — ملخص مادة',
-      };
-
-      const res = await fetch('/api/docs', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(docPayload),
       });
 
-      const data = await res.json();
-      if (data.success && data.id) {
-        // Server returns shareUrl (/generate?sheet=ID) — the only route that
-        // resolves saved /api/docs sheets and gets crawler OG injection.
-        const url = `${window.location.origin}${data.shareUrl || `/generate?sheet=${data.id}`}`;
+      if (saved) {
+        // shareUrl (/generate?sheet=ID) is the route that resolves saved
+        // sheets and gets crawler OG injection.
+        const url = `${window.location.origin}${saved.shareUrl || `/generate?sheet=${saved.id}`}`;
         this.shareUrl.set(url);
         this.shareSaved.set(true);
         if (navigator.clipboard) {
