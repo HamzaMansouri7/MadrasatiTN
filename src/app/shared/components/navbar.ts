@@ -398,7 +398,9 @@ export class NavbarComponent {
   }
 
   selectRole(role: UserRole) {
-    if (role === 'home' || role === 'public') {
+    // Public-first: parent space is free browsing — no signup wall on entry;
+    // login is prompted inside only for gated actions (ask question, comment).
+    if (role === 'home' || role === 'public' || role === 'parent') {
       this.store.switchRole(role);
       return;
     }

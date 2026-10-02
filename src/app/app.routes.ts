@@ -16,8 +16,9 @@ export const routes: Routes = [
     title: 'فضاء المعلم | Espace Enseignant - Madrasati TN',
   },
   {
+    // Public-first: parent space is free browsing (docs bank, articles) —
+    // login is only prompted at action level (ask question) inside the page.
     path: 'parent',
-    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/parent/parent-home').then((m) => m.ParentHomeComponent),
     title: 'فضاء الولي | Espace Parent - Madrasati TN',
@@ -40,6 +41,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/solve/solve-home').then((m) => m.SolveHomeComponent),
     title: 'صوّر التمرين واحصل على الحل | Photo-Solution - Madrasati TN',
+  },
+  {
+    path: 'summarize',
+    loadComponent: () =>
+      import('./features/summarize/summarize-home').then((m) => m.SummarizeHomeComponent),
+    title: 'لخّصلي | Résumé de cours - Madrasati TN',
   },
   {
     path: 'editor',

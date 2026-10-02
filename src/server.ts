@@ -1001,6 +1001,94 @@ Mission :
   }
 });
 
+const SUMMARIZE_DOCS_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    title: STR,
+    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
+    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
+    trimester: { type: Type.STRING, enum: ['Trimestre 1', 'Trimestre 2', 'Trimestre 3'] },
+    summaryMarkdown: STR,
+    keyPoints: {
+      type: Type.ARRAY,
+      items: STR,
+    },
+    glossary: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: {
+          term: STR,
+          def: STR,
+        },
+        required: ['term', 'def'],
+      },
+    },
+  },
+  required: ['title', 'grade', 'subject', 'summaryMarkdown', 'keyPoints', 'glossary'],
+};
+
+app.post('/api/ai/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
+  try {
+    const { images, base64Data, contentType, language, grade, subject, title } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+      return;
+    }
+
+    const rawImages: { base64Data: string; contentType?: string }[] = Array.isArray(images) && images.length > 0
+      ? images
+      : (base64Data ? [{ base64Data, contentType }] : []);
+
+    if (rawImages.length === 0 || rawImages.length > 8) {
+      res.status(400).json({ error: 'Entre 1 et 8 images sont requises.' });
+      return;
+    }
+
+    const lang = resolveLang(language);
+    const grounding = (grade || subject) ? buildGrounding({ grade, subject, lang }) : '';
+
+    const prompt = `Tu es un enseignant tunisien et un expert en synthèse de cours du primaire.
+${langRule(lang)}
+${grounding}
+${title ? `Titre indicatif du document : "${title}"` : ''}
+
+Consignes strictes :
+1. Transcris et synthétise fidèlement toutes les pages soumises dans l'ordre (OCR manuscrit ou imprimé).
+2. Règle ZÉRO-HALLUCINATION : Ne rajoute aucun fait ni formule absente du document source.
+3. Rédige le résumé dans la LANGUE DU DOCUMENT (arabe par défaut si mixte, français si énoncé français).
+4. Pour "summaryMarkdown", utilise du Markdown structuré (titres ##, puces, tableaux explicatifs si pertinent).
+5. "keyPoints" : liste 3 à 6 points clés essentiels à retenir pour l'élève.
+6. "glossary" : liste des termes techniques/concepts avec leurs définitions claires.`;
+
+    const contents: GeminiPart[] = [];
+    for (const img of rawImages) {
+      if (!img.base64Data || typeof img.base64Data !== 'string') continue;
+      const base64Clean = img.base64Data.replace(/^data:[^;]+;base64,/, '');
+      const mime = (img.contentType || 'image/jpeg').startsWith('image/') ? (img.contentType || 'image/jpeg') : 'image/jpeg';
+      contents.push({ inlineData: { mimeType: mime, data: base64Clean } });
+    }
+
+    if (contents.length === 0) {
+      res.status(400).json({ error: 'Images invalides.' });
+      return;
+    }
+
+    contents.push({ text: prompt });
+
+    const data = await aiGenerateJSON(ai, contents, SUMMARIZE_DOCS_SCHEMA, 0.2);
+
+    res.json({ success: true, result: data });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la génération du résumé';
+    console.error('Error in /api/ai/summarize-docs:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
 // 4b. Worksheet Style Analyzer (Phase 1a) — vision reads an uploaded worksheet image
 // and extracts its "design DNA": topic, palette, layout, so we can clone the style.
 app.post('/api/ai/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {

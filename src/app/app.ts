@@ -43,6 +43,7 @@ export class App {
           '/student': 'student',
           '/discovery': 'public',
           '/solve': 'public',
+          '/summarize': 'public',
           '/editor': 'editor',
           '/generate': 'editor',
           '/article-studio': 'article-editor',

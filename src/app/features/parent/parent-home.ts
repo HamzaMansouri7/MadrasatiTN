@@ -1074,6 +1074,11 @@ export class ParentHomeComponent {
   }
 
   openModal(type: 'askQuestion') {
+    // Public-first: browsing is free; asking a question is the gated action.
+    if (!this.isUserLoggedIn()) {
+      this.store.openLoginModal();
+      return;
+    }
     this.modalType.set(type);
   }
 
@@ -1201,6 +1206,10 @@ export class ParentHomeComponent {
   }
 
   submitComment(postId: string) {
+    if (!this.isUserLoggedIn()) {
+      this.store.openLoginModal();
+      return;
+    }
     if (!this.newCommentText()) return;
     this.store.addBlogComment(postId, {
       authorName: this.firebase.userProfile()?.displayName || 'Parent d’Élève',

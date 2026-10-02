@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread } from '@core';
+import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage } from '@core';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -110,6 +110,13 @@ export interface GeneratedExerciseResult {
               class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
+            </button>
+
+            <button
+              (click)="openSummarizer()"
+              class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-base">auto_awesome</span>
+              {{ lang.t('summarizeTeacherBtn') }}
             </button>
 
             <button
@@ -929,6 +936,91 @@ export interface GeneratedExerciseResult {
       </div>
     }
 
+    <!-- MODAL 4: TEACHER DOCUMENT SUMMARIZER ("لخّص وثائقي") -->
+    @if (modalType() === 'summarize') {
+      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
+          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="material-icons text-[#007CC2] text-2xl">auto_awesome</span>
+              <div>
+                <h3 class="font-display font-semibold text-[#14251D] text-lg">
+                  {{ lang.t('summarizeTeacherBtn') }}
+                </h3>
+                <p class="text-xs text-[#5B6B60]">
+                  حوّل وثائقك ودروسك اليدوية إلى ملخص موثّق معتمد ومطابق للبرنامج الرسمي
+                </p>
+              </div>
+            </div>
+            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
+              <span class="material-icons">close</span>
+            </button>
+          </div>
+
+          @if (!isTeacherSummarizing()) {
+            <div class="space-y-4">
+              <div
+                role="button"
+                tabindex="0"
+                (click)="teacherFileInput.click()"
+                (keydown.enter)="teacherFileInput.click()"
+                class="border-2 border-dashed border-[#CBD9E2] hover:border-[#007CC2] transition-colors rounded-xl p-6 text-center bg-[#F7F9FB] cursor-pointer"
+              >
+                <input
+                  #teacherFileInput
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  class="hidden"
+                  (change)="onTeacherSummarizeFilesSelected($event)"
+                />
+                <span class="material-icons text-3xl text-[#007CC2] mb-1">add_a_photo</span>
+                <p class="text-xs font-semibold text-[#102A43]">اختر صور الدرس أو المذكرة (1 إلى 8 صور)</p>
+                <p class="text-[11px] text-[#829AB1] mt-0.5">JPG / PNG — صور واضحة للكراس أو الكتاب</p>
+              </div>
+
+              @if (teacherSummarizeImages().length > 0) {
+                <div class="grid grid-cols-4 gap-2">
+                  @for (img of teacherSummarizeImages(); track $index; let idx = $index) {
+                    <div class="relative aspect-3/4 rounded-lg overflow-hidden border border-[#E6EEF3]">
+                      <img [src]="img.previewUrl" [alt]="'Page ' + (idx + 1)" class="w-full h-full object-cover" />
+                      <button
+                        type="button"
+                        (click)="removeTeacherSummarizeImage(idx)"
+                        class="absolute top-1 left-1 bg-red-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-[10px]"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  }
+                </div>
+
+                <button
+                  type="button"
+                  (click)="runTeacherSummarizer()"
+                  class="w-full py-3 bg-[#007CC2] text-white font-semibold text-xs rounded-xl hover:bg-[#005F96] transition-colors shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span class="material-icons text-base">auto_awesome</span>
+                  <span>توليد الملخص ونشره كمستند موثّق</span>
+                </button>
+              }
+
+              @if (teacherSummarizeError()) {
+                <div class="p-3 bg-red-50 text-red-700 text-xs rounded-lg border border-red-200">
+                  {{ teacherSummarizeError() }}
+                </div>
+              }
+            </div>
+          } @else {
+            <div class="p-8 text-center space-y-3">
+              <div class="w-10 h-10 border-4 border-[#007CC2] border-t-transparent rounded-full animate-spin mx-auto"></div>
+              <p class="text-xs font-semibold text-[#102A43]">جارٍ قراءة الوثائق وتوليد الملخص الموثّق…</p>
+            </div>
+          }
+        </div>
+      </div>
+    }
+
     <!-- MODAL 4: REPLY TO PARENT QUESTION -->
     @if (replyingThread(); as thread) {
       <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
@@ -1534,7 +1626,11 @@ export class TeacherHomeComponent {
   }
 
   readonly activeTab = signal<'courses' | 'blog' | 'qa'>('courses');
-  readonly modalType = signal<'none' | 'course' | 'blogArticle' | 'ai'>('none');
+  readonly modalType = signal<'none' | 'course' | 'blogArticle' | 'ai' | 'summarize'>('none');
+  
+  readonly teacherSummarizeImages = signal<{ base64Data: string; contentType: string; previewUrl: string }[]>([]);
+  readonly isTeacherSummarizing = signal(false);
+  readonly teacherSummarizeError = signal('');
   
   readonly selectedArticleDetail = signal<BlogPost | null>(null);
   readonly printModalCourse = signal<Course | null>(null);
@@ -1734,6 +1830,91 @@ export class TeacherHomeComponent {
   openGenerator() {
     if (!this.requireAuth()) return;
     this.store.openGenerator();
+  }
+
+  openSummarizer() {
+    if (!this.requireAuth()) return;
+    this.modalType.set('summarize');
+    this.teacherSummarizeImages.set([]);
+    this.teacherSummarizeError.set('');
+  }
+
+  async onTeacherSummarizeFilesSelected(e: Event) {
+    const input = e.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) return;
+    const files = Array.from(input.files).slice(0, 8);
+    const list: { base64Data: string; contentType: string; previewUrl: string }[] = [];
+
+    for (const file of files) {
+      try {
+        const { base64Data, contentType } = await downscaleImage(file);
+        list.push({ base64Data, contentType, previewUrl: base64Data });
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    this.teacherSummarizeImages.set(list);
+    input.value = '';
+  }
+
+  removeTeacherSummarizeImage(index: number) {
+    const list = [...this.teacherSummarizeImages()];
+    list.splice(index, 1);
+    this.teacherSummarizeImages.set(list);
+  }
+
+  async runTeacherSummarizer() {
+    const imgs = this.teacherSummarizeImages();
+    if (imgs.length === 0) return;
+
+    this.isTeacherSummarizing.set(true);
+    this.teacherSummarizeError.set('');
+
+    try {
+      const res = await fetch('/api/ai/summarize-docs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          images: imgs.map((i) => ({ base64Data: i.base64Data, contentType: i.contentType })),
+          language: this.lang.lang(),
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success && data.result) {
+        const r = data.result;
+        let fullContent = `${r.summaryMarkdown}\n\n`;
+        if (r.keyPoints?.length) {
+          fullContent += `### أهم النقاط للمراجعة:\n` + r.keyPoints.map((k: string) => `- ${k}`).join('\n') + '\n\n';
+        }
+        if (r.glossary?.length) {
+          fullContent += `### المفردات والمفاهيم:\n` + r.glossary.map((g: { term: string; def: string }) => `- **${g.term}**: ${g.def}`).join('\n');
+        }
+
+        this.store.addCourse({
+          title: r.title,
+          grade: r.grade,
+          subject: r.subject,
+          summary: r.summaryMarkdown,
+          content: fullContent,
+          teacherName: this.editDisplayName(),
+          authorId: this.firebase.currentUser()?.uid,
+        });
+
+        this.isTeacherSummarizing.set(false);
+        this.closeModal();
+        this.activeTab.set('courses');
+      } else {
+        this.teacherSummarizeError.set(data.error || 'Erreur lors de la génération');
+        this.isTeacherSummarizing.set(false);
+      }
+    } catch (err) {
+      console.error(err);
+      this.teacherSummarizeError.set('Erreur réseau lors de la génération du résumé');
+      this.isTeacherSummarizing.set(false);
+    }
   }
 
   closeModal() {

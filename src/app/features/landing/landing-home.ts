@@ -42,7 +42,7 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               {{ lang.tr("Une plateforme numérique pour les enseignants, les parents et les élèves. Accédez à vos ressources, gérez vos cours, suivez les progrès et collaborez en toute simplicité, au service d'une éducation de qualité.", 'منصة رقمية متكاملة للمعلمين والأولياء والتلاميذ. يمكنك الوصول إلى مواردك، وإدارة دروسك، ومتابعة التحصيل الدراسي والتعاون بكل بساطة.') }}
             </p>
 
-            <!-- Primary CTA: the zero-friction solver -->
+            <!-- CTAs: photo solver & course summarizer -->
             <div class="flex flex-wrap items-center gap-3">
               <button
                 (click)="goSolve()"
@@ -50,7 +50,13 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 <span class="material-icons text-base" aria-hidden="true">photo_camera</span>
                 {{ lang.t('solveTitle') }}
               </button>
-              <span class="text-xs text-[#486581]">{{ lang.t('solveFooter') }}</span>
+
+              <button
+                (click)="goSummarize()"
+                class="bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-5 py-3.5 rounded-xl text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
+                <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
+                {{ lang.t('summarizeNav') }}
+              </button>
             </div>
 
             <!-- 4 Feature Badges in Horizontal Row -->
@@ -295,8 +301,13 @@ export class LandingHomeComponent {
     this.router.navigateByUrl('/solve');
   }
 
+  goSummarize() {
+    this.router.navigateByUrl('/summarize');
+  }
+
   enterWorkspace(role: UserRole) {
-    if (role === 'home' || role === 'public') {
+    // Public-first: parent space browses freely; login only gates actions inside.
+    if (role === 'home' || role === 'public' || role === 'parent') {
       this.store.switchRole(role);
       return;
     }

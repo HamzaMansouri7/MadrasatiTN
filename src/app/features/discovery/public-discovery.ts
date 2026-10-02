@@ -30,13 +30,22 @@ import { BdLibraryComponent } from '../bd/bd-library';
             </p>
           </div>
 
-          <!-- Entry: zero-friction photo solver -->
-          <a
-            href="/solve"
-            class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-opacity shadow-sm w-fit">
-            <span class="material-icons text-base" aria-hidden="true">photo_camera</span>
-            {{ lang.t('solveTitle') }}
-          </a>
+          <!-- Entries: zero-friction photo solver & course summarizer -->
+          <div class="flex flex-wrap items-center gap-3">
+            <a
+              href="/solve"
+              class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-opacity shadow-sm w-fit">
+              <span class="material-icons text-base" aria-hidden="true">photo_camera</span>
+              {{ lang.t('solveTitle') }}
+            </a>
+
+            <a
+              href="/summarize"
+              class="inline-flex items-center gap-2 bg-[#0D5C3A] hover:bg-[#094229] text-white font-semibold px-5 py-3 rounded-xl text-sm transition-colors shadow-sm w-fit">
+              <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
+              {{ lang.t('summarizeNav') }}
+            </a>
+          </div>
 
         </div>
       </div>

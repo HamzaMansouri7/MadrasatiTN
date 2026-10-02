@@ -119,6 +119,32 @@ export class LanguageService {
     solveFooter: { fr: 'Gratuit, sans inscription. Conforme au programme officiel tunisien.', ar: 'مجاني وبدون تسجيل. مطابق للبرنامج الرسمي التونسي.' },
     solveNav: { fr: 'Photo-Solution', ar: 'صوّر واحلّ' },
 
+    // Summarize-Docs ("لخّصلي / Résume-moi")
+    summarizeNav: { fr: 'Résumé de cours', ar: 'لخّصلي' },
+    summarizeTitle: { fr: 'Résumez vos cours & fiches manuscrites', ar: 'صوّر الدرس واحصل على ملخص منظم' },
+    summarizeSub: {
+      fr: 'Déposez de 1 à 8 photos de cours, devoirs ou fiches : obtenez un résumé clair, des points clés et du vocabulaire conformes au programme tunisien.',
+      ar: 'أرفق من 1 إلى 8 صور للدروس أو الكراسات: احصل على تلخيص منظم، نقاط أساسية ومفاهيم وفق البرنامج التونسي.',
+    },
+    summarizeDropTitle: { fr: 'Déposez les photos de votre cours ici', ar: 'ضع صور الدرس أو الملخص هنا' },
+    summarizeDropHint: { fr: '1 à 8 photos (cahier, livre, fiches manuscrites) — JPG/PNG', ar: 'من 1 إلى 8 صور (الكراس، الكتاب، ملخصات يدوية) — JPG/PNG' },
+    summarizePickBtn: { fr: 'Sélectionner des photos', ar: 'اختر الصور' },
+    summarizeAnalyzing: { fr: 'Analyse et synthèse des documents en cours…', ar: 'جارٍ قراءة الوثائق واستخراج الملخص…' },
+    summarizeAnalyzingHint: { fr: 'OCR des manuscrits, structuration et extraction des points clés.', ar: 'ثوانٍ قليلة — تمت قراءة النص واستخراج أهم الأفكار.' },
+    summarizeResultTitle: { fr: 'Résumé du cours', ar: 'ملخص الدرس' },
+    summarizeKeyPoints: { fr: 'Points clés à retenir', ar: 'أهم النقاط للمراجعة' },
+    summarizeGlossary: { fr: 'Vocabulaire & Définitions', ar: 'المفردات والمفاهيم' },
+    summarizeCopy: { fr: 'Copier le résumé', ar: 'نسخ الملخص' },
+    summarizeCopied: { fr: 'Résumé copié !', ar: 'تم نسخ الملخص!' },
+    summarizePrint: { fr: 'Imprimer (A4)', ar: 'طباعة A4' },
+    summarizeShare: { fr: 'Partager / Enregistrer', ar: 'مشاركة / حفظ' },
+    summarizeAnother: { fr: 'Résumer un autre cours', ar: 'تلخيص درس آخر' },
+    summarizeErrorTitle: { fr: 'Impossible de synthétiser la photo', ar: 'تعذّر تلخيص هذه الصور' },
+    summarizeErrorHint: { fr: 'Assurez-vous que l’écriture est lisible avec un bon éclairage.', ar: 'تأكد من وضوح الخط والإضاءة ثم حاول مجددًا.' },
+    summarizeNudge: { fr: 'Créez un compte gratuit pour sauvegarder tous vos résumés et les réviser à tout moment.', ar: 'أنشئ حسابًا مجانيًا لحفظ جميع ملخصاتك والمراجعة في أي وقت.' },
+    summarizeTeacherBtn: { fr: 'لخّص وثائقي', ar: 'لخّص وثائقي' },
+    solveToSummarizeBanner: { fr: 'Vous avez des cours entiers à résumer ?', ar: 'عندك ملخصات دروس؟ لخّصها في ثوانٍ' },
+
     // Teacher View
     teacherWelcome: { fr: 'Espace Enseignant', ar: 'فضاء المعلم' },
     teacherHeaderSub: {

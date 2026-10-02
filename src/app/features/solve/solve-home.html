@@ -113,6 +113,18 @@
     </div>
   }
 
+  <!-- Summarize Redirect Banner -->
+  <div class="bg-white rounded-xl p-4 border border-[#E2E8E4] text-center space-y-1">
+    <p class="text-xs text-[#5B6B60]">{{ lang.t('solveToSummarizeBanner') }}</p>
+    <a
+      routerLink="/summarize"
+      class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0D5C3A] hover:underline"
+    >
+      <span class="material-icons text-sm">auto_awesome</span>
+      <span>{{ lang.t('summarizeTitle') }}</span>
+    </a>
+  </div>
+
   <!-- Quiet reassurance line -->
   <p class="text-center text-[11px] text-[#6B7A70]">{{ lang.t('solveFooter') }}</p>
 </div>

@@ -6,6 +6,7 @@ export * from './services/interaction.service';
 export * from './services/firebase.service';
 export * from './services/language.service';
 export * from './guards/auth.guard';
+export * from './utils/image.util';
 export * from './data/cnp-books.data';
 export * from './data/library-exercises.data';
 export * from './data/first-grade-exercises.data';

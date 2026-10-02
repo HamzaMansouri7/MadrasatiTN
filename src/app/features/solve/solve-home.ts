@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { EducationStore, FirebaseService, LanguageService } from '@core';
 
 interface PhotoSolveResult {
@@ -15,6 +16,7 @@ const SOLVE_COUNT_KEY = 'madrasati_solve_count';
 @Component({
   selector: 'app-solve-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterLink],
   templateUrl: './solve-home.html',
 })
 export class SolveHomeComponent {
