@@ -1048,34 +1048,8 @@ export class EducationStore {
         return [...mapped, ...list];
       });
 
-      // Merge into the blog feed as posts.
-      this.blogPosts.update((list) => {
-        const existing = new Set(list.map((p) => p.id));
-        const mapped: BlogPost[] = docs
-          .filter((w) => !existing.has('ws-' + w.id))
-          .map((w) => ({
-            id: 'ws-' + w.id,
-            title: w.title,
-            titleAr: w.title,
-            excerpt: `Nouvelle fiche d'exercices (${w.exerciseCount || ''}) — ${w.topic || ''}.`.trim(),
-            excerptAr: `ورقة تمارين جديدة — ${w.topic || ''}.`.trim(),
-            content: `Fiche communautaire générée sur Madrasati TN. [Ouvrir la fiche](/generate?sheet=${w.id})`,
-            contentAr: `ورقة مُنشأة على منصة مدرستي. [فتح الورقة](/generate?sheet=${w.id})`,
-            authorId: 'community',
-            authorName: w.authorName || 'Ressource Communautaire — Madrasati TN',
-            authorTitle: this.worksheetRoleTitle(w.authorRole),
-            authorAvatar: '/favicon.svg',
-            subject: (w.subject || 'Français') as SubjectName,
-            grade: (w.grade || '1ère Année') as GradeLevel,
-            tags: [w.subject, w.grade, w.topic].filter(Boolean) as string[],
-            publishedAt: w.createdAt || '',
-            likesCount: 0,
-            readTimeMinutes: 2,
-            coverImage: w.thumb || undefined,
-            comments: [],
-          }));
-        return [...mapped, ...list];
-      });
+      // NOTE: worksheets intentionally do NOT cross-post into the blog feed —
+      // the blog shelf is for articles only; sheets live in the exercise bank.
     } catch (err) {
       console.error('Error in loadPublishedWorksheets:', err);
       this.publishedLoaded = false;
@@ -1091,12 +1065,6 @@ export class EducationStore {
     return ' — مساهمة مجتمعية';
   }
 
-  private worksheetRoleTitle(role?: string): string {
-    if (role === 'teacher') return 'معلّم(ة) — فيشة موثّقة';
-    if (role === 'parent') return 'ولي أمر — فيشة منزلية';
-    if (role === 'ai') return 'مساعد مدرستي AI';
-    return 'Fiche partagée';
-  }
 
   // Load published blog posts from Firestore and merge with seed posts
   private blogPostsLoaded = false;

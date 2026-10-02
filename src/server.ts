@@ -1268,6 +1268,26 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
       res.status(400).json({ error: 'Aucun exercice à enregistrer.' });
       return;
     }
+    // Library hygiene: nothing unclassified enters the index.
+    if (!grade || !String(grade).trim() || !subject || !String(subject).trim()) {
+      res.status(400).json({ error: 'Niveau et matière sont obligatoires pour classer la fiche.' });
+      return;
+    }
+    // Idempotency: re-publishing the same sheet (same title/grade/subject)
+    // within 15 min returns the existing entry instead of duplicating it.
+    const existingIndex = readDocsIndex();
+    const dup = existingIndex.find(
+      (e) =>
+        e['title'] === String(title || 'Fiche Madrasati TN').slice(0, 200) &&
+        e['grade'] === String(grade).slice(0, 40) &&
+        e['subject'] === String(subject).slice(0, 40) &&
+        typeof e['createdAt'] === 'string' &&
+        Date.now() - new Date(e['createdAt']).getTime() < 15 * 60 * 1000,
+    );
+    if (dup) {
+      res.json({ success: true, id: dup['id'], shareUrl: `/generate?sheet=${dup['id']}`, deduplicated: true });
+      return;
+    }
     const id = randomUUID();
     // Attribution: a parent-made sheet must never carry a teacher label.
     const role = ['teacher', 'parent', 'ai', 'community'].includes(authorRole) ? authorRole : 'community';

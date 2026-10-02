@@ -110,16 +110,40 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     }
   }
 
-  async share() {
+  // Pre-publish classification — everything entering the library must carry a
+  // confirmed grade + subject (AI-detected values are only a prefill).
+  readonly GRADES = ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'];
+  readonly SUBJECTS = ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'];
+  readonly sharePromptOpen = signal(false);
+  readonly shareGrade = signal('');
+  readonly shareSubject = signal('');
+
+  // Optional correction of the AI-detected DNA before generation — a more
+  // accurate grade/subject grounds the generation prompt in the right program.
+  setDnaField(field: 'grade' | 'subject', value: string) {
+    const d = this.dna();
+    if (!d) return;
+    this.dna.set({ ...d, [field]: (value || undefined) as never });
+  }
+
+  share() {
+    if (this.exercises().length === 0 || this.saving()) return;
+    const d = this.dna();
+    if (!this.shareGrade() && d?.grade && this.GRADES.includes(d.grade)) this.shareGrade.set(d.grade);
+    if (!this.shareSubject() && d?.subject && this.SUBJECTS.includes(d.subject)) this.shareSubject.set(d.subject);
+    this.sharePromptOpen.set(true);
+  }
+
+  async confirmShare() {
     const list = this.exercises();
-    if (list.length === 0 || this.saving()) return;
+    if (list.length === 0 || this.saving() || !this.shareGrade() || !this.shareSubject()) return;
     const d = this.dna();
     this.saving.set(true);
     try {
       const result = await this.store.saveWorksheet({
         title: d?.title || d?.topic || 'Fiche Madrasati TN',
-        grade: d?.grade,
-        subject: d?.subject,
+        grade: this.shareGrade() as WorksheetDna['grade'],
+        subject: this.shareSubject() as WorksheetDna['subject'],
         topic: d?.topic,
         palette: d?.palette,
         exercises: list,
@@ -131,6 +155,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       if (result && typeof window !== 'undefined') {
         const full = window.location.origin + result.shareUrl;
         this.shareUrl.set(full);
+        this.sharePromptOpen.set(false);
         try { await navigator.clipboard.writeText(full); } catch { /* clipboard may be blocked */ }
       }
     } finally {

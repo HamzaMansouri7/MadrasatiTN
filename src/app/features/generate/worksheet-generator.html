@@ -62,7 +62,25 @@
     <section class="bg-white border border-[#E7DFCF] rounded-[14px] p-5 mb-5 no-print">
       <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
         <span class="text-[#14251D] font-semibold">{{ d.topic || d.title }}</span>
-        <span class="text-[#5B6B60]">{{ lang.translateGrade(d.grade) }} · {{ lang.translateSubject(d.subject) }}</span>
+        <!-- AI-detected level/subject, user-correctable for a more accurate generation -->
+        <div class="flex items-center gap-2">
+          <select
+            [value]="d.grade || ''"
+            (change)="setDnaField('grade', $any($event.target).value)"
+            [attr.aria-label]="lang.tr('Niveau', 'المستوى')"
+            class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm bg-white text-[#5B6B60]">
+            <option value="">{{ lang.tr('Niveau auto', 'مستوى تلقائي') }}</option>
+            @for (g of GRADES; track g) { <option [value]="g">{{ lang.translateGrade(g) }}</option> }
+          </select>
+          <select
+            [value]="d.subject || ''"
+            (change)="setDnaField('subject', $any($event.target).value)"
+            [attr.aria-label]="lang.tr('Matière', 'المادة')"
+            class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm bg-white text-[#5B6B60]">
+            <option value="">{{ lang.tr('Matière auto', 'مادة تلقائية') }}</option>
+            @for (s of SUBJECTS; track s) { <option [value]="s">{{ lang.translateSubject(s) }}</option> }
+          </select>
+        </div>
         <div class="flex items-center gap-1">
           @for (c of d.palette || []; track c) {
             <span class="w-5 h-5 rounded-full border border-[#E7DFCF]" [style.background]="c"></span>
@@ -109,6 +127,55 @@
         {{ lang.t('generatorPrintA4') }}
       </button>
     </div>
+
+    <!-- Pre-publish classification: grade + subject are mandatory before the
+         sheet enters the library (AI detection only prefills the selects). -->
+    @if (sharePromptOpen() && !shareUrl()) {
+      <div class="mb-4 p-4 rounded-[14px] bg-white border border-[#E7DFCF] space-y-3 no-print">
+        <div class="flex items-center gap-2">
+          <span class="material-icons text-base text-[#1B4332]">category</span>
+          <span class="font-display font-semibold text-[#14251D]">{{ lang.tr('Classer la fiche avant publication', 'صنّف الورقة قبل النشر في المكتبة') }}</span>
+        </div>
+        <div class="flex flex-wrap items-end gap-3">
+          <div>
+            <label for="wg-share-grade" class="block text-xs text-[#5B6B60] mb-1">{{ lang.tr('Niveau *', 'المستوى *') }}</label>
+            <select
+              id="wg-share-grade"
+              [value]="shareGrade()"
+              (change)="shareGrade.set($any($event.target).value)"
+              class="border border-[#E7DFCF] rounded-[8px] px-2 py-1.5 text-sm bg-white min-w-36">
+              <option value="" disabled>{{ lang.tr('Choisir…', 'اختر…') }}</option>
+              @for (g of GRADES; track g) { <option [value]="g">{{ lang.translateGrade(g) }}</option> }
+            </select>
+          </div>
+          <div>
+            <label for="wg-share-subject" class="block text-xs text-[#5B6B60] mb-1">{{ lang.tr('Matière *', 'المادة *') }}</label>
+            <select
+              id="wg-share-subject"
+              [value]="shareSubject()"
+              (change)="shareSubject.set($any($event.target).value)"
+              class="border border-[#E7DFCF] rounded-[8px] px-2 py-1.5 text-sm bg-white min-w-36">
+              <option value="" disabled>{{ lang.tr('Choisir…', 'اختر…') }}</option>
+              @for (s of SUBJECTS; track s) { <option [value]="s">{{ lang.translateSubject(s) }}</option> }
+            </select>
+          </div>
+          <button
+            type="button"
+            (click)="confirmShare()"
+            [disabled]="saving() || !shareGrade() || !shareSubject()"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#1B4332] text-white font-semibold text-sm disabled:opacity-50 cursor-pointer">
+            <span class="material-icons text-base">publish</span>
+            {{ saving() ? lang.t('generatorSharing') : lang.tr('Confirmer & publier', 'تأكيد والنشر') }}
+          </button>
+          <button
+            type="button"
+            (click)="sharePromptOpen.set(false)"
+            class="px-3 py-2 rounded-[10px] text-sm text-[#5B6B60] hover:bg-[#F2ECDE] cursor-pointer">
+            {{ lang.tr('Annuler', 'إلغاء') }}
+          </button>
+        </div>
+      </div>
+    }
 
     @if (shareUrl(); as url) {
       <div class="mb-4 p-4 rounded-[14px] bg-white border border-[#E7DFCF] space-y-3 no-print">

@@ -52,6 +52,33 @@
           </button>
         </div>
 
+        <!-- Optional classification hints — ground the summary in the CNP curriculum -->
+        <div class="flex flex-wrap items-end gap-3">
+          <div>
+            <label for="sum-grade" class="block text-xs text-[#5B6B60] mb-1">{{ lang.tr('Niveau (optionnel)', 'المستوى (اختياري)') }}</label>
+            <select
+              id="sum-grade"
+              [value]="selGrade()"
+              (change)="selGrade.set($any($event.target).value)"
+              class="border border-[#E2E8E4] rounded-lg px-2 py-1.5 text-xs bg-white min-w-36 text-[#14251D]">
+              <option value="">{{ lang.tr('Détection auto', 'كشف تلقائي') }}</option>
+              @for (g of GRADES; track g) { <option [value]="g">{{ lang.translateGrade(g) }}</option> }
+            </select>
+          </div>
+          <div>
+            <label for="sum-subject" class="block text-xs text-[#5B6B60] mb-1">{{ lang.tr('Matière (optionnel)', 'المادة (اختياري)') }}</label>
+            <select
+              id="sum-subject"
+              [value]="selSubject()"
+              (change)="selSubject.set($any($event.target).value)"
+              class="border border-[#E2E8E4] rounded-lg px-2 py-1.5 text-xs bg-white min-w-36 text-[#14251D]">
+              <option value="">{{ lang.tr('Détection auto', 'كشف تلقائي') }}</option>
+              @for (s of SUBJECTS; track s) { <option [value]="s">{{ lang.translateSubject(s) }}</option> }
+            </select>
+          </div>
+          <p class="text-[11px] text-[#6B7A70] basis-full sm:basis-auto">{{ lang.tr('Améliore la précision du résumé (programme officiel CNP).', 'يحسّن دقة الملخص حسب البرنامج الرسمي.') }}</p>
+        </div>
+
         <!-- Thumbnails Grid -->
         @if (images().length > 0) {
           <div class="space-y-3">

@@ -34,6 +34,13 @@ export class SummarizeHomeComponent {
   private readonly firebase = inject(FirebaseService);
   private readonly router = inject(Router);
 
+  // Optional pre-classification: when the user picks a grade/subject the
+  // server grounds the summary in the matching CNP curriculum (better accuracy).
+  readonly GRADES = ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'];
+  readonly SUBJECTS = ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'];
+  readonly selGrade = signal('');
+  readonly selSubject = signal('');
+
   readonly state = signal<'idle' | 'analyzing' | 'done' | 'error'>('idle');
   readonly images = signal<UploadedImage[]>([]);
   readonly result = signal<SummarizeResult | null>(null);
@@ -113,6 +120,8 @@ export class SummarizeHomeComponent {
           contentType: img.contentType,
         })),
         language: this.lang.lang(),
+        ...(this.selGrade() ? { grade: this.selGrade() } : {}),
+        ...(this.selSubject() ? { subject: this.selSubject() } : {}),
       };
 
       const res = await fetch('/api/ai/summarize-docs', {
