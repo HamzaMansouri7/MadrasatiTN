@@ -1508,11 +1508,12 @@ app.get('/discovery', (req: Request, res: Response, next): void => {
     const origin = `${proto}://${host}`;
 
     const title = escapeHtmlAttr(`${item.title || 'Bande dessinée'} — Madrasati TN`);
+    const keywords = item.pedagogy?.keywords?.length ? ` المفردات: ${item.pedagogy.keywords.join('، ')}.` : '';
     const descParts = [item.grade, item.subject, item.topic].filter(Boolean).join(' · ');
     const description = escapeHtmlAttr(
       descParts
-        ? `${descParts}. Planche officielle du manuel CNP — Madrasati TN.`
-        : 'Bande dessinée officielle pour l\'école primaire tunisienne — Madrasati TN.',
+        ? `${descParts}. Planche officielle du manuel CNP — Madrasati TN.${keywords}`
+        : `Bande dessinée officielle pour l'école primaire tunisienne — Madrasati TN.${keywords}`,
     );
     const imageUrl = escapeHtmlAttr(item.relPath ? `${origin}/${item.relPath}` : `${origin}/favicon.svg`);
     const pageUrl = escapeHtmlAttr(`${origin}/discovery?bd=${itemId}`);

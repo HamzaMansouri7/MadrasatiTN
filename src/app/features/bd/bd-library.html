@@ -97,6 +97,12 @@
             <span class="hidden sm:inline">{{ linkCopied() ? lang.t('bdLinkCopied') : lang.t('bdCopyLink') }}</span>
           </button>
           <button
+            (click)="copyAsPost()"
+            class="flex items-center gap-2 bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] font-medium px-4 py-2.5 rounded-xl text-sm transition-colors cursor-pointer min-h-[44px]">
+            <span class="material-icons text-base" aria-hidden="true">post_add</span>
+            <span class="hidden sm:inline">{{ postCopied() ? lang.t('bdPostCopied') : lang.t('bdCopyPost') }}</span>
+          </button>
+          <button
             (click)="shareNative()"
             class="flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-4 py-2.5 rounded-xl text-sm transition-opacity cursor-pointer min-h-[44px]">
             <span class="material-icons text-base" aria-hidden="true">share</span>

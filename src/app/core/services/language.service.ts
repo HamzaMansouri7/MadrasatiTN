@@ -90,6 +90,8 @@ export class LanguageService {
     bdKeywords: { fr: 'Mots-clés :', ar: 'المفردات المفتاحية:' },
     bdStructures: { fr: 'Structures :', ar: 'التراكيب اللغوية:' },
     bdVerified: { fr: 'Vérifié par un enseignant', ar: 'موثّق من معلم' },
+    bdCopyPost: { fr: 'Copier comme publication', ar: 'نسخ كمنشور' },
+    bdPostCopied: { fr: 'Publication copiée !', ar: 'تم نسخ المنشور!' },
     bdDraft: { fr: 'Brouillon — en attente de validation', ar: 'مسودة — بانتظار التوثيق' },
 
     // Teacher View

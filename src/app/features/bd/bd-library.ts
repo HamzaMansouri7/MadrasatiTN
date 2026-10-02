@@ -191,6 +191,30 @@ export class BdLibraryComponent {
     }
   }
 
+  readonly postCopied = signal(false);
+
+  /** Copy a ready-to-paste social post: title, level, trimester, keywords, link. */
+  async copyAsPost() {
+    const item = this.selectedItem();
+    const url = this.shareUrl();
+    if (!item || !url) return;
+    const grade = this.gradeLabel(item.grade);
+    const trimester = this.lang.tr(`Trimestre ${item.trimester}`, `الثلاثي ${['', 'الأول', 'الثاني', 'الثالث'][item.trimester] || item.trimester}`);
+    const keywords = item.pedagogy?.keywords?.length
+      ? `\n${this.lang.tr('Mots à découvrir', 'مفردات نكتشفها مع أطفالنا')}: ${item.pedagogy.keywords.join('، ')}`
+      : '';
+    const post = this.lang.isArabic()
+      ? `📖 ${item.title}\n🎓 ${grade} · ${trimester} · التعبير الشفوي${keywords}\n\nتصفّحوها مع أطفالكم أو اطبعوها مجانًا من مكتبة مدرستي:\n${url}`
+      : `📖 ${item.title}\n🎓 ${grade} · ${trimester} · Expression orale${keywords}\n\nÀ lire avec votre enfant ou à imprimer gratuitement depuis la bibliothèque Madrasati :\n${url}`;
+    try {
+      await navigator.clipboard.writeText(post);
+      this.postCopied.set(true);
+      setTimeout(() => this.postCopied.set(false), 2500);
+    } catch (err) {
+      console.error('Clipboard error:', err);
+    }
+  }
+
   async shareNative() {
     const item = this.selectedItem();
     const url = this.shareUrl();
