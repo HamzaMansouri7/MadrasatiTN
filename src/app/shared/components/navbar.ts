@@ -72,10 +72,34 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               </button>
             }
 
+            <!-- Student Space -->
+            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'student') {
+              <button
+                (click)="selectRole('student')"
+                [class]="store.currentRole() === 'student' 
+                  ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                  : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
+                class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+                <span class="material-icons text-base xl:text-lg text-[#007CC2]">backpack</span>
+                <span>{{ lang.t('roleStudent') }}</span>
+              </button>
+            }
+
+            <!-- Photo Solver Studio -->
+            <button
+              (click)="navigateToSolve()"
+              [class]="isSolveRoute()
+                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg text-[#BF5B34]">photo_camera</span>
+              <span>{{ lang.tr('صوّر وحلّ', 'صوّر وحلّ') }}</span>
+            </button>
+
             <!-- Public Discovery -->
             <button
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isGeneratorRoute()
+              [class]="store.currentRole() === 'public' && !isGeneratorRoute() && !isMemoStudioRoute() && !isSolveRoute()
                 ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
                 : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
@@ -406,9 +430,25 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               </button>
             }
 
+            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'student') {
+              <button
+                (click)="selectRole('student')"
+                [class]="store.currentRole() === 'student' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
+                class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+                {{ lang.t('roleStudent') }}
+              </button>
+            }
+
+            <button
+              (click)="navigateToSolve()"
+              [class]="isSolveRoute() ? 'bg-[#BF5B34] text-white font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
+              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+              {{ lang.tr('صوّر وحلّ', 'صوّر وحلّ') }}
+            </button>
+
             <button
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
+              [class]="store.currentRole() === 'public' && !isMemoStudioRoute() && !isSolveRoute() ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('rolePublic') }}
             </button>
@@ -505,6 +545,14 @@ export class NavbarComponent {
 
   navigateToTeachers() {
     this.router.navigateByUrl('/teachers');
+  }
+
+  isSolveRoute(): boolean {
+    return this.router.url.includes('/solve');
+  }
+
+  navigateToSolve() {
+    this.router.navigateByUrl('/solve');
   }
 
   async handleNotificationClick(notif: NotificationItem) {
