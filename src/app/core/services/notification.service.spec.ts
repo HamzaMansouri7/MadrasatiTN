@@ -7,8 +7,11 @@ import { AppNotification } from '../models/education.model';
 
 describe('NotificationService', () => {
   let service: NotificationService;
-  let mockFirebase: any;
-  let mockLang: any;
+  let mockFirebase: Record<string, unknown>;
+  let mockLang: Record<string, unknown>;
+
+  const merge = (n: AppNotification[]) =>
+    (service as unknown as { mergeRemoteNotifications(items: AppNotification[]): void }).mergeRemoteNotifications(n);
 
   const mockUserSignal = signal<{ uid: string } | null>({ uid: 'teacher-1' });
   const mockProfileSignal = signal<UserProfile | null>({
@@ -38,8 +41,8 @@ describe('NotificationService', () => {
 
     mockLang = {
       lang: signal('fr'),
-      t: (k: string, p?: Record<string, string>) => k,
-      tr: (fr: string, ar: string) => fr,
+      t: (k: string) => k,
+      tr: (fr: string) => fr,
     };
 
     TestBed.configureTestingModule({
@@ -77,7 +80,7 @@ describe('NotificationService', () => {
       targetRole: 'all',
     };
 
-    (service as any).mergeRemoteNotifications([rawNotif]);
+    merge([rawNotif]);
 
     const visible = service.visible();
     const found = visible.find((n) => n.id === 'doc-123');
@@ -95,7 +98,7 @@ describe('NotificationService', () => {
       targetRole: 'all',
     };
 
-    (service as any).mergeRemoteNotifications([rawNotif]);
+    merge([rawNotif]);
 
     const visible = service.visible();
     const found = visible.find((n) => n.id === 'doc-456');
@@ -124,7 +127,7 @@ describe('NotificationService', () => {
       authorId: 'teacher-2',
     };
 
-    (service as any).mergeRemoteNotifications([forMe, forOther]);
+    merge([forMe, forOther]);
 
     const visible = service.visible();
     expect(visible.find((n) => n.id === 'dm-1')).toBeDefined();

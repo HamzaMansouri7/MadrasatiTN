@@ -7,6 +7,11 @@ import { TeacherAvatarComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
+interface RecitationItem {
+  id: string; grade: string; trimester: number; title: string;
+  file: string; relPath: string; lang: string; ref: string;
+}
+
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -268,8 +273,10 @@ import { BdLibraryComponent } from '../bd/bd-library';
         @if (recitationLightbox(); as imgSrc) {
           <div
             class="fixed inset-0 z-50 bg-[#0A1A12]/90 backdrop-blur-sm flex items-center justify-center p-4"
-            (click)="recitationLightbox.set(null)">
-            <div class="relative max-w-2xl w-full" (click)="$event.stopPropagation()">
+            role="button" tabindex="0"
+            (click)="recitationLightbox.set(null)"
+            (keydown.escape)="recitationLightbox.set(null)">
+            <div class="relative max-w-2xl w-full" role="presentation" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
               <button
                 (click)="recitationLightbox.set(null)"
                 class="absolute -top-10 right-0 text-[#FBF8F1] hover:text-[#F2C14E] cursor-pointer flex items-center gap-1 text-xs font-semibold">
@@ -1528,10 +1535,7 @@ export class PublicDiscoveryComponent {
   }
 
   // ─── Recitation / محفوظات state ───────────────────────────────────────────
-  readonly recitationItems = signal<{
-    id: string; grade: string; trimester: number; title: string;
-    file: string; relPath: string; lang: string; ref: string;
-  }[]>([]);
+  readonly recitationItems = signal<RecitationItem[]>([]);
   readonly recitationLightbox = signal<string | null>(null);
   readonly recitationGradeFilter = signal<string>('Tous');
   readonly recitationTrimesterFilter = signal<number>(0);
@@ -1551,14 +1555,14 @@ export class PublicDiscoveryComponent {
     try {
       const idx = await fetch('/assets/resources/index.json').then(r => r.json());
       const recManifests: string[] = (idx.manifests as string[]).filter((m: string) => m.includes('/recitation/'));
-      const all: ReturnType<typeof this.recitationItems>[] = [];
+      const all: RecitationItem[] = [];
       await Promise.all(recManifests.map(async (rel) => {
         try {
           const m = await fetch(`/${rel}`).then(r => r.json());
-          (m.items ?? []).forEach((item: any) => all.push(item as any));
+          (m.items ?? []).forEach((item: RecitationItem) => all.push(item));
         } catch { /* skip broken manifest */ }
       }));
-      this.recitationItems.set(all as any);
+      this.recitationItems.set(all);
       this.recitationLoaded.set(true);
     } catch (e) {
       console.error('Recitation load failed', e);

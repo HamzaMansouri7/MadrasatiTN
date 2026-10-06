@@ -127,7 +127,7 @@ export class NotificationService {
       if (item.recipientId && item.recipientId !== currentUid) {
         continue;
       }
-      if (item.targetRole && item.targetRole !== 'all' && item.targetRole !== currentRole) {
+      if (!item.recipientId && item.targetRole && item.targetRole !== 'all' && item.targetRole !== currentRole) {
         continue;
       }
 
@@ -277,7 +277,7 @@ export class NotificationService {
     }
   }
 
-  private mapDocToNotification(id: string, data: Record<string, any>): AppNotification {
+  private mapDocToNotification(id: string, data: Partial<AppNotification> & { timestamp?: number }): AppNotification {
     return {
       id,
       category: data['category'] || 'activity',

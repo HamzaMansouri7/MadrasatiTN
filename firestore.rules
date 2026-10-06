@@ -127,8 +127,15 @@ service cloud.firestore {
 
     // System and activity notifications (immutable, author-restricted creation)
     match /notifications/{notifId} {
-      allow read: if true;
-      allow create: if isSignedIn() && request.resource.data.authorId == request.auth.uid;
+      // Direct notifications (recipientId set) are readable only by their recipient.
+      // They must use targetRole 'direct' so the public role query (targetRole in [role,'all'])
+      // never matches them; rules are not filters and a single denied doc fails the whole query.
+      allow read: if resource.data.get('recipientId', null) == null
+                  || (isSignedIn() && resource.data.recipientId == request.auth.uid);
+      allow create: if isSignedIn()
+                    && request.resource.data.authorId == request.auth.uid
+                    && (request.resource.data.get('recipientId', null) == null
+                        || request.resource.data.targetRole == 'direct');
       allow update, delete: if false;
     }
   }

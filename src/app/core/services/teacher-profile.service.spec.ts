@@ -5,7 +5,7 @@ import { FirebaseService, UserProfile } from './firebase.service';
 
 describe('TeacherProfileService', () => {
   let service: TeacherProfileService;
-  let mockFirebase: any;
+  let mockFirebase: { updateUserProfile: ReturnType<typeof vi.fn> } & Record<string, unknown>;
 
   beforeEach(() => {
     mockFirebase = {
