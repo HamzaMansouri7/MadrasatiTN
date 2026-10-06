@@ -292,11 +292,26 @@ const validateFileMagicBytes = (buffer: Buffer, declaredExt: string): boolean =>
 const ALLOWED_EXTENSIONS = new Set(['pdf', 'png', 'jpg', 'jpeg', 'webp', 'docx']);
 const MAX_UPLOAD_BYTES = 15 * 1024 * 1024; // 15MB
 
+// AI-generated files live in uploads/generated/<yyyy-mm>/ so they can be purged separately.
+const saveGenerated = (filename: string, data: Buffer | string): string => {
+  const month = new Date().toISOString().slice(0, 7);
+  const dir = join(uploadsFolder, 'generated', month);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, filename), data);
+  return `/uploads/generated/${month}/${filename}`;
+};
+
+// Storage layout: uploads/<kind>/<uid>/<file>. Legacy flat files in uploads/ stay served as-is.
+const UPLOAD_KINDS = new Set(['avatars', 'courses', 'articles', 'documents', 'notebooks']);
+const SAFE_UID = /^[A-Za-z0-9_-]{1,64}$/;
+
 app.post('/api/upload', originGuard, uploadRateLimiter, (req, res): void => {
   try {
-    const rawData = req.body.base64Data || req.body.fileData;
+    const rawData = req.body.base64Data || req.body.fileData || req.body.fileBase64;
     const rawName = req.body.filename || req.body.fileName;
     const rawType = req.body.contentType || req.body.fileType || req.body.mimeType;
+    const kind = UPLOAD_KINDS.has(req.body.kind) ? (req.body.kind as string) : 'documents';
+    const uid = typeof req.body.uid === 'string' && SAFE_UID.test(req.body.uid) ? req.body.uid : 'anon';
 
     if (!rawData || typeof rawData !== 'string') {
       res.status(400).json({ error: 'Aucun fichier transmis ou format invalide' });
@@ -329,13 +344,13 @@ app.post('/api/upload', originGuard, uploadRateLimiter, (req, res): void => {
     }
 
     const cleanName = `${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
-    const filePath = join(uploadsFolder, cleanName);
-
-    writeFileSync(filePath, buffer);
+    const targetDir = join(uploadsFolder, kind, uid);
+    mkdirSync(targetDir, { recursive: true });
+    writeFileSync(join(targetDir, cleanName), buffer);
 
     res.json({
       success: true,
-      url: `/uploads/${cleanName}`,
+      url: `/uploads/${kind}/${uid}/${cleanName}`,
       filename: cleanName,
       size: buffer.length,
     });
@@ -1834,10 +1849,7 @@ app.post('/api/ai/generate-illustration', originGuard, aiRateLimiter, aiDailyGua
       const base64Data = firstImage?.image?.imageBytes;
       if (base64Data) {
         const filename = `illustration_${randomUUID()}.jpg`;
-        const filepath = join(uploadsFolder, filename);
-        writeFileSync(filepath, Buffer.from(base64Data, 'base64'));
-
-        const imageUrl = `/uploads/${filename}`;
+        const imageUrl = saveGenerated(filename, Buffer.from(base64Data, 'base64'));
         res.json({ success: true, imageUrl });
         return;
       }
@@ -1856,10 +1868,9 @@ Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use vi
 
     const rawSvg = (svgResponse.text || '').replace(/```xml/g, '').replace(/```svg/g, '').replace(/```/g, '').trim();
     const filename = `illustration_${randomUUID()}.svg`;
-    const filepath = join(uploadsFolder, filename);
-    writeFileSync(filepath, rawSvg, 'utf8');
+    const imageUrl = saveGenerated(filename, rawSvg);
 
-    res.json({ success: true, imageUrl: `/uploads/${filename}` });
+    res.json({ success: true, imageUrl });
     return;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de la création de l\'illustration';

@@ -182,6 +182,8 @@ export class TeacherProfileService {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        kind: 'avatars',
+        uid,
         fileName: `avatar_${uid}_${Date.now()}.webp`,
         fileBase64: base64Data,
         mimeType: 'image/webp',

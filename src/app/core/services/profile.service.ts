@@ -159,6 +159,8 @@ export class ProfileService {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        kind: 'avatars',
+        uid: user.uid,
         fileName: `avatar_${user.uid}_${Date.now()}.webp`,
         fileBase64: base64WebP,
         mimeType: 'image/webp',

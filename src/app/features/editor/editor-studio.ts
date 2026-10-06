@@ -577,6 +577,8 @@ export class EditorStudioComponent {
         method: 'POST',
         headers: authHeaders,
         body: JSON.stringify({
+          kind: 'documents',
+          uid: this.firebase.currentUser()?.uid,
           filename: file.name,
           base64Data,
           contentType: file.type,

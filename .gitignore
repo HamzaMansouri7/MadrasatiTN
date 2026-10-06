@@ -51,3 +51,11 @@ docs/
 
 # Source PDFs for resource extraction (re-downloadable from CNP)
 /_sources/
+
+# User-uploaded & generated files (kept on the VPS only; legacy flat files in uploads/ stay tracked)
+/uploads/avatars/
+/uploads/courses/
+/uploads/articles/
+/uploads/documents/
+/uploads/notebooks/
+/uploads/generated/

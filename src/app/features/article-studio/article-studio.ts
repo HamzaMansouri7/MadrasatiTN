@@ -313,6 +313,8 @@ export class ArticleStudioComponent implements OnDestroy {
           method: 'POST',
           headers: authHeaders,
           body: JSON.stringify({
+            kind: 'articles',
+            uid: this.firebase.currentUser()?.uid,
             filename: file.name,
             base64Data,
             contentType: file.type,
@@ -602,6 +604,8 @@ export class ArticleStudioComponent implements OnDestroy {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
+            kind: 'articles',
+            uid: this.firebase.currentUser()?.uid,
             filename: file.name,
             mimeType: file.type,
             base64Data,

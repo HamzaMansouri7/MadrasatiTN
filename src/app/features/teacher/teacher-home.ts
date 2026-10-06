@@ -41,9 +41,9 @@ export interface GeneratedExerciseResult {
       }
 
       <!-- Welcome Header: Institutional Hero -->
-      <div class="rounded-[24px] bg-[#14251D] text-[#FBF8F1] p-6 sm:p-7 shadow-sm">
-        <div class="space-y-5">
-          <div class="space-y-3">
+      <div class="rounded-[24px] bg-[#14251D] text-[#FBF8F1] p-6 sm:p-8 shadow-sm">
+        <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-10">
+          <div class="space-y-3 min-w-0">
             <div class="flex flex-wrap items-center gap-2">
               <span class="inline-flex items-center gap-1.5 text-[#9DBBA8] text-xs font-medium">
                 <span class="material-icons text-sm text-[#F2C14E]">verified</span>
@@ -78,63 +78,53 @@ export interface GeneratedExerciseResult {
               </h1>
               <p class="text-[#B7C7BC] text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
                 {{ teacherHeaderSub() }}
-                <span class="font-semibold text-[#FBF8F1] underline decoration-[#F2C14E] underline-offset-4">{{ store.activeClass().name }}</span>
-                — {{ store.activeClass().schoolName }}.
+                @if (teacherPlace(); as place) {
+                  — <span class="font-semibold text-[#FBF8F1] underline decoration-[#F2C14E] underline-offset-4">{{ place }}</span>
+                }
               </p>
             </div>
           </div>
 
-          <!-- Quick Actions Bar -->
-          <div class="flex flex-wrap items-center gap-2.5 pt-5 border-t border-white/10">
+          <!-- Primary actions -->
+          <div class="flex flex-wrap items-center gap-2.5 lg:shrink-0">
             <button
               (click)="openStudio()"
-              class="flex items-center gap-1.5 bg-[#F2C14E] hover:bg-[#D9A93C] text-[#14251D] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">auto_fix_high</span>
+              class="flex items-center gap-2 bg-[#F2C14E] hover:bg-[#D9A93C] text-[#14251D] font-bold px-5 py-3 rounded-[10px] text-sm transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-lg">auto_fix_high</span>
               {{ lang.tr('Studio Examens A4', 'استوديو التحرير والطباعة A4') }}
             </button>
 
             <button
-              (click)="openArticleStudio()"
-              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">article</span>
-              {{ lang.tr('Rédiger un Article', 'كتابة مقال بيداغوجي') }}
-            </button>
-
-            <button
-              (click)="openGenerator()"
-              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">auto_awesome</span>
-              {{ lang.tr('Fiches similaires IA', 'أوراق مشابهة بالذكاء') }}
-            </button>
-
-            <button
-              (click)="openMemoStudio()"
-              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">note_alt</span>
-              {{ lang.t('memoStudioNav') }}
-            </button>
-
-            <button
               (click)="openStudio()"
-              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">cloud_upload</span>
+              class="flex items-center gap-2 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-5 py-3 rounded-[10px] text-sm transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-lg">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
             </button>
-
-            <button
-              (click)="openSummarizer()"
-              class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">auto_awesome</span>
-              {{ lang.t('summarizeTeacherBtn') }}
-            </button>
-
-            <button
-              (click)="openModal('ai')"
-              class="flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-[#FBF8F1] font-semibold px-4 py-2.5 rounded-[10px] text-xs border border-white/15 transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-base">auto_awesome</span>
-              {{ lang.t('aiAssistantBtn') }}
-            </button>
           </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-6 pt-6 border-t border-white/10">
+        <button (click)="openArticleStudio()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
+          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">article</span></span>
+          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.tr('Rédiger un Article', 'كتابة مقال بيداغوجي') }}</span>
+        </button>
+        <button (click)="openMemoStudio()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
+          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">note_alt</span></span>
+          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.t('memoStudioNav') }}</span>
+        </button>
+        <button (click)="openGenerator()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
+          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">auto_awesome</span></span>
+          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.tr('Fiches similaires IA', 'أوراق مشابهة بالذكاء') }}</span>
+        </button>
+        <button (click)="openSummarizer()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
+          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">summarize</span></span>
+          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.t('summarizeTeacherBtn') }}</span>
+        </button>
+        <button (click)="openModal('ai')" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
+          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">auto_awesome</span></span>
+          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.t('aiAssistantBtn') }}</span>
+        </button>
         </div>
       </div>
 
@@ -1940,9 +1930,15 @@ export class TeacherHomeComponent {
 
   teacherHeaderSub(): string {
     return this.lang.tr(
-      'Votre espace enseignant professionnel pour la classe ',
-      'فضاؤك المهني للتعليم الخاص بفصل '
+      'Votre espace enseignant professionnel',
+      'فضاؤك المهني للتعليم'
     );
+  }
+
+  /** The teacher's own school + region, as entered at registration. Empty if not provided. */
+  teacherPlace(): string {
+    const p = this.firebase.userProfile();
+    return [p?.school, p?.delegation || p?.governorate].filter(Boolean).join(', ');
   }
 
   openModal(type: 'course' | 'blogArticle' | 'ai') {
@@ -2104,6 +2100,8 @@ export class TeacherHomeComponent {
         method: 'POST',
         headers: authHeaders,
         body: JSON.stringify({
+          kind: 'courses',
+          uid: this.firebase.currentUser()?.uid,
           filename: file.name,
           base64Data,
           contentType: file.type,

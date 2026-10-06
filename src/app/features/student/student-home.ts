@@ -389,6 +389,8 @@ export class StudentHomeComponent {
         method: 'POST',
         headers: authHeaders,
         body: JSON.stringify({
+          kind: 'notebooks',
+          uid: this.firebase.currentUser()?.uid,
           filename: `notebook_${Date.now()}_${file.name}`,
           base64Data,
           contentType: file.type,

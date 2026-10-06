@@ -126,7 +126,7 @@ export class FirebaseService {
   /** Builds + persists the app profile for a Google-authenticated user. */
   private async completeGoogleProfile(user: User, role: UserRole): Promise<UserProfile> {
     let userRole = role;
-      let school = 'École Primaire Habib Bourguiba, Ariana';
+      let school: string | undefined;
       let extra: Partial<UserProfile> = {};
 
       try {
@@ -151,7 +151,7 @@ export class FirebaseService {
             email: user.email,
             photoURL: user.photoURL,
             role: userRole,
-            school,
+            school: school ?? null,
             updatedAt: new Date().toISOString(),
           }, { merge: true });
         }
@@ -266,7 +266,7 @@ export class FirebaseService {
         const user = credential.user;
 
         let userRole = targetRole;
-        let school = 'École Primaire Habib Bourguiba, Ariana';
+        let school: string | undefined;
         let displayName = user.displayName;
         let extra: Partial<UserProfile> = {};
 
@@ -320,7 +320,6 @@ export class FirebaseService {
       email,
       photoURL: defaultAvatar,
       role: targetRole,
-      school: 'École Primaire Habib Bourguiba, Ariana',
     };
 
     this.userProfile.set(profile);
@@ -362,7 +361,7 @@ export class FirebaseService {
             displayName: data.displayName,
             email: data.email,
             role: data.role,
-            school: data.school || 'École Primaire Tunisienne',
+            school: data.school || null,
             delegation: data.delegation || null,
             phone: data.phone || null,
             grade: data.grade || null,
@@ -381,7 +380,7 @@ export class FirebaseService {
           email: user.email,
           photoURL: avatar,
           role: data.role,
-          school: data.school || 'École Primaire Tunisienne',
+          school: data.school,
           delegation: data.delegation,
           phone: data.phone,
           grade: data.grade,
@@ -405,7 +404,7 @@ export class FirebaseService {
       email: data.email,
       photoURL: avatar,
       role: data.role,
-      school: data.school || 'École Primaire Tunisienne',
+      school: data.school,
       delegation: data.delegation,
       phone: data.phone,
       grade: data.grade,
@@ -466,7 +465,7 @@ export class FirebaseService {
       await setDoc(doc(this.db, 'teachers', profile.uid), {
         name: profile.displayName || 'Enseignant(e)',
         title: profile.title || profile.primarySubject || 'Enseignant(e) du primaire',
-        school: profile.school || 'École Primaire Tunisienne',
+        school: profile.school || '',
         avatarUrl: profile.photoURL || '',
         subjects: profile.primarySubject ? [profile.primarySubject] : [],
         verifiedBadge: true,
