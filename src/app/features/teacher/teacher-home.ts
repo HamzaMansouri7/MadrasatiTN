@@ -1839,7 +1839,7 @@ export class TeacherHomeComponent {
         img.src = reader.result as string;
       };
       reader.readAsDataURL(file);
-    } catch (err) {
+    } catch {
       this.isUploadingAvatar.set(false);
       this.store.showToast(this.lang.tr('Erreur lors du téléversement', 'حدث خطأ أثناء رفع الصورة'), 'error');
     }

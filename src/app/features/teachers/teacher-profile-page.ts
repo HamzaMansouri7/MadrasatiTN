@@ -7,8 +7,6 @@ import {
   TeacherProfile,
   TeacherProfileService,
   TeacherStats,
-  Course,
-  ExerciseItem,
 } from '@core';
 import { TeacherAvatarComponent } from '@shared';
 
@@ -26,7 +24,7 @@ import { TeacherAvatarComponent } from '@shared';
           <a routerLink="/teachers"
              class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#2D6A4F] hover:underline cursor-pointer">
             <span class="material-icons text-sm rtl:rotate-180">arrow_back</span>
-            <span>{{ lang.tr('Retour à l\'annuaire', 'العودة إلى دليل المعلمين') }}</span>
+            <span>{{ lang.tr('Retour à l’annuaire', 'العودة إلى دليل المعلمين') }}</span>
           </a>
 
           <!-- Share Button -->
@@ -52,7 +50,7 @@ import { TeacherAvatarComponent } from '@shared';
               {{ lang.tr('Enseignant introuvable', 'المعلم غير موجود') }}
             </h2>
             <p class="text-xs text-[#5B6B60] max-w-[40ch] mx-auto">
-              {{ lang.tr('Ce profil n\'existe pas ou a été mis à jour récemment.', 'هذا الملف غير متوفر أو تم تحديثه مؤخراً.') }}
+              {{ lang.tr('Ce profil n’existe pas ou a été mis à jour récemment.', 'هذا الملف غير متوفر أو تم تحديثه مؤخراً.') }}
             </p>
             <a routerLink="/teachers"
                class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2D6A4F] text-white font-bold rounded-xl text-xs shadow-xs hover:bg-[#1B4332] transition-colors">
@@ -163,7 +161,7 @@ import { TeacherAvatarComponent } from '@shared';
                   {{ stats()?.exercisesCount || 0 }}
                 </p>
                 <p class="text-xs text-[#6B7A70] font-medium mt-0.5">
-                  {{ lang.tr('Séries d\'exercices', 'سلاسل التمارين') }}
+                  {{ lang.tr('Séries d’exercices', 'سلاسل التمارين') }}
                 </p>
               </div>
 

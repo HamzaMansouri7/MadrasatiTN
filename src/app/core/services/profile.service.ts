@@ -5,21 +5,18 @@ import {
   UserProfile,
   UserRole,
   ChildProfile,
-  ChildActivity,
   GradeLevel,
   TeacherProfile,
 } from '../models/education.model';
 import {
   collection,
   doc,
-  getDoc,
   getDocs,
   setDoc,
   updateDoc,
   deleteDoc,
   query,
   where,
-  deleteField,
 } from 'firebase/firestore';
 
 export interface ProfileCompleteness {

@@ -10,7 +10,6 @@ import {
   GradeLevel,
   UserRole,
   ChildProfile,
-  TeacherProfileService,
 } from '@core';
 import { TeacherAvatarComponent } from '@shared';
 
@@ -187,9 +186,9 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
           <!-- Student Illustrated Avatar Selector -->
           @if (currentRole() === 'student') {
             <div class="space-y-3">
-              <label class="block text-xs font-semibold text-[#14251D]">
+              <p class="block text-xs font-semibold text-[#14251D]">
                 {{ lang.tr('Choisissez votre avatar illustré', 'اختر صورتك الرمزية') }}
-              </label>
+              </p>
               <div class="grid grid-cols-3 sm:grid-cols-6 gap-3">
                 @for (avId of ['avatar-1', 'avatar-2', 'avatar-3', 'avatar-4', 'avatar-5', 'avatar-6']; track avId) {
                   <button
@@ -207,10 +206,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-semibold text-[#14251D] mb-1">
+              <label for="pf-1" class="block text-xs font-semibold text-[#14251D] mb-1">
                 {{ currentRole() === 'student' ? lang.tr('Pseudo élève *', 'الاسم المستعار للتلميذ *') : lang.tr('Nom et prénom *', 'الاسم واللقب *') }}
               </label>
-              <input
+              <input id="pf-1"
                 type="text"
                 [(ngModel)]="editName"
                 placeholder="Ex: Mohamed Ben Ali"
@@ -218,10 +217,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-[#14251D] mb-1">
+              <label for="pf-2" class="block text-xs font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Adresse email', 'البريد الإلكتروني') }}
               </label>
-              <input
+              <input id="pf-2"
                 type="email"
                 [value]="profile()?.email || ''"
                 disabled
@@ -230,10 +229,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
 
             @if (currentRole() === 'parent') {
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-3" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Numéro de téléphone (Privé)', 'رقم الهاتف (خاص ومحمى)') }}
                 </label>
-                <input
+                <input id="pf-3"
                   type="tel"
                   [(ngModel)]="editPhone"
                   placeholder="Ex: +216 98 123 456"
@@ -244,10 +243,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-4" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Gouvernorat / Ville', 'الولاية / المدينة') }}
                 </label>
-                <input
+                <input id="pf-4"
                   type="text"
                   [(ngModel)]="editDelegation"
                   placeholder="Ex: Ariana, Tunis, Sousse"
@@ -257,10 +256,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
 
             @if (currentRole() === 'teacher') {
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-5" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Titre pédagogique', 'الصفة البيداغوجية') }}
                 </label>
-                <input
+                <input id="pf-5"
                   type="text"
                   [(ngModel)]="editTitle"
                   placeholder="Ex: Professeur principal de l'enseignement primaire"
@@ -268,10 +267,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-6" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Établissement scolaire', 'المؤسسة التربوية') }}
                 </label>
-                <input
+                <input id="pf-6"
                   type="text"
                   [(ngModel)]="editSchool"
                   placeholder="Ex: École Primaire Habib Bourguiba"
@@ -279,10 +278,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-7" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Délégation / Gouvernorat', 'المعتمدية / المندوبية') }}
                 </label>
-                <input
+                <input id="pf-7"
                   type="text"
                   [(ngModel)]="editDelegation"
                   placeholder="Ex: Ariana Ville, Ariana"
@@ -290,10 +289,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-8" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Identifiant CNP / Ministère (Privé)', 'المعرف المهني (خاص)') }}
                 </label>
-                <input
+                <input id="pf-8"
                   type="text"
                   [(ngModel)]="editCnpId"
                   placeholder="Ex: CNP-TN-XXXX"
@@ -303,10 +302,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
 
             @if (currentRole() === 'student') {
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-9" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('Classe / Niveau scolaire *', 'القسم / المستوى الدراسي *') }}
                 </label>
-                <select
+                <select id="pf-9"
                   [(ngModel)]="editGrade"
                   class="w-full bg-[#FBF8F1] border border-[#D5CDBC] rounded-xl px-3.5 py-2.5 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]">
                   <option value="1ère Année">1ère Année (السنة الأولى)</option>
@@ -319,10 +318,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-[#14251D] mb-1">
+                <label for="pf-10" class="block text-xs font-semibold text-[#14251D] mb-1">
                   {{ lang.tr('École primaire', 'المدرسة الابتدائية') }}
                 </label>
-                <input
+                <input id="pf-10"
                   type="text"
                   [(ngModel)]="editSchool"
                   placeholder="Ex: École de la République"
@@ -333,10 +332,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
 
           @if (currentRole() === 'teacher') {
             <div class="space-y-2">
-              <label class="block text-xs font-semibold text-[#14251D]">
+              <label for="pf-11" class="block text-xs font-semibold text-[#14251D]">
                 {{ lang.tr('Présentation biographique & démarche pédagogique', 'التعريف البيداغوجي والمنهجية') }}
               </label>
-              <textarea
+              <textarea id="pf-11"
                 [(ngModel)]="editBio"
                 rows="3"
                 maxlength="500"
@@ -665,10 +664,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
 
           <div class="space-y-3">
             <div>
-              <label class="block text-xs font-semibold text-[#14251D] mb-1">
+              <label for="pf-12" class="block text-xs font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Prénom ou Pseudo de l’élève *', 'اسم أو لقب التلميذ *') }}
               </label>
-              <input
+              <input id="pf-12"
                 type="text"
                 [(ngModel)]="newChildName"
                 placeholder="Ex: Youssef"
@@ -676,10 +675,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-[#14251D] mb-1">
+              <label for="pf-13" class="block text-xs font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Niveau scolaire (Classe) *', 'المستوى الدراسي *') }}
               </label>
-              <select
+              <select id="pf-13"
                 [(ngModel)]="newChildGrade"
                 class="w-full bg-white border border-[#D5CDBC] rounded-xl px-3.5 py-2.5 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]">
                 <option value="1ère Année">1ère Année (السنة الأولى)</option>
@@ -692,10 +691,10 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-[#14251D] mb-1">
+              <label for="pf-14" class="block text-xs font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Établissement scolaire (Optionnel)', 'المدرسة (اختياري)') }}
               </label>
-              <input
+              <input id="pf-14"
                 type="text"
                 [(ngModel)]="newChildSchool"
                 placeholder="Ex: École Primaire Habib Bourguiba"
@@ -703,9 +702,9 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-[#14251D] mb-1">
+              <p class="block text-xs font-semibold text-[#14251D] mb-1">
                 {{ lang.tr('Avatar illustré', 'الصورة الرمزية') }}
-              </label>
+              </p>
               <div class="grid grid-cols-6 gap-2">
                 @for (avId of ['avatar-1', 'avatar-2', 'avatar-3', 'avatar-4', 'avatar-5', 'avatar-6']; track avId) {
                   <button

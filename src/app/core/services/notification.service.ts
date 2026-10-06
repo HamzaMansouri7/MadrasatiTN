@@ -1,6 +1,5 @@
 import { Injectable, computed, effect, inject, signal } from '@angular/core';
 import {
-  Firestore,
   collection,
   doc,
   setDoc,

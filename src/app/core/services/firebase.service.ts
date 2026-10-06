@@ -1,4 +1,4 @@
-import { Injectable, signal, computed, inject } from '@angular/core';
+import { Injectable, signal, inject } from '@angular/core';
 import { LanguageService } from './language.service';
 import { initializeApp } from 'firebase/app';
 import {
@@ -24,15 +24,10 @@ import {
   getDocFromServer,
   getFirestore,
   setDoc,
-  addDoc,
-  onSnapshot,
-  query,
-  orderBy,
-  limit,
   updateDoc,
 } from 'firebase/firestore';
 import firebaseConfig from '../../../../firebase-applet-config.json';
-import { UserRole, AppNotification, TeacherProfile, BlogPost, UserProfile } from '../models/education.model';
+import { UserRole, TeacherProfile, BlogPost, UserProfile } from '../models/education.model';
 export type { UserProfile };
 
 @Injectable({

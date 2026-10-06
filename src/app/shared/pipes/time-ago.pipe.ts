@@ -36,5 +36,5 @@ export class TimeAgoPipe implements PipeTransform {
 }
 
 function InjectableTimeAgo(): ClassDecorator {
-  return () => {};
+  return () => undefined;
 }
