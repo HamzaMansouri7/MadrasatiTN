@@ -178,9 +178,10 @@ export class TeacherProfileService {
    * Upload an avatar WebP base64 image to VPS disk storage (/api/upload)
    */
   async uploadAvatar(uid: string, base64Data: string): Promise<string> {
+    const authHeaders = await this.firebase.getAuthHeaders();
     const res = await fetch('/api/upload', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         kind: 'avatars',
         uid,

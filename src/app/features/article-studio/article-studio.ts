@@ -600,9 +600,10 @@ export class ArticleStudioComponent implements OnDestroy {
       const base64Data = (reader.result as string).split(',')[1];
       this.isUploadingImg.set(true);
       try {
+        const authHeaders = await this.firebase.getAuthHeaders();
         const res = await fetch('/api/upload', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: authHeaders,
           body: JSON.stringify({
             kind: 'articles',
             uid: this.firebase.currentUser()?.uid,

@@ -155,9 +155,10 @@ export class ProfileService {
     const base64WebP = await this.cropImageToWebP(file, 400, 0.82);
 
     // 2. Upload to VPS disk storage endpoint /api/upload
+    const authHeaders = await this.firebase.getAuthHeaders();
     const res = await fetch('/api/upload', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: authHeaders,
       body: JSON.stringify({
         kind: 'avatars',
         uid: user.uid,

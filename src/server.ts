@@ -5,7 +5,7 @@ import {
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
 import express, { Request, Response, NextFunction } from 'express';
-import { join, resolve } from 'node:path';
+import { join, resolve, sep } from 'node:path';
 import mammoth from 'mammoth';
 import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
@@ -19,9 +19,9 @@ import { existsSync, mkdirSync, writeFileSync, readFileSync, readdirSync } from 
 import { randomUUID } from 'node:crypto';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
-const uploadsFolder = join(process.cwd(), 'uploads');
+const uploadsFolder = process.env['UPLOAD_DIR'] || join(process.cwd(), 'uploads');
 // Persisted shared worksheets (zero-cost JSON on disk, same pattern as /uploads).
-const docsFolder = join(process.cwd(), 'docs');
+const docsFolder = process.env['DATA_DIR'] || join(process.cwd(), 'docs');
 
 if (!existsSync(uploadsFolder)) {
   mkdirSync(uploadsFolder, { recursive: true });
@@ -1212,11 +1212,14 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
       }
       const allowedRoots = [
         resolve(process.cwd(), 'public', 'assets', 'resources'),
-        resolve(process.cwd(), 'uploads'),
+        resolve(uploadsFolder),
       ];
       const cleanRel = resourceUrl.replace(/^[/\\]+/, '');
-      const candidatePath = resolve(process.cwd(), cleanRel);
-      const isAllowed = allowedRoots.some((root) => candidatePath.startsWith(root));
+      // /uploads/... URLs map to the configured UPLOAD_DIR, everything else resolves from the app root.
+      const candidatePath = /^uploads[/\\]/.test(cleanRel)
+        ? resolve(uploadsFolder, cleanRel.replace(/^uploads[/\\]/, ''))
+        : resolve(process.cwd(), cleanRel);
+      const isAllowed = allowedRoots.some((root) => candidatePath === root || candidatePath.startsWith(root + sep));
       if (!isAllowed || !existsSync(candidatePath)) {
         res.status(400).json({ error: 'Ressource introuvable ou non autorisée.' });
         return;
