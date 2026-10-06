@@ -428,45 +428,6 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                   class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-sm py-3.5 rounded-xl shadow-xs transition-colors cursor-pointer">
                   {{ lang.tr('Se connecter', 'تسجيل الدخول') }}
                 </button>
-
-                <!-- 1-Click Fast Demo Logins -->
-                <div class="pt-4 border-t border-[#E7DFCF]">
-                  <div class="p-2.5 rounded-xl bg-[#F2ECDE]/70 border border-[#E7DFCF] text-center mb-2.5">
-                    <p class="text-[11px] font-semibold text-[#8A5A00] flex items-center justify-center gap-1.5">
-                      <span class="material-icons text-xs">science</span>
-                      {{ lang.tr('Accès rapide Démo 1-Clic (Sans Inscription)', 'دخول تجريبي سريع بنقرة واحدة (بدون تسجیل)') }}
-                    </p>
-                    <p class="text-[10px] text-[#5B6B60] mt-0.5">
-                      {{ lang.tr('Pour tester les fonctionnalités sans créer de compte', 'لتجربة الخصائص فوراً دون إنشاء حساب') }}
-                    </p>
-                  </div>
-                  <div class="grid grid-cols-3 gap-2">
-                    <button
-                      type="button"
-                      (click)="quickDemoLogin('teacher')"
-                      class="p-2.5 rounded-[10px] bg-white hover:bg-[#F3FAFD] text-[#007CC2] border border-[#CBD9E2] text-xs font-semibold transition-colors cursor-pointer text-center flex flex-col items-center">
-                      <span class="material-icons text-base mb-0.5 text-[#007CC2]">school</span>
-                      {{ lang.tr('Enseignant', 'معلم(ة)') }}
-                      <span class="block text-[10px] text-[#829AB1] font-normal">Démo</span>
-                    </button>
-                    <button
-                      type="button"
-                      (click)="quickDemoLogin('parent')"
-                      class="p-2.5 rounded-[10px] bg-white hover:bg-[#FFF5DD] text-[#B7791F] border border-[#CBD9E2] text-xs font-semibold transition-colors cursor-pointer text-center flex flex-col items-center">
-                      <span class="material-icons text-base mb-0.5 text-[#B7791F]">family_restroom</span>
-                      {{ lang.tr('Parent', 'ولي أمر') }}
-                      <span class="block text-[10px] text-[#829AB1] font-normal">Démo</span>
-                    </button>
-                    <button
-                      type="button"
-                      (click)="quickDemoLogin('student')"
-                      class="p-2.5 rounded-[10px] bg-white hover:bg-[#FCEBF0] text-[#D9486E] border border-[#CBD9E2] text-xs font-semibold transition-colors cursor-pointer text-center flex flex-col items-center">
-                      <span class="material-icons text-base mb-0.5 text-[#D9486E]">auto_stories</span>
-                      {{ lang.tr('Élève', 'تلميذ(ة)') }}
-                      <span class="block text-[10px] text-[#829AB1] font-normal">Démo</span>
-                    </button>
-                  </div>
-                </div>
               </div>
             }
 
@@ -678,28 +639,6 @@ export class AuthModalComponent {
       this.store.closeAuthModal();
     } catch (err: unknown) {
       this.errorMessage.set(err instanceof Error ? err.message : 'Identifiants ou mot de passe incorrects');
-    } finally {
-      this.isLoading.set(false);
-    }
-  }
-
-  async quickDemoLogin(role: 'teacher' | 'parent' | 'student') {
-    this.errorMessage.set(null);
-    this.isLoading.set(true);
-    try {
-      if (role === 'teacher') {
-        await this.firebase.loginWithEmail('enseignant.demo@madrasati.tn', undefined, 'teacher');
-        this.store.switchRole('teacher');
-      } else if (role === 'parent') {
-        await this.firebase.loginWithEmail('parent.demo@madrasati.tn', undefined, 'parent');
-        this.store.switchRole('parent');
-      } else {
-        await this.firebase.loginWithEmail('eleve.demo@madrasati.tn', undefined, 'student');
-        this.store.switchRole('student');
-      }
-      this.store.closeAuthModal();
-    } catch (err: unknown) {
-      this.errorMessage.set(err instanceof Error ? err.message : 'Erreur accès démo');
     } finally {
       this.isLoading.set(false);
     }
