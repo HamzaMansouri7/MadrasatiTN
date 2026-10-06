@@ -227,6 +227,8 @@ export interface TeacherProfile {
   delegation?: string;
   bio?: string;
   avatarUrl?: string;
+  avatarId?: string;
+  gender?: 'female' | 'male' | 'other';
   taughtGrades: string[];
   subjects: string[];
   languages?: string[];

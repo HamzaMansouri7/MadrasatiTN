@@ -78,6 +78,8 @@ import { TeacherAvatarComponent } from '@shared';
                     <app-teacher-avatar
                       [name]="t.displayName || t.name"
                       [avatarUrl]="t.avatarUrl"
+                      [avatarId]="t.avatarId"
+                      [gender]="t.gender"
                       size="xl" />
                     
                     @if (t.verified === 'verified') {

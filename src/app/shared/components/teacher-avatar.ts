@@ -44,17 +44,28 @@ export class TeacherAvatarComponent {
   readonly name = input<string | null | undefined>('');
   readonly avatarUrl = input<string | null | undefined>('');
   readonly avatarId = input<string | null | undefined>('');
+  readonly gender = input<'female' | 'male' | 'other' | null | undefined>(null);
   readonly size = input<AvatarSize>('md');
   readonly customClass = input<string>('');
 
   readonly hasImgError = signal<boolean>(false);
 
   readonly resolvedAvatarUrl = computed(() => {
+    const url = this.avatarUrl();
+    if (url) return url;
+
     const id = this.avatarId();
     if (id) {
+      if (id === 'teacher-female' || id === 'female') return '/assets/avatars/teacher-female.webp';
+      if (id === 'teacher-male' || id === 'male') return '/assets/avatars/teacher-male.webp';
       return `/assets/avatars/${id}.svg`;
     }
-    return this.avatarUrl() || null;
+
+    const g = this.gender();
+    if (g === 'female') return '/assets/avatars/teacher-female.webp';
+    if (g === 'male') return '/assets/avatars/teacher-male.webp';
+
+    return null;
   });
 
   readonly initials = computed(() => {
