@@ -972,7 +972,7 @@ export class EducationStore {
     try {
       const res = await fetch('/api/docs', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: await this.firebase.getAuthHeaders(),
         body: JSON.stringify(payload),
       });
       const data = await res.json();
@@ -1236,7 +1236,7 @@ export class EducationStore {
     try {
       const res = await fetch('/api/docs', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: await this.firebase.getAuthHeaders(),
         body: JSON.stringify({
           docType: 'memo',
           ...payload,

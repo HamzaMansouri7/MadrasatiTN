@@ -1594,6 +1594,8 @@ function readDocsIndex(): Record<string, unknown>[] {
 
 app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
   try {
+    // Optional login: when a valid token is sent the creator is recorded; anonymous publishing still works.
+    const ownerUid = (await verifyFirebaseUser(req)) ?? undefined;
     const {
       docType,
       memoDoc,
@@ -1625,6 +1627,7 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
 
       const id = randomUUID();
       const doc = {
+        ownerUid,
         id,
         docType: 'memo',
         title: docTitle,
@@ -1689,6 +1692,7 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
     }
     const id = randomUUID();
     const doc = {
+      ownerUid,
       id,
       title: (title || 'Fiche Madrasati TN').toString().slice(0, 200),
       grade: (grade || '').toString().slice(0, 40),
