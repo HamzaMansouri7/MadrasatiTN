@@ -20,7 +20,7 @@ export interface TutorExplanation {
           <div class="space-y-2">
             <div class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/15 text-xs px-3 py-1 rounded-full font-medium">
               <span class="material-icons text-sm text-[#E0AA32]">local_fire_department</span>
-              {{ store.activeStudent().streakDays }} {{ lang.t('streakLabel') }}
+              {{ store.activeStudent()?.streakDays || 0 }} {{ lang.t('streakLabel') }}
             </div>
 
             <h1 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
@@ -37,9 +37,9 @@ export interface TutorExplanation {
               <span class="material-icons text-sm text-[#E0AA32]">emoji_events</span>
               {{ lang.t('successPoints') }}
             </p>
-            <p class="font-display text-3xl font-bold text-[#E0AA32] my-0.5">{{ store.activeStudent().totalPoints }}</p>
+            <p class="font-display text-3xl font-bold text-[#E0AA32] my-0.5">{{ store.activeStudent()?.totalPoints || 0 }}</p>
             <p class="text-[11px] font-medium text-[#8CA9C4]">
-              42 {{ lang.tr('exercices résolus', 'تمرين منجز بنجاح') }}
+              {{ store.activeStudent()?.completedExercisesCount || 0 }} {{ lang.tr('exercices résolus', 'تمرين منجز بنجاح') }}
             </p>
           </div>
         </div>
@@ -450,7 +450,7 @@ export class StudentHomeComponent {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           concept: this.tutorQuestion(),
-          grade: this.store.activeStudent().grade,
+          grade: this.store.activeStudent()?.grade || '4ème Année',
           subject: 'Général',
           language: this.lang.lang(),
         }),

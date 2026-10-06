@@ -2,11 +2,12 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } 
 import { Router } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, NotificationItem, UserRole } from '@core';
 import { TimeAgoPipe } from '../pipes/time-ago.pipe';
+import { TeacherAvatarComponent } from './teacher-avatar';
 
 @Component({
   selector: 'app-navbar',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [TimeAgoPipe],
+  imports: [TimeAgoPipe, TeacherAvatarComponent],
   template: `
     <header class="sticky top-0 z-40 bg-white border-b border-[#E6EEF3] transition-colors">
       <div class="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
@@ -294,16 +295,7 @@ import { TimeAgoPipe } from '../pipes/time-ago.pipe';
                   type="button"
                   (click)="profileMenuOpen.set(!profileMenuOpen())"
                   class="flex items-center gap-1 p-0.5 rounded-full hover:ring-2 hover:ring-[#007CC2]/30 cursor-pointer transition-all shrink-0">
-                  @if (getUserAvatar()) {
-                    <img
-                      [src]="getUserAvatar()!"
-                      alt="User Avatar"
-                      class="w-8 h-8 rounded-full object-cover border border-[#CBD9E2] shadow-2xs" />
-                  } @else {
-                    <div class="w-8 h-8 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold text-xs">
-                      {{ getUserName().charAt(0) }}
-                    </div>
-                  }
+                  <app-user-avatar [avatarUrl]="getUserAvatar()" [name]="getUserName()" size="sm" />
                   <span class="material-icons text-xs text-[#829AB1] transition-transform" [class.rotate-180]="profileMenuOpen()">expand_more</span>
                 </button>
 
@@ -319,16 +311,7 @@ import { TimeAgoPipe } from '../pipes/time-ago.pipe';
                       tabindex="0"
                       class="flex items-center justify-between p-2 rounded-xl hover:bg-[#F7F9FB] cursor-pointer transition-colors">
                       <div class="flex items-center gap-2.5 min-w-0">
-                        @if (getUserAvatar()) {
-                          <img
-                            [src]="getUserAvatar()!"
-                            alt="User"
-                            class="w-9 h-9 rounded-full object-cover border border-[#CBD9E2] shrink-0" />
-                        } @else {
-                          <div class="w-9 h-9 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold text-sm shrink-0">
-                            {{ getUserName().charAt(0) }}
-                          </div>
-                        }
+                        <app-user-avatar [avatarUrl]="getUserAvatar()" [name]="getUserName()" size="md" />
                         <div class="min-w-0 text-left rtl:text-right">
                           <p class="font-display font-semibold text-[#102A43] text-xs truncate">
                             {{ getUserName() }}
@@ -346,7 +329,7 @@ import { TimeAgoPipe } from '../pipes/time-ago.pipe';
                     <!-- Menu Actions -->
                     <button
                       type="button"
-                      (click)="handleProfileClick()"
+                      (click)="handleProfileClick('profile')"
                       class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
                       <span class="material-icons text-base text-[#007CC2]">person</span>
                       <span>{{ lang.tr('Mon profil', 'ملفي الشخصي') }}</span>
@@ -354,7 +337,7 @@ import { TimeAgoPipe } from '../pipes/time-ago.pipe';
 
                     <button
                       type="button"
-                      (click)="handleProfileClick()"
+                      (click)="handleProfileClick('settings')"
                       class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
                       <span class="material-icons text-base text-[#007CC2]">settings</span>
                       <span>{{ lang.tr('Paramètres', 'الإعدادات') }}</span>
@@ -562,16 +545,16 @@ export class NavbarComponent {
     return !!(this.firebase.userProfile() || this.firebase.currentUser());
   }
 
-  handleProfileClick() {
+  handleProfileClick(tab?: string) {
     this.profileMenuOpen.set(false);
     if (!this.isUserLoggedIn()) {
       this.store.openLoginModal();
       return;
     }
-    const role = this.firebase.userProfile()?.role || 'teacher';
-    this.store.switchRole(role);
-    if (role === 'teacher') {
-      this.store.openTeacherProfileModal();
+    if (tab) {
+      void this.router.navigate(['/profile'], { queryParams: { tab } });
+    } else {
+      void this.router.navigate(['/profile']);
     }
   }
 

@@ -1,14 +1,16 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost } from '@core';
+import { TeacherAvatarComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule, BlogReaderComponent, BdLibraryComponent],
+  imports: [FormsModule, RouterLink, TeacherAvatarComponent, BlogReaderComponent, BdLibraryComponent],
   template: `
     <div class="space-y-6">
       
@@ -1224,76 +1226,47 @@ import { BdLibraryComponent } from '../bd/bd-library';
           </div>
 
           <div class="text-center space-y-3">
-            <img [src]="t.avatarUrl" alt="Avatar" class="w-24 h-24 rounded-full object-cover border-2 border-[#2D6A4F] mx-auto shadow-xs" />
+            <app-teacher-avatar [avatarUrl]="t.avatarUrl" [name]="t.displayName || t.name" size="lg" class="mx-auto flex justify-center" />
             <div>
               <h3 class="font-display font-semibold text-[#14251D] text-lg flex items-center justify-center gap-1">
-                {{ t.name }}
-                <span class="material-icons text-[#1B4332] text-base">verified</span>
+                {{ t.displayName || t.name }}
+                @if (t.verified === 'verified') {
+                  <span class="material-icons text-[#1B4332] text-base" title="Vérifié">verified</span>
+                }
               </h3>
-              <p class="text-xs text-[#2D6A4F] font-semibold">{{ t.title }}</p>
-              <p class="text-[11px] text-[#6B7A70]">{{ t.school }}</p>
+              <p class="text-xs text-[#2D6A4F] font-semibold">{{ t.title || lang.tr('Enseignant', 'معلم') }}</p>
+              <p class="text-[11px] text-[#6B7A70]">{{ t.school }}{{ t.delegation ? ' · ' + t.delegation : '' }}</p>
             </div>
 
-            <!-- Total Uploads & Verified Stats -->
-            <div class="grid grid-cols-3 gap-2 bg-[#F2ECDE] p-3 rounded-xl border border-[#E7DFCF] text-xs">
-              <div>
-                <p class="font-display font-semibold text-[#14251D] text-base">{{ t.totalUploads || 148 }}</p>
-                <p class="text-[10px] text-[#5B6B60] font-medium">{{ lang.tr('Documents importés', 'وثائق مرفوعة') }}</p>
+            <!-- Subject Badges -->
+            @if (t.subjects && t.subjects.length > 0) {
+              <div class="flex flex-wrap gap-1 justify-center">
+                @for (sub of t.subjects; track sub) {
+                  <span class="text-[11px] bg-[#EAE4D5] text-[#14251D] font-mono px-2 py-0.5 rounded-sm border border-[#D5CDBC]">{{ sub }}</span>
+                }
               </div>
-              <div>
-                <p class="font-display font-semibold text-[#14251D] text-base">{{ t.downloadableExercisesCount || 310 }}</p>
-                <p class="text-[10px] text-[#5B6B60] font-medium">{{ lang.tr('Exercices Validés', 'تمارين معتمدة') }}</p>
-              </div>
-              <div>
-                <p class="font-display font-semibold text-[#8A5A00] text-base">⭐ {{ t.rating }}</p>
-                <p class="text-[10px] text-[#8A5A00] font-medium">{{ t.reviewsCount }} {{ lang.tr('avis parents', 'تقييم ولي') }}</p>
-              </div>
-            </div>
+            }
 
-            <!-- Star Rating Breakdown -->
-            <div class="bg-white p-4 rounded-xl border border-[#E7DFCF] text-xs space-y-2 text-left">
-              <p class="font-semibold text-[#14251D]">
-                ⭐ {{ lang.tr('Évaluation des Parents & Élèves (Breakdown 1-5 Étoiles)', 'تقييم الأولياء والتلاميذ (1-5 نجوم)') }}
+            @if (t.bio) {
+              <p class="text-xs text-[#4A5A50] bg-white p-3 rounded-xl border border-[#E7DFCF] leading-relaxed text-left">
+                "{{ t.bio }}"
               </p>
-              <div class="space-y-1">
-                <div class="flex items-center gap-2">
-                  <span class="w-12 font-medium text-[#5B6B60]">5 ★</span>
-                  <div class="w-full bg-[#F2ECDE] h-2 rounded-full overflow-hidden">
-                    <div class="bg-[#F2C14E] h-full rounded-full" style="width: 86%"></div>
-                  </div>
-                  <span class="font-semibold text-[#14251D]">86%</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="w-12 font-medium text-[#5B6B60]">4 ★</span>
-                  <div class="w-full bg-[#F2ECDE] h-2 rounded-full overflow-hidden">
-                    <div class="bg-[#F2C14E] h-full rounded-full" style="width: 11%"></div>
-                  </div>
-                  <span class="font-semibold text-[#14251D]">11%</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="w-12 font-medium text-[#5B6B60]">3 ★</span>
-                  <div class="w-full bg-[#F2ECDE] h-2 rounded-full overflow-hidden">
-                    <div class="bg-[#F2C14E] h-full rounded-full" style="width: 3%"></div>
-                  </div>
-                  <span class="font-semibold text-[#14251D]">3%</span>
-                </div>
-              </div>
-            </div>
+            }
 
-            <p class="text-xs text-[#4A5A50] bg-white p-3 rounded-xl border border-[#E7DFCF] leading-relaxed text-left">
-              "{{ t.bio }}"
-            </p>
-
-            <div class="flex gap-2">
+            <div class="flex gap-2 pt-2">
+              <a
+                [routerLink]="['/teachers', t.id]"
+                (click)="selectedTeacherModal.set(null)"
+                class="flex-1 bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-1.5 no-underline">
+                <span class="material-icons text-sm">person</span>
+                {{ lang.tr('Voir le profil complet', 'عرض الملف الكامل') }}
+              </a>
               <button
                 (click)="store.toggleWatchlist(t.id, 'teacher')"
                 [class]="store.isWatched(t.id, 'teacher') ? 'bg-[#F2ECDE] text-[#8A5A00] border border-[#8A5A00]/40' : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1]'"
-                class="flex-1 font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors flex items-center justify-center gap-1.5">
+                class="font-semibold px-4 py-2.5 rounded-xl text-xs cursor-pointer transition-colors flex items-center justify-center gap-1.5">
                 <span class="material-icons text-sm">{{ store.isWatched(t.id, 'teacher') ? 'bookmark' : 'bookmark_border' }}</span>
-                {{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre cet enseignant', 'متابعة هذا المعلم') }}
-              </button>
-              <button (click)="selectedTeacherModal.set(null)" class="flex-1 bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
-                {{ lang.tr('Fermer le profil', 'إغلاق الملف') }}
+                {{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre', 'متابعة') }}
               </button>
             </div>
           </div>

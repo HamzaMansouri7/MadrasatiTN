@@ -55,6 +55,19 @@ export const routes: Routes = [
     title: 'دليل المعلمين | Annuaire des Enseignants - Madrasati TN',
   },
   {
+    path: 'teachers/:id',
+    loadComponent: () =>
+      import('./features/teachers/teacher-profile-page').then((m) => m.TeacherProfilePageComponent),
+    title: 'الملف البيداغوجي | Profil Enseignant - Madrasati TN',
+  },
+  {
+    path: 'profile',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./features/profile/profile-shell').then((m) => m.ProfileShellComponent),
+    title: 'الملف الشخصي والإعدادات | Mon Profil - Madrasati TN',
+  },
+  {
     path: 'editor',
     canActivate: [authGuard],
     loadComponent: () =>

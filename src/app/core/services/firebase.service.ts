@@ -32,28 +32,8 @@ import {
   updateDoc,
 } from 'firebase/firestore';
 import firebaseConfig from '../../../../firebase-applet-config.json';
-import { UserRole, AppNotification, TeacherProfile, BlogPost } from '../models/education.model';
-
-export interface UserProfile {
-  uid: string;
-  displayName: string | null;
-  email: string | null;
-  photoURL: string | null;
-  role: UserRole;
-  school?: string;
-  phone?: string;
-  grade?: string;
-  primarySubject?: string;
-  speciality?: string;
-  subjects?: string[];
-  gender?: 'male' | 'female';
-  title?: string;
-  delegation?: string;
-  cnpId?: string;
-  customWatermark?: string;
-  taughtGrades?: string[];
-  preferredLang?: 'fr' | 'ar';
-}
+import { UserRole, AppNotification, TeacherProfile, BlogPost, UserProfile } from '../models/education.model';
+export type { UserProfile };
 
 @Injectable({
   providedIn: 'root',

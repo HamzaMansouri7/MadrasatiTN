@@ -21,20 +21,60 @@ service cloud.firestore {
       allow read, write: if true;
     }
 
-    // Users Collection & per-user notification state
+    // Users Collection & per-user subcollections (owner-only privacy)
     match /users/{userId} {
-      allow read: if isSignedIn();
-      allow create, update: if isOwner(userId);
+      allow read, write, delete: if isOwner(userId);
 
       match /notificationState/{notifId} {
         allow read, write: if isOwner(userId);
       }
+
+      match /watchlist/{itemId} {
+        allow read, write: if isOwner(userId);
+      }
     }
 
-    // Public teacher directory cards (mirrored from users by the app)
+    // Children collection (for parents managing children)
+    match /children/{childId} {
+      allow read, write, delete: if isSignedIn() && (
+        resource == null || resource.data.parentUid == request.auth.uid
+      ) && (
+        request.resource == null || request.resource.data.parentUid == request.auth.uid
+      );
+
+      match /activity/{activityId} {
+        allow read, write: if isSignedIn()
+          && get(/databases/$(database)/documents/children/$(childId)).data.parentUid == request.auth.uid;
+      }
+    }
+
+    // Public teacher directory cards (whitelisted fields, length limits, immutable verification)
     match /teachers/{userId} {
       allow read: if true;
-      allow create, update: if isOwner(userId);
+      allow create: if isOwner(userId)
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() <= 80
+        && (!('bio' in request.resource.data) || request.resource.data.bio.size() <= 500)
+        && (!('verified' in request.resource.data) || request.resource.data.verified in ['none', 'pending'])
+        && (!('coursesCount' in request.resource.data))
+        && (!('rating' in request.resource.data))
+        && (!('verifiedBadge' in request.resource.data));
+
+      allow update: if isOwner(userId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'displayName', 'name', 'title', 'school', 'delegation', 'bio', 
+          'avatarUrl', 'taughtGrades', 'subjects', 'languages', 'verified', 'updatedAt'
+        ])
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() <= 80
+        && (!('bio' in request.resource.data) || request.resource.data.bio.size() <= 500)
+        && (
+          // verified can only stay same or transition from 'none' to 'pending'
+          request.resource.data.get('verified', 'none') == resource.data.get('verified', 'none')
+          || (resource.data.get('verified', 'none') == 'none' && request.resource.data.get('verified', 'none') == 'pending')
+        );
+
+      allow delete: if isOwner(userId);
     }
 
     // Classes Collection

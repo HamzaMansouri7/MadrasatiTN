@@ -381,26 +381,7 @@ export class EducationStore {
   // Real teachers only — filled from Firestore `teachers` collection (see loadTeachers).
   readonly teachers = signal<TeacherProfile[]>([]);
 
-  readonly students = signal<StudentProfile[]>([
-    {
-      id: 'st-1',
-      name: 'Élève',
-      grade: '4ème Année',
-      school: 'École Primaire Tunisienne',
-      avatarUrl: '',
-      parentId: 'p-1',
-      classId: 'c-4a',
-      streakDays: 6,
-      totalPoints: 1240,
-      completedExercisesCount: 42,
-      subjectsProgress: [
-        { subject: 'Mathématiques', score: 85, color: '#10b981' },
-        { subject: 'Français', score: 92, color: '#6366f1' },
-        { subject: 'اللغة العربية', score: 78, color: '#f59e0b' },
-        { subject: 'Éveil Scientifique', score: 88, color: '#06b6d4' },
-      ],
-    },
-  ]);
+  readonly students = signal<StudentProfile[]>([]);
 
   readonly announcements = signal<Announcement[]>([
     {
@@ -440,9 +421,9 @@ export class EducationStore {
     return this.classes().find((c) => c.id === id) || this.classes()[0];
   });
 
-  readonly activeStudent = computed(() => {
+  readonly activeStudent = computed<StudentProfile | null>(() => {
     const id = this.activeStudentId();
-    return this.students().find((s) => s.id === id) || this.students()[0];
+    return this.students().find((s) => s.id === id) || this.students()[0] || null;
   });
 
   readonly classAnnouncements = computed(() => {
@@ -1406,9 +1387,9 @@ export class EducationStore {
     const newSub: Submission = {
       id: 'sub-' + Date.now(),
       homeworkId: hwId,
-      studentId: student.id,
-      studentName: student.name,
-      studentAvatar: student.avatarUrl,
+      studentId: student?.id || 'st-anon',
+      studentName: student?.name || 'Élève',
+      studentAvatar: student?.avatarUrl || '',
       submittedAt: 'À l\'instant',
       textAnswer,
       photoUrl,

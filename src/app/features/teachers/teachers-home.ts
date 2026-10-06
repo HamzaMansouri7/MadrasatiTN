@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component, OnInit, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { EducationStore, LanguageService, TeacherProfile } from '@core';
+import { TeacherAvatarComponent } from '@shared';
 
 /**
  * Dedicated teacher directory — people, kept separate from the content
@@ -8,8 +9,9 @@ import { EducationStore, LanguageService, TeacherProfile } from '@core';
  */
 @Component({
   selector: 'app-teachers-home',
+  standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink],
+  imports: [RouterLink, TeacherAvatarComponent],
   template: `
     <div class="min-h-screen bg-[#F4F6F5] py-6 px-4 sm:px-6 lg:px-8">
       <div class="max-w-6xl mx-auto space-y-6">
@@ -22,7 +24,7 @@ import { EducationStore, LanguageService, TeacherProfile } from '@core';
               <h1 class="font-display font-bold text-xl sm:text-2xl">{{ lang.tr('Annuaire des Enseignants', 'دليل المعلمين') }}</h1>
             </div>
             <p class="text-xs sm:text-sm text-[#B7C7BC] max-w-[60ch]">
-              {{ lang.tr('Les enseignants certifiés qui partagent leurs ressources sur Madrasati TN.', 'المعلمون المعتمدون الذين يشاركون مواردهم على منصة مدرستي.') }}
+              {{ lang.tr('Les enseignants certifiés qui partagent leurs ressources pédagogiques sur Madrasati TN.', 'المعلمون الذين يشاركون مواردهم البيداغوجية على منصة مدرستي.') }}
             </p>
           </div>
           <a routerLink="/discovery"
@@ -32,56 +34,90 @@ import { EducationStore, LanguageService, TeacherProfile } from '@core';
           </a>
         </header>
 
-        @if (store.teachers().length === 0) {
+        <!-- Search & Filter Controls -->
+        <div class="bg-white rounded-2xl border border-[#E7DFCF] p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-2xs">
+          <!-- Search input -->
+          <div class="relative w-full sm:w-72">
+            <span class="material-icons absolute left-3 rtl:left-auto rtl:right-3 top-1/2 -translate-y-1/2 text-base text-[#829AB1]">search</span>
+            <input
+              type="text"
+              [value]="searchQuery()"
+              (input)="searchQuery.set($any($event.target).value)"
+              [placeholder]="lang.tr('Rechercher un enseignant…', 'البحث عن اسم المعلم…')"
+              class="w-full pl-9 pr-3.5 rtl:pl-3.5 rtl:pr-9 h-10 bg-[#F7F9FB] rounded-xl border border-[#CBD9E2] text-xs text-[#14251D] outline-none focus:border-[#2D6A4F]" />
+          </div>
+
+          <!-- Grade & Subject Filters -->
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <select
+              [value]="selectedSubjectFilter()"
+              (change)="selectedSubjectFilter.set($any($event.target).value)"
+              class="bg-[#F7F9FB] text-xs font-semibold text-[#14251D] border border-[#CBD9E2] rounded-xl px-3 py-2 outline-none">
+              <option value="Tous">{{ lang.tr('Toutes matières', 'جميع المواد') }}</option>
+              <option value="Mathématiques">{{ lang.tr('Mathématiques', 'الرياضيات') }}</option>
+              <option value="Français">{{ lang.tr('Français', 'اللغة الفرنسية') }}</option>
+              <option value="اللغة العربية">{{ lang.tr('Arabe', 'اللغة العربية') }}</option>
+              <option value="Éveil Scientifique">{{ lang.tr('Éveil Scientifique', 'الإيقاظ العلمي') }}</option>
+            </select>
+          </div>
+        </div>
+
+        @if (filteredTeachers().length === 0) {
           <div class="bg-white rounded-2xl border border-[#E7DFCF] p-12 text-center space-y-2">
             <span class="material-icons text-4xl text-[#9DBBA8]" aria-hidden="true">school</span>
             <p class="text-sm text-[#5B6B60]">
-              {{ lang.tr('Les enseignants inscrits apparaîtront ici après leur prochaine connexion.', 'سيظهر المعلمون المسجّلون هنا بعد تسجيل دخولهم القادم.') }}
+              {{ lang.tr('Aucun enseignant ne correspond à votre recherche.', 'لا يوجد معلم مطابق لمعايير البحث.') }}
             </p>
           </div>
         } @else {
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            @for (t of store.teachers(); track t.id) {
-              <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-xs space-y-4 text-center hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow">
-                <div class="relative inline-block mx-auto">
-                  <img [src]="t.avatarUrl" [alt]="t.name" class="w-20 h-20 rounded-full object-cover border-2 border-[#2D6A4F] shadow-xs" />
-                  @if (t.verifiedBadge) {
-                    <span class="material-icons absolute bottom-0 right-0 bg-[#1B4332] text-[#FBF8F1] rounded-full text-base p-0.5 border-2 border-white" [title]="lang.tr('Enseignant Certifié Éducation Nationale', 'مربٍ معتمد لدى وزارة التربية')">
-                      verified
-                    </span>
+            @for (t of filteredTeachers(); track t.id) {
+              <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] shadow-xs space-y-4 text-center hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-shadow flex flex-col justify-between">
+                <div class="space-y-4">
+                  <div class="relative inline-block mx-auto">
+                    <app-teacher-avatar
+                      [name]="t.displayName || t.name"
+                      [avatarUrl]="t.avatarUrl"
+                      size="xl" />
+                    
+                    @if (t.verified === 'verified') {
+                      <span class="material-icons absolute bottom-0 right-0 rtl:right-auto rtl:left-0 bg-[#2D6A4F] text-[#FBF8F1] rounded-full text-base p-0.5 border-2 border-white"
+                            [title]="lang.tr('Enseignant Certifié Éducation Nationale', 'مربٍ معتمد وموثق لدى المنصة')">
+                        verified
+                      </span>
+                    }
+                  </div>
+
+                  <div>
+                    <h3 class="font-display font-semibold text-[#14251D] text-base flex items-center justify-center gap-1.5">
+                      {{ t.displayName || t.name }}
+                      <span class="text-[#2D6A4F] font-semibold bg-[#E8F5FC] border border-[#2D6A4F]/20 px-1.5 py-0.5 rounded text-[10px]">TN</span>
+                    </h3>
+                    <p class="text-xs text-[#5B6B60] font-medium">{{ t.title }}</p>
+                    <p class="text-[11px] text-[#2D6A4F] font-semibold mt-0.5">{{ t.school }}</p>
+                  </div>
+
+                  @if (t.bio && t.bio.trim().length > 0) {
+                    <p class="text-xs text-[#4A5A50] line-clamp-3 bg-[#FBF8F1] p-3 rounded-xl border border-[#E7DFCF] text-start">
+                      {{ t.bio }}
+                    </p>
+                  }
+
+                  <!-- Subject tags -->
+                  @if (t.subjects && t.subjects.length > 0) {
+                    <div class="flex flex-wrap justify-center gap-1.5 pt-1">
+                      @for (s of t.subjects.slice(0, 3); track s) {
+                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#E8F5FC] text-[#007CC2]">
+                          {{ lang.translateSubject(s) }}
+                        </span>
+                      }
+                    </div>
                   }
                 </div>
 
-                <div>
-                  <h3 class="font-display font-semibold text-[#14251D] text-base flex items-center justify-center gap-1.5">
-                    {{ t.name }}
-                    <span class="text-[#1B4332] font-semibold bg-[#F2ECDE] border border-[#E7DFCF] px-1.5 py-0.5 rounded text-[10px]">TN</span>
-                  </h3>
-                  <p class="text-xs text-[#5B6B60] font-medium">{{ t.title }}</p>
-                  <p class="text-[11px] text-[#2D6A4F] font-semibold mt-0.5">{{ t.school }}</p>
-                </div>
-
-                <p class="text-xs text-[#4A5A50] line-clamp-3 bg-[#FBF8F1] p-3 rounded-xl border border-[#E7DFCF]">
-                  "{{ t.bio }}"
-                </p>
-
-                <div class="grid grid-cols-3 gap-2 py-2 border-y border-[#E7DFCF] text-xs">
-                  <div>
-                    <p class="font-display font-semibold text-[#14251D]">{{ t.totalUploads || t.coursesCount }}</p>
-                    <p class="text-[10px] text-[#6B7A70]">{{ lang.tr('Documents', 'وثائق') }}</p>
-                  </div>
-                  <div>
-                    <p class="font-display font-semibold text-[#14251D]">{{ t.downloadableExercisesCount || t.exercisesCount }}</p>
-                    <p class="text-[10px] text-[#6B7A70]">{{ lang.tr('Exercices PDF', 'تمارين PDF') }}</p>
-                  </div>
-                  <div>
-                    <p class="font-display font-semibold text-[#8A5A00]">⭐ {{ t.rating }}</p>
-                    <p class="text-[10px] text-[#6B7A70]">{{ t.reviewsCount }} {{ lang.tr('avis', 'تقييم') }}</p>
-                  </div>
-                </div>
-
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 pt-3 border-t border-[#E7DFCF]">
                   <button
+                    type="button"
                     (click)="store.toggleWatchlist(t.id, 'teacher')"
                     [class]="store.isWatched(t.id, 'teacher') ? 'bg-[#F2ECDE] text-[#8A5A00] border-[#8A5A00]/40' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]'"
                     class="px-3 py-2.5 rounded-xl text-xs font-semibold border flex items-center justify-center gap-1 cursor-pointer transition-colors"
@@ -90,12 +126,12 @@ import { EducationStore, LanguageService, TeacherProfile } from '@core';
                     <span>{{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre', 'متابعة') }}</span>
                   </button>
 
-                  <button
-                    (click)="selectedTeacher.set(t)"
+                  <a
+                    [routerLink]="['/teachers', t.id]"
                     class="flex-1 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs py-2.5 rounded-xl cursor-pointer flex items-center justify-center gap-1 transition-colors shadow-xs">
                     <span class="material-icons text-sm">badge</span>
-                    {{ lang.tr('Profil & Avis', 'عرض الملف والتقييمات') }}
-                  </button>
+                    <span>{{ lang.tr('Voir le profil', 'عرض الملف') }}</span>
+                  </a>
                 </div>
               </div>
             }
@@ -103,79 +139,36 @@ import { EducationStore, LanguageService, TeacherProfile } from '@core';
         }
       </div>
     </div>
-
-    <!-- Profile modal -->
-    @if (selectedTeacher(); as t) {
-      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-[#FBF8F1] rounded-2xl max-w-lg w-full p-6 space-y-5 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
-            <div class="flex items-center gap-2">
-              <span class="material-icons text-[#1B4332] text-xl">verified</span>
-              <h3 class="font-display font-semibold text-[#14251D] text-base">
-                {{ lang.tr('Profil de Crédibilité Enseignant', 'الملف المهني والاعتماد التربوي') }}
-              </h3>
-            </div>
-            <button (click)="selectedTeacher.set(null)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
-              <span class="material-icons">close</span>
-            </button>
-          </div>
-
-          <div class="text-center space-y-3">
-            <img [src]="t.avatarUrl" [alt]="t.name" class="w-24 h-24 rounded-full object-cover border-2 border-[#2D6A4F] mx-auto shadow-xs" />
-            <div>
-              <h3 class="font-display font-semibold text-[#14251D] text-lg flex items-center justify-center gap-1">
-                {{ t.name }}
-                <span class="material-icons text-[#1B4332] text-base">verified</span>
-              </h3>
-              <p class="text-xs text-[#2D6A4F] font-semibold">{{ t.title }}</p>
-              <p class="text-[11px] text-[#6B7A70]">{{ t.school }}</p>
-            </div>
-
-            <div class="grid grid-cols-3 gap-2 bg-[#F2ECDE] p-3 rounded-xl border border-[#E7DFCF] text-xs">
-              <div>
-                <p class="font-display font-semibold text-[#14251D] text-base">{{ t.totalUploads || t.coursesCount }}</p>
-                <p class="text-[10px] text-[#5B6B60] font-medium">{{ lang.tr('Documents importés', 'وثائق مرفوعة') }}</p>
-              </div>
-              <div>
-                <p class="font-display font-semibold text-[#14251D] text-base">{{ t.downloadableExercisesCount || t.exercisesCount }}</p>
-                <p class="text-[10px] text-[#5B6B60] font-medium">{{ lang.tr('Exercices Validés', 'تمارين معتمدة') }}</p>
-              </div>
-              <div>
-                <p class="font-display font-semibold text-[#8A5A00] text-base">⭐ {{ t.rating }}</p>
-                <p class="text-[10px] text-[#8A5A00] font-medium">{{ t.reviewsCount }} {{ lang.tr('avis parents', 'تقييم ولي') }}</p>
-              </div>
-            </div>
-
-            <p class="text-xs text-[#4A5A50] bg-white p-3 rounded-xl border border-[#E7DFCF] leading-relaxed text-start">
-              "{{ t.bio }}"
-            </p>
-
-            <div class="flex gap-2">
-              <button
-                (click)="store.toggleWatchlist(t.id, 'teacher')"
-                [class]="store.isWatched(t.id, 'teacher') ? 'bg-[#F2ECDE] text-[#8A5A00] border border-[#8A5A00]/40' : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1]'"
-                class="flex-1 font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors flex items-center justify-center gap-1.5">
-                <span class="material-icons text-sm">{{ store.isWatched(t.id, 'teacher') ? 'bookmark' : 'bookmark_border' }}</span>
-                {{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre cet enseignant', 'متابعة هذا المعلم') }}
-              </button>
-              <button (click)="selectedTeacher.set(null)" class="flex-1 bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
-                {{ lang.tr('Fermer le profil', 'إغلاق الملف') }}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    }
   `,
 })
 export class TeachersHomeComponent implements OnInit {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
-  readonly selectedTeacher = signal<TeacherProfile | null>(null);
+
+  readonly searchQuery = signal<string>('');
+  readonly selectedSubjectFilter = signal<string>('Tous');
+
+  readonly filteredTeachers = computed<TeacherProfile[]>(() => {
+    let list = this.store.teachers();
+    const query = this.searchQuery().trim().toLowerCase();
+    const subject = this.selectedSubjectFilter();
+
+    if (query) {
+      list = list.filter((t) => {
+        const name = (t.displayName || t.name || '').toLowerCase();
+        const school = (t.school || '').toLowerCase();
+        return name.includes(query) || school.includes(query);
+      });
+    }
+
+    if (subject !== 'Tous') {
+      list = list.filter((t) => t.subjects && t.subjects.includes(subject));
+    }
+
+    return list;
+  });
 
   ngOnInit() {
-    // Fresh read on mount — the store's startup fetch runs before auth, so a
-    // teacher card written at login may not be in the initial snapshot.
     void this.store.loadTeachers();
   }
 }

@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
-import { Router } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage } from '@core';
+import { Router, RouterLink } from '@angular/router';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage } from '@core';
+import { TeacherAvatarComponent } from '@shared';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -13,7 +14,7 @@ export interface GeneratedExerciseResult {
 @Component({
   selector: 'app-teacher-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
+  imports: [RouterLink, TeacherAvatarComponent],
   template: `
     <div class="space-y-6">
 
@@ -1380,20 +1381,55 @@ export interface GeneratedExerciseResult {
           <!-- TAB 1: PROFIL & IDENTITE -->
           @if (profileTab() === 'profile') {
             <div class="space-y-4">
-              <div class="flex items-center gap-4 p-3 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF]">
-                <div class="w-14 h-14 rounded-full bg-[#2D6A4F] text-[#FBF8F1] flex items-center justify-center text-xl font-bold shrink-0 shadow-md">
-                  {{ editDisplayName().substring(0, 1) || 'م' }}
+              <!-- Avatar & Header Box -->
+              <div class="flex flex-col sm:flex-row items-center gap-4 p-4 bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF]">
+                <div class="relative shrink-0">
+                  <app-teacher-avatar
+                    [name]="editDisplayName() || 'Enseignant'"
+                    [avatarUrl]="editAvatarUrl()"
+                    size="xl" />
+                  
+                  <label class="absolute -bottom-1 -right-1 bg-[#2D6A4F] hover:bg-[#1B4332] text-white p-1.5 rounded-full cursor-pointer shadow-xs transition-colors flex items-center justify-center">
+                    <span class="material-icons text-xs">photo_camera</span>
+                    <input type="file" accept="image/*" class="hidden" (change)="onAvatarSelected($event)" />
+                  </label>
                 </div>
-                <div class="space-y-1">
-                  <div class="flex items-center gap-2">
-                    <span class="font-bold text-[#14251D] text-sm">{{ editDisplayName() }}</span>
-                    <span class="text-[10px] bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2 py-0.5 rounded-full">
-                      ✓ {{ lang.tr('Compte Vérifié', 'حساب معتمد') }}
-                    </span>
+
+                <div class="space-y-1 text-center sm:text-start flex-1 min-w-0">
+                  <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                    <span class="font-bold text-[#14251D] text-sm">{{ editDisplayName() || lang.tr('Nom Enseignant', 'اسم المعلم') }}</span>
+                    @if (editAvatarUrl()) {
+                      <button
+                        type="button"
+                        (click)="editAvatarUrl.set('')"
+                        class="text-[10px] text-[#D64545] hover:underline cursor-pointer">
+                        {{ lang.tr('Supprimer la photo', 'حذف الصورة') }}
+                      </button>
+                    }
                   </div>
-                  <p class="text-xs text-[#5B6B60]">{{ editTitle() }}</p>
-                  <p class="text-[11px] text-[#2D6A4F] font-semibold">{{ editSchool() }}</p>
+                  <p class="text-xs text-[#5B6B60]">{{ editTitle() || lang.tr('Titre professionnel', 'الصفة المهنية') }}</p>
+                  
+                  <!-- Completeness Meter -->
+                  <div class="pt-2 space-y-1">
+                    <div class="flex items-center justify-between text-[11px] font-semibold text-[#2D6A4F]">
+                      <span>{{ lang.tr('Complétude du profil', 'اكتمال الملف') }}</span>
+                      <span>{{ profileCompleteness() }}%</span>
+                    </div>
+                    <div class="w-full h-1.5 bg-[#E7DFCF] rounded-full overflow-hidden">
+                      <div class="h-full bg-[#2D6A4F] transition-all duration-300" [style.width.%]="profileCompleteness()"></div>
+                    </div>
+                  </div>
                 </div>
+
+                @if (firebase.userProfile()?.uid) {
+                  <a
+                    [routerLink]="['/teachers', firebase.userProfile()?.uid]"
+                    target="_blank"
+                    class="px-3 py-2 bg-white hover:bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/30 rounded-xl text-xs font-bold shrink-0 transition-colors flex items-center gap-1 shadow-2xs">
+                    <span class="material-icons text-xs">open_in_new</span>
+                    <span>{{ lang.tr('Aperçu public', 'معاينة عامة') }}</span>
+                  </a>
+                }
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
@@ -1404,6 +1440,7 @@ export interface GeneratedExerciseResult {
                     type="text"
                     [value]="editDisplayName()"
                     (input)="editDisplayName.set($any($event.target).value)"
+                    placeholder="Ex: Mohamed Ben Salem"
                     class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
@@ -1419,23 +1456,13 @@ export interface GeneratedExerciseResult {
                 </div>
 
                 <div class="space-y-1">
-                  <label for="tp-speciality" class="font-semibold text-[#14251D]">{{ lang.tr('Spécialité & Discipline Principale', 'الإختصاص والتخصص الرئيسي') }}</label>
-                  <input
-                    id="tp-speciality"
-                    type="text"
-                    [value]="editSpeciality()"
-                    (input)="editSpeciality.set($any($event.target).value)"
-                    placeholder="Ex: Mathématiques & Éveil Scientifique"
-                    class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
-                </div>
-
-                <div class="space-y-1">
                   <label for="tp-school" class="font-semibold text-[#14251D]">{{ lang.tr('Établissement Scolaire', 'المدرسة الإبتدائية') }}</label>
                   <input
                     id="tp-school"
                     type="text"
                     [value]="editSchool()"
                     (input)="editSchool.set($any($event.target).value)"
+                    placeholder="Ex: École Primaire Habib Bourguiba"
                     class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
@@ -1446,8 +1473,25 @@ export interface GeneratedExerciseResult {
                     type="text"
                     [value]="editDelegation()"
                     (input)="editDelegation.set($any($event.target).value)"
+                    placeholder="Ex: Ariana Ville, Ariana"
                     class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
+              </div>
+
+              <!-- Bio Field -->
+              <div class="space-y-1 text-xs">
+                <div class="flex items-center justify-between">
+                  <label for="tp-bio" class="font-semibold text-[#14251D]">{{ lang.tr('Biographie Pédagogique', 'نبذة بيداغوجية تعريفية') }}</label>
+                  <span class="text-[10px] text-[#829AB1]">{{ editBio().length }}/500</span>
+                </div>
+                <textarea
+                  id="tp-bio"
+                  rows="3"
+                  maxlength="500"
+                  [value]="editBio()"
+                  (input)="editBio.set($any($event.target).value)"
+                  [placeholder]="lang.tr('Partagez votre parcours pédagogique, vos matières de prédilection et vos objectifs éducatifs…', 'شارك مسيرتك التربوية واختصاصاتك وأهدافك التعليمية…')"
+                  class="w-full p-3 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F] resize-none"></textarea>
               </div>
             </div>
           }
@@ -1455,25 +1499,38 @@ export interface GeneratedExerciseResult {
           <!-- TAB 2: FILIGRANE & CNP -->
           @if (profileTab() === 'watermark') {
             <div class="space-y-4 text-xs">
-              <div class="p-3.5 bg-[#2D6A4F]/10 border border-[#2D6A4F]/20 rounded-2xl flex items-center justify-between">
+              <div class="p-3.5 bg-[#2D6A4F]/10 border border-[#2D6A4F]/20 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-3">
                 <div class="flex items-center gap-2.5">
                   <span class="material-icons text-[#2D6A4F] text-xl">verified_user</span>
                   <div>
                     <h4 class="font-bold text-[#14251D]">{{ lang.tr("Agrément Ministère de l'Éducation", 'اعتماد وزارة التربية') }}</h4>
-                    <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Matricule CNP vérifié et conforme au programme officiel.', 'معرف معتمد ومطابق للبرامج الرسمية.') }}</p>
+                    <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Matricule CNP vérifié et attribution sur feuilles A4.', 'معرف معتمد ومطابق للبرامج الرسمية.') }}</p>
                   </div>
                 </div>
-                <span class="bg-[#2D6A4F] text-[#FBF8F1] font-mono text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">VALIDE</span>
+
+                @if (verificationRequested()) {
+                  <span class="bg-amber-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shrink-0">
+                    {{ lang.tr('DEMANDE EN COURS', 'قيد المراجعة') }}
+                  </span>
+                } @else {
+                  <button
+                    type="button"
+                    (click)="requestCertification()"
+                    class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] text-[10px] font-bold px-3 py-1.5 rounded-xl shrink-0 cursor-pointer shadow-xs transition-colors">
+                    {{ lang.tr('Demander la certification', 'طلب شارة التوثيق') }}
+                  </button>
+                }
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="space-y-1">
-                  <label for="tp-cnp-id" class="font-semibold text-[#14251D]">{{ lang.tr('Matricule Enseignant CNP', 'معرف المعلم بالمركز الوطني') }}</label>
+                  <label for="tp-cnp-id" class="font-semibold text-[#14251D]">{{ lang.tr('Matricule Enseignant CNP (Privé)', 'معرف المعلم بالمركز الوطني (سري)') }}</label>
                   <input
                     id="tp-cnp-id"
                     type="text"
                     [value]="editCnpId()"
                     (input)="editCnpId.set($any($event.target).value)"
+                    placeholder="Ex: CNP-TN-2024-XXXX"
                     class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] font-mono focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
 
@@ -1484,6 +1541,7 @@ export interface GeneratedExerciseResult {
                     type="text"
                     [value]="editCustomWatermark()"
                     (input)="editCustomWatermark.set($any($event.target).value)"
+                    placeholder="Madrasati TN — Document Certifié"
                     class="w-full px-3 py-2 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
                 </div>
               </div>
@@ -1499,11 +1557,7 @@ export interface GeneratedExerciseResult {
                   </div>
                   <div class="relative z-10 space-y-1">
                     <p class="text-[11px] font-bold text-[#14251D] uppercase tracking-wider">الجمهورية التونسية — وزارة التربية</p>
-                    <p class="text-[10px] text-[#5B6B60]">Évaluation Imprimable A4 (Attribution : {{ editDisplayName() }})</p>
-                    <div class="mt-2 inline-flex items-center gap-1 text-[10px] text-[#2D6A4F] bg-[#2D6A4F]/10 px-2 py-0.5 rounded-full font-semibold">
-                      <span class="material-icons text-[12px]">lock</span>
-                      {{ editCnpId() }}
-                    </div>
+                    <p class="text-[10px] text-[#5B6B60]">Évaluation Imprimable A4 (Attribution : {{ editDisplayName() || 'Enseignant' }})</p>
                   </div>
                 </div>
               </div>
@@ -1625,6 +1679,7 @@ export class TeacherHomeComponent {
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
   readonly notifService = inject(NotificationService);
+  readonly profileService = inject(TeacherProfileService);
   private readonly router = inject(Router);
 
   teacherGreeting(): string {
@@ -1651,15 +1706,29 @@ export class TeacherHomeComponent {
   readonly profileTab = signal<'profile' | 'watermark' | 'classes' | 'settings'>('profile');
   readonly profileSuccessMsg = signal<string | null>(null);
 
-  readonly editDisplayName = signal<string>('Enseignant Certifié');
-  readonly editTitle = signal<string>('أستاذ تعليم ابتدائي أول');
-  readonly editSpeciality = signal<string>('Mathématiques & Éveil Scientifique');
-  readonly editSchool = signal<string>('École Primaire Habib Bourguiba, Ariana');
-  readonly editDelegation = signal<string>('Ariana Ville');
-  readonly editCnpId = signal<string>('CNP-TN-2024-8841');
-  readonly editCustomWatermark = signal<string>('Madrasati TN — Document Certifié');
+  readonly editDisplayName = signal<string>('');
+  readonly editTitle = signal<string>('');
+  readonly editSpeciality = signal<string>('');
+  readonly editSchool = signal<string>('');
+  readonly editDelegation = signal<string>('');
+  readonly editBio = signal<string>('');
+  readonly editAvatarUrl = signal<string>('');
+  readonly editCnpId = signal<string>('');
+  readonly editCustomWatermark = signal<string>('');
   readonly editTaughtGrades = signal<string[]>(['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']);
   readonly editTaughtSubjects = signal<string[]>(['Mathématiques', 'Éveil Scientifique', 'Français']);
+  readonly isUploadingAvatar = signal<boolean>(false);
+  readonly verificationRequested = signal<boolean>(false);
+
+  readonly profileCompleteness = computed(() => {
+    let score = 0;
+    if (this.editDisplayName().trim()) score += 20;
+    if (this.editSchool().trim()) score += 20;
+    if (this.editBio().trim()) score += 25;
+    if (this.editAvatarUrl()) score += 20;
+    if (this.editTaughtGrades().length > 0) score += 15;
+    return score;
+  });
 
   // Document Scope Filter (Mes documents uniquement vs Toute la banque CNP)
   readonly docScopeFilter = signal<'mine' | 'all'>('mine');
@@ -1716,22 +1785,64 @@ export class TeacherHomeComponent {
   openProfileModal() {
     if (!this.requireAuth()) return;
     const p = this.firebase.userProfile();
-    this.editDisplayName.set(p?.displayName || 'Enseignant Certifié');
+    this.editDisplayName.set(p?.displayName || '');
     this.editTitle.set(p?.title || 'أستاذ تعليم ابتدائي أول');
-    this.editSpeciality.set(p?.speciality || p?.primarySubject || 'Mathématiques & Éveil Scientifique');
-    this.editSchool.set(p?.school || 'École Primaire Habib Bourguiba, Ariana');
-    this.editDelegation.set(p?.delegation || 'Ariana Ville');
-    this.editCnpId.set(p?.cnpId || 'CNP-TN-2024-8841');
-    this.editCustomWatermark.set(p?.customWatermark || 'Madrasati TN — Document Certifié');
+    this.editSpeciality.set(p?.speciality || p?.primarySubject || '');
+    this.editSchool.set(p?.school || '');
+    this.editDelegation.set(p?.delegation || '');
+    this.editBio.set(p?.bio || '');
+    this.editAvatarUrl.set(p?.photoURL || '');
+    this.editCnpId.set(p?.cnpId || '');
+    this.editCustomWatermark.set(p?.customWatermark || '');
     if (p?.taughtGrades) this.editTaughtGrades.set(p.taughtGrades);
     if (p?.subjects) this.editTaughtSubjects.set(p.subjects);
     this.profileSuccessMsg.set(null);
+    this.verificationRequested.set(false);
     this.teacherProfileModal.set(true);
   }
 
   closeProfileModal() {
     this.teacherProfileModal.set(false);
     this.store.closeTeacherProfileModal();
+  }
+
+  async onAvatarSelected(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) return;
+    const file = input.files[0];
+    const uid = this.firebase.currentUser()?.uid || this.firebase.userProfile()?.uid;
+    if (!uid) return;
+
+    this.isUploadingAvatar.set(true);
+    try {
+      const reader = new FileReader();
+      reader.onload = async () => {
+        const img = new Image();
+        img.onload = async () => {
+          const canvas = document.createElement('canvas');
+          const size = 400;
+          canvas.width = size;
+          canvas.height = size;
+          const ctx = canvas.getContext('2d');
+          if (ctx) {
+            const minDim = Math.min(img.width, img.height);
+            const sx = (img.width - minDim) / 2;
+            const sy = (img.height - minDim) / 2;
+            ctx.drawImage(img, sx, sy, minDim, minDim, 0, 0, size, size);
+            const webpBase64 = canvas.toDataURL('image/webp', 0.85);
+            const url = await this.profileService.uploadAvatar(uid, webpBase64);
+            this.editAvatarUrl.set(url);
+            this.store.showToast(this.lang.tr('Photo de profil mise à jour !', 'تم تحديث الصورة الشخصية!'), 'success');
+          }
+          this.isUploadingAvatar.set(false);
+        };
+        img.src = reader.result as string;
+      };
+      reader.readAsDataURL(file);
+    } catch (err) {
+      this.isUploadingAvatar.set(false);
+      this.store.showToast(this.lang.tr('Erreur lors du téléversement', 'حدث خطأ أثناء رفع الصورة'), 'error');
+    }
   }
 
   toggleTaughtGrade(grade: string) {
@@ -1756,19 +1867,31 @@ export class TeacherHomeComponent {
     }
   }
 
+  async requestCertification() {
+    const uid = this.firebase.currentUser()?.uid || this.firebase.userProfile()?.uid;
+    if (!uid) return;
+    await this.profileService.requestVerification(uid);
+    this.verificationRequested.set(true);
+    this.store.showToast(this.lang.tr('Demande de certification transmise avec succès.', 'تم إرسال طلب التوثيق والاعتماد بنجاح.'), 'success');
+  }
+
   async saveTeacherProfileSettings() {
-    await this.firebase.updateUserProfile({
+    const uid = this.firebase.currentUser()?.uid || this.firebase.userProfile()?.uid;
+    if (!uid) return;
+
+    await this.profileService.saveProfile(uid, {
       displayName: this.editDisplayName(),
       title: this.editTitle(),
-      speciality: this.editSpeciality(),
-      primarySubject: this.editSpeciality(),
       school: this.editSchool(),
       delegation: this.editDelegation(),
+      bio: this.editBio(),
+      avatarUrl: this.editAvatarUrl() || undefined,
       cnpId: this.editCnpId(),
       customWatermark: this.editCustomWatermark(),
       taughtGrades: this.editTaughtGrades(),
       subjects: this.editTaughtSubjects(),
     });
+
     this.profileSuccessMsg.set(this.lang.tr('Modifications enregistrées avec succès !', 'تم حفظ التعديلات بنجاح!'));
     setTimeout(() => this.profileSuccessMsg.set(null), 3000);
   }

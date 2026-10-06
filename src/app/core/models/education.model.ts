@@ -216,29 +216,23 @@ export interface Announcement {
   isPinned?: boolean;
 }
 
+export type TeacherVerificationStatus = 'none' | 'pending' | 'verified';
+
 export interface TeacherProfile {
   id: string;
-  name: string;
+  displayName: string;
+  name?: string; // backwards compatibility alias for displayName
   title: string;
   school: string;
-  avatarUrl: string;
-  coursesCount: number;
-  exercisesCount: number;
-  studentsCount: number;
-  totalUploads?: number;
-  downloadableExercisesCount?: number;
-  rating: number;
-  reviewsCount: number;
-  verifiedBadge: boolean;
-  subjects: SubjectName[];
-  bio: string;
-  starRatingBreakdown?: {
-    5: number;
-    4: number;
-    3: number;
-    2: number;
-    1: number;
-  };
+  delegation?: string;
+  bio?: string;
+  avatarUrl?: string;
+  taughtGrades: string[];
+  subjects: string[];
+  languages?: string[];
+  verified: TeacherVerificationStatus;
+  joinedAt?: number;
+  updatedAt?: number;
 }
 
 export interface Comment {
@@ -255,14 +249,72 @@ export interface Comment {
   replies?: Comment[];
 }
 
+export interface UserNotificationPrefs {
+  activity: boolean;
+  announcements: boolean;
+}
+
+export interface UserProfile {
+  uid: string;
+  displayName: string | null;
+  email: string | null;
+  photoURL: string | null;
+  role: UserRole;
+  roles?: UserRole[];
+  activeRole?: UserRole;
+  school?: string;
+  phone?: string;
+  governorate?: string;
+  grade?: string;
+  primarySubject?: string;
+  speciality?: string;
+  subjects?: string[];
+  gender?: 'male' | 'female';
+  title?: string;
+  delegation?: string;
+  cnpId?: string;
+  customWatermark?: string;
+  taughtGrades?: string[];
+  preferredLang?: 'fr' | 'ar';
+  theme?: string;
+  bio?: string;
+  notificationPrefs?: UserNotificationPrefs;
+  createdAt?: number;
+  updatedAt?: number;
+  onboardedAt?: number;
+}
+
+export interface ChildProfile {
+  id: string;
+  parentUid: string;
+  nickname: string;
+  grade: GradeLevel;
+  avatarId: string;
+  school?: string;
+  createdAt: number;
+  updatedAt?: number;
+}
+
+export interface ChildActivity {
+  id: string;
+  childId: string;
+  exerciseId: string;
+  subject: SubjectName;
+  grade: GradeLevel;
+  score: number;
+  totalPoints: number;
+  completedAt: number;
+}
+
 export interface StudentProfile {
   id: string;
   name: string;
   grade: GradeLevel;
-  school: string;
-  avatarUrl: string;
-  parentId: string;
-  classId: string;
+  school?: string;
+  avatarUrl?: string;
+  avatarId?: string;
+  parentId?: string;
+  classId?: string;
   streakDays: number;
   totalPoints: number;
   completedExercisesCount: number;

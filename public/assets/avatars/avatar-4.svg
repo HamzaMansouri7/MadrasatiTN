@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <circle cx="50" cy="50" r="50" fill="#8A5A00"/>
+  <circle cx="50" cy="38" r="16" fill="#FBF8F1"/>
+  <path d="M22 84 C22 64, 34 56, 50 56 C66 56, 78 64, 78 84 Z" fill="#FBF8F1"/>
+  <!-- Math geometric pyramid motif -->
+  <polygon points="50,66 62,82 38,82" fill="#8A5A00"/>
+</svg>

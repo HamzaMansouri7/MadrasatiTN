@@ -2,6 +2,8 @@
 
 Agent: Antigravity. Repo: MadrasatiTN (Angular 21 standalone, signals, OnPush, Tailwind 4, Firestore).
 
+**Part of `TASK-user-profiles.md` (master, all roles).** Do its Phase 0 first (rules fix, `UserAvatar`, `ProfileService`, `/profile` shell). Reuse those instead of building duplicates here.
+
 **Coordination:** `TASK-notification-revamp.md` is in progress and also touches `firebase.service.ts` and `firestore.rules`. Start from its merged state (pull first). Do not touch notification code. Extract profile logic into a new service instead of growing `firebase.service.ts`.
 
 ## Context

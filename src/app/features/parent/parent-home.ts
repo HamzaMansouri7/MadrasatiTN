@@ -20,19 +20,19 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               {{ parentGreeting() }}
             </h1>
 
-            @if (isUserLoggedIn()) {
+            @if (isUserLoggedIn() && store.activeStudent(); as st) {
               <div class="flex items-center gap-3 pt-1">
                 <div class="w-10 h-10 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold">
-                  {{ store.activeStudent().name.charAt(0) }}
+                  {{ st.name.charAt(0) }}
                 </div>
                 <div>
                   <p class="font-semibold text-sm flex items-center gap-2 text-white">
-                    <span>{{ store.activeStudent().name }}</span>
+                    <span>{{ st.name }}</span>
                     <span class="text-[11px] bg-[#E0AA32]/20 text-[#E0AA32] border border-[#E0AA32]/40 px-2 py-0.5 rounded-full font-semibold">
-                      {{ store.activeStudent().grade }}
+                      {{ st.grade }}
                     </span>
                   </p>
-                  <p class="text-xs text-[#8CA9C4]">{{ store.activeStudent().school }}</p>
+                  <p class="text-xs text-[#8CA9C4]">{{ st.school }}</p>
                 </div>
               </div>
             } @else {
