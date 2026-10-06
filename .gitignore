@@ -59,3 +59,6 @@ docs/
 /uploads/documents/
 /uploads/notebooks/
 /uploads/generated/
+
+# Local-only handoff bundle for the VPS Claude session (contains private memory notes; repo is public)
+/vps-handoff/
