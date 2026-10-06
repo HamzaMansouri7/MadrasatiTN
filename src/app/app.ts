@@ -47,6 +47,7 @@ export class App {
           '/teachers': 'public',
           '/editor': 'editor',
           '/generate': 'editor',
+          '/memo-studio': 'editor',
           '/article-studio': 'article-editor',
           '/studio': 'article-editor',
         };

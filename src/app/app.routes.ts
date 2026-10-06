@@ -76,6 +76,13 @@ export const routes: Routes = [
     title: 'مولّد الأوراق | Générateur de fiches - Madrasati TN',
   },
   {
+    path: 'memo-studio',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./features/memo-studio/memo-studio').then((m) => m.MemoStudioComponent),
+    title: 'استوديو بطاقات التلخيص | Studio Fiche Mémo - Madrasati TN',
+  },
+  {
     path: 'studio',
     redirectTo: 'article-studio',
     pathMatch: 'full',

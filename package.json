@@ -28,9 +28,11 @@
     "@tiptap/extension-image": "^3.31.4",
     "@tiptap/extension-placeholder": "^3.31.4",
     "@tiptap/starter-kit": "^3.31.4",
+    "docx": "^9.8.1",
     "express": "^5.1.0",
     "firebase": "^12.19.0",
     "firebase-admin": "^14.5.0",
+    "mammoth": "^1.13.0",
     "motion": "^12.23.24",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"

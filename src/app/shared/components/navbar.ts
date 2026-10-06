@@ -102,6 +102,17 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <span class="material-icons text-base xl:text-lg text-amber-500">auto_awesome</span>
               <span>{{ lang.t('generatorNav') }}</span>
             </button>
+
+            <!-- Memo Studio -->
+            <button
+              (click)="navigateToMemoStudio()"
+              [class]="isMemoStudioRoute()
+                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
+                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg text-emerald-600">note_alt</span>
+              <span>{{ lang.t('memoStudioNav') }}</span>
+            </button>
           </nav>
 
           <!-- Right Action Bar: Search + Notifications + Language + Profile Avatar -->
@@ -374,6 +385,13 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('rolePublic') }}
             </button>
+
+            <button
+              (click)="navigateToMemoStudio()"
+              [class]="isMemoStudioRoute() ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
+              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
+              {{ lang.t('memoStudioNav') }}
+            </button>
           </div>
 
           @if (firebase.userProfile()) {
@@ -397,6 +415,14 @@ export class NavbarComponent {
   readonly router = inject(Router);
   readonly profileMenuOpen = signal<boolean>(false);
   readonly notifDropdownOpen = signal<boolean>(false);
+
+  isMemoStudioRoute(): boolean {
+    return this.router.url.includes('/memo-studio');
+  }
+
+  navigateToMemoStudio() {
+    this.router.navigateByUrl('/memo-studio');
+  }
 
   isGeneratorRoute(): boolean {
     return this.router.url.includes('/generate');

@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
+import { Router } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage } from '@core';
 
 export interface GeneratedExerciseResult {
@@ -103,6 +104,13 @@ export interface GeneratedExerciseResult {
               class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_awesome</span>
               {{ lang.tr('Fiches similaires IA', 'أوراق مشابهة بالذكاء') }}
+            </button>
+
+            <button
+              (click)="openMemoStudio()"
+              class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-base">note_alt</span>
+              {{ lang.t('memoStudioNav') }}
             </button>
 
             <button
@@ -1616,6 +1624,7 @@ export class TeacherHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  private readonly router = inject(Router);
 
   teacherGreeting(): string {
     const profile = this.firebase.userProfile();
@@ -1820,6 +1829,11 @@ export class TeacherHomeComponent {
   openStudio() {
     if (!this.requireAuth()) return;
     this.store.setRole('editor');
+  }
+
+  openMemoStudio() {
+    if (!this.requireAuth()) return;
+    this.router.navigateByUrl('/memo-studio');
   }
 
   openArticleStudio() {

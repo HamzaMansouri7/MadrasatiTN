@@ -280,7 +280,6 @@
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    background: #ffffff !important;
     border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
@@ -292,6 +291,8 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
   }
 
   .print-page:last-child,

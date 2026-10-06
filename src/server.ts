@@ -5,9 +5,11 @@ import {
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
 import express, { Request, Response, NextFunction } from 'express';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
+import mammoth from 'mammoth';
 import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
+import { MEMO_SCHEMA, BLOCK_SCHEMAS, buildMemoPrompt } from './server/memo-schema';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
@@ -1103,6 +1105,197 @@ Consignes strictes :
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de la génération du résumé';
     console.error('Error in /api/ai/summarize-docs:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
+// 4a-2. Memo Studio — AI structured pedagogical memo sheet generator
+app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
+  try {
+    const {
+      mode,
+      topic,
+      text,
+      images,
+      file,
+      resourceUrl,
+      grade,
+      subject,
+      trimester,
+      language,
+      instructions,
+      blockToRegenerate,
+      currentMemo,
+    } = req.body;
+
+    if (!ai) {
+      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+      return;
+    }
+
+    const validModes = ['topic', 'text', 'image', 'file', 'resource'];
+    if (!mode || !validModes.includes(mode)) {
+      res.status(400).json({ error: 'Mode de génération invalide (topic, text, image, file, resource requis).' });
+      return;
+    }
+
+    if (topic && typeof topic === 'string' && topic.length > 300) {
+      res.status(400).json({ error: 'Le sujet ne doit pas dépasser 300 caractères.' });
+      return;
+    }
+
+    if (text && typeof text === 'string' && text.length > 8000) {
+      res.status(400).json({ error: 'Le texte ne doit pas dépasser 8000 caractères.' });
+      return;
+    }
+
+    const maxBase64Len = 16 * 1024 * 1024; // 16MB string limit
+
+    if (Array.isArray(images)) {
+      if (images.length > 8) {
+        res.status(400).json({ error: 'Au maximum 8 images sont autorisées.' });
+        return;
+      }
+      for (const img of images) {
+        if (img?.base64Data && typeof img.base64Data === 'string' && img.base64Data.length > maxBase64Len) {
+          res.status(400).json({ error: 'Une image dépasse la taille limite autorisée de 16 Mo.' });
+          return;
+        }
+        if (img?.contentType && !img.contentType.startsWith('image/')) {
+          res.status(400).json({ error: 'Format d\'image non supporté.' });
+          return;
+        }
+      }
+    }
+
+    if (file?.base64Data && typeof file.base64Data === 'string') {
+      if (file.base64Data.length > maxBase64Len) {
+        res.status(400).json({ error: 'Le fichier dépasse la taille limite autorisée de 16 Mo.' });
+        return;
+      }
+      const ct = file.contentType || '';
+      const fn = (file.filename || '').toLowerCase();
+      const isAllowedFile =
+        ct === 'application/pdf' ||
+        fn.endsWith('.pdf') ||
+        ct.includes('wordprocessingml') ||
+        fn.endsWith('.docx') ||
+        ct.startsWith('image/');
+      if (!isAllowedFile) {
+        res.status(400).json({ error: 'Type de fichier non supporté (PDF, DOCX ou image uniquement).' });
+        return;
+      }
+    }
+
+    let targetResourcePath: string | null = null;
+    if (mode === 'resource') {
+      if (!resourceUrl || typeof resourceUrl !== 'string') {
+        res.status(400).json({ error: 'Chemin de ressource manquant.' });
+        return;
+      }
+      const allowedRoots = [
+        resolve(process.cwd(), 'public', 'assets', 'resources'),
+        resolve(process.cwd(), 'uploads'),
+      ];
+      const cleanRel = resourceUrl.replace(/^[/\\]+/, '');
+      const candidatePath = resolve(process.cwd(), cleanRel);
+      const isAllowed = allowedRoots.some((root) => candidatePath.startsWith(root));
+      if (!isAllowed || !existsSync(candidatePath)) {
+        res.status(400).json({ error: 'Ressource introuvable ou non autorisée.' });
+        return;
+      }
+      targetResourcePath = candidatePath;
+    }
+
+    let extractedText: string | undefined = undefined;
+    const contents: GeminiPart[] = [];
+
+    const pushPart = (dataStr: string, mime: string) => {
+      const clean = dataStr.replace(/^data:[^;]+;base64,/, '');
+      contents.push({ inlineData: { mimeType: mime, data: clean } });
+    };
+
+    if (mode === 'image' && Array.isArray(images)) {
+      for (const img of images) {
+        if (!img?.base64Data) continue;
+        const mime = img.contentType && img.contentType.startsWith('image/') ? img.contentType : 'image/jpeg';
+        pushPart(img.base64Data, mime);
+      }
+    } else if (mode === 'file' && file?.base64Data) {
+      const cleanBase64 = file.base64Data.replace(/^data:[^;]+;base64,/, '');
+      const ct = file.contentType || '';
+      const fn = (file.filename || '').toLowerCase();
+
+      if (ct === 'application/pdf' || fn.endsWith('.pdf')) {
+        pushPart(cleanBase64, 'application/pdf');
+      } else if (ct.includes('wordprocessingml') || fn.endsWith('.docx')) {
+        const buffer = Buffer.from(cleanBase64, 'base64');
+        const docxResult = await mammoth.extractRawText({ buffer });
+        extractedText = docxResult.value;
+      } else if (ct.startsWith('image/')) {
+        pushPart(cleanBase64, ct);
+      }
+    } else if (mode === 'resource' && targetResourcePath) {
+      const lower = targetResourcePath.toLowerCase();
+      if (lower.endsWith('.pdf')) {
+        const fileBuf = readFileSync(targetResourcePath);
+        pushPart(fileBuf.toString('base64'), 'application/pdf');
+      } else if (lower.endsWith('.docx')) {
+        const buffer = readFileSync(targetResourcePath);
+        const docxResult = await mammoth.extractRawText({ buffer });
+        extractedText = docxResult.value;
+      } else if (lower.endsWith('.png')) {
+        const fileBuf = readFileSync(targetResourcePath);
+        pushPart(fileBuf.toString('base64'), 'image/png');
+      } else if (lower.endsWith('.webp')) {
+        const fileBuf = readFileSync(targetResourcePath);
+        pushPart(fileBuf.toString('base64'), 'image/webp');
+      } else if (lower.endsWith('.jpg') || lower.endsWith('.jpeg')) {
+        const fileBuf = readFileSync(targetResourcePath);
+        pushPart(fileBuf.toString('base64'), 'image/jpeg');
+      } else if (lower.endsWith('.json') || lower.endsWith('.txt') || lower.endsWith('.md')) {
+        extractedText = readFileSync(targetResourcePath, 'utf-8');
+      }
+    }
+
+    const lang = resolveLang(language);
+    const grounding = (grade || subject) ? buildGrounding({ grade, subject, trimester, topic, lang }) : '';
+
+    const promptText = buildMemoPrompt(
+      {
+        mode,
+        topic,
+        text,
+        grade,
+        subject,
+        trimester,
+        instructions,
+        extractedText,
+        blockToRegenerate,
+        currentMemo,
+      },
+      lang,
+      grounding,
+    );
+
+    contents.push({ text: promptText });
+
+    const schema = (blockToRegenerate && BLOCK_SCHEMAS[blockToRegenerate])
+      ? BLOCK_SCHEMAS[blockToRegenerate]
+      : MEMO_SCHEMA;
+
+    const data = await aiGenerateJSON(ai, contents, schema, 0.3);
+
+    if (!extractedText && typeof data['extractedText'] === 'string') {
+      extractedText = data['extractedText'];
+    }
+
+    res.json({ success: true, result: data, extractedText });
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de la génération de la fiche mémo';
+    console.error('Error in /api/ai/generate-memo:', err);
     res.status(500).json({ error: message });
     return;
   }

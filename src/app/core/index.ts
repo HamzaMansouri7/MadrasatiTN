@@ -1,6 +1,7 @@
 export * from './models/education.model';
 export * from './models/interaction.model';
 export * from './models/resource.model';
+export * from './models/memo.model';
 export * from './services/education-store';
 export * from './services/interaction.service';
 export * from './services/firebase.service';

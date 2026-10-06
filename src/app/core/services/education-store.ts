@@ -25,6 +25,14 @@ import {
   WorksheetSummary,
   DocType,
 } from '../models/education.model';
+import {
+  MemoDoc,
+  MemoLayout,
+  MemoCard,
+  MemoStep,
+  MemoInput,
+  MemoGenerateResponse,
+} from '../models/memo.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
@@ -78,6 +86,10 @@ export class EducationStore {
   // Deep-linked and active blog post for detail/reader view
   readonly selectedBlogPost = signal<BlogPost | null>(null);
   readonly editingBlogPost = signal<BlogPost | null>(null);
+
+  // Memo Studio signals
+  readonly memo = signal<MemoDoc | null>(null);
+  readonly memoLayout = signal<MemoLayout>('tree');
 
   // App-wide toast notification system
   readonly toast = signal<{ message: string; type: 'success' | 'info' | 'error' } | null>(null);
@@ -1108,6 +1120,127 @@ export class EducationStore {
       console.error('Error in generateIllustration:', err);
     }
     return null;
+  }
+
+  // Memo Studio — generate a structured pedagogical memo sheet
+  async generateMemo(input: MemoInput): Promise<MemoGenerateResponse> {
+    if (typeof window === 'undefined') {
+      return { ok: false, error: 'Environnement non supporté.' };
+    }
+    try {
+      const res = await fetch('/api/ai/generate-memo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(input),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        return { ok: false, error: data.error || 'Erreur lors de la génération de la fiche mémo.' };
+      }
+      if (data.result) {
+        this.memo.set(data.result);
+      }
+      return { ok: true, result: data.result, extractedText: data.extractedText };
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Erreur réseau';
+      return { ok: false, error: msg };
+    }
+  }
+
+  async regenerateMemoBlock(
+    block: 'steps' | 'cards' | 'example' | 'remember' | 'formula' | 'quote',
+    instructions?: string,
+  ): Promise<MemoGenerateResponse> {
+    const current = this.memo();
+    if (!current) {
+      return { ok: false, error: 'Aucune fiche mémo active à régénérer.' };
+    }
+    const input: MemoInput = {
+      mode: 'topic',
+      topic: current.topic,
+      grade: current.grade,
+      subject: current.subject,
+      language: current.language,
+      instructions,
+      blockToRegenerate: block,
+      currentMemo: current,
+    };
+    if (typeof window === 'undefined') {
+      return { ok: false, error: 'Environnement non supporté.' };
+    }
+    try {
+      const res = await fetch('/api/ai/generate-memo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(input),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        return { ok: false, error: data.error || 'Erreur lors de la régénération du bloc.' };
+      }
+      if (data.result) {
+        this.memo.update((doc) => {
+          if (!doc) return doc;
+          return {
+            ...doc,
+            ...(data.result as Partial<MemoDoc>),
+          };
+        });
+      }
+      return { ok: true, result: this.memo() ?? undefined };
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Erreur réseau';
+      return { ok: false, error: msg };
+    }
+  }
+
+  updateMemoField<K extends keyof MemoDoc>(field: K, value: MemoDoc[K]) {
+    this.memo.update((doc) => (doc ? { ...doc, [field]: value } : doc));
+  }
+
+  addMemoCard(card?: Partial<MemoCard>) {
+    this.memo.update((doc) => {
+      if (!doc) return doc;
+      const newCard: MemoCard = {
+        id: 'card-' + Date.now(),
+        label: card?.label || 'Nouveau concept',
+        definition: card?.definition || 'Définition du concept...',
+        examples: card?.examples?.length ? card.examples : ['Exemple 1'],
+        icon: card?.icon || 'star',
+        color: card?.color || 'emerald',
+      };
+      return { ...doc, cards: [...doc.cards, newCard] };
+    });
+  }
+
+  removeMemoCard(cardId: string) {
+    this.memo.update((doc) => {
+      if (!doc) return doc;
+      return { ...doc, cards: doc.cards.filter((c) => c.id !== cardId) };
+    });
+  }
+
+  addMemoStep(step?: Partial<MemoStep>) {
+    this.memo.update((doc) => {
+      if (!doc) return doc;
+      const nextN = doc.steps.length + 1;
+      const newStep: MemoStep = {
+        n: step?.n ?? nextN,
+        heading: step?.heading || `Étape ${nextN}`,
+        body: step?.body || 'Description de la démarche...',
+      };
+      return { ...doc, steps: [...doc.steps, newStep] };
+    });
+  }
+
+  removeMemoStep(index: number) {
+    this.memo.update((doc) => {
+      if (!doc) return doc;
+      const updatedSteps = doc.steps
+        .filter((_, i) => i !== index)
+        .map((s, idx) => ({ ...s, n: idx + 1 }));
+      return { ...doc, steps: updatedSteps };
+    });
   }
 
   addAnnouncement(announcementData: Partial<Announcement>) {
