@@ -15,7 +15,7 @@ import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/firs
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
 import { SEED_BANK_EXERCISES, SEED_COURSES } from './app/core/data/seed-docs.data';
-import { existsSync, mkdirSync, writeFileSync, readFileSync, readdirSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync, readFileSync, readdirSync, statSync, unlinkSync, rmSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
@@ -301,6 +301,54 @@ const saveGenerated = (filename: string, data: Buffer | string): string => {
   return `/uploads/generated/${month}/${filename}`;
 };
 
+// Per-user disk quota (all kinds together) and housekeeping.
+const USER_QUOTA_BYTES = Number(process.env['UPLOAD_QUOTA_MB'] || 100) * 1024 * 1024;
+const GENERATED_TTL_DAYS = Number(process.env['GENERATED_TTL_DAYS'] || 90);
+
+const userUsageBytes = (uid: string): number => {
+  let total = 0;
+  for (const kind of UPLOAD_KINDS) {
+    const dir = join(uploadsFolder, kind, uid);
+    if (!existsSync(dir)) continue;
+    for (const f of readdirSync(dir)) {
+      try {
+        total += statSync(join(dir, f)).size;
+      } catch { /* file vanished */ }
+    }
+  }
+  return total;
+};
+
+/** An avatar replaces the previous one: keep only the file just written. */
+const pruneOldAvatars = (uid: string, keep: string): void => {
+  const dir = join(uploadsFolder, 'avatars', uid);
+  for (const f of readdirSync(dir)) {
+    if (f === keep) continue;
+    try {
+      unlinkSync(join(dir, f));
+    } catch { /* ignore */ }
+  }
+};
+
+/** Delete AI-generated files older than GENERATED_TTL_DAYS, then empty month folders. */
+const purgeGenerated = (): void => {
+  const root = join(uploadsFolder, 'generated');
+  if (!existsSync(root)) return;
+  const cutoff = Date.now() - GENERATED_TTL_DAYS * 24 * 60 * 60 * 1000;
+  for (const month of readdirSync(root)) {
+    const dir = join(root, month);
+    try {
+      for (const f of readdirSync(dir)) {
+        const fp = join(dir, f);
+        if (statSync(fp).mtimeMs < cutoff) unlinkSync(fp);
+      }
+      if (readdirSync(dir).length === 0) rmSync(dir, { recursive: true });
+    } catch { /* ignore */ }
+  }
+};
+purgeGenerated();
+setInterval(purgeGenerated, 24 * 60 * 60 * 1000).unref();
+
 // Storage layout: uploads/<kind>/<uid>/<file>. Legacy flat files in uploads/ stay served as-is.
 const UPLOAD_KINDS = new Set(['avatars', 'courses', 'articles', 'documents', 'notebooks']);
 const SAFE_UID = /^[A-Za-z0-9_-]{1,64}$/;
@@ -387,9 +435,15 @@ app.post('/api/upload', originGuard, uploadRateLimiter, async (req, res): Promis
     }
 
     const cleanName = `${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
+    if (userUsageBytes(uid) + buffer.length > USER_QUOTA_BYTES) {
+      res.status(413).json({ error: `Quota de stockage atteint (${Math.round(USER_QUOTA_BYTES / 1024 / 1024)} Mo). Supprimez d'anciens fichiers.` });
+      return;
+    }
+
     const targetDir = join(uploadsFolder, kind, uid);
     mkdirSync(targetDir, { recursive: true });
     writeFileSync(join(targetDir, cleanName), buffer);
+    if (kind === 'avatars') pruneOldAvatars(uid, cleanName);
 
     res.json({
       success: true,
