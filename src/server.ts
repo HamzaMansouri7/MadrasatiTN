@@ -458,9 +458,22 @@ app.post('/api/upload', originGuard, uploadRateLimiter, async (req, res): Promis
   }
 });
 
-// Initialize Gemini Client
-const apiKey = process.env['GEMINI_API_KEY'] || '';
-const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
+// Initialize Gemini Client(s) with multi-key pooling & rotation
+const rawApiKeys = [
+  process.env['GEMINI_API_KEY'],
+  process.env['GEMINI_API_KEY_2'],
+  process.env['GEMINI_API_KEYS']
+]
+  .filter(Boolean)
+  .join(',')
+  .split(/[,\n]/)
+  .map(k => k.trim().replace(/^["']|["']$/g, ''))
+  .filter(k => k.length > 0);
+
+const aiClients: GoogleGenAI[] = rawApiKeys.map(key => new GoogleGenAI({ apiKey: key }));
+let activeKeyIdx = 0;
+
+const ai = aiClients.length > 0 ? aiClients[0] : null;
 
 /**
  * Shared AI helpers — structured JSON output, retry, dual-language (AR default),
@@ -468,7 +481,9 @@ const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
  */
 type GeminiPart = { inlineData: { mimeType: string; data: string } } | { text: string };
 
-/** JSON-mode generation with responseSchema + 1 retry on transient/parse failure. */
+const FALLBACK_MODELS = ['gemini-flash-latest', 'gemini-2.5-flash', 'gemini-3.8-flash'];
+
+/** JSON-mode generation with responseSchema + multi-key/model retry on transient/parse failure. */
 async function aiGenerateJSON(
   client: GoogleGenAI,
   contents: string | GeminiPart[],
@@ -478,13 +493,29 @@ async function aiGenerateJSON(
   const config: Record<string, unknown> = { responseMimeType: 'application/json', temperature };
   if (schema) config['responseSchema'] = schema;
   let lastErr: unknown;
-  for (let attempt = 0; attempt < 2; attempt++) {
-    try {
-      const response = await client.models.generateContent({ model: 'gemini-2.5-flash', contents, config });
-      const text = (response.text || '').replace(/```json/g, '').replace(/```/g, '').trim();
-      return JSON.parse(text);
-    } catch (err) {
-      lastErr = err;
+
+  const pool = aiClients.length > 0 ? aiClients : [client];
+  const maxAttempts = Math.max(pool.length * 2, 2);
+
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    const currentClient = pool[activeKeyIdx % pool.length];
+    activeKeyIdx = (activeKeyIdx + 1) % pool.length;
+
+    for (const model of FALLBACK_MODELS) {
+      try {
+        const response = await currentClient.models.generateContent({ model, contents, config });
+        const text = (response.text || '').replace(/```json/g, '').replace(/```/g, '').trim();
+        return JSON.parse(text);
+      } catch (err: unknown) {
+        lastErr = err;
+        const msg = err instanceof Error ? err.message : String(err);
+        // If 404 on model name, try next model immediately
+        if (msg.includes('404') || msg.includes('not found') || msg.includes('no longer available')) {
+          continue;
+        }
+        // If rate limit / quota, break inner loop to rotate key
+        break;
+      }
     }
   }
   throw lastErr;
