@@ -42,20 +42,34 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               {{ lang.tr("Une plateforme numérique pour les enseignants, les parents et les élèves. Accédez à vos ressources, gérez vos cours, suivez les progrès et collaborez en toute simplicité, au service d'une éducation de qualité.", 'منصة رقمية متكاملة للمعلمين والأولياء والتلاميذ. يمكنك الوصول إلى مواردك، وإدارة دروسك، ومتابعة التحصيل الدراسي والتعاون بكل بساطة.') }}
             </p>
 
-            <!-- CTAs: photo solver & course summarizer -->
+            <!-- CTAs: AI & Pedagogical Tool Features -->
             <div class="flex flex-wrap items-center gap-3">
               <button
                 (click)="goSolve()"
-                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
+                class="bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-0.5">
                 <span class="material-icons text-base" aria-hidden="true">photo_camera</span>
-                {{ lang.t('solveTitle') }}
+                <span>{{ lang.t('solveTitle') }}</span>
               </button>
 
               <button
                 (click)="goSummarize()"
-                class="bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-5 py-3.5 rounded-xl text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
+                class="bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-0.5">
                 <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
-                {{ lang.t('summarizeNav') }}
+                <span>{{ lang.t('summarizeNav') }}</span>
+              </button>
+
+              <button
+                (click)="goGenerate()"
+                class="bg-white hover:bg-[#F3FAFD] text-[#005F96] border border-[#CBD9E2] hover:border-[#007CC2] font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-xs hover:shadow-sm hover:-translate-y-0.5">
+                <span class="material-icons text-base text-amber-500" aria-hidden="true">auto_awesome</span>
+                <span>{{ lang.tr('مولّد الأوراق', 'مولّد الأوراق') }}</span>
+              </button>
+
+              <button
+                (click)="goMemoStudio()"
+                class="bg-white hover:bg-[#F3FAFD] text-[#005F96] border border-[#CBD9E2] hover:border-[#007CC2] font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-xs hover:shadow-sm hover:-translate-y-0.5">
+                <span class="material-icons text-base text-emerald-600" aria-hidden="true">note_alt</span>
+                <span>{{ lang.tr('مذكرة بصرية', 'مذكرة بصرية') }}</span>
               </button>
             </div>
 
@@ -303,6 +317,14 @@ export class LandingHomeComponent {
 
   goSummarize() {
     this.router.navigateByUrl('/summarize');
+  }
+
+  goGenerate() {
+    this.router.navigateByUrl('/generate');
+  }
+
+  goMemoStudio() {
+    this.router.navigateByUrl('/memo-studio');
   }
 
   enterWorkspace(role: UserRole) {

@@ -72,34 +72,10 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               </button>
             }
 
-            <!-- Student Space -->
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'student') {
-              <button
-                (click)="selectRole('student')"
-                [class]="store.currentRole() === 'student' 
-                  ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                  : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
-                class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-                <span class="material-icons text-base xl:text-lg text-[#007CC2]">backpack</span>
-                <span>{{ lang.t('roleStudent') }}</span>
-              </button>
-            }
-
-            <!-- Photo Solver Studio -->
-            <button
-              (click)="navigateToSolve()"
-              [class]="isSolveRoute()
-                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg text-[#BF5B34]">photo_camera</span>
-              <span>{{ lang.tr('صوّر وحلّ', 'صوّر وحلّ') }}</span>
-            </button>
-
             <!-- Public Discovery -->
             <button
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isGeneratorRoute() && !isMemoStudioRoute() && !isSolveRoute()
+              [class]="store.currentRole() === 'public'
                 ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
                 : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
@@ -116,28 +92,6 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
               <span class="material-icons text-base xl:text-lg">verified</span>
               <span>{{ lang.tr('Enseignants', 'المعلمون') }}</span>
-            </button>
-
-            <!-- Worksheet Generator Studio -->
-            <button
-              (click)="navigateToGenerator()"
-              [class]="isGeneratorRoute()
-                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg text-amber-500">auto_awesome</span>
-              <span>{{ lang.t('generatorNav') }}</span>
-            </button>
-
-            <!-- Memo Studio -->
-            <button
-              (click)="navigateToMemoStudio()"
-              [class]="isMemoStudioRoute()
-                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg text-emerald-600">note_alt</span>
-              <span>{{ lang.t('memoStudioNav') }}</span>
             </button>
           </nav>
 
@@ -430,34 +384,11 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               </button>
             }
 
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'student') {
-              <button
-                (click)="selectRole('student')"
-                [class]="store.currentRole() === 'student' ? 'bg-[#007CC2] text-white font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-                class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-                {{ lang.t('roleStudent') }}
-              </button>
-            }
-
-            <button
-              (click)="navigateToSolve()"
-              [class]="isSolveRoute() ? 'bg-[#BF5B34] text-white font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-              {{ lang.tr('صوّر وحلّ', 'صوّر وحلّ') }}
-            </button>
-
             <button
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isMemoStudioRoute() && !isSolveRoute() ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
+              [class]="store.currentRole() === 'public' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
               class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
               {{ lang.t('rolePublic') }}
-            </button>
-
-            <button
-              (click)="navigateToMemoStudio()"
-              [class]="isMemoStudioRoute() ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-              {{ lang.t('memoStudioNav') }}
             </button>
           </div>
 
