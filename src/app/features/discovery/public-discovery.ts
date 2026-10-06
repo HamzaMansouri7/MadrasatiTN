@@ -37,20 +37,34 @@ interface RecitationItem {
             </p>
           </div>
 
-          <!-- Entries: zero-friction photo solver & course summarizer -->
+          <!-- Entries: zero-friction photo solver, summarizer, generator, memo studio -->
           <div class="flex flex-wrap items-center gap-3">
             <a
-              href="/solve"
-              class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-opacity shadow-sm w-fit">
+              routerLink="/solve"
+              class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
               <span class="material-icons text-base" aria-hidden="true">photo_camera</span>
-              {{ lang.t('solveTitle') }}
+              <span>{{ lang.t('solveTitle') }}</span>
             </a>
 
             <a
-              href="/summarize"
-              class="inline-flex items-center gap-2 bg-[#0D5C3A] hover:bg-[#094229] text-white font-semibold px-5 py-3 rounded-xl text-sm transition-colors shadow-sm w-fit">
+              routerLink="/summarize"
+              class="inline-flex items-center gap-2 bg-[#0D5C3A] hover:bg-[#094229] text-white font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
               <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
-              {{ lang.t('summarizeNav') }}
+              <span>{{ lang.t('summarizeNav') }}</span>
+            </a>
+
+            <a
+              routerLink="/generate"
+              class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-[#FBF8F1] border border-white/20 font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
+              <span class="material-icons text-base text-[#F2C14E]" aria-hidden="true">auto_fix_high</span>
+              <span>{{ lang.tr('مولّد الأوراق المشابهة', 'مولّد الأوراق المشابهة') }}</span>
+            </a>
+
+            <a
+              routerLink="/memo-studio"
+              class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-[#FBF8F1] border border-white/20 font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
+              <span class="material-icons text-base text-[#9DBBA8]" aria-hidden="true">note_alt</span>
+              <span>{{ lang.tr('المذكرة البصرية', 'المذكرة البصرية') }}</span>
             </a>
           </div>
 
