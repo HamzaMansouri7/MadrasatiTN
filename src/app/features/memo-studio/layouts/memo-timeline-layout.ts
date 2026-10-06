@@ -14,21 +14,21 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
         <!-- Header Banner -->
         <header class="border-b-2 border-[#1B4332] pb-3 mb-4 flex items-center justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center font-display font-bold text-lg shadow-sm">
-              ⏳
+            <div class="w-10 h-10 rounded-xl bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center font-display font-semibold text-lg shadow-sm">
+              <span class="material-icons text-xl" aria-hidden="true">timeline</span>
             </div>
             <div>
               <h1
                 contenteditable="true"
                 (blur)="onUpdateField('title', $event)"
-                class="font-display text-2xl font-bold text-[#14251D] focus:outline-none focus:bg-[#F2ECDE] rounded px-1"
+                class="font-display text-2xl font-semibold text-[#14251D] focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-1"
               >
                 {{ m.title }}
               </h1>
               <p
                 contenteditable="true"
                 (blur)="onUpdateField('subtitle', $event)"
-                class="text-xs text-[#5B6B60] focus:outline-none focus:bg-[#F2ECDE] rounded px-1"
+                class="text-xs text-[#5B6B60] focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-1"
               >
                 {{ m.subtitle || (m.grade + ' • ' + m.subject) }}
               </p>
@@ -36,7 +36,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
           </div>
 
           <div class="text-end">
-            <span class="px-3 py-1 bg-[#2D6A4F] text-[#FBF8F1] text-xs font-bold rounded-lg shadow-xs">
+            <span class="px-3 py-1 bg-[#2D6A4F] text-[#FBF8F1] text-xs font-semibold rounded-lg">
               {{ m.grade }}
             </span>
           </div>
@@ -48,7 +48,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
           <!-- Timeline / Chronological Flow Section -->
           <section class="space-y-3">
             <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-1.5">
-              <h2 class="font-display font-bold text-sm text-[#1B4332] flex items-center gap-2">
+              <h2 class="font-display font-semibold text-sm text-[#1B4332] flex items-center gap-2">
                 <img src="/assets/memo/globe.svg" alt="icon" class="w-4 h-4" />
                 {{ lang.tr('Chronologie & Enchaînement des Faits', 'التسلسل الزمني والمراحل الرئيسية') }}
               </h2>
@@ -65,7 +65,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
               @for (step of m.steps; track step.n; let idx = $index) {
                 <div class="relative group">
                   <!-- Timeline Node Dot -->
-                  <div class="absolute -start-[31px] top-1 w-6 h-6 rounded-full bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center font-bold text-[11px] ring-4 ring-white shadow-xs">
+                  <div class="absolute -start-[31px] top-1 w-6 h-6 rounded-full bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center font-semibold text-[11px] ring-4 ring-white">
                     {{ step.n }}
                   </div>
                   <div class="p-3 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] hover:border-[#2D6A4F] transition-colors">
@@ -73,13 +73,13 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
                       <h3
                         contenteditable="true"
                         (blur)="onUpdateStepHeading(idx, $event)"
-                        class="font-bold text-xs text-[#14251D] focus:outline-none focus:bg-[#F2ECDE] rounded"
+                        class="font-semibold text-xs text-[#14251D] focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded"
                       >
                         {{ step.heading }}
                       </h3>
                       <button
                         (click)="store.removeMemoStep(idx)"
-                        class="no-print text-[#C1121F] hover:opacity-75 text-xs font-bold px-1"
+                        class="no-print text-[#C1121F] hover:opacity-75 text-xs font-semibold px-1"
                       >
                         ×
                       </button>
@@ -87,7 +87,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
                     <p
                       contenteditable="true"
                       (blur)="onUpdateStepBody(idx, $event)"
-                      class="text-xs text-[#5B6B60] mt-1 leading-relaxed focus:outline-none focus:bg-[#F2ECDE] rounded"
+                      class="text-xs text-[#5B6B60] mt-1 leading-relaxed focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded"
                     >
                       {{ step.body }}
                     </p>
@@ -109,14 +109,14 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
             
             <!-- Cards Column -->
             <section class="space-y-2">
-              <h3 class="font-display font-bold text-xs text-[#14251D] flex items-center gap-1.5 border-b border-[#E7DFCF] pb-1">
+              <h3 class="font-display font-semibold text-xs text-[#14251D] flex items-center gap-1.5 border-b border-[#E7DFCF] pb-1">
                 <img src="/assets/memo/star.svg" alt="icon" class="w-3.5 h-3.5" />
                 {{ lang.tr('Éléments Incontournables', 'عناصر لا غنى عنها') }}
               </h3>
               <div class="space-y-2">
                 @for (card of m.cards; track card.id) {
                   <div class="p-2.5 bg-[#F2ECDE] rounded-xl border border-[#E7DFCF] space-y-1">
-                    <h4 class="font-bold text-xs text-[#2D6A4F]">{{ card.label }}</h4>
+                    <h4 class="font-semibold text-xs text-[#2D6A4F]">{{ card.label }}</h4>
                     <p class="text-[11px] text-[#5B6B60]">{{ card.definition }}</p>
                   </div>
                 }
@@ -126,7 +126,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
             <!-- Analyzed Example -->
             @if (m.example) {
               <section class="space-y-2">
-                <h3 class="font-display font-bold text-xs text-[#8A5A00] flex items-center gap-1.5 border-b border-[#E7DFCF] pb-1">
+                <h3 class="font-display font-semibold text-xs text-[#8A5A00] flex items-center gap-1.5 border-b border-[#E7DFCF] pb-1">
                   <img src="/assets/memo/pencils.svg" alt="icon" class="w-3.5 h-3.5" />
                   {{ lang.tr("Exemple Type d'Analyse", 'نموذج تطبيقي') }}
                 </h3>
@@ -137,7 +137,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
                   <div class="grid grid-cols-2 gap-1.5 text-[10px]">
                     @for (item of m.example.analysis; track item.word) {
                       <div class="p-1.5 bg-white rounded border border-[#E7DFCF] flex justify-between">
-                        <span class="font-bold text-[#14251D]">{{ item.word }}</span>
+                        <span class="font-semibold text-[#14251D]">{{ item.word }}</span>
                         <span class="text-[#2D6A4F]">{{ item.role }}</span>
                       </div>
                     }
@@ -154,10 +154,10 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
         <footer class="mt-4 pt-3 border-t border-[#E7DFCF] space-y-2">
           <div class="p-2.5 bg-[#1B4332] text-[#FBF8F1] rounded-xl flex items-center justify-between text-xs">
             <div class="flex items-center gap-2">
-              <span class="font-bold text-[#F2C14E]">⭐ {{ lang.tr('Synthèse :', 'الخلاصة :') }}</span>
+              <span class="font-semibold text-[#F2C14E]">⭐ {{ lang.tr('Synthèse :', 'الخلاصة :') }}</span>
               <span class="text-[11px] text-[#E7DFCF]">{{ m.remember.join(' • ') }}</span>
             </div>
-            <span class="text-[9px] font-bold text-[#F2C14E] uppercase tracking-wider shrink-0 ms-2">
+            <span class="text-[9px] font-semibold text-[#F2C14E] uppercase tracking-wider shrink-0 ms-2">
               Madrasati TN
             </span>
           </div>

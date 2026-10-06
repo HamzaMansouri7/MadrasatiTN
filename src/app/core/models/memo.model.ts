@@ -38,7 +38,7 @@ export interface MemoTimelineEvent {
 
 export interface MemoComparisonTable {
   headers: string[];
-  rows: Array<{ label: string; cells: string[] }>;
+  rows: { label: string; cells: string[] }[];
 }
 
 export interface MemoConjugationRow {

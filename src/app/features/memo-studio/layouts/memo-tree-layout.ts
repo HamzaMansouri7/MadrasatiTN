@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '../../../core';
+import { MemoDoc, EducationStore, LanguageService } from '../../../core';
 
 @Component({
   selector: 'app-memo-tree-layout',
@@ -20,7 +20,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
             <h1
               contenteditable="true"
               (blur)="onUpdateField('title', $event)"
-              class="font-display text-2xl font-bold text-[#14251D] tracking-tight focus:outline-none focus:bg-[#F2ECDE] rounded px-1"
+              class="font-display text-2xl font-semibold text-[#14251D] tracking-tight focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-1"
             >
               {{ m.title }}
             </h1>
@@ -28,7 +28,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
               <p
                 contenteditable="true"
                 (blur)="onUpdateField('subtitle', $event)"
-                class="text-xs text-[#5B6B60] italic mt-0.5 focus:outline-none focus:bg-[#F2ECDE] rounded px-1"
+                class="text-xs text-[#5B6B60] italic mt-0.5 focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-1"
               >
                 {{ m.subtitle }}
               </p>
@@ -40,7 +40,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
         <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
           
           <!-- Left Branch: Steps / Méthode -->
-          <section class="bg-white p-4 rounded-xl border border-[#E7DFCF] shadow-xs space-y-3">
+          <section class="bg-white p-4 rounded-xl border border-[#E7DFCF] space-y-3">
             <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-2">
               <div class="flex items-center gap-2">
                 <img src="/assets/memo/magnifier.svg" alt="Icon" class="w-4 h-4 text-[#1B4332]" />
@@ -58,28 +58,28 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
             <div class="space-y-2">
               @for (step of m.steps; track step.n; let idx = $index) {
                 <div class="flex items-start gap-2 p-2 bg-[#FBF8F1] rounded-lg border border-[#E7DFCF]/60 text-xs">
-                  <span class="w-5 h-5 rounded-full bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">
+                  <span class="w-5 h-5 rounded-full bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center font-semibold text-[10px] shrink-0 mt-0.5">
                     {{ step.n }}
                   </span>
                   <div class="flex-1">
                     <h4
                       contenteditable="true"
                       (blur)="onUpdateStepHeading(idx, $event)"
-                      class="font-semibold text-[#14251D] focus:outline-none focus:bg-[#F2ECDE] rounded"
+                      class="font-semibold text-[#14251D] focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded"
                     >
                       {{ step.heading }}
                     </h4>
                     <p
                       contenteditable="true"
                       (blur)="onUpdateStepBody(idx, $event)"
-                      class="text-[#5B6B60] mt-0.5 focus:outline-none focus:bg-[#F2ECDE] rounded"
+                      class="text-[#5B6B60] mt-0.5 focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded"
                     >
                       {{ step.body }}
                     </p>
                   </div>
                   <button
                     (click)="store.removeMemoStep(idx)"
-                    class="no-print text-[#C1121F] hover:opacity-75 text-xs font-bold px-1"
+                    class="no-print text-[#C1121F] hover:opacity-75 text-xs font-semibold px-1"
                     title="Supprimer"
                   >
                     ×
@@ -97,7 +97,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
           </section>
 
           <!-- Center Trunk: Concept Cards -->
-          <section class="bg-white p-4 rounded-xl border-2 border-[#1B4332] shadow-xs space-y-3">
+          <section class="bg-white p-4 rounded-xl border-2 border-[#1B4332] space-y-3">
             <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-2">
               <div class="flex items-center gap-2">
                 <img src="/assets/memo/books.svg" alt="Icon" class="w-4 h-4 text-[#1B4332]" />
@@ -120,14 +120,14 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
                       <h3
                         contenteditable="true"
                         (blur)="onUpdateCardLabel(card.id, $event)"
-                        class="font-bold text-[#14251D] focus:outline-none focus:bg-[#F2ECDE] rounded px-0.5"
+                        class="font-semibold text-[#14251D] focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-0.5"
                       >
                         {{ card.label }}
                       </h3>
                     </div>
                     <button
                       (click)="store.removeMemoCard(card.id)"
-                      class="no-print text-[#C1121F] hover:opacity-75 text-xs font-bold px-1"
+                      class="no-print text-[#C1121F] hover:opacity-75 text-xs font-semibold px-1"
                     >
                       ×
                     </button>
@@ -135,7 +135,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
                   <p
                     contenteditable="true"
                     (blur)="onUpdateCardDef(card.id, $event)"
-                    class="text-[#5B6B60] leading-relaxed focus:outline-none focus:bg-[#F2ECDE] rounded px-0.5"
+                    class="text-[#5B6B60] leading-relaxed focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-0.5"
                   >
                     {{ card.definition }}
                   </p>
@@ -161,7 +161,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
           <!-- Right Branch: Analysed Example & Formula -->
           <div class="space-y-4">
             @if (m.example) {
-              <section class="bg-white p-4 rounded-xl border border-[#E7DFCF] shadow-xs space-y-2">
+              <section class="bg-white p-4 rounded-xl border border-[#E7DFCF] space-y-2">
                 <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-1.5">
                   <div class="flex items-center gap-2">
                     <img src="/assets/memo/pencils.svg" alt="Icon" class="w-4 h-4 text-[#8A5A00]" />
@@ -174,7 +174,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
                     {{ lang.tr('↻', '↻') }}
                   </button>
                 </div>
-                <p class="font-bold text-xs text-[#14251D] bg-[#F2ECDE] p-2 rounded-lg">
+                <p class="font-semibold text-xs text-[#14251D] bg-[#F2ECDE] p-2 rounded-lg">
                   "{{ m.example.sentence }}"
                 </p>
                 <div class="space-y-1 text-xs">
@@ -189,9 +189,9 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
             }
 
             @if (m.formula) {
-              <section class="bg-[#14251D] text-[#FBF8F1] p-3 rounded-xl shadow-xs space-y-1.5">
+              <section class="bg-[#14251D] text-[#FBF8F1] p-3 rounded-xl space-y-1.5">
                 <div class="flex items-center justify-between border-b border-[#FBF8F1]/20 pb-1">
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#F2C14E]">
+                  <span class="text-[10px] font-semibold uppercase tracking-wider text-[#F2C14E]">
                     {{ lang.tr('Formule-Mémoire', 'معادلة التلخيص') }}
                   </span>
                   <button
@@ -201,7 +201,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
                     {{ lang.tr('↻', '↻') }}
                   </button>
                 </div>
-                <div class="flex flex-wrap items-center justify-center gap-1.5 font-bold text-xs py-1">
+                <div class="flex flex-wrap items-center justify-center gap-1.5 font-semibold text-xs py-1">
                   @for (part of m.formula.parts; track $index) {
                     <span [class]="$index % 2 === 0 ? 'bg-[#2D6A4F] px-2 py-0.5 rounded text-[#FBF8F1]' : 'text-[#F2C14E]'">
                       {{ part }}
@@ -222,7 +222,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
             <img src="/assets/memo/apple.svg" alt="Icon" class="w-5 h-5 shrink-0 mt-0.5 text-[#C1121F]" />
             <div class="flex-1">
               <div class="flex items-center justify-between">
-                <h4 class="font-display font-bold text-xs text-[#C1121F]">{{ lang.tr('À ne pas oublier !', 'تذكّر دائماً !') }}</h4>
+                <h4 class="font-display font-semibold text-xs text-[#C1121F]">{{ lang.tr('À ne pas oublier !', 'تذكّر دائماً !') }}</h4>
                 <button
                   (click)="store.regenerateMemoBlock('remember')"
                   class="no-print text-[10px] text-[#8A5A00] hover:underline cursor-pointer"
@@ -232,7 +232,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
               </div>
               <ul class="mt-1 space-y-0.5 text-[11px] text-[#14251D] list-disc list-inside">
                 @for (rem of m.remember; track $index) {
-                  <li contenteditable="true" (blur)="onUpdateRemember($index, $event)" class="focus:outline-none focus:bg-[#F2ECDE] rounded">
+                  <li contenteditable="true" (blur)="onUpdateRemember($index, $event)" class="focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded">
                     {{ rem }}
                   </li>
                 }
@@ -244,7 +244,7 @@ import { MemoDoc, MemoCard, MemoStep, EducationStore, LanguageService } from '..
             <p class="text-[10px] font-serif italic text-[#14251D]">
               "{{ m.quote || lang.tr("Apprendre aujourd'hui, réussir demain !", 'طلب العلم فريضة وطريق النجاح') }}"
             </p>
-            <span class="block mt-1 text-[9px] font-bold text-[#8A5A00] uppercase tracking-wider">
+            <span class="block mt-1 text-[9px] font-semibold text-[#8A5A00] uppercase tracking-wider">
               Madrasati TN
             </span>
           </div>

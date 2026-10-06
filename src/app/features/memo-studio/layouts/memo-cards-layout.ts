@@ -15,7 +15,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
         <header class="bg-[#14251D] text-[#FBF8F1] p-4 rounded-xl mb-4 flex items-center justify-between">
           <div>
             <div class="flex items-center gap-2 mb-1">
-              <span class="px-2 py-0.5 bg-[#2D6A4F] text-[#FBF8F1] text-[10px] font-bold rounded">
+              <span class="px-2 py-0.5 bg-[#2D6A4F] text-[#FBF8F1] text-[10px] font-semibold rounded">
                 {{ m.grade }}
               </span>
               <span class="text-[#F2C14E] text-xs font-semibold">
@@ -25,7 +25,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
             <h1
               contenteditable="true"
               (blur)="onUpdateField('title', $event)"
-              class="font-display text-2xl font-bold tracking-tight text-[#FBF8F1] focus:outline-none focus:bg-[#1B4332] rounded px-1"
+              class="font-display text-2xl font-semibold tracking-tight text-[#FBF8F1] focus:outline-none focus:bg-[#1B4332] rounded px-1"
             >
               {{ m.title }}
             </h1>
@@ -51,7 +51,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
           <!-- Concept Cards Section -->
           <section class="space-y-2">
             <div class="flex items-center justify-between">
-              <h2 class="font-display font-bold text-sm text-[#1B4332] flex items-center gap-2">
+              <h2 class="font-display font-semibold text-sm text-[#1B4332] flex items-center gap-2">
                 <img src="/assets/memo/star.svg" alt="icon" class="w-4 h-4" />
                 {{ lang.tr('Règles et Notions Clés', 'القواعد والمفاهيم الأساسية') }}
               </h2>
@@ -73,21 +73,21 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
               @for (card of m.cards; track card.id) {
-                <div class="p-3.5 bg-white rounded-xl border-t-4 border-t-[#2D6A4F] border border-[#E7DFCF] shadow-xs space-y-2 text-xs">
+                <div class="p-3.5 bg-white rounded-xl border-t-4 border-t-[#2D6A4F] border border-[#E7DFCF] space-y-2 text-xs">
                   <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                       <img [src]="'/assets/memo/' + (card.icon || 'star') + '.svg'" alt="card icon" class="w-4 h-4" />
                       <h3
                         contenteditable="true"
                         (blur)="onUpdateCardLabel(card.id, $event)"
-                        class="font-bold text-xs text-[#14251D] focus:outline-none focus:bg-[#F2ECDE] rounded px-0.5"
+                        class="font-semibold text-xs text-[#14251D] focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-0.5"
                       >
                         {{ card.label }}
                       </h3>
                     </div>
                     <button
                       (click)="store.removeMemoCard(card.id)"
-                      class="no-print text-[#C1121F] hover:opacity-75 text-xs font-bold px-1"
+                      class="no-print text-[#C1121F] hover:opacity-75 text-xs font-semibold px-1"
                     >
                       ×
                     </button>
@@ -96,7 +96,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
                   <p
                     contenteditable="true"
                     (blur)="onUpdateCardDef(card.id, $event)"
-                    class="text-[#5B6B60] leading-relaxed focus:outline-none focus:bg-[#F2ECDE] rounded px-0.5"
+                    class="text-[#5B6B60] leading-relaxed focus:bg-[#F2ECDE] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] rounded px-0.5"
                   >
                     {{ card.definition }}
                   </p>
@@ -119,7 +119,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
             <!-- Steps mini-column -->
             <section class="p-3 bg-white rounded-xl border border-[#E7DFCF] space-y-2">
               <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-1.5">
-                <h3 class="font-display font-bold text-xs text-[#8A5A00] flex items-center gap-1.5">
+                <h3 class="font-display font-semibold text-xs text-[#8A5A00] flex items-center gap-1.5">
                   <img src="/assets/memo/magnifier.svg" alt="icon" class="w-3.5 h-3.5" />
                   {{ lang.tr('Méthode de travail', 'طريقة العمل') }}
                 </h3>
@@ -133,11 +133,11 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
               <div class="space-y-1.5 text-xs">
                 @for (step of m.steps; track step.n; let idx = $index) {
                   <div class="flex items-start gap-2">
-                    <span class="w-4 h-4 rounded-full bg-[#8A5A00] text-[#FBF8F1] font-bold text-[9px] flex items-center justify-center shrink-0 mt-0.5">
+                    <span class="w-4 h-4 rounded-full bg-[#8A5A00] text-[#FBF8F1] font-semibold text-[9px] flex items-center justify-center shrink-0 mt-0.5">
                       {{ step.n }}
                     </span>
                     <div>
-                      <span class="font-bold text-[#14251D] text-xs">{{ step.heading }} : </span>
+                      <span class="font-semibold text-[#14251D] text-xs">{{ step.heading }} : </span>
                       <span class="text-[#5B6B60] text-[11px]">{{ step.body }}</span>
                     </div>
                   </div>
@@ -149,7 +149,7 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
             @if (m.example) {
               <section class="p-3 bg-white rounded-xl border border-[#E7DFCF] space-y-2">
                 <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-1.5">
-                  <h3 class="font-display font-bold text-xs text-[#BF5B34] flex items-center gap-1.5">
+                  <h3 class="font-display font-semibold text-xs text-[#BF5B34] flex items-center gap-1.5">
                     <img src="/assets/memo/pencils.svg" alt="icon" class="w-3.5 h-3.5" />
                     {{ lang.tr('Exemple décortiqué', 'تطبيق محلل') }}
                   </h3>
@@ -180,8 +180,8 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
         <footer class="mt-4 pt-3 border-t border-[#E7DFCF] space-y-2">
           @if (m.formula) {
             <div class="p-2 bg-[#2D6A4F] text-[#FBF8F1] rounded-xl flex items-center justify-between gap-2 text-xs">
-              <span class="font-bold text-[#F2C14E] text-xs">{{ lang.tr('Synthèse :', 'خلاصة :') }}</span>
-              <div class="flex items-center gap-1 font-bold">
+              <span class="font-semibold text-[#F2C14E] text-xs">{{ lang.tr('Synthèse :', 'خلاصة :') }}</span>
+              <div class="flex items-center gap-1 font-semibold">
                 @for (part of m.formula.parts; track $index) {
                   <span [class]="$index % 2 === 0 ? 'bg-[#1B4332] px-2 py-0.5 rounded text-[11px]' : 'text-[#F2C14E] text-[11px]'">
                     {{ part }}
@@ -198,11 +198,11 @@ import { MemoDoc, EducationStore, LanguageService } from '../../../core';
             <div class="flex items-start gap-2">
               <img src="/assets/memo/apple.svg" alt="icon" class="w-4 h-4 text-[#C1121F] shrink-0 mt-0.5" />
               <div>
-                <span class="font-bold text-[#C1121F]">{{ lang.tr('À retenir absolument : ', 'للتثبيت والترسيخ : ') }}</span>
+                <span class="font-semibold text-[#C1121F]">{{ lang.tr('À retenir absolument : ', 'للتثبيت والترسيخ : ') }}</span>
                 <span class="text-[#5B6B60] text-[11px]">{{ m.remember.join(' • ') }}</span>
               </div>
             </div>
-            <span class="text-[9px] font-bold text-[#8A5A00] uppercase tracking-wider shrink-0 ms-2">
+            <span class="text-[9px] font-semibold text-[#8A5A00] uppercase tracking-wider shrink-0 ms-2">
               Madrasati TN
             </span>
           </div>

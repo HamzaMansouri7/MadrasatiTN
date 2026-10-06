@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { describe, it, expect, beforeEach } from 'vitest';
-import { ComponentFixture, TestBed, getTestBed } from '@angular/core/testing';
+import { TestBed, getTestBed } from '@angular/core/testing';
 import { BrowserTestingModule, platformBrowserTesting } from '@angular/platform-browser/testing';
 import { signal } from '@angular/core';
 import { MemoDoc, MemoLayout } from '../../../core/models/memo.model';
@@ -88,7 +88,7 @@ describe('Memo Studio Layouts', () => {
 
   const mockLang = {
     lang: signal<'fr' | 'ar'>('fr'),
-    tr: (fr: string, ar: string) => fr,
+    tr: (fr: string) => fr,
     t: (k: string) => k,
   };
 
@@ -100,10 +100,10 @@ describe('Memo Studio Layouts', () => {
         mockStore.memo.update((doc) => doc ? { ...doc, [field]: value } : doc);
       },
       regenerateMemoBlock: () => Promise.resolve({ ok: true }),
-      addMemoCard: () => {},
-      removeMemoCard: () => {},
-      addMemoStep: () => {},
-      removeMemoStep: () => {},
+      addMemoCard: () => undefined,
+      removeMemoCard: () => undefined,
+      addMemoStep: () => undefined,
+      removeMemoStep: () => undefined,
     };
 
     TestBed.resetTestingModule();

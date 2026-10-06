@@ -1032,7 +1032,7 @@ export class EducationStore {
       const res = await fetch('/api/docs');
       if (!res.ok) return;
       const data = await res.json();
-      const docs: Array<WorksheetSummary & { docType?: string; memoLayout?: string }> = Array.isArray(data.docs) ? data.docs : [];
+      const docs: (WorksheetSummary & { docType?: string; memoLayout?: string })[] = Array.isArray(data.docs) ? data.docs : [];
       if (docs.length === 0) return;
 
       // Merge into the library grid as resource cards (skip ids already present).
