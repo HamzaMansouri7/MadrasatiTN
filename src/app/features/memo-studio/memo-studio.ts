@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { EducationStore } from '@core/services/education-store';
 import { LanguageService } from '@core/services/language.service';
+import { FirebaseService } from '@core/services/firebase.service';
 import { downscaleImage } from '@core/utils/image.util';
 import { MemoInput, MemoLayout, MemoDoc } from '@core/models/memo.model';
 import {
@@ -543,6 +544,7 @@ interface LibraryResourceItem {
 export class MemoStudioComponent implements OnInit {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  readonly firebase = inject(FirebaseService);
   private readonly route = inject(ActivatedRoute);
 
   readonly activeTab = signal<'topic' | 'text' | 'photo' | 'file' | 'library'>('topic');
@@ -635,13 +637,13 @@ export class MemoStudioComponent implements OnInit {
     if (!memo) return;
     this.isSaving.set(true);
 
-    const teacher = this.store.activeTeacherProfile();
+    const userProfile = this.firebase.userProfile();
     const payload = {
       memoDoc: memo,
       memoLayout: this.store.memoLayout(),
-      authorName: teacher?.name || 'Enseignant Madrasati',
+      authorName: userProfile?.displayName || 'Enseignant Madrasati',
       authorRole: 'teacher' as const,
-      school: teacher?.school || 'المدرسة الابتدائية التونسية',
+      school: userProfile?.school || 'المدرسة الابتدائية التونسية',
     };
 
     const saved = await this.store.saveMemo(payload);
@@ -685,8 +687,9 @@ export class MemoStudioComponent implements OnInit {
     if (!memo) return;
     this.isExportingWord.set(true);
 
-    const author = this.savedAuthorName() || this.store.activeTeacherProfile()?.name || 'Enseignant Madrasati';
-    const school = this.savedSchool() || this.store.activeTeacherProfile()?.school || 'المدرسة الابتدائية التونسية';
+    const userProfile = this.firebase.userProfile();
+    const author = this.savedAuthorName() || userProfile?.displayName || 'Enseignant Madrasati';
+    const school = this.savedSchool() || userProfile?.school || 'المدرسة الابتدائية التونسية';
 
     const blob = await this.store.exportMemoDocx(memo, author, school);
     this.isExportingWord.set(false);
