@@ -60,16 +60,16 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
               <button
                 (click)="goGenerate()"
-                class="bg-white hover:bg-[#F3FAFD] text-[#005F96] border border-[#CBD9E2] hover:border-[#007CC2] font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-xs hover:shadow-sm hover:-translate-y-0.5">
-                <span class="material-icons text-base text-amber-500" aria-hidden="true">auto_awesome</span>
-                <span>{{ lang.tr('مولّد الأوراق', 'مولّد الأوراق') }}</span>
+                class="bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                <span class="material-icons text-base" aria-hidden="true">auto_fix_high</span>
+                <span>{{ lang.tr('مولّد الأوراق المشابهة', 'مولّد الأوراق المشابهة') }}</span>
               </button>
 
               <button
                 (click)="goMemoStudio()"
-                class="bg-white hover:bg-[#F3FAFD] text-[#005F96] border border-[#CBD9E2] hover:border-[#007CC2] font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-xs hover:shadow-sm hover:-translate-y-0.5">
-                <span class="material-icons text-base text-emerald-600" aria-hidden="true">note_alt</span>
-                <span>{{ lang.tr('مذكرة بصرية', 'مذكرة بصرية') }}</span>
+                class="bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                <span class="material-icons text-base" aria-hidden="true">note_alt</span>
+                <span>{{ lang.tr('المذكرة البصرية', 'المذكرة البصرية') }}</span>
               </button>
             </div>
 
