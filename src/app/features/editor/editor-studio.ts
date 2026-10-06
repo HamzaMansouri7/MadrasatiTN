@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { Location } from '@angular/common';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
-import { EducationStore, LanguageService, FirebaseService, GradeLevel, SubjectName, InteractionService } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService } from '@core';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
 @Component({
@@ -15,6 +15,7 @@ export class EditorStudioComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  readonly notifService = inject(NotificationService);
   readonly interactionSvc = inject(InteractionService);
   private readonly location = inject(Location);
 
@@ -1010,11 +1011,19 @@ export class EditorStudioComponent {
       watermarkText: watermark,
     });
 
-    this.firebase.addNotification({
+    void this.notifService.emit({
+      category: 'activity',
       type: 'new_doc',
-      title: `Nouveau document : ${this.docTitle()}`,
-      message: `${this.docSubject()} (${this.docGrade()}) par ${authorName} - Prêt pour impression A4 et téléchargement.`,
-      linkRole: 'parent',
+      titleKey: 'notifNewDocTitle',
+      messageKey: 'notifNewDocMsg',
+      params: {
+        title: this.docTitle(),
+        subject: this.docSubject(),
+        grade: this.docGrade(),
+        author: authorName,
+      },
+      targetRole: 'parent',
+      routeUrl: '/parent',
       icon: 'menu_book',
     });
 
@@ -1031,7 +1040,7 @@ export class EditorStudioComponent {
     const authorName = user?.displayName || 'Enseignant Certifié';
     const authorId = user?.uid;
 
-    await this.store.addBlogPost({
+    const post = await this.store.addBlogPost({
       title: this.docTitle(),
       excerpt: content.slice(0, 150) + '...',
       content,
@@ -1044,11 +1053,18 @@ export class EditorStudioComponent {
       readTimeMinutes: Math.max(2, Math.ceil(content.split(' ').length / 180)),
     });
 
-    this.firebase.addNotification({
+    void this.notifService.emit({
+      category: 'activity',
       type: 'announcement',
-      title: `Nouvel article pédagogique : ${this.docTitle()}`,
-      message: `Publié par ${authorName}.`,
-      linkRole: 'teacher',
+      titleKey: 'notifBlogArticleTitle',
+      messageKey: 'notifBlogArticleMsg',
+      params: {
+        title: this.docTitle(),
+        author: authorName,
+      },
+      targetRole: 'all',
+      routeUrl: '/blog',
+      targetDocId: post?.id,
       icon: 'article',
     });
 

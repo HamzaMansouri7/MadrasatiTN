@@ -1331,7 +1331,7 @@ export class EducationStore {
     void this.firebase.saveAnnouncement(newA as unknown as Record<string, unknown>);
   }
 
-  addCourse(courseData: Partial<Course>) {
+  addCourse(courseData: Partial<Course>): Course {
     const activeC = this.activeClass();
     const teacherName = courseData.teacherName || activeC.teacherName;
     const newC: Course = {
@@ -1354,6 +1354,7 @@ export class EducationStore {
 
     this.courses.update((list) => [newC, ...list]);
     void this.firebase.saveCourse(newC as unknown as Record<string, unknown>);
+    return newC;
   }
 
   addHomework(hwData: Partial<Homework>) {

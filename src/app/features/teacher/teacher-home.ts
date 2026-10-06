@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { Router } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage } from '@core';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -1624,6 +1624,7 @@ export class TeacherHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  readonly notifService = inject(NotificationService);
   private readonly router = inject(Router);
 
   teacherGreeting(): string {
@@ -2035,7 +2036,7 @@ export class TeacherHomeComponent {
     const school = this.getTeacherSchool();
     const watermark = `Madrasati TN — Document Certifié — ${teacherName} (${school})`;
 
-    this.store.addCourse({
+    const createdCourse = this.store.addCourse({
       title: this.newCourseTitle(),
       subject: this.newCourseSubject(),
       grade: this.newCourseGrade(),
@@ -2050,11 +2051,20 @@ export class TeacherHomeComponent {
       hasCorrection: true,
     });
 
-    this.firebase.addNotification({
+    void this.notifService.emit({
+      category: 'activity',
       type: 'new_doc',
-      title: `Nouvelle fiche : ${this.newCourseTitle()}`,
-      message: `${this.newCourseSubject()} (${this.newCourseGrade()}) • ${this.newCourseDocType()} - Publié par ${teacherName}.`,
-      linkRole: 'parent',
+      titleKey: 'notifNewDocTitle',
+      messageKey: 'notifNewDocMsg',
+      params: {
+        title: this.newCourseTitle(),
+        subject: this.newCourseSubject(),
+        grade: this.newCourseGrade(),
+        author: teacherName,
+      },
+      targetRole: 'parent',
+      routeUrl: '/parent',
+      targetDocId: createdCourse.id,
       icon: 'menu_book',
     });
 
@@ -2064,7 +2074,7 @@ export class TeacherHomeComponent {
   async submitBlogArticle() {
     if (!this.newArticleTitle() || !this.newArticleContent()) return;
     const tagsArr = this.newArticleTags().split(',').map((t) => t.trim()).filter(Boolean);
-    await this.store.addBlogPost({
+    const post = await this.store.addBlogPost({
       title: this.newArticleTitle(),
       excerpt: this.newArticleExcerpt() || this.newArticleContent().slice(0, 120) + '...',
       content: this.newArticleContent(),
@@ -2075,11 +2085,18 @@ export class TeacherHomeComponent {
       authorTitle: 'Enseignant Certifié',
       readTimeMinutes: Math.max(2, Math.ceil(this.newArticleContent().split(' ').length / 180)),
     });
-    this.firebase.addNotification({
+    void this.notifService.emit({
+      category: 'activity',
       type: 'announcement',
-      title: `Article : ${this.newArticleTitle()}`,
-      message: `Publié sur le blog pédagogique de la plateforme.`,
-      linkRole: 'teacher',
+      titleKey: 'notifBlogArticleTitle',
+      messageKey: 'notifBlogArticleMsg',
+      params: {
+        title: this.newArticleTitle(),
+        author: this.firebase.userProfile()?.displayName || 'Enseignant Certifié',
+      },
+      targetRole: 'all',
+      routeUrl: '/blog',
+      targetDocId: post?.id,
       icon: 'article',
     });
     this.store.showToast(this.lang.t('toastPublished'), 'success');
@@ -2106,11 +2123,18 @@ export class TeacherHomeComponent {
       isVerifiedAnswer: true,
     });
 
-    this.firebase.addNotification({
+    void this.notifService.emit({
+      category: 'activity',
       type: 'qa_reply',
-      title: `Réponse d'un enseignant à votre question`,
-      message: `Sujet : ${thread.subject} - ${thread.title.slice(0, 45)}...`,
-      linkRole: 'parent',
+      titleKey: 'notifQaReplyTitle',
+      messageKey: 'notifQaReplyMsg',
+      params: {
+        title: thread.title.slice(0, 45),
+      },
+      targetRole: 'parent',
+      routeUrl: '/parent',
+      targetThreadId: thread.id,
+      tab: 'qa',
       icon: 'forum',
     });
 

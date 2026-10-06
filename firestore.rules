@@ -21,10 +21,14 @@ service cloud.firestore {
       allow read, write: if true;
     }
 
-    // Users Collection
+    // Users Collection & per-user notification state
     match /users/{userId} {
       allow read: if isSignedIn();
       allow create, update: if isOwner(userId);
+
+      match /notificationState/{notifId} {
+        allow read, write: if isOwner(userId);
+      }
     }
 
     // Public teacher directory cards (mirrored from users by the app)
@@ -79,6 +83,13 @@ service cloud.firestore {
     match /blog_posts/{postId} {
       allow read: if true;
       allow create, update: if isSignedIn();
+    }
+
+    // System and activity notifications (immutable, author-restricted creation)
+    match /notifications/{notifId} {
+      allow read: if true;
+      allow create: if isSignedIn() && request.resource.data.authorId == request.auth.uid;
+      allow update, delete: if false;
     }
   }
 }

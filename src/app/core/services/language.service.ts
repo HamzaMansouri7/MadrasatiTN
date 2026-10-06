@@ -382,6 +382,33 @@ export class LanguageService {
     memoAddCard: { fr: 'Ajouter une carte', ar: 'إضافة بطاقة' },
     memoAddStep: { fr: 'Ajouter une étape', ar: 'إضافة خطوة' },
     memoRegenerateBlock: { fr: 'Régénérer ce bloc', ar: 'إعادة توليد هذا القسم' },
+
+    // Notification System
+    notifTitleOfficial: { fr: 'Notifications officielles', ar: 'الإشعارات الرسمية' },
+    notifTabAll: { fr: 'Toutes', ar: 'الكل' },
+    notifTabUnread: { fr: 'Non lues', ar: 'غير مقروءة' },
+    notifTabAnnounce: { fr: 'Annonces', ar: 'إعلانات' },
+    notifMarkAllRead: { fr: 'Tout marquer comme lu', ar: 'تحديد الكل كمقروء' },
+    notifDismiss: { fr: 'Ignorer', ar: 'إخفاء' },
+    notifEmpty: { fr: 'Aucune notification pour le moment', ar: 'لا توجد إشعارات حالياً' },
+    notifBadgeNew: { fr: 'NOUVEAU', ar: 'جديد' },
+    notifViewAction: { fr: 'Afficher', ar: 'عرض' },
+    notifWelcomeTeacherTitle: { fr: 'Bienvenue sur Madrasati TN !', ar: 'مرحباً بك في مدرستي تونس !' },
+    notifWelcomeTeacherMsg: { fr: 'Votre espace enseignant est prêt. Explorez le Memo Studio et créez vos premières fiches pédagogiques.', ar: 'فضاؤك التعليمي جاهز. اكتشف ستوديو المذكرات وأنشئ أولى أوراقك البيداغوجية.' },
+    notifAnnounceMemoTitle: { fr: 'Nouveau : Memo Studio IA disponible', ar: 'جديد : ستوديو المذكرات البيداغوجية بالذكاء الاصطناعي' },
+    notifAnnounceMemoMsg: { fr: 'Générez des fiches et mémos A4 conformes aux programmes tunisiens avec 6 mises en page et export Word.', ar: 'ولّد مذكرات وخلاصات A4 رسمية مطابقة للبرامج التونسية مع 6 تصاميم وتصدير Word.' },
+    notifAnnounceOcrTitle: { fr: 'Nouveau : Résolveur d\'exercices par photo', ar: 'جديد : مصحح التمارين بالصور والذكاء الاصطناعي' },
+    notifAnnounceOcrMsg: { fr: 'Photographiez les cahiers ou manuels pour obtenir une correction pas-à-pas instantanée.', ar: 'التقط صوراً للتمارين في الكراس أو الكتاب المدرسي للحصول على إصلاح فوري ومفصل.' },
+    notifNewDocTitle: { fr: 'Nouvelle ressource : {title}', ar: 'مورد تعليمي جديد : {title}' },
+    notifNewDocMsg: { fr: '{subject} ({grade}) • Publié par {author}', ar: '{subject} ({grade}) • نشر بواسطة {author}' },
+    notifQaReplyTitle: { fr: 'Réponse à votre question', ar: 'إجابة جديدة على سؤالك' },
+    notifQaReplyMsg: { fr: 'Un enseignant a répondu : {title}', ar: 'أجاب معلم على استفسارك : {title}' },
+    notifBlogArticleTitle: { fr: 'Nouvel article : {title}', ar: 'مقال تربوي جديد : {title}' },
+    notifBlogArticleMsg: { fr: 'Publié dans le blog pédagogique par {author}', ar: 'نُشر في المدونة التربوية بواسطة {author}' },
+    timeAgoJustNow: { fr: 'À l\'instant', ar: 'الآن' },
+    timeAgoMin: { fr: 'Il y a {count} min', ar: 'منذ {count} د' },
+    timeAgoHour: { fr: 'Il y a {count} h', ar: 'منذ {count} س' },
+    timeAgoDay: { fr: 'Il y a {count} j', ar: 'منذ {count} يوم' },
   };
 
   translateGrade(grade?: string | null): string {
@@ -419,9 +446,15 @@ export class LanguageService {
     return subject;
   }
 
-  t(key: string): string {
+  t(key: string, params?: Record<string, string | number>): string {
     const entry = this.dictionary[key];
     if (!entry) return key;
-    return this.lang() === 'ar' ? entry.ar : entry.fr;
+    let text = this.lang() === 'ar' ? entry.ar : entry.fr;
+    if (params) {
+      for (const [pKey, pVal] of Object.entries(params)) {
+        text = text.replace(new RegExp(`\\{${pKey}\\}|\\{\\{${pKey}\\}\\}`, 'g'), String(pVal ?? ''));
+      }
+    }
+    return text;
   }
 }

@@ -20,6 +20,7 @@ import {
   EducationStore,
   LanguageService,
   FirebaseService,
+  NotificationService,
   InteractionService,
   TUNISIAN_CURRICULUM_CHAPTERS,
   CurriculumChapter,
@@ -55,6 +56,7 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  readonly notifService = inject(NotificationService);
   readonly interactionSvc = inject(InteractionService);
   private readonly location = inject(Location);
 
@@ -733,13 +735,18 @@ export class ArticleStudioComponent implements OnDestroy {
         readTimeMinutes: this.estimatedReadingTime(),
       });
 
-      this.firebase.addNotification({
+      void this.notifService.emit({
+        category: 'activity',
         type: 'announcement',
-        title: isAr ? `مقال بيداغوجي جديد: ${title}` : `Nouvel article publié : ${title}`,
-        message: isAr
-          ? `بقلم ${this.authorName()} على المدونة التربوية.`
-          : `Publié par ${this.authorName()} sur le blog pédagogique.`,
-        linkRole: 'public',
+        titleKey: 'notifBlogArticleTitle',
+        messageKey: 'notifBlogArticleMsg',
+        params: {
+          title,
+          author: this.authorName(),
+        },
+        targetRole: 'all',
+        routeUrl: '/blog',
+        targetDocId: newPost?.id,
         icon: 'article',
       });
 

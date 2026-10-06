@@ -1,11 +1,12 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, NotificationItem, UserRole } from '@core';
+import { TimeAgoPipe } from '../pipes/time-ago.pipe';
 
 @Component({
   selector: 'app-navbar',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
+  imports: [TimeAgoPipe],
   template: `
     <header class="sticky top-0 z-40 bg-white border-b border-[#E6EEF3] transition-colors">
       <div class="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
@@ -134,58 +135,86 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
               <button
                 type="button"
                 (click)="notifDropdownOpen.set(!notifDropdownOpen()); profileMenuOpen.set(false)"
-                [title]="lang.tr('Notifications officielles', 'الإشعارات الرسمية')"
+                [title]="lang.t('notifTitleOfficial')"
+                [attr.aria-label]="lang.t('notifTitleOfficial') + ' (' + notifService.unreadCount() + ')'"
                 class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white hover:bg-[#F3FAFD] text-[#102A43] border border-[#CBD9E2] flex items-center justify-center cursor-pointer transition-colors shrink-0 shadow-2xs">
                 <span class="material-icons text-base sm:text-lg text-[#102A43]">notifications</span>
-                @if (firebase.unreadNotificationsCount() > 0) {
-                  <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#D64545] text-white text-[9px] font-bold flex items-center justify-center shadow-xs animate-pulse">
-                    {{ firebase.unreadNotificationsCount() }}
+                @if (notifService.unreadCount() > 0) {
+                  <span class="absolute -top-1 -right-1 min-w-4 h-4 px-1 rounded-full bg-[#D64545] text-white text-[9px] font-bold flex items-center justify-center shadow-xs motion-safe:animate-pulse">
+                    {{ unreadBadgeText() }}
                   </span>
                 }
               </button>
 
               <!-- Notification Dropdown Panel -->
               @if (notifDropdownOpen()) {
-                <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-80 sm:w-96 bg-white border border-[#CBD9E2] rounded-2xl shadow-2xl z-50 overflow-hidden animate-in">
+                <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-84 sm:w-96 bg-white border border-[#CBD9E2] rounded-2xl shadow-2xl z-50 overflow-hidden animate-in">
                   
                   <!-- Header -->
-                  <div class="p-3.5 bg-[#F7F9FB] border-b border-[#E6EEF3] flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <span class="material-icons text-base text-[#007CC2]">notifications_active</span>
-                      <span class="font-display font-bold text-xs sm:text-sm text-[#102A43]">
-                        {{ lang.tr('Notifications officielles', 'الإشعارات الرسمية') }}
-                      </span>
-                      @if (firebase.unreadNotificationsCount() > 0) {
-                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#E8F5FC] text-[#007CC2]">
-                          {{ firebase.unreadNotificationsCount() }} {{ lang.tr('non lues', 'غير مقروءة') }}
+                  <div class="p-3 bg-[#F7F9FB] border-b border-[#E6EEF3]">
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                      <div class="flex items-center gap-1.5">
+                        <span class="material-icons text-base text-[#007CC2]">notifications_active</span>
+                        <span class="font-display font-bold text-xs sm:text-sm text-[#102A43]">
+                          {{ lang.t('notifTitleOfficial') }}
                         </span>
+                        @if (notifService.unreadCount() > 0) {
+                          <span class="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-[#E8F5FC] text-[#007CC2]">
+                            {{ notifService.unreadCount() }} {{ lang.t('notifTabUnread') }}
+                          </span>
+                        }
+                      </div>
+
+                      @if (notifService.unreadCount() > 0) {
+                        <button
+                          type="button"
+                          (click)="notifService.markAllRead()"
+                          class="text-[11px] text-[#007CC2] hover:underline font-semibold cursor-pointer">
+                          {{ lang.t('notifMarkAllRead') }}
+                        </button>
                       }
                     </div>
 
-                    @if (firebase.unreadNotificationsCount() > 0) {
+                    <!-- Filter Tabs -->
+                    <div class="flex items-center gap-1 bg-[#E8F0F5]/80 p-0.5 rounded-lg text-[11px]">
                       <button
                         type="button"
-                        (click)="firebase.markAllNotificationsAsRead()"
-                        class="text-[11px] text-[#007CC2] hover:underline font-semibold cursor-pointer">
-                        {{ lang.tr('Tout lire', 'تحديد الكل') }}
+                        (click)="activeNotifTab.set('all')"
+                        [class]="activeNotifTab() === 'all' ? 'bg-white text-[#102A43] font-bold shadow-xs' : 'text-[#627D98] hover:text-[#102A43]'"
+                        class="flex-1 py-1 rounded-md text-center transition-all cursor-pointer">
+                        {{ lang.t('notifTabAll') }}
                       </button>
-                    }
+                      <button
+                        type="button"
+                        (click)="activeNotifTab.set('unread')"
+                        [class]="activeNotifTab() === 'unread' ? 'bg-white text-[#102A43] font-bold shadow-xs' : 'text-[#627D98] hover:text-[#102A43]'"
+                        class="flex-1 py-1 rounded-md text-center transition-all cursor-pointer">
+                        {{ lang.t('notifTabUnread') }}
+                      </button>
+                      <button
+                        type="button"
+                        (click)="activeNotifTab.set('announcements')"
+                        [class]="activeNotifTab() === 'announcements' ? 'bg-white text-[#102A43] font-bold shadow-xs' : 'text-[#627D98] hover:text-[#102A43]'"
+                        class="flex-1 py-1 rounded-md text-center transition-all cursor-pointer">
+                        {{ lang.t('notifTabAnnounce') }}
+                      </button>
+                    </div>
                   </div>
 
                   <!-- Notifications List -->
                   <div class="max-h-[380px] overflow-y-auto divide-y divide-[#E6EEF3]">
-                    @for (notif of firebase.notifications(); track notif.id) {
+                    @for (notif of filteredNotifications(); track notif.id) {
                       <div
                         (click)="handleNotificationClick(notif)"
                         (keydown.enter)="handleNotificationClick(notif)"
                         role="button"
                         tabindex="0"
-                        [class]="notif.isRead ? 'bg-white opacity-75' : 'bg-[#F0F8FF]/70'"
-                        class="p-3.5 hover:bg-[#F3FAFD] transition-colors cursor-pointer flex gap-3 items-start">
+                        [class]="notif.isRead ? 'bg-white opacity-75' : 'bg-[#F0F8FF]/80 font-medium'"
+                        class="group p-3 hover:bg-[#F3FAFD] transition-colors cursor-pointer flex gap-2.5 items-start text-start">
                         
                         <!-- Type Icon -->
                         <div
-                          [class]="notif.type === 'new_doc' ? 'bg-[#007CC2]/10 text-[#007CC2]' : (notif.type === 'qa_reply' ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600')"
+                          [class]="notif.category === 'announcement' ? 'bg-amber-500/10 text-amber-600' : 'bg-[#007CC2]/10 text-[#007CC2]'"
                           class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
                           <span class="material-icons text-base">{{ notif.icon || 'notifications' }}</span>
                         </div>
@@ -193,25 +222,40 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                         <!-- Content -->
                         <div class="flex-1 min-w-0">
                           <div class="flex items-center justify-between gap-1 mb-0.5">
-                            <h4 class="text-xs font-semibold text-[#102A43] truncate">
-                              {{ notif.title }}
-                            </h4>
+                            <div class="flex items-center gap-1.5 truncate">
+                              <h4 class="text-xs font-semibold text-[#102A43] truncate">
+                                {{ lang.t(notif.titleKey, notif.params) }}
+                              </h4>
+                              @if (!notif.isRead && notif.category === 'announcement') {
+                                <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-[#D64545] text-white uppercase tracking-wider shrink-0">
+                                  {{ lang.t('notifBadgeNew') }}
+                                </span>
+                              }
+                            </div>
                             @if (!notif.isRead) {
                               <span class="w-2 h-2 rounded-full bg-[#007CC2] shrink-0"></span>
                             }
                           </div>
                           <p class="text-[11px] text-[#486581] line-clamp-2 leading-relaxed mb-1">
-                            {{ notif.message }}
+                            {{ lang.t(notif.messageKey, notif.params) }}
                           </p>
-                          <span class="text-[10px] text-[#829AB1]">
-                            {{ notif.createdAt }}
-                          </span>
+                          <div class="flex items-center justify-between text-[10px] text-[#829AB1]">
+                            <span>{{ notif.createdAt | timeAgo }}</span>
+                            <!-- Dismiss Action -->
+                            <button
+                              type="button"
+                              (click)="$event.stopPropagation(); notifService.dismiss(notif.id)"
+                              [title]="lang.t('notifDismiss')"
+                              class="opacity-0 group-hover:opacity-100 text-[#829AB1] hover:text-[#D64545] transition-opacity cursor-pointer p-0.5">
+                              <span class="material-icons text-xs">close</span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     } @empty {
                       <div class="p-8 text-center text-[#829AB1]">
                         <span class="material-icons text-3xl mb-1 text-[#829AB1]/60">notifications_none</span>
-                        <p class="text-xs">{{ lang.tr('Aucune notification pour le moment', 'لا توجد إشعارات حالياً') }}</p>
+                        <p class="text-xs">{{ lang.t('notifEmpty') }}</p>
                       </div>
                     }
                   </div>
@@ -412,9 +456,49 @@ export class NavbarComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  readonly notifService = inject(NotificationService);
   readonly router = inject(Router);
   readonly profileMenuOpen = signal<boolean>(false);
   readonly notifDropdownOpen = signal<boolean>(false);
+  readonly activeNotifTab = signal<'all' | 'unread' | 'announcements'>('all');
+
+  readonly filteredNotifications = computed<NotificationItem[]>(() => {
+    const tab = this.activeNotifTab();
+    const all = this.notifService.visible();
+    if (tab === 'unread') return all.filter((n) => !n.isRead);
+    if (tab === 'announcements') return all.filter((n) => n.category === 'announcement');
+    return all;
+  });
+
+  readonly unreadBadgeText = computed<string>(() => {
+    const count = this.notifService.unreadCount();
+    return count > 99 ? '99+' : count.toString();
+  });
+
+  private knownNotifIds = new Set<string>();
+  private initialNotifsLoaded = false;
+
+  constructor() {
+    effect(() => {
+      const items = this.notifService.visible();
+      if (!this.initialNotifsLoaded) {
+        items.forEach((i) => this.knownNotifIds.add(i.id));
+        this.initialNotifsLoaded = true;
+        return;
+      }
+
+      // Notify only for newly arrived items
+      for (const item of items) {
+        if (!this.knownNotifIds.has(item.id)) {
+          this.knownNotifIds.add(item.id);
+          if (!item.isRead) {
+            const title = this.lang.t(item.titleKey, item.params);
+            this.store.showToast(title, 'info');
+          }
+        }
+      }
+    });
+  }
 
   isMemoStudioRoute(): boolean {
     return this.router.url.includes('/memo-studio');
@@ -440,11 +524,23 @@ export class NavbarComponent {
     this.router.navigateByUrl('/teachers');
   }
 
-  async handleNotificationClick(notif: { id: string; linkRole?: string }) {
-    await this.firebase.markNotificationAsRead(notif.id);
+  async handleNotificationClick(notif: NotificationItem) {
+    await this.notifService.markRead(notif.id);
     this.notifDropdownOpen.set(false);
-    if (notif.linkRole) {
-      this.store.switchRole(notif.linkRole as import('@core').UserRole);
+
+    if (notif.routeUrl) {
+      const queryParams: Record<string, string> = {};
+      if (notif.targetDocId) queryParams['doc'] = notif.targetDocId;
+      if (notif.targetThreadId) {
+        queryParams['thread'] = notif.targetThreadId;
+        queryParams['tab'] = notif.tab || 'qa';
+      }
+      this.router.navigate([notif.routeUrl], { queryParams });
+      return;
+    }
+
+    if (notif.targetRole && notif.targetRole !== 'all') {
+      this.store.switchRole(notif.targetRole);
     }
   }
 

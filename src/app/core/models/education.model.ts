@@ -339,19 +339,35 @@ export interface QuestionThread {
 }
 
 export type NotificationType = 'qa_reply' | 'new_doc' | 'announcement' | 'blog_comment' | 'exam';
+export type NotificationCategory = 'activity' | 'announcement';
+export type NotificationPriority = 'low' | 'normal' | 'high';
+export type NotificationSource = 'remote' | 'local';
 
 export interface AppNotification {
   id: string;
+  category: NotificationCategory;
+  source?: NotificationSource;
+  type?: NotificationType;
+  titleKey: string;
+  messageKey: string;
+  params?: Record<string, string>;
+  createdAt: number;
+  icon?: string;
+  priority?: NotificationPriority;
+  authorId?: string;
+  recipientId?: string;
   targetRole?: UserRole | 'all';
-  type: NotificationType;
-  title: string;
-  message: string;
-  createdAt: string;
-  isRead: boolean;
-  linkRole?: UserRole;
+  routeUrl?: string;
   targetDocId?: string;
   targetThreadId?: string;
-  icon?: string;
+  tab?: string;
+}
+
+export interface UserNotificationState {
+  read: boolean;
+  dismissed: boolean;
+  readAt?: number;
+  dismissedAt?: number;
 }
 
 
