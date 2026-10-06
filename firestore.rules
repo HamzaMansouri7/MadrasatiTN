@@ -11,6 +11,28 @@ service cloud.firestore {
       return isSignedIn() && request.auth.uid == userId;
     }
 
+    // A create must stamp the creator as owner (legacy clients that omit it are tolerated).
+    function ownsOnCreate() {
+      return isSignedIn()
+        && request.resource.data.get('ownerUid', request.auth.uid) == request.auth.uid;
+    }
+
+    // An update may come from the owner, or from another signed-in user doing an
+    // interaction write (like, comment, answer, read-confirm) — but ownerUid can never
+    // be added to an unowned doc or changed to point at someone else.
+    function ownerKept() {
+      return isSignedIn()
+        && request.resource.data.get('ownerUid', null) == resource.data.get('ownerUid', null);
+    }
+
+    // Only the stored owner may update; legacy docs with no ownerUid stay open to any signed-in user.
+    function isDocOwner() {
+      return isSignedIn() && (
+        resource.data.get('ownerUid', null) == null
+        || resource.data.ownerUid == request.auth.uid
+      );
+    }
+
     // Default deny all
     match /{document=**} {
       allow read, write: if false;
@@ -18,7 +40,7 @@ service cloud.firestore {
 
     // Connection test document
     match /test/connection {
-      allow read, write: if true;
+      allow read: if true;
     }
 
     // Users Collection & per-user subcollections (owner-only privacy)
@@ -80,49 +102,56 @@ service cloud.firestore {
     // Classes Collection
     match /classes/{classId} {
       allow read: if true;
-      allow create, update, delete: if isSignedIn();
+      allow create, update: if isSignedIn(); // no client ever deletes these; delete stays denied
     }
 
-    // Announcements Collection
+    // Announcements Collection (interaction writes — read-confirm — allowed by non-owners)
     match /announcements/{announcementId} {
       allow read: if true;
-      allow create, update, delete: if isSignedIn();
+      allow create: if ownsOnCreate();
+      allow update: if isDocOwner() || ownerKept(); // no client ever deletes; delete stays denied
     }
 
     // Courses Collection
     match /courses/{courseId} {
       allow read: if true;
-      allow create, update, delete: if isSignedIn();
+      allow create: if ownsOnCreate();
+      allow update: if isDocOwner() || ownerKept(); // upvotes/views by others keep ownerUid intact
     }
 
     // Homeworks Collection
     match /homeworks/{homeworkId} {
       allow read: if true;
-      allow create, update, delete: if isSignedIn();
+      allow create: if ownsOnCreate();
+      allow update: if isDocOwner() || ownerKept();
     }
 
     // Submissions Collection
     match /submissions/{submissionId} {
       allow read: if isSignedIn();
-      allow create, update: if isSignedIn();
+      allow create: if ownsOnCreate();
+      allow update: if isDocOwner() || ownerKept(); // teacher grading keeps the student's ownerUid
     }
 
     // Exercise bank (teacher-published series/exams)
     match /exercises/{exerciseId} {
       allow read: if true;
-      allow create, update: if isSignedIn();
+      allow create: if ownsOnCreate();
+      allow update: if isDocOwner() || ownerKept();
     }
 
-    // Parent/teacher Q&A threads (asking is login-gated in the UI)
+    // Parent/teacher Q&A threads (asking is login-gated in the UI; teachers answer others' threads)
     match /question_threads/{threadId} {
       allow read: if true;
-      allow create, update: if isSignedIn();
+      allow create: if ownsOnCreate();
+      allow update: if isDocOwner() || ownerKept();
     }
 
-    // Published pedagogical articles
+    // Published pedagogical articles (likes/comments by others keep ownerUid intact)
     match /blog_posts/{postId} {
       allow read: if true;
-      allow create, update: if isSignedIn();
+      allow create: if ownsOnCreate();
+      allow update: if isDocOwner() || ownerKept();
     }
 
     // System and activity notifications (immutable, author-restricted creation)

@@ -22,7 +22,7 @@ import {
   getDoc,
   getDocs,
   getDocFromServer,
-  getFirestore,
+  initializeFirestore,
   setDoc,
   updateDoc,
 } from 'firebase/firestore';
@@ -36,7 +36,12 @@ export type { UserProfile };
 export class FirebaseService {
   readonly lang = inject(LanguageService);
   readonly app = initializeApp(firebaseConfig);
-  readonly db: Firestore = getFirestore(this.app, firebaseConfig.firestoreDatabaseId);
+  // ignoreUndefinedProperties: optional fields (e.g. ownerUid when signed out) are dropped, not rejected.
+  readonly db: Firestore = initializeFirestore(
+    this.app,
+    { ignoreUndefinedProperties: true },
+    firebaseConfig.firestoreDatabaseId,
+  );
   readonly auth: Auth = getAuth(this.app);
 
   readonly currentUser = signal<User | null>(null);

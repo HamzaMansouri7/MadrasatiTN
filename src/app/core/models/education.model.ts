@@ -39,6 +39,7 @@ export type DocType =
   | 'Illustration';
 
 export interface ExerciseItem {
+  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
   id: string;
   title: string;
   chapter: string;
@@ -131,6 +132,7 @@ export interface WorksheetDoc {
 
 export interface Homework {
   id: string;
+  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
   title: string;
   classId: string;
   subject: SubjectName;
@@ -144,6 +146,7 @@ export interface Homework {
 
 export interface Submission {
   id: string;
+  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
   homeworkId: string;
   studentId: string;
   studentName: string;
@@ -172,6 +175,7 @@ export interface ClassGroup {
 
 export interface Course {
   id: string;
+  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
   title: string;
   classId: string;
   chapter?: string;        // CNP chapter label (e.g. 'Chapitre 3 : Géométrie')
@@ -204,6 +208,7 @@ export interface Course {
 
 export interface Announcement {
   id: string;
+  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
   title: string;
   classId: string;
   teacherName: string;
@@ -340,6 +345,7 @@ export interface BlogComment {
 
 export interface BlogPost {
   id: string;
+  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
   title: string;
   titleAr?: string;
   excerpt: string;
@@ -380,6 +386,7 @@ export interface QuestionAnswer {
 
 export interface QuestionThread {
   id: string;
+  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
   title: string;
   content: string;
   subject: SubjectName;

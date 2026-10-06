@@ -1296,6 +1296,7 @@ export class EducationStore {
     const activeC = this.activeClass();
     const newA: Announcement = {
       id: 'a-' + Date.now(),
+      ownerUid: this.firebase.currentUser()?.uid,
       title: announcementData.title || 'Nouvelle Annonce',
       classId: activeC.id,
       teacherName: activeC.teacherName,
@@ -1317,6 +1318,7 @@ export class EducationStore {
     const teacherName = courseData.teacherName || activeC.teacherName;
     const newC: Course = {
       id: 'crs-' + Date.now(),
+      ownerUid: this.firebase.currentUser()?.uid,
       title: courseData.title || 'Nouveau Cours',
       classId: activeC.id,
       subject: courseData.subject || 'Mathématiques',
@@ -1342,6 +1344,7 @@ export class EducationStore {
     const activeC = this.activeClass();
     const newH: Homework = {
       id: 'hw-' + Date.now(),
+      ownerUid: this.firebase.currentUser()?.uid,
       title: hwData.title || 'Nouveau Devoir',
       classId: activeC.id,
       subject: hwData.subject || 'Mathématiques',
@@ -1359,6 +1362,7 @@ export class EducationStore {
   addExerciseToBank(ex: ExerciseItem) {
     const enriched = {
       ...ex,
+      ownerUid: this.firebase.currentUser()?.uid,
       trimester: ex.trimester || 'Trimestre 1',
       docType: ex.docType || "Série d'Exercices",
       schoolYear: '2025-2026',
@@ -1386,6 +1390,7 @@ export class EducationStore {
     const student = this.activeStudent();
     const newSub: Submission = {
       id: 'sub-' + Date.now(),
+      ownerUid: this.firebase.currentUser()?.uid,
       homeworkId: hwId,
       studentId: student?.id || 'st-anon',
       studentName: student?.name || 'Élève',
@@ -1559,6 +1564,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
     const newPost: BlogPost = {
       ...post,
       id: 'blog-' + Date.now(),
+      ownerUid: this.firebase.currentUser()?.uid,
       publishedAt: 'À l\'instant',
       likesCount: 1,
       comments: [],
@@ -1663,6 +1669,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
 
     const newThread: QuestionThread = {
       id: 'q-' + Date.now(),
+      ownerUid: this.firebase.currentUser()?.uid,
       title: tTitle,
       content: tContent,
       subject: tSubject,
