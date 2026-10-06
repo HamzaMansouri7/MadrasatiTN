@@ -305,13 +305,56 @@ const saveGenerated = (filename: string, data: Buffer | string): string => {
 const UPLOAD_KINDS = new Set(['avatars', 'courses', 'articles', 'documents', 'notebooks']);
 const SAFE_UID = /^[A-Za-z0-9_-]{1,64}$/;
 
-app.post('/api/upload', originGuard, uploadRateLimiter, (req, res): void => {
+// Firebase ID-token check without a service account: Identity Toolkit resolves the token to its uid.
+// The web API key is public (same value the client ships), so no secret is needed on the VPS.
+const firebaseApiKey: string | undefined =
+  process.env['FIREBASE_API_KEY'] ||
+  (() => {
+    try {
+      return JSON.parse(readFileSync(join(process.cwd(), 'firebase-applet-config.json'), 'utf8')).apiKey as string;
+    } catch {
+      return undefined;
+    }
+  })();
+const verifiedTokens = new Map<string, { uid: string; expires: number }>();
+
+const verifyFirebaseUser = async (req: Request): Promise<string | null> => {
+  const header = req.headers.authorization;
+  const token = header?.startsWith('Bearer ') ? header.slice(7).trim() : '';
+  if (!token || !firebaseApiKey) return null;
+
+  const cached = verifiedTokens.get(token);
+  if (cached && cached.expires > Date.now()) return cached.uid;
+
   try {
+    const r = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${firebaseApiKey}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ idToken: token }),
+    });
+    if (!r.ok) return null;
+    const data = (await r.json()) as { users?: { localId?: string }[] };
+    const uid = data.users?.[0]?.localId;
+    if (!uid || !SAFE_UID.test(uid)) return null;
+    if (verifiedTokens.size > 500) verifiedTokens.clear();
+    verifiedTokens.set(token, { uid, expires: Date.now() + 5 * 60 * 1000 });
+    return uid;
+  } catch {
+    return null;
+  }
+};
+
+app.post('/api/upload', originGuard, uploadRateLimiter, async (req, res): Promise<void> => {
+  try {
+    const uid = await verifyFirebaseUser(req);
+    if (!uid) {
+      res.status(401).json({ error: 'Connexion requise pour envoyer un fichier.' });
+      return;
+    }
     const rawData = req.body.base64Data || req.body.fileData || req.body.fileBase64;
     const rawName = req.body.filename || req.body.fileName;
     const rawType = req.body.contentType || req.body.fileType || req.body.mimeType;
     const kind = UPLOAD_KINDS.has(req.body.kind) ? (req.body.kind as string) : 'documents';
-    const uid = typeof req.body.uid === 'string' && SAFE_UID.test(req.body.uid) ? req.body.uid : 'anon';
 
     if (!rawData || typeof rawData !== 'string') {
       res.status(400).json({ error: 'Aucun fichier transmis ou format invalide' });
