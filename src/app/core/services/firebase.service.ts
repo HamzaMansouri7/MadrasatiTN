@@ -312,9 +312,7 @@ export class FirebaseService {
     const defaultName = targetRole === 'teacher' 
       ? 'Enseignant Certifié' 
       : (targetRole === 'parent' ? 'Parent d\'élève' : 'Élève');
-    const defaultAvatar = targetRole === 'teacher'
-      ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
-      : (targetRole === 'parent' ? 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80' : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80');
+    const defaultAvatar: string | null = null;
 
     const profile: UserProfile = {
       uid: 'demo_user_' + targetRole + '_' + Date.now(),
@@ -342,9 +340,7 @@ export class FirebaseService {
     primarySubject?: string;
     gender?: 'male' | 'female';
   }): Promise<UserProfile> {
-    const avatar = data.role === 'teacher'
-      ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
-      : (data.role === 'parent' ? 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80' : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80');
+    const avatar: string | null = null;
 
     if (data.password !== undefined) {
       try {

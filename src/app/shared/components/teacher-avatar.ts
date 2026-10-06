@@ -18,14 +18,14 @@ const PALETTE = [
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    @if (resolvedAvatarUrl() && !hasImgError()) {
+    @if (displayUrl(); as src) {
       <img
-        [src]="resolvedAvatarUrl()"
+        [src]="src"
         [alt]="name() || 'Avatar'"
         loading="lazy"
         [width]="pixelDimension()"
         [height]="pixelDimension()"
-        (error)="hasImgError.set(true)"
+        (error)="onImgError()"
         [class]="sizeClasses() + ' ' + customClass()"
         class="rounded-full object-cover shrink-0 border border-[#CBD9E2]/60 shadow-2xs" />
     } @else {
@@ -48,12 +48,18 @@ export class TeacherAvatarComponent {
   readonly size = input<AvatarSize>('md');
   readonly customClass = input<string>('');
 
-  readonly hasImgError = signal<boolean>(false);
+  /** Set when the user's own photo failed to load → use the illustrated fallback. */
+  readonly photoFailed = signal<boolean>(false);
+  /** Set when the illustrated fallback also failed → use the initials badge. */
+  readonly fallbackFailed = signal<boolean>(false);
 
-  readonly resolvedAvatarUrl = computed(() => {
+  /** The user's own photo (e.g. Google). Legacy Unsplash stock placeholders do not count. */
+  private readonly ownPhotoUrl = computed(() => {
     const url = this.avatarUrl();
-    if (url) return url;
+    return url && !url.includes('images.unsplash.com') ? url : null;
+  });
 
+  readonly fallbackUrl = computed(() => {
     const id = this.avatarId();
     if (id) {
       if (id === 'teacher-female' || id === 'female') return '/assets/avatars/teacher-female.webp';
@@ -67,6 +73,17 @@ export class TeacherAvatarComponent {
 
     return null;
   });
+
+  readonly displayUrl = computed(() => {
+    const own = this.ownPhotoUrl();
+    if (own && !this.photoFailed()) return own;
+    return this.fallbackFailed() ? null : this.fallbackUrl();
+  });
+
+  onImgError() {
+    if (this.ownPhotoUrl() && !this.photoFailed()) this.photoFailed.set(true);
+    else this.fallbackFailed.set(true);
+  }
 
   readonly initials = computed(() => {
     const raw = (this.name() || '').trim();
