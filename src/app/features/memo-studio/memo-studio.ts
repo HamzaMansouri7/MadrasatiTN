@@ -8,14 +8,18 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { EducationStore } from '@core/services/education-store';
 import { LanguageService } from '@core/services/language.service';
 import { downscaleImage } from '@core/utils/image.util';
-import { MemoInput, MemoLayout } from '@core/models/memo.model';
+import { MemoInput, MemoLayout, MemoDoc } from '@core/models/memo.model';
 import {
   MemoTreeLayoutComponent,
   MemoStepsLayoutComponent,
   MemoCardsLayoutComponent,
+  MemoTimelineLayoutComponent,
+  MemoTableLayoutComponent,
+  MemoConjugationLayoutComponent,
 } from './layouts';
 
 interface LibraryResourceItem {
@@ -35,6 +39,9 @@ interface LibraryResourceItem {
     MemoTreeLayoutComponent,
     MemoStepsLayoutComponent,
     MemoCardsLayoutComponent,
+    MemoTimelineLayoutComponent,
+    MemoTableLayoutComponent,
+    MemoConjugationLayoutComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -51,6 +58,11 @@ interface LibraryResourceItem {
               <span class="text-xs text-[#9DBBA8] font-medium">
                 {{ lang.tr('Supports Visuels A4', 'معينات بصرية A4') }}
               </span>
+              @if (savedAuthorName()) {
+                <span class="text-xs text-[#F2C14E] font-medium border-s border-[#2D6A4F] ps-2">
+                  ✍️ {{ savedAuthorName() }} {{ savedSchool() ? '• ' + savedSchool() : '' }}
+                </span>
+              }
             </div>
             <h1 class="font-display text-2xl sm:text-3xl font-bold tracking-tight text-[#FBF8F1]">
               {{ lang.t('memoStudioTitle') }}
@@ -64,14 +76,37 @@ interface LibraryResourceItem {
             <div class="flex flex-wrap items-center gap-2">
               <button
                 (click)="resetToNew()"
-                class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] font-medium px-4 py-2.5 rounded-xl text-xs border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-1.5"
+                class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] font-medium px-3.5 py-2 rounded-xl text-xs border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-1.5"
               >
                 + {{ lang.t('memoBtnNew') }}
               </button>
 
               <button
+                (click)="saveMemo()"
+                [disabled]="isSaving()"
+                class="bg-[#8A5A00] hover:bg-[#734A00] disabled:opacity-50 text-[#FBF8F1] font-semibold px-3.5 py-2 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1.5 shadow-xs"
+              >
+                💾 {{ isSaved() ? lang.t('memoBtnSaved') : lang.t('memoBtnSave') }}
+              </button>
+
+              <button
+                (click)="copyShareLink()"
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3.5 py-2 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1.5 shadow-xs"
+              >
+                🔗 {{ shareCopied() ? lang.tr('Lien copié !', 'تم نسخ الرابط!') : lang.t('memoBtnShare') }}
+              </button>
+
+              <button
+                (click)="downloadDocx()"
+                [disabled]="isExportingWord()"
+                class="bg-[#1E3A8A] hover:bg-[#172554] disabled:opacity-50 text-[#FBF8F1] font-semibold px-3.5 py-2 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1.5 shadow-xs"
+              >
+                📄 {{ isExportingWord() ? '...' : lang.t('memoBtnDocx') }}
+              </button>
+
+              <button
                 (click)="printMemo()"
-                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1.5 shadow-sm"
+                class="bg-[#14251D] hover:bg-[#0D1813] text-[#FBF8F1] font-semibold px-4 py-2 rounded-xl text-xs border border-[#2D6A4F] transition-colors cursor-pointer flex items-center gap-1.5 shadow-xs"
               >
                 🖨️ {{ lang.t('memoBtnPrint') }}
               </button>
@@ -366,10 +401,11 @@ interface LibraryResourceItem {
         @if (state() === 'done' && store.memo()) {
           <div class="space-y-6">
             
-            <!-- Toolbar: Layout Switcher & Options (Hidden in print) -->
+            <!-- Toolbar: 6 Layout Switchers & Actions (Hidden in print) -->
             <div class="no-print bg-white p-4 rounded-2xl border border-[#E7DFCF] shadow-xs flex flex-wrap items-center justify-between gap-3">
-              <div class="flex items-center gap-1.5">
+              <div class="flex flex-wrap items-center gap-1.5">
                 <span class="text-xs font-bold text-[#5B6B60] me-2">{{ lang.tr('Modèle visuel :', 'النموذج البصري :') }}</span>
+                
                 <button
                   (click)="setLayout('tree')"
                   [class]="store.memoLayout() === 'tree' ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF]'"
@@ -393,12 +429,59 @@ interface LibraryResourceItem {
                 >
                   🗂️ {{ lang.t('memoLayoutCards') }}
                 </button>
+
+                <button
+                  (click)="setLayout('timeline')"
+                  [class]="store.memoLayout() === 'timeline' ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF]'"
+                  class="px-3 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-colors"
+                >
+                  ⏳ {{ lang.t('memoLayoutTimeline') }}
+                </button>
+
+                <button
+                  (click)="setLayout('table')"
+                  [class]="store.memoLayout() === 'table' ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF]'"
+                  class="px-3 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-colors"
+                >
+                  📊 {{ lang.t('memoLayoutTable') }}
+                </button>
+
+                <button
+                  (click)="setLayout('conjugation')"
+                  [class]="store.memoLayout() === 'conjugation' ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF]'"
+                  class="px-3 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-colors"
+                >
+                  ✍️ {{ lang.t('memoLayoutConjugation') }}
+                </button>
               </div>
 
-              <div class="flex items-center gap-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <button
+                  (click)="saveMemo()"
+                  [disabled]="isSaving()"
+                  class="bg-[#8A5A00] hover:bg-[#734A00] disabled:opacity-50 text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1 shadow-xs"
+                >
+                  💾 {{ isSaved() ? lang.t('memoBtnSaved') : lang.t('memoBtnSave') }}
+                </button>
+
+                <button
+                  (click)="copyShareLink()"
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1 shadow-xs"
+                >
+                  🔗 {{ shareCopied() ? lang.tr('Copié !', 'تم!') : lang.t('memoBtnShare') }}
+                </button>
+
+                <button
+                  (click)="downloadDocx()"
+                  [disabled]="isExportingWord()"
+                  class="bg-[#1E3A8A] hover:bg-[#172554] disabled:opacity-50 text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1 shadow-xs"
+                >
+                  📄 {{ isExportingWord() ? '...' : lang.t('memoBtnDocx') }}
+                </button>
+
                 <button
                   (click)="printMemo()"
-                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-4 py-2 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1.5"
+                  class="bg-[#14251D] hover:bg-[#0D1813] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-xl text-xs border border-[#2D6A4F] transition-colors cursor-pointer flex items-center gap-1 shadow-xs"
                 >
                   🖨️ {{ lang.t('memoBtnPrint') }}
                 </button>
@@ -438,6 +521,15 @@ interface LibraryResourceItem {
                 @case ('cards') {
                   <app-memo-cards-layout [memo]="store.memo()!" />
                 }
+                @case ('timeline') {
+                  <app-memo-timeline-layout [memo]="store.memo()!" />
+                }
+                @case ('table') {
+                  <app-memo-table-layout [memo]="store.memo()!" />
+                }
+                @case ('conjugation') {
+                  <app-memo-conjugation-layout [memo]="store.memo()!" />
+                }
               }
             </div>
 
@@ -451,6 +543,7 @@ interface LibraryResourceItem {
 export class MemoStudioComponent implements OnInit {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  private readonly route = inject(ActivatedRoute);
 
   readonly activeTab = signal<'topic' | 'text' | 'photo' | 'file' | 'library'>('topic');
   readonly state = signal<'idle' | 'analyzing' | 'done' | 'error'>('idle');
@@ -471,8 +564,38 @@ export class MemoStudioComponent implements OnInit {
 
   readonly libraryItems = signal<LibraryResourceItem[]>([]);
 
+  readonly isSaving = signal<boolean>(false);
+  readonly isSaved = signal<boolean>(false);
+  readonly shareCopied = signal<boolean>(false);
+  readonly isExportingWord = signal<boolean>(false);
+
+  readonly savedMemoId = signal<string | null>(null);
+  readonly savedAuthorName = signal<string | null>(null);
+  readonly savedSchool = signal<string | null>(null);
+
   ngOnInit() {
     this.loadLibraryIndex();
+    this.checkRouteMemoParam();
+  }
+
+  private async checkRouteMemoParam() {
+    this.route.queryParams.subscribe(async (params) => {
+      const memoId = params['memo'];
+      if (memoId && typeof memoId === 'string') {
+        const loaded = await this.store.getMemo(memoId);
+        if (loaded && loaded.memoDoc) {
+          this.store.memo.set(loaded.memoDoc);
+          if (loaded.memoLayout) {
+            this.store.memoLayout.set(loaded.memoLayout);
+          }
+          this.savedMemoId.set(loaded.id);
+          this.savedAuthorName.set(loaded.authorName || null);
+          this.savedSchool.set(loaded.school || null);
+          this.isSaved.set(true);
+          this.state.set('done');
+        }
+      }
+    });
   }
 
   private async loadLibraryIndex() {
@@ -496,11 +619,90 @@ export class MemoStudioComponent implements OnInit {
   resetToNew() {
     this.state.set('idle');
     this.errorMessage.set('');
+    this.savedMemoId.set(null);
+    this.savedAuthorName.set(null);
+    this.isSaved.set(false);
   }
 
   printMemo() {
     if (typeof window !== 'undefined') {
       window.print();
+    }
+  }
+
+  async saveMemo() {
+    const memo = this.store.memo();
+    if (!memo) return;
+    this.isSaving.set(true);
+
+    const teacher = this.store.activeTeacherProfile();
+    const payload = {
+      memoDoc: memo,
+      memoLayout: this.store.memoLayout(),
+      authorName: teacher?.name || 'Enseignant Madrasati',
+      authorRole: 'teacher' as const,
+      school: teacher?.school || 'المدرسة الابتدائية التونسية',
+    };
+
+    const saved = await this.store.saveMemo(payload);
+    this.isSaving.set(false);
+
+    if (saved && saved.id) {
+      this.savedMemoId.set(saved.id);
+      this.isSaved.set(true);
+      this.savedAuthorName.set(payload.authorName);
+      this.savedSchool.set(payload.school);
+      this.store.showToast(this.lang.tr('Fiche mémo enregistrée dans la bibliothèque !', 'تم حفظ المذكرة بنجاح!'), 'success');
+    } else {
+      this.store.showToast(this.lang.tr('Erreur lors de l\'enregistrement', 'تعذر حفظ المذكرة'), 'error');
+    }
+  }
+
+  async copyShareLink() {
+    const memoId = this.savedMemoId();
+    let url = '';
+    if (memoId) {
+      url = `${window.location.origin}/memo-studio?memo=${memoId}`;
+    } else {
+      // Save first
+      await this.saveMemo();
+      const newId = this.savedMemoId();
+      if (newId) {
+        url = `${window.location.origin}/memo-studio?memo=${newId}`;
+      }
+    }
+
+    if (url && navigator.clipboard) {
+      await navigator.clipboard.writeText(url);
+      this.shareCopied.set(true);
+      this.store.showToast(this.lang.tr('Lien de partage copié !', 'تم نسخ رابط المذكرة!'), 'success');
+      setTimeout(() => this.shareCopied.set(false), 3000);
+    }
+  }
+
+  async downloadDocx() {
+    const memo = this.store.memo();
+    if (!memo) return;
+    this.isExportingWord.set(true);
+
+    const author = this.savedAuthorName() || this.store.activeTeacherProfile()?.name || 'Enseignant Madrasati';
+    const school = this.savedSchool() || this.store.activeTeacherProfile()?.school || 'المدرسة الابتدائية التونسية';
+
+    const blob = await this.store.exportMemoDocx(memo, author, school);
+    this.isExportingWord.set(false);
+
+    if (blob) {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `memo-${(memo.topic || memo.title || 'cours').replace(/\\s+/g, '_')}.docx`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+      this.store.showToast(this.lang.tr('Document Word téléchargé !', 'تم تحميل ملف Word!'), 'success');
+    } else {
+      this.store.showToast(this.lang.tr('Erreur lors de l\'export Word', 'تعذر تصدير ملف Word'), 'error');
     }
   }
 
@@ -596,13 +798,12 @@ export class MemoStudioComponent implements OnInit {
 
     const res = await this.store.generateMemo(inputData);
 
-    if (res.ok && res.result) {
-      if (res.extractedText) {
-        this.extractedText.set(res.extractedText);
-      }
+    if (res) {
       this.state.set('done');
+      this.isSaved.set(false);
+      this.savedMemoId.set(null);
     } else {
-      this.errorMessage.set(res.error || 'Erreur lors de la génération.');
+      this.errorMessage.set('Erreur lors de la génération.');
       this.state.set('error');
     }
   }

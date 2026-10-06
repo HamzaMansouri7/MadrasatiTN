@@ -1021,7 +1021,7 @@ export class EducationStore {
     return null;
   }
 
-  // Published community worksheets, loaded once and merged into the library grid + blog.
+  // Published community worksheets and visual memos, loaded once and merged into the library grid.
   private publishedLoaded = false;
   async loadPublishedWorksheets(): Promise<void> {
     if (this.publishedLoaded) return;
@@ -1032,7 +1032,7 @@ export class EducationStore {
       const res = await fetch('/api/docs');
       if (!res.ok) return;
       const data = await res.json();
-      const docs: WorksheetSummary[] = Array.isArray(data.docs) ? data.docs : [];
+      const docs: Array<WorksheetSummary & { docType?: string; memoLayout?: string }> = Array.isArray(data.docs) ? data.docs : [];
       if (docs.length === 0) return;
 
       // Merge into the library grid as resource cards (skip ids already present).
@@ -1040,33 +1040,35 @@ export class EducationStore {
         const existing = new Set(list.map((e) => e.id));
         const mapped: ExerciseItem[] = docs
           .filter((w) => !existing.has(w.id))
-          .map((w) => ({
-            id: w.id,
-            sheetId: w.id,
-            title: w.title,
-            chapter: w.topic || 'Fiche communautaire',
-            topic: w.topic,
-            subject: (w.subject || 'Français') as SubjectName,
-            grade: (w.grade || '1ère Année') as GradeLevel,
-            docType: "Série d'Exercices" as DocType,
-            difficulty: 'Moyen' as const,
-            promptText: `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
-            photoUrl: w.thumb || undefined,
-            solutionText: '',
-            hasCorrection: w.authorRole === 'teacher',
-            hints: [],
-            points: (w.exerciseCount || 1) * 5,
-            theme: w.topic,
-            teacherName: w.authorName
-              ? `${w.authorName}${this.worksheetRoleSuffix(w.authorRole)}`
-              : undefined,
-            watermarkText: 'Madrasati TN — Fiche Communautaire',
-          }));
+          .map((w) => {
+            const isMemo = w.docType === 'memo';
+            return {
+              id: w.id,
+              sheetId: w.id,
+              title: w.title,
+              chapter: w.topic || (isMemo ? 'Fiche Mémo Visuelle' : 'Fiche communautaire'),
+              topic: w.topic,
+              subject: (w.subject || 'Français') as SubjectName,
+              grade: (w.grade || '1ère Année') as GradeLevel,
+              docType: (isMemo ? 'Fiche Mémento' : "Série d'Exercices") as DocType,
+              difficulty: 'Moyen' as const,
+              promptText: isMemo
+                ? `Fiche mémo synthétique A4 — ${w.topic || w.title}`
+                : `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
+              photoUrl: w.thumb || (isMemo ? '/assets/memo/apple.svg' : undefined),
+              solutionText: '',
+              hasCorrection: w.authorRole === 'teacher' || isMemo,
+              hints: [],
+              points: 10,
+              theme: w.topic,
+              teacherName: w.authorName
+                ? `${w.authorName}${this.worksheetRoleSuffix(w.authorRole)}`
+                : undefined,
+              watermarkText: isMemo ? 'Madrasati TN — Fiche Mémo' : 'Madrasati TN — Fiche Communautaire',
+            };
+          });
         return [...mapped, ...list];
       });
-
-      // NOTE: worksheets intentionally do NOT cross-post into the blog feed —
-      // the blog shelf is for articles only; sheets live in the exercise bank.
     } catch (err) {
       console.error('Error in loadPublishedWorksheets:', err);
       this.publishedLoaded = false;
@@ -1241,6 +1243,72 @@ export class EducationStore {
         .map((s, idx) => ({ ...s, n: idx + 1 }));
       return { ...doc, steps: updatedSteps };
     });
+  }
+
+  async saveMemo(payload: {
+    memoDoc: MemoDoc;
+    memoLayout: MemoLayout;
+    authorName?: string;
+    authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
+    school?: string;
+  }): Promise<{ id: string; shareUrl: string } | null> {
+    try {
+      const res = await fetch('/api/docs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          docType: 'memo',
+          ...payload,
+        }),
+      });
+      const data = await res.json();
+      if (data.success && data.id) {
+        this.publishedLoaded = false;
+        void this.loadPublishedWorksheets();
+        return { id: data.id, shareUrl: data.shareUrl };
+      }
+    } catch (err) {
+      console.error('Error in saveMemo:', err);
+    }
+    return null;
+  }
+
+  async getMemo(id: string): Promise<{
+    id: string;
+    docType: 'memo';
+    memoDoc: MemoDoc;
+    memoLayout: MemoLayout;
+    authorName?: string;
+    authorRole?: string;
+    school?: string;
+    createdAt?: string;
+  } | null> {
+    try {
+      const res = await fetch('/api/docs/' + encodeURIComponent(id));
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (data.success && data.doc && data.doc.docType === 'memo') {
+        return data.doc;
+      }
+    } catch (err) {
+      console.error('Error in getMemo:', err);
+    }
+    return null;
+  }
+
+  async exportMemoDocx(memo: MemoDoc, authorName?: string, school?: string): Promise<Blob | null> {
+    try {
+      const res = await fetch('/api/memo/export-docx', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ memo, authorName, school }),
+      });
+      if (!res.ok) return null;
+      return await res.blob();
+    } catch (err) {
+      console.error('Error in exportMemoDocx:', err);
+      return null;
+    }
   }
 
   addAnnouncement(announcementData: Partial<Announcement>) {

@@ -10,6 +10,7 @@ import mammoth from 'mammoth';
 import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
 import { MEMO_SCHEMA, BLOCK_SCHEMAS, buildMemoPrompt } from './server/memo-schema';
+import { generateMemoDocx } from './server/memo-docx';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
@@ -1301,6 +1302,28 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
   }
 });
 
+// Word (.docx) export for visual memo
+app.post('/api/memo/export-docx', originGuard, uploadRateLimiter, async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { memo, authorName, school } = req.body;
+    if (!memo || typeof memo !== 'object' || !memo.title) {
+      res.status(400).json({ error: 'Contenu de la fiche mémo requis.' });
+      return;
+    }
+    const buffer = await generateMemoDocx(memo, authorName, school);
+    const filename = `memo-${encodeURIComponent((memo.topic || memo.title || 'cours').replace(/\s+/g, '_'))}.docx`;
+    res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    res.send(buffer);
+    return;
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erreur lors de l\'export Word';
+    console.error('Error in /api/memo/export-docx:', err);
+    res.status(500).json({ error: message });
+    return;
+  }
+});
+
 // 4b. Worksheet Style Analyzer (Phase 1a) — vision reads an uploaded worksheet image
 // and extracts its "design DNA": topic, palette, layout, so we can clone the style.
 app.post('/api/ai/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
@@ -1456,7 +1479,75 @@ function readDocsIndex(): Record<string, unknown>[] {
 
 app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
   try {
-    const { title, grade, subject, topic, palette, exercises, authorName, authorRole, customWatermark, school } = req.body;
+    const {
+      docType,
+      memoDoc,
+      memoLayout,
+      title,
+      grade,
+      subject,
+      topic,
+      palette,
+      exercises,
+      authorName,
+      authorRole,
+      customWatermark,
+      school,
+    } = req.body;
+
+    const role = ['teacher', 'parent', 'ai', 'community'].includes(authorRole) ? authorRole : 'community';
+    const isMemo = docType === 'memo' || (memoDoc && typeof memoDoc === 'object');
+
+    if (isMemo) {
+      if (!memoDoc || typeof memoDoc !== 'object') {
+        res.status(400).json({ error: 'Contenu mémo manquant.' });
+        return;
+      }
+      const docGrade = (memoDoc.grade || grade || '').toString().slice(0, 40);
+      const docSubject = (memoDoc.subject || subject || '').toString().slice(0, 40);
+      const docTitle = (memoDoc.title || memoDoc.topic || title || 'Fiche Mémo').toString().slice(0, 200);
+      const docTopic = (memoDoc.topic || topic || '').toString().slice(0, 200);
+
+      const id = randomUUID();
+      const doc = {
+        id,
+        docType: 'memo',
+        title: docTitle,
+        grade: docGrade,
+        subject: docSubject,
+        topic: docTopic,
+        memoDoc,
+        memoLayout: memoLayout || 'tree',
+        authorName: (authorName || 'Communauté Madrasati').toString().slice(0, 100),
+        authorRole: role,
+        school: (school || 'المدرسة الابتدائية التونسية').toString().slice(0, 150),
+        customWatermark: (customWatermark || 'Madrasati TN — Fiche Mémo').toString().slice(0, 150),
+        createdAt: new Date().toISOString(),
+      };
+      writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
+
+      const index = readDocsIndex();
+      index.unshift({
+        id,
+        docType: 'memo',
+        title: doc.title,
+        grade: doc.grade,
+        subject: doc.subject,
+        topic: doc.topic,
+        palette: ['#1B4332', '#2D6A4F', '#FBF8F1'],
+        thumb: '/assets/memo/apple.svg',
+        authorName: doc.authorName,
+        authorRole: doc.authorRole,
+        school: doc.school,
+        memoLayout: doc.memoLayout,
+        createdAt: doc.createdAt,
+      });
+      writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
+
+      res.json({ success: true, id, shareUrl: `/memo-studio?memo=${id}` });
+      return;
+    }
+
     if (!Array.isArray(exercises) || exercises.length === 0) {
       res.status(400).json({ error: 'Aucun exercice à enregistrer.' });
       return;
@@ -1482,8 +1573,6 @@ app.post('/api/docs', originGuard, async (req, res): Promise<void> => {
       return;
     }
     const id = randomUUID();
-    // Attribution: a parent-made sheet must never carry a teacher label.
-    const role = ['teacher', 'parent', 'ai', 'community'].includes(authorRole) ? authorRole : 'community';
     const doc = {
       id,
       title: (title || 'Fiche Madrasati TN').toString().slice(0, 200),
@@ -2058,6 +2147,62 @@ app.get('/generate', (req: Request, res: Response, next): void => {
     res.send(html);
   } catch (err) {
     console.error('Error injecting OG tags for sheet:', err);
+    next();
+  }
+});
+
+app.get('/memo-studio', (req: Request, res: Response, next): void => {
+  const ua = req.get('user-agent') || '';
+  const memoId = String((req.query['memo'] as string) || '');
+  if (!CRAWLER_UA_RE.test(ua) || !SHEET_ID_RE.test(memoId)) {
+    next();
+    return;
+  }
+
+  const filePath = join(docsFolder, `${memoId}.json`);
+  if (!existsSync(filePath)) {
+    next();
+    return;
+  }
+
+  try {
+    const doc = JSON.parse(readFileSync(filePath, 'utf8'));
+    const indexPath = join(browserDistFolder, 'index.html');
+    let html = readFileSync(indexPath, 'utf8');
+
+    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
+    const host = req.get('x-forwarded-host') || req.get('host') || '';
+    const origin = `${proto}://${host}`;
+
+    const title = escapeHtmlAttr(`${doc.title || doc.memoDoc?.title || 'Fiche Mémo'} — Madrasati TN`);
+    const descParts = [doc.grade, doc.subject, doc.memoDoc?.subtitle || doc.memoDoc?.topic].filter(Boolean).join(' · ');
+    const description = escapeHtmlAttr(
+      descParts
+        ? `${descParts}. Fiche mémo visuelle interactive pour l'école primaire tunisienne — Madrasati TN.`
+        : 'Fiche mémo visuelle interactive pour l\'école primaire tunisienne — Madrasati TN.',
+    );
+    const imageUrl = escapeHtmlAttr(`${origin}/assets/memo/apple.svg`);
+    const pageUrl = escapeHtmlAttr(`${origin}/memo-studio?memo=${memoId}`);
+
+    html = html.replace(/\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi, '');
+
+    const ogBlock = `
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+    <meta property="og:image" content="${imageUrl}" />
+    <meta property="og:url" content="${pageUrl}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${title}" />
+    <meta name="twitter:description" content="${description}" />
+    <meta name="twitter:image" content="${imageUrl}" />`;
+
+    html = html.replace('</head>', `${ogBlock}\n  </head>`);
+
+    res.set('Content-Type', 'text/html; charset=utf-8');
+    res.send(html);
+  } catch (err) {
+    console.error('Error injecting OG tags for memo:', err);
     next();
   }
 });

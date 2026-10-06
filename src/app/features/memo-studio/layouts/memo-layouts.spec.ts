@@ -3,7 +3,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { ComponentFixture, TestBed, getTestBed } from '@angular/core/testing';
 import { BrowserTestingModule, platformBrowserTesting } from '@angular/platform-browser/testing';
 import { signal } from '@angular/core';
-import { MemoDoc } from '../../../core/models/memo.model';
+import { MemoDoc, MemoLayout } from '../../../core/models/memo.model';
 import { EducationStore } from '../../../core/services/education-store';
 import { LanguageService } from '../../../core/services/language.service';
 
@@ -12,9 +12,14 @@ try {
 } catch {
   // already initialized
 }
-import { MemoTreeLayoutComponent } from './memo-tree-layout';
-import { MemoStepsLayoutComponent } from './memo-steps-layout';
-import { MemoCardsLayoutComponent } from './memo-cards-layout';
+import {
+  MemoTreeLayoutComponent,
+  MemoStepsLayoutComponent,
+  MemoCardsLayoutComponent,
+  MemoTimelineLayoutComponent,
+  MemoTableLayoutComponent,
+  MemoConjugationLayoutComponent,
+} from './index';
 
 const FIXTURE_FR: MemoDoc = {
   title: 'Les déterminants',
@@ -72,7 +77,7 @@ const FIXTURE_AR: MemoDoc = {
 describe('Memo Studio Layouts', () => {
   let mockStore: {
     memo: ReturnType<typeof signal<MemoDoc | null>>;
-    memoLayout: ReturnType<typeof signal<'tree' | 'steps' | 'cards'>>;
+    memoLayout: ReturnType<typeof signal<MemoLayout>>;
     updateMemoField: (field: keyof MemoDoc, value: unknown) => void;
     regenerateMemoBlock: () => Promise<{ ok: boolean }>;
     addMemoCard: () => void;
@@ -90,7 +95,7 @@ describe('Memo Studio Layouts', () => {
   beforeEach(async () => {
     mockStore = {
       memo: signal<MemoDoc | null>(null),
-      memoLayout: signal<'tree' | 'steps' | 'cards'>('tree'),
+      memoLayout: signal<MemoLayout>('tree'),
       updateMemoField: (field: keyof MemoDoc, value: unknown) => {
         mockStore.memo.update((doc) => doc ? { ...doc, [field]: value } : doc);
       },
@@ -107,6 +112,9 @@ describe('Memo Studio Layouts', () => {
         MemoTreeLayoutComponent,
         MemoStepsLayoutComponent,
         MemoCardsLayoutComponent,
+        MemoTimelineLayoutComponent,
+        MemoTableLayoutComponent,
+        MemoConjugationLayoutComponent,
       ],
       providers: [
         { provide: EducationStore, useValue: mockStore },
@@ -169,6 +177,56 @@ describe('Memo Studio Layouts', () => {
     expect(elFr.textContent).toContain('Article défini');
 
     const fixtureAr = TestBed.createComponent(MemoCardsLayoutComponent);
+    fixtureAr.componentInstance.memo = FIXTURE_AR;
+    fixtureAr.detectChanges();
+
+    const elAr = fixtureAr.nativeElement as HTMLElement;
+    expect(elAr.textContent).toContain('المفعول المطلق');
+  });
+
+  it('renders Timeline layout in French and Arabic', () => {
+    const fixtureFr = TestBed.createComponent(MemoTimelineLayoutComponent);
+    fixtureFr.componentInstance.memo = FIXTURE_FR;
+    fixtureFr.detectChanges();
+
+    const elFr = fixtureFr.nativeElement as HTMLElement;
+    expect(elFr.textContent).toContain('Les déterminants');
+    expect(elFr.textContent).toContain('Repérer le nom');
+
+    const fixtureAr = TestBed.createComponent(MemoTimelineLayoutComponent);
+    fixtureAr.componentInstance.memo = FIXTURE_AR;
+    fixtureAr.detectChanges();
+
+    const elAr = fixtureAr.nativeElement as HTMLElement;
+    expect(elAr.textContent).toContain('المفعول المطلق');
+  });
+
+  it('renders Table layout in French and Arabic', () => {
+    const fixtureFr = TestBed.createComponent(MemoTableLayoutComponent);
+    fixtureFr.componentInstance.memo = FIXTURE_FR;
+    fixtureFr.detectChanges();
+
+    const elFr = fixtureFr.nativeElement as HTMLElement;
+    expect(elFr.textContent).toContain('Les déterminants');
+    expect(elFr.textContent).toContain('Article défini');
+
+    const fixtureAr = TestBed.createComponent(MemoTableLayoutComponent);
+    fixtureAr.componentInstance.memo = FIXTURE_AR;
+    fixtureAr.detectChanges();
+
+    const elAr = fixtureAr.nativeElement as HTMLElement;
+    expect(elAr.textContent).toContain('المفعول المطلق');
+  });
+
+  it('renders Conjugation layout in French and Arabic', () => {
+    const fixtureFr = TestBed.createComponent(MemoConjugationLayoutComponent);
+    fixtureFr.componentInstance.memo = FIXTURE_FR;
+    fixtureFr.detectChanges();
+
+    const elFr = fixtureFr.nativeElement as HTMLElement;
+    expect(elFr.textContent).toContain('Les déterminants');
+
+    const fixtureAr = TestBed.createComponent(MemoConjugationLayoutComponent);
     fixtureAr.componentInstance.memo = FIXTURE_AR;
     fixtureAr.detectChanges();
 
