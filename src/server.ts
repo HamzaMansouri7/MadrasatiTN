@@ -458,13 +458,10 @@ app.post('/api/upload', originGuard, uploadRateLimiter, async (req, res): Promis
   }
 });
 
-// Initialize Gemini Client(s) with multi-key pooling & rotation
-const rawApiKeys = [
-  process.env['GEMINI_API_KEY'],
-  process.env['GEMINI_API_KEY_2'],
-  process.env['GEMINI_API_KEYS']
-]
-  .filter(Boolean)
+// Initialize Gemini Client(s) with multi-key pooling & dynamic rotation
+const rawApiKeys = Object.entries(process.env)
+  .filter(([k, v]) => k.startsWith('GEMINI_API_KEY') && typeof v === 'string')
+  .map(([_, v]) => v as string)
   .join(',')
   .split(/[,\n]/)
   .map(k => k.trim().replace(/^["']|["']$/g, ''))
