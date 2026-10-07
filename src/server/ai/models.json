@@ -36,7 +36,8 @@
       "model": "gemini-flash-lite-latest",
       "quality": 7.5,
       "tasks": [
-        "text"
+        "text",
+        "vision"
       ]
     },
     {
@@ -45,7 +46,8 @@
       "model": "gemini-3.5-flash-lite",
       "quality": 7.5,
       "tasks": [
-        "text"
+        "text",
+        "vision"
       ]
     },
     {
@@ -54,7 +56,8 @@
       "model": "gemini-3.1-flash-lite",
       "quality": 7.0,
       "tasks": [
-        "text"
+        "text",
+        "vision"
       ]
     },
     {
@@ -167,8 +170,10 @@
     "C": [
       "gemini-3.6-flash",
       "gemini-3.7-flash",
-      "nvidia-llama-vision",
-      "cf-llama-4-scout"
+      "gemini-3.5-flash-lite",
+      "gemini-flash-lite-latest",
+      "cf-llama-4-scout",
+      "gemini-3.1-flash-lite"
     ],
     "D": [
       "gemini-3.6-flash",
