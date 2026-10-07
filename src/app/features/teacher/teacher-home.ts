@@ -2363,6 +2363,9 @@ export class TeacherHomeComponent {
           subject: this.aiFormSubject(),
           topic: this.aiFormTopic(),
           difficulty: this.aiFormDifficulty(),
+          format: 'free',
+          trimester: 'Trimestre 1',
+          points: 5,
           language: this.lang.lang(),
         }),
       });

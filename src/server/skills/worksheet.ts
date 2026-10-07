@@ -118,7 +118,7 @@ export interface WorksheetSimilarInput {
     language?: 'fr' | 'ar' | 'en' | 'mixed';
     palette?: string[];
     illustrationStyle?: string;
-    sections?: Array<{ heading?: string }>;
+    sections?: { heading?: string }[];
   };
   count: number;
 }

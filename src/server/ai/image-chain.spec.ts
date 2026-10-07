@@ -7,7 +7,7 @@ const png = (): Buffer => {
   return b;
 };
 const CF_ENV = { CLOUDFLARE_ACCOUNT_ID: 'a'.repeat(32), CLOUDFLARE_API_TOKEN: 'tok' };
-const okRes = () => new Response(png(), { status: 200, headers: { 'content-type': 'image/png' } });
+const okRes = () => new Response(new Uint8Array(png()), { status: 200, headers: { 'content-type': 'image/png' } });
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 /** Fake fetch: handler receives the URL and returns a Response (or throws). */

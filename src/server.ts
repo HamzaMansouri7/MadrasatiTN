@@ -5,7 +5,7 @@ import {
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
 import express, { Request, Response, NextFunction } from 'express';
-import { join, resolve, sep } from 'node:path';
+import { join, resolve } from 'node:path';
 import mammoth from 'mammoth';
 import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
@@ -38,6 +38,7 @@ import { resolveInside } from './server/safe-path';
 import { wrapData, capHistory, capText, CAPS } from './server/input-caps';
 import { toPublicError } from './server/ai/public-error';
 import { createCache, hashKey } from './server/ai/cache';
+import { generateImage } from './server/ai/image-chain';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
 
 const exerciseCache = createCache<Record<string, unknown>>({
@@ -505,7 +506,6 @@ const rawApiKeys = [
 
 // 60 s per call so a hung request fails over to the next key/model instead of stalling the chain.
 const aiClients: GoogleGenAI[] = rawApiKeys.map(key => new GoogleGenAI({ apiKey: key, httpOptions: { timeout: 60000 } }));
-let activeKeyIdx = 0;
 
 /**
  * Shared AI helpers — structured JSON output, retry, dual-language (AR default),
@@ -513,103 +513,18 @@ let activeKeyIdx = 0;
  */
 type GeminiPart = { inlineData: { mimeType: string; data: string } } | { text: string };
 
-// Model chain, best first. Each model has its own free quota, so flash-lite is extra capacity, not just a retry.
-// Override without a rebuild: GEMINI_MODELS="a,b,c" + pm2 restart --update-env.
-const FALLBACK_MODELS = (process.env['GEMINI_MODELS'] || 'gemini-flash-latest,gemini-3.8-flash,gemini-flash-lite-latest')
-  .split(',')
-  .map(m => m.trim())
-  .filter(Boolean);
-
-// Last-resort fallback once every Gemini key is exhausted. Only ':free' models are ever called, so it can never bill.
 const openRouterKey = (process.env['OPENROUTER_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
-
 const aiReady = () => aiClients.length > 0 || !!openRouterKey;
 
-// Free raster images: Cloudflare Workers AI (Flux schnell). Needs CLOUDFLARE_ACCOUNT_ID + CLOUDFLARE_API_TOKEN.
-const cloudflareAccountId = (process.env['CLOUDFLARE_ACCOUNT_ID'] || '').trim();
-const cloudflareToken = (process.env['CLOUDFLARE_API_TOKEN'] || '').trim().replace(/^["']|["']$/g, '');
-const cloudflareConfigured = /^[a-f0-9]{32}$/i.test(cloudflareAccountId) && cloudflareToken.length > 0;
-const cloudflareImageModel = process.env['CLOUDFLARE_IMAGE_MODEL'] || '@cf/black-forest-labs/flux-1-schnell';
-
-async function cloudflareFluxImage(prompt: string): Promise<Buffer> {
-  const r = await fetch(`https://api.cloudflare.com/client/v4/accounts/${cloudflareAccountId}/ai/run/${cloudflareImageModel}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${cloudflareToken}` },
-    body: JSON.stringify({ prompt, steps: 4 }),
-    signal: AbortSignal.timeout(60000),
-  });
-  if (!r.ok) throw new Error(`Cloudflare AI HTTP ${r.status}`);
-  const data = (await r.json()) as { result?: { image?: string } };
-  const b64 = data.result?.image;
-  if (!b64) throw new Error('Cloudflare AI returned no image');
-  return Buffer.from(b64, 'base64');
-}
-
-/** Quota / auth / overload / missing-model / invalid-output errors: worth trying another provider or key. */
-const isProviderExhausted = (err: unknown): boolean =>
-  /\b(401|402|403|404|422|429|500|503|504)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|DEADLINE_EXCEEDED|Deadline expired|no longer available/.test(
-    err instanceof Error ? err.message : String(err),
-  );
-
-/**
- * Nested Gemini chain: for each model (best first) try every key. A key whose quota is spent on a model
- * moves to the next key; once all keys are spent on that model the next model is used.
- * Cooldowns: 503 is model-wide (all keys), 429 is per (key, model), auth/404 is per pair and long.
- */
-const geminiCooldowns = new Map<string, number>();
-const statusOf = (err: unknown): string => {
-  const m = err instanceof Error ? err.message : String(err);
-  const code = m.match(/\b(401|402|403|404|422|429|500|503|504)\b/)?.[1];
-  if (code) return code;
-  if (/RESOURCE_EXHAUSTED/.test(m)) return '429';
-  if (/UNAVAILABLE/.test(m)) return '503';
-  if (/DEADLINE_EXCEEDED|Deadline expired/.test(m)) return '504';
-  if (/no longer available/.test(m)) return '404';
-  return '?';
-};
-const markCooldown = (keyIdx: number, model: string, err: unknown): string => {
-  const status = statusOf(err);
-  if (status === '503' || status === '504' || status === '500') geminiCooldowns.set(`*|${model}`, Date.now() + 30 * 1000);
-  else if (status === '429') geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 2 * 60 * 1000);
-  else if (status === '422') geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 15 * 1000);
-  else geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 30 * 60 * 1000);
-  return status;
-};
-const coolingDown = (keyIdx: number, model: string): boolean =>
-  (geminiCooldowns.get(`*|${model}`) ?? 0) > Date.now() || (geminiCooldowns.get(`${keyIdx}|${model}`) ?? 0) > Date.now();
-
-async function runGeminiChain<T>(run: (client: GoogleGenAI, model: string) => Promise<T>): Promise<T> {
-  if (aiClients.length === 0) throw new Error('Aucune clé Gemini disponible');
-  const start = activeKeyIdx++ % aiClients.length; // spread RPM across keys between requests
-  let lastErr: unknown;
-  let tried = 0;
-  for (const honorCooldown of [true, false]) {
-    for (const model of FALLBACK_MODELS) {
-      for (let i = 0; i < aiClients.length; i++) {
-        const idx = (start + i) % aiClients.length;
-        if (honorCooldown && coolingDown(idx, model)) continue;
-        tried++;
-        try {
-          return await run(aiClients[idx], model);
-        } catch (err) {
-          lastErr = err;
-          if (!isProviderExhausted(err)) throw err;
-          console.warn(`[gemini] key#${idx + 1} ${model} ${markCooldown(idx, model, err)} -> next`);
-        }
-      }
-    }
-    if (tried > 0) break; // the no-cooldown pass only runs when every pair was skipped
-  }
-  throw lastErr ?? new Error('Toutes les clés Gemini sont en pause');
-}
-
-/** Plain-text generation over the chain (used where JSON mode does not fit, e.g. SVG). */
+/** Plain-text generation (used for SVG fallback) */
 async function aiGenerateText(prompt: string): Promise<string> {
-  return runGeminiChain(async (client, model) => {
-    const response = await client.models.generateContent({ model, contents: prompt });
-    if (!response.text) throw new Error('Réponse vide');
-    return response.text;
+  if (aiClients.length === 0) throw new Error('Aucune clé Gemini disponible');
+  const response = await aiClients[0].models.generateContent({
+    model: 'gemini-2.5-flash',
+    contents: prompt,
   });
+  if (!response.text) throw new Error('Réponse vide');
+  return response.text;
 }
 
 /** Executes structured JSON generation across the specified provider fallback chain. */
@@ -632,112 +547,7 @@ const buildGrounding = (q: { grade?: string; subject?: string; trimester?: strin
 const contextBlock = (q: { grade?: string; subject?: string; trimester?: string; topic?: string; lang: 'ar' | 'fr' }): string =>
   `${buildGrounding(q)}${langRule(q.lang)}`;
 
-// --- Response schemas (Gemini structured output) ---
-const STR = { type: Type.STRING } as const;
-const NUM = { type: Type.NUMBER } as const;
-const INT = { type: Type.INTEGER } as const;
-const BOOL = { type: Type.BOOLEAN } as const;
-const STR_ARR = { type: Type.ARRAY, items: STR } as const;
-
-const EXERCISE_PROPS = {
-  title: STR,
-  promptText: STR,
-  solutionText: STR,
-  parentGuide: STR,
-  teacherNotes: STR,
-  hints: STR_ARR,
-  points: NUM,
-  format: { type: Type.STRING, enum: ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'] },
-  qcmOptions: STR_ARR,
-  qcmCorrectIndex: INT,
-  tfStatements: {
-    type: Type.ARRAY,
-    items: { type: Type.OBJECT, properties: { text: STR, answer: BOOL }, required: ['text', 'answer'] },
-  },
-  gapText: STR,
-  matchingPairs: {
-    type: Type.ARRAY,
-    items: { type: Type.OBJECT, properties: { left: STR, right: STR }, required: ['left', 'right'] },
-  },
-};
-
-const EXAM_SCHEMA = {
-  type: Type.OBJECT,
-  properties: {
-    examTitle: STR,
-    sections: {
-      type: Type.ARRAY,
-      items: {
-        type: Type.OBJECT,
-        properties: { heading: STR, exerciseTitle: STR, points: NUM, promptText: STR, solutionText: STR, hints: STR_ARR },
-        required: ['heading', 'exerciseTitle', 'points', 'promptText', 'solutionText'],
-      },
-    },
-  },
-  required: ['examTitle', 'sections'],
-};
-
-const SOLVE_SCHEMA = {
-  type: Type.OBJECT,
-  properties: { solutionText: STR, teacherNotes: STR, recommendedPoints: NUM },
-  required: ['solutionText', 'teacherNotes', 'recommendedPoints'],
-};
-
-const DNA_SCHEMA = {
-  type: Type.OBJECT,
-  properties: {
-    title: STR,
-    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
-    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
-    topic: STR,
-    language: { type: Type.STRING, enum: ['fr', 'ar', 'en', 'mixed'] },
-    palette: STR_ARR,
-    layoutStyle: STR,
-    illustrationStyle: STR,
-    sections: {
-      type: Type.ARRAY,
-      items: {
-        type: Type.OBJECT,
-        properties: {
-          heading: STR,
-          kind: { type: Type.STRING, enum: ['words', 'sentences', 'qcm', 'matching', 'phonics', 'commands', 'free'] },
-          itemsCount: INT,
-        },
-        required: ['heading', 'kind'],
-      },
-    },
-  },
-  required: ['title', 'grade', 'subject', 'topic', 'language', 'palette', 'layoutStyle', 'illustrationStyle', 'sections'],
-};
-
-const SIMILAR_SCHEMA = {
-  type: Type.OBJECT,
-  properties: {
-    exercises: {
-      type: Type.ARRAY,
-      items: {
-        type: Type.OBJECT,
-        properties: { ...EXERCISE_PROPS, imagePrompt: STR },
-        required: ['title', 'promptText', 'solutionText', 'format'],
-      },
-    },
-  },
-  required: ['exercises'],
-};
-
-const CHAT_ARTICLE_SCHEMA = {
-  type: Type.OBJECT,
-  properties: {
-    replyText: STR,
-    updatedArticle: {
-      type: Type.OBJECT,
-      properties: { title: STR, summary: STR, subject: STR, grade: STR, contentMarkdown: STR },
-      required: ['title', 'summary', 'subject', 'grade', 'contentMarkdown'],
-    },
-    suggestedChips: STR_ARR,
-  },
-  required: ['replyText', 'updatedArticle', 'suggestedChips'],
-};
+// Schemas and response contracts are encapsulated in src/server/skills/
 
 /** Clamp qcmCorrectIndex into range so a model drift can never break the UI. */
 function sanitizeExercise<T extends { qcmOptions?: string[]; qcmCorrectIndex?: number }>(ex: T): T {
@@ -779,6 +589,13 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
     const requestedFormat = validFormats.includes(format) ? format : undefined;
     const isParent = role === 'parent';
 
+    const cacheKey = hashKey({ grade, subject, topic: safeTopic, difficulty, format: requestedFormat, role, language: lang, trimester, points });
+    const cached = exerciseCache.get(cacheKey);
+    if (cached) {
+      res.json({ success: true, exercise: cached['exercise'], cached: true });
+      return;
+    }
+
     const prompt = compose(exerciseSkill, {
       grade,
       subject,
@@ -796,13 +613,15 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
     });
 
     const data = await aiGenerateJSON('A', prompt, exerciseSkill.schema, exerciseSkill.temperature);
+    const sanitized = sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number });
+    exerciseCache.set(cacheKey, { exercise: sanitized });
 
-    res.json({ success: true, exercise: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
+    res.json({ success: true, exercise: sanitized });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la génération';
     console.error('Error in /api/ai/generate-exercise:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -858,9 +677,9 @@ app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard,
     res.json({ success: true, transformed: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la transformation';
     console.error('Error in /api/ai/transform-exercise:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -888,13 +707,14 @@ app.post('/api/ai/generate-full-exam', originGuard, aiRateLimiter, aiDailyGuard,
     });
 
     const data = await aiGenerateJSON(examSkill.chain, prompt, examSkill.schema, examSkill.temperature);
-    enforceExamTotal20(data as { sections?: Array<{ points?: number }> });
+    enforceExamTotal20(data as { sections?: { points?: number }[] });
 
     res.json({ success: true, exam: data });
     return;
   } catch (err: unknown) {
     console.error('Error in /api/ai/generate-full-exam:', err);
-    res.status(500).json({ error: 'Service IA temporairement indisponible pour la génération de l\'examen.' });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -927,7 +747,8 @@ app.post('/api/ai/solve-exercise', originGuard, aiRateLimiter, aiDailyGuard, asy
     return;
   } catch (err: unknown) {
     console.error('Error in /api/ai/solve-exercise:', err);
-    res.status(500).json({ error: 'Service IA temporairement indisponible pour la résolution.' });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -964,9 +785,9 @@ app.post('/api/ai/draft-announcement', originGuard, aiRateLimiter, aiDailyGuard,
     res.json({ success: true, result: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la rédaction';
     console.error('Error in /api/ai/draft-announcement:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1000,9 +821,9 @@ app.post('/api/ai/explain-concept', originGuard, aiRateLimiter, aiDailyGuard, as
     res.json({ success: true, result: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de l\'explication';
     console.error('Error in /api/ai/explain-concept:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1078,9 +899,9 @@ app.post('/api/ai/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, 
     res.json({ success: true, tags: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de l\'analyse du document';
     console.error('Error in /api/ai/auto-tag-document:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1123,7 +944,8 @@ app.post('/api/ai/photo-solve', originGuard, aiRateLimiter, aiDailyGuard, async 
     return;
   } catch (err: unknown) {
     console.error('Error in /api/ai/photo-solve:', err);
-    res.status(500).json({ error: 'Service IA temporairement indisponible pour la résolution de photo.' });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1180,7 +1002,8 @@ app.post('/api/ai/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, asy
     return;
   } catch (err: unknown) {
     console.error('Error in /api/ai/summarize-docs:', err);
-    res.status(500).json({ error: 'Service IA temporairement indisponible pour le résumé.' });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1274,12 +1097,13 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
         resolve(uploadsFolder),
       ];
       const cleanRel = resourceUrl.replace(/^[/\\]+/, '');
-      // /uploads/... URLs map to the configured UPLOAD_DIR, everything else resolves from the app root.
-      const candidatePath = /^uploads[/\\]/.test(cleanRel)
-        ? resolve(uploadsFolder, cleanRel.replace(/^uploads[/\\]/, ''))
-        : resolve(process.cwd(), cleanRel);
-      const isAllowed = allowedRoots.some((root) => candidatePath === root || candidatePath.startsWith(root + sep));
-      if (!isAllowed || !existsSync(candidatePath)) {
+      const subPath = cleanRel.replace(/^uploads[/\\]/, '');
+      let candidatePath: string | null = null;
+      for (const root of allowedRoots) {
+        candidatePath = resolveInside(root, cleanRel) || resolveInside(root, subPath);
+        if (candidatePath && existsSync(candidatePath)) break;
+      }
+      if (!candidatePath || !existsSync(candidatePath)) {
         res.status(400).json({ error: 'Ressource introuvable ou non autorisée.' });
         return;
       }
@@ -1374,9 +1198,9 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
     res.json({ success: true, result: data, extractedText });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la génération de la fiche mémo';
     console.error('Error in /api/ai/generate-memo:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1687,6 +1511,13 @@ app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req
     const targetFormat = validFormats.includes(format) ? format : 'free';
     const lang: 'ar' | 'fr' = /[\u0600-\u06FF]/.test(originalPromptText || '') ? 'ar' : 'fr';
 
+    const cacheKey = hashKey({ grade, subject, topic: safeTopic, format: targetFormat, originalPromptText: safeOriginal, role, trimester });
+    const cached = exerciseCache.get(cacheKey);
+    if (cached) {
+      res.json({ success: true, variant: cached['variant'], cached: true });
+      return;
+    }
+
     const prompt = compose(exerciseVariantSkill, {
       grade,
       subject,
@@ -1705,12 +1536,15 @@ app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req
     data['aiGenerated'] = true;
     data['aiVerified'] = false;
 
-    res.json({ success: true, variant: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
+    const sanitized = sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number });
+    exerciseCache.set(cacheKey, { variant: sanitized });
+
+    res.json({ success: true, variant: sanitized });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la génération de la variante';
     console.error('Error in /api/ai/variant:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1732,73 +1566,49 @@ app.post('/api/ai/chat-article', originGuard, aiRateLimiter, aiDailyGuard, async
       return;
     }
 
-    const conversationHistoryStr = messages
-      .map((m: { role: string; content: string }) => `${m.role === 'user' ? 'Enseignant' : 'Assistant IA'}: ${m.content}`)
-      .join('\n');
-
     const lang: 'ar' | 'fr' = language
       ? resolveLang(language)
       : (/[\u0600-\u06FF]/.test(userPrompt) ? 'ar' : 'fr');
-    const activeChapter = chapter || currentArticle.chapter || '';
-    const tagsStr = Array.isArray(tags) && tags.length > 0 ? tags.map((t: string) => `#${t}`).join(', ') : '';
+    const safeUserPrompt = capText(userPrompt, CAPS.instruction);
+    const recentMessages = capHistory(messages, CAPS.history, CAPS.historyEach);
+    const safeArticle = {
+      ...currentArticle,
+      title: capText(currentArticle?.title, CAPS.short),
+      summary: capText(currentArticle?.summary, CAPS.short),
+      contentMarkdown: capText(currentArticle?.contentMarkdown, CAPS.article),
+    };
 
-    const frameworkSection = isFreeTopic
-      ? `MODE : BLOG PÉDAGOGIQUE LIBRE & ORIENTATION ÉDUCATIVE (Non contraint à un exercice unique de manuel)
-- Thématiques & الوسوم (Tags) ciblés : ${tagsStr || 'نصائح_تربوية, توجيه_الأولياء, مهارات_التعلم'}
-- Public visé : Familles, parents et élèves de l'école primaire tunisienne.
-Concentre tes conseils, méthodes d'apprentissage, gestion du temps et remédiations sur ces thématiques libres et pratiques.`
-      : `CADRE CURRICULAIRE OFFICIEL TUNISIEN (CNP) :
-- Matière : ${currentArticle.subject || 'Général'}
-- Niveau scolaire : ${currentArticle.grade || 'Primaire'}
-Tu dois fonder tes explications, exemples, remédiations et activités sur les compétences requises par le programme officiel du Ministère de l'Éducation tunisien.`;
+    const prompt = compose(articleSkill, {
+      messages: recentMessages,
+      currentArticle: safeArticle,
+      userPrompt: safeUserPrompt,
+      language: lang,
+      chapter: capText(chapter || currentArticle?.chapter, CAPS.topic),
+      isFreeTopic,
+      tags: Array.isArray(tags) ? tags.map((t: string) => capText(t, 50)) : [],
+      lang,
+      contextBlockStr: isFreeTopic
+        ? langRule(lang)
+        : contextBlock({
+            grade: currentArticle?.grade,
+            subject: currentArticle?.subject,
+            topic: chapter || currentArticle?.chapter || safeUserPrompt.slice(0, 300),
+            lang,
+          }),
+      dataTags: {
+        user_prompt: wrapData('user_prompt', safeUserPrompt, CAPS.instruction),
+        article_content: wrapData('article_content', safeArticle.contentMarkdown, CAPS.article),
+      },
+    });
 
-    const prompt = `Tu es un conseiller pédagogique senior pour l'enseignement primaire en Tunisie (Madrasati TN).
-Tu dialogues avec un enseignant pour co-rédiger un article de blog pédagogique percutant, clair et inspirant, destiné soit à d'autres enseignants, soit aux parents d'élèves.
-
-${frameworkSection}
-${isFreeTopic ? langRule(lang) : contextBlock({ grade: currentArticle.grade, subject: currentArticle.subject, topic: activeChapter || (userPrompt || '').slice(0, 300), lang })}
-
-Historique de la conversation :
-${conversationHistoryStr}
-
-Demande actuelle de l'enseignant :
-"${userPrompt}"
-
-État actuel de l'article en cours de rédaction :
-- Titre : ${currentArticle.title || 'Sans titre'}
-- Matière : ${currentArticle.subject || 'Général'}
-- Niveau scolaire : ${currentArticle.grade || 'Primaire'}
-- Chapitre : ${activeChapter || 'Général'}
-- Résumé : ${currentArticle.summary || ''}
-- Contenu Markdown actuel :
-${currentArticle.contentMarkdown || '(Vide)'}
-
-Mission :
-1. Réponds cordialement et de façon constructive à la demande de l'enseignant dans le champ "replyText" (dans la même langue : Arabe ou Français).
-2. Mets à jour et enrichis l'article dans le champ "updatedArticle" (utilise le format Markdown soigné avec titres ##, listes, encadrés > [!TIP] ou > [!NOTE], et exemples concrets de la réalité tunisienne).
-3. Propose 3 à 4 puces d'actions suivantes sous "suggestedChips" dans la langue correspondante.
-
-Format de sortie STRICT : JSON uniquement, sans markdown wrapper :
-{
-  "replyText": "...",
-  "updatedArticle": {
-    "title": "...",
-    "summary": "...",
-    "subject": "...",
-    "grade": "...",
-    "contentMarkdown": "..."
-  },
-  "suggestedChips": ["...", "...", "..."]
-}`;
-
-    const data = await aiGenerateJSON('D', prompt, CHAT_ARTICLE_SCHEMA, 0.7);
+    const data = await aiGenerateJSON(articleSkill.chain, prompt, articleSkill.schema, articleSkill.temperature);
 
     res.json({ success: true, ...data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la génération de l\'article';
     console.error('Error in /api/ai/chat-article:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });
@@ -1825,7 +1635,7 @@ const IMAGE_COMMON = 'child-friendly, bright and clean, simple background, no te
 
 const IMAGE_PROMPT_SCHEMA = {
   type: Type.OBJECT,
-  properties: { category: { type: Type.STRING, enum: IMAGE_CATEGORIES }, scene: STR },
+  properties: { category: { type: Type.STRING, enum: IMAGE_CATEGORIES }, scene: { type: Type.STRING } },
   required: ['category', 'scene'],
 };
 
@@ -1840,6 +1650,7 @@ async function buildImagePrompt(input: {
   subject?: string;
   grade?: string;
   kind?: string;
+  style?: string;
 }): Promise<{ prompt: string; scene: string; category: ImageCategory }> {
   const text = input.promptText.replace(/\s+/g, ' ').trim().slice(0, 600);
   let category: ImageCategory = input.kind === 'article-cover' ? 'article' : 'generic';
@@ -1864,61 +1675,29 @@ Règles : dessine le contexte ou la situation, jamais la question ni la réponse
     }
   }
   if (!scene) scene = text.slice(0, 200) || 'a friendly school scene for children';
-  return { prompt: `${scene}. ${IMAGE_STYLES[category]}. ${IMAGE_COMMON}`, scene, category };
+  const customStyle = input.style ? `${input.style}. ` : '';
+  return { prompt: `${scene}. ${customStyle}${IMAGE_STYLES[category]}. ${IMAGE_COMMON}`, scene, category };
 }
-
-const isImageBuffer = (b: Buffer): boolean =>
-  b.length > 1000 &&
-  ((b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) ||
-    (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) ||
-    (b.subarray(0, 4).toString() === 'RIFF' && b.subarray(8, 12).toString() === 'WEBP'));
-const imageExt = (b: Buffer): string => (b[0] === 0x89 ? 'png' : b[0] === 0xff ? 'jpg' : 'webp');
-
-// Free, keyless, but rate-limited per IP (answers 402 fast when over the limit), so it sits behind a short cooldown.
-async function pollinationsImage(prompt: string, seed: number): Promise<Buffer> {
-  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1024&height=768&nologo=true&safe=true&private=true&seed=${seed}&model=flux`;
-  const r = await fetch(url, { signal: AbortSignal.timeout(15000) });
-  if (!r.ok) throw new Error(`Pollinations HTTP ${r.status}`);
-  const buf = Buffer.from(await r.arrayBuffer());
-  if (!isImageBuffer(buf)) throw new Error('Pollinations returned no image');
-  return buf;
-}
-
-// Order of the image providers, best first. Override without a rebuild: IMAGE_CHAIN="cloudflare,pollinations,svg".
-const IMAGE_CHAIN = (process.env['IMAGE_CHAIN'] || 'pollinations,cloudflare,svg')
-  .split(',')
-  .map((p) => p.trim())
-  .filter(Boolean);
-const imageCooldowns = new Map<string, number>();
 
 async function generateIllustrationFile(prompt: string, scene: string, seed: number): Promise<string> {
-  for (const provider of IMAGE_CHAIN) {
-    if ((imageCooldowns.get(provider) ?? 0) > Date.now()) continue;
+  try {
+    const res = await generateImage({ prompt, seed });
+    return saveGenerated(`illustration_${randomUUID()}.${res.ext}`, res.data);
+  } catch (err) {
+    console.warn('[image] generateImage chain exhausted, attempting SVG fallback:', err instanceof Error ? err.message : err);
     try {
-      if (provider === 'pollinations') {
-        const b = await pollinationsImage(prompt, seed);
-        return saveGenerated(`illustration_${randomUUID()}.${imageExt(b)}`, b);
-      }
-      if (provider === 'cloudflare') {
-        if (!cloudflareConfigured) continue;
-        const b = await cloudflareFluxImage(prompt);
-        return saveGenerated(`illustration_${randomUUID()}.jpg`, b);
-      }
-      if (provider === 'svg') {
-        const svgText = await aiGenerateText(
-          `Create a clean, modern, pedagogical SVG illustration for Tunisian school children. Scene: "${scene}".
+      const svgText = await aiGenerateText(
+        `Create a clean, modern, pedagogical SVG illustration for Tunisian school children. Scene: "${scene}".
 Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use viewBox="0 0 800 450", smooth gradients, friendly rounded shapes. No text, no markdown formatting.`,
-        );
-        const rawSvg = svgText.replace(/```xml/g, '').replace(/```svg/g, '').replace(/```/g, '').trim();
-        return saveGenerated(`illustration_${randomUUID()}.svg`, rawSvg);
-      }
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
-      console.warn(`[image] ${provider} failed: ${msg} -> next`);
-      if (provider !== 'svg') imageCooldowns.set(provider, Date.now() + (/\b(402|429)\b/.test(msg) ? 45_000 : 30_000));
+      );
+      const cleanSvg = sanitizeSvg(svgText);
+      if (!cleanSvg) throw new Error('Generated SVG failed sanitization check');
+      return saveGenerated(`illustration_${randomUUID()}.svg`, cleanSvg);
+    } catch (svgErr) {
+      console.warn('[image] SVG fallback also failed:', svgErr instanceof Error ? svgErr.message : svgErr);
+      throw new Error("Aucun service d'illustration disponible pour le moment.");
     }
   }
-  throw new Error("Aucun service d'illustration disponible pour le moment.");
 }
 
 app.post('/api/ai/generate-illustration', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response) => {
@@ -1934,14 +1713,15 @@ app.post('/api/ai/generate-illustration', originGuard, aiRateLimiter, aiDailyGua
       subject: String(body.subject ?? '').slice(0, 60),
       grade: String(body.grade ?? '').slice(0, 30),
       kind: String(body.kind ?? '').slice(0, 30),
+      style: body.style ? String(body.style).slice(0, 150) : undefined,
     });
     const imageUrl = await generateIllustrationFile(prompt, scene, seedFor(promptText));
     res.json({ success: true, imageUrl, category });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : "Erreur lors de la création de l'illustration";
     console.error('Error in /api/ai/generate-illustration:', err);
-    res.status(500).json({ error: message });
+    const pub = toPublicError(err, "Erreur lors de la création de l'illustration");
+    res.status(pub.status).json({ error: pub.message });
     return;
   }
 });

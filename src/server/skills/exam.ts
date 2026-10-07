@@ -83,7 +83,7 @@ export function getExamSkeleton(subject?: string, lang?: 'ar' | 'fr'): {
   };
 }
 
-export function enforceExamTotal20(exam: { sections?: Array<{ points?: number }> }): void {
+export function enforceExamTotal20(exam: { sections?: { points?: number }[] }): void {
   if (!Array.isArray(exam.sections) || exam.sections.length === 0) return;
   const total = exam.sections.reduce((sum, s) => sum + (Number(s.points) || 0), 0);
   if (total !== 20) {
