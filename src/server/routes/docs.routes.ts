@@ -270,7 +270,7 @@ docsRouter.get('/', (_req: Request, res: Response): void => {
   res.json({ success: true, docs: readDocsIndex() });
 });
 
-docsRouter.get('/:id', (req: Request, res: Response): void => {
+docsRouter.get('/:id', async (req: Request, res: Response): Promise<void> => {
   const id = String(req.params['id'] || '');
   if (!SHEET_ID_RE.test(id)) {
     res.status(400).json({ error: 'Identifiant invalide.' });
@@ -283,8 +283,14 @@ docsRouter.get('/:id', (req: Request, res: Response): void => {
   }
   try {
     const doc = JSON.parse(readFileSync(filePath, 'utf8'));
-    if (doc.docType === 'lesson-plan' || doc.docType === 'series') delete doc.ownerUid;
-    res.json({ success: true, doc });
+    let isOwner = false;
+    if (doc.docType === 'lesson-plan' || doc.docType === 'series') {
+      // Optional login: tells the owner's own browser it may publish/edit; the uid itself is never exposed.
+      const viewerUid = await verifyFirebaseUser(req);
+      isOwner = Boolean(viewerUid && doc.ownerUid && viewerUid === doc.ownerUid);
+      delete doc.ownerUid;
+    }
+    res.json({ success: true, doc, isOwner });
   } catch (err: unknown) {
     console.error('Error in GET /api/docs/:id:', err);
     res.status(500).json({ error: 'Erreur lors de la lecture de la fiche.' });

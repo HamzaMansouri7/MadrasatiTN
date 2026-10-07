@@ -96,4 +96,6 @@ export interface InfographicDoc {
   author?: InfographicAuthor;
   createdAt?: string | number;
   updatedAt?: string | number;
+  /** Set client-side from the server on load; true only for the signed-in creator. Never persisted. */
+  isOwner?: boolean;
 }

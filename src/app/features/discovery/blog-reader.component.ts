@@ -132,6 +132,13 @@ import { BlogPost, EducationStore, FirebaseService, LanguageService } from '@cor
               <li class="ms-6 list-disc text-base text-[#34483C]">
                 {{ paragraph.slice(2) }}
               </li>
+            } @else if (paragraph.trim().startsWith('https://') && !paragraph.trim().includes(' ')) {
+              <a
+                [href]="paragraph.trim()"
+                class="inline-flex items-center gap-2 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-sm px-5 py-2.5 rounded-xl transition-colors">
+                <span class="material-icons text-base">open_in_new</span>
+                {{ lang.tr('Ouvrir la fiche complète (A4)', 'فتح الجذاذة كاملة (A4)') }}
+              </a>
             } @else if (paragraph.trim().length > 0) {
               <p class="leading-relaxed">
                 {{ paragraph }}

@@ -1020,10 +1020,11 @@ export class EducationStore {
           .map((w) => {
             const isMemo = w.docType === 'memo';
             const isPlan = w.docType === 'lesson-plan';
+            const isSeries = w.docType === 'series';
             return {
               id: w.id,
               sheetId: w.id,
-              openUrl: isPlan ? `/lesson-plan/${w.id}` : undefined,
+              openUrl: isPlan ? `/lesson-plan/${w.id}` : isSeries ? `/series/${w.id}` : undefined,
               title: w.title,
               chapter: w.topic || (isMemo ? 'Fiche Mémo Visuelle' : isPlan ? 'Fiche pédagogique' : 'Fiche communautaire'),
               topic: w.topic,
@@ -1035,7 +1036,9 @@ export class EducationStore {
                 ? `Fiche mémo synthétique A4 — ${w.topic || w.title}`
                 : isPlan
                   ? `Fiche pédagogique A4 — ${w.title}`
-                  : `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
+                  : isSeries
+                    ? `Série illustrée — ${w.title}`
+                    : `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
               photoUrl: w.thumb || (isMemo ? '/assets/memo/apple.svg' : undefined),
               solutionText: '',
               hasCorrection: w.authorRole === 'teacher' || isMemo || isPlan,
@@ -1325,7 +1328,10 @@ export class EducationStore {
 
     const doc: InfographicDoc = { ...generated, author: this.profileAuthor() };
     const saved = await this.saveLessonPlan({ doc });
-    if (saved) doc.id = saved.id;
+    if (saved) {
+      doc.id = saved.id;
+      doc.isOwner = Boolean(this.firebase.currentUser());
+    }
     this.currentLessonPlan.set(doc);
     return { ok: true, doc, docId: doc.id };
   }
@@ -1361,10 +1367,10 @@ export class EducationStore {
 
   private async fetchStructuredDoc<T extends { id: string }>(id: string, docType: 'lesson-plan' | 'series'): Promise<T | null> {
     try {
-      const res = await fetch('/api/docs/' + encodeURIComponent(id));
+      const res = await fetch('/api/docs/' + encodeURIComponent(id), { headers: await this.firebase.getAuthHeaders() });
       if (!res.ok) return null;
       const data = await res.json();
-      if (data.success && data.doc?.docType === docType) return data.doc as T;
+      if (data.success && data.doc?.docType === docType) return { ...data.doc, isOwner: Boolean(data.isOwner) } as T;
     } catch (err) {
       console.error(`Error loading ${docType}:`, err);
     }

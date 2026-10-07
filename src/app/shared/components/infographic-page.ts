@@ -26,14 +26,16 @@ import { EducationStore, FirebaseService, GradeLevel, InfographicDoc, LanguageSe
             <span class="material-icons text-sm">{{ shareCopied() ? 'check' : 'share' }}</span>
             <span>{{ shareCopied() ? lang.tr('Lien copié ✓', 'تم نسخ الرابط ✓') : lang.tr('Partager', 'مشاركة') }}</span>
           </button>
-          <button
-            type="button"
-            (click)="publishToBlog()"
-            [disabled]="blogPublishing() || blogPublished()"
-            class="px-4 py-1.5 rounded-xl bg-white hover:bg-[#F4F6F5] border border-[#E7DFCF] text-[#14251D] text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default">
-            <span class="material-icons text-sm">{{ blogPublished() ? 'check' : 'article' }}</span>
-            <span>{{ blogPublished() ? lang.tr('Publié au blog ✓', 'تم النشر في المدونة ✓') : lang.tr('Publier au blog', 'نشر في المدونة') }}</span>
-          </button>
+          @if (doc().isOwner) {
+            <button
+              type="button"
+              (click)="publishToBlog()"
+              [disabled]="blogPublishing() || blogPublished()"
+              class="px-4 py-1.5 rounded-xl bg-white hover:bg-[#F4F6F5] border border-[#E7DFCF] text-[#14251D] text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default">
+              <span class="material-icons text-sm">{{ blogPublished() ? 'check' : 'article' }}</span>
+              <span>{{ blogPublished() ? lang.tr('Publié au blog ✓', 'تم النشر في المدونة ✓') : lang.tr('Publier au blog', 'نشر في المدونة') }}</span>
+            </button>
+          }
           <button
             type="button"
             (click)="printDoc()"
@@ -340,17 +342,23 @@ export class InfographicPageComponent {
     const v = this.values();
     const isFr = d.language === 'fr';
     const url = `${window.location.origin}/lesson-plan/${d.id}`;
-    const list = (items?: string[]) => (items || []).map((i) => `• ${i}`).join('\n');
-    const stages = (v.stages || [])
-      .map((s) => `${s.step}. ${s.name} (${s.minutes} ${isFr ? 'min' : 'د'})`)
-      .join('\n');
+    // The blog reader renders blank-line-separated blocks: "## " headings, "- " items, a bare URL as a button.
+    const section = (title: string, items: string[]) =>
+      items.length ? [`## ${title}`, ...items.map((i) => `- ${i}`)] : [];
+    const stages = (v.stages || []).map((s) => `${s.step}. ${s.name} (${s.minutes} ${isFr ? 'min' : 'د'})`);
     const blocks = [
-      v.objectives?.length ? `${isFr ? 'Objectifs' : 'الأهداف'}\n${list(v.objectives)}` : '',
-      stages ? `${isFr ? 'Déroulement' : 'سير الحصة'}\n${stages}` : '',
-      v.materials?.length ? `${isFr ? 'Matériel' : 'الوسائل'}\n${list(v.materials)}` : '',
-      `${isFr ? 'Fiche complète A4 (imprimable)' : 'الجذاذة كاملة A4 (قابلة للطباعة)'} : ${url}`,
-    ].filter(Boolean);
+      ...section(isFr ? 'Objectifs' : 'الأهداف', v.objectives || []),
+      ...section(isFr ? 'Déroulement' : 'سير الحصة', stages),
+      ...section(isFr ? 'Matériel' : 'الوسائل', v.materials || []),
+      url,
+    ];
     const content = blocks.join('\n\n');
+    await this.store.loadBlogPosts();
+    const duplicate = this.store.blogPosts().some((p) => p.content.includes(url));
+    if (duplicate) {
+      this.blogPublished.set(true);
+      return;
+    }
     const excerpt = (v.objectives?.[0] || d.title).slice(0, 150);
     const name = d.author?.name || this.firebase.userProfile()?.displayName || user.displayName || 'Enseignant Certifié';
 
