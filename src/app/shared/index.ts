@@ -11,3 +11,4 @@ export * from './components/qa-thread';
 export * from './components/blog-card';
 export * from './components/doc-card';
 export * from './components/teacher-card';
+export * from './components/comment-panel';
