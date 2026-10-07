@@ -2,6 +2,8 @@
  * Provider / model / key cooldown tracking for AI fallback chains.
  */
 
+import { classifyProviderError } from './error-class';
+
 const cooldowns = new Map<string, number>();
 
 export const statusOf = (err: unknown): string => {
@@ -26,22 +28,20 @@ export function markCooldown(
   key: string | number = '*',
   err?: unknown,
 ): string {
-  const status = err ? statusOf(err) : '429';
+  const m = err instanceof Error ? err.message : String(err ?? '');
+  const classification = classifyProviderError(m);
   const now = Date.now();
+  const dur = classification.cooldownMs || 2 * 60 * 1000;
 
-  if (status === '503' || status === '504' || status === '500') {
-    // Model-wide cooldown across all keys for that model
-    cooldowns.set(`${provider}|${model}|*`, now + 30 * 1000);
-  } else if (status === '429') {
-    cooldowns.set(`${provider}|${model}|${key}`, now + 2 * 60 * 1000);
-  } else if (status === '422') {
-    cooldowns.set(`${provider}|${model}|${key}`, now + 15 * 1000);
+  if (classification.providerWide) {
+    cooldowns.set(`${provider}|*|*`, now + dur);
+  } else if (classification.kind === 'overload') {
+    cooldowns.set(`${provider}|${model}|*`, now + dur);
   } else {
-    // 401, 403, 404 long cooldown
-    cooldowns.set(`${provider}|${model}|${key}`, now + 30 * 60 * 1000);
+    cooldowns.set(`${provider}|${model}|${key}`, now + dur);
   }
 
-  return status;
+  return statusOf(err);
 }
 
 export function isCoolingDown(
@@ -50,6 +50,9 @@ export function isCoolingDown(
   key: string | number = '*',
 ): boolean {
   const now = Date.now();
+  const providerWide = cooldowns.get(`${provider}|*|*`) ?? 0;
+  if (providerWide > now) return true;
+
   const modelWide = cooldowns.get(`${provider}|${model}|*`) ?? 0;
   if (modelWide > now) return true;
 

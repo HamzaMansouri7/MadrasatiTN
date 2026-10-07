@@ -11,3 +11,8 @@ export * from './memo';
 export * from './explain';
 export * from './announcement';
 export * from './tag';
+export * from './exam';
+export * from './solve';
+export * from './summarize';
+export * from './article';
+export * from './worksheet';

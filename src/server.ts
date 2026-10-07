@@ -24,8 +24,26 @@ import {
   explainSkill,
   announcementSkill,
   tagSkill,
+  examSkill,
+  enforceExamTotal20,
+  solveSkill,
+  summarizeSkill,
+  articleSkill,
+  worksheetDnaSkill,
+  worksheetSimilarSkill,
+  enforceExactExerciseCount,
 } from './server/skills';
+import { sanitizeSvg } from './server/ai/svg-sanitize';
+import { resolveInside } from './server/safe-path';
+import { wrapData, capHistory, capText, CAPS } from './server/input-caps';
+import { toPublicError } from './server/ai/public-error';
+import { createCache, hashKey } from './server/ai/cache';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
+
+const exerciseCache = createCache<Record<string, unknown>>({
+  ttlMs: 24 * 60 * 60 * 1000,
+  max: 500,
+});
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
 import { SEED_BANK_EXERCISES, SEED_COURSES } from './app/core/data/seed-docs.data';
@@ -850,7 +868,7 @@ app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard,
 // 1b. Generate Full 20-Point Tunisian Exam with Multiple Blocks
 app.post('/api/ai/generate-full-exam', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, trimester, topics, language } = req.body;
+    const { grade, subject, trimester, topic, topics, language } = req.body;
 
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
@@ -858,69 +876,25 @@ app.post('/api/ai/generate-full-exam', originGuard, aiRateLimiter, aiDailyGuard,
     }
 
     const lang = resolveLang(language);
-    const safeTopics = (topics || '').slice(0, 300);
-    const prompt = `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie.
-${contextBlock({ grade, subject, trimester, topic: safeTopics, lang })}
-Génère une Évaluation Somnative / Devoir de Synthèse officiel complet pour l'enseignement primaire tunisien.
-- Niveau : ${grade || '4ème Année'}
-- Matière : ${subject || 'Mathématiques'}
-- Période : ${trimester || 'Trimestre 1'}
-- Thèmes / Chapitres : ${safeTopics || 'Programme officiel complet du trimestre'}
+    const safeTopic = (topic || topics || '').slice(0, 300);
+    const prompt = compose(examSkill, {
+      grade,
+      subject,
+      trimester,
+      topic: safeTopic,
+      topics: safeTopic,
+      lang,
+      contextBlockStr: contextBlock({ grade, subject, trimester, topic: safeTopic, lang }),
+    });
 
-Le barème DOIT totaliser exactement 20 points, réparti en :
-1. Exercice 1 (Connaissances directes, calcul ou grammaire) : 6 points
-2. Exercice 2 (Application, géométrie ou compréhension) : 6 points
-3. Exercice 3 / Situation Problème / Production écrite : 8 points
-
-Réponds STRICTEMENT au format JSON valide suivant :
-{
-  "examTitle": "Titre officiel de l'évaluation (ex: Évaluation des Acquis du 1er Trimestre)",
-  "sections": [
-    {
-      "heading": "I. Activités Numériques & Calcul",
-      "exerciseTitle": "Exercice N°1 : Connaissances et Calcul",
-      "points": 6,
-      "promptText": "Énoncé complet et clair de l'exercice 1...",
-      "solutionText": "Correction détaillée étape par étape...",
-      "hints": ["Indice méthodologique"]
-    },
-    {
-      "heading": "II. Géométrie et Mesure",
-      "exerciseTitle": "Exercice N°2 : Application",
-      "points": 6,
-      "promptText": "Énoncé complet de l'exercice 2...",
-      "solutionText": "Correction détaillée...",
-      "hints": ["Indice"]
-    },
-    {
-      "heading": "III. Résolution de Problème / Situation d'Intégration",
-      "exerciseTitle": "Exercice N°3 : Situation Problème",
-      "points": 8,
-      "promptText": "Situation réaliste tunisienne à plusieurs étapes...",
-      "solutionText": "Solution détaillée étape par étape avec calculs intermédiaires...",
-      "hints": ["Indice d'aide"]
-    }
-  ]
-}`;
-
-    const data = await aiGenerateJSON('A', prompt, EXAM_SCHEMA, 0.4);
-
-    // Enforce the official 6+6+8 = 20 points barème server-side (model can drift).
-    const sections = data['sections'] as { points?: number }[] | undefined;
-    if (Array.isArray(sections) && sections.length === 3) {
-      const total = sections.reduce((sum, s) => sum + (Number(s.points) || 0), 0);
-      if (total !== 20) {
-        const official = [6, 6, 8];
-        sections.forEach((s, i) => (s.points = official[i]));
-      }
-    }
+    const data = await aiGenerateJSON(examSkill.chain, prompt, examSkill.schema, examSkill.temperature);
+    enforceExamTotal20(data as { sections?: Array<{ points?: number }> });
 
     res.json({ success: true, exam: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la génération de l\'examen';
     console.error('Error in /api/ai/generate-full-exam:', err);
-    res.status(500).json({ error: message });
+    res.status(500).json({ error: 'Service IA temporairement indisponible pour la génération de l\'examen.' });
     return;
   }
 });
@@ -937,27 +911,23 @@ app.post('/api/ai/solve-exercise', originGuard, aiRateLimiter, aiDailyGuard, asy
 
     const lang = resolveLang(language);
     const safePrompt = (promptText || '').slice(0, 1500);
-    const prompt = `Tu es un enseignant tunisien chevronné. Rédige le corrigé officiel, rigoureux et didactique de l'exercice suivant pour le niveau ${grade || 'Primaire'} (${subject || 'Général'}) :
-${contextBlock({ grade, subject, trimester, topic: (topic || safePrompt).slice(0, 300), lang })}
-"${safePrompt}"
+    const prompt = compose(solveSkill, {
+      grade,
+      subject,
+      language,
+      trimester,
+      topic,
+      promptText: safePrompt,
+      contextBlockStr: contextBlock({ grade, subject, trimester, topic: (topic || safePrompt).slice(0, 300), lang }),
+    });
 
-AUTO-VÉRIFICATION OBLIGATOIRE : avant de répondre, refais chaque calcul / vérifie chaque réponse une deuxième fois. Si un résultat intermédiaire ne colle pas, corrige-le. Le corrigé final doit être exact à 100%.
-
-Réponds STRICTEMENT au format JSON valide suivant :
-{
-  "solutionText": "Corrigé étape par étape, clair, pédagogique avec le résultat final mis en évidence",
-  "teacherNotes": "Conseils pédagogiques pour l'enseignant et critères d'évaluation",
-  "recommendedPoints": 5
-}`;
-
-    const data = await aiGenerateJSON('A', prompt, SOLVE_SCHEMA, 0.2);
+    const data = await aiGenerateJSON('A', prompt, solveSkill.schema, solveSkill.temperature);
 
     res.json({ success: true, result: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la résolution';
     console.error('Error in /api/ai/solve-exercise:', err);
-    res.status(500).json({ error: message });
+    res.status(500).json({ error: 'Service IA temporairement indisponible pour la résolution.' });
     return;
   }
 });
@@ -1117,20 +1087,9 @@ app.post('/api/ai/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, 
 
 // 3b. Photo-Solve (public, zero-friction): parent snaps a photo of an exercise →
 // one multimodal call extracts the text and produces a verified step-by-step solution
-// + a parent guide. The acquisition feature — guarded but NOT behind login.
-const PHOTO_SOLVE_SCHEMA = {
-  type: Type.OBJECT,
-  properties: {
-    extractedText: STR,
-    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
-    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
-    solutionText: STR,
-    parentGuide: STR,
-    checkQuestion: STR,
-  },
-  required: ['extractedText', 'grade', 'subject', 'solutionText', 'parentGuide'],
-};
-
+// 3b. Photo-Solve (public, zero-friction): parent snaps a photo of an exercise →
+// one multimodal call extracts the text and produces a verified step-by-step solution
+// + a parent guide.
 app.post('/api/ai/photo-solve', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
     const { base64Data, contentType, language } = req.body;
@@ -1145,17 +1104,11 @@ app.post('/api/ai/photo-solve', originGuard, aiRateLimiter, aiDailyGuard, async 
     }
 
     const lang = resolveLang(language);
-    const prompt = `Tu es un enseignant tunisien chevronné du primaire. Un parent vient de photographier un exercice (cahier, livre ou devoir).
-${langRule(lang)}
-NOTE : le corrigé doit être rédigé dans la LANGUE DE L'EXERCICE photographié (arabe si l'énoncé est en arabe, français si en français).
-
-Mission :
-1. "extractedText" : transcris fidèlement l'énoncé photographié (texte seul, sans décor).
-2. "grade" / "subject" : déduis le niveau et la matière du programme tunisien.
-3. "solutionText" : corrigé étape par étape, clair et pédagogique, résultat final mis en évidence.
-   AUTO-VÉRIFICATION OBLIGATOIRE : refais chaque calcul une deuxième fois avant de répondre ; le corrigé doit être exact à 100%.
-4. "parentGuide" : 2-3 conseils concrets pour que le parent accompagne l'enfant SANS lui donner la réponse directement.
-5. "checkQuestion" : une petite question de vérification à poser à l'enfant après.`;
+    const prompt = compose(solveSkill, {
+      language,
+      isImageInput: true,
+      contextBlockStr: langRule(lang),
+    });
 
     const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
     const mime = (contentType || 'image/jpeg').startsWith('image/') ? (contentType || 'image/jpeg') : 'image/jpeg';
@@ -1164,44 +1117,16 @@ Mission :
       { text: prompt },
     ];
 
-    const data = await aiGenerateJSON('C', contents, PHOTO_SOLVE_SCHEMA, 0.2);
+    const data = await aiGenerateJSON('C', contents, solveSkill.schema, solveSkill.temperature);
 
     res.json({ success: true, result: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la résolution de la photo';
     console.error('Error in /api/ai/photo-solve:', err);
-    res.status(500).json({ error: message });
+    res.status(500).json({ error: 'Service IA temporairement indisponible pour la résolution de photo.' });
     return;
   }
 });
-
-const SUMMARIZE_DOCS_SCHEMA = {
-  type: Type.OBJECT,
-  properties: {
-    title: STR,
-    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
-    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
-    trimester: { type: Type.STRING, enum: ['Trimestre 1', 'Trimestre 2', 'Trimestre 3'] },
-    summaryMarkdown: STR,
-    keyPoints: {
-      type: Type.ARRAY,
-      items: STR,
-    },
-    glossary: {
-      type: Type.ARRAY,
-      items: {
-        type: Type.OBJECT,
-        properties: {
-          term: STR,
-          def: STR,
-        },
-        required: ['term', 'def'],
-      },
-    },
-  },
-  required: ['title', 'grade', 'subject', 'summaryMarkdown', 'keyPoints', 'glossary'],
-};
 
 app.post('/api/ai/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
@@ -1224,17 +1149,15 @@ app.post('/api/ai/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, asy
     const lang = resolveLang(language);
     const context = (grade || subject) ? contextBlock({ grade, subject, trimester, lang }) : langRule(lang);
 
-    const prompt = `Tu es un enseignant tunisien et un expert en synthèse de cours du primaire.
-${context}
-${title ? `Titre indicatif du document : "${title}"` : ''}
-
-Consignes strictes :
-1. Transcris et synthétise fidèlement toutes les pages soumises dans l'ordre (OCR manuscrit ou imprimé).
-2. Règle ZÉRO-HALLUCINATION : Ne rajoute aucun fait ni formule absente du document source.
-3. Rédige le résumé dans la LANGUE DU DOCUMENT (arabe par défaut si mixte, français si énoncé français).
-4. Pour "summaryMarkdown", utilise du Markdown structuré (titres ##, puces, tableaux explicatifs si pertinent).
-5. "keyPoints" : liste 3 à 6 points clés essentiels à retenir pour l'élève.
-6. "glossary" : liste des termes techniques/concepts avec leurs définitions claires.`;
+    const safeTitle = (title || '').slice(0, 200);
+    const prompt = compose(summarizeSkill, {
+      grade,
+      subject,
+      trimester,
+      title: safeTitle,
+      lang,
+      contextBlockStr: context,
+    });
 
     const contents: GeminiPart[] = [];
     for (const img of rawImages) {
@@ -1251,14 +1174,13 @@ Consignes strictes :
 
     contents.push({ text: prompt });
 
-    const data = await aiGenerateJSON('C', contents, SUMMARIZE_DOCS_SCHEMA, 0.2);
+    const data = await aiGenerateJSON(summarizeSkill.chain, contents, summarizeSkill.schema, summarizeSkill.temperature);
 
     res.json({ success: true, result: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la génération du résumé';
     console.error('Error in /api/ai/summarize-docs:', err);
-    res.status(500).json({ error: message });
+    res.status(500).json({ error: 'Service IA temporairement indisponible pour le résumé.' });
     return;
   }
 });
@@ -1498,28 +1420,9 @@ app.post('/api/ai/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, 
     }
 
     const safeDocName = (documentName || '').slice(0, 200);
-    const prompt = `Tu es un expert en design pédagogique pour l'école primaire tunisienne (1ère à 6ème année).
-Analyse cette image de fiche d'exercices / affiche scolaire et extrais son "ADN visuel" afin de pouvoir générer d'autres fiches dans EXACTEMENT le même style.
-Nom du fichier : "${safeDocName}"
-
-Réponds STRICTEMENT au format JSON valide suivant :
-{
-  "title": "Titre de la fiche détecté",
-  "grade": "1ère Année" | "2ème Année" | "3ème Année" | "4ème Année" | "5ème Année" | "6ème Année",
-  "subject": "Mathématiques" | "Français" | "اللغة العربية" | "Éveil Scientifique" | "Histoire & Géographie" | "Anglais",
-  "topic": "Thème/chapitre précis (ex: Addition jusqu'à 10, Greetings, Phonics Tt)",
-  "language": "fr" | "ar" | "en" | "mixed",
-  "palette": ["#RRGGBB", "#RRGGBB", "#RRGGBB", "#RRGGBB"],
-  "layoutStyle": "Description courte de la mise en page (ex: grille de 4 cartes colorées arrondies, en-tête festif, clipart par mot)",
-  "illustrationStyle": "Style des dessins (ex: cartoon mignon, contours arrondis, couleurs vives, fond blanc)",
-  "sections": [
-    { "heading": "Titre de section détecté", "kind": "words" | "sentences" | "qcm" | "matching" | "phonics" | "commands" | "free", "itemsCount": 3 }
-  ]
-}
-
-Instructions :
-- palette : 3 à 6 couleurs HEX dominantes réellement présentes dans l'image.
-- sections : liste fidèle des blocs/leçons visibles, dans l'ordre.`;
+    const prompt = compose(worksheetDnaSkill, {
+      documentName: safeDocName,
+    });
 
     const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
     const mime = contentType || (base64Data.startsWith('data:image/png') ? 'image/png' : 'image/jpeg');
@@ -1528,14 +1431,13 @@ Instructions :
       { text: prompt },
     ];
 
-    const data = await aiGenerateJSON('C', contents, DNA_SCHEMA, 0.2);
+    const data = await aiGenerateJSON(worksheetDnaSkill.chain, contents, worksheetDnaSkill.schema, worksheetDnaSkill.temperature);
 
     res.json({ success: true, dna: data });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de l\'analyse de la fiche';
     console.error('Error in /api/ai/analyze-worksheet:', err);
-    res.status(500).json({ error: message });
+    res.status(500).json({ error: 'Service IA temporairement indisponible pour l\'analyse de fiche.' });
     return;
   }
 });
@@ -1562,56 +1464,24 @@ app.post('/api/ai/generate-similar', originGuard, aiRateLimiter, aiDailyGuard, a
     const topic = (dna.topic || '').toString().slice(0, 200);
     const palette = Array.isArray(dna.palette) ? dna.palette.slice(0, 6) : [];
     const dnaLang = dna.language === 'fr' ? 'fr' as const : 'ar' as const;
-    const originalSections = Array.isArray(dna.sections)
-      ? dna.sections.map((s: { heading?: string }) => s.heading).filter(Boolean).join(' | ').slice(0, 400)
-      : '';
 
-    const prompt = `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie.
-${contextBlock({ grade, subject, topic, lang: dnaLang })}
-Génère ${n} exercices NOUVEAUX et variés, du même style et du même thème qu'une fiche existante, pour l'école primaire tunisienne.
-${originalSections ? `IMPORTANT — ANTI-DOUBLON : la fiche originale contient déjà ces sections : "${originalSections}". Tes exercices doivent être DIFFÉRENTS (autres valeurs, autres mots, autres situations), jamais des copies.` : ''}
-- Niveau: ${grade}
-- Matière: ${subject}
-- Thème: ${topic || 'conforme au programme officiel'}
-- Palette de couleurs à réutiliser: ${palette.join(', ') || 'couleurs vives et enfantines'}
-- Style d'illustration: ${(dna.illustrationStyle || 'cartoon mignon, couleurs vives').toString().slice(0, 200)}
+    const prompt = compose(worksheetSimilarSkill, {
+      dna,
+      count: n,
+      contextBlockStr: contextBlock({ grade, subject, topic, lang: dnaLang }),
+    });
 
-Réponds STRICTEMENT au format JSON valide suivant :
-{
-  "exercises": [
-    {
-      "title": "Titre court de l'exercice",
-      "promptText": "Énoncé complet et clair adapté au niveau",
-      "solutionText": "Correction type",
-      "hints": ["Indice 1"],
-      "points": 5,
-      "format": "free" | "qcm" | "true_false" | "fill_blanks" | "matching",
-      "qcmOptions": ["Option 1", "Option 2", "Option 3"],
-      "qcmCorrectIndex": 0,
-      "tfStatements": [{"text": "Affirmation", "answer": true}],
-      "gapText": "Texte avec [[mot]] à deviner",
-      "matchingPairs": [{"left": "A", "right": "B"}],
-      "imagePrompt": "Description en anglais d'une illustration cartoon pour cet exercice (sans texte dans l'image)"
-    }
-  ]
-}
-
-Instructions :
-- Fournis exactement ${n} exercices dans "exercises".
-- Varie les formats quand c'est pertinent ; remplis uniquement les champs utiles au format choisi.
-- imagePrompt : courte description en anglais, style enfant, fond blanc, PAS de texte dans l'image.`;
-
-    const data = await aiGenerateJSON('A', prompt, SIMILAR_SCHEMA, 0.6);
-    const exercises = Array.isArray(data['exercises'])
+    const data = await aiGenerateJSON(worksheetSimilarSkill.chain, prompt, worksheetSimilarSkill.schema, worksheetSimilarSkill.temperature);
+    let exercises = Array.isArray(data['exercises'])
       ? (data['exercises'] as { qcmOptions?: string[]; qcmCorrectIndex?: number }[]).map(sanitizeExercise)
       : [];
+    exercises = enforceExactExerciseCount(exercises, n);
 
     res.json({ success: true, exercises, palette, grade, subject, topic });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la génération des exercices similaires';
     console.error('Error in /api/ai/generate-similar:', err);
-    res.status(500).json({ error: message });
+    res.status(500).json({ error: 'Service IA temporairement indisponible pour la génération d\'exercices similaires.' });
     return;
   }
 });
