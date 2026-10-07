@@ -101,6 +101,7 @@ export interface ExerciseItem {
   theme?: string;
   watermarkText?: string;
   sheetId?: string;        // links a community card to a shared worksheet (/generate?sheet=ID)
+  openUrl?: string;        // in-app viewer for structured docs (e.g. /lesson-plan/ID)
   teacherId?: string;      // author attribution → public `teachers` card
   teacherName?: string;
 }

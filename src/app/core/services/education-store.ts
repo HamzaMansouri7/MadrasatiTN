@@ -1019,22 +1019,26 @@ export class EducationStore {
           .filter((w) => !existing.has(w.id))
           .map((w) => {
             const isMemo = w.docType === 'memo';
+            const isPlan = w.docType === 'lesson-plan';
             return {
               id: w.id,
               sheetId: w.id,
+              openUrl: isPlan ? `/lesson-plan/${w.id}` : undefined,
               title: w.title,
-              chapter: w.topic || (isMemo ? 'Fiche Mémo Visuelle' : 'Fiche communautaire'),
+              chapter: w.topic || (isMemo ? 'Fiche Mémo Visuelle' : isPlan ? 'Fiche pédagogique' : 'Fiche communautaire'),
               topic: w.topic,
               subject: (w.subject || 'Français') as SubjectName,
               grade: (w.grade || '1ère Année') as GradeLevel,
-              docType: (isMemo ? 'Fiche Mémento' : "Série d'Exercices") as DocType,
+              docType: (isMemo ? 'Fiche Mémento' : isPlan ? 'Fiche de Cours' : "Série d'Exercices") as DocType,
               difficulty: 'Moyen' as const,
               promptText: isMemo
                 ? `Fiche mémo synthétique A4 — ${w.topic || w.title}`
-                : `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
+                : isPlan
+                  ? `Fiche pédagogique A4 — ${w.title}`
+                  : `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
               photoUrl: w.thumb || (isMemo ? '/assets/memo/apple.svg' : undefined),
               solutionText: '',
-              hasCorrection: w.authorRole === 'teacher' || isMemo,
+              hasCorrection: w.authorRole === 'teacher' || isMemo || isPlan,
               hints: [],
               points: 10,
               theme: w.topic,

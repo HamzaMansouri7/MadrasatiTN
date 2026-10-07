@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
-import { InfographicDoc, LanguageService, LessonPlanDocValues } from '@core';
+import { EducationStore, FirebaseService, GradeLevel, InfographicDoc, LanguageService, LessonPlanDocValues, SubjectName } from '@core';
 
 @Component({
   selector: 'app-infographic-page',
@@ -25,6 +25,14 @@ import { InfographicDoc, LanguageService, LessonPlanDocValues } from '@core';
             class="px-4 py-1.5 rounded-xl bg-white hover:bg-[#F4F6F5] border border-[#E7DFCF] text-[#14251D] text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
             <span class="material-icons text-sm">{{ shareCopied() ? 'check' : 'share' }}</span>
             <span>{{ shareCopied() ? lang.tr('Lien copié ✓', 'تم نسخ الرابط ✓') : lang.tr('Partager', 'مشاركة') }}</span>
+          </button>
+          <button
+            type="button"
+            (click)="publishToBlog()"
+            [disabled]="blogPublishing() || blogPublished()"
+            class="px-4 py-1.5 rounded-xl bg-white hover:bg-[#F4F6F5] border border-[#E7DFCF] text-[#14251D] text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default">
+            <span class="material-icons text-sm">{{ blogPublished() ? 'check' : 'article' }}</span>
+            <span>{{ blogPublished() ? lang.tr('Publié au blog ✓', 'تم النشر في المدونة ✓') : lang.tr('Publier au blog', 'نشر في المدونة') }}</span>
           </button>
           <button
             type="button"
@@ -289,9 +297,13 @@ import { InfographicDoc, LanguageService, LessonPlanDocValues } from '@core';
 })
 export class InfographicPageComponent {
   readonly lang = inject(LanguageService);
+  private readonly store = inject(EducationStore);
+  private readonly firebase = inject(FirebaseService);
 
   readonly doc = input.required<InfographicDoc>();
   readonly shareCopied = signal(false);
+  readonly blogPublishing = signal(false);
+  readonly blogPublished = signal(false);
 
   readonly values = computed<LessonPlanDocValues>(() => {
     return (this.doc().values as LessonPlanDocValues) || {
@@ -315,6 +327,57 @@ export class InfographicPageComponent {
 
   t(fr: string, ar: string): string {
     return this.doc().language === 'fr' ? fr : ar;
+  }
+
+  async publishToBlog() {
+    if (typeof window === 'undefined' || this.blogPublishing() || this.blogPublished()) return;
+    const user = this.firebase.currentUser();
+    if (!user) {
+      this.store.openSignupModal('teacher');
+      return;
+    }
+    const d = this.doc();
+    const v = this.values();
+    const isFr = d.language === 'fr';
+    const url = `${window.location.origin}/lesson-plan/${d.id}`;
+    const list = (items?: string[]) => (items || []).map((i) => `• ${i}`).join('\n');
+    const stages = (v.stages || [])
+      .map((s) => `${s.step}. ${s.name} (${s.minutes} ${isFr ? 'min' : 'د'})`)
+      .join('\n');
+    const blocks = [
+      v.objectives?.length ? `${isFr ? 'Objectifs' : 'الأهداف'}\n${list(v.objectives)}` : '',
+      stages ? `${isFr ? 'Déroulement' : 'سير الحصة'}\n${stages}` : '',
+      v.materials?.length ? `${isFr ? 'Matériel' : 'الوسائل'}\n${list(v.materials)}` : '',
+      `${isFr ? 'Fiche complète A4 (imprimable)' : 'الجذاذة كاملة A4 (قابلة للطباعة)'} : ${url}`,
+    ].filter(Boolean);
+    const content = blocks.join('\n\n');
+    const excerpt = (v.objectives?.[0] || d.title).slice(0, 150);
+    const name = d.author?.name || this.firebase.userProfile()?.displayName || user.displayName || 'Enseignant Certifié';
+
+    this.blogPublishing.set(true);
+    try {
+      await this.store.addBlogPost({
+        title: d.title,
+        titleAr: isFr ? undefined : d.title,
+        excerpt,
+        excerptAr: isFr ? undefined : excerpt,
+        content,
+        contentAr: isFr ? undefined : content,
+        subject: d.subject as SubjectName,
+        grade: d.grade as GradeLevel,
+        tags: [String(d.subject), String(d.grade), isFr ? 'Fiche pédagogique' : 'جذاذة'],
+        authorId: user.uid,
+        authorName: name,
+        authorTitle: isFr ? 'Enseignant Certifié' : 'مربٍ معتمد',
+        readTimeMinutes: Math.max(2, Math.ceil(content.split(/\s+/).length / 180)),
+      });
+      this.blogPublished.set(true);
+      this.store.showToast(this.lang.tr('Publié au blog', 'تم النشر في المدونة'), 'success');
+    } catch {
+      this.store.showToast(this.lang.tr('Échec de la publication', 'تعذّر النشر'), 'error');
+    } finally {
+      this.blogPublishing.set(false);
+    }
   }
 
   async shareDoc() {

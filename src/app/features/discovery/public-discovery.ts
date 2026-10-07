@@ -381,7 +381,16 @@ interface RecitationItem {
 
               <!-- Action Bar: all actions on one compact line -->
               <div class="pt-4 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5">
-                
+
+                @if (ex.openUrl) {
+                  <a
+                    [routerLink]="ex.openUrl"
+                    class="col-span-2 w-full justify-center bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1.5 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
+                    <span class="material-icons text-[12px]">open_in_new</span>
+                    {{ lang.tr('Ouvrir la fiche', 'فتح الجذاذة') }}
+                  </a>
+                }
+
                 <!-- Q&A -->
                 <button
                   (click)="toggleCommentPanel(ex.id)"
