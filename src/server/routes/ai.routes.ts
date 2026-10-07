@@ -728,11 +728,15 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
       res.status(400).json({ error: 'Un thème ou une consigne est requis.' });
       return;
     }
+    if (!grade || !subject) {
+      res.status(400).json({ error: 'Le niveau et la matière sont requis.' });
+      return;
+    }
 
     const lang: 'ar' | 'fr' = resolveLang(language);
     const safeTopic = capText(topic || instructions || 'Leçon de base', 300);
-    const resolvedGrade = grade || '4ème Année';
-    const resolvedSubject = subject || 'Mathématiques';
+    const resolvedGrade = String(grade);
+    const resolvedSubject = String(subject);
 
     const prompt = compose(lessonPlanSkill, {
       grade: resolvedGrade,
@@ -784,6 +788,10 @@ aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, r
       res.status(400).json({ error: 'Un texte de cours ou un thème historique est requis.' });
       return;
     }
+    if (!grade || !subject) {
+      res.status(400).json({ error: 'Le niveau et la matière sont requis.' });
+      return;
+    }
 
     const lang: 'ar' | 'fr' = resolveLang(language);
     const safeTopic = capText(topic || 'Histoire de la Tunisie', 300);
@@ -791,14 +799,14 @@ aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, r
 
     const prompt = compose(seriesSkill, {
       mode: 'plan' as const,
-      grade: grade || '5ème Année',
-      subject: subject || 'Histoire & Géographie',
+      grade: grade,
+      subject: subject,
       topic: safeTopic,
       lessonText: safeText,
       lang,
       contextBlockStr: contextBlock({
-        grade: grade || '5ème Année',
-        subject: subject || 'Histoire & Géographie',
+        grade: grade,
+        subject: subject,
         topic: safeTopic,
         lang,
       }),
@@ -815,8 +823,8 @@ aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, r
     const seriesDoc = {
       id: 'series-' + Date.now(),
       title: plan.title || safeTopic,
-      grade: grade || '5ème Année',
-      subject: subject || 'Histoire & Géographie',
+      grade: grade,
+      subject: subject,
       language: lang,
       bible: {
         characters: plan.characters || [],
@@ -854,6 +862,10 @@ aiRouter.post('/generate-series-panel', originGuard, aiRateLimiter, async (req: 
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
+    if (!grade || !subject) {
+      res.status(400).json({ error: 'Le niveau et la matière sont requis.' });
+      return;
+    }
 
     const lang: 'ar' | 'fr' = resolveLang(language);
     const prompt = compose(seriesSkill, {
@@ -863,8 +875,8 @@ aiRouter.post('/generate-series-panel', originGuard, aiRateLimiter, async (req: 
       sceneTitle: capText(sceneTitle || '', 200),
       sceneEvent: capText(sceneEvent || '', 500),
       sceneKind: sceneKind || 'scene',
-      grade: grade || '5ème Année',
-      subject: subject || 'Histoire & Géographie',
+      grade: grade,
+      subject: subject,
       lang,
     });
 
