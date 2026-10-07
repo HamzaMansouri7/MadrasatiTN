@@ -56,22 +56,25 @@ export async function callOpenAICompat(options: OpenAICompatOptions): Promise<Re
   }
 
   const parts = typeof contents === 'string' ? [{ text: contents }] : contents;
-  const contentItems: Record<string, unknown>[] = parts.map((p) => {
-    if ('text' in p) {
-      return { type: 'text', text: p.text };
-    }
-    return {
-      type: 'image_url',
-      image_url: { url: `data:${p.inlineData.mimeType};base64,${p.inlineData.data}` },
-    };
-  });
+  const hasImage = parts.some((p) => !('text' in p));
+  const schemaNote = schema
+    ? `\n\nRéponds uniquement avec un objet JSON valide respectant ce schéma :\n${JSON.stringify(geminiSchemaToJsonSchema(schema))}`
+    : '';
 
-  const convertedSchema = schema ? geminiSchemaToJsonSchema(schema) : undefined;
-  if (convertedSchema) {
-    contentItems.push({
-      type: 'text',
-      text: `Réponds uniquement avec un objet JSON valide respectant ce schéma :\n${JSON.stringify(convertedSchema)}`,
-    });
+  // Cloudflare's OpenAI-compatible endpoint requires `content` as a plain string for text-only messages
+  // (an array is rejected: "Type mismatch of '/messages/0/content', 'string' not in 'array'").
+  // Only use the multimodal array form when the request actually carries an image.
+  let messageContent: unknown;
+  if (hasImage) {
+    const contentItems: Record<string, unknown>[] = parts.map((p) =>
+      'text' in p
+        ? { type: 'text', text: p.text }
+        : { type: 'image_url', image_url: { url: `data:${p.inlineData.mimeType};base64,${p.inlineData.data}` } },
+    );
+    if (schemaNote) contentItems.push({ type: 'text', text: schemaNote });
+    messageContent = contentItems;
+  } else {
+    messageContent = parts.map((p) => ('text' in p ? p.text : '')).join('\n') + schemaNote;
   }
 
   const cleanBaseUrl = baseUrl.replace(/\/+$/, '');
@@ -89,7 +92,7 @@ export async function callOpenAICompat(options: OpenAICompatOptions): Promise<Re
     },
     body: JSON.stringify({
       model,
-      messages: [{ role: 'user', content: contentItems }],
+      messages: [{ role: 'user', content: messageContent }],
       response_format: { type: 'json_object' },
       temperature,
     }),

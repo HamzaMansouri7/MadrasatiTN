@@ -5,105 +5,140 @@
       "provider": "gemini",
       "model": "gemini-3.6-flash",
       "quality": 9.0,
-      "tasks": ["text", "vision"]
+      "tasks": [
+        "text",
+        "vision"
+      ]
     },
     {
       "id": "gemini-3.7-flash",
       "provider": "gemini",
       "model": "gemini-3.7-flash",
       "quality": 9.5,
-      "tasks": ["text", "vision"]
+      "tasks": [
+        "text",
+        "vision"
+      ]
     },
     {
       "id": "gemini-3.5-flash",
       "provider": "gemini",
       "model": "gemini-3.5-flash",
       "quality": 8.5,
-      "tasks": ["text", "vision"]
+      "tasks": [
+        "text",
+        "vision"
+      ]
     },
     {
       "id": "gemini-flash-lite-latest",
       "provider": "gemini",
       "model": "gemini-flash-lite-latest",
       "quality": 7.5,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "gemini-3.5-flash-lite",
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
       "quality": 7.5,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "gemini-3.1-flash-lite",
       "provider": "gemini",
       "model": "gemini-3.1-flash-lite",
       "quality": 7.0,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "cf-gpt-oss-120b",
       "provider": "cloudflare",
       "model": "@cf/openai/gpt-oss-120b",
       "quality": 8.8,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "cf-llama-3.3-70b",
       "provider": "cloudflare",
       "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
       "quality": 8.2,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "cf-mistral-small-3.1",
       "provider": "cloudflare",
       "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
       "quality": 7.8,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "cf-qwen3-30b",
       "provider": "cloudflare",
       "model": "@cf/qwen/qwen3-30b-a3b-fp8",
       "quality": 7.6,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "cf-llama-4-scout",
       "provider": "cloudflare",
       "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
       "quality": 7.4,
-      "tasks": ["text", "vision"]
+      "tasks": [
+        "text",
+        "vision"
+      ]
     },
     {
       "id": "openrouter-nemotron-ultra",
       "provider": "openai-compat",
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "quality": 8.6,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "openrouter-nemotron-super",
       "provider": "openai-compat",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
       "quality": 8.0,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "nvidia-nemotron-ultra",
       "provider": "nvidia",
       "model": "nvidia/nemotron-3-ultra-550b-a55b",
       "quality": 8.7,
-      "tasks": ["text"]
+      "tasks": [
+        "text"
+      ]
     },
     {
       "id": "nvidia-llama-vision",
       "provider": "nvidia",
       "model": "meta/llama-3.2-11b-vision-instruct",
       "quality": 8.0,
-      "tasks": ["text", "vision"]
+      "tasks": [
+        "text",
+        "vision"
+      ]
     }
   ],
   "chains": {
@@ -111,10 +146,12 @@
       "gemini-3.6-flash",
       "gemini-3.7-flash",
       "cf-gpt-oss-120b",
-      "openrouter-nemotron-ultra",
-      "nvidia-nemotron-ultra",
+      "gemini-3.5-flash-lite",
+      "gemini-flash-lite-latest",
       "gemini-3.5-flash",
       "cf-llama-3.3-70b",
+      "gemini-3.1-flash-lite",
+      "openrouter-nemotron-ultra",
       "openrouter-nemotron-super"
     ],
     "B": [

@@ -88,7 +88,9 @@ export async function runChain(
     throw new Error(`Aucune tâche exécutable pour la chaîne ${chainName}`);
   }
 
-  const hedgeMs = Math.max(1000, parseInt(process.env['HEDGE_MS'] || '5000', 10));
+  // 2.5s: Gemini 503s fail in ~1.5s (chain advances immediately on those), but a model that STALLS holds a slot,
+  // so launching the next candidate after 2.5s lets a healthy model win without waiting out the stalled one.
+  const hedgeMs = Math.max(1000, parseInt(process.env['HEDGE_MS'] || '2500', 10));
 
   // Filter tasks not on cooldown first; if all are on cooldown, try all
   const availableTasks = tasks.filter(t => !isCoolingDown(t.step.provider, t.step.model, t.key));
@@ -130,6 +132,14 @@ export async function runChain(
         return false;
       }
 
+      // A model that 503'd during THIS request is cooled model-wide: skip its remaining keys instead of
+      // burning more attempts on it (the cooldown filter above only ran once, before the request started).
+      while (
+        taskIdx < candidateTasks.length - 1 &&
+        isCoolingDown(candidateTasks[taskIdx].step.provider, candidateTasks[taskIdx].step.model, candidateTasks[taskIdx].key)
+      ) {
+        taskIdx++;
+      }
       const currentIdx = taskIdx++;
       const task = candidateTasks[currentIdx];
       const controller = new AbortController();

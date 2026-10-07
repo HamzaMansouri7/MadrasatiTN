@@ -13,7 +13,9 @@ export async function callGemini(
   temp = 0.4,
   signal?: AbortSignal,
 ): Promise<Record<string, unknown>> {
-  const timeoutMs = Math.max(1000, parseInt(process.env['GEMINI_TIMEOUT_MS'] || '8000', 10));
+  // Gemini sends httpOptions.timeout to the API as a request deadline and rejects anything under 10s
+  // ("Manually set deadline Xs is too short. Minimum allowed deadline is 10s."), so never go below 10000.
+  const timeoutMs = Math.max(10000, parseInt(process.env['GEMINI_TIMEOUT_MS'] || '15000', 10));
   const client = new GoogleGenAI({
     apiKey: key,
     httpOptions: {

@@ -27,14 +27,8 @@ export function getProviderEndpoint(providerOrStep: string | ProviderStep): Prov
     };
   }
 
-  if (provider === 'mistral' || id.startsWith('mistral-')) {
-    const key = (process.env['MISTRAL_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
-    if (!key) return null;
-    return {
-      baseUrl: 'https://api.mistral.ai/v1',
-      apiKey: key,
-    };
-  }
+  // Direct Mistral API removed: the free "Experiment" tier is blocked on this account's key
+  // (0 req/min on small/medium/magistral). The Cloudflare-hosted mistral-small still runs via the cloudflare branch.
 
   if (provider === 'openai-compat' || provider === 'openrouter' || id.startsWith('openrouter-')) {
     const key = (process.env['OPENROUTER_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
