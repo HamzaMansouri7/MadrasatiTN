@@ -1,11 +1,11 @@
-import { CartoucheComponent, PaginationComponent } from '@shared';
+import { CartoucheComponent, PaginationComponent, TabBarComponent, TabItem } from '@shared';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService, PRIMARY_GRADES, paginate } from '@core';
 
 @Component({
   selector: 'app-parent-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CartoucheComponent, PaginationComponent],
+  imports: [CartoucheComponent, PaginationComponent, TabBarComponent],
   template: `
     <div class="space-y-6">
       
@@ -148,39 +148,10 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
       <div class="bg-white rounded-[24px] border border-[#E3ECF2] overflow-hidden shadow-xs">
         
         <!-- Tab Bar Header -->
-        <div class="border-b border-[#E3ECF2] bg-[#F7F9FB] px-6 pt-3 flex flex-wrap gap-2">
-          <button
-            (click)="activeTab.set('docs')"
-            [class]="activeTab() === 'docs' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">menu_book</span>
-            <span>{{ lang.t('tabParentDocs') }} ({{ filteredCourses().length }})</span>
-          </button>
-
-          <button
-            (click)="activeTab.set('blog')"
-            [class]="activeTab() === 'blog' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">article</span>
-            <span>{{ lang.t('tabParentBlog') }} ({{ store.blogPosts().length }})</span>
-          </button>
-
-          <button
-            (click)="activeTab.set('qa')"
-            [class]="activeTab() === 'qa' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">forum</span>
-            <span>{{ lang.t('tabParentQA') }} ({{ store.questionThreads().length }})</span>
-          </button>
-
-          <button
-            (click)="activeTab.set('announcements')"
-            [class]="activeTab() === 'announcements' ? 'border-[#007CC2] text-[#007CC2] bg-white font-semibold shadow-xs' : 'border-transparent text-[#486581] font-medium hover:text-[#007CC2]'"
-            class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-            <span class="material-icons text-base">campaign</span>
-            <span>{{ lang.t('tabAnnouncements') }} ({{ store.classAnnouncements().length }})</span>
-          </button>
-        </div>
+        <app-tab-bar
+          [tabs]="parentTabs()"
+          [(active)]="activeTab"
+          accent="blue" />
 
         <!-- Tab Body -->
         <div class="p-6">
@@ -955,6 +926,13 @@ export class ParentHomeComponent {
       return matchKind && matchQ && matchGrade && matchSubj && matchTopic;
     });
   });
+
+  readonly parentTabs = computed<TabItem<'docs' | 'blog' | 'qa' | 'announcements'>[]>(() => [
+    { key: 'docs', label: this.lang.t('tabParentDocs'), icon: 'menu_book', count: this.filteredCourses().length },
+    { key: 'blog', label: this.lang.t('tabParentBlog'), icon: 'article', count: this.store.blogPosts().length },
+    { key: 'qa', label: this.lang.t('tabParentQA'), icon: 'forum', count: this.store.questionThreads().length },
+    { key: 'announcements', label: this.lang.t('tabAnnouncements'), icon: 'campaign', count: this.store.classAnnouncements().length },
+  ]);
 
   // Reset topic when a broader filter changes, so stale topics don't hide results.
   selectDocKind(kind: 'exercices' | 'books') {

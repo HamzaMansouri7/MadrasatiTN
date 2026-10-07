@@ -5,3 +5,4 @@ export * from './components/teacher-avatar';
 export * from './pipes/time-ago.pipe';
 export * from './components/cartouche';
 export * from './components/pagination';
+export * from './components/tab-bar';

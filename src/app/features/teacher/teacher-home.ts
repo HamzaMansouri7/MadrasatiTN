@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate } from '@core';
-import { TeacherAvatarComponent, CartoucheComponent, PaginationComponent } from '@shared';
+import { TeacherAvatarComponent, CartoucheComponent, PaginationComponent, TabBarComponent, TabItem } from '@shared';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -14,7 +14,7 @@ export interface GeneratedExerciseResult {
 @Component({
   selector: 'app-teacher-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, TeacherAvatarComponent, CartoucheComponent, PaginationComponent],
+  imports: [RouterLink, TeacherAvatarComponent, CartoucheComponent, PaginationComponent, TabBarComponent],
   template: `
     <div class="space-y-6">
 
@@ -211,35 +211,12 @@ export interface GeneratedExerciseResult {
       <div class="bg-white rounded-[24px] border border-[#E7DFCF] overflow-hidden shadow-xs">
 
         <!-- Tab Bar Header with Scope Filter Toggle -->
-        <div class="border-b border-[#E7DFCF] bg-[#FBF8F1] px-6 pt-3 flex flex-wrap items-center justify-between gap-3">
-          <div class="flex flex-wrap gap-2">
-            <button
-              (click)="activeTab.set('courses')"
-              [class]="activeTab() === 'courses' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
-              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-              <span class="material-icons text-base">menu_book</span>
-              <span>{{ lang.t('tabTeacherDocs') }} ({{ filteredCourses().length }})</span>
-            </button>
-
-            <button
-              (click)="activeTab.set('blog')"
-              [class]="activeTab() === 'blog' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
-              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-              <span class="material-icons text-base">article</span>
-              <span>{{ lang.t('tabTeacherBlog') }} ({{ filteredBlogPosts().length }})</span>
-            </button>
-
-            <button
-              (click)="activeTab.set('qa')"
-              [class]="activeTab() === 'qa' ? 'border-[#2D6A4F] text-[#2D6A4F] bg-white font-semibold shadow-xs' : 'border-transparent text-[#5B6B60] font-medium hover:text-[#2D6A4F]'"
-              class="px-4 py-3 border-b-2 text-xs flex items-center gap-2 transition-all cursor-pointer rounded-t-lg">
-              <span class="material-icons text-base">forum</span>
-              <span>{{ lang.t('tabTeacherQA') }} ({{ store.questionThreads().length }})</span>
-            </button>
-          </div>
-
+        <app-tab-bar
+          [tabs]="teacherTabs()"
+          [(active)]="activeTab"
+          accent="green">
           <!-- Scope Filter: Mes Documents vs Toute la Banque CNP -->
-          <div class="mb-2 bg-[#E7DFCF]/80 p-1 rounded-xl flex items-center gap-1">
+          <div tabEnd class="mb-2 bg-[#E7DFCF]/80 p-1 rounded-xl flex items-center gap-1">
             <button
               type="button"
               (click)="docScopeFilter.set('mine')"
@@ -257,7 +234,7 @@ export interface GeneratedExerciseResult {
               <span>{{ lang.tr('Toute la banque CNP', 'جميع وثائق CNP') }}</span>
             </button>
           </div>
-        </div>
+        </app-tab-bar>
 
         <!-- Tab Body -->
         <div class="p-6">
@@ -1766,6 +1743,12 @@ export class TeacherHomeComponent {
       return !p.authorId && (p.authorName === 'Enseignant Certifié' || p.authorName === 'Prof. Habib Ben Amor');
     });
   });
+
+  readonly teacherTabs = computed<TabItem<'courses' | 'blog' | 'qa'>[]>(() => [
+    { key: 'courses', label: this.lang.t('tabTeacherDocs'), icon: 'menu_book', count: this.filteredCourses().length },
+    { key: 'blog', label: this.lang.t('tabTeacherBlog'), icon: 'article', count: this.filteredBlogPosts().length },
+    { key: 'qa', label: this.lang.t('tabTeacherQA'), icon: 'forum', count: this.store.questionThreads().length },
+  ]);
 
   constructor() {
     effect(() => {
