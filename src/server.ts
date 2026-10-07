@@ -459,13 +459,17 @@ app.post('/api/upload', originGuard, uploadRateLimiter, async (req, res): Promis
 });
 
 // Initialize Gemini Client(s) with multi-key pooling & dynamic rotation
-const rawApiKeys = Object.entries(process.env)
-  .filter(([k, v]) => k.startsWith('GEMINI_API_KEY') && typeof v === 'string')
-  .map(([_, v]) => v as string)
-  .join(',')
-  .split(/[,\n]/)
-  .map(k => k.trim().replace(/^["']|["']$/g, ''))
-  .filter(k => k.length > 0);
+const rawApiKeys = [
+  ...new Set(
+    Object.entries(process.env)
+      .filter(([k, v]) => k.startsWith('GEMINI_API_KEY') && typeof v === 'string')
+      .map(([_, v]) => v as string)
+      .join(',')
+      .split(/[,\n]/)
+      .map(k => k.trim().replace(/^["']|["']$/g, ''))
+      .filter(k => k.length > 0),
+  ),
+];
 
 const aiClients: GoogleGenAI[] = rawApiKeys.map(key => new GoogleGenAI({ apiKey: key }));
 let activeKeyIdx = 0;
@@ -479,6 +483,67 @@ const ai = aiClients.length > 0 ? aiClients[0] : null;
 type GeminiPart = { inlineData: { mimeType: string; data: string } } | { text: string };
 
 const FALLBACK_MODELS = ['gemini-flash-latest', 'gemini-2.5-flash', 'gemini-3.8-flash'];
+
+// Last-resort fallback once every Gemini key is exhausted. Only ':free' models are ever called, so it can never bill.
+const openRouterKey = (process.env['OPENROUTER_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+const openRouterModel = process.env['OPENROUTER_MODEL'] || 'google/gemma-4-31b-it:free';
+
+async function openRouterJSON(
+  contents: string | GeminiPart[],
+  schema: object | undefined,
+  temperature: number,
+): Promise<Record<string, unknown>> {
+  if (!openRouterKey || !openRouterModel.endsWith(':free')) throw new Error('OpenRouter fallback not configured');
+  const parts = typeof contents === 'string' ? [{ text: contents }] : contents;
+  const content: Record<string, unknown>[] = parts.map((p) =>
+    'text' in p
+      ? { type: 'text', text: p.text }
+      : { type: 'image_url', image_url: { url: `data:${p.inlineData.mimeType};base64,${p.inlineData.data}` } },
+  );
+  if (schema) {
+    content.push({ type: 'text', text: `Réponds uniquement avec un objet JSON valide respectant ce schéma :\n${JSON.stringify(schema)}` });
+  }
+  const r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${openRouterKey}` },
+    body: JSON.stringify({
+      model: openRouterModel,
+      messages: [{ role: 'user', content }],
+      response_format: { type: 'json_object' },
+      temperature,
+    }),
+    signal: AbortSignal.timeout(60000),
+  });
+  if (!r.ok) throw new Error(`OpenRouter HTTP ${r.status}`);
+  const data = (await r.json()) as { choices?: { message?: { content?: string } }[] };
+  const text = (data.choices?.[0]?.message?.content || '').replace(/```json/g, '').replace(/```/g, '').trim();
+  return JSON.parse(text);
+}
+
+/** Quota / auth / overload / missing-model errors: worth trying another provider or key. */
+const isProviderExhausted = (err: unknown): boolean =>
+  /\b(401|402|403|404|429|500|503)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|no longer available/.test(
+    err instanceof Error ? err.message : String(err),
+  );
+
+/** Plain-text generation over the key pool and model list (used where JSON mode does not fit, e.g. SVG). */
+async function aiGenerateText(prompt: string): Promise<string> {
+  let lastErr: unknown;
+  for (let i = 0; i < aiClients.length; i++) {
+    const client = aiClients[activeKeyIdx % aiClients.length];
+    activeKeyIdx = (activeKeyIdx + 1) % aiClients.length;
+    for (const model of FALLBACK_MODELS) {
+      try {
+        const response = await client.models.generateContent({ model, contents: prompt });
+        if (response.text) return response.text;
+      } catch (err) {
+        lastErr = err;
+        if (!isProviderExhausted(err)) throw err;
+      }
+    }
+  }
+  throw lastErr ?? new Error('Aucune clé Gemini disponible');
+}
 
 /** JSON-mode generation with responseSchema + multi-key/model retry on transient/parse failure. */
 async function aiGenerateJSON(
@@ -513,6 +578,13 @@ async function aiGenerateJSON(
         // If rate limit / quota, break inner loop to rotate key
         break;
       }
+    }
+  }
+  if (openRouterKey && isProviderExhausted(lastErr)) {
+    try {
+      return await openRouterJSON(contents, schema, temperature);
+    } catch (fallbackErr) {
+      console.error('OpenRouter fallback failed:', fallbackErr instanceof Error ? fallbackErr.message : fallbackErr);
     }
   }
   throw lastErr;
@@ -1993,12 +2065,9 @@ app.post('/api/ai/generate-illustration', originGuard, aiRateLimiter, aiDailyGua
     const svgPrompt = `Create a clean, modern, pedagogical SVG illustration for Tunisian school children about: "${promptText}".
 Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use viewBox="0 0 800 450", smooth gradients, friendly rounded shapes. No markdown formatting.`;
 
-    const svgResponse = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: svgPrompt,
-    });
+    const svgText = await aiGenerateText(svgPrompt);
 
-    const rawSvg = (svgResponse.text || '').replace(/```xml/g, '').replace(/```svg/g, '').replace(/```/g, '').trim();
+    const rawSvg = svgText.replace(/```xml/g, '').replace(/```svg/g, '').replace(/```/g, '').trim();
     const filename = `illustration_${randomUUID()}.svg`;
     const imageUrl = saveGenerated(filename, rawSvg);
 
