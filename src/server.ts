@@ -11,9 +11,20 @@ import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
 import { MEMO_SCHEMA, BLOCK_SCHEMAS, buildMemoPrompt } from './server/memo-schema';
 import { resolveLang, langRule } from './server/lang';
-import { validateAgainstSchema } from './server/validate';
 import { checkExercise } from './server/post-checks';
 import { generateMemoDocx } from './server/memo-docx';
+import { runChain } from './server/ai/chain';
+import { ChainName } from './server/ai/types';
+import {
+  compose,
+  exerciseSkill,
+  exerciseTransformSkill,
+  exerciseVariantSkill,
+  memoSkill,
+  explainSkill,
+  announcementSkill,
+  tagSkill,
+} from './server/skills';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
@@ -497,38 +508,6 @@ const openRouterModel = process.env['OPENROUTER_MODEL'] || 'google/gemma-4-31b-i
 
 const aiReady = () => aiClients.length > 0 || !!openRouterKey;
 
-async function openRouterJSON(
-  contents: string | GeminiPart[],
-  schema: object | undefined,
-  temperature: number,
-): Promise<Record<string, unknown>> {
-  if (!openRouterKey || !openRouterModel.endsWith(':free')) throw new Error('OpenRouter fallback not configured');
-  const parts = typeof contents === 'string' ? [{ text: contents }] : contents;
-  const content: Record<string, unknown>[] = parts.map((p) =>
-    'text' in p
-      ? { type: 'text', text: p.text }
-      : { type: 'image_url', image_url: { url: `data:${p.inlineData.mimeType};base64,${p.inlineData.data}` } },
-  );
-  if (schema) {
-    content.push({ type: 'text', text: `Réponds uniquement avec un objet JSON valide respectant ce schéma :\n${JSON.stringify(schema)}` });
-  }
-  const r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${openRouterKey}` },
-    body: JSON.stringify({
-      model: openRouterModel,
-      messages: [{ role: 'user', content }],
-      response_format: { type: 'json_object' },
-      temperature,
-    }),
-    signal: AbortSignal.timeout(60000),
-  });
-  if (!r.ok) throw new Error(`OpenRouter HTTP ${r.status}`);
-  const data = (await r.json()) as { choices?: { message?: { content?: string } }[] };
-  const text = (data.choices?.[0]?.message?.content || '').replace(/```json/g, '').replace(/```/g, '').trim();
-  return JSON.parse(text);
-}
-
 // Free raster images: Cloudflare Workers AI (Flux schnell). Needs CLOUDFLARE_ACCOUNT_ID + CLOUDFLARE_API_TOKEN.
 const cloudflareAccountId = (process.env['CLOUDFLARE_ACCOUNT_ID'] || '').trim();
 const cloudflareToken = (process.env['CLOUDFLARE_API_TOKEN'] || '').trim().replace(/^["']|["']$/g, '');
@@ -616,57 +595,14 @@ async function aiGenerateText(prompt: string): Promise<string> {
   });
 }
 
-/** JSON-mode generation with responseSchema over the chain, then the free OpenRouter model. A bad JSON reply is retried once on the same key/model before moving on. */
+/** Executes structured JSON generation across the specified provider fallback chain. */
 async function aiGenerateJSON(
+  chain: ChainName,
   contents: string | GeminiPart[],
   schema?: object,
   temperature = 0.4,
 ): Promise<Record<string, unknown>> {
-  const config: Record<string, unknown> = { responseMimeType: 'application/json', temperature };
-  if (schema) config['responseSchema'] = schema;
-  let lastErr: unknown;
-  try {
-    return await runGeminiChain(async (client, model) => {
-      for (let attempt = 0; ; attempt++) {
-        const response = await client.models.generateContent({ model, contents, config });
-        const text = (response.text || '').replace(/```json/g, '').replace(/```/g, '').trim();
-        let parsed: Record<string, unknown>;
-        try {
-          parsed = JSON.parse(text) as Record<string, unknown>;
-        } catch (parseErr) {
-          if (attempt >= 1) throw parseErr;
-          continue;
-        }
-        if (schema) {
-          const { valid, errors } = validateAgainstSchema(parsed, schema as Parameters<typeof validateAgainstSchema>[1]);
-          if (!valid) {
-            if (attempt >= 1) {
-              throw new Error(`422 invalid output: ${errors.join('; ')}`);
-            }
-            continue;
-          }
-        }
-        return parsed;
-      }
-    });
-  } catch (err) {
-    lastErr = err;
-  }
-  if (openRouterKey && isProviderExhausted(lastErr)) {
-    try {
-      const fallbackResult = await openRouterJSON(contents, schema, temperature);
-      if (schema) {
-        const { valid, errors } = validateAgainstSchema(fallbackResult, schema as Parameters<typeof validateAgainstSchema>[1]);
-        if (!valid) {
-          throw new Error(`422 invalid output: ${errors.join('; ')}`);
-        }
-      }
-      return fallbackResult;
-    } catch (fallbackErr) {
-      console.error('OpenRouter fallback failed:', fallbackErr instanceof Error ? fallbackErr.message : fallbackErr);
-    }
-  }
-  throw lastErr;
+  return runChain(chain, contents, schema, temperature);
 }
 
 /** Official curriculum grounding block (empty string when no match). */
@@ -708,12 +644,6 @@ const EXERCISE_PROPS = {
   },
 };
 
-const EXERCISE_SCHEMA = {
-  type: Type.OBJECT,
-  properties: EXERCISE_PROPS,
-  required: ['title', 'promptText', 'solutionText', 'format'],
-};
-
 const EXAM_SCHEMA = {
   type: Type.OBJECT,
   properties: {
@@ -734,33 +664,6 @@ const SOLVE_SCHEMA = {
   type: Type.OBJECT,
   properties: { solutionText: STR, teacherNotes: STR, recommendedPoints: NUM },
   required: ['solutionText', 'teacherNotes', 'recommendedPoints'],
-};
-
-const ANNOUNCE_SCHEMA = {
-  type: Type.OBJECT,
-  properties: { title: STR, content: STR },
-  required: ['title', 'content'],
-};
-
-const EXPLAIN_SCHEMA = {
-  type: Type.OBJECT,
-  properties: { explanation: STR, analogy: STR, checkQuestion: STR },
-  required: ['explanation', 'analogy', 'checkQuestion'],
-};
-
-const TAG_SCHEMA = {
-  type: Type.OBJECT,
-  properties: {
-    suggestedTitle: STR,
-    grade: { type: Type.STRING, enum: ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'] },
-    subject: { type: Type.STRING, enum: ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'] },
-    trimester: { type: Type.STRING, enum: ['Trimestre 1', 'Trimestre 2', 'Trimestre 3'] },
-    docType: { type: Type.STRING, enum: ['Devoir de Contrôle', 'Devoir de Synthèse', 'Fiche de Révision', "Série d'Exercices"] },
-    hasCorrection: BOOL,
-    summary: STR,
-    extractedContent: STR,
-  },
-  required: ['suggestedTitle', 'grade', 'subject', 'trimester', 'docType', 'hasCorrection', 'summary', 'extractedContent'],
 };
 
 const DNA_SCHEMA = {
@@ -839,7 +742,12 @@ function sanitizeExercise<T extends { qcmOptions?: string[]; qcmCorrectIndex?: n
 // 1. Generate Exercise (Dual-Mode: Teacher vs Parent)
 app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, topic, difficulty, format, role, childName, language, trimester } = req.body;
+    const { grade, subject, topic, difficulty, format, role, childName, language, trimester, points } = req.body;
+
+    if (!grade || !subject) {
+      res.status(400).json({ error: 'Le niveau (grade) et la matière (subject) sont requis.' });
+      return;
+    }
 
     if (!aiReady()) {
       res.status(500).json({
@@ -854,48 +762,23 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
     const requestedFormat = validFormats.includes(format) ? format : undefined;
     const isParent = role === 'parent';
 
-    const systemContext = isParent
-      ? `Tu es un guide pédagogique bienveillant aidant un parent tunisien à faire réviser son enfant (${childName || "l'élève"}). Crée un exercice stimulant, motivant et clair avec des situations concrètes du quotidien tunisien.`
-      : `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie. Conçois un exercice rigoureux conforme au programme officiel tunisien pour évaluation scolaire.`;
+    const prompt = compose(exerciseSkill, {
+      grade,
+      subject,
+      trimester,
+      topic: safeTopic,
+      lang,
+      contextBlockStr: contextBlock({ grade, subject, trimester, topic: safeTopic, lang }),
+      difficulty,
+      format: requestedFormat,
+      points: typeof points === 'number' ? points : 5,
+      dataTags: {
+        topic: safeTopic,
+        child_context: isParent ? `Enfant : ${childName || "l'élève"}` : '',
+      },
+    });
 
-    const correctionGuidance = isParent
-      ? `"solutionText": "Solution claire avec démarche de calcul ou règle grammaticale simple",
-  "parentGuide": "Conseil pratique étape par étape pour aider l'enfant à comprendre sans le bloquer"`
-      : `"solutionText": "Correction type officielle et barème de notation détaillé étape par étape",
-  "teacherNotes": "Compétences officielles visées et critères d'évaluation ministériels"`;
-
-    const prompt = `${systemContext}
-${contextBlock({ grade, subject, trimester, topic: safeTopic, lang })}
-Génère un exercice pédagogique de haute qualité adapté pour :
-- Niveau: ${grade || '4ème Année'}
-- Matière: ${subject || 'Mathématiques'}
-- Chapitre/Sujet: ${safeTopic || 'Résolution de problèmes'}
-- Difficulté: ${difficulty || 'Moyen'}
-${requestedFormat ? `- Format requis: ${requestedFormat}` : ''}
-
-Réponds STRICTEMENT au format JSON valide suivant :
-{
-  "title": "Titre court de l'exercice",
-  "promptText": "Texte complet de la consigne ou du problème",
-  ${correctionGuidance},
-  "hints": ["Indice 1 pour l'élève", "Indice 2"],
-  "points": 5,
-  "format": "${requestedFormat || 'free'}",
-  "qcmOptions": ["Option 1", "Option 2", "Option 3"],
-  "qcmCorrectIndex": 0,
-  "tfStatements": [{"text": "Affirmation 1", "answer": true}, {"text": "Affirmation 2", "answer": false}],
-  "gapText": "Texte explicatif avec mots à deviner entourés de [[mot1]] et [[mot2]]",
-  "matchingPairs": [{"left": "Élément A", "right": "Correspondance A"}, {"left": "Élément B", "right": "Correspondance B"}]
-}
-
-Instructions par format :
-- Si format est 'free' : promptText contient l'énoncé. Les champs spécifiques au format peuvent être omis.
-- Si format est 'qcm' : qcmOptions contient 3 à 4 choix, qcmCorrectIndex (0-indexed) indique la bonne réponse, promptText contient l'énoncé.
-- Si format est 'true_false' : tfStatements contient 3 à 5 affirmations avec 'text' et 'answer' (true/false).
-- Si format est 'fill_blanks' : gapText contient le texte avec les mots à cacher entourés de [[mot]].
-- Si format est 'matching' : matchingPairs contient 3 à 5 couples {left, right} appariés correctement.`;
-
-    const data = await aiGenerateJSON(prompt, EXERCISE_SCHEMA, 0.4);
+    const data = await aiGenerateJSON('A', prompt, exerciseSkill.schema, exerciseSkill.temperature);
 
     res.json({ success: true, exercise: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
@@ -937,29 +820,23 @@ app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard,
         instructionText = customInstruction || 'Améliore la formulation pédagogique.';
     }
 
-    const prompt = `Tu es un expert pédagogique pour l'école primaire tunisienne (${grade || 'Primaire'}, ${subject || 'Général'}).
-${contextBlock({ grade, subject, trimester, topic: (topic || '').slice(0, 300), lang })}
-NOTE : conserve la langue de l'exercice original si elle diffère (ex: exercice en français pour la matière Français).
-Exercice original :
-${JSON.stringify(originalBlock)}
+    const prompt = compose(exerciseTransformSkill, {
+      grade,
+      subject,
+      trimester,
+      topic: (topic || '').slice(0, 300),
+      lang,
+      contextBlockStr: contextBlock({ grade, subject, trimester, topic: (topic || '').slice(0, 300), lang }),
+      transformationType: transformType,
+      targetFormat: transformType === 'to_qcm' ? 'qcm' : undefined,
+      customInstruction: instructionText,
+      dataTags: {
+        original_exercise: typeof originalBlock === 'string' ? originalBlock : JSON.stringify(originalBlock),
+        instruction: instructionText,
+      },
+    });
 
-Consigne de transformation STRICTE :
-${instructionText}
-
-Réponds STRICTEMENT au format JSON valide avec la même structure que l'original :
-{
-  "title": "Titre transformé",
-  "promptText": "Nouvelle consigne transformée",
-  "solutionText": "Nouveau corrigé adapté",
-  "format": "free" | "qcm" | "true_false" | "fill_blanks" | "matching",
-  "qcmOptions": [],
-  "qcmCorrectIndex": 0,
-  "tfStatements": [],
-  "gapText": "",
-  "matchingPairs": []
-}`;
-
-    const data = await aiGenerateJSON(prompt, EXERCISE_SCHEMA, 0.4);
+    const data = await aiGenerateJSON('A', prompt, exerciseTransformSkill.schema, exerciseTransformSkill.temperature);
 
     res.json({ success: true, transformed: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
@@ -1027,7 +904,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
   ]
 }`;
 
-    const data = await aiGenerateJSON(prompt, EXAM_SCHEMA, 0.4);
+    const data = await aiGenerateJSON('A', prompt, EXAM_SCHEMA, 0.4);
 
     // Enforce the official 6+6+8 = 20 points barème server-side (model can drift).
     const sections = data['sections'] as { points?: number }[] | undefined;
@@ -1074,7 +951,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
   "recommendedPoints": 5
 }`;
 
-    const data = await aiGenerateJSON(prompt, SOLVE_SCHEMA, 0.2);
+    const data = await aiGenerateJSON('A', prompt, SOLVE_SCHEMA, 0.2);
 
     res.json({ success: true, result: data });
     return;
@@ -1099,21 +976,21 @@ app.post('/api/ai/draft-announcement', originGuard, aiRateLimiter, aiDailyGuard,
     const lang = resolveLang(language);
     const safePurpose = (purpose || '').slice(0, 300);
     const safeDetails = (details || '').slice(0, 500);
-    // Prose docs (editor) pass grade/subject → ground them; pure announcements skip.
     const context = grade || subject ? contextBlock({ grade, subject, trimester, topic: safePurpose, lang }) : langRule(lang);
-    const prompt = `Rédige un texte scolaire professionnel, bienveillant et clair pour un enseignant primaire en Tunisie.
-${context}
-Objectif: ${safePurpose || 'Devoir de synthèse à venir'}
-Détails: ${safeDetails || 'Réviser la multiplication et la géométrie'}
-Destinataires: ${targetAudience || 'Parents et élèves de 4ème Année'}
 
-Format JSON requis :
-{
-  "title": "Titre avec emoji",
-  "content": "Message clair, poli et structuré"
-}`;
+    const prompt = compose(announcementSkill, {
+      grade,
+      purpose: safePurpose,
+      details: safeDetails,
+      contextBlockStr: context,
+      dataTags: {
+        objectif: safePurpose,
+        details: safeDetails,
+        destinataires: targetAudience || '',
+      },
+    });
 
-    const data = await aiGenerateJSON(prompt, ANNOUNCE_SCHEMA, 0.6);
+    const data = await aiGenerateJSON('B', prompt, announcementSkill.schema, announcementSkill.temperature);
 
     res.json({ success: true, result: data });
     return;
@@ -1137,20 +1014,19 @@ app.post('/api/ai/explain-concept', originGuard, aiRateLimiter, aiDailyGuard, as
 
     const lang = resolveLang(language);
     const safeConcept = (concept || '').slice(0, 300);
-    const prompt = `Tu es un tuteur pédagogique très encouragant pour un enfant tunisien en ${grade || '4ème année'}.
-${contextBlock({ grade, subject, trimester, topic: safeConcept, lang })}
-Explique la notion suivante de façon très simple et captivante :
-Matière: ${subject || 'Sciences'}
-Notion: ${safeConcept || 'La photosynthèse'}
 
-Format JSON :
-{
-  "explanation": "Texte explicatif adapté aux enfants",
-  "analogy": "Analogie visuelle ou métaphore",
-  "checkQuestion": "Question rapide avec réponse"
-}`;
+    const prompt = compose(explainSkill, {
+      grade,
+      subject,
+      concept: safeConcept,
+      contextBlockStr: contextBlock({ grade, subject, trimester, topic: safeConcept, lang }),
+      dataTags: {
+        matiere: subject || 'Sciences',
+        notion: safeConcept,
+      },
+    });
 
-    const data = await aiGenerateJSON(prompt, EXPLAIN_SCHEMA, 0.6);
+    const data = await aiGenerateJSON('B', prompt, explainSkill.schema, explainSkill.temperature);
 
     res.json({ success: true, result: data });
     return;
@@ -1169,22 +1045,25 @@ app.post('/api/ai/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, 
 
     if (!aiReady()) {
       const name = (documentName || '').toLowerCase();
-      let grade = '4ème Année';
+      let grade = 'unknown';
       if (name.includes('1') || name.includes('premiere')) grade = '1ère Année';
       else if (name.includes('2') || name.includes('deuxieme')) grade = '2ème Année';
       else if (name.includes('3') || name.includes('troisieme')) grade = '3ème Année';
+      else if (name.includes('4') || name.includes('quatrieme')) grade = '4ème Année';
       else if (name.includes('5') || name.includes('cinquieme')) grade = '5ème Année';
       else if (name.includes('6') || name.includes('sixieme')) grade = '6ème Année';
 
-      let subject = 'Mathématiques';
+      let subject = 'unknown';
       if (name.includes('arabe') || name.includes('عربي') || name.includes('قراءة')) subject = 'اللغة العربية';
       else if (name.includes('francais') || name.includes('français') || name.includes('lecture')) subject = 'Français';
       else if (name.includes('eveil') || name.includes('scientifique') || name.includes('ايقاظ')) subject = 'Éveil Scientifique';
+      else if (name.includes('math') || name.includes('calcul')) subject = 'Mathématiques';
 
-      let docType = 'Devoir de Contrôle';
+      let docType = 'unknown';
       if (name.includes('synthese') || name.includes('synthèse')) docType = 'Devoir de Synthèse';
+      else if (name.includes('controle') || name.includes('contrôle')) docType = 'Devoir de Contrôle';
       else if (name.includes('fiche') || name.includes('revision')) docType = 'Fiche de Révision';
-      else if (name.includes('serie') || name.includes('série') || name.includes('exercice')) docType = 'Série d\'Exercices';
+      else if (name.includes('serie') || name.includes('série') || name.includes('exercice')) docType = "Série d'Exercices";
 
       res.json({
         success: true,
@@ -1192,11 +1071,11 @@ app.post('/api/ai/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, 
           suggestedTitle: documentName ? documentName.replace(/\.[^/.]+$/, '') : 'Document Pédagogique',
           grade,
           subject,
-          trimester: 'Trimestre 1',
+          trimester: 'unknown',
           docType,
-          hasCorrection: true,
-          summary: `${subject} - ${grade} - Document officiel conforme au programme tunisien.`,
-          extractedContent: rawText || 'Document numérisé conforme au programme officiel du Ministère de l\'Éducation.',
+          hasCorrection: false,
+          summary: `Document numérisé conforme au programme tunisien.`,
+          extractedContent: rawText || '',
         },
       });
       return;
@@ -1204,25 +1083,15 @@ app.post('/api/ai/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, 
 
     const safeDocName = (documentName || '').slice(0, 200);
     const safeRawText = (rawText || '').slice(0, 2000);
-    const prompt = `Tu es un système expert de reconnaissance optique (OCR) et de classification automatique de documents pédagogiques pour l'enseignement primaire en Tunisie (1ère à 6ème année).
-Analyse minutieusement cette capture d'écran / photo de devoir ou fichier scolaire :
-Nom du fichier / extrait : "${safeDocName} - ${safeRawText}"
 
-Extrais avec une précision absolue les métadonnées de classification stricte pour la bibliothèque nationale, et transcris fidèlement le texte des exercices au format Markdown.
+    const prompt = compose(tagSkill, {
+      dataTags: {
+        nom_document: safeDocName,
+        extrait_texte: safeRawText,
+      },
+    });
 
-Réponds STRICTEMENT au format JSON valide suivant :
-{
-  "suggestedTitle": "Titre officiel propre et clair (ex: Devoir de Contrôle N°1 : Mathématiques et Géométrie)",
-  "grade": "1ère Année" | "2ème Année" | "3ème Année" | "4ème Année" | "5ème Année" | "6ème Année",
-  "subject": "Mathématiques" | "Français" | "اللغة العربية" | "Éveil Scientifique" | "Histoire & Géographie" | "Anglais",
-  "trimester": "Trimestre 1" | "Trimestre 2" | "Trimestre 3",
-  "docType": "Devoir de Contrôle" | "Devoir de Synthèse" | "Fiche de Révision" | "Série d'Exercices",
-  "hasCorrection": true ou false,
-  "summary": "Résumé pédagogique concis (1-2 phrases)",
-  "extractedContent": "Transcription textuelle complète et propre des exercices, questions, consignes et barème au format Markdown (avec ### Exercice 1, listes, formules)"
-}`;
-
-    const contents: ({ inlineData: { mimeType: string; data: string } } | { text: string })[] = [];
+    const contents: GeminiPart[] = [];
     if (base64Data && typeof base64Data === 'string' && base64Data.length < 16 * 1024 * 1024) {
       const base64Clean = base64Data.replace(/^data:[^;]+;base64,/, '');
       const mime = contentType || (base64Data.startsWith('data:image/png') ? 'image/png' : 'image/jpeg');
@@ -1235,7 +1104,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
     }
     contents.push({ text: prompt });
 
-    const data = await aiGenerateJSON(contents, TAG_SCHEMA, 0.2);
+    const data = await aiGenerateJSON('B', contents, tagSkill.schema, tagSkill.temperature);
 
     res.json({ success: true, tags: data });
     return;
@@ -1296,7 +1165,7 @@ Mission :
       { text: prompt },
     ];
 
-    const data = await aiGenerateJSON(contents, PHOTO_SOLVE_SCHEMA, 0.2);
+    const data = await aiGenerateJSON('C', contents, PHOTO_SOLVE_SCHEMA, 0.2);
 
     res.json({ success: true, result: data });
     return;
@@ -1383,7 +1252,7 @@ Consignes strictes :
 
     contents.push({ text: prompt });
 
-    const data = await aiGenerateJSON(contents, SUMMARIZE_DOCS_SCHEMA, 0.2);
+    const data = await aiGenerateJSON('C', contents, SUMMARIZE_DOCS_SCHEMA, 0.2);
 
     res.json({ success: true, result: data });
     return;
@@ -1548,24 +1417,26 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
     }
 
     const lang = resolveLang(language);
-    const grounding = (grade || subject) ? buildGrounding({ grade, subject, trimester, topic, lang }) : '';
 
-    const promptText = buildMemoPrompt(
-      {
-        mode,
-        topic,
-        text,
-        grade,
-        subject,
-        trimester,
-        instructions,
-        extractedText,
-        blockToRegenerate,
-        currentMemo,
-      },
+    const promptText = compose(memoSkill, {
+      grade,
+      subject,
+      trimester,
+      topic,
       lang,
-      grounding,
-    );
+      contextBlockStr: contextBlock({ grade, subject, trimester, topic, lang }),
+      mode,
+      instructions,
+      blockToRegenerate,
+      extractedText,
+      dataTags: {
+        sujet: topic || '',
+        instructions: instructions || '',
+        texte_fourni: text || '',
+        texte_extrait: extractedText || '',
+        fiche_actuelle: currentMemo ? JSON.stringify(currentMemo) : '',
+      },
+    });
 
     contents.push({ text: promptText });
 
@@ -1573,7 +1444,7 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
       ? BLOCK_SCHEMAS[blockToRegenerate]
       : MEMO_SCHEMA;
 
-    const data = await aiGenerateJSON(contents, schema, 0.3);
+    const data = await aiGenerateJSON('A', contents, schema, 0.3);
 
     if (!extractedText && typeof data['extractedText'] === 'string') {
       extractedText = data['extractedText'];
@@ -1658,7 +1529,7 @@ Instructions :
       { text: prompt },
     ];
 
-    const data = await aiGenerateJSON(contents, DNA_SCHEMA, 0.2);
+    const data = await aiGenerateJSON('C', contents, DNA_SCHEMA, 0.2);
 
     res.json({ success: true, dna: data });
     return;
@@ -1731,7 +1602,7 @@ Instructions :
 - Varie les formats quand c'est pertinent ; remplis uniquement les champs utiles au format choisi.
 - imagePrompt : courte description en anglais, style enfant, fond blanc, PAS de texte dans l'image.`;
 
-    const data = await aiGenerateJSON(prompt, SIMILAR_SCHEMA, 0.6);
+    const data = await aiGenerateJSON('A', prompt, SIMILAR_SCHEMA, 0.6);
     const exercises = Array.isArray(data['exercises'])
       ? (data['exercises'] as { qcmOptions?: string[]; qcmCorrectIndex?: number }[]).map(sanitizeExercise)
       : [];
@@ -1945,47 +1816,23 @@ app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req
     const safeTopic = (topic || '').slice(0, 200);
     const validFormats = ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'];
     const targetFormat = validFormats.includes(format) ? format : 'free';
-    const isParent = role === 'parent';
     const lang: 'ar' | 'fr' = /[\u0600-\u06FF]/.test(originalPromptText || '') ? 'ar' : 'fr';
 
-    const prompt = `Tu es un expert pédagogique tunisien. Génère une VARIANTE de l'exercice suivant pour le niveau ${grade || '4ème Année'} (${subject || 'Mathématiques'}).
-${contextBlock({ grade, subject, trimester, topic: safeTopic, lang })}
+    const prompt = compose(exerciseVariantSkill, {
+      grade,
+      subject,
+      trimester,
+      topic: safeTopic,
+      lang,
+      contextBlockStr: contextBlock({ grade, subject, trimester, topic: safeTopic, lang }),
+      targetFormat,
+      role,
+      dataTags: {
+        original_exercise: safeOriginal || safeTopic,
+      },
+    });
 
-Exercice original :
-"${safeOriginal || safeTopic}"
-
-Règles STRICTES pour la variante :
-- MÊME format : ${targetFormat}
-- MÊME niveau de difficulté et MÊME compétence ciblée
-- Change uniquement : les chiffres, les noms propres, les quantités, la mise en situation
-- NE change PAS la structure ni le type de raisonnement requis
-${isParent ? '- Variante immédiate non publiée : "aiVerified": false' : '- Pour validation enseignant avant publication : "aiVerified": false'}
-
-Réponds STRICTEMENT au format JSON valide :
-{
-  "title": "Titre court de la variante",
-  "promptText": "Texte complet de la consigne variante",
-  "solutionText": "Correction détaillée de la variante",
-  "hints": ["Indice 1"],
-  "points": 5,
-  "format": "${targetFormat}",
-  "qcmOptions": [],
-  "qcmCorrectIndex": 0,
-  "tfStatements": [],
-  "gapText": "",
-  "matchingPairs": [],
-  "aiGenerated": true,
-  "aiVerified": false
-}
-
-Instructions par format :
-- free : promptText complet. Champs spécifiques omis.
-- qcm : qcmOptions (3-4 choix), qcmCorrectIndex, promptText.
-- true_false : tfStatements (3-5 affirmations {text, answer}).
-- fill_blanks : gapText avec [[mot]] pour les mots cachés.
-- matching : matchingPairs (3-5 couples {left, right}).`;
-
-    const data = await aiGenerateJSON(prompt, EXERCISE_SCHEMA, 0.5);
+    const data = await aiGenerateJSON('A', prompt, exerciseVariantSkill.schema, exerciseVariantSkill.temperature);
     data['aiGenerated'] = true;
     data['aiVerified'] = false;
 
@@ -2075,7 +1922,7 @@ Format de sortie STRICT : JSON uniquement, sans markdown wrapper :
   "suggestedChips": ["...", "...", "..."]
 }`;
 
-    const data = await aiGenerateJSON(prompt, CHAT_ARTICLE_SCHEMA, 0.7);
+    const data = await aiGenerateJSON('D', prompt, CHAT_ARTICLE_SCHEMA, 0.7);
 
     res.json({ success: true, ...data });
     return;
@@ -2131,6 +1978,7 @@ async function buildImagePrompt(input: {
   if (aiReady()) {
     try {
       const out = await aiGenerateJSON(
+        'B',
         `Tu prépares l'illustration d'un support scolaire pour enfants tunisiens (niveau : ${input.grade || 'primaire'}, matière : ${input.subject || 'non précisée'}).
 Texte source (arabe, français ou anglais) :
 """${text}"""

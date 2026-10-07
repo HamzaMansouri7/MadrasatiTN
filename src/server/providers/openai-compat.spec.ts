@@ -51,7 +51,19 @@ describe('openai-compat provider', () => {
         },
       };
 
-      const converted = geminiSchemaToJsonSchema(nested) as any;
+      const converted = geminiSchemaToJsonSchema(nested) as {
+        type: string;
+        properties: {
+          sections: {
+            type: string;
+            items: {
+              type: string;
+              properties: { heading: { type: string }; answer: { type: string } };
+              required: string[];
+            };
+          };
+        };
+      };
       expect(converted.type).toBe('object');
       expect(converted.properties.sections.type).toBe('array');
       expect(converted.properties.sections.items.type).toBe('object');

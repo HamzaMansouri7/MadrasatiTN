@@ -1,6 +1,7 @@
 import { ProviderStep } from '../ai/types';
 export { callGemini } from './gemini';
-export { callOpenAICompat, geminiSchemaToJsonSchema, GeminiPart, OpenAICompatOptions } from './openai-compat';
+export { callOpenAICompat, geminiSchemaToJsonSchema } from './openai-compat';
+export type { GeminiPart, OpenAICompatOptions } from './openai-compat';
 
 export interface ProviderEndpointConfig {
   baseUrl: string;
