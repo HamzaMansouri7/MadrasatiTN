@@ -61,3 +61,6 @@ docs/
 /uploads/generated/
 /uploads/illustration_*.svg
 /uploads/*.pdf
+
+# Local handoff bundle
+/vps-handoff/
