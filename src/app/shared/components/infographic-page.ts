@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { InfographicDoc, LanguageService, LessonPlanDocValues } from '@core';
 
 @Component({
@@ -19,6 +19,13 @@ import { InfographicDoc, LanguageService, LessonPlanDocValues } from '@core';
         </div>
 
         <div class="flex items-center gap-2">
+          <button
+            type="button"
+            (click)="shareDoc()"
+            class="px-4 py-1.5 rounded-xl bg-white hover:bg-[#F4F6F5] border border-[#E7DFCF] text-[#14251D] text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
+            <span class="material-icons text-sm">{{ shareCopied() ? 'check' : 'share' }}</span>
+            <span>{{ shareCopied() ? lang.tr('Lien copié ✓', 'تم نسخ الرابط ✓') : lang.tr('Partager', 'مشاركة') }}</span>
+          </button>
           <button
             type="button"
             (click)="printDoc()"
@@ -284,6 +291,7 @@ export class InfographicPageComponent {
   readonly lang = inject(LanguageService);
 
   readonly doc = input.required<InfographicDoc>();
+  readonly shareCopied = signal(false);
 
   readonly values = computed<LessonPlanDocValues>(() => {
     return (this.doc().values as LessonPlanDocValues) || {
@@ -307,6 +315,22 @@ export class InfographicPageComponent {
 
   t(fr: string, ar: string): string {
     return this.doc().language === 'fr' ? fr : ar;
+  }
+
+  async shareDoc() {
+    if (typeof window === 'undefined') return;
+    const url = `${window.location.origin}/lesson-plan/${this.doc().id}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: this.doc().title, url });
+      } else {
+        await navigator.clipboard.writeText(url);
+      }
+      this.shareCopied.set(true);
+      setTimeout(() => this.shareCopied.set(false), 2500);
+    } catch {
+      // user cancelled the share sheet or clipboard denied
+    }
   }
 
   printDoc() {
