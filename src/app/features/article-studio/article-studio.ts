@@ -513,7 +513,7 @@ export class ArticleStudioComponent implements OnDestroy {
 
       if (res.ok) {
         const data = res.data as AiJson;
-        const reply = data['assistantMessage'] || data['replyText'];
+        const reply = data['assistantMessage'];
         if (reply) {
           this.messages.update((msgs) => [...msgs, { role: 'assistant', content: reply }]);
         }

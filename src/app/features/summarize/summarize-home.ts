@@ -121,16 +121,12 @@ export class SummarizeHomeComponent {
           data: img.base64Data,
           mimeType: img.contentType,
         })),
-        images: imgList.map((img) => ({
-          base64Data: img.base64Data,
-          contentType: img.contentType,
-        })),
         ...(this.selGrade() ? { grade: this.selGrade() } : {}),
         ...(this.selSubject() ? { subject: this.selSubject() } : {}),
       };
 
       const res = await this.ai.post('summarize-docs', payload, { fallbackError: '' });
-      const sum = res.ok ? res.data['summary'] || res.data['result'] : undefined;
+      const sum = res.ok ? res.data['summary'] : undefined;
 
       if (sum) {
         this.result.set(sum as SummarizeResult);

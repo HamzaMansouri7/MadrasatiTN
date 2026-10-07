@@ -15,7 +15,6 @@ import { generateImage } from '../ai/image-chain';
 import { resolveInside } from '../safe-path';
 import { capText, capHistory, wrapData, CAPS } from '../input-caps';
 import { originGuard, aiRateLimiter } from '../guards';
-import { legacyCompat } from './compat';
 import { saveGenerated } from '../storage';
 import {
   compose,
@@ -200,8 +199,6 @@ Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use vi
 }
 
 export const aiRouter = Router();
-// Accept the original client contract as well as the current one (see compat.ts).
-aiRouter.use(legacyCompat);
 
 // 1. Generate Exercise (Dual-Mode: Teacher vs Parent)
 aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
@@ -459,7 +456,7 @@ aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, async (req: Requ
       contents = compose(tagSkill, { filename: capText(filename, CAPS.short), previewText: capText(rawText, 3000) });
     } else if (isDocx) {
       try {
-        const buffer = Buffer.from(fileData, 'base64');
+        const buffer = Buffer.from(String(fileData).replace(/^data:[^;]+;base64,/, ''), 'base64');
         const extracted = await mammoth.extractRawText({ buffer });
         const docxText = extracted.value.slice(0, 3000);
         const prompt = compose(tagSkill, { filename, previewText: docxText });
@@ -474,7 +471,7 @@ aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, async (req: Requ
         {
           inlineData: {
             mimeType: isPdf ? 'application/pdf' : mimeType,
-            data: fileData,
+            data: String(fileData).replace(/^data:[^;]+;base64,/, ''),
           },
         },
         { text: prompt },

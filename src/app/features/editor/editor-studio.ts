@@ -647,7 +647,7 @@ export class EditorStudioComponent {
           grade: this.docGrade(),
           subject: this.docSubject(),
         });
-        const ann = (res.ok ? res.data['announcement'] || res.data['result'] : undefined) as AiJson | undefined;
+        const ann = (res.ok ? res.data['announcement'] : undefined) as AiJson | undefined;
         if (ann) {
           this.addBlock('heading1');
           const heading = this.blocks()[this.blocks().length - 1];
@@ -700,7 +700,7 @@ export class EditorStudioComponent {
         grade: this.docGrade(),
         subject: this.docSubject(),
       });
-      const t = (res.ok ? res.data['exercise'] || res.data['transformed'] : undefined) as AiJson | undefined;
+      const t = (res.ok ? res.data['exercise'] : undefined) as AiJson | undefined;
       if (t) this.applyExercise(block.id, t);
     } finally {
       this.isTransformingId.set(null);
@@ -724,7 +724,7 @@ export class EditorStudioComponent {
         grade: this.docGrade(),
         subject: this.docSubject(),
       });
-      const v = (res.ok ? res.data['exercise'] || res.data['variant'] : undefined) as AiJson | undefined;
+      const v = (res.ok ? res.data['exercise'] : undefined) as AiJson | undefined;
       if (v) {
         this.addBlock('exercise');
         const newBlock = this.blocks()[this.blocks().length - 1];

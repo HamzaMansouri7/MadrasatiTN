@@ -66,11 +66,9 @@ export class SolveHomeComponent {
 
       const res = await this.ai.post('photo-solve', {
         photoBase64: base64Data,
-        base64Data,
         mimeType: file.type,
-        contentType: file.type,
       }, { fallbackError: '' });
-      const sol = res.ok ? res.data['solution'] || res.data['result'] : undefined;
+      const sol = res.ok ? res.data['solution'] : undefined;
 
       if (sol) {
         this.result.set(sol as PhotoSolveResult);

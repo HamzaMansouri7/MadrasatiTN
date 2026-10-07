@@ -891,15 +891,12 @@ export class EducationStore {
     try {
       const res = await this.ai.post('auto-tag-document', {
         filename: documentName,
-        documentName,
         rawText,
         fileData: base64Data,
-        base64Data,
         mimeType: contentType,
-        contentType,
       });
       const data = res.ok ? res.data : null;
-      const tags = (data?.['metadata'] || data?.['tags']) as AiJson | undefined;
+      const tags = data?.['metadata'] as AiJson | undefined;
       if (tags) {
         const verifiedAuthor = authorName || 'Enseignant Certifié';
         const newEx: ExerciseItem = {
@@ -932,8 +929,8 @@ export class EducationStore {
   }
 
   // Phase 1a — analyze an uploaded worksheet image, extract its visual "DNA".
-  async analyzeWorksheet(base64Data: string, contentType?: string, documentName?: string): Promise<WorksheetDna | null> {
-    const res = await this.ai.post('analyze-worksheet', { base64Data, contentType, documentName });
+  async analyzeWorksheet(base64Data: string, contentType?: string): Promise<WorksheetDna | null> {
+    const res = await this.ai.post('analyze-worksheet', { imageBase64: base64Data, mimeType: contentType });
     return res.ok && res.data['dna'] ? (res.data['dna'] as WorksheetDna) : null;
   }
 
@@ -1082,16 +1079,42 @@ export class EducationStore {
     return res.ok && res.data['imageUrl'] ? (res.data['imageUrl'] as string) : null;
   }
 
+  /** Maps the UI-facing MemoInput onto the fields POST /api/ai/generate-memo reads. */
+  private memoRequest(input: MemoInput): Record<string, unknown> {
+    const sourceFiles: { data: string; mimeType: string }[] = [];
+    for (const i of input.images ?? []) {
+      if (i.base64Data) sourceFiles.push({ data: i.base64Data, mimeType: i.contentType || 'image/jpeg' });
+    }
+    if (input.file?.base64Data) {
+      sourceFiles.push({ data: input.file.base64Data, mimeType: input.file.contentType || 'application/pdf' });
+    }
+    const block = input.blockToRegenerate
+      ? `Régénère uniquement le bloc "${input.blockToRegenerate}" de la fiche mémo existante.`
+      : '';
+    const userInstruction = [input.instructions, block].filter(Boolean).join(' ');
+    return {
+      topic: input.topic,
+      grade: input.grade,
+      subject: input.subject,
+      trimester: input.trimester,
+      language: input.language,
+      teacherNotes: input.text,
+      existingMemo: input.currentMemo,
+      userInstruction: userInstruction || undefined,
+      sourceFiles: sourceFiles.length ? sourceFiles : undefined,
+    };
+  }
+
   // Memo Studio — generate a structured pedagogical memo sheet
   async generateMemo(input: MemoInput): Promise<MemoGenerateResponse> {
     if (typeof window === 'undefined') {
       return { ok: false, error: 'Environnement non supporté.' };
     }
-    const res = await this.ai.post('generate-memo', input as unknown as Record<string, unknown>, {
+    const res = await this.ai.post('generate-memo', this.memoRequest(input), {
       fallbackError: 'Erreur lors de la génération de la fiche mémo.',
     });
     if (!res.ok) return { ok: false, error: res.error };
-    const result = res.data['result'] as MemoDoc | undefined;
+    const result = res.data['memoDoc'] as MemoDoc | undefined;
     if (result) this.memo.set(result);
     return { ok: true, result, extractedText: res.data['extractedText'] as string | undefined };
   }
@@ -1117,11 +1140,11 @@ export class EducationStore {
     if (typeof window === 'undefined') {
       return { ok: false, error: 'Environnement non supporté.' };
     }
-    const res = await this.ai.post('generate-memo', input as unknown as Record<string, unknown>, {
+    const res = await this.ai.post('generate-memo', this.memoRequest(input), {
       fallbackError: 'Erreur lors de la régénération du bloc.',
     });
     if (!res.ok) return { ok: false, error: res.error };
-    const patch = res.data['result'] as Partial<MemoDoc> | undefined;
+    const patch = res.data['memoDoc'] as Partial<MemoDoc> | undefined;
     if (patch) this.memo.update((doc) => (doc ? { ...doc, ...patch } : doc));
     return { ok: true, result: this.memo() ?? undefined };
   }

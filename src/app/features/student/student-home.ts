@@ -453,7 +453,7 @@ export class StudentHomeComponent {
         grade: this.store.activeStudent()?.grade || '4ème Année',
         subject: 'Général',
       });
-      if (res.ok) this.tutorResponse.set((res.data['explanation'] || res.data['result']) as never);
+      if (res.ok) this.tutorResponse.set((res.data['explanation']) as never);
     } finally {
       this.isTutorLoading.set(false);
     }

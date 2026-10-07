@@ -191,7 +191,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       this.lang.tr('Analyse de la mise en page…', 'تحليل التنسيق والهيكلة…'),
     ]);
     try {
-      const dna = await this.store.analyzeWorksheet(img, this.contentType, 'worksheet-upload');
+      const dna = await this.store.analyzeWorksheet(img, this.contentType);
       this.dna.set(dna);
     } finally {
       this.analyzing.set(false);

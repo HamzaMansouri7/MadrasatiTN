@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, PrintService, paginate } from '@core';
-import { TeacherAvatarComponent, CartoucheComponent, PaginationComponent } from '@shared';
+import { BlogCardComponent, CartoucheComponent, PaginationComponent, TeacherAvatarComponent, TeacherCardComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -15,7 +15,7 @@ interface RecitationItem {
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule, RouterLink, TeacherAvatarComponent, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent],
+  imports: [FormsModule, RouterLink, TeacherAvatarComponent, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent, BlogCardComponent, TeacherCardComponent],
   template: `
     <div class="space-y-6">
       
@@ -795,108 +795,12 @@ interface RecitationItem {
           <div class="space-y-6">
             <div class="grid md:grid-cols-2 gap-6">
               @for (post of store.filteredBlogPosts(); track post.id) {
-                <article class="bg-white rounded-2xl border border-[#E7DFCF] overflow-hidden flex flex-col justify-between transition-all hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] group">
-                  @if (post.coverImage) {
-                    <div
-                      (click)="store.openBlogPost(post)"
-                      (keydown.enter)="store.openBlogPost(post)"
-                      role="button"
-                      tabindex="0"
-                      class="h-44 w-full overflow-hidden bg-[#F8F5EE] border-b border-[#E7DFCF] cursor-pointer">
-                      <img [src]="post.coverImage" [alt]="post.title" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300" />
-                    </div>
-                  }
-                  <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                    <div class="space-y-3">
-                      <div class="flex items-center justify-between flex-wrap gap-2 text-[10px]">
-                        <div class="flex items-center gap-2">
-                          @if (post.subject) {
-                            <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2.5 py-0.5 rounded-full">
-                              {{ lang.translateSubject(post.subject) }}
-                            </span>
-                          }
-                          @if (post.grade) {
-                            <span class="bg-[#F2ECDE] text-[#4A5A50] font-medium px-2 py-0.5 rounded-full">
-                              {{ lang.translateGrade(post.grade) }}
-                            </span>
-                          }
-                        </div>
-                        <span class="text-[#6B7A70] flex items-center gap-1">
-                          <span class="material-icons text-xs">schedule</span>
-                          {{ post.readTimeMinutes }} min
-                        </span>
-                      </div>
-
-                      <h3
-                        (click)="store.openBlogPost(post)"
-                        (keydown.enter)="store.openBlogPost(post)"
-                        role="button"
-                        tabindex="0"
-                        class="font-display font-semibold text-[#14251D] text-base leading-snug cursor-pointer group-hover:text-[#2D6A4F] transition-colors">
-                        {{ lang.isArabic() && post.titleAr ? post.titleAr : post.title }}
-                      </h3>
-
-                      <p
-                        (click)="store.openBlogPost(post)"
-                        (keydown.enter)="store.openBlogPost(post)"
-                        role="button"
-                        tabindex="0"
-                        class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3 cursor-pointer">
-                        {{ cleanExcerpt(lang.isArabic() && post.excerptAr ? post.excerptAr : post.excerpt) }}
-                      </p>
-
-                      @if (post.tags.length) {
-                        <div class="flex flex-wrap gap-1.5 pt-1">
-                          @for (tag of post.tags; track tag) {
-                            <span class="text-[10px] text-[#2D6A4F] bg-[#E8F5FC] px-2 py-0.5 rounded-md font-medium">#{{ tag }}</span>
-                          }
-                        </div>
-                      }
-                    </div>
-
-                    <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between text-xs">
-                      <div class="flex items-center gap-2">
-                        <div class="w-7 h-7 rounded-full bg-[#1B4332] text-[#FBF8F1] font-bold text-xs flex items-center justify-center overflow-hidden">
-                          @if (post.authorAvatar) {
-                            <img [src]="post.authorAvatar" [alt]="post.authorName" class="w-full h-full object-cover" />
-                          } @else {
-                            {{ (post.authorName || 'E')[0] }}
-                          }
-                        </div>
-                        <div>
-                          <p class="font-semibold text-[#14251D] text-xs leading-none">{{ post.authorName }}</p>
-                          <p class="text-[10px] text-[#6B7A70]">{{ post.authorTitle }}</p>
-                        </div>
-                      </div>
-
-                      <div class="flex items-center gap-2">
-                        <button
-                          type="button"
-                          (click)="store.openBlogPost(post)"
-                          class="flex items-center gap-1 text-[#2D6A4F] hover:text-[#1B4332] font-semibold text-xs bg-[#2D6A4F]/10 hover:bg-[#2D6A4F]/20 px-2.5 py-1 rounded-lg transition-colors cursor-pointer">
-                          <span>{{ lang.t('readArticle') }}</span>
-                          <span class="material-icons text-xs" [class.rotate-180]="lang.isArabic()">arrow_forward</span>
-                        </button>
-
-                        <button
-                          type="button"
-                          (click)="shareBlogCard(post)"
-                          class="flex items-center text-[#6B7A70] hover:text-[#2D6A4F] p-1 rounded-md transition-colors cursor-pointer"
-                          [title]="lang.t('shareArticle')">
-                          <span class="material-icons text-base">share</span>
-                        </button>
-
-                        <button
-                          type="button"
-                          (click)="store.likeBlogPost(post.id)"
-                          class="flex items-center gap-1 text-[#6B7A70] hover:text-[#C1121F] cursor-pointer">
-                          <span class="material-icons text-sm text-[#C1121F]">favorite</span>
-                          <span class="text-xs font-semibold">{{ post.likesCount }}</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <app-blog-card
+                  [post]="post"
+                  accent="green"
+                  [showCover]="true"
+                  (open)="store.openBlogPost($event)"
+                  (like)="store.likeBlogPost($event)" />
               }
             </div>
           </div>
@@ -1012,21 +916,10 @@ interface RecitationItem {
                 </h4>
                 <div class="grid md:grid-cols-3 gap-4">
                   @for (t of store.watchedTeachers(); track t.id) {
-                    <div class="bg-white rounded-2xl p-4 border border-[#E7DFCF] shadow-xs space-y-3 text-center">
-                      <img [src]="t.avatarUrl" alt="Avatar" class="w-16 h-16 rounded-full object-cover mx-auto border-2 border-[#2D6A4F]" />
-                      <div>
-                        <h5 class="font-semibold text-[#14251D] text-xs">{{ t.name }}</h5>
-                        <p class="text-[10px] text-[#6B7A70]">{{ t.school }}</p>
-                      </div>
-                      <div class="flex items-center justify-between pt-2 border-t border-[#E7DFCF] text-xs">
-                        <button (click)="selectedTeacherModal.set(t)" class="text-[#2D6A4F] font-semibold hover:underline">
-                          {{ lang.tr('Voir profil', 'الملف') }}
-                        </button>
-                        <button (click)="store.toggleWatchlist(t.id, 'teacher')" class="text-[#BF5B34] text-xs font-semibold cursor-pointer">
-                          {{ lang.tr('Ne plus suivre', 'إلغاء المتابعة') }}
-                        </button>
-                      </div>
-                    </div>
+                    <app-teacher-card
+                      [teacher]="t"
+                      [isWatched]="true"
+                      (toggleWatch)="store.toggleWatchlist($event.id, 'teacher')" />
                   }
                 </div>
               </div>
@@ -1258,51 +1151,10 @@ interface RecitationItem {
             </button>
           </div>
 
-          <div class="text-center space-y-3">
-            <app-teacher-avatar [avatarUrl]="t.avatarUrl" [name]="t.displayName || t.name" size="lg" class="mx-auto flex justify-center" />
-            <div>
-              <h3 class="font-display font-semibold text-[#14251D] text-lg flex items-center justify-center gap-1">
-                {{ t.displayName || t.name }}
-                @if (t.verified === 'verified') {
-                  <span class="material-icons text-[#1B4332] text-base" title="Vérifié">verified</span>
-                }
-              </h3>
-              <p class="text-xs text-[#2D6A4F] font-semibold">{{ t.title || lang.tr('Enseignant', 'معلم') }}</p>
-              <p class="text-[11px] text-[#6B7A70]">{{ t.school }}{{ t.delegation ? ' · ' + t.delegation : '' }}</p>
-            </div>
-
-            <!-- Subject Badges -->
-            @if (t.subjects && t.subjects.length > 0) {
-              <div class="flex flex-wrap gap-1 justify-center">
-                @for (sub of t.subjects; track sub) {
-                  <span class="text-[11px] bg-[#EAE4D5] text-[#14251D] font-mono px-2 py-0.5 rounded-sm border border-[#D5CDBC]">{{ sub }}</span>
-                }
-              </div>
-            }
-
-            @if (t.bio) {
-              <p class="text-xs text-[#4A5A50] bg-white p-3 rounded-xl border border-[#E7DFCF] leading-relaxed text-left">
-                "{{ t.bio }}"
-              </p>
-            }
-
-            <div class="flex gap-2 pt-2">
-              <a
-                [routerLink]="['/teachers', t.id]"
-                (click)="selectedTeacherModal.set(null)"
-                class="flex-1 bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-1.5 no-underline">
-                <span class="material-icons text-sm">person</span>
-                {{ lang.tr('Voir le profil complet', 'عرض الملف الكامل') }}
-              </a>
-              <button
-                (click)="store.toggleWatchlist(t.id, 'teacher')"
-                [class]="store.isWatched(t.id, 'teacher') ? 'bg-[#F2ECDE] text-[#8A5A00] border border-[#8A5A00]/40' : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1]'"
-                class="font-semibold px-4 py-2.5 rounded-xl text-xs cursor-pointer transition-colors flex items-center justify-center gap-1.5">
-                <span class="material-icons text-sm">{{ store.isWatched(t.id, 'teacher') ? 'bookmark' : 'bookmark_border' }}</span>
-                {{ store.isWatched(t.id, 'teacher') ? lang.tr('Suivi', 'متابع') : lang.tr('Suivre', 'متابعة') }}
-              </button>
-            </div>
-          </div>
+          <app-teacher-card
+            [teacher]="t"
+            [isWatched]="store.isWatched(t.id, 'teacher')"
+            (toggleWatch)="store.toggleWatchlist($event.id, 'teacher')" />
         </div>
       </div>
     }

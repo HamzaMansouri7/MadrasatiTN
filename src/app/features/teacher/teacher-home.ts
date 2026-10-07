@@ -1836,10 +1836,9 @@ export class TeacherHomeComponent {
           data: i.base64Data,
           mimeType: i.contentType,
         })),
-        images: imgs.map((i) => ({ base64Data: i.base64Data, contentType: i.contentType })),
       }, { fallbackError: 'Erreur lors de la génération' });
       const data = res.ok ? res.data : { error: res.error };
-      const r = (res.ok ? data['summary'] || data['result'] : undefined) as AiJson | undefined;
+      const r = (res.ok ? data['summary'] : undefined) as AiJson | undefined;
 
       if (res.ok && r) {
         let fullContent = `${r.summaryMarkdown}\n\n`;
@@ -1940,13 +1939,10 @@ export class TeacherHomeComponent {
       const isImage = file.type.startsWith('image/');
       const tagRes = await this.ai.post('auto-tag-document', {
         filename: file.name,
-        documentName: file.name,
         fileData: isImage ? base64Data : undefined,
-        base64Data: isImage ? base64Data : undefined,
         mimeType: file.type,
-        contentType: file.type,
       });
-      const t = (tagRes.ok ? tagRes.data['metadata'] || tagRes.data['tags'] : undefined) as AiJson | undefined;
+      const t = (tagRes.ok ? tagRes.data['metadata'] : undefined) as AiJson | undefined;
       if (t) {
         if (t.suggestedTitle) this.newCourseTitle.set(t.suggestedTitle);
         if (t.subject) this.newCourseSubject.set(t.subject as SubjectName);
