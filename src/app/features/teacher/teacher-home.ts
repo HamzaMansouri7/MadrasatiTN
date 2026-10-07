@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark } from '@core';
 import { TeacherAvatarComponent, CartoucheComponent } from '@shared';
 
 export interface GeneratedExerciseResult {
@@ -1567,7 +1567,7 @@ export interface GeneratedExerciseResult {
               <div class="space-y-2">
                 <span class="font-semibold text-[#14251D] block">{{ lang.tr("Niveaux et Années d'Enseignement Active :", 'السنوات الدراسية المباشرة :') }}</span>
                 <div class="flex flex-wrap gap-2">
-                  @for (g of ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']; track g) {
+                  @for (g of primaryGrades; track g) {
                     <button
                       type="button"
                       (click)="toggleTaughtGrade(g)"
@@ -1694,7 +1694,8 @@ export class TeacherHomeComponent {
   readonly editAvatarUrl = signal<string>('');
   readonly editCnpId = signal<string>('');
   readonly editCustomWatermark = signal<string>('');
-  readonly editTaughtGrades = signal<string[]>(['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année']);
+  readonly primaryGrades = PRIMARY_GRADES;
+  readonly editTaughtGrades = signal<string[]>([...PRIMARY_GRADES]);
   readonly editTaughtSubjects = signal<string[]>(['Mathématiques', 'Éveil Scientifique', 'Français']);
   readonly isUploadingAvatar = signal<boolean>(false);
   readonly verificationRequested = signal<boolean>(false);
@@ -2142,7 +2143,7 @@ export class TeacherHomeComponent {
     if (!this.newCourseTitle()) return;
     const teacherName = this.getTeacherName();
     const school = this.getTeacherSchool();
-    const watermark = `Madrasati TN — Document Certifié — ${teacherName} (${school})`;
+    const watermark = buildWatermark({ authorName: teacherName, school });
 
     const createdCourse = this.store.addCourse({
       title: this.newCourseTitle(),

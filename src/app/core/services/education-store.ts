@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { InteractionService } from './interaction.service';
 import { FirebaseService } from './firebase.service';
 import { AiClient, AiJson } from './ai-client';
+import { buildWatermark } from './print.service';
 import {
   Announcement,
   BlogPost,
@@ -1280,7 +1281,7 @@ export class EducationStore {
       tags: courseData.tags || ['Nouveau'],
       hasCorrection: true,
       upvotesCount: 1,
-      watermarkText: courseData.watermarkText || `Madrasati TN — Document Certifié — ${teacherName}`,
+      watermarkText: courseData.watermarkText || buildWatermark({ authorName: teacherName }),
     };
 
     this.courses.update((list) => [newC, ...list]);
@@ -1316,7 +1317,7 @@ export class EducationStore {
       schoolYear: '2025-2026',
       hasCorrection: true,
       upvotesCount: 1,
-      watermarkText: 'Madrasati TN — Document Certifié — Enseignant Certifié',
+      watermarkText: buildWatermark({ fallback: 'Madrasati TN — Document Certifié — Enseignant Certifié' }),
     };
     this.exercisesBank.update((list) => [enriched, ...list]);
     void this.firebase.saveExercise(enriched as unknown as Record<string, unknown>);

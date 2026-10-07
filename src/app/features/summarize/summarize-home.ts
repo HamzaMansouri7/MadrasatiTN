@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { EducationStore, FirebaseService, LanguageService, downscaleImage, AiClient } from '@core';
+import { EducationStore, FirebaseService, LanguageService, downscaleImage, AiClient, PRIMARY_GRADES, PRIMARY_SUBJECTS } from '@core';
 
 export interface SummarizeResult {
   title: string;
@@ -37,8 +37,8 @@ export class SummarizeHomeComponent {
 
   // Optional pre-classification: when the user picks a grade/subject the
   // server grounds the summary in the matching CNP curriculum (better accuracy).
-  readonly GRADES = ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'];
-  readonly SUBJECTS = ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'];
+  readonly GRADES = PRIMARY_GRADES;
+  readonly SUBJECTS = PRIMARY_SUBJECTS;
   readonly selGrade = signal('');
   readonly selSubject = signal('');
 

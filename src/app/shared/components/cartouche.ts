@@ -19,7 +19,7 @@ export type CartoucheTone = 'blue' | 'green' | 'library';
     '[class]': 'hostClass()',
   },
   template: `
-    <div class="flex items-center justify-between text-xs">
+    <div class="flex items-center justify-between text-xs sm:text-sm">
       <div class="text-left leading-tight" [class]="leftClass()">
         <p>الجمهورية التونسية</p>
         <p>وزارة التربية والتعليم</p>
@@ -32,7 +32,7 @@ export type CartoucheTone = 'blue' | 'green' | 'library';
     </div>
     <div class="mt-3 pt-2 border-t border-dashed grid grid-cols-3 gap-2 text-xs font-semibold" [class]="studentBorder()">
       <p>الاسم واللقب: ....................................</p>
-      <p>القسم: {{ grade() }}</p>
+      <p class="text-center">القسم: {{ grade() }}</p>
       <p class="text-right" [class]="numClass()">العدد: .......... / 20</p>
     </div>
   `,

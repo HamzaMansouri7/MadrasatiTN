@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { Location } from '@angular/common';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK } from '@core';
 import { CartoucheComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
@@ -199,7 +199,7 @@ export class EditorStudioComponent {
   readonly docTrimester = signal<'Trimestre 1' | 'Trimestre 2' | 'Trimestre 3'>('Trimestre 1');
   readonly docSchoolYear = signal<string>('2025-2026');
   readonly docSchool = signal<string>('École Primaire Habib Bourguiba');
-  readonly docWatermark = signal<string>('Madrasati TN — Document Certifié');
+  readonly docWatermark = signal<string>(DEFAULT_WATERMARK);
 
   // Dual-Mode Studio Signals (Teacher vs Parent - Idea 16)
   readonly isParentMode = computed(() => this.store.previousRole() === 'parent');
@@ -970,7 +970,10 @@ export class EditorStudioComponent {
     const user = this.firebase.userProfile();
     const authorName = user?.displayName || 'Enseignant Certifié';
     const authorId = user?.uid;
-    const watermark = user?.customWatermark || this.docWatermark() || `Madrasati TN — Document Certifié — ${authorName}`;
+    const watermark = buildWatermark({
+      customWatermark: user?.customWatermark || this.docWatermark(),
+      authorName,
+    });
 
     this.store.addCourse({
       title: this.docTitle(),

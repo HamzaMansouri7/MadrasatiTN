@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, WorksheetDoc } from '@core';
-import { WorksheetDna, GeneratedExercise } from '@core';
+import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark } from '@core';
 import { CartoucheComponent } from '@shared';
 
 /**
@@ -46,7 +45,9 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
   });
 
   readonly customWatermark = computed(() => {
-    return this.sharedDoc()?.customWatermark || this.firebase.userProfile()?.customWatermark || 'Madrasati TN — Document Certifié';
+    return buildWatermark({
+      customWatermark: this.sharedDoc()?.customWatermark || this.firebase.userProfile()?.customWatermark,
+    });
   });
 
   readonly school = computed(() => {
@@ -114,8 +115,8 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
 
   // Pre-publish classification — everything entering the library must carry a
   // confirmed grade + subject (AI-detected values are only a prefill).
-  readonly GRADES = ['1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'];
-  readonly SUBJECTS = ['Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique', 'Histoire & Géographie', 'Anglais'];
+  readonly GRADES = PRIMARY_GRADES;
+  readonly SUBJECTS = PRIMARY_SUBJECTS;
   readonly sharePromptOpen = signal(false);
   readonly shareGrade = signal('');
   readonly shareSubject = signal('');

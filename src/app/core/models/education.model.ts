@@ -24,6 +24,41 @@ export type SubjectName =
 
 export type Trimester = 'Trimestre 1' | 'Trimestre 2' | 'Trimestre 3';
 
+export const PRIMARY_GRADES: readonly GradeLevel[] = [
+  '1ère Année',
+  '2ème Année',
+  '3ème Année',
+  '4ème Année',
+  '5ème Année',
+  '6ème Année',
+] as const;
+
+export const PRIMARY_SUBJECTS: readonly SubjectName[] = [
+  'Mathématiques',
+  'Français',
+  'اللغة العربية',
+  'Éveil Scientifique',
+  'Histoire & Géographie',
+  'Anglais',
+] as const;
+
+export const ALL_SUBJECTS: readonly SubjectName[] = [
+  'Mathématiques',
+  'Français',
+  'اللغة العربية',
+  'Éveil Scientifique',
+  'Histoire & Géographie',
+  'Anglais',
+  'Informatique',
+  'Éducation Islamique',
+] as const;
+
+export const TRIMESTERS: readonly Trimester[] = [
+  'Trimestre 1',
+  'Trimestre 2',
+  'Trimestre 3',
+] as const;
+
 export type DocType =
   | 'Devoir de Contrôle'
   | 'Devoir de Synthèse'

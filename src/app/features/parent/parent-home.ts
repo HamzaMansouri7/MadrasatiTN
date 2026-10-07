@@ -1,6 +1,6 @@
 import { CartoucheComponent } from '@shared';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService } from '@core';
+import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService, PRIMARY_GRADES } from '@core';
 
 @Component({
   selector: 'app-parent-home',
@@ -934,7 +934,7 @@ export class ParentHomeComponent {
   readonly printModalCourse = signal<Course | null>(null);
   readonly selectedArticleDetail = signal<BlogPost | null>(null);
 
-  readonly gradesList: string[] = ['all', '1ère Année', '2ème Année', '3ème Année', '4ème Année', '5ème Année', '6ème Année'];
+  readonly gradesList: string[] = ['all', ...PRIMARY_GRADES];
   readonly subjectsList: string[] = ['all', 'Mathématiques', 'Français', 'اللغة العربية', 'Éveil Scientifique'];
 
   // Ask Question Form

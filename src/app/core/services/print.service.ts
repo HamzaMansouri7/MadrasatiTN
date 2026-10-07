@@ -1,5 +1,29 @@
 import { Injectable } from '@angular/core';
 
+export interface WatermarkOptions {
+  customWatermark?: string | null;
+  authorName?: string | null;
+  school?: string | null;
+  fallback?: string;
+}
+
+export const DEFAULT_WATERMARK = 'Madrasati TN — Document Certifié';
+
+/**
+ * Builds a standardized watermark text stamp for A4 printable documents and attributions.
+ */
+export function buildWatermark(opts?: WatermarkOptions | string | null): string {
+  if (!opts) return DEFAULT_WATERMARK;
+  if (typeof opts === 'string') return opts.trim() || DEFAULT_WATERMARK;
+  const custom = opts.customWatermark?.trim();
+  if (custom) return custom;
+  const author = opts.authorName?.trim();
+  const school = opts.school?.trim();
+  if (author && school) return `${DEFAULT_WATERMARK} — ${author} (${school})`;
+  if (author) return `${DEFAULT_WATERMARK} — ${author}`;
+  return opts.fallback?.trim() || DEFAULT_WATERMARK;
+}
+
 export function escapeHtml(value: string): string {
   return value
     .replace(/&/g, '&amp;')
