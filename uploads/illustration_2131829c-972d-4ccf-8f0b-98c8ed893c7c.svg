@@ -1,0 +1,103 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F7FA" />
+      <stop offset="100%" style="stop-color:#B3E5FC" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0288D1" />
+      <stop offset="100%" style="stop-color:#00ACC1" />
+    </linearGradient>
+    <linearGradient id="subtitleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4DD0E1" />
+      <stop offset="100%" style="stop-color:#00BCD4" />
+    </linearGradient>
+    <linearGradient id="fractionBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8E1" />
+      <stop offset="100%" style="stop-color:#FFECB3" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="450" fill="url(#backgroundGradient)" />
+
+  <!-- Main Title Container -->
+  <rect x="50" y="30" width="700" height="80" rx="20" ry="20" fill="url(#titleGradient)" filter="url(#shadow)" />
+  <text x="400" y="78" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+    Mathématiques — Les fractions
+  </text>
+
+  <!-- Subtitle Container -->
+  <rect x="50" y="125" width="700" height="60" rx="15" ry="15" fill="url(#subtitleGradient)" filter="url(#shadow)" />
+  <text x="400" y="163" font-family="Arial, sans-serif" font-size="22" fill="white" text-anchor="middle">
+    Aider votre enfant de 4ème année à maîtriser les fractions : Guide pratique pour les parents
+  </text>
+
+  <!-- Content Area - Left Side: Visual Fraction Example -->
+  <g transform="translate(100, 240)">
+    <!-- Plate/Pizza Base -->
+    <circle cx="0" cy="0" r="80" fill="url(#fractionBgGradient)" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="75" fill="#FFD700" /> <!-- Pizza color -->
+
+    <!-- Fraction Slices -->
+    <!-- Denominator: 4 -->
+    <!-- Numerator: 3 -->
+    <path d="M 0 0 L 75 0 A 75 75 0 0 1 0 75 Z" fill="#FF6F00" /> <!-- 1/4 (orange) -->
+    <path d="M 0 0 L 0 75 A 75 75 0 0 1 -75 0 Z" fill="#FF6F00" /> <!-- 1/4 (orange) -->
+    <path d="M 0 0 L -75 0 A 75 75 0 0 1 0 -75 Z" fill="#FF6F00" /> <!-- 1/4 (orange) -->
+    <path d="M 0 0 L 0 -75 A 75 75 0 0 1 75 0 Z" fill="#E0E0E0" /> <!-- 1/4 (gray - remaining) -->
+
+    <!-- Division Lines -->
+    <line x1="0" y1="-75" x2="0" y2="75" stroke="#FFFFFF" stroke-width="3" />
+    <line x1="-75" y1="0" x2="75" y2="0" stroke="#FFFFFF" stroke-width="3" />
+
+    <!-- Fraction Text Display -->
+    <rect x="-40" y="95" width="80" height="40" rx="10" ry="10" fill="#BBDEFB" filter="url(#shadow)" />
+    <text x="0" y="125" font-family="Arial, sans-serif" font-size="28" fill="#0D47A1" text-anchor="middle">
+      <tspan x="0" dy="-7">3</tspan>
+      <tspan x="0" dy="0" font-size="20" fill="#0D47A1">—</tspan>
+      <tspan x="0" dy="25">4</tspan>
+    </text>
+  </g>
+
+  <!-- Content Area - Right Side: Parent/Child figures -->
+  <g transform="translate(500, 240)">
+    <!-- Parent figure -->
+    <circle cx="0" cy="-40" r="30" fill="#64B5F6" filter="url(#shadow)" /> <!-- Head -->
+    <rect x="-25" y="-10" width="50" height="70" rx="15" ry="15" fill="#2196F3" filter="url(#shadow)" /> <!-- Body -->
+    <path d="M -25 10 C -40 0, -40 40, -25 60 L -15 60 L -15 10 Z" fill="#1976D2" /> <!-- Left arm -->
+    <path d="M 25 10 C 40 0, 40 40, 25 60 L 15 60 L 15 10 Z" fill="#1976D2" /> <!-- Right arm -->
+    <rect x="-20" y="60" width="15" height="30" rx="5" ry="5" fill="#1976D2" /> <!-- Left leg -->
+    <rect x="5" y="60" width="15" height="30" rx="5" ry="5" fill="#1976D2" /> <!-- Right leg -->
+
+    <!-- Child figure -->
+    <g transform="translate(100, 30)">
+      <circle cx="0" cy="-40" r="25" fill="#FFB74D" filter="url(#shadow)" /> <!-- Head -->
+      <rect x="-20" y="-15" width="40" height="60" rx="12" ry="12" fill="#FFA726" filter="url(#shadow)" /> <!-- Body -->
+      <path d="M -20 0 C -30 -5, -30 30, -20 50 L -10 50 L -10 0 Z" fill="#FB8C00" /> <!-- Left arm -->
+      <path d="M 20 0 C 30 -5, 30 30, 20 50 L 10 50 L 10 0 Z" fill="#FB8C00" /> <!-- Right arm -->
+      <rect x="-15" y="45" width="12" height="25" rx="4" ry="4" fill="#FB8C00" /> <!-- Left leg -->
+      <rect x="3" y="45" width="12" height="25" rx="4" ry="4" fill="#FB8C00" /> <!-- Right leg -->
+    </g>
+
+    <!-- Thought bubble with question -->
+    <g transform="translate(20, -100)">
+      <rect x="-10" y="-30" width="160" height="50" rx="20" ry="20" fill="white" filter="url(#shadow)" />
+      <circle cx="-30" cy="15" r="10" fill="white" />
+      <circle cx="-45" cy="25" r="5" fill="white" />
+      <text x="70" y="0" font-family="Arial, sans-serif" font-size="18" fill="#424242" text-anchor="middle">
+        Comment expliquer 3/4 ?
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom pedagogical message -->
+  <rect x="50" y="380" width="700" height="40" rx="10" ry="10" fill="#81D4FA" filter="url(#shadow)" />
+  <text x="400" y="405" font-family="Arial, sans-serif" font-size="18" fill="#0D47A1" text-anchor="middle">
+    Utilisez des objets du quotidien ! Pizzas, gâteaux ou fruits...
+  </text>
+
+</svg>

@@ -1,0 +1,237 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F7FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Sun Gradient -->
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFEB3B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- River Gradient -->
+    <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A7D9E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7EC1D4;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Garden Gradient -->
+    <linearGradient id="gardenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8BC34A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#689F38;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Skin Color -->
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDC79B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6B88A;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Boy Shirt Gradient -->
+    <linearGradient id="boyShirtGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#66BB6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Boy Shorts Gradient -->
+    <linearGradient id="boyShortsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#42A5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Girl Dress Gradient -->
+    <linearGradient id="girlDressGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8A65;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF5722;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Hair colors -->
+    <linearGradient id="boyHairGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#6A3E00"/>
+    </linearGradient>
+
+    <linearGradient id="girlHairGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFB300"/>
+    </linearGradient>
+
+    <!-- Flower gradients (examples) -->
+    <radialGradient id="flowerRedGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" stop-color="#FF6F61"/>
+        <stop offset="100%" stop-color="#E53935"/>
+    </radialGradient>
+    <radialGradient id="flowerYellowGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" stop-color="#FFD166"/>
+        <stop offset="100%" stop-color="#FFB74D"/>
+    </radialGradient>
+    <radialGradient id="flowerBlueGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" stop-color="#9EE7FF"/>
+        <stop offset="100%" stop-color="#4FC3F7"/>
+    </radialGradient>
+    <radialGradient id="flowerPurpleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" stop-color="#B19CD9"/>
+        <stop offset="100%" stop-color="#7E57C2"/>
+    </radialGradient>
+    <linearGradient id="stemGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#AED581"/>
+        <stop offset="100%" stop-color="#8CC63F"/>
+    </linearGradient>
+
+  </defs>
+
+  <!-- White background rectangle (explicit for robustness) -->
+  <rect x="0" y="0" width="800" height="450" fill="#FFFFFF"/>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="800" height="250" fill="url(#skyGradient)"/>
+
+  <!-- River in the background -->
+  <path d="M0 250 Q100 240, 200 255 T400 260 T600 250 T800 245 V280 Q600 285, 400 270 T200 275 T0 280 Z" fill="url(#riverGradient)" />
+
+  <!-- Garden (main ground) -->
+  <path d="M0 270 Q100 260, 200 280 C300 290, 400 285, 500 295 C600 305, 700 290, 800 300 V450 H0 Z" fill="url(#gardenGradient)" />
+
+  <!-- Sun -->
+  <circle cx="700" cy="80" r="60" fill="url(#sunGradient)"/>
+  <!-- Sun Rays (simplified) -->
+  <g fill="url(#sunGradient)" opacity="0.8">
+    <circle cx="700" cy="80" r="70" opacity="0.4"/>
+    <circle cx="700" cy="80" r="80" opacity="0.2"/>
+  </g>
+
+
+  <!-- Flowers -->
+  <!-- Flower 1 (Red) -->
+  <g transform="translate(100, 350)">
+    <rect x="-2" y="0" width="4" height="20" fill="url(#stemGreen)" rx="2" ry="2"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="6" fill="url(#flowerRedGradient)"/>
+    <ellipse cx="8" cy="-10" rx="10" ry="6" fill="url(#flowerRedGradient)" transform="rotate(30 8 -10)"/>
+    <ellipse cx="-8" cy="-10" rx="10" ry="6" fill="url(#flowerRedGradient)" transform="rotate(-30 -8 -10)"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="6" fill="url(#flowerRedGradient)"/>
+    <circle cx="0" cy="-10" r="4" fill="#FFC107"/>
+  </g>
+  <!-- Flower 2 (Yellow) -->
+  <g transform="translate(250, 370)">
+    <rect x="-2" y="0" width="4" height="15" fill="url(#stemGreen)" rx="2" ry="2"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="6" fill="url(#flowerYellowGradient)"/>
+    <ellipse cx="8" cy="-10" rx="10" ry="6" fill="url(#flowerYellowGradient)" transform="rotate(30 8 -10)"/>
+    <ellipse cx="-8" cy="-10" rx="10" ry="6" fill="url(#flowerYellowGradient)" transform="rotate(-30 -8 -10)"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="6" fill="url(#flowerYellowGradient)"/>
+    <circle cx="0" cy="-10" r="4" fill="#FF6F61"/>
+  </g>
+  <!-- Flower 3 (Blue) -->
+  <g transform="translate(450, 360)">
+    <rect x="-2" y="0" width="4" height="18" fill="url(#stemGreen)" rx="2" ry="2"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="6" fill="url(#flowerBlueGradient)"/>
+    <ellipse cx="8" cy="-10" rx="10" ry="6" fill="url(#flowerBlueGradient)" transform="rotate(30 8 -10)"/>
+    <ellipse cx="-8" cy="-10" rx="10" ry="6" fill="url(#flowerBlueGradient)" transform="rotate(-30 -8 -10)"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="6" fill="url(#flowerBlueGradient)"/>
+    <circle cx="0" cy="-10" r="4" fill="#B19CD9"/>
+  </g>
+  <!-- Flower 4 (Purple) -->
+  <g transform="translate(600, 380)">
+    <rect x="-2" y="0" width="4" height="12" fill="url(#stemGreen)" rx="2" ry="2"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="6" fill="url(#flowerPurpleGradient)"/>
+    <ellipse cx="8" cy="-10" rx="10" ry="6" fill="url(#flowerPurpleGradient)" transform="rotate(30 8 -10)"/>
+    <ellipse cx="-8" cy="-10" rx="10" ry="6" fill="url(#flowerPurpleGradient)" transform="rotate(-30 -8 -10)"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="6" fill="url(#flowerPurpleGradient)"/>
+    <circle cx="0" cy="-10" r="4" fill="#FFD166"/>
+  </g>
+    <!-- More scattered flowers for fullness -->
+  <g transform="translate(70, 390) scale(0.7)">
+    <rect x="-2" y="0" width="4" height="10" fill="url(#stemGreen)" rx="2" ry="2"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="6" fill="url(#flowerBlueGradient)"/>
+    <ellipse cx="8" cy="-10" rx="10" ry="6" fill="url(#flowerBlueGradient)" transform="rotate(30 8 -10)"/>
+    <ellipse cx="-8" cy="-10" rx="10" ry="6" fill="url(#flowerBlueGradient)" transform="rotate(-30 -8 -10)"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="6" fill="url(#flowerBlueGradient)"/>
+    <circle cx="0" cy="-10" r="4" fill="#B19CD9"/>
+  </g>
+  <g transform="translate(350, 400) scale(0.8)">
+    <rect x="-2" y="0" width="4" height="10" fill="url(#stemGreen)" rx="2" ry="2"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="6" fill="url(#flowerYellowGradient)"/>
+    <ellipse cx="8" cy="-10" rx="10" ry="6" fill="url(#flowerYellowGradient)" transform="rotate(30 8 -10)"/>
+    <ellipse cx="-8" cy="-10" rx="10" ry="6" fill="url(#flowerYellowGradient)" transform="rotate(-30 -8 -10)"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="6" fill="url(#flowerYellowGradient)"/>
+    <circle cx="0" cy="-10" r="4" fill="#FF6F61"/>
+  </g>
+  <g transform="translate(700, 360) scale(0.9)">
+    <rect x="-2" y="0" width="4" height="15" fill="url(#stemGreen)" rx="2" ry="2"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="6" fill="url(#flowerRedGradient)"/>
+    <ellipse cx="8" cy="-10" rx="10" ry="6" fill="url(#flowerRedGradient)" transform="rotate(30 8 -10)"/>
+    <ellipse cx="-8" cy="-10" rx="10" ry="6" fill="url(#flowerRedGradient)" transform="rotate(-30 -8 -10)"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="6" fill="url(#flowerRedGradient)"/>
+    <circle cx="0" cy="-10" r="4" fill="#FFC107"/>
+  </g>
+
+
+  <!-- Children -->
+  <!-- Girl -->
+  <g id="girl" transform="translate(300, 310) scale(1.1)">
+    <!-- Body (dress) -->
+    <path d="M-20 0 Q-25 -20, -10 -40 L10 -40 Q25 -20, 20 0 Z" fill="url(#girlDressGradient)"/>
+    <!-- Head -->
+    <circle cx="0" cy="-70" r="25" fill="url(#skinGradient)"/>
+    <!-- Hair -->
+    <path d="M-25 -70 C-35 -85 -25 -100 0 -95 C25 -100 35 -85 25 -70 A25 25 0 0 1 -25 -70 Z" fill="url(#girlHairGradient)"/>
+    <!-- Eyes -->
+    <circle cx="-8" cy="-75" r="3" fill="#333"/>
+    <circle cx="8" cy="-75" r="3" fill="#333"/>
+    <!-- Mouth - wider smile -->
+    <path d="M-12 -62 A 12 6 0 0 1 12 -62" stroke="#333" stroke-width="2" fill="none"/>
+    <!-- Arms -->
+    <!-- Left arm -->
+    <g transform="translate(-25, -20) rotate(-20)">
+        <rect x="-5" y="0" width="10" height="30" rx="5" ry="5" fill="url(#skinGradient)"/>
+        <circle cx="0" cy="30" r="7" fill="url(#skinGradient)"/> <!-- Hand -->
+    </g>
+    <!-- Right arm -->
+    <g transform="translate(25, -20) rotate(20)">
+        <rect x="-5" y="0" width="10" height="30" rx="5" ry="5" fill="url(#skinGradient)"/>
+        <circle cx="0" cy="30" r="7" fill="url(#skinGradient)"/> <!-- Hand -->
+    </g>
+    <!-- Legs (feet slightly visible) -->
+    <rect x="-15" y="0" width="10" height="25" rx="5" ry="5" fill="url(#skinGradient)"/>
+    <rect x="5" y="0" width="10" height="25" rx="5" ry="5" fill="url(#skinGradient)"/>
+    <circle cx="-10" cy="25" r="6" fill="#A0A0A0"/> <!-- Shoe -->
+    <circle cx="10" cy="25" r="6" fill="#A0A0A0"/> <!-- Shoe -->
+  </g>
+
+  <!-- Boy -->
+  <g id="boy" transform="translate(450, 310) scale(1.1)">
+    <!-- Body (T-shirt) -->
+    <path d="M-15 0 L-25 -30 Q-15 -45, 0 -40 Q15 -45, 25 -30 L15 0 Z" fill="url(#boyShirtGradient)"/>
+    <!-- Head -->
+    <circle cx="0" cy="-70" r="25" fill="url(#skinGradient)"/>
+    <!-- Hair -->
+    <path d="M-25 -75 C-20 -90 -5 -95 0 -95 C5 -95 20 -90 25 -75 C20 -70 15 -65 0 -65 C-15 -65 -20 -70 -25 -75 Z" fill="url(#boyHairGradient)"/>
+    <!-- Eyes -->
+    <circle cx="-8" cy="-75" r="3" fill="#333"/>
+    <circle cx="8" cy="-75" r="3" fill="#333"/>
+    <!-- Mouth - wider smile -->
+    <path d="M-12 -62 A 12 6 0 0 1 12 -62" stroke="#333" stroke-width="2" fill="none"/>
+    <!-- Arms -->
+    <!-- Left arm -->
+    <g transform="translate(-25, -20) rotate(-10)">
+        <rect x="-5" y="0" width="10" height="30" rx="5" ry="5" fill="url(#skinGradient)"/>
+        <circle cx="0" cy="30" r="7" fill="url(#skinGradient)"/> <!-- Hand -->
+    </g>
+    <!-- Right arm -->
+    <g transform="translate(25, -20) rotate(10)">
+        <rect x="-5" y="0" width="10" height="30" rx="5" ry="5" fill="url(#skinGradient)"/>
+        <circle cx="0" cy="30" r="7" fill="url(#skinGradient)"/> <!-- Hand -->
+    </g>
+    <!-- Shorts -->
+    <path d="M-15 0 H15 L10 20 H-10 Z" fill="url(#boyShortsGradient)"/>
+    <!-- Legs -->
+    <rect x="-13" y="20" width="10" height="25" rx="5" ry="5" fill="url(#skinGradient)"/>
+    <rect x="3" y="20" width="10" height="25" rx="5" ry="5" fill="url(#skinGradient)"/>
+    <circle cx="-8" cy="45" r="6" fill="#A0A0A0"/> <!-- Shoe -->
+    <circle cx="8" cy="45" r="6" fill="#A0A0A0"/> <!-- Shoe -->
+  </g>
+
+</svg>

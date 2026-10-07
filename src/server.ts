@@ -471,7 +471,8 @@ const rawApiKeys = [
   ),
 ];
 
-const aiClients: GoogleGenAI[] = rawApiKeys.map(key => new GoogleGenAI({ apiKey: key }));
+// 60 s per call so a hung request fails over to the next key/model instead of stalling the chain.
+const aiClients: GoogleGenAI[] = rawApiKeys.map(key => new GoogleGenAI({ apiKey: key, httpOptions: { timeout: 60000 } }));
 let activeKeyIdx = 0;
 
 const ai = aiClients.length > 0 ? aiClients[0] : null;
@@ -482,7 +483,12 @@ const ai = aiClients.length > 0 ? aiClients[0] : null;
  */
 type GeminiPart = { inlineData: { mimeType: string; data: string } } | { text: string };
 
-const FALLBACK_MODELS = ['gemini-flash-latest', 'gemini-2.5-flash', 'gemini-3.8-flash'];
+// Model chain, best first. Each model has its own free quota, so flash-lite is extra capacity, not just a retry.
+// Override without a rebuild: GEMINI_MODELS="a,b,c" + pm2 restart --update-env.
+const FALLBACK_MODELS = (process.env['GEMINI_MODELS'] || 'gemini-flash-latest,gemini-3.8-flash,gemini-flash-lite-latest')
+  .split(',')
+  .map(m => m.trim())
+  .filter(Boolean);
 
 // Last-resort fallback once every Gemini key is exhausted. Only ':free' models are ever called, so it can never bill.
 const openRouterKey = (process.env['OPENROUTER_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
@@ -520,34 +526,95 @@ async function openRouterJSON(
   return JSON.parse(text);
 }
 
+// Free raster images: Cloudflare Workers AI (Flux schnell). Needs CLOUDFLARE_ACCOUNT_ID + CLOUDFLARE_API_TOKEN.
+const cloudflareAccountId = (process.env['CLOUDFLARE_ACCOUNT_ID'] || '').trim();
+const cloudflareToken = (process.env['CLOUDFLARE_API_TOKEN'] || '').trim().replace(/^["']|["']$/g, '');
+const cloudflareConfigured = /^[a-f0-9]{32}$/i.test(cloudflareAccountId) && cloudflareToken.length > 0;
+const cloudflareImageModel = process.env['CLOUDFLARE_IMAGE_MODEL'] || '@cf/black-forest-labs/flux-1-schnell';
+
+async function cloudflareFluxImage(prompt: string): Promise<Buffer> {
+  const r = await fetch(`https://api.cloudflare.com/client/v4/accounts/${cloudflareAccountId}/ai/run/${cloudflareImageModel}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${cloudflareToken}` },
+    body: JSON.stringify({ prompt, steps: 4 }),
+    signal: AbortSignal.timeout(60000),
+  });
+  if (!r.ok) throw new Error(`Cloudflare AI HTTP ${r.status}`);
+  const data = (await r.json()) as { result?: { image?: string } };
+  const b64 = data.result?.image;
+  if (!b64) throw new Error('Cloudflare AI returned no image');
+  return Buffer.from(b64, 'base64');
+}
+
 /** Quota / auth / overload / missing-model errors: worth trying another provider or key. */
 const isProviderExhausted = (err: unknown): boolean =>
-  /\b(401|402|403|404|429|500|503)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|no longer available/.test(
+  /\b(401|402|403|404|429|500|503|504)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|DEADLINE_EXCEEDED|Deadline expired|no longer available/.test(
     err instanceof Error ? err.message : String(err),
   );
 
-/** Plain-text generation over the key pool and model list (used where JSON mode does not fit, e.g. SVG). */
-async function aiGenerateText(prompt: string): Promise<string> {
+/**
+ * Nested Gemini chain: for each model (best first) try every key. A key whose quota is spent on a model
+ * moves to the next key; once all keys are spent on that model the next model is used.
+ * Cooldowns: 503 is model-wide (all keys), 429 is per (key, model), auth/404 is per pair and long.
+ */
+const geminiCooldowns = new Map<string, number>();
+const statusOf = (err: unknown): string => {
+  const m = err instanceof Error ? err.message : String(err);
+  const code = m.match(/\b(401|402|403|404|429|500|503|504)\b/)?.[1];
+  if (code) return code;
+  if (/RESOURCE_EXHAUSTED/.test(m)) return '429';
+  if (/UNAVAILABLE/.test(m)) return '503';
+  if (/DEADLINE_EXCEEDED|Deadline expired/.test(m)) return '504';
+  if (/no longer available/.test(m)) return '404';
+  return '?';
+};
+const markCooldown = (keyIdx: number, model: string, err: unknown): string => {
+  const status = statusOf(err);
+  if (status === '503' || status === '504' || status === '500') geminiCooldowns.set(`*|${model}`, Date.now() + 30 * 1000);
+  else if (status === '429') geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 2 * 60 * 1000);
+  else geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 30 * 60 * 1000);
+  return status;
+};
+const coolingDown = (keyIdx: number, model: string): boolean =>
+  (geminiCooldowns.get(`*|${model}`) ?? 0) > Date.now() || (geminiCooldowns.get(`${keyIdx}|${model}`) ?? 0) > Date.now();
+
+async function runGeminiChain<T>(run: (client: GoogleGenAI, model: string) => Promise<T>): Promise<T> {
+  if (aiClients.length === 0) throw new Error('Aucune clé Gemini disponible');
+  const start = activeKeyIdx++ % aiClients.length; // spread RPM across keys between requests
   let lastErr: unknown;
-  for (let i = 0; i < aiClients.length; i++) {
-    const client = aiClients[activeKeyIdx % aiClients.length];
-    activeKeyIdx = (activeKeyIdx + 1) % aiClients.length;
+  let tried = 0;
+  for (const honorCooldown of [true, false]) {
     for (const model of FALLBACK_MODELS) {
-      try {
-        const response = await client.models.generateContent({ model, contents: prompt });
-        if (response.text) return response.text;
-      } catch (err) {
-        lastErr = err;
-        if (!isProviderExhausted(err)) throw err;
+      for (let i = 0; i < aiClients.length; i++) {
+        const idx = (start + i) % aiClients.length;
+        if (honorCooldown && coolingDown(idx, model)) continue;
+        tried++;
+        try {
+          return await run(aiClients[idx], model);
+        } catch (err) {
+          lastErr = err;
+          if (!isProviderExhausted(err)) throw err;
+          console.warn(`[gemini] key#${idx + 1} ${model} ${markCooldown(idx, model, err)} -> next`);
+        }
       }
     }
+    if (tried > 0) break; // the no-cooldown pass only runs when every pair was skipped
   }
-  throw lastErr ?? new Error('Aucune clé Gemini disponible');
+  throw lastErr ?? new Error('Toutes les clés Gemini sont en pause');
 }
 
-/** JSON-mode generation with responseSchema + multi-key/model retry on transient/parse failure. */
+/** Plain-text generation over the chain (used where JSON mode does not fit, e.g. SVG). */
+async function aiGenerateText(prompt: string): Promise<string> {
+  return runGeminiChain(async (client, model) => {
+    const response = await client.models.generateContent({ model, contents: prompt });
+    if (!response.text) throw new Error('Réponse vide');
+    return response.text;
+  });
+}
+
+/** JSON-mode generation with responseSchema over the chain, then the free OpenRouter model. A bad JSON reply is retried once on the same key/model before moving on. */
 async function aiGenerateJSON(
-  client: GoogleGenAI,
+  _client: GoogleGenAI,
   contents: string | GeminiPart[],
   schema?: object,
   temperature = 0.4,
@@ -555,30 +622,20 @@ async function aiGenerateJSON(
   const config: Record<string, unknown> = { responseMimeType: 'application/json', temperature };
   if (schema) config['responseSchema'] = schema;
   let lastErr: unknown;
-
-  const pool = aiClients.length > 0 ? aiClients : [client];
-  const maxAttempts = Math.max(pool.length * 2, 2);
-
-  for (let attempt = 0; attempt < maxAttempts; attempt++) {
-    const currentClient = pool[activeKeyIdx % pool.length];
-    activeKeyIdx = (activeKeyIdx + 1) % pool.length;
-
-    for (const model of FALLBACK_MODELS) {
-      try {
-        const response = await currentClient.models.generateContent({ model, contents, config });
+  try {
+    return await runGeminiChain(async (client, model) => {
+      for (let attempt = 0; ; attempt++) {
+        const response = await client.models.generateContent({ model, contents, config });
         const text = (response.text || '').replace(/```json/g, '').replace(/```/g, '').trim();
-        return JSON.parse(text);
-      } catch (err: unknown) {
-        lastErr = err;
-        const msg = err instanceof Error ? err.message : String(err);
-        // If 404 on model name, try next model immediately
-        if (msg.includes('404') || msg.includes('not found') || msg.includes('no longer available')) {
-          continue;
+        try {
+          return JSON.parse(text) as Record<string, unknown>;
+        } catch (parseErr) {
+          if (attempt >= 1) throw parseErr;
         }
-        // If rate limit / quota, break inner loop to rotate key
-        break;
       }
-    }
+    });
+  } catch (err) {
+    lastErr = err;
   }
   if (openRouterKey && isProviderExhausted(lastErr)) {
     try {
@@ -2029,52 +2086,142 @@ Format de sortie STRICT : JSON uniquement, sans markdown wrapper :
 });
 
 // Endpoint: AI Illustration Generator (Google Imagen 3 / SVG fallbacks)
+// ---- Illustrations: context-aware prompt + image provider chain ----------------------------------------------
+type ImageCategory = 'math' | 'science' | 'arabic' | 'french' | 'english' | 'islamic' | 'history_geo' | 'article' | 'generic';
+const IMAGE_CATEGORIES: ImageCategory[] = ['math', 'science', 'arabic', 'french', 'english', 'islamic', 'history_geo', 'article', 'generic'];
+
+// One style per teaching context: the scenario decides the look, not a single global prompt.
+const IMAGE_STYLES: Record<ImageCategory, string> = {
+  math: 'clean flat vector illustration, a few large simple objects laid out so they are easy to count, bold outlines, plain light background, primary colors',
+  science: 'clear educational illustration in the style of a school science book, one main subject drawn with accurate simple shapes, soft natural colors',
+  arabic: 'warm friendly children storybook illustration, one simple everyday scene, expressive characters, soft pastel colors',
+  french: 'warm friendly children storybook illustration, one simple everyday scene, expressive characters, soft pastel colors',
+  english: 'flat icon-style illustration of one clear object or action, centered, vocabulary flashcard look, bright colors',
+  islamic: 'gentle respectful illustration, modest clothing, calm warm colors, no depiction of prophets or sacred figures',
+  history_geo: 'warm flat illustration with a Tunisian landscape or heritage setting, map-like clarity, earthy colors',
+  article: 'wide editorial cover illustration, flat vector, one clear central subject, friendly modern style, balanced composition',
+  generic: 'friendly flat children book illustration, clean composition, bright colors',
+};
+// Image models cannot render Arabic or numbers reliably, so text is always excluded.
+const IMAGE_COMMON = 'child-friendly, bright and clean, simple background, no text, no letters, no numbers, no captions, no watermark, no logo';
+
+const IMAGE_PROMPT_SCHEMA = {
+  type: Type.OBJECT,
+  properties: { category: { type: Type.STRING, enum: IMAGE_CATEGORIES }, scene: STR },
+  required: ['category', 'scene'],
+};
+
+const seedFor = (s: string): number => {
+  let h = 2166136261;
+  for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  return (h >>> 0) % 1000000;
+};
+
+async function buildImagePrompt(input: {
+  promptText: string;
+  subject?: string;
+  grade?: string;
+  kind?: string;
+}): Promise<{ prompt: string; scene: string; category: ImageCategory }> {
+  const text = input.promptText.replace(/\s+/g, ' ').trim().slice(0, 600);
+  let category: ImageCategory = input.kind === 'article-cover' ? 'article' : 'generic';
+  let scene = '';
+  if (ai) {
+    try {
+      const out = await aiGenerateJSON(
+        ai,
+        `Tu prépares l'illustration d'un support scolaire pour enfants tunisiens (niveau : ${input.grade || 'primaire'}, matière : ${input.subject || 'non précisée'}).
+Texte source (arabe, français ou anglais) :
+"""${text}"""
+Réponds en JSON : "category" = la catégorie visuelle la plus proche ; "scene" = UNE phrase en ANGLAIS (35 mots maximum) qui décrit concrètement ce qu'il faut dessiner : personnages, objets, lieu, action.
+Règles : dessine le contexte ou la situation, jamais la question ni la réponse ; aucun texte, lettre ou chiffre dans l'image ; aucun personnage sacré ; personnages tunisiens, tenue modeste et neutre ; indique un nombre d'objets uniquement s'il est donné dans le texte.`,
+        IMAGE_PROMPT_SCHEMA,
+        0.3,
+      );
+      scene = String(out['scene'] || '').trim().slice(0, 300);
+      const c = out['category'] as ImageCategory;
+      if (input.kind !== 'article-cover' && IMAGE_CATEGORIES.includes(c)) category = c;
+    } catch (err) {
+      console.warn('[image] prompt rewrite failed, using raw text:', err instanceof Error ? err.message : err);
+    }
+  }
+  if (!scene) scene = text.slice(0, 200) || 'a friendly school scene for children';
+  return { prompt: `${scene}. ${IMAGE_STYLES[category]}. ${IMAGE_COMMON}`, scene, category };
+}
+
+const isImageBuffer = (b: Buffer): boolean =>
+  b.length > 1000 &&
+  ((b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) ||
+    (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) ||
+    (b.subarray(0, 4).toString() === 'RIFF' && b.subarray(8, 12).toString() === 'WEBP'));
+const imageExt = (b: Buffer): string => (b[0] === 0x89 ? 'png' : b[0] === 0xff ? 'jpg' : 'webp');
+
+// Free, keyless, but rate-limited per IP (answers 402 fast when over the limit), so it sits behind a short cooldown.
+async function pollinationsImage(prompt: string, seed: number): Promise<Buffer> {
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1024&height=768&nologo=true&safe=true&private=true&seed=${seed}&model=flux`;
+  const r = await fetch(url, { signal: AbortSignal.timeout(15000) });
+  if (!r.ok) throw new Error(`Pollinations HTTP ${r.status}`);
+  const buf = Buffer.from(await r.arrayBuffer());
+  if (!isImageBuffer(buf)) throw new Error('Pollinations returned no image');
+  return buf;
+}
+
+// Order of the image providers, best first. Override without a rebuild: IMAGE_CHAIN="cloudflare,pollinations,svg".
+const IMAGE_CHAIN = (process.env['IMAGE_CHAIN'] || 'pollinations,cloudflare,svg')
+  .split(',')
+  .map((p) => p.trim())
+  .filter(Boolean);
+const imageCooldowns = new Map<string, number>();
+
+async function generateIllustrationFile(prompt: string, scene: string, seed: number): Promise<string> {
+  for (const provider of IMAGE_CHAIN) {
+    if ((imageCooldowns.get(provider) ?? 0) > Date.now()) continue;
+    try {
+      if (provider === 'pollinations') {
+        const b = await pollinationsImage(prompt, seed);
+        return saveGenerated(`illustration_${randomUUID()}.${imageExt(b)}`, b);
+      }
+      if (provider === 'cloudflare') {
+        if (!cloudflareConfigured) continue;
+        const b = await cloudflareFluxImage(prompt);
+        return saveGenerated(`illustration_${randomUUID()}.jpg`, b);
+      }
+      if (provider === 'svg') {
+        const svgText = await aiGenerateText(
+          `Create a clean, modern, pedagogical SVG illustration for Tunisian school children. Scene: "${scene}".
+Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use viewBox="0 0 800 450", smooth gradients, friendly rounded shapes. No text, no markdown formatting.`,
+        );
+        const rawSvg = svgText.replace(/```xml/g, '').replace(/```svg/g, '').replace(/```/g, '').trim();
+        return saveGenerated(`illustration_${randomUUID()}.svg`, rawSvg);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.warn(`[image] ${provider} failed: ${msg} -> next`);
+      if (provider !== 'svg') imageCooldowns.set(provider, Date.now() + (/\b(402|429)\b/.test(msg) ? 45_000 : 30_000));
+    }
+  }
+  throw new Error("Aucun service d'illustration disponible pour le moment.");
+}
+
 app.post('/api/ai/generate-illustration', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response) => {
   try {
-    const { promptText = '' } = req.body;
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+    const body = req.body ?? {};
+    const promptText = String(body.promptText ?? '').trim();
+    if (!promptText) {
+      res.status(400).json({ error: 'promptText requis.' });
       return;
     }
-
-    // Try Imagen 3 first
-    try {
-      const imgResponse = await ai.models.generateImages({
-        model: 'imagen-3.0-generate-002',
-        prompt: `Educational illustration for Tunisian primary school students. High quality, clear, colorful, friendly: ${promptText}`,
-        config: {
-          numberOfImages: 1,
-          outputMimeType: 'image/jpeg',
-          aspectRatio: '16:9',
-        },
-      });
-
-      const firstImage = imgResponse.generatedImages?.[0];
-      const base64Data = firstImage?.image?.imageBytes;
-      if (base64Data) {
-        const filename = `illustration_${randomUUID()}.jpg`;
-        const imageUrl = saveGenerated(filename, Buffer.from(base64Data, 'base64'));
-        res.json({ success: true, imageUrl });
-        return;
-      }
-    } catch (imagenErr) {
-      console.warn('Imagen 3 direct call fallback, generating high-res curated SVG illustration:', imagenErr);
-    }
-
-    // Fallback: Gemini creates a rich SVG vector illustration saved as .svg
-    const svgPrompt = `Create a clean, modern, pedagogical SVG illustration for Tunisian school children about: "${promptText}".
-Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use viewBox="0 0 800 450", smooth gradients, friendly rounded shapes. No markdown formatting.`;
-
-    const svgText = await aiGenerateText(svgPrompt);
-
-    const rawSvg = svgText.replace(/```xml/g, '').replace(/```svg/g, '').replace(/```/g, '').trim();
-    const filename = `illustration_${randomUUID()}.svg`;
-    const imageUrl = saveGenerated(filename, rawSvg);
-
-    res.json({ success: true, imageUrl });
+    const { prompt, scene, category } = await buildImagePrompt({
+      promptText,
+      subject: String(body.subject ?? '').slice(0, 60),
+      grade: String(body.grade ?? '').slice(0, 30),
+      kind: String(body.kind ?? '').slice(0, 30),
+    });
+    const imageUrl = await generateIllustrationFile(prompt, scene, seedFor(promptText));
+    res.json({ success: true, imageUrl, category });
     return;
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Erreur lors de la création de l\'illustration';
+    const message = err instanceof Error ? err.message : "Erreur lors de la création de l'illustration";
     console.error('Error in /api/ai/generate-illustration:', err);
     res.status(500).json({ error: message });
     return;

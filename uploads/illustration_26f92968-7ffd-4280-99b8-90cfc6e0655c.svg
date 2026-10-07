@@ -1,0 +1,128 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F8FF" />
+      <stop offset="100%" style="stop-color:#E0F7FA" />
+    </linearGradient>
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A7D9F7" />
+      <stop offset="100%" style="stop-color:#6BB2E3" />
+    </linearGradient>
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8A80" />
+      <stop offset="100%" style="stop-color:#FF5252" />
+    </linearGradient>
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700" />
+      <stop offset="100%" style="stop-color:#FFA500" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#backgroundGradient)" />
+
+  <!-- Main title card -->
+  <rect x="50" y="30" width="700" height="70" rx="15" fill="#FFFFFF" filter="url(#shadow)" />
+  <text x="400" y="72" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#333333" text-anchor="middle">
+    اللغة العربية — القراءة
+  </text>
+
+  <!-- Subtitle question card -->
+  <rect x="50" y="110" width="700" height="80" rx="15" fill="#E3F2FD" filter="url(#shadow)" />
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="24" fill="#3F51B5" text-anchor="middle">
+    كيف نجعل القراءة متعة لأطفالنا في السنة الثالثة ابتدائي؟
+  </text>
+  <text x="400" y="175" font-family="Arial, sans-serif" font-size="20" fill="#4CAF50" text-anchor="middle">
+    دليل عملي للأولياء
+  </text>
+
+  <!-- Book icon -->
+  <g transform="translate(150, 270)">
+    <path d="M 0 0 L 100 0 L 100 150 L 0 150 Z" fill="url(#bookGradient)" rx="10" ry="10" filter="url(#shadow)"/>
+    <path d="M 100 0 L 120 10 L 120 160 L 100 150 Z" fill="#64B5F6" />
+    <path d="M 0 0 Q 10 10 20 0 Q 30 10 40 0 Q 50 10 60 0 Q 70 10 80 0 Q 90 10 100 0" fill="#BBDEFB" />
+    <text x="50" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      كتاب
+    </text>
+  </g>
+
+  <!-- Child reading icon (simplified) -->
+  <g transform="translate(380, 250)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="30" fill="#FFECB3" filter="url(#shadow)"/>
+    <!-- Body -->
+    <rect x="-25" y="25" width="50" height="60" rx="10" fill="#90CAF9" filter="url(#shadow)"/>
+    <!-- Arms holding book -->
+    <rect x="-40" y="40" width="30" height="15" rx="5" fill="#FFECB3" />
+    <rect x="10" y="40" width="30" height="15" rx="5" fill="#FFECB3" />
+    <!-- Book -->
+    <rect x="-35" y="50" width="70" height="45" rx="5" fill="url(#bookGradient)" filter="url(#shadow)"/>
+    <text x="0" y="78" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      اقرأ
+    </text>
+    <!-- Smiling mouth -->
+    <path d="M -15 10 Q 0 20 15 10" stroke="#424242" stroke-width="2" fill="none"/>
+    <!-- Eyes -->
+    <circle cx="-10" cy="-5" r="3" fill="#424242"/>
+    <circle cx="10" cy="-5" r="3" fill="#424242"/>
+  </g>
+
+  <!-- Heart for "مُتعة" (fun) -->
+  <g transform="translate(600, 280)">
+    <path d="M 50 20 C 70 0, 100 20, 50 70 C 0 20, 30 0, 50 20 Z" fill="url(#heartGradient)" filter="url(#shadow)" />
+    <text x="50" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      متعة
+    </text>
+  </g>
+
+  <!-- Stars around the text "السنة الثالثة ابتدائي" -->
+  <g transform="translate(60, 210)">
+    <circle cx="0" cy="0" r="15" fill="url(#starGradient)" filter="url(#shadow)"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      ⭐
+    </text>
+  </g>
+  <g transform="translate(740, 210)">
+    <circle cx="0" cy="0" r="15" fill="url(#starGradient)" filter="url(#shadow)"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      ⭐
+    </text>
+  </g>
+
+  <!-- Parent icon (simplified) -->
+  <g transform="translate(650, 340)">
+    <!-- Body -->
+    <rect x="-30" y="0" width="60" height="80" rx="15" fill="#FFCC80" filter="url(#shadow)"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="30" fill="#FFECB3" />
+    <!-- Hair -->
+    <path d="M -30 -20 Q -15 -40 0 -20 Q 15 -40 30 -20 Z" fill="#795548" />
+    <!-- Eyes -->
+    <circle cx="-10" cy="-5" r="3" fill="#424242"/>
+    <circle cx="10" cy="-5" r="3" fill="#424242"/>
+    <!-- Mouth -->
+    <path d="M -15 10 Q 0 18 15 10" stroke="#424242" stroke-width="2" fill="none"/>
+    <text x="0" y="110" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333333" text-anchor="middle">
+      الأولياء
+    </text>
+  </g>
+
+  <!-- Child icon (simplified, to pair with parent) -->
+  <g transform="translate(560, 370)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="20" fill="#FFECB3" />
+    <!-- Body -->
+    <rect x="-20" y="15" width="40" height="50" rx="10" fill="#C5E1A5" />
+    <!-- Eyes -->
+    <circle cx="-7" cy="-3" r="2" fill="#424242"/>
+    <circle cx="7" cy="-3" r="2" fill="#424242"/>
+    <!-- Mouth -->
+    <path d="M -10 5 Q 0 10 10 5" stroke="#424242" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Wavy line separator -->
+  <path d="M 50 210 Q 200 200 400 210 Q 600 220 750 210" fill="none" stroke="#B0BEC5" stroke-width="3" stroke-linecap="round" stroke-dasharray="10, 5" />
+
+</svg>
