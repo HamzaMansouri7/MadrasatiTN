@@ -2,12 +2,13 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } 
 import { Location } from '@angular/common';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson } from '@core';
+import { CartoucheComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })

@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, WorksheetDoc } from '@core';
 import { WorksheetDna, GeneratedExercise } from '@core';
+import { CartoucheComponent } from '@shared';
 
 /**
  * Phase 2 — Worksheet style-clone studio.
@@ -8,6 +9,7 @@ import { WorksheetDna, GeneratedExercise } from '@core';
  * reusing the detected palette/topic → preview, print (A4), share.
  */
 @Component({
+  imports: [CartoucheComponent],
   selector: 'app-worksheet-generator',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './worksheet-generator.html',

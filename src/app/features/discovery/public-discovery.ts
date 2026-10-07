@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, PrintService } from '@core';
-import { TeacherAvatarComponent } from '@shared';
+import { TeacherAvatarComponent, CartoucheComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -15,7 +15,7 @@ interface RecitationItem {
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule, RouterLink, TeacherAvatarComponent, BlogReaderComponent, BdLibraryComponent],
+  imports: [FormsModule, RouterLink, TeacherAvatarComponent, CartoucheComponent, BlogReaderComponent, BdLibraryComponent],
   template: `
     <div class="space-y-6">
       
@@ -1328,32 +1328,18 @@ interface RecitationItem {
               </div>
 
               <!-- Official Header -->
-              <div class="border-b border-[#14251D] pb-3 font-sans">
-                <div class="flex items-center justify-between text-xs">
-                  <div class="text-left font-semibold text-[#14251D] leading-tight">
-                    <p>الجمهورية التونسية</p>
-                    <p>وزارة التربية والتعليم</p>
-                    <p class="text-[10px] text-[#5B6B60] font-normal">المندوبية الجهوية للتربية</p>
-                  </div>
-                  <div class="text-center font-semibold">
-                    <p class="text-base text-[#1B4332] font-display font-semibold">{{ docEx.title }}</p>
-                    <p class="text-xs text-[#5B6B60]">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
-                  </div>
-                  <div class="text-right text-xs text-[#14251D] leading-tight">
-                    <span class="bg-[#F2ECDE] text-[#1B4332] font-semibold px-2 py-0.5 rounded text-[10px] border border-[#E7DFCF]">
-                      {{ docEx.docType || 'Devoir de Contrôle' }}
-                    </span>
-                    <p class="text-[10px] text-[#6B7A70] mt-1">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
-                  </div>
+              <app-cartouche tone="library" [grade]="docEx.grade" sub="المندوبية الجهوية للتربية" class="pb-3 font-sans">
+                <div cartoucheCenter class="font-semibold">
+                  <p class="text-base text-[#1B4332] font-display font-semibold">{{ docEx.title }}</p>
+                  <p class="text-xs text-[#5B6B60]">{{ docEx.grade }} • {{ docEx.subject }} • {{ docEx.trimester || 'Trimestre 1' }}</p>
                 </div>
-
-                <!-- Student Filling Block for Printed Exams -->
-                <div class="mt-3 pt-2 border-t border-dashed border-[#E7DFCF] grid grid-cols-3 gap-2 text-xs font-semibold">
-                  <p>الاسم واللقب: ....................................</p>
-                  <p>القسم: {{ docEx.grade }}</p>
-                  <p class="text-right font-semibold text-[#1B4332]">العدد: .......... / 20</p>
+                <div cartoucheEnd class="text-xs text-[#14251D]">
+                  <span class="bg-[#F2ECDE] text-[#1B4332] font-semibold px-2 py-0.5 rounded text-[10px] border border-[#E7DFCF]">
+                    {{ docEx.docType || 'Devoir de Contrôle' }}
+                  </span>
+                  <p class="text-[10px] text-[#6B7A70] mt-1">Année : {{ docEx.schoolYear || '2025-2026' }}</p>
                 </div>
-              </div>
+              </app-cartouche>
 
               <!-- Exercise Body -->
               <div class="space-y-3 py-2 font-sans relative z-10">

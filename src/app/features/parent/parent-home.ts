@@ -1,10 +1,11 @@
+import { CartoucheComponent } from '@shared';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService } from '@core';
 
 @Component({
   selector: 'app-parent-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
+  imports: [CartoucheComponent],
   template: `
     <div class="space-y-6">
       
@@ -799,29 +800,16 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
               <!-- Dynamic Ministry Cartouche — only for text docs; scans carry their own header -->
               @if (!c.imageUrls || !c.imageUrls.length) {
-                <div class="border-b-2 border-[#102A43] pb-3">
-                  <div class="flex items-center justify-between text-xs">
-                    <div class="text-left font-bold text-[#102A43] leading-tight">
-                      <p>الجمهورية التونسية</p>
-                      <p>وزارة التربية والتعليم</p>
-                    </div>
-                    <div class="text-center font-bold">
-                      <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
-                      <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
-                    </div>
-                    <div class="text-right text-xs text-[#334E68] leading-tight">
-                      <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
-                      <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
-                    </div>
+                <app-cartouche tone="blue" [grade]="c.grade" class="pb-3">
+                  <div cartoucheCenter>
+                    <p class="font-display text-base text-[#007CC2] font-semibold">{{ c.title }}</p>
+                    <p class="text-xs text-[#627D98]">{{ c.grade }} • {{ c.subject }}</p>
                   </div>
-
-                  <!-- Student Filling Box -->
-                  <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] grid grid-cols-3 gap-2 text-xs font-semibold">
-                    <p>الاسم واللقب: ....................................</p>
-                    <p>القسم: {{ c.grade }}</p>
-                    <p class="text-right font-bold text-[#007CC2]">العدد: .......... / 20</p>
+                  <div cartoucheEnd class="text-xs text-[#334E68]">
+                    <p>{{ c.trimester || 'الثلاثي الأول' }}</p>
+                    <p>السنة الدراسية: {{ c.schoolYear || '2025-2026' }}</p>
                   </div>
-                </div>
+                </app-cartouche>
               }
 
               <!-- Scanned document pages (community library) -->
