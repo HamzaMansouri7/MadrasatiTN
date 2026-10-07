@@ -9,7 +9,7 @@ import { join, resolve, sep } from 'node:path';
 import mammoth from 'mammoth';
 import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
-import { MEMO_SCHEMA, BLOCK_SCHEMAS, buildMemoPrompt } from './server/memo-schema';
+import { MEMO_SCHEMA, BLOCK_SCHEMAS } from './server/memo-schema';
 import { resolveLang, langRule } from './server/lang';
 import { checkExercise } from './server/post-checks';
 import { generateMemoDocx } from './server/memo-docx';
@@ -504,7 +504,6 @@ const FALLBACK_MODELS = (process.env['GEMINI_MODELS'] || 'gemini-flash-latest,ge
 
 // Last-resort fallback once every Gemini key is exhausted. Only ':free' models are ever called, so it can never bill.
 const openRouterKey = (process.env['OPENROUTER_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
-const openRouterModel = process.env['OPENROUTER_MODEL'] || 'google/gemma-4-31b-it:free';
 
 const aiReady = () => aiClients.length > 0 || !!openRouterKey;
 
