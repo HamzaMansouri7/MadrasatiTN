@@ -35,29 +35,38 @@ import { TeacherAvatarComponent } from './teacher-avatar';
 
           <!-- Intentional 4-Group Navigation -->
           <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5 2xl:gap-2 shrink-0 h-[76px]">
-            <!-- 1. Discover / Bibliothèque -->
-            <button
-              type="button"
-              (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isTeachersRoute()
-                ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10' 
-                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg">explore</span>
-              <span>{{ lang.tr('Bibliothèque CNP', 'المكتبة والدليل') }}</span>
-            </button>
+            <!-- 1. Library group: Bibliothèque, Résoudre, Résumer -->
+            <div class="relative">
+              <button
+                type="button"
+                (click)="learnMenuOpen.set(!learnMenuOpen())"
+                [attr.aria-expanded]="learnMenuOpen()"
+                aria-haspopup="menu"
+                [class]="(store.currentRole() === 'public' && !isTeachersRoute()) || isLearnRoute()
+                  ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10'
+                  : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
+                class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+                <span class="material-icons text-base xl:text-lg" aria-hidden="true">explore</span>
+                <span>{{ lang.tr('Bibliothèque CNP', 'المكتبة والدليل') }}</span>
+                <span class="material-icons text-base" aria-hidden="true">expand_more</span>
+              </button>
 
-            <!-- 2. Understand / Comprendre (Tuteur & Solve) -->
-            <button
-              type="button"
-              (click)="router.navigate(['/solve'])"
-              [class]="router.url.startsWith('/solve') || router.url.startsWith('/summarize')
-                ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10' 
-                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg">psychology</span>
-              <span>{{ lang.tr('Comprendre & Résoudre', 'فهم وتلخيص') }}</span>
-            </button>
+              @if (learnMenuOpen()) {
+                <button type="button" class="fixed inset-0 z-40 cursor-default" tabindex="-1" aria-hidden="true" (click)="learnMenuOpen.set(false)"></button>
+                <div role="menu" class="absolute top-[52px] start-0 z-50 w-60 bg-white border border-[#E7DFCF] rounded-2xl shadow-lg p-1.5 space-y-0.5">
+                  @for (item of learnItems; track item.url) {
+                    <button
+                      type="button"
+                      role="menuitem"
+                      (click)="goLearn(item.url, item.role)"
+                      class="w-full flex items-center gap-2.5 px-3 min-h-11 rounded-xl text-xs font-medium text-[#14251D] hover:bg-[#F2ECDE] transition-colors cursor-pointer text-start">
+                      <span class="material-icons text-base text-[#2D6A4F]" aria-hidden="true">{{ item.icon }}</span>
+                      <span>{{ lang.tr(item.fr, item.ar) }}</span>
+                    </button>
+                  }
+                </div>
+              }
+            </div>
 
             <!-- 3. Create Hub / مركز الإنشاء (teachers only) -->
             @if (firebase.userProfile()?.role === 'teacher') {
@@ -381,25 +390,35 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             <span class="text-[10px] leading-tight">{{ lang.t('navHome') }}</span>
           </button>
 
-          <!-- 2. Discovery -->
-          <button
-            type="button"
-            (click)="selectRole('public')"
-            [class]="store.currentRole() === 'public' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
-            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
-            <span class="material-icons text-base">explore</span>
-            <span class="text-[10px] leading-tight">{{ lang.tr('المكتبة', 'المكتبة') }}</span>
-          </button>
+          <!-- 2. Library group (opens Library / Solve / Summarize) -->
+          <div class="relative">
+            <button
+              type="button"
+              (click)="learnMenuOpen.set(!learnMenuOpen())"
+              [attr.aria-expanded]="learnMenuOpen()"
+              aria-haspopup="menu"
+              [class]="store.currentRole() === 'public' || isLearnRoute() ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+              class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
+              <span class="material-icons text-base" aria-hidden="true">explore</span>
+              <span class="text-[11px] leading-tight">{{ lang.tr('Bibliothèque', 'المكتبة') }}</span>
+            </button>
 
-          <!-- 3. Understand (Solve) -->
-          <button
-            type="button"
-            (click)="router.navigate(['/solve'])"
-            [class]="router.url.startsWith('/solve') ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
-            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
-            <span class="material-icons text-base">psychology</span>
-            <span class="text-[10px] leading-tight">{{ lang.tr('فهم', 'فهم') }}</span>
-          </button>
+            @if (learnMenuOpen()) {
+              <button type="button" class="fixed inset-0 z-40 cursor-default" tabindex="-1" aria-hidden="true" (click)="learnMenuOpen.set(false)"></button>
+              <div role="menu" class="absolute bottom-[52px] start-0 z-50 w-60 bg-white border border-[#E7DFCF] rounded-2xl shadow-lg p-1.5 space-y-0.5">
+                @for (item of learnItems; track item.url) {
+                  <button
+                    type="button"
+                    role="menuitem"
+                    (click)="goLearn(item.url, item.role)"
+                    class="w-full flex items-center gap-2.5 px-3 min-h-11 rounded-xl text-xs font-medium text-[#14251D] hover:bg-[#F2ECDE] transition-colors cursor-pointer text-start">
+                    <span class="material-icons text-base text-[#2D6A4F]" aria-hidden="true">{{ item.icon }}</span>
+                    <span>{{ lang.tr(item.fr, item.ar) }}</span>
+                  </button>
+                }
+              </div>
+            }
+          </div>
 
           <!-- 4. Create Hub (teachers only) -->
           @if (firebase.userProfile()?.role === 'teacher') {
@@ -435,6 +454,12 @@ export class NavbarComponent {
   readonly notifService = inject(NotificationService);
   readonly router = inject(Router);
   readonly profileMenuOpen = signal<boolean>(false);
+  readonly learnMenuOpen = signal<boolean>(false);
+  readonly learnItems = [
+    { url: '/discovery', role: 'public' as const, icon: 'explore', fr: 'Bibliothèque CNP', ar: 'المكتبة والدليل' },
+    { url: '/solve', role: null, icon: 'photo_camera', fr: 'Résoudre un exercice', ar: 'حلّ تمرين بالصورة' },
+    { url: '/summarize', role: null, icon: 'auto_awesome', fr: 'Résumer un cours', ar: 'تلخيص درس' },
+  ];
   readonly notifDropdownOpen = signal<boolean>(false);
   readonly activeNotifTab = signal<'all' | 'unread' | 'announcements'>('all');
 
@@ -498,6 +523,17 @@ export class NavbarComponent {
 
   navigateToTeachers() {
     this.router.navigateByUrl('/teachers');
+  }
+
+  isLearnRoute(): boolean {
+    const url = this.router.url;
+    return url.startsWith('/solve') || url.startsWith('/summarize');
+  }
+
+  goLearn(url: string, role: 'public' | null) {
+    this.learnMenuOpen.set(false);
+    if (role) this.selectRole(role);
+    else this.router.navigateByUrl(url);
   }
 
   isSolveRoute(): boolean {
