@@ -183,8 +183,8 @@
   }
 
   /* 2. Hide all non-printable chrome completely from layout flow */
-  header,
-  footer,
+  header:not(.print-sheet *, .print-page *, .print-document *),
+  footer:not(.print-sheet *, .print-page *, .print-document *),
   nav,
   app-navbar,
   app-auth-modal,
