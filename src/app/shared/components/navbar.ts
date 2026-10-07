@@ -59,17 +59,19 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               <span>{{ lang.tr('Comprendre & Résoudre', 'فهم وتلخيص') }}</span>
             </button>
 
-            <!-- 3. Create Hub / مركز الإنشاء (Prominent) -->
-            <button
-              type="button"
-              (click)="router.navigate(['/create'])"
-              [class]="router.url.startsWith('/create') || router.url.startsWith('/editor') || router.url.startsWith('/memo-studio')
-                ? 'bg-[#1B4332] text-[#FBF8F1] shadow-xs' 
-                : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] shadow-xs'"
-              class="flex items-center gap-1.5 px-3.5 h-[40px] rounded-xl text-xs font-semibold tracking-wide transition-all cursor-pointer mx-1">
-              <span class="material-icons text-base">auto_fix_high</span>
-              <span>{{ lang.tr('Créer / Studio', 'مركز الإنشاء') }}</span>
-            </button>
+            <!-- 3. Create Hub / مركز الإنشاء (teachers only) -->
+            @if (firebase.userProfile()?.role === 'teacher') {
+              <button
+                type="button"
+                (click)="router.navigate(['/create'])"
+                [class]="router.url.startsWith('/create') || router.url.startsWith('/editor') || router.url.startsWith('/memo-studio')
+                  ? 'bg-[#1B4332] text-[#FBF8F1] shadow-xs' 
+                  : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] shadow-xs'"
+                class="flex items-center gap-1.5 px-3.5 h-[40px] rounded-xl text-xs font-semibold tracking-wide transition-all cursor-pointer mx-1">
+                <span class="material-icons text-base">auto_fix_high</span>
+                <span>{{ lang.tr('Créer / Studio', 'مركز الإنشاء') }}</span>
+              </button>
+            }
 
             <!-- 4. Spaces / الفضاءات -->
             <button
@@ -399,15 +401,17 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             <span class="text-[10px] leading-tight">{{ lang.tr('فهم', 'فهم') }}</span>
           </button>
 
-          <!-- 4. Create Hub -->
-          <button
-            type="button"
-            (click)="router.navigate(['/create'])"
-            [class]="router.url.startsWith('/create') ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#2D6A4F] text-[#FBF8F1]'"
-            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-xl px-2.5 transition-colors cursor-pointer shadow-xs">
-            <span class="material-icons text-base">auto_fix_high</span>
-            <span class="text-[10px] font-bold leading-tight">{{ lang.tr('إنشاء', 'إنشاء') }}</span>
-          </button>
+          <!-- 4. Create Hub (teachers only) -->
+          @if (firebase.userProfile()?.role === 'teacher') {
+            <button
+              type="button"
+              (click)="router.navigate(['/create'])"
+              [class]="router.url.startsWith('/create') ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#2D6A4F] text-[#FBF8F1]'"
+              class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-xl px-2.5 transition-colors cursor-pointer shadow-xs">
+              <span class="material-icons text-base">auto_fix_high</span>
+              <span class="text-[10px] font-bold leading-tight">{{ lang.tr('Créer', 'إنشاء') }}</span>
+            </button>
+          }
 
           <!-- 5. Current Space (Teacher / Parent / Student) -->
           <button
