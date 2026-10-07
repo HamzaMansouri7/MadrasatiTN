@@ -14,6 +14,7 @@ export * from './services/print.service';
 export * from './services/ai-client';
 export * from './guards/auth.guard';
 export * from './utils/image.util';
+export * from './utils/paginate.util';
 export * from './data/cnp-books.data';
 export * from './data/library-exercises.data';
 export * from './data/first-grade-exercises.data';

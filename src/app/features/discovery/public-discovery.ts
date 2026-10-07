@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } 
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, PrintService } from '@core';
-import { TeacherAvatarComponent, CartoucheComponent } from '@shared';
+import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, Comment, BlogPost, PrintService, paginate } from '@core';
+import { TeacherAvatarComponent, CartoucheComponent, PaginationComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -15,7 +15,7 @@ interface RecitationItem {
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule, RouterLink, TeacherAvatarComponent, CartoucheComponent, BlogReaderComponent, BdLibraryComponent],
+  imports: [FormsModule, RouterLink, TeacherAvatarComponent, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent],
   template: `
     <div class="space-y-6">
       
@@ -318,7 +318,7 @@ interface RecitationItem {
       <!-- SECTION 1: EXERCISES & EXAMS BANK WITH UPVOTING, REPORTING & WATERMARK -->
       @if (activeSection() === 'exercises') {
         <div class="grid md:grid-cols-2 gap-6">
-          @for (ex of store.filteredExercisesBank(); track ex.id) {
+          @for (ex of paginatedExercises(); track ex.id) {
             <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
               <div class="space-y-3">
                 <div class="flex items-center justify-between flex-wrap gap-1 text-[10px]">
@@ -555,12 +555,18 @@ interface RecitationItem {
             </div>
           }
         </div>
+
+        <app-pagination
+          [total]="store.filteredExercisesBank().length"
+          [pageSize]="exercisesPageSize()"
+          [(page)]="exercisesPage"
+          accent="library" />
       }
 
       <!-- SECTION 2: COURSES LIBRARY -->
       @if (activeSection() === 'courses' || activeSection() === 'cnp') {
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          @for (c of (activeSection() === 'cnp' ? store.filteredCnpBooks() : store.filteredCourses()); track c.id) {
+          @for (c of paginatedCourses(); track c.id) {
             <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
               <div class="space-y-3">
                 @if (c.imageUrls && c.imageUrls.length) {
@@ -773,6 +779,12 @@ interface RecitationItem {
             </div>
           }
         </div>
+
+        <app-pagination
+          [total]="currentCoursesList().length"
+          [pageSize]="coursesPageSize()"
+          [(page)]="coursesPage"
+          accent="library" />
       }
 
       <!-- SECTION 3: PEDAGOGICAL BLOG & ARTICLES -->
@@ -1510,6 +1522,21 @@ export class PublicDiscoveryComponent {
   ];
 
   readonly activeShelf = computed(() => this.sections.find((s) => s.key === this.activeSection()) ?? null);
+
+  readonly exercisesPage = signal(1);
+  readonly exercisesPageSize = signal(12);
+  readonly paginatedExercises = computed(() =>
+    paginate(this.store.filteredExercisesBank(), this.exercisesPage(), this.exercisesPageSize())
+  );
+
+  readonly coursesPage = signal(1);
+  readonly coursesPageSize = signal(12);
+  readonly currentCoursesList = computed(() =>
+    this.activeSection() === 'cnp' ? this.store.filteredCnpBooks() : this.store.filteredCourses()
+  );
+  readonly paginatedCourses = computed(() =>
+    paginate(this.currentCoursesList(), this.coursesPage(), this.coursesPageSize())
+  );
 
   /** Resolve a resource's author to a real teacher card (by id first, then exact name). */
   findAuthor(teacherName?: string, teacherId?: string): TeacherProfile | null {

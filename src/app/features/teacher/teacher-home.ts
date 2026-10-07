@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark } from '@core';
-import { TeacherAvatarComponent, CartoucheComponent } from '@shared';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate } from '@core';
+import { TeacherAvatarComponent, CartoucheComponent, PaginationComponent } from '@shared';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -14,7 +14,7 @@ export interface GeneratedExerciseResult {
 @Component({
   selector: 'app-teacher-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, TeacherAvatarComponent, CartoucheComponent],
+  imports: [RouterLink, TeacherAvatarComponent, CartoucheComponent, PaginationComponent],
   template: `
     <div class="space-y-6">
 
@@ -282,7 +282,7 @@ export interface GeneratedExerciseResult {
               </div>
 
               <div class="grid md:grid-cols-2 gap-4">
-                @for (c of filteredCourses(); track c.id) {
+                @for (c of paginatedCourses(); track c.id) {
                   <div class="bg-[#FBF8F1] rounded-[18px] p-5 border border-[#E7DFCF] flex flex-col justify-between space-y-3 hover:border-[#2D6A4F]/40 transition-colors">
                     <div class="space-y-2">
                       <div class="flex items-center justify-between">
@@ -334,6 +334,13 @@ export interface GeneratedExerciseResult {
                   </div>
                 }
               </div>
+
+              <!-- Pagination Controls -->
+              <app-pagination
+                [total]="filteredCourses().length"
+                [pageSize]="coursesPageSize()"
+                [(page)]="coursesPage"
+                accent="green" />
             </div>
           }
 
@@ -1739,6 +1746,12 @@ export class TeacherHomeComponent {
       return !c.authorId && (c.teacherName === 'Enseignant Certifié' || c.teacherName === 'Prof. Habib Ben Amor');
     });
   });
+
+  readonly coursesPage = signal(1);
+  readonly coursesPageSize = signal(6);
+  readonly paginatedCourses = computed(() =>
+    paginate(this.filteredCourses(), this.coursesPage(), this.coursesPageSize())
+  );
 
   readonly filteredBlogPosts = computed(() => {
     const list = this.store.blogPosts();

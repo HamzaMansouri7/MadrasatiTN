@@ -1,11 +1,11 @@
-import { CartoucheComponent } from '@shared';
+import { CartoucheComponent, PaginationComponent } from '@shared';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService, PRIMARY_GRADES } from '@core';
+import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService, PRIMARY_GRADES, paginate } from '@core';
 
 @Component({
   selector: 'app-parent-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CartoucheComponent],
+  imports: [CartoucheComponent, PaginationComponent],
   template: `
     <div class="space-y-6">
       
@@ -350,50 +350,11 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               </div>
 
               <!-- Pagination Controls -->
-              @if (filteredCourses().length > pageSize()) {
-                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-[#E3ECF2] text-xs">
-                  <span class="text-[#627D98] font-medium">
-                    {{ lang.tr('Affichage de', 'عرض') }}
-                    <strong class="text-[#102A43]">{{ (currentPage() - 1) * pageSize() + 1 }}</strong>
-                    -
-                    <strong class="text-[#102A43]">{{ getEndItemIndex() }}</strong>
-                    {{ lang.tr('sur', 'من أصل') }}
-                    <strong class="text-[#007CC2]">{{ filteredCourses().length }}</strong>
-                    {{ lang.tr('documents', 'وثيقة') }}
-                  </span>
-
-                  <div class="flex items-center gap-1.5">
-                    <button
-                      (click)="goToPage(currentPage() - 1)"
-                      [disabled]="currentPage() === 1"
-                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] text-[#102A43] hover:bg-[#F7F9FB] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
-                      <span class="material-icons text-sm rtl:rotate-180">chevron_left</span>
-                      <span>{{ lang.tr('Précédent', 'السابق') }}</span>
-                    </button>
-
-                    <div class="flex items-center gap-1">
-                      @for (p of pageNumbers(); track p) {
-                        <button
-                          (click)="goToPage(p)"
-                          [class]="currentPage() === p
-                            ? 'bg-[#007CC2] text-white font-bold shadow-xs'
-                            : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#007CC2]'"
-                          class="w-8 h-8 rounded-[8px] text-xs font-semibold flex items-center justify-center transition-all cursor-pointer">
-                          {{ p }}
-                        </button>
-                      }
-                    </div>
-
-                    <button
-                      (click)="goToPage(currentPage() + 1)"
-                      [disabled]="currentPage() === totalPages()"
-                      class="px-3 py-1.5 rounded-[8px] border border-[#E3ECF2] text-[#102A43] hover:bg-[#F7F9FB] disabled:opacity-30 disabled:cursor-not-allowed font-medium flex items-center gap-1 cursor-pointer transition-colors">
-                      <span>{{ lang.tr('Suivant', 'التالي') }}</span>
-                      <span class="material-icons text-sm rtl:rotate-180">chevron_right</span>
-                    </button>
-                  </div>
-                </div>
-              }
+              <app-pagination
+                [total]="filteredCourses().length"
+                [pageSize]="pageSize()"
+                [(page)]="currentPage"
+                accent="blue" />
             </div>
           }
 
@@ -1012,43 +973,9 @@ export class ParentHomeComponent {
     this.currentPage.set(1);
   }
 
-  readonly totalPages = computed(() => {
-    return Math.max(1, Math.ceil(this.filteredCourses().length / this.pageSize()));
-  });
-
-  readonly paginatedCourses = computed(() => {
-    const start = (this.currentPage() - 1) * this.pageSize();
-    return this.filteredCourses().slice(start, start + this.pageSize());
-  });
-
-  readonly pageNumbers = computed(() => {
-    const total = this.totalPages();
-    const current = this.currentPage();
-    const pages: number[] = [];
-    const maxButtons = 5;
-
-    let start = Math.max(1, current - 2);
-    const end = Math.min(total, start + maxButtons - 1);
-
-    if (end - start < maxButtons - 1) {
-      start = Math.max(1, end - maxButtons + 1);
-    }
-
-    for (let i = start; i <= end; i++) {
-      pages.push(i);
-    }
-    return pages;
-  });
-
-  goToPage(page: number) {
-    if (page >= 1 && page <= this.totalPages()) {
-      this.currentPage.set(page);
-    }
-  }
-
-  getEndItemIndex(): number {
-    return Math.min(this.currentPage() * this.pageSize(), this.filteredCourses().length);
-  }
+  readonly paginatedCourses = computed(() =>
+    paginate(this.filteredCourses(), this.currentPage(), this.pageSize())
+  );
 
   isUserLoggedIn(): boolean {
     return !!(this.firebase.userProfile() || this.firebase.currentUser());
