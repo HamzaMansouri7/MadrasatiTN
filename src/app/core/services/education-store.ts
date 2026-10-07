@@ -2,6 +2,7 @@ import { Injectable, computed, signal, inject, WritableSignal } from '@angular/c
 import { Router } from '@angular/router';
 import { InteractionService } from './interaction.service';
 import { FirebaseService } from './firebase.service';
+import { AiClient, AiJson } from './ai-client';
 import {
   Announcement,
   BlogPost,
@@ -44,6 +45,7 @@ import { SEED_COURSES, SEED_BANK_EXERCISES } from '../data/seed-docs.data';
 export class EducationStore {
   private readonly interactionService = inject(InteractionService);
   private readonly firebase = inject(FirebaseService);
+  private readonly ai = inject(AiClient);
   private readonly router = inject(Router, { optional: true });
 
   // Current active role ('home' by default shows the landing page)
@@ -886,22 +888,18 @@ export class EducationStore {
     contentType?: string
   ): Promise<ExerciseItem | null> {
     try {
-      const res = await fetch('/api/ai/auto-tag-document', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          filename: documentName,
-          documentName,
-          rawText,
-          fileData: base64Data,
-          base64Data,
-          mimeType: contentType,
-          contentType,
-        }),
+      const res = await this.ai.post('auto-tag-document', {
+        filename: documentName,
+        documentName,
+        rawText,
+        fileData: base64Data,
+        base64Data,
+        mimeType: contentType,
+        contentType,
       });
-      const data = await res.json();
-      const tags = data.metadata || data.tags;
-      if (data.success && tags) {
+      const data = res.ok ? res.data : null;
+      const tags = (data?.['metadata'] || data?.['tags']) as AiJson | undefined;
+      if (tags) {
         const verifiedAuthor = authorName || 'Enseignant Certifié';
         const newEx: ExerciseItem = {
           id: 'auto-' + Date.now(),
@@ -934,34 +932,14 @@ export class EducationStore {
 
   // Phase 1a — analyze an uploaded worksheet image, extract its visual "DNA".
   async analyzeWorksheet(base64Data: string, contentType?: string, documentName?: string): Promise<WorksheetDna | null> {
-    try {
-      const res = await fetch('/api/ai/analyze-worksheet', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ base64Data, contentType, documentName }),
-      });
-      const data = await res.json();
-      if (data.success && data.dna) return data.dna as WorksheetDna;
-    } catch (err) {
-      console.error('Error in analyzeWorksheet:', err);
-    }
-    return null;
+    const res = await this.ai.post('analyze-worksheet', { base64Data, contentType, documentName });
+    return res.ok && res.data['dna'] ? (res.data['dna'] as WorksheetDna) : null;
   }
 
   // Phase 1b — generate N new exercises in the same style/topic from the DNA.
   async generateSimilarExercises(dna: WorksheetDna, count = 3): Promise<GeneratedExercise[]> {
-    try {
-      const res = await fetch('/api/ai/generate-similar', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ dna, count }),
-      });
-      const data = await res.json();
-      if (data.success && Array.isArray(data.exercises)) return data.exercises as GeneratedExercise[];
-    } catch (err) {
-      console.error('Error in generateSimilarExercises:', err);
-    }
-    return [];
+    const res = await this.ai.post('generate-similar', { dna, count });
+    return res.ok && Array.isArray(res.data['exercises']) ? (res.data['exercises'] as GeneratedExercise[]) : [];
   }
 
   // Phase 3b — persist a worksheet server-side; returns its share URL (?sheet=ID).
@@ -1099,26 +1077,8 @@ export class EducationStore {
 
   // Phase 2 — generate one illustration for an exercise (returns a /uploads URL).
   async generateIllustration(promptText: string, style = 'educational', variation?: number): Promise<string | null> {
-    const doFetch = () =>
-      fetch('/api/ai/generate-illustration', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ promptText, style, variation }),
-      });
-    try {
-      let res = await doFetch();
-      if (res.status === 429) {
-        const retryHeader = res.headers.get('Retry-After');
-        const waitSec = retryHeader ? parseInt(retryHeader, 10) : 2;
-        await new Promise((r) => setTimeout(r, Math.max(1, waitSec) * 1000));
-        res = await doFetch();
-      }
-      const data = await res.json();
-      if (data.success && data.imageUrl) return data.imageUrl as string;
-    } catch (err) {
-      console.error('Error in generateIllustration:', err);
-    }
-    return null;
+    const res = await this.ai.post('generate-illustration', { promptText, style, variation }, { retry429: true });
+    return res.ok && res.data['imageUrl'] ? (res.data['imageUrl'] as string) : null;
   }
 
   // Memo Studio — generate a structured pedagogical memo sheet
@@ -1126,24 +1086,13 @@ export class EducationStore {
     if (typeof window === 'undefined') {
       return { ok: false, error: 'Environnement non supporté.' };
     }
-    try {
-      const res = await fetch('/api/ai/generate-memo', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(input),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        return { ok: false, error: data.error || 'Erreur lors de la génération de la fiche mémo.' };
-      }
-      if (data.result) {
-        this.memo.set(data.result);
-      }
-      return { ok: true, result: data.result, extractedText: data.extractedText };
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : 'Erreur réseau';
-      return { ok: false, error: msg };
-    }
+    const res = await this.ai.post('generate-memo', input as unknown as Record<string, unknown>, {
+      fallbackError: 'Erreur lors de la génération de la fiche mémo.',
+    });
+    if (!res.ok) return { ok: false, error: res.error };
+    const result = res.data['result'] as MemoDoc | undefined;
+    if (result) this.memo.set(result);
+    return { ok: true, result, extractedText: res.data['extractedText'] as string | undefined };
   }
 
   async regenerateMemoBlock(
@@ -1167,30 +1116,13 @@ export class EducationStore {
     if (typeof window === 'undefined') {
       return { ok: false, error: 'Environnement non supporté.' };
     }
-    try {
-      const res = await fetch('/api/ai/generate-memo', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(input),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        return { ok: false, error: data.error || 'Erreur lors de la régénération du bloc.' };
-      }
-      if (data.result) {
-        this.memo.update((doc) => {
-          if (!doc) return doc;
-          return {
-            ...doc,
-            ...(data.result as Partial<MemoDoc>),
-          };
-        });
-      }
-      return { ok: true, result: this.memo() ?? undefined };
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : 'Erreur réseau';
-      return { ok: false, error: msg };
-    }
+    const res = await this.ai.post('generate-memo', input as unknown as Record<string, unknown>, {
+      fallbackError: 'Erreur lors de la régénération du bloc.',
+    });
+    if (!res.ok) return { ok: false, error: res.error };
+    const patch = res.data['result'] as Partial<MemoDoc> | undefined;
+    if (patch) this.memo.update((doc) => (doc ? { ...doc, ...patch } : doc));
+    return { ok: true, result: this.memo() ?? undefined };
   }
 
   updateMemoField<K extends keyof MemoDoc>(field: K, value: MemoDoc[K]) {

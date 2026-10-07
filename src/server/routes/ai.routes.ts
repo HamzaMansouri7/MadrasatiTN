@@ -211,19 +211,20 @@ aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, async (req: Requ
       subject,
       topic,
       difficulty,
-      mode = 'teacher',
       format = 'free',
       trimester = 'Trimestre 1',
       points = 5,
       language,
     } = req.body;
+    // Clients send `role` (editor) or `mode`; anything but 'parent' is the teacher mode.
+    const mode = (req.body.mode ?? req.body.role) === 'parent' ? 'parent' : 'teacher';
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible. Aucune clé API configurée.' });
       return;
     }
 
     const lang = resolveLang(language);
-    const cacheKey = hashKey({ grade, subject, topic, difficulty, format, trimester, points, lang });
+    const cacheKey = hashKey({ grade, subject, topic, difficulty, format, trimester, points, lang, mode });
     const cached = exerciseCache.get(cacheKey);
     if (cached) {
       res.json({ success: true, exercise: cached, cached: true });
@@ -282,6 +283,7 @@ aiRouter.post('/transform-exercise', originGuard, aiRateLimiter, async (req: Req
       grade,
       subject,
       lang,
+      contextBlockStr: contextBlock({ grade, subject, lang }),
     });
 
     const data = await aiGenerateJSON(
@@ -827,7 +829,12 @@ aiRouter.post('/variant', originGuard, aiRateLimiter, async (req: Request, res: 
       return;
     }
 
+    const { grade, subject } = req.body;
     const prompt = compose(exerciseVariantSkill, {
+      grade,
+      subject,
+      lang,
+      contextBlockStr: contextBlock({ grade, subject, lang }),
       targetFormat: variantType || 'free',
       role: 'teacher',
       originalText: exercise.question || exercise.promptText || exercise.instructions || exercise.title || '',

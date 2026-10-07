@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, HostListener, computed, inject, signal } from '@angular/core';
-import { LanguageService } from '@core';
+import { LanguageService, escapeHtml } from '@core';
 
 /** One page/item inside a resource manifest (shape defined in RESOURCE-PIPELINE.md). */
 export interface BdItem {
@@ -151,13 +151,13 @@ export class BdLibraryComponent {
     const w = window.open('', '_blank', 'width=900,height=700');
     if (!w) return;
     const ped = item.pedagogy;
-    const chips = (arr: string[]) => arr.map((k) => `<span>${k}</span>`).join('');
+    const chips = (arr: string[]) => arr.map((k) => `<span>${escapeHtml(k)}</span>`).join('');
     const pedagogyHtml = ped?.keywords?.length
       ? `<div class="ped"><strong>${this.lang.t('bdKeywords')}</strong> ${chips(ped.keywords)}` +
         (ped.structures?.length ? `<br/><strong>${this.lang.t('bdStructures')}</strong> ${chips(ped.structures)}` : '') +
         `</div>`
       : '';
-    w.document.write(`<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><title>${item.title}</title>
+    w.document.write(`<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><title>${escapeHtml(item.title)}</title>
 <style>
   @page { size: A4 portrait; margin: 8mm; }
   body { margin: 0; font-family: 'Noto Sans Arabic', sans-serif; color: #14251D; }
@@ -168,7 +168,7 @@ export class BdLibraryComponent {
 </style></head><body>
   <img src="${window.location.origin}/${item.relPath}" onload="setTimeout(function(){window.print();window.close();},150)" />
   ${pedagogyHtml}
-  <p class="src">${item.title} — Madrasati TN · ${item.ref}</p>
+  <p class="src">${escapeHtml(item.title)} — Madrasati TN · ${escapeHtml(item.ref)}</p>
 </body></html>`);
     w.document.close();
   }

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson } from '@core';
 import { TeacherAvatarComponent } from '@shared';
 
 export interface GeneratedExerciseResult {
@@ -1667,6 +1667,8 @@ export interface GeneratedExerciseResult {
 export class TeacherHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
+  private readonly print = inject(PrintService);
+  private readonly ai = inject(AiClient);
   readonly firebase = inject(FirebaseService);
   readonly notifService = inject(NotificationService);
   readonly profileService = inject(TeacherProfileService);
@@ -2006,24 +2008,18 @@ export class TeacherHomeComponent {
     this.teacherSummarizeError.set('');
 
     try {
-      const res = await fetch('/api/ai/summarize-docs', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          files: imgs.map((i, idx) => ({
-            name: `image-${idx + 1}`,
-            data: i.base64Data,
-            mimeType: i.contentType,
-          })),
-          images: imgs.map((i) => ({ base64Data: i.base64Data, contentType: i.contentType })),
-          language: this.lang.lang(),
-        }),
-      });
+      const res = await this.ai.post('summarize-docs', {
+        files: imgs.map((i, idx) => ({
+          name: `image-${idx + 1}`,
+          data: i.base64Data,
+          mimeType: i.contentType,
+        })),
+        images: imgs.map((i) => ({ base64Data: i.base64Data, contentType: i.contentType })),
+      }, { fallbackError: 'Erreur lors de la génération' });
+      const data = res.ok ? res.data : { error: res.error };
+      const r = (res.ok ? data['summary'] || data['result'] : undefined) as AiJson | undefined;
 
-      const data = await res.json();
-      const r = data.summary || data.result;
-
-      if (data.success && r) {
+      if (res.ok && r) {
         let fullContent = `${r.summaryMarkdown}\n\n`;
         if (r.keyPoints?.length) {
           fullContent += `### أهم النقاط للمراجعة:\n` + r.keyPoints.map((k: string) => `- ${k}`).join('\n') + '\n\n';
@@ -2046,7 +2042,7 @@ export class TeacherHomeComponent {
         this.closeModal();
         this.activeTab.set('courses');
       } else {
-        this.teacherSummarizeError.set(data.error || 'Erreur lors de la génération');
+        this.teacherSummarizeError.set((data['error'] as string) || 'Erreur lors de la génération');
         this.isTeacherSummarizing.set(false);
       }
     } catch (err) {
@@ -2118,22 +2114,18 @@ export class TeacherHomeComponent {
         this.uploadedFileName.set(file.name);
       }
 
-      // 2. Multimodal OCR & Classification by Gemini 2.5 Flash
-      const tagRes = await fetch('/api/ai/auto-tag-document', {
-        method: 'POST',
-        headers: authHeaders,
-        body: JSON.stringify({
-          filename: file.name,
-          documentName: file.name,
-          fileData: file.type.startsWith('image/') ? base64Data : undefined,
-          base64Data: file.type.startsWith('image/') ? base64Data : undefined,
-          mimeType: file.type,
-          contentType: file.type,
-        }),
+      // 2. Multimodal OCR & Classification
+      const isImage = file.type.startsWith('image/');
+      const tagRes = await this.ai.post('auto-tag-document', {
+        filename: file.name,
+        documentName: file.name,
+        fileData: isImage ? base64Data : undefined,
+        base64Data: isImage ? base64Data : undefined,
+        mimeType: file.type,
+        contentType: file.type,
       });
-      const tagData = await tagRes.json();
-      const t = tagData.metadata || tagData.tags;
-      if (tagData.success && t) {
+      const t = (tagRes.ok ? tagRes.data['metadata'] || tagRes.data['tags'] : undefined) as AiJson | undefined;
+      if (t) {
         if (t.suggestedTitle) this.newCourseTitle.set(t.suggestedTitle);
         if (t.subject) this.newCourseSubject.set(t.subject as SubjectName);
         if (t.grade) this.newCourseGrade.set(t.grade as GradeLevel);
@@ -2277,112 +2269,22 @@ export class TeacherHomeComponent {
   }
 
   triggerPrintDialog() {
-    const course = this.printModalCourse();
-    if (typeof window === 'undefined') return;
-
-    if (course?.pdfUrl) {
-      window.open(course.pdfUrl, '_blank');
-      return;
-    }
-
-    if (course?.imageUrls && course.imageUrls.length > 0) {
-      const printWindow = window.open('', '_blank');
-      if (printWindow) {
-        const imagesHtml = course.imageUrls
-          .map(
-            (url, index) => `
-          <div class="print-sheet">
-            <img src="${url}" alt="${course.title} — Page ${index + 1}" />
-          </div>`
-          )
-          .join('');
-
-        printWindow.document.write(`<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>${course.title}</title>
-  <style>
-    @page {
-      size: A4 portrait;
-      margin: 8mm;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html, body {
-      background: #ffffff;
-      width: 100%;
-      height: auto;
-    }
-    .print-sheet {
-      width: 100%;
-      page-break-after: always;
-      break-after: page;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .print-sheet:last-child {
-      page-break-after: auto;
-      break-after: auto;
-    }
-    img {
-      max-width: 100%;
-      max-height: 275mm;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-  ${imagesHtml}
-  <script>
-    window.onload = function() {
-      setTimeout(function() {
-        window.focus();
-        window.print();
-      }, 300);
-    };
-  </script>
-</body>
-</html>`);
-        printWindow.document.close();
-        return;
-      }
-    }
-
-    window.print();
+    this.print.printCourse(this.printModalCourse());
   }
 
   async generateAiExercise() {
     this.isAiLoading.set(true);
     try {
-      const res = await fetch('/api/ai/generate-exercise', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          grade: this.newCourseGrade(),
-          subject: this.aiFormSubject(),
-          topic: this.aiFormTopic(),
-          difficulty: this.aiFormDifficulty(),
-          format: 'free',
-          trimester: 'Trimestre 1',
-          points: 5,
-          language: this.lang.lang(),
-        }),
+      const res = await this.ai.post('generate-exercise', {
+        grade: this.newCourseGrade(),
+        subject: this.aiFormSubject(),
+        topic: this.aiFormTopic(),
+        difficulty: this.aiFormDifficulty(),
+        format: 'free',
+        trimester: 'Trimestre 1',
+        points: 5,
       });
-      const data = await res.json();
-      if (data.success) {
-        this.generatedAiResult.set(data.exercise);
-      }
-    } catch (err) {
-      console.error(err);
+      if (res.ok) this.generatedAiResult.set(res.data['exercise'] as never);
     } finally {
       this.isAiLoading.set(false);
     }

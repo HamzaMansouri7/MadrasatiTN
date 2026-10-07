@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { Location } from '@angular/common';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson } from '@core';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
 @Component({
@@ -17,6 +17,7 @@ export class EditorStudioComponent {
   readonly firebase = inject(FirebaseService);
   readonly notifService = inject(NotificationService);
   readonly interactionSvc = inject(InteractionService);
+  private readonly ai = inject(AiClient);
   private readonly location = inject(Location);
 
   readonly viewMode = signal<'editor' | 'split' | 'preview'>('preview');
@@ -609,6 +610,24 @@ export class EditorStudioComponent {
     this.aiModalOpen.set(true);
   }
 
+  /** Copies a generated exercise onto a block; only fields the model returned are written. */
+  private applyExercise(blockId: string, ex: AiJson, overrides: { title?: string; points?: number } = {}) {
+    const title = overrides.title ?? ex['title'];
+    if (title) this.updateBlockField(blockId, 'exerciseTitle', title);
+    if (ex['promptText'] !== undefined) this.updateBlockContent(blockId, ex['promptText'] || '');
+    if (ex['solutionText'] !== undefined) this.updateBlockField(blockId, 'exerciseSolution', ex['solutionText'] || '');
+    const points = overrides.points ?? ex['points'];
+    if (points) this.updateBlockField(blockId, 'exercisePoints', points);
+    if (ex['parentGuide']) this.updateBlockField(blockId, 'parentGuide', ex['parentGuide']);
+    if (ex['teacherNotes']) this.updateBlockField(blockId, 'teacherNotes', ex['teacherNotes']);
+    if (ex['format']) this.updateBlockField(blockId, 'exerciseFormat', ex['format']);
+    if (ex['qcmOptions']?.length) this.updateBlockField(blockId, 'qcmOptions', ex['qcmOptions']);
+    if (typeof ex['qcmCorrectIndex'] === 'number') this.updateBlockField(blockId, 'qcmCorrectIndex', ex['qcmCorrectIndex']);
+    if (ex['tfStatements']?.length) this.updateBlockField(blockId, 'tfStatements', ex['tfStatements']);
+    if (ex['gapText']) this.updateBlockField(blockId, 'gapText', ex['gapText']);
+    if (ex['matchingPairs']?.length) this.updateBlockField(blockId, 'matchingPairs', ex['matchingPairs']);
+  }
+
   async generateWithGemini() {
     const prompt = this.aiPromptQuery();
     if (!prompt) return;
@@ -620,70 +639,45 @@ export class EditorStudioComponent {
 
     try {
       if (isProse) {
-        const res = await fetch('/api/ai/draft-announcement', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            purpose: prompt,
-            details: `${this.docSubject()} - ${this.docGrade()}`,
-            targetAudience: `${this.docGrade()} — parents et élèves`,
-            grade: this.docGrade(),
-            subject: this.docSubject(),
-            language: this.lang.lang(),
-          }),
+        const res = await this.ai.post('draft-announcement', {
+          purpose: prompt,
+          details: `${this.docSubject()} - ${this.docGrade()}`,
+          targetAudience: `${this.docGrade()} — parents et élèves`,
+          grade: this.docGrade(),
+          subject: this.docSubject(),
         });
-        const data = await res.json();
-        const ann = data.announcement || data.result;
-        if (data.success && ann) {
+        const ann = (res.ok ? res.data['announcement'] || res.data['result'] : undefined) as AiJson | undefined;
+        if (ann) {
           this.addBlock('heading1');
           const heading = this.blocks()[this.blocks().length - 1];
-          this.updateBlockContent(heading.id, ann.title || prompt);
+          this.updateBlockContent(heading.id, ann['title'] || prompt);
           this.addBlock('paragraph');
           const para = this.blocks()[this.blocks().length - 1];
-          this.updateBlockContent(para.id, ann.content || '');
+          this.updateBlockContent(para.id, ann['content'] || '');
           this.aiModalOpen.set(false);
           this.aiPromptQuery.set('');
         }
       } else {
-        const res = await fetch('/api/ai/generate-exercise', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            grade: this.docGrade(),
-            subject: this.docSubject(),
-            topic: prompt,
-            difficulty: 'Moyen',
-            format: 'free',
-            trimester: this.docTrimester(),
-            points: 5,
-            role: this.isParentMode() ? 'parent' : 'teacher',
-            childName: this.activeChildName(),
-            language: this.lang.lang(),
-          }),
+        const res = await this.ai.post('generate-exercise', {
+          grade: this.docGrade(),
+          subject: this.docSubject(),
+          topic: prompt,
+          difficulty: 'Moyen',
+          format: 'free',
+          trimester: this.docTrimester(),
+          points: 5,
+          role: this.isParentMode() ? 'parent' : 'teacher',
+          childName: this.activeChildName(),
         });
-        const data = await res.json();
-        if (data.success && data.exercise) {
-          const generated = data.exercise;
+        const generated = res.ok ? (res.data['exercise'] as AiJson | undefined) : undefined;
+        if (generated) {
           this.addBlock('exercise');
           const lastBlock = this.blocks()[this.blocks().length - 1];
-          this.updateBlockField(lastBlock.id, 'exerciseTitle', generated.title);
-          this.updateBlockContent(lastBlock.id, generated.promptText || '');
-          this.updateBlockField(lastBlock.id, 'exerciseSolution', generated.solutionText || '');
-          this.updateBlockField(lastBlock.id, 'exercisePoints', generated.points || 5);
-          if (generated.parentGuide) this.updateBlockField(lastBlock.id, 'parentGuide', generated.parentGuide);
-          if (generated.teacherNotes) this.updateBlockField(lastBlock.id, 'teacherNotes', generated.teacherNotes);
-          if (generated.format) this.updateBlockField(lastBlock.id, 'exerciseFormat', generated.format);
-          if (generated.qcmOptions) this.updateBlockField(lastBlock.id, 'qcmOptions', generated.qcmOptions);
-          if (typeof generated.qcmCorrectIndex === 'number') this.updateBlockField(lastBlock.id, 'qcmCorrectIndex', generated.qcmCorrectIndex);
-          if (generated.tfStatements) this.updateBlockField(lastBlock.id, 'tfStatements', generated.tfStatements);
-          if (generated.gapText) this.updateBlockField(lastBlock.id, 'gapText', generated.gapText);
-          if (generated.matchingPairs) this.updateBlockField(lastBlock.id, 'matchingPairs', generated.matchingPairs);
+          this.applyExercise(lastBlock.id, generated, { points: generated['points'] || 5 });
           this.aiModalOpen.set(false);
           this.aiPromptQuery.set('');
         }
       }
-    } catch (err) {
-      console.error('AI generation error:', err);
     } finally {
       this.isAiLoading.set(false);
     }
@@ -694,38 +688,19 @@ export class EditorStudioComponent {
     this.isTransformingId.set(block.id);
 
     try {
-      const res = await fetch('/api/ai/transform-exercise', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          exercise: {
-            title: block.exerciseTitle || 'Exercice',
-            promptText: block.content || '',
-            solutionText: block.exerciseSolution || '',
-          },
-          targetFormat: transformType === 'to_qcm' ? 'qcm' : 'free',
-          transformType,
-          grade: this.docGrade(),
-          subject: this.docSubject(),
-          language: this.lang.lang(),
-        }),
+      const res = await this.ai.post('transform-exercise', {
+        exercise: {
+          title: block.exerciseTitle || 'Exercice',
+          promptText: block.content || '',
+          solutionText: block.exerciseSolution || '',
+        },
+        targetFormat: transformType === 'to_qcm' ? 'qcm' : 'free',
+        transformType,
+        grade: this.docGrade(),
+        subject: this.docSubject(),
       });
-      const data = await res.json();
-      const t = data.exercise || data.transformed;
-
-      if (data.success && t) {
-        if (t.title) this.updateBlockField(block.id, 'exerciseTitle', t.title);
-        if (t.promptText) this.updateBlockContent(block.id, t.promptText);
-        if (t.solutionText) this.updateBlockField(block.id, 'exerciseSolution', t.solutionText);
-        if (t.format) this.updateBlockField(block.id, 'exerciseFormat', t.format);
-        if (t.qcmOptions?.length) this.updateBlockField(block.id, 'qcmOptions', t.qcmOptions);
-        if (typeof t.qcmCorrectIndex === 'number') this.updateBlockField(block.id, 'qcmCorrectIndex', t.qcmCorrectIndex);
-        if (t.tfStatements?.length) this.updateBlockField(block.id, 'tfStatements', t.tfStatements);
-        if (t.gapText) this.updateBlockField(block.id, 'gapText', t.gapText);
-        if (t.matchingPairs?.length) this.updateBlockField(block.id, 'matchingPairs', t.matchingPairs);
-      }
-    } catch (err) {
-      console.error('Transform exercise error:', err);
+      const t = (res.ok ? res.data['exercise'] || res.data['transformed'] : undefined) as AiJson | undefined;
+      if (t) this.applyExercise(block.id, t);
     } finally {
       this.isTransformingId.set(null);
     }
@@ -737,42 +712,27 @@ export class EditorStudioComponent {
     this.lastVariantBlockId.set(null);
 
     try {
-      const res = await fetch('/api/ai/variant', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          exercise: {
-            title: sourceBlock.exerciseTitle || 'Exercice',
-            promptText: sourceBlock.content || '',
-            solutionText: sourceBlock.exerciseSolution || '',
-            format: sourceBlock.exerciseFormat || 'free',
-          },
-          variantType: 'context',
-          grade: this.docGrade(),
-          subject: this.docSubject(),
-          language: this.lang.lang(),
-        }),
+      const res = await this.ai.post('variant', {
+        exercise: {
+          title: sourceBlock.exerciseTitle || 'Exercice',
+          promptText: sourceBlock.content || '',
+          solutionText: sourceBlock.exerciseSolution || '',
+          format: sourceBlock.exerciseFormat || 'free',
+        },
+        variantType: 'context',
+        grade: this.docGrade(),
+        subject: this.docSubject(),
       });
-      const data = await res.json();
-      const v = data.exercise || data.variant;
-
-      if (data.success && v) {
+      const v = (res.ok ? res.data['exercise'] || res.data['variant'] : undefined) as AiJson | undefined;
+      if (v) {
         this.addBlock('exercise');
         const newBlock = this.blocks()[this.blocks().length - 1];
-        this.updateBlockField(newBlock.id, 'exerciseTitle', `${v.title} (Variante IA ✨)`);
-        this.updateBlockContent(newBlock.id, v.promptText || '');
-        this.updateBlockField(newBlock.id, 'exerciseSolution', v.solutionText || '');
-        this.updateBlockField(newBlock.id, 'exercisePoints', v.points || sourceBlock.exercisePoints || 5);
-        if (v.format) this.updateBlockField(newBlock.id, 'exerciseFormat', v.format);
-        if (v.qcmOptions?.length) this.updateBlockField(newBlock.id, 'qcmOptions', v.qcmOptions);
-        if (typeof v.qcmCorrectIndex === 'number') this.updateBlockField(newBlock.id, 'qcmCorrectIndex', v.qcmCorrectIndex);
-        if (v.tfStatements?.length) this.updateBlockField(newBlock.id, 'tfStatements', v.tfStatements);
-        if (v.gapText) this.updateBlockField(newBlock.id, 'gapText', v.gapText);
-        if (v.matchingPairs?.length) this.updateBlockField(newBlock.id, 'matchingPairs', v.matchingPairs);
+        this.applyExercise(newBlock.id, v, {
+          title: `${v['title']} (Variante IA ✨)`,
+          points: v['points'] || sourceBlock.exercisePoints || 5,
+        });
         this.lastVariantBlockId.set(sourceBlock.id);
       }
-    } catch (err) {
-      console.error('Variant generation error:', err);
     } finally {
       this.isVariantLoading.set(false);
     }

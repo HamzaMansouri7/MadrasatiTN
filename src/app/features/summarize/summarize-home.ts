@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { EducationStore, FirebaseService, LanguageService, downscaleImage } from '@core';
+import { EducationStore, FirebaseService, LanguageService, downscaleImage, AiClient } from '@core';
 
 export interface SummarizeResult {
   title: string;
@@ -30,6 +30,7 @@ const SUMMARIZE_COUNT_KEY = 'madrasati_summarize_count';
 })
 export class SummarizeHomeComponent {
   readonly lang = inject(LanguageService);
+  private readonly ai = inject(AiClient);
   readonly store = inject(EducationStore);
   private readonly firebase = inject(FirebaseService);
   private readonly router = inject(Router);
@@ -124,26 +125,19 @@ export class SummarizeHomeComponent {
           base64Data: img.base64Data,
           contentType: img.contentType,
         })),
-        language: this.lang.lang(),
         ...(this.selGrade() ? { grade: this.selGrade() } : {}),
         ...(this.selSubject() ? { subject: this.selSubject() } : {}),
       };
 
-      const res = await fetch('/api/ai/summarize-docs', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
+      const res = await this.ai.post('summarize-docs', payload, { fallbackError: '' });
+      const sum = res.ok ? res.data['summary'] || res.data['result'] : undefined;
 
-      const data = await res.json();
-      const sum = data.summary || data.result;
-
-      if (data.success && sum) {
+      if (sum) {
         this.result.set(sum as SummarizeResult);
         this.state.set('done');
         this.bumpSummarizeCount();
       } else {
-        this.errorMessage.set(data.error || '');
+        this.errorMessage.set(res.ok ? '' : res.error);
         this.state.set('error');
       }
     } catch (err) {

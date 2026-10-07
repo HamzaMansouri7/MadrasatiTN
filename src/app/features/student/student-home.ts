@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, ExerciseItem, Homework } from '@core';
+import { EducationStore, LanguageService, FirebaseService, ExerciseItem, Homework, AiClient } from '@core';
 
 export interface TutorExplanation {
   explanation: string;
@@ -337,6 +337,7 @@ export class StudentHomeComponent {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  private readonly ai = inject(AiClient);
 
   isUserLoggedIn(): boolean {
     return !!(this.firebase.userProfile() || this.firebase.currentUser());
@@ -447,22 +448,12 @@ export class StudentHomeComponent {
     this.isTutorLoading.set(true);
 
     try {
-      const res = await fetch('/api/ai/explain-concept', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          concept: this.tutorQuestion(),
-          grade: this.store.activeStudent()?.grade || '4ème Année',
-          subject: 'Général',
-          language: this.lang.lang(),
-        }),
+      const res = await this.ai.post('explain-concept', {
+        concept: this.tutorQuestion(),
+        grade: this.store.activeStudent()?.grade || '4ème Année',
+        subject: 'Général',
       });
-      const data = await res.json();
-      if (data.success) {
-        this.tutorResponse.set(data.explanation || data.result);
-      }
-    } catch (err) {
-      console.error(err);
+      if (res.ok) this.tutorResponse.set((res.data['explanation'] || res.data['result']) as never);
     } finally {
       this.isTutorLoading.set(false);
     }

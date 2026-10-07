@@ -25,6 +25,8 @@ import {
   TUNISIAN_CURRICULUM_CHAPTERS,
   CurriculumChapter,
   BlogPost,
+  AiClient,
+  AiJson,
 } from '@core';
 
 export interface ChatMessage {
@@ -58,6 +60,7 @@ export class ArticleStudioComponent implements OnDestroy {
   readonly firebase = inject(FirebaseService);
   readonly notifService = inject(NotificationService);
   readonly interactionSvc = inject(InteractionService);
+  private readonly ai = inject(AiClient);
   private readonly location = inject(Location);
 
   tiptapEditor: Editor | null = null;
@@ -497,65 +500,54 @@ export class ArticleStudioComponent implements OnDestroy {
     this.isSaved.set(false);
 
     try {
-      const res = await fetch('/api/ai/chat-article', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: this.messages(),
-          currentArticle: this.article(),
-          userPrompt: text,
-          language: this.lang.lang(),
-          isFreeTopic: this.isFreeTopic(),
-          tags: this.customTags(),
-          chapter: this.activeChapterObj()
-            ? (this.lang.isArabic() ? this.activeChapterObj()!.titleAr : this.activeChapterObj()!.titleFr)
-            : (this.article().chapter || ''),
-        }),
+      const res = await this.ai.post('chat-article', {
+        messages: this.messages(),
+        currentArticle: this.article(),
+        userPrompt: text,
+        isFreeTopic: this.isFreeTopic(),
+        tags: this.customTags(),
+        chapter: this.activeChapterObj()
+          ? (this.lang.isArabic() ? this.activeChapterObj()!.titleAr : this.activeChapterObj()!.titleFr)
+          : (this.article().chapter || ''),
       });
 
-      const data = await res.json();
-      if (data.success) {
-        const reply = data.assistantMessage || data.replyText;
+      if (res.ok) {
+        const data = res.data as AiJson;
+        const reply = data['assistantMessage'] || data['replyText'];
         if (reply) {
           this.messages.update((msgs) => [...msgs, { role: 'assistant', content: reply }]);
         }
-        if (data.updatedArticle) {
+        if (data['updatedArticle']) {
           this.article.update((art) => ({
             ...art,
-            ...data.updatedArticle,
+            ...data['updatedArticle'],
           }));
-          if (this.tiptapEditor && data.updatedArticle.contentMarkdown) {
-            const html = this.parseSimpleMarkdown(data.updatedArticle.contentMarkdown);
+          if (this.tiptapEditor && data['updatedArticle'].contentMarkdown) {
+            const html = this.parseSimpleMarkdown(data['updatedArticle'].contentMarkdown);
             this.tiptapEditor.commands.setContent(html);
           }
         }
-        if (data.suggestedChips && Array.isArray(data.suggestedChips)) {
-          this.suggestedChips.set(data.suggestedChips);
+        if (Array.isArray(data['suggestedChips'])) {
+          this.suggestedChips.set(data['suggestedChips']);
         }
       } else {
+        const unreachable = res.status === 0;
         this.messages.update((msgs) => [
           ...msgs,
           {
             role: 'assistant',
-            content: this.lang.tr(
-              'Désolé, une erreur est survenue lors de la rédaction. Veuillez réessayer.',
-              'عذراً، حدث خطأ أثناء صياغة المقال. يرجى إعادة المحاولة.'
-            ),
+            content: unreachable
+              ? this.lang.tr(
+                  'Impossible de joindre le serveur IA actuellement.',
+                  'تعذر الاتصال بخادم الذكاء الاصطناعي حالياً.'
+                )
+              : this.lang.tr(
+                  'Désolé, une erreur est survenue lors de la rédaction. Veuillez réessayer.',
+                  'عذراً، حدث خطأ أثناء صياغة المقال. يرجى إعادة المحاولة.'
+                ),
           },
         ]);
       }
-    } catch (err) {
-      console.error('Chat error:', err);
-      this.messages.update((msgs) => [
-        ...msgs,
-        {
-          role: 'assistant',
-          content: this.lang.tr(
-            'Impossible de joindre le serveur IA actuellement.',
-            'تعذر الاتصال بخادم الذكاء الاصطناعي حالياً.'
-          ),
-        },
-      ]);
     } finally {
       this.isLoading.set(false);
       this.isSaved.set(true);
@@ -575,29 +567,20 @@ export class ArticleStudioComponent implements OnDestroy {
     const nextVar = this.article().coverImageUrl ? this.coverVariation() + 1 : 0;
     this.coverVariation.set(nextVar);
     try {
-      const doFetch = () =>
-        fetch('/api/ai/generate-illustration', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            promptText: topic,
-            kind: 'article-cover',
-            variation: nextVar,
-            subject: this.article().subject,
-            grade: this.article().grade,
-          }),
-        });
-
-      let res = await doFetch();
-      if (res.status === 429) {
-        const retryHeader = res.headers.get('Retry-After');
-        const waitSec = retryHeader ? parseInt(retryHeader, 10) : 2;
-        await new Promise((r) => setTimeout(r, Math.max(1, waitSec) * 1000));
-        res = await doFetch();
-      }
-      const data = await res.json();
-      if (data.success && data.imageUrl) {
-        this.article.update((a) => ({ ...a, coverImageUrl: data.imageUrl }));
+      const res = await this.ai.post(
+        'generate-illustration',
+        {
+          promptText: topic,
+          kind: 'article-cover',
+          variation: nextVar,
+          subject: this.article().subject,
+          grade: this.article().grade,
+        },
+        { retry429: true },
+      );
+      const imageUrl = res.ok ? (res.data['imageUrl'] as string | undefined) : undefined;
+      if (imageUrl) {
+        this.article.update((a) => ({ ...a, coverImageUrl: imageUrl }));
         this.messages.update((m) => [
           ...m,
           {
@@ -609,8 +592,6 @@ export class ArticleStudioComponent implements OnDestroy {
           },
         ]);
       }
-    } catch (err) {
-      console.error('Image gen error:', err);
     } finally {
       this.isGeneratingImg.set(false);
     }

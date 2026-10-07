@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { EducationStore, FirebaseService, LanguageService } from '@core';
+import { EducationStore, FirebaseService, LanguageService, AiClient } from '@core';
 
 interface PhotoSolveResult {
   extractedText: string;
@@ -23,6 +23,7 @@ export class SolveHomeComponent {
   readonly lang = inject(LanguageService);
   readonly store = inject(EducationStore);
   private readonly firebase = inject(FirebaseService);
+  private readonly ai = inject(AiClient);
 
   readonly state = signal<'idle' | 'analyzing' | 'done' | 'error'>('idle');
   readonly previewUrl = signal<string | null>(null);
@@ -63,26 +64,20 @@ export class SolveHomeComponent {
       });
       this.previewUrl.set(base64Data);
 
-      const res = await fetch('/api/ai/photo-solve', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          photoBase64: base64Data,
-          base64Data,
-          mimeType: file.type,
-          contentType: file.type,
-          language: this.lang.lang(),
-        }),
-      });
-      const data = await res.json();
-      const sol = data.solution || data.result;
+      const res = await this.ai.post('photo-solve', {
+        photoBase64: base64Data,
+        base64Data,
+        mimeType: file.type,
+        contentType: file.type,
+      }, { fallbackError: '' });
+      const sol = res.ok ? res.data['solution'] || res.data['result'] : undefined;
 
-      if (data.success && sol) {
+      if (sol) {
         this.result.set(sol as PhotoSolveResult);
         this.state.set('done');
         this.bumpSolveCount();
       } else {
-        this.errorMessage.set(data.error || '');
+        this.errorMessage.set(res.ok ? '' : res.error);
         this.state.set('error');
       }
     } catch (err) {

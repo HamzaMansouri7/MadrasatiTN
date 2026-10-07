@@ -926,12 +926,12 @@ export class MemoStudioComponent implements OnInit {
 
     const res = await this.store.generateMemo(inputData);
 
-    if (res) {
+    if (res.ok) {
       this.state.set('done');
       this.isSaved.set(false);
       this.savedMemoId.set(null);
     } else {
-      this.errorMessage.set('Erreur lors de la génération.');
+      this.errorMessage.set(res.error || 'Erreur lors de la génération.');
       this.state.set('error');
     }
   }
