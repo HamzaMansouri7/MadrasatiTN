@@ -37,7 +37,7 @@ import {
 } from '../models/memo.model';
 import { SourceInput } from '../models/source-input.model';
 import { SeriesDoc, Scene } from '../models/series.model';
-import { InfographicDoc, LessonPlanDocValues } from '../models/infographic.model';
+import { InfographicDoc } from '../models/infographic.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
@@ -1279,80 +1279,90 @@ export class EducationStore {
   // ==========================================
   // Lesson Plan (جذاذة) Methods
   // ==========================================
-  async generateLessonPlan(source: SourceInput): Promise<{ ok: boolean; doc?: InfographicDoc; docId?: string; error?: string }> {
-    if (typeof window === 'undefined') {
-      return { ok: false, error: 'Environnement non supporté.' };
-    }
-    const sourceFiles: { data: string; mimeType: string }[] = [];
-    for (const p of source.photos ?? []) {
-      if (p.base64Data) sourceFiles.push({ data: p.base64Data, mimeType: p.contentType || 'image/jpeg' });
-    }
-    if (source.file?.base64Data) {
-      sourceFiles.push({ data: source.file.base64Data, mimeType: source.file.contentType || 'application/pdf' });
-    }
 
-    const res = await this.ai.post('generate-lesson-plan', {
+  /** Request fields shared by the lesson-plan and series planners (text, instructions, up to 3 photos/files). */
+  private sourceRequest(source: SourceInput) {
+    const files: { data: string; mimeType: string }[] = [];
+    for (const p of (source.photos ?? source.images ?? []).slice(0, 3)) {
+      if (p.base64Data) files.push({ data: p.base64Data, mimeType: p.contentType || 'image/jpeg' });
+    }
+    if (source.file?.base64Data && files.length < 3) {
+      files.push({ data: source.file.base64Data, mimeType: source.file.contentType || 'application/pdf' });
+    }
+    return {
       topic: source.topic,
       grade: source.grade,
       subject: source.subject,
       trimester: source.trimester,
       language: source.language,
-      teacherNotes: source.text,
-      userInstruction: source.instructions,
-      sourceFiles: sourceFiles.length ? sourceFiles : undefined,
-    }, {
+      lessonText: source.text,
+      instructions: source.instructions,
+      sourceFiles: files.length ? files : undefined,
+    };
+  }
+
+  /** Author line comes from the teacher's profile settings, never from the model. */
+  private profileAuthor() {
+    const p = this.firebase.userProfile();
+    return { name: p?.displayName || undefined, school: p?.school || undefined, governorate: p?.governorate || undefined };
+  }
+
+  async generateLessonPlan(source: SourceInput): Promise<{ ok: boolean; doc?: InfographicDoc; docId?: string; error?: string }> {
+    if (typeof window === 'undefined') {
+      return { ok: false, error: 'Environnement non supporté.' };
+    }
+    const res = await this.ai.post('generate-lesson-plan', this.sourceRequest(source), {
       fallbackError: 'Erreur lors de la génération de la fiche pédagogique.',
     });
 
     if (!res.ok) return { ok: false, error: res.error };
-    const doc = res.data['doc'] as InfographicDoc | undefined;
-    if (doc) {
-      this.currentLessonPlan.set(doc);
-      void this.saveLessonPlan({ doc });
-      return { ok: true, doc, docId: doc.id };
-    }
-    return { ok: false, error: 'Structure de document invalide.' };
+    const generated = res.data['doc'] as InfographicDoc | undefined;
+    if (!generated) return { ok: false, error: 'Structure de document invalide.' };
+
+    const doc: InfographicDoc = { ...generated, author: this.profileAuthor() };
+    const saved = await this.saveLessonPlan({ doc });
+    if (saved) doc.id = saved.id;
+    this.currentLessonPlan.set(doc);
+    return { ok: true, doc, docId: doc.id };
   }
 
-  async saveLessonPlan(payload: {
-    doc: InfographicDoc;
-    authorName?: string;
-    authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
-    school?: string;
-  }): Promise<{ id: string; shareUrl: string } | null> {
+  /** Create or update (same id) a lesson plan; returns the server id. */
+  async saveLessonPlan(payload: { doc: InfographicDoc }): Promise<{ id: string; shareUrl: string } | null> {
+    return this.saveStructuredDoc('lesson-plan', payload.doc);
+  }
+
+  async getLessonPlan(id: string): Promise<InfographicDoc | null> {
+    const doc = await this.fetchStructuredDoc<InfographicDoc>(id, 'lesson-plan');
+    if (doc) this.currentLessonPlan.set(doc);
+    return doc;
+  }
+
+  private async saveStructuredDoc(docType: 'lesson-plan' | 'series', doc: InfographicDoc | SeriesDoc): Promise<{ id: string; shareUrl: string } | null> {
     try {
       const res = await fetch('/api/docs', {
         method: 'POST',
         headers: await this.firebase.getAuthHeaders(),
-        body: JSON.stringify({
-          docType: 'lesson-plan',
-          ...payload,
-        }),
+        body: JSON.stringify({ docType, doc }),
       });
       const data = await res.json();
       if (data.success && data.id) {
         this.publishedLoaded = false;
-        void this.loadPublishedWorksheets();
         return { id: data.id, shareUrl: data.shareUrl };
       }
     } catch (err) {
-      console.error('Error in saveLessonPlan:', err);
+      console.error(`Error saving ${docType}:`, err);
     }
     return null;
   }
 
-  async getLessonPlan(id: string): Promise<InfographicDoc | null> {
+  private async fetchStructuredDoc<T extends { id: string }>(id: string, docType: 'lesson-plan' | 'series'): Promise<T | null> {
     try {
       const res = await fetch('/api/docs/' + encodeURIComponent(id));
       if (!res.ok) return null;
       const data = await res.json();
-      if (data.success && data.doc) {
-        const doc = (data.doc.doc || data.doc) as InfographicDoc;
-        this.currentLessonPlan.set(doc);
-        return doc;
-      }
+      if (data.success && data.doc?.docType === docType) return data.doc as T;
     } catch (err) {
-      console.error('Error in getLessonPlan:', err);
+      console.error(`Error loading ${docType}:`, err);
     }
     return null;
   }
@@ -1364,43 +1374,25 @@ export class EducationStore {
     if (typeof window === 'undefined') {
       return { ok: false, error: 'Environnement non supporté.' };
     }
-    const sourceFiles: { data: string; mimeType: string }[] = [];
-    for (const p of source.photos ?? []) {
-      if (p.base64Data) sourceFiles.push({ data: p.base64Data, mimeType: p.contentType || 'image/jpeg' });
-    }
-    if (source.file?.base64Data) {
-      sourceFiles.push({ data: source.file.base64Data, mimeType: source.file.contentType || 'application/pdf' });
-    }
-
-    const res = await this.ai.post('plan-series', {
-      topic: source.topic,
-      grade: source.grade,
-      subject: source.subject,
-      trimester: source.trimester,
-      language: source.language,
-      teacherNotes: source.text,
-      userInstruction: source.instructions,
-      sourceFiles: sourceFiles.length ? sourceFiles : undefined,
-    }, {
+    const res = await this.ai.post('plan-series', this.sourceRequest(source), {
       fallbackError: 'Erreur lors de la planification de la série.',
     });
 
     if (!res.ok) return { ok: false, error: res.error };
-    const doc = res.data['doc'] as SeriesDoc | undefined;
-    if (doc) {
-      this.currentSeries.set(doc);
-      if (doc.scenes?.length) {
-        void this.generateSeriesPanel(doc.id, 1);
-      }
-      void this.saveSeries({ doc });
-      return { ok: true, doc, docId: doc.id };
-    }
-    return { ok: false, error: 'Structure de série invalide.' };
+    const generated = res.data['doc'] as SeriesDoc | undefined;
+    if (!generated) return { ok: false, error: 'Structure de série invalide.' };
+
+    const doc: SeriesDoc = { ...generated, author: this.profileAuthor() };
+    const saved = await this.saveSeries({ doc });
+    if (saved) doc.id = saved.id;
+    this.currentSeries.set(doc);
+    return { ok: true, doc, docId: doc.id };
   }
 
+  /** Text for one panel, written from the plan scene and the teacher's source text only. */
   async generateSeriesPanel(seriesId: string, sceneNumber: number): Promise<{ ok: boolean; scene?: Scene; error?: string }> {
     const current = this.currentSeries();
-    if (!current) return { ok: false, error: 'Aucune série active.' };
+    if (!current || current.id !== seriesId) return { ok: false, error: 'Aucune série active.' };
     const scene = current.scenes.find((s) => s.n === sceneNumber);
     if (!scene) return { ok: false, error: 'Scène introuvable.' };
 
@@ -1410,6 +1402,7 @@ export class EducationStore {
       sceneTitle: scene.title,
       sceneEvent: scene.event,
       sceneKind: scene.kind,
+      lessonText: current.sourceText,
       grade: current.grade,
       subject: current.subject,
       language: current.language,
@@ -1418,92 +1411,69 @@ export class EducationStore {
     });
 
     if (!res.ok) return { ok: false, error: res.error };
-    const updatedScene = res.data['scene'] as Scene | undefined;
-    if (updatedScene) {
-      this.currentSeries.update((s) => {
-        if (!s) return s;
-        return {
-          ...s,
-          scenes: s.scenes.map((sc) => (sc.n === sceneNumber ? updatedScene : sc)),
-        };
-      });
-      const updated = this.currentSeries();
-      if (updated) void this.saveSeries({ doc: updated });
-    }
-    return { ok: true, scene: updatedScene };
+    const panel = res.data['panel'] as Partial<Scene> | undefined;
+    if (!panel?.text) return { ok: false, error: 'Planche vide, réessayez.' };
+
+    const merged = this.patchScene(seriesId, sceneNumber, {
+      text: panel.text,
+      caption: panel.caption,
+      imagePrompt: panel.imagePrompt || scene.imagePrompt,
+      status: 'ready',
+    });
+    return { ok: true, scene: merged };
   }
 
   async generateSeriesImage(seriesId: string, sceneNumber: number): Promise<{ ok: boolean; imageUrl?: string; error?: string }> {
     const current = this.currentSeries();
-    if (!current) return { ok: false, error: 'Aucune série active.' };
+    if (!current || current.id !== seriesId) return { ok: false, error: 'Aucune série active.' };
     const scene = current.scenes.find((s) => s.n === sceneNumber);
     if (!scene) return { ok: false, error: 'Scène introuvable.' };
 
+    // One seed per series keeps the look consistent from panel to panel.
+    let seed = 0;
+    for (const ch of seriesId) seed = (seed * 31 + ch.charCodeAt(0)) >>> 0;
+
     const res = await this.ai.post('generate-series-image', {
-      visualPrompt: scene.imagePrompt || scene.text || scene.event,
-      sceneNumber,
-      seriesId,
+      promptText: scene.imagePrompt,
+      bible: current.bible,
+      seed,
     }, {
       fallbackError: `Erreur lors de la génération de l'illustration.`,
     });
 
     if (!res.ok) return { ok: false, error: res.error };
     const imageUrl = res.data['imageUrl'] as string | undefined;
-    if (imageUrl) {
-      this.currentSeries.update((s) => {
-        if (!s) return s;
-        return {
-          ...s,
-          scenes: s.scenes.map((sc) => (sc.n === sceneNumber ? { ...sc, imageUrl } : sc)),
-        };
-      });
-      const updated = this.currentSeries();
-      if (updated) void this.saveSeries({ doc: updated });
-    }
+    if (!imageUrl) return { ok: false, error: 'Illustration vide, réessayez.' };
+    this.patchScene(seriesId, sceneNumber, { imageUrl });
     return { ok: true, imageUrl };
   }
 
-  async saveSeries(payload: {
-    doc: SeriesDoc;
-    authorName?: string;
-    authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
-    school?: string;
-  }): Promise<{ id: string; shareUrl: string } | null> {
-    try {
-      const res = await fetch('/api/docs', {
-        method: 'POST',
-        headers: await this.firebase.getAuthHeaders(),
-        body: JSON.stringify({
-          docType: 'series',
-          ...payload,
+  /** Merge fields into one scene of the active series (no-op when another series became active). */
+  private patchScene(seriesId: string, sceneNumber: number, patch: Partial<Scene>): Scene | undefined {
+    let result: Scene | undefined;
+    this.currentSeries.update((s) => {
+      if (!s || s.id !== seriesId) return s;
+      return {
+        ...s,
+        scenes: s.scenes.map((sc) => {
+          if (sc.n !== sceneNumber) return sc;
+          result = { ...sc, ...Object.fromEntries(Object.entries(patch).filter(([, v]) => v !== undefined)) };
+          return result;
         }),
-      });
-      const data = await res.json();
-      if (data.success && data.id) {
-        this.publishedLoaded = false;
-        void this.loadPublishedWorksheets();
-        return { id: data.id, shareUrl: data.shareUrl };
-      }
-    } catch (err) {
-      console.error('Error in saveSeries:', err);
-    }
-    return null;
+      };
+    });
+    return result;
+  }
+
+  /** Create or update (same id) a series; returns the server id. */
+  async saveSeries(payload: { doc: SeriesDoc }): Promise<{ id: string; shareUrl: string } | null> {
+    return this.saveStructuredDoc('series', payload.doc);
   }
 
   async getSeries(id: string): Promise<SeriesDoc | null> {
-    try {
-      const res = await fetch('/api/docs/' + encodeURIComponent(id));
-      if (!res.ok) return null;
-      const data = await res.json();
-      if (data.success && data.doc) {
-        const doc = (data.doc.doc || data.doc) as SeriesDoc;
-        this.currentSeries.set(doc);
-        return doc;
-      }
-    } catch (err) {
-      console.error('Error in getSeries:', err);
-    }
-    return null;
+    const doc = await this.fetchStructuredDoc<SeriesDoc>(id, 'series');
+    if (doc) this.currentSeries.set(doc);
+    return doc;
   }
 
   addAnnouncement(announcementData: Partial<Announcement>) {

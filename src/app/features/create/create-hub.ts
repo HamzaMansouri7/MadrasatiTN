@@ -172,7 +172,13 @@ export class CreateHubComponent implements OnInit {
     });
   }
 
+  retryGeneration() {
+    const last = this.store.lastSourceInput();
+    if (last) this.onSourceSubmitted(last);
+  }
+
   onSourceSubmitted(source: SourceInput) {
+    if (this.isGenerating()) return;
     this.store.setLastSourceInput(source);
     const sel = this.selectedOutput();
 

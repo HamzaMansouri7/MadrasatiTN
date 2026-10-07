@@ -25,6 +25,8 @@ export interface Scene {
   imageUrl?: string;
   kind: SceneKind;
   teachingGoal?: string;
+  /** planned = outline only; ready = pupil text written. */
+  status?: 'planned' | 'ready';
 }
 
 export interface SeriesAuthor {

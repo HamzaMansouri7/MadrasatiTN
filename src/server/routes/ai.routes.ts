@@ -16,6 +16,7 @@ import { resolveInside } from '../safe-path';
 import { capText, capHistory, wrapData, CAPS } from '../input-caps';
 import { originGuard, aiRateLimiter } from '../guards';
 import { saveGenerated } from '../storage';
+import { normalizeDigits, fixLessonPlanStages, cleanScenes, cleanImagePrompt, SCENE_KINDS, type PlanStage, type PlannedScene } from '../skills/doc-checks';
 import {
   compose,
   exerciseSkill,
@@ -716,16 +717,32 @@ aiRouter.post('/generate-memo', originGuard, aiRateLimiter, async (req: Request,
   }
 });
 
+/** Up to 3 source photos/files as inline parts (data-URL prefix stripped, oversized ones dropped). */
+function sourceParts(raw: unknown): GeminiPart[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .slice(0, 3)
+    .map((f) => f as { data?: unknown; mimeType?: unknown })
+    .filter((f) => typeof f.data === 'string' && f.data.length < 8_000_000)
+    .map((f) => ({
+      inlineData: {
+        mimeType: typeof f.mimeType === 'string' && /^(image\/|application\/pdf)/.test(f.mimeType) ? f.mimeType : 'image/jpeg',
+        data: String(f.data).replace(/^data:[^;]+;base64,/, ''),
+      },
+    }));
+}
+
 // 4b. Lesson Plan Generator (Jodhadha Pédagogique - Plan de Leçon)
 aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { grade, subject, topic, durationMinutes = 45, instructions, sectionToRegenerate, language } = req.body;
+    const { grade, subject, topic, durationMinutes = 45, instructions, lessonText, sourceFiles, sectionToRegenerate, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
-    if (!topic && !instructions) {
-      res.status(400).json({ error: 'Un thème ou une consigne est requis.' });
+    const parts = sourceParts(sourceFiles);
+    if (!topic && !instructions && !lessonText && parts.length === 0) {
+      res.status(400).json({ error: 'Un thème, un texte ou une photo est requis.' });
       return;
     }
     if (!grade || !subject) {
@@ -734,17 +751,19 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
     }
 
     const lang: 'ar' | 'fr' = resolveLang(language);
-    const safeTopic = capText(topic || instructions || 'Leçon de base', 300);
+    const safeTopic = capText(topic || instructions || lessonText || 'Leçon de base', 300);
     const resolvedGrade = String(grade);
     const resolvedSubject = String(subject);
+    const duration = Math.min(120, Math.max(20, Number(durationMinutes) || 45));
 
     const prompt = compose(lessonPlanSkill, {
       grade: resolvedGrade,
       subject: resolvedSubject,
       topic: safeTopic,
-      durationMinutes: Number(durationMinutes) || 45,
+      durationMinutes: duration,
       instructions: instructions ? capText(instructions, 1000) : undefined,
-      sectionToRegenerate,
+      lessonText: lessonText ? capText(lessonText, 8000) : undefined,
+      sectionToRegenerate: sectionToRegenerate ? capText(sectionToRegenerate, 60) : undefined,
       lang,
       contextBlockStr: contextBlock({
         grade: resolvedGrade,
@@ -754,17 +773,24 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
       }),
     });
 
-    const data = await aiGenerateJSON(lessonPlanSkill.chain, prompt, lessonPlanSkill.schema, lessonPlanSkill.temperature);
+    const raw = await aiGenerateJSON(
+      lessonPlanSkill.chain,
+      parts.length ? [{ text: prompt }, ...parts] : prompt,
+      lessonPlanSkill.schema,
+      lessonPlanSkill.temperature,
+    );
+    const data = normalizeDigits(fixLessonPlanStages(raw as { stages?: PlanStage[] }, duration));
+    const now = new Date().toISOString();
     const doc = {
-      id: 'lp-' + Date.now(),
+      id: randomUUID(),
       templateId: 'official-lesson-plan',
-      title: (data as { meta?: { title?: string } })?.meta?.title || safeTopic,
+      title: String((data as { topic?: string }).topic || safeTopic).slice(0, 200),
       grade: resolvedGrade,
       subject: resolvedSubject,
       language: lang,
       values: data,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
+      createdAt: now,
+      updatedAt: now,
     };
     res.json({ success: true, doc, lessonPlan: data });
     return;
@@ -779,13 +805,14 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
 // 4c. Series Scenario Planner
 aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { grade, subject, topic, lessonText, language } = req.body;
+    const { grade, subject, topic, lessonText, sourceFiles, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
-    if (!topic && !lessonText) {
-      res.status(400).json({ error: 'Un texte de cours ou un thème historique est requis.' });
+    const parts = sourceParts(sourceFiles);
+    if (!topic && !lessonText && parts.length === 0) {
+      res.status(400).json({ error: 'Un texte de cours, une photo ou un thème historique est requis.' });
       return;
     }
     if (!grade || !subject) {
@@ -812,37 +839,45 @@ aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, r
       }),
     });
 
-    const data = await aiGenerateJSON(seriesSkill.chain, prompt, SERIES_PLAN_SCHEMA, seriesSkill.temperature);
-    const plan = data as {
+    const data = await aiGenerateJSON(seriesSkill.chain, parts.length ? [{ text: prompt }, ...parts] : prompt, SERIES_PLAN_SCHEMA, seriesSkill.temperature);
+    const plan = normalizeDigits(data) as {
       title: string;
       era: string;
       style: string;
       characters: { name: string; role: string; visualDescription: string }[];
-      scenes: { n: number; title: string; event: string; year?: string; visualIdea: string; kind: string; teachingGoal?: string }[];
+      scenes: PlannedScene[];
     };
+    const scenes = cleanScenes(plan.scenes);
+    if (scenes.length < 3) {
+      res.status(502).json({ error: 'Le scénario généré est incomplet. Réessayez.' });
+      return;
+    }
+    const now = new Date().toISOString();
     const seriesDoc = {
-      id: 'series-' + Date.now(),
+      id: randomUUID(),
       title: plan.title || safeTopic,
       grade: grade,
       subject: subject,
       language: lang,
+      sourceText: safeText,
       bible: {
         characters: plan.characters || [],
         style: plan.style || 'educational comic',
         era: plan.era || '',
       },
-      scenes: (plan.scenes || []).map((s) => ({
+      scenes: scenes.map((s) => ({
         n: s.n,
         title: s.title,
         event: s.event,
         year: s.year,
         text: s.event,
-        imagePrompt: s.visualIdea,
-        kind: s.kind || 'scene',
+        imagePrompt: cleanImagePrompt(s.visualIdea),
+        kind: s.kind,
         teachingGoal: s.teachingGoal,
+        status: 'planned',
       })),
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
+      createdAt: now,
+      updatedAt: now,
     };
     res.json({ success: true, doc: seriesDoc, plan: data });
     return;
@@ -857,7 +892,7 @@ aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, r
 // 4d. Series Single Panel Generator
 aiRouter.post('/generate-series-panel', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { bible, sceneNumber, sceneTitle, sceneEvent, sceneKind, grade, subject, language } = req.body;
+    const { bible, sceneNumber, sceneTitle, sceneEvent, sceneKind, lessonText, grade, subject, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
@@ -874,14 +909,16 @@ aiRouter.post('/generate-series-panel', originGuard, aiRateLimiter, async (req: 
       sceneNumber: Number(sceneNumber) || 1,
       sceneTitle: capText(sceneTitle || '', 200),
       sceneEvent: capText(sceneEvent || '', 500),
-      sceneKind: sceneKind || 'scene',
+      sceneKind: (SCENE_KINDS as readonly string[]).includes(sceneKind) ? sceneKind : 'scene',
+      lessonText: capText(lessonText || '', 8000),
       grade: grade,
       subject: subject,
       lang,
     });
 
-    const data = await aiGenerateJSON(seriesSkill.chain, prompt, SERIES_PANEL_SCHEMA, seriesSkill.temperature);
-    res.json({ success: true, panel: data });
+    const data = normalizeDigits(await aiGenerateJSON(seriesSkill.chain, prompt, SERIES_PANEL_SCHEMA, seriesSkill.temperature));
+    const panel = { ...data, imagePrompt: cleanImagePrompt(String(data['imagePrompt'] ?? '')) };
+    res.json({ success: true, panel });
     return;
   } catch (err: unknown) {
     console.error('Error in /api/ai/generate-series-panel:', err);
@@ -894,14 +931,26 @@ aiRouter.post('/generate-series-panel', originGuard, aiRateLimiter, async (req: 
 // 4e. Series Image Generator
 aiRouter.post('/generate-series-image', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { promptText, seed, style } = req.body;
-    if (!promptText) {
+    const { promptText, seed, bible } = req.body;
+    const scene = cleanImagePrompt(typeof promptText === 'string' ? promptText : '');
+    if (!scene) {
       res.status(400).json({ error: 'promptText requis.' });
       return;
     }
 
-    const cleanPrompt = `${capText(promptText, 600)}, historical educational comic panel, high resolution, detailed, no text, no words, no letters`;
-    const finalSeed = typeof seed === 'number' ? seed : seedFor(cleanPrompt);
+    // Same style + same character descriptions on every panel keeps the series visually consistent.
+    const b = (bible && typeof bible === 'object' ? bible : {}) as { style?: string; characters?: { name?: string; visualDescription?: string }[] };
+    const cast = (Array.isArray(b.characters) ? b.characters : [])
+      .slice(0, 4)
+      .map((c) => cleanImagePrompt(`${c.name ?? ''}: ${c.visualDescription ?? ''}`))
+      .filter(Boolean)
+      .join('; ');
+    const style = cleanImagePrompt(b.style) || 'historical educational comic panel';
+    const cleanPrompt = capText(
+      `${style}. ${cast ? `Characters: ${cast}. ` : ''}${scene}. high resolution, detailed, no text, no words, no letters, no numbers`,
+      1200,
+    );
+    const finalSeed = typeof seed === 'number' && Number.isFinite(seed) ? seed : seedFor(cleanPrompt);
     const imageUrl = await generateIllustrationFile(cleanPrompt, cleanPrompt, finalSeed);
 
     res.json({ success: true, imageUrl });

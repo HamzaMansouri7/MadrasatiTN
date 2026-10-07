@@ -52,7 +52,7 @@ export class App {
           '/article-studio': 'article-editor',
           '/studio': 'editor',
         };
-        const matchedRole = routeToRoleMap[path];
+        const matchedRole = routeToRoleMap[path] ?? (/^\/(lesson-plan|series)\//.test(path) ? ('public' as UserRole) : undefined);
         if (matchedRole && this.store.currentRole() !== matchedRole) {
           this.store.currentRole.set(matchedRole);
         }

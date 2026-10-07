@@ -8,43 +8,51 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [FormsModule],
   template: `
-    <div class="bg-white rounded-[24px] border border-[#E7DFCF] p-5 sm:p-7 space-y-6 shadow-sm">
+    <div class="bg-white rounded-[28px] border border-[#E7DFCF] p-5 sm:p-7 space-y-6 shadow-sm">
       <!-- Tabs (Topic, Text, Photo, File) -->
-      <div class="flex items-center gap-1.5 p-1 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] overflow-x-auto">
+      <div role="tablist" [attr.aria-label]="lang.tr('Source du contenu', 'مصدر المحتوى')" class="flex items-center gap-1.5 p-1 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] overflow-x-auto">
         <button
           type="button"
+          role="tab"
+          [attr.aria-selected]="mode() === 'topic'"
           (click)="setMode('topic')"
-          [class]="mode() === 'topic' ? 'bg-[#2D6A4F] text-[#FBF8F1] shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
-          class="flex-1 min-w-24 py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+          [class]="mode() === 'topic' ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
+          class="flex-1 min-w-24 min-h-11 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
           <span class="material-icons text-sm" aria-hidden="true">title</span>
           <span>{{ lang.tr('Sujet / Notions', 'موضوع / فكرة') }}</span>
         </button>
 
         <button
           type="button"
+          role="tab"
+          [attr.aria-selected]="mode() === 'text'"
           (click)="setMode('text')"
-          [class]="mode() === 'text' ? 'bg-[#2D6A4F] text-[#FBF8F1] shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
-          class="flex-1 min-w-24 py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+          [class]="mode() === 'text' ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
+          class="flex-1 min-w-24 min-h-11 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
           <span class="material-icons text-sm" aria-hidden="true">edit_note</span>
           <span>{{ lang.tr('Coller un texte', 'نص الدرس') }}</span>
         </button>
 
         <button
           type="button"
+          role="tab"
+          [attr.aria-selected]="mode() === 'photo'"
           (click)="setMode('photo')"
-          [class]="mode() === 'photo' ? 'bg-[#2D6A4F] text-[#FBF8F1] shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
-          class="flex-1 min-w-24 py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+          [class]="mode() === 'photo' ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
+          class="flex-1 min-w-24 min-h-11 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
           <span class="material-icons text-sm" aria-hidden="true">photo_camera</span>
           <span>{{ lang.tr('Photos / Manuel', 'صورة من كتاب') }}</span>
         </button>
 
         <button
           type="button"
+          role="tab"
+          [attr.aria-selected]="mode() === 'file'"
           (click)="setMode('file')"
-          [class]="mode() === 'file' ? 'bg-[#2D6A4F] text-[#FBF8F1] shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
-          class="flex-1 min-w-24 py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+          [class]="mode() === 'file' ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE]'"
+          class="flex-1 min-w-24 min-h-11 px-3 rounded-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
           <span class="material-icons text-sm" aria-hidden="true">upload_file</span>
-          <span>{{ lang.tr('Fichier (PDF/Docx)', 'ملف وورد/PDF') }}</span>
+          <span>{{ lang.tr('Fichier PDF', 'ملف PDF') }}</span>
         </button>
       </div>
 
@@ -88,25 +96,26 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
           <label
             (dragover)="onDragOver($event)"
             (drop)="onPhotoDrop($event)"
-            class="block bg-[#FBF8F1] rounded-2xl border-2 border-dashed border-[#E7DFCF] hover:border-[#2D6A4F] p-6 text-center cursor-pointer transition-colors">
-            <input type="file" accept="image/*" multiple class="hidden" (change)="onPhotoSelect($event)" />
+            class="block bg-[#FBF8F1] rounded-2xl border-2 border-dashed border-[#E7DFCF] hover:border-[#2D6A4F] has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-[#2D6A4F] p-6 text-center cursor-pointer transition-colors">
+            <input type="file" accept="image/*" multiple class="sr-only peer" [attr.aria-label]="lang.tr('Ajouter des photos', 'إضافة صور')" (change)="onPhotoSelect($event)" />
             <span class="material-icons text-4xl text-[#2D6A4F]" aria-hidden="true">add_a_photo</span>
             <p class="font-display font-semibold text-sm text-[#14251D] mt-2">
               {{ lang.tr('Prendre ou glisser une photo du manuel', 'التقط أو اسحب صورة من الكتاب أو كراس التلميذ') }}
             </p>
-            <p class="text-[11px] text-[#6B7A70] mt-1">{{ lang.tr('Jusqu’à 8 photos (PNG, JPG, WebP)', 'حتى 8 صور واضحة') }}</p>
+            <p class="text-[11px] text-[#6B7A70] mt-1">{{ lang.tr('Jusqu’à 3 photos utilisées (PNG, JPG, WebP)', 'حتى 3 صور واضحة') }}</p>
           </label>
 
           @if (images().length > 0) {
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
               @for (img of images(); track $index) {
                 <div class="relative group rounded-xl overflow-hidden border border-[#E7DFCF] aspect-4/3 bg-black/5">
-                  <img [src]="img.base64Data" alt="Photo" class="w-full h-full object-cover" />
+                  <img [src]="img.base64Data" [alt]="lang.tr('Photo importée', 'صورة مستوردة') + ' ' + ($index + 1)" class="w-full h-full object-cover" />
                   <button
                     type="button"
                     (click)="removeImage($index)"
-                    class="absolute top-1.5 right-1.5 bg-black/70 hover:bg-[#C1121F] text-white rounded-full w-6 h-6 flex items-center justify-center cursor-pointer transition-colors">
-                    <span class="material-icons text-xs">close</span>
+                    [attr.aria-label]="lang.tr('Retirer la photo', 'حذف الصورة')"
+                    class="absolute top-1 end-1 bg-[#14251D]/80 hover:bg-[#14251D] text-white rounded-full w-11 h-11 flex items-center justify-center cursor-pointer transition-colors">
+                    <span class="material-icons text-sm" aria-hidden="true">close</span>
                   </button>
                 </div>
               }
@@ -118,13 +127,13 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
       <!-- Mode 4: File -->
       @if (mode() === 'file') {
         <div class="space-y-3">
-          <label class="block bg-[#FBF8F1] rounded-2xl border-2 border-dashed border-[#E7DFCF] hover:border-[#2D6A4F] p-6 text-center cursor-pointer transition-colors">
-            <input type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" class="hidden" (change)="onFileSelect($event)" />
+          <label class="block bg-[#FBF8F1] rounded-2xl border-2 border-dashed border-[#E7DFCF] hover:border-[#2D6A4F] has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-[#2D6A4F] p-6 text-center cursor-pointer transition-colors">
+            <input type="file" accept=".pdf,application/pdf" class="sr-only peer" [attr.aria-label]="lang.tr('Choisir un fichier PDF', 'اختر ملف PDF')" (change)="onFileSelect($event)" />
             <span class="material-icons text-4xl text-[#2D6A4F]" aria-hidden="true">upload_file</span>
             <p class="font-display font-semibold text-sm text-[#14251D] mt-2">
-              {{ lang.tr('Sélectionner un fichier Word (.docx) ou PDF', 'اختر ملف وورد (.docx) أو PDF') }}
+              {{ lang.tr('Sélectionner un fichier PDF', 'اختر ملف PDF') }}
             </p>
-            <p class="text-[11px] text-[#6B7A70] mt-1">{{ file()?.filename || lang.tr('Taille max 15 Mo', 'الحد الأقصى 15 ميغابايت') }}</p>
+            <p class="text-[11px] text-[#5B6B60] mt-1">{{ file()?.filename || lang.tr('Taille max 15 Mo', 'الحد الأقصى 15 ميغابايت') }}</p>
           </label>
 
           @if (file(); as f) {
@@ -133,8 +142,8 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
                 <span class="material-icons text-[#2D6A4F]">description</span>
                 <span class="font-semibold text-[#14251D]">{{ f.filename }}</span>
               </div>
-              <button type="button" (click)="file.set(null)" class="text-[#6B7A70] hover:text-[#C1121F] cursor-pointer">
-                <span class="material-icons text-sm">close</span>
+              <button type="button" (click)="file.set(null)" [attr.aria-label]="lang.tr('Retirer le fichier', 'حذف الملف')" class="w-11 h-11 flex items-center justify-center text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
+                <span class="material-icons text-sm" aria-hidden="true">close</span>
               </button>
             </div>
           }
@@ -208,7 +217,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
         <button
           type="button"
           (click)="submitForm()"
-          [disabled]="!isValid()"
+          [disabled]="!isValid() || busy()"
           class="bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-50 text-[#FBF8F1] font-semibold px-6 py-3 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
           <span class="material-icons text-sm" aria-hidden="true">auto_awesome</span>
           <span>{{ submitLabel() || lang.tr('Continuer la génération', 'متابعة المعالجة والإنشاء') }}</span>
@@ -224,6 +233,7 @@ export class SourceInputComponent {
   readonly submitLabel = input<string>('');
 
   readonly submitSource = output<SourceInput>();
+  readonly busy = input<boolean>(false);
 
   readonly grades = PRIMARY_GRADES;
   readonly subjects = PRIMARY_SUBJECTS;

@@ -2,10 +2,6 @@
 
   <!-- Hub Header -->
   <div class="text-center space-y-3 pt-4">
-    <div class="inline-flex items-center gap-2 bg-[#2D6A4F]/10 text-[#1B4332] px-3.5 py-1 rounded-full text-xs font-semibold border border-[#2D6A4F]/20">
-      <span class="material-icons text-sm" aria-hidden="true">auto_fix_high</span>
-      <span>{{ lang.tr('Studio Pédagogique Intégré', 'فضاء الإنتاج والتأليف البيداغوجي') }}</span>
-    </div>
     <h1 class="font-display font-semibold text-2xl sm:text-4xl text-[#14251D]">
       {{ lang.tr('Que souhaitez-vous préparer aujourd’hui ?', 'ماذا تريد أن تنتج اليوم لفصلك أو لأبنائك ؟') }}
     </h1>
@@ -21,9 +17,11 @@
         <div
           (click)="selectOutput(opt)"
           (keydown.enter)="selectOutput(opt)"
+          (keydown.space)="$event.preventDefault(); selectOutput(opt)"
+          [attr.aria-label]="lang.isArabic() ? opt.titleAr : opt.titleFr"
           tabindex="0"
           role="button"
-          class="group bg-white rounded-[24px] border border-[#E7DFCF] p-5 flex flex-col justify-between hover:border-[#2D6A4F] hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-all cursor-pointer relative overflow-hidden">
+          class="group bg-white rounded-[28px] border border-[#E7DFCF] p-5 flex flex-col justify-between hover:border-[#2D6A4F] hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-all cursor-pointer relative overflow-hidden">
           
           <!-- Top Accent Rule -->
           <div class="absolute top-0 left-0 right-0 h-1" [style.backgroundColor]="opt.accent"></div>
@@ -36,7 +34,7 @@
                 [style.backgroundColor]="opt.accent">
                 <span class="material-icons text-xl" aria-hidden="true">{{ opt.icon }}</span>
               </div>
-              <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#FBF8F1] text-[#5B6B60] border border-[#E7DFCF]">
+              <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#FBF8F1] text-[#5B6B60] border border-[#E7DFCF]">
                 {{ lang.isArabic() ? opt.badgeAr : opt.badgeFr }}
               </span>
             </div>
@@ -119,6 +117,7 @@
 
       <!-- Shared Input Form -->
       <app-source-input
+        [busy]="isGenerating()"
         [submitLabel]="lang.tr('Générer avec l’IA', 'بدء المعالجة والتوليد')"
         (submitSource)="onSourceSubmitted($event)"></app-source-input>
 
@@ -126,7 +125,7 @@
       <app-ai-status
         [loading]="isGenerating()"
         [error]="genError()"
-        (retry)="selectedOutput() && null"></app-ai-status>
+        (retry)="retryGeneration()"></app-ai-status>
     </div>
   }
 

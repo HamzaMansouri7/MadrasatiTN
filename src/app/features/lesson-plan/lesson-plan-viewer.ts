@@ -64,8 +64,8 @@ export class LessonPlanViewerComponent implements OnInit {
   async ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
-      const plan = await this.store.getLessonPlan(id);
-      this.doc.set(plan);
+      const current = this.store.currentLessonPlan();
+      this.doc.set(current?.id === id ? current : await this.store.getLessonPlan(id));
     } else {
       this.doc.set(this.store.currentLessonPlan());
     }

@@ -302,6 +302,36 @@
     margin-bottom: 0 !important;
   }
 
+  /* 6b. Lesson-plan sheet and series panels (A4 portrait, one sheet per page) */
+  .print-sheet,
+  .print-sheet * {
+    visibility: visible !important;
+  }
+
+  .print-sheet {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    break-after: page;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .print-sheet:last-of-type {
+    break-after: auto;
+  }
+
+  .print-sheet .avoid-break {
+    break-inside: avoid;
+  }
+
   .print-page img {
     display: block !important;
     width: auto !important;

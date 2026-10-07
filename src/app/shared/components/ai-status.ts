@@ -7,9 +7,9 @@ import { LanguageService } from '@core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (loading()) {
-      <div class="rounded-xl border border-[#E7DFCF] bg-[#FBF8F1] p-3.5 space-y-2">
+      <div role="status" aria-live="polite" class="rounded-xl border border-[#E7DFCF] bg-[#FBF8F1] p-3.5 space-y-2">
         <div class="flex items-center gap-2.5 text-xs text-[#14251D] font-medium">
-          <span class="material-icons animate-spin text-sm text-[#2D6A4F]" aria-hidden="true">sync</span>
+          <span class="material-icons animate-spin motion-reduce:animate-none text-sm text-[#2D6A4F]" aria-hidden="true">sync</span>
           <span>{{ label() || lang.tr('Génération en cours…', 'جارٍ الإنشاء بواسطة الذكاء الاصطناعي…') }}</span>
           <span class="text-[11px] text-[#5B6B60] font-mono">({{ elapsed() }}s)</span>
         </div>
@@ -20,7 +20,7 @@ import { LanguageService } from '@core';
         }
       </div>
     } @else if (error()) {
-      <div class="rounded-xl border border-[#BF5B34]/30 bg-[#BF5B34]/5 p-3.5 space-y-2.5">
+      <div role="alert" class="rounded-xl border border-[#BF5B34]/30 bg-[#BF5B34]/5 p-3.5 space-y-2.5">
         <div class="flex items-start gap-2 text-xs text-[#BF5B34]">
           <span class="material-icons text-sm shrink-0" aria-hidden="true">error_outline</span>
           <div class="space-y-1 grow">
@@ -32,7 +32,7 @@ import { LanguageService } from '@core';
           <button
             type="button"
             (click)="retry.emit()"
-            class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-lg text-xs transition-colors cursor-pointer flex items-center gap-1 shadow-sm">
+            class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3.5 min-h-11 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-1">
             <span class="material-icons text-xs" aria-hidden="true">refresh</span>
             <span>{{ lang.tr('Réessayer', 'إعادة المحاولة') }}</span>
           </button>

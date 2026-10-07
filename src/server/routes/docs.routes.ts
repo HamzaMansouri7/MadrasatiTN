@@ -119,84 +119,79 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       return;
     }
 
-    if (docType === 'lesson-plan' || req.body.lessonPlanDoc) {
-      const lp = req.body.lessonPlanDoc || req.body;
-      const docGrade = (lp.grade || grade || '').toString().slice(0, 40);
-      const docSubject = (lp.subject || subject || '').toString().slice(0, 40);
-      const docTitle = (lp.title || topic || 'جذاذة بيداغوجية').toString().slice(0, 200);
+    if (docType === 'lesson-plan' || docType === 'series') {
+      const isSeries = docType === 'series';
+      const body = (req.body.doc && typeof req.body.doc === 'object' ? req.body.doc : null) as Record<string, unknown> | null;
+      if (!body) {
+        res.status(400).json({ error: 'Contenu manquant.' });
+        return;
+      }
+      const str = (v: unknown, max: number): string => (typeof v === 'string' ? v : '').slice(0, max);
+      const docGrade = str(body['grade'] ?? grade, 40);
+      const docSubject = str(body['subject'] ?? subject, 40);
+      if (!docGrade || !docSubject) {
+        res.status(400).json({ error: 'Niveau et matière sont obligatoires.' });
+        return;
+      }
+      if (isSeries && !Array.isArray(body['scenes'])) {
+        res.status(400).json({ error: 'Scènes manquantes.' });
+        return;
+      }
 
-      const id = randomUUID();
-      const doc = {
+      // Upsert: the doc keeps its id across edits, but only its owner may overwrite it.
+      let id: string = randomUUID();
+      let createdAt = new Date().toISOString();
+      const givenId = typeof body['id'] === 'string' ? body['id'] : '';
+      if (ownerUid && SHEET_ID_RE.test(givenId) && existsSync(join(docsFolder, `${givenId}.json`))) {
+        try {
+          const prev = JSON.parse(readFileSync(join(docsFolder, `${givenId}.json`), 'utf8'));
+          if (prev.ownerUid === ownerUid && prev.docType === docType) {
+            id = givenId;
+            createdAt = prev.createdAt || createdAt;
+          }
+        } catch {
+          /* unreadable previous file: save as a new doc */
+        }
+      }
+
+      const srcAuthor = (body['author'] && typeof body['author'] === 'object' ? body['author'] : {}) as Record<string, unknown>;
+      const author = {
+        name: str(srcAuthor['name'] ?? authorName ?? '', 100),
+        school: str(srcAuthor['school'] ?? school ?? '', 150),
+      };
+      const common = {
         ownerUid,
         id,
-        docType: 'lesson-plan',
-        title: docTitle,
+        docType,
+        title: str(body['title'] ?? topic, 200) || (isSeries ? 'سلسلة مصورة' : 'جذاذة بيداغوجية'),
         grade: docGrade,
         subject: docSubject,
-        values: lp.values || lp,
-        author: {
-          name: (authorName || 'المعلم').toString().slice(0, 100),
-          school: (school || 'المدرسة الابتدائية التونسية').toString().slice(0, 150),
-        },
-        createdAt: new Date().toISOString(),
+        language: body['language'] === 'fr' ? 'fr' : 'ar',
+        author,
+        createdAt,
+        updatedAt: new Date().toISOString(),
       };
+      const doc = isSeries
+        ? { ...common, bible: body['bible'], scenes: body['scenes'] }
+        : { ...common, templateId: str(body['templateId'], 60) || 'official-lesson-plan', values: body['values'] ?? {} };
       writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
 
-      const index = readDocsIndex();
-      index.unshift({
+      const entry = {
         id,
-        docType: 'lesson-plan',
+        docType,
         title: doc.title,
         grade: doc.grade,
         subject: doc.subject,
-        authorName: doc.author.name,
-        school: doc.author.school,
-        createdAt: doc.createdAt,
-      });
-      writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
-
-      res.json({ success: true, id, shareUrl: `/lesson-plan/${id}` });
-      return;
-    }
-
-    if (docType === 'series' || req.body.seriesDoc) {
-      const s = req.body.seriesDoc || req.body;
-      const docGrade = (s.grade || grade || '').toString().slice(0, 40);
-      const docSubject = (s.subject || subject || '').toString().slice(0, 40);
-      const docTitle = (s.title || topic || 'سلسلة مصورة').toString().slice(0, 200);
-
-      const id = randomUUID();
-      const doc = {
-        ownerUid,
-        id,
-        docType: 'series',
-        title: docTitle,
-        grade: docGrade,
-        subject: docSubject,
-        bible: s.bible,
-        scenes: s.scenes || [],
-        author: {
-          name: (authorName || 'المعلم').toString().slice(0, 100),
-          school: (school || 'المدرسة الابتدائية التونسية').toString().slice(0, 150),
-        },
-        createdAt: new Date().toISOString(),
+        authorName: author.name,
+        school: author.school,
+        createdAt,
+        ...(isSeries ? { sceneCount: (body['scenes'] as unknown[]).length } : {}),
       };
-      writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
-
-      const index = readDocsIndex();
-      index.unshift({
-        id,
-        docType: 'series',
-        title: doc.title,
-        grade: doc.grade,
-        subject: doc.subject,
-        sceneCount: (doc.scenes || []).length,
-        authorName: doc.author.name,
-        createdAt: doc.createdAt,
-      });
+      const index = readDocsIndex().filter((e) => e['id'] !== id);
+      index.unshift(entry);
       writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
 
-      res.json({ success: true, id, shareUrl: `/series/${id}` });
+      res.json({ success: true, id, shareUrl: isSeries ? `/series/${id}` : `/lesson-plan/${id}` });
       return;
     }
 
@@ -288,6 +283,7 @@ docsRouter.get('/:id', (req: Request, res: Response): void => {
   }
   try {
     const doc = JSON.parse(readFileSync(filePath, 'utf8'));
+    if (doc.docType === 'lesson-plan' || doc.docType === 'series') delete doc.ownerUid;
     res.json({ success: true, doc });
   } catch (err: unknown) {
     console.error('Error in GET /api/docs/:id:', err);
