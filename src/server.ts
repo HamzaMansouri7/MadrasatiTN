@@ -90,6 +90,7 @@ export const optionalAuthToken = async (req: AuthenticatedRequest, res: Response
 };
 
 const app = express();
+app.set('trust proxy', 1);
 
 // 1. Reduced Body Limit (16MB max to prevent memory exhaustion)
 app.use(express.json({ limit: '16mb' }));
@@ -117,7 +118,10 @@ app.use('/api/docs', docsRouter);
 app.use('/api/memo', memoRouter);
 app.use('/api/ai', aiRouter);
 
-const angularApp = new AngularNodeAppEngine();
+const angularApp = new AngularNodeAppEngine({
+  allowedHosts: ['madrastihub.com', 'www.madrastihub.com', 'localhost', '127.0.0.1', '169.58.107.183'],
+  trustProxyHeaders: true,
+});
 
 /**
  * Serve static files from /browser
