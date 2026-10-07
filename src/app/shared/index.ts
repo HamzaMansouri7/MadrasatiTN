@@ -6,3 +6,8 @@ export * from './pipes/time-ago.pipe';
 export * from './components/cartouche';
 export * from './components/pagination';
 export * from './components/tab-bar';
+export * from './components/filter-bar';
+export * from './components/qa-thread';
+export * from './components/blog-card';
+export * from './components/doc-card';
+export * from './components/teacher-card';

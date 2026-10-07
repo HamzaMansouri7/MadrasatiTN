@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate } from '@core';
-import { TeacherAvatarComponent, CartoucheComponent, PaginationComponent, TabBarComponent, TabItem } from '@shared';
+import { TeacherAvatarComponent, BlogCardComponent, CartoucheComponent, DocCardComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem } from '@shared';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -14,7 +14,7 @@ export interface GeneratedExerciseResult {
 @Component({
   selector: 'app-teacher-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, TeacherAvatarComponent, CartoucheComponent, PaginationComponent, TabBarComponent],
+  imports: [RouterLink, TeacherAvatarComponent, BlogCardComponent, CartoucheComponent, DocCardComponent, PaginationComponent, QaThreadComponent, TabBarComponent],
   template: `
     <div class="space-y-6">
 
@@ -260,55 +260,12 @@ export interface GeneratedExerciseResult {
 
               <div class="grid md:grid-cols-2 gap-4">
                 @for (c of paginatedCourses(); track c.id) {
-                  <div class="bg-[#FBF8F1] rounded-[18px] p-5 border border-[#E7DFCF] flex flex-col justify-between space-y-3 hover:border-[#2D6A4F]/40 transition-colors">
-                    <div class="space-y-2">
-                      <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-1.5">
-                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                            {{ c.subject }}
-                          </span>
-                          @if (c.grade) {
-                            <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                              {{ c.grade }}
-                            </span>
-                          }
-                        </div>
-                        <span class="text-[11px] text-[#5B6B60]">{{ c.createdAt }}</span>
-                      </div>
-                      <h4 class="font-display font-semibold text-[#14251D] text-sm leading-snug">{{ c.title }}</h4>
-                      <p class="text-xs text-[#5B6B60] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
-
-                      @if (c.pdfUrl) {
-                        <div class="inline-flex items-center gap-1 text-[11px] text-[#2D6A4F] font-semibold bg-[#F2ECDE] px-2.5 py-1 rounded-md border border-[#2D6A4F]/20">
-                          <span class="material-icons text-xs">picture_as_pdf</span>
-                          <span>{{ lang.tr('Fichier VPS / Document joint', 'ملف مرفق على الخادم') }}</span>
-                        </div>
-                      }
-                    </div>
-
-                    <div class="pt-3 border-t border-[#E7DFCF] flex items-center justify-between gap-2">
-                      <div class="flex items-center gap-2">
-                        <button
-                          (click)="openPrintCourseModal(c)"
-                          class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 cursor-pointer shadow-xs">
-                          <span class="material-icons text-xs">print</span>
-                          {{ lang.t('printA4Btn') }}
-                        </button>
-                        <button
-                          (click)="copyDocLink(c)"
-                          class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#5B6B60] font-semibold px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E7DFCF] transition-colors cursor-pointer">
-                          <span class="material-icons text-xs">link</span>
-                          {{ lang.tr('Copier le lien', 'نسخ الرابط') }}
-                        </button>
-                      </div>
-
-                      <button
-                        (click)="openPrintCourseModal(c)"
-                        class="text-xs font-semibold text-[#14251D] hover:text-[#2D6A4F] flex items-center gap-1 cursor-pointer">
-                        {{ lang.tr('Aperçu', 'معاينة') }} <span class="material-icons text-sm">arrow_forward</span>
-                      </button>
-                    </div>
-                  </div>
+                  <app-doc-card
+                    [course]="c"
+                    accent="green"
+                    (print)="openPrintCourseModal($event)"
+                    (preview)="openPrintCourseModal($event)"
+                    (copyLink)="copyDocLink($event)" />
                 }
               </div>
 
@@ -342,74 +299,13 @@ export interface GeneratedExerciseResult {
 
               <div class="grid md:grid-cols-2 gap-5">
                 @for (post of filteredBlogPosts(); track post.id) {
-                  <div class="bg-[#FBF8F1] rounded-[20px] border border-[#E7DFCF] overflow-hidden flex flex-col justify-between hover:shadow-md transition-all">
-                    @if (post.coverImage) {
-                      <div class="h-40 w-full overflow-hidden bg-[#F2ECDE] border-b border-[#E7DFCF]">
-                        <img [src]="post.coverImage" [alt]="post.title" class="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
-                      </div>
-                    }
-                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                      <div class="space-y-3">
-                        <div class="flex items-center justify-between">
-                          <div class="flex items-center gap-2">
-                            <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                              {{ post.subject || 'Pédagogie' }}
-                            </span>
-                            @if (post.grade) {
-                              <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                                {{ post.grade }}
-                              </span>
-                            }
-                          </div>
-                          <span class="text-[11px] text-[#5B6B60] flex items-center gap-1">
-                            <span class="material-icons text-xs">schedule</span>
-                            {{ post.readTimeMinutes }} min {{ lang.tr('de lecture', 'قراءة') }}
-                          </span>
-                        </div>
-
-                        <h4 class="font-display font-semibold text-[#14251D] text-base leading-snug">
-                          {{ post.title }}
-                        </h4>
-
-                        <p class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3">
-                          {{ cleanExcerpt(post.excerpt) }}
-                        </p>
-
-                        <!-- Tags -->
-                        <div class="flex flex-wrap gap-1.5 pt-1">
-                          @for (tag of post.tags; track tag) {
-                            <span class="text-[10px] bg-white text-[#5B6B60] px-2 py-0.5 rounded-md border border-[#E7DFCF]">
-                              #{{ tag }}
-                            </span>
-                          }
-                        </div>
-                      </div>
-
-                    <!-- Post Footer -->
-                    <div class="pt-4 border-t border-[#E7DFCF] flex items-center justify-between gap-3 text-xs">
-                      <div class="flex items-center gap-3">
-                        <button
-                          (click)="store.likeBlogPost(post.id)"
-                          class="flex items-center gap-1 text-[#C1121F] font-semibold hover:opacity-80 cursor-pointer bg-white px-2.5 py-1 rounded-full border border-[#E7DFCF]">
-                          <span class="material-icons text-sm">favorite</span>
-                          <span>{{ post.likesCount }}</span>
-                        </button>
-                        <span class="text-[#5B6B60] flex items-center gap-1 font-medium">
-                          <span class="material-icons text-sm">chat_bubble_outline</span>
-                          {{ post.comments.length }} {{ lang.tr('commentaires', 'تعليقات') }}
-                        </span>
-                      </div>
-
-                      <button
-                        (click)="store.openBlogPost(post)"
-                        class="text-[#2D6A4F] font-semibold hover:underline flex items-center gap-1 cursor-pointer">
-                        {{ lang.tr('Lire l’article', 'قراءة المقال') }}
-                        <span class="material-icons text-sm">arrow_forward</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              }
+                  <app-blog-card
+                    [post]="post"
+                    accent="green"
+                    [showCover]="true"
+                    (open)="store.openBlogPost($event)"
+                    (like)="store.likeBlogPost($event)" />
+                }
               </div>
             </div>
           }
@@ -428,69 +324,11 @@ export interface GeneratedExerciseResult {
 
               <div class="space-y-4">
                 @for (thread of store.questionThreads(); track thread.id) {
-                  <div class="bg-[#FBF8F1] rounded-[20px] p-6 border border-[#E7DFCF] space-y-4">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E7DFCF] pb-3">
-                      <div class="space-y-1">
-                        <div class="flex items-center gap-2">
-                          <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                            {{ thread.subject }}
-                          </span>
-                          <span class="bg-[#F2C14E]/15 text-[#8A5A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                            {{ thread.grade }}
-                          </span>
-                          <span class="text-[11px] text-[#5B6B60] font-medium">
-                            • {{ thread.parentName }} • {{ thread.createdAt }}
-                          </span>
-                        </div>
-                        <h4 class="font-display font-semibold text-[#14251D] text-base">{{ thread.title }}</h4>
-                      </div>
-
-                      <button
-                        (click)="replyingThread.set(thread)"
-                        class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-xs self-start sm:self-auto">
-                        <span class="material-icons text-sm">reply</span>
-                        {{ lang.t('replyToQuestionBtn') }}
-                      </button>
-                    </div>
-
-                    <!-- Question Body -->
-                    <p class="text-xs text-[#14251D] bg-white p-4 rounded-[14px] border border-[#E7DFCF] leading-relaxed">
-                      {{ thread.content }}
-                    </p>
-
-                    <!-- Existing Answers -->
-                    @if (thread.answers.length > 0) {
-                      <div class="space-y-2 pt-1">
-                        <p class="text-[11px] font-semibold text-[#14251D] flex items-center gap-1">
-                          <span class="material-icons text-xs text-[#2D6A4F]">verified</span>
-                          {{ lang.tr('Réponses des enseignants :', 'إجابات الإطار التربوي:') }}
-                        </p>
-
-                        @for (ans of thread.answers; track ans.id) {
-                          <div class="bg-[#F2ECDE] rounded-[14px] p-4 border border-[#2D6A4F]/20 space-y-2 text-xs">
-                            <div class="flex items-center justify-between">
-                              <div class="flex items-center gap-2">
-                                <span class="font-semibold text-[#14251D]">{{ ans.teacherName }}</span>
-                                <span class="text-[10px] bg-[#2D6A4F] text-[#FBF8F1] px-2 py-0.5 rounded-full font-medium">
-                                  {{ ans.teacherTitle }}
-                                </span>
-                              </div>
-                              <span class="text-[10px] text-[#5B6B60]">{{ ans.createdAt }}</span>
-                            </div>
-
-                            <p class="text-[#14251D] leading-relaxed">{{ ans.content }}</p>
-
-                            @if (ans.attachedDocTitle) {
-                              <div class="inline-flex items-center gap-2 bg-white text-[#2D6A4F] p-2.5 rounded-[10px] border border-[#2D6A4F]/30 font-medium text-[11px]">
-                                <span class="material-icons text-sm text-[#2D6A4F]">attach_file</span>
-                                <span>{{ lang.t('attachedDocument') }} : <strong class="text-[#14251D]">{{ ans.attachedDocTitle }}</strong></span>
-                              </div>
-                            }
-                          </div>
-                        }
-                      </div>
-                    }
-                  </div>
+                  <app-qa-thread
+                    [thread]="thread"
+                    accent="green"
+                    [canReply]="true"
+                    (reply)="replyingThread.set($event)" />
                 }
               </div>
             </div>

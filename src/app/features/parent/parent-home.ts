@@ -1,11 +1,11 @@
-import { CartoucheComponent, PaginationComponent, TabBarComponent, TabItem } from '@shared';
+import { BlogCardComponent, CartoucheComponent, DocCardComponent, FilterBarComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem } from '@shared';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService, PRIMARY_GRADES, paginate } from '@core';
 
 @Component({
   selector: 'app-parent-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CartoucheComponent, PaginationComponent, TabBarComponent],
+  imports: [BlogCardComponent, CartoucheComponent, DocCardComponent, FilterBarComponent, PaginationComponent, QaThreadComponent, TabBarComponent],
   template: `
     <div class="space-y-6">
       
@@ -179,144 +179,25 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               </div>
 
               <!-- Filter Controls -->
-              <div class="bg-[#F7F9FB] p-4 rounded-[18px] border border-[#E3ECF2] space-y-3">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <div class="relative grow max-w-md">
-                    <span class="material-icons absolute left-3 rtl:left-auto rtl:right-3 top-2.5 text-[#627D98] text-sm">search</span>
-                    <input
-                      type="text"
-                      [value]="searchDocQuery()"
-                      (input)="searchDocQuery.set($any($event.target).value); currentPage.set(1)"
-                      [placeholder]="lang.t('searchDocsPlaceholder')"
-                      class="w-full pl-9 rtl:pl-3 rtl:pr-9 pr-3 py-2 text-xs bg-white border border-[#E3ECF2] rounded-[10px] outline-none text-[#102A43]" />
-                  </div>
-
-                  <!-- Grade Filter Pills -->
-                  <div class="flex flex-wrap items-center gap-1.5">
-                    @for (grade of gradesList; track grade) {
-                      <button
-                        (click)="selectGrade(grade)"
-                        [class]="selectedGradeFilter() === grade
-                          ? 'bg-[#007CC2] text-white font-semibold shadow-xs'
-                          : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#007CC2]'"
-                        class="px-3 py-1.5 rounded-full text-xs font-medium transition-all cursor-pointer">
-                        {{ grade === 'all' ? lang.t('filterGradeAll') : grade }}
-                      </button>
-                    }
-                  </div>
-                </div>
-
-                <!-- Subject Filter Pills -->
-                <div class="flex flex-wrap items-center gap-1.5 pt-1">
-                  @for (subj of subjectsList; track subj) {
-                    <button
-                      (click)="selectSubject(subj)"
-                      [class]="selectedSubjectFilter() === subj
-                        ? 'bg-[#23845B] text-white font-semibold shadow-xs'
-                        : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#23845B]'"
-                      class="px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer">
-                      {{ subj === 'all' ? lang.t('filterSubjectAll') : subj }}
-                    </button>
-                  }
-                </div>
-
-                <!-- Topic Taxonomy Pills (Book → Chapter → Topic → Exercise) -->
-                @if (availableTopics().length > 1) {
-                  <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-[#E3ECF2]">
-                    <span class="text-[10px] font-semibold text-[#627D98] flex items-center gap-1 pr-1">
-                      <span class="material-icons text-xs text-[#8A5A00]">sell</span>
-                      {{ lang.tr('Thème / Chapitre :', 'المحور / الدرس :') }}
-                    </span>
-                    @for (topic of availableTopics(); track topic) {
-                      <button
-                        (click)="selectedTopicFilter.set(topic); currentPage.set(1)"
-                        [class]="selectedTopicFilter() === topic
-                          ? 'bg-[#8A5A00] text-white font-semibold shadow-xs'
-                          : 'bg-white text-[#486581] border border-[#E3ECF2] hover:border-[#8A5A00]'"
-                        class="px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer">
-                        {{ topic === 'all' ? lang.tr('Tous les thèmes', 'كل المحاور') : topic }}
-                      </button>
-                    }
-                  </div>
-                }
-              </div>
+              <app-filter-bar
+                [(search)]="searchDocQuery"
+                [(selectedGrade)]="selectedGradeFilter"
+                [(selectedSubject)]="selectedSubjectFilter"
+                [(selectedTopic)]="selectedTopicFilter"
+                [grades]="gradesList"
+                [subjects]="subjectsList"
+                [topics]="availableTopics()"
+                (filterChange)="onFilterChange()" />
 
               <!-- Documents Cards Grid -->
               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @for (c of paginatedCourses(); track c.id) {
-                  <div class="bg-[#F7F9FB] rounded-[18px] p-5 border border-[#E3ECF2] flex flex-col justify-between space-y-3 hover:shadow-md transition-all">
-                    <div class="space-y-2">
-                      @if (c.imageUrls && c.imageUrls.length) {
-                        <button
-                          (click)="openPrintCourseModal(c)"
-                          class="block w-full relative rounded-[12px] overflow-hidden border border-[#E3ECF2] group cursor-pointer mb-1"
-                          [title]="lang.tr('Voir & imprimer', 'عرض وطباعة')">
-                          <img [src]="c.imageUrls[0]" [alt]="c.title" loading="lazy" class="w-full h-40 object-cover object-top transition-transform group-hover:scale-[1.03]" />
-                          @if (c.imageUrls.length > 1) {
-                            <span class="absolute top-2 right-2 bg-[#0B2947]/80 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
-                              <span class="material-icons text-[11px]">collections</span>{{ c.imageUrls.length }}
-                            </span>
-                          }
-                          @if (c.hasCorrection) {
-                            <span class="absolute top-2 left-2 bg-[#23845B] text-white text-[9px] font-bold px-2 py-0.5 rounded-full">
-                              {{ lang.tr('Corrigé', 'إصلاح') }}
-                            </span>
-                          }
-                        </button>
-                      }
-
-                      <div class="flex items-center justify-between">
-                        <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                          {{ c.subject }}
-                        </span>
-                        @if (c.grade) {
-                          <span class="bg-[#E0AA32]/15 text-[#9E6A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                            {{ c.grade }}
-                          </span>
-                        }
-                      </div>
-
-                      <h4 class="font-display font-semibold text-[#102A43] text-sm leading-snug">{{ c.title }}</h4>
-                      @if (c.theme) {
-                        <span class="inline-block bg-[#8A5A00]/10 text-[#8A5A00] text-[10px] font-semibold px-2 py-0.5 rounded-full">{{ c.theme }}</span>
-                      }
-                      <p class="text-xs text-[#486581] line-clamp-2 leading-relaxed">{{ c.summary }}</p>
-                    </div>
-
-                    <div class="pt-3 border-t border-[#E3ECF2] flex items-center justify-between gap-2">
-                      <div class="flex items-center gap-1.5 flex-wrap">
-                        @if (c.pdfUrl) {
-                          <a
-                            [href]="c.pdfUrl"
-                            target="_blank"
-                            rel="noopener"
-                            download
-                            class="bg-[#23845B] hover:bg-[#1C6949] text-white font-bold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 shadow-xs transition-colors">
-                            <span class="material-icons text-xs">download</span>
-                            <span>{{ lang.tr('PDF', 'تحميل PDF') }}</span>
-                          </a>
-                        }
-                        <button
-                          (click)="openPrintCourseModal(c)"
-                          class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 cursor-pointer shadow-xs">
-                          <span class="material-icons text-xs">print</span>
-                          {{ lang.t('printA4Btn') }}
-                        </button>
-                        <button
-                          (click)="copyDocLink(c)"
-                          class="bg-[#F7F9FB] hover:bg-[#E3ECF2] text-[#486581] font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 border border-[#E3ECF2] transition-colors cursor-pointer">
-                          <span class="material-icons text-xs">link</span>
-                          {{ lang.tr('Copier le lien', 'نسخ الرابط') }}
-                        </button>
-                      </div>
-
-                      <button
-                        (click)="openPrintCourseModal(c)"
-                        class="text-xs font-semibold text-[#102A43] hover:text-[#007CC2] flex items-center gap-1 cursor-pointer shrink-0">
-                        {{ lang.tr('Aperçu', 'معاينة') }} <span class="material-icons text-sm">arrow_forward</span>
-                      </button>
-                    </div>
-                  </div>
+                  <app-doc-card
+                    [course]="c"
+                    accent="blue"
+                    (print)="openPrintCourseModal($event)"
+                    (preview)="openPrintCourseModal($event)"
+                    (copyLink)="copyDocLink($event)" />
                 }
               </div>
 
@@ -343,64 +224,12 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
               <div class="grid md:grid-cols-2 gap-5">
                 @for (post of store.blogPosts(); track post.id) {
-                  <div class="bg-[#F7F9FB] rounded-[20px] p-6 border border-[#E3ECF2] flex flex-col justify-between space-y-4 hover:shadow-md transition-all">
-                    <div class="space-y-3">
-                      <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-2">
-                          <span class="bg-[#23845B]/10 text-[#23845B] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                            {{ post.subject || 'Pédagogie' }}
-                          </span>
-                          @if (post.grade) {
-                            <span class="bg-[#E0AA32]/15 text-[#9E6A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                              {{ post.grade }}
-                            </span>
-                          }
-                        </div>
-                        <span class="text-[11px] text-[#627D98] flex items-center gap-1">
-                          <span class="material-icons text-xs">schedule</span>
-                          {{ post.readTimeMinutes }} min
-                        </span>
-                      </div>
-
-                      <h4 class="font-display font-semibold text-[#102A43] text-base leading-snug">
-                        {{ post.title }}
-                      </h4>
-
-                      <p class="text-xs text-[#486581] leading-relaxed line-clamp-3">
-                        {{ post.excerpt }}
-                      </p>
-
-                      <div class="flex flex-wrap gap-1.5 pt-1">
-                        @for (tag of post.tags; track tag) {
-                          <span class="text-[10px] bg-white text-[#627D98] px-2 py-0.5 rounded-md border border-[#E3ECF2]">
-                            #{{ tag }}
-                          </span>
-                        }
-                      </div>
-                    </div>
-
-                    <div class="pt-4 border-t border-[#E3ECF2] flex items-center justify-between gap-3 text-xs">
-                      <div class="flex items-center gap-3">
-                        <button
-                          (click)="store.likeBlogPost(post.id)"
-                          class="flex items-center gap-1 text-[#D64545] font-semibold hover:opacity-80 cursor-pointer bg-white px-2.5 py-1 rounded-full border border-[#E3ECF2]">
-                          <span class="material-icons text-sm">favorite</span>
-                          <span>{{ post.likesCount }}</span>
-                        </button>
-                        <span class="text-[#627D98] flex items-center gap-1 font-medium">
-                          <span class="material-icons text-sm">chat_bubble_outline</span>
-                          {{ post.comments.length }}
-                        </span>
-                      </div>
-
-                      <button
-                        (click)="store.openBlogPost(post)"
-                        class="text-[#007CC2] font-semibold hover:underline flex items-center gap-1 cursor-pointer">
-                        {{ lang.tr('Lire l’article', 'قراءة المقال') }}
-                        <span class="material-icons text-sm">arrow_forward</span>
-                      </button>
-                    </div>
-                  </div>
+                  <app-blog-card
+                    [post]="post"
+                    accent="blue"
+                    [showCover]="false"
+                    (open)="store.openBlogPost($event)"
+                    (like)="store.likeBlogPost($event)" />
                 }
               </div>
             </div>
@@ -428,62 +257,7 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
 
               <div class="space-y-4">
                 @for (thread of store.questionThreads(); track thread.id) {
-                  <div class="bg-[#F7F9FB] rounded-[20px] p-6 border border-[#E3ECF2] space-y-4">
-                    <div class="border-b border-[#E3ECF2] pb-3 space-y-1">
-                      <div class="flex items-center gap-2">
-                        <span class="bg-[#007CC2]/10 text-[#007CC2] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                          {{ thread.subject }}
-                        </span>
-                        <span class="bg-[#E0AA32]/15 text-[#9E6A00] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                          {{ thread.grade }}
-                        </span>
-                        <span class="text-[11px] text-[#627D98] font-medium">
-                          • {{ thread.parentName }} • {{ thread.createdAt }}
-                        </span>
-                      </div>
-                      <h4 class="font-display font-semibold text-[#102A43] text-base">{{ thread.title }}</h4>
-                    </div>
-
-                    <p class="text-xs text-[#334E68] bg-white p-4 rounded-[14px] border border-[#E3ECF2] leading-relaxed">
-                      {{ thread.content }}
-                    </p>
-
-                    @if (thread.answers.length > 0) {
-                      <div class="space-y-2 pt-1">
-                        <p class="text-[11px] font-semibold text-[#102A43] flex items-center gap-1">
-                          <span class="material-icons text-xs text-[#23845B]">verified</span>
-                          {{ lang.tr('Réponses certifiées des enseignants :', 'الإجابات المعتمدة من المعلمين:') }}
-                        </p>
-
-                        @for (ans of thread.answers; track ans.id) {
-                          <div class="bg-[#E8F6EF] rounded-[14px] p-4 border border-[#23845B]/20 space-y-2 text-xs">
-                            <div class="flex items-center justify-between">
-                              <div class="flex items-center gap-2">
-                                <span class="font-semibold text-[#102A43]">{{ ans.teacherName }}</span>
-                                <span class="text-[10px] bg-[#23845B] text-white px-2 py-0.5 rounded-full font-medium">
-                                  {{ ans.teacherTitle }}
-                                </span>
-                              </div>
-                              <span class="text-[10px] text-[#627D98]">{{ ans.createdAt }}</span>
-                            </div>
-
-                            <p class="text-[#102A43] leading-relaxed">{{ ans.content }}</p>
-
-                            @if (ans.attachedDocTitle) {
-                              <div class="inline-flex items-center gap-2 bg-white text-[#007CC2] p-2.5 rounded-[10px] border border-[#007CC2]/30 font-medium text-[11px]">
-                                <span class="material-icons text-sm text-[#007CC2]">attach_file</span>
-                                <span>{{ lang.t('attachedDocument') }} : <strong class="text-[#102A43]">{{ ans.attachedDocTitle }}</strong></span>
-                              </div>
-                            }
-                          </div>
-                        }
-                      </div>
-                    } @else {
-                      <p class="text-xs text-[#627D98] italic">
-                        {{ lang.tr('En attente de réponse d’un enseignant référent...', 'في انتظار مراجعة وإجابة الإطار التربوي...') }}
-                      </p>
-                    }
-                  </div>
+                  <app-qa-thread [thread]="thread" accent="blue" />
                 }
               </div>
             </div>
@@ -933,6 +707,10 @@ export class ParentHomeComponent {
     { key: 'qa', label: this.lang.t('tabParentQA'), icon: 'forum', count: this.store.questionThreads().length },
     { key: 'announcements', label: this.lang.t('tabAnnouncements'), icon: 'campaign', count: this.store.classAnnouncements().length },
   ]);
+
+  onFilterChange() {
+    this.currentPage.set(1);
+  }
 
   // Reset topic when a broader filter changes, so stale topics don't hide results.
   selectDocKind(kind: 'exercices' | 'books') {
