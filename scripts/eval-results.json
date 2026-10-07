@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-07T04:45:33.435Z",
+  "base": "http://localhost:4000",
+  "results": [
+    {
+      "skill": "generate-exercise",
+      "label": "1ère Année اللغة العربية",
+      "ok": false,
+      "ms": 13442,
+      "status": 200,
+      "fails": [
+        "empty title",
+        "empty promptText",
+        "empty solutionText",
+        "expected Arabic, ratio 0.00"
+      ],
+      "sample": "\n\n"
+    },
+    {
+      "skill": "generate-exercise",
+      "label": "3ème Année Mathématiques",
+      "ok": false,
+      "ms": 90013,
+      "status": 0,
+      "fails": [
+        "request failed: The operation was aborted due to timeout"
+      ],
+      "sample": ""
+    },
+    {
+      "skill": "generate-exercise",
+      "label": "5ème Année Français",
+      "ok": false,
+      "ms": 14826,
+      "status": 200,
+      "fails": [
+        "empty title",
+        "empty promptText",
+        "empty solutionText"
+      ],
+      "sample": "\n\n"
+    },
+    {
+      "skill": "variant",
+      "label": "3ème Année Mathématiques AR",
+      "ok": false,
+      "ms": 23,
+      "status": 400,
+      "fails": [
+        "HTTP 400 {\"error\":\"Exercice source requis.\"}"
+      ],
+      "sample": "\n"
+    },
+    {
+      "skill": "variant",
+      "label": "5ème Année Mathématiques FR",
+      "ok": false,
+      "ms": 29,
+      "status": 400,
+      "fails": [
+        "HTTP 400 {\"error\":\"Exercice source requis.\"}"
+      ],
+      "sample": "\n"
+    },
+    {
+      "skill": "transform-exercise",
+      "label": "5ème Année Mathématiques FR",
+      "ok": false,
+      "ms": 29,
+      "status": 400,
+      "fails": [
+        "HTTP 400 {\"error\":\"Exercice source et targetFormat requis.\"}"
+      ],
+      "sample": "\n"
+    },
+    {
+      "skill": "explain-concept",
+      "label": "3ème Année Éveil Scientifique AR",
+      "ok": false,
+      "ms": 17661,
+      "status": 200,
+      "fails": [
+        "empty analogy",
+        "empty checkQuestion",
+        "banned phrase: [object",
+        "expected Arabic, ratio 0.00"
+      ],
+      "sample": "[object Object]\n\n"
+    },
+    {
+      "skill": "explain-concept",
+      "label": "5ème Année Mathématiques FR",
+      "ok": false,
+      "ms": 1626,
+      "status": 200,
+      "fails": [
+        "empty analogy",
+        "empty checkQuestion",
+        "banned phrase: [object"
+      ],
+      "sample": "[object Object]\n\n"
+    },
+    {
+      "skill": "draft-announcement",
+      "label": "devoir AR",
+      "ok": false,
+      "ms": 1351,
+      "status": 200,
+      "fails": [
+        "empty title",
+        "empty content",
+        "expected Arabic, ratio 0.00"
+      ],
+      "sample": "\n"
+    },
+    {
+      "skill": "draft-announcement",
+      "label": "devoir FR",
+      "ok": false,
+      "ms": 1244,
+      "status": 200,
+      "fails": [
+        "empty title",
+        "empty content"
+      ],
+      "sample": "\n"
+    },
+    {
+      "skill": "auto-tag-document",
+      "label": "serie fractions",
+      "ok": false,
+      "ms": 10,
+      "status": 400,
+      "fails": [
+        "HTTP 400 {\"error\":\"fileData requis.\"}"
+      ],
+      "sample": "\n\n\n\n"
+    },
+    {
+      "skill": "generate-full-exam",
+      "label": "5ème Année Mathématiques FR",
+      "ok": false,
+      "ms": 17396,
+      "status": 200,
+      "fails": [
+        "empty examTitle",
+        "only 0 sections",
+        "points total 0 != 20"
+      ],
+      "sample": ""
+    },
+    {
+      "skill": "solve-exercise",
+      "label": "5ème Année Mathématiques FR",
+      "ok": false,
+      "ms": 26,
+      "status": 400,
+      "fails": [
+        "HTTP 400 {\"error\":\"Titre ou énoncé requis.\"}"
+      ],
+      "sample": "\n"
+    }
+  ]
+}

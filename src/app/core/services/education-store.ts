@@ -1090,13 +1090,21 @@ export class EducationStore {
   }
 
   // Phase 2 — generate one illustration for an exercise (returns a /uploads URL).
-  async generateIllustration(promptText: string, style = 'educational'): Promise<string | null> {
-    try {
-      const res = await fetch('/api/ai/generate-illustration', {
+  async generateIllustration(promptText: string, style = 'educational', variation?: number): Promise<string | null> {
+    const doFetch = () =>
+      fetch('/api/ai/generate-illustration', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ promptText, style }),
+        body: JSON.stringify({ promptText, style, variation }),
       });
+    try {
+      let res = await doFetch();
+      if (res.status === 429) {
+        const retryHeader = res.headers.get('Retry-After');
+        const waitSec = retryHeader ? parseInt(retryHeader, 10) : 2;
+        await new Promise((r) => setTimeout(r, Math.max(1, waitSec) * 1000));
+        res = await doFetch();
+      }
       const data = await res.json();
       if (data.success && data.imageUrl) return data.imageUrl as string;
     } catch (err) {

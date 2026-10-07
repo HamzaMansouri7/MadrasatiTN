@@ -94,8 +94,9 @@ export const createRateLimiter = (maxRequests: number, windowMs: number, label: 
 
 export const uploadRateLimiter = createRateLimiter(10, 15 * 60 * 1000, 'Uploads limités à 10 par 15 min');
 
-const aiPerIpMinuteLimiter = createRateLimiter(8, 60 * 1000, 'Requêtes IA limitées à 8 par minute');
-const aiPerIpDailyLimiter = createRateLimiter(60, 24 * 60 * 60 * 1000, 'Quota IA personnel du jour atteint');
+// Per visitor IP. Sized for schools and mobile carriers where many teachers share one address.
+const aiPerIpMinuteLimiter = createRateLimiter(20, 60 * 1000, 'Requêtes IA limitées à 20 par minute');
+const aiPerIpDailyLimiter = createRateLimiter(300, 24 * 60 * 60 * 1000, 'Quota IA du jour atteint pour cette connexion');
 export const aiRateLimiter = (req: Request, res: Response, next: NextFunction): void => {
   aiPerIpMinuteLimiter(req, res, () => aiPerIpDailyLimiter(req, res, next));
 };

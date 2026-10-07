@@ -38,35 +38,35 @@ const CASES = [
   ].map(([grade, subject, topic, lang]) => ({
     skill: 'generate-exercise', path: '/api/ai/generate-exercise', label: `${grade} ${subject}`,
     body: { grade, subject, topic, difficulty: 'Moyen', language: lang === 'ar' ? 'ar' : 'fr', role: 'teacher' },
-    data: (r) => r, fields: ['title', 'promptText', 'solutionText'], expectLang: subject === FR ? 'fr' : 'ar', exercise: true,
+    data: (r) => r.exercise, fields: ['title', 'promptText', 'solutionText'], expectLang: subject === FR ? 'fr' : 'ar', exercise: true,
   })),
   // variant (S3)
   { skill: 'variant', path: '/api/ai/variant', label: `${G3} ${MATH} AR`, body: { originalPromptText: 'احسب: 125 + 238', grade: G3, subject: MATH, topic: 'الجمع', format: 'free', language: 'ar' },
-    data: (r) => r, fields: ['promptText', 'solutionText'], expectLang: 'ar', exercise: true },
+    data: (r) => r.exercise, fields: ['promptText', 'solutionText'], expectLang: 'ar', exercise: true },
   { skill: 'variant', path: '/api/ai/variant', label: `${G5} ${MATH} FR`, body: { originalPromptText: 'Calcule 3/4 + 1/2.', grade: G5, subject: MATH, topic: 'Fractions', format: 'free', language: 'fr' },
-    data: (r) => r, fields: ['promptText', 'solutionText'], expectLang: 'fr', exercise: true },
+    data: (r) => r.exercise, fields: ['promptText', 'solutionText'], expectLang: 'fr', exercise: true },
   // transform-exercise (S2)
   { skill: 'transform-exercise', path: '/api/ai/transform-exercise', label: `${G5} ${MATH} FR`, body: { originalBlock: 'Calcule : 3/4 + 1/2', transformType: 'simplify', grade: G5, subject: MATH, language: 'fr' },
-    data: (r) => r, fields: ['promptText', 'solutionText'], expectLang: 'fr', exercise: true },
+    data: (r) => r.exercise, fields: ['promptText', 'solutionText'], expectLang: 'fr', exercise: true },
   // explain-concept (S6)
   { skill: 'explain-concept', path: '/api/ai/explain-concept', label: `${G3} ${SCI} AR`, body: { concept: 'دورة الماء', grade: G3, subject: SCI, language: 'ar' },
-    data: (r) => r, fields: ['explanation', 'analogy', 'checkQuestion'], expectLang: 'ar', maxChars: 1500 },
+    data: (r) => r.explanation, fields: ['explanation', 'analogy', 'checkQuestion'], expectLang: 'ar', maxChars: 1500 },
   { skill: 'explain-concept', path: '/api/ai/explain-concept', label: `${G5} ${MATH} FR`, body: { concept: 'Fraction irréductible', grade: G5, subject: MATH, language: 'fr' },
-    data: (r) => r, fields: ['explanation', 'analogy', 'checkQuestion'], expectLang: 'fr', maxChars: 1500 },
+    data: (r) => r.explanation, fields: ['explanation', 'analogy', 'checkQuestion'], expectLang: 'fr', maxChars: 1500 },
   // draft-announcement (S10)
   { skill: 'draft-announcement', path: '/api/ai/draft-announcement', label: 'devoir AR', body: { purpose: 'إعلام الأولياء بموعد فرض مراقبة', details: 'فرض مراقبة في الرياضيات', targetAudience: 'الأولياء', grade: G3, subject: MATH, language: 'ar' },
-    data: (r) => r, fields: ['title', 'content'], expectLang: 'ar', maxChars: 1800, noInventedDate: true },
+    data: (r) => r.announcement, fields: ['title', 'content'], expectLang: 'ar', maxChars: 1800, noInventedDate: true },
   { skill: 'draft-announcement', path: '/api/ai/draft-announcement', label: 'devoir FR', body: { purpose: 'Annonce de devoir de contrôle', details: 'Devoir de contrôle en mathématiques', targetAudience: 'parents', grade: G5, subject: MATH, language: 'fr' },
-    data: (r) => r, fields: ['title', 'content'], expectLang: 'fr', maxChars: 1800, noInventedDate: true },
+    data: (r) => r.announcement, fields: ['title', 'content'], expectLang: 'fr', maxChars: 1800, noInventedDate: true },
   // auto-tag-document (S11)
   { skill: 'auto-tag-document', path: '/api/ai/auto-tag-document', label: 'serie fractions', body: { documentName: 'serie-fractions.pdf', rawText: 'Exercice 1: Réduire la fraction 6/8. Exercice 2: Comparer 3/4 et 2/3.' },
-    data: (r) => r, fields: ['suggestedTitle', 'grade', 'subject', 'trimester', 'docType'], expectLang: 'any' },
+    data: (r) => r.metadata, fields: ['suggestedTitle', 'grade', 'subject', 'trimester', 'docType'], expectLang: 'any' },
   // generate-full-exam (S4, no client yet)
   { skill: 'generate-full-exam', path: '/api/ai/generate-full-exam', label: `${G5} ${MATH} FR`, body: { grade: G5, subject: MATH, trimester: 'Trimestre 1', language: 'fr' },
-    data: (r) => r, fields: ['examTitle'], expectLang: 'fr', exam: true },
+    data: (r) => r.exam, fields: ['examTitle'], expectLang: 'fr', exam: true },
   // solve-exercise (S5 text, no client yet)
-  { skill: 'solve-exercise', path: '/api/ai/solve-exercise', label: `${G5} ${MATH} FR`, body: { promptText: 'Calcule 3/4 + 1/2. Donne le résultat sous forme irréductible.', grade: G5, subject: MATH, language: 'fr' },
-    data: (r) => r, fields: ['solutionText', 'teacherNotes'], expectLang: 'fr', mustContain: /5\s*\/\s*4|1\s*1\s*\/\s*4|1[,.]25|1 1\/4/ },
+  { skill: 'solve-exercise', path: '/api/ai/solve-exercise', label: `${G5} ${MATH} FR`, body: { exerciseTitle: 'Fractions', exerciseInstructions: 'Calcule 3/4 + 1/2. Donne le résultat sous forme irréductible.', grade: G5, subject: MATH, language: 'fr' },
+    data: (r) => r.solution, fields: ['solutionText', 'teacherNotes'], expectLang: 'fr', mustContain: /5\s*\/\s*4|1\s*1\s*\/\s*4|1[,.]25|1 1\/4/ },
 ];
 
 // --- checks ------------------------------------------------------------------

@@ -264,7 +264,20 @@
             </header>
             <div class="p-4 space-y-3">
               @if (ex.imageUrl) {
-                <img [src]="ex.imageUrl" [alt]="ex.title" class="w-full max-h-64 object-contain rounded-[10px] border border-[#E7DFCF] bg-white" />
+                <div class="relative group">
+                  <img [src]="ex.imageUrl" [alt]="ex.title" class="w-full max-h-64 object-contain rounded-[10px] border border-[#E7DFCF] bg-white" />
+                  @if (!shared()) {
+                    <button
+                      type="button"
+                      (click)="regenerateExerciseImage($index)"
+                      [disabled]="regeneratingIndex() === $index"
+                      class="no-print absolute top-2 end-2 px-2.5 py-1 rounded-lg bg-white/90 hover:bg-white text-[#1B4332] text-xs font-semibold shadow-sm border border-[#E7DFCF] flex items-center gap-1 cursor-pointer transition-opacity opacity-0 group-hover:opacity-100 disabled:opacity-50"
+                      [title]="lang.tr('Régénérer une variante', 'توليد رسم بديل')">
+                      <span class="material-icons text-sm" [class.animate-spin]="regeneratingIndex() === $index">refresh</span>
+                      <span>{{ lang.tr('Variante', 'بديل') }}</span>
+                    </button>
+                  }
+                </div>
               }
               <p class="text-[#14251D] whitespace-pre-line">{{ ex.promptText }}</p>
 

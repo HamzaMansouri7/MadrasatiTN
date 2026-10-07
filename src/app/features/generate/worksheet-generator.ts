@@ -215,6 +215,9 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     }
   }
 
+  readonly regeneratingIndex = signal<number | null>(null);
+  private variations = new Map<number, number>();
+
   async illustrate() {
     const list = this.exercises();
     if (list.length === 0 || this.illustrating()) return;
@@ -226,22 +229,50 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       this.lang.tr('Rendu adapté aux enfants…', 'إخراج جذاب ومناسب للأطفال…'),
     ]);
     try {
-      await Promise.all(
-        list.map(async (ex, i) => {
-          if (!ex.imagePrompt || ex.imageUrl) return;
-          const url = await this.store.generateIllustration(ex.imagePrompt, style);
+      const queue = list
+        .map((ex, i) => ({ ex, i }))
+        .filter((item) => item.ex.imagePrompt && !item.ex.imageUrl);
+
+      const worker = async () => {
+        while (queue.length > 0) {
+          const item = queue.shift();
+          if (!item) break;
+          const url = await this.store.generateIllustration(item.ex.imagePrompt!, style);
           if (url) {
             this.exercises.update((cur) => {
               const copy = [...cur];
-              copy[i] = { ...copy[i], imageUrl: url };
+              copy[item.i] = { ...copy[item.i], imageUrl: url };
               return copy;
             });
           }
-        })
-      );
+        }
+      };
+
+      await Promise.all([worker(), worker()]);
     } finally {
       this.illustrating.set(false);
       this.stopThinking();
+    }
+  }
+
+  async regenerateExerciseImage(index: number) {
+    const ex = this.exercises()[index];
+    if (!ex || !ex.imagePrompt || this.regeneratingIndex() === index) return;
+    const style = this.dna()?.illustrationStyle || 'educational';
+    const nextVar = (this.variations.get(index) ?? 0) + 1;
+    this.variations.set(index, nextVar);
+    this.regeneratingIndex.set(index);
+    try {
+      const url = await this.store.generateIllustration(ex.imagePrompt, style, nextVar);
+      if (url) {
+        this.exercises.update((cur) => {
+          const copy = [...cur];
+          copy[index] = { ...copy[index], imageUrl: url };
+          return copy;
+        });
+      }
+    } finally {
+      this.regeneratingIndex.set(null);
     }
   }
 

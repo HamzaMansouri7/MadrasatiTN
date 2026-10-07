@@ -566,21 +566,46 @@ export class ArticleStudioComponent implements OnDestroy {
     this.sendMessage();
   }
 
+  readonly coverVariation = signal(0);
+
   async generateAiCover() {
     const topic = this.article().title || 'Illustration pédagogique pour l’école primaire tunisienne';
     this.isGeneratingImg.set(true);
+    const nextVar = this.article().coverImageUrl ? this.coverVariation() + 1 : 0;
+    this.coverVariation.set(nextVar);
     try {
-      const res = await fetch('/api/ai/generate-illustration', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ promptText: topic }),
-      });
+      const doFetch = () =>
+        fetch('/api/ai/generate-illustration', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            promptText: topic,
+            kind: 'article-cover',
+            variation: nextVar,
+            subject: this.article().subject,
+            grade: this.article().grade,
+          }),
+        });
+
+      let res = await doFetch();
+      if (res.status === 429) {
+        const retryHeader = res.headers.get('Retry-After');
+        const waitSec = retryHeader ? parseInt(retryHeader, 10) : 2;
+        await new Promise((r) => setTimeout(r, Math.max(1, waitSec) * 1000));
+        res = await doFetch();
+      }
       const data = await res.json();
       if (data.success && data.imageUrl) {
         this.article.update((a) => ({ ...a, coverImageUrl: data.imageUrl }));
         this.messages.update((m) => [
           ...m,
-          { role: 'assistant', content: '🎨 J’ai généré et appliqué une illustration pour votre article !' },
+          {
+            role: 'assistant',
+            content:
+              nextVar > 0
+                ? '🎨 J’ai généré une nouvelle variante pour votre couverture !'
+                : '🎨 J’ai généré et appliqué une illustration pour votre article !',
+          },
         ]);
       }
     } catch (err) {

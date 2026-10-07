@@ -15,6 +15,7 @@ import { generateImage } from '../ai/image-chain';
 import { resolveInside } from '../safe-path';
 import { capText, capHistory, wrapData, CAPS } from '../input-caps';
 import { originGuard, aiRateLimiter } from '../guards';
+import { legacyCompat } from './compat';
 import { saveGenerated } from '../storage';
 import {
   compose,
@@ -199,6 +200,8 @@ Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use vi
 }
 
 export const aiRouter = Router();
+// Accept the original client contract as well as the current one (see compat.ts).
+aiRouter.use(legacyCompat);
 
 // 1. Generate Exercise (Dual-Mode: Teacher vs Parent)
 aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
@@ -257,7 +260,7 @@ aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, async (req: Requ
 // 1a. Transform Existing Exercise (QCM / Vrai-Faux / Math Story / Fill Blank)
 aiRouter.post('/transform-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { exercise, targetFormat, grade = '3ème Année', subject = 'Mathématiques', language } = req.body;
+    const { exercise, targetFormat, grade, subject, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
@@ -271,6 +274,11 @@ aiRouter.post('/transform-exercise', originGuard, aiRateLimiter, async (req: Req
     const prompt = compose(exerciseTransformSkill, {
       exercise,
       targetFormat,
+      transformationType: typeof req.body.transformType === 'string' ? req.body.transformType : undefined,
+      customInstruction: capText(req.body.customInstruction, CAPS.instruction),
+      originalText: [exercise.promptText || exercise.question || exercise.instructions || exercise.title, exercise.solutionText ? `Solution : ${exercise.solutionText}` : '']
+        .filter(Boolean)
+        .join('\n'),
       grade,
       subject,
       lang,
@@ -330,7 +338,7 @@ aiRouter.post('/generate-full-exam', originGuard, aiRateLimiter, async (req: Req
 // 1c. Solve / Correct Exercise with Step-by-Step AI Explanation
 aiRouter.post('/solve-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { exerciseTitle, exerciseInstructions, grade = '4ème Année', subject = 'Mathématiques', language } = req.body;
+    const { exerciseTitle, exerciseInstructions, grade, subject, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
@@ -395,7 +403,7 @@ aiRouter.post('/draft-announcement', originGuard, aiRateLimiter, async (req: Req
 // 1e. Explain Pedagogical Concept (Student / Parent Tutor)
 aiRouter.post('/explain-concept', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { concept, grade = '3ème Année', language } = req.body;
+    const { concept, grade, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
@@ -426,13 +434,13 @@ aiRouter.post('/explain-concept', originGuard, aiRateLimiter, async (req: Reques
 // 2. Auto-Tag and Extract Metadata from Uploaded Documents
 aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { filename, fileData, mimeType } = req.body;
+    const { filename, fileData, mimeType, rawText } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
-    if (!fileData) {
-      res.status(400).json({ error: 'fileData requis.' });
+    if (!fileData && !rawText && !filename) {
+      res.status(400).json({ error: 'fileData, rawText ou filename requis.' });
       return;
     }
 
@@ -444,7 +452,10 @@ aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, async (req: Requ
 
     let contents: string | GeminiPart[];
 
-    if (isDocx) {
+    if (!fileData) {
+      // Text-only intake (client already extracted the text) or just a file name.
+      contents = compose(tagSkill, { filename: capText(filename, CAPS.short), previewText: capText(rawText, 3000) });
+    } else if (isDocx) {
       try {
         const buffer = Buffer.from(fileData, 'base64');
         const extracted = await mammoth.extractRawText({ buffer });
@@ -484,7 +495,7 @@ aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, async (req: Requ
 // 3. Student Homework Solver (Camera / Photo Upload)
 aiRouter.post('/photo-solve', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { photoBase64, mimeType = 'image/jpeg', grade = '4ème Année', subject = 'Mathématiques', studentNotes } = req.body;
+    const { photoBase64, mimeType = 'image/jpeg', grade, subject, studentNotes, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
@@ -495,7 +506,7 @@ aiRouter.post('/photo-solve', originGuard, aiRateLimiter, async (req: Request, r
     }
 
     const cleanBase64 = photoBase64.replace(/^data:[^;]+;base64,/, '');
-    const lang = resolveLang(undefined);
+    const lang = resolveLang(language);
     const prompt = compose(solveSkill, {
       exerciseTitle: 'Photo de devoir / cahier',
       exerciseInstructions: studentNotes || '',
@@ -528,7 +539,7 @@ aiRouter.post('/photo-solve', originGuard, aiRateLimiter, async (req: Request, r
 // 4. Summarize Uploaded Documents / Synthesize Study Guide
 aiRouter.post('/summarize-docs', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { files, grade = '4ème Année', subject = 'Éveil Scientifique', topic, language } = req.body;
+    const { files, grade, subject, topic, language } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
@@ -849,8 +860,8 @@ aiRouter.post('/chat-article', originGuard, aiRateLimiter, async (req: Request, 
       messages = [],
       currentArticle = {},
       userPrompt = '',
-      grade = '3ème Année',
-      subject = 'Éveil Scientifique',
+      grade,
+      subject,
       language,
       chapter = '',
       isFreeTopic = false,
@@ -908,14 +919,41 @@ aiRouter.post('/generate-illustration', originGuard, aiRateLimiter, async (req: 
       res.status(400).json({ error: 'promptText requis.' });
       return;
     }
+    const variation =
+      body.variation !== undefined && body.variation !== null && !Number.isNaN(Number(body.variation))
+        ? Number(body.variation)
+        : undefined;
+    const customSeed = typeof body.seed === 'number' ? body.seed : undefined;
+    const finalSeed =
+      customSeed !== undefined
+        ? customSeed
+        : variation !== undefined
+          ? seedFor(promptText + variation)
+          : seedFor(promptText);
+
+    const style = body.style ? String(body.style).slice(0, 150) : undefined;
+    const hasVariation = variation !== undefined && variation > 0;
+    const cacheKey = hashKey({ prompt: promptText, style, variation: body.variation });
+
+    if (!hasVariation) {
+      const cached = exerciseCache.get(cacheKey) as { imageUrl: string; category: string } | undefined;
+      if (cached && cached.imageUrl) {
+        res.json({ success: true, imageUrl: cached.imageUrl, category: cached.category, cached: true });
+        return;
+      }
+    }
+
     const { prompt, scene, category } = await buildImagePrompt({
       promptText,
       subject: String(body.subject ?? '').slice(0, 60),
       grade: String(body.grade ?? '').slice(0, 30),
       kind: String(body.kind ?? '').slice(0, 30),
-      style: body.style ? String(body.style).slice(0, 150) : undefined,
+      style,
     });
-    const imageUrl = await generateIllustrationFile(prompt, scene, seedFor(promptText));
+    const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed);
+    if (!hasVariation) {
+      exerciseCache.set(cacheKey, { imageUrl, category });
+    }
     res.json({ success: true, imageUrl, category });
     return;
   } catch (err: unknown) {
