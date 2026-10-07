@@ -10,6 +10,9 @@ import mammoth from 'mammoth';
 import { GoogleGenAI, Type } from '@google/genai';
 import { retrieveContext, registerSources } from './server/knowledge-source';
 import { MEMO_SCHEMA, BLOCK_SCHEMAS, buildMemoPrompt } from './server/memo-schema';
+import { resolveLang, langRule } from './server/lang';
+import { validateAgainstSchema } from './server/validate';
+import { checkExercise } from './server/post-checks';
 import { generateMemoDocx } from './server/memo-docx';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
@@ -463,7 +466,7 @@ const rawApiKeys = [
   ...new Set(
     Object.entries(process.env)
       .filter(([k, v]) => k.startsWith('GEMINI_API_KEY') && typeof v === 'string')
-      .map(([_, v]) => v as string)
+      .map(([, v]) => v as string)
       .join(',')
       .split(/[,\n]/)
       .map(k => k.trim().replace(/^["']|["']$/g, ''))
@@ -474,8 +477,6 @@ const rawApiKeys = [
 // 60 s per call so a hung request fails over to the next key/model instead of stalling the chain.
 const aiClients: GoogleGenAI[] = rawApiKeys.map(key => new GoogleGenAI({ apiKey: key, httpOptions: { timeout: 60000 } }));
 let activeKeyIdx = 0;
-
-const ai = aiClients.length > 0 ? aiClients[0] : null;
 
 /**
  * Shared AI helpers — structured JSON output, retry, dual-language (AR default),
@@ -493,6 +494,8 @@ const FALLBACK_MODELS = (process.env['GEMINI_MODELS'] || 'gemini-flash-latest,ge
 // Last-resort fallback once every Gemini key is exhausted. Only ':free' models are ever called, so it can never bill.
 const openRouterKey = (process.env['OPENROUTER_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
 const openRouterModel = process.env['OPENROUTER_MODEL'] || 'google/gemma-4-31b-it:free';
+
+const aiReady = () => aiClients.length > 0 || !!openRouterKey;
 
 async function openRouterJSON(
   contents: string | GeminiPart[],
@@ -546,9 +549,9 @@ async function cloudflareFluxImage(prompt: string): Promise<Buffer> {
   return Buffer.from(b64, 'base64');
 }
 
-/** Quota / auth / overload / missing-model errors: worth trying another provider or key. */
+/** Quota / auth / overload / missing-model / invalid-output errors: worth trying another provider or key. */
 const isProviderExhausted = (err: unknown): boolean =>
-  /\b(401|402|403|404|429|500|503|504)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|DEADLINE_EXCEEDED|Deadline expired|no longer available/.test(
+  /\b(401|402|403|404|422|429|500|503|504)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|DEADLINE_EXCEEDED|Deadline expired|no longer available/.test(
     err instanceof Error ? err.message : String(err),
   );
 
@@ -560,7 +563,7 @@ const isProviderExhausted = (err: unknown): boolean =>
 const geminiCooldowns = new Map<string, number>();
 const statusOf = (err: unknown): string => {
   const m = err instanceof Error ? err.message : String(err);
-  const code = m.match(/\b(401|402|403|404|429|500|503|504)\b/)?.[1];
+  const code = m.match(/\b(401|402|403|404|422|429|500|503|504)\b/)?.[1];
   if (code) return code;
   if (/RESOURCE_EXHAUSTED/.test(m)) return '429';
   if (/UNAVAILABLE/.test(m)) return '503';
@@ -572,6 +575,7 @@ const markCooldown = (keyIdx: number, model: string, err: unknown): string => {
   const status = statusOf(err);
   if (status === '503' || status === '504' || status === '500') geminiCooldowns.set(`*|${model}`, Date.now() + 30 * 1000);
   else if (status === '429') geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 2 * 60 * 1000);
+  else if (status === '422') geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 15 * 1000);
   else geminiCooldowns.set(`${keyIdx}|${model}`, Date.now() + 30 * 60 * 1000);
   return status;
 };
@@ -614,7 +618,6 @@ async function aiGenerateText(prompt: string): Promise<string> {
 
 /** JSON-mode generation with responseSchema over the chain, then the free OpenRouter model. A bad JSON reply is retried once on the same key/model before moving on. */
 async function aiGenerateJSON(
-  _client: GoogleGenAI,
   contents: string | GeminiPart[],
   schema?: object,
   temperature = 0.4,
@@ -627,11 +630,23 @@ async function aiGenerateJSON(
       for (let attempt = 0; ; attempt++) {
         const response = await client.models.generateContent({ model, contents, config });
         const text = (response.text || '').replace(/```json/g, '').replace(/```/g, '').trim();
+        let parsed: Record<string, unknown>;
         try {
-          return JSON.parse(text) as Record<string, unknown>;
+          parsed = JSON.parse(text) as Record<string, unknown>;
         } catch (parseErr) {
           if (attempt >= 1) throw parseErr;
+          continue;
         }
+        if (schema) {
+          const { valid, errors } = validateAgainstSchema(parsed, schema as Parameters<typeof validateAgainstSchema>[1]);
+          if (!valid) {
+            if (attempt >= 1) {
+              throw new Error(`422 invalid output: ${errors.join('; ')}`);
+            }
+            continue;
+          }
+        }
+        return parsed;
       }
     });
   } catch (err) {
@@ -639,7 +654,14 @@ async function aiGenerateJSON(
   }
   if (openRouterKey && isProviderExhausted(lastErr)) {
     try {
-      return await openRouterJSON(contents, schema, temperature);
+      const fallbackResult = await openRouterJSON(contents, schema, temperature);
+      if (schema) {
+        const { valid, errors } = validateAgainstSchema(fallbackResult, schema as Parameters<typeof validateAgainstSchema>[1]);
+        if (!valid) {
+          throw new Error(`422 invalid output: ${errors.join('; ')}`);
+        }
+      }
+      return fallbackResult;
     } catch (fallbackErr) {
       console.error('OpenRouter fallback failed:', fallbackErr instanceof Error ? fallbackErr.message : fallbackErr);
     }
@@ -647,20 +669,15 @@ async function aiGenerateJSON(
   throw lastErr;
 }
 
-/** Arabic is the primary language in Tunisia — default 'ar' unless caller asks 'fr'. */
-const resolveLang = (raw: unknown): 'ar' | 'fr' => (raw === 'fr' ? 'fr' : 'ar');
-
-/** Absolute output-language rule injected into every generative prompt. */
-const langRule = (lang: 'ar' | 'fr'): string =>
-  lang === 'ar'
-    ? `RÈGLE LINGUISTIQUE ABSOLUE : l'arabe est la langue principale. Rédige TOUS les champs texte (titres, énoncés, consignes, corrections, indices, conseils) en ARABE LITTÉRAIRE scolaire tunisien (العربية الفصحى المدرسية). EXCEPTION : si la matière est le Français, rédige en français ; si c'est l'Anglais, en anglais.`
-    : `RÈGLE LINGUISTIQUE ABSOLUE : rédige TOUS les champs texte en FRANÇAIS clair et soigné, conforme au programme tunisien. EXCEPTION : matière Anglais → anglais ; matière اللغة العربية → arabe.`;
-
 /** Official curriculum grounding block (empty string when no match). */
 const buildGrounding = (q: { grade?: string; subject?: string; trimester?: string; topic?: string; lang: 'ar' | 'fr' }): string => {
   const { block } = retrieveContext(q);
   return block ? `\n${block}\n` : '';
 };
+
+/** Official curriculum grounding + strict language instruction block */
+const contextBlock = (q: { grade?: string; subject?: string; trimester?: string; topic?: string; lang: 'ar' | 'fr' }): string =>
+  `${buildGrounding(q)}${langRule(q.lang)}`;
 
 // --- Response schemas (Gemini structured output) ---
 const STR = { type: Type.STRING } as const;
@@ -804,6 +821,10 @@ const CHAT_ARTICLE_SCHEMA = {
 
 /** Clamp qcmCorrectIndex into range so a model drift can never break the UI. */
 function sanitizeExercise<T extends { qcmOptions?: string[]; qcmCorrectIndex?: number }>(ex: T): T {
+  const check = checkExercise(ex as Record<string, unknown>);
+  if (!check.valid) {
+    console.warn('[sanitizeExercise] Post-check warning:', check.errors.join('; '));
+  }
   if (Array.isArray(ex.qcmOptions) && ex.qcmOptions.length > 0) {
     const idx = typeof ex.qcmCorrectIndex === 'number' ? ex.qcmCorrectIndex : 0;
     ex.qcmCorrectIndex = Math.min(Math.max(idx, 0), ex.qcmOptions.length - 1);
@@ -820,9 +841,9 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
   try {
     const { grade, subject, topic, difficulty, format, role, childName, language, trimester } = req.body;
 
-    if (!ai) {
+    if (!aiReady()) {
       res.status(500).json({
-        error: 'Clé API Gemini non configurée dans le serveur backend.',
+        error: 'Service IA non configuré dans le serveur backend.',
       });
       return;
     }
@@ -833,7 +854,6 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
     const requestedFormat = validFormats.includes(format) ? format : undefined;
     const isParent = role === 'parent';
 
-    const grounding = buildGrounding({ grade, subject, trimester, topic: safeTopic, lang });
     const systemContext = isParent
       ? `Tu es un guide pédagogique bienveillant aidant un parent tunisien à faire réviser son enfant (${childName || "l'élève"}). Crée un exercice stimulant, motivant et clair avec des situations concrètes du quotidien tunisien.`
       : `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie. Conçois un exercice rigoureux conforme au programme officiel tunisien pour évaluation scolaire.`;
@@ -845,7 +865,7 @@ app.post('/api/ai/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, 
   "teacherNotes": "Compétences officielles visées et critères d'évaluation ministériels"`;
 
     const prompt = `${systemContext}
-${grounding}${langRule(lang)}
+${contextBlock({ grade, subject, trimester, topic: safeTopic, lang })}
 Génère un exercice pédagogique de haute qualité adapté pour :
 - Niveau: ${grade || '4ème Année'}
 - Matière: ${subject || 'Mathématiques'}
@@ -875,7 +895,7 @@ Instructions par format :
 - Si format est 'fill_blanks' : gapText contient le texte avec les mots à cacher entourés de [[mot]].
 - Si format est 'matching' : matchingPairs contient 3 à 5 couples {left, right} appariés correctement.`;
 
-    const data = await aiGenerateJSON(ai, prompt, EXERCISE_SCHEMA, 0.4);
+    const data = await aiGenerateJSON(prompt, EXERCISE_SCHEMA, 0.4);
 
     res.json({ success: true, exercise: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
@@ -892,13 +912,12 @@ app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard,
   try {
     const { originalBlock, transformType, customInstruction, grade, subject, language, trimester, topic } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API non configurée' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
     const lang = resolveLang(language);
-    const grounding = buildGrounding({ grade, subject, trimester, topic: (topic || '').slice(0, 300), lang });
 
     let instructionText = '';
     switch (transformType) {
@@ -919,7 +938,7 @@ app.post('/api/ai/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard,
     }
 
     const prompt = `Tu es un expert pédagogique pour l'école primaire tunisienne (${grade || 'Primaire'}, ${subject || 'Général'}).
-${grounding}${langRule(lang)}
+${contextBlock({ grade, subject, trimester, topic: (topic || '').slice(0, 300), lang })}
 NOTE : conserve la langue de l'exercice original si elle diffère (ex: exercice en français pour la matière Français).
 Exercice original :
 ${JSON.stringify(originalBlock)}
@@ -940,7 +959,7 @@ Réponds STRICTEMENT au format JSON valide avec la même structure que l'origina
   "matchingPairs": []
 }`;
 
-    const data = await aiGenerateJSON(ai, prompt, EXERCISE_SCHEMA, 0.4);
+    const data = await aiGenerateJSON(prompt, EXERCISE_SCHEMA, 0.4);
 
     res.json({ success: true, transformed: sanitizeExercise(data as { qcmOptions?: string[]; qcmCorrectIndex?: number }) });
     return;
@@ -957,16 +976,15 @@ app.post('/api/ai/generate-full-exam', originGuard, aiRateLimiter, aiDailyGuard,
   try {
     const { grade, subject, trimester, topics, language } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API non disponible' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
     const lang = resolveLang(language);
     const safeTopics = (topics || '').slice(0, 300);
-    const grounding = buildGrounding({ grade, subject, trimester, topic: safeTopics, lang });
     const prompt = `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie.
-${grounding}${langRule(lang)}
+${contextBlock({ grade, subject, trimester, topic: safeTopics, lang })}
 Génère une Évaluation Somnative / Devoir de Synthèse officiel complet pour l'enseignement primaire tunisien.
 - Niveau : ${grade || '4ème Année'}
 - Matière : ${subject || 'Mathématiques'}
@@ -1009,7 +1027,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
   ]
 }`;
 
-    const data = await aiGenerateJSON(ai, prompt, EXAM_SCHEMA, 0.4);
+    const data = await aiGenerateJSON(prompt, EXAM_SCHEMA, 0.4);
 
     // Enforce the official 6+6+8 = 20 points barème server-side (model can drift).
     const sections = data['sections'] as { points?: number }[] | undefined;
@@ -1036,16 +1054,15 @@ app.post('/api/ai/solve-exercise', originGuard, aiRateLimiter, aiDailyGuard, asy
   try {
     const { promptText, grade, subject, language, trimester, topic } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API non disponible' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
     const lang = resolveLang(language);
     const safePrompt = (promptText || '').slice(0, 1500);
-    const grounding = buildGrounding({ grade, subject, trimester, topic: (topic || safePrompt).slice(0, 300), lang });
     const prompt = `Tu es un enseignant tunisien chevronné. Rédige le corrigé officiel, rigoureux et didactique de l'exercice suivant pour le niveau ${grade || 'Primaire'} (${subject || 'Général'}) :
-${grounding}${langRule(lang)}
+${contextBlock({ grade, subject, trimester, topic: (topic || safePrompt).slice(0, 300), lang })}
 "${safePrompt}"
 
 AUTO-VÉRIFICATION OBLIGATOIRE : avant de répondre, refais chaque calcul / vérifie chaque réponse une deuxième fois. Si un résultat intermédiaire ne colle pas, corrige-le. Le corrigé final doit être exact à 100%.
@@ -1057,7 +1074,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
   "recommendedPoints": 5
 }`;
 
-    const data = await aiGenerateJSON(ai, prompt, SOLVE_SCHEMA, 0.2);
+    const data = await aiGenerateJSON(prompt, SOLVE_SCHEMA, 0.2);
 
     res.json({ success: true, result: data });
     return;
@@ -1074,8 +1091,8 @@ app.post('/api/ai/draft-announcement', originGuard, aiRateLimiter, aiDailyGuard,
   try {
     const { purpose, details, targetAudience, language, grade, subject, trimester } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API non disponible' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
@@ -1083,9 +1100,9 @@ app.post('/api/ai/draft-announcement', originGuard, aiRateLimiter, aiDailyGuard,
     const safePurpose = (purpose || '').slice(0, 300);
     const safeDetails = (details || '').slice(0, 500);
     // Prose docs (editor) pass grade/subject → ground them; pure announcements skip.
-    const grounding = grade || subject ? buildGrounding({ grade, subject, trimester, topic: safePurpose, lang }) : '';
+    const context = grade || subject ? contextBlock({ grade, subject, trimester, topic: safePurpose, lang }) : langRule(lang);
     const prompt = `Rédige un texte scolaire professionnel, bienveillant et clair pour un enseignant primaire en Tunisie.
-${grounding}${langRule(lang)}
+${context}
 Objectif: ${safePurpose || 'Devoir de synthèse à venir'}
 Détails: ${safeDetails || 'Réviser la multiplication et la géométrie'}
 Destinataires: ${targetAudience || 'Parents et élèves de 4ème Année'}
@@ -1096,7 +1113,7 @@ Format JSON requis :
   "content": "Message clair, poli et structuré"
 }`;
 
-    const data = await aiGenerateJSON(ai, prompt, ANNOUNCE_SCHEMA, 0.6);
+    const data = await aiGenerateJSON(prompt, ANNOUNCE_SCHEMA, 0.6);
 
     res.json({ success: true, result: data });
     return;
@@ -1113,16 +1130,15 @@ app.post('/api/ai/explain-concept', originGuard, aiRateLimiter, aiDailyGuard, as
   try {
     const { concept, grade, subject, language, trimester } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API non disponible' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
     const lang = resolveLang(language);
     const safeConcept = (concept || '').slice(0, 300);
-    const grounding = buildGrounding({ grade, subject, trimester, topic: safeConcept, lang });
     const prompt = `Tu es un tuteur pédagogique très encouragant pour un enfant tunisien en ${grade || '4ème année'}.
-${grounding}${langRule(lang)}
+${contextBlock({ grade, subject, trimester, topic: safeConcept, lang })}
 Explique la notion suivante de façon très simple et captivante :
 Matière: ${subject || 'Sciences'}
 Notion: ${safeConcept || 'La photosynthèse'}
@@ -1134,7 +1150,7 @@ Format JSON :
   "checkQuestion": "Question rapide avec réponse"
 }`;
 
-    const data = await aiGenerateJSON(ai, prompt, EXPLAIN_SCHEMA, 0.6);
+    const data = await aiGenerateJSON(prompt, EXPLAIN_SCHEMA, 0.6);
 
     res.json({ success: true, result: data });
     return;
@@ -1151,7 +1167,7 @@ app.post('/api/ai/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, 
   try {
     const { documentName, rawText, base64Data, contentType } = req.body;
 
-    if (!ai) {
+    if (!aiReady()) {
       const name = (documentName || '').toLowerCase();
       let grade = '4ème Année';
       if (name.includes('1') || name.includes('premiere')) grade = '1ère Année';
@@ -1219,7 +1235,7 @@ Réponds STRICTEMENT au format JSON valide suivant :
     }
     contents.push({ text: prompt });
 
-    const data = await aiGenerateJSON(ai, contents, TAG_SCHEMA, 0.2);
+    const data = await aiGenerateJSON(contents, TAG_SCHEMA, 0.2);
 
     res.json({ success: true, tags: data });
     return;
@@ -1251,8 +1267,8 @@ app.post('/api/ai/photo-solve', originGuard, aiRateLimiter, aiDailyGuard, async 
   try {
     const { base64Data, contentType, language } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
     if (!base64Data || typeof base64Data !== 'string' || base64Data.length > 16 * 1024 * 1024) {
@@ -1280,7 +1296,7 @@ Mission :
       { text: prompt },
     ];
 
-    const data = await aiGenerateJSON(ai, contents, PHOTO_SOLVE_SCHEMA, 0.2);
+    const data = await aiGenerateJSON(contents, PHOTO_SOLVE_SCHEMA, 0.2);
 
     res.json({ success: true, result: data });
     return;
@@ -1321,10 +1337,10 @@ const SUMMARIZE_DOCS_SCHEMA = {
 
 app.post('/api/ai/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { images, base64Data, contentType, language, grade, subject, title } = req.body;
+    const { images, base64Data, contentType, language, grade, subject, title, trimester } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
@@ -1338,11 +1354,10 @@ app.post('/api/ai/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, asy
     }
 
     const lang = resolveLang(language);
-    const grounding = (grade || subject) ? buildGrounding({ grade, subject, lang }) : '';
+    const context = (grade || subject) ? contextBlock({ grade, subject, trimester, lang }) : langRule(lang);
 
     const prompt = `Tu es un enseignant tunisien et un expert en synthèse de cours du primaire.
-${langRule(lang)}
-${grounding}
+${context}
 ${title ? `Titre indicatif du document : "${title}"` : ''}
 
 Consignes strictes :
@@ -1368,7 +1383,7 @@ Consignes strictes :
 
     contents.push({ text: prompt });
 
-    const data = await aiGenerateJSON(ai, contents, SUMMARIZE_DOCS_SCHEMA, 0.2);
+    const data = await aiGenerateJSON(contents, SUMMARIZE_DOCS_SCHEMA, 0.2);
 
     res.json({ success: true, result: data });
     return;
@@ -1399,8 +1414,8 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
       currentMemo,
     } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
@@ -1558,7 +1573,7 @@ app.post('/api/ai/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, asyn
       ? BLOCK_SCHEMAS[blockToRegenerate]
       : MEMO_SCHEMA;
 
-    const data = await aiGenerateJSON(ai, contents, schema, 0.3);
+    const data = await aiGenerateJSON(contents, schema, 0.3);
 
     if (!extractedText && typeof data['extractedText'] === 'string') {
       extractedText = data['extractedText'];
@@ -1602,8 +1617,8 @@ app.post('/api/ai/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, 
   try {
     const { base64Data, contentType, documentName } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée dans le serveur backend.' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
@@ -1643,7 +1658,7 @@ Instructions :
       { text: prompt },
     ];
 
-    const data = await aiGenerateJSON(ai, contents, DNA_SCHEMA, 0.2);
+    const data = await aiGenerateJSON(contents, DNA_SCHEMA, 0.2);
 
     res.json({ success: true, dna: data });
     return;
@@ -1661,8 +1676,8 @@ app.post('/api/ai/generate-similar', originGuard, aiRateLimiter, aiDailyGuard, a
   try {
     const { dna, count } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée dans le serveur backend.' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
@@ -1677,13 +1692,12 @@ app.post('/api/ai/generate-similar', originGuard, aiRateLimiter, aiDailyGuard, a
     const topic = (dna.topic || '').toString().slice(0, 200);
     const palette = Array.isArray(dna.palette) ? dna.palette.slice(0, 6) : [];
     const dnaLang = dna.language === 'fr' ? 'fr' as const : 'ar' as const;
-    const grounding = buildGrounding({ grade, subject, topic, lang: dnaLang });
     const originalSections = Array.isArray(dna.sections)
       ? dna.sections.map((s: { heading?: string }) => s.heading).filter(Boolean).join(' | ').slice(0, 400)
       : '';
 
     const prompt = `Tu es un inspecteur pédagogique principal du Ministère de l'Éducation en Tunisie.
-${grounding}
+${contextBlock({ grade, subject, topic, lang: dnaLang })}
 Génère ${n} exercices NOUVEAUX et variés, du même style et du même thème qu'une fiche existante, pour l'école primaire tunisienne.
 ${originalSections ? `IMPORTANT — ANTI-DOUBLON : la fiche originale contient déjà ces sections : "${originalSections}". Tes exercices doivent être DIFFÉRENTS (autres valeurs, autres mots, autres situations), jamais des copies.` : ''}
 - Niveau: ${grade}
@@ -1691,7 +1705,6 @@ ${originalSections ? `IMPORTANT — ANTI-DOUBLON : la fiche originale contient d
 - Thème: ${topic || 'conforme au programme officiel'}
 - Palette de couleurs à réutiliser: ${palette.join(', ') || 'couleurs vives et enfantines'}
 - Style d'illustration: ${(dna.illustrationStyle || 'cartoon mignon, couleurs vives').toString().slice(0, 200)}
-- Langue de rédaction : Si la matière est l'Arabe (اللغة العربية), l'Éducation Islamique (التربية الإسلامية), l'Histoire, l'Éveil Scientifique en 1ère/2ème année, ou si le thème est en arabe, TOUS les titres ("title"), énoncés ("promptText"), consignes, options et corrections DOIVENT être rédigés en langue arabe tunisienne standard (العربية الفصحى). Si la matière est le Français, rédige en français adapté au programme tunisien.
 
 Réponds STRICTEMENT au format JSON valide suivant :
 {
@@ -1718,7 +1731,7 @@ Instructions :
 - Varie les formats quand c'est pertinent ; remplis uniquement les champs utiles au format choisi.
 - imagePrompt : courte description en anglais, style enfant, fond blanc, PAS de texte dans l'image.`;
 
-    const data = await aiGenerateJSON(ai, prompt, SIMILAR_SCHEMA, 0.6);
+    const data = await aiGenerateJSON(prompt, SIMILAR_SCHEMA, 0.6);
     const exercises = Array.isArray(data['exercises'])
       ? (data['exercises'] as { qcmOptions?: string[]; qcmCorrectIndex?: number }[]).map(sanitizeExercise)
       : [];
@@ -1921,23 +1934,22 @@ app.get('/api/docs/:id', (req: Request, res: Response): void => {
 // 5. Variant Exercise Generator (Idea 11 — Variante IA)
 app.post('/api/ai/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req, res): Promise<void> => {
   try {
-    const { grade, subject, topic, format, originalPromptText, role, language, trimester } = req.body;
+    const { grade, subject, topic, format, originalPromptText, role, trimester } = req.body;
 
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
-
-    const lang = resolveLang(language);
 
     const safeOriginal = (originalPromptText || '').slice(0, 1500);
     const safeTopic = (topic || '').slice(0, 200);
     const validFormats = ['free', 'qcm', 'true_false', 'fill_blanks', 'matching'];
     const targetFormat = validFormats.includes(format) ? format : 'free';
     const isParent = role === 'parent';
+    const lang: 'ar' | 'fr' = /[\u0600-\u06FF]/.test(originalPromptText || '') ? 'ar' : 'fr';
 
     const prompt = `Tu es un expert pédagogique tunisien. Génère une VARIANTE de l'exercice suivant pour le niveau ${grade || '4ème Année'} (${subject || 'Mathématiques'}).
-${buildGrounding({ grade, subject, trimester, topic: safeTopic, lang })}NOTE LINGUISTIQUE : rédige la variante dans la MÊME langue que l'exercice original.
+${contextBlock({ grade, subject, trimester, topic: safeTopic, lang })}
 
 Exercice original :
 "${safeOriginal || safeTopic}"
@@ -1973,7 +1985,7 @@ Instructions par format :
 - fill_blanks : gapText avec [[mot]] pour les mots cachés.
 - matching : matchingPairs (3-5 couples {left, right}).`;
 
-    const data = await aiGenerateJSON(ai, prompt, EXERCISE_SCHEMA, 0.5);
+    const data = await aiGenerateJSON(prompt, EXERCISE_SCHEMA, 0.5);
     data['aiGenerated'] = true;
     data['aiVerified'] = false;
 
@@ -1994,13 +2006,13 @@ app.post('/api/ai/chat-article', originGuard, aiRateLimiter, aiDailyGuard, async
       messages = [],
       currentArticle = {},
       userPrompt = '',
-      language = 'ar',
+      language,
       chapter = '',
       isFreeTopic = false,
       tags = [],
     } = req.body;
-    if (!ai) {
-      res.status(500).json({ error: 'Clé API Gemini non configurée.' });
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
 
@@ -2008,7 +2020,9 @@ app.post('/api/ai/chat-article', originGuard, aiRateLimiter, aiDailyGuard, async
       .map((m: { role: string; content: string }) => `${m.role === 'user' ? 'Enseignant' : 'Assistant IA'}: ${m.content}`)
       .join('\n');
 
-    const isArabicMode = language === 'ar' || /[\u0600-\u06FF]/.test(userPrompt);
+    const lang: 'ar' | 'fr' = language
+      ? resolveLang(language)
+      : (/[\u0600-\u06FF]/.test(userPrompt) ? 'ar' : 'fr');
     const activeChapter = chapter || currentArticle.chapter || '';
     const tagsStr = Array.isArray(tags) && tags.length > 0 ? tags.map((t: string) => `#${t}`).join(', ') : '';
 
@@ -2020,25 +2034,13 @@ Concentre tes conseils, méthodes d'apprentissage, gestion du temps et remédiat
       : `CADRE CURRICULAIRE OFFICIEL TUNISIEN (CNP) :
 - Matière : ${currentArticle.subject || 'Général'}
 - Niveau scolaire : ${currentArticle.grade || 'Primaire'}
-${activeChapter ? `- Chapitre / Axe ciblé du programme : "${activeChapter}"` : ''}
-${tagsStr ? `- Tags associés : ${tagsStr}` : ''}
-${buildGrounding({ grade: currentArticle.grade, subject: currentArticle.subject, topic: activeChapter || (userPrompt || '').slice(0, 300), lang: isArabicMode ? 'ar' : 'fr' })}
 Tu dois fonder tes explications, exemples, remédiations et activités sur les compétences requises par le programme officiel du Ministère de l'Éducation tunisien.`;
 
     const prompt = `Tu es un conseiller pédagogique senior pour l'enseignement primaire en Tunisie (Madrasati TN).
 Tu dialogues avec un enseignant pour co-rédiger un article de blog pédagogique percutant, clair et inspirant, destiné soit à d'autres enseignants, soit aux parents d'élèves.
 
 ${frameworkSection}
-
-RÈGLE LINGUISTIQUE CRITIQUE ET ABSOLUE :
-${isArabicMode
-  ? `- L'ENSEIGNANT UTILISE L'INTERFACE EN ARABE. TOUT DOIT ÊTRE EN ARABE LITTÉRAIRE TUNISIEN ÉDUCATIF.
-- "replyText" DOIT être en Arabe élégant et bienveillant.
-- "updatedArticle.title", "updatedArticle.summary", "updatedArticle.subject", "updatedArticle.grade" et "updatedArticle.contentMarkdown" DOIVENT ÊTRE EN ARABE.
-- Les puces d'actions "suggestedChips" DOIVENT ÊTRE EN ARABE.`
-  : `- L'ENSEIGNANT UTILISE L'INTERFACE EN FRANÇAIS.
-- Rédige "replyText", l'article et les "suggestedChips" en FRANÇAIS soigné.`
-}
+${isFreeTopic ? langRule(lang) : contextBlock({ grade: currentArticle.grade, subject: currentArticle.subject, topic: activeChapter || (userPrompt || '').slice(0, 300), lang })}
 
 Historique de la conversation :
 ${conversationHistoryStr}
@@ -2073,7 +2075,7 @@ Format de sortie STRICT : JSON uniquement, sans markdown wrapper :
   "suggestedChips": ["...", "...", "..."]
 }`;
 
-    const data = await aiGenerateJSON(ai, prompt, CHAT_ARTICLE_SCHEMA, 0.7);
+    const data = await aiGenerateJSON(prompt, CHAT_ARTICLE_SCHEMA, 0.7);
 
     res.json({ success: true, ...data });
     return;
@@ -2126,10 +2128,9 @@ async function buildImagePrompt(input: {
   const text = input.promptText.replace(/\s+/g, ' ').trim().slice(0, 600);
   let category: ImageCategory = input.kind === 'article-cover' ? 'article' : 'generic';
   let scene = '';
-  if (ai) {
+  if (aiReady()) {
     try {
       const out = await aiGenerateJSON(
-        ai,
         `Tu prépares l'illustration d'un support scolaire pour enfants tunisiens (niveau : ${input.grade || 'primaire'}, matière : ${input.subject || 'non précisée'}).
 Texte source (arabe, français ou anglais) :
 """${text}"""

@@ -1,4 +1,5 @@
 import { Type } from '@google/genai';
+import { langRule } from './lang';
 
 export interface MemoPromptInput {
   mode: 'topic' | 'text' | 'image' | 'file' | 'resource';
@@ -184,18 +185,13 @@ export const BLOCK_SCHEMAS: Record<string, object> = {
 };
 
 export function buildMemoPrompt(input: MemoPromptInput, lang: 'ar' | 'fr', grounding = ''): string {
-  const isAr = lang === 'ar';
-  const langInstruction = isAr
-    ? `RÈGLE LINGUISTIQUE ABSOLUE : l'arabe est la langue principale. Rédige TOUS les champs texte (titre, sous-titre, étapes, cartes, exemple, analyse, à retenir, formule) en ARABE LITTÉRAIRE scolaire tunisien (العربية الفصحى المدرسية). EXCEPTION : si la matière est le Français, rédige en français ; si c'est l'Anglais, en anglais.`
-    : `RÈGLE LINGUISTIQUE ABSOLUE : rédige TOUS les champs texte en FRANÇAIS clair et soigné, conforme au programme tunisien. EXCEPTION : matière Anglais → anglais ; matière اللغة العربية → arabe.`;
-
   const wordingRule = (input.mode === 'text' || input.mode === 'image' || input.mode === 'file')
     ? `RÈGLE DE FIDÉLITÉ STRICTE : Conserve fidèlement la terminologie et la formulation de l'enseignant fournies dans le texte ou l'image source. Ne modifie pas les définitions données par l'enseignant et n'invente aucun fait ni contenu hors programme.`
     : `RÈGLE CURRICULUM : Respecte rigoureusement les notions officielles du programme primaire tunisien. N'invente aucun fait ni concept non abordé à ce niveau.`;
 
   const contextParts: string[] = [
     `Tu es un enseignant tunisien d'élite et un concepteur de supports pédagogiques visuels (Fiche Mémo synthétique A4 pour le primaire).`,
-    langInstruction,
+    langRule(lang),
     wordingRule,
   ];
 

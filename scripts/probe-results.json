@@ -1,0 +1,858 @@
+{
+  "date": "2026-10-07T02:19:35.720Z",
+  "results": [
+    {
+      "provider": "gemini",
+      "model": "gemini-flash-latest",
+      "key": 1,
+      "task": "text",
+      "pass": false,
+      "ms": 4669,
+      "status": "429",
+      "error": "HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-flash-latest",
+      "key": 2,
+      "task": "text",
+      "pass": false,
+      "ms": 45012,
+      "status": "?",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-flash-latest",
+      "key": 3,
+      "task": "text",
+      "pass": false,
+      "ms": 45004,
+      "status": "?",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "key": 1,
+      "task": "text",
+      "pass": false,
+      "ms": 4627,
+      "status": "429",
+      "error": "HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "key": 2,
+      "task": "text",
+      "pass": false,
+      "ms": 45010,
+      "status": "?",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "key": 3,
+      "task": "text",
+      "pass": false,
+      "ms": 9382,
+      "status": "503",
+      "error": "HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.7-flash",
+      "key": 1,
+      "task": "text",
+      "pass": true,
+      "ms": 20340,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.7-flash",
+      "note": "gemini-3.7-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.7-flash",
+      "key": 2,
+      "task": "text",
+      "pass": false,
+      "ms": 25884,
+      "status": "503",
+      "error": "HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.7-flash",
+      "key": 3,
+      "task": "text",
+      "pass": true,
+      "ms": 1924,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.7-flash",
+      "note": "gemini-3.7-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "key": 1,
+      "task": "text",
+      "pass": true,
+      "ms": 7198,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.6-flash",
+      "note": "gemini-3.6-flash retried"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "key": 2,
+      "task": "text",
+      "pass": true,
+      "ms": 1927,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.6-flash",
+      "note": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "key": 3,
+      "task": "text",
+      "pass": true,
+      "ms": 1924,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.6-flash",
+      "note": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "key": 1,
+      "task": "text",
+      "pass": false,
+      "ms": 9084,
+      "status": "503",
+      "error": "HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "key": 2,
+      "task": "text",
+      "pass": true,
+      "ms": 22502,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.5-flash",
+      "note": "gemini-3.5-flash retried"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "key": 3,
+      "task": "text",
+      "pass": true,
+      "ms": 5381,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.5-flash",
+      "note": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-flash-lite-latest",
+      "key": 1,
+      "task": "text",
+      "pass": true,
+      "ms": 802,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.5-flash-lite",
+      "note": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-flash-lite-latest",
+      "key": 2,
+      "task": "text",
+      "pass": true,
+      "ms": 675,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.5-flash-lite",
+      "note": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-flash-lite-latest",
+      "key": 3,
+      "task": "text",
+      "pass": true,
+      "ms": 654,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.5-flash-lite",
+      "note": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "key": 1,
+      "task": "text",
+      "pass": true,
+      "ms": 728,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.5-flash-lite",
+      "note": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "key": 2,
+      "task": "text",
+      "pass": true,
+      "ms": 760,
+      "word": "مدرستنا",
+      "modelVersion": "gemini-3.5-flash-lite",
+      "note": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "key": 3,
+      "task": "text",
+      "pass": true,
+      "ms": 719,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.5-flash-lite",
+      "note": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "key": 1,
+      "task": "text",
+      "pass": true,
+      "ms": 745,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.1-flash-lite",
+      "note": "gemini-3.1-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "key": 2,
+      "task": "text",
+      "pass": true,
+      "ms": 632,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.1-flash-lite",
+      "note": "gemini-3.1-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "key": 3,
+      "task": "text",
+      "pass": true,
+      "ms": 875,
+      "word": "مدرسة",
+      "modelVersion": "gemini-3.1-flash-lite",
+      "note": "gemini-3.1-flash-lite"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "key": 1,
+      "task": "text",
+      "pass": false,
+      "ms": 179,
+      "status": "404",
+      "error": "HTTP 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features "
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "key": 2,
+      "task": "text",
+      "pass": false,
+      "ms": 177,
+      "status": "404",
+      "error": "HTTP 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features "
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "key": 3,
+      "task": "text",
+      "pass": false,
+      "ms": 155,
+      "status": "404",
+      "error": "HTTP 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features "
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash-lite",
+      "key": 1,
+      "task": "text",
+      "pass": false,
+      "ms": 187,
+      "status": "404",
+      "error": "HTTP 404 This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash-lite",
+      "key": 2,
+      "task": "text",
+      "pass": false,
+      "ms": 161,
+      "status": "404",
+      "error": "HTTP 404 This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash-lite",
+      "key": 3,
+      "task": "text",
+      "pass": false,
+      "ms": 159,
+      "status": "404",
+      "error": "HTTP 404 This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-flash-latest",
+      "key": 1,
+      "task": "vision",
+      "pass": false,
+      "ms": 4499,
+      "status": "429",
+      "error": "HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-medium-latest",
+      "task": "text",
+      "pass": false,
+      "ms": 4375,
+      "status": "429",
+      "error": "HTTP 429 {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-small-latest",
+      "task": "text",
+      "pass": false,
+      "ms": 4257,
+      "status": "429",
+      "error": "HTTP 429 {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429"
+    },
+    {
+      "provider": "mistral",
+      "model": "magistral-medium-latest",
+      "task": "text",
+      "pass": false,
+      "ms": 4303,
+      "status": "429",
+      "error": "HTTP 429 {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429"
+    },
+    {
+      "provider": "mistral",
+      "model": "magistral-small-latest",
+      "task": "text",
+      "pass": false,
+      "ms": 4326,
+      "status": "429",
+      "error": "HTTP 429 {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429"
+    },
+    {
+      "provider": "mistral",
+      "model": "ministral-14b-latest",
+      "task": "text",
+      "pass": true,
+      "ms": 2708,
+      "word": "مدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-small-latest",
+      "task": "vision",
+      "pass": false,
+      "ms": 4259,
+      "status": "429",
+      "error": "HTTP 429 {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-medium-latest",
+      "task": "vision",
+      "pass": false,
+      "ms": 4239,
+      "status": "429",
+      "error": "HTTP 429 {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "task": "text",
+      "pass": true,
+      "ms": 765,
+      "word": "المدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/openai/gpt-oss-120b",
+      "task": "text",
+      "pass": true,
+      "ms": 1690,
+      "word": "مدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/qwen/qwen3-30b-a3b-fp8",
+      "task": "text",
+      "pass": true,
+      "ms": 914,
+      "word": "مدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+      "task": "text",
+      "pass": true,
+      "ms": 458,
+      "word": "مدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "task": "text",
+      "pass": false,
+      "ms": 1140,
+      "status": "?",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "task": "text",
+      "pass": true,
+      "ms": 392,
+      "word": "مدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "task": "vision",
+      "pass": true,
+      "ms": 400,
+      "word": "وردي",
+      "note": "json_object"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-1-schnell",
+      "task": "image",
+      "pass": true,
+      "ms": 14348,
+      "note": "json b64 556746B"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-2-klein-4b",
+      "task": "image",
+      "pass": true,
+      "ms": 14600,
+      "note": "json b64 374634B"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-2-klein-9b",
+      "task": "image",
+      "pass": true,
+      "ms": 1462,
+      "note": "json b64 383260B"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/leonardo/lucid-origin",
+      "task": "image",
+      "pass": true,
+      "ms": 1590,
+      "note": "json b64 512313B"
+    },
+    {
+      "provider": "cloudflare",
+      "model": "@cf/bytedance/stable-diffusion-xl-lightning",
+      "task": "image",
+      "pass": true,
+      "ms": 3978,
+      "note": "binary image/png 150130B"
+    },
+    {
+      "provider": "openrouter",
+      "model": "google/gemma-4-31b-it:free",
+      "task": "text",
+      "pass": false,
+      "ms": 4767,
+      "status": "429",
+      "error": "HTTP 429 {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily ra"
+    },
+    {
+      "provider": "openrouter",
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "task": "text",
+      "pass": false,
+      "ms": 4559,
+      "status": "429",
+      "error": "HTTP 429 {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-26b-a4b-it:free is temporaril"
+    },
+    {
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "task": "text",
+      "pass": true,
+      "ms": 1004,
+      "word": "مدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "task": "text",
+      "pass": true,
+      "ms": 8755,
+      "word": "مدرسة",
+      "note": "json_object"
+    },
+    {
+      "provider": "pollinations",
+      "model": "flux",
+      "task": "image",
+      "pass": true,
+      "ms": 352,
+      "note": "26038B"
+    }
+  ],
+  "rows": [
+    {
+      "task": "image",
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-1-schnell",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 14348,
+      "errs": ""
+    },
+    {
+      "task": "image",
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-2-klein-4b",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 14600,
+      "errs": ""
+    },
+    {
+      "task": "image",
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-2-klein-9b",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 1462,
+      "errs": ""
+    },
+    {
+      "task": "image",
+      "provider": "cloudflare",
+      "model": "@cf/leonardo/lucid-origin",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 1590,
+      "errs": ""
+    },
+    {
+      "task": "image",
+      "provider": "cloudflare",
+      "model": "@cf/bytedance/stable-diffusion-xl-lightning",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 3978,
+      "errs": ""
+    },
+    {
+      "task": "image",
+      "provider": "pollinations",
+      "model": "flux",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 352,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "verdict": "PASS",
+      "score": "3/3",
+      "avg": 3683,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-flash-lite-latest",
+      "verdict": "PASS",
+      "score": "3/3",
+      "avg": 710,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "verdict": "PASS",
+      "score": "3/3",
+      "avg": 736,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite",
+      "verdict": "PASS",
+      "score": "3/3",
+      "avg": 751,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "mistral",
+      "model": "ministral-14b-latest",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 2708,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 765,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "cloudflare",
+      "model": "@cf/openai/gpt-oss-120b",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 1690,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "cloudflare",
+      "model": "@cf/qwen/qwen3-30b-a3b-fp8",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 914,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "cloudflare",
+      "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 458,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 392,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 1004,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 8755,
+      "errs": ""
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-3.7-flash",
+      "verdict": "PARTIAL",
+      "score": "2/3",
+      "avg": 11132,
+      "errs": "503"
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "verdict": "PARTIAL",
+      "score": "2/3",
+      "avg": 13942,
+      "errs": "503"
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-flash-latest",
+      "verdict": "FAIL",
+      "score": "0/3",
+      "avg": "",
+      "errs": "429/?"
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "verdict": "FAIL",
+      "score": "0/3",
+      "avg": "",
+      "errs": "429/?/503"
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "verdict": "FAIL",
+      "score": "0/3",
+      "avg": "",
+      "errs": "404"
+    },
+    {
+      "task": "text",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash-lite",
+      "verdict": "FAIL",
+      "score": "0/3",
+      "avg": "",
+      "errs": "404"
+    },
+    {
+      "task": "text",
+      "provider": "mistral",
+      "model": "mistral-medium-latest",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "text",
+      "provider": "mistral",
+      "model": "mistral-small-latest",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "text",
+      "provider": "mistral",
+      "model": "magistral-medium-latest",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "text",
+      "provider": "mistral",
+      "model": "magistral-small-latest",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "text",
+      "provider": "cloudflare",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "?"
+    },
+    {
+      "task": "text",
+      "provider": "openrouter",
+      "model": "google/gemma-4-31b-it:free",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "text",
+      "provider": "openrouter",
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "vision",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "verdict": "PASS",
+      "score": "1/1",
+      "avg": 400,
+      "errs": ""
+    },
+    {
+      "task": "vision",
+      "provider": "gemini",
+      "model": "gemini-flash-latest",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "vision",
+      "provider": "mistral",
+      "model": "mistral-small-latest",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    },
+    {
+      "task": "vision",
+      "provider": "mistral",
+      "model": "mistral-medium-latest",
+      "verdict": "FAIL",
+      "score": "0/1",
+      "avg": "",
+      "errs": "429"
+    }
+  ]
+}
