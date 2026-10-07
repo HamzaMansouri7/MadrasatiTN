@@ -5,15 +5,12 @@
  *
  *  1. Gemini 3.1 flash-lite image  (PAID prepaid key) richest scenes, ~3s; used while under a soft daily budget
  *  2. NVIDIA flux.1-dev            (json, key)   clean children's-book scenes, ~5s in a manual test
- *  3. Cloudflare flux-1-schnell    (json)        clean flat children's-book style
- *  4. Cloudflare lucid-origin      (json)        soft, muddy details
- *  5. Pollinations flux            (no key)      blurry + visible watermark: last resort
+ *  3. Pollinations flux.1.1-pro    (API key)     clean, no watermark; small free tier credit, fallback only
+ *  4. Pollinations flux            (no key)      blurry + visible watermark: last resort
  *
  * The paid model spends prepaid credit, so it is gated by a SOFT daily count (GEMINI_PAID_IMAGE_DAILY, default 40,
  * 0 disables it). Past the budget the chain simply starts at the free models: nothing fails, nothing is blocked.
  *
- * Cloudflare's free allowance is 10,000 neurons/day shared by all its models: when it runs out, the whole
- * `cloudflare` group is paused (see error-class.ts) instead of failing every request in turn.
  */
 import { classifyProviderError } from './error-class';
 
@@ -38,11 +35,27 @@ type Env = Record<string, string | undefined>;
 type FetchLike = typeof fetch;
 
 interface ImageModel {
+  /** Only models flagged true may receive Arabic in the prompt. FLUX-family models draw garbled Arabic, so they never do. */
+  arabicSafe?: boolean;
   id: string;
-  group: 'cloudflare' | 'nvidia' | 'gemini' | 'pollinations';
+  group: 'nvidia' | 'gemini' | 'pollinations';
   quality: number;
   enabled: (env: Env) => boolean;
   generate: (env: Env, req: Required<ImageRequest>, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
+}
+
+const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/g;
+const NO_TEXT = 'no text, no letters, no words, no numbers, no captions';
+export const hasArabic = (s: string): boolean => new RegExp(ARABIC_RE.source).test(s);
+
+/**
+ * RULE: FLUX (and every non-arabicSafe model) must never be asked to draw Arabic. Text belongs to the page, not the picture.
+ * Strips Arabic from the prompt and forces "no text". Returns null when nothing usable is left (Arabic-only prompt).
+ */
+export function textFreePrompt(prompt: string): string | null {
+  const cleaned = prompt.replace(ARABIC_RE, ' ').replace(/[«»"“”]/g, ' ').replace(/\s+/g, ' ').trim();
+  if ((cleaned.match(/[A-Za-z]/g) || []).length < 8) return null;
+  return /no text/i.test(cleaned) ? cleaned : `${cleaned}. ${NO_TEXT}`;
 }
 
 export const isImageBuffer = (b: Buffer): boolean =>
@@ -52,55 +65,6 @@ export const isImageBuffer = (b: Buffer): boolean =>
     (b.subarray(0, 4).toString() === 'RIFF' && b.subarray(8, 12).toString() === 'WEBP'));
 
 export const imageExt = (b: Buffer): ImageExt => (b[0] === 0x89 ? 'png' : b[0] === 0xff ? 'jpg' : 'webp');
-
-const cfEnabled = (env: Env): boolean =>
-  /^[a-f0-9]{32}$/i.test((env['CLOUDFLARE_ACCOUNT_ID'] || '').trim()) && !!(env['CLOUDFLARE_API_TOKEN'] || '').trim();
-
-/** Cloudflare answers either with raw image bytes or with JSON { result: { image: base64 } }. */
-async function readCfImage(res: Response): Promise<Buffer> {
-  if (!res.ok) throw new Error(`Cloudflare AI HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
-  if ((res.headers.get('content-type') || '').startsWith('image/')) return Buffer.from(await res.arrayBuffer());
-  const data = (await res.json()) as { result?: { image?: string } };
-  if (!data.result?.image) throw new Error('Cloudflare AI returned no image');
-  return Buffer.from(data.result.image, 'base64');
-}
-
-const cfUrl = (env: Env, model: string): string =>
-  `https://api.cloudflare.com/client/v4/accounts/${(env['CLOUDFLARE_ACCOUNT_ID'] || '').trim()}/ai/run/${model}`;
-const cfAuth = (env: Env): Record<string, string> => ({
-  Authorization: `Bearer ${(env['CLOUDFLARE_API_TOKEN'] || '').trim().replace(/^["']|["']$/g, '')}`,
-});
-
-const cfJson = (id: string, model: string, quality: number): ImageModel => ({
-  id,
-  group: 'cloudflare',
-  quality,
-  enabled: cfEnabled,
-  async generate(env, req, fetchImpl, signal) {
-    const res = await fetchImpl(cfUrl(env, model), {
-      method: 'POST',
-      headers: { ...cfAuth(env), 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prompt: req.prompt, steps: 4 }),
-      signal,
-    });
-    return readCfImage(res);
-  },
-});
-
-const cfMultipart = (id: string, model: string, quality: number): ImageModel => ({
-  id,
-  group: 'cloudflare',
-  quality,
-  enabled: cfEnabled,
-  async generate(env, req, fetchImpl, signal) {
-    const form = new FormData();
-    form.append('prompt', req.prompt);
-    form.append('width', String(req.width));
-    form.append('height', String(req.height));
-    const res = await fetchImpl(cfUrl(env, model), { method: 'POST', headers: cfAuth(env), body: form, signal });
-    return readCfImage(res);
-  },
-});
 
 const nvKey = (env: Env): string => (env['NVIDIA_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
 
@@ -151,6 +115,7 @@ function countPaidImage(): void {
 const geminiPaidImage = (quality: number): ImageModel => ({
   id: 'gemini-paid-flash-lite-image',
   group: 'gemini',
+  arabicSafe: true,
   quality,
   enabled: (env) => !!paidKey(env) && paidImagesToday() < paidBudget(env),
   async generate(env, req, fetchImpl, signal) {
@@ -169,11 +134,26 @@ const geminiPaidImage = (quality: number): ImageModel => ({
   },
 });
 
+const pollKey = (env: Env): string => (env['POLLINATIONS_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+
+/** Pollinations newer API (needs a key): real FLUX.1.1-pro, no watermark. Same group as the anonymous one: they share the cooldown. */
+const pollinationsKeyed = (quality: number): ImageModel => ({
+  id: 'pollinations-flux-1.1-pro',
+  group: 'pollinations',
+  quality,
+  enabled: (env) => !!pollKey(env),
+  async generate(env, req, fetchImpl, signal) {
+    const url = `https://gen.pollinations.ai/image/${encodeURIComponent(req.prompt.slice(0, 1000))}?model=${encodeURIComponent('black-forest-labs/flux.1.1-pro')}&width=${req.width}&height=${req.height}&seed=${req.seed}&nologo=true`;
+    const res = await fetchImpl(url, { headers: { Authorization: `Bearer ${pollKey(env)}` }, signal });
+    if (!res.ok) throw new Error(`Pollinations HTTP ${res.status} ${(await res.text()).slice(0, 160)}`);
+    return Buffer.from(await res.arrayBuffer());
+  },
+});
+
 export const IMAGE_MODELS: ImageModel[] = [
   geminiPaidImage(99),
   nvidiaFluxDev(97),
-  cfJson('cf-flux-1-schnell', '@cf/black-forest-labs/flux-1-schnell', 90),
-  cfJson('cf-lucid-origin', '@cf/leonardo/lucid-origin', 70),
+  pollinationsKeyed(50),
   {
     id: 'pollinations-flux',
     group: 'pollinations',
@@ -211,12 +191,12 @@ export interface ImageChainOptions {
   now?: () => number;
 }
 
-/** Model order: IMAGE_CHAIN env ("nvidia,cloudflare,pollinations") picks and orders groups; default = by quality. */
+/** Model order: IMAGE_CHAIN env ("gemini,nvidia,pollinations") picks and orders groups; default = by quality. */
 function candidates(env: Env, now: number, ignoreCooldown: boolean): ImageModel[] {
   const wanted = (env['IMAGE_CHAIN'] || '')
     .split(',')
     .map((s) => s.trim().toLowerCase())
-    .filter((s) => s === 'cloudflare' || s === 'nvidia' || s === 'gemini' || s === 'pollinations');
+    .filter((s) => s === 'nvidia' || s === 'gemini' || s === 'pollinations');
   let list = IMAGE_MODELS.filter((m) => m.enabled(env));
   if (wanted.length) {
     list = list.filter((m) => wanted.includes(m.group));
@@ -241,6 +221,13 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
 
   let list = candidates(env, now(), false);
   if (list.length === 0) list = candidates(env, now(), true); // everything cooling: try anyway
+
+  // Arabic rule: non-arabicSafe models get an English, text-free prompt; with no usable English left they are skipped.
+  const safePrompt = hasArabic(full.prompt) ? textFreePrompt(full.prompt) : full.prompt;
+  if (safePrompt === null) list = list.filter((m) => m.arabicSafe);
+  const requestFor = (m: ImageModel): Required<ImageRequest> =>
+    m.arabicSafe || safePrompt === null ? full : { ...full, prompt: safePrompt };
+
   if (list.length === 0) throw new Error("Aucun service d'image disponible.");
 
   return new Promise<ImageResult>((resolve, reject) => {
@@ -261,14 +248,14 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
       timer = setTimeout(launch, hedgeMs);
 
       model
-        .generate(env, full, fetchImpl, ctl.signal)
+        .generate(env, requestFor(model), fetchImpl, ctl.signal)
         .then((buf) => {
           if (!isImageBuffer(buf)) throw new Error(`${model.id} returned no image`);
           if (done) return;
           done = true;
           if (timer) clearTimeout(timer);
           controllers.forEach((c) => c !== ctl && c.abort());
-          resolve({ data: buf, ext: imageExt(buf), provider: model.id, watermarked: model.group === 'pollinations' });
+          resolve({ data: buf, ext: imageExt(buf), provider: model.id, watermarked: model.id === 'pollinations-flux' });
         })
         .catch((err) => {
           pending--;

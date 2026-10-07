@@ -1,20 +1,36 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { generateImage, resetImageCooldowns, isImageBuffer, resetPaidImageCount, paidImagesToday } from './image-chain';
+import { generateImage, resetImageCooldowns, isImageBuffer, resetPaidImageCount, paidImagesToday, textFreePrompt, hasArabic } from './image-chain';
 
 const png = (): Buffer => {
   const b = Buffer.alloc(2000, 1);
   Buffer.from([0x89, 0x50, 0x4e, 0x47]).copy(b);
   return b;
 };
-const CF_ENV = { CLOUDFLARE_ACCOUNT_ID: 'a'.repeat(32), CLOUDFLARE_API_TOKEN: 'tok' };
 const okRes = () => new Response(new Uint8Array(png()), { status: 200, headers: { 'content-type': 'image/png' } });
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+const geminiRes = () =>
+  new Response(JSON.stringify({ candidates: [{ content: { parts: [{ inlineData: { data: png().toString('base64') } }] } }] }), { status: 200 });
+const nvidiaRes = () => new Response(JSON.stringify({ artifacts: [{ base64: png().toString('base64') }] }), { status: 200 });
 
-/** Fake fetch: handler receives the URL and returns a Response (or throws). */
-const fakeFetch = (handler: (url: string) => Response | Promise<Response>): typeof fetch =>
-  (async (input: RequestInfo | URL) => handler(String(input))) as typeof fetch;
+const KEYS = { NVIDIA_API_KEY: 'nv-test', POLLINATIONS_API_KEY: 'pk-test' };
+const ALL = { ...KEYS, GEMINI_PAID_API_KEY: 'paid-test' };
 
-beforeEach(() => resetImageCooldowns());
+/** Fake fetch: handler receives the URL (and init) and returns a Response (or throws). */
+const fakeFetch = (handler: (url: string, init?: RequestInit) => Response | Promise<Response>): typeof fetch =>
+  (async (input: RequestInfo | URL, init?: RequestInit) => handler(String(input), init)) as typeof fetch;
+
+/** Route by host so each provider answers in its own format. */
+const byHost = (over: Partial<Record<'gemini' | 'nvidia' | 'pollinations', () => Response | Promise<Response>>> = {}) =>
+  (u: string): Response | Promise<Response> => {
+    if (u.includes('generativelanguage')) return (over.gemini ?? geminiRes)();
+    if (u.includes('nvidia.com')) return (over.nvidia ?? nvidiaRes)();
+    return (over.pollinations ?? okRes)();
+  };
+
+beforeEach(() => {
+  resetImageCooldowns();
+  resetPaidImageCount();
+});
 
 describe('isImageBuffer', () => {
   it('accepts png and rejects small or unknown data', () => {
@@ -25,107 +41,109 @@ describe('isImageBuffer', () => {
 });
 
 describe('generateImage', () => {
-  it('uses the best Cloudflare model first when there is no NVIDIA key', async () => {
+  it('uses the paid Gemini model first while under budget and counts it', async () => {
     const urls: string[] = [];
-    const r = await generateImage({ prompt: 'x' }, { env: CF_ENV, fetchImpl: fakeFetch((u) => (urls.push(u), okRes())) });
-    expect(r.provider).toBe('cf-flux-1-schnell');
-    expect(urls[0]).toContain('flux-1-schnell');
+    const r = await generateImage({ prompt: 'a cartoon sun over a river' }, { env: ALL, fetchImpl: fakeFetch((u) => (urls.push(u), byHost()(u))) });
+    expect(r.provider).toBe('gemini-paid-flash-lite-image');
+    expect(urls[0]).toContain('gemini-3.1-flash-lite-image');
+    expect(paidImagesToday()).toBe(1);
     expect(r.watermarked).toBe(false);
   });
 
-  it('uses NVIDIA flux.1-dev first when its key is set, and reads the base64 artifact', async () => {
-    const b64 = png().toString('base64');
+  it('after the paid budget is spent, falls to NVIDIA FLUX.1-dev (no failure)', async () => {
+    const env = { ...ALL, GEMINI_PAID_IMAGE_DAILY: '1' };
+    const f = fakeFetch(byHost());
+    expect((await generateImage({ prompt: 'a cartoon sun over a river' }, { env, fetchImpl: f })).provider).toBe('gemini-paid-flash-lite-image');
+    const second = await generateImage({ prompt: 'a cartoon sun over a river' }, { env, fetchImpl: f });
+    expect(second.provider).toBe('nvidia-flux-1-dev');
+  });
+
+  it('never uses the paid model without its key or when the budget is 0', async () => {
     const urls: string[] = [];
-    const r = await generateImage({ prompt: 'x' }, {
-      env: { ...CF_ENV, NVIDIA_API_KEY: 'nv-test' },
-      fetchImpl: fakeFetch((u) => (urls.push(u), u.includes('nvidia.com') ? new Response(JSON.stringify({ artifacts: [{ base64: b64 }] }), { status: 200 }) : okRes())),
-    });
+    const f = fakeFetch((u) => (urls.push(u), byHost()(u)));
+    await generateImage({ prompt: 'a cartoon sun over a river' }, { env: { ...ALL, GEMINI_PAID_IMAGE_DAILY: '0' }, fetchImpl: f });
+    await generateImage({ prompt: 'a cartoon sun over a river' }, { env: KEYS, fetchImpl: f });
+    expect(urls.some((u) => u.includes('generativelanguage'))).toBe(false);
+  });
+
+  it('reads the NVIDIA base64 artifact', async () => {
+    const urls: string[] = [];
+    const r = await generateImage({ prompt: 'a cartoon sun over a river' }, { env: KEYS, fetchImpl: fakeFetch((u) => (urls.push(u), byHost()(u))) });
     expect(r.provider).toBe('nvidia-flux-1-dev');
     expect(urls[0]).toContain('flux.1-dev');
   });
 
-  it('falls from NVIDIA to Cloudflare schnell when NVIDIA fails', async () => {
-    const r = await generateImage({ prompt: 'x' }, {
-      env: { ...CF_ENV, NVIDIA_API_KEY: 'nv-test' },
-      fetchImpl: fakeFetch((u) => (u.includes('nvidia.com') ? new Response('boom', { status: 500 }) : okRes())),
+  it('falls from NVIDIA to keyed Pollinations (no watermark) when NVIDIA fails', async () => {
+    const urls: string[] = [];
+    const r = await generateImage({ prompt: 'a cartoon sun over a river' }, {
+      env: KEYS,
+      fetchImpl: fakeFetch((u) => (urls.push(u), byHost({ nvidia: () => new Response('boom', { status: 500 }) })(u))),
     });
-    expect(r.provider).toBe('cf-flux-1-schnell');
+    expect(r.provider).toBe('pollinations-flux-1.1-pro');
+    expect(r.watermarked).toBe(false);
+    expect(urls.at(-1)).toContain('gen.pollinations.ai');
   });
 
-  it('skips Cloudflare without keys and falls to Pollinations (flagged watermarked)', async () => {
-    const r = await generateImage({ prompt: 'x' }, { env: {}, fetchImpl: fakeFetch(() => okRes()) });
+  it('without any key, the anonymous Pollinations model answers and is flagged watermarked', async () => {
+    const r = await generateImage({ prompt: 'a cartoon sun over a river' }, { env: {}, fetchImpl: fakeFetch(() => okRes()) });
     expect(r.provider).toBe('pollinations-flux');
     expect(r.watermarked).toBe(true);
   });
 
-  it('falls back to the next model when one fails', async () => {
-    const r = await generateImage({ prompt: 'x' }, {
-      env: CF_ENV,
-      fetchImpl: fakeFetch((u) => (u.includes('flux-1-schnell') ? new Response('boom', { status: 500 }) : okRes())),
-    });
-    expect(r.provider).toBe('cf-lucid-origin');
-  });
-
-  it('pauses the whole Cloudflare group on the daily allowance error', async () => {
-    const calls: string[] = [];
-    const quota = new Response('{"errors":[{"message":"you have used up your daily free allocation of 10,000 neurons"}]}', { status: 429 });
-    const f = fakeFetch((u) => {
-      calls.push(u);
-      return u.includes('cloudflare.com') ? quota.clone() : okRes();
-    });
-    const first = await generateImage({ prompt: 'x' }, { env: CF_ENV, fetchImpl: f });
-    expect(first.provider).toBe('pollinations-flux');
-    calls.length = 0;
-    const second = await generateImage({ prompt: 'x' }, { env: CF_ENV, fetchImpl: f });
-    expect(second.provider).toBe('pollinations-flux');
-    expect(calls.every((u) => u.includes('pollinations'))).toBe(true); // no Cloudflare call at all
-  });
-
   it('hedges: starts the next model after hedgeMs and the first valid answer wins', async () => {
-    const r = await generateImage({ prompt: 'x' }, {
-      env: CF_ENV,
+    const r = await generateImage({ prompt: 'a cartoon sun over a river' }, {
+      env: KEYS,
       hedgeMs: 30,
       fetchImpl: fakeFetch(async (u) => {
-        if (u.includes('flux-1-schnell')) {
+        if (u.includes('nvidia.com')) {
           await sleep(300); // slow, never cut off by us
-          return okRes();
+          return nvidiaRes();
         }
         return okRes();
       }),
     });
-    expect(r.provider).toBe('cf-lucid-origin');
+    expect(r.provider).toBe('pollinations-flux-1.1-pro');
   });
 
   it('rejects when every model fails', async () => {
     await expect(
-      generateImage({ prompt: 'x' }, { env: CF_ENV, fetchImpl: fakeFetch(() => new Response('no', { status: 500 })) }),
+      generateImage({ prompt: 'a cartoon sun over a river' }, { env: ALL, fetchImpl: fakeFetch(() => new Response('no', { status: 500 })) }),
     ).rejects.toThrow();
   });
 
-  it('IMAGE_CHAIN env can put pollinations first or exclude Cloudflare', async () => {
-    const r = await generateImage({ prompt: 'x' }, { env: { ...CF_ENV, IMAGE_CHAIN: 'pollinations' }, fetchImpl: fakeFetch(() => okRes()) });
-    expect(r.provider).toBe('pollinations-flux');
+  it('IMAGE_CHAIN env can restrict the chain to one group', async () => {
+    const r = await generateImage({ prompt: 'a cartoon sun over a river' }, { env: { ...ALL, IMAGE_CHAIN: 'pollinations' }, fetchImpl: fakeFetch(byHost()) });
+    expect(r.provider).toBe('pollinations-flux-1.1-pro');
   });
 
-  it('uses the paid Gemini image model first while under budget, counts it, then falls to free models', async () => {
-    resetPaidImageCount();
-    const b64 = png().toString('base64');
-    const f = fakeFetch((u) =>
-      u.includes('generativelanguage') ? new Response(JSON.stringify({ candidates: [{ content: { parts: [{ inlineData: { data: b64 } }] } }] }), { status: 200 }) : okRes(),
-    );
-    const env = { ...CF_ENV, GEMINI_PAID_API_KEY: 'paid-test', GEMINI_PAID_IMAGE_DAILY: '1' };
-    const first = await generateImage({ prompt: 'x' }, { env, fetchImpl: f });
-    expect(first.provider).toBe('gemini-paid-flash-lite-image');
-    expect(paidImagesToday()).toBe(1);
-    const second = await generateImage({ prompt: 'x' }, { env, fetchImpl: f });
-    expect(second.provider).toBe('cf-flux-1-schnell'); // budget spent: free chain, no failure
-    resetPaidImageCount();
+  it('Arabic rule: strips Arabic from the prompt sent to FLUX and forces no-text', async () => {
+    const bodies: string[] = [];
+    const f = fakeFetch(async (u, init) => {
+      bodies.push(`${u} ${String(init?.body)}`);
+      return byHost()(u);
+    });
+    await generateImage({ prompt: 'A friendly sun over a river «رحلة قطرة الماء» for children' }, { env: KEYS, fetchImpl: f });
+    expect(bodies[0]).toContain('friendly sun');
+    expect(hasArabic(bodies[0])).toBe(false);
+    expect(bodies[0]).toMatch(/no text/);
   });
 
-  it('never uses the paid model without its key or when the budget is 0', async () => {
-    resetPaidImageCount();
+  it('Arabic rule: an Arabic-only prompt never reaches a FLUX model', async () => {
     const urls: string[] = [];
-    await generateImage({ prompt: 'x' }, { env: { ...CF_ENV, GEMINI_PAID_API_KEY: 'paid-test', GEMINI_PAID_IMAGE_DAILY: '0' }, fetchImpl: fakeFetch((u) => (urls.push(u), okRes())) });
-    expect(urls.some((u) => u.includes('generativelanguage'))).toBe(false);
+    await expect(
+      generateImage({ prompt: 'رحلة قطرة الماء' }, { env: KEYS, fetchImpl: fakeFetch((u) => (urls.push(u), byHost()(u))) }),
+    ).rejects.toThrow();
+    expect(urls).toHaveLength(0);
+  });
+
+  it('Arabic rule: the paid Gemini model may receive Arabic', async () => {
+    const r = await generateImage({ prompt: 'رحلة قطرة الماء' }, { env: ALL, fetchImpl: fakeFetch(byHost()) });
+    expect(r.provider).toBe('gemini-paid-flash-lite-image');
+  });
+
+  it('textFreePrompt keeps English, drops Arabic, returns null when nothing is left', () => {
+    expect(textFreePrompt('sun مرحبا')).toBeNull();
+    expect(textFreePrompt('a cartoon sun and a river مرحبا')).toMatch(/^a cartoon sun and a river\. no text/);
+    expect(textFreePrompt('مرحبا بالعالم')).toBeNull();
   });
 });
