@@ -15,8 +15,8 @@ import { TeacherAvatarComponent } from './teacher-avatar';
           
           <!-- Logo & Platform Identity -->
           <div (click)="selectRole('home')" (keydown.enter)="selectRole('home')" role="button" tabindex="0" class="flex items-center gap-2.5 sm:gap-3 shrink-0 cursor-pointer group">
-            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] bg-[#0B2947] p-1 flex items-center justify-center shadow-sm shrink-0 group-hover:scale-102 transition-transform">
-              <img src="/favicon.svg" alt="Madrasati Logo" class="w-full h-full object-contain" />
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] overflow-hidden flex items-center justify-center shadow-sm shrink-0 group-hover:scale-102 transition-transform border border-[#E6EEF3]">
+              <img src="/logo.jpg" alt="Madrasati Logo" class="w-full h-full object-cover" />
             </div>
             <div>
               <div class="flex items-center gap-1.5 sm:gap-2">

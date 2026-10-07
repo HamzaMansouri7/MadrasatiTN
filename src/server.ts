@@ -2352,7 +2352,7 @@ app.get('/discovery', (req: Request, res: Response, next): void => {
         ? `${descParts}. Planche officielle du manuel CNP — Madrasati TN.${keywords}`
         : `Bande dessinée officielle pour l'école primaire tunisienne — Madrasati TN.${keywords}`,
     );
-    const imageUrl = escapeHtmlAttr(item.relPath ? `${origin}/${item.relPath}` : `${origin}/favicon.svg`);
+    const imageUrl = escapeHtmlAttr(item.relPath ? `${origin}/${item.relPath}` : `${origin}/logo.jpg`);
     const pageUrl = escapeHtmlAttr(`${origin}/discovery?bd=${itemId}`);
 
     html = html.replace(/\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi, '');
@@ -2426,7 +2426,7 @@ app.get('/', (req: Request, res: Response, next): void => {
         : 'Document pédagogique officiel avec corrigé pour l\'école primaire tunisienne — Madrasati TN.',
     );
     const docImg = doc?.photoUrl || (doc?.imageUrls && doc.imageUrls[0]);
-    const imageUrl = escapeHtmlAttr(docImg ? `${origin}${docImg.startsWith('/') ? '' : '/'}${docImg}` : `${origin}/favicon.svg`);
+    const imageUrl = escapeHtmlAttr(docImg ? `${origin}${docImg.startsWith('/') ? '' : '/'}${docImg}` : `${origin}/logo.jpg`);
     const pageUrl = escapeHtmlAttr(`${origin}/?doc=${docId}`);
 
     html = html.replace(/\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi, '');
@@ -2483,7 +2483,7 @@ app.get('/generate', (req: Request, res: Response, next): void => {
         : 'Fiche d\'exercices gratuite pour l\'école primaire tunisienne — Madrasati TN.',
     );
     const firstImg = (doc.exercises || []).find((e: { imageUrl?: string }) => e.imageUrl)?.imageUrl;
-    const imageUrl = escapeHtmlAttr(firstImg ? `${origin}${firstImg}` : `${origin}/favicon.svg`);
+    const imageUrl = escapeHtmlAttr(firstImg ? `${origin}${firstImg}` : `${origin}/logo.jpg`);
     const pageUrl = escapeHtmlAttr(`${origin}/generate?sheet=${sheetId}`);
 
     // Drop the generic OG/twitter tags, then inject the per-document ones.
@@ -2652,10 +2652,9 @@ ${allUrls
   res.send(xml);
 });
 
-app.get(['/favicon.ico', '/favicon.svg'], (req: Request, res: Response) => {
+app.get('/favicon.ico', (req: Request, res: Response) => {
   res.setHeader('Cache-Control', 'public, max-age=86400, must-revalidate');
-  const fileName = req.path.endsWith('.svg') ? 'favicon.svg' : 'favicon.ico';
-  res.sendFile(join(browserDistFolder, fileName));
+  res.sendFile(join(browserDistFolder, 'favicon.ico'));
 });
 
 /**
