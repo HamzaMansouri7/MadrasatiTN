@@ -100,26 +100,18 @@ export const aiRateLimiter = (req: Request, res: Response, next: NextFunction): 
   aiPerIpMinuteLimiter(req, res, () => aiPerIpDailyLimiter(req, res, next));
 };
 
-const AI_DAILY_CAP = 1200;
+// Global burst guard only. The old 1,200/day site-wide cap was a cost ceiling for the paid Gemini key;
+// the keys are free-tier now, so the provider chain's own cooldowns handle quota. Per-IP limits above still stop abuse.
 const AI_MINUTE_CAP = 12;
-let aiDailyUsage = { day: '', count: 0 };
 let aiMinuteUsage = { minute: '', count: 0 };
 export const aiDailyGuard = (_req: Request, res: Response, next: NextFunction): void => {
-  const now = new Date().toISOString();
-  const today = now.slice(0, 10);
-  const thisMinute = now.slice(0, 16);
-  if (aiDailyUsage.day !== today) aiDailyUsage = { day: today, count: 0 };
+  const thisMinute = new Date().toISOString().slice(0, 16);
   if (aiMinuteUsage.minute !== thisMinute) aiMinuteUsage = { minute: thisMinute, count: 0 };
-  if (aiDailyUsage.count >= AI_DAILY_CAP) {
-    res.status(503).json({ error: 'Quota IA quotidien atteint. Réessayez demain.' });
-    return;
-  }
   if (aiMinuteUsage.count >= AI_MINUTE_CAP) {
     res.setHeader('Retry-After', 60);
     res.status(429).json({ error: 'Service IA très sollicité. Réessayez dans une minute.' });
     return;
   }
-  aiDailyUsage.count++;
   aiMinuteUsage.count++;
   next();
 };
