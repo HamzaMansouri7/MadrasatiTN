@@ -14,7 +14,7 @@ import { sanitizeSvg } from '../ai/svg-sanitize';
 import { generateImage } from '../ai/image-chain';
 import { resolveInside } from '../safe-path';
 import { capText, capHistory, wrapData, CAPS } from '../input-caps';
-import { originGuard, aiRateLimiter, aiDailyGuard } from '../guards';
+import { originGuard, aiRateLimiter } from '../guards';
 import { saveGenerated } from '../storage';
 import {
   compose,
@@ -201,7 +201,7 @@ Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use vi
 export const aiRouter = Router();
 
 // 1. Generate Exercise (Dual-Mode: Teacher vs Parent)
-aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const {
       grade,
@@ -255,7 +255,7 @@ aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, aiDailyGuard, as
 });
 
 // 1a. Transform Existing Exercise (QCM / Vrai-Faux / Math Story / Fill Blank)
-aiRouter.post('/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/transform-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { exercise, targetFormat, grade = '3ème Année', subject = 'Mathématiques', language } = req.body;
     if (!aiReady()) {
@@ -294,7 +294,7 @@ aiRouter.post('/transform-exercise', originGuard, aiRateLimiter, aiDailyGuard, a
 });
 
 // 1b. Generate Full Official Exam (3 Progressive Sections totaling exactly 20 Points)
-aiRouter.post('/generate-full-exam', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/generate-full-exam', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { grade, subject, trimester, topics, topic, language } = req.body;
     if (!aiReady()) {
@@ -328,7 +328,7 @@ aiRouter.post('/generate-full-exam', originGuard, aiRateLimiter, aiDailyGuard, a
 });
 
 // 1c. Solve / Correct Exercise with Step-by-Step AI Explanation
-aiRouter.post('/solve-exercise', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/solve-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { exerciseTitle, exerciseInstructions, grade = '4ème Année', subject = 'Mathématiques', language } = req.body;
     if (!aiReady()) {
@@ -361,7 +361,7 @@ aiRouter.post('/solve-exercise', originGuard, aiRateLimiter, aiDailyGuard, async
 });
 
 // 1d. Draft Teacher Parent Announcement (WhatsApp / SMS)
-aiRouter.post('/draft-announcement', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/draft-announcement', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { purpose, grade, details, language } = req.body;
     if (!aiReady()) {
@@ -393,7 +393,7 @@ aiRouter.post('/draft-announcement', originGuard, aiRateLimiter, aiDailyGuard, a
 });
 
 // 1e. Explain Pedagogical Concept (Student / Parent Tutor)
-aiRouter.post('/explain-concept', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/explain-concept', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { concept, grade = '3ème Année', language } = req.body;
     if (!aiReady()) {
@@ -424,7 +424,7 @@ aiRouter.post('/explain-concept', originGuard, aiRateLimiter, aiDailyGuard, asyn
 });
 
 // 2. Auto-Tag and Extract Metadata from Uploaded Documents
-aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { filename, fileData, mimeType } = req.body;
     if (!aiReady()) {
@@ -482,7 +482,7 @@ aiRouter.post('/auto-tag-document', originGuard, aiRateLimiter, aiDailyGuard, as
 });
 
 // 3. Student Homework Solver (Camera / Photo Upload)
-aiRouter.post('/photo-solve', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/photo-solve', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { photoBase64, mimeType = 'image/jpeg', grade = '4ème Année', subject = 'Mathématiques', studentNotes } = req.body;
     if (!aiReady()) {
@@ -526,7 +526,7 @@ aiRouter.post('/photo-solve', originGuard, aiRateLimiter, aiDailyGuard, async (r
 });
 
 // 4. Summarize Uploaded Documents / Synthesize Study Guide
-aiRouter.post('/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/summarize-docs', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { files, grade = '4ème Année', subject = 'Éveil Scientifique', topic, language } = req.body;
     if (!aiReady()) {
@@ -582,7 +582,7 @@ aiRouter.post('/summarize-docs', originGuard, aiRateLimiter, aiDailyGuard, async
 });
 
 // 4a. Visual Memo Generator (Studio Fiche Mémo)
-aiRouter.post('/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/generate-memo', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const {
       topic,
@@ -703,7 +703,7 @@ aiRouter.post('/generate-memo', originGuard, aiRateLimiter, aiDailyGuard, async 
 });
 
 // 4b. Worksheet Style Analyzer — vision reads an uploaded worksheet image
-aiRouter.post('/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/analyze-worksheet', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { imageBase64, mimeType = 'image/jpeg' } = req.body;
     if (!aiReady()) {
@@ -740,7 +740,7 @@ aiRouter.post('/analyze-worksheet', originGuard, aiRateLimiter, aiDailyGuard, as
 });
 
 // 4c. Worksheet Generator from DNA (Clone Style, New Pedagogical Content)
-aiRouter.post('/generate-similar', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/generate-similar', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const { dna, count = 3, language } = req.body;
     if (!aiReady()) {
@@ -792,7 +792,7 @@ aiRouter.post('/generate-similar', originGuard, aiRateLimiter, aiDailyGuard, asy
 });
 
 // 5. Variant Exercise Generator
-aiRouter.post('/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/variant', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const {
       exercise,
@@ -843,7 +843,7 @@ aiRouter.post('/variant', originGuard, aiRateLimiter, aiDailyGuard, async (req: 
 });
 
 // 6. Article Studio Chat Assistant
-aiRouter.post('/chat-article', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/chat-article', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const {
       messages = [],
@@ -900,7 +900,7 @@ aiRouter.post('/chat-article', originGuard, aiRateLimiter, aiDailyGuard, async (
 });
 
 // 7. Illustration Generator
-aiRouter.post('/generate-illustration', originGuard, aiRateLimiter, aiDailyGuard, async (req: Request, res: Response): Promise<void> => {
+aiRouter.post('/generate-illustration', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const body = req.body ?? {};
     const promptText = String(body.promptText ?? '').trim();
