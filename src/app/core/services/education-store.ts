@@ -889,11 +889,19 @@ export class EducationStore {
       const res = await fetch('/api/ai/auto-tag-document', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ documentName, rawText, base64Data, contentType }),
+        body: JSON.stringify({
+          filename: documentName,
+          documentName,
+          rawText,
+          fileData: base64Data,
+          base64Data,
+          mimeType: contentType,
+          contentType,
+        }),
       });
       const data = await res.json();
-      if (data.success && data.tags) {
-        const tags = data.tags;
+      const tags = data.metadata || data.tags;
+      if (data.success && tags) {
         const verifiedAuthor = authorName || 'Enseignant Certifié';
         const newEx: ExerciseItem = {
           id: 'auto-' + Date.now(),

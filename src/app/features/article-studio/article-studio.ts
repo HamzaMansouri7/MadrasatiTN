@@ -515,8 +515,9 @@ export class ArticleStudioComponent implements OnDestroy {
 
       const data = await res.json();
       if (data.success) {
-        if (data.replyText) {
-          this.messages.update((msgs) => [...msgs, { role: 'assistant', content: data.replyText }]);
+        const reply = data.assistantMessage || data.replyText;
+        if (reply) {
+          this.messages.update((msgs) => [...msgs, { role: 'assistant', content: reply }]);
         }
         if (data.updatedArticle) {
           this.article.update((art) => ({

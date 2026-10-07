@@ -115,6 +115,11 @@ export class SummarizeHomeComponent {
 
     try {
       const payload = {
+        files: imgList.map((img, idx) => ({
+          name: `doc-${idx + 1}`,
+          data: img.base64Data,
+          mimeType: img.contentType,
+        })),
         images: imgList.map((img) => ({
           base64Data: img.base64Data,
           contentType: img.contentType,
@@ -131,9 +136,10 @@ export class SummarizeHomeComponent {
       });
 
       const data = await res.json();
+      const sum = data.summary || data.result;
 
-      if (data.success && data.result) {
-        this.result.set(data.result as SummarizeResult);
+      if (data.success && sum) {
+        this.result.set(sum as SummarizeResult);
         this.state.set('done');
         this.bumpSummarizeCount();
       } else {

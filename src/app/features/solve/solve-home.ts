@@ -66,12 +66,19 @@ export class SolveHomeComponent {
       const res = await fetch('/api/ai/photo-solve', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ base64Data, contentType: file.type, language: this.lang.lang() }),
+        body: JSON.stringify({
+          photoBase64: base64Data,
+          base64Data,
+          mimeType: file.type,
+          contentType: file.type,
+          language: this.lang.lang(),
+        }),
       });
       const data = await res.json();
+      const sol = data.solution || data.result;
 
-      if (data.success && data.result) {
-        this.result.set(data.result as PhotoSolveResult);
+      if (data.success && sol) {
+        this.result.set(sol as PhotoSolveResult);
         this.state.set('done');
         this.bumpSolveCount();
       } else {

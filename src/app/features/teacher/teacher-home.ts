@@ -2010,15 +2010,20 @@ export class TeacherHomeComponent {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          files: imgs.map((i, idx) => ({
+            name: `image-${idx + 1}`,
+            data: i.base64Data,
+            mimeType: i.contentType,
+          })),
           images: imgs.map((i) => ({ base64Data: i.base64Data, contentType: i.contentType })),
           language: this.lang.lang(),
         }),
       });
 
       const data = await res.json();
+      const r = data.summary || data.result;
 
-      if (data.success && data.result) {
-        const r = data.result;
+      if (data.success && r) {
         let fullContent = `${r.summaryMarkdown}\n\n`;
         if (r.keyPoints?.length) {
           fullContent += `### أهم النقاط للمراجعة:\n` + r.keyPoints.map((k: string) => `- ${k}`).join('\n') + '\n\n';
@@ -2118,14 +2123,17 @@ export class TeacherHomeComponent {
         method: 'POST',
         headers: authHeaders,
         body: JSON.stringify({
+          filename: file.name,
           documentName: file.name,
+          fileData: file.type.startsWith('image/') ? base64Data : undefined,
           base64Data: file.type.startsWith('image/') ? base64Data : undefined,
+          mimeType: file.type,
           contentType: file.type,
         }),
       });
       const tagData = await tagRes.json();
-      if (tagData.success && tagData.tags) {
-        const t = tagData.tags;
+      const t = tagData.metadata || tagData.tags;
+      if (tagData.success && t) {
         if (t.suggestedTitle) this.newCourseTitle.set(t.suggestedTitle);
         if (t.subject) this.newCourseSubject.set(t.subject as SubjectName);
         if (t.grade) this.newCourseGrade.set(t.grade as GradeLevel);

@@ -459,7 +459,7 @@ export class StudentHomeComponent {
       });
       const data = await res.json();
       if (data.success) {
-        this.tutorResponse.set(data.result);
+        this.tutorResponse.set(data.explanation || data.result);
       }
     } catch (err) {
       console.error(err);

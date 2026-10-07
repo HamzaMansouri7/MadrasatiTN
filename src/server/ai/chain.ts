@@ -101,54 +101,104 @@ export async function runChain(
     let resolved = false;
     const activeControllers: AbortController[] = [];
     let pendingRuns = 0;
+    let hedgeTimer: ReturnType<typeof setTimeout> | null = null;
 
-    const tryNext = () => {
+    const scheduleHedge = () => {
+      if (hedgeTimer) clearTimeout(hedgeTimer);
       if (resolved || taskIdx >= candidateTasks.length) {
-        if (pendingRuns === 0 && !resolved) {
-          reject(lastErr ?? new Error(`Échec de tous les modèles de la chaîne ${chainName}`));
-        }
+        hedgeTimer = null;
         return;
       }
+      hedgeTimer = setTimeout(() => {
+        hedgeTimer = null;
+        if (!resolved && taskIdx < candidateTasks.length) {
+          console.log(`[chain:${chainName}] HEDGE triggered after ${hedgeMs}ms -> launching task #${taskIdx + 1}`);
+          tryLaunch();
+        }
+      }, hedgeMs);
+    };
 
-      const task = candidateTasks[taskIdx++];
+    const tryLaunch = (): boolean => {
+      if (resolved || taskIdx >= candidateTasks.length) {
+        if (pendingRuns === 0 && !resolved) {
+          if (hedgeTimer) {
+            clearTimeout(hedgeTimer);
+            hedgeTimer = null;
+          }
+          reject(lastErr ?? new Error(`Échec de tous les modèles de la chaîne ${chainName}`));
+        }
+        return false;
+      }
+
+      const currentIdx = taskIdx++;
+      const task = candidateTasks[currentIdx];
       const controller = new AbortController();
       activeControllers.push(controller);
       pendingRuns++;
+      const startTime = Date.now();
 
-      let hedgeTimer: ReturnType<typeof setTimeout> | null = null;
-      if (taskIdx < candidateTasks.length) {
-        hedgeTimer = setTimeout(() => {
-          if (!resolved) {
-            tryNext();
-          }
-        }, hedgeMs);
-      }
+      console.log(
+        `[chain:${chainName}] task#${currentIdx + 1}/${candidateTasks.length} ${task.step.provider}/${task.step.model} START`,
+      );
+
+      scheduleHedge();
 
       executeTask(task, contents, schema, temperature, controller.signal)
         .then((result) => {
-          if (hedgeTimer) clearTimeout(hedgeTimer);
+          const duration = Date.now() - startTime;
+          console.log(
+            `[chain:${chainName}] task#${currentIdx + 1} ${task.step.provider}/${task.step.model} SUCCESS in ${duration}ms`,
+          );
           if (!resolved) {
             resolved = true;
+            if (hedgeTimer) {
+              clearTimeout(hedgeTimer);
+              hedgeTimer = null;
+            }
             // Abort other running tasks
             for (const c of activeControllers) {
-              if (c !== controller) c.abort();
+              if (c !== controller) {
+                try {
+                  c.abort();
+                } catch {
+                  // ignore
+                }
+              }
             }
             resolve(result);
           }
         })
         .catch((err) => {
-          if (hedgeTimer) clearTimeout(hedgeTimer);
+          const duration = Date.now() - startTime;
           pendingRuns--;
           lastErr = err;
           if (isProviderExhausted(err)) {
             markCooldown(task.step.provider, task.step.model, task.key, err);
           }
-          if (!resolved && pendingRuns === 0) {
-            tryNext();
+          if (!resolved) {
+            console.warn(
+              `[chain:${chainName}] task#${currentIdx + 1} ${task.step.provider}/${task.step.model} FAILED in ${duration}ms: ${err?.message || err}`,
+            );
+            // If the latest task failed or nothing is running, advance immediately
+            if (pendingRuns === 0) {
+              if (hedgeTimer) {
+                clearTimeout(hedgeTimer);
+                hedgeTimer = null;
+              }
+              tryLaunch();
+            } else if (currentIdx === taskIdx - 1 && taskIdx < candidateTasks.length) {
+              if (hedgeTimer) {
+                clearTimeout(hedgeTimer);
+                hedgeTimer = null;
+              }
+              tryLaunch();
+            }
           }
         });
+
+      return true;
     };
 
-    tryNext();
+    tryLaunch();
   });
 }

@@ -633,13 +633,14 @@ export class EditorStudioComponent {
           }),
         });
         const data = await res.json();
-        if (data.success && data.result) {
+        const ann = data.announcement || data.result;
+        if (data.success && ann) {
           this.addBlock('heading1');
           const heading = this.blocks()[this.blocks().length - 1];
-          this.updateBlockContent(heading.id, data.result.title || prompt);
+          this.updateBlockContent(heading.id, ann.title || prompt);
           this.addBlock('paragraph');
           const para = this.blocks()[this.blocks().length - 1];
-          this.updateBlockContent(para.id, data.result.content || '');
+          this.updateBlockContent(para.id, ann.content || '');
           this.aiModalOpen.set(false);
           this.aiPromptQuery.set('');
         }
@@ -697,18 +698,22 @@ export class EditorStudioComponent {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          originalBlock: block,
+          exercise: {
+            title: block.exerciseTitle || 'Exercice',
+            promptText: block.content || '',
+            solutionText: block.exerciseSolution || '',
+          },
+          targetFormat: transformType === 'to_qcm' ? 'qcm' : 'free',
           transformType,
           grade: this.docGrade(),
           subject: this.docSubject(),
-          topic: block.exerciseTitle || '',
           language: this.lang.lang(),
         }),
       });
       const data = await res.json();
+      const t = data.exercise || data.transformed;
 
-      if (data.success && data.transformed) {
-        const t = data.transformed;
+      if (data.success && t) {
         if (t.title) this.updateBlockField(block.id, 'exerciseTitle', t.title);
         if (t.promptText) this.updateBlockContent(block.id, t.promptText);
         if (t.solutionText) this.updateBlockField(block.id, 'exerciseSolution', t.solutionText);
@@ -736,19 +741,22 @@ export class EditorStudioComponent {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          exercise: {
+            title: sourceBlock.exerciseTitle || 'Exercice',
+            promptText: sourceBlock.content || '',
+            solutionText: sourceBlock.exerciseSolution || '',
+            format: sourceBlock.exerciseFormat || 'free',
+          },
+          variantType: 'context',
           grade: this.docGrade(),
           subject: this.docSubject(),
-          topic: sourceBlock.exerciseTitle || '',
-          format: sourceBlock.exerciseFormat || 'free',
-          originalPromptText: sourceBlock.content || '',
-          role: 'teacher',
           language: this.lang.lang(),
         }),
       });
       const data = await res.json();
+      const v = data.exercise || data.variant;
 
-      if (data.success && data.variant) {
-        const v = data.variant;
+      if (data.success && v) {
         this.addBlock('exercise');
         const newBlock = this.blocks()[this.blocks().length - 1];
         this.updateBlockField(newBlock.id, 'exerciseTitle', `${v.title} (Variante IA ✨)`);

@@ -77,7 +77,8 @@ export async function callOpenAICompat(options: OpenAICompatOptions): Promise<Re
   const cleanBaseUrl = baseUrl.replace(/\/+$/, '');
   const url = `${cleanBaseUrl}/chat/completions`;
 
-  const timeoutSignal = AbortSignal.timeout(60000);
+  const timeoutMs = Math.max(1000, parseInt(process.env['OPENAI_COMPAT_TIMEOUT_MS'] || '12000', 10));
+  const timeoutSignal = AbortSignal.timeout(timeoutMs);
   const combinedSignal = signal ? AbortSignal.any([signal, timeoutSignal]) : timeoutSignal;
 
   const res = await fetch(url, {

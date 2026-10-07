@@ -13,14 +13,24 @@ export async function callGemini(
   temp = 0.4,
   signal?: AbortSignal,
 ): Promise<Record<string, unknown>> {
+  const timeoutMs = Math.max(1000, parseInt(process.env['GEMINI_TIMEOUT_MS'] || '8000', 10));
   const client = new GoogleGenAI({
     apiKey: key,
-    httpOptions: { timeout: 60000 },
+    httpOptions: {
+      timeout: timeoutMs,
+      fetch: (input: RequestInfo | URL, init?: RequestInit) => {
+        const combined = signal
+          ? (init?.signal ? AbortSignal.any([signal, init.signal]) : signal)
+          : init?.signal;
+        return fetch(input, { ...init, signal: combined });
+      },
+    },
   });
 
   const config: Record<string, unknown> = {
     responseMimeType: 'application/json',
     temperature: temp,
+    abortSignal: signal,
   };
   if (schema) {
     config['responseSchema'] = schema;

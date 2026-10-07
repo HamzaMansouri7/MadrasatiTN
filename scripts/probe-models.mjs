@@ -42,7 +42,7 @@ const CF_IMAGES = [
   '@cf/leonardo/lucid-origin', '@cf/bytedance/stable-diffusion-xl-lightning',
 ];
 const OPENROUTER_MODELS = ['google/gemma-4-31b-it:free', 'google/gemma-4-26b-a4b-it:free', 'nvidia/nemotron-3-super-120b-a12b:free', 'nvidia/nemotron-3-ultra-550b-a55b:free'];
-const NVIDIA_MODELS = ['meta/llama-3.3-70b-instruct', 'openai/gpt-oss-120b', 'qwen/qwen3-235b-a22b', 'mistralai/mistral-small-3.1-24b-instruct-2503'];
+const NVIDIA_MODELS = ['nvidia/nemotron-3-ultra-550b-a55b', 'meta/llama-3.2-11b-vision-instruct', 'nvidia/nemotron-3.5-lightning-30b-a3b'];
 
 const PROMPT = 'أجب بصيغة JSON فقط دون أي نص آخر: {"ok": true, "word": "<كلمة عربية واحدة تعني مدرسة>"}';
 const SCHEMA = { type: 'object', properties: { ok: { type: 'boolean' }, word: { type: 'string' } }, required: ['ok', 'word'] };

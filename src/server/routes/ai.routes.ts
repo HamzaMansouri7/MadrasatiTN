@@ -15,7 +15,6 @@ import { generateImage } from '../ai/image-chain';
 import { resolveInside } from '../safe-path';
 import { capText, capHistory, wrapData, CAPS } from '../input-caps';
 import { originGuard, aiRateLimiter } from '../guards';
-import { legacyCompat } from './compat';
 import { saveGenerated } from '../storage';
 import {
   compose,
@@ -200,8 +199,6 @@ Output ONLY raw valid SVG code starting with <svg and ending with </svg>. Use vi
 }
 
 export const aiRouter = Router();
-// Accept the original client contract as well as the current one (see compat.ts).
-aiRouter.use(legacyCompat);
 
 // 1. Generate Exercise (Dual-Mode: Teacher vs Parent)
 aiRouter.post('/generate-exercise', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {

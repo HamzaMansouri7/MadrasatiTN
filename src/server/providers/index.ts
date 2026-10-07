@@ -45,5 +45,14 @@ export function getProviderEndpoint(providerOrStep: string | ProviderStep): Prov
     };
   }
 
+  if (provider === 'nvidia' || id.startsWith('nvidia-')) {
+    const key = (process.env['NVIDIA_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+    if (!key) return null;
+    return {
+      baseUrl: 'https://integrate.api.nvidia.com/v1',
+      apiKey: key,
+    };
+  }
+
   return null;
 }
