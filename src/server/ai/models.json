@@ -11,26 +11,6 @@
       ]
     },
     {
-      "id": "gemini-3.7-flash",
-      "provider": "gemini",
-      "model": "gemini-3.7-flash",
-      "quality": 9.5,
-      "tasks": [
-        "text",
-        "vision"
-      ]
-    },
-    {
-      "id": "gemini-3.5-flash",
-      "provider": "gemini",
-      "model": "gemini-3.5-flash",
-      "quality": 8.5,
-      "tasks": [
-        "text",
-        "vision"
-      ]
-    },
-    {
       "id": "gemini-flash-lite-latest",
       "provider": "gemini",
       "model": "gemini-flash-lite-latest",
@@ -107,15 +87,6 @@
       ]
     },
     {
-      "id": "openrouter-nemotron-ultra",
-      "provider": "openai-compat",
-      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "quality": 8.6,
-      "tasks": [
-        "text"
-      ]
-    },
-    {
       "id": "openrouter-nemotron-super",
       "provider": "openai-compat",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -147,41 +118,36 @@
   "chains": {
     "A": [
       "gemini-3.6-flash",
-      "gemini-3.7-flash",
-      "cf-gpt-oss-120b",
-      "gemini-3.5-flash-lite",
       "gemini-flash-lite-latest",
-      "gemini-3.5-flash",
-      "cf-llama-3.3-70b",
+      "gemini-3.5-flash-lite",
       "gemini-3.1-flash-lite",
-      "openrouter-nemotron-ultra",
+      "cf-gpt-oss-120b",
+      "cf-llama-3.3-70b",
       "openrouter-nemotron-super"
     ],
     "B": [
-      "gemini-3.6-flash",
-      "cf-gpt-oss-120b",
       "gemini-flash-lite-latest",
       "gemini-3.5-flash-lite",
       "gemini-3.1-flash-lite",
+      "gemini-3.6-flash",
+      "cf-gpt-oss-120b",
       "cf-mistral-small-3.1",
       "cf-qwen3-30b",
       "cf-llama-4-scout"
     ],
     "C": [
       "gemini-3.6-flash",
-      "gemini-3.7-flash",
-      "gemini-3.5-flash-lite",
       "gemini-flash-lite-latest",
-      "cf-llama-4-scout",
-      "gemini-3.1-flash-lite"
+      "gemini-3.5-flash-lite",
+      "gemini-3.1-flash-lite",
+      "cf-llama-4-scout"
     ],
     "D": [
       "gemini-3.6-flash",
-      "gemini-3.7-flash",
-      "cf-gpt-oss-120b",
       "gemini-flash-lite-latest",
       "gemini-3.5-flash-lite",
-      "gemini-3.1-flash-lite"
+      "gemini-3.1-flash-lite",
+      "cf-gpt-oss-120b"
     ]
   }
 }

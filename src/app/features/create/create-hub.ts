@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { EducationStore, LanguageService, SourceInput } from '@core';
-import { AiStatusComponent, CartoucheComponent, SourceInputComponent } from '@shared';
+import { AiStatusComponent, SourceInputComponent } from '@shared';
 
 export type CreateOutputType =
   | 'lesson-plan'
@@ -31,7 +31,7 @@ export interface OutputCardOption {
   selector: 'app-create-hub',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, SourceInputComponent, AiStatusComponent, CartoucheComponent],
+  imports: [SourceInputComponent, AiStatusComponent],
   templateUrl: './create-hub.html',
 })
 export class CreateHubComponent implements OnInit {
