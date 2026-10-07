@@ -33,6 +33,10 @@ import {
   worksheetDnaSkill,
   worksheetSimilarSkill,
   enforceExactExerciseCount,
+  lessonPlanSkill,
+  seriesSkill,
+  SERIES_PLAN_SCHEMA,
+  SERIES_PANEL_SCHEMA,
 } from '../skills';
 
 // Initialize Gemini Client(s) with multi-key pooling & dynamic rotation
@@ -707,6 +711,192 @@ aiRouter.post('/generate-memo', originGuard, aiRateLimiter, async (req: Request,
   } catch (err: unknown) {
     console.error('Error in /api/ai/generate-memo:', err);
     const pub = toPublicError(err);
+    res.status(pub.status).json({ error: pub.message });
+    return;
+  }
+});
+
+// 4b. Lesson Plan Generator (Jodhadha Pédagogique - Plan de Leçon)
+aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { grade, subject, topic, durationMinutes = 45, instructions, sectionToRegenerate, language } = req.body;
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
+      return;
+    }
+    if (!topic && !instructions) {
+      res.status(400).json({ error: 'Un thème ou une consigne est requis.' });
+      return;
+    }
+
+    const lang: 'ar' | 'fr' = resolveLang(language);
+    const safeTopic = capText(topic || instructions || 'Leçon de base', 300);
+    const resolvedGrade = grade || '4ème Année';
+    const resolvedSubject = subject || 'Mathématiques';
+
+    const prompt = compose(lessonPlanSkill, {
+      grade: resolvedGrade,
+      subject: resolvedSubject,
+      topic: safeTopic,
+      durationMinutes: Number(durationMinutes) || 45,
+      instructions: instructions ? capText(instructions, 1000) : undefined,
+      sectionToRegenerate,
+      lang,
+      contextBlockStr: contextBlock({
+        grade: resolvedGrade,
+        subject: resolvedSubject,
+        topic: safeTopic,
+        lang,
+      }),
+    });
+
+    const data = await aiGenerateJSON(lessonPlanSkill.chain, prompt, lessonPlanSkill.schema, lessonPlanSkill.temperature);
+    const doc = {
+      id: 'lp-' + Date.now(),
+      templateId: 'official-lesson-plan',
+      title: (data as { meta?: { title?: string } })?.meta?.title || safeTopic,
+      grade: resolvedGrade,
+      subject: resolvedSubject,
+      language: lang,
+      values: data,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    res.json({ success: true, doc, lessonPlan: data });
+    return;
+  } catch (err: unknown) {
+    console.error('Error in /api/ai/generate-lesson-plan:', err);
+    const pub = toPublicError(err, 'Erreur lors de la génération de la fiche pédagogique');
+    res.status(pub.status).json({ error: pub.message });
+    return;
+  }
+});
+
+// 4c. Series Scenario Planner
+aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { grade, subject, topic, lessonText, language } = req.body;
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
+      return;
+    }
+    if (!topic && !lessonText) {
+      res.status(400).json({ error: 'Un texte de cours ou un thème historique est requis.' });
+      return;
+    }
+
+    const lang: 'ar' | 'fr' = resolveLang(language);
+    const safeTopic = capText(topic || 'Histoire de la Tunisie', 300);
+    const safeText = capText(lessonText || topic || '', 8000);
+
+    const prompt = compose(seriesSkill, {
+      mode: 'plan' as const,
+      grade: grade || '5ème Année',
+      subject: subject || 'Histoire & Géographie',
+      topic: safeTopic,
+      lessonText: safeText,
+      lang,
+      contextBlockStr: contextBlock({
+        grade: grade || '5ème Année',
+        subject: subject || 'Histoire & Géographie',
+        topic: safeTopic,
+        lang,
+      }),
+    });
+
+    const data = await aiGenerateJSON(seriesSkill.chain, prompt, SERIES_PLAN_SCHEMA, seriesSkill.temperature);
+    const plan = data as {
+      title: string;
+      era: string;
+      style: string;
+      characters: { name: string; role: string; visualDescription: string }[];
+      scenes: { n: number; title: string; event: string; year?: string; visualIdea: string; kind: string; teachingGoal?: string }[];
+    };
+    const seriesDoc = {
+      id: 'series-' + Date.now(),
+      title: plan.title || safeTopic,
+      grade: grade || '5ème Année',
+      subject: subject || 'Histoire & Géographie',
+      language: lang,
+      bible: {
+        characters: plan.characters || [],
+        style: plan.style || 'educational comic',
+        era: plan.era || '',
+      },
+      scenes: (plan.scenes || []).map((s) => ({
+        n: s.n,
+        title: s.title,
+        event: s.event,
+        year: s.year,
+        text: s.event,
+        imagePrompt: s.visualIdea,
+        kind: s.kind || 'scene',
+        teachingGoal: s.teachingGoal,
+      })),
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    res.json({ success: true, doc: seriesDoc, plan: data });
+    return;
+  } catch (err: unknown) {
+    console.error('Error in /api/ai/plan-series:', err);
+    const pub = toPublicError(err, 'Erreur lors de la création du scénario de la série');
+    res.status(pub.status).json({ error: pub.message });
+    return;
+  }
+});
+
+// 4d. Series Single Panel Generator
+aiRouter.post('/generate-series-panel', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { bible, sceneNumber, sceneTitle, sceneEvent, sceneKind, grade, subject, language } = req.body;
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
+      return;
+    }
+
+    const lang: 'ar' | 'fr' = resolveLang(language);
+    const prompt = compose(seriesSkill, {
+      mode: 'panel' as const,
+      bible,
+      sceneNumber: Number(sceneNumber) || 1,
+      sceneTitle: capText(sceneTitle || '', 200),
+      sceneEvent: capText(sceneEvent || '', 500),
+      sceneKind: sceneKind || 'scene',
+      grade: grade || '5ème Année',
+      subject: subject || 'Histoire & Géographie',
+      lang,
+    });
+
+    const data = await aiGenerateJSON(seriesSkill.chain, prompt, SERIES_PANEL_SCHEMA, seriesSkill.temperature);
+    res.json({ success: true, panel: data });
+    return;
+  } catch (err: unknown) {
+    console.error('Error in /api/ai/generate-series-panel:', err);
+    const pub = toPublicError(err, 'Erreur lors de la génération de la planche');
+    res.status(pub.status).json({ error: pub.message });
+    return;
+  }
+});
+
+// 4e. Series Image Generator
+aiRouter.post('/generate-series-image', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { promptText, seed, style } = req.body;
+    if (!promptText) {
+      res.status(400).json({ error: 'promptText requis.' });
+      return;
+    }
+
+    const cleanPrompt = `${capText(promptText, 600)}, historical educational comic panel, high resolution, detailed, no text, no words, no letters`;
+    const finalSeed = typeof seed === 'number' ? seed : seedFor(cleanPrompt);
+    const imageUrl = await generateIllustrationFile(cleanPrompt, cleanPrompt, finalSeed);
+
+    res.json({ success: true, imageUrl });
+    return;
+  } catch (err: unknown) {
+    console.error('Error in /api/ai/generate-series-image:', err);
+    const pub = toPublicError(err, 'Erreur lors de la génération de l’illustration');
     res.status(pub.status).json({ error: pub.message });
     return;
   }

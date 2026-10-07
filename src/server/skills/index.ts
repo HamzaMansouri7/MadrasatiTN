@@ -16,3 +16,5 @@ export * from './solve';
 export * from './summarize';
 export * from './article';
 export * from './worksheet';
+export * from './lesson-plan';
+export * from './series';

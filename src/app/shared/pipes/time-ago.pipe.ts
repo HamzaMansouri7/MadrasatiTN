@@ -10,10 +10,26 @@ import { LanguageService } from '@core';
 export class TimeAgoPipe implements PipeTransform {
   private readonly lang = inject(LanguageService);
 
-  transform(value?: number | null): string {
-    if (!value || typeof value !== 'number') return '';
+  transform(value?: number | string | null): string {
+    if (!value) return '';
+    let ts: number;
+    if (typeof value === 'number') {
+      ts = value;
+    } else {
+      const parsed = Date.parse(value);
+      if (!Number.isNaN(parsed)) {
+        ts = parsed;
+      } else {
+        const num = Number(value);
+        if (!Number.isNaN(num) && num > 0) {
+          ts = num;
+        } else {
+          return String(value);
+        }
+      }
+    }
     const now = Date.now();
-    const diff = Math.max(0, now - value);
+    const diff = Math.max(0, now - ts);
 
     const minute = 60 * 1000;
     const hour = 60 * minute;

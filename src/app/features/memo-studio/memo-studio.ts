@@ -183,9 +183,9 @@ interface LibraryResourceItem {
                   [(ngModel)]="trimester"
                   class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
                 >
-                  <option value="1er Trimestre">1er Trimestre (الثلاثي الأول)</option>
-                  <option value="2ème Trimestre">2ème Trimestre (الثلاثي الثاني)</option>
-                  <option value="3ème Trimestre">3ème Trimestre (الثلاثي الثالث)</option>
+                  <option value="Trimestre 1">Trimestre 1 (الثلاثي الأول)</option>
+                  <option value="Trimestre 2">Trimestre 2 (الثلاثي الثاني)</option>
+                  <option value="Trimestre 3">Trimestre 3 (الثلاثي الثالث)</option>
                 </select>
               </div>
 
@@ -656,7 +656,7 @@ export class MemoStudioComponent implements OnInit {
   readonly text = signal<string>('');
   readonly grade = signal<string>('6ème Année');
   readonly subject = signal<string>('Français');
-  readonly trimester = signal<string>('1er Trimestre');
+  readonly trimester = signal<string>('Trimestre 1');
   readonly language = signal<'ar' | 'fr'>('ar');
   readonly instructions = signal<string>('');
 

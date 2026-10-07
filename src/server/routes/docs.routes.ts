@@ -119,6 +119,87 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       return;
     }
 
+    if (docType === 'lesson-plan' || req.body.lessonPlanDoc) {
+      const lp = req.body.lessonPlanDoc || req.body;
+      const docGrade = (lp.grade || grade || '').toString().slice(0, 40);
+      const docSubject = (lp.subject || subject || '').toString().slice(0, 40);
+      const docTitle = (lp.title || topic || 'جذاذة بيداغوجية').toString().slice(0, 200);
+
+      const id = randomUUID();
+      const doc = {
+        ownerUid,
+        id,
+        docType: 'lesson-plan',
+        title: docTitle,
+        grade: docGrade,
+        subject: docSubject,
+        values: lp.values || lp,
+        author: {
+          name: (authorName || 'المعلم').toString().slice(0, 100),
+          school: (school || 'المدرسة الابتدائية التونسية').toString().slice(0, 150),
+        },
+        createdAt: new Date().toISOString(),
+      };
+      writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
+
+      const index = readDocsIndex();
+      index.unshift({
+        id,
+        docType: 'lesson-plan',
+        title: doc.title,
+        grade: doc.grade,
+        subject: doc.subject,
+        authorName: doc.author.name,
+        school: doc.author.school,
+        createdAt: doc.createdAt,
+      });
+      writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
+
+      res.json({ success: true, id, shareUrl: `/lesson-plan/${id}` });
+      return;
+    }
+
+    if (docType === 'series' || req.body.seriesDoc) {
+      const s = req.body.seriesDoc || req.body;
+      const docGrade = (s.grade || grade || '').toString().slice(0, 40);
+      const docSubject = (s.subject || subject || '').toString().slice(0, 40);
+      const docTitle = (s.title || topic || 'سلسلة مصورة').toString().slice(0, 200);
+
+      const id = randomUUID();
+      const doc = {
+        ownerUid,
+        id,
+        docType: 'series',
+        title: docTitle,
+        grade: docGrade,
+        subject: docSubject,
+        bible: s.bible,
+        scenes: s.scenes || [],
+        author: {
+          name: (authorName || 'المعلم').toString().slice(0, 100),
+          school: (school || 'المدرسة الابتدائية التونسية').toString().slice(0, 150),
+        },
+        createdAt: new Date().toISOString(),
+      };
+      writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
+
+      const index = readDocsIndex();
+      index.unshift({
+        id,
+        docType: 'series',
+        title: doc.title,
+        grade: doc.grade,
+        subject: doc.subject,
+        sceneCount: (doc.scenes || []).length,
+        authorName: doc.author.name,
+        createdAt: doc.createdAt,
+      });
+      writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
+
+      res.json({ success: true, id, shareUrl: `/series/${id}` });
+      return;
+    }
+
     if (!Array.isArray(exercises) || exercises.length === 0) {
       res.status(400).json({ error: 'Aucun exercice à enregistrer.' });
       return;

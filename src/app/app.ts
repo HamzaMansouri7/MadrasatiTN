@@ -46,10 +46,11 @@ export class App {
           '/summarize': 'public',
           '/teachers': 'public',
           '/editor': 'editor',
+          '/create': 'editor',
           '/generate': 'editor',
           '/memo-studio': 'editor',
           '/article-studio': 'article-editor',
-          '/studio': 'article-editor',
+          '/studio': 'editor',
         };
         const matchedRole = routeToRoleMap[path];
         if (matchedRole && this.store.currentRole() !== matchedRole) {

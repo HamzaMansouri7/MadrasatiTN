@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, output } from '@angular/core';
 import { LanguageService, QuestionThread } from '@core';
+import { TimeAgoPipe } from '../pipes/time-ago.pipe';
 
 export type QaThreadAccent = 'blue' | 'green' | 'library';
 
 @Component({
   selector: 'app-qa-thread',
   standalone: true,
+  imports: [TimeAgoPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div [class]="containerClass()">
@@ -20,7 +22,7 @@ export type QaThreadAccent = 'blue' | 'green' | 'library';
               {{ lang.translateGrade(thread().grade) }}
             </span>
             <span [class]="metaTextClass()">
-              • {{ thread().parentName }} • {{ thread().createdAt }}
+              • {{ thread().parentName }} • {{ thread().createdAt | timeAgo }}
             </span>
           </div>
           <h4 [class]="headingClass()">{{ thread().title }}</h4>
@@ -61,7 +63,7 @@ export type QaThreadAccent = 'blue' | 'green' | 'library';
                     {{ ans.teacherTitle }}
                   </span>
                 </div>
-                <span [class]="metaTextClass()">{{ ans.createdAt }}</span>
+                <span [class]="metaTextClass()">{{ ans.createdAt | timeAgo }}</span>
               </div>
 
               <p class="leading-relaxed" [class]="answerTextClass()">{{ ans.content }}</p>

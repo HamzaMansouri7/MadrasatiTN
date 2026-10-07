@@ -96,8 +96,27 @@ export const routes: Routes = [
     title: 'استوديو بطاقات التلخيص | Studio Fiche Mémo - Madrasati TN',
   },
   {
+    path: 'create',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./features/create/create-hub').then((m) => m.CreateHubComponent),
+    title: 'مركز الإنشاء والتأليف | Studio Création - Madrasati TN',
+  },
+  {
+    path: 'lesson-plan/:id',
+    loadComponent: () =>
+      import('./features/lesson-plan/lesson-plan-viewer').then((m) => m.LessonPlanViewerComponent),
+    title: 'الجذاذة البيداغوجية | Fiche Pédagogique - Madrasati TN',
+  },
+  {
+    path: 'series/:id',
+    loadComponent: () =>
+      import('./features/series/series-viewer').then((m) => m.SeriesViewerComponent),
+    title: 'السلسلة التاريخية المصورة | Série Visuelle - Madrasati TN',
+  },
+  {
     path: 'studio',
-    redirectTo: 'article-studio',
+    redirectTo: 'create',
     pathMatch: 'full',
   },
   {

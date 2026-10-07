@@ -12,3 +12,7 @@ export * from './components/blog-card';
 export * from './components/doc-card';
 export * from './components/teacher-card';
 export * from './components/comment-panel';
+export * from './components/ai-status';
+export * from './components/source-input';
+export * from './components/infographic-page';
+export * from './components/series-panel';

@@ -35,6 +35,9 @@ import {
   MemoInput,
   MemoGenerateResponse,
 } from '../models/memo.model';
+import { SourceInput } from '../models/source-input.model';
+import { SeriesDoc, Scene } from '../models/series.model';
+import { InfographicDoc, LessonPlanDocValues } from '../models/infographic.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
@@ -93,6 +96,15 @@ export class EducationStore {
   // Memo Studio signals
   readonly memo = signal<MemoDoc | null>(null);
   readonly memoLayout = signal<MemoLayout>('tree');
+
+  // Lesson Plan and Series signals
+  readonly currentLessonPlan = signal<InfographicDoc | null>(null);
+  readonly currentSeries = signal<SeriesDoc | null>(null);
+  readonly lastSourceInput = signal<SourceInput | null>(null);
+
+  setLastSourceInput(source: SourceInput) {
+    this.lastSourceInput.set(source);
+  }
 
   // App-wide toast notification system
   readonly toast = signal<{ message: string; type: 'success' | 'info' | 'error' } | null>(null);
@@ -253,7 +265,7 @@ export class EducationStore {
       authorRole: 'teacher',
       authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
       text: 'Bonne lecture à tous ! N\'hésitez pas à poser vos questions sur les étapes de calcul — je réponds chaque soir.',
-      createdAt: 'Il y a 2 jours',
+      createdAt: new Date(Date.now() - 2 * 86400000).toISOString(),
       likes: 14,
       replies: [
         {
@@ -263,7 +275,7 @@ export class EducationStore {
           authorName: 'Parent d\'élève',
           authorRole: 'parent',
           text: 'Merci pour ce document clair et utile pour la révision.',
-          createdAt: 'Il y a 1 jour',
+          createdAt: new Date(Date.now() - 1 * 86400000).toISOString(),
           likes: 5,
         },
       ],
@@ -275,7 +287,7 @@ export class EducationStore {
       authorName: 'Parent d\'élève',
       authorRole: 'parent',
       text: 'Excellente fiche de révision, très bien structurée.',
-      createdAt: 'Il y a 3 jours',
+      createdAt: new Date(Date.now() - 3 * 86400000).toISOString(),
       likes: 8,
       replies: [],
     },
@@ -287,7 +299,7 @@ export class EducationStore {
       authorRole: 'teacher',
       authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
       text: 'Attention ! Pour l\'aire du carré, n\'oubliez pas d\'écrire l\'unité m² (mètres carrés) sinon vous perdez 0.5 point.',
-      createdAt: 'Il y a 3 jours',
+      createdAt: new Date(Date.now() - 3 * 86400000).toISOString(),
       likes: 22,
       replies: [],
     },
@@ -1264,6 +1276,236 @@ export class EducationStore {
     }
   }
 
+  // ==========================================
+  // Lesson Plan (جذاذة) Methods
+  // ==========================================
+  async generateLessonPlan(source: SourceInput): Promise<{ ok: boolean; doc?: InfographicDoc; docId?: string; error?: string }> {
+    if (typeof window === 'undefined') {
+      return { ok: false, error: 'Environnement non supporté.' };
+    }
+    const sourceFiles: { data: string; mimeType: string }[] = [];
+    for (const p of source.photos ?? []) {
+      if (p.base64Data) sourceFiles.push({ data: p.base64Data, mimeType: p.contentType || 'image/jpeg' });
+    }
+    if (source.file?.base64Data) {
+      sourceFiles.push({ data: source.file.base64Data, mimeType: source.file.contentType || 'application/pdf' });
+    }
+
+    const res = await this.ai.post('generate-lesson-plan', {
+      topic: source.topic,
+      grade: source.grade,
+      subject: source.subject,
+      trimester: source.trimester,
+      language: source.language,
+      teacherNotes: source.text,
+      userInstruction: source.instructions,
+      sourceFiles: sourceFiles.length ? sourceFiles : undefined,
+    }, {
+      fallbackError: 'Erreur lors de la génération de la fiche pédagogique.',
+    });
+
+    if (!res.ok) return { ok: false, error: res.error };
+    const doc = res.data['doc'] as InfographicDoc | undefined;
+    if (doc) {
+      this.currentLessonPlan.set(doc);
+      void this.saveLessonPlan({ doc });
+      return { ok: true, doc, docId: doc.id };
+    }
+    return { ok: false, error: 'Structure de document invalide.' };
+  }
+
+  async saveLessonPlan(payload: {
+    doc: InfographicDoc;
+    authorName?: string;
+    authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
+    school?: string;
+  }): Promise<{ id: string; shareUrl: string } | null> {
+    try {
+      const res = await fetch('/api/docs', {
+        method: 'POST',
+        headers: await this.firebase.getAuthHeaders(),
+        body: JSON.stringify({
+          docType: 'lesson-plan',
+          ...payload,
+        }),
+      });
+      const data = await res.json();
+      if (data.success && data.id) {
+        this.publishedLoaded = false;
+        void this.loadPublishedWorksheets();
+        return { id: data.id, shareUrl: data.shareUrl };
+      }
+    } catch (err) {
+      console.error('Error in saveLessonPlan:', err);
+    }
+    return null;
+  }
+
+  async getLessonPlan(id: string): Promise<InfographicDoc | null> {
+    try {
+      const res = await fetch('/api/docs/' + encodeURIComponent(id));
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (data.success && data.doc) {
+        const doc = (data.doc.doc || data.doc) as InfographicDoc;
+        this.currentLessonPlan.set(doc);
+        return doc;
+      }
+    } catch (err) {
+      console.error('Error in getLessonPlan:', err);
+    }
+    return null;
+  }
+
+  // ==========================================
+  // Historical Series Methods
+  // ==========================================
+  async createSeriesFromSource(source: SourceInput): Promise<{ ok: boolean; doc?: SeriesDoc; docId?: string; error?: string }> {
+    if (typeof window === 'undefined') {
+      return { ok: false, error: 'Environnement non supporté.' };
+    }
+    const sourceFiles: { data: string; mimeType: string }[] = [];
+    for (const p of source.photos ?? []) {
+      if (p.base64Data) sourceFiles.push({ data: p.base64Data, mimeType: p.contentType || 'image/jpeg' });
+    }
+    if (source.file?.base64Data) {
+      sourceFiles.push({ data: source.file.base64Data, mimeType: source.file.contentType || 'application/pdf' });
+    }
+
+    const res = await this.ai.post('plan-series', {
+      topic: source.topic,
+      grade: source.grade,
+      subject: source.subject,
+      trimester: source.trimester,
+      language: source.language,
+      teacherNotes: source.text,
+      userInstruction: source.instructions,
+      sourceFiles: sourceFiles.length ? sourceFiles : undefined,
+    }, {
+      fallbackError: 'Erreur lors de la planification de la série.',
+    });
+
+    if (!res.ok) return { ok: false, error: res.error };
+    const doc = res.data['doc'] as SeriesDoc | undefined;
+    if (doc) {
+      this.currentSeries.set(doc);
+      if (doc.scenes?.length) {
+        void this.generateSeriesPanel(doc.id, 1);
+      }
+      void this.saveSeries({ doc });
+      return { ok: true, doc, docId: doc.id };
+    }
+    return { ok: false, error: 'Structure de série invalide.' };
+  }
+
+  async generateSeriesPanel(seriesId: string, sceneNumber: number): Promise<{ ok: boolean; scene?: Scene; error?: string }> {
+    const current = this.currentSeries();
+    if (!current) return { ok: false, error: 'Aucune série active.' };
+    const scene = current.scenes.find((s) => s.n === sceneNumber);
+    if (!scene) return { ok: false, error: 'Scène introuvable.' };
+
+    const res = await this.ai.post('generate-series-panel', {
+      bible: current.bible,
+      sceneNumber,
+      sceneTitle: scene.title,
+      sceneEvent: scene.event,
+      sceneKind: scene.kind,
+      grade: current.grade,
+      subject: current.subject,
+      language: current.language,
+    }, {
+      fallbackError: `Erreur lors de la génération de la scène ${sceneNumber}.`,
+    });
+
+    if (!res.ok) return { ok: false, error: res.error };
+    const updatedScene = res.data['scene'] as Scene | undefined;
+    if (updatedScene) {
+      this.currentSeries.update((s) => {
+        if (!s) return s;
+        return {
+          ...s,
+          scenes: s.scenes.map((sc) => (sc.n === sceneNumber ? updatedScene : sc)),
+        };
+      });
+      const updated = this.currentSeries();
+      if (updated) void this.saveSeries({ doc: updated });
+    }
+    return { ok: true, scene: updatedScene };
+  }
+
+  async generateSeriesImage(seriesId: string, sceneNumber: number): Promise<{ ok: boolean; imageUrl?: string; error?: string }> {
+    const current = this.currentSeries();
+    if (!current) return { ok: false, error: 'Aucune série active.' };
+    const scene = current.scenes.find((s) => s.n === sceneNumber);
+    if (!scene) return { ok: false, error: 'Scène introuvable.' };
+
+    const res = await this.ai.post('generate-series-image', {
+      visualPrompt: scene.imagePrompt || scene.text || scene.event,
+      sceneNumber,
+      seriesId,
+    }, {
+      fallbackError: `Erreur lors de la génération de l'illustration.`,
+    });
+
+    if (!res.ok) return { ok: false, error: res.error };
+    const imageUrl = res.data['imageUrl'] as string | undefined;
+    if (imageUrl) {
+      this.currentSeries.update((s) => {
+        if (!s) return s;
+        return {
+          ...s,
+          scenes: s.scenes.map((sc) => (sc.n === sceneNumber ? { ...sc, imageUrl } : sc)),
+        };
+      });
+      const updated = this.currentSeries();
+      if (updated) void this.saveSeries({ doc: updated });
+    }
+    return { ok: true, imageUrl };
+  }
+
+  async saveSeries(payload: {
+    doc: SeriesDoc;
+    authorName?: string;
+    authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
+    school?: string;
+  }): Promise<{ id: string; shareUrl: string } | null> {
+    try {
+      const res = await fetch('/api/docs', {
+        method: 'POST',
+        headers: await this.firebase.getAuthHeaders(),
+        body: JSON.stringify({
+          docType: 'series',
+          ...payload,
+        }),
+      });
+      const data = await res.json();
+      if (data.success && data.id) {
+        this.publishedLoaded = false;
+        void this.loadPublishedWorksheets();
+        return { id: data.id, shareUrl: data.shareUrl };
+      }
+    } catch (err) {
+      console.error('Error in saveSeries:', err);
+    }
+    return null;
+  }
+
+  async getSeries(id: string): Promise<SeriesDoc | null> {
+    try {
+      const res = await fetch('/api/docs/' + encodeURIComponent(id));
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (data.success && data.doc) {
+        const doc = (data.doc.doc || data.doc) as SeriesDoc;
+        this.currentSeries.set(doc);
+        return doc;
+      }
+    } catch (err) {
+      console.error('Error in getSeries:', err);
+    }
+    return null;
+  }
+
   addAnnouncement(announcementData: Partial<Announcement>) {
     const activeC = this.activeClass();
     const newA: Announcement = {
@@ -1425,7 +1667,7 @@ Les sujets de concours s'inspirent directement des manuels scolaires officiels t
       subject: 'Mathématiques',
       grade: '6ème Année',
       tags: ['مناظرة', 'نصائح بيداغوجية', 'السادسة ابتدائي'],
-      publishedAt: 'Il y a 3 jours',
+      publishedAt: new Date(Date.now() - 3 * 86400000).toISOString(),
       likesCount: 142,
       readTimeMinutes: 4,
       attachedCourseId: 'crs-1',
@@ -1436,7 +1678,7 @@ Les sujets de concours s'inspirent directement des manuels scolaires officiels t
           authorName: 'Parent d\'élève',
           authorRole: 'parent',
           content: 'Merci infiniment pour ces conseils précieux ! Nous allons appliquer le planning dès ce trimestre.',
-          createdAt: 'Il y a 2 jours',
+          createdAt: new Date(Date.now() - 2 * 86400000).toISOString(),
           likesCount: 12,
         },
       ],
@@ -1471,7 +1713,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
       subject: 'Mathématiques',
       grade: '4ème Année',
       tags: ['حساب ذهني', 'رياضيات', '4 ابتدائي'],
-      publishedAt: 'Il y a 5 jours',
+      publishedAt: new Date(Date.now() - 5 * 86400000).toISOString(),
       likesCount: 98,
       readTimeMinutes: 3,
       comments: [],
@@ -1487,7 +1729,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
       subject: 'Mathématiques',
       grade: '4ème Année',
       parentName: 'Parent d\'élève (Ariana)',
-      createdAt: 'Hier à 16:30',
+      createdAt: new Date(Date.now() - 1 * 86400000).toISOString(),
       answers: [
         {
           id: 'ans-1',
@@ -1499,7 +1741,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
           content: 'Bonjour ! C\'est une difficulté fréquente au premier trimestre. J\'ai publié une fiche pratique avec 6 exercices progressifs et repères visuels. Vous pouvez l\'imprimer directement ci-dessous.',
           attachedDocId: 'crs-1',
           attachedDocTitle: 'Fiche A4 : Géométrie et Tracés à l\'équerre (4ème)',
-          createdAt: 'Hier à 18:15',
+          createdAt: new Date(Date.now() - 1 * 86400000 + 3600000).toISOString(),
           isVerifiedAnswer: true,
           likesCount: 15,
         },
@@ -1512,7 +1754,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
       subject: 'اللغة العربية',
       grade: '5ème Année',
       parentName: 'ولي أمر (سوسة)',
-      createdAt: 'Il y a 2 jours',
+      createdAt: new Date(Date.now() - 2 * 86400000).toISOString(),
       answers: [
         {
           id: 'ans-2',
@@ -1524,7 +1766,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
           content: 'وعليكم السلام ورحمة الله. أفضل طريقة هي تدريب التلميذ على جدول المراحل الثلاث (وضع البداية، التحول وسير الأحداث، وضع النهاية) مع وضع قائمة بروابط الربط والزمان في أعلى الورقة.',
           attachedDocId: 'crs-3',
           attachedDocTitle: 'ملخص بيداغوجي : هيكل الإنتاج الكتابي للسنة 5',
-          createdAt: 'Il y a 2 jours',
+          createdAt: new Date(Date.now() - 2 * 86400000).toISOString(),
           isVerifiedAnswer: true,
           likesCount: 28,
         },
@@ -1537,7 +1779,7 @@ Le calcul mental est la pierre angulaire de la réussite en mathématiques au pr
       ...post,
       id: 'blog-' + Date.now(),
       ownerUid: this.firebase.currentUser()?.uid,
-      publishedAt: 'À l\'instant',
+      publishedAt: new Date().toISOString(),
       likesCount: 1,
       comments: [],
     };

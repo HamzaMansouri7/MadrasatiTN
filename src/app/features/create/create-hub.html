@@ -1,0 +1,133 @@
+<div class="max-w-6xl mx-auto space-y-10 animate-in fade-in duration-500 pb-16">
+
+  <!-- Hub Header -->
+  <div class="text-center space-y-3 pt-4">
+    <div class="inline-flex items-center gap-2 bg-[#2D6A4F]/10 text-[#1B4332] px-3.5 py-1 rounded-full text-xs font-semibold border border-[#2D6A4F]/20">
+      <span class="material-icons text-sm" aria-hidden="true">auto_fix_high</span>
+      <span>{{ lang.tr('Studio Pédagogique Intégré', 'فضاء الإنتاج والتأليف البيداغوجي') }}</span>
+    </div>
+    <h1 class="font-display font-semibold text-2xl sm:text-4xl text-[#14251D]">
+      {{ lang.tr('Que souhaitez-vous préparer aujourd’hui ?', 'ماذا تريد أن تنتج اليوم لفصلك أو لأبنائك ؟') }}
+    </h1>
+    <p class="text-sm text-[#5B6B60] max-w-[64ch] mx-auto leading-relaxed">
+      {{ lang.tr('Choisissez un type de document : fiches de préparation, synthèses visuelles, séries d’exercices, examens officiels ou récits historiques illustrés.', 'اختر نوع الوثيقة: جذاذات تحضير الدروس، بطاقات التلخيص البصري، تمارين متدرجة، امتحانات رسمية، أو قصص وسلاسل تاريخية.') }}
+    </p>
+  </div>
+
+  <!-- Output Grid Selection -->
+  @if (!selectedOutput()) {
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      @for (opt of outputOptions; track opt.type) {
+        <div
+          (click)="selectOutput(opt)"
+          (keydown.enter)="selectOutput(opt)"
+          tabindex="0"
+          role="button"
+          class="group bg-white rounded-[24px] border border-[#E7DFCF] p-5 flex flex-col justify-between hover:border-[#2D6A4F] hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] transition-all cursor-pointer relative overflow-hidden">
+          
+          <!-- Top Accent Rule -->
+          <div class="absolute top-0 left-0 right-0 h-1" [style.backgroundColor]="opt.accent"></div>
+
+          <div class="space-y-4">
+            <!-- Icon & Badge -->
+            <div class="flex items-center justify-between pt-1">
+              <div
+                class="w-11 h-11 rounded-xl flex items-center justify-center text-white shadow-xs"
+                [style.backgroundColor]="opt.accent">
+                <span class="material-icons text-xl" aria-hidden="true">{{ opt.icon }}</span>
+              </div>
+              <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#FBF8F1] text-[#5B6B60] border border-[#E7DFCF]">
+                {{ lang.isArabic() ? opt.badgeAr : opt.badgeFr }}
+              </span>
+            </div>
+
+            <!-- Title & Description -->
+            <div>
+              <h3 class="font-display font-semibold text-base text-[#14251D] group-hover:text-[#2D6A4F] transition-colors">
+                {{ lang.isArabic() ? opt.titleAr : opt.titleFr }}
+              </h3>
+              <p class="text-xs text-[#5B6B60] mt-1.5 leading-relaxed">
+                {{ lang.isArabic() ? opt.descAr : opt.descFr }}
+              </p>
+            </div>
+
+            <!-- Preview Thumbnail Box -->
+            <div class="bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] p-3 text-[10px] space-y-1.5">
+              @if (opt.previewKind === 'table') {
+                <div class="flex items-center justify-between text-[#6B7A70] pb-1 border-b border-[#E7DFCF]">
+                  <span>المرحلة 01: وضعية الانطلاق</span>
+                  <span class="font-mono">10 د</span>
+                </div>
+                <div class="flex items-center justify-between text-[#6B7A70]">
+                  <span>المرحلة 02: البناء والاستنتاج</span>
+                  <span class="font-mono">25 د</span>
+                </div>
+              } @else if (opt.previewKind === 'cards') {
+                <div class="grid grid-cols-2 gap-1.5 text-[#6B7A70]">
+                  <div class="bg-white p-1.5 rounded border border-[#E7DFCF]">القاعدة الأساسية</div>
+                  <div class="bg-white p-1.5 rounded border border-[#E7DFCF]">مثال تطبيقي</div>
+                </div>
+              } @else if (opt.previewKind === 'comic') {
+                <div class="flex items-center gap-2 text-[#6B7A70]">
+                  <span class="material-icons text-xs text-[#BF5B34]">image</span>
+                  <span>لوحات متسلسلة 01 ➔ 06 مع خط زمني</span>
+                </div>
+              } @else if (opt.previewKind === 'exam') {
+                <div class="space-y-1 text-[#6B7A70]">
+                  <div class="flex justify-between"><span>القسم 1: الحساب (6ن)</span></div>
+                  <div class="flex justify-between"><span>القسم 2: الهندسة (6ن)</span></div>
+                </div>
+              } @else {
+                <div class="text-[#6B7A70] flex items-center gap-1">
+                  <span class="material-icons text-xs">notes</span>
+                  <span>عناصر ملخصة + معجم مصطلحات</span>
+                </div>
+              }
+            </div>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="pt-4 mt-2 border-t border-[#F2ECDE] flex items-center justify-between text-xs font-semibold text-[#2D6A4F]">
+            <span>{{ lang.tr('Commencer', 'إنشاء الآن') }}</span>
+            <span class="material-icons text-sm rtl:rotate-180" aria-hidden="true">arrow_forward</span>
+          </div>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- Output Selected View: Input Stage -->
+  @if (selectedOutput(); as out) {
+    <div class="space-y-6">
+      <!-- Breadcrumb & Back -->
+      <div class="flex items-center justify-between flex-wrap gap-3">
+        <button
+          type="button"
+          (click)="selectedOutput.set(null)"
+          class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#5B6B60] hover:text-[#14251D] bg-white border border-[#E7DFCF] px-3.5 py-2 rounded-xl transition-colors cursor-pointer">
+          <span class="material-icons text-sm rtl:rotate-180" aria-hidden="true">arrow_back</span>
+          <span>{{ lang.tr('Changer de type de document', 'اختيار وثيقة أخرى') }}</span>
+        </button>
+
+        @if (activeOption(); as opt) {
+          <div class="flex items-center gap-2 bg-[#FBF8F1] px-3.5 py-1.5 rounded-xl border border-[#E7DFCF]">
+            <span class="material-icons text-sm" [style.color]="opt.accent" aria-hidden="true">{{ opt.icon }}</span>
+            <span class="font-display font-semibold text-xs text-[#14251D]">{{ lang.isArabic() ? opt.titleAr : opt.titleFr }}</span>
+          </div>
+        }
+      </div>
+
+      <!-- Shared Input Form -->
+      <app-source-input
+        [submitLabel]="lang.tr('Générer avec l’IA', 'بدء المعالجة والتوليد')"
+        (submitSource)="onSourceSubmitted($event)"></app-source-input>
+
+      <!-- AI Generating / Error Status -->
+      <app-ai-status
+        [loading]="isGenerating()"
+        [error]="genError()"
+        (retry)="selectedOutput() && null"></app-ai-status>
+    </div>
+  }
+
+</div>

@@ -13,14 +13,14 @@ describe('QaThreadComponent', () => {
     subject: 'Mathématiques',
     grade: '4ème Année',
     parentName: 'Mohamed',
-    createdAt: 'Hier à 14:00',
+    createdAt: new Date(Date.now() - 86400000).toISOString(),
     answers: [
       {
         id: 'a-1',
         threadId: 't-1',
         teacherName: 'Mme Ben Ali',
         teacherTitle: 'Professeure de Mathématiques',
-        createdAt: 'Il y a 2h',
+        createdAt: new Date(Date.now() - 7200000).toISOString(),
         content: 'Utilisez des schémas visuels en pizza ou carrés.',
         isVerifiedAnswer: true,
         likesCount: 3,

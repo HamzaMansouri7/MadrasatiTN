@@ -33,65 +33,76 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             </div>
           </div>
 
-          <!-- Role Navigation (Center Clean Tabs with Bottom Indicator) -->
+          <!-- Intentional 4-Group Navigation -->
           <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5 2xl:gap-2 shrink-0 h-[76px]">
-            <!-- Home -->
+            <!-- 1. Discover / Bibliothèque -->
             <button
-              (click)="selectRole('home')"
-              [class]="store.currentRole() === 'home' 
-                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg">home</span>
-              <span>{{ lang.t('navHome') }}</span>
-            </button>
-
-            <!-- Teacher -->
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'teacher') {
-              <button
-                (click)="selectRole('teacher')"
-                [class]="store.currentRole() === 'teacher' 
-                  ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                  : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
-                class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-                <span class="material-icons text-base xl:text-lg">school</span>
-                <span>{{ lang.t('roleTeacher') }}</span>
-              </button>
-            }
-
-            <!-- Parent -->
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'parent') {
-              <button
-                (click)="selectRole('parent')"
-                [class]="store.currentRole() === 'parent' 
-                  ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                  : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
-                class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-                <span class="material-icons text-base xl:text-lg">family_restroom</span>
-                <span>{{ lang.t('roleParent') }}</span>
-              </button>
-            }
-
-            <!-- Public Discovery -->
-            <button
+              type="button"
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public'
-                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60' 
-                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
+              [class]="store.currentRole() === 'public' && !isTeachersRoute()
+                ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10' 
+                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
               <span class="material-icons text-base xl:text-lg">explore</span>
-              <span>{{ lang.t('rolePublic') }}</span>
+              <span>{{ lang.tr('Bibliothèque CNP', 'المكتبة والدليل') }}</span>
             </button>
 
-            <!-- Teacher Directory -->
+            <!-- 2. Understand / Comprendre (Tuteur & Solve) -->
             <button
-              (click)="navigateToTeachers()"
-              [class]="isTeachersRoute()
-                ? 'text-[#005F96] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60'
-                : 'text-[#486581] hover:text-[#007CC2] hover:bg-[#F3FAFD] font-medium border-b-[3px] border-transparent'"
+              type="button"
+              (click)="router.navigate(['/solve'])"
+              [class]="router.url.startsWith('/solve') || router.url.startsWith('/summarize')
+                ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10' 
+                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg">verified</span>
-              <span>{{ lang.tr('Enseignants', 'المعلمون') }}</span>
+              <span class="material-icons text-base xl:text-lg">psychology</span>
+              <span>{{ lang.tr('Comprendre & Résoudre', 'فهم وتلخيص') }}</span>
+            </button>
+
+            <!-- 3. Create Hub / مركز الإنشاء (Prominent) -->
+            <button
+              type="button"
+              (click)="router.navigate(['/create'])"
+              [class]="router.url.startsWith('/create') || router.url.startsWith('/editor') || router.url.startsWith('/memo-studio')
+                ? 'bg-[#1B4332] text-[#FBF8F1] shadow-xs' 
+                : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] shadow-xs'"
+              class="flex items-center gap-1.5 px-3.5 h-[40px] rounded-xl text-xs font-semibold tracking-wide transition-all cursor-pointer mx-1">
+              <span class="material-icons text-base">auto_fix_high</span>
+              <span>{{ lang.tr('Créer / Studio', 'مركز الإنشاء') }}</span>
+            </button>
+
+            <!-- 4. Spaces / الفضاءات -->
+            <button
+              type="button"
+              (click)="selectRole('teacher')"
+              [class]="store.currentRole() === 'teacher' 
+                ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10' 
+                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg">school</span>
+              <span>{{ lang.t('roleTeacher') }}</span>
+            </button>
+
+            <button
+              type="button"
+              (click)="selectRole('parent')"
+              [class]="store.currentRole() === 'parent' 
+                ? 'text-[#8A5A00] font-semibold border-b-[3px] border-[#8A5A00] bg-[#8A5A00]/10' 
+                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg">family_restroom</span>
+              <span>{{ lang.t('roleParent') }}</span>
+            </button>
+
+            <button
+              type="button"
+              (click)="selectRole('student')"
+              [class]="store.currentRole() === 'student' 
+                ? 'text-[#BF5B34] font-semibold border-b-[3px] border-[#BF5B34] bg-[#BF5B34]/10' 
+                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg">backpack</span>
+              <span>{{ lang.tr('Élève', 'التلميذ') }}</span>
             </button>
           </nav>
 
@@ -356,50 +367,57 @@ import { TeacherAvatarComponent } from './teacher-avatar';
 
         </div>
 
-        <!-- Secondary/Mobile Role Selector Bar (for screens < lg) -->
-        <div class="flex lg:hidden items-center justify-between overflow-x-auto py-2 gap-2 no-scrollbar border-t border-[#E7DFCF]">
-          <div class="flex items-center gap-1.5 shrink-0">
-            <button
-              (click)="selectRole('home')"
-              [class]="store.currentRole() === 'home' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-              {{ lang.t('navHome') }}
-            </button>
+        <!-- Secondary/Mobile Role & Navigation Bar (5 Items, 44px touch targets) -->
+        <div class="flex lg:hidden items-center justify-around py-1.5 gap-1 border-t border-[#E7DFCF] text-xs">
+          <!-- 1. Home -->
+          <button
+            type="button"
+            (click)="selectRole('home')"
+            [class]="store.currentRole() === 'home' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
+            <span class="material-icons text-base">home</span>
+            <span class="text-[10px] leading-tight">{{ lang.t('navHome') }}</span>
+          </button>
 
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'teacher') {
-              <button
-                (click)="selectRole('teacher')"
-                [class]="store.currentRole() === 'teacher' ? 'bg-[#1B4332] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-                class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-                {{ lang.t('roleTeacher') }}
-              </button>
-            }
+          <!-- 2. Discovery -->
+          <button
+            type="button"
+            (click)="selectRole('public')"
+            [class]="store.currentRole() === 'public' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
+            <span class="material-icons text-base">explore</span>
+            <span class="text-[10px] leading-tight">{{ lang.tr('المكتبة', 'المكتبة') }}</span>
+          </button>
 
-            @if (!firebase.userProfile() || firebase.userProfile()?.role === 'parent') {
-              <button
-                (click)="selectRole('parent')"
-                [class]="store.currentRole() === 'parent' ? 'bg-[#8A5A00] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-                class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-                {{ lang.t('roleParent') }}
-              </button>
-            }
+          <!-- 3. Understand (Solve) -->
+          <button
+            type="button"
+            (click)="router.navigate(['/solve'])"
+            [class]="router.url.startsWith('/solve') ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
+            <span class="material-icons text-base">psychology</span>
+            <span class="text-[10px] leading-tight">{{ lang.tr('فهم', 'فهم') }}</span>
+          </button>
 
-            <button
-              (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-white text-[#5B6B60] border border-[#E7DFCF]'"
-              class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0">
-              {{ lang.t('rolePublic') }}
-            </button>
-          </div>
+          <!-- 4. Create Hub -->
+          <button
+            type="button"
+            (click)="router.navigate(['/create'])"
+            [class]="router.url.startsWith('/create') ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#2D6A4F] text-[#FBF8F1]'"
+            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-xl px-2.5 transition-colors cursor-pointer shadow-xs">
+            <span class="material-icons text-base">auto_fix_high</span>
+            <span class="text-[10px] font-bold leading-tight">{{ lang.tr('إنشاء', 'إنشاء') }}</span>
+          </button>
 
-          @if (firebase.userProfile()) {
-            <button
-              (click)="handleLogout()"
-              class="bg-white text-[#BF5B34] border border-[#E7DFCF] px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap shrink-0 flex items-center gap-1 cursor-pointer">
-              <span class="material-icons text-xs">logout</span>
-              <span>{{ lang.isArabic() ? 'خروج' : 'Déconnexion' }}</span>
-            </button>
-          }
+          <!-- 5. Current Space (Teacher / Parent / Student) -->
+          <button
+            type="button"
+            (click)="selectRole(firebase.userProfile()?.role === 'parent' ? 'parent' : firebase.userProfile()?.role === 'student' ? 'student' : 'teacher')"
+            [class]="store.currentRole() === 'teacher' || store.currentRole() === 'parent' || store.currentRole() === 'student' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
+            <span class="material-icons text-base">person</span>
+            <span class="text-[10px] leading-tight">{{ lang.tr('فضاءك', 'فضاءك') }}</span>
+          </button>
         </div>
 
       </div>
