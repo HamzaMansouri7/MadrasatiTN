@@ -90,6 +90,20 @@
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
       "quality": 8.0,
       "tasks": ["text"]
+    },
+    {
+      "id": "nvidia-nemotron-ultra",
+      "provider": "nvidia",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "quality": 8.7,
+      "tasks": ["text"]
+    },
+    {
+      "id": "nvidia-llama-vision",
+      "provider": "nvidia",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "quality": 8.0,
+      "tasks": ["text", "vision"]
     }
   ],
   "chains": {
@@ -98,6 +112,7 @@
       "gemini-3.7-flash",
       "cf-gpt-oss-120b",
       "openrouter-nemotron-ultra",
+      "nvidia-nemotron-ultra",
       "gemini-3.5-flash",
       "cf-llama-3.3-70b",
       "openrouter-nemotron-super"
@@ -115,6 +130,7 @@
     "C": [
       "gemini-3.6-flash",
       "gemini-3.7-flash",
+      "nvidia-llama-vision",
       "cf-llama-4-scout"
     ],
     "D": [
