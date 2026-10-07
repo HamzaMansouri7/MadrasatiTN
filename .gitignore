@@ -59,3 +59,5 @@ docs/
 /uploads/documents/
 /uploads/notebooks/
 /uploads/generated/
+/uploads/illustration_*.svg
+/uploads/*.pdf
