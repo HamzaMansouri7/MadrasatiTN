@@ -139,3 +139,41 @@ After a friend's art-direction review, the LLM no longer writes free HTML. It ac
 Built: flat SVG icons per slot and stage in the lesson-plan renderer; spec model + whitelist SVG sanitizer + `normalizeInfographicSpec` (`core/utils/infographic-spec.util.ts`, with spec); skill + `POST /api/ai/generate-infographic`; `InfographicSpecComponent` (3 compositions: hero-cards, circular-flow, timeline; themes kids and official as CSS variables); `/ai-studio` page (source input, composition, style, regenerate, share, print); save as docType `infographic`, shareable at `/infographic/:id`; link from the memo studio.
 
 Next: owner tries 5 real generations at `/ai-studio` and judges quality (prompt fixes before anything else); then migrate the memo studio's 6 layouts and retire them; FLUX hero images and more presets only after that.
+
+---
+
+## Plan v2: image-ready spec, 6 presets, on-demand card images (agreed 2026-10-08)
+
+Decisions: the LLM fills content + picks a preset from the BUILT list only; the renderer owns all placement; no runtime preset invention, no positions in JSON. The long "pedagogical designer" prompt is used OFFLINE to design new presets, not at runtime.
+
+### Phase A: spec upgrade (model + validator + prompt)
+1. `infographic-spec.model.ts`: on `SpecItem` and `SpecHero` add optional `wantsImage?: boolean`, `imagePrompt?: string` (English), `imageUrl?: string`. Add preset ids `central-picture`, `lesson-stages`, `comparison` to `INFOGRAPHIC_PRESETS` + `PRESET_ITEM_LIMITS`. New optional blocks only where a preset needs them: `columns` (comparison: 2 sides with points), `stages` (lesson-stages: teacherActivity / learnerActivity), `quote`.
+2. `infographic-spec.util.ts` (`normalizeInfographicSpec`): clip `imagePrompt` to 300 chars, force-append "no text, no letters, no numbers, no labels, no watermark", reject non-ASCII-heavy prompts (Arabic must never reach FLUX); accept `imageUrl` only if it starts with `/uploads/`. Old docs (no new fields) stay valid.
+3. `skills/infographic.ts`: add a short pedagogy step (key concepts, one idea per block, age vocabulary); schema enum = the 6 built presets; per block `wantsImage` + `imagePrompt` (English, scene only, Kids style block from PROMPT-SETTINGS.md §2 is added by the SERVER, not the model). Keep the prompt short.
+4. Spec tests: new fields clipped/sanitized, bad imageUrl dropped, old spec still loads, new presets' item limits.
+
+### Phase B: renderer refactor (no visual change)
+5. Extract `SpecCardComponent` (one card: image if `imageUrl`, else icon; badge; title; text; "illustrate" button slot). Used by every preset.
+6. Split `infographic-spec.ts` (218 lines, one `@switch`) into a thin shell (header, theme tokens, remember strip, footer) + one component per preset: `preset-hero-cards`, `preset-cycle`, `preset-timeline`. Same output as today.
+
+### Phase C: 3 new presets (design offline, then code)
+7. Design each with the offline preset prompt + frontend-design / ui-ux-pro-max skills, matching DESIGN.md + the Kids tokens. ASCII drafts are in the chat of 2026-10-08.
+   - `central-picture` (family poster): central image + caption, side cards, role grid, icon row, quote bubble.
+   - `lesson-stages` (أسماء الإشارة poster): numbered stages with teacher | learner columns, rule table, exercise lines, "ماذا تعلمت؟".
+   - `comparison`: two columns (A vs B) with image + points, common-points strip.
+8. Code each as a preset component reusing `SpecCardComponent`; add to the studio's composition control (6 + Auto).
+
+### Phase D: on-demand card images
+9. Button "illustrate" on each card and hero (screen only, `no-print`), shown when the block has an `imagePrompt`.
+10. Click → `POST /api/ai/generate-illustration` with `promptText = imagePrompt`, `style` = theme style block, `seed` = fixed per doc (same look across cards), `grade`, `subject`. Add a `raw: true` flag so the route skips the second LLM rewrite (`buildImagePrompt`) when the prompt is already an English scene.
+11. Write the returned `imageUrl` into the block, update the doc in place, re-save with the SAME id (owner only). Loading state on the card; icon stays on error.
+12. Fix audit #19 first: regenerate must update the same doc id, not create a new library card each time.
+
+### Phase E: verify + ship
+13. Build + lint + tests once. Owner runs 5 real generations across the 6 presets and tries the image button on 3 cards. Then deploy.
+
+### Order and size (rough, unverified)
+A (small) → B (small) → D (medium) → C (largest: 3 designs) → E. D before C so the image button is proven on the 3 existing presets first.
+
+### Not doing
+Runtime preset generation, x/y or sizes in JSON, generic component engine, images on the jodhadha, 3D style as default.
