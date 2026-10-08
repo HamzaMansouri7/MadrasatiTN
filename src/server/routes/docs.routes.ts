@@ -173,7 +173,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       };
       const doc = isSeries
         ? { ...common, bible: body['bible'], scenes: body['scenes'] }
-        : { ...common, templateId: str(body['templateId'], 60) || 'official-lesson-plan', values: body['values'] ?? {} };
+        : { ...common, templateId: str(body['templateId'], 60) || 'lesson-plan-official', values: body['values'] ?? {} };
       writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
 
       const entry = {

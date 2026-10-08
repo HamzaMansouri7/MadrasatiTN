@@ -9,11 +9,30 @@ export type SlotKind =
   | 'text'
   | 'reflection-lines';
 
+/** Where a slot sits on the A4 sheet. */
+export type SlotZone = 'strip' | 'side' | 'sidePair' | 'main' | 'half' | 'full';
+
+/** How a `list` slot is drawn. */
+export type SlotVariant = 'checks' | 'bullets' | 'chips' | 'compact';
+
+export interface SlotRow {
+  labelFr: string;
+  labelAr: string;
+  valueKey: string;
+  color?: string;
+}
+
 export interface InfographicSlot {
   id: string;
   kind: SlotKind;
   titleFr: string;
   titleAr: string;
+  zone: SlotZone;
+  /** Key in `InfographicDoc.values` holding this slot's data (list, timeline-stages, reflection-lines). */
+  valueKey?: string;
+  /** `table` slots: one labelled row per value key. */
+  rows?: SlotRow[];
+  variant?: SlotVariant;
   count?: number;
   maxChars?: number;
   icon?: string;
@@ -22,6 +41,7 @@ export interface InfographicSlot {
 
 export interface InfographicTemplate {
   id: string;
+  schemaVersion: number;
   nameFr: string;
   nameAr: string;
   page: 'A4-portrait' | 'A4-landscape';

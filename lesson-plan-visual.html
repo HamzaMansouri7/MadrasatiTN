@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خطة الدرس / الجذاذة التربوية — الحال وأنواعه</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Noto+Kufi+Arabic:wght@600;700;800;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      background-color: #E2E8F0;
+      font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+      color: #0F172A;
+      direction: rtl;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 12px 0;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background-color: #FFFFFF;
+      padding: 5mm 6mm 4mm 6mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.15);
+      position: relative;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        width: 210mm;
+        height: 297mm;
+        padding: 5mm 6mm 4mm 6mm;
+      }
+    }
+
+    /* Typography */
+    .font-display {
+      font-family: 'Noto Kufi Arabic', 'Cairo', sans-serif;
+    }
+
+    /* 1. Header / Cartouche */
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 3px;
+    }
+
+    .header-ill-left, .header-ill-right {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-center {
+      flex-grow: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .main-title-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .main-title {
+      font-family: 'Noto Kufi Arabic', 'Cairo', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #143D59;
+      letter-spacing: -0.5px;
+    }
+
+    .calligraphy-seal {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1.5px solid #143D59;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Amiri', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #143D59;
+      background: #F8FAFC;
+    }
+
+    .lesson-banner-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .lesson-banner {
+      background-color: #166560;
+      color: #FFFFFF;
+      font-family: 'Noto Kufi Arabic', 'Cairo', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 2px 28px;
+      border-radius: 20px;
+      display: inline-block;
+      box-shadow: 0 2px 5px rgba(22, 101, 96, 0.25);
+    }
+
+    /* 2. Info Grid Bar */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1.5px solid #3B82F6;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 4px;
+      table-layout: fixed;
+    }
+
+    .info-table th {
+      background-color: #F1F5F9;
+      color: #1E293B;
+      font-size: 8px;
+      font-weight: 800;
+      padding: 3px 2px;
+      text-align: center;
+      border: 1px solid #CBD5E1;
+      border-top: none;
+    }
+
+    .info-table th .th-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+    }
+
+    .info-table td {
+      background-color: #FFFFFF;
+      color: #0F172A;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2.5px 2px;
+      text-align: center;
+      border: 1px solid #CBD5E1;
+      border-bottom: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* 3. Main Body - 2 Columns */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    /* Right Column: سيرورة التدريس */
+    .stages-column {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    .column-header-bar {
+      background-color: #143D59;
+      color: #FFFFFF;
+      border-radius: 20px;
+      padding: 2.5px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .column-header-bar h2 {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .stages-timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    /* Vertical dotted connecting line */
+    .stages-timeline::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      bottom: 15px;
+      right: 172px; /* aligns between badge and content */
+      width: 2px;
+      background: #CBD5E1;
+      z-index: 0;
+    }
+
+    .stage-item {
+      position: relative;
+      background-color: #FFFFFF;
+      border: 1.2px solid #E2E8F0;
+      border-radius: 9px;
+      padding: 3.5px 6px;
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 6px;
+      align-items: center;
+      z-index: 1;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .stage-ill-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stage-main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5px;
+    }
+
+    .stage-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+      border-bottom: 1px dashed #E2E8F0;
+      padding-bottom: 1.5px;
+    }
+
+    .stage-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .stage-num-badge {
+      width: 20px;
+      height: 18px;
+      border-radius: 4px;
+      color: #FFFFFF;
+      font-size: 9px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stage-name-text {
+      font-size: 9.5px;
+      font-weight: 800;
+      color: #143D59;
+    }
+
+    .duration-tag {
+      font-size: 8px;
+      font-weight: 700;
+      color: #0F172A;
+      display: flex;
+      align-items: center;
+      gap: 2.5px;
+      background: #F1F5F9;
+      padding: 1px 5px;
+      border-radius: 10px;
+    }
+
+    .stage-body-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      padding-top: 1px;
+    }
+
+    .stage-body-bullets li {
+      font-size: 7.2px;
+      line-height: 1.25;
+      color: #334155;
+      position: relative;
+      padding-right: 6px;
+    }
+
+    .stage-body-bullets li::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: #0F172A;
+      font-weight: 900;
+    }
+
+    .stage-body-bullets .sub-bullet {
+      padding-right: 12px;
+      color: #475569;
+    }
+
+    .stage-body-bullets .sub-bullet::before {
+      content: "▫";
+      font-size: 6px;
+      right: 5px;
+      color: #64748B;
+    }
+
+    /* Left Column: Blocks */
+    .blocks-column {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    .block-card {
+      background-color: #FFFFFF;
+      border: 1.2px solid #E2E8F0;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .block-head-pill {
+      padding: 2.5px 8px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .block-head-title {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .block-head-icon {
+      width: 15px;
+      height: 15px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .block-inner-content {
+      padding: 3px 6px;
+      display: grid;
+      grid-template-columns: 1fr 34px;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .block-bullets-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .block-bullets-list li {
+      font-size: 7.2px;
+      line-height: 1.25;
+      color: #334155;
+      position: relative;
+      padding-right: 6px;
+    }
+
+    .block-bullets-list li::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: #0F172A;
+      font-weight: 900;
+    }
+
+    /* Assessment block sub columns */
+    .two-subcols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      padding: 3px 5px;
+    }
+
+    .subcol-box {
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .subcol-pill {
+      background-color: #E65100;
+      color: #FFFFFF;
+      font-size: 7.5px;
+      font-weight: 800;
+      text-align: center;
+      padding: 1.5px 4px;
+      border-radius: 10px;
+    }
+
+    .subcol-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .subcol-list li {
+      font-size: 6.8px;
+      line-height: 1.25;
+      color: #334155;
+      position: relative;
+      padding-right: 7px;
+    }
+
+    .subcol-list li.check-item::before {
+      content: "✔";
+      position: absolute;
+      right: 0;
+      color: #16A34A;
+      font-size: 6.5px;
+      font-weight: bold;
+    }
+
+    .subcol-list li.dot-item::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: #0F172A;
+      font-weight: bold;
+    }
+
+    /* Differentiated Learning Subcols */
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      padding: 3px 5px;
+    }
+
+    .diff-box {
+      border: 1px solid #E2E8F0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .diff-pill-orange {
+      background-color: #F97316;
+      color: #FFFFFF;
+      font-size: 7px;
+      font-weight: 800;
+      text-align: center;
+      padding: 1.5px;
+    }
+
+    .diff-pill-blue {
+      background-color: #0284C7;
+      color: #FFFFFF;
+      font-size: 7px;
+      font-weight: 800;
+      text-align: center;
+      padding: 1.5px;
+    }
+
+    .diff-body {
+      padding: 2.5px 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2px;
+    }
+
+    /* 4. Row of 3 */
+    .row-three {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+      margin-bottom: 4px;
+    }
+
+    .card-three {
+      background-color: #FFFFFF;
+      border: 1.2px solid #E2E8F0;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-three-head {
+      color: #FFFFFF;
+      padding: 2.5px 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-three-head span {
+      font-size: 8.5px;
+      font-weight: 800;
+    }
+
+    .card-three-body {
+      padding: 3.5px 5px;
+      font-size: 7px;
+      line-height: 1.25;
+      color: #334155;
+      flex-grow: 1;
+    }
+
+    .homework-layout {
+      display: grid;
+      grid-template-columns: 1fr 28px;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .integration-subcols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
+
+    .integ-col-title {
+      font-size: 6.8px;
+      font-weight: 800;
+      color: #143D59;
+      margin-bottom: 1.5px;
+    }
+
+    /* 5. Teacher Reflection */
+    .reflection-bar-box {
+      background-color: #FFFFFF;
+      border: 1.2px solid #E2E8F0;
+      border-radius: 9px;
+      padding: 3px 5px;
+      margin-bottom: 4px;
+    }
+
+    .reflection-head-banner {
+      background-color: #143D59;
+      color: #FFFFFF;
+      border-radius: 12px;
+      padding: 2px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+
+    .reflection-head-banner span {
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .reflection-five-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 4px;
+    }
+
+    .reflection-box-item {
+      border: 1px solid #CBD5E1;
+      border-radius: 6px;
+      padding: 3px 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background-color: #FAFAFA;
+      min-height: 38px;
+    }
+
+    .ref-item-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 3px;
+    }
+
+    .ref-item-badge {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      color: #FFFFFF;
+      font-size: 7.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ref-item-question {
+      font-size: 6.8px;
+      font-weight: 700;
+      color: #1E293B;
+      line-height: 1.2;
+    }
+
+    .ref-dotted-line {
+      border-bottom: 1px dotted #94A3B8;
+      height: 5px;
+      width: 100%;
+    }
+
+    /* 6. Teacher Info Footer Strip */
+    .teacher-footer-strip {
+      display: grid;
+      grid-template-columns: 1.2fr 1.4fr 1.2fr;
+      gap: 5px;
+      margin-bottom: 3px;
+    }
+
+    .teacher-pill {
+      background-color: #FFFFFF;
+      border: 1.2px solid #CBD5E1;
+      border-radius: 16px;
+      padding: 2px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 8px;
+      font-weight: 700;
+      color: #1E293B;
+    }
+
+    /* 7. Social Ribbon Footer */
+    .social-ribbon {
+      background-color: #143D59;
+      color: #FFFFFF;
+      border-radius: 6px;
+      padding: 2.5px 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .social-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 7.5px;
+      font-weight: 800;
+    }
+
+    .social-badges-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 4px;
+      background: #FFFFFF;
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 6.8px;
+      font-weight: 700;
+      color: #0F172A;
+      text-decoration: none;
+    }
+
+    /* SVGs & Figures */
+    figure {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    svg {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="page">
+
+    <!-- 1. Header & Cartouche -->
+    <header class="header-section">
+      <!-- Left Illustration: Books + Inkwell + Pencil Pot -->
+      <div class="header-ill-left">
+        <figure data-illustration="header-books-ink">
+          <svg width="68" height="52" viewBox="0 0 68 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Books stack -->
+            <rect x="22" y="38" width="42" height="8" rx="2" fill="#2563EB" stroke="#1E293B" stroke-width="1.2"/>
+            <rect x="24" y="30" width="38" height="8" rx="2" fill="#16A34A" stroke="#1E293B" stroke-width="1.2"/>
+            <rect x="25" y="22" width="35" height="8" rx="2" fill="#DC2626" stroke="#1E293B" stroke-width="1.2"/>
+            <path d="M22 42H64M24 34H62M25 26H60" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="2 2"/>
+            <!-- Inkpot & Quill -->
+            <rect x="52" y="34" width="12" height="12" rx="2" fill="#0F172A"/>
+            <circle cx="58" cy="34" r="3" fill="#94A3B8"/>
+            <path d="M58 34L64 12C64 12 60 14 58 20L58 34Z" fill="#F8FAFC" stroke="#0F172A" stroke-width="1"/>
+            <!-- Pencil Cup on left -->
+            <rect x="4" y="24" width="16" height="22" rx="3" fill="#1E40AF" stroke="#0F172A" stroke-width="1.2"/>
+            <path d="M8 24L10 6L12 24" stroke="#EAB308" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M14 24L16 10L18 24" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M5 24L7 12L9 24" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/>
+            <!-- Pattern on cup -->
+            <circle cx="12" cy="34" r="3" fill="#FFFFFF" fill-opacity="0.6"/>
+          </svg>
+        </figure>
+      </div>
+
+      <!-- Center Title -->
+      <div class="header-center">
+        <div class="main-title-wrap">
+          <h1 class="main-title">خطة الدرس / الجذاذة التربوية</h1>
+          <div class="calligraphy-seal">ف</div>
+        </div>
+        <div class="lesson-banner-wrap">
+          <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 12C20 10 14 5 2 2M26 12C22 8 18 2 12 2M20 10C16 6 10 7 6 6" stroke="#166560" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <div class="lesson-banner">الحال وأنواعه</div>
+          <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
+            <path d="M26 12C20 10 14 5 2 2M26 12C22 8 18 2 12 2M20 10C16 6 10 7 6 6" stroke="#166560" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Right Illustration: Open Book + Quill -->
+      <div class="header-ill-right">
+        <figure data-illustration="header-open-book">
+          <svg width="68" height="52" viewBox="0 0 68 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Open Book -->
+            <path d="M34 40C22 36 10 38 4 44V18C10 12 22 14 34 18C46 14 58 12 64 18V44C58 38 46 36 34 40Z" fill="#FFFBEB" stroke="#78350F" stroke-width="1.5"/>
+            <!-- Book Cover Base -->
+            <path d="M4 44C10 38 22 36 34 40C46 36 58 38 64 44L65 47C58 41 46 39 34 43C22 39 10 41 3 47L4 44Z" fill="#B45309"/>
+            <!-- Text Lines -->
+            <path d="M10 23C16 20 24 21 28 23M10 28C16 25 24 26 28 28M10 33C16 30 24 31 28 33" stroke="#CBD5E1" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M40 23C46 21 54 20 60 23M40 28C46 26 54 25 60 28M40 33C46 31 54 30 60 33" stroke="#CBD5E1" stroke-width="1.2" stroke-linecap="round"/>
+            <!-- Feather / Quill -->
+            <path d="M60 38C62 26 56 12 48 4C47 14 52 26 56 36" fill="#D97706" stroke="#78350F" stroke-width="1"/>
+            <path d="M54 20L48 4" stroke="#78350F" stroke-width="1.2"/>
+          </svg>
+        </figure>
+      </div>
+    </header>
+
+    <!-- 2. Info Strip Table -->
+    <table class="info-table" aria-label="بيانات الدرس">
+      <thead>
+        <tr>
+          <th style="width: 15%;">
+            <div class="th-content">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+              <span>المستوى</span>
+            </div>
+          </th>
+          <th style="width: 12%;">
+            <div class="th-content">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span>القسم</span>
+            </div>
+          </th>
+          <th style="width: 16%;">
+            <div class="th-content">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span>المادة</span>
+            </div>
+          </th>
+          <th style="width: 11%;">
+            <div class="th-content">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <span>الأسبوع</span>
+            </div>
+          </th>
+          <th style="width: 15%;">
+            <div class="th-content">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <span>التاريخ</span>
+            </div>
+          </th>
+          <th style="width: 13%;">
+            <div class="th-content">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>المدة</span>
+            </div>
+          </th>
+          <th style="width: 18%;">
+            <div class="th-content">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>عنوان الدرس</span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>الأولى ثانوي</td>
+          <td>1 أدبي 3</td>
+          <td>اللغة العربية</td>
+          <td>الأول</td>
+          <td style="color: #64748B;">إلى</td>
+          <td>ساعة واحدة</td>
+          <td style="font-weight: 800; color: #143D59;">الحال وأنواعه</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 3. Left-Right Body (2 Columns) -->
+    <div class="main-grid">
+
+      <!-- Right Column: سيرورة التدريس -->
+      <section class="stages-column">
+        <div class="column-header-bar">
+          <h2>سيرورة التدريس</h2>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+        </div>
+
+        <div class="stages-timeline">
+
+          <!-- Stage 01 -->
+          <article class="stage-item">
+            <div class="stage-ill-box">
+              <figure data-illustration="teacher-at-board">
+                <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Whiteboard on easel -->
+                  <rect x="14" y="6" width="32" height="24" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width="1.2"/>
+                  <path d="M18 12H34M18 16H28" stroke="#94A3B8" stroke-width="1" stroke-linecap="round"/>
+                  <!-- Easel legs -->
+                  <path d="M22 30L16 42M38 30L44 42" stroke="#64748B" stroke-width="1.2"/>
+                  <path d="M12 30H48" stroke="#94A3B8" stroke-width="1"/>
+                  <!-- Teacher figure -->
+                  <circle cx="8" cy="14" r="4.5" fill="#FDBA74"/>
+                  <path d="M4 12C4 10 6 8 9 8C11 8 13 9 13 12" fill="#1E293B"/>
+                  <rect x="4" y="19" width="8" height="15" rx="2" fill="#1E40AF"/>
+                  <!-- Arm pointing to board -->
+                  <path d="M10 22L20 14" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 34V42M11 34V42" stroke="#1E293B" stroke-width="2"/>
+                </svg>
+              </figure>
+            </div>
+            <div class="stage-main-content">
+              <div class="stage-top-row">
+                <div class="stage-title-wrap">
+                  <div class="stage-num-badge" style="background-color: #2563EB;">01</div>
+                  <span class="stage-name-text">التمهيد</span>
+                </div>
+                <div class="duration-tag">
+                  <span>10 دقائق</span>
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+              </div>
+              <ul class="stage-body-bullets">
+                <li>عرض جملة على السبورة مثل: <strong style="color: #DC2626;">جاء الطالبُ مسرعًا.</strong></li>
+                <li>طرح أسئلة تمهيدية:</li>
+                <li class="sub-bullet">ما الكلمة التي تُخبر عن حالة الطالب؟</li>
+                <li class="sub-bullet">كيف جاء الطالب؟</li>
+                <li class="sub-bullet">ما نوع الكلمة (اسم، فعل، حرف)؟</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 02 -->
+          <article class="stage-item">
+            <div class="stage-ill-box">
+              <figure data-illustration="light-bulb-books">
+                <svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Books stack -->
+                  <rect x="6" y="34" width="34" height="6" rx="1.5" fill="#16A34A" stroke="#0F172A" stroke-width="1"/>
+                  <rect x="8" y="27" width="30" height="6" rx="1.5" fill="#DC2626" stroke="#0F172A" stroke-width="1"/>
+                  <rect x="10" y="20" width="26" height="6" rx="1.5" fill="#2563EB" stroke="#0F172A" stroke-width="1"/>
+                  <!-- Lightbulb -->
+                  <circle cx="23" cy="11" r="7" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+                  <path d="M20 17H26V19C26 20 24.5 21 23 21C21.5 21 20 20 20 19V17Z" fill="#78350F"/>
+                  <!-- Glow rays -->
+                  <path d="M23 1V3M14 4L16 6M32 4L30 6M11 11H13M33 11H35" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+              </figure>
+            </div>
+            <div class="stage-main-content">
+              <div class="stage-top-row">
+                <div class="stage-title-wrap">
+                  <div class="stage-num-badge" style="background-color: #16A34A;">02</div>
+                  <span class="stage-name-text">بناء التعلمات</span>
+                </div>
+                <div class="duration-tag">
+                  <span>20 دقيقة</span>
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+              </div>
+              <ul class="stage-body-bullets">
+                <li>تعريف الحال: اسم نكرة يبيّن هيئة عيّن صاحبه مع وقوع الفعل.</li>
+                <li>أركان الجملة: فعل + فاعل + حال.</li>
+                <li>أنواع الحال مع الشرح والأمثلة:</li>
+                <li class="sub-bullet">مفردة (جاء الولدُ ضاحكًا).</li>
+                <li class="sub-bullet">جملة فعلية (أقبلتْ وهي تبتسمُ).</li>
+                <li class="sub-bullet">جملة اسمية (دخل المعلّمُ والطلابُ في الصفّ).</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 03 -->
+          <article class="stage-item">
+            <div class="stage-ill-box">
+              <figure data-illustration="two-kids-writing">
+                <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Boy (left in svg) -->
+                  <circle cx="14" cy="13" r="5" fill="#FDBA74"/>
+                  <path d="M9 12C9 8 12 7 16 7C18 7 19 9 19 12" fill="#78350F"/>
+                  <rect x="9" y="19" width="10" height="12" rx="2" fill="#16A34A"/>
+                  <!-- Girl (right in svg) -->
+                  <circle cx="34" cy="13" r="5" fill="#FDBA74"/>
+                  <path d="M28 13C28 7 34 6 39 8C40 12 40 16 40 18" fill="#78350F"/>
+                  <rect x="29" y="19" width="10" height="12" rx="2" fill="#3B82F6"/>
+                  <!-- Desk -->
+                  <rect x="4" y="28" width="40" height="4" rx="1" fill="#D97706"/>
+                  <!-- Papers / notebooks -->
+                  <rect x="10" y="25" width="8" height="3" fill="#FFFFFF" stroke="#0F172A" stroke-width="0.8"/>
+                  <rect x="30" y="25" width="8" height="3" fill="#FFFFFF" stroke="#0F172A" stroke-width="0.8"/>
+                  <!-- Table legs -->
+                  <path d="M8 32V42M40 32V42" stroke="#78350F" stroke-width="1.5"/>
+                </svg>
+              </figure>
+            </div>
+            <div class="stage-main-content">
+              <div class="stage-top-row">
+                <div class="stage-title-wrap">
+                  <div class="stage-num-badge" style="background-color: #EA580C;">03</div>
+                  <span class="stage-name-text">التطبيق والنشاط</span>
+                </div>
+                <div class="duration-tag">
+                  <span>15 دقيقة</span>
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+              </div>
+              <ul class="stage-body-bullets">
+                <li>نشاط فردي: تحديد الحال في جمل معطاة.</li>
+                <li>نشاط ثنائي: تحويل الجمل لتتضمن حالاً مناسبة.</li>
+                <li>عرض بعض الإجابات ومناقشتها جماعيًا.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 04 -->
+          <article class="stage-item">
+            <div class="stage-ill-box">
+              <figure data-illustration="clipboard">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Clipboard -->
+                  <rect x="8" y="7" width="26" height="33" rx="3" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.2"/>
+                  <rect x="15" y="4" width="12" height="5" rx="1.5" fill="#94A3B8" stroke="#1E293B" stroke-width="1"/>
+                  <!-- Checkbox items -->
+                  <rect x="12" y="13" width="5" height="5" rx="1" stroke="#3B82F6" stroke-width="1"/>
+                  <path d="M13 15.5L14.5 17L17 13.5" stroke="#16A34A" stroke-width="1.2"/>
+                  <path d="M20 16H30" stroke="#64748B" stroke-width="1.2"/>
+                  <rect x="12" y="21" width="5" height="5" rx="1" stroke="#3B82F6" stroke-width="1"/>
+                  <path d="M13 23.5L14.5 25L17 21.5" stroke="#16A34A" stroke-width="1.2"/>
+                  <path d="M20 24H30" stroke="#64748B" stroke-width="1.2"/>
+                  <rect x="12" y="29" width="5" height="5" rx="1" stroke="#3B82F6" stroke-width="1"/>
+                  <path d="M13 31.5L14.5 33L17 29.5" stroke="#16A34A" stroke-width="1.2"/>
+                  <path d="M20 32H28" stroke="#64748B" stroke-width="1.2"/>
+                  <!-- Pencil -->
+                  <path d="M36 22L32 38L28 36L32 20L36 22Z" fill="#F97316" stroke="#1E293B" stroke-width="0.8"/>
+                </svg>
+              </figure>
+            </div>
+            <div class="stage-main-content">
+              <div class="stage-top-row">
+                <div class="stage-title-wrap">
+                  <div class="stage-num-badge" style="background-color: #6366F1;">04</div>
+                  <span class="stage-name-text">التقويم</span>
+                </div>
+                <div class="duration-tag">
+                  <span>10 دقائق</span>
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+              </div>
+              <ul class="stage-body-bullets">
+                <li>تقويم تكويني أثناء النشاط من خلال:</li>
+                <li class="sub-bullet">الأسئلة الشفوية.</li>
+                <li class="sub-bullet">متابعة أداء المتعلمين.</li>
+                <li class="sub-bullet">بطاقة ملاحظة قصيرة.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 05 -->
+          <article class="stage-item">
+            <div class="stage-ill-box">
+              <figure data-illustration="target-stand">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Stand base -->
+                  <path d="M10 40H34M22 34V40" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round"/>
+                  <!-- Target board -->
+                  <circle cx="22" cy="18" r="14" fill="#DC2626"/>
+                  <circle cx="22" cy="18" r="10" fill="#FFFFFF"/>
+                  <circle cx="22" cy="18" r="6" fill="#DC2626"/>
+                  <circle cx="22" cy="18" r="2.5" fill="#FFFFFF"/>
+                  <!-- Arrow hitting center -->
+                  <path d="M36 4L22 18" stroke="#1E293B" stroke-width="1.5"/>
+                  <path d="M38 2L34 3L37 6L38 2Z" fill="#FBBF24"/>
+                </svg>
+              </figure>
+            </div>
+            <div class="stage-main-content">
+              <div class="stage-top-row">
+                <div class="stage-title-wrap">
+                  <div class="stage-num-badge" style="background-color: #0284C7;">05</div>
+                  <span class="stage-name-text">الخلاصة</span>
+                </div>
+                <div class="duration-tag">
+                  <span>05 دقائق</span>
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+              </div>
+              <ul class="stage-body-bullets">
+                <li>تلخيص أهم ما تعلمناه عن الحال وأنواعه.</li>
+                <li>التأكيد على النقاط الأساسية.</li>
+                <li>فتح باب الأسئلة والاستفسارات.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Left Column: Coloured Blocks -->
+      <section class="blocks-column">
+
+        <!-- Block 1: الأهداف التعليمية -->
+        <article class="block-card">
+          <div class="block-head-pill" style="background-color: #147A82;">
+            <div class="block-head-title">الأهداف التعليمية</div>
+            <div class="block-head-icon">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+          </div>
+          <div class="block-inner-content">
+            <ul class="block-bullets-list">
+              <li>أن يتعرف المتعلم مفهوم الحال.</li>
+              <li>أن يميّز بين أنواع الحال (مفردة، جملة فعلية، جملة اسمية).</li>
+              <li>أن يحدد الحال في جمل معطاة.</li>
+            </ul>
+            <figure data-illustration="target">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="14" fill="#DC2626"/>
+                <circle cx="16" cy="16" r="10" fill="#FFFFFF"/>
+                <circle cx="16" cy="16" r="6" fill="#DC2626"/>
+                <circle cx="16" cy="16" r="2.5" fill="#FFFFFF"/>
+                <path d="M29 3L16 16" stroke="#1E293B" stroke-width="1.5"/>
+              </svg>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Block 2: نواتج التعلم -->
+        <article class="block-card">
+          <div class="block-head-pill" style="background-color: #558B2F;">
+            <div class="block-head-title">نواتج التعلم</div>
+            <div class="block-head-icon">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><path d="M6 9H4a2 2 0 0 1-2-2V5h4M18 9h2a2 2 0 0 0 2-2V5h-4"/><path d="M4 5h16v7a8 8 0 0 1-16 0V5z"/><path d="M12 17v4M8 21h8"/></svg>
+            </div>
+          </div>
+          <div class="block-inner-content">
+            <ul class="block-bullets-list">
+              <li>يعرف الحال تعريفاً صحيحاً.</li>
+              <li>يحدد أنواع الحال مع تقديم أمثلة مناسبة.</li>
+              <li>يوظف الحال توظيفاً صحيحاً في جمل من إنشائه.</li>
+            </ul>
+            <figure data-illustration="trophy">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 6H24V14C24 18.4 20.4 22 16 22C11.6 22 8 18.4 8 14V6Z" fill="#F59E0B" stroke="#B45309" stroke-width="1"/>
+                <path d="M8 8H4C3 8 2 9 2 10V11C2 13 3.5 15 6 15H8" stroke="#B45309" stroke-width="1"/>
+                <path d="M24 8H28C29 8 30 9 30 10V11C30 13 28.5 15 26 15H24" stroke="#B45309" stroke-width="1"/>
+                <path d="M16 22V27M11 27H21" stroke="#B45309" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="16" cy="13" r="2.5" fill="#FEF3C7"/>
+              </svg>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Block 3: الوسائل التعليمية -->
+        <article class="block-card">
+          <div class="block-head-pill" style="background-color: #1E6091;">
+            <div class="block-head-title">الوسائل التعليمية</div>
+            <div class="block-head-icon">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+          </div>
+          <div class="block-inner-content">
+            <ul class="block-bullets-list">
+              <li>السبورة والكتابة الملونة.</li>
+              <li>بطاقات تعليمية.</li>
+              <li>عرض رقمي (PowerPoint).</li>
+            </ul>
+            <figure data-illustration="pencil-cup">
+              <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Cup -->
+                <rect x="6" y="14" width="18" height="16" rx="2" fill="#0284C7" stroke="#0369A1" stroke-width="1"/>
+                <!-- Pens -->
+                <path d="M10 14L12 4L14 14" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+                <path d="M15 14L16 2L18 14" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 14L22 6L23 14" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Block 4: التقويم -->
+        <article class="block-card">
+          <div class="block-head-pill" style="background-color: #D97706;">
+            <div class="block-head-title">التقويم</div>
+            <div class="block-head-icon">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+            </div>
+          </div>
+          <div class="two-subcols">
+            <!-- الطرق -->
+            <div class="subcol-box">
+              <div class="subcol-pill">طرق التقويم</div>
+              <ul class="subcol-list">
+                <li class="dot-item">ملاحظة الأداء.</li>
+                <li class="dot-item">أسئلة شفهية.</li>
+                <li class="dot-item">تمارين كتابية قصيرة.</li>
+              </ul>
+            </div>
+            <!-- المعايير -->
+            <div class="subcol-box">
+              <div class="subcol-pill">معايير التقويم</div>
+              <ul class="subcol-list">
+                <li class="check-item">صحة تحديد الحال.</li>
+                <li class="check-item">تمييز نوع الحال.</li>
+                <li class="check-item">سلامة التوظيف في الجملة.</li>
+                <li class="check-item">المشاركة والنشاط.</li>
+                <li class="check-item">الوضوح والتنظيم.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Block 5: التعلم المتمايز -->
+        <article class="block-card">
+          <div class="block-head-pill" style="background-color: #5B507A;">
+            <div class="block-head-title">التعلم المتمايز</div>
+            <div class="block-head-icon">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+          </div>
+          <div class="diff-grid">
+            <!-- إثراء المتقدمين -->
+            <div class="diff-box">
+              <div class="diff-pill-orange">إثراء المتعلمين المتقدمين</div>
+              <div class="diff-body">
+                <ul class="block-bullets-list" style="flex-grow: 1;">
+                  <li>تحديات لغوية.</li>
+                  <li>توسيع الأمثلة.</li>
+                  <li>كتابة جمل إبداعية بحالات مختلفة.</li>
+                </ul>
+                <figure data-illustration="mini-trophy">
+                  <svg width="18" height="22" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><path d="M6 9H4a2 2 0 0 1-2-2V5h4M18 9h2a2 2 0 0 0 2-2V5h-4"/><path d="M4 5h16v7a8 8 0 0 1-16 0V5z"/><path d="M12 17v4M8 21h8"/></svg>
+                </figure>
+              </div>
+            </div>
+            <!-- دعم المتعلمين -->
+            <div class="diff-box">
+              <div class="diff-pill-blue">دعم المتعلمين</div>
+              <div class="diff-body">
+                <ul class="block-bullets-list" style="flex-grow: 1;">
+                  <li>جمل مبسطة.</li>
+                  <li>بطاقات مصوّرة.</li>
+                  <li>عمل ثنائي مع توجيه.</li>
+                </ul>
+                <figure data-illustration="hands-helping">
+                  <svg width="18" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+
+    <!-- 4. Row of 3 -->
+    <section class="row-three" aria-label="الواجب والقيم والتكامل">
+
+      <!-- Card 1: التكامل -->
+      <div class="card-three">
+        <div class="card-three-head" style="background-color: #1E6091;">
+          <span>التكامل</span>
+          <figure data-illustration="palette">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="#FFF"/><circle cx="17.5" cy="10.5" r=".5" fill="#FFF"/><circle cx="8.5" cy="7.5" r=".5" fill="#FFF"/><circle cx="6.5" cy="12.5" r=".5" fill="#FFF"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+          </figure>
+        </div>
+        <div class="card-three-body">
+          <div class="integration-subcols">
+            <div>
+              <div class="integ-col-title">صلة التعلم بالحياة اليومية</div>
+              <ul class="block-bullets-list">
+                <li>الوصف الدقيق للأحداث.</li>
+                <li>تحسين التعبير الشفهي والكتابي.</li>
+                <li>استخدام الحال في المحادثات اليومية.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="integ-col-title">التكامل مع المواد الأخرى</div>
+              <ul class="block-bullets-list">
+                <li><strong>التاريخ:</strong> وصف الأحداث.</li>
+                <li><strong>التربية الإسلامية:</strong> وصف المواقف.</li>
+                <li><strong>التربية المدنية:</strong> قيم وسلوكيات.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: القيم المستهدفة -->
+      <div class="card-three">
+        <div class="card-three-head" style="background-color: #147A82;">
+          <span>القيم المستهدفة</span>
+          <figure data-illustration="heart-hands">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </figure>
+        </div>
+        <div class="card-three-body">
+          <ul class="block-bullets-list">
+            <li>احترام المتعلمين وآرائهم.</li>
+            <li>التعاون والعمل الجماعي.</li>
+            <li>الدقة والاهتمام باللغة العربية.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3: الواجب المنزلي -->
+      <div class="card-three">
+        <div class="card-three-head" style="background-color: #2E7D32;">
+          <span>الواجب المنزلي</span>
+          <figure data-illustration="home-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </figure>
+        </div>
+        <div class="card-three-body homework-layout">
+          <div>
+            اكتب فقرة قصيرة من 5 جمل تصف موقفًا شاهدته في المدرسة، مع توظيف الحال بأنواعه المختلفة.
+          </div>
+          <figure data-illustration="notebook-pen">
+            <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="18" height="24" rx="2" fill="#F8FAFC" stroke="#64748B" stroke-width="1"/>
+              <path d="M6 7H16M6 12H16M6 17H12" stroke="#94A3B8" stroke-width="1"/>
+              <path d="M22 10L14 26L12 25L20 9L22 10Z" fill="#F59E0B" stroke="#B45309" stroke-width="0.8"/>
+            </svg>
+          </figure>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 5. Teacher Reflection -->
+    <section class="reflection-bar-box" aria-label="تأمل الأستاذ">
+      <div class="reflection-head-banner">
+        <figure data-illustration="teacher-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" fill="#FFFFFF"/>
+            <circle cx="12" cy="8" r="4" fill="#FDBA74"/>
+            <path d="M8 7C8 5 10 4 12 4C14 4 16 5 16 7" stroke="#1E293B" stroke-width="1.5"/>
+            <!-- Glasses -->
+            <rect x="9.5" y="7" width="2" height="1.5" rx="0.5" stroke="#1E293B" stroke-width="0.8"/>
+            <rect x="12.5" y="7" width="2" height="1.5" rx="0.5" stroke="#1E293B" stroke-width="0.8"/>
+            <path d="M6 20C6 16 9 14 12 14C15 14 18 16 18 20" fill="#1E40AF"/>
+          </svg>
+        </figure>
+        <span>تأمل الأستاذ</span>
+      </div>
+
+      <div class="reflection-five-grid">
+        <!-- Box 01 -->
+        <div class="reflection-box-item">
+          <div class="ref-item-head">
+            <div class="ref-item-badge" style="background-color: #0284C7;">01</div>
+            <div class="ref-item-question">هل فهم المتعلمون المفاهيم الأساسية؟</div>
+          </div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+        </div>
+
+        <!-- Box 02 -->
+        <div class="reflection-box-item">
+          <div class="ref-item-head">
+            <div class="ref-item-badge" style="background-color: #16A34A;">02</div>
+            <div class="ref-item-question">هل تمكنوا من توظيف التعلمات؟</div>
+          </div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+        </div>
+
+        <!-- Box 03 -->
+        <div class="reflection-box-item">
+          <div class="ref-item-head">
+            <div class="ref-item-badge" style="background-color: #F59E0B;">03</div>
+            <div class="ref-item-question">هل شاركوا بفعالية واستقلالية؟</div>
+          </div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+        </div>
+
+        <!-- Box 04 -->
+        <div class="reflection-box-item">
+          <div class="ref-item-head">
+            <div class="ref-item-badge" style="background-color: #6366F1;">04</div>
+            <div class="ref-item-question">هل تحققت الأهداف ونواتج التعلم؟</div>
+          </div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+        </div>
+
+        <!-- Box 05 -->
+        <div class="reflection-box-item">
+          <div class="ref-item-head">
+            <div class="ref-item-badge" style="background-color: #0D9488;">05</div>
+            <div class="ref-item-question">ما التحسينات المطلوبة في الحصة القادمة؟</div>
+          </div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+          <div class="ref-dotted-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Teacher & School Info Strip -->
+    <footer class="teacher-footer-strip">
+      <div class="teacher-pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#143D59" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>الأستاذ: <strong>بوزيد وحو</strong></span>
+      </div>
+      <div class="teacher-pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#143D59" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 10v4M15 10v4"/></svg>
+        <span>المؤسسة: <strong>ثانوية أبي رأس الناصري</strong></span>
+      </div>
+      <div class="teacher-pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#143D59" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        <span>السنة الدراسية: <strong>2026-2027</strong></span>
+      </div>
+    </footer>
+
+    <!-- 7. Social Ribbon -->
+    <div class="social-ribbon">
+      <div class="social-title-row">
+        <span>☙</span>
+        <span>تابعنا على مواقع التواصل الاجتماعي</span>
+        <span>❧</span>
+      </div>
+      <div class="social-badges-row">
+        <!-- Facebook -->
+        <a class="social-link" href="#">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="#1877F2"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path d="M15 12h-2v7h-3v-7H8v-2.5h2V7.8C10 5.9 11.2 5 13 5c.9 0 1.6.1 1.9.1v2.3h-1.3c-.9 0-1.1.4-1.1 1.1V9.5h2.5L15 12z" fill="#FFF"/></svg>
+          <span>Facebook: @bouzid.daho.5</span>
+        </a>
+        <!-- TikTok -->
+        <a class="social-link" href="#">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="#000"><circle cx="12" cy="12" r="12" fill="#000"/><path d="M14.5 6c.5 1 1.5 1.8 2.5 2V10c-1 0-2-.5-2.5-1v4.5c0 2-1.5 3.5-3.5 3.5S7.5 15.5 7.5 13.5s1.5-3.5 3.5-3.5c.3 0 .5 0 .8.1V12c-.2 0-.5-.1-.8-.1-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8V6h1.7z" fill="#FFF"/></svg>
+          <span>TikTok: @AI.MAKER832</span>
+        </a>
+        <!-- YouTube -->
+        <a class="social-link" href="#">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="#FF0000"><circle cx="12" cy="12" r="12" fill="#FF0000"/><path d="M10 9l5 3-5 3V9z" fill="#FFF"/></svg>
+          <span>YouTube: @DZTech62</span>
+        </a>
+        <!-- Telegram -->
+        <a class="social-link" href="#">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="#229ED9"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path d="M7 12l8-4-2 7-3-2-1 2v-2l-2-1z" fill="#FFF"/></svg>
+          <span>Telegram: Prompt AI Master</span>
+        </a>
+        <!-- Etsy -->
+        <a class="social-link" href="#">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="#F1641E"><circle cx="12" cy="12" r="12" fill="#F1641E"/><text x="7" y="16" fill="#FFF" font-size="11" font-family="serif" font-weight="bold">E</text></svg>
+          <span>Etsy: CraftVibe Digitals</span>
+        </a>
+        <!-- Website -->
+        <a class="social-link" href="#">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="#0D9488"><circle cx="12" cy="12" r="12" fill="#0D9488"/><circle cx="12" cy="12" r="7" stroke="#FFF" stroke-width="1.2"/><path d="M5 12h14M12 5a10 10 0 0 1 0 14M12 5a10 10 0 0 0 0 14" stroke="#FFF" stroke-width="1"/></svg>
+          <span>DZTech: https://dztech.online/</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

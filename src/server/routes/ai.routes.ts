@@ -783,7 +783,7 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
     const now = new Date().toISOString();
     const doc = {
       id: randomUUID(),
-      templateId: 'official-lesson-plan',
+      templateId: 'lesson-plan-official',
       title: String((data as { topic?: string }).topic || safeTopic).slice(0, 200),
       grade: resolvedGrade,
       subject: resolvedSubject,
