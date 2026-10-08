@@ -80,6 +80,12 @@ export type DocCardAccent = 'blue' | 'green' | 'library';
               <span>{{ lang.tr('PDF', 'تحميل PDF') }}</span>
             </a>
           }
+          <a
+            [href]="'/solve?docId=' + course().id"
+            class="bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-2.5 py-1.5 rounded-[8px] text-xs flex items-center gap-1 shadow-xs transition-colors">
+            <span class="material-icons text-xs" aria-hidden="true">photo_camera</span>
+            <span>{{ lang.tr('Résoudre', 'حلّ') }}</span>
+          </a>
           <button
             type="button"
             (click)="print.emit(course())"

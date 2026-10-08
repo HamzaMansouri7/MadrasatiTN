@@ -6,12 +6,12 @@ import { AiStatusComponent, SourceInputComponent } from '@shared';
 export type CreateOutputType =
   | 'lesson-plan'
   | 'memo'
-  | 'summary'
   | 'exercises'
-  | 'exam'
-  | 'worksheet'
   | 'series'
-  | 'article';
+  | 'article'
+  | 'summary'
+  | 'exam'
+  | 'worksheet';
 
 export interface OutputCardOption {
   type: CreateOutputType;
@@ -53,22 +53,35 @@ export class CreateHubComponent implements OnInit {
       descAr: 'تخطيط رسمي كامل للدرس في صفحة A4 عمودية بـ 12 قسماً مع توقيت المراحل الخمس.',
       icon: 'view_timeline',
       accent: '#2D6A4F',
-      badgeFr: 'Nouveau',
-      badgeAr: 'جديد',
+      badgeFr: 'Pédagogique',
+      badgeAr: 'بيداغوجي',
       previewKind: 'table',
     },
     {
       type: 'memo',
-      titleFr: 'AI Studio — Infographie',
-      titleAr: 'استوديو الذكاء الاصطناعي — إنفوغرافيا',
-      descFr: 'Transformez un cours en infographie visuelle A4 : règles, exemples et repères clés.',
-      descAr: 'حوّل الدرس إلى إنفوغرافيا بصرية A4 تبرز القواعد والأمثلة والمفاهيم الأساسية.',
+      titleFr: 'AI Studio — Infographie & Synthèse',
+      titleAr: 'استوديو الذكاء الاصطناعي — إنفوغرافيا وتلخيص',
+      descFr: 'Transformez un cours ou document en infographie visuelle et synthèse A4 claire.',
+      descAr: 'حوّل الدرس أو الوثائق إلى إنفوغرافيا بصرية وملخص A4 يبرز المفاهيم الأساسية.',
       icon: 'dashboard_customize',
       accent: '#8A5A00',
       badgeFr: 'Populaire',
       badgeAr: 'شائع',
       previewKind: 'cards',
       route: '/ai-studio',
+    },
+    {
+      type: 'exercises',
+      titleFr: 'Devoir & Série d’Exercices',
+      titleAr: 'امتحانات وتمارين تدريبية',
+      descFr: 'Évaluation officielle (20 Pts), série d’entraînement graduée ou fiche imprimable.',
+      descAr: 'اختبار تقييمي رسمي (20 نقطة)، تمارين تدريبية متدرجة أو ورقة عمل مطبوعة.',
+      icon: 'quiz',
+      accent: '#14251D',
+      badgeFr: 'Officiel',
+      badgeAr: 'رسمي',
+      previewKind: 'exam',
+      route: '/editor',
     },
     {
       type: 'series',
@@ -83,65 +96,13 @@ export class CreateHubComponent implements OnInit {
       previewKind: 'comic',
     },
     {
-      type: 'exam',
-      titleFr: 'Évaluation Complète (20 Pts)',
-      titleAr: 'امتحان تقييمي رسمي (20 نقطة)',
-      descFr: 'Épreuve officielle en 3 parties progressives avec barème et corrigé type A4.',
-      descAr: 'اختبار تأليفي أو استكشافي رسمي من 3 أقسام متدرجة ومجموع 20 نقطة مع الإصلاح.',
-      icon: 'quiz',
-      accent: '#14251D',
-      badgeFr: 'Officiel',
-      badgeAr: 'رسمي',
-      previewKind: 'exam',
-      route: '/editor',
-    },
-    {
-      type: 'exercises',
-      titleFr: 'Série d’Exercices Gradués',
-      titleAr: 'تمارين وتطبيقات متدرجة',
-      descFr: 'Exercices ciblés avec barème, indications méthodologiques et solutions pas à pas.',
-      descAr: 'تمارين تدريبية مصنفة حسب الصعوبة مع توجيهات الأولياء والإصلاح المفصل.',
-      icon: 'assignment',
-      accent: '#2D6A4F',
-      badgeFr: 'Entraînement',
-      badgeAr: 'تدريب',
-      previewKind: 'cards',
-      route: '/editor',
-    },
-    {
-      type: 'summary',
-      titleFr: 'Synthèse de Cours',
-      titleAr: 'تلخيص واستخراج الأفكار',
-      descFr: 'Extraction des points essentiels, définitions et glossaire à partir de documents ou photos.',
-      descAr: 'استخلاص العناصر الأساسية والمصطلحات من وثائق أو صور كراس التلميذ.',
-      icon: 'summarize',
-      accent: '#1B4332',
-      badgeFr: 'Rapide',
-      badgeAr: 'سريع',
-      previewKind: 'prose',
-      route: '/summarize',
-    },
-    {
-      type: 'worksheet',
-      titleFr: 'Fiche d’Entraînement A4',
-      titleAr: 'ورقة عمل وتدريب مطبوعة',
-      descFr: 'Feuille imprimable avec DNA didactique et variantes d’exercices prêtes à l’emploi.',
-      descAr: 'ورقة عمل قابلة للطباعة مع تنويع الوضعيات والتطبيقات.',
-      icon: 'draw',
-      accent: '#8A5A00',
-      badgeFr: 'Imprimable',
-      badgeAr: 'طباعة',
-      previewKind: 'table',
-      route: '/generate',
-    },
-    {
       type: 'article',
       titleFr: 'Article Pédagogique',
       titleAr: 'مقال ونصيحة بيداغوجية',
       descFr: 'Publication pour la communauté des enseignants et conseils pratiques pour parents.',
       descAr: 'مقال إرشادي موجه لشبكة المعلمين والأولياء لدعم التمدرس.',
       icon: 'article',
-      accent: '#14251D',
+      accent: '#2D6A4F',
       badgeFr: 'Communauté',
       badgeAr: 'مجتمع',
       previewKind: 'prose',
@@ -182,24 +143,17 @@ export class CreateHubComponent implements OnInit {
     this.store.setLastSourceInput(source);
     const sel = this.selectedOutput();
 
-    if (sel === 'memo') {
-      // The source is already in the store; the studio generates from it, no second form.
+    if (sel === 'memo' || sel === 'summary') {
       this.router.navigate(['/ai-studio']);
-    } else if (sel === 'summary') {
-      this.router.navigate(['/summarize']);
-    } else if (sel === 'exam' || sel === 'exercises') {
+    } else if (sel === 'exercises' || sel === 'exam' || sel === 'worksheet') {
       this.router.navigate(['/editor'], {
         queryParams: { type: sel === 'exam' ? 'exam' : 'exercise_sheet' },
       });
-    } else if (sel === 'worksheet') {
-      this.router.navigate(['/generate']);
     } else if (sel === 'article') {
       this.router.navigate(['/article-studio']);
     } else if (sel === 'lesson-plan') {
-      // Flow for lesson-plan
       this.generateLessonPlan(source);
     } else if (sel === 'series') {
-      // Flow for series
       this.planSeries(source);
     }
   }

@@ -7,6 +7,7 @@ import {
   signal,
   ElementRef,
   ViewChild,
+  OnInit,
   OnDestroy,
   afterNextRender,
   PLATFORM_ID,
@@ -51,7 +52,7 @@ export interface ArticleDraft {
   templateUrl: './article-studio.html',
   styleUrl: './article-studio.css',
 })
-export class ArticleStudioComponent implements OnDestroy {
+export class ArticleStudioComponent implements OnInit, OnDestroy {
   @ViewChild('tiptapContainer') tiptapContainerRef?: ElementRef<HTMLDivElement>;
 
   private readonly platformId = inject(PLATFORM_ID);
@@ -234,6 +235,30 @@ export class ArticleStudioComponent implements OnDestroy {
         );
       }
     });
+  }
+
+  ngOnInit() {
+    if (typeof window === 'undefined') return;
+    const src = this.store.consumeLastSourceInput();
+    if (!src) return;
+
+    if (src.grade) {
+      const g = src.grade;
+      this.selectedGrade.set(g);
+      this.article.update((a) => ({ ...a, grade: g }));
+    }
+    if (src.subject) {
+      const s = src.subject;
+      this.selectedSubject.set(s);
+      this.article.update((a) => ({ ...a, subject: s }));
+    }
+    this.syncChapterSelection();
+
+    const prompt = src.topic || src.text || src.instructions;
+    if (prompt) {
+      this.userInput.set(prompt);
+      void this.sendMessage();
+    }
   }
 
   initTipTap() {

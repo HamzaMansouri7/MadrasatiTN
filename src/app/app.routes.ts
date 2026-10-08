@@ -42,9 +42,8 @@ export const routes: Routes = [
   },
   {
     path: 'summarize',
-    loadComponent: () =>
-      import('./features/summarize/summarize-home').then((m) => m.SummarizeHomeComponent),
-    title: 'لخّصلي | Résumé de cours - Madrasati TN',
+    redirectTo: () => '/create?output=memo',
+    pathMatch: 'full',
   },
   {
     path: 'teachers',

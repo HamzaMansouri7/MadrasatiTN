@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, BlogPost, PrintService, paginate } from '@core';
 import { BlogCardComponent, CartoucheComponent, PaginationComponent, TeacherCardComponent, CommentPanelComponent } from '@shared';
@@ -46,24 +46,18 @@ interface RecitationItem {
             </a>
 
             <a
-              routerLink="/summarize"
+              routerLink="/create"
+              [queryParams]="{ output: 'memo' }"
               class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
-              <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
-              <span>{{ lang.t('summarizeNav') }}</span>
+              <span class="material-icons text-base" aria-hidden="true">dashboard_customize</span>
+              <span>{{ lang.tr('استوديو التلخيص والإنفوغرافيك', 'استوديو التلخيص والإنفوغرافيك') }}</span>
             </a>
 
             <a
-              routerLink="/generate"
+              routerLink="/editor"
               class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
-              <span class="material-icons text-base" aria-hidden="true">auto_fix_high</span>
-              <span>{{ lang.tr('مولّد الأوراق المشابهة', 'مولّد الأوراق المشابهة') }}</span>
-            </a>
-
-            <a
-              routerLink="/memo-studio"
-              class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
-              <span class="material-icons text-base" aria-hidden="true">note_alt</span>
-              <span>{{ lang.tr('المذكرة البصرية', 'المذكرة البصرية') }}</span>
+              <span class="material-icons text-base" aria-hidden="true">print</span>
+              <span>{{ lang.tr('استوديو الوثائق الرسمية A4', 'استوديو الوثائق الرسمية A4') }}</span>
             </a>
           </div>
 
@@ -680,6 +674,14 @@ interface RecitationItem {
                   <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
                 </button>
 
+                <!-- Solve / حلّ Button -->
+                <button
+                  (click)="router.navigate(['/solve'], { queryParams: { docId: c.id } })"
+                  class="col-span-2 w-full justify-center bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer shadow-2xs">
+                  <span class="material-icons text-xs">photo_camera</span>
+                  <span>{{ lang.tr('Résoudre cet exercice / devoir', 'حلّ هذا التمرين أو الفرض') }}</span>
+                </button>
+
                 <!-- Copier Post -->
                 <button
                   (click)="copyCoursePost(c)"
@@ -1174,6 +1176,7 @@ export class PublicDiscoveryComponent {
   readonly firebase = inject(FirebaseService);
   readonly seo = inject(SeoService);
   private readonly sanitizer = inject(DomSanitizer);
+  readonly router = inject(Router);
 
   constructor() {
     // Dynamic SEO & Schema.org JSON-LD updates

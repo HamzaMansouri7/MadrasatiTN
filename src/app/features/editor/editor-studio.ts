@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, OnInit, signal } from '@angular/core';
 import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput } from '@core';
 import { CartoucheComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
@@ -12,7 +13,7 @@ import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDif
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
-export class EditorStudioComponent {
+export class EditorStudioComponent implements OnInit {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
@@ -20,6 +21,7 @@ export class EditorStudioComponent {
   readonly interactionSvc = inject(InteractionService);
   private readonly ai = inject(AiClient);
   private readonly location = inject(Location);
+  private readonly route = inject(ActivatedRoute);
 
   readonly viewMode = signal<'editor' | 'split' | 'preview'>('preview');
   readonly showMetadataPanel = signal<boolean>(false);
@@ -333,6 +335,172 @@ export class EditorStudioComponent {
           console.error('Failed to parse draft', e);
         }
       }
+    }
+  }
+
+  ngOnInit() {
+    if (typeof window === 'undefined') return;
+    const qType = this.route.snapshot.queryParamMap.get('type') as DocumentType | null;
+    const src = this.store.consumeLastSourceInput();
+
+    if (qType && ['exam', 'exercise_sheet', 'course', 'article'].includes(qType)) {
+      this.docType.set(qType);
+    }
+
+    if (src) {
+      if (src.grade) this.docGrade.set(src.grade as GradeLevel);
+      if (src.subject) this.docSubject.set(src.subject as SubjectName);
+      if (src.trimester) {
+        const tri = src.trimester.includes('2') ? 'Trimestre 2' : src.trimester.includes('3') ? 'Trimestre 3' : 'Trimestre 1';
+        this.docTrimester.set(tri);
+      }
+      const targetType = qType || (this.docType() as DocumentType);
+      void this.applySourceAndGenerate(src, targetType);
+    } else if (qType) {
+      if (qType === 'exam') this.loadTemplatePreset('exam_full');
+      else if (qType === 'exercise_sheet') this.loadTemplatePreset('exercise_sheet');
+      else if (qType === 'course') this.loadTemplatePreset('course_summary');
+    }
+  }
+
+  async applySourceAndGenerate(src: SourceInput, type: DocumentType) {
+    const topic = src.topic || (src.text ? src.text.slice(0, 60) : '');
+    if (type === 'exam') {
+      this.docTitle.set(topic ? `Évaluation : ${topic} (${this.docGrade()})` : `Évaluation de ${this.docSubject()} (${this.docGrade()})`);
+      const b1Id = 'b-' + Date.now() + '-1';
+      const b2Id = 'b-' + Date.now() + '-2';
+      const ex1Id = 'b-' + Date.now() + '-ex1';
+      const b3Id = 'b-' + Date.now() + '-3';
+      const ex2Id = 'b-' + Date.now() + '-ex2';
+
+      this.blocks.set([
+        { id: b1Id, type: 'cartouche', content: '' },
+        { id: b2Id, type: 'heading1', content: 'I. Connaissances & Application' },
+        {
+          id: ex1Id,
+          type: 'exercise',
+          exerciseTitle: 'Exercice N°1 (8 Pts)',
+          exercisePoints: 8,
+          content: 'Génération de l’exercice en cours…',
+          showSolution: false,
+        },
+        { id: b3Id, type: 'heading1', content: 'II. Raisonnement & Résolution de Problème' },
+        {
+          id: ex2Id,
+          type: 'exercise',
+          exerciseTitle: 'Exercice N°2 : Situation Problème (12 Pts)',
+          exercisePoints: 12,
+          content: 'Génération de la situation problème en cours…',
+          showSolution: false,
+        },
+      ]);
+
+      if (topic || src.text) {
+        this.isAiLoading.set(true);
+        try {
+          const [res1, res2] = await Promise.all([
+            this.ai.post('generate-exercise', {
+              grade: this.docGrade(),
+              subject: this.docSubject(),
+              topic: `${topic || src.text} - Connaissances de base et calcul direct`,
+              difficulty: 'Facile',
+              format: 'free',
+              trimester: this.docTrimester(),
+              points: 8,
+              role: this.isParentMode() ? 'parent' : 'teacher',
+              childName: this.activeChildName(),
+            }),
+            this.ai.post('generate-exercise', {
+              grade: this.docGrade(),
+              subject: this.docSubject(),
+              topic: `${topic || src.text} - Situation problème et raisonnement`,
+              difficulty: 'Moyen',
+              format: 'free',
+              trimester: this.docTrimester(),
+              points: 12,
+              role: this.isParentMode() ? 'parent' : 'teacher',
+              childName: this.activeChildName(),
+            }),
+          ]);
+
+          if (res1.ok && res1.data['exercise']) {
+            this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1', points: 8 });
+          }
+          if (res2.ok && res2.data['exercise']) {
+            this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 (Situation Problème)', points: 12 });
+          }
+        } finally {
+          this.isAiLoading.set(false);
+          this.saveDraft();
+        }
+      }
+    } else if (type === 'exercise_sheet') {
+      this.docTitle.set(topic ? `Série d'Exercices : ${topic} (${this.docGrade()})` : `Série d'Exercices — ${this.docSubject()} (${this.docGrade()})`);
+      const b1Id = 'b-' + Date.now() + '-1';
+      const ex1Id = 'b-' + Date.now() + '-ex1';
+      const ex2Id = 'b-' + Date.now() + '-ex2';
+
+      this.blocks.set([
+        { id: b1Id, type: 'heading1', content: topic ? `Série d'Exercices : ${topic}` : 'Série d\'Exercices Pratiques' },
+        {
+          id: ex1Id,
+          type: 'exercise',
+          exerciseTitle: 'Exercice N°1 : Entraînement de base',
+          exercisePoints: 10,
+          content: 'Génération de l’exercice en cours…',
+          showSolution: false,
+        },
+        {
+          id: ex2Id,
+          type: 'exercise',
+          exerciseTitle: 'Exercice N°2 : Approfondissement',
+          exercisePoints: 10,
+          content: 'Génération de l’exercice en cours…',
+          showSolution: false,
+        },
+      ]);
+
+      if (topic || src.text) {
+        this.isAiLoading.set(true);
+        try {
+          const [res1, res2] = await Promise.all([
+            this.ai.post('generate-exercise', {
+              grade: this.docGrade(),
+              subject: this.docSubject(),
+              topic: `${topic || src.text} - Entraînement fondamental`,
+              difficulty: 'Facile',
+              format: 'free',
+              trimester: this.docTrimester(),
+              points: 10,
+              role: this.isParentMode() ? 'parent' : 'teacher',
+              childName: this.activeChildName(),
+            }),
+            this.ai.post('generate-exercise', {
+              grade: this.docGrade(),
+              subject: this.docSubject(),
+              topic: `${topic || src.text} - Défi et approfondissement`,
+              difficulty: 'Moyen',
+              format: 'free',
+              trimester: this.docTrimester(),
+              points: 10,
+              role: this.isParentMode() ? 'parent' : 'teacher',
+              childName: this.activeChildName(),
+            }),
+          ]);
+
+          if (res1.ok && res1.data['exercise']) {
+            this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1 : Entraînement de base', points: 10 });
+          }
+          if (res2.ok && res2.data['exercise']) {
+            this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 : Approfondissement', points: 10 });
+          }
+        } finally {
+          this.isAiLoading.set(false);
+          this.saveDraft();
+        }
+      }
+    } else {
+      this.docTitle.set(topic ? `${topic} (${this.docGrade()})` : `Document : ${this.docSubject()}`);
     }
   }
 

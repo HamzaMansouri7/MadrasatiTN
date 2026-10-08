@@ -102,14 +102,48 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
   async ngOnInit() {
     if (typeof window === 'undefined') return;
     const sheetId = new URLSearchParams(window.location.search).get('sheet');
-    if (!sheetId) return;
-    const doc = await this.store.getWorksheet(sheetId);
-    if (doc) {
-      this.shared.set(true);
-      this.sharedDoc.set(doc);
-      this.sharedTitle.set(doc.title);
-      this.dna.set({ palette: doc.palette, topic: doc.topic, grade: doc.grade as WorksheetDna['grade'], subject: doc.subject as WorksheetDna['subject'] });
-      this.exercises.set(doc.exercises || []);
+    if (sheetId) {
+      const doc = await this.store.getWorksheet(sheetId);
+      if (doc) {
+        this.shared.set(true);
+        this.sharedDoc.set(doc);
+        this.sharedTitle.set(doc.title);
+        this.dna.set({ palette: doc.palette, topic: doc.topic, grade: doc.grade as WorksheetDna['grade'], subject: doc.subject as WorksheetDna['subject'] });
+        this.exercises.set(doc.exercises || []);
+      }
+      return;
+    }
+
+    const src = this.store.consumeLastSourceInput();
+    if (!src) return;
+
+    const photos = src.photos ?? src.images ?? [];
+    if (photos.length > 0 && photos[0].base64Data) {
+      this.sourceImage.set(photos[0].base64Data);
+      this.contentType = photos[0].contentType || 'image/jpeg';
+      await this.analyze();
+      if (this.dna()) {
+        await this.generate();
+      }
+    } else if (src.file?.base64Data && src.file.contentType.startsWith('image/')) {
+      this.sourceImage.set(src.file.base64Data);
+      this.contentType = src.file.contentType || 'image/jpeg';
+      await this.analyze();
+      if (this.dna()) {
+        await this.generate();
+      }
+    } else if (src.topic || src.text) {
+      const dna: WorksheetDna = {
+        title: src.topic || (src.text ? src.text.slice(0, 60) : 'Fiche d\'exercices'),
+        grade: (src.grade as WorksheetDna['grade']) || '4ème Année',
+        subject: (src.subject as WorksheetDna['subject']) || 'Mathématiques',
+        topic: src.topic || src.text || 'Exercices d\'entraînement',
+        language: (src.language as 'fr' | 'ar') || 'ar',
+        palette: ['#1B4332', '#2D6A4F', '#D8F3DC'],
+        illustrationStyle: 'educational',
+      };
+      this.dna.set(dna);
+      await this.generate();
     }
   }
 

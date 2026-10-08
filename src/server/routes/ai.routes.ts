@@ -546,13 +546,15 @@ aiRouter.post('/photo-solve', originGuard, aiRateLimiter, async (req: Request, r
 // 4. Summarize Uploaded Documents / Synthesize Study Guide
 aiRouter.post('/summarize-docs', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { files, grade, subject, topic, language } = req.body;
+    const { files, grade, subject, topic, language, text, lessonText, instructions } = req.body;
     if (!aiReady()) {
       res.status(500).json({ error: 'Service IA non disponible.' });
       return;
     }
-    if (!Array.isArray(files) || files.length === 0) {
-      res.status(400).json({ error: 'Au moins un document requis.' });
+    const hasFiles = Array.isArray(files) && files.length > 0;
+    const textContent = text || lessonText;
+    if (!hasFiles && !textContent && !topic) {
+      res.status(400).json({ error: 'Au moins un document ou texte requis.' });
       return;
     }
 
@@ -562,29 +564,38 @@ aiRouter.post('/summarize-docs', originGuard, aiRateLimiter, async (req: Request
       subject,
       topic: topic || 'Synthèse de cours',
       lang,
-      docCount: files.length,
+      docCount: hasFiles ? files.length : 1,
     });
 
     const parts: GeminiPart[] = [];
-    for (const f of files.slice(0, 8)) {
-      if (!f.data) continue;
-      const cleanData = f.data.replace(/^data:[^;]+;base64,/, '');
-      if (f.mimeType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || f.name?.endsWith('.docx')) {
-        try {
-          const buffer = Buffer.from(cleanData, 'base64');
-          const ext = await mammoth.extractRawText({ buffer });
-          parts.push({ text: `[Document ${f.name}]:\n${ext.value.slice(0, 3000)}` });
-        } catch {
-          // ignore docx error
+    if (hasFiles) {
+      for (const f of files.slice(0, 8)) {
+        if (!f.data) continue;
+        const cleanData = f.data.replace(/^data:[^;]+;base64,/, '');
+        if (f.mimeType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || f.name?.endsWith('.docx')) {
+          try {
+            const buffer = Buffer.from(cleanData, 'base64');
+            const ext = await mammoth.extractRawText({ buffer });
+            parts.push({ text: `[Document ${f.name}]:\n${ext.value.slice(0, 3000)}` });
+          } catch {
+            // ignore docx error
+          }
+        } else {
+          parts.push({
+            inlineData: {
+              mimeType: f.mimeType || 'image/jpeg',
+              data: cleanData,
+            },
+          });
         }
-      } else {
-        parts.push({
-          inlineData: {
-            mimeType: f.mimeType || 'image/jpeg',
-            data: cleanData,
-          },
-        });
       }
+    }
+
+    if (textContent) {
+      parts.push({ text: `[Contenu à synthétiser]:\n${textContent}` });
+    }
+    if (instructions) {
+      parts.push({ text: `[Consignes particulières]:\n${instructions}` });
     }
 
     parts.push({ text: prompt });

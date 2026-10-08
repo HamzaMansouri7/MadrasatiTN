@@ -107,6 +107,13 @@ export class EducationStore {
     this.lastSourceInput.set(source);
   }
 
+  /** Returns the pending hub input once and clears it (prevents stale regeneration on later visits). */
+  consumeLastSourceInput(): SourceInput | null {
+    const src = this.lastSourceInput();
+    this.lastSourceInput.set(null);
+    return src;
+  }
+
   // App-wide toast notification system
   readonly toast = signal<{ message: string; type: 'success' | 'info' | 'error' } | null>(null);
   private toastTimer: ReturnType<typeof setTimeout> | null = null;

@@ -155,7 +155,7 @@ export class AiStudioComponent implements OnInit {
 
   ngOnInit() {
     if (typeof window === 'undefined') return;
-    const src = this.store.lastSourceInput();
+    const src = this.store.consumeLastSourceInput();
     if (!src) {
       // No content yet: the Create hub is the single place to give it.
       this.router.navigate(['/create'], { queryParams: { output: 'memo' }, replaceUrl: true });

@@ -1,5 +1,6 @@
 import { BlogCardComponent, CartoucheComponent, DocCardComponent, FilterBarComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem } from '@shared';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService, PRIMARY_GRADES, paginate } from '@core';
 
 @Component({
@@ -46,10 +47,17 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
           <!-- Sibling Switcher or Quick CTA -->
           <div class="flex flex-wrap items-center gap-2.5 shrink-0">
             <button
+              (click)="router.navigate(['/solve'])"
+              class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
+              <span class="material-icons text-base">photo_camera</span>
+              <span>{{ lang.tr('Résoudre un exercice', 'حلّ تمرين بالصورة') }}</span>
+            </button>
+
+            <button
               (click)="openParentStudio()"
               class="flex items-center gap-1.5 bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-bold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-base">auto_fix_high</span>
-              <span>{{ lang.tr('Générer Fiche d’Entraînement ✨', 'توليد ورقة تمارين منزلية ✨') }}</span>
+              <span>{{ lang.tr('Générer Fiche d’Entraînement', 'توليد ورقة تمارين منزلية') }}</span>
             </button>
 
             @if (isUserLoggedIn() && store.students().length > 1) {
@@ -628,6 +636,7 @@ export class ParentHomeComponent {
   readonly lang = inject(LanguageService);
   private readonly print = inject(PrintService);
   readonly firebase = inject(FirebaseService);
+  readonly router = inject(Router);
 
   readonly confirmedIds = signal<Set<string>>(new Set(['ann-1']));
   readonly activeTab = signal<'docs' | 'blog' | 'qa' | 'announcements'>('docs');
