@@ -7,7 +7,6 @@ import {
   readdirSync,
   statSync,
   unlinkSync,
-  rmSync,
 } from 'node:fs';
 import { Request } from 'express';
 
@@ -58,7 +57,7 @@ export const validateFileMagicBytes = (buffer: Buffer, declaredExt: string): boo
 export const ALLOWED_EXTENSIONS = new Set(['pdf', 'png', 'jpg', 'jpeg', 'webp', 'docx']);
 export const MAX_UPLOAD_BYTES = 15 * 1024 * 1024; // 15MB
 
-// AI-generated files live in uploads/generated/<yyyy-mm>/ so they can be purged separately.
+// AI-generated files live in uploads/generated/<yyyy-mm>/ (kept forever: saved docs link to them).
 export const saveGenerated = (filename: string, data: Buffer | string): string => {
   const month = new Date().toISOString().slice(0, 7);
   const dir = join(uploadsFolder, 'generated', month);
@@ -68,7 +67,6 @@ export const saveGenerated = (filename: string, data: Buffer | string): string =
 };
 
 export const USER_QUOTA_BYTES = Number(process.env['UPLOAD_QUOTA_MB'] || 100) * 1024 * 1024;
-export const GENERATED_TTL_DAYS = Number(process.env['GENERATED_TTL_DAYS'] || 90);
 
 export const UPLOAD_KINDS = new Set(['avatars', 'courses', 'articles', 'documents', 'notebooks']);
 const SAFE_UID = /^[A-Za-z0-9_-]{1,64}$/;
@@ -101,23 +99,6 @@ export const pruneOldAvatars = (uid: string, keep: string): void => {
   }
 };
 
-export const purgeGenerated = (): void => {
-  const root = join(uploadsFolder, 'generated');
-  if (!existsSync(root)) return;
-  const cutoff = Date.now() - GENERATED_TTL_DAYS * 24 * 60 * 60 * 1000;
-  for (const month of readdirSync(root)) {
-    const dir = join(root, month);
-    try {
-      for (const f of readdirSync(dir)) {
-        const fp = join(dir, f);
-        if (statSync(fp).mtimeMs < cutoff) unlinkSync(fp);
-      }
-      if (readdirSync(dir).length === 0) rmSync(dir, { recursive: true });
-    } catch {
-      /* ignore */
-    }
-  }
-};
 
 const firebaseApiKey: string | undefined =
   process.env['FIREBASE_API_KEY'] ||

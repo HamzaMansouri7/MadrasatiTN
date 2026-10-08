@@ -4,7 +4,10 @@ import {
   InfographicSpec,
   PRESET_ITEM_LIMITS,
   SPEC_ICONS,
+  SpecColumn,
   SpecItem,
+  SpecQuote,
+  SpecStage,
 } from '../models/infographic-spec.model';
 
 const SVG_TAGS = new Set([
@@ -69,9 +72,42 @@ export function sanitizeSvg(input: unknown): string {
 const clip = (v: unknown, max: number): string =>
   typeof v === 'string' ? v.replace(/\s+/g, ' ').trim().slice(0, max) : '';
 
+const TEXT_FREE_SUFFIX = ', no text, no letters, no numbers, no labels, no watermark';
+
+/**
+ * Validates and sanitizes an English illustration prompt destined for FLUX.
+ * Rejects Arabic characters completely (Arabic text must never reach FLUX),
+ * clips length to 300 characters, and guarantees the text-free suffix.
+ */
+export function sanitizeImagePrompt(input: unknown): string | undefined {
+  if (typeof input !== 'string') return undefined;
+  let prompt = input.replace(/\s+/g, ' ').trim();
+  if (!prompt) return undefined;
+  // Reject Arabic characters (Arabic must never reach FLUX)
+  if (/[\u0600-\u06FF]/.test(prompt)) return undefined;
+
+  prompt = prompt.slice(0, 300).trim();
+  if (!prompt) return undefined;
+
+  if (!prompt.toLowerCase().includes('no text')) {
+    prompt += TEXT_FREE_SUFFIX;
+  }
+  return prompt;
+}
+
+/**
+ * Validates imageUrl: only VPS local storage paths starting with /uploads/ are permitted.
+ */
+export function sanitizeImageUrl(input: unknown): string | undefined {
+  if (typeof input !== 'string') return undefined;
+  const url = input.trim();
+  if (url.startsWith('/uploads/')) return url;
+  return undefined;
+}
+
 /**
  * Coerces raw model output into a safe, renderable spec: known preset, item count within the
- * preset limits, clipped text, allow-listed icons, sanitized SVG. Returns null when nothing usable.
+ * preset limits, clipped text, allow-listed icons, sanitized SVG, validated image prompts. Returns null when nothing usable.
  */
 export function normalizeInfographicSpec(raw: unknown, fallbackPreset: InfographicPreset = 'hero-cards'): InfographicSpec | null {
   if (!raw || typeof raw !== 'object') return null;
@@ -90,7 +126,17 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
       const text = clip(o['text'], 140);
       if (!title && !text) return null;
       const icon = typeof o['icon'] === 'string' && SPEC_ICONS.includes(o['icon']) ? o['icon'] : 'star';
-      return { title, text, icon };
+      const wantsImage = Boolean(o['wantsImage']);
+      const imagePrompt = sanitizeImagePrompt(o['imagePrompt']);
+      const imageUrl = sanitizeImageUrl(o['imageUrl']);
+      return {
+        title,
+        text,
+        icon,
+        wantsImage: wantsImage || undefined,
+        imagePrompt,
+        imageUrl,
+      };
     })
     .filter((it): it is SpecItem => it !== null)
     .slice(0, max);
@@ -100,18 +146,89 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
 
   const heroRaw = r['hero'] && typeof r['hero'] === 'object' ? (r['hero'] as Record<string, unknown>) : null;
   const heroLabel = heroRaw ? clip(heroRaw['label'], 24) : '';
+  const heroWantsImage = heroRaw ? Boolean(heroRaw['wantsImage']) : false;
+  const heroImagePrompt = heroRaw ? sanitizeImagePrompt(heroRaw['imagePrompt']) : undefined;
+  const heroImageUrl = heroRaw ? sanitizeImageUrl(heroRaw['imageUrl']) : undefined;
   const diagramSvg = sanitizeSvg(r['diagramSvg']);
+
+  const columns: SpecColumn[] | undefined = Array.isArray(r['columns'])
+    ? (r['columns'] as unknown[])
+        .map((col): SpecColumn | null => {
+          if (!col || typeof col !== 'object') return null;
+          const c = col as Record<string, unknown>;
+          const colTitle = clip(c['title'], 60);
+          if (!colTitle) return null;
+          const points = (Array.isArray(c['points']) ? (c['points'] as unknown[]) : [])
+            .map((p) => clip(p, 140))
+            .filter(Boolean)
+            .slice(0, 6);
+          const wantsImage = Boolean(c['wantsImage']);
+          const imagePrompt = sanitizeImagePrompt(c['imagePrompt']);
+          const imageUrl = sanitizeImageUrl(c['imageUrl']);
+          return {
+            title: colTitle,
+            subtitle: clip(c['subtitle'], 100) || undefined,
+            points,
+            wantsImage: wantsImage || undefined,
+            imagePrompt,
+            imageUrl,
+          };
+        })
+        .filter((c): c is SpecColumn => c !== null)
+        .slice(0, 4)
+    : undefined;
+
+  const stages: SpecStage[] | undefined = Array.isArray(r['stages'])
+    ? (r['stages'] as unknown[])
+        .map((st, idx): SpecStage | null => {
+          if (!st || typeof st !== 'object') return null;
+          const s = st as Record<string, unknown>;
+          const stTitle = clip(s['title'], 60);
+          const teacherActivity = clip(s['teacherActivity'], 200);
+          const learnerActivity = clip(s['learnerActivity'], 200);
+          if (!stTitle && !teacherActivity && !learnerActivity) return null;
+          return {
+            stageNumber: typeof s['stageNumber'] === 'number' ? s['stageNumber'] : idx + 1,
+            title: stTitle,
+            teacherActivity,
+            learnerActivity,
+            duration: clip(s['duration'], 30) || undefined,
+          };
+        })
+        .filter((st): st is SpecStage => st !== null)
+        .slice(0, 5)
+    : undefined;
+
+  const quoteRaw = r['quote'] && typeof r['quote'] === 'object' ? (r['quote'] as Record<string, unknown>) : null;
+  const quoteText = quoteRaw ? clip(quoteRaw['text'], 240) : '';
+  const quote: SpecQuote | undefined = quoteText
+    ? { text: quoteText, author: clip(quoteRaw?.['author'], 60) || undefined }
+    : undefined;
+
+  if (preset === 'comparison' && (columns?.length ?? 0) < 2) return null;
+  if (preset === 'lesson-stages' && (stages?.length ?? 0) < 2) return null;
 
   return {
     preset,
     title,
     subtitle: clip(r['subtitle'], 120) || undefined,
-    hero: heroLabel ? { label: heroLabel, caption: clip(heroRaw?.['caption'], 60) || undefined } : undefined,
+    hero: heroLabel || heroWantsImage || heroImageUrl
+      ? {
+          label: heroLabel,
+          caption: clip(heroRaw?.['caption'], 60) || undefined,
+          wantsImage: heroWantsImage || undefined,
+          imagePrompt: heroImagePrompt,
+          imageUrl: heroImageUrl,
+        }
+      : undefined,
     items,
     remember: (Array.isArray(r['remember']) ? (r['remember'] as unknown[]) : [])
       .map((x) => clip(x, 110))
       .filter(Boolean)
       .slice(0, 3),
     diagramSvg: diagramSvg || undefined,
+    columns: columns?.length ? columns : undefined,
+    stages: stages?.length ? stages : undefined,
+    quote,
   };
 }

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { EducationStore, InfographicDoc, InfographicPreset, InfographicTheme, LanguageService, SourceInput } from '@core';
+import { EducationStore, InfographicDoc, InfographicPreset, InfographicTheme, LanguageService, SourceInput, SpecImageTarget } from '@core';
 import { AiStatusComponent, InfographicSpecComponent } from '@shared';
 
 interface PresetOption {
@@ -27,7 +27,7 @@ interface PresetOption {
         <section class="min-w-0 space-y-4">
           @if (doc(); as current) {
             <div [class.opacity-50]="busy()" class="transition-opacity">
-              <app-infographic-spec [doc]="current"></app-infographic-spec>
+              <app-infographic-spec [doc]="current" [illustrating]="illustrating()" (illustrate)="illustrate($event)"></app-infographic-spec>
             </div>
           } @else if (busy()) {
             <div class="no-print bg-white rounded-lg border border-[#E7DFCF] p-16 text-center space-y-3">
@@ -137,6 +137,9 @@ export class AiStudioComponent implements OnInit {
     { id: 'hero-cards', icon: 'dashboard', fr: 'Cartes', ar: 'بطاقات' },
     { id: 'circular-flow', icon: 'autorenew', fr: 'Cycle', ar: 'دورة' },
     { id: 'timeline', icon: 'timeline', fr: 'Frise', ar: 'شريط زمني' },
+    { id: 'central-picture', icon: 'center_focus_strong', fr: 'Image centrale', ar: 'صورة مركزية' },
+    { id: 'lesson-stages', icon: 'format_list_numbered', fr: 'Étapes', ar: 'مراحل الدرس' },
+    { id: 'comparison', icon: 'compare_arrows', fr: 'Comparaison', ar: 'مقارنة' },
   ];
 
   readonly themes: { id: InfographicTheme; fr: string; ar: string }[] = [
@@ -149,6 +152,8 @@ export class AiStudioComponent implements OnInit {
   readonly theme = signal<InfographicTheme>('kids');
   readonly notes = signal('');
   readonly busy = signal(false);
+  /** Key of the block whose picture is being drawn ('hero', 'item-2', 'column-0'), or null. */
+  readonly illustrating = signal<string | null>(null);
   readonly error = signal<string | null>(null);
   readonly doc = signal<InfographicDoc | null>(null);
   readonly shareCopied = signal(false);
@@ -207,6 +212,18 @@ export class AiStudioComponent implements OnInit {
     this.busy.set(false);
     if (res.ok && res.doc) this.doc.set(res.doc);
     else this.error.set(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));
+  }
+
+  async illustrate(target: SpecImageTarget) {
+    const d = this.doc();
+    if (!d || this.illustrating()) return;
+    this.illustrating.set(target.kind === 'hero' ? 'hero' : `${target.kind}-${target.index}`);
+    this.error.set(null);
+    const res = await this.store.illustrateInfographicBlock(d, target);
+    this.illustrating.set(null);
+    // A regenerate may have replaced the sheet meanwhile: only apply to the same doc version.
+    if (res.ok && res.doc && this.doc() === d) this.doc.set(res.doc);
+    else if (!res.ok) this.error.set(res.error ?? this.lang.tr('Image indisponible.', 'الصورة غير متوفرة.'));
   }
 
   async share() {

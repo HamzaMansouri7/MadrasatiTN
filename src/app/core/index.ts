@@ -8,6 +8,7 @@ export * from './models/infographic.model';
 export * from './models/infographic-spec.model';
 export * from './utils/infographic-spec.util';
 export * from './data/infographic-templates.data';
+export * from './data/infographic-image-style.data';
 export * from './services/education-store';
 export * from './services/interaction.service';
 export * from './services/firebase.service';

@@ -38,7 +38,8 @@ import {
 import { SourceInput } from '../models/source-input.model';
 import { SeriesDoc, Scene } from '../models/series.model';
 import { InfographicDoc } from '../models/infographic.model';
-import { InfographicPreset } from '../models/infographic-spec.model';
+import { InfographicPreset, InfographicSpec } from '../models/infographic-spec.model';
+import { SpecImageTarget, THEME_IMAGE_STYLE } from '../data/infographic-image-style.data';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
@@ -1374,6 +1375,49 @@ export class EducationStore {
   /** Re-save after a client-side change (style switch); same id, owner only on the server. */
   async saveInfographic(doc: InfographicDoc): Promise<void> {
     await this.saveStructuredDoc('infographic', doc);
+  }
+
+  /**
+   * On-demand picture for one block of an AI Studio sheet: sends that block's English
+   * imagePrompt with the theme style and one seed per doc (same look across cards),
+   * writes the URL into the block and re-saves under the same id.
+   */
+  async illustrateInfographicBlock(
+    doc: InfographicDoc,
+    target: SpecImageTarget,
+  ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
+    if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
+    const spec = doc.values as unknown as InfographicSpec;
+    const block =
+      target.kind === 'hero' ? spec.hero : target.kind === 'item' ? spec.items?.[target.index] : spec.columns?.[target.index];
+    const prompt = block?.imagePrompt?.trim();
+    if (!block || !prompt) return { ok: false, error: 'Aucune description d’image pour ce bloc.' };
+
+    const res = await this.ai.post(
+      'generate-illustration',
+      {
+        promptText: prompt,
+        raw: true,
+        style: THEME_IMAGE_STYLE[doc.theme ?? 'kids'],
+        seedKey: doc.id,
+        grade: doc.grade,
+        subject: doc.subject,
+      },
+      { retry429: true, fallbackError: "Erreur lors de la création de l'illustration." },
+    );
+    const imageUrl = res.ok ? (res.data['imageUrl'] as string | undefined) : undefined;
+    if (!imageUrl) return { ok: false, error: res.ok ? 'Image indisponible.' : res.error };
+
+    const withImage = { ...block, imageUrl };
+    const values: InfographicSpec =
+      target.kind === 'hero'
+        ? { ...spec, hero: withImage as InfographicSpec['hero'] }
+        : target.kind === 'item'
+          ? { ...spec, items: spec.items.map((it, i) => (i === target.index ? (withImage as typeof it) : it)) }
+          : { ...spec, columns: (spec.columns ?? []).map((c, i) => (i === target.index ? (withImage as typeof c) : c)) };
+    const next: InfographicDoc = { ...doc, values: values as unknown as InfographicDoc['values'] };
+    if (doc.isOwner) await this.saveStructuredDoc('infographic', next);
+    return { ok: true, doc: next };
   }
 
   async getInfographic(id: string): Promise<InfographicDoc | null> {

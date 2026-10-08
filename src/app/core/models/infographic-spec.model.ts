@@ -1,10 +1,35 @@
 /** Composition the renderer draws; the model picks one, it never writes layout. */
-export type InfographicPreset = 'hero-cards' | 'circular-flow' | 'timeline';
+export type InfographicPreset =
+  | 'hero-cards'
+  | 'circular-flow'
+  | 'timeline'
+  | 'central-picture'
+  | 'lesson-stages'
+  | 'comparison';
 
 /** Look of the sheet (design tokens only). `kids` is scoped to AI Studio sheets, never the app UI. */
 export type InfographicTheme = 'kids' | 'official';
 
-export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = ['hero-cards', 'circular-flow', 'timeline'];
+export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
+  'hero-cards',
+  'circular-flow',
+  'timeline',
+  'central-picture',
+  'lesson-stages',
+  'comparison',
+];
+/**
+ * Presets that have a renderer today. The model may only pick from these (schema enum + Auto list);
+ * add an id here when its preset component ships. Unknown/old ids still load via INFOGRAPHIC_PRESETS.
+ */
+export const ENABLED_INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
+  'hero-cards',
+  'circular-flow',
+  'timeline',
+  'central-picture',
+  'lesson-stages',
+  'comparison',
+];
 export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = ['kids', 'official'];
 
 /** Material icon names the model may pick from (anything else falls back to `star`). */
@@ -18,12 +43,40 @@ export interface SpecItem {
   title: string;
   text: string;
   icon: string;
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
 }
 
 export interface SpecHero {
   /** Big focal text: a letter, number, word or short formula (rendered as real text, never an image). */
   label: string;
   caption?: string;
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
+export interface SpecColumn {
+  title: string;
+  subtitle?: string;
+  points: string[];
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
+export interface SpecStage {
+  stageNumber: number;
+  title: string;
+  teacherActivity: string;
+  learnerActivity: string;
+  duration?: string;
+}
+
+export interface SpecQuote {
+  text: string;
+  author?: string;
 }
 
 export interface InfographicSpec {
@@ -36,6 +89,12 @@ export interface InfographicSpec {
   remember: string[];
   /** Optional exact diagram as inline SVG (already sanitized server-side). */
   diagramSvg?: string;
+  /** Optional 2 comparison sides for comparison preset */
+  columns?: SpecColumn[];
+  /** Optional pedagogical stages for lesson-stages preset */
+  stages?: SpecStage[];
+  /** Optional quote for central-picture preset */
+  quote?: SpecQuote;
 }
 
 /** Item count limits per composition. */
@@ -43,4 +102,9 @@ export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: n
   'hero-cards': { min: 4, max: 4 },
   'circular-flow': { min: 3, max: 6 },
   timeline: { min: 3, max: 6 },
+  'central-picture': { min: 2, max: 6 },
+  // content lives in `stages`, items are optional extras
+  'lesson-stages': { min: 0, max: 5 },
+  // content lives in `columns`, items are optional extras
+  comparison: { min: 0, max: 4 },
 };

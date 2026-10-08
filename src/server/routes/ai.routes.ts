@@ -18,7 +18,7 @@ import { originGuard, aiRateLimiter } from "../guards";
 import { saveGenerated } from "../storage";
 import { normalizeInfographicSpec } from "../../app/core/utils/infographic-spec.util";
 import {
-  INFOGRAPHIC_PRESETS,
+  ENABLED_INFOGRAPHIC_PRESETS,
   type InfographicPreset,
 } from "../../app/core/models/infographic-spec.model";
 import {
@@ -253,6 +253,16 @@ Règles : dessine le contexte ou la situation, jamais la question ni la réponse
     scene,
     category,
   };
+}
+
+/** Prompt already written as an English scene: no LLM hop, the caller's style block replaces the category style. */
+function rawImagePrompt(
+  promptText: string,
+  style?: string,
+): { prompt: string; scene: string; category: ImageCategory } {
+  const scene = promptText.replace(/\s+/g, " ").trim().slice(0, 300);
+  const styleBlock = style ? `${style}. ` : `${IMAGE_STYLES.generic}. `;
+  return { prompt: `${scene}. ${styleBlock}${IMAGE_COMMON}`, scene, category: "generic" };
 }
 
 async function generateIllustrationFile(
@@ -1194,7 +1204,7 @@ aiRouter.post(
       );
       const resolvedGrade = String(grade);
       const resolvedSubject = String(subject);
-      const wanted: InfographicPreset | "auto" = INFOGRAPHIC_PRESETS.includes(
+      const wanted: InfographicPreset | "auto" = ENABLED_INFOGRAPHIC_PRESETS.includes(
         preset,
       )
         ? preset
@@ -1794,10 +1804,20 @@ aiRouter.post(
           ? Number(body.variation)
           : undefined;
       const customSeed = typeof body.seed === "number" ? body.seed : undefined;
+      // One seed per document (e.g. its id) keeps every card of a sheet in the same look.
+      const seedKey =
+        typeof body.seedKey === "string" && body.seedKey
+          ? body.seedKey.slice(0, 100)
+          : undefined;
+      // `raw`: the caller already wrote an English scene (AI Studio imagePrompt), so skip
+      // the rewrite hop. Arabic text never goes to the image model as-is.
+      const raw = body.raw === true && !/[؀-ۿ]/.test(promptText);
       const finalSeed =
         customSeed !== undefined
           ? customSeed
-          : variation !== undefined
+          : seedKey !== undefined
+            ? seedFor(seedKey + (variation ?? ""))
+            : variation !== undefined
             ? seedFor(promptText + variation)
             : seedFor(promptText);
 
@@ -1807,6 +1827,8 @@ aiRouter.post(
         prompt: promptText,
         style,
         variation: body.variation,
+        seedKey,
+        raw,
       });
 
       if (!hasVariation) {
@@ -1823,13 +1845,15 @@ aiRouter.post(
         }
       }
 
-      const { prompt, scene, category } = await buildImagePrompt({
-        promptText,
-        subject: String(body.subject ?? "").slice(0, 60),
-        grade: String(body.grade ?? "").slice(0, 30),
-        kind: String(body.kind ?? "").slice(0, 30),
-        style,
-      });
+      const { prompt, scene, category } = raw
+        ? rawImagePrompt(promptText, style)
+        : await buildImagePrompt({
+            promptText,
+            subject: String(body.subject ?? "").slice(0, 60),
+            grade: String(body.grade ?? "").slice(0, 30),
+            kind: String(body.kind ?? "").slice(0, 30),
+            style,
+          });
       const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed);
       if (!hasVariation) {
         exerciseCache.set(cacheKey, { imageUrl, category });
