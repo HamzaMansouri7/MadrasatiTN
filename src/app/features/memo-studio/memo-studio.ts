@@ -49,7 +49,7 @@ interface LibraryResourceItem {
   template: `
     <div class="min-h-screen bg-[#FBF8F1] text-[#14251D] pb-16">
 
-      <header class="no-print max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-6 flex flex-wrap items-end justify-between gap-4">
+      <header class="no-print max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6 flex flex-wrap items-end justify-between gap-4">
         <div class="max-w-2xl">
           <h1 class="font-display text-2xl sm:text-3xl font-semibold text-[#14251D]">
             {{ lang.t('memoStudioTitle') }}
@@ -80,11 +80,11 @@ interface LibraryResourceItem {
       </header>
 
       <!-- Main Container -->
-      <main class="max-w-6xl mx-auto px-4 sm:px-6">
-        
+      <main class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+
         <!-- INPUT FORM VIEW (When idle / analyzing / error) -->
         @if (state() !== 'done') {
-          <div class="no-print grid lg:grid-cols-[minmax(0,1fr)_19rem] gap-8 items-start">
+          <div class="no-print grid lg:grid-cols-[minmax(0,1fr)_minmax(24rem,34rem)] gap-8 items-start">
           <div class="bg-white rounded-lg border border-[#E7DFCF] p-5 sm:p-6 space-y-6">
             
             <!-- Mode Switcher Tabs -->
@@ -205,17 +205,17 @@ interface LibraryResourceItem {
             <!-- Visual model chooser: picked before generating, shown live in the preview -->
             <fieldset class="space-y-2">
               <legend class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.tr('Modèle visuel', 'النموذج البصري') }}</legend>
-              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
                 @for (opt of layoutOptions; track opt.key) {
                   <button
                     type="button"
                     (click)="setLayout(opt.key)"
                     [attr.aria-pressed]="store.memoLayout() === opt.key"
                     [class]="store.memoLayout() === opt.key ? 'border-[#2D6A4F] bg-[#F3FAFD] text-[#14251D]' : 'border-[#E7DFCF] bg-white text-[#5B6B60] hover:border-[#CBD9E2]'"
-                    class="border rounded-md px-3 min-h-11 text-sm font-medium flex items-center gap-2 cursor-pointer transition-colors text-start"
+                    class="border rounded-md px-1.5 py-2 min-h-11 text-xs font-medium flex flex-col items-center justify-center gap-1 text-center cursor-pointer transition-colors"
                   >
-                    <span class="material-icons text-base" aria-hidden="true">{{ opt.icon }}</span>
-                    {{ lang.t(opt.label) }}
+                    <span class="material-icons text-lg" aria-hidden="true">{{ opt.icon }}</span>
+                    <span class="leading-tight">{{ lang.t(opt.label) }}</span>
                   </button>
                 }
               </div>
@@ -399,7 +399,7 @@ interface LibraryResourceItem {
 
           <aside class="lg:sticky lg:top-6" [attr.aria-label]="lang.tr('Aperçu de la fiche', 'معاينة البطاقة')">
             <p class="text-sm font-semibold text-[#5B6B60] mb-2">{{ lang.tr('Aperçu de la fiche', 'معاينة البطاقة') }}</p>
-            <div class="relative bg-white border border-[#E7DFCF] rounded-md shadow-sm aspect-[210/297] overflow-hidden p-4 flex flex-col">
+            <div class="relative bg-white border border-[#E7DFCF] rounded-md shadow-sm aspect-[210/297] lg:max-h-[calc(100vh-7rem)] w-full mx-auto overflow-hidden p-5 sm:p-6 flex flex-col">
               <div aria-hidden="true" class="absolute inset-0 flex items-center justify-center pointer-events-none select-none -rotate-45 font-display text-3xl font-semibold text-[#0B2947]/[0.07] text-center px-6">
                 {{ watermarkName() }}
               </div>
