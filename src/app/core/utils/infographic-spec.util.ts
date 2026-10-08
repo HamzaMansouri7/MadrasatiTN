@@ -6,6 +6,9 @@ import {
   SPEC_ICONS,
   SpecColumn,
   SpecItem,
+  SpecProblem,
+  SpecProblemQuestion,
+  SpecProblemTable,
   SpecQuote,
   SpecStage,
 } from '../models/infographic-spec.model';
@@ -19,7 +22,7 @@ const SVG_ATTRS = new Set([
   'viewbox', 'xmlns', 'width', 'height', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'r', 'rx', 'ry',
   'd', 'points', 'transform', 'fill', 'fill-opacity', 'fill-rule', 'stroke', 'stroke-width', 'stroke-linecap',
   'stroke-linejoin', 'stroke-dasharray', 'stroke-opacity', 'opacity', 'id', 'offset', 'stop-color', 'stop-opacity',
-  'text-anchor', 'dominant-baseline', 'font-size', 'font-weight', 'font-family', 'dx', 'dy', 'direction',
+  'text-anchor', 'dominant-baseline', 'font-size', 'font-weight', 'font-family', 'dx', 'dy', 'direction', 'dir',
   'xml:space', 'preserveaspectratio', 'gradientunits', 'gradienttransform', 'fx', 'fy', 'href', 'xlink:href',
 ]);
 
@@ -72,7 +75,7 @@ export function sanitizeSvg(input: unknown): string {
 const clip = (v: unknown, max: number): string =>
   typeof v === 'string' ? v.replace(/\s+/g, ' ').trim().slice(0, max) : '';
 
-const TEXT_FREE_SUFFIX = ', no text, no letters, no numbers, no labels, no watermark';
+const TEXT_FREE_SUFFIX = ', no text, no letters, no numbers, no labels, no watermark, no symbols, no writing';
 
 /**
  * Validates and sanitizes an English illustration prompt destined for FLUX.
@@ -142,7 +145,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     .slice(0, max);
 
   const title = clip(r['title'], 80);
-  if (!title || items.length < min) return null;
+  if (!title) return null;
 
   const heroRaw = r['hero'] && typeof r['hero'] === 'object' ? (r['hero'] as Record<string, unknown>) : null;
   const heroLabel = heroRaw ? clip(heroRaw['label'], 24) : '';
@@ -205,8 +208,63 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     ? { text: quoteText, author: clip(quoteRaw?.['author'], 60) || undefined }
     : undefined;
 
+  // Problem preset normalization
+  const probRaw = r['problem'] && typeof r['problem'] === 'object' ? (r['problem'] as Record<string, unknown>) : null;
+  let problem: SpecProblem | undefined;
+  if (probRaw) {
+    const situation = clip(probRaw['situation'], 450);
+    const questions: SpecProblemQuestion[] = (Array.isArray(probRaw['questions']) ? (probRaw['questions'] as unknown[]) : [])
+      .map((q): SpecProblemQuestion | null => {
+        if (!q) return null;
+        if (typeof q === 'string') return { text: clip(q, 200), linesCount: 2 };
+        const qo = q as Record<string, unknown>;
+        const qText = clip(qo['text'], 200);
+        if (!qText) return null;
+        return {
+          text: qText,
+          linesCount: typeof qo['linesCount'] === 'number' ? Math.min(Math.max(qo['linesCount'], 1), 5) : 2,
+        };
+      })
+      .filter((q): q is SpecProblemQuestion => q !== null);
+
+    let table: SpecProblemTable | undefined;
+    if (probRaw['table'] && typeof probRaw['table'] === 'object') {
+      const tb = probRaw['table'] as Record<string, unknown>;
+      const headers = (Array.isArray(tb['headers']) ? (tb['headers'] as unknown[]) : []).map((h) => clip(h, 40)).filter(Boolean);
+      const rows = (Array.isArray(tb['rows']) ? (tb['rows'] as unknown[]) : [])
+        .map((rRow) => (Array.isArray(rRow) ? (rRow as unknown[]).map((cell) => clip(cell, 60)) : []))
+        .filter((rRow) => rRow.length > 0);
+      if (headers.length || rows.length) {
+        table = { headers, rows };
+      }
+    }
+
+    if (situation || questions.length) {
+      problem = {
+        situation,
+        table,
+        questions,
+        wantsImage: Boolean(probRaw['wantsImage']) || undefined,
+        imagePrompt: sanitizeImagePrompt(probRaw['imagePrompt']),
+        imageUrl: sanitizeImageUrl(probRaw['imageUrl']),
+      };
+    }
+  }
+
+  // Validate minimum requirements per preset
   if (preset === 'comparison' && (columns?.length ?? 0) < 2) return null;
   if (preset === 'lesson-stages' && (stages?.length ?? 0) < 2) return null;
+  if (preset === 'problem' && !problem?.situation && (problem?.questions?.length ?? 0) < 1) return null;
+  if (preset !== 'problem' && preset !== 'lesson-stages' && preset !== 'comparison' && items.length < min) return null;
+
+  // Per-doc image library
+  const imageLibrary: Record<string, string> = {};
+  if (r['imageLibrary'] && typeof r['imageLibrary'] === 'object') {
+    for (const [k, v] of Object.entries(r['imageLibrary'] as Record<string, unknown>)) {
+      const cleanUrl = sanitizeImageUrl(v);
+      if (cleanUrl) imageLibrary[clip(k, 80)] = cleanUrl;
+    }
+  }
 
   return {
     preset,
@@ -230,5 +288,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     columns: columns?.length ? columns : undefined,
     stages: stages?.length ? stages : undefined,
     quote,
+    problem,
+    imageLibrary: Object.keys(imageLibrary).length ? imageLibrary : undefined,
   };
 }

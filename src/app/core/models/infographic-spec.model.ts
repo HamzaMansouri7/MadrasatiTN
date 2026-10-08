@@ -5,7 +5,8 @@ export type InfographicPreset =
   | 'timeline'
   | 'central-picture'
   | 'lesson-stages'
-  | 'comparison';
+  | 'comparison'
+  | 'problem';
 
 /** Look of the sheet (design tokens only). `kids` is scoped to AI Studio sheets, never the app UI. */
 export type InfographicTheme = 'kids' | 'official';
@@ -17,6 +18,7 @@ export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'central-picture',
   'lesson-stages',
   'comparison',
+  'problem',
 ];
 /**
  * Presets that have a renderer today. The model may only pick from these (schema enum + Auto list);
@@ -29,6 +31,7 @@ export const ENABLED_INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'central-picture',
   'lesson-stages',
   'comparison',
+  'problem',
 ];
 export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = ['kids', 'official'];
 
@@ -37,6 +40,7 @@ export const SPEC_ICONS: readonly string[] = [
   'star', 'lightbulb', 'bolt', 'favorite', 'eco', 'water_drop', 'wb_sunny', 'public',
   'pets', 'science', 'calculate', 'menu_book', 'edit', 'palette', 'music_note', 'directions_run',
   'home', 'park', 'restaurant', 'health_and_safety', 'schedule', 'groups', 'flag', 'extension',
+  'help_outline', 'quiz', 'assignment', 'insights',
 ];
 
 export interface SpecItem {
@@ -79,6 +83,25 @@ export interface SpecQuote {
   author?: string;
 }
 
+export interface SpecProblemTable {
+  headers: string[];
+  rows: string[][];
+}
+
+export interface SpecProblemQuestion {
+  text: string;
+  linesCount?: number;
+}
+
+export interface SpecProblem {
+  situation: string;
+  table?: SpecProblemTable;
+  questions: SpecProblemQuestion[];
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
 export interface InfographicSpec {
   preset: InfographicPreset;
   title: string;
@@ -95,6 +118,10 @@ export interface InfographicSpec {
   stages?: SpecStage[];
   /** Optional quote for central-picture preset */
   quote?: SpecQuote;
+  /** Optional problem solving layout for problem preset */
+  problem?: SpecProblem;
+  /** Per-doc image library carrying illustrations across layout switches */
+  imageLibrary?: Record<string, string>;
 }
 
 /** Item count limits per composition. */
@@ -107,4 +134,6 @@ export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: n
   'lesson-stages': { min: 0, max: 5 },
   // content lives in `columns`, items are optional extras
   comparison: { min: 0, max: 4 },
+  // content lives in `problem`, items are optional extras
+  problem: { min: 0, max: 4 },
 };

@@ -4,6 +4,7 @@ import {
   EducationStore,
   InfographicDoc,
   InfographicPreset,
+  InfographicSpec,
   InfographicTheme,
   LanguageService,
   PRIMARY_GRADES,
@@ -304,6 +305,7 @@ export class AiStudioComponent implements OnInit {
     { id: 'central-picture', icon: 'center_focus_strong', fr: 'Image centrale', ar: 'صورة مركزية' },
     { id: 'lesson-stages', icon: 'format_list_numbered', fr: 'Étapes', ar: 'مراحل الدرس' },
     { id: 'comparison', icon: 'compare_arrows', fr: 'Comparaison', ar: 'مقارنة' },
+    { id: 'problem', icon: 'quiz', fr: 'Problème', ar: 'وضعية مشكل' },
   ];
 
   readonly themes: { id: InfographicTheme; fr: string; ar: string }[] = [
@@ -316,7 +318,7 @@ export class AiStudioComponent implements OnInit {
   readonly theme = signal<InfographicTheme>('kids');
   readonly notes = signal('');
   readonly busy = signal(false);
-  /** Key of the block whose picture is being drawn ('hero', 'item-2', 'column-0'), or null. */
+  /** Key of the block whose picture is being drawn ('hero', 'item-2', 'column-0', 'problem'), or null. */
   readonly illustrating = signal<string | null>(null);
   readonly error = signal<string | null>(null);
   readonly doc = signal<InfographicDoc | null>(null);
@@ -392,6 +394,26 @@ export class AiStudioComponent implements OnInit {
   setPreset(preset: InfographicPreset | 'auto') {
     if (this.preset() === preset && this.doc()) return;
     this.preset.set(preset);
+
+    const d = this.doc();
+    const cardPresets = new Set<InfographicPreset | 'auto'>([
+      'hero-cards',
+      'circular-flow',
+      'timeline',
+      'central-picture',
+    ]);
+
+    const currentPreset = (d?.values as unknown as InfographicSpec)?.preset;
+    // Client-side instant relayout without calling AI when switching between card presets
+    if (d && preset !== 'auto' && currentPreset && cardPresets.has(currentPreset) && cardPresets.has(preset)) {
+      const currentSpec = d.values as unknown as InfographicSpec;
+      const nextSpec: InfographicSpec = { ...currentSpec, preset };
+      const nextDoc: InfographicDoc = { ...d, values: nextSpec as unknown as InfographicDoc['values'] };
+      this.doc.set(nextDoc);
+      if (d.isOwner) void this.store.saveInfographic(nextDoc);
+      return;
+    }
+
     void this.generate();
   }
 
@@ -419,9 +441,27 @@ export class AiStudioComponent implements OnInit {
   async illustrate(target: SpecImageTarget) {
     const d = this.doc();
     if (!d || this.illustrating()) return;
-    this.illustrating.set(target.kind === 'hero' ? 'hero' : `${target.kind}-${target.index}`);
+    const targetKey =
+      target.kind === 'hero'
+        ? 'hero'
+        : target.kind === 'problem'
+          ? 'problem'
+          : `${target.kind}-${target.index}`;
+    this.illustrating.set(targetKey);
     this.error.set(null);
-    const res = await this.store.illustrateInfographicBlock(d, target);
+
+    const spec = d.values as unknown as InfographicSpec;
+    const currentBlock =
+      target.kind === 'hero'
+        ? spec.hero
+        : target.kind === 'item'
+          ? spec.items?.[target.index]
+          : target.kind === 'column'
+            ? spec.columns?.[target.index]
+            : spec.problem;
+    const isVariation = Boolean(currentBlock?.imageUrl);
+
+    const res = await this.store.illustrateInfographicBlock(d, target, isVariation);
     this.illustrating.set(null);
     // A regenerate may have replaced the sheet meanwhile: only apply to the same doc version.
     if (res.ok && res.doc && this.doc() === d) this.doc.set(res.doc);

@@ -121,6 +121,8 @@ export interface InfographicDoc {
   /** AI Studio: library section the sheet is filed under. */
   resourceKind?: 'course' | 'exercise';
   trimester?: string;
+  /** AI Studio: image library carrying over illustrations across presets. */
+  imageLibrary?: Record<string, string>;
   values: LessonPlanDocValues | Record<string, unknown>;
   author?: InfographicAuthor;
   createdAt?: string | number;

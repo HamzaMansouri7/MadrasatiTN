@@ -4,6 +4,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
  * Standard reusable card for all infographic presets.
  * Features high-legibility Arabic & French typography, subtle tactile depth,
  * badge pill styling, and an optional action slot for illustration generation.
+ * Images are framed cleanly without cropping character faces or objects.
  */
 @Component({
   selector: 'app-spec-card',
@@ -43,13 +44,16 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
       border: 1px solid var(--ig-border);
       background: var(--ig-hero);
       margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   `,
   template: `
     <article class="ig-card">
       @if (imageUrl()) {
         <div class="ig-img-wrap">
-          <img [src]="imageUrl()" [alt]="imageAlt() || title()" class="w-full h-32 sm:h-36 object-cover" />
+          <img [src]="imageUrl()" [alt]="imageAlt() || title()" class="w-full h-32 sm:h-36 object-contain p-1 rounded-lg" />
         </div>
       }
 

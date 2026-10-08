@@ -1373,10 +1373,41 @@ export class EducationStore {
     if (!res.ok) return { ok: false, error: res.error };
     const generated = res.data['doc'] as InfographicDoc | undefined;
     if (!generated) return { ok: false, error: 'Structure de document invalide.' };
+    
+    // Carry over image library and matching images from previous doc if regenerating
+    const prevLib: Record<string, string> = {
+      ...(previous?.imageLibrary || {}),
+      ...((previous?.values as unknown as InfographicSpec)?.imageLibrary || {}),
+    };
+
+    let values = generated.values as unknown as InfographicSpec;
+    if (Object.keys(prevLib).length > 0 && values) {
+      // Carry over images where title matches
+      const updatedItems = (values.items || []).map((it) => {
+        if (!it.imageUrl && it.title && prevLib[it.title]) {
+          return { ...it, imageUrl: prevLib[it.title] };
+        }
+        return it;
+      });
+      values = { ...values, items: updatedItems, imageLibrary: prevLib };
+    }
+
     const kept = previous
-      ? { id: previous.id, published: previous.published, resourceKind: previous.resourceKind, trimester: previous.trimester }
+      ? {
+          id: previous.id,
+          published: previous.published,
+          resourceKind: previous.resourceKind,
+          trimester: previous.trimester,
+          imageLibrary: Object.keys(prevLib).length ? prevLib : undefined,
+        }
       : { id: generated.id };
-    const doc: InfographicDoc = { ...generated, ...kept, author: this.profileAuthor() };
+
+    const doc: InfographicDoc = {
+      ...generated,
+      ...kept,
+      values: values as unknown as InfographicDoc['values'],
+      author: this.profileAuthor(),
+    };
     const saved = await this.saveStructuredDoc('infographic', doc);
     if (saved) {
       doc.id = saved.id;
@@ -1398,13 +1429,22 @@ export class EducationStore {
   async illustrateInfographicBlock(
     doc: InfographicDoc,
     target: SpecImageTarget,
+    variation = false,
   ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
     if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
     const spec = doc.values as unknown as InfographicSpec;
     const block =
-      target.kind === 'hero' ? spec.hero : target.kind === 'item' ? spec.items?.[target.index] : spec.columns?.[target.index];
+      target.kind === 'hero'
+        ? spec.hero
+        : target.kind === 'item'
+          ? spec.items?.[target.index]
+          : target.kind === 'column'
+            ? spec.columns?.[target.index]
+            : spec.problem;
     const prompt = block?.imagePrompt?.trim();
     if (!block || !prompt) return { ok: false, error: 'Aucune description d’image pour ce bloc.' };
+
+    const seedKey = variation ? `${doc.id}-var-${Date.now()}` : doc.id;
 
     const res = await this.ai.post(
       'generate-illustration',
@@ -1412,7 +1452,7 @@ export class EducationStore {
         promptText: prompt,
         raw: true,
         style: THEME_IMAGE_STYLE[doc.theme ?? 'kids'],
-        seedKey: doc.id,
+        seedKey,
         grade: doc.grade,
         subject: doc.subject,
       },
@@ -1422,13 +1462,41 @@ export class EducationStore {
     if (!imageUrl) return { ok: false, error: res.ok ? 'Image indisponible.' : res.error };
 
     const withImage = { ...block, imageUrl };
-    const values: InfographicSpec =
-      target.kind === 'hero'
-        ? { ...spec, hero: withImage as InfographicSpec['hero'] }
-        : target.kind === 'item'
-          ? { ...spec, items: spec.items.map((it, i) => (i === target.index ? (withImage as typeof it) : it)) }
-          : { ...spec, columns: (spec.columns ?? []).map((c, i) => (i === target.index ? (withImage as typeof c) : c)) };
-    const next: InfographicDoc = { ...doc, values: values as unknown as InfographicDoc['values'] };
+    const libraryKey = ('title' in block && typeof block.title === 'string' && block.title) ? block.title : prompt.slice(0, 60);
+    const updatedLib: Record<string, string> = {
+      ...(doc.imageLibrary || {}),
+      ...(spec.imageLibrary || {}),
+      [libraryKey]: imageUrl,
+    };
+
+    let updatedValues: InfographicSpec;
+    if (target.kind === 'hero') {
+      updatedValues = { ...spec, hero: withImage as InfographicSpec['hero'], imageLibrary: updatedLib };
+    } else if (target.kind === 'item') {
+      updatedValues = {
+        ...spec,
+        items: spec.items.map((it, i) => (i === target.index ? (withImage as typeof it) : it)),
+        imageLibrary: updatedLib,
+      };
+    } else if (target.kind === 'column') {
+      updatedValues = {
+        ...spec,
+        columns: (spec.columns ?? []).map((c, i) => (i === target.index ? (withImage as typeof c) : c)),
+        imageLibrary: updatedLib,
+      };
+    } else {
+      updatedValues = {
+        ...spec,
+        problem: withImage as InfographicSpec['problem'],
+        imageLibrary: updatedLib,
+      };
+    }
+
+    const next: InfographicDoc = {
+      ...doc,
+      imageLibrary: updatedLib,
+      values: updatedValues as unknown as InfographicDoc['values'],
+    };
     if (doc.isOwner) await this.saveStructuredDoc('infographic', next);
     return { ok: true, doc: next };
   }

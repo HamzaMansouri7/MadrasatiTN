@@ -7,6 +7,7 @@ import { PresetTimelineComponent } from './presets/preset-timeline';
 import { PresetCentralPictureComponent } from './presets/preset-central-picture';
 import { PresetLessonStagesComponent } from './presets/preset-lesson-stages';
 import { PresetComparisonComponent } from './presets/preset-comparison';
+import { PresetProblemComponent } from './presets/preset-problem';
 
 /**
  * Draws an AI Studio spec on an A4 sheet. The model only picks a preset and fills text;
@@ -24,6 +25,7 @@ import { PresetComparisonComponent } from './presets/preset-comparison';
     PresetCentralPictureComponent,
     PresetLessonStagesComponent,
     PresetComparisonComponent,
+    PresetProblemComponent,
   ],
   host: { '[attr.data-theme]': 'theme()' },
   styles: `
@@ -46,12 +48,24 @@ import { PresetComparisonComponent } from './presets/preset-comparison';
       display: flex; flex-direction: column; gap: 1.35rem; position: relative;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
       -webkit-print-color-adjust: exact; print-color-adjust: exact;
+      overflow: hidden;
+    }
+    .ig-accent-bar {
+      position: absolute;
+      top: 0;
+      inset-inline: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--ig-a) 0%, var(--ig-b) 33%, var(--ig-c) 66%, var(--ig-d) 100%);
     }
     .ig-title { font-size: var(--ig-title); line-height: 1.22; font-weight: 800; letter-spacing: -0.015em; }
     .ig-chip {
       display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.25rem 0.85rem; border-radius: 999px;
       background: var(--ig-card); border: 1.5px solid var(--ig-border); font-size: 0.8rem; font-weight: 700;
       box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .ig-objective {
+      display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.85rem; border-radius: 10px;
+      background: var(--ig-hero); border: 1px solid var(--ig-border); font-size: 0.85rem; font-weight: 600;
     }
     .ig-remember {
       background: linear-gradient(135deg, var(--ig-hero) 0%, rgba(255, 255, 255, 0.95) 100%);
@@ -73,14 +87,37 @@ import { PresetComparisonComponent } from './presets/preset-comparison';
       class="ig-sheet print-sheet"
       [attr.dir]="doc().language === 'fr' ? 'ltr' : 'rtl'"
       [attr.lang]="doc().language">
-      <header class="space-y-2.5">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="ig-chip text-[#14251D]">{{ doc().grade }}</span>
-          <span class="ig-chip" [style.color]="accent(0)">{{ doc().subject }}</span>
+      <!-- Top Accent Bar -->
+      <div class="ig-accent-bar" aria-hidden="true"></div>
+
+      <header class="space-y-2.5 pt-1">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="ig-chip text-[#14251D]">{{ doc().grade }}</span>
+            <span class="ig-chip" [style.color]="accent(0)">{{ doc().subject }}</span>
+            @if (doc().trimester) {
+              <span class="ig-chip text-[#526358]">{{ doc().trimester }}</span>
+            }
+          </div>
+          @if (doc().author?.name) {
+            <div class="text-xs font-semibold text-[#526358] flex items-center gap-1.5">
+              <span class="material-icons text-sm text-[var(--ig-a)]" aria-hidden="true">school</span>
+              <span>{{ doc().author?.name }}</span>
+              @if (doc().author?.school) {
+                <span>({{ doc().author?.school }})</span>
+              }
+            </div>
+          }
         </div>
+
         <h2 class="ig-title font-display text-[#14251D]">{{ s.title }}</h2>
+
         @if (s.subtitle) {
-          <p class="text-sm sm:text-base font-medium leading-relaxed" style="color: var(--ig-muted)">{{ s.subtitle }}</p>
+          <div class="ig-objective" style="color: var(--ig-ink)">
+            <span class="text-sm">🎯</span>
+            <span class="font-bold">{{ doc().language === 'fr' ? "Objectif d'apprentissage :" : 'الهدف التعلّمي :' }}</span>
+            <span>{{ s.subtitle }}</span>
+          </div>
         }
       </header>
 
@@ -115,27 +152,36 @@ import { PresetComparisonComponent } from './presets/preset-comparison';
             </app-preset-timeline>
           }
           @case ('central-picture') {
-          <app-preset-central-picture
-            [spec]="s"
-            [doc]="doc()"
-            [accent]="accentFn"
-            [illustrating]="illustrating()"
-            (illustrate)="illustrate.emit($event)">
-          </app-preset-central-picture>
-        }
-        @case ('lesson-stages') {
-          <app-preset-lesson-stages [spec]="s" [doc]="doc()" [accent]="accentFn"></app-preset-lesson-stages>
-        }
-        @case ('comparison') {
-          <app-preset-comparison
-            [spec]="s"
-            [doc]="doc()"
-            [accent]="accentFn"
-            [illustrating]="illustrating()"
-            (illustrate)="illustrate.emit($event)">
-          </app-preset-comparison>
-        }
-        @default {
+            <app-preset-central-picture
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-central-picture>
+          }
+          @case ('lesson-stages') {
+            <app-preset-lesson-stages [spec]="s" [doc]="doc()" [accent]="accentFn"></app-preset-lesson-stages>
+          }
+          @case ('comparison') {
+            <app-preset-comparison
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-comparison>
+          }
+          @case ('problem') {
+            <app-preset-problem
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-problem>
+          }
+          @default {
             <app-preset-hero-cards
               [spec]="s"
               [diagram]="diagram()"

@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { normalizeInfographicSpec, sanitizeImagePrompt, sanitizeImageUrl, sanitizeSvg } from './infographic-spec.util';
+import { generateSchoolDiagram } from './diagram-generator.util';
+import {
+  normalizeInfographicSpec,
+  sanitizeImagePrompt,
+  sanitizeImageUrl,
+  sanitizeSvg,
+} from './infographic-spec.util';
 
 const item = (n: number) => ({ title: `T${n}`, text: `Texte ${n}`, icon: 'bolt' });
 
@@ -32,9 +38,9 @@ describe('sanitizeSvg', () => {
 });
 
 describe('sanitizeImagePrompt', () => {
-  it('appends text-free suffix and clips length', () => {
+  it('appends strengthened text-free suffix and clips length', () => {
     const prompt = sanitizeImagePrompt('A boy reading a math book');
-    expect(prompt).toBe('A boy reading a math book, no text, no letters, no numbers, no labels, no watermark');
+    expect(prompt).toContain('no text, no letters, no numbers, no labels, no watermark, no symbols, no writing');
   });
 
   it('rejects prompts containing Arabic characters', () => {
@@ -57,6 +63,63 @@ describe('sanitizeImageUrl', () => {
     expect(sanitizeImageUrl('https://evil.com/a.png')).toBeUndefined();
     expect(sanitizeImageUrl('javascript:alert(1)')).toBeUndefined();
     expect(sanitizeImageUrl('/other/path.png')).toBeUndefined();
+  });
+});
+
+describe('generateSchoolDiagram', () => {
+  const items = [
+    { title: 'Étape 1', subtitle: 'Départ' },
+    { title: 'Étape 2', subtitle: 'Milieu' },
+    { title: 'Étape 3', subtitle: 'Arrivée' },
+  ];
+
+  it('generates valid sanitized SVG for cycle-ring', () => {
+    const svg = generateSchoolDiagram('cycle-ring', items, { theme: 'kids', lang: 'ar' });
+    expect(svg).toContain('<svg');
+    expect(svg).toContain('dir="rtl"');
+    expect(svg).toContain('Étape 1');
+  });
+
+  it('generates valid sanitized SVG for numbered-staircase', () => {
+    const svg = generateSchoolDiagram('numbered-staircase', items, { theme: 'official', lang: 'fr' });
+    expect(svg).toContain('<svg');
+    expect(svg).toContain('dir="ltr"');
+    expect(svg).toContain('Étape 2');
+  });
+
+  it('generates valid sanitized SVG for snake-road', () => {
+    const svg = generateSchoolDiagram('snake-road', items, { theme: 'kids', lang: 'ar' });
+    expect(svg).toContain('<svg');
+    expect(svg).toContain('path');
+  });
+
+  it('generates valid sanitized SVG for pyramid', () => {
+    const svg = generateSchoolDiagram('pyramid', items, { theme: 'kids', lang: 'ar' });
+    expect(svg).toContain('<svg');
+    expect(svg).toContain('polygon');
+  });
+
+  it('generates valid sanitized SVG for quadrant-grid', () => {
+    const gridItems = [
+      { title: 'Nord', subtitle: 'Haut' },
+      { title: 'Sud', subtitle: 'Bas' },
+      { title: 'Est', subtitle: 'Droite' },
+      { title: 'Ouest', subtitle: 'Gauche' },
+    ];
+    const svg = generateSchoolDiagram('quadrant-grid', gridItems, { theme: 'kids', lang: 'fr' });
+    expect(svg).toContain('<svg');
+    expect(svg).toContain('Nord');
+    expect(svg).toContain('Sud');
+  });
+
+  it('generates valid sanitized SVG for pros-cons', () => {
+    const svg = generateSchoolDiagram('pros-cons', items, { theme: 'official', lang: 'ar' });
+    expect(svg).toContain('<svg');
+    expect(svg).toContain('dir="rtl"');
+  });
+
+  it('returns empty string on empty items', () => {
+    expect(generateSchoolDiagram('pyramid', [])).toBe('');
   });
 });
 
@@ -107,7 +170,56 @@ describe('normalizeInfographicSpec', () => {
     expect(spec?.items[0].imagePrompt).toContain('no text');
   });
 
-  it('accepts new presets: comparison, lesson-stages, central-picture', () => {
+  it('accepts problem preset with situation, table, questions, and writing lines', () => {
+    const probSpec = normalizeInfographicSpec({
+      preset: 'problem',
+      title: 'المسألة الرياضية : شراء اللوازم',
+      subtitle: 'حساب ثمن المشتريات والمبلغ المتبقي',
+      problem: {
+        situation: 'اشترى أحمد 3 كراريس ثمن الكراس 1200 م، وقلمين ثمن القلم الواحد 650 م.',
+        table: {
+          headers: ['الشيء', 'الكمية', 'سعر الوحدة'],
+          rows: [
+            ['كراس', '3', '1200 م'],
+            ['قلم', '2', '650 م'],
+          ],
+        },
+        questions: [
+          { text: 'احسب ثمن الكراريس.', linesCount: 2 },
+          { text: 'احسب المبلغ الجملي للمشتريات.', linesCount: 3 },
+        ],
+        wantsImage: true,
+        imagePrompt: 'A student buying notebooks and pens in a stationary shop',
+        imageUrl: '/uploads/shop.webp',
+      },
+      remember: ['المبلغ المتبقي = المبلغ الجملي - ثمن المشتريات'],
+    });
+
+    expect(probSpec?.preset).toBe('problem');
+    expect(probSpec?.problem?.situation).toContain('اشترى أحمد');
+    expect(probSpec?.problem?.table?.headers).toHaveLength(3);
+    expect(probSpec?.problem?.table?.rows).toHaveLength(2);
+    expect(probSpec?.problem?.questions).toHaveLength(2);
+    expect(probSpec?.problem?.imageUrl).toBe('/uploads/shop.webp');
+    expect(probSpec?.remember).toHaveLength(1);
+  });
+
+  it('preserves per-doc imageLibrary', () => {
+    const spec = normalizeInfographicSpec({
+      preset: 'hero-cards',
+      title: 'Test Library',
+      items: [item(1), item(2), item(3), item(4)],
+      imageLibrary: {
+        'Cellule': '/uploads/cell.webp',
+        'T1': '/uploads/t1.webp',
+      },
+    });
+    expect(spec?.imageLibrary).toBeDefined();
+    expect(spec?.imageLibrary?.['Cellule']).toBe('/uploads/cell.webp');
+    expect(spec?.imageLibrary?.['T1']).toBe('/uploads/t1.webp');
+  });
+
+  it('accepts presets: comparison, lesson-stages, central-picture', () => {
     const comparison = normalizeInfographicSpec({
       preset: 'comparison',
       title: 'Le vivant et le non-vivant',
