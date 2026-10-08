@@ -346,6 +346,32 @@ interface RecitationItem {
                     [alt]="ex.title"
                     loading="lazy"
                     class="w-full max-h-44 object-cover rounded-2xl border border-[#E7DFCF] bg-[#FBF8F1]" />
+                } @else {
+                  <div [class]="'w-full h-36 rounded-2xl bg-gradient-to-br ' + getSubjectTheme(ex.subject).gradient + ' p-4 flex flex-col justify-between text-white relative overflow-hidden shadow-sm border border-black/10'">
+                    <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+                    <div class="absolute right-3 bottom-1 opacity-20 pointer-events-none">
+                      <span class="material-icons text-7xl">{{ getSubjectTheme(ex.subject).icon }}</span>
+                    </div>
+                    <div class="flex items-center justify-between z-10">
+                      <span [class]="'inline-flex items-center gap-1.5 text-[10px] font-semibold ' + getSubjectTheme(ex.subject).badgeBg + ' backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white'">
+                        <span class="material-icons text-xs">{{ getSubjectTheme(ex.subject).icon }}</span>
+                        {{ ex.subject }}
+                      </span>
+                      <span class="text-[10px] font-medium text-white/90 bg-black/25 px-2 py-0.5 rounded-md backdrop-blur-sm">
+                        {{ ex.grade }}
+                      </span>
+                    </div>
+                    <div class="z-10 space-y-1">
+                      <p class="font-display font-semibold text-xs text-white line-clamp-2 leading-tight">
+                        {{ ex.title }}
+                      </p>
+                      <div class="flex items-center gap-2 text-[10px] text-white/80">
+                        <span class="bg-white/15 px-1.5 py-0.5 rounded text-[9px] font-semibold">{{ ex.docType || 'ورقة عمل A4' }}</span>
+                        <span>•</span>
+                        <span>{{ ex.trimester || 'الثلاثي 1' }}</span>
+                      </div>
+                    </div>
+                  </div>
                 }
 
                 <p class="text-xs text-[#4A5A50] bg-[#FBF8F1] p-3.5 rounded-2xl border border-[#E7DFCF] leading-relaxed font-mono">
@@ -514,6 +540,32 @@ interface RecitationItem {
                       <span class="material-icons text-white opacity-0 group-hover:opacity-100 transition-opacity text-3xl drop-shadow">zoom_in</span>
                     </span>
                   </button>
+                } @else {
+                  <div [class]="'w-full h-36 rounded-2xl bg-gradient-to-br ' + getSubjectTheme(c.subject).gradient + ' p-4 flex flex-col justify-between text-white relative overflow-hidden shadow-sm border border-black/10'">
+                    <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+                    <div class="absolute right-3 bottom-1 opacity-20 pointer-events-none">
+                      <span class="material-icons text-7xl">{{ getSubjectTheme(c.subject).icon }}</span>
+                    </div>
+                    <div class="flex items-center justify-between z-10">
+                      <span [class]="'inline-flex items-center gap-1.5 text-[10px] font-semibold ' + getSubjectTheme(c.subject).badgeBg + ' backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white'">
+                        <span class="material-icons text-xs">{{ getSubjectTheme(c.subject).icon }}</span>
+                        {{ c.subject }}
+                      </span>
+                      <span class="text-[10px] font-medium text-white/90 bg-black/25 px-2 py-0.5 rounded-md backdrop-blur-sm">
+                        {{ c.grade }}
+                      </span>
+                    </div>
+                    <div class="z-10 space-y-1">
+                      <p class="font-display font-semibold text-xs text-white line-clamp-2 leading-tight">
+                        {{ c.title }}
+                      </p>
+                      <div class="flex items-center gap-2 text-[10px] text-white/80">
+                        <span class="bg-white/15 px-1.5 py-0.5 rounded text-[9px] font-semibold">{{ c.docType || 'ملخص درس' }}</span>
+                        <span>•</span>
+                        <span>{{ c.trimester || 'الثلاثي 1' }}</span>
+                      </div>
+                    </div>
+                  </div>
                 }
 
                 <div class="flex items-center justify-between">
@@ -1247,6 +1299,27 @@ export class PublicDiscoveryComponent {
   readonly paginatedCourses = computed(() =>
     paginate(this.currentCoursesList(), this.coursesPage(), this.coursesPageSize())
   );
+
+  getSubjectTheme(subject?: string): { gradient: string; icon: string; badgeBg: string } {
+    switch (subject) {
+      case 'Mathématiques':
+        return { gradient: 'from-[#0D3B66] via-[#1D4E89] to-[#007CC2]', icon: 'calculate', badgeBg: 'bg-[#007CC2]/30' };
+      case 'اللغة العربية':
+        return { gradient: 'from-[#14251D] via-[#1B4332] to-[#2D6A4F]', icon: 'auto_stories', badgeBg: 'bg-[#2D6A4F]/30' };
+      case 'Éveil Scientifique':
+        return { gradient: 'from-[#4A2810] via-[#8A5A00] to-[#D97706]', icon: 'biotech', badgeBg: 'bg-[#D97706]/30' };
+      case 'Français':
+        return { gradient: 'from-[#2E1065] via-[#4C1D95] to-[#7C3AED]', icon: 'translate', badgeBg: 'bg-[#7C3AED]/30' };
+      case 'Anglais':
+        return { gradient: 'from-[#042F2E] via-[#115E59] to-[#0D9488]', icon: 'language', badgeBg: 'bg-[#0D9488]/30' };
+      case 'Histoire & Géographie':
+        return { gradient: 'from-[#422006] via-[#78350F] to-[#B45309]', icon: 'public', badgeBg: 'bg-[#B45309]/30' };
+      case 'Éducation Islamique':
+        return { gradient: 'from-[#064E3B] via-[#047857] to-[#10B981]', icon: 'mosque', badgeBg: 'bg-[#10B981]/30' };
+      default:
+        return { gradient: 'from-[#14251D] via-[#1B4332] to-[#2D6A4F]', icon: 'school', badgeBg: 'bg-[#2D6A4F]/30' };
+    }
+  }
 
   /** Resolve a resource's author to a real teacher card (by id first, then exact name). */
   findAuthor(teacherName?: string, teacherId?: string): TeacherProfile | null {

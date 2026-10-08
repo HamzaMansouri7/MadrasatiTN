@@ -17,7 +17,7 @@ Goal: a teacher gives a topic or text, picks a template, and gets an A4 landscap
 1.1 **Character consistency:** one fixed "family" description block + one style preset, 4 panels, same seed family; look at the outputs (cf klein-9b, flux-1-schnell). Pass = same-looking characters in at least 3 of 4 panels. Needs Cloudflare quota (resets daily; reset time unverified).
 1.2 **Icon strategy:** inline SVG icon set (free licence, check it) for small icons vs generated. Decide per slot kind.
 1.3 **Arabic render check:** one hand-built HTML with real Arabic text, printed to PDF. NOTE global rule: no browser/screenshots unless the owner asks, so the owner must approve this step.
-1.4 **Export path:** how PNG is produced from the page (print-to-PDF exists; PNG unverified).
+1.4 **Export path:** dropped (2026-10-08). Print/PDF + share cover it; no PNG.
 
 ## Phase 2 — Data model
 2.1 `src/app/core/models/infographic.model.ts`: `InfographicTemplate` (id, name, slots[]), `Slot` (id, kind: title|subtitle|definition|card|icon-row|slogan|footer, count, maxChars, illustration), `InfographicDoc`.
@@ -39,7 +39,7 @@ Goal: a teacher gives a topic or text, picks a template, and gets an A4 landscap
 4.5 Loading + error states per panel.
 
 ## Phase 5 — Export and polish
-5.1 Print A4 landscape (existing print engine), PDF; PNG if 1.4 finds a path.
+5.1 Print A4 landscape (existing print engine), PDF.
 5.2 Author line ("prepared by") taken from the teacher profile, never invented.
 5.3 Teacher review of 5 generated pages per template before release.
 
@@ -60,7 +60,7 @@ About 20 tasks: Phase 1 = 4 spikes, Phase 2 = 3, Phase 3 = 5, Phase 4 = 5, Phase
 
 ## ADR-001 and progress (2026-10-08)
 
-**Decision:** one template-driven document engine for lesson plan, memo studio and summaries. Merge the engine, not the documents (lesson plan = teacher-facing, 12 sections; memo = pupil-facing, 6 layouts; each stays its own template). `/summarize` and the Create hub "Synthèse" fold into it later. Users: teachers and jardin d'enfants making attractive summaries from their own course text, photo or PDF; output is HTML to print, PDF or PNG. Student infographic is out of scope for now.
+**Decision:** one template-driven document engine for lesson plan, memo studio and summaries. Merge the engine, not the documents (lesson plan = teacher-facing, 12 sections; memo = pupil-facing, 6 layouts; each stays its own template). `/summarize` and the Create hub "Synthèse" fold into it later. Users: teachers and jardin d'enfants making attractive summaries from their own course text, photo or PDF; output is HTML to print or PDF (share via the existing share option). Student infographic is out of scope for now.
 
 **Model:** Template = structure (slots: `zone`, `kind`, `variant`, `valueKey`, `rows`, `count`, `maxChars`). Theme = look (design tokens + illustration set): Cartoon (kids, few words), École, Scientifique, Officiel (Cartouche, default for the teacher sheet). Switching a theme is a CSS-variable swap. Illustrations in tiers: fixed free set bound to slot ids (default), optional topic hero image from the image chain, per-stage images on request. Text is always real HTML; Arabic is never baked into an image.
 
@@ -92,7 +92,7 @@ Memo studio is renamed **AI Studio** (display only; route `/memo-studio` and `me
 
 **Owner decisions:** one simple controlled Kids palette, scoped to the AI Studio Kids theme only (app UI stays DESIGN.md Cartouche); retire the old 6 memo layouts once the new engine is proven; maternelle/jardin grade not now; Create hub becomes a type picker only.
 
-**Roadmap:** spike v2 → `/api/ai/generate-infographic` (chain, sanitizer, validator, tests) → simplified AI Studio UI (3 source tabs, prefilled meta, preset + theme, collapsed Consignes) → PNG export → more presets and themes.
+**Roadmap:** spike v2 → `/api/ai/generate-infographic` (chain, sanitizer, validator, tests) → simplified AI Studio UI (3 source tabs, prefilled meta, preset + theme, collapsed Consignes) → more presets and themes.
 
 ---
 
@@ -114,7 +114,7 @@ LLM (free Gemini chain)     FLUX (image chain, text-free, English)
         └──────────► Server: insert images, sanitize, validate A4/RTL
                               │
                               ▼
-                    Live A4 preview → print / PDF / save / share (PNG later)
+                    Live A4 preview → print / PDF / save / share
 ```
 
 - **LLM = creative**, **server code = control** (theme, seeds, API calls, sanitizing, retries). The LLM never manages seeds or consistency.
