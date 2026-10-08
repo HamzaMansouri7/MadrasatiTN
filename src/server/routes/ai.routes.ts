@@ -731,6 +731,9 @@ aiRouter.post('/generate-memo', originGuard, aiRateLimiter, async (req: Request,
   }
 });
 
+/** With attached photos/PDFs, they ARE the lesson: the model must not drift to a placeholder topic or a curriculum guess. */
+const FILE_SOURCE_RULE = `SOURCE PRIORITAIRE : les images ou documents joints sont le cours de l'enseignant. Lis-les attentivement et base TOUT le contenu ET le titre UNIQUEMENT sur eux ; n'invente jamais un autre sujet. Le contexte du programme sert seulement à respecter le niveau et le vocabulaire.`;
+
 /** Up to 3 source photos/files as inline parts (data-URL prefix stripped, oversized ones dropped). */
 function sourceParts(raw: unknown): GeminiPart[] {
   if (!Array.isArray(raw)) return [];
@@ -765,7 +768,7 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
     }
 
     const lang: 'ar' | 'fr' = resolveLang(language);
-    const safeTopic = capText(topic || instructions || lessonText || 'Leçon de base', 300);
+    const safeTopic = capText(topic || instructions || lessonText || (parts.length ? 'Contenu des documents joints' : 'Leçon de base'), 300);
     const resolvedGrade = String(grade);
     const resolvedSubject = String(subject);
     const duration = Math.min(120, Math.max(20, Number(durationMinutes) || 45));
@@ -789,7 +792,9 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
 
     const raw = await aiGenerateJSON(
       lessonPlanSkill.chain,
-      parts.length ? [{ text: prompt }, ...parts] : prompt,
+      parts.length ? [{ text: `${prompt}
+
+${FILE_SOURCE_RULE}` }, ...parts] : prompt,
       lessonPlanSkill.schema,
       lessonPlanSkill.temperature,
     );
@@ -835,7 +840,7 @@ aiRouter.post('/generate-infographic', originGuard, aiRateLimiter, async (req: R
     }
 
     const lang: 'ar' | 'fr' = resolveLang(language);
-    const safeTopic = capText(topic || instructions || lessonText || 'Notion du jour', 300);
+    const safeTopic = capText(topic || instructions || lessonText || (parts.length ? 'Contenu des documents joints' : 'Notion du jour'), 300);
     const resolvedGrade = String(grade);
     const resolvedSubject = String(subject);
     const wanted: InfographicPreset | 'auto' = INFOGRAPHIC_PRESETS.includes(preset) ? preset : 'auto';
@@ -853,7 +858,9 @@ aiRouter.post('/generate-infographic', originGuard, aiRateLimiter, async (req: R
 
     const raw = await aiGenerateJSON(
       infographicSkill.chain,
-      parts.length ? [{ text: prompt }, ...parts] : prompt,
+      parts.length ? [{ text: `${prompt}
+
+${FILE_SOURCE_RULE}` }, ...parts] : prompt,
       infographicSkill.schema,
       infographicSkill.temperature,
     );
@@ -907,7 +914,7 @@ aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, r
     }
 
     const lang: 'ar' | 'fr' = resolveLang(language);
-    const safeTopic = capText(topic || 'Histoire de la Tunisie', 300);
+    const safeTopic = capText(topic || (parts.length ? 'Contenu des documents joints' : 'Histoire de la Tunisie'), 300);
     const safeText = capText(lessonText || topic || '', 8000);
 
     const prompt = compose(seriesSkill, {
@@ -925,7 +932,9 @@ aiRouter.post('/plan-series', originGuard, aiRateLimiter, async (req: Request, r
       }),
     });
 
-    const data = await aiGenerateJSON(seriesSkill.chain, parts.length ? [{ text: prompt }, ...parts] : prompt, SERIES_PLAN_SCHEMA, seriesSkill.temperature);
+    const data = await aiGenerateJSON(seriesSkill.chain, parts.length ? [{ text: `${prompt}
+
+${FILE_SOURCE_RULE}` }, ...parts] : prompt, SERIES_PLAN_SCHEMA, seriesSkill.temperature);
     const plan = normalizeDigits(data) as {
       title: string;
       era: string;

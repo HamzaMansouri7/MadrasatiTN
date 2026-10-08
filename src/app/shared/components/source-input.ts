@@ -161,7 +161,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
             (change)="grade.set($any($event.target).value)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
             @for (g of grades; track g) {
-              <option [value]="g">{{ lang.translateGrade(g) }}</option>
+              <option [value]="g" [selected]="g === grade()">{{ lang.translateGrade(g) }}</option>
             }
           </select>
         </div>
@@ -175,7 +175,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
             (change)="subject.set($any($event.target).value)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
             @for (s of subjects; track s) {
-              <option [value]="s">{{ lang.translateSubject(s) }}</option>
+              <option [value]="s" [selected]="s === subject()">{{ lang.translateSubject(s) }}</option>
             }
           </select>
         </div>
@@ -189,7 +189,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
             (change)="trimester.set($any($event.target).value)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
             @for (tri of trimesters; track tri) {
-              <option [value]="tri">{{ lang.tr(tri, tri === 'Trimestre 1' ? 'الثلاثي الأول' : tri === 'Trimestre 2' ? 'الثلاثي الثاني' : 'الثلاثي الثالث') }}</option>
+              <option [value]="tri" [selected]="tri === trimester()">{{ lang.tr(tri, tri === 'Trimestre 1' ? 'الثلاثي الأول' : tri === 'Trimestre 2' ? 'الثلاثي الثاني' : 'الثلاثي الثالث') }}</option>
             }
           </select>
         </div>
@@ -202,8 +202,8 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
             [value]="language()"
             (change)="language.set($any($event.target).value)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
-            <option value="ar">العربية (Arabe standard)</option>
-            <option value="fr">Français (Français)</option>
+            <option value="ar" [selected]="language() === 'ar'">العربية (Arabe standard)</option>
+            <option value="fr" [selected]="language() === 'fr'">Français (Français)</option>
           </select>
         </div>
       </div>
