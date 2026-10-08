@@ -326,6 +326,8 @@ export class LanguageService {
       fr: 'Rechercher par sujet (ex: Multiplication 4ème, Imla\'a, Fractions...)',
       ar: 'ابحث عن درس أو تمرين (مثال: ضرب الأعداد، الإملاء، الإيقاظ العلمي...)',
     },
+    filterGrade: { fr: 'Niveau scolaire', ar: 'المستوى الدراسي' },
+    filterSubject: { fr: 'Matière', ar: 'المادة' },
     filterGradeAll: { fr: 'Tous les Niveaux', ar: 'جميع المستويات' },
     filterSubjectAll: { fr: 'Toutes les Matières', ar: 'جميع المواد' },
     teachersDirectory: { fr: 'Répertoire des Enseignants Certifiés', ar: 'دليل المعلمين المعتمدين' },

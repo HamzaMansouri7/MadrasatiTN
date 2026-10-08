@@ -1,6 +1,6 @@
 # PLAN — Infographic feature (Memo studio)
 
-Status: PLAN ONLY. Owner parked building (2026-10-07) until he finishes his own research. Do not start Phase 2+ without his go.
+Status (2026-10-08): IN PROGRESS, direction changed. See "ADR-001 and progress" at the end of this file. The phases below are the original plan; Phase 2 (data model) and the template-driven schema part of Phase 3 are now built for the lesson plan.
 Goal: a teacher gives a topic or text, picks a template, and gets an A4 landscape Arabic infographic (like a cards-and-roles page) with real Arabic text and illustrations, editable, exportable.
 
 ## Principles (from research + tests)
@@ -55,3 +55,28 @@ Goal: a teacher gives a topic or text, picks a template, and gets an A4 landscap
 
 ## Rough size
 About 20 tasks: Phase 1 = 4 spikes, Phase 2 = 3, Phase 3 = 5, Phase 4 = 5, Phase 5 = 3 (estimate).
+
+---
+
+## ADR-001 and progress (2026-10-08)
+
+**Decision:** one template-driven document engine for lesson plan, memo studio and summaries. Merge the engine, not the documents (lesson plan = teacher-facing, 12 sections; memo = pupil-facing, 6 layouts; each stays its own template). `/summarize` and the Create hub "Synthèse" fold into it later. Users: teachers and jardin d'enfants making attractive summaries from their own course text, photo or PDF; output is HTML to print, PDF or PNG. Student infographic is out of scope for now.
+
+**Model:** Template = structure (slots: `zone`, `kind`, `variant`, `valueKey`, `rows`, `count`, `maxChars`). Theme = look (design tokens + illustration set): Cartoon (kids, few words), École, Scientifique, Officiel (Cartouche, default for the teacher sheet). Switching a theme is a CSS-variable swap. Illustrations in tiers: fixed free set bound to slot ids (default), optional topic hero image from the image chain, per-stage images on request. Text is always real HTML; Arabic is never baked into an image.
+
+**Built and deployed:**
+- Registry + single id `lesson-plan-official`, legacy alias `official-lesson-plan` (`src/app/core/data/infographic-templates.data.ts`, `getInfographicTemplate()`).
+- Generic slot renderer `src/app/shared/components/infographic-renderer.ts` (page keeps toolbar, cartouche, footer); spec in `infographic-renderer.spec.ts`.
+- `src/server/skills/template-schema.ts`: responseSchema and size-limit prompt rules built from the template; `skills/lesson-plan.ts` uses it; spec checks the schema keeps the old field set.
+- Related, same day: owner-only "Publier au blog" (server GET returns `isOwner`), lesson plans and series as library cards with an open link, print fix for `/summarize` and for header/footer inside print sheets, share button.
+
+**Pending (in order):**
+1. Live-test one real lesson-plan generation. The new size limits (objectives max 3 x 160 chars, etc.) are untested for quality; loosen in the template if plans are too terse.
+2. Migrate the memo studio and its 6 layouts onto the engine.
+3. Extend the model for richer templates: image slots, item objects (not only strings), grid areas instead of coarse zones, inline editing (`contenteditable` synced to `doc.values`), per-slot regenerate.
+4. Themes and the fixed illustration set (owner must approve the cute child illustrations).
+5. Fold `/summarize` and the hub "Synthèse" into the engine.
+
+**Unverified:** whether the memo accepts photo/PDF input; whether the grade list includes maternelle/jardin.
+
+**Evaluated and discarded:** Antigravity sample templates (two-column comparison, landscape radial/stat cards): useful only to prove the slot vocabulary; layout had overlaps, blank bands, tiny low-contrast text and Latin placeholders. Deleted.
