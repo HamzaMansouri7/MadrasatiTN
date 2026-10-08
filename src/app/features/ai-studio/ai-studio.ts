@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { EducationStore, InfographicDoc, InfographicPreset, InfographicTheme, LanguageService, SourceInput, SpecImageTarget } from '@core';
 import { AiStatusComponent, InfographicSpecComponent } from '@shared';
@@ -33,7 +33,7 @@ interface PresetOption {
             <div class="no-print bg-white rounded-lg border border-[#E7DFCF] p-16 text-center space-y-3">
               <span class="material-icons text-4xl text-[#2D6A4F] animate-spin" aria-hidden="true">sync</span>
               <p class="font-display font-semibold">{{ lang.tr('Création de votre infographie…', 'جارٍ إنشاء الإنفوغرافيك…') }}</p>
-              <p class="text-sm text-[#5B6B60]">{{ sourceLabel() }}</p>
+              <p class="text-sm text-[#5B6B60]">{{ sourcePreview() }}</p>
             </div>
           }
           <div class="no-print">
@@ -44,8 +44,24 @@ interface PresetOption {
         <!-- Settings, next to the result -->
         <aside class="no-print bg-white rounded-lg border border-[#E7DFCF] p-4 space-y-5 lg:sticky lg:top-24">
           <div>
-            <p class="text-xs text-[#5B6B60]">{{ lang.tr('Contenu', 'المحتوى') }}</p>
-            <p class="font-semibold text-sm">{{ sourceLabel() }}</p>
+            <p class="text-xs text-[#5B6B60] flex items-center gap-1">
+              <span class="material-icons text-sm" aria-hidden="true">{{ sourceKind().icon }}</span>
+              {{ lang.tr('Contenu', 'المحتوى') }} · {{ lang.tr(sourceKind().fr, sourceKind().ar) }}
+            </p>
+            <p class="font-semibold text-sm mt-1" [class.line-clamp-2]="!contentOpen()">{{ sourcePreview() }}</p>
+            @if (sourcePreview().length > 70) {
+              <button type="button" (click)="contentOpen.set(!contentOpen())" [attr.aria-expanded]="contentOpen()" class="text-xs font-semibold text-[#2D6A4F] hover:underline cursor-pointer min-h-8">
+                {{ contentOpen() ? lang.tr('Réduire', 'إخفاء') : lang.tr('Tout afficher', 'عرض الكل') }}
+              </button>
+            }
+            <div class="flex flex-wrap gap-1.5 my-2">
+              @if (source()?.grade) {
+                <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#F2ECDE] text-[#14251D]">{{ lang.translateGrade(source()?.grade ?? '') }}</span>
+              }
+              @if (source()?.subject) {
+                <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#F2ECDE] text-[#14251D]">{{ lang.translateSubject(source()?.subject ?? '') }}</span>
+              }
+            </div>
             <a routerLink="/create" [queryParams]="{ output: 'memo' }" class="text-xs font-semibold text-[#2D6A4F] hover:underline">
               {{ lang.tr('Changer le contenu', 'تغيير المحتوى') }}
             </a>
@@ -77,12 +93,21 @@ interface PresetOption {
                   [disabled]="busy()"
                   [attr.aria-pressed]="preset() === p.id"
                   [class]="preset() === p.id ? 'border-[#2D6A4F] bg-[#2D6A4F]/5 text-[#1B4332]' : 'border-[#E7DFCF] hover:bg-[#F2ECDE]'"
-                  class="border rounded-md min-h-11 px-2 text-xs font-semibold cursor-pointer transition-colors flex items-center justify-center gap-1.5 disabled:opacity-60">
+                  [style.box-shadow]="autoPicked() === p.id ? '0 0 0 2px rgba(45, 106, 79, 0.4)' : null"
+                  class="relative border rounded-md min-h-11 px-2 text-xs font-semibold cursor-pointer transition-colors flex items-center justify-center gap-1.5 disabled:opacity-60">
                   <span class="material-icons text-base" aria-hidden="true">{{ p.icon }}</span>
                   {{ lang.tr(p.fr, p.ar) }}
+                  @if (autoPicked() === p.id) {
+                    <span class="absolute -top-2 end-1 text-[10px] font-bold px-1.5 rounded-full bg-[#2D6A4F] text-[#FBF8F1]">AI</span>
+                  }
                 </button>
               }
             </div>
+            @if (autoPicked(); as picked) {
+              <p class="text-xs text-[#5B6B60]" aria-live="polite">
+                {{ lang.tr('Choix de l’IA : ', 'اختار الذكاء الاصطناعي: ') }}<strong class="text-[#1B4332]">{{ presetName(picked) }}</strong>
+              </p>
+            }
           </fieldset>
 
           <details class="group">
@@ -171,11 +196,34 @@ export class AiStudioComponent implements OnInit {
     void this.generate();
   }
 
-  sourceLabel(): string {
+  readonly contentOpen = signal(false);
+
+  /** What kind of source the sheet was made from (the hub tab), for the panel's label. */
+  readonly sourceKind = computed(() => {
+    const s = this.source();
+    if (s?.mode === 'text') return { icon: 'notes', fr: 'Texte du cours', ar: 'نص الدرس' };
+    if (s?.mode === 'photo') return { icon: 'photo_camera', fr: 'Photo', ar: 'صورة' };
+    if (s?.mode === 'file') return { icon: 'description', fr: 'Fichier', ar: 'ملف' };
+    return { icon: 'title', fr: 'Sujet', ar: 'موضوع' };
+  });
+
+  readonly sourcePreview = computed(() => {
     const s = this.source();
     if (!s) return '';
-    const what = s.topic || (s.text ? s.text.slice(0, 60) + '…' : this.lang.tr('Document importé', 'مستند مستورد'));
-    return [what, s.grade, s.subject].filter(Boolean).join(' · ');
+    const raw = s.mode === 'text' ? s.text || s.topic : s.topic || s.text;
+    return (raw || this.lang.tr('Document importé', 'مستند مستورد')).replace(/\s+/g, ' ').trim();
+  });
+
+  /** In Auto mode, the layout the model chose for the current sheet (null otherwise). */
+  readonly autoPicked = computed<InfographicPreset | null>(() => {
+    if (this.preset() !== 'auto') return null;
+    const v = this.doc()?.values as { preset?: InfographicPreset } | undefined;
+    return v?.preset ?? null;
+  });
+
+  presetName(id: InfographicPreset): string {
+    const p = this.presets.find((x) => x.id === id);
+    return p ? this.lang.tr(p.fr, p.ar) : id;
   }
 
   setTheme(theme: InfographicTheme) {
