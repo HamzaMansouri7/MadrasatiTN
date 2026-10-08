@@ -254,7 +254,22 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
     }
     this.syncChapterSelection();
 
-    const prompt = src.topic || src.text || src.instructions;
+    const prompt =
+      src.topic ||
+      src.text ||
+      src.instructions ||
+      (src.images?.length || src.photos?.length
+        ? (this.lang.isArabic()
+            ? `صياغة مقال تربوي وتوجيهي مفصل يحلل المستندات والصور المرفقة في مادة ${src.subject || 'المادة'} للمستوى ${src.grade || 'المستوى'}.`
+            : `Rédigez un article pédagogique et pratique analysant les documents et photos fournis en ${src.subject || 'la matière'} pour le niveau ${src.grade || 'primaire'}.`)
+        : src.file
+        ? (this.lang.isArabic()
+            ? `صياغة مقال بيداغوجي وتوجيهي مستنداً إلى ملف ${src.file.filename} في مادة ${src.subject || 'المادة'}.`
+            : `Rédigez un article pédagogique basé sur le document ${src.file.filename} en ${src.subject || 'la matière'}.`)
+        : (this.lang.isArabic()
+            ? `صياغة مقال توجيهي بيداغوجي مفيد للأولياء والمعلمين حول مادة ${src.subject || 'المادة'}.`
+            : `Rédigez un article d'orientation pédagogique pour parents et enseignants en ${src.subject || 'la matière'}.`));
+
     if (prompt) {
       this.userInput.set(prompt);
       void this.sendMessage();

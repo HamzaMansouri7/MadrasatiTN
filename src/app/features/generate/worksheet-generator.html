@@ -70,7 +70,7 @@
             [attr.aria-label]="lang.tr('Niveau', 'المستوى')"
             class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm bg-white text-[#5B6B60]">
             <option value="">{{ lang.tr('Niveau auto', 'مستوى تلقائي') }}</option>
-            @for (g of GRADES; track g) { <option [value]="g">{{ lang.translateGrade(g) }}</option> }
+            @for (g of GRADES; track g) { <option [value]="g" [selected]="g === (d.grade || '')">{{ lang.translateGrade(g) }}</option> }
           </select>
           <select
             [value]="d.subject || ''"
@@ -78,7 +78,7 @@
             [attr.aria-label]="lang.tr('Matière', 'المادة')"
             class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm bg-white text-[#5B6B60]">
             <option value="">{{ lang.tr('Matière auto', 'مادة تلقائية') }}</option>
-            @for (s of SUBJECTS; track s) { <option [value]="s">{{ lang.translateSubject(s) }}</option> }
+            @for (s of SUBJECTS; track s) { <option [value]="s" [selected]="s === (d.subject || '')">{{ lang.translateSubject(s) }}</option> }
           </select>
         </div>
         <div class="flex items-center gap-1">
@@ -95,7 +95,7 @@
           class="border border-[#E7DFCF] rounded-[8px] px-2 py-1 text-sm bg-white"
           [value]="count()"
           (change)="count.set(+$any($event.target).value)">
-          @for (n of [1,2,3,4,5,6]; track n) { <option [value]="n">{{ n }}</option> }
+          @for (n of [1,2,3,4,5,6]; track n) { <option [value]="n" [selected]="n === count()">{{ n }}</option> }
         </select>
         <button
           type="button"
@@ -145,7 +145,7 @@
               (change)="shareGrade.set($any($event.target).value)"
               class="border border-[#E7DFCF] rounded-[8px] px-2 py-1.5 text-sm bg-white min-w-36">
               <option value="" disabled>{{ lang.tr('Choisir…', 'اختر…') }}</option>
-              @for (g of GRADES; track g) { <option [value]="g">{{ lang.translateGrade(g) }}</option> }
+              @for (g of GRADES; track g) { <option [value]="g" [selected]="g === shareGrade()">{{ lang.translateGrade(g) }}</option> }
             </select>
           </div>
           <div>
@@ -156,7 +156,7 @@
               (change)="shareSubject.set($any($event.target).value)"
               class="border border-[#E7DFCF] rounded-[8px] px-2 py-1.5 text-sm bg-white min-w-36">
               <option value="" disabled>{{ lang.tr('Choisir…', 'اختر…') }}</option>
-              @for (s of SUBJECTS; track s) { <option [value]="s">{{ lang.translateSubject(s) }}</option> }
+              @for (s of SUBJECTS; track s) { <option [value]="s" [selected]="s === shareSubject()">{{ lang.translateSubject(s) }}</option> }
             </select>
           </div>
           <button

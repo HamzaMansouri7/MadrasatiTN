@@ -364,9 +364,14 @@ export class EditorStudioComponent implements OnInit {
   }
 
   async applySourceAndGenerate(src: SourceInput, type: DocumentType) {
-    const topic = src.topic || (src.text ? src.text.slice(0, 60) : '');
+    const effectiveTopic =
+      src.topic ||
+      (src.text ? src.text.slice(0, 60) : '') ||
+      (src.file?.filename ? `Document ${src.file.filename}` : '') ||
+      (src.images?.length || src.photos?.length ? `Exercices et activités en ${this.docSubject()}` : `Notion clé en ${this.docSubject()}`);
+
     if (type === 'exam') {
-      this.docTitle.set(topic ? `Évaluation : ${topic} (${this.docGrade()})` : `Évaluation de ${this.docSubject()} (${this.docGrade()})`);
+      this.docTitle.set(`Évaluation : ${effectiveTopic} (${this.docGrade()})`);
       const b1Id = 'b-' + Date.now() + '-1';
       const b2Id = 'b-' + Date.now() + '-2';
       const ex1Id = 'b-' + Date.now() + '-ex1';
@@ -395,53 +400,51 @@ export class EditorStudioComponent implements OnInit {
         },
       ]);
 
-      if (topic || src.text) {
-        this.isAiLoading.set(true);
-        try {
-          const [res1, res2] = await Promise.all([
-            this.ai.post('generate-exercise', {
-              grade: this.docGrade(),
-              subject: this.docSubject(),
-              topic: `${topic || src.text} - Connaissances de base et calcul direct`,
-              difficulty: 'Facile',
-              format: 'free',
-              trimester: this.docTrimester(),
-              points: 8,
-              role: this.isParentMode() ? 'parent' : 'teacher',
-              childName: this.activeChildName(),
-            }),
-            this.ai.post('generate-exercise', {
-              grade: this.docGrade(),
-              subject: this.docSubject(),
-              topic: `${topic || src.text} - Situation problème et raisonnement`,
-              difficulty: 'Moyen',
-              format: 'free',
-              trimester: this.docTrimester(),
-              points: 12,
-              role: this.isParentMode() ? 'parent' : 'teacher',
-              childName: this.activeChildName(),
-            }),
-          ]);
+      this.isAiLoading.set(true);
+      try {
+        const [res1, res2] = await Promise.all([
+          this.ai.post('generate-exercise', {
+            grade: this.docGrade(),
+            subject: this.docSubject(),
+            topic: `${effectiveTopic} - Connaissances de base et calcul direct`,
+            difficulty: 'Facile',
+            format: 'free',
+            trimester: this.docTrimester(),
+            points: 8,
+            role: this.isParentMode() ? 'parent' : 'teacher',
+            childName: this.activeChildName(),
+          }),
+          this.ai.post('generate-exercise', {
+            grade: this.docGrade(),
+            subject: this.docSubject(),
+            topic: `${effectiveTopic} - Situation problème et raisonnement`,
+            difficulty: 'Moyen',
+            format: 'free',
+            trimester: this.docTrimester(),
+            points: 12,
+            role: this.isParentMode() ? 'parent' : 'teacher',
+            childName: this.activeChildName(),
+          }),
+        ]);
 
-          if (res1.ok && res1.data['exercise']) {
-            this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1', points: 8 });
-          }
-          if (res2.ok && res2.data['exercise']) {
-            this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 (Situation Problème)', points: 12 });
-          }
-        } finally {
-          this.isAiLoading.set(false);
-          this.saveDraft();
+        if (res1.ok && res1.data['exercise']) {
+          this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1', points: 8 });
         }
+        if (res2.ok && res2.data['exercise']) {
+          this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 (Situation Problème)', points: 12 });
+        }
+      } finally {
+        this.isAiLoading.set(false);
+        this.saveDraft();
       }
     } else if (type === 'exercise_sheet') {
-      this.docTitle.set(topic ? `Série d'Exercices : ${topic} (${this.docGrade()})` : `Série d'Exercices — ${this.docSubject()} (${this.docGrade()})`);
+      this.docTitle.set(`Série d'Exercices : ${effectiveTopic} (${this.docGrade()})`);
       const b1Id = 'b-' + Date.now() + '-1';
       const ex1Id = 'b-' + Date.now() + '-ex1';
       const ex2Id = 'b-' + Date.now() + '-ex2';
 
       this.blocks.set([
-        { id: b1Id, type: 'heading1', content: topic ? `Série d'Exercices : ${topic}` : 'Série d\'Exercices Pratiques' },
+        { id: b1Id, type: 'heading1', content: `Série d'Exercices : ${effectiveTopic}` },
         {
           id: ex1Id,
           type: 'exercise',
@@ -460,47 +463,45 @@ export class EditorStudioComponent implements OnInit {
         },
       ]);
 
-      if (topic || src.text) {
-        this.isAiLoading.set(true);
-        try {
-          const [res1, res2] = await Promise.all([
-            this.ai.post('generate-exercise', {
-              grade: this.docGrade(),
-              subject: this.docSubject(),
-              topic: `${topic || src.text} - Entraînement fondamental`,
-              difficulty: 'Facile',
-              format: 'free',
-              trimester: this.docTrimester(),
-              points: 10,
-              role: this.isParentMode() ? 'parent' : 'teacher',
-              childName: this.activeChildName(),
-            }),
-            this.ai.post('generate-exercise', {
-              grade: this.docGrade(),
-              subject: this.docSubject(),
-              topic: `${topic || src.text} - Défi et approfondissement`,
-              difficulty: 'Moyen',
-              format: 'free',
-              trimester: this.docTrimester(),
-              points: 10,
-              role: this.isParentMode() ? 'parent' : 'teacher',
-              childName: this.activeChildName(),
-            }),
-          ]);
+      this.isAiLoading.set(true);
+      try {
+        const [res1, res2] = await Promise.all([
+          this.ai.post('generate-exercise', {
+            grade: this.docGrade(),
+            subject: this.docSubject(),
+            topic: `${effectiveTopic} - Entraînement fondamental`,
+            difficulty: 'Facile',
+            format: 'free',
+            trimester: this.docTrimester(),
+            points: 10,
+            role: this.isParentMode() ? 'parent' : 'teacher',
+            childName: this.activeChildName(),
+          }),
+          this.ai.post('generate-exercise', {
+            grade: this.docGrade(),
+            subject: this.docSubject(),
+            topic: `${effectiveTopic} - Défi et approfondissement`,
+            difficulty: 'Moyen',
+            format: 'free',
+            trimester: this.docTrimester(),
+            points: 10,
+            role: this.isParentMode() ? 'parent' : 'teacher',
+            childName: this.activeChildName(),
+          }),
+        ]);
 
-          if (res1.ok && res1.data['exercise']) {
-            this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1 : Entraînement de base', points: 10 });
-          }
-          if (res2.ok && res2.data['exercise']) {
-            this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 : Approfondissement', points: 10 });
-          }
-        } finally {
-          this.isAiLoading.set(false);
-          this.saveDraft();
+        if (res1.ok && res1.data['exercise']) {
+          this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1 : Entraînement de base', points: 10 });
         }
+        if (res2.ok && res2.data['exercise']) {
+          this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 : Approfondissement', points: 10 });
+        }
+      } finally {
+        this.isAiLoading.set(false);
+        this.saveDraft();
       }
     } else {
-      this.docTitle.set(topic ? `${topic} (${this.docGrade()})` : `Document : ${this.docSubject()}`);
+      this.docTitle.set(`${effectiveTopic} (${this.docGrade()})`);
     }
   }
 

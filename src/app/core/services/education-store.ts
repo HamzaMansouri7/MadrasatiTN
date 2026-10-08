@@ -1352,6 +1352,7 @@ export class EducationStore {
     source: SourceInput,
     preset: InfographicPreset | 'auto',
     theme: 'kids' | 'official',
+    existingDocId?: string,
   ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
     if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
     const res = await this.ai.post('generate-infographic', { ...this.sourceRequest(source), preset, theme }, {
@@ -1360,7 +1361,8 @@ export class EducationStore {
     if (!res.ok) return { ok: false, error: res.error };
     const generated = res.data['doc'] as InfographicDoc | undefined;
     if (!generated) return { ok: false, error: 'Structure de document invalide.' };
-    const doc: InfographicDoc = { ...generated, author: this.profileAuthor() };
+    const docId = existingDocId || generated.id;
+    const doc: InfographicDoc = { ...generated, id: docId, author: this.profileAuthor() };
     const saved = await this.saveStructuredDoc('infographic', doc);
     if (saved) {
       doc.id = saved.id;

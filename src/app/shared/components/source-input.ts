@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, input, output, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input, output, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceInput, SubjectName, Trimester, TRIMESTERS, downscaleImage } from '@core';
 
@@ -249,6 +249,23 @@ export class SourceInputComponent {
   readonly trimester = signal<Trimester | string>('Trimestre 1');
   readonly language = signal<'ar' | 'fr'>('ar');
 
+  constructor() {
+    effect(() => {
+      const init = this.initialInput();
+      if (init) {
+        if (init.mode) this.mode.set(init.mode);
+        if (init.topic) this.topic.set(init.topic);
+        if (init.text) this.text.set(init.text);
+        if (init.images) this.images.set(init.images);
+        if (init.file) this.file.set(init.file);
+        if (init.grade) this.grade.set(init.grade);
+        if (init.subject) this.subject.set(init.subject);
+        if (init.trimester) this.trimester.set(init.trimester);
+        if (init.language) this.language.set(init.language);
+      }
+    });
+  }
+
   setMode(m: 'topic' | 'text' | 'photo' | 'file') {
     this.mode.set(m);
   }
@@ -309,12 +326,13 @@ export class SourceInputComponent {
 
   submitForm() {
     if (!this.isValid()) return;
+    const m = this.mode();
     const source: SourceInput = {
-      mode: this.mode(),
-      topic: this.topic().trim() || undefined,
-      text: this.text().trim() || undefined,
-      images: this.images().length > 0 ? this.images() : undefined,
-      file: this.file(),
+      mode: m,
+      topic: m === 'topic' ? this.topic().trim() : undefined,
+      text: m === 'text' ? this.text().trim() : undefined,
+      images: m === 'photo' && this.images().length > 0 ? this.images() : undefined,
+      file: m === 'file' ? this.file() : undefined,
       grade: this.grade(),
       subject: this.subject(),
       trimester: this.trimester(),

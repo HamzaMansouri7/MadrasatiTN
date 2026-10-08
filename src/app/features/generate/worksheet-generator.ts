@@ -125,11 +125,25 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       if (this.dna()) {
         await this.generate();
       }
-    } else if (src.file?.base64Data && src.file.contentType.startsWith('image/')) {
-      this.sourceImage.set(src.file.base64Data);
-      this.contentType = src.file.contentType || 'image/jpeg';
-      await this.analyze();
-      if (this.dna()) {
+    } else if (src.file?.base64Data) {
+      if (src.file.contentType.startsWith('image/')) {
+        this.sourceImage.set(src.file.base64Data);
+        this.contentType = src.file.contentType || 'image/jpeg';
+        await this.analyze();
+        if (this.dna()) {
+          await this.generate();
+        }
+      } else {
+        const dna: WorksheetDna = {
+          title: src.file.filename || src.topic || 'Fiche d\'exercices',
+          grade: (src.grade as WorksheetDna['grade']) || '4ème Année',
+          subject: (src.subject as WorksheetDna['subject']) || 'Mathématiques',
+          topic: src.topic || src.file.filename || 'Exercices d\'entraînement',
+          language: (src.language as 'fr' | 'ar') || 'ar',
+          palette: ['#1B4332', '#2D6A4F', '#D8F3DC'],
+          illustrationStyle: 'educational',
+        };
+        this.dna.set(dna);
         await this.generate();
       }
     } else if (src.topic || src.text) {

@@ -197,7 +197,13 @@ export class AiStudioComponent implements OnInit {
     if (!src || this.busy()) return;
     this.busy.set(true);
     this.error.set(null);
-    const res = await this.store.generateInfographic({ ...src, instructions: this.notes().trim() || undefined }, this.preset(), this.theme());
+    const existingId = this.doc()?.id;
+    const res = await this.store.generateInfographic(
+      { ...src, instructions: this.notes().trim() || undefined },
+      this.preset(),
+      this.theme(),
+      existingId
+    );
     this.busy.set(false);
     if (res.ok && res.doc) this.doc.set(res.doc);
     else this.error.set(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));

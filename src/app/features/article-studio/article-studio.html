@@ -99,7 +99,7 @@
             (change)="onGradeChange($any($event.target).value)"
             class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] cursor-pointer min-h-[44px]">
             @for (g of gradesList; track g.id) {
-              <option [value]="g.id">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
+              <option [value]="g.id" [selected]="g.id === selectedGrade()">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
             }
           </select>
         </div>
@@ -115,7 +115,7 @@
             (change)="onSubjectChange($any($event.target).value)"
             class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] cursor-pointer min-h-[44px]">
             @for (s of subjectsList; track s.id) {
-              <option [value]="s.id">{{ lang.isArabic() ? s.labelAr : s.labelFr }}</option>
+              <option [value]="s.id" [selected]="s.id === selectedSubject()">{{ lang.isArabic() ? s.labelAr : s.labelFr }}</option>
             }
           </select>
         </div>
@@ -131,7 +131,7 @@
             (change)="onChapterChange($any($event.target).value)"
             class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] truncate cursor-pointer min-h-[44px]">
             @for (ch of availableChapters(); track ch.id) {
-              <option [value]="ch.id">
+              <option [value]="ch.id" [selected]="ch.id === selectedChapterId()">
                 {{ ch.trimester }} • {{ lang.isArabic() ? ch.titleAr : ch.titleFr }}
               </option>
             }
@@ -171,7 +171,7 @@
               (change)="onGradeChange($any($event.target).value)"
               class="w-full bg-white border border-[#E7DFCF] text-xs text-[#14251D] rounded-xl px-3.5 py-2.5 outline-none font-medium focus:border-[#2D6A4F] cursor-pointer min-h-[44px]">
               @for (g of gradesList; track g.id) {
-                <option [value]="g.id">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
+                <option [value]="g.id" [selected]="g.id === selectedGrade()">{{ lang.isArabic() ? g.labelAr : g.labelFr }}</option>
               }
             </select>
           </div>
