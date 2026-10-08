@@ -93,7 +93,7 @@ export const routes: Routes = [
     canActivate: [authGuard],
     loadComponent: () =>
       import('./features/memo-studio/memo-studio').then((m) => m.MemoStudioComponent),
-    title: 'استوديو بطاقات التلخيص | Studio Fiche Mémo - Madrasati TN',
+    title: 'استوديو الذكاء الاصطناعي | AI Studio - Madrasati TN',
   },
   {
     path: 'create',

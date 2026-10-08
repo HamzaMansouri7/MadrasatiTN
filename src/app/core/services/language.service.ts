@@ -145,11 +145,11 @@ export class LanguageService {
     solveToSummarizeBanner: { fr: 'Vous avez des cours entiers à résumer ?', ar: 'عندك ملخصات دروس؟ لخّصها في ثوانٍ' },
 
     // Memo Studio ("Fiche Mémo Visuelle / مذكرة الدرس البصرية")
-    memoStudioNav: { fr: 'Studio Mémo', ar: 'مذكرة بصرية' },
-    memoStudioTitle: { fr: 'Fiches Mémo Visuelles A4', ar: 'المذكرات البصرية والمفاهيم A4' },
+    memoStudioNav: { fr: 'AI Studio', ar: 'استوديو الذكاء' },
+    memoStudioTitle: { fr: 'AI Studio', ar: 'استوديو الذكاء الاصطناعي' },
     memoStudioSub: {
-      fr: 'Générez des fiches mémo synthétiques, imprimables et personnalisables pour vos élèves en 1 clic.',
-      ar: 'أنشئ مذكرات درس بصرية وملخصات قواعد جاهزة للطباعة والتوزيع في نقرة واحدة.',
+      fr: 'Transformez un cours en infographie visuelle A4, imprimable et personnalisable, en 1 clic.',
+      ar: 'حوّل درسك إلى إنفوغرافيا بصرية A4 جاهزة للطباعة والتخصيص في نقرة واحدة.',
     },
     memoBtnNew: { fr: 'Nouvelle fiche', ar: 'مذكرة جديدة' },
     memoBtnPrint: { fr: 'Imprimer A4', ar: 'طباعة A4' },
