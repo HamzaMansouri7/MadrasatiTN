@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "pres-science-6-digestion",
+      "grade": "6ème Année",
+      "subject": "Éveil Scientifique",
+      "subSubject": "Sciences Biologiques",
+      "trimester": "Trimestre 1",
+      "topic": "الجهاز الهضمي والدورة الدموية",
+      "title": "رحلة داخل جسم الإنسان: الجهاز الهضمي والدورة الدموية (عرض تفاعلي)",
+      "docType": "Présentation",
+      "file": "presentation-corps-humain.pptx",
+      "relPath": "assets/resources/6eme-annee/eveil-scientifique/trimestre-1/digestion-circulation/presentation-corps-humain.pptx",
+      "lang": "ar",
+      "ref": "cnp-103604",
+      "labels": ["الإيقاظ العلمي", "الجهاز الهضمي", "الدورة الدموية", "6ème Année", "Présentation", "PPTX"]
+    }
+  ]
+}

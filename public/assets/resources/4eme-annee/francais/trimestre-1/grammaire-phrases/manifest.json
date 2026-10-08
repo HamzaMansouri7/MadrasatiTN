@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "info-francais-4-phrases",
+      "grade": "4ème Année",
+      "subject": "Français",
+      "subSubject": "Grammaire",
+      "trimester": "Trimestre 1",
+      "topic": "Les Types et Formes de Phrases",
+      "title": "Les Types de Phrases (Déclarative, Interrogative, Exclamative, Impérative)",
+      "docType": "Fiche de Révision",
+      "file": "types-phrases.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/grammaire-phrases/types-phrases.webp",
+      "lang": "fr",
+      "ref": "cnp-121410",
+      "labels": ["Français", "Grammaire", "Types de phrases", "4ème Année", "Fiche de Révision", "Infographic"]
+    }
+  ]
+}

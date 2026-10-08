@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "info-math-6-frac",
+      "grade": "6ème Année",
+      "subject": "Mathématiques",
+      "subSubject": "Calcul",
+      "trimester": "Trimestre 2",
+      "topic": "العمليات على الأعداد الكسرية",
+      "title": "العمليات على الأعداد الكسرية (توحيد المقامات والجمع والطرح)",
+      "docType": "Fiche de Révision",
+      "file": "fractions-operations.webp",
+      "relPath": "assets/resources/6eme-annee/maths/trimestre-2/fractions/fractions-operations.webp",
+      "lang": "ar",
+      "ref": "cnp-102609",
+      "labels": ["الرياضيات", "الأعداد الكسرية", "6ème Année", "Fiche de Révision", "Infographic"]
+    },
+    {
+      "id": "pres-math-6-frac",
+      "grade": "6ème Année",
+      "subject": "Mathématiques",
+      "subSubject": "Calcul",
+      "trimester": "Trimestre 2",
+      "topic": "العمليات على الأعداد الكسرية",
+      "title": "دليل مقارنة الأعداد الكسرية والعمليات (عرض تفاعلي)",
+      "docType": "Présentation",
+      "file": "presentation-fractions.pptx",
+      "relPath": "assets/resources/6eme-annee/maths/trimestre-2/fractions/presentation-fractions.pptx",
+      "lang": "ar",
+      "ref": "cnp-102609",
+      "labels": ["الرياضيات", "الأعداد الكسرية", "6ème Année", "Présentation", "PPTX"]
+    }
+  ]
+}

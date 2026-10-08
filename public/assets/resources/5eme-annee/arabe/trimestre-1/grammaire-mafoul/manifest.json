@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "info-arabe-5-mafoul",
+      "grade": "5ème Année",
+      "subject": "اللغة العربية",
+      "subSubject": "قواعد اللغة",
+      "trimester": "Trimestre 1",
+      "topic": "المفعول به وأنواعه",
+      "title": "المفعول به: صوره التركيبية وعلامات إعرابه",
+      "docType": "Fiche de Révision",
+      "file": "mafoul-bihi.webp",
+      "relPath": "assets/resources/5eme-annee/arabe/trimestre-1/grammaire-mafoul/mafoul-bihi.webp",
+      "lang": "ar",
+      "ref": "cnp-101510",
+      "labels": ["اللغة العربية", "قواعد اللغة", "المفعول به", "5ème Année", "Fiche de Révision", "Infographic"]
+    }
+  ]
+}
