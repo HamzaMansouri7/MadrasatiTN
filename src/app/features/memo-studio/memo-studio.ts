@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { EducationStore } from '@core/services/education-store';
 import { LanguageService } from '@core/services/language.service';
 import { FirebaseService } from '@core/services/firebase.service';
@@ -38,6 +38,7 @@ interface LibraryResourceItem {
   imports: [
     CommonModule,
     FormsModule,
+    RouterLink,
     MemoTreeLayoutComponent,
     MemoStepsLayoutComponent,
     MemoCardsLayoutComponent,
@@ -66,6 +67,13 @@ interface LibraryResourceItem {
             </p>
           }
         </div>
+
+        <a
+          routerLink="/ai-studio"
+          class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-md text-sm transition-colors cursor-pointer flex items-center gap-2">
+          <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
+          {{ lang.tr('Nouveau : infographies IA', 'جديد: إنفوغرافيك بالذكاء الاصطناعي') }}
+        </a>
 
         @if (state() === 'done' && store.memo()) {
           <button

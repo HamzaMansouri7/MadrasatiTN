@@ -10,6 +10,10 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Server,
   },
   {
+    path: 'infographic/:id',
+    renderMode: RenderMode.Server,
+  },
+  {
     path: 'series/:id',
     renderMode: RenderMode.Server,
   },

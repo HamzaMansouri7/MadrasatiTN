@@ -36,6 +36,8 @@ export interface InfographicSlot {
   count?: number;
   maxChars?: number;
   icon?: string;
+  /** Flat 2D SVG in `public/assets/lesson-plan/svg/<name>.svg`; replaces the Material icon when set. */
+  illustration?: string;
   color?: string;
 }
 
@@ -112,6 +114,8 @@ export interface InfographicDoc {
   grade: GradeLevel | string;
   subject: SubjectName | string;
   language: 'ar' | 'fr';
+  /** AI Studio spec docs only: look of the sheet. */
+  theme?: 'kids' | 'official';
   values: LessonPlanDocValues | Record<string, unknown>;
   author?: InfographicAuthor;
   createdAt?: string | number;

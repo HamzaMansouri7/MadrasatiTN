@@ -5,6 +5,8 @@ export * from './models/memo.model';
 export * from './models/source-input.model';
 export * from './models/series.model';
 export * from './models/infographic.model';
+export * from './models/infographic-spec.model';
+export * from './utils/infographic-spec.util';
 export * from './data/infographic-templates.data';
 export * from './services/education-store';
 export * from './services/interaction.service';

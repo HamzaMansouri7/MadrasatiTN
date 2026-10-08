@@ -38,6 +38,7 @@ import {
 import { SourceInput } from '../models/source-input.model';
 import { SeriesDoc, Scene } from '../models/series.model';
 import { InfographicDoc } from '../models/infographic.model';
+import { InfographicPreset } from '../models/infographic-spec.model';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
@@ -1021,27 +1022,30 @@ export class EducationStore {
             const isMemo = w.docType === 'memo';
             const isPlan = w.docType === 'lesson-plan';
             const isSeries = w.docType === 'series';
+            const isInfo = w.docType === 'infographic';
             return {
               id: w.id,
               sheetId: w.id,
-              openUrl: isPlan ? `/lesson-plan/${w.id}` : isSeries ? `/series/${w.id}` : undefined,
+              openUrl: isPlan ? `/lesson-plan/${w.id}` : isSeries ? `/series/${w.id}` : isInfo ? `/infographic/${w.id}` : undefined,
               title: w.title,
-              chapter: w.topic || (isMemo ? 'Fiche Mémo Visuelle' : isPlan ? 'Fiche pédagogique' : 'Fiche communautaire'),
+              chapter: w.topic || (isMemo ? 'Fiche Mémo Visuelle' : isPlan ? 'Fiche pédagogique' : isInfo ? 'Infographie' : 'Fiche communautaire'),
               topic: w.topic,
               subject: (w.subject || 'Français') as SubjectName,
               grade: (w.grade || '1ère Année') as GradeLevel,
-              docType: (isMemo ? 'Fiche Mémento' : isPlan ? 'Fiche de Cours' : "Série d'Exercices") as DocType,
+              docType: (isMemo ? 'Fiche Mémento' : isPlan || isInfo ? 'Fiche de Cours' : "Série d'Exercices") as DocType,
               difficulty: 'Moyen' as const,
               promptText: isMemo
                 ? `Fiche mémo synthétique A4 — ${w.topic || w.title}`
                 : isPlan
                   ? `Fiche pédagogique A4 — ${w.title}`
+                  : isInfo
+                    ? `Infographie A4 — ${w.title}`
                   : isSeries
                     ? `Série illustrée — ${w.title}`
                     : `Fiche de ${w.exerciseCount || ''} exercices — ${w.topic || ''}`.trim(),
               photoUrl: w.thumb || (isMemo ? '/assets/memo/apple.svg' : undefined),
               solutionText: '',
-              hasCorrection: w.authorRole === 'teacher' || isMemo || isPlan,
+              hasCorrection: w.authorRole === 'teacher' || isMemo || isPlan || isInfo,
               hints: [],
               points: 10,
               theme: w.topic,
@@ -1336,6 +1340,32 @@ export class EducationStore {
     return { ok: true, doc, docId: doc.id };
   }
 
+  /** AI Studio: the model fills a JSON spec; the doc is saved right away so it can be shared by link. */
+  async generateInfographic(
+    source: SourceInput,
+    preset: InfographicPreset,
+    theme: 'kids' | 'official',
+  ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
+    if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
+    const res = await this.ai.post('generate-infographic', { ...this.sourceRequest(source), preset, theme }, {
+      fallbackError: "Erreur lors de la génération de l'infographie.",
+    });
+    if (!res.ok) return { ok: false, error: res.error };
+    const generated = res.data['doc'] as InfographicDoc | undefined;
+    if (!generated) return { ok: false, error: 'Structure de document invalide.' };
+    const doc: InfographicDoc = { ...generated, author: this.profileAuthor() };
+    const saved = await this.saveStructuredDoc('infographic', doc);
+    if (saved) {
+      doc.id = saved.id;
+      doc.isOwner = Boolean(this.firebase.currentUser());
+    }
+    return { ok: true, doc };
+  }
+
+  async getInfographic(id: string): Promise<InfographicDoc | null> {
+    return this.fetchStructuredDoc<InfographicDoc>(id, 'infographic');
+  }
+
   /** Create or update (same id) a lesson plan; returns the server id. */
   async saveLessonPlan(payload: { doc: InfographicDoc }): Promise<{ id: string; shareUrl: string } | null> {
     return this.saveStructuredDoc('lesson-plan', payload.doc);
@@ -1347,7 +1377,7 @@ export class EducationStore {
     return doc;
   }
 
-  private async saveStructuredDoc(docType: 'lesson-plan' | 'series', doc: InfographicDoc | SeriesDoc): Promise<{ id: string; shareUrl: string } | null> {
+  private async saveStructuredDoc(docType: 'lesson-plan' | 'series' | 'infographic', doc: InfographicDoc | SeriesDoc): Promise<{ id: string; shareUrl: string } | null> {
     try {
       const res = await fetch('/api/docs', {
         method: 'POST',
@@ -1365,7 +1395,7 @@ export class EducationStore {
     return null;
   }
 
-  private async fetchStructuredDoc<T extends { id: string }>(id: string, docType: 'lesson-plan' | 'series'): Promise<T | null> {
+  private async fetchStructuredDoc<T extends { id: string }>(id: string, docType: 'lesson-plan' | 'series' | 'infographic'): Promise<T | null> {
     try {
       const res = await fetch('/api/docs/' + encodeURIComponent(id), { headers: await this.firebase.getAuthHeaders() });
       if (!res.ok) return null;

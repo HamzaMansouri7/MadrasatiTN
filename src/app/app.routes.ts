@@ -96,6 +96,13 @@ export const routes: Routes = [
     title: 'استوديو الذكاء الاصطناعي | AI Studio - Madrasati TN',
   },
   {
+    path: 'ai-studio',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./features/ai-studio/ai-studio').then((m) => m.AiStudioComponent),
+    title: 'إنفوغرافيك الذكاء الاصطناعي | Infographies AI Studio - Madrasati TN',
+  },
+  {
     path: 'create',
     canActivate: [authGuard],
     loadComponent: () =>
@@ -107,6 +114,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/lesson-plan/lesson-plan-viewer').then((m) => m.LessonPlanViewerComponent),
     title: 'الجذاذة البيداغوجية | Fiche Pédagogique - Madrasati TN',
+  },
+  {
+    path: 'infographic/:id',
+    loadComponent: () =>
+      import('./features/ai-studio/infographic-viewer').then((m) => m.InfographicViewerComponent),
+    title: 'إنفوغرافيك | Infographie - Madrasati TN',
   },
   {
     path: 'series/:id',

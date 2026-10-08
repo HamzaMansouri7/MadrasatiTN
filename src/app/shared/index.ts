@@ -17,3 +17,4 @@ export * from './components/source-input';
 export * from './components/infographic-page';
 export * from './components/infographic-renderer';
 export * from './components/series-panel';
+export * from './components/infographic-spec';

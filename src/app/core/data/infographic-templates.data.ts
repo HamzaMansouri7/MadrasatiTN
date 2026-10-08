@@ -34,6 +34,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       count: 3,
       maxChars: 160,
       icon: 'flag',
+      illustration: 'objectives',
       color: '#2D6A4F',
     },
     {
@@ -47,6 +48,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       count: 2,
       maxChars: 140,
       icon: 'task_alt',
+      illustration: 'outcomes',
       color: '#1B4332',
     },
     {
@@ -60,6 +62,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       count: 3,
       maxChars: 100,
       icon: 'inventory_2',
+      illustration: 'materials',
       color: '#8A5A00',
     },
     {
@@ -73,6 +76,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       count: 2,
       maxChars: 120,
       icon: 'hub',
+      illustration: 'integration',
       color: '#2D6A4F',
     },
     {
@@ -86,6 +90,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       count: 2,
       maxChars: 100,
       icon: 'favorite',
+      illustration: 'values',
       color: '#BF5B34',
     },
     {
@@ -111,6 +116,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       ],
       count: 2,
       icon: 'diversity_3',
+      illustration: 'differentiation-support',
       color: '#8A5A00',
     },
     {
@@ -125,6 +131,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       ],
       count: 2,
       icon: 'fact_check',
+      illustration: 'assessment',
       color: '#2D6A4F',
     },
     {
@@ -136,6 +143,7 @@ export const LESSON_PLAN_TEMPLATE: InfographicTemplate = {
       titleAr: 'التقييم الذاتي للمعلم',
       count: 4,
       icon: 'psychology_alt',
+      illustration: 'reflection',
       color: '#14251D',
     },
   ],

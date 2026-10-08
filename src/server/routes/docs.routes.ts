@@ -1,3 +1,4 @@
+import { normalizeInfographicSpec } from '../../app/core/utils/infographic-spec.util';
 import { Router, Request, Response } from 'express';
 import { randomUUID } from 'node:crypto';
 import { join } from 'node:path';
@@ -119,8 +120,9 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       return;
     }
 
-    if (docType === 'lesson-plan' || docType === 'series') {
+    if (docType === 'lesson-plan' || docType === 'series' || docType === 'infographic') {
       const isSeries = docType === 'series';
+      const isInfo = docType === 'infographic';
       const body = (req.body.doc && typeof req.body.doc === 'object' ? req.body.doc : null) as Record<string, unknown> | null;
       if (!body) {
         res.status(400).json({ error: 'Contenu manquant.' });
@@ -135,6 +137,11 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       }
       if (isSeries && !Array.isArray(body['scenes'])) {
         res.status(400).json({ error: 'Scènes manquantes.' });
+        return;
+      }
+      const infoSpec = isInfo ? normalizeInfographicSpec(body['values']) : null;
+      if (isInfo && !infoSpec) {
+        res.status(400).json({ error: 'Infographie invalide.' });
         return;
       }
 
@@ -163,7 +170,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
         ownerUid,
         id,
         docType,
-        title: str(body['title'] ?? topic, 200) || (isSeries ? 'سلسلة مصورة' : 'جذاذة بيداغوجية'),
+        title: str(body['title'] ?? topic, 200) || (isSeries ? 'سلسلة مصورة' : isInfo ? 'إنفوغرافيك' : 'جذاذة بيداغوجية'),
         grade: docGrade,
         subject: docSubject,
         language: body['language'] === 'fr' ? 'fr' : 'ar',
@@ -173,7 +180,9 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       };
       const doc = isSeries
         ? { ...common, bible: body['bible'], scenes: body['scenes'] }
-        : { ...common, templateId: str(body['templateId'], 60) || 'lesson-plan-official', values: body['values'] ?? {} };
+        : isInfo
+          ? { ...common, templateId: 'ai-studio-spec', theme: body['theme'] === 'official' ? 'official' : 'kids', values: infoSpec }
+          : { ...common, templateId: str(body['templateId'], 60) || 'lesson-plan-official', values: body['values'] ?? {} };
       writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
 
       const entry = {
@@ -191,7 +200,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       index.unshift(entry);
       writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
 
-      res.json({ success: true, id, shareUrl: isSeries ? `/series/${id}` : `/lesson-plan/${id}` });
+      res.json({ success: true, id, shareUrl: isSeries ? `/series/${id}` : isInfo ? `/infographic/${id}` : `/lesson-plan/${id}` });
       return;
     }
 
@@ -284,7 +293,7 @@ docsRouter.get('/:id', async (req: Request, res: Response): Promise<void> => {
   try {
     const doc = JSON.parse(readFileSync(filePath, 'utf8'));
     let isOwner = false;
-    if (doc.docType === 'lesson-plan' || doc.docType === 'series') {
+    if (doc.docType === 'lesson-plan' || doc.docType === 'series' || doc.docType === 'infographic') {
       // Optional login: tells the owner's own browser it may publish/edit; the uid itself is never exposed.
       const viewerUid = await verifyFirebaseUser(req);
       isOwner = Boolean(viewerUid && doc.ownerUid && viewerUid === doc.ownerUid);

@@ -16,6 +16,8 @@ import { resolveInside } from '../safe-path';
 import { capText, capHistory, wrapData, CAPS } from '../input-caps';
 import { originGuard, aiRateLimiter } from '../guards';
 import { saveGenerated } from '../storage';
+import { normalizeInfographicSpec } from '../../app/core/utils/infographic-spec.util';
+import { INFOGRAPHIC_PRESETS, type InfographicPreset } from '../../app/core/models/infographic-spec.model';
 import { normalizeDigits, fixLessonPlanStages, cleanScenes, cleanImagePrompt, SCENE_KINDS, type PlanStage, type PlannedScene } from '../skills/doc-checks';
 import {
   compose,
@@ -35,6 +37,7 @@ import {
   worksheetSimilarSkill,
   enforceExactExerciseCount,
   lessonPlanSkill,
+  infographicSkill,
   seriesSkill,
   SERIES_PLAN_SCHEMA,
   SERIES_PANEL_SCHEMA,
@@ -797,6 +800,78 @@ aiRouter.post('/generate-lesson-plan', originGuard, aiRateLimiter, async (req: R
   } catch (err: unknown) {
     console.error('Error in /api/ai/generate-lesson-plan:', err);
     const pub = toPublicError(err, 'Erreur lors de la génération de la fiche pédagogique');
+    res.status(pub.status).json({ error: pub.message });
+    return;
+  }
+});
+
+// 4b-bis. AI Studio infographic: the model fills a JSON spec, the client renders it.
+aiRouter.post('/generate-infographic', originGuard, aiRateLimiter, async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { grade, subject, topic, instructions, lessonText, sourceFiles, language, preset, theme } = req.body;
+    if (!aiReady()) {
+      res.status(500).json({ error: 'Service IA non disponible.' });
+      return;
+    }
+    const parts = sourceParts(sourceFiles);
+    if (!topic && !instructions && !lessonText && parts.length === 0) {
+      res.status(400).json({ error: 'Un thème, un texte ou une photo est requis.' });
+      return;
+    }
+    if (!grade || !subject) {
+      res.status(400).json({ error: 'Le niveau et la matière sont requis.' });
+      return;
+    }
+
+    const lang: 'ar' | 'fr' = resolveLang(language);
+    const safeTopic = capText(topic || instructions || lessonText || 'Notion du jour', 300);
+    const resolvedGrade = String(grade);
+    const resolvedSubject = String(subject);
+    const wanted: InfographicPreset = INFOGRAPHIC_PRESETS.includes(preset) ? preset : 'hero-cards';
+
+    const prompt = compose(infographicSkill, {
+      grade: resolvedGrade,
+      subject: resolvedSubject,
+      topic: safeTopic,
+      preset: wanted,
+      instructions: instructions ? capText(instructions, 1000) : undefined,
+      lessonText: lessonText ? capText(lessonText, 8000) : undefined,
+      lang,
+      contextBlockStr: contextBlock({ grade: resolvedGrade, subject: resolvedSubject, topic: safeTopic, lang }),
+    });
+
+    const raw = await aiGenerateJSON(
+      infographicSkill.chain,
+      parts.length ? [{ text: prompt }, ...parts] : prompt,
+      infographicSkill.schema,
+      infographicSkill.temperature,
+    );
+    const spec = normalizeInfographicSpec(normalizeDigits(raw), wanted);
+    if (!spec) {
+      res.status(502).json({ error: 'Infographie invalide, veuillez réessayer.' });
+      return;
+    }
+    const now = new Date().toISOString();
+    res.json({
+      success: true,
+      spec,
+      doc: {
+        id: randomUUID(),
+        templateId: 'ai-studio-spec',
+        title: spec.title,
+        grade: resolvedGrade,
+        subject: resolvedSubject,
+        language: lang,
+        values: spec,
+        theme: theme === 'official' ? 'official' : 'kids',
+        createdAt: now,
+        updatedAt: now,
+      },
+    });
+    return;
+  } catch (err: unknown) {
+    console.error('Error in /api/ai/generate-infographic:', err);
+    const pub = toPublicError(err, "Erreur lors de la génération de l'infographie");
     res.status(pub.status).json({ error: pub.message });
     return;
   }

@@ -2,6 +2,8 @@ import { NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { InfographicDoc, InfographicSlot, InfographicTemplate, LanguageService, LessonPlanStage, SlotZone } from '@core';
 
+const STAGE_ILLUSTRATIONS = ['stage-01-intro', 'stage-02-build', 'stage-03-practice', 'stage-04-eval', 'stage-05-close'];
+
 /**
  * Draws the body of an A4 sheet from a template: slots are placed by `zone`
  * and rendered by `kind`. A new template is data only; a new `kind` is one block below.
@@ -75,7 +77,7 @@ import { InfographicDoc, InfographicSlot, InfographicTemplate, LanguageService, 
         @for (slot of zone('half'); track slot.id) {
           <div class="bg-white rounded-xl border border-[#E7DFCF] p-3.5 space-y-2">
             <p class="font-semibold flex items-center gap-1.5 border-b border-[#F2ECDE] pb-1" [style.color]="slot.color">
-              <span class="material-icons text-sm">{{ slot.icon }}</span>
+              <ng-container *ngTemplateOutlet="icoTpl; context: { slot: slot, sz: 'text-sm' }" />
               <span>{{ t(slot.titleFr, slot.titleAr) }}</span>
             </p>
             <div class="space-y-1.5 text-[11px]">
@@ -95,7 +97,7 @@ import { InfographicDoc, InfographicSlot, InfographicTemplate, LanguageService, 
     @for (slot of zone('full'); track slot.id) {
       <div class="bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] p-3.5 space-y-2 text-xs">
         <p class="font-semibold text-[#14251D] flex items-center gap-1.5">
-          <span class="material-icons text-sm text-[#2D6A4F]">{{ slot.icon }}</span>
+          <ng-container *ngTemplateOutlet="icoTpl; context: { slot: slot, sz: 'text-sm' }" />
           <span>{{ t(slot.titleFr, slot.titleAr) }}</span>
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px] text-[#5B6B60]">
@@ -109,13 +111,25 @@ import { InfographicDoc, InfographicSlot, InfographicTemplate, LanguageService, 
       </div>
     }
 
+    <!-- slot icon: flat illustration when set, Material icon otherwise -->
+    <ng-template #icoTpl let-slot="slot" let-sz="sz">
+      @if (slot.illustration) {
+        <img [src]="illustrationUrl(slot.illustration)" alt="" aria-hidden="true" class="shrink-0 object-contain"
+          [class.w-5]="sz === 'text-xs'" [class.h-5]="sz === 'text-xs'"
+          [class.w-6]="sz === 'text-sm'" [class.h-6]="sz === 'text-sm'"
+          [class.w-8]="sz === 'text-base'" [class.h-8]="sz === 'text-base'" />
+      } @else {
+        <span class="material-icons" [class]="sz" [style.color]="slot.color" aria-hidden="true">{{ slot.icon }}</span>
+      }
+    </ng-template>
+
     <!-- list slot: checks | bullets | chips | compact -->
     <ng-template #listTpl let-slot="slot">
       @switch (slot.variant) {
         @case ('chips') {
           <div class="bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] p-3 space-y-1.5">
             <p class="font-semibold flex items-center gap-1 text-[11px]" [style.color]="slot.color">
-              <span class="material-icons text-xs">{{ slot.icon }}</span>
+              <ng-container *ngTemplateOutlet="icoTpl; context: { slot: slot, sz: 'text-xs' }" />
               <span>{{ t(slot.titleFr, slot.titleAr) }}</span>
             </p>
             <div class="flex flex-wrap gap-1">
@@ -128,7 +142,7 @@ import { InfographicDoc, InfographicSlot, InfographicTemplate, LanguageService, 
         @case ('compact') {
           <div class="bg-white p-2.5 rounded-xl border border-[#E7DFCF] space-y-1">
             <p class="font-semibold text-[#14251D] flex items-center gap-1">
-              <span class="material-icons text-xs" [style.color]="slot.color">{{ slot.icon }}</span>
+              <ng-container *ngTemplateOutlet="icoTpl; context: { slot: slot, sz: 'text-xs' }" />
               <span>{{ t(slot.titleFr, slot.titleAr) }}</span>
             </p>
             <p class="text-[#5B6B60] text-[11px] leading-tight">{{ list(slot.valueKey).join(', ') }}</p>
@@ -137,7 +151,7 @@ import { InfographicDoc, InfographicSlot, InfographicTemplate, LanguageService, 
         @default {
           <div class="bg-white rounded-xl border border-[#E7DFCF] p-3.5 space-y-2">
             <div class="flex items-center gap-1.5 font-semibold border-b border-[#F2ECDE] pb-1.5" [style.color]="slot.color">
-              <span class="material-icons text-sm">{{ slot.icon }}</span>
+              <ng-container *ngTemplateOutlet="icoTpl; context: { slot: slot, sz: 'text-sm' }" />
               <span>{{ t(slot.titleFr, slot.titleAr) }}</span>
             </div>
             <ul class="space-y-1.5 text-[#4A5A50] leading-relaxed">
@@ -161,17 +175,20 @@ import { InfographicDoc, InfographicSlot, InfographicTemplate, LanguageService, 
     <ng-template #stagesTpl let-slot="slot">
       <div class="flex items-center justify-between border-b-2 pb-1.5" [style.border-color]="slot.color">
         <div class="flex items-center gap-2 font-display font-semibold text-sm text-[#14251D]">
-          <span class="material-icons text-base" [style.color]="slot.color">{{ slot.icon }}</span>
+          <ng-container *ngTemplateOutlet="icoTpl; context: { slot: slot, sz: 'text-base' }" />
           <span>{{ t(slot.titleFr, slot.titleAr) }}</span>
         </div>
         <span class="text-[11px] text-[#5B6B60]">{{ t('Total', 'المجموع') }}: {{ totalMinutes(slot.valueKey) }} {{ t('min', 'دقيقة') }}</span>
       </div>
       <div class="space-y-2.5">
-        @for (st of stages(slot.valueKey); track st.step) {
+        @for (st of stages(slot.valueKey); track st.step; let i = $index) {
           <div class="avoid-break bg-white rounded-xl border border-[#E7DFCF] p-3 space-y-2 relative overflow-hidden">
             <div class="flex items-center justify-between gap-2 border-b border-[#F2ECDE] pb-1.5">
               <div class="flex items-center gap-2">
                 <span class="w-6 h-6 rounded-lg bg-[#14251D] text-[#FBF8F1] font-display font-semibold text-[11px] flex items-center justify-center shrink-0">{{ st.step }}</span>
+                @if (stageIllustration(i); as ill) {
+                  <img [src]="illustrationUrl(ill)" alt="" aria-hidden="true" class="w-8 h-8 shrink-0 object-contain" />
+                }
                 <span class="font-semibold text-[#14251D] text-xs">{{ st.name }}</span>
               </div>
               <span class="bg-[#2D6A4F]/10 text-[#1B4332] font-mono text-[11px] font-semibold px-2 py-0.5 rounded-full border border-[#2D6A4F]/20">{{ st.minutes }} {{ t('min', 'د') }}</span>
@@ -232,6 +249,14 @@ export class InfographicRendererComponent {
 
   totalMinutes(key: string | undefined): number {
     return this.stages(key).reduce((sum, st) => sum + (st.minutes || 0), 0);
+  }
+
+  illustrationUrl(name: string): string {
+    return `/assets/lesson-plan/svg/${name}.svg`;
+  }
+
+  stageIllustration(index: number): string | undefined {
+    return STAGE_ILLUSTRATIONS[index];
   }
 
   t(fr: string, ar: string): string {

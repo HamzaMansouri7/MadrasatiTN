@@ -14,6 +14,7 @@ export type AiRoute =
   | 'generate-exercise'
   | 'generate-full-exam'
   | 'generate-illustration'
+  | 'generate-infographic'
   | 'generate-lesson-plan'
   | 'generate-memo'
   | 'generate-series-image'

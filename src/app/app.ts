@@ -49,6 +49,7 @@ export class App {
           '/create': 'editor',
           '/generate': 'editor',
           '/memo-studio': 'editor',
+          '/ai-studio': 'editor',
           '/article-studio': 'article-editor',
           '/studio': 'editor',
         };
