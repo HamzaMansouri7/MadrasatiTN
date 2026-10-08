@@ -6,7 +6,8 @@ export interface InfographicSkillInput {
   grade?: string;
   subject?: string;
   topic?: string;
-  preset?: InfographicPreset;
+  /** 'auto' (default): the model picks the composition that fits the content. */
+  preset?: InfographicPreset | 'auto';
   instructions?: string;
   lessonText?: string;
   lang?: 'ar' | 'fr';
@@ -50,12 +51,16 @@ export const infographicSkill: Skill<InfographicSkillInput> = {
   temperature: 0.4,
   schema: INFOGRAPHIC_SCHEMA,
   build: (input) => {
-    const preset: InfographicPreset = input.preset && INFOGRAPHIC_PRESETS.includes(input.preset) ? input.preset : 'hero-cards';
-    const { min, max } = PRESET_ITEM_LIMITS[preset];
+    const fixed = input.preset && input.preset !== 'auto' && INFOGRAPHIC_PRESETS.includes(input.preset) ? input.preset : null;
+    const composition = fixed
+      ? `COMPOSITION IMPOSÉE : preset = "${fixed}". ${PRESET_BRIEF[fixed]}
+- Nombre d'items : entre ${PRESET_ITEM_LIMITS[fixed].min} et ${PRESET_ITEM_LIMITS[fixed].max}.`
+      : `COMPOSITION : choisis le preset qui sert le mieux le contenu :
+${INFOGRAPHIC_PRESETS.map((p) => `- ${PRESET_BRIEF[p]} (items : ${PRESET_ITEM_LIMITS[p].min} à ${PRESET_ITEM_LIMITS[p].max})`).join('\n')}
+Un cycle naturel -> circular-flow ; une suite d'étapes ou d'événements -> timeline ; une notion avec ses exemples -> hero-cards.`;
     const parts: string[] = [
       `MISSION INFOGRAPHIE : tu es directeur artistique pédagogique. Pour le niveau "${input.grade || '4ème Année'}" et la discipline "${input.subject || 'Mathématiques'}", sujet "${input.topic || 'Notion du jour'}", produis la SPÉCIFICATION JSON d'une infographie A4 attrayante pour des élèves du primaire tunisien. Tu ne dessines ni ne mets en page : le code affiche ta spécification.`,
-      `COMPOSITION IMPOSÉE : preset = "${preset}". ${PRESET_BRIEF[preset]}
-- Nombre d'items : entre ${min} et ${max}.
+      `${composition}
 - title : titre court et accrocheur (80 caractères maximum). subtitle : une phrase d'accroche facultative.
 - item.title : 40 caractères maximum. item.text : une phrase courte (140 caractères maximum), vocabulaire du niveau.
 - item.icon : choisis UNIQUEMENT dans la liste autorisée, le plus proche du sens.

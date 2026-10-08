@@ -68,7 +68,7 @@ export class CreateHubComponent implements OnInit {
       badgeFr: 'Populaire',
       badgeAr: 'شائع',
       previewKind: 'cards',
-      route: '/memo-studio',
+      route: '/ai-studio',
     },
     {
       type: 'series',
@@ -183,9 +183,8 @@ export class CreateHubComponent implements OnInit {
     const sel = this.selectedOutput();
 
     if (sel === 'memo') {
-      this.router.navigate(['/memo-studio'], {
-        queryParams: { topic: source.topic, grade: source.grade, subject: source.subject },
-      });
+      // The source is already in the store; the studio generates from it, no second form.
+      this.router.navigate(['/ai-studio']);
     } else if (sel === 'summary') {
       this.router.navigate(['/summarize']);
     } else if (sel === 'exam' || sel === 'exercises') {

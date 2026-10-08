@@ -1343,7 +1343,7 @@ export class EducationStore {
   /** AI Studio: the model fills a JSON spec; the doc is saved right away so it can be shared by link. */
   async generateInfographic(
     source: SourceInput,
-    preset: InfographicPreset,
+    preset: InfographicPreset | 'auto',
     theme: 'kids' | 'official',
   ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
     if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
@@ -1360,6 +1360,11 @@ export class EducationStore {
       doc.isOwner = Boolean(this.firebase.currentUser());
     }
     return { ok: true, doc };
+  }
+
+  /** Re-save after a client-side change (style switch); same id, owner only on the server. */
+  async saveInfographic(doc: InfographicDoc): Promise<void> {
+    await this.saveStructuredDoc('infographic', doc);
   }
 
   async getInfographic(id: string): Promise<InfographicDoc | null> {

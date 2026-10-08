@@ -827,7 +827,7 @@ aiRouter.post('/generate-infographic', originGuard, aiRateLimiter, async (req: R
     const safeTopic = capText(topic || instructions || lessonText || 'Notion du jour', 300);
     const resolvedGrade = String(grade);
     const resolvedSubject = String(subject);
-    const wanted: InfographicPreset = INFOGRAPHIC_PRESETS.includes(preset) ? preset : 'hero-cards';
+    const wanted: InfographicPreset | 'auto' = INFOGRAPHIC_PRESETS.includes(preset) ? preset : 'auto';
 
     const prompt = compose(infographicSkill, {
       grade: resolvedGrade,
@@ -846,7 +846,7 @@ aiRouter.post('/generate-infographic', originGuard, aiRateLimiter, async (req: R
       infographicSkill.schema,
       infographicSkill.temperature,
     );
-    const spec = normalizeInfographicSpec(normalizeDigits(raw), wanted);
+    const spec = normalizeInfographicSpec(normalizeDigits(raw), wanted === 'auto' ? 'hero-cards' : wanted);
     if (!spec) {
       res.status(502).json({ error: 'Infographie invalide, veuillez réessayer.' });
       return;
