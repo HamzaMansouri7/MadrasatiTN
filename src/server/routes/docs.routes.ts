@@ -181,7 +181,16 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       const doc = isSeries
         ? { ...common, bible: body['bible'], scenes: body['scenes'] }
         : isInfo
-          ? { ...common, templateId: 'ai-studio-spec', theme: body['theme'] === 'official' ? 'official' : 'kids', values: infoSpec }
+          ? {
+              ...common,
+              templateId: 'ai-studio-spec',
+              theme: body['theme'] === 'official' ? 'official' : 'kids',
+              values: infoSpec,
+              // Draft until the owner publishes it to the library (needs a signed-in owner).
+              published: Boolean(ownerUid) && body['published'] === true,
+              resourceKind: body['resourceKind'] === 'exercise' ? 'exercise' : 'course',
+              trimester: str(body['trimester'], 30) || undefined,
+            }
           : { ...common, templateId: str(body['templateId'], 60) || 'lesson-plan-official', values: body['values'] ?? {} };
       writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
 
@@ -195,9 +204,12 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
         school: author.school,
         createdAt,
         ...(isSeries ? { sceneCount: (body['scenes'] as unknown[]).length } : {}),
+        ...(isInfo ? { resourceKind: (doc as { resourceKind?: string }).resourceKind, trimester: (doc as { trimester?: string }).trimester } : {}),
       };
       const index = readDocsIndex().filter((e) => e['id'] !== id);
-      index.unshift(entry);
+      // The library lists the index: an unpublished infographic stays reachable by link only.
+      const listed = !isInfo || (doc as { published?: boolean }).published === true;
+      if (listed) index.unshift(entry);
       writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
 
       res.json({ success: true, id, shareUrl: isSeries ? `/series/${id}` : isInfo ? `/infographic/${id}` : `/lesson-plan/${id}` });

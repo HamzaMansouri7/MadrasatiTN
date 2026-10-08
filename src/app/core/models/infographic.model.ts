@@ -116,6 +116,11 @@ export interface InfographicDoc {
   language: 'ar' | 'fr';
   /** AI Studio spec docs only: look of the sheet. */
   theme?: 'kids' | 'official';
+  /** AI Studio: listed in the library (false = private draft, reachable by link). */
+  published?: boolean;
+  /** AI Studio: library section the sheet is filed under. */
+  resourceKind?: 'course' | 'exercise';
+  trimester?: string;
   values: LessonPlanDocValues | Record<string, unknown>;
   author?: InfographicAuthor;
   createdAt?: string | number;

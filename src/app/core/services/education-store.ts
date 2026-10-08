@@ -26,6 +26,7 @@ import {
   WorksheetDoc,
   WorksheetSummary,
   DocType,
+  Trimester,
 } from '../models/education.model';
 import {
   MemoDoc,
@@ -1018,7 +1019,7 @@ export class EducationStore {
       const res = await fetch('/api/docs');
       if (!res.ok) return;
       const data = await res.json();
-      const docs: (WorksheetSummary & { docType?: string; memoLayout?: string })[] = Array.isArray(data.docs) ? data.docs : [];
+      const docs: (WorksheetSummary & { docType?: string; memoLayout?: string; resourceKind?: string; trimester?: string })[] = Array.isArray(data.docs) ? data.docs : [];
       if (docs.length === 0) return;
 
       // Merge into the library grid as resource cards (skip ids already present).
@@ -1040,7 +1041,16 @@ export class EducationStore {
               topic: w.topic,
               subject: (w.subject || 'Français') as SubjectName,
               grade: (w.grade || '1ère Année') as GradeLevel,
-              docType: (isMemo ? 'Fiche Mémento' : isPlan || isInfo ? 'Fiche de Cours' : "Série d'Exercices") as DocType,
+              docType: (isMemo
+                ? 'Fiche Mémento'
+                : isInfo
+                  ? w.resourceKind === 'exercise'
+                    ? "Série d'Exercices"
+                    : 'Fiche de Cours'
+                  : isPlan
+                    ? 'Fiche de Cours'
+                    : "Série d'Exercices") as DocType,
+              ...(isInfo && w.trimester ? { trimester: w.trimester as Trimester } : {}),
               difficulty: 'Moyen' as const,
               promptText: isMemo
                 ? `Fiche mémo synthétique A4 — ${w.topic || w.title}`
@@ -1353,7 +1363,8 @@ export class EducationStore {
     source: SourceInput,
     preset: InfographicPreset | 'auto',
     theme: 'kids' | 'official',
-    existingDocId?: string,
+    /** The sheet being regenerated: keeps its id and its library filing (published, section, filters). */
+    previous?: InfographicDoc | null,
   ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
     if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
     const res = await this.ai.post('generate-infographic', { ...this.sourceRequest(source), preset, theme }, {
@@ -1362,8 +1373,10 @@ export class EducationStore {
     if (!res.ok) return { ok: false, error: res.error };
     const generated = res.data['doc'] as InfographicDoc | undefined;
     if (!generated) return { ok: false, error: 'Structure de document invalide.' };
-    const docId = existingDocId || generated.id;
-    const doc: InfographicDoc = { ...generated, id: docId, author: this.profileAuthor() };
+    const kept = previous
+      ? { id: previous.id, published: previous.published, resourceKind: previous.resourceKind, trimester: previous.trimester }
+      : { id: generated.id };
+    const doc: InfographicDoc = { ...generated, ...kept, author: this.profileAuthor() };
     const saved = await this.saveStructuredDoc('infographic', doc);
     if (saved) {
       doc.id = saved.id;
@@ -1417,6 +1430,19 @@ export class EducationStore {
           : { ...spec, columns: (spec.columns ?? []).map((c, i) => (i === target.index ? (withImage as typeof c) : c)) };
     const next: InfographicDoc = { ...doc, values: values as unknown as InfographicDoc['values'] };
     if (doc.isOwner) await this.saveStructuredDoc('infographic', next);
+    return { ok: true, doc: next };
+  }
+
+  /** File the sheet in the library under the chosen section and filters (same id). */
+  async publishInfographic(
+    doc: InfographicDoc,
+    meta: { resourceKind: 'course' | 'exercise'; grade: string; subject: string; trimester?: string },
+  ): Promise<{ ok: boolean; doc?: InfographicDoc }> {
+    const next: InfographicDoc = { ...doc, ...meta, published: true };
+    const saved = await this.saveStructuredDoc('infographic', next);
+    if (!saved) return { ok: false };
+    this.publishedLoaded = false;
+    void this.loadPublishedWorksheets();
     return { ok: true, doc: next };
   }
 

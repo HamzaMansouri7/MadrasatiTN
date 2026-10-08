@@ -1,6 +1,17 @@
-import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, HostListener, inject, OnInit, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { EducationStore, InfographicDoc, InfographicPreset, InfographicTheme, LanguageService, SourceInput, SpecImageTarget } from '@core';
+import {
+  EducationStore,
+  InfographicDoc,
+  InfographicPreset,
+  InfographicTheme,
+  LanguageService,
+  PRIMARY_GRADES,
+  PRIMARY_SUBJECTS,
+  SourceInput,
+  SpecImageTarget,
+  TRIMESTERS,
+} from '@core';
 import { AiStatusComponent, InfographicSpecComponent } from '@shared';
 
 interface PresetOption {
@@ -88,10 +99,19 @@ interface PresetOption {
                 <button
                   type="button"
                   (click)="print()"
-                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-xl text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
+                  class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 px-4 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-2 cursor-pointer transition-colors">
                   <span class="material-icons text-base" aria-hidden="true">print</span>
                   {{ lang.tr('Imprimer A4', 'طباعة A4') }}
                 </button>
+                @if (doc()?.isOwner) {
+                  <button
+                    type="button"
+                    (click)="openPublish()"
+                    class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-xl text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
+                    <span class="material-icons text-base" aria-hidden="true">{{ doc()?.published ? 'library_add_check' : 'library_add' }}</span>
+                    {{ doc()?.published ? lang.tr('Dans la bibliothèque', 'في المكتبة') : lang.tr('Publier dans la bibliothèque', 'نشر في المكتبة') }}
+                  </button>
+                }
               }
             </div>
           </div>
@@ -192,6 +212,82 @@ interface PresetOption {
           </div>
         </section>
       </main>
+
+      @if (publishOpen()) {
+        <div class="no-print fixed inset-0 z-50 bg-[#14251D]/50 flex items-center justify-center p-4">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="publish-title"
+            class="bg-white rounded-[28px] border border-[#E7DFCF] w-full max-w-lg p-6 space-y-5">
+            <div>
+              <h2 id="publish-title" class="font-display text-xl font-semibold">{{ lang.tr('Publier dans la bibliothèque', 'نشر في المكتبة') }}</h2>
+              <p class="text-sm text-[#5B6B60] mt-1">{{ lang.tr('Les enseignants et les parents la trouveront avec ces filtres.', 'سيجدها المعلمون والأولياء بهذه التصنيفات.') }}</p>
+            </div>
+
+            <fieldset>
+              <legend class="text-sm font-semibold mb-2">{{ lang.tr('Rubrique', 'القسم') }}</legend>
+              <div class="grid grid-cols-2 gap-2">
+                @for (k of kinds; track k.id) {
+                  <button
+                    type="button"
+                    (click)="pubKind.set(k.id)"
+                    [attr.aria-pressed]="pubKind() === k.id"
+                    [class]="pubKind() === k.id ? 'border-[#2D6A4F] bg-[#2D6A4F]/5 text-[#1B4332]' : 'border-[#E7DFCF] text-[#4A5A50] hover:bg-[#F2ECDE]'"
+                    class="border rounded-xl min-h-11 px-3 text-sm font-semibold cursor-pointer transition-colors flex items-center justify-center gap-2">
+                    <span class="material-icons text-base" aria-hidden="true">{{ k.icon }}</span>
+                    {{ lang.tr(k.fr, k.ar) }}
+                  </button>
+                }
+              </div>
+            </fieldset>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div>
+                <label for="pub-grade" class="block text-sm font-semibold mb-1">{{ lang.tr('Niveau', 'المستوى') }}</label>
+                <select id="pub-grade" (change)="pubGrade.set($any($event.target).value)" class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 min-h-11 text-sm focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                  @for (g of grades; track g) {
+                    <option [value]="g" [selected]="g === pubGrade()">{{ lang.translateGrade(g) }}</option>
+                  }
+                </select>
+              </div>
+              <div>
+                <label for="pub-subject" class="block text-sm font-semibold mb-1">{{ lang.tr('Matière', 'المادة') }}</label>
+                <select id="pub-subject" (change)="pubSubject.set($any($event.target).value)" class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 min-h-11 text-sm focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                  @for (sub of subjects; track sub) {
+                    <option [value]="sub" [selected]="sub === pubSubject()">{{ lang.translateSubject(sub) }}</option>
+                  }
+                </select>
+              </div>
+              <div>
+                <label for="pub-trimester" class="block text-sm font-semibold mb-1">{{ lang.tr('Trimestre', 'الثلاثي') }}</label>
+                <select id="pub-trimester" (change)="pubTrimester.set($any($event.target).value)" class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 min-h-11 text-sm focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                  @for (t of trimesters; track t) {
+                    <option [value]="t" [selected]="t === pubTrimester()">{{ lang.tr(t, t === 'Trimestre 1' ? 'الثلاثي الأول' : t === 'Trimestre 2' ? 'الثلاثي الثاني' : 'الثلاثي الثالث') }}</option>
+                  }
+                </select>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap justify-end gap-2 pt-1">
+              <button
+                type="button"
+                (click)="publishOpen.set(false)"
+                class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-5 min-h-11 rounded-xl text-sm border border-[#E7DFCF] transition-colors cursor-pointer">
+                {{ lang.tr('Annuler', 'إلغاء') }}
+              </button>
+              <button
+                type="button"
+                (click)="publish()"
+                [disabled]="publishing()"
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 min-h-11 rounded-xl text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm disabled:opacity-60 disabled:cursor-default">
+                <span class="material-icons text-base" [class.animate-spin]="publishing()" aria-hidden="true">{{ publishing() ? 'sync' : 'library_add' }}</span>
+                {{ doc()?.published ? lang.tr('Mettre à jour', 'تحديث النشر') : lang.tr('Publier', 'نشر') }}
+              </button>
+            </div>
+          </div>
+        </div>
+      }
     </div>
   `,
 })
@@ -241,6 +337,20 @@ export class AiStudioComponent implements OnInit {
 
   readonly contentOpen = signal(false);
   readonly settingsOpen = signal(true);
+
+  readonly grades = PRIMARY_GRADES;
+  readonly subjects = PRIMARY_SUBJECTS;
+  readonly trimesters = TRIMESTERS;
+  readonly kinds: { id: 'course' | 'exercise'; icon: string; fr: string; ar: string }[] = [
+    { id: 'course', icon: 'menu_book', fr: 'Cours', ar: 'دروس' },
+    { id: 'exercise', icon: 'edit_note', fr: 'Exercices', ar: 'تمارين' },
+  ];
+  readonly publishOpen = signal(false);
+  readonly publishing = signal(false);
+  readonly pubKind = signal<'course' | 'exercise'>('course');
+  readonly pubGrade = signal('');
+  readonly pubSubject = signal('');
+  readonly pubTrimester = signal('Trimestre 1');
 
   /** What kind of source the sheet was made from (the hub tab), for the panel's label. */
   readonly sourceKind = computed(() => {
@@ -294,12 +404,12 @@ export class AiStudioComponent implements OnInit {
     if (!src || this.busy()) return;
     this.busy.set(true);
     this.error.set(null);
-    const existingId = this.doc()?.id;
+    const previous = this.doc();
     const res = await this.store.generateInfographic(
       { ...src, instructions: this.notes().trim() || undefined },
       this.preset(),
       this.theme(),
-      existingId
+      previous
     );
     this.busy.set(false);
     if (res.ok && res.doc) this.doc.set(res.doc);
@@ -316,6 +426,42 @@ export class AiStudioComponent implements OnInit {
     // A regenerate may have replaced the sheet meanwhile: only apply to the same doc version.
     if (res.ok && res.doc && this.doc() === d) this.doc.set(res.doc);
     else if (!res.ok) this.error.set(res.error ?? this.lang.tr('Image indisponible.', 'الصورة غير متوفرة.'));
+  }
+
+  @HostListener('document:keydown.escape')
+  closePublish() {
+    this.publishOpen.set(false);
+  }
+
+  /** Prefill from the sheet (or its previous filing) so publishing is one click in the usual case. */
+  openPublish() {
+    const d = this.doc();
+    if (!d) return;
+    this.pubKind.set(d.resourceKind ?? 'course');
+    this.pubGrade.set(String(d.grade || this.source()?.grade || PRIMARY_GRADES[0]));
+    this.pubSubject.set(String(d.subject || this.source()?.subject || PRIMARY_SUBJECTS[0]));
+    this.pubTrimester.set(d.trimester || String(this.source()?.trimester || 'Trimestre 1'));
+    this.publishOpen.set(true);
+  }
+
+  async publish() {
+    const d = this.doc();
+    if (!d || this.publishing()) return;
+    this.publishing.set(true);
+    const res = await this.store.publishInfographic(d, {
+      resourceKind: this.pubKind(),
+      grade: this.pubGrade(),
+      subject: this.pubSubject(),
+      trimester: this.pubTrimester(),
+    });
+    this.publishing.set(false);
+    if (res.ok && res.doc) {
+      this.doc.set(res.doc);
+      this.publishOpen.set(false);
+      this.store.showToast(this.lang.tr('Publiée dans la bibliothèque', 'تم النشر في المكتبة'), 'success');
+    } else {
+      this.store.showToast(this.lang.tr('Échec de la publication', 'تعذّر النشر'), 'error');
+    }
   }
 
   async share() {
