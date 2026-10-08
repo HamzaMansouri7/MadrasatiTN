@@ -280,7 +280,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     hero: heroLabel || heroWantsImage || heroImageUrl
       ? {
           label: heroLabel,
-          caption: clip(heroRaw?.['caption'], 60) || undefined,
+          caption: clip(heroRaw?.['caption'], 140) || undefined,
           wantsImage: heroWantsImage || undefined,
           imagePrompt: heroImagePrompt,
           imageUrl: heroImageUrl,

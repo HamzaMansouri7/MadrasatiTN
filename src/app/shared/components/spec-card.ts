@@ -42,8 +42,9 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
       overflow: hidden;
       border-radius: calc(var(--ig-radius, 18px) - 6px);
       border: 1px solid var(--ig-border);
-      background: var(--ig-hero);
+      background: #ffffff;
       margin-bottom: 0.75rem;
+      aspect-ratio: 4 / 3;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -53,7 +54,7 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
     <article class="ig-card">
       @if (imageUrl()) {
         <div class="ig-img-wrap">
-          <img [src]="imageUrl()" [alt]="imageAlt() || title()" class="w-full h-32 sm:h-36 object-contain p-1 rounded-lg" />
+          <img [src]="imageUrl()" [alt]="imageAlt() || title()" class="w-full h-full object-contain" />
         </div>
       }
 

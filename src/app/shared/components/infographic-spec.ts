@@ -38,6 +38,12 @@ import { PresetProblemComponent } from './presets/preset-problem';
       -webkit-print-color-adjust: exact; print-color-adjust: exact;
       overflow: hidden;
     }
+    @media print {
+      .ig-sheet {
+        min-height: 0; padding: 0 !important; gap: 0.8rem;
+        break-after: auto !important; page-break-after: auto !important;
+      }
+    }
     .ig-accent-bar {
       position: absolute;
       top: 0;

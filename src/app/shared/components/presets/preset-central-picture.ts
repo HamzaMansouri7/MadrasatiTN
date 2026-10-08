@@ -26,14 +26,15 @@ import { IllustrateButtonComponent } from './illustrate-button';
     }
     .cp-picture { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--ig-radius, 16px); }
     .cp-placeholder {
-      width: 100%; aspect-ratio: 1 / 1; border-radius: var(--ig-radius, 16px);
+      width: 100%; min-height: 9rem; padding: 1.25rem 0.75rem; border-radius: var(--ig-radius, 16px);
       display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
       background: var(--ig-card);
     }
     .cp-label { font-size: 3.25rem; line-height: 1.1; font-weight: 800; }
     .cp-caption {
-      display: inline-block; margin-top: 0.6rem; padding: 0.25rem 1rem; border-radius: 999px;
+      display: block; margin-top: 0.6rem; padding: 0.4rem 0.9rem;
       background: var(--ig-card); border: var(--ig-bw, 2px) solid var(--ig-border); font-weight: 700; font-size: 0.9rem;
+      border-radius: var(--ig-radius, 16px); line-height: 1.6;
     }
     .cp-quote {
       margin-top: 1.25rem; padding: 1rem 1.5rem; border-radius: 2rem; text-align: center;
