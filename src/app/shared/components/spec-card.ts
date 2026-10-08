@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
 /**
  * Standard reusable card for all infographic presets.
@@ -72,6 +72,14 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
         </h3>
       </div>
 
+      @if (count(); as n) {
+        <div class="flex flex-wrap gap-1.5 mb-2" role="img" [attr.aria-label]="n">
+          @for (_ of dots(); track $index) {
+            <span class="w-4 h-4 rounded-full" [style.background]="badgeBg()"></span>
+          }
+        </div>
+      }
+
       <p class="leading-relaxed flex-1" [class]="size() === 'sm' ? 'text-xs leading-snug' : 'text-sm'" style="color: var(--ig-muted)">
         {{ text() }}
       </p>
@@ -90,4 +98,7 @@ export class SpecCardComponent {
   readonly imageAlt = input<string>('');
   readonly size = input<'sm' | 'md' | 'lg'>('md');
   readonly showBadge = input<boolean>(true);
+  /** Exact quantity drawn as dots (counting lessons); never left to the image model. */
+  readonly count = input<number | undefined>(undefined);
+  readonly dots = computed(() => Array.from({ length: Math.min(Math.max(this.count() ?? 0, 0), 10) }));
 }

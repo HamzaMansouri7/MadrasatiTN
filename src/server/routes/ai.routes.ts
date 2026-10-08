@@ -16,7 +16,7 @@ import { resolveInside } from "../safe-path";
 import { capText, capHistory, wrapData, CAPS } from "../input-caps";
 import { originGuard, aiRateLimiter } from "../guards";
 import { saveGenerated } from "../storage";
-import { normalizeInfographicSpec } from "../../app/core/utils/infographic-spec.util";
+import { normalizeInfographicSpec, specQualityIssues } from "../../app/core/utils/infographic-spec.util";
 import { DIAGRAM_TEMPLATES, DiagramTemplate, generateSchoolDiagram } from "../../app/core/utils/diagram-generator.util";
 import {
   ENABLED_INFOGRAPHIC_PRESETS,
@@ -1228,25 +1228,35 @@ aiRouter.post(
         }),
       });
 
-      const raw = await aiGenerateJSON(
-        infographicSkill.chain,
-        parts.length
-          ? [
-              {
-                text: `${prompt}
+      const fallbackPreset = wanted === "auto" ? "hero-cards" : wanted;
+      const generateOnce = (extra = "") => {
+        const text = `${prompt}${extra}`;
+        return aiGenerateJSON(
+          infographicSkill.chain,
+          parts.length ? [{ text: `${text}\n\n${FILE_SOURCE_RULE}` }, ...parts] : text,
+          infographicSkill.schema,
+          infographicSkill.temperature,
+        );
+      };
 
-${FILE_SOURCE_RULE}`,
-              },
-              ...parts,
-            ]
-          : prompt,
-        infographicSkill.schema,
-        infographicSkill.temperature,
-      );
-      const spec = normalizeInfographicSpec(
-        normalizeDigits(raw),
-        wanted === "auto" ? "hero-cards" : wanted,
-      );
+      let raw = await generateOnce();
+      let spec = normalizeInfographicSpec(normalizeDigits(raw), fallbackPreset);
+      // One corrective retry when the content breaks a rule the normalizer can't fix.
+      const issues = spec ? specQualityIssues(spec) : [];
+      if (issues.length) {
+        try {
+          const retryRaw = await generateOnce(
+            `\n\nCORRECTION OBLIGATOIRE de ta réponse précédente :\n- ${issues.join("\n- ")}`,
+          );
+          const retrySpec = normalizeInfographicSpec(normalizeDigits(retryRaw), fallbackPreset);
+          if (retrySpec && specQualityIssues(retrySpec).length < issues.length) {
+            raw = retryRaw;
+            spec = retrySpec;
+          }
+        } catch (e) {
+          console.warn("[infographic] quality retry failed", e);
+        }
+      }
       if (!spec) {
         res
           .status(502)

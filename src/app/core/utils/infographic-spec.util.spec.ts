@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { generateSchoolDiagram } from './diagram-generator.util';
 import {
   normalizeInfographicSpec,
+  specQualityIssues,
   sanitizeImagePrompt,
   sanitizeImageUrl,
   sanitizeSvg,
@@ -129,10 +130,10 @@ describe('normalizeInfographicSpec', () => {
       preset: 'hero-cards',
       title: 'Les fractions',
       hero: { label: '1/2' },
-      items: [item(1), item(2), item(3), item(4), item(5)],
+      items: [item(1), item(2), item(3), item(4), item(5), item(6), item(7)],
       remember: ['a', 'b', 'c', 'd'],
     });
-    expect(spec?.items).toHaveLength(4);
+    expect(spec?.items).toHaveLength(6);
     expect(spec?.remember).toHaveLength(3);
     expect(spec?.hero?.label).toBe('1/2');
   });
@@ -277,5 +278,47 @@ describe('normalizeInfographicSpec', () => {
     expect(normalizeInfographicSpec({ preset: 'hero-cards', title: 'x', items: [item(1)] })).toBeNull();
     expect(normalizeInfographicSpec({ preset: 'timeline', items: [item(1), item(2), item(3)] })).toBeNull();
     expect(normalizeInfographicSpec(null)).toBeNull();
+  });
+});
+
+describe('specQualityIssues', () => {
+  const base = (items: { title: string; text: string }[]) =>
+    normalizeInfographicSpec({ preset: 'hero-cards', title: 'Les nombres', items: items.map((i) => ({ ...i, icon: 'star' })) })!;
+
+  it('flags merged cards, duplicate titles and picture captions', () => {
+    const issues = specQualityIssues(
+      base([
+        { title: 'العدد 1', text: 'تمثيل العدد 1 بقلم واحد.' },
+        { title: 'العدد 3 و 4', text: 'أعدّ الأشياء.' },
+        { title: 'العدد 1', text: 'أكتب 1.' },
+      ]),
+    );
+    expect(issues).toHaveLength(3);
+  });
+
+  it('passes clean teaching cards', () => {
+    expect(
+      specQualityIssues(
+        base([
+          { title: 'العدد 1', text: 'أعدّ شيئًا واحدًا وأكتب 1.' },
+          { title: 'العدد 2', text: 'أعدّ شيئين وأكتب 2.' },
+          { title: 'العدد 3', text: 'أعدّ ثلاثة أشياء وأكتب 3.' },
+        ]),
+      ),
+    ).toEqual([]);
+  });
+
+  it('keeps an exact count between 1 and 10 only', () => {
+    const spec = normalizeInfographicSpec({
+      preset: 'hero-cards',
+      title: 'N',
+      items: [
+        { title: 'A', text: 'a', icon: 'looks_3', count: 3 },
+        { title: 'B', text: 'b', icon: 'star', count: 40 },
+        { title: 'C', text: 'c', icon: 'star' },
+      ],
+    });
+    expect(spec?.items.map((i) => i.count)).toEqual([3, undefined, undefined]);
+    expect(spec?.items[0].icon).toBe('looks_3');
   });
 });

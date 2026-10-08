@@ -41,12 +41,15 @@ export const SPEC_ICONS: readonly string[] = [
   'pets', 'science', 'calculate', 'menu_book', 'edit', 'palette', 'music_note', 'directions_run',
   'home', 'park', 'restaurant', 'health_and_safety', 'schedule', 'groups', 'flag', 'extension',
   'help_outline', 'quiz', 'assignment', 'insights',
+  'looks_one', 'looks_two', 'looks_3', 'looks_4', 'looks_5', 'looks_6',
 ];
 
 export interface SpecItem {
   title: string;
   text: string;
   icon: string;
+  /** Exact quantity (1-10) drawn as dots by our code, for counting lessons (images miscount). */
+  count?: number;
   wantsImage?: boolean;
   imagePrompt?: string;
   imageUrl?: string;
@@ -128,7 +131,7 @@ export interface InfographicSpec {
 
 /** Item count limits per composition. */
 export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: number }> = {
-  'hero-cards': { min: 4, max: 4 },
+  'hero-cards': { min: 3, max: 6 },
   'circular-flow': { min: 3, max: 6 },
   timeline: { min: 3, max: 6 },
   'central-picture': { min: 2, max: 6 },

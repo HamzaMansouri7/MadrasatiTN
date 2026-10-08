@@ -129,6 +129,10 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
       const text = clip(o['text'], 140);
       if (!title && !text) return null;
       const icon = typeof o['icon'] === 'string' && SPEC_ICONS.includes(o['icon']) ? o['icon'] : 'star';
+      const count =
+        typeof o['count'] === 'number' && Number.isInteger(o['count']) && o['count'] >= 1 && o['count'] <= 10
+          ? o['count']
+          : undefined;
       const wantsImage = Boolean(o['wantsImage']);
       const imagePrompt = o['wantsImage'] === false ? undefined : sanitizeImagePrompt(o['imagePrompt']);
       const imageUrl = sanitizeImageUrl(o['imageUrl']);
@@ -136,6 +140,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
         title,
         text,
         icon,
+        count,
         wantsImage: wantsImage || undefined,
         imagePrompt,
         imageUrl,
@@ -294,4 +299,27 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     imageStory: imageStory && !/[؀-ۿ]/.test(imageStory) ? imageStory : undefined,
     imageLibrary: Object.keys(imageLibrary).length ? imageLibrary : undefined,
   };
+}
+
+/** Two numbers packed into one card title ("العدد 3 و 4", "3 et 4"). */
+const MERGED_TITLE = /\d+\s*(?:و|et|&|,|-|\/)\s*\d+/;
+/** Card text that describes the picture instead of teaching. */
+const DESCRIBES_PICTURE = /^(?:تمثيل|صورة|رسم|يظهر|تظهر|نرى|في الصورة)|\b(?:image|illustration|dessin|on voit|représentation)\b/i;
+
+/**
+ * Content problems the normalizer can't fix (merged cards, duplicate titles, picture captions).
+ * Short French notes, fed back to the model for one corrective retry.
+ */
+export function specQualityIssues(spec: InfographicSpec): string[] {
+  const issues: string[] = [];
+  const seen = new Set<string>();
+  spec.items.forEach((it, i) => {
+    const n = i + 1;
+    if (MERGED_TITLE.test(it.title)) issues.push(`carte ${n} ("${it.title}") regroupe deux idées : une seule idée par carte`);
+    const key = it.title.trim().toLowerCase();
+    if (key && seen.has(key)) issues.push(`carte ${n} répète le titre "${it.title}"`);
+    seen.add(key);
+    if (DESCRIBES_PICTURE.test(it.text.trim())) issues.push(`carte ${n} : le texte décrit l'image au lieu d'enseigner`);
+  });
+  return issues;
 }
