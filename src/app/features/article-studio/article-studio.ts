@@ -252,7 +252,7 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
       this.selectedSubject.set(s);
       this.article.update((a) => ({ ...a, subject: s }));
     }
-    this.syncChapterSelection();
+    this.syncChapterSelection(src.topic);
 
     const prompt =
       src.topic ||
@@ -414,13 +414,13 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
     }
   }
 
-  private syncChapterSelection() {
+  private syncChapterSelection(targetTopic?: string) {
     if (this.isFreeTopic()) {
       this.selectedChapterId.set('free');
       const isAr = this.lang.isArabic();
       this.article.update((a) => ({
         ...a,
-        chapter: isAr ? 'مقال حر / نصائح عامة' : 'Article libre / Conseils généraux',
+        chapter: targetTopic || (isAr ? 'مقال حر / نصائح عامة' : 'Article libre / Conseils généraux'),
       }));
       this.suggestedChips.set(
         isAr
@@ -441,11 +441,24 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
     }
 
     const list = this.availableChapters();
+    if (targetTopic && list.length > 0) {
+      const match = list.find((c) =>
+        c.titleAr.includes(targetTopic) ||
+        targetTopic.includes(c.titleAr) ||
+        c.titleFr.toLowerCase().includes(targetTopic.toLowerCase()) ||
+        targetTopic.toLowerCase().includes(c.titleFr.toLowerCase())
+      );
+      if (match) {
+        this.onChapterChange(match.id);
+        return;
+      }
+    }
+
     if (list.length > 0) {
       this.onChapterChange(list[0].id);
     } else {
-      this.selectedChapterId.set('');
-      this.article.update((a) => ({ ...a, chapter: '' }));
+      this.selectedChapterId.set('free');
+      this.article.update((a) => ({ ...a, chapter: targetTopic || '' }));
     }
   }
 

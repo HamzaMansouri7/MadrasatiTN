@@ -364,6 +364,8 @@ export class EditorStudioComponent implements OnInit {
   }
 
   async applySourceAndGenerate(src: SourceInput, type: DocumentType) {
+    const lang = (src.language as 'fr' | 'ar') || (this.docSubject() === 'Français' || this.docSubject() === 'Anglais' ? 'fr' : 'ar');
+    const extraInstructions = src.instructions ? ` - Note: ${src.instructions}` : (src.text && src.topic ? ` - Contexte: ${src.text.slice(0, 100)}` : '');
     const effectiveTopic =
       src.topic ||
       (src.text ? src.text.slice(0, 60) : '') ||
@@ -406,22 +408,24 @@ export class EditorStudioComponent implements OnInit {
           this.ai.post('generate-exercise', {
             grade: this.docGrade(),
             subject: this.docSubject(),
-            topic: `${effectiveTopic} - Connaissances de base et calcul direct`,
+            topic: `${effectiveTopic} - Connaissances de base et calcul direct${extraInstructions}`,
             difficulty: 'Facile',
             format: 'free',
             trimester: this.docTrimester(),
             points: 8,
+            language: lang,
             role: this.isParentMode() ? 'parent' : 'teacher',
             childName: this.activeChildName(),
           }),
           this.ai.post('generate-exercise', {
             grade: this.docGrade(),
             subject: this.docSubject(),
-            topic: `${effectiveTopic} - Situation problème et raisonnement`,
+            topic: `${effectiveTopic} - Situation problème et raisonnement${extraInstructions}`,
             difficulty: 'Moyen',
             format: 'free',
             trimester: this.docTrimester(),
             points: 12,
+            language: lang,
             role: this.isParentMode() ? 'parent' : 'teacher',
             childName: this.activeChildName(),
           }),
@@ -469,22 +473,24 @@ export class EditorStudioComponent implements OnInit {
           this.ai.post('generate-exercise', {
             grade: this.docGrade(),
             subject: this.docSubject(),
-            topic: `${effectiveTopic} - Entraînement fondamental`,
+            topic: `${effectiveTopic} - Entraînement fondamental${extraInstructions}`,
             difficulty: 'Facile',
             format: 'free',
             trimester: this.docTrimester(),
             points: 10,
+            language: lang,
             role: this.isParentMode() ? 'parent' : 'teacher',
             childName: this.activeChildName(),
           }),
           this.ai.post('generate-exercise', {
             grade: this.docGrade(),
             subject: this.docSubject(),
-            topic: `${effectiveTopic} - Défi et approfondissement`,
+            topic: `${effectiveTopic} - Défi et approfondissement${extraInstructions}`,
             difficulty: 'Moyen',
             format: 'free',
             trimester: this.docTrimester(),
             points: 10,
+            language: lang,
             role: this.isParentMode() ? 'parent' : 'teacher',
             childName: this.activeChildName(),
           }),
