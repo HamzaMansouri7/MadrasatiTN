@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { SafeHtml } from '@angular/platform-browser';
 import { InfographicDoc, InfographicSpec, SpecImageTarget } from '@core';
+import { IllustrateButtonComponent } from './illustrate-button';
 
 @Component({
   selector: 'app-preset-cycle',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [IllustrateButtonComponent],
   styles: `
     :host { display: block; }
     .ig-ring {
@@ -85,11 +87,20 @@ import { InfographicDoc, InfographicSpec, SpecImageTarget } from '@core';
       </div>
       @for (it of s.items; track $index) {
         <article class="ig-ring-node space-y-1.5" [style.left.%]="ringX($index, s.items.length)" [style.top.%]="ringY($index, s.items.length)">
+          @if (it.imageUrl) {
+            <img [src]="it.imageUrl" [alt]="it.title" class="w-full h-16 object-cover rounded-lg border border-[var(--ig-border)]" />
+          }
           <div class="flex items-center gap-2">
             <span class="ig-badge" [style.background]="accent()($index)">{{ $index + 1 }}</span>
             <h3 class="font-display font-bold text-xs sm:text-sm text-[#14251D] leading-tight">{{ it.title }}</h3>
           </div>
           <p class="text-[11px] sm:text-xs leading-snug line-clamp-3" style="color: var(--ig-muted)">{{ it.text }}</p>
+          <app-illustrate-button
+            [prompt]="it.imagePrompt"
+            [imageUrl]="it.imageUrl"
+            [busy]="illustrating() === 'item-' + $index"
+            [disabled]="!!illustrating()"
+            (pressed)="illustrate.emit({ kind: 'item', index: $index })" />
         </article>
       }
     </section>

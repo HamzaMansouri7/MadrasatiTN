@@ -119,7 +119,7 @@ interface PresetOption {
 
         <!-- Settings drawer (collapsible, like the editor's configuration panel) -->
         @if (settingsOpen()) {
-          <section id="ai-settings" class="no-print bg-white rounded-[28px] p-5 sm:p-6 border border-[#E7DFCF] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1.1fr_0.7fr_1.7fr_1fr] gap-6">
+          <section id="ai-settings" class="no-print bg-white rounded-[28px] p-5 sm:p-6 border border-[#E7DFCF] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1.7fr)] gap-x-8 gap-y-6">
             <div class="min-w-0">
               <p class="text-sm font-semibold mb-1.5 flex items-center gap-1.5">
                 <span class="material-icons text-base text-[#2D6A4F]" aria-hidden="true">{{ sourceKind().icon }}</span>
@@ -140,14 +140,14 @@ interface PresetOption {
 
             <fieldset>
               <legend class="text-sm font-semibold mb-2">{{ lang.tr('Style', 'الأسلوب') }}</legend>
-              <div class="grid grid-cols-2 gap-2">
+              <div class="inline-flex p-1 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF]">
                 @for (th of themes; track th.id) {
                   <button
                     type="button"
                     (click)="setTheme(th.id)"
                     [attr.aria-pressed]="theme() === th.id"
-                    [class]="theme() === th.id ? 'border-[#2D6A4F] bg-[#2D6A4F]/5 text-[#1B4332]' : 'border-[#E7DFCF] text-[#4A5A50] hover:bg-[#F2ECDE]'"
-                    class="border rounded-xl min-h-11 text-sm font-semibold cursor-pointer transition-colors">
+                    [class]="theme() === th.id ? 'bg-white text-[#1B4332] shadow-sm border-[#E7DFCF]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
+                    class="border px-5 min-h-10 rounded-lg text-sm font-semibold whitespace-nowrap cursor-pointer transition-colors">
                     {{ lang.tr(th.fr, th.ar) }}
                   </button>
                 }
@@ -156,7 +156,7 @@ interface PresetOption {
 
             <fieldset>
               <legend class="text-sm font-semibold mb-2">{{ lang.tr('Composition', 'التركيب') }}</legend>
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <div class="flex flex-wrap gap-2">
                 @for (p of presets; track p.id) {
                   <button
                     type="button"
@@ -164,7 +164,7 @@ interface PresetOption {
                     [disabled]="busy()"
                     [attr.aria-pressed]="preset() === p.id"
                     [class]="preset() === p.id || autoPicked() === p.id ? 'border-[#2D6A4F] bg-[#2D6A4F]/5 text-[#1B4332]' : 'border-[#E7DFCF] text-[#4A5A50] hover:bg-[#F2ECDE]'"
-                    class="relative border rounded-xl min-h-11 px-2 text-xs font-semibold cursor-pointer transition-colors flex items-center justify-center gap-1.5 disabled:opacity-60 disabled:cursor-default">
+                    class="relative border rounded-xl min-h-10 px-3 text-sm font-semibold whitespace-nowrap cursor-pointer transition-colors flex items-center gap-1.5 disabled:opacity-60 disabled:cursor-default">
                     <span class="material-icons text-base" aria-hidden="true">{{ p.icon }}</span>
                     {{ lang.tr(p.fr, p.ar) }}
                     @if (autoPicked() === p.id) {
@@ -181,15 +181,15 @@ interface PresetOption {
               }
             </fieldset>
 
-            <div>
-              <label for="ai-notes" class="block text-sm font-semibold mb-2">{{ lang.tr('Consignes', 'توجيهات') }}</label>
+            <div class="lg:col-span-3 border-t border-[#F2ECDE] pt-5">
+              <label for="ai-notes" class="block text-sm font-semibold mb-2">{{ lang.tr('Consignes pour l’IA', 'توجيهات للذكاء الاصطناعي') }}</label>
               <textarea
                 id="ai-notes"
-                rows="3"
+                rows="2"
                 [value]="notes()"
                 (input)="notes.set($any($event.target).value)"
                 [placeholder]="lang.tr('Ex. : insister sur les exemples du quotidien', 'مثال: التركيز على أمثلة من الحياة اليومية')"
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-3 text-sm focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]"></textarea>
+                class="w-full resize-y min-h-16 bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-3 text-sm focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]"></textarea>
               <p class="text-xs text-[#6B7A70] mt-1">{{ lang.tr('Facultatif, appliqué au prochain « Régénérer ».', 'اختياري، يُطبَّق عند «إعادة التوليد».') }}</p>
             </div>
           </section>

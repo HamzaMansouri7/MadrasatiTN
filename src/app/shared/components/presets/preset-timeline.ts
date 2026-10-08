@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { SafeHtml } from '@angular/platform-browser';
 import { InfographicSpec, SpecImageTarget } from '@core';
+import { IllustrateButtonComponent } from './illustrate-button';
 
 @Component({
   selector: 'app-preset-timeline',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [IllustrateButtonComponent],
   styles: `
     :host { display: block; }
     .ig-timeline {
@@ -80,6 +82,14 @@ import { InfographicSpec, SpecImageTarget } from '@core';
             <h3 class="font-display font-bold text-base sm:text-lg text-[#14251D]">{{ it.title }}</h3>
           </div>
           <p class="text-sm leading-relaxed" style="color: var(--ig-muted)">{{ it.text }}</p>
+          <div class="mt-2">
+            <app-illustrate-button
+            [prompt]="it.imagePrompt"
+            [imageUrl]="it.imageUrl"
+            [busy]="illustrating() === 'item-' + $index"
+            [disabled]="!!illustrating()"
+            (pressed)="illustrate.emit({ kind: 'item', index: $index })" />
+          </div>
         </article>
       }
     </section>
