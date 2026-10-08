@@ -20,6 +20,7 @@ import { normalizeInfographicSpec, specQualityIssues } from "../../app/core/util
 import { DIAGRAM_TEMPLATES, DiagramTemplate, generateSchoolDiagram } from "../../app/core/utils/diagram-generator.util";
 import {
   ENABLED_INFOGRAPHIC_PRESETS,
+  isInfographicTheme,
   type InfographicPreset,
 } from "../../app/core/models/infographic-spec.model";
 import {
@@ -1281,7 +1282,7 @@ aiRouter.post(
                 title: String(it["title"]),
                 subtitle: typeof it["subtitle"] === "string" ? it["subtitle"] : undefined,
               })),
-            { theme: theme === "official" ? "official" : "kids", lang: lang === "fr" ? "fr" : "ar" },
+            { theme: isInfographicTheme(theme) ? theme : "kids", lang: lang === "fr" ? "fr" : "ar" },
           );
           if (svg) spec.diagramSvg = svg;
         } catch (e) {
@@ -1300,7 +1301,7 @@ aiRouter.post(
           subject: resolvedSubject,
           language: lang,
           values: spec,
-          theme: theme === "official" ? "official" : "kids",
+          theme: isInfographicTheme(theme) ? theme : "kids",
           createdAt: now,
           updatedAt: now,
         },

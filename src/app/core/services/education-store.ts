@@ -39,8 +39,8 @@ import {
 import { SourceInput } from '../models/source-input.model';
 import { SeriesDoc, Scene } from '../models/series.model';
 import { InfographicDoc } from '../models/infographic.model';
-import { InfographicPreset, InfographicSpec } from '../models/infographic-spec.model';
-import { SpecImageTarget, THEME_IMAGE_STYLE } from '../data/infographic-image-style.data';
+import { InfographicPreset, InfographicSpec, InfographicTheme } from '../models/infographic-spec.model';
+import { resolveTheme, SpecImageTarget } from '../data/infographic-image-style.data';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
@@ -1362,7 +1362,7 @@ export class EducationStore {
   async generateInfographic(
     source: SourceInput,
     preset: InfographicPreset | 'auto',
-    theme: 'kids' | 'official',
+    theme: InfographicTheme,
     /** The sheet being regenerated: keeps its id and its library filing (published, section, filters). */
     previous?: InfographicDoc | null,
   ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
@@ -1432,10 +1432,44 @@ export class EducationStore {
    * imagePrompt with the theme style and one seed per doc (same look across cards),
    * writes the URL into the block and re-saves under the same id.
    */
+  /** Blocks that asked for a picture but have none yet, in reading order (for auto-fill). */
+  infographicImageTargets(doc: InfographicDoc): SpecImageTarget[] {
+    const spec = doc.values as unknown as InfographicSpec;
+    const needs = (b?: { imagePrompt?: string; imageUrl?: string }) => Boolean(b && !b.imageUrl && b.imagePrompt?.trim());
+    const out: SpecImageTarget[] = [];
+    if (needs(spec.hero)) out.push({ kind: 'hero' });
+    spec.items?.forEach((it, i) => needs(it) && out.push({ kind: 'item', index: i }));
+    spec.columns?.forEach((c, i) => needs(c) && out.push({ kind: 'column', index: i }));
+    if (needs(spec.problem)) out.push({ kind: 'problem' });
+    return out;
+  }
+
+  /**
+   * Draws every block that asked for a picture, one at a time (free image providers rate-limit),
+   * saving once at the end. `onStart`/`onDone` let the UI show which block is busy right now.
+   */
+  async illustrateInfographicAll(
+    doc: InfographicDoc,
+    onStart?: (target: SpecImageTarget) => void,
+    onDone?: (target: SpecImageTarget, doc: InfographicDoc) => void,
+  ): Promise<InfographicDoc> {
+    let current = doc;
+    for (const target of this.infographicImageTargets(doc)) {
+      onStart?.(target);
+      const res = await this.illustrateInfographicBlock(current, target, false, false);
+      if (res.ok && res.doc) current = res.doc;
+      onDone?.(target, current);
+    }
+    if (current !== doc && current.isOwner) await this.saveStructuredDoc('infographic', current);
+    return current;
+  }
+
   async illustrateInfographicBlock(
     doc: InfographicDoc,
     target: SpecImageTarget,
     variation = false,
+    /** Auto-fill saves once at the end instead of after every block. */
+    save = true,
   ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
     if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
     const spec = doc.values as unknown as InfographicSpec;
@@ -1458,7 +1492,7 @@ export class EducationStore {
       {
         promptText: story ? `${story}. ${prompt}` : prompt,
         raw: true,
-        style: THEME_IMAGE_STYLE[doc.theme ?? 'kids'],
+        style: resolveTheme(doc.theme).imageStyle,
         seedKey: doc.id,
         // New seed + cache bypass for "صورة أخرى"; same doc look otherwise.
         variation: variation ? (Date.now() % 1_000_000) + 1 : undefined,
@@ -1511,7 +1545,7 @@ export class EducationStore {
       imageLibrary: updatedLib,
       values: updatedValues as unknown as InfographicDoc['values'],
     };
-    if (doc.isOwner) await this.saveStructuredDoc('infographic', next);
+    if (save && doc.isOwner) await this.saveStructuredDoc('infographic', next);
     return { ok: true, doc: next };
   }
 

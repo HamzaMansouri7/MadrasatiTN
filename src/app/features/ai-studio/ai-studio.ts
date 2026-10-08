@@ -390,11 +390,13 @@ export class AiStudioComponent implements OnInit {
     { id: 'lesson-stages', icon: 'format_list_numbered', fr: 'Étapes', ar: 'مراحل الدرس' },
     { id: 'comparison', icon: 'compare_arrows', fr: 'Comparaison', ar: 'مقارنة' },
     { id: 'problem', icon: 'quiz', fr: 'Problème', ar: 'وضعية مشكل' },
+    { id: 'picture-rows', icon: 'view_list', fr: 'Image et phrase', ar: 'صورة وجملة' },
   ];
 
   readonly themes: { id: InfographicTheme; icon: string; fr: string; ar: string; hintFr: string; hintAr: string }[] = [
     { id: 'kids', icon: 'palette', fr: 'Enfants', ar: 'أطفال', hintFr: 'Couleurs vives, illustrations', hintAr: 'ألوان زاهية ورسوم' },
     { id: 'official', icon: 'account_balance', fr: 'Officiel', ar: 'رسمي', hintFr: 'Sobre, style ministère', hintAr: 'هادئ بطابع رسمي' },
+    { id: 'fiche', icon: 'star', fr: 'Fiche classe', ar: 'بطاقة القسم', hintFr: 'Bleu et rouge, cadre étoilé', hintAr: 'أزرق وأحمر، إطار بالنجوم' },
   ];
 
   readonly source = signal<SourceInput | null>(null);
@@ -542,8 +544,25 @@ export class AiStudioComponent implements OnInit {
       previous
     );
     this.busy.set(false);
-    if (res.ok && res.doc) this.doc.set(res.doc);
-    else this.error.set(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));
+    if (res.ok && res.doc) {
+      this.doc.set(res.doc);
+      void this.illustrateAll(res.doc);
+    } else this.error.set(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));
+  }
+
+  /** Draws every block that asked for a picture, one at a time (free image providers rate-limit). */
+  private async illustrateAll(doc: InfographicDoc) {
+    const keyOf = (target: SpecImageTarget) =>
+      target.kind === 'hero' ? 'hero' : target.kind === 'problem' ? 'problem' : `${target.kind}-${target.index}`;
+    await this.store.illustrateInfographicAll(
+      doc,
+      (target) => this.illustrating.set(keyOf(target)),
+      (_target, next) => {
+        // The sheet may have been regenerated or edited meanwhile: stop applying it, but let the loop finish and save.
+        if (this.doc() === doc || this.doc() === next) this.doc.set(next);
+      },
+    );
+    this.illustrating.set(null);
   }
 
   async illustrate(target: SpecImageTarget) {

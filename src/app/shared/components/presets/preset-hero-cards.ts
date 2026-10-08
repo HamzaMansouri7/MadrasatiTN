@@ -67,7 +67,7 @@ import { IllustrateButtonComponent } from './illustrate-button';
       </section>
     }
 
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4" [class.lg:grid-cols-3]="s.items.length === 3 || s.items.length > 4">
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4" [class.lg:grid-cols-3]="s.items.length === 3 || s.items.length > 4" [class.print:grid-cols-3]="s.items.length === 3 || s.items.length > 4">
       @for (it of s.items; track $index) {
         <app-spec-card
           [title]="it.title"

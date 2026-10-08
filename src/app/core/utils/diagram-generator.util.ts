@@ -1,4 +1,4 @@
-import { INFOGRAPHIC_THEMES_CONFIG, ThemeColors } from '../data/infographic-theme.data';
+import { resolveTheme, ThemeColors } from '../data/infographic-theme.data';
 import { InfographicTheme } from '../models/infographic-spec.model';
 import { sanitizeSvg } from './infographic-spec.util';
 
@@ -51,8 +51,7 @@ export function generateSchoolDiagram(
   items: DiagramItemInput[],
   options: DiagramOptions = {},
 ): string {
-  const themeKey = options.theme ?? 'kids';
-  const themeDef = INFOGRAPHIC_THEMES_CONFIG[themeKey] || INFOGRAPHIC_THEMES_CONFIG.kids;
+  const themeDef = resolveTheme(options.theme);
   const colors: ThemeColors = themeDef.colors;
   const isRtl = options.lang !== 'fr';
   const font = "'Noto Kufi Arabic', 'Cairo', system-ui, sans-serif";

@@ -6,10 +6,11 @@ export type InfographicPreset =
   | 'central-picture'
   | 'lesson-stages'
   | 'comparison'
-  | 'problem';
+  | 'problem'
+  | 'picture-rows';
 
-/** Look of the sheet (design tokens only). `kids` is scoped to AI Studio sheets, never the app UI. */
-export type InfographicTheme = 'kids' | 'official';
+/** Look of the sheet (design tokens only). Scoped to AI Studio sheets, never the app UI. */
+export type InfographicTheme = 'kids' | 'official' | 'fiche';
 
 export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'hero-cards',
@@ -19,6 +20,7 @@ export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'lesson-stages',
   'comparison',
   'problem',
+  'picture-rows',
 ];
 /**
  * Presets that have a renderer today. The model may only pick from these (schema enum + Auto list);
@@ -32,8 +34,14 @@ export const ENABLED_INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'lesson-stages',
   'comparison',
   'problem',
+  'picture-rows',
 ];
-export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = ['kids', 'official'];
+export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = ['kids', 'official', 'fiche'];
+
+/** Narrows untrusted input (request body, saved doc) to a known theme id. */
+export function isInfographicTheme(value: unknown): value is InfographicTheme {
+  return typeof value === 'string' && (INFOGRAPHIC_THEMES as readonly string[]).includes(value);
+}
 
 /** Material icon names the model may pick from (anything else falls back to `star`). */
 export const SPEC_ICONS: readonly string[] = [
@@ -50,6 +58,8 @@ export interface SpecItem {
   icon: string;
   /** Exact quantity (1-10) drawn as dots by our code, for counting lessons (images miscount). */
   count?: number;
+  /** Word inside `text` the renderer paints in the accent colour (picture-rows). Plain text, never HTML. */
+  keyword?: string;
   wantsImage?: boolean;
   imagePrompt?: string;
   imageUrl?: string;
@@ -109,6 +119,8 @@ export interface InfographicSpec {
   preset: InfographicPreset;
   title: string;
   subtitle?: string;
+  /** What the student must do with this sheet (e.g. "Observe chaque image, puis écris une phrase."). */
+  instruction?: string;
   hero?: SpecHero;
   items: SpecItem[];
   /** 0-3 short points to remember. */
@@ -141,4 +153,6 @@ export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: n
   comparison: { min: 0, max: 4 },
   // content lives in `problem`, items are optional extras
   problem: { min: 0, max: 4 },
+  // one numbered row per picture + sentence
+  'picture-rows': { min: 2, max: 5 },
 };

@@ -322,3 +322,31 @@ describe('specQualityIssues', () => {
     expect(spec?.items[0].icon).toBe('looks_3');
   });
 });
+
+describe('picture-rows, keyword and instruction', () => {
+  const rows = (keyword: string) =>
+    normalizeInfographicSpec({
+      preset: 'picture-rows',
+      title: 'Embellir notre classe',
+      instruction: 'Observe chaque image, puis écris une phrase.',
+      items: [
+        { title: 'Ramasser', text: 'Le garçon ramasse les papiers.', icon: 'star', keyword, imagePrompt: 'a boy picking up paper' },
+        { title: 'Nettoyer', text: 'La fille nettoie la table.', icon: 'star', imagePrompt: 'a girl cleaning a desk' },
+      ],
+      remember: ['Qui fait quoi, où ?'],
+    });
+
+  it('accepts the picture-rows preset and keeps the instruction', () => {
+    const spec = rows('ramasse');
+    expect(spec?.preset).toBe('picture-rows');
+    expect(spec?.instruction).toBe('Observe chaque image, puis écris une phrase.');
+  });
+
+  it('keeps a keyword that occurs in the text', () => {
+    expect(rows('ramasse')?.items[0].keyword).toBe('ramasse');
+  });
+
+  it('drops a keyword that is not in the text', () => {
+    expect(rows('balaie')?.items[0].keyword).toBeUndefined();
+  });
+});

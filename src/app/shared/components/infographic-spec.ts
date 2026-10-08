@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, output } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { INFOGRAPHIC_THEMES_CONFIG, InfographicDoc, InfographicSpec, sanitizeSvg, SpecImageTarget } from '@core';
+import { InfographicDoc, InfographicSpec, resolveTheme, sanitizeSvg, SpecImageTarget } from '@core';
 import { PresetCycleComponent } from './presets/preset-cycle';
 import { PresetHeroCardsComponent } from './presets/preset-hero-cards';
 import { PresetTimelineComponent } from './presets/preset-timeline';
@@ -8,11 +8,12 @@ import { PresetCentralPictureComponent } from './presets/preset-central-picture'
 import { PresetLessonStagesComponent } from './presets/preset-lesson-stages';
 import { PresetComparisonComponent } from './presets/preset-comparison';
 import { PresetProblemComponent } from './presets/preset-problem';
+import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
 
 /**
  * Draws an AI Studio spec on an A4 sheet. The model only picks a preset and fills text;
  * layout, colour and shape come from here. Theme CSS variables come from the one theme object
- * (INFOGRAPHIC_THEMES_CONFIG, shared with images and diagrams); `kids` is scoped to these sheets.
+ * (resolveTheme, shared with images and diagrams); themes are scoped to these sheets.
  */
 @Component({
   selector: 'app-infographic-spec',
@@ -26,6 +27,7 @@ import { PresetProblemComponent } from './presets/preset-problem';
     PresetLessonStagesComponent,
     PresetComparisonComponent,
     PresetProblemComponent,
+    PresetPictureRowsComponent,
   ],
   host: { '[attr.data-theme]': 'theme()', '[style]': 'themeVars()' },
   styles: `
@@ -43,6 +45,8 @@ import { PresetProblemComponent } from './presets/preset-problem';
         min-height: 0; padding: 0 !important; gap: 0.8rem;
         break-after: auto !important; page-break-after: auto !important;
       }
+      /* The fiche frame and stars sit in the padding, so it is kept on paper. */
+      .ig-sheet[data-frame='fiche'] { padding: 1.5rem 1.4rem 1.1rem !important; gap: 0.6rem; }
     }
     .ig-accent-bar {
       position: absolute;
@@ -51,7 +55,50 @@ import { PresetProblemComponent } from './presets/preset-problem';
       height: 6px;
       background: linear-gradient(90deg, var(--ig-a) 0%, var(--ig-b) 33%, var(--ig-c) 66%, var(--ig-d) 100%);
     }
-    .ig-title { font-size: var(--ig-title); line-height: 1.22; font-weight: 800; letter-spacing: -0.015em; }
+    .ig-title {
+      font-family: var(--ig-font-display); color: var(--ig-title-color);
+      font-size: var(--ig-title); line-height: 1.22; font-weight: 800; letter-spacing: -0.015em;
+    }
+    .ig-heading { font-family: var(--ig-font-display); color: var(--ig-heading); }
+
+    /* Fiche frame: dashed navy border inset from the sheet edge, stars around it, flag badge. */
+    .ig-frame, .ig-stars, .ig-flag { display: none; }
+    .ig-sheet[data-frame='fiche'] { border-color: var(--ig-border); padding: 2.75rem 2.6rem 2.25rem; }
+    .ig-sheet[data-frame='fiche'] .ig-accent-bar { display: none; }
+    .ig-sheet[data-frame='fiche'] .ig-frame {
+      display: block; position: absolute; inset: 0.9rem; pointer-events: none;
+      border: 2px dashed var(--ig-border); border-radius: var(--ig-radius); opacity: 0.55;
+    }
+    .ig-sheet[data-frame='fiche'] .ig-stars { display: block; position: absolute; inset: 0; pointer-events: none; }
+    .ig-star { position: absolute; width: 14px; height: 14px; }
+    .ig-sheet[data-frame='fiche'] .ig-flag {
+      display: block; position: absolute; top: 1.35rem; inset-inline-end: 1.6rem; width: 42px; height: 28px;
+      border-radius: 4px; box-shadow: 0 0 0 1.5px var(--ig-card), 0 1px 3px rgba(0, 0, 0, 0.15);
+    }
+    .ig-sheet[data-frame='fiche'] header { padding-inline-end: 3.25rem; }
+    .ig-sheet[data-frame='fiche'] .ig-chip { border-color: var(--ig-border); }
+
+    /* Fiche header: date | title | grade, three cells in one bordered strip. */
+    .ig-strip {
+      display: grid; grid-template-columns: minmax(6.5rem, 0.7fr) 2fr minmax(7rem, 0.8fr); align-items: stretch;
+      border: var(--ig-bw) solid var(--ig-border); border-radius: var(--ig-radius); overflow: hidden;
+      background: var(--ig-card); break-inside: avoid;
+    }
+    .ig-strip > * + * { border-inline-start: var(--ig-bw) solid var(--ig-border); }
+    .ig-strip-side {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.15rem;
+      padding: 0.6rem 0.5rem; text-align: center; font-weight: 700; font-size: 0.85rem; color: var(--ig-heading);
+    }
+    .ig-strip-side .material-icons { font-size: 1.5rem; color: var(--ig-a); }
+    .ig-strip-grade { font-family: var(--ig-font-display); font-size: 1.05rem; color: var(--ig-a); }
+    .ig-strip-title { margin: 0; padding: 0.55rem 0.9rem; text-align: center; display: flex; align-items: center; justify-content: center; }
+
+    /* What the student must do: shown on every theme, tinted by the theme's hero colour. */
+    .ig-instruction {
+      padding: 0.55rem 1rem; text-align: center; font-weight: 600; font-size: 0.95rem; line-height: 1.5;
+      color: var(--ig-heading); background: var(--ig-hero);
+      border: var(--ig-bw) solid var(--ig-border); border-radius: var(--ig-radius); break-inside: avoid;
+    }
     .ig-chip {
       display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.25rem 0.85rem; border-radius: 999px;
       background: var(--ig-card); border: 1.5px solid var(--ig-border); font-size: 0.8rem; font-weight: 700;
@@ -62,7 +109,7 @@ import { PresetProblemComponent } from './presets/preset-problem';
       background: var(--ig-hero); border: 1px solid var(--ig-border); font-size: 0.85rem; font-weight: 600;
     }
     .ig-remember {
-      background: linear-gradient(135deg, var(--ig-hero) 0%, rgba(255, 255, 255, 0.95) 100%);
+      background: linear-gradient(135deg, var(--ig-tip) 0%, rgba(255, 255, 255, 0.95) 100%);
       border: var(--ig-bw) solid var(--ig-border); border-radius: var(--ig-radius);
       padding: 1.15rem 1.35rem; display: flex; align-items: flex-start; gap: 1rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); break-inside: avoid;
@@ -89,14 +136,53 @@ import { PresetProblemComponent } from './presets/preset-problem';
       id="ai-studio-sheet"
       class="ig-sheet print-sheet"
       [attr.dir]="doc().language === 'fr' ? 'ltr' : 'rtl'"
-      [attr.lang]="doc().language">
+      [attr.lang]="doc().language"
+      [attr.data-frame]="frame()">
       <!-- Top Accent Bar -->
       <div class="ig-accent-bar" aria-hidden="true"></div>
 
+      @if (frame() === 'fiche') {
+        <div class="ig-frame" aria-hidden="true"></div>
+        <div class="ig-stars" aria-hidden="true">
+          @for (st of stars; track $index) {
+            <svg class="ig-star" viewBox="0 0 24 22" [style.top]="st.top" [style.left]="st.left" [style.right]="st.right"
+              [style.width.px]="st.size" [style.height.px]="st.size">
+              <polygon [attr.fill]="st.color"
+                points="12,1 14.7,8.28 22.46,8.6 16.37,13.42 18.47,20.9 12,16.6 5.53,20.9 7.63,13.42 1.54,8.6 9.3,8.28" />
+            </svg>
+          }
+        </div>
+        <!-- Tunisian flag: red field, white disc, red crescent and star. -->
+        <svg class="ig-flag" viewBox="0 0 60 40" aria-hidden="true">
+          <rect width="60" height="40" rx="3" fill="#E70013" />
+          <circle cx="30" cy="20" r="10" fill="#FFFFFF" />
+          <circle cx="31" cy="20" r="7.5" fill="#E70013" />
+          <circle cx="33" cy="20" r="6" fill="#FFFFFF" />
+          <polygon fill="#E70013"
+            points="28.1,20 31.02,19 31.07,15.91 32.93,18.38 35.88,17.47 34.1,20 35.88,22.53 32.93,21.62 31.07,24.09 31.02,21" />
+        </svg>
+      }
+
       <header class="space-y-2.5 pt-1">
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <div class="flex flex-wrap items-center gap-2">
-            <span class="ig-chip text-[#14251D]">{{ doc().grade }}</span>
+        @if (frame() === 'fiche') {
+          <div class="ig-strip">
+            <div class="ig-strip-side">
+              <span class="material-icons" aria-hidden="true">event</span>
+              <span>{{ sheetDate() }}</span>
+            </div>
+            <h2 class="ig-title ig-strip-title">{{ s.title }}</h2>
+            <div class="ig-strip-side">
+              <span class="ig-strip-grade">{{ doc().grade }}</span>
+              <span>{{ doc().subject }}</span>
+              @if (doc().trimester) {
+                <span class="opacity-75">{{ doc().trimester }}</span>
+              }
+            </div>
+          </div>
+        }
+        <div class="flex flex-wrap items-center justify-between gap-2" [class.hidden]="frame() === 'fiche' && !doc().author?.name">
+          <div class="flex flex-wrap items-center gap-2" [class.hidden]="frame() === 'fiche'">
+            <span class="ig-chip" style="color: var(--ig-heading)">{{ doc().grade }}</span>
             <span class="ig-chip" [style.color]="accent(0)">{{ doc().subject }}</span>
             @if (doc().trimester) {
               <span class="ig-chip" style="color: var(--ig-muted)">{{ doc().trimester }}</span>
@@ -116,7 +202,13 @@ import { PresetProblemComponent } from './presets/preset-problem';
           }
         </div>
 
-        <h2 class="ig-title font-display text-[#14251D]">{{ s.title }}</h2>
+        @if (frame() !== 'fiche') {
+          <h2 class="ig-title">{{ s.title }}</h2>
+        }
+
+        @if (s.instruction) {
+          <div class="ig-instruction">{{ s.instruction }}</div>
+        }
 
         @if (s.subtitle) {
           <div class="ig-objective" style="color: var(--ig-ink)">
@@ -187,6 +279,14 @@ import { PresetProblemComponent } from './presets/preset-problem';
               (illustrate)="illustrate.emit($event)">
             </app-preset-problem>
           }
+          @case ('picture-rows') {
+            <app-preset-picture-rows
+              [spec]="s"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-picture-rows>
+          }
           @default {
             <app-preset-hero-cards
               [spec]="s"
@@ -211,7 +311,7 @@ import { PresetProblemComponent } from './presets/preset-problem';
             <span class="material-icons text-2xl" aria-hidden="true">lightbulb</span>
           </span>
           <div class="space-y-1 flex-1 min-w-0">
-            <p class="font-display font-bold text-sm text-[#14251D]">{{ doc().language === 'fr' ? 'À retenir absolument' : 'أتذكّر جيّداً' }}</p>
+            <p class="ig-heading font-bold text-sm">{{ doc().language === 'fr' ? 'À retenir absolument' : 'أتذكّر جيّداً' }}</p>
             <ul class="text-xs sm:text-sm space-y-1" style="color: var(--ig-muted)">
               @for (r of s.remember; track $index) {
                 <li class="flex items-start gap-1.5">
@@ -227,7 +327,7 @@ import { PresetProblemComponent } from './presets/preset-problem';
       <footer class="mt-auto pt-3 border-t border-[var(--ig-border)] flex items-center justify-between text-xs" style="color: var(--ig-muted)">
         <span>
           {{ doc().language === 'fr' ? 'Réalisé par : ' : 'من إنجاز : ' }}
-          <strong class="text-[#14251D] font-bold">{{ doc().author?.name || 'Madrasati TN' }}</strong>
+          <strong class="font-bold" style="color: var(--ig-heading)">{{ doc().author?.name || 'Madrasati TN' }}</strong>
           @if (doc().author?.school) {
             <span> — {{ doc().author?.school }}</span>
           }
@@ -245,18 +345,32 @@ export class InfographicSpecComponent {
   readonly illustrate = output<SpecImageTarget>();
 
   readonly spec = computed(() => this.doc().values as unknown as InfographicSpec);
-  readonly theme = computed(() => this.doc().theme ?? 'kids');
+  private readonly themeDef = computed(() => resolveTheme(this.doc().theme));
+  readonly theme = computed(() => this.themeDef().id);
+  readonly frame = computed(() => this.themeDef().frame);
 
   readonly themeVars = computed(() => {
-    const t = INFOGRAPHIC_THEMES_CONFIG[this.theme()] ?? INFOGRAPHIC_THEMES_CONFIG.kids;
+    const t = this.themeDef();
     const c = t.colors;
     return (
       `--ig-bg:${c.bg};--ig-ink:${c.ink};--ig-muted:${c.muted};--ig-card:${c.card};` +
-      `--ig-border:${c.border};--ig-hero:${c.hero};` +
+      `--ig-border:${c.border};--ig-hero:${c.hero};--ig-tip:${c.tip};` +
+      `--ig-title-color:${c.title};--ig-heading:${c.heading};--ig-font-display:${t.fontDisplay};` +
       `--ig-a:${c.accents[0]};--ig-b:${c.accents[1]};--ig-c:${c.accents[2]};--ig-d:${c.accents[3]};` +
       `--ig-radius:${t.radius};--ig-bw:${t.borderWidth};--ig-title:${t.titleSize}`
     );
   });
+
+  /** Fiche frame stars: small, at the edges only, never over text. */
+  readonly stars: { top: string; left?: string; right?: string; size: number; color: string }[] = [
+    { top: '0.35rem', left: '22%', size: 14, color: '#F2B705' },
+    { top: '0.45rem', right: '30%', size: 11, color: '#D62828' },
+    { top: '18%', left: '0.3rem', size: 12, color: '#F2B705' },
+    { top: '41%', right: '0.3rem', size: 13, color: '#D62828' },
+    { top: '63%', left: '0.3rem', size: 11, color: '#1E2A78' },
+    { top: '82%', right: '0.3rem', size: 12, color: '#F2B705' },
+    { top: 'calc(100% - 0.85rem)', left: '38%', size: 12, color: '#1E2A78' },
+  ];
 
   /** Sheet date (created, else today), dd/mm/yyyy. */
   readonly sheetDate = computed(() => {

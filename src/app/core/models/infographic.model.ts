@@ -1,4 +1,5 @@
 import { GradeLevel, SubjectName } from './education.model';
+import { InfographicTheme } from './infographic-spec.model';
 
 export type SlotKind =
   | 'header-strip'
@@ -115,7 +116,7 @@ export interface InfographicDoc {
   subject: SubjectName | string;
   language: 'ar' | 'fr';
   /** AI Studio spec docs only: look of the sheet. */
-  theme?: 'kids' | 'official';
+  theme?: InfographicTheme;
   /** AI Studio: listed in the library (false = private draft, reachable by link). */
   published?: boolean;
   /** AI Studio: library section the sheet is filed under. */

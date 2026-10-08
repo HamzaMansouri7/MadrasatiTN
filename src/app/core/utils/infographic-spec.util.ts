@@ -136,11 +136,14 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
       const wantsImage = Boolean(o['wantsImage']);
       const imagePrompt = o['wantsImage'] === false ? undefined : sanitizeImagePrompt(o['imagePrompt']);
       const imageUrl = sanitizeImageUrl(o['imageUrl']);
+      const keywordRaw = clip(o['keyword'], 40);
+      const keyword = keywordRaw && text.includes(keywordRaw) ? keywordRaw : undefined;
       return {
         title,
         text,
         icon,
         count,
+        keyword,
         wantsImage: wantsImage || undefined,
         imagePrompt,
         imageUrl,
@@ -277,6 +280,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     preset,
     title,
     subtitle: clip(r['subtitle'], 120) || undefined,
+    instruction: clip(r['instruction'], 160) || undefined,
     hero: heroLabel || heroWantsImage || heroImageUrl
       ? {
           label: heroLabel,
