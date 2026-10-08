@@ -120,78 +120,118 @@ interface PresetOption {
 
         <!-- Settings drawer (collapsible, like the editor's configuration panel) -->
         @if (settingsOpen()) {
-          <section id="ai-settings" class="no-print bg-white rounded-[28px] p-5 sm:p-6 border border-[#E7DFCF] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1.7fr)] gap-x-8 gap-y-6">
-            <div class="min-w-0">
-              <p class="text-sm font-semibold mb-1.5 flex items-center gap-1.5">
-                <span class="material-icons text-base text-[#2D6A4F]" aria-hidden="true">{{ sourceKind().icon }}</span>
-                {{ lang.tr(sourceKind().fr, sourceKind().ar) }}
-              </p>
-              <p class="text-sm text-[#5B6B60] leading-relaxed" [class.line-clamp-2]="!contentOpen()">{{ sourcePreview() }}</p>
-              <div class="flex flex-wrap items-center gap-4 mt-1">
-                @if (sourcePreview().length > 70) {
-                  <button type="button" (click)="contentOpen.set(!contentOpen())" [attr.aria-expanded]="contentOpen()" class="text-sm text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] cursor-pointer min-h-11">
-                    {{ contentOpen() ? lang.tr('Réduire', 'إخفاء') : lang.tr('Tout afficher', 'عرض الكل') }}
-                  </button>
-                }
-                <a routerLink="/create" [queryParams]="{ output: 'memo' }" class="text-sm text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] min-h-11 inline-flex items-center">
-                  {{ lang.tr('Changer le contenu', 'تغيير المحتوى') }}
-                </a>
+          <section id="ai-settings" class="no-print bg-white rounded-[28px] border border-[#E7DFCF] p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-[300px_minmax(0,1fr)] gap-5 lg:gap-7">
+            <!-- Source + style -->
+            <aside class="space-y-5 min-w-0">
+              <div class="bg-[#FBF8F1] border border-[#E7DFCF] rounded-2xl p-4">
+                <div class="flex items-center gap-3">
+                  <span class="w-10 h-10 shrink-0 rounded-xl bg-white border border-[#E7DFCF] text-[#2D6A4F] flex items-center justify-center">
+                    <span class="material-icons text-xl" aria-hidden="true">{{ sourceKind().icon }}</span>
+                  </span>
+                  <div class="min-w-0">
+                    <p class="text-xs text-[#6B7A70]">{{ lang.tr('Contenu source', 'المحتوى المصدر') }}</p>
+                    <p class="text-sm font-semibold text-[#14251D]">{{ lang.tr(sourceKind().fr, sourceKind().ar) }}</p>
+                  </div>
+                </div>
+                <p class="text-sm text-[#5B6B60] leading-relaxed mt-3 break-words" [class.line-clamp-3]="!contentOpen()">{{ sourcePreview() }}</p>
+                <div class="flex flex-wrap items-center gap-x-4 mt-1">
+                  @if (sourcePreview().length > 70) {
+                    <button type="button" (click)="contentOpen.set(!contentOpen())" [attr.aria-expanded]="contentOpen()" class="text-sm text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] cursor-pointer min-h-11">
+                      {{ contentOpen() ? lang.tr('Réduire', 'إخفاء') : lang.tr('Tout afficher', 'عرض الكل') }}
+                    </button>
+                  }
+                  <a routerLink="/create" [queryParams]="{ output: 'memo' }" class="text-sm text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] min-h-11 inline-flex items-center">
+                    {{ lang.tr('Changer le contenu', 'تغيير المحتوى') }}
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <fieldset>
-              <legend class="text-sm font-semibold mb-2">{{ lang.tr('Style', 'الأسلوب') }}</legend>
-              <div class="inline-flex p-1 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF]">
-                @for (th of themes; track th.id) {
+              <fieldset>
+                <legend class="font-display font-semibold text-[#14251D] mb-3">{{ lang.tr('Style', 'الأسلوب') }}</legend>
+                <div class="grid grid-cols-2 gap-2">
+                  @for (th of themes; track th.id) {
+                    <button
+                      type="button"
+                      (click)="setTheme(th.id)"
+                      [attr.aria-pressed]="theme() === th.id"
+                      [class]="theme() === th.id ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5' : 'border-[#E7DFCF] hover:bg-[#FBF8F1]'"
+                      class="border rounded-xl p-3 text-start cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
+                      <span class="flex items-center justify-between gap-2">
+                        <span class="material-icons text-xl" [class]="theme() === th.id ? 'text-[#2D6A4F]' : 'text-[#6B7A70]'" aria-hidden="true">{{ th.icon }}</span>
+                        @if (theme() === th.id) {
+                          <span class="material-icons text-base text-[#2D6A4F]" aria-hidden="true">check_circle</span>
+                        }
+                      </span>
+                      <span class="block text-sm font-semibold text-[#14251D] mt-2">{{ lang.tr(th.fr, th.ar) }}</span>
+                      <span class="block text-xs text-[#6B7A70] mt-0.5">{{ lang.tr(th.hintFr, th.hintAr) }}</span>
+                    </button>
+                  }
+                </div>
+              </fieldset>
+            </aside>
+
+            <!-- Composition + notes -->
+            <div class="min-w-0 space-y-6">
+              <fieldset>
+                <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
+                  <legend class="font-display font-semibold text-[#14251D]">{{ lang.tr('Composition', 'التركيب') }}</legend>
+                  @if (autoPicked(); as picked) {
+                    <p class="text-xs text-[#6B7A70]" aria-live="polite">
+                      {{ lang.tr('L’IA a choisi :', 'اختار الذكاء الاصطناعي:') }}
+                      <strong class="text-[#1B4332] font-semibold">{{ presetName(picked) }}</strong>
+                    </p>
+                  }
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                  @for (p of presets; track p.id) {
+                    <button
+                      type="button"
+                      (click)="setPreset(p.id)"
+                      [disabled]="busy()"
+                      [attr.aria-pressed]="preset() === p.id"
+                      [class]="preset() === p.id
+                        ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5'
+                        : autoPicked() === p.id
+                          ? 'border-dashed border-[#2D6A4F] bg-[#FBF8F1]'
+                          : 'border-[#E7DFCF] hover:bg-[#FBF8F1]'"
+                      class="relative border rounded-xl p-3 min-h-[88px] flex flex-col items-start justify-between gap-2 text-start cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
+                      <span
+                        class="w-9 h-9 rounded-lg flex items-center justify-center"
+                        [class]="preset() === p.id || autoPicked() === p.id ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'bg-[#F2ECDE] text-[#1B4332]'">
+                        <span class="material-icons text-xl" aria-hidden="true">{{ p.icon }}</span>
+                      </span>
+                      <span class="text-sm font-semibold text-[#14251D] leading-snug">{{ lang.tr(p.fr, p.ar) }}</span>
+                      @if (preset() === p.id) {
+                        <span class="material-icons absolute top-2.5 end-2.5 text-base text-[#2D6A4F]" aria-hidden="true">check_circle</span>
+                      } @else if (autoPicked() === p.id) {
+                        <span class="absolute top-2.5 end-2.5 text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#F2C14E] text-[#14251D]">{{ lang.tr('Choix IA', 'اختيار الذكاء') }}</span>
+                      }
+                    </button>
+                  }
+                </div>
+              </fieldset>
+
+              <div class="border-t border-[#F2ECDE] pt-5">
+                <label for="ai-notes" class="block font-display font-semibold text-[#14251D]">{{ lang.tr('Consignes pour l’IA', 'توجيهات للذكاء الاصطناعي') }}</label>
+                <p class="text-xs text-[#6B7A70] mt-1 mb-3">{{ lang.tr('Facultatif. Appliquez pour régénérer avec ces consignes.', 'اختياري. اضغط «تطبيق» لإعادة التوليد بهذه التوجيهات.') }}</p>
+                <div class="flex flex-col sm:flex-row gap-2.5">
+                  <textarea
+                    id="ai-notes"
+                    rows="2"
+                    [value]="notes()"
+                    (input)="notes.set($any($event.target).value)"
+                    [placeholder]="lang.tr('Ex. : insister sur les exemples du quotidien', 'مثال: التركيز على أمثلة من الحياة اليومية')"
+                    class="flex-1 min-w-0 resize-y min-h-12 bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 py-3 text-sm placeholder:text-[#6B7A70] focus:border-[#2D6A4F] focus:bg-white focus-visible:outline-2 focus-visible:outline-[#2D6A4F] transition-colors"></textarea>
                   <button
                     type="button"
-                    (click)="setTheme(th.id)"
-                    [attr.aria-pressed]="theme() === th.id"
-                    [class]="theme() === th.id ? 'bg-white text-[#1B4332] shadow-sm border-[#E7DFCF]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                    class="border px-5 min-h-10 rounded-lg text-sm font-semibold whitespace-nowrap cursor-pointer transition-colors">
-                    {{ lang.tr(th.fr, th.ar) }}
+                    (click)="regenerate()"
+                    [disabled]="busy() || !source() || !notes().trim()"
+                    class="sm:self-start bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-xl text-sm transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-default disabled:hover:bg-[#2D6A4F]">
+                    <span class="material-icons text-base" [class.animate-spin]="busy()" aria-hidden="true">refresh</span>
+                    {{ lang.tr('Appliquer', 'تطبيق') }}
                   </button>
-                }
+                </div>
               </div>
-            </fieldset>
-
-            <fieldset>
-              <legend class="text-sm font-semibold mb-2">{{ lang.tr('Composition', 'التركيب') }}</legend>
-              <div class="flex flex-wrap gap-2">
-                @for (p of presets; track p.id) {
-                  <button
-                    type="button"
-                    (click)="setPreset(p.id)"
-                    [disabled]="busy()"
-                    [attr.aria-pressed]="preset() === p.id"
-                    [class]="preset() === p.id || autoPicked() === p.id ? 'border-[#2D6A4F] bg-[#2D6A4F]/5 text-[#1B4332]' : 'border-[#E7DFCF] text-[#4A5A50] hover:bg-[#F2ECDE]'"
-                    class="relative border rounded-xl min-h-10 px-3 text-sm font-semibold whitespace-nowrap cursor-pointer transition-colors flex items-center gap-1.5 disabled:opacity-60 disabled:cursor-default">
-                    <span class="material-icons text-base" aria-hidden="true">{{ p.icon }}</span>
-                    {{ lang.tr(p.fr, p.ar) }}
-                    @if (autoPicked() === p.id) {
-                      <span class="absolute -top-2 end-2 text-[10px] font-semibold px-1.5 rounded-full bg-[#F2C14E] text-[#14251D]" [attr.aria-label]="lang.tr('choisi par l’IA', 'اختيار الذكاء الاصطناعي')">AI</span>
-                    }
-                  </button>
-                }
-              </div>
-              @if (autoPicked(); as picked) {
-                <p class="text-xs text-[#6B7A70] mt-2" aria-live="polite">
-                  {{ lang.tr('En mode Auto, l’IA a choisi :', 'في الوضع التلقائي اختار الذكاء الاصطناعي:') }}
-                  <strong class="text-[#1B4332] font-semibold">{{ presetName(picked) }}</strong>
-                </p>
-              }
-            </fieldset>
-
-            <div class="lg:col-span-3 border-t border-[#F2ECDE] pt-5">
-              <label for="ai-notes" class="block text-sm font-semibold mb-2">{{ lang.tr('Consignes pour l’IA', 'توجيهات للذكاء الاصطناعي') }}</label>
-              <textarea
-                id="ai-notes"
-                rows="2"
-                [value]="notes()"
-                (input)="notes.set($any($event.target).value)"
-                [placeholder]="lang.tr('Ex. : insister sur les exemples du quotidien', 'مثال: التركيز على أمثلة من الحياة اليومية')"
-                class="w-full resize-y min-h-16 bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-3 text-sm focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]"></textarea>
-              <p class="text-xs text-[#6B7A70] mt-1">{{ lang.tr('Facultatif, appliqué au prochain « Régénérer ».', 'اختياري، يُطبَّق عند «إعادة التوليد».') }}</p>
             </div>
           </section>
         }
@@ -352,9 +392,9 @@ export class AiStudioComponent implements OnInit {
     { id: 'problem', icon: 'quiz', fr: 'Problème', ar: 'وضعية مشكل' },
   ];
 
-  readonly themes: { id: InfographicTheme; fr: string; ar: string }[] = [
-    { id: 'kids', fr: 'Enfants', ar: 'أطفال' },
-    { id: 'official', fr: 'Officiel', ar: 'رسمي' },
+  readonly themes: { id: InfographicTheme; icon: string; fr: string; ar: string; hintFr: string; hintAr: string }[] = [
+    { id: 'kids', icon: 'palette', fr: 'Enfants', ar: 'أطفال', hintFr: 'Couleurs vives, illustrations', hintAr: 'ألوان زاهية ورسوم' },
+    { id: 'official', icon: 'account_balance', fr: 'Officiel', ar: 'رسمي', hintFr: 'Sobre, style ministère', hintAr: 'هادئ بطابع رسمي' },
   ];
 
   readonly source = signal<SourceInput | null>(null);
