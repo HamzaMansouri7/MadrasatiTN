@@ -316,11 +316,11 @@ interface RecitationItem {
 
       <!-- SECTION 1: EXERCISES & EXAMS BANK WITH UPVOTING, REPORTING & WATERMARK -->
       @if (activeSection() === 'exercises') {
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 items-stretch">
           @for (ex of paginatedExercises(); track ex.id) {
-            <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
-              <div class="space-y-3">
-                <div class="flex items-center justify-between flex-wrap gap-1 text-[10px]">
+            <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] flex flex-col justify-between h-full transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
+              <div class="space-y-3 flex-1 flex flex-col">
+                <div class="flex items-center justify-between flex-wrap gap-1 text-[10px] shrink-0">
                   <div class="flex items-center gap-2">
                     <span class="bg-[#1B4332]/10 text-[#1B4332] font-semibold px-2.5 py-0.5 rounded-full">
                       {{ ex.subject }}
@@ -338,75 +338,79 @@ interface RecitationItem {
                   </span>
                 </div>
 
-                <h3 class="font-display font-semibold text-[#14251D] text-sm leading-snug">{{ ex.title }}</h3>
-
-                @if (ex.photoUrl) {
-                  <img
-                    [src]="ex.photoUrl"
-                    [alt]="ex.title"
-                    loading="lazy"
-                    class="w-full max-h-44 object-cover rounded-2xl border border-[#E7DFCF] bg-[#FBF8F1]" />
-                } @else {
-                  <div [class]="'w-full h-36 rounded-2xl bg-gradient-to-br ' + getSubjectTheme(ex.subject).gradient + ' p-4 flex flex-col justify-between text-white relative overflow-hidden shadow-sm border border-black/10'">
-                    <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
-                    <div class="absolute right-3 bottom-1 opacity-20 pointer-events-none">
-                      <span class="material-icons text-7xl">{{ getSubjectTheme(ex.subject).icon }}</span>
-                    </div>
-                    <div class="flex items-center justify-between z-10">
-                      <span [class]="'inline-flex items-center gap-1.5 text-[10px] font-semibold ' + getSubjectTheme(ex.subject).badgeBg + ' backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white'">
-                        <span class="material-icons text-xs">{{ getSubjectTheme(ex.subject).icon }}</span>
-                        {{ ex.subject }}
-                      </span>
-                      <span class="text-[10px] font-medium text-white/90 bg-black/25 px-2 py-0.5 rounded-md backdrop-blur-sm">
-                        {{ ex.grade }}
-                      </span>
-                    </div>
-                    <div class="z-10 space-y-1">
-                      <p class="font-display font-semibold text-xs text-white line-clamp-2 leading-tight">
-                        {{ ex.title }}
-                      </p>
-                      <div class="flex items-center gap-2 text-[10px] text-white/80">
-                        <span class="bg-white/15 px-1.5 py-0.5 rounded text-[9px] font-semibold">{{ ex.docType || 'ورقة عمل A4' }}</span>
-                        <span>•</span>
-                        <span>{{ ex.trimester || 'الثلاثي 1' }}</span>
+                <!-- Uniform Thumbnail Container (exact h-40) -->
+                <div class="w-full h-40 shrink-0 overflow-hidden rounded-xl border border-[#E7DFCF] bg-[#FBF8F1]">
+                  @if (ex.photoUrl) {
+                    <img
+                      [src]="ex.photoUrl"
+                      [alt]="ex.title"
+                      loading="lazy"
+                      class="w-full h-full object-cover" />
+                  } @else {
+                    <div [class]="'w-full h-full bg-gradient-to-br ' + getSubjectTheme(ex.subject).gradient + ' p-3.5 flex flex-col justify-between text-white relative overflow-hidden shadow-sm'">
+                      <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+                      <div class="absolute right-3 bottom-1 opacity-20 pointer-events-none">
+                        <span class="material-icons text-7xl">{{ getSubjectTheme(ex.subject).icon }}</span>
+                      </div>
+                      <div class="flex items-center justify-between z-10">
+                        <span [class]="'inline-flex items-center gap-1.5 text-[10px] font-semibold ' + getSubjectTheme(ex.subject).badgeBg + ' backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white'">
+                          <span class="material-icons text-xs">{{ getSubjectTheme(ex.subject).icon }}</span>
+                          {{ ex.subject }}
+                        </span>
+                        <span class="text-[10px] font-medium text-white/90 bg-black/25 px-2 py-0.5 rounded-md backdrop-blur-sm">
+                          {{ ex.grade }}
+                        </span>
+                      </div>
+                      <div class="z-10 space-y-1">
+                        <p class="font-display font-semibold text-xs text-white line-clamp-2 leading-tight">
+                          {{ ex.title }}
+                        </p>
+                        <div class="flex items-center gap-2 text-[10px] text-white/80">
+                          <span class="bg-white/15 px-1.5 py-0.5 rounded text-[9px] font-semibold">{{ ex.docType || 'ورقة عمل A4' }}</span>
+                          <span>•</span>
+                          <span>{{ ex.trimester || 'الثلاثي 1' }}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                }
+                  }
+                </div>
 
-                <p class="text-xs text-[#4A5A50] bg-[#FBF8F1] p-3.5 rounded-2xl border border-[#E7DFCF] leading-relaxed font-mono">
+                <h3 class="font-display font-semibold text-[#14251D] text-sm leading-snug line-clamp-2 min-h-[2.5rem]">{{ ex.title }}</h3>
+
+                <!-- Clamped Prompt Text with fixed height -->
+                <div class="bg-[#FBF8F1] p-3 rounded-xl border border-[#E7DFCF] text-xs text-[#4A5A50] leading-relaxed font-mono line-clamp-3 min-h-[4.2rem] max-h-[4.2rem] overflow-hidden">
                   "{{ ex.promptText }}"
-                </p>
+                </div>
 
-                <!-- Author attribution (clickable when the teacher has a public card) -->
-                <div class="flex items-center justify-between text-[11px] pt-1">
+                <!-- Author attribution pinned to bottom of body -->
+                <div class="flex items-center justify-between text-[11px] pt-1 mt-auto shrink-0">
                   @if (ex.teacherName && findAuthor(ex.teacherName, ex.teacherId); as author) {
                     <button
                       (click)="selectedTeacherModal.set(author)"
-                      class="flex items-center gap-1 text-[#1B4332] font-semibold hover:underline underline-offset-2 cursor-pointer">
+                      class="flex items-center gap-1 text-[#1B4332] font-semibold hover:underline underline-offset-2 cursor-pointer truncate">
                       <span class="material-icons text-sm">verified</span>
                       {{ lang.tr('Par', 'من إعداد') }} {{ ex.teacherName }}
                     </button>
                   } @else if (ex.teacherName) {
-                    <span class="flex items-center gap-1 text-[#5B6B60] font-medium">
+                    <span class="flex items-center gap-1 text-[#5B6B60] font-medium truncate">
                       <span class="material-icons text-sm text-[#1B4332]">verified</span>
                       {{ lang.tr('Par', 'من إعداد') }} {{ ex.teacherName }}
                     </span>
                   } @else {
-                    <span class="flex items-center gap-1 text-[#1B4332] font-semibold">
+                    <span class="flex items-center gap-1 text-[#1B4332] font-semibold truncate">
                       <span class="material-icons text-sm">verified</span>
                       {{ lang.tr('Corrigé Certifié Enseignant', 'إصلاح مؤكد ومعتمد') }}
                     </span>
                   }
 
-                  <span class="text-[#6B7A70] italic">
+                  <span class="text-[#6B7A70] italic shrink-0">
                     {{ ex.schoolYear || '2025-2026' }}
                   </span>
                 </div>
               </div>
 
-              <!-- Action Bar: all actions on one compact line -->
-              <div class="pt-4 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5">
+              <!-- Action Bar pinned to card bottom -->
+              <div class="pt-3 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5 shrink-0 mt-3">
 
                 @if (ex.openUrl) {
                   <a
@@ -521,58 +525,61 @@ interface RecitationItem {
 
       <!-- SECTION 2: COURSES LIBRARY -->
       @if (activeSection() === 'courses' || activeSection() === 'cnp') {
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 items-stretch">
           @for (c of paginatedCourses(); track c.id) {
-            <div class="bg-white rounded-2xl p-6 border border-[#E7DFCF] space-y-4 flex flex-col justify-between transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
-              <div class="space-y-3">
-                @if (c.imageUrls && c.imageUrls.length) {
-                  <button
-                    (click)="openImageDoc(c)"
-                    class="block w-full relative rounded-xl overflow-hidden border border-[#E7DFCF] group cursor-pointer"
-                    [title]="lang.tr('Voir en grand & imprimer', 'عرض وطباعة')">
-                    <img [src]="c.imageUrls[0]" [alt]="c.title" loading="lazy" class="w-full h-44 object-cover object-top transition-transform group-hover:scale-[1.03]" />
-                    @if (c.imageUrls.length > 1) {
-                      <span class="absolute top-2 right-2 bg-[#14251D]/80 text-[#FBF8F1] text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
-                        <span class="material-icons text-[11px]">collections</span>{{ c.imageUrls.length }}
+            <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] flex flex-col justify-between h-full transition-shadow hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)]">
+              <div class="space-y-3 flex-1 flex flex-col">
+                <!-- Uniform Thumbnail Container (exact h-40) -->
+                <div class="w-full h-40 shrink-0 overflow-hidden rounded-xl border border-[#E7DFCF] bg-[#FBF8F1]">
+                  @if (c.imageUrls && c.imageUrls.length) {
+                    <button
+                      (click)="openImageDoc(c)"
+                      class="block w-full h-full relative group cursor-pointer"
+                      [title]="lang.tr('Voir en grand & imprimer', 'عرض وطباعة')">
+                      <img [src]="c.imageUrls[0]" [alt]="c.title" loading="lazy" class="w-full h-full object-cover object-top transition-transform group-hover:scale-[1.03]" />
+                      @if (c.imageUrls.length > 1) {
+                        <span class="absolute top-2 right-2 bg-[#14251D]/80 text-[#FBF8F1] text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+                          <span class="material-icons text-[11px]">collections</span>{{ c.imageUrls.length }}
+                        </span>
+                      }
+                      <span class="absolute inset-0 bg-[#14251D]/0 group-hover:bg-[#14251D]/15 transition-colors flex items-center justify-center">
+                        <span class="material-icons text-white opacity-0 group-hover:opacity-100 transition-opacity text-3xl drop-shadow">zoom_in</span>
                       </span>
-                    }
-                    <span class="absolute inset-0 bg-[#14251D]/0 group-hover:bg-[#14251D]/15 transition-colors flex items-center justify-center">
-                      <span class="material-icons text-white opacity-0 group-hover:opacity-100 transition-opacity text-3xl drop-shadow">zoom_in</span>
-                    </span>
-                  </button>
-                } @else {
-                  <div [class]="'w-full h-36 rounded-2xl bg-gradient-to-br ' + getSubjectTheme(c.subject).gradient + ' p-4 flex flex-col justify-between text-white relative overflow-hidden shadow-sm border border-black/10'">
-                    <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
-                    <div class="absolute right-3 bottom-1 opacity-20 pointer-events-none">
-                      <span class="material-icons text-7xl">{{ getSubjectTheme(c.subject).icon }}</span>
-                    </div>
-                    <div class="flex items-center justify-between z-10">
-                      <span [class]="'inline-flex items-center gap-1.5 text-[10px] font-semibold ' + getSubjectTheme(c.subject).badgeBg + ' backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white'">
-                        <span class="material-icons text-xs">{{ getSubjectTheme(c.subject).icon }}</span>
-                        {{ c.subject }}
-                      </span>
-                      <span class="text-[10px] font-medium text-white/90 bg-black/25 px-2 py-0.5 rounded-md backdrop-blur-sm">
-                        {{ c.grade }}
-                      </span>
-                    </div>
-                    <div class="z-10 space-y-1">
-                      <p class="font-display font-semibold text-xs text-white line-clamp-2 leading-tight">
-                        {{ c.title }}
-                      </p>
-                      <div class="flex items-center gap-2 text-[10px] text-white/80">
-                        <span class="bg-white/15 px-1.5 py-0.5 rounded text-[9px] font-semibold">{{ c.docType || 'ملخص درس' }}</span>
-                        <span>•</span>
-                        <span>{{ c.trimester || 'الثلاثي 1' }}</span>
+                    </button>
+                  } @else {
+                    <div [class]="'w-full h-full bg-gradient-to-br ' + getSubjectTheme(c.subject).gradient + ' p-3.5 flex flex-col justify-between text-white relative overflow-hidden shadow-sm'">
+                      <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+                      <div class="absolute right-3 bottom-1 opacity-20 pointer-events-none">
+                        <span class="material-icons text-7xl">{{ getSubjectTheme(c.subject).icon }}</span>
+                      </div>
+                      <div class="flex items-center justify-between z-10">
+                        <span [class]="'inline-flex items-center gap-1.5 text-[10px] font-semibold ' + getSubjectTheme(c.subject).badgeBg + ' backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white'">
+                          <span class="material-icons text-xs">{{ getSubjectTheme(c.subject).icon }}</span>
+                          {{ c.subject }}
+                        </span>
+                        <span class="text-[10px] font-medium text-white/90 bg-black/25 px-2 py-0.5 rounded-md backdrop-blur-sm">
+                          {{ c.grade }}
+                        </span>
+                      </div>
+                      <div class="z-10 space-y-1">
+                        <p class="font-display font-semibold text-xs text-white line-clamp-2 leading-tight">
+                          {{ c.title }}
+                        </p>
+                        <div class="flex items-center gap-2 text-[10px] text-white/80">
+                          <span class="bg-white/15 px-1.5 py-0.5 rounded text-[9px] font-semibold">{{ c.docType || 'ملخص درس' }}</span>
+                          <span>•</span>
+                          <span>{{ c.trimester || 'الثلاثي 1' }}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                }
+                  }
+                </div>
 
-                <div class="flex items-center justify-between">
-                  <span class="bg-[#1B4332]/10 text-[#1B4332] text-[10px] font-semibold px-2.5 py-0.5 rounded-full">
+                <div class="flex items-center justify-between shrink-0">
+                  <span class="bg-[#1B4332]/10 text-[#1B4332] text-[10px] font-semibold px-2.5 py-0.5 rounded-full truncate max-w-[120px]">
                     {{ c.subject }}
                   </span>
-                  <div class="flex items-center gap-1.5">
+                  <div class="flex items-center gap-1.5 shrink-0">
                     @if (c.pdfUrl) {
                       <span class="bg-[#C1121F]/10 text-[#C1121F] text-[9px] font-semibold px-2 py-0.5 rounded-full border border-[#C1121F]/30 flex items-center gap-0.5">
                         <span class="material-icons text-[10px]">picture_as_pdf</span>
@@ -591,26 +598,29 @@ interface RecitationItem {
                   </div>
                 </div>
 
-                <h3 class="font-display font-semibold text-[#14251D] text-base leading-snug">{{ c.title }}</h3>
-                <p class="text-xs text-[#5B6B60] leading-relaxed">{{ c.summary }}</p>
+                <h3 class="font-display font-semibold text-[#14251D] text-sm leading-snug line-clamp-2 min-h-[2.5rem]">{{ c.title }}</h3>
+                <p class="text-xs text-[#5B6B60] leading-relaxed line-clamp-3 min-h-[3.8rem] max-h-[3.8rem] overflow-hidden">{{ c.summary }}</p>
 
-                @if (findAuthor(c.teacherName, c.authorId); as author) {
-                  <button
-                    (click)="selectedTeacherModal.set(author)"
-                    class="flex items-center gap-1 text-[11px] text-[#1B4332] font-semibold hover:underline underline-offset-2 cursor-pointer">
-                    <span class="material-icons text-sm">verified</span>
-                    {{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}
-                  </button>
-                } @else {
-                  <span class="flex items-center gap-1 text-[11px] text-[#5B6B60] font-medium">
-                    <span class="material-icons text-sm">person</span>
-                    {{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}
-                  </span>
-                }
+                <!-- Author attribution pinned to bottom of body -->
+                <div class="flex items-center justify-between text-[11px] pt-1 mt-auto shrink-0">
+                  @if (findAuthor(c.teacherName, c.authorId); as author) {
+                    <button
+                      (click)="selectedTeacherModal.set(author)"
+                      class="flex items-center gap-1 text-[11px] text-[#1B4332] font-semibold hover:underline underline-offset-2 cursor-pointer truncate">
+                      <span class="material-icons text-sm">verified</span>
+                      {{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}
+                    </button>
+                  } @else {
+                    <span class="flex items-center gap-1 text-[11px] text-[#5B6B60] font-medium truncate">
+                      <span class="material-icons text-sm">person</span>
+                      {{ lang.tr('Par', 'من إعداد') }} {{ c.teacherName }}
+                    </span>
+                  }
+                </div>
               </div>
 
-              <!-- action bar -->
-              <div class="pt-4 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5">
+              <!-- action bar pinned to card bottom -->
+              <div class="pt-3 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5 shrink-0 mt-3">
                 <!-- Q&A Button (course) -->
                 <button
                   (click)="toggleCommentPanel(c.id)"

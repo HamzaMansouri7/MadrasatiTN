@@ -10,7 +10,7 @@ import { TeacherAvatarComponent } from './teacher-avatar';
   imports: [TimeAgoPipe, TeacherAvatarComponent],
   template: `
     <header class="sticky top-0 z-40 bg-white border-b border-[#E6EEF3] transition-colors">
-      <div class="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="w-full max-w-full mx-auto px-3 sm:px-6 lg:px-8 xl:px-10">
         <div class="flex items-center justify-between h-[76px] gap-2 lg:gap-4">
           
           <!-- Logo & Platform Identity -->

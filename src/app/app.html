@@ -2,8 +2,7 @@
   <app-navbar />
 
   <main
-    class="flex-1 w-full mx-auto px-4 sm:px-6 lg:px-8 py-6"
-    [class]="store.currentRole() === 'editor' ? 'max-w-[1600px]' : 'max-w-7xl'">
+    class="flex-1 w-full mx-auto px-3 sm:px-6 lg:px-8 xl:px-10 py-6 max-w-full">
     <router-outlet />
   </main>
 
@@ -15,7 +14,7 @@
 
   <!-- Footer -->
   <footer class="bg-white border-t border-[#E7DFCF] mt-12 py-8 text-xs text-[#5B6B60]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="w-full max-w-full mx-auto px-3 sm:px-6 lg:px-8 xl:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <img src="/logo.jpg" alt="Madrasati" class="w-8 h-8 rounded-[8px] object-cover shadow-xs border border-[#E7DFCF]" />
         <span class="font-display font-semibold text-[#14251D] text-sm">{{ lang.t('brandName') }} — {{ lang.t('brandSub') }}</span>
