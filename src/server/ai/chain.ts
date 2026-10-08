@@ -41,6 +41,7 @@ async function executeTask(
       schema,
       temperature,
       signal,
+      timeoutMs: endpoint.timeoutMs,
     });
   }
 

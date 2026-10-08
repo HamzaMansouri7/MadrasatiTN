@@ -80,7 +80,8 @@ type GeminiPart =
 const openRouterKey = (process.env["OPENROUTER_API_KEY"] || "")
   .trim()
   .replace(/^["']|["']$/g, "");
-export const aiReady = () => aiClients.length > 0 || !!openRouterKey;
+export const aiReady = () =>
+  aiClients.length > 0 || !!openRouterKey || !!(process.env['CODECRAFT_API_KEY'] || '').trim();
 
 /** Plain-text generation (used for SVG fallback) */
 async function aiGenerateText(prompt: string): Promise<string> {

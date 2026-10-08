@@ -177,3 +177,37 @@ A (small) → B (small) → D (medium) → C (largest: 3 designs) → E. D befor
 
 ### Not doing
 Runtime preset generation, x/y or sizes in JSON, generic component engine, images on the jodhadha, 3D style as default.
+
+---
+
+## Plan v3: AntV diagrams + keep images + polish (agreed 2026-10-08, not started)
+
+Order: after the owner's live test of the current engine.
+
+### A. Keep images across layouts (no wasted generations)
+1. Switching between card-based presets (hero-cards, circular-flow, timeline, central-picture) = client-side re-layout: change `values.preset` only, no AI call; every image stays on its card. Re-save same id.
+2. Small "صورة أخرى" button on every illustrated card: redraw that card only (new seed via `variation`).
+3. comparison / lesson-stages need new content → AI call, after a short warning; images carried over by card title from a per-doc image library (`imageLibrary: { title → imageUrl }` kept on the doc).
+4. "إعادة التوليد" is the only action that makes new content; it also reuses library images when titles match.
+
+### B. AntV Infographic diagram block (https://github.com/antvis/Infographic, chosen library)
+5. Server-only dep, pinned version; `@antv/infographic/ssr` renderToString.
+6. Allow-list 6 school-fit templates: cycle ring, numbered staircase, snake road, pyramid, 4-colour quadrant, pros/cons comparison.
+7. Model fills `diagram` data (not syntax); server builds syntax → render → `sanitizeSvg` → `diagramSvg`.
+8. Our fixes: RTL (reverse order + direction), Noto Kufi, theme palette from the ONE theme object, column labels, icons; fallback to no diagram on fail/timeout (10 s).
+
+### C. One theme object
+9. Merge the sheet CSS vars and THEME_IMAGE_STYLE into one theme definition (palette, fonts, radius, image style block) feeding sheet, images and AntV.
+
+### D. Image prompt quality
+10. Server prepends the lesson story (topic + key objects) to each imagePrompt; rule: concrete objects from the lesson, never just "a child"; abstract cards → wantsImage=false and no button; card images `object-contain` (no face crops); stronger negative prompt against text/numbers.
+
+### E. Sheet header polish (shell, shared by all presets)
+11. Accent band, subtitle as learning objective, teacher + school line from profile, trimester + date, small illustration slot.
+
+### F. Exercise preset
+12. New preset "problem": situation text + data table + question with answer lines (keeps real numbers like 4/9, 3240 د).
+
+### Open
+- Image chain step 1 is a PAID Gemini image model (image-chain.ts) — conflicts with "free only"; owner to decide.
+- Rotate POLLINATIONS_API_KEY and NVIDIA_API_KEY (printed in chat 2026-10-08).

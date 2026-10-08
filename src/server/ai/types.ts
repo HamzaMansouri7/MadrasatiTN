@@ -4,7 +4,7 @@
 
 export interface ProviderStep {
   id: string;
-  provider: 'gemini' | 'openai-compat' | 'cloudflare' | 'nvidia';
+  provider: 'gemini' | 'openai-compat' | 'cloudflare' | 'nvidia' | 'codecraft';
   model: string;
   quality: number;
   tasks: ('text' | 'vision')[];

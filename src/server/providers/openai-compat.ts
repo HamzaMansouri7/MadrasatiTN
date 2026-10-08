@@ -46,6 +46,7 @@ export interface OpenAICompatOptions {
   schema?: object;
   temperature?: number;
   signal?: AbortSignal;
+  timeoutMs?: number;
 }
 
 export async function callOpenAICompat(options: OpenAICompatOptions): Promise<Record<string, unknown>> {
@@ -80,7 +81,7 @@ export async function callOpenAICompat(options: OpenAICompatOptions): Promise<Re
   const cleanBaseUrl = baseUrl.replace(/\/+$/, '');
   const url = `${cleanBaseUrl}/chat/completions`;
 
-  const timeoutMs = Math.max(1000, parseInt(process.env['OPENAI_COMPAT_TIMEOUT_MS'] || '12000', 10));
+  const timeoutMs = options.timeoutMs ?? Math.max(1000, parseInt(process.env['OPENAI_COMPAT_TIMEOUT_MS'] || '12000', 10));
   const timeoutSignal = AbortSignal.timeout(timeoutMs);
   const combinedSignal = signal ? AbortSignal.any([signal, timeoutSignal]) : timeoutSignal;
 

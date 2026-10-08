@@ -6,6 +6,8 @@ export type { GeminiPart, OpenAICompatOptions } from './openai-compat';
 export interface ProviderEndpointConfig {
   baseUrl: string;
   apiKey: string;
+  /** Per-provider request timeout; default OPENAI_COMPAT_TIMEOUT_MS. */
+  timeoutMs?: number;
 }
 
 /**
@@ -36,6 +38,18 @@ export function getProviderEndpoint(providerOrStep: string | ProviderStep): Prov
     return {
       baseUrl: 'https://openrouter.ai/api/v1',
       apiKey: key,
+    };
+  }
+
+  // CodeCraft: owner's prepaid key (1M tokens), OpenAI-compatible, many models. Measured 20-34 s per
+  // JSON answer (2026-10-08), so it is the LAST step of each text chain: used only when every free model failed.
+  if (provider === 'codecraft' || id.startsWith('cc-')) {
+    const key = (process.env['CODECRAFT_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+    if (!key) return null;
+    return {
+      baseUrl: (process.env['CODECRAFT_BASE_URL'] || 'https://codecraftapi.com/v1').trim(),
+      apiKey: key,
+      timeoutMs: Math.max(5000, parseInt(process.env['CODECRAFT_TIMEOUT_MS'] || '60000', 10)),
     };
   }
 
