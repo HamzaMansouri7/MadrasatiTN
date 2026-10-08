@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <g fill="none" stroke="#1E293B" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="106,70 150,75 145,130 111,130" fill="#60A5FA" />
+    <polygon points="120,72 136,74 133,130 123,130" fill="#93C5FD" />
+    <path d="M96 60 L160 50 L168 85 L88 95 Z" fill="#E2E8F0" />
+    <line x1="104" y1="58" x2="104" y2="88" stroke="#1E293B" stroke-width="2.5" />
+    <line x1="120" y1="56" x2="120" y2="90" stroke="#1E293B" stroke-width="2.5" />
+    <line x1="136" y1="54" x2="136" y2="92" stroke="#1E293B" stroke-width="2.5" />
+    <line x1="152" y1="52" x2="152" y2="94" stroke="#1E293B" stroke-width="2.5" />
+    <polygon points="76,80 112,50 120,62 84,92" fill="#F87171" />
+    <polygon points="76,80 84,92 80,95 72,83" fill="#EF4444" />
+    <polygon points="144,60 180,90 172,102 136,72" fill="#FACC15" />
+    <polygon points="172,102 180,90 184,94 176,106" fill="#EAB308" />
+    <path d="M 88 120 C 84 190, 172 190, 168 120 Z" fill="#8A5A00" />
+    <path d="M 81 120 C 79 110, 177 110, 175 120 Z" fill="#B47304" />
+    <path d="M 86 128 C 86 175, 170 175, 170 128 Z" fill="#F59E0B" />
+    <path d="M 98 135 C 98 165, 158 165, 158 135 Z" fill="#D97706" />
+    <path d="M 90 200 C 100 206, 156 206, 166 200" fill="none" stroke-width="4" />
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <g fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M 88 72 C 50 72 50 120 88 120" fill="#FDE047" />
+    
+    
+    <path d="M 168 72 C 206 72 206 120 168 120" fill="#FDE047" />
+    
+    
+    <path d="M 80 56 L 176 56 C 176 120 152 144 128 152 C 104 144 80 120 80 56 Z" fill="#FDE047" />
+    
+    
+    <ellipse cx="128" cy="56" rx="48" ry="12" fill="#FEF08A" />
+    
+    
+    <rect x="116" y="152" width="24" height="24" fill="#FDE047" />
+    
+    
+    <path d="M 96 176 L 160 176 C 172 176 176 184 176 192 L 176 200 C 176 208 172 216 160 216 L 96 216 C 84 216 80 208 80 200 L 80 192 C 80 184 84 176 96 176 Z" fill="#1B4332" />
+    
+    
+    <polygon points="128,80 134,94 150,96 138,107 142,122 128,114 114,122 118,107 106,96 122,94" fill="#FFFFFF" />
+  </g>
+</svg>

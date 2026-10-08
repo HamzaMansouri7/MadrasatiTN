@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <g fill="none" stroke="#1E293B" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    
+    <path d="M 28 200 L 100 130 L 124 154 L 52 224 Z" fill="#8A5A00" />
+    
+    
+    <path d="M 100 130 C 120 110, 160 110, 180 130 C 190 140, 185 155, 175 165 C 160 180, 130 170, 115 155 Z" fill="#FFD166" />
+    
+    
+    <path d="M 120 155 C 130 145, 150 145, 160 155 C 165 160, 160 170, 150 175 C 140 180, 125 170, 120 155 Z" fill="#FFCAD4" />
+    
+    
+    <path d="M 80 200 L 190 90 L 210 110 L 100 220 Z" fill="#FFD166" />
+    
+    
+    <path d="M 80 200 L 65 215 L 75 225 L 90 210 Z" fill="#FF8FA3" />
+    <path d="M 190 90 L 210 110 L 200 120 L 180 100 Z" fill="#EF476F" />
+    <polygon points="65,215 50,230 75,225" fill="#FFE5D9" />
+    <polygon points="57,222 53,226 58,227" fill="#1E293B" />
+  </g>
+</svg>
