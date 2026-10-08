@@ -104,17 +104,6 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               <span class="material-icons text-base xl:text-lg">family_restroom</span>
               <span>{{ lang.t('roleParent') }}</span>
             </button>
-
-            <button
-              type="button"
-              (click)="selectRole('student')"
-              [class]="store.currentRole() === 'student' 
-                ? 'text-[#BF5B34] font-semibold border-b-[3px] border-[#BF5B34] bg-[#BF5B34]/10' 
-                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg">backpack</span>
-              <span>{{ lang.tr('Élève', 'التلميذ') }}</span>
-            </button>
           </nav>
 
           <!-- Right Action Bar: Search + Notifications + Language + Profile Avatar -->
@@ -432,11 +421,11 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             </button>
           }
 
-          <!-- 5. Current Space (Teacher / Parent / Student) -->
+          <!-- 5. Current Space (Teacher / Parent) -->
           <button
             type="button"
-            (click)="selectRole(firebase.userProfile()?.role === 'parent' ? 'parent' : firebase.userProfile()?.role === 'student' ? 'student' : 'teacher')"
-            [class]="store.currentRole() === 'teacher' || store.currentRole() === 'parent' || store.currentRole() === 'student' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+            (click)="selectRole(firebase.userProfile()?.role === 'parent' ? 'parent' : 'teacher')"
+            [class]="store.currentRole() === 'teacher' || store.currentRole() === 'parent' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
             class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
             <span class="material-icons text-base">person</span>
             <span class="text-[10px] leading-tight">{{ lang.tr('فضاءك', 'فضاءك') }}</span>
@@ -572,7 +561,7 @@ export class NavbarComponent {
       return;
     }
     if (!this.isUserLoggedIn()) {
-      this.store.openSignupModal(role as 'teacher' | 'parent' | 'student');
+      this.store.openSignupModal(role as 'teacher' | 'parent');
       return;
     }
     this.store.switchRole(role);
@@ -629,8 +618,7 @@ export class NavbarComponent {
   getUserSubtitle(): string {
     const profile = this.firebase.userProfile();
     if (profile?.role === 'teacher') return this.lang.tr('Enseignante Certifiée', 'معلمة معتمدة');
-    if (profile?.role === 'parent') return this.lang.tr('Parent Référent', 'ولي أمر متابع');
-    if (profile?.role === 'student') return this.lang.tr('Élève', 'تلميذ');
+    if (profile?.role === 'parent' || profile?.role === 'student') return this.lang.tr('Parent Référent', 'ولي أمر متابع');
     return this.lang.tr('Non connecté', 'غير متصل');
   }
 

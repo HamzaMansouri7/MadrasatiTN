@@ -63,7 +63,7 @@ export class EducationStore {
       'home': '/',
       'teacher': '/teacher',
       'parent': '/parent',
-      'student': '/student',
+      'student': '/discovery',
       'public': '/discovery',
       'editor': '/editor',
       'article-editor': '/article-studio',
@@ -200,14 +200,14 @@ export class EducationStore {
   // Auth Modal State
   readonly isAuthModalOpen = signal<boolean>(false);
   readonly authModalMode = signal<'login' | 'signup'>('login');
-  readonly authModalRole = signal<'teacher' | 'parent' | 'student'>('teacher');
+  readonly authModalRole = signal<'teacher' | 'parent'>('teacher');
 
   openLoginModal() {
     this.authModalMode.set('login');
     this.isAuthModalOpen.set(true);
   }
 
-  openSignupModal(role: 'teacher' | 'parent' | 'student' = 'teacher') {
+  openSignupModal(role: 'teacher' | 'parent' = 'teacher') {
     this.authModalRole.set(role);
     this.authModalMode.set('signup');
     this.isAuthModalOpen.set(true);

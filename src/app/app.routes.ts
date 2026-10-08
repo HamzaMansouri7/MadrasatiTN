@@ -25,10 +25,8 @@ export const routes: Routes = [
   },
   {
     path: 'student',
-    canActivate: [authGuard],
-    loadComponent: () =>
-      import('./features/student/student-home').then((m) => m.StudentHomeComponent),
-    title: 'فضاء التلميذ | Espace Élève - Madrasati TN',
+    redirectTo: 'discovery',
+    pathMatch: 'full',
   },
   {
     path: 'discovery',

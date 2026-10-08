@@ -131,3 +131,11 @@ After a friend's art-direction review, the LLM no longer writes free HTML. It ac
 - Big hero Arabic letter = styled SVG text with depth over a FLUX scene (FLUX never draws Arabic).
 - Start with one Kids level (Playful); Soft and Premium later.
 - Trade-off accepted: more work up front, consistent premium output every run.
+
+---
+
+## Progress (2026-10-08, build + lint + 161 tests green; not deployed, no visual check)
+
+Built: flat SVG icons per slot and stage in the lesson-plan renderer; spec model + whitelist SVG sanitizer + `normalizeInfographicSpec` (`core/utils/infographic-spec.util.ts`, with spec); skill + `POST /api/ai/generate-infographic`; `InfographicSpecComponent` (3 compositions: hero-cards, circular-flow, timeline; themes kids and official as CSS variables); `/ai-studio` page (source input, composition, style, regenerate, share, print); save as docType `infographic`, shareable at `/infographic/:id`; link from the memo studio.
+
+Next: owner tries 5 real generations at `/ai-studio` and judges quality (prompt fixes before anything else); then migrate the memo studio's 6 layouts and retire them; FLUX hero images and more presets only after that.

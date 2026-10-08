@@ -79,7 +79,7 @@ export class FirebaseService {
               displayName: data['displayName'] || user.displayName || 'Utilisateur',
               email: user.email,
               photoURL: data['photoURL'] || user.photoURL || null,
-              role: (data['role'] as UserRole) || 'teacher',
+              role: (data['role'] === 'student' ? 'parent' : (data['role'] as UserRole)) || 'teacher',
               school: data['school'],
               phone: data['phone'],
               grade: data['grade'],

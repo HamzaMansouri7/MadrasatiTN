@@ -334,7 +334,7 @@ export class LandingHomeComponent {
       return;
     }
     if (!this.firebase.userProfile() && !this.firebase.currentUser()) {
-      this.store.openSignupModal(role as 'teacher' | 'parent' | 'student');
+      this.store.openSignupModal(role as 'teacher' | 'parent');
       return;
     }
     this.store.switchRole(role);
