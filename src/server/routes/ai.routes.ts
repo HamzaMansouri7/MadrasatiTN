@@ -17,6 +17,7 @@ import { capText, capHistory, wrapData, CAPS } from "../input-caps";
 import { originGuard, aiRateLimiter } from "../guards";
 import { saveGenerated } from "../storage";
 import { normalizeInfographicSpec } from "../../app/core/utils/infographic-spec.util";
+import { DIAGRAM_TEMPLATES, DiagramTemplate, generateSchoolDiagram } from "../../app/core/utils/diagram-generator.util";
 import {
   ENABLED_INFOGRAPHIC_PRESETS,
   type InfographicPreset,
@@ -1252,6 +1253,31 @@ ${FILE_SOURCE_RULE}`,
           .json({ error: "Infographie invalide, veuillez réessayer." });
         return;
       }
+      // Diagram data -> SVG drawn by our template (theme palette, RTL); a failure just means no diagram.
+      const diagramRaw = (raw as Record<string, unknown>)?.["diagram"] as
+        | { template?: unknown; items?: unknown }
+        | undefined;
+      if (
+        diagramRaw &&
+        DIAGRAM_TEMPLATES.includes(diagramRaw.template as DiagramTemplate) &&
+        Array.isArray(diagramRaw.items)
+      ) {
+        try {
+          const svg = generateSchoolDiagram(
+            diagramRaw.template as DiagramTemplate,
+            (diagramRaw.items as Record<string, unknown>[])
+              .filter((it) => it && typeof it["title"] === "string")
+              .map((it) => ({
+                title: String(it["title"]),
+                subtitle: typeof it["subtitle"] === "string" ? it["subtitle"] : undefined,
+              })),
+            { theme: theme === "official" ? "official" : "kids", lang: lang === "fr" ? "fr" : "ar" },
+          );
+          if (svg) spec.diagramSvg = svg;
+        } catch (e) {
+          console.warn("[infographic] diagram render failed", e);
+        }
+      }
       const now = new Date().toISOString();
       res.json({
         success: true,
@@ -1822,7 +1848,7 @@ aiRouter.post(
             ? seedFor(promptText + variation)
             : seedFor(promptText);
 
-      const style = body.style ? String(body.style).slice(0, 150) : undefined;
+      const style = body.style ? String(body.style).slice(0, 300) : undefined;
       const hasVariation = variation !== undefined && variation > 0;
       const cacheKey = hashKey({
         prompt: promptText,

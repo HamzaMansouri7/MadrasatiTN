@@ -120,6 +120,8 @@ export interface InfographicSpec {
   quote?: SpecQuote;
   /** Optional problem solving layout for problem preset */
   problem?: SpecProblem;
+  /** One English sentence of lesson context (topic + key objects), prepended to every image prompt. */
+  imageStory?: string;
   /** Per-doc image library carrying illustrations across layout switches */
   imageLibrary?: Record<string, string>;
 }

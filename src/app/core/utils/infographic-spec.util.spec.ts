@@ -204,6 +204,23 @@ describe('normalizeInfographicSpec', () => {
     expect(probSpec?.remember).toHaveLength(1);
   });
 
+  it('drops imagePrompt on blocks marked wantsImage=false (no button)', () => {
+    const spec = normalizeInfographicSpec({
+      preset: 'hero-cards',
+      title: 'Abstract',
+      items: [{ ...item(1), wantsImage: false, imagePrompt: 'An idea' }, item(2), item(3), item(4)],
+    });
+    expect(spec?.items[0].imagePrompt).toBeUndefined();
+  });
+
+  it('keeps an English imageStory and drops an Arabic one', () => {
+    const base = { preset: 'hero-cards', title: 'S', items: [item(1), item(2), item(3), item(4)] };
+    expect(normalizeInfographicSpec({ ...base, imageStory: 'Water cycle: sea, clouds, rain' })?.imageStory).toBe(
+      'Water cycle: sea, clouds, rain',
+    );
+    expect(normalizeInfographicSpec({ ...base, imageStory: 'دورة الماء' })?.imageStory).toBeUndefined();
+  });
+
   it('preserves per-doc imageLibrary', () => {
     const spec = normalizeInfographicSpec({
       preset: 'hero-cards',

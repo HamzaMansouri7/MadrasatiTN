@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, output } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { InfographicDoc, InfographicSpec, sanitizeSvg, SpecImageTarget } from '@core';
+import { INFOGRAPHIC_THEMES_CONFIG, InfographicDoc, InfographicSpec, sanitizeSvg, SpecImageTarget } from '@core';
 import { PresetCycleComponent } from './presets/preset-cycle';
 import { PresetHeroCardsComponent } from './presets/preset-hero-cards';
 import { PresetTimelineComponent } from './presets/preset-timeline';
@@ -11,8 +11,8 @@ import { PresetProblemComponent } from './presets/preset-problem';
 
 /**
  * Draws an AI Studio spec on an A4 sheet. The model only picks a preset and fills text;
- * layout, colour and shape come from here. Themes are CSS variables on the host
- * (`kids` is scoped to these sheets, the app UI keeps the Cartouche tokens).
+ * layout, colour and shape come from here. Theme CSS variables come from the one theme object
+ * (INFOGRAPHIC_THEMES_CONFIG, shared with images and diagrams); `kids` is scoped to these sheets.
  */
 @Component({
   selector: 'app-infographic-spec',
@@ -27,21 +27,9 @@ import { PresetProblemComponent } from './presets/preset-problem';
     PresetComparisonComponent,
     PresetProblemComponent,
   ],
-  host: { '[attr.data-theme]': 'theme()' },
+  host: { '[attr.data-theme]': 'theme()', '[style]': 'themeVars()' },
   styles: `
     :host { display: block; }
-    :host([data-theme='kids']) {
-      --ig-bg: #FFFDF9; --ig-ink: #182238; --ig-muted: #5B667D; --ig-card: #FFFFFF;
-      --ig-border: #F0DCB0; --ig-hero: #FFF5DD;
-      --ig-a: #E67E22; --ig-b: #1B998B; --ig-c: #2E86AB; --ig-d: #E63946;
-      --ig-radius: 20px; --ig-bw: 2.5px; --ig-title: 2.35rem;
-    }
-    :host([data-theme='official']) {
-      --ig-bg: #FBF9F5; --ig-ink: #14251D; --ig-muted: #526358; --ig-card: #FFFFFF;
-      --ig-border: #E5DDCD; --ig-hero: #F3ECE0;
-      --ig-a: #8A5A00; --ig-b: #2D6A4F; --ig-c: #1B4332; --ig-d: #B85329;
-      --ig-radius: 14px; --ig-bw: 1.5px; --ig-title: 1.95rem;
-    }
     .ig-sheet {
       background: var(--ig-bg); color: var(--ig-ink); border: var(--ig-bw) solid var(--ig-border);
       border-radius: calc(var(--ig-radius) + 6px); padding: 2.25rem; min-height: 1080px;
@@ -96,11 +84,14 @@ import { PresetProblemComponent } from './presets/preset-problem';
             <span class="ig-chip text-[#14251D]">{{ doc().grade }}</span>
             <span class="ig-chip" [style.color]="accent(0)">{{ doc().subject }}</span>
             @if (doc().trimester) {
-              <span class="ig-chip text-[#526358]">{{ doc().trimester }}</span>
+              <span class="ig-chip" style="color: var(--ig-muted)">{{ doc().trimester }}</span>
+            }
+            @if (sheetDate()) {
+              <span class="ig-chip" style="color: var(--ig-muted)">{{ sheetDate() }}</span>
             }
           </div>
           @if (doc().author?.name) {
-            <div class="text-xs font-semibold text-[#526358] flex items-center gap-1.5">
+            <div class="text-xs font-semibold flex items-center gap-1.5" style="color: var(--ig-muted)">
               <span class="material-icons text-sm text-[var(--ig-a)]" aria-hidden="true">school</span>
               <span>{{ doc().author?.name }}</span>
               @if (doc().author?.school) {
@@ -114,7 +105,7 @@ import { PresetProblemComponent } from './presets/preset-problem';
 
         @if (s.subtitle) {
           <div class="ig-objective" style="color: var(--ig-ink)">
-            <span class="text-sm">🎯</span>
+            <span class="material-icons text-base" style="color: var(--ig-a)" aria-hidden="true">flag</span>
             <span class="font-bold">{{ doc().language === 'fr' ? "Objectif d'apprentissage :" : 'الهدف التعلّمي :' }}</span>
             <span>{{ s.subtitle }}</span>
           </div>
@@ -234,6 +225,24 @@ export class InfographicSpecComponent {
 
   readonly spec = computed(() => this.doc().values as unknown as InfographicSpec);
   readonly theme = computed(() => this.doc().theme ?? 'kids');
+
+  readonly themeVars = computed(() => {
+    const t = INFOGRAPHIC_THEMES_CONFIG[this.theme()] ?? INFOGRAPHIC_THEMES_CONFIG.kids;
+    const c = t.colors;
+    return (
+      `--ig-bg:${c.bg};--ig-ink:${c.ink};--ig-muted:${c.muted};--ig-card:${c.card};` +
+      `--ig-border:${c.border};--ig-hero:${c.hero};` +
+      `--ig-a:${c.accents[0]};--ig-b:${c.accents[1]};--ig-c:${c.accents[2]};--ig-d:${c.accents[3]};` +
+      `--ig-radius:${t.radius};--ig-bw:${t.borderWidth};--ig-title:${t.titleSize}`
+    );
+  });
+
+  /** Sheet date (created, else today), dd/mm/yyyy. */
+  readonly sheetDate = computed(() => {
+    const raw = this.doc().createdAt;
+    const d = raw ? new Date(raw) : new Date();
+    return Number.isNaN(d.getTime()) ? '' : d.toLocaleDateString('fr-TN', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  });
 
   /** Re-sanitized on the client too: a saved or shared doc is never trusted blindly. */
   readonly diagram = computed<SafeHtml | null>(() => {

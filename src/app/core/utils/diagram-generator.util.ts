@@ -10,6 +10,15 @@ export type DiagramTemplate =
   | 'quadrant-grid'
   | 'pros-cons';
 
+export const DIAGRAM_TEMPLATES: readonly DiagramTemplate[] = [
+  'cycle-ring',
+  'numbered-staircase',
+  'snake-road',
+  'pyramid',
+  'quadrant-grid',
+  'pros-cons',
+];
+
 export interface DiagramItemInput {
   title: string;
   subtitle?: string;
@@ -46,7 +55,7 @@ export function generateSchoolDiagram(
   const themeDef = INFOGRAPHIC_THEMES_CONFIG[themeKey] || INFOGRAPHIC_THEMES_CONFIG.kids;
   const colors: ThemeColors = themeDef.colors;
   const isRtl = options.lang !== 'fr';
-  const font = "system-ui, 'Noto Kufi Arabic', 'Cairo', sans-serif";
+  const font = "'Noto Kufi Arabic', 'Cairo', system-ui, sans-serif";
 
   // Filter valid items
   const validItems = items.filter((it) => it && it.title?.trim());

@@ -130,7 +130,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
       if (!title && !text) return null;
       const icon = typeof o['icon'] === 'string' && SPEC_ICONS.includes(o['icon']) ? o['icon'] : 'star';
       const wantsImage = Boolean(o['wantsImage']);
-      const imagePrompt = sanitizeImagePrompt(o['imagePrompt']);
+      const imagePrompt = o['wantsImage'] === false ? undefined : sanitizeImagePrompt(o['imagePrompt']);
       const imageUrl = sanitizeImageUrl(o['imageUrl']);
       return {
         title,
@@ -166,7 +166,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
             .filter(Boolean)
             .slice(0, 6);
           const wantsImage = Boolean(c['wantsImage']);
-          const imagePrompt = sanitizeImagePrompt(c['imagePrompt']);
+          const imagePrompt = c['wantsImage'] === false ? undefined : sanitizeImagePrompt(c['imagePrompt']);
           const imageUrl = sanitizeImageUrl(c['imageUrl']);
           return {
             title: colTitle,
@@ -245,7 +245,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
         table,
         questions,
         wantsImage: Boolean(probRaw['wantsImage']) || undefined,
-        imagePrompt: sanitizeImagePrompt(probRaw['imagePrompt']),
+        imagePrompt: probRaw['wantsImage'] === false ? undefined : sanitizeImagePrompt(probRaw['imagePrompt']),
         imageUrl: sanitizeImageUrl(probRaw['imageUrl']),
       };
     }
@@ -256,6 +256,8 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
   if (preset === 'lesson-stages' && (stages?.length ?? 0) < 2) return null;
   if (preset === 'problem' && !problem?.situation && (problem?.questions?.length ?? 0) < 1) return null;
   if (preset !== 'problem' && preset !== 'lesson-stages' && preset !== 'comparison' && items.length < min) return null;
+
+  const imageStory = clip(r['imageStory'], 160);
 
   // Per-doc image library
   const imageLibrary: Record<string, string> = {};
@@ -289,6 +291,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     stages: stages?.length ? stages : undefined,
     quote,
     problem,
+    imageStory: imageStory && !/[؀-ۿ]/.test(imageStory) ? imageStory : undefined,
     imageLibrary: Object.keys(imageLibrary).length ? imageLibrary : undefined,
   };
 }

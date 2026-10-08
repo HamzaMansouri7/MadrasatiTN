@@ -1382,14 +1382,20 @@ export class EducationStore {
 
     let values = generated.values as unknown as InfographicSpec;
     if (Object.keys(prevLib).length > 0 && values) {
-      // Carry over images where title matches
-      const updatedItems = (values.items || []).map((it) => {
-        if (!it.imageUrl && it.title && prevLib[it.title]) {
-          return { ...it, imageUrl: prevLib[it.title] };
-        }
-        return it;
-      });
-      values = { ...values, items: updatedItems, imageLibrary: prevLib };
+      // Carry over images by block key (title, hero label, or prompt head) on every block kind.
+      const reuse = <T extends { imageUrl?: string; imagePrompt?: string }>(b: T | undefined, key?: string): T | undefined => {
+        if (!b || b.imageUrl || !b.imagePrompt) return b;
+        const url = (key && prevLib[key]) || prevLib[b.imagePrompt.slice(0, 60)];
+        return url ? { ...b, imageUrl: url } : b;
+      };
+      values = {
+        ...values,
+        hero: reuse(values.hero, values.hero?.label),
+        items: (values.items || []).map((it) => reuse(it, it.title) ?? it),
+        columns: values.columns?.map((c) => reuse(c, c.title) ?? c),
+        problem: reuse(values.problem),
+        imageLibrary: prevLib,
+      };
     }
 
     const kept = previous
@@ -1444,15 +1450,18 @@ export class EducationStore {
     const prompt = block?.imagePrompt?.trim();
     if (!block || !prompt) return { ok: false, error: 'Aucune description d’image pour ce bloc.' };
 
-    const seedKey = variation ? `${doc.id}-var-${Date.now()}` : doc.id;
 
+    // Lesson story first so every picture shows the lesson's own objects, not a generic child.
+    const story = spec.imageStory?.trim();
     const res = await this.ai.post(
       'generate-illustration',
       {
-        promptText: prompt,
+        promptText: story ? `${story}. ${prompt}` : prompt,
         raw: true,
         style: THEME_IMAGE_STYLE[doc.theme ?? 'kids'],
-        seedKey,
+        seedKey: doc.id,
+        // New seed + cache bypass for "صورة أخرى"; same doc look otherwise.
+        variation: variation ? (Date.now() % 1_000_000) + 1 : undefined,
         grade: doc.grade,
         subject: doc.subject,
       },
@@ -1462,7 +1471,12 @@ export class EducationStore {
     if (!imageUrl) return { ok: false, error: res.ok ? 'Image indisponible.' : res.error };
 
     const withImage = { ...block, imageUrl };
-    const libraryKey = ('title' in block && typeof block.title === 'string' && block.title) ? block.title : prompt.slice(0, 60);
+    const libraryKey =
+      'title' in block && typeof block.title === 'string' && block.title
+        ? block.title
+        : 'label' in block && typeof block.label === 'string' && block.label
+          ? block.label
+          : prompt.slice(0, 60);
     const updatedLib: Record<string, string> = {
       ...(doc.imageLibrary || {}),
       ...(spec.imageLibrary || {}),

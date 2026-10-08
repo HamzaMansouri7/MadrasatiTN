@@ -74,7 +74,7 @@ import { IllustrateButtonComponent } from './illustrate-button';
                   <span class="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-sm" [style.background]="accent()(0)">
                     <span class="material-icons text-base" aria-hidden="true">quiz</span>
                   </span>
-                  <h3 class="font-display font-bold text-base sm:text-lg text-[#14251D]">
+                  <h3 class="font-display font-bold text-base sm:text-lg text-[var(--ig-ink)]">
                     {{ doc().language === 'fr' ? 'Situation problème' : 'الوضعية المشكل' }}
                   </h3>
                 </div>
@@ -108,7 +108,7 @@ import { IllustrateButtonComponent } from './illustrate-button';
               }
               <tbody>
                 @for (row of p.table.rows; track $index) {
-                  <tr [class.bg-black-50]=" $index % 2 === 1">
+                  <tr [style.background]="$index % 2 === 1 ? 'var(--ig-hero)' : null">
                     @for (cell of row; track $index) {
                       <td class="font-semibold">{{ cell }}</td>
                     }
@@ -127,7 +127,7 @@ import { IllustrateButtonComponent } from './illustrate-button';
                 <span class="w-6 h-6 rounded-md flex items-center justify-center text-white font-bold text-xs shrink-0 mt-0.5" [style.background]="accent()($index + 1)">
                   {{ $index + 1 }}
                 </span>
-                <p class="font-display font-bold text-sm sm:text-base text-[#14251D] flex-1">
+                <p class="font-display font-bold text-sm sm:text-base text-[var(--ig-ink)] flex-1">
                   {{ q.text }}
                 </p>
               </div>
