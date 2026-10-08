@@ -1975,6 +1975,9 @@ export class TeacherHomeComponent {
     const school = this.getTeacherSchool();
     const watermark = buildWatermark({ authorName: teacherName, school });
 
+    const fileUrl = this.uploadedFileUrl() || undefined;
+    const isImg = fileUrl ? /\.(webp|png|jpg|jpeg|svg|gif)($|\?)/i.test(fileUrl) : false;
+
     const createdCourse = this.store.addCourse({
       title: this.newCourseTitle(),
       subject: this.newCourseSubject(),
@@ -1985,7 +1988,8 @@ export class TeacherHomeComponent {
       teacherName,
       summary: this.newCourseSummary() || `${this.newCourseSubject()} - ${this.newCourseGrade()} - Document conforme au programme tunisien.`,
       content: this.newCourseContent() || 'Document officiel conforme avec en-tête républicain et cartouche élève.',
-      pdfUrl: this.uploadedFileUrl() || undefined,
+      pdfUrl: isImg ? undefined : fileUrl,
+      imageUrls: isImg && fileUrl ? [fileUrl] : undefined,
       watermarkText: watermark,
       hasCorrection: true,
     });

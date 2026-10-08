@@ -36,31 +36,6 @@ interface RecitationItem {
             </p>
           </div>
 
-          <!-- Entries: zero-friction photo solver, summarizer, generator, memo studio -->
-          <div class="flex flex-wrap items-center gap-3">
-            <a
-              routerLink="/solve"
-              class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
-              <span class="material-icons text-base" aria-hidden="true">photo_camera</span>
-              <span>{{ lang.t('solveTitle') }}</span>
-            </a>
-
-            <a
-              routerLink="/create"
-              [queryParams]="{ output: 'memo' }"
-              class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
-              <span class="material-icons text-base" aria-hidden="true">dashboard_customize</span>
-              <span>{{ lang.tr('استوديو التلخيص والإنفوغرافيك', 'استوديو التلخيص والإنفوغرافيك') }}</span>
-            </a>
-
-            <a
-              routerLink="/editor"
-              class="inline-flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-5 py-3 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-fit">
-              <span class="material-icons text-base" aria-hidden="true">print</span>
-              <span>{{ lang.tr('استوديو الوثائق الرسمية A4', 'استوديو الوثائق الرسمية A4') }}</span>
-            </a>
-          </div>
-
         </div>
       </div>
 

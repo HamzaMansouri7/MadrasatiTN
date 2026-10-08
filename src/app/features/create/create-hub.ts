@@ -11,7 +11,8 @@ export type CreateOutputType =
   | 'article'
   | 'summary'
   | 'exam'
-  | 'worksheet';
+  | 'worksheet'
+  | 'solve';
 
 export interface OutputCardOption {
   type: CreateOutputType;
@@ -23,7 +24,7 @@ export interface OutputCardOption {
   accent: string;
   badgeFr: string;
   badgeAr: string;
-  previewKind: 'table' | 'cards' | 'prose' | 'comic' | 'exam';
+  previewKind: 'table' | 'cards' | 'prose' | 'comic' | 'exam' | 'photo';
   route?: string;
 }
 
@@ -108,6 +109,19 @@ export class CreateHubComponent implements OnInit {
       previewKind: 'prose',
       route: '/article-studio',
     },
+    {
+      type: 'solve',
+      titleFr: 'Solution d’un exercice en photo',
+      titleAr: 'حلّ تمرين بالصورة',
+      descFr: 'Photographiez un exercice du cahier ou du livre : solution détaillée et conseils pour accompagner l’enfant.',
+      descAr: 'صوّر تمريناً من الكراس أو الكتاب: حل مفصل خطوة بخطوة ونصائح لمرافقة الطفل.',
+      icon: 'photo_camera',
+      accent: '#1B4332',
+      badgeFr: 'Outil',
+      badgeAr: 'أداة',
+      previewKind: 'photo',
+      route: '/solve',
+    },
   ];
 
   readonly activeOption = computed(() => {
@@ -118,13 +132,18 @@ export class CreateHubComponent implements OnInit {
   ngOnInit() {
     this.route.queryParamMap.subscribe((params) => {
       const out = params.get('output') as CreateOutputType | null;
-      if (out && this.outputOptions.some((o) => o.type === out)) {
+      if (out && out !== 'solve' && this.outputOptions.some((o) => o.type === out)) {
         this.selectedOutput.set(out);
       }
     });
   }
 
   selectOutput(opt: OutputCardOption) {
+    // The photo solver has its own page and needs no source text.
+    if (opt.type === 'solve' && opt.route) {
+      void this.router.navigateByUrl(opt.route);
+      return;
+    }
     this.selectedOutput.set(opt.type);
     this.router.navigate([], {
       relativeTo: this.route,

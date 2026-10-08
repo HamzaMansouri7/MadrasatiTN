@@ -70,6 +70,11 @@
                   <span class="material-icons text-xs text-[#BF5B34]">image</span>
                   <span>لوحات متسلسلة 01 ➔ 06 مع خط زمني</span>
                 </div>
+              } @else if (opt.previewKind === 'photo') {
+                <div class="flex items-center gap-2 text-[#6B7A70]">
+                  <span class="material-icons text-xs text-[#1B4332]">photo_camera</span>
+                  <span>{{ lang.tr('Photo de l’exercice ➔ solution détaillée', 'صورة التمرين ➔ الحل المفصل') }}</span>
+                </div>
               } @else if (opt.previewKind === 'exam') {
                 <div class="space-y-1 text-[#6B7A70]">
                   <div class="flex justify-between"><span>القسم 1: الحساب (6ن)</span></div>
