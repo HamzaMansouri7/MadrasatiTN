@@ -67,6 +67,15 @@ import { PresetProblemComponent } from './presets/preset-problem';
       display: flex; align-items: center; justify-content: center; flex-shrink: 0;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
     }
+    .ig-diagram-wrap {
+      background: #ffffff;
+      border: var(--ig-bw, 2px) solid var(--ig-border);
+      border-radius: var(--ig-radius, 16px);
+      padding: 0.85rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      break-inside: avoid;
+    }
+    .ig-diagram :is(svg) { width: 100%; height: auto; max-height: 260px; }
   `,
   template: `
     @let s = spec();
@@ -183,6 +192,12 @@ import { PresetProblemComponent } from './presets/preset-problem';
           }
         }
       </main>
+
+      @if (s.preset !== 'hero-cards' && s.preset !== 'circular-flow' && s.preset !== 'timeline' && diagram(); as svg) {
+        <section class="ig-diagram-wrap">
+          <div class="ig-diagram" [innerHTML]="svg"></div>
+        </section>
+      }
 
       @if (s.remember.length) {
         <section class="ig-remember">

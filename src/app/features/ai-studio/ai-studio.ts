@@ -289,6 +289,50 @@ interface PresetOption {
           </div>
         </div>
       }
+
+      @if (presetWarningOpen()) {
+        <div class="no-print fixed inset-0 z-50 bg-[#14251D]/50 flex items-center justify-center p-4">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="preset-warning-title"
+            class="bg-white rounded-[28px] border border-[#E7DFCF] w-full max-w-md p-6 space-y-4 shadow-xl">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-full bg-[#F2C14E]/20 text-[#8A5A00] flex items-center justify-center shrink-0">
+                <span class="material-icons text-xl" aria-hidden="true">auto_awesome</span>
+              </span>
+              <div>
+                <h2 id="preset-warning-title" class="font-display text-lg font-bold text-[#14251D]">
+                  {{ lang.tr('Régénération nécessaire', 'إعادة توليد المحتوى') }}
+                </h2>
+                <p class="text-xs text-[#5B6B60]">
+                  {{ lang.tr('Ce format nécessite une nouvelle génération par l’IA.', 'هذا التنسيق يتطلب إعادة صياغة المحتوى بالذكاء الاصطناعي.') }}
+                </p>
+              </div>
+            </div>
+
+            <p class="text-sm text-[#4A5A50] leading-relaxed">
+              {{ lang.tr('Le passage vers ce format va adapter le contenu. Les illustrations existantes seront conservées dans la bibliothèque du document.', 'الانتقال إلى هذا التنسيق سيعيد هيكلة المحتوى. سيتم الاحتفاظ بالرسومات الحالية في مكتبة المستند.') }}
+            </p>
+
+            <div class="flex items-center justify-end gap-2 pt-2">
+              <button
+                type="button"
+                (click)="cancelPresetSwitch()"
+                class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 min-h-10 rounded-xl text-sm border border-[#E7DFCF] cursor-pointer transition-colors">
+                {{ lang.tr('Annuler', 'إلغاء') }}
+              </button>
+              <button
+                type="button"
+                (click)="confirmPresetSwitch()"
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-10 rounded-xl text-sm cursor-pointer transition-colors flex items-center gap-1.5 shadow-sm">
+                <span class="material-icons text-base" aria-hidden="true">refresh</span>
+                {{ lang.tr('Continuer', 'متابعة وتوليد') }}
+              </button>
+            </div>
+          </div>
+        </div>
+      }
     </div>
   `,
 })
@@ -323,6 +367,8 @@ export class AiStudioComponent implements OnInit {
   readonly error = signal<string | null>(null);
   readonly doc = signal<InfographicDoc | null>(null);
   readonly shareCopied = signal(false);
+  readonly pendingPreset = signal<InfographicPreset | 'auto' | null>(null);
+  readonly presetWarningOpen = signal(false);
 
   ngOnInit() {
     if (typeof window === 'undefined') return;
@@ -393,7 +439,6 @@ export class AiStudioComponent implements OnInit {
 
   setPreset(preset: InfographicPreset | 'auto') {
     if (this.preset() === preset && this.doc()) return;
-    this.preset.set(preset);
 
     const d = this.doc();
     const cardPresets = new Set<InfographicPreset | 'auto'>([
@@ -406,6 +451,7 @@ export class AiStudioComponent implements OnInit {
     const currentPreset = (d?.values as unknown as InfographicSpec)?.preset;
     // Client-side instant relayout without calling AI when switching between card presets
     if (d && preset !== 'auto' && currentPreset && cardPresets.has(currentPreset) && cardPresets.has(preset)) {
+      this.preset.set(preset);
       const currentSpec = d.values as unknown as InfographicSpec;
       const nextSpec: InfographicSpec = { ...currentSpec, preset };
       const nextDoc: InfographicDoc = { ...d, values: nextSpec as unknown as InfographicDoc['values'] };
@@ -414,7 +460,29 @@ export class AiStudioComponent implements OnInit {
       return;
     }
 
+    // Warn if doc exists and preset requires fresh AI structure generation
+    if (d && currentPreset && currentPreset !== preset) {
+      this.pendingPreset.set(preset);
+      this.presetWarningOpen.set(true);
+      return;
+    }
+
+    this.preset.set(preset);
     void this.generate();
+  }
+
+  confirmPresetSwitch() {
+    const p = this.pendingPreset();
+    this.presetWarningOpen.set(false);
+    if (!p) return;
+    this.preset.set(p);
+    this.pendingPreset.set(null);
+    void this.generate();
+  }
+
+  cancelPresetSwitch() {
+    this.presetWarningOpen.set(false);
+    this.pendingPreset.set(null);
   }
 
   regenerate() {

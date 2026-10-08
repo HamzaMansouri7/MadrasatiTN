@@ -1,4 +1,5 @@
-import { paginate, calculateTotalPages, getPageNumbers } from './paginate.util';
+import { describe, expect, it } from 'vitest';
+import { calculateTotalPages, getPageNumbers, paginate } from './paginate.util';
 
 describe('paginate.util', () => {
   describe('paginate()', () => {
