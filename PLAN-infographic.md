@@ -80,3 +80,54 @@ About 20 tasks: Phase 1 = 4 spikes, Phase 2 = 3, Phase 3 = 5, Phase 4 = 5, Phase
 **Unverified:** whether the memo accepts photo/PDF input; whether the grade list includes maternelle/jardin.
 
 **Evaluated and discarded:** Antigravity sample templates (two-column comparison, landscape radial/stat cards): useful only to prove the slot vocabulary; layout had overlaps, blank bands, tiny low-contrast text and Latin placeholders. Deleted.
+
+---
+
+## AI Studio engine decision (2026-10-08, later)
+
+Memo studio is renamed **AI Studio** (display only; route `/memo-studio` and `memo*` code keys unchanged). Its infographics move to a **hybrid engine**: the LLM writes HTML for layout and Arabic text (RTL wraps natively) with inline SVG for exact diagrams; a mascot is defined once in SVG `<defs>` and reused with `<use>`. Provider: free Gemini chain with fallbacks (remote, no GPU). Server sanitizer + validator. Template mode and prompt mode (teacher "Consignes") share the engine. FLUX only for optional text-free illustrations as `<img>`; Recraft not used (paid).
+
+- Presets: Cycle, Build-it, Discovery, Mini-comic first (up to 10 later). Themes: Kids first, then École, Scientifique, Officiel.
+- Spike v1 (`scratch/fractions.svg`): valid SVG, exact 1/2 1/3 1/4 pies, vowelled Arabic. Flaws to fix: SVG comments broke XML, weak RTL alignment, emoji. Spike v2 blocked by a temporary Gemini 503.
+
+**Owner decisions:** one simple controlled Kids palette, scoped to the AI Studio Kids theme only (app UI stays DESIGN.md Cartouche); retire the old 6 memo layouts once the new engine is proven; maternelle/jardin grade not now; Create hub becomes a type picker only.
+
+**Roadmap:** spike v2 → `/api/ai/generate-infographic` (chain, sanitizer, validator, tests) → simplified AI Studio UI (3 source tabs, prefilled meta, preset + theme, collapsed Consignes) → PNG export → more presets and themes.
+
+---
+
+## AI Studio — final architecture (2026-10-08)
+
+```
+Teacher input (topic / text / import) + preset + theme [+ Consignes]
+        │
+        ▼
+Theme object (palette, mood, art style, character block, seed)
+        │                         │
+        ▼                         ▼
+LLM (free Gemini chain)     FLUX (image chain, text-free, English)
+ - lesson content            - characters, animals, objects, scenes
+ - HTML layout + Arabic      - same style words + character block + seed
+ - inline SVG diagrams
+ - image prompts per slot ──────► server calls FLUX per prompt
+        │                         │
+        └──────────► Server: insert images, sanitize, validate A4/RTL
+                              │
+                              ▼
+                    Live A4 preview → print / PDF / save / share (PNG later)
+```
+
+- **LLM = creative**, **server code = control** (theme, seeds, API calls, sanitizing, retries). The LLM never manages seeds or consistency.
+- Arabic is always HTML/SVG text, never baked into images. Big decorative letters = styled SVG text over a FLUX scene.
+- Target quality: Facebook Arabic-letter posters, about 70–80% reachable on free models. Unproven: same character across a series.
+
+### Switch: LLM fills a JSON spec, Angular renders (owner agreed 2026-10-08)
+
+After a friend's art-direction review, the LLM no longer writes free HTML. It acts as a **Visual Art Director** and returns a JSON spec: composition preset, content per block, inline SVG diagrams where needed, and English FLUX prompts. About **8 Angular composition components**, built once on the existing slot renderer, render the spec: hero + 4 cards, circular flow, central object + labels, story journey, timeline, discovery grid, mini comic, before/after.
+
+- Theme tokens grow beyond colours: materials, depth, shape, illustration style.
+- Three material levels: soft illustrated background, semi-solid cards, solid hero object. No glass everywhere.
+- Visual rhythm (big, small, big). Presets are compositions, not subjects.
+- Big hero Arabic letter = styled SVG text with depth over a FLUX scene (FLUX never draws Arabic).
+- Start with one Kids level (Playful); Soft and Premium later.
+- Trade-off accepted: more work up front, consistent premium output every run.
