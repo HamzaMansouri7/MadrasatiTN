@@ -25,7 +25,8 @@
         "محفوظات",
         "شعر",
         "5eme-annee"
-      ]
+      ],
+      "topicId": "ar-5-u1"
     },
     {
       "id": "cnp-101509-recitation-p036",
@@ -47,7 +48,8 @@
         "محفوظات",
         "شعر",
         "5eme-annee"
-      ]
+      ],
+      "topicId": "ar-5-u2"
     },
     {
       "id": "cnp-101509-recitation-p057",
@@ -69,7 +71,9 @@
         "محفوظات",
         "شعر",
         "5eme-annee"
-      ]
+      ],
+      "topicId": "ar-5-u3"
     }
-  ]
+  ],
+  "topic": "masalek-al-qiraa-recitation-t1"
 }

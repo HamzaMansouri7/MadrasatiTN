@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal, untracked } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, BlogPost, PrintService, paginate } from '@core';
-import { BlogCardComponent, CartoucheComponent, PaginationComponent, TeacherCardComponent } from '@shared';
+import { BlogCardComponent, CartoucheComponent, CurriculumTreeComponent, PaginationComponent, TeacherCardComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -14,7 +14,7 @@ interface RecitationItem {
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent, BlogCardComponent, TeacherCardComponent],
+  imports: [RouterLink, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent, BlogCardComponent, TeacherCardComponent, CurriculumTreeComponent],
   template: `
     <div class="space-y-6">
       
@@ -837,6 +837,9 @@ interface RecitationItem {
               }
             </div>
           </div>
+
+          <!-- Official programme tree: grade → subject → trimester → topic -->
+          <app-curriculum-tree />
         </aside>
 
       </div>
@@ -1125,6 +1128,21 @@ export class PublicDiscoveryComponent {
     // Merge community-published worksheets into the library grid + blog feed.
     this.store.loadPublishedWorksheets();
     this.store.loadBlogPosts();
+
+    // Programme deep link (?topicId=<chapterId>) pre-selects the topic in the tree (e.g. from /programme).
+    if (typeof window !== 'undefined') {
+      const topicId = new URLSearchParams(window.location.search).get('topicId');
+      if (topicId) this.store.selectTopic(topicId);
+    }
+
+    // Picking a topic jumps to the shelf that actually holds matches (tagged items live in courses / CNP books).
+    effect(() => {
+      if (!this.store.selectedTopicId()) return;
+      untracked(() => {
+        if (this.store.filteredCourses().length) this.activeSection.set('courses');
+        else if (this.store.filteredCnpBooks().length) this.activeSection.set('cnp');
+      });
+    });
 
     // Shared BD deep link (?bd=<itemId>) lands straight on the BD tab.
     if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('bd')) {

@@ -8,6 +8,7 @@
  * `KnowledgeSource` rows. No endpoint change required.
  */
 import { TUNISIAN_CURRICULUM_CHAPTERS } from '../app/core/data/curriculum-chapters.data';
+import { chapterById, chapterTitle } from '../app/core/utils/curriculum.util';
 import { CNP_PRIMARY_COURSES } from '../app/core/data/cnp-books.data';
 
 export type KnowledgeLang = 'ar' | 'fr' | 'en' | 'mixed';
@@ -33,6 +34,8 @@ export interface RetrieveQuery {
   trimester?: string;
   /** Free-text topic/chapter — used for keyword ranking */
   topic?: string;
+  /** Official curriculum row id (CurriculumChapter.id). Pins that exact chapter first; unknown ids are ignored. */
+  topicId?: string;
   lang?: 'ar' | 'fr';
   limit?: number;
 }
@@ -61,7 +64,7 @@ function fromCurriculumChapters(): KnowledgeSource[] {
       trimester: ch.trimester,
       lang: 'ar',
       title: ch.titleAr,
-      text: ch.keyCompetencyAr,
+      text: ch.keyCompetencyAr || ch.titleAr,
       ref: ch.id,
     });
     rows.push({
@@ -72,7 +75,7 @@ function fromCurriculumChapters(): KnowledgeSource[] {
       trimester: ch.trimester,
       lang: 'fr',
       title: ch.titleFr,
-      text: ch.keyCompetencyFr,
+      text: ch.keyCompetencyFr || ch.titleFr,
       ref: ch.id,
     });
   }
@@ -129,8 +132,18 @@ const SUBJECT_ALIASES: Record<string, string> = {
   'ايقاظ': 'Éveil Scientifique',
   'anglais': 'Anglais',
   'english': 'Anglais',
+  'الإنكليزية': 'Anglais',
+  'الإنجليزية': 'Anglais',
   'histoire': 'Histoire & Géographie',
+  'histoire-géo': 'Histoire & Géographie',
+  'histoire & géographie': 'Histoire & Géographie',
   'التاريخ': 'Histoire & Géographie',
+  'الجغرافيا': 'Histoire & Géographie',
+  'التاريخ والجغرافيا': 'Histoire & Géographie',
+  'islamique': 'Éducation Islamique',
+  'éducation islamique': 'Éducation Islamique',
+  'التربية الإسلامية': 'Éducation Islamique',
+  'إسلامية': 'Éducation Islamique',
 };
 
 function normalizeSubject(subject?: string): string | undefined {
@@ -163,10 +176,12 @@ function scoreAgainstTopic(source: KnowledgeSource, topicTokens: string[]): numb
 export function retrieveContext(q: RetrieveQuery): RetrievedContext {
   const limit = Math.min(Math.max(q.limit || 4, 1), 8);
   const lang: 'ar' | 'fr' = q.lang === 'fr' ? 'fr' : 'ar';
-  const subject = normalizeSubject(q.subject);
+  const pinned = chapterById(q.topicId);
+  const subject = normalizeSubject(q.subject) ?? pinned?.subject;
+  const grade = q.grade ?? pinned?.grade;
 
   let pool = CORPUS.filter((s) => {
-    if (q.grade && s.grade !== q.grade) return false;
+    if (grade && s.grade !== grade) return false;
     if (subject && s.subject !== subject) return false;
     return true;
   });
@@ -176,18 +191,22 @@ export function retrieveContext(q: RetrieveQuery): RetrievedContext {
   if (langPool.length > 0) pool = langPool;
 
   // Prefer the requested trimester; keep the rest as fallback.
-  const topicTokens = tokenize(q.topic || '');
-  const ranked = pool
+  const trimester = q.trimester ?? pinned?.trimester;
+  const topicTokens = tokenize(q.topic || (pinned ? chapterTitle(pinned, lang) : ''));
+  const rankedAll = pool
     .map((s) => ({
       s,
       score:
         scoreAgainstTopic(s, topicTokens) * 10 +
-        (q.trimester && s.trimester === q.trimester ? 5 : 0) +
+        (trimester && s.trimester === trimester ? 5 : 0) +
         (s.origin === 'cnp-chapter' ? 1 : 0), // chapters carry competencies → slightly preferred
     }))
     .sort((a, b) => b.score - a.score)
-    .slice(0, limit)
     .map((r) => r.s);
+
+  // The pinned chapter always comes first, then the usual keyword ranking fills the rest.
+  const exact = pinned ? rankedAll.filter((s) => s.ref === pinned.id) : [];
+  const ranked = [...exact, ...rankedAll.filter((s) => !exact.includes(s))].slice(0, limit);
 
   if (ranked.length === 0) return { sources: [], block: '' };
 

@@ -74,6 +74,8 @@ export interface MemoDoc {
 export interface MemoInput {
   mode: 'topic' | 'text' | 'image' | 'file' | 'resource';
   topic?: string;
+  /** Official curriculum row id (CurriculumChapter.id) when picked from the programme. */
+  topicId?: string;
   text?: string;
   images?: { base64Data: string; contentType?: string }[];
   file?: { base64Data: string; contentType?: string; filename?: string };

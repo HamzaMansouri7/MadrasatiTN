@@ -37,6 +37,7 @@ import {
   MemoGenerateResponse,
 } from '../models/memo.model';
 import { SourceInput } from '../models/source-input.model';
+import { chapterById } from '../utils/curriculum.util';
 import { SeriesDoc, Scene } from '../models/series.model';
 import { InfographicDoc } from '../models/infographic.model';
 import { InfographicPreset, InfographicSpec, InfographicTheme } from '../models/infographic-spec.model';
@@ -250,6 +251,8 @@ export class EducationStore {
   // Multi-select subject facet (sidebar checkboxes). Empty set = all subjects.
   readonly selectedSubjects = signal<Set<string>>(new Set<string>());
   readonly selectedTrimesterFilter = signal<string>('Tous');
+  // Official programme topic (CurriculumChapter.id) picked in the library tree; null = no topic filter.
+  readonly selectedTopicId = signal<string | null>(null);
   readonly selectedDocTypeFilter = signal<string>('Tous');
   readonly selectedSchoolYearFilter = signal<string>('Tous');
   readonly onlyWithCorrectionFilter = signal<boolean>(false);
@@ -479,6 +482,7 @@ export class EducationStore {
     const y = this.selectedSchoolYearFilter();
     const onlyCor = this.onlyWithCorrectionFilter();
     const subs = this.selectedSubjects();
+    const topic = this.selectedTopicId();
 
     const matchQ =
       !q ||
@@ -491,8 +495,32 @@ export class EducationStore {
     const matchD = d === 'Tous' || course.docType === d;
     const matchY = y === 'Tous' || course.schoolYear === y;
     const matchCor = !onlyCor || course.hasCorrection === true;
+    const matchTopic = !topic || course.topicId === topic || (course.topicIds?.includes(topic) ?? false);
 
-    return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor;
+    return matchQ && matchG && matchS && matchT && matchD && matchY && matchCor && matchTopic;
+  }
+
+  // Number of library courses/books per programme topic (unfiltered, drives the tree badges).
+  readonly topicCounts = computed(() => {
+    const counts = new Map<string, number>();
+    for (const c of this.courses()) {
+      const ids = new Set([c.topicId, ...(c.topicIds ?? [])].filter((x): x is string => !!x));
+      for (const id of ids) counts.set(id, (counts.get(id) ?? 0) + 1);
+    }
+    return counts;
+  });
+
+  /** Pick (or clear) a programme topic. Syncs grade + subject; the topic itself already implies the trimester. */
+  selectTopic(id: string | null): void {
+    const ch = chapterById(id);
+    if (!ch) {
+      this.selectedTopicId.set(null);
+      return;
+    }
+    this.selectedTopicId.set(ch.id);
+    this.selectedGradeFilter.set(ch.grade);
+    this.selectedSubjects.set(new Set<string>([ch.subject]));
+    this.selectedTrimesterFilter.set('Tous');
   }
 
   // Community/teacher courses & fiches — CNP official books excluded (own tab).
@@ -859,6 +887,7 @@ export class EducationStore {
     this.selectedSubjectFilter.set('Tous');
     this.selectedSubjects.set(new Set<string>());
     this.selectedTrimesterFilter.set('Tous');
+    this.selectedTopicId.set(null);
     this.selectedDocTypeFilter.set('Tous');
     this.selectedSchoolYearFilter.set('Tous');
     this.onlyWithCorrectionFilter.set(false);
@@ -1135,6 +1164,7 @@ export class EducationStore {
     const userInstruction = [input.instructions, block].filter(Boolean).join(' ');
     return {
       topic: input.topic,
+      topicId: input.topicId,
       grade: input.grade,
       subject: input.subject,
       trimester: input.trimester,
@@ -1320,6 +1350,7 @@ export class EducationStore {
     }
     return {
       topic: source.topic,
+      topicId: source.topicId,
       grade: source.grade,
       subject: source.subject,
       trimester: source.trimester,

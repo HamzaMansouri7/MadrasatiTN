@@ -25,7 +25,8 @@
         "محفوظات",
         "شعر",
         "6eme-annee"
-      ]
+      ],
+      "topicId": "ar-6-u4"
     },
     {
       "id": "cnp-101611-recitation-p157",
@@ -47,7 +48,8 @@
         "محفوظات",
         "شعر",
         "6eme-annee"
-      ]
+      ],
+      "topicId": "ar-6-u4"
     },
     {
       "id": "cnp-101611-recitation-p191",
@@ -69,7 +71,10 @@
         "محفوظات",
         "شعر",
         "6eme-annee"
-      ]
+      ],
+      "topicId": "ar-6-u4"
     }
-  ]
+  ],
+  "topicId": "ar-6-u4",
+  "topic": "aalam-al-qiraa-recitation-t2"
 }

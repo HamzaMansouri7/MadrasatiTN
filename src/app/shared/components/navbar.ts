@@ -39,12 +39,24 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             <button
               type="button"
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isTeachersRoute()
+              [class]="store.currentRole() === 'public' && !isTeachersRoute() && router.url !== '/programme'
                 ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10'
                 : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
               <span class="material-icons text-base xl:text-lg" aria-hidden="true">explore</span>
               <span>{{ lang.tr('Bibliothèque CNP', 'المكتبة والدليل') }}</span>
+            </button>
+
+            <!-- 2. Programme link: Programme Officiel -->
+            <button
+              type="button"
+              (click)="router.navigate(['/programme'])"
+              [class]="router.url === '/programme'
+                ? 'text-[#007CC2] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60'
+                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg" aria-hidden="true">account_tree</span>
+              <span>{{ lang.tr('Programme Officiel', 'البرنامج البيداغوجي') }}</span>
             </button>
 
             <!-- 3. Create Hub / مركز الإنشاء (teachers only) -->

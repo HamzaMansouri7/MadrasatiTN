@@ -218,7 +218,7 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
 
       // Update chips from active chapter or fallback
       if (ch) {
-        this.suggestedChips.set(isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr);
+        this.suggestedChips.set((isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr) || []);
       } else {
         this.suggestedChips.set(
           isAr
@@ -410,7 +410,7 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
       const isAr = this.lang.isArabic();
       const chTitle = isAr ? ch.titleAr : ch.titleFr;
       this.article.update((a) => ({ ...a, chapter: chTitle }));
-      this.suggestedChips.set(isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr);
+      this.suggestedChips.set((isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr) || []);
     }
   }
 
@@ -487,7 +487,7 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
       const ch = this.activeChapterObj();
       if (ch) {
         this.article.update((a) => ({ ...a, chapter: isAr ? ch.titleAr : ch.titleFr }));
-        this.suggestedChips.set(isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr);
+        this.suggestedChips.set((isAr ? ch.suggestedPromptsAr : ch.suggestedPromptsFr) || []);
       }
     }
   }

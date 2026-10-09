@@ -13,7 +13,17 @@
       "relPath": "assets/resources/6eme-annee/eveil-scientifique/trimestre-1/digestion-circulation/presentation-corps-humain.pptx",
       "lang": "ar",
       "ref": "cnp-103604",
-      "labels": ["الإيقاظ العلمي", "الجهاز الهضمي", "الدورة الدموية", "6ème Année", "Présentation", "PPTX"]
+      "labels": [
+        "الإيقاظ العلمي",
+        "الجهاز الهضمي",
+        "الدورة الدموية",
+        "6ème Année",
+        "Présentation",
+        "PPTX"
+      ],
+      "topicId": "sci-6-u3"
     }
-  ]
+  ],
+  "topicId": "sci-6-u3",
+  "topic": "digestion-circulation-nerveux"
 }

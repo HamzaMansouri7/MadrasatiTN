@@ -122,6 +122,7 @@
 
       <!-- Shared Input Form -->
       <app-source-input
+        [initialInput]="initialInput()"
         [busy]="isGenerating()"
         [submitLabel]="lang.tr('Générer avec l’IA', 'بدء المعالجة والتوليد')"
         (submitSource)="onSourceSubmitted($event)"></app-source-input>

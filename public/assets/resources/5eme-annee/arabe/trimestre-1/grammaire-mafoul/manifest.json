@@ -13,7 +13,15 @@
       "relPath": "assets/resources/5eme-annee/arabe/trimestre-1/grammaire-mafoul/mafoul-bihi.webp",
       "lang": "ar",
       "ref": "cnp-101510",
-      "labels": ["اللغة العربية", "قواعد اللغة", "المفعول به", "5ème Année", "Fiche de Révision", "Infographic"]
+      "labels": [
+        "اللغة العربية",
+        "قواعد اللغة",
+        "المفعول به",
+        "5ème Année",
+        "Fiche de Révision",
+        "Infographic"
+      ]
     }
-  ]
+  ],
+  "topic": "grammaire-mafoul-bihi"
 }

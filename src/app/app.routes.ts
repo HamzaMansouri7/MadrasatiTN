@@ -35,6 +35,12 @@ export const routes: Routes = [
     title: 'المكتبة والدليل | Bibliothèque CNP - Madrasati TN',
   },
   {
+    path: 'programme',
+    loadComponent: () =>
+      import('./features/programme/programme-home').then((m) => m.ProgrammeHomeComponent),
+    title: 'البرنامج البيداغوجي الرسمي | Programme Officiel - Madrasati TN',
+  },
+  {
     path: 'solve',
     loadComponent: () =>
       import('./features/solve/solve-home').then((m) => m.SolveHomeComponent),

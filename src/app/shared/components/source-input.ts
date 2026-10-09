@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component, effect, inject, input, output, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceInput, SubjectName, Trimester, TRIMESTERS, downscaleImage } from '@core';
+import { TopicPickerComponent } from './topic-picker';
+import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceInput, SubjectName, Trimester, TRIMESTERS, downscaleImage } from '@core';
 
 @Component({
   selector: 'app-source-input',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule],
+  imports: [FormsModule, TopicPickerComponent],
   template: `
     <div class="bg-white rounded-[28px] border border-[#E7DFCF] p-5 sm:p-7 space-y-6 shadow-sm">
       <!-- Tabs (Topic, Text, Photo, File) -->
@@ -67,7 +68,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
             type="text"
             dir="auto"
             [value]="topic()"
-            (input)="topic.set($any($event.target).value)"
+            (input)="onTopicTyped($any($event.target).value)"
             [placeholder]="lang.tr('Ex: La multiplication posée, التوسع في الجملة الفعلية...', 'مثال: التوسع في الجملة الفعلية، الدوران والتناظر، دورة الماء...')"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 py-3 text-sm text-[#14251D] placeholder-[#6B7A70] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]" />
         </div>
@@ -158,7 +159,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
           <select
             id="src-grade"
             [value]="grade()"
-            (change)="grade.set($any($event.target).value)"
+            (change)="grade.set($any($event.target).value); topicId.set(null)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
             @for (g of grades; track g) {
               <option [value]="g" [selected]="g === grade()">{{ lang.translateGrade(g) }}</option>
@@ -172,7 +173,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
           <select
             id="src-subject"
             [value]="subject()"
-            (change)="subject.set($any($event.target).value)"
+            (change)="subject.set($any($event.target).value); topicId.set(null)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
             @for (s of subjects; track s) {
               <option [value]="s" [selected]="s === subject()">{{ lang.translateSubject(s) }}</option>
@@ -186,7 +187,7 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
           <select
             id="src-trimester"
             [value]="trimester()"
-            (change)="trimester.set($any($event.target).value)"
+            (change)="trimester.set($any($event.target).value); topicId.set(null)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
             @for (tri of trimesters; track tri) {
               <option [value]="tri" [selected]="tri === trimester()">{{ lang.tr(tri, tri === 'Trimestre 1' ? 'الثلاثي الأول' : tri === 'Trimestre 2' ? 'الثلاثي الثاني' : 'الثلاثي الثالث') }}</option>
@@ -207,6 +208,16 @@ import { GradeLevel, LanguageService, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceIn
           </select>
         </div>
       </div>
+
+      @if (mode() === 'topic') {
+        <app-topic-picker
+          selectId="src-topic-picker"
+          [grade]="grade()"
+          [subject]="subject()"
+          [trimester]="trimester()"
+          [value]="topicId()"
+          (topicChange)="onTopicPicked($event)" />
+      }
 
       <!-- Action Footer -->
       <div class="flex items-center justify-between pt-2">
@@ -248,6 +259,8 @@ export class SourceInputComponent {
   readonly subject = signal<SubjectName | string>('Mathématiques');
   readonly trimester = signal<Trimester | string>('Trimestre 1');
   readonly language = signal<'ar' | 'fr'>('ar');
+  readonly topicId = signal<string | null>(null);
+  private pickedTitle = '';
 
   constructor() {
     effect(() => {
@@ -255,6 +268,10 @@ export class SourceInputComponent {
       if (init) {
         if (init.mode) this.mode.set(init.mode);
         if (init.topic) this.topic.set(init.topic);
+        if (init.topicId) {
+          this.topicId.set(init.topicId);
+          this.pickedTitle = init.topic ?? '';
+        }
         if (init.text) this.text.set(init.text);
         if (init.images) this.images.set(init.images);
         if (init.file) this.file.set(init.file);
@@ -264,6 +281,18 @@ export class SourceInputComponent {
         if (init.language) this.language.set(init.language);
       }
     });
+  }
+
+  onTopicPicked(ch: CurriculumChapter | null) {
+    this.topicId.set(ch?.id ?? null);
+    this.pickedTitle = ch ? chapterTitle(ch, this.lang.isArabic() ? 'ar' : 'fr') : '';
+    if (ch) this.topic.set(this.pickedTitle);
+  }
+
+  /** Typing over a picked chapter turns it back into a free topic. */
+  onTopicTyped(value: string) {
+    this.topic.set(value);
+    if (this.topicId() && value !== this.pickedTitle) this.topicId.set(null);
   }
 
   setMode(m: 'topic' | 'text' | 'photo' | 'file') {
@@ -330,6 +359,7 @@ export class SourceInputComponent {
     const source: SourceInput = {
       mode: m,
       topic: m === 'topic' ? this.topic().trim() : undefined,
+      topicId: m === 'topic' ? (this.topicId() ?? undefined) : undefined,
       text: m === 'text' ? this.text().trim() : undefined,
       images: m === 'photo' && this.images().length > 0 ? this.images() : undefined,
       file: m === 'file' ? this.file() : undefined,

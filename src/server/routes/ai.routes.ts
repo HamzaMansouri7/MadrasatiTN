@@ -106,12 +106,17 @@ export async function aiGenerateJSON(
   return runChain(chain, contents, schema, temperature);
 }
 
+/** Accept a client-sent curriculum row id only if it looks like one. */
+const safeTopicId = (v: unknown): string | undefined =>
+  typeof v === "string" && v.length > 0 && v.length <= 64 ? v : undefined;
+
 /** Official curriculum grounding block (empty string when no match). */
 const buildGrounding = (q: {
   grade?: string;
   subject?: string;
   trimester?: string;
   topic?: string;
+  topicId?: string;
   lang: "ar" | "fr";
 }): string => {
   const { block } = retrieveContext(q);
@@ -124,6 +129,7 @@ const contextBlock = (q: {
   subject?: string;
   trimester?: string;
   topic?: string;
+  topicId?: string;
   lang: "ar" | "fr";
 }): string => `${buildGrounding(q)}${langRule(q.lang)}`;
 
@@ -314,6 +320,7 @@ aiRouter.post(
         grade,
         subject,
         topic,
+        topicId,
         difficulty,
         format = "free",
         trimester = "Trimestre 1",
@@ -361,6 +368,7 @@ aiRouter.post(
         points,
         lang,
         contextBlockStr: contextBlock({
+          topicId: safeTopicId(topicId),
           grade,
           subject,
           trimester,
@@ -460,7 +468,8 @@ aiRouter.post(
   aiRateLimiter,
   async (req: Request, res: Response): Promise<void> => {
     try {
-      const { grade, subject, trimester, topics, topic, language } = req.body;
+      const { grade, subject, trimester, topics, topic, topicId, language } =
+        req.body;
       if (!aiReady()) {
         res.status(500).json({ error: "Service IA non disponible." });
         return;
@@ -476,6 +485,7 @@ aiRouter.post(
         topics: safeTopic,
         lang,
         contextBlockStr: contextBlock({
+          topicId: safeTopicId(topicId),
           grade,
           subject,
           trimester,
@@ -877,6 +887,7 @@ aiRouter.post(
     try {
       const {
         topic,
+        topicId,
         grade,
         subject,
         trimester,
@@ -932,6 +943,7 @@ aiRouter.post(
         existingMemo,
         userInstruction,
         contextBlockStr: contextBlock({
+          topicId: safeTopicId(topicId),
           grade: resolvedGrade,
           subject: resolvedSubject,
           trimester: resolvedTrimester,
@@ -1059,6 +1071,7 @@ aiRouter.post(
         grade,
         subject,
         topic,
+        topicId,
         durationMinutes = 45,
         instructions,
         lessonText,
@@ -1109,6 +1122,7 @@ aiRouter.post(
           : undefined,
         lang,
         contextBlockStr: contextBlock({
+          topicId: safeTopicId(topicId),
           grade: resolvedGrade,
           subject: resolvedSubject,
           topic: safeTopic,
@@ -1174,6 +1188,7 @@ aiRouter.post(
         grade,
         subject,
         topic,
+        topicId,
         instructions,
         lessonText,
         sourceFiles,
@@ -1222,6 +1237,7 @@ aiRouter.post(
         lessonText: lessonText ? capText(lessonText, 8000) : undefined,
         lang,
         contextBlockStr: contextBlock({
+          topicId: safeTopicId(topicId),
           grade: resolvedGrade,
           subject: resolvedSubject,
           topic: safeTopic,
@@ -1326,7 +1342,7 @@ aiRouter.post(
   aiRateLimiter,
   async (req: Request, res: Response): Promise<void> => {
     try {
-      const { grade, subject, topic, lessonText, sourceFiles, language } =
+      const { grade, subject, topic, topicId, lessonText, sourceFiles, language } =
         req.body;
       if (!aiReady()) {
         res.status(500).json({ error: "Service IA non disponible." });
@@ -1365,6 +1381,7 @@ aiRouter.post(
         lessonText: safeText,
         lang,
         contextBlockStr: contextBlock({
+          topicId: safeTopicId(topicId),
           grade: grade,
           subject: subject,
           topic: safeTopic,
@@ -1647,6 +1664,7 @@ aiRouter.post(
           subject: dna.subject,
           trimester: dna.trimester,
           topic: dna.topic,
+          topicId: safeTopicId(dna.topicId),
           lang,
         }),
       });

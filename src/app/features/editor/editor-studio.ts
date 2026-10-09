@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, OnInit, s
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById } from '@core';
 import { CartoucheComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
@@ -199,6 +199,14 @@ export class EditorStudioComponent implements OnInit {
   readonly docSubject = signal<SubjectName>('Mathématiques');
   readonly docGrade = signal<GradeLevel>('4ème Année');
   readonly docTrimester = signal<'Trimestre 1' | 'Trimestre 2' | 'Trimestre 3'>('Trimestre 1');
+  /** Programme topic picked upstream (create hub). Kept only while it still matches grade/subject/trimester. */
+  private readonly sourceTopicId = signal<string | undefined>(undefined);
+  readonly docTopicId = computed(() => {
+    const ch = chapterById(this.sourceTopicId());
+    return ch && ch.grade === this.docGrade() && ch.subject === this.docSubject() && ch.trimester === this.docTrimester()
+      ? ch.id
+      : undefined;
+  });
   readonly docSchoolYear = signal<string>('2025-2026');
   readonly docSchool = signal<string>('École Primaire Habib Bourguiba');
   readonly docWatermark = signal<string>(DEFAULT_WATERMARK);
@@ -348,6 +356,7 @@ export class EditorStudioComponent implements OnInit {
     }
 
     if (src) {
+      this.sourceTopicId.set(src.topicId);
       if (src.grade) this.docGrade.set(src.grade as GradeLevel);
       if (src.subject) this.docSubject.set(src.subject as SubjectName);
       if (src.trimester) {
@@ -409,6 +418,7 @@ export class EditorStudioComponent implements OnInit {
             grade: this.docGrade(),
             subject: this.docSubject(),
             topic: `${effectiveTopic} - Connaissances de base et calcul direct${extraInstructions}`,
+            topicId: this.docTopicId(),
             difficulty: 'Facile',
             format: 'free',
             trimester: this.docTrimester(),
@@ -421,6 +431,7 @@ export class EditorStudioComponent implements OnInit {
             grade: this.docGrade(),
             subject: this.docSubject(),
             topic: `${effectiveTopic} - Situation problème et raisonnement${extraInstructions}`,
+            topicId: this.docTopicId(),
             difficulty: 'Moyen',
             format: 'free',
             trimester: this.docTrimester(),
@@ -474,6 +485,7 @@ export class EditorStudioComponent implements OnInit {
             grade: this.docGrade(),
             subject: this.docSubject(),
             topic: `${effectiveTopic} - Entraînement fondamental${extraInstructions}`,
+            topicId: this.docTopicId(),
             difficulty: 'Facile',
             format: 'free',
             trimester: this.docTrimester(),
@@ -486,6 +498,7 @@ export class EditorStudioComponent implements OnInit {
             grade: this.docGrade(),
             subject: this.docSubject(),
             topic: `${effectiveTopic} - Défi et approfondissement${extraInstructions}`,
+            topicId: this.docTopicId(),
             difficulty: 'Moyen',
             format: 'free',
             trimester: this.docTrimester(),
@@ -1155,6 +1168,7 @@ export class EditorStudioComponent implements OnInit {
       subject: this.docSubject(),
       grade: this.docGrade(),
       trimester: this.docTrimester(),
+      topicId: this.docTopicId(),
       schoolYear: this.docSchoolYear(),
       summary: `${this.docSubject()} - ${this.docGrade()} - Document préparé par ${authorName}.`,
       content,

@@ -15,6 +15,9 @@ import { LanguageService } from '@core/services/language.service';
 import { FirebaseService } from '@core/services/firebase.service';
 import { downscaleImage } from '@core/utils/image.util';
 import { MemoInput, MemoLayout } from '@core/models/memo.model';
+import { CurriculumChapter } from '@core/data/curriculum-chapters.data';
+import { chapterTitle } from '@core/utils/curriculum.util';
+import { TopicPickerComponent } from '@shared/components/topic-picker';
 import {
   MemoTreeLayoutComponent,
   MemoStepsLayoutComponent,
@@ -39,6 +42,7 @@ interface LibraryResourceItem {
     CommonModule,
     FormsModule,
     RouterLink,
+    TopicPickerComponent,
     MemoTreeLayoutComponent,
     MemoStepsLayoutComponent,
     MemoCardsLayoutComponent,
@@ -240,6 +244,13 @@ interface LibraryResourceItem {
                   [placeholder]="lang.t('memoInputTopicPlaceholder')"
                   class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-4 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
                 />
+                <app-topic-picker
+                  selectId="memo-topic-picker"
+                  [grade]="grade()"
+                  [subject]="subject()"
+                  [trimester]="trimester()"
+                  [value]="topicId()"
+                  (topicChange)="onTopicPicked($event)" />
               </div>
             }
 
@@ -661,6 +672,8 @@ export class MemoStudioComponent implements OnInit {
   readonly errorMessage = signal<string>('');
 
   readonly topic = signal<string>('');
+  readonly topicId = signal<string | null>(null);
+  private pickedTitle = '';
   readonly text = signal<string>('');
   readonly grade = signal<string>('6ème Année');
   readonly subject = signal<string>('Français');
@@ -906,6 +919,12 @@ export class MemoStudioComponent implements OnInit {
     reader.readAsDataURL(f);
   }
 
+  onTopicPicked(ch: CurriculumChapter | null) {
+    this.topicId.set(ch?.id ?? null);
+    this.pickedTitle = ch ? chapterTitle(ch, this.lang.isArabic() ? 'ar' : 'fr') : '';
+    if (ch) this.topic.set(this.pickedTitle);
+  }
+
   async generateMemo() {
     this.state.set('analyzing');
     this.errorMessage.set('');
@@ -921,6 +940,8 @@ export class MemoStudioComponent implements OnInit {
     const inputData: MemoInput = {
       mode: modeMap[this.activeTab()] || 'topic',
       topic: this.topic(),
+      // Only keep the programme topic while the text still is the picked title.
+      topicId: this.topicId() && this.topic() === this.pickedTitle ? this.topicId()! : undefined,
       text: this.text(),
       grade: this.grade(),
       subject: this.subject(),

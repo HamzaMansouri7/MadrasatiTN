@@ -13,7 +13,14 @@
       "relPath": "assets/resources/6eme-annee/maths/trimestre-2/fractions/fractions-operations.webp",
       "lang": "ar",
       "ref": "cnp-102609",
-      "labels": ["الرياضيات", "الأعداد الكسرية", "6ème Année", "Fiche de Révision", "Infographic"]
+      "labels": [
+        "الرياضيات",
+        "الأعداد الكسرية",
+        "6ème Année",
+        "Fiche de Révision",
+        "Infographic"
+      ],
+      "topicId": "math-6-ch1"
     },
     {
       "id": "pres-math-6-frac",
@@ -28,7 +35,16 @@
       "relPath": "assets/resources/6eme-annee/maths/trimestre-2/fractions/presentation-fractions.pptx",
       "lang": "ar",
       "ref": "cnp-102609",
-      "labels": ["الرياضيات", "الأعداد الكسرية", "6ème Année", "Présentation", "PPTX"]
+      "labels": [
+        "الرياضيات",
+        "الأعداد الكسرية",
+        "6ème Année",
+        "Présentation",
+        "PPTX"
+      ],
+      "topicId": "math-6-ch1"
     }
-  ]
+  ],
+  "topicId": "math-6-ch1",
+  "topic": "fractions-operations-proportionnalite"
 }

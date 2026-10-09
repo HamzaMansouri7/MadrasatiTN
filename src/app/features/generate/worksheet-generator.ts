@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark } from '@core';
+import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark, chapterById, chapterTitle } from '@core';
 import { CartoucheComponent } from '@shared';
 
 /**
@@ -114,6 +114,25 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       return;
     }
 
+    const topicId = new URLSearchParams(window.location.search).get('topicId');
+    const chapter = chapterById(topicId);
+    if (chapter) {
+      const language = chapter.subject === 'Français' || chapter.subject === 'Anglais' ? 'fr' : 'ar';
+      this.dna.set({
+        title: chapterTitle(chapter, language),
+        grade: chapter.grade as WorksheetDna['grade'],
+        subject: chapter.subject as WorksheetDna['subject'],
+        topic: chapterTitle(chapter, language),
+        topicId: chapter.id,
+        trimester: chapter.trimester,
+        language,
+        palette: ['#1B4332', '#2D6A4F', '#D8F3DC'],
+        illustrationStyle: 'educational',
+      });
+      await this.generate();
+      return;
+    }
+
     const src = this.store.consumeLastSourceInput();
     if (!src) return;
 
@@ -139,6 +158,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
           grade: (src.grade as WorksheetDna['grade']) || '4ème Année',
           subject: (src.subject as WorksheetDna['subject']) || 'Mathématiques',
           topic: src.topic || src.file.filename || 'Exercices d\'entraînement',
+          topicId: src.topicId,
           language: (src.language as 'fr' | 'ar') || 'ar',
           palette: ['#1B4332', '#2D6A4F', '#D8F3DC'],
           illustrationStyle: 'educational',
@@ -152,6 +172,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
         grade: (src.grade as WorksheetDna['grade']) || '4ème Année',
         subject: (src.subject as WorksheetDna['subject']) || 'Mathématiques',
         topic: src.topic || src.text || 'Exercices d\'entraînement',
+        topicId: src.topicId,
         language: (src.language as 'fr' | 'ar') || 'ar',
         palette: ['#1B4332', '#2D6A4F', '#D8F3DC'],
         illustrationStyle: 'educational',

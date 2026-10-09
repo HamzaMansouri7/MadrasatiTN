@@ -13,7 +13,17 @@
       "relPath": "assets/resources/4eme-annee/francais/trimestre-1/grammaire-phrases/types-phrases.webp",
       "lang": "fr",
       "ref": "cnp-121410",
-      "labels": ["Français", "Grammaire", "Types de phrases", "4ème Année", "Fiche de Révision", "Infographic"]
+      "labels": [
+        "Français",
+        "Grammaire",
+        "Types de phrases",
+        "4ème Année",
+        "Fiche de Révision",
+        "Infographic"
+      ],
+      "topicId": "fr-4-ch1"
     }
-  ]
+  ],
+  "topicId": "fr-4-ch1",
+  "topic": "types-de-phrases-gns-gv"
 }

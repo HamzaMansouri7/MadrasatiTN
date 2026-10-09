@@ -8,4 +8,5 @@ export * from './memo-studio';
 export * from './create';
 export * from './lesson-plan';
 export * from './series';
+export * from './programme/programme-home';
 

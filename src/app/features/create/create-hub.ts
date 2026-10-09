@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { EducationStore, LanguageService, SourceInput } from '@core';
+import { EducationStore, LanguageService, SourceInput, chapterById, chapterTitle } from '@core';
 import { AiStatusComponent, SourceInputComponent } from '@shared';
 
 export type CreateOutputType =
@@ -129,8 +129,24 @@ export class CreateHubComponent implements OnInit {
     return sel ? this.outputOptions.find((o) => o.type === sel) ?? null : null;
   });
 
+  /** Pre-fills the source form when arriving from the programme (/create?topicId=…). */
+  readonly initialInput = signal<SourceInput | null>(null);
+
   ngOnInit() {
     this.route.queryParamMap.subscribe((params) => {
+      const ch = chapterById(params.get('topicId'));
+      if (ch) {
+        const language = ch.subject === 'Français' || ch.subject === 'Anglais' ? 'fr' : 'ar';
+        this.initialInput.set({
+          mode: 'topic',
+          topic: chapterTitle(ch, language),
+          topicId: ch.id,
+          grade: ch.grade,
+          subject: ch.subject,
+          trimester: ch.trimester,
+          language,
+        });
+      }
       const out = params.get('output') as CreateOutputType | null;
       if (out && out !== 'solve' && this.outputOptions.some((o) => o.type === out)) {
         this.selectedOutput.set(out);

@@ -79,6 +79,7 @@ export interface ExerciseItem {
   title: string;
   chapter: string;
   topic?: string;          // e.g. 'La multiplication', 'Les fractions'
+  topicId?: string;        // References a CurriculumChapter.id
   linkedCourseId?: string; // References a Course.id for Book→Chapter→Topic hierarchy
   subject: SubjectName;
   grade: GradeLevel;
@@ -127,6 +128,9 @@ export interface WorksheetDna {
   grade?: GradeLevel;
   subject?: SubjectName;
   topic?: string;
+  /** Official curriculum row id (CurriculumChapter.id) the sheet is grounded on. */
+  topicId?: string;
+  trimester?: Trimester;
   language?: 'fr' | 'ar' | 'en' | 'mixed';
   palette?: string[];
   layoutStyle?: string;
@@ -216,6 +220,8 @@ export interface Course {
   classId: string;
   chapter?: string;        // CNP chapter label (e.g. 'Chapitre 3 : Géométrie')
   topic?: string;          // Finer topic within chapter (e.g. 'Les droites perpendiculaires')
+  topicId?: string;        // Primary topic reference (CurriculumChapter.id)
+  topicIds?: string[];     // Multi-topic reference for full books/modules
   linkedCourseId?: string; // For exercises: references the parent Course.id
   subject: SubjectName;
   grade: GradeLevel;

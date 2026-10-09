@@ -25,7 +25,8 @@
         "محفوظات",
         "شعر",
         "4eme-annee"
-      ]
+      ],
+      "topicId": "ar-4-u7"
     },
     {
       "id": "cnp-101410-recitation-p152",
@@ -47,7 +48,9 @@
         "محفوظات",
         "شعر",
         "4eme-annee"
-      ]
+      ],
+      "topicId": "ar-4-u8"
     }
-  ]
+  ],
+  "topic": "douroub-al-hiwar-recitation-t3"
 }
