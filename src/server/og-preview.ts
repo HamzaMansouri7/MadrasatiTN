@@ -294,11 +294,14 @@ export function resolveOgPayload(
     const item = bdItems.find((b) => b.id === queryBd);
     if (item) {
       const kw = (item.pedagogy?.keywords || []).slice(0, 6).join(' · ');
+      const gradeNum = (item.grade || '').match(/[1-6]/)?.[0];
+      const gradeLabel = gradeNum ? `${gradeNum}${gradeNum === '1' ? 'ère' : 'ème'} Année` : item.grade;
+      const subjectLabel = item.subject === 'francais' ? 'Français' : item.subject === 'arabe' ? 'العربية' : item.subject || 'Expression orale';
       const { title, description: desc } = buildDocOg(
         item.title || 'Planche pédagogique',
         {
-          grade: item.grade,
-          subject: item.subject || 'Expression orale',
+          grade: gradeLabel,
+          subject: subjectLabel,
           trimester: item.trimester ? String(item.trimester) : undefined,
           docType: 'Bande dessinée',
         },
