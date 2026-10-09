@@ -2,19 +2,15 @@ import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { FirebaseService } from '../services/firebase.service';
 import { EducationStore } from '../services/education-store';
+import { guestMayOpen } from './guest-share';
 
-export const authGuard: CanActivateFn = (_route, _state) => {
+export const authGuard: CanActivateFn = (route) => {
   const firebase = inject(FirebaseService);
   const store = inject(EducationStore);
   const router = inject(Router);
 
-  // Allow read-only access to shared resources without login gate
-  if (
-    _route.queryParamMap.has('sheet') ||
-    _route.queryParamMap.has('memo') ||
-    _route.queryParamMap.has('doc') ||
-    _route.queryParamMap.has('topicId')
-  ) {
+  // Shared links stay viewable without login, but only on the page that serves them.
+  if (guestMayOpen(route.routeConfig?.path, (name) => route.queryParamMap.has(name))) {
     return true;
   }
 

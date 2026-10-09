@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { join } from 'node:path';
 import { existsSync, readFileSync } from 'node:fs';
 import { docsFolder } from './storage';
-import { chapterById, chapterTitle } from '../app/core/utils/curriculum.util';
+import { chapterById } from '../app/core/utils/curriculum.util';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from '../app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from '../app/core/data/cnp-books.data';

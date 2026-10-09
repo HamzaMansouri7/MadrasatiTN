@@ -6,11 +6,11 @@ import {
 } from '@angular/ssr/node';
 import express, { Request, Response, NextFunction } from 'express';
 import { join } from 'node:path';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 import { registerSources } from './server/knowledge-source';
-import { uploadsFolder, docsFolder } from './server/storage';
+import { uploadsFolder } from './server/storage';
 import { uploadRouter } from './server/routes/upload.routes';
-import { docsRouter, memoRouter, SHEET_ID_RE } from './server/routes/docs.routes';
+import { docsRouter, memoRouter } from './server/routes/docs.routes';
 import { aiRouter } from './server/routes/ai.routes';
 import { createOgPreviewMiddleware, loadBdItems } from './server/og-preview';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';

@@ -11,7 +11,8 @@ export type ShareAccent = 'green' | 'blue' | 'amber' | 'neutral';
   imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="relative inline-block text-left" (click)="$event.stopPropagation()">
+    <!-- Keeps card-level click handlers from firing when the share menu is used. -->
+    <div class="relative inline-block text-left" role="presentation" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
       @switch (variant()) {
         @case ('icon') {
           <button
@@ -92,9 +93,12 @@ export type ShareAccent = 'green' | 'blue' | 'amber' | 'neutral';
         </div>
 
         <!-- Backdrop overlay to dismiss popover -->
-        <div
-          class="fixed inset-0 z-40"
-          (click)="menuOpen.set(false)"></div>
+        <button
+          type="button"
+          tabindex="-1"
+          [attr.aria-label]="lang.tr('Fermer', 'إغلاق')"
+          class="fixed inset-0 z-40 cursor-default"
+          (click)="menuOpen.set(false)"></button>
       }
     </div>
   `,

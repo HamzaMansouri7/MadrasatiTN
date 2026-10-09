@@ -41,10 +41,9 @@ describe('DocCardComponent', () => {
     expect(el.textContent).toContain('Fiche d exercices sur les fractions simples.');
   });
 
-  it('should emit print, preview and copyLink events', () => {
+  it('should render a share button and emit print and preview events', () => {
     let printedCourse: Course | undefined;
     let previewedCourse: Course | undefined;
-    let copiedCourse: Course | undefined;
 
     component.print.subscribe((c) => {
       printedCourse = c;
@@ -52,19 +51,16 @@ describe('DocCardComponent', () => {
     component.preview.subscribe((c) => {
       previewedCourse = c;
     });
-    component.copyLink.subscribe((c) => {
-      copiedCourse = c;
-    });
 
-    const buttons = fixture.nativeElement.querySelectorAll('button') as NodeListOf<HTMLButtonElement>;
-    // Button 0: print, Button 1: copyLink, Button 2: preview
+    // Sharing moved into <app-share-button>; the card itself no longer emits copyLink.
+    expect(fixture.nativeElement.querySelector('app-share-button')).toBeTruthy();
+
+    const buttons = Array.from(fixture.nativeElement.querySelectorAll('button')) as HTMLButtonElement[];
+    // First button: print, last button: preview (the share menu buttons sit in between).
     buttons[0].click();
     expect(printedCourse?.id).toBe('c-1');
 
-    buttons[1].click();
-    expect(copiedCourse?.id).toBe('c-1');
-
-    buttons[2].click();
+    buttons[buttons.length - 1].click();
     expect(previewedCourse?.id).toBe('c-1');
   });
 });
