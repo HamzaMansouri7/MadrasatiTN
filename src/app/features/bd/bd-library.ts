@@ -56,7 +56,6 @@ export class BdLibraryComponent {
   readonly isLoading = signal(true);
   readonly activeGrade = signal<string>('all');
   readonly selectedIndex = signal<number | null>(null);
-  readonly linkCopied = signal(false);
 
   readonly grades = computed(() => {
     const seen = new Set(this.items().map((i) => i.grade));
@@ -95,7 +94,7 @@ export class BdLibraryComponent {
           }
         }),
       );
-      this.items.set(manifests.filter((m): m is ResourceManifest => !!m).flatMap((m) => m.items));
+      this.items.set(manifests.filter((m): m is ResourceManifest => !!m).flatMap((m) => m.items).filter((i) => i.topic === 'bandes-dessinees'));
 
       // Deep link: /discovery?bd=<itemId> opens the reader directly on that page.
       const target = new URLSearchParams(window.location.search).get('bd');
@@ -122,7 +121,6 @@ export class BdLibraryComponent {
 
   openReader(index: number) {
     this.selectedIndex.set(index);
-    this.linkCopied.set(false);
   }
 
   closeReader() {
@@ -180,56 +178,5 @@ export class BdLibraryComponent {
     const item = this.selectedItem();
     if (!item || typeof window === 'undefined') return '';
     return `${window.location.origin}/discovery?bd=${item.id}`;
-  }
-
-  async copyLink() {
-    const url = this.shareUrl();
-    if (!url) return;
-    try {
-      await navigator.clipboard.writeText(url);
-      this.linkCopied.set(true);
-      setTimeout(() => this.linkCopied.set(false), 2500);
-    } catch (err) {
-      console.error('Clipboard error:', err);
-    }
-  }
-
-  readonly postCopied = signal(false);
-
-  /** Copy a ready-to-paste social post: title, level, trimester, keywords, link. */
-  async copyAsPost() {
-    const item = this.selectedItem();
-    const url = this.shareUrl();
-    if (!item || !url) return;
-    const grade = this.gradeLabel(item.grade);
-    const trimester = this.lang.tr(`Trimestre ${item.trimester}`, `الثلاثي ${['', 'الأول', 'الثاني', 'الثالث'][item.trimester] || item.trimester}`);
-    const keywords = item.pedagogy?.keywords?.length
-      ? `\n${this.lang.tr('Mots à découvrir', 'مفردات نكتشفها مع أطفالنا')}: ${item.pedagogy.keywords.join('، ')}`
-      : '';
-    const post = this.lang.isArabic()
-      ? `📖 ${item.title}\n🎓 ${grade} · ${trimester} · التعبير الشفوي${keywords}\n\nتصفّحوها مع أطفالكم أو اطبعوها مجانًا من مكتبة مدرستي:\n${url}`
-      : `📖 ${item.title}\n🎓 ${grade} · ${trimester} · Expression orale${keywords}\n\nÀ lire avec votre enfant ou à imprimer gratuitement depuis la bibliothèque Madrasati :\n${url}`;
-    try {
-      await navigator.clipboard.writeText(post);
-      this.postCopied.set(true);
-      setTimeout(() => this.postCopied.set(false), 2500);
-    } catch (err) {
-      console.error('Clipboard error:', err);
-    }
-  }
-
-  async shareNative() {
-    const item = this.selectedItem();
-    const url = this.shareUrl();
-    if (!item || !url) return;
-    if (navigator.share) {
-      try {
-        await navigator.share({ title: item.title, url });
-      } catch {
-        // user cancelled — nothing to do
-      }
-    } else {
-      await this.copyLink();
-    }
   }
 }

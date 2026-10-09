@@ -94,7 +94,10 @@
             [url]="shareUrl()"
             [title]="item.title"
             [text]="item.title"
+            [details]="[gradeLabel(item.grade), 'Expression orale', 'T' + item.trimester]"
             variant="button"
+            placement="down"
+            align="end"
             accent="amber" />
           <button
             (click)="closeReader()"

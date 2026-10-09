@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal, untracked } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, BlogPost, PrintService, paginate } from '@core';
+import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, PrintService, paginate } from '@core';
 import { BlogCardComponent, CartoucheComponent, CurriculumTreeComponent, PaginationComponent, TeacherCardComponent, ShareButtonComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
@@ -419,6 +419,7 @@ interface RecitationItem {
                     [url]="'/discovery?doc=' + ex.id"
                     [title]="ex.title"
                     [text]="ex.promptText || ex.title"
+                    [details]="[ex.grade, ex.subject, ex.trimester]"
                     variant="icon"
                     accent="green" />
                   <button
@@ -596,6 +597,7 @@ interface RecitationItem {
                     [url]="'/discovery?doc=' + c.id"
                     [title]="c.title"
                     [text]="c.summary || c.title"
+                    [details]="[c.grade, c.subject, c.trimester]"
                     variant="icon"
                     accent="green" />
                 </div>
@@ -942,6 +944,7 @@ interface RecitationItem {
                 [url]="'/discovery?doc=' + c.id"
                 [title]="c.title"
                 [text]="c.summary || c.title"
+                [details]="[c.grade, c.subject, c.trimester]"
                 variant="button"
                 accent="neutral" />
               <button
@@ -1073,6 +1076,7 @@ interface RecitationItem {
                 [url]="'/discovery?doc=' + docEx.id"
                 [title]="docEx.title"
                 [text]="docEx.promptText || docEx.title"
+                [details]="[docEx.grade, docEx.subject, docEx.trimester]"
                 variant="button"
                 accent="neutral" />
               <button
@@ -1225,29 +1229,6 @@ export class PublicDiscoveryComponent {
         // Doc not found
       }
     });
-  }
-
-  async shareBlogCard(post: BlogPost) {
-    const url = typeof window !== 'undefined'
-      ? `${window.location.origin}/discovery?blog=${encodeURIComponent(post.id)}`
-      : '';
-    const title = this.lang.isArabic() && post.titleAr ? post.titleAr : post.title;
-
-    if (typeof navigator !== 'undefined' && navigator.share) {
-      try {
-        await navigator.share({
-          title,
-          text: post.excerpt,
-          url,
-        });
-        return;
-      } catch { /* share cancelled — fallback to clipboard */ }
-    }
-
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      await navigator.clipboard.writeText(url);
-      this.store.showToast(this.lang.t('toastLinkCopied'), 'info');
-    }
   }
 
   getSafePdfUrl(url: string): SafeResourceUrl {
@@ -1470,50 +1451,4 @@ export class PublicDiscoveryComponent {
   printImageDoc() {
     this.print.printCourse(this.imageDocModal());
   }
-
-  copyLink(ex: ExerciseItem) {
-    if (typeof navigator !== 'undefined') {
-      navigator.clipboard.writeText(`${window.location.origin}?doc=${ex.id}`);
-      alert(this.lang.tr('🔗 Lien copié dans le presse-papier !', '🔗 تم نسخ رابط الوثيقة بنجاح!'));
-    }
-  }
-
-  readonly copiedPostId = signal<string | null>(null);
-
-  /** Copy a ready-to-paste social post for an exercise: title, level, subject, excerpt, link. */
-  async copyExercisePost(ex: ExerciseItem) {
-    if (typeof navigator === 'undefined') return;
-    const url = `${window.location.origin}/?doc=${ex.id}`;
-    const meta = [ex.grade, ex.subject, ex.trimester, ex.docType].filter(Boolean).join(' · ');
-    const excerpt = (ex.promptText || '').slice(0, 140);
-    const post = this.lang.isArabic()
-      ? `📝 ${ex.title}\n🎓 ${meta}\n«${excerpt}…»\n\n${ex.hasCorrection === false ? '' : 'مع الإصلاح المفصل — '}مجانًا على مكتبة مدرستي:\n${url}`
-      : `📝 ${ex.title}\n🎓 ${meta}\n« ${excerpt}… »\n\n${ex.hasCorrection === false ? '' : 'Corrigé détaillé inclus — '}gratuit sur la bibliothèque Madrasati :\n${url}`;
-    try {
-      await navigator.clipboard.writeText(post);
-      this.copiedPostId.set(ex.id);
-      setTimeout(() => this.copiedPostId.set(null), 2500);
-    } catch (err) {
-      console.error('Clipboard error:', err);
-    }
-  }
-
-  /** Copy a ready-to-paste social post for a course: title, level, subject, summary, link. */
-  async copyCoursePost(c: Course) {
-    if (typeof navigator === 'undefined') return;
-    const url = `${window.location.origin}/?doc=${c.id}`;
-    const meta = [c.grade, c.subject, c.trimester, c.docType].filter(Boolean).join(' · ');
-    const excerpt = (c.summary || c.title || '').slice(0, 140);
-    const post = this.lang.isArabic()
-      ? `📚 ${c.title}\n🎓 ${meta}\n«${excerpt}…»\n\n${c.hasCorrection === false ? '' : 'مع الإصلاح — '}مجانًا على مكتبة مدرستي:\n${url}`
-      : `📚 ${c.title}\n🎓 ${meta}\n« ${excerpt}… »\n\n${c.hasCorrection === false ? '' : 'Corrigé inclus — '}gratuit sur la bibliothèque Madrasati :\n${url}`;
-    try {
-      await navigator.clipboard.writeText(post);
-      this.copiedPostId.set(c.id);
-      setTimeout(() => this.copiedPostId.set(null), 2500);
-    } catch (err) {
-      console.error('Clipboard error:', err);
-    }
-  }
-
 }

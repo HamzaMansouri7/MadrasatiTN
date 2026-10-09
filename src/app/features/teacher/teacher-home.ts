@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate } from '@core';
-import { TeacherAvatarComponent, BlogCardComponent, CartoucheComponent, DocCardComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem } from '@shared';
+import { TeacherAvatarComponent, BlogCardComponent, CartoucheComponent, DocCardComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem, copySharePost, joinDetails } from '@shared';
 
 export interface GeneratedExerciseResult {
   title: string;
@@ -1882,9 +1882,8 @@ export class TeacherHomeComponent {
   }
 
   copyDocLink(c: Course) {
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      navigator.clipboard.writeText(`${window.location.origin}?doc=${c.id}`);
-    }
+    if (typeof window === 'undefined') return;
+    void copySharePost(c.title, joinDetails([c.grade, c.subject, c.trimester]), `${window.location.origin}/discovery?doc=${c.id}`);
   }
 
   onAiSubjectChange(e: Event) {

@@ -94,6 +94,30 @@ export function renderOgHtml(html: string, payload: OgMetaPayload): string {
   return cleanHtml.replace('</head>', `${ogBlock}\n  </head>`);
 }
 
+const ARABIC_RE = /[؀-ۿ]/;
+
+/** Title carries level · subject · trimester (FB large-image cards hide og:description). */
+function buildDocOg(
+  rawTitle: string,
+  parts: { grade?: string; subject?: string; trimester?: string; docType?: string; topic?: string },
+  extra?: string,
+): { title: string; description: string } {
+  const isAr = ARABIC_RE.test(rawTitle);
+  const trim = parts.trimester && /^\d$/.test(String(parts.trimester).trim())
+    ? (isAr ? `الثلاثي ${parts.trimester}` : `Trimestre ${parts.trimester}`)
+    : parts.trimester;
+  const meta = [parts.grade, parts.subject, trim].filter(Boolean) as string[];
+  const title = meta.length ? `${rawTitle} — ${meta.join(' · ')}` : `${rawTitle} — Madrasati TN`;
+  const detail = [...meta, parts.docType, parts.topic].filter(Boolean).join(' · ');
+  const tail = isAr
+    ? 'مجاني على مدرستي تونس · مطابق للبرنامج الرسمي (CNP) · جاهز للطباعة A4'
+    : 'Gratuit sur Madrasati TN · conforme au programme officiel (CNP) · prêt à imprimer A4';
+  const description = [detail ? `🎓 ${detail}` : '', extra?.trim() ? extra.trim().slice(0, 160) : '', tail]
+    .filter(Boolean)
+    .join('\n');
+  return { title, description };
+}
+
 /** Resolves metadata and image for any shared entity on Madrasati TN */
 export function resolveOgPayload(
   req: Request,
@@ -121,12 +145,16 @@ export function resolveOgPayload(
     if (existsSync(docPath)) {
       try {
         const fileDoc = JSON.parse(readFileSync(docPath, 'utf8'));
-        const title = `${fileDoc.title || fileDoc.memoDoc?.title || "Document Pédagogique"} — Madrasati TN`;
-        const metaParts = [fileDoc.grade, fileDoc.subject, fileDoc.topic || fileDoc.memoDoc?.topic].filter(Boolean).join(' · ');
-        const description = metaParts
-          ? `${metaParts}. Ressource éducative conforme au programme officiel tunisien.`
-          : 'Ressource éducative gratuite — Madrasati TN.';
-        
+        const { title, description } = buildDocOg(
+          fileDoc.title || fileDoc.memoDoc?.title || 'Document Pédagogique',
+          {
+            grade: fileDoc.grade || fileDoc.memoDoc?.grade,
+            subject: fileDoc.subject || fileDoc.memoDoc?.subject,
+            trimester: fileDoc.trimester,
+            topic: fileDoc.topic || fileDoc.memoDoc?.topic,
+          },
+        );
+
         let img = fileDoc.thumb;
         if (!img && fileDoc.memoDoc?.blocks) {
           img = fileDoc.memoDoc.blocks.find((b: { type?: string; data?: { imageUrl?: string } }) => b?.data?.imageUrl)?.data?.imageUrl;
@@ -157,9 +185,11 @@ export function resolveOgPayload(
     ];
     const ex = allExercises.find((e) => e.id === docId);
     if (ex) {
-      const title = `${ex.title} — Madrasati TN`;
-      const meta = [ex.grade, ex.subject, ex.trimester, ex.docType].filter(Boolean).join(' · ');
-      const desc = `${meta}. ${ex.promptText?.slice(0, 160) || 'Exercice certifié pour le primaire tunisien.'}`;
+      const { title, description: desc } = buildDocOg(
+        ex.title,
+        { grade: ex.grade, subject: ex.subject, trimester: ex.trimester, docType: ex.docType },
+        ex.promptText,
+      );
       let img = ex.photoUrl;
       if (!img && ex.topicId) {
         const thumbFile = join(browserDistFolder, `assets/thumbs/curriculum/${ex.topicId}.webp`);
@@ -179,9 +209,11 @@ export function resolveOgPayload(
     ];
     const c = allCourses.find((item) => item.id === docId);
     if (c) {
-      const title = `${c.title} — Madrasati TN`;
-      const meta = [c.grade, c.subject, c.trimester, c.docType].filter(Boolean).join(' · ');
-      const desc = `${meta}. ${c.summary || c.title}`;
+      const { title, description: desc } = buildDocOg(
+        c.title,
+        { grade: c.grade, subject: c.subject, trimester: c.trimester, docType: c.docType },
+        c.summary,
+      );
       let img = c.imageUrls?.[0];
       if (!img && c.topicId) {
         const thumbFile = join(browserDistFolder, `assets/thumbs/curriculum/${c.topicId}.webp`);
@@ -218,11 +250,17 @@ export function resolveOgPayload(
     const bdItems = loadBdItems(browserDistFolder);
     const item = bdItems.find((b) => b.id === queryBd);
     if (item) {
-      const title = `${item.title || 'Planche pédagogique'} — Madrasati TN`;
       const kw = (item.pedagogy?.keywords || []).slice(0, 6).join(' · ');
-      const desc = kw
-        ? `${kw}. Planche de bande dessinée éducative conforme au programme officiel tunisien.`
-        : 'Planche de bande dessinée éducative pour le primaire tunisien — Madrasati TN.';
+      const { title, description: desc } = buildDocOg(
+        item.title || 'Planche pédagogique',
+        {
+          grade: item.grade,
+          subject: item.subject || 'Expression orale',
+          trimester: item.trimester ? String(item.trimester) : undefined,
+          docType: 'Bande dessinée',
+        },
+        kw,
+      );
       const imageUrl = item.relPath ? `${origin}/${item.relPath.replace(/^\//, '')}` : `${origin}/facebook_cover.jpg`;
       const pageUrl = `${origin}/discovery?bd=${encodeURIComponent(queryBd)}`;
       return { title, description: desc, imageUrl, pageUrl, type: 'article' };

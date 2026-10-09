@@ -26,6 +26,7 @@ import { ShareButtonComponent } from './share-button';
             [url]="doc().templateId === 'lesson-plan-official' ? '/lesson-plan/' + doc().id : '/infographic/' + doc().id"
             [title]="doc().title"
             [text]="doc().title"
+            [details]="[doc().grade, doc().subject, doc().trimester]"
             variant="button"
             accent="neutral" />
           @if (doc().isOwner) {
@@ -188,22 +189,6 @@ export class InfographicPageComponent {
       this.store.showToast(this.lang.tr('Échec de la publication', 'تعذّر النشر'), 'error');
     } finally {
       this.blogPublishing.set(false);
-    }
-  }
-
-  async shareDoc() {
-    if (typeof window === 'undefined') return;
-    const url = `${window.location.origin}/lesson-plan/${this.doc().id}`;
-    try {
-      if (navigator.share) {
-        await navigator.share({ title: this.doc().title, url });
-      } else {
-        await navigator.clipboard.writeText(url);
-      }
-      this.shareCopied.set(true);
-      setTimeout(() => this.shareCopied.set(false), 2500);
-    } catch {
-      // user cancelled the share sheet or clipboard denied
     }
   }
 

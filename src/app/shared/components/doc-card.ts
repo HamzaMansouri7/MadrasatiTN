@@ -99,6 +99,7 @@ export type DocCardAccent = 'blue' | 'green' | 'library';
             [url]="'/discovery?doc=' + course().id"
             [title]="course().title"
             [text]="course().summary || course().title"
+            [details]="[course().grade, course().subject, course().trimester]"
             variant="icon"
             [accent]="accent() === 'blue' ? 'blue' : 'green'" />
         </div>

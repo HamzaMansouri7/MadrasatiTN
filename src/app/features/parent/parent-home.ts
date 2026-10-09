@@ -1,4 +1,4 @@
-import { BlogCardComponent, CartoucheComponent, DocCardComponent, FilterBarComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem } from '@shared';
+import { BlogCardComponent, CartoucheComponent, DocCardComponent, FilterBarComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem, copySharePost, joinDetails } from '@shared';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, GradeLevel, SubjectName, PrintService, PRIMARY_GRADES, paginate } from '@core';
@@ -776,9 +776,8 @@ export class ParentHomeComponent {
   }
 
   copyDocLink(c: Course) {
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      navigator.clipboard.writeText(`${window.location.origin}?doc=${c.id}`);
-    }
+    if (typeof window === 'undefined') return;
+    void copySharePost(c.title, joinDetails([c.grade, c.subject, c.trimester]), `${window.location.origin}/discovery?doc=${c.id}`);
   }
 
   confirmRead(id: string) {

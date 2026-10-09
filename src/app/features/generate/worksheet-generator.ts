@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
 import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark, chapterById, chapterTitle } from '@core';
-import { CartoucheComponent, ShareButtonComponent } from '@shared';
+import { CartoucheComponent, ShareButtonComponent, copySharePost, joinDetails } from '@shared';
 
 /**
  * Phase 2 — Worksheet style-clone studio.
@@ -385,7 +385,13 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
 
   copyShareLink() {
     const url = this.shareUrl();
-    if (url) this.copyText(url, 'link');
+    if (!url) return;
+    void copySharePost(this.sharedTitle() || 'Fiche Madrasati TN', joinDetails([this.shareGrade(), this.shareSubject()]), url)
+      .then((ok) => {
+        if (!ok) return;
+        this.copied.set('link');
+        setTimeout(() => this.copied.set(null), 2000);
+      });
   }
 
   copyEmbed() {

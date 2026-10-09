@@ -22,3 +22,4 @@ export * from './components/series-panel';
 export * from './components/infographic-spec';
 export * from './components/spec-card';
 export * from './components/share-button';
+export * from './utils/share-post';

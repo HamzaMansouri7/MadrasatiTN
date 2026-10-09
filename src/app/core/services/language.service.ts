@@ -448,6 +448,21 @@ export class LanguageService {
     return subject;
   }
 
+  translateTrimester(trimester?: string | null): string {
+    if (!trimester) return '';
+    const norm = trimester.trim().toLowerCase();
+    if (norm.includes('1') || norm.includes('premier') || norm.includes('أول')) {
+      return this.lang() === 'ar' ? 'الثلاثي الأول' : 'Trimestre 1';
+    }
+    if (norm.includes('2') || norm.includes('deuxième') || norm.includes('ثان')) {
+      return this.lang() === 'ar' ? 'الثلاثي الثاني' : 'Trimestre 2';
+    }
+    if (norm.includes('3') || norm.includes('troisième') || norm.includes('ثالث')) {
+      return this.lang() === 'ar' ? 'الثلاثي الثالث' : 'Trimestre 3';
+    }
+    return trimester;
+  }
+
   t(key: string, params?: Record<string, string | number>): string {
     const entry = this.dictionary[key];
     if (!entry) return key;

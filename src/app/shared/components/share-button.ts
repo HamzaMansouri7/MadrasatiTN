@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '@core';
+import { buildSharePost, joinDetails } from '../utils/share-post';
 
 export type ShareVariant = 'button' | 'icon' | 'pill' | 'menu';
 export type ShareAccent = 'green' | 'blue' | 'amber' | 'neutral';
@@ -51,7 +52,8 @@ export type ShareAccent = 'green' | 'blue' | 'amber' | 'neutral';
       <!-- Popover Menu with Options (Facebook, WhatsApp, Copy Link, Native Share) -->
       @if (menuOpen()) {
         <div
-          class="absolute z-50 bottom-full mb-2 ltr:left-0 rtl:right-0 w-48 bg-white rounded-xl shadow-xl border border-[#E7DFCF] p-1.5 space-y-1 animate-in fade-in zoom-in-95 duration-150">
+          [class]="menuPosClass()"
+          class="absolute z-50 w-48 bg-white rounded-xl shadow-xl border border-[#E7DFCF] p-1.5 space-y-1 animate-in fade-in zoom-in-95 duration-150">
           
           <!-- Native Share Sheet (Mobile / Desktop supported) -->
           @if (canNativeShare()) {
@@ -112,6 +114,17 @@ export class ShareButtonComponent {
   readonly variant = input<ShareVariant>('button');
   readonly accent = input<ShareAccent>('green');
   readonly customLabel = input<string>('');
+  /** Where the menu opens; use 'down' + 'end' for buttons in a top header. */
+  readonly placement = input<'up' | 'down'>('up');
+  readonly align = input<'start' | 'end'>('start');
+  protected readonly menuPosClass = computed(() => {
+    const v = this.placement() === 'down' ? 'top-full mt-2' : 'bottom-full mb-2';
+    const h = this.align() === 'end' ? 'ltr:right-0 rtl:left-0' : 'ltr:left-0 rtl:right-0';
+    return `${v} ${h}`;
+  });
+  /** Level · subject · trimester line, shown in every shared/copied post. */
+  readonly details = input<readonly (string | null | undefined)[]>([]);
+  private readonly detailsLine = computed(() => joinDetails(this.details()));
 
   readonly menuOpen = signal(false);
   readonly copied = signal(false);
@@ -173,6 +186,11 @@ export class ShareButtonComponent {
     return `https://madrastihub.com${raw.startsWith('/') ? '' : '/'}${raw}`;
   }
 
+  /** One polished post for copy / WhatsApp / native share: title, details, link. */
+  private buildPost(url: string): string {
+    return buildSharePost(this.title(), this.detailsLine(), url);
+  }
+
   toggleMenu() {
     // If native share is available and user clicked a compact icon/button on mobile, prioritize native share sheet directly
     if (this.canNativeShare() && (this.variant() === 'icon' || this.variant() === 'pill')) {
@@ -189,7 +207,7 @@ export class ShareButtonComponent {
       if (typeof navigator !== 'undefined' && navigator.share) {
         await navigator.share({
           title: this.title(),
-          text: this.text() || this.title(),
+          text: this.detailsLine() ? `${this.title()}\n🎓 ${this.detailsLine()}` : (this.text() || this.title()),
           url: resolvedUrl,
         });
         return;
@@ -215,7 +233,7 @@ export class ShareButtonComponent {
   onWhatsAppShare() {
     this.menuOpen.set(false);
     const resolvedUrl = this.getResolvedUrl();
-    const msg = `${this.title()}\n${resolvedUrl}`;
+    const msg = this.buildPost(resolvedUrl);
     if (typeof window !== 'undefined') {
       window.open(
         `https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`,
@@ -230,7 +248,7 @@ export class ShareButtonComponent {
     const resolvedUrl = this.getResolvedUrl();
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       try {
-        await navigator.clipboard.writeText(resolvedUrl);
+        await navigator.clipboard.writeText(this.buildPost(resolvedUrl));
         this.copied.set(true);
         setTimeout(() => this.copied.set(false), 2500);
       } catch (err) {

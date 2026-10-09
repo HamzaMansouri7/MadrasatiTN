@@ -286,30 +286,6 @@ export class BlogReaderComponent {
     this.store.likeBlogPost(postId);
   }
 
-  async sharePost(post: BlogPost) {
-    const url = typeof window !== 'undefined'
-      ? `${window.location.origin}/discovery?blog=${encodeURIComponent(post.id)}`
-      : '';
-    const title = this.lang.isArabic() && post.titleAr ? post.titleAr : post.title;
-
-    if (typeof navigator !== 'undefined' && navigator.share) {
-      try {
-        await navigator.share({
-          title,
-          text: post.excerpt,
-          url,
-        });
-        return;
-      } catch { /* share cancelled — fallback to clipboard */
-      }
-    }
-
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      await navigator.clipboard.writeText(url);
-      this.store.showToast(this.lang.t('toastLinkCopied'), 'info');
-    }
-  }
-
   async submitComment(postId: string) {
     const content = this.newCommentText().trim();
     if (!content) return;

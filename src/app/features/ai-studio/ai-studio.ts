@@ -94,6 +94,7 @@ interface PresetOption {
                   [url]="'/infographic/' + doc()?.id"
                   [title]="doc()?.title || ''"
                   [text]="doc()?.title || ''"
+                  [details]="[doc()?.grade, doc()?.subject, doc()?.trimester]"
                   variant="button"
                   accent="neutral" />
                 <button
