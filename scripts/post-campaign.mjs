@@ -23,8 +23,20 @@ if (existsSync(envPath)) {
 }
 
 const PAGE_ID = process.env.FB_PAGE_ID;
-const TOKEN = process.env.FB_PAGE_TOKEN;
+let TOKEN = process.env.FB_PAGE_TOKEN;
 const VERSION = 'v21.0';
+
+/** Page feed needs a PAGE token; if .env holds a USER token, derive the page token. */
+async function resolvePageToken() {
+  try {
+    const dbg = await (await fetch(`https://graph.facebook.com/${VERSION}/debug_token?input_token=${TOKEN}&access_token=${TOKEN}`)).json();
+    if ((dbg.data || {}).type === 'PAGE') return;
+    const accts = await (await fetch(`https://graph.facebook.com/${VERSION}/me/accounts?fields=id,access_token&access_token=${TOKEN}`)).json();
+    const page = (accts.data || []).find((p) => String(p.id) === String(PAGE_ID));
+    if (page && page.access_token) { TOKEN = page.access_token; console.log('ℹ️  using derived Page token\n'); }
+    else console.log('⚠️  could not derive a Page token for FB_PAGE_ID; using token as-is\n');
+  } catch { /* use token as-is */ }
+}
 const args = process.argv.slice(2);
 const GO = args.includes('--go');
 const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
@@ -51,6 +63,8 @@ const posts = JSON.parse(readFileSync(join(process.cwd(), 'scripts/fb-campaign-p
   .filter((p) => !only || p.id === only);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+if (GO) await resolvePageToken();
 
 console.log(`${GO ? '🚀 LIVE' : '🧪 DRY RUN'} — ${posts.length} post(s)${only ? ` (only ${only})` : ''}\n`);
 
