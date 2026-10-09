@@ -39,6 +39,26 @@
         }
       </div>
 
+      @if (subjects().length > 1) {
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-semibold text-[#5B6B60] w-16 shrink-0">{{ lang.tr('Matière', 'المادة') }}</span>
+          <button
+            (click)="setSubject('all')"
+            [class]="activeSubject() === 'all' ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F]' : 'bg-[#FBF8F1] text-[#4A5A50] border-[#E7DFCF] hover:bg-[#F2ECDE]'"
+            class="px-4 py-2 rounded-xl text-sm font-medium border transition-colors cursor-pointer min-h-[40px]">
+            {{ lang.tr('Toutes', 'الكل') }}
+          </button>
+          @for (sub of subjects(); track sub) {
+            <button
+              (click)="setSubject(sub)"
+              [class]="activeSubject() === sub ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F]' : 'bg-[#FBF8F1] text-[#4A5A50] border-[#E7DFCF] hover:bg-[#F2ECDE]'"
+              class="px-4 py-2 rounded-xl text-sm font-medium border transition-colors cursor-pointer min-h-[40px]">
+              {{ subjectLabel(sub) }}
+            </button>
+          }
+        </div>
+      }
+
       @if (trimesters().length > 1) {
         <div class="flex flex-wrap items-center gap-2">
           <span class="text-xs font-semibold text-[#5B6B60] w-16 shrink-0">{{ lang.tr('Trimestre', 'الثلاثي') }}</span>
@@ -185,7 +205,7 @@
             [url]="shareUrl()"
             [title]="item.title"
             [text]="item.title"
-            [details]="[gradeLabel(item.grade), lang.tr('Expression orale', 'التعبير الشفوي'), trimesterLabel(item.trimester)]"
+            [details]="[gradeLabel(item.grade), subjectLabel(item.subject), lang.tr('Expression orale', 'التعبير الشفوي'), trimesterLabel(item.trimester)]"
             variant="button"
             placement="down"
             align="end"

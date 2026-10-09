@@ -43,6 +43,11 @@ export interface BdAlbum {
   pages: BdItem[];
 }
 
+const SUBJECT_LABELS: Record<string, { fr: string; ar: string }> = {
+  arabe: { fr: 'Arabe', ar: 'العربية' },
+  francais: { fr: 'Français', ar: 'الفرنسية' },
+};
+
 const GRADE_LABELS: Record<string, { fr: string; ar: string }> = {
   '1ere-annee': { fr: '1ère Année', ar: 'السنة الأولى' },
   '2eme-annee': { fr: '2ème Année', ar: 'السنة الثانية' },
@@ -66,6 +71,7 @@ export class BdLibraryComponent {
   readonly isLoading = signal(true);
   readonly activeGrade = signal<string>('all');
   readonly activeTrimester = signal<number>(0);
+  readonly activeSubject = signal<string>('all');
   readonly activeAlbumKey = signal<string | null>(null);
   readonly selectedIndex = signal<number | null>(null);
   readonly zoomed = signal(false);
@@ -75,6 +81,8 @@ export class BdLibraryComponent {
     return Object.keys(GRADE_LABELS).filter((g) => seen.has(g));
   });
 
+  readonly subjects = computed(() => [...new Set(this.items().map((i) => i.subject))].filter((x) => x in SUBJECT_LABELS));
+
   readonly trimesters = computed(() =>
     [...new Set(this.items().map((i) => i.trimester))].sort((a, b) => a - b),
   );
@@ -82,7 +90,10 @@ export class BdLibraryComponent {
   private readonly levelItems = computed(() => {
     const grade = this.activeGrade();
     const trim = this.activeTrimester();
-    return this.items().filter((i) => (grade === 'all' || i.grade === grade) && (!trim || i.trimester === trim));
+    const subject = this.activeSubject();
+    return this.items().filter(
+      (i) => (grade === 'all' || i.grade === grade) && (!trim || i.trimester === trim) && (subject === 'all' || i.subject === subject),
+    );
   });
 
   readonly albums = computed<BdAlbum[]>(() => {
@@ -171,6 +182,17 @@ export class BdLibraryComponent {
 
   setGrade(grade: string) {
     this.activeGrade.set(grade);
+    this.activeAlbumKey.set(null);
+    this.selectedIndex.set(null);
+  }
+
+  subjectLabel(slug: string): string {
+    const l = SUBJECT_LABELS[slug];
+    return l ? this.lang.tr(l.fr, l.ar) : slug;
+  }
+
+  setSubject(subject: string) {
+    this.activeSubject.set(subject);
     this.activeAlbumKey.set(null);
     this.selectedIndex.set(null);
   }
@@ -278,7 +300,7 @@ export class BdLibraryComponent {
   }
 
   albumDetails(album: BdAlbum): string[] {
-    return [this.gradeLabel(album.grade), this.lang.tr('Expression orale', 'التعبير الشفوي'), this.trimesterLabel(album.trimester)];
+    return [this.gradeLabel(album.grade), this.subjectLabel(album.cover.subject), this.lang.tr('Expression orale', 'التعبير الشفوي'), this.trimesterLabel(album.trimester)];
   }
 
   shareUrl(): string {
