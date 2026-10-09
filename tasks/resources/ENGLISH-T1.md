@@ -2,7 +2,7 @@
 
 **PARKED (2026-10-09):** owner found no English resources on CNP. Do not run until a source exists.
 
-For Antigravity. Follow [RESOURCE-PIPELINE.md](../../RESOURCE-PIPELINE.md) exactly. This file only supplies the per-batch inputs.
+For Antigravity. Follow [RESOURCE-PIPELINE.md](../docs/RESOURCE-PIPELINE.md) exactly. This file only supplies the per-batch inputs.
 
 Why: a parent asked for English first-trimester material. Today the app only links the 3 CNP PDFs ([cnp-books.data.ts](../../src/app/core/data/cnp-books.data.ts)), with no sliced pages in `public/assets/resources/`.
 

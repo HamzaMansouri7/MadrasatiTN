@@ -1,6 +1,6 @@
 # PLAN for Antigravity — Navigation, Create hub, Series feature
 
-Written by Claude Code, 2026-10-08, for Antigravity to execute end to end. Owner: Hamza. Read this whole file first, then [CLAUDE.md](CLAUDE.md), [DESIGN.md](DESIGN.md), [GEMINI.md](GEMINI.md), [PLAN-infographic.md](PLAN-infographic.md) and [docs/infographic-target-prompt.ar.md](docs/infographic-target-prompt.ar.md).
+Written by Claude Code, 2026-10-08, for Antigravity to execute end to end. Owner: Hamza. Read this whole file first, then [CLAUDE.md](../CLAUDE.md), [DESIGN.md](../DESIGN.md), [GEMINI.md](../GEMINI.md), [PLAN-infographic.md](PLAN-infographic.md) and [docs/infographic-target-prompt.ar.md](infographic-target-prompt.ar.md).
 
 Nothing below is built yet. Facts marked *(unverified)* come from analysis, not from running the app: confirm in the code before relying on them.
 

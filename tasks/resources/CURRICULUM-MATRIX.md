@@ -1,6 +1,6 @@
 # Batch — Curriculum matrix (grade × subject × trimester × topic)
 
-For Antigravity. Data work only, no UI. Follows the spirit of [RESOURCE-PIPELINE.md](../../RESOURCE-PIPELINE.md): official sources, exact page refs, never guess, never commit.
+For Antigravity. Data work only, no UI. Follows the spirit of [RESOURCE-PIPELINE.md](../docs/RESOURCE-PIPELINE.md): official sources, exact page refs, never guess, never commit.
 
 ## Why
 

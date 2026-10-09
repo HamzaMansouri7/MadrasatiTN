@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, HostListener, computed, inject, sig
 import { LanguageService, escapeHtml } from '@core';
 import { ShareButtonComponent } from '@shared';
 
-/** One page/item inside a resource manifest (shape defined in RESOURCE-PIPELINE.md). */
+/** One page/item inside a resource manifest (shape defined in docs/RESOURCE-PIPELINE.md). */
 export interface BdItem {
   id: string;
   grade: string;
@@ -16,7 +16,7 @@ export interface BdItem {
   lang: string;
   ref: string;
   labels: string[];
-  /** Zero-hallucination oral-expression support (see RESOURCE-PIPELINE.md §3b). */
+  /** Zero-hallucination oral-expression support (see docs/RESOURCE-PIPELINE.md §3b). */
   pedagogy?: {
     /** Objects/actions physically visible in the image (vision-extracted). */
     keywords: string[];

@@ -36,7 +36,7 @@ Env: server AI endpoints require `GEMINI_API_KEY`; if unset, `ai` is null and `/
 
 **AI is server-side only.** 12 Express endpoints under `/api/ai/*` call `gemini-2.5-flash` via `@google/genai` — all through the shared `aiGenerateJSON` helper (JSON mode + responseSchema + 1 retry) and grounded in the official curriculum via the KnowledgeSource layer ([src/server/knowledge-source.ts](src/server/knowledge-source.ts)). Extend grounding by adding adapters/sources there — never inline curriculum text in endpoint prompts. `language` param defaults to `'ar'` (Arabic is primary). Key never reaches the client.
 
-**Extracted curriculum resources** (sliced CNP book pages) live in `public/assets/resources/<grade>/<subject>/<trimester>/<topic>/` with a per-topic `manifest.json`, all registered in `public/assets/resources/index.json` (loaded by the `/bd` viewer). Extraction rules: [RESOURCE-PIPELINE.md](RESOURCE-PIPELINE.md); images are WebP max 1600px (`scripts/optimize_resources.py`).
+**Extracted curriculum resources** (sliced CNP book pages) live in `public/assets/resources/<grade>/<subject>/<trimester>/<topic>/` with a per-topic `manifest.json`, all registered in `public/assets/resources/index.json` (loaded by the `/bd` viewer). Extraction rules: [RESOURCE-PIPELINE.md](docs/RESOURCE-PIPELINE.md); images are WebP max 1600px (`scripts/optimize_resources.py`).
 
 **Import via barrels + aliases.** Always `@core` / `@shared` / `@features` (tsconfig paths). `src/app/{services,models,data}/*` are legacy re-export shims pointing at `core/*` — don't add code there; import from `@core`.
 
