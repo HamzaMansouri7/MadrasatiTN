@@ -208,11 +208,15 @@
           </div>
         </div>
 
-        <!-- Facebook -->
-        <button type="button" (click)="shareOnFacebook()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#1877F2] text-white font-semibold text-sm cursor-pointer">
-          <span class="material-icons text-base">thumb_up</span>
-          {{ lang.t('generatorShareFacebook') }}
-        </button>
+        <!-- Share & Social Options -->
+        <div class="flex items-center gap-3 pt-1">
+          <app-share-button
+            [url]="url"
+            [title]="sharedTitle() || 'Fiche Madrasati TN'"
+            [text]="sharedTitle() || 'Fiche Madrasati TN'"
+            variant="button"
+            accent="green" />
+        </div>
       </div>
     }
 

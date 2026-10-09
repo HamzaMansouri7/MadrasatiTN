@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, output } from '@angular/core';
 import { Course, LanguageService } from '@core';
+import { ShareButtonComponent } from './share-button';
 
 export type DocCardAccent = 'blue' | 'green' | 'library';
 
 @Component({
   selector: 'app-doc-card',
   standalone: true,
+  imports: [ShareButtonComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div [class]="containerClasses()">
@@ -93,13 +95,12 @@ export type DocCardAccent = 'blue' | 'green' | 'library';
             <span class="material-icons text-xs" aria-hidden="true">print</span>
             {{ lang.t('printA4Btn') }}
           </button>
-          <button
-            type="button"
-            (click)="copyLink.emit(course())"
-            [class]="copyBtnClass()">
-            <span class="material-icons text-xs" aria-hidden="true">link</span>
-            {{ lang.tr('Copier le lien', 'نسخ الرابط') }}
-          </button>
+          <app-share-button
+            [url]="'/discovery?doc=' + course().id"
+            [title]="course().title"
+            [text]="course().summary || course().title"
+            variant="icon"
+            [accent]="accent() === 'blue' ? 'blue' : 'green'" />
         </div>
 
         <button

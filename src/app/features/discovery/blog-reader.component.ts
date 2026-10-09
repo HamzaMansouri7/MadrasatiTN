@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { BlogPost, EducationStore, FirebaseService, LanguageService } from '@core';
+import { ShareButtonComponent } from '@shared';
 
 @Component({
   selector: 'app-blog-reader',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
+  imports: [ShareButtonComponent],
   template: `
     @if (store.selectedBlogPost(); as post) {
       <article class="max-w-4xl mx-auto space-y-8 animate-fade-in pb-16">
@@ -41,13 +43,13 @@ import { BlogPost, EducationStore, FirebaseService, LanguageService } from '@cor
             </button>
 
             <!-- Share Button -->
-            <button
-              type="button"
-              (click)="sharePost(post)"
-              class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#14251D] bg-white hover:bg-[#F8F5EE] border border-[#E7DFCF] px-3.5 py-2 rounded-xl transition-all cursor-pointer shadow-xs">
-              <span class="material-icons text-base text-[#2D6A4F]">share</span>
-              <span>{{ lang.t('shareArticle') }}</span>
-            </button>
+            <app-share-button
+              [url]="'/discovery?blog=' + post.id"
+              [title]="lang.isArabic() && post.titleAr ? post.titleAr : post.title"
+              [text]="post.excerpt || post.title"
+              variant="button"
+              accent="neutral"
+              [customLabel]="lang.t('shareArticle')" />
           </div>
         </div>
 

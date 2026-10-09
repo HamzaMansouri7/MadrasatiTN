@@ -13,7 +13,7 @@ import {
   SpecImageTarget,
   TRIMESTERS,
 } from '@core';
-import { AiStatusComponent, InfographicSpecComponent } from '@shared';
+import { AiStatusComponent, InfographicSpecComponent, ShareButtonComponent } from '@shared';
 
 interface PresetOption {
   id: InfographicPreset | 'auto';
@@ -32,7 +32,7 @@ interface PresetOption {
   selector: 'app-ai-studio',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, AiStatusComponent, InfographicSpecComponent],
+  imports: [RouterLink, AiStatusComponent, InfographicSpecComponent, ShareButtonComponent],
   template: `
     <div class="min-h-screen bg-[#FBF8F1] text-[#14251D] pb-16">
       <main class="max-w-[1280px] mx-auto px-4 sm:px-6 pt-6 space-y-5">
@@ -90,13 +90,12 @@ interface PresetOption {
                 {{ lang.tr('Régénérer', 'إعادة التوليد') }}
               </button>
               @if (doc()) {
-                <button
-                  type="button"
-                  (click)="share()"
-                  class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 px-4 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-2 cursor-pointer transition-colors">
-                  <span class="material-icons text-base" aria-hidden="true">{{ shareCopied() ? 'check' : 'share' }}</span>
-                  {{ shareCopied() ? lang.tr('Lien copié', 'تم نسخ الرابط') : lang.tr('Partager', 'مشاركة') }}
-                </button>
+                <app-share-button
+                  [url]="'/infographic/' + doc()?.id"
+                  [title]="doc()?.title || ''"
+                  [text]="doc()?.title || ''"
+                  variant="button"
+                  accent="neutral" />
                 <button
                   type="button"
                   (click)="print()"

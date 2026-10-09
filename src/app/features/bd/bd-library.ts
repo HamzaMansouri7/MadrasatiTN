@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, HostListener, computed, inject, signal } from '@angular/core';
 import { LanguageService, escapeHtml } from '@core';
+import { ShareButtonComponent } from '@shared';
 
 /** One page/item inside a resource manifest (shape defined in RESOURCE-PIPELINE.md). */
 export interface BdItem {
@@ -43,6 +44,8 @@ const GRADE_LABELS: Record<string, { fr: string; ar: string }> = {
 
 @Component({
   selector: 'app-bd-library',
+  standalone: true,
+  imports: [ShareButtonComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './bd-library.html',
 })

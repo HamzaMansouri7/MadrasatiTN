@@ -12,6 +12,7 @@ import { uploadsFolder, docsFolder } from './server/storage';
 import { uploadRouter } from './server/routes/upload.routes';
 import { docsRouter, memoRouter, SHEET_ID_RE } from './server/routes/docs.routes';
 import { aiRouter } from './server/routes/ai.routes';
+import { createOgPreviewMiddleware, loadBdItems } from './server/og-preview';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
 import { CNP_PRIMARY_COURSES } from './app/core/data/cnp-books.data';
@@ -134,58 +135,6 @@ app.use(
   }),
 );
 
-/**
- * Phase 4 — per-document Open Graph tags for social crawlers (Facebook, etc.).
- * When a crawler fetches /generate?sheet=ID we inject the worksheet's title + preview
- * image so the shared link renders a polished card. Humans fall through to normal SSR.
- */
-const CRAWLER_UA_RE =
-  /facebookexternalhit|facebot|twitterbot|whatsapp|linkedinbot|slackbot|telegrambot|discordbot|pinterest|embedly|redditbot|google-inspectiontool|bingbot/i;
-
-function escapeHtmlAttr(value: string): string {
-  return value
-    .replace(/&/g, '&amp;')
-    .replace(/"/g, '&quot;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-}
-
-// OG tags for shared BD pages (/discovery?bd=ITEM_ID) — same crawler-only pattern as /generate.
-const BD_ID_RE = /^[A-Za-z0-9_-]{4,80}$/;
-interface BdManifestItem {
-  id: string;
-  title?: string;
-  grade?: string;
-  subject?: string;
-  topic?: string;
-  relPath?: string;
-  trimester?: number;
-  ref?: string;
-  pedagogy?: { keywords?: string[]; structures?: string[]; verifiedBy?: string | null };
-}
-let bdItemsCache: BdManifestItem[] | null = null;
-
-function loadBdItems(): BdManifestItem[] {
-  if (bdItemsCache) return bdItemsCache;
-  try {
-    const idx = JSON.parse(readFileSync(join(browserDistFolder, 'assets/resources/index.json'), 'utf8'));
-    const paths: string[] = Array.isArray(idx.manifests) ? idx.manifests : [];
-    bdItemsCache = paths.flatMap((p) => {
-      try {
-        const m = JSON.parse(readFileSync(join(browserDistFolder, p), 'utf8'));
-        return Array.isArray(m.items) ? (m.items as BdManifestItem[]) : [];
-      } catch {
-        return [];
-      }
-    });
-  } catch {
-    bdItemsCache = [];
-  }
-  return bdItemsCache;
-}
-
-// Annotated BD pages feed the AI grounding layer: an exercise about "الحديقة"
-// can cite the official silent-comic page that teaches those exact words.
 const BD_GRADE_LABELS: Record<string, string> = {
   '1ere-annee': '1ère Année',
   '2eme-annee': '2ème Année',
@@ -204,7 +153,7 @@ const BD_SUBJECT_LABELS: Record<string, string> = {
 };
 try {
   registerSources(
-    loadBdItems()
+    loadBdItems(browserDistFolder)
       .filter((i) => (i.pedagogy?.keywords?.length ?? 0) > 0)
       .map((i) => ({
         id: `bdpage-${i.id}`,
@@ -222,235 +171,8 @@ try {
   console.warn('BD grounding registration skipped:', err);
 }
 
-app.get('/discovery', (req: Request, res: Response, next): void => {
-  const ua = req.get('user-agent') || '';
-  const itemId = String((req.query['bd'] as string) || '');
-  if (!CRAWLER_UA_RE.test(ua) || !BD_ID_RE.test(itemId)) {
-    next();
-    return;
-  }
-
-  const items = loadBdItems();
-  const item = items.find((i) => i.id === itemId);
-  if (!item) {
-    next();
-    return;
-  }
-
-  try {
-    const indexPath = join(browserDistFolder, 'index.html');
-    let html = readFileSync(indexPath, 'utf8');
-
-    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
-    const host = req.get('x-forwarded-host') || req.get('host') || '';
-    const origin = `${proto}://${host}`;
-
-    const title = escapeHtmlAttr(`${item.title || 'Planche pédagogique'} — Madrasati TN`);
-    const kw = (item.pedagogy?.keywords || []).slice(0, 6).join(' · ');
-    const desc = escapeHtmlAttr(
-      kw
-        ? `${kw}. Planche de bande dessinée éducative conforme au programme officiel tunisien.`
-        : 'Planche de bande dessinée éducative pour le primaire tunisien — Madrasati TN.',
-    );
-    const imageUrl = escapeHtmlAttr(item.relPath ? `${origin}${item.relPath}` : `${origin}/logo.jpg`);
-    const pageUrl = escapeHtmlAttr(`${origin}/discovery?bd=${itemId}`);
-
-    html = html.replace(
-      /\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi,
-      '',
-    );
-
-    const ogBlock = `
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${desc}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:url" content="${pageUrl}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${desc}" />
-    <meta name="twitter:image" content="${imageUrl}" />`;
-
-    html = html.replace('</head>', `${ogBlock}\n  </head>`);
-
-    res.set('Content-Type', 'text/html; charset=utf-8');
-    res.send(html);
-  } catch (err) {
-    console.error('Error injecting OG tags for BD item:', err);
-    next();
-  }
-});
-
-// Phase 2 — Social Crawler Dynamic OG Tag Injection for Landing Page
-app.get('/', (req: Request, res: Response, next): void => {
-  const ua = req.get('user-agent') || '';
-  if (!CRAWLER_UA_RE.test(ua)) {
-    next();
-    return;
-  }
-
-  try {
-    const indexPath = join(browserDistFolder, 'index.html');
-    let html = readFileSync(indexPath, 'utf8');
-
-    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
-    const host = req.get('x-forwarded-host') || req.get('host') || '';
-    const origin = `${proto}://${host}`;
-
-    const title = escapeHtmlAttr('مدرستي تونس — الفضاء التربوي التونسي للدروس والتمارين والامتحانات');
-    const description = escapeHtmlAttr(
-      'منصة تربوية تونسية مجانية تجمع المعلمين والأولياء: 38 كتاب مدرسي رسمي (CNP)، توليد تمارين وامتحانات A4 قابلة للطباعة بالذكاء الاصطناعي، ومتابعة فورية للواجبات.',
-    );
-    const imageUrl = escapeHtmlAttr(`${origin}/logo.jpg`);
-    const pageUrl = escapeHtmlAttr(`${origin}/`);
-
-    html = html.replace(
-      /\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi,
-      '',
-    );
-
-    const ogBlock = `
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:url" content="${pageUrl}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />
-    <meta name="twitter:image" content="${imageUrl}" />`;
-
-    html = html.replace('</head>', `${ogBlock}\n  </head>`);
-
-    res.set('Content-Type', 'text/html; charset=utf-8');
-    res.send(html);
-  } catch (err) {
-    console.error('Error injecting OG tags for landing page:', err);
-    next();
-  }
-});
-
-app.get('/generate', (req: Request, res: Response, next): void => {
-  const ua = req.get('user-agent') || '';
-  const sheetId = String((req.query['sheet'] as string) || '');
-  if (!CRAWLER_UA_RE.test(ua) || !SHEET_ID_RE.test(sheetId)) {
-    next();
-    return;
-  }
-
-  const filePath = join(docsFolder, `${sheetId}.json`);
-  if (!existsSync(filePath)) {
-    next();
-    return;
-  }
-
-  try {
-    const doc = JSON.parse(readFileSync(filePath, 'utf8'));
-    const indexPath = join(browserDistFolder, 'index.html');
-    let html = readFileSync(indexPath, 'utf8');
-
-    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
-    const host = req.get('x-forwarded-host') || req.get('host') || '';
-    const origin = `${proto}://${host}`;
-
-    const title = escapeHtmlAttr(`${doc.title || "Fiche d'exercices"} — Madrasati TN`);
-    const descParts = [doc.grade, doc.subject, doc.topic].filter(Boolean).join(' · ');
-    const description = escapeHtmlAttr(
-      descParts
-        ? `${descParts}. Fiche d'exercices gratuite — Madrasati TN.`
-        : "Fiche d'exercices gratuite pour l'école primaire tunisienne — Madrasati TN.",
-    );
-    const firstImg = (doc.exercises || []).find((e: { imageUrl?: string }) => e.imageUrl)?.imageUrl;
-    const imageUrl = escapeHtmlAttr(firstImg ? `${origin}${firstImg}` : `${origin}/logo.jpg`);
-    const pageUrl = escapeHtmlAttr(`${origin}/generate?sheet=${sheetId}`);
-
-    html = html.replace(
-      /\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi,
-      '',
-    );
-
-    const ogBlock = `
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:url" content="${pageUrl}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />
-    <meta name="twitter:image" content="${imageUrl}" />`;
-
-    html = html.replace('</head>', `${ogBlock}\n  </head>`);
-
-    res.set('Content-Type', 'text/html; charset=utf-8');
-    res.send(html);
-  } catch (err) {
-    console.error('Error injecting OG tags for sheet:', err);
-    next();
-  }
-});
-
-app.get('/memo-studio', (req: Request, res: Response, next): void => {
-  const ua = req.get('user-agent') || '';
-  const memoId = String((req.query['memo'] as string) || '');
-  if (!CRAWLER_UA_RE.test(ua) || !SHEET_ID_RE.test(memoId)) {
-    next();
-    return;
-  }
-
-  const filePath = join(docsFolder, `${memoId}.json`);
-  if (!existsSync(filePath)) {
-    next();
-    return;
-  }
-
-  try {
-    const doc = JSON.parse(readFileSync(filePath, 'utf8'));
-    const indexPath = join(browserDistFolder, 'index.html');
-    let html = readFileSync(indexPath, 'utf8');
-
-    const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
-    const host = req.get('x-forwarded-host') || req.get('host') || '';
-    const origin = `${proto}://${host}`;
-
-    const title = escapeHtmlAttr(`${doc.title || doc.memoDoc?.title || 'Fiche Mémo'} — Madrasati TN`);
-    const descParts = [doc.grade, doc.subject, doc.memoDoc?.subtitle || doc.memoDoc?.topic].filter(Boolean).join(' · ');
-    const description = escapeHtmlAttr(
-      descParts
-        ? `${descParts}. Fiche mémo visuelle interactive pour l'école primaire tunisienne — Madrasati TN.`
-        : "Fiche mémo visuelle interactive pour l'école primaire tunisienne — Madrasati TN.",
-    );
-    const firstImg =
-      doc.thumb ||
-      (doc.memoDoc?.blocks || []).find((b: { type?: string; data?: { imageUrl?: string } }) => b?.data?.imageUrl)?.data?.imageUrl;
-    const imageUrl = escapeHtmlAttr(firstImg ? `${origin}${firstImg}` : `${origin}/logo.jpg`);
-    const pageUrl = escapeHtmlAttr(`${origin}/memo-studio?memo=${memoId}`);
-
-    html = html.replace(
-      /\s*<meta\s+(?:property="og:(?:title|description|image|url|type)"|name="twitter:(?:card|title|description|image)")[^>]*>/gi,
-      '',
-    );
-
-    const ogBlock = `
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:url" content="${pageUrl}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />
-    <meta name="twitter:image" content="${imageUrl}" />`;
-
-    html = html.replace('</head>', `${ogBlock}\n  </head>`);
-
-    res.set('Content-Type', 'text/html; charset=utf-8');
-    res.send(html);
-  } catch (err) {
-    console.error('Error injecting OG tags for memo:', err);
-    next();
-  }
-});
+// 4. Unified Social Crawler Dynamic OG Tag Injection Engine
+app.use(createOgPreviewMiddleware(browserDistFolder));
 
 // Phase 2 — Dynamic SEO: robots.txt and XML sitemap
 app.get('/robots.txt', (req: Request, res: Response) => {

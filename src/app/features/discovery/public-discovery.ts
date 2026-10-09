@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, signal, u
 import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, BlogPost, PrintService, paginate } from '@core';
-import { BlogCardComponent, CartoucheComponent, CurriculumTreeComponent, PaginationComponent, TeacherCardComponent } from '@shared';
+import { BlogCardComponent, CartoucheComponent, CurriculumTreeComponent, PaginationComponent, TeacherCardComponent, ShareButtonComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -14,7 +14,7 @@ interface RecitationItem {
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent, BlogCardComponent, TeacherCardComponent, CurriculumTreeComponent],
+  imports: [RouterLink, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent, BlogCardComponent, TeacherCardComponent, CurriculumTreeComponent, ShareButtonComponent],
   template: `
     <div class="space-y-6">
       
@@ -415,20 +415,12 @@ interface RecitationItem {
                     [title]="store.isWatched(ex.id, 'exercise') ? lang.tr('Retirer des favoris', 'إزالة من المحفوظات') : lang.tr('Ajouter aux favoris', 'حفظ في المحفوظات')">
                     <span class="material-icons text-[18px]">{{ store.isWatched(ex.id, 'exercise') ? 'bookmark' : 'bookmark_border' }}</span>
                   </button>
-                  <button
-                    (click)="copyExercisePost(ex)"
-                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]"
-                    [attr.aria-label]="lang.tr('Copier comme publication', 'نسخ كمنشور')"
-                    [title]="copiedPostId() === ex.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور')">
-                    <span class="material-icons text-[18px]">{{ copiedPostId() === ex.id ? 'check' : 'post_add' }}</span>
-                  </button>
-                  <button
-                    (click)="copyLink(ex)"
-                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]"
-                    [attr.aria-label]="lang.tr('Copier le lien', 'نسخ الرابط')"
-                    [title]="lang.tr('Copier le lien', 'نسخ الرابط')">
-                    <span class="material-icons text-[18px]">link</span>
-                  </button>
+                  <app-share-button
+                    [url]="'/discovery?doc=' + ex.id"
+                    [title]="ex.title"
+                    [text]="ex.promptText || ex.title"
+                    variant="icon"
+                    accent="green" />
                   <button
                     (click)="reportDocument(ex)"
                     [disabled]="ex.isReported"
@@ -600,13 +592,12 @@ interface RecitationItem {
                     [title]="store.isWatched(c.id, 'course') ? lang.tr('Retirer des favoris', 'إزالة من المحفوظات') : lang.tr('Ajouter aux favoris', 'حفظ في المحفوظات')">
                     <span class="material-icons text-[18px]">{{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}</span>
                   </button>
-                  <button
-                    (click)="copyCoursePost(c)"
-                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]"
-                    [attr.aria-label]="lang.tr('Copier comme publication', 'نسخ كمنشور')"
-                    [title]="copiedPostId() === c.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور')">
-                    <span class="material-icons text-[18px]">{{ copiedPostId() === c.id ? 'check' : 'post_add' }}</span>
-                  </button>
+                  <app-share-button
+                    [url]="'/discovery?doc=' + c.id"
+                    [title]="c.title"
+                    [text]="c.summary || c.title"
+                    variant="icon"
+                    accent="green" />
                 </div>
               </div>
 
@@ -947,6 +938,12 @@ interface RecitationItem {
               <p class="text-[11px] text-[#6B7A70]">{{ c.subject }} • {{ c.grade }}@if (c.docType) { • {{ c.docType }}}</p>
             </div>
             <div class="flex items-center gap-2 shrink-0">
+              <app-share-button
+                [url]="'/discovery?doc=' + c.id"
+                [title]="c.title"
+                [text]="c.summary || c.title"
+                variant="button"
+                accent="neutral" />
               <button
                 (click)="printImageDoc()"
                 class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 cursor-pointer transition-colors">
@@ -1071,12 +1068,20 @@ interface RecitationItem {
               {{ lang.tr('Fermer', 'إغلاق') }}
             </button>
 
-            <button
-              (click)="triggerPrintDialog()"
-              class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-sm transition-colors">
-              <span class="material-icons text-base">print</span>
-              {{ lang.t('printBtn') }}
-            </button>
+            <div class="flex items-center gap-2">
+              <app-share-button
+                [url]="'/discovery?doc=' + docEx.id"
+                [title]="docEx.title"
+                [text]="docEx.promptText || docEx.title"
+                variant="button"
+                accent="neutral" />
+              <button
+                (click)="triggerPrintDialog()"
+                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-6 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-sm transition-colors">
+                <span class="material-icons text-base">print</span>
+                {{ lang.t('printBtn') }}
+              </button>
+            </div>
           </div>
 
         </div>
@@ -1163,15 +1168,61 @@ export class PublicDiscoveryComponent {
       }
     });
 
-    // Phase 3 — when a shared link (?doc=ID) resolves, open that exercise's printable modal.
-    effect(() => {
+    // Phase 3 — when a shared link (?doc=ID) resolves, open that exercise or course's printable modal.
+    effect(async () => {
       const id = this.store.pendingDocId();
       if (!id) return;
-      const ex = this.store.exercisesBank().find((e) => e.id === id);
+
+      const ex = this.store.filteredExercisesBank().find((e) => e.id === id);
       if (ex) {
         this.activeSection.set('exercises');
         this.watermarkPreviewModal.set(ex);
         this.store.pendingDocId.set(null);
+        return;
+      }
+
+      const c = this.store.filteredCourses().find((item) => item.id === id) || this.store.filteredCnpBooks().find((item) => item.id === id);
+      if (c) {
+        this.activeSection.set(c.id.startsWith('cnp-') ? 'cnp' : 'courses');
+        if (c.imageUrls && c.imageUrls.length) {
+          this.imageDocModal.set(c);
+        } else {
+          this.viewCourseModal.set(c);
+        }
+        this.store.pendingDocId.set(null);
+        return;
+      }
+
+      // Fallback: Fetch document from /api/docs/:id if newly published or shared
+      try {
+        const sheet = await this.store.getWorksheet(id);
+        if (sheet) {
+          const mappedEx: ExerciseItem = {
+            id: sheet.id,
+            sheetId: sheet.id,
+            title: sheet.title,
+            chapter: sheet.topic || 'Fiche d\'exercices',
+            topic: sheet.topic,
+            subject: (sheet.subject || 'Français') as any,
+            grade: (sheet.grade || '1ère Année') as any,
+            difficulty: 'Moyen',
+            docType: "Série d'Exercices",
+            promptText: (sheet.exercises || []).map((e, idx) => `${idx + 1}. ${e.promptText}`).join('\n\n'),
+            solutionText: (sheet.exercises || []).map((e, idx) => `${idx + 1}. ${e.solutionText || ''}`).join('\n\n'),
+            photoUrl: (sheet.exercises || []).find((e) => e.imageUrl)?.imageUrl,
+            hasCorrection: true,
+            hints: [],
+            points: 20,
+            teacherName: sheet.authorName || 'Enseignant Certifié',
+            schoolYear: '2025-2026',
+            watermarkText: sheet.customWatermark || 'Madrasati TN',
+          };
+          this.activeSection.set('exercises');
+          this.watermarkPreviewModal.set(mappedEx);
+          this.store.pendingDocId.set(null);
+        }
+      } catch {
+        // Doc not found
       }
     });
   }

@@ -277,7 +277,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
         Date.now() - new Date(e['createdAt']).getTime() < 15 * 60 * 1000,
     );
     if (dup) {
-      res.json({ success: true, id: dup['id'], shareUrl: `/generate?sheet=${dup['id']}`, deduplicated: true });
+      res.json({ success: true, id: dup['id'], shareUrl: `/discovery?doc=${dup['id']}`, deduplicated: true });
       return;
     }
     const id = randomUUID();
@@ -316,7 +316,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
     });
     writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
 
-    res.json({ success: true, id, shareUrl: `/generate?sheet=${id}` });
+    res.json({ success: true, id, shareUrl: `/discovery?doc=${id}` });
     return;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Erreur lors de l\'enregistrement de la fiche';

@@ -8,13 +8,13 @@ import {
   TeacherProfileService,
   TeacherStats,
 } from '@core';
-import { TeacherAvatarComponent } from '@shared';
+import { TeacherAvatarComponent, ShareButtonComponent } from '@shared';
 
 @Component({
   selector: 'app-teacher-profile-page',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, TeacherAvatarComponent],
+  imports: [RouterLink, TeacherAvatarComponent, ShareButtonComponent],
   template: `
     <div class="min-h-screen bg-[#F4F6F5] py-8 px-4 sm:px-6 lg:px-8">
       <div class="max-w-5xl mx-auto space-y-6">
@@ -28,13 +28,13 @@ import { TeacherAvatarComponent } from '@shared';
           </a>
 
           <!-- Share Button -->
-          <button
-            type="button"
-            (click)="shareProfile()"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#CBD9E2] rounded-xl text-xs font-semibold shadow-2xs transition-colors cursor-pointer">
-            <span class="material-icons text-sm">{{ shareCopied() ? 'check' : 'share' }}</span>
-            <span>{{ shareCopied() ? lang.tr('Lien copié ✓', 'تم نسخ الرابط ✓') : lang.tr('Partager le profil', 'مشاركة الملف') }}</span>
-          </button>
+          <app-share-button
+            [url]="'/teachers/' + (teacher()?.id || '')"
+            [title]="'الأستاذ(ة) ' + (teacher()?.displayName || teacher()?.name || '') + ' — Madrasati TN'"
+            [text]="teacher()?.bio || ''"
+            variant="button"
+            accent="neutral"
+            [customLabel]="lang.tr('Partager le profil', 'مشاركة الملف')" />
         </div>
 
         @if (isLoading()) {

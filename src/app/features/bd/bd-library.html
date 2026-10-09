@@ -90,24 +90,12 @@
             <span class="material-icons text-base" aria-hidden="true">print</span>
             <span class="hidden sm:inline">{{ lang.t('bdPrint') }}</span>
           </button>
-          <button
-            (click)="copyLink()"
-            class="flex items-center gap-2 bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] font-medium px-4 py-2.5 rounded-xl text-sm transition-colors cursor-pointer min-h-[44px]">
-            <span class="material-icons text-base" aria-hidden="true">link</span>
-            <span class="hidden sm:inline">{{ linkCopied() ? lang.t('bdLinkCopied') : lang.t('bdCopyLink') }}</span>
-          </button>
-          <button
-            (click)="copyAsPost()"
-            class="flex items-center gap-2 bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] font-medium px-4 py-2.5 rounded-xl text-sm transition-colors cursor-pointer min-h-[44px]">
-            <span class="material-icons text-base" aria-hidden="true">post_add</span>
-            <span class="hidden sm:inline">{{ postCopied() ? lang.t('bdPostCopied') : lang.t('bdCopyPost') }}</span>
-          </button>
-          <button
-            (click)="shareNative()"
-            class="flex items-center gap-2 bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-4 py-2.5 rounded-xl text-sm transition-opacity cursor-pointer min-h-[44px]">
-            <span class="material-icons text-base" aria-hidden="true">share</span>
-            <span class="hidden sm:inline">{{ lang.t('bdShare') }}</span>
-          </button>
+          <app-share-button
+            [url]="shareUrl()"
+            [title]="item.title"
+            [text]="item.title"
+            variant="button"
+            accent="amber" />
           <button
             (click)="closeReader()"
             class="flex items-center justify-center text-[#B7C7BC] hover:text-[#FBF8F1] transition-colors cursor-pointer w-11 h-11 rounded-xl"

@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { EducationStore, FirebaseService, getInfographicTemplate, GradeLevel, InfographicDoc, LanguageService, LessonPlanDocValues, SubjectName } from '@core';
 import { InfographicRendererComponent } from './infographic-renderer';
+import { ShareButtonComponent } from './share-button';
 
 @Component({
   selector: 'app-infographic-page',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [InfographicRendererComponent],
+  imports: [InfographicRendererComponent, ShareButtonComponent],
   template: `
     <div class="infographic-container w-full max-w-[850px] mx-auto space-y-4">
       
@@ -21,13 +22,12 @@ import { InfographicRendererComponent } from './infographic-renderer';
         </div>
 
         <div class="flex items-center gap-2">
-          <button
-            type="button"
-            (click)="shareDoc()"
-            class="px-4 py-1.5 rounded-xl bg-white hover:bg-[#F4F6F5] border border-[#E7DFCF] text-[#14251D] text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
-            <span class="material-icons text-sm">{{ shareCopied() ? 'check' : 'share' }}</span>
-            <span>{{ shareCopied() ? lang.tr('Lien copié ✓', 'تم نسخ الرابط ✓') : lang.tr('Partager', 'مشاركة') }}</span>
-          </button>
+          <app-share-button
+            [url]="doc().templateId === 'lesson-plan-official' ? '/lesson-plan/' + doc().id : '/infographic/' + doc().id"
+            [title]="doc().title"
+            [text]="doc().title"
+            variant="button"
+            accent="neutral" />
           @if (doc().isOwner) {
             <button
               type="button"
