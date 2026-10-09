@@ -136,3 +136,45 @@ export const verifyFirebaseUser = async (req: Request): Promise<string | null> =
     return null;
   }
 };
+
+export interface VerifiedTeacherResult {
+  uid: string;
+  isVerifiedTeacher: boolean;
+  displayName: string;
+}
+
+const getFirebaseConfig = (): { projectId?: string; apiKey?: string; firestoreDatabaseId?: string } | null => {
+  try {
+    return JSON.parse(readFileSync(join(process.cwd(), 'firebase-applet-config.json'), 'utf8'));
+  } catch {
+    return null;
+  }
+};
+
+/**
+ * A "trusted" teacher is one whose public profile (`teachers/{uid}`) has `verified === 'verified'`.
+ * Firestore rules let owners move that field only none -> pending, so only an admin can grant it.
+ * Fails closed: any missing config, unreadable profile or error means "not verified".
+ */
+export const verifyTeacherUser = async (req: Request): Promise<VerifiedTeacherResult | null> => {
+  const uid = await verifyFirebaseUser(req);
+  if (!uid) return null;
+  const notVerified = (displayName = 'Enseignant'): VerifiedTeacherResult => ({ uid, isVerifiedTeacher: false, displayName });
+
+  try {
+    const config = getFirebaseConfig();
+    if (!config?.projectId || !config.apiKey) return notVerified();
+
+    const dbId = config.firestoreDatabaseId || '(default)';
+    // `teachers` is publicly readable, so no user token is sent along.
+    const url = `https://firestore.googleapis.com/v1/projects/${config.projectId}/databases/${dbId}/documents/teachers/${uid}?key=${config.apiKey}`;
+    const r = await fetch(url);
+    if (!r.ok) return notVerified();
+
+    const doc = (await r.json()) as { fields?: Record<string, { stringValue?: string }> };
+    const name = doc.fields?.['displayName']?.stringValue || 'Enseignant';
+    return { uid, isVerifiedTeacher: doc.fields?.['verified']?.stringValue === 'verified', displayName: name };
+  } catch {
+    return notVerified();
+  }
+};

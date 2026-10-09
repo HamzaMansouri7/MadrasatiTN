@@ -5,8 +5,10 @@ import { randomUUID } from 'node:crypto';
 import { join } from 'node:path';
 import { existsSync, writeFileSync, readFileSync } from 'node:fs';
 import { originGuard, uploadRateLimiter } from '../guards';
-import { docsFolder, verifyFirebaseUser } from '../storage';
+import { docsFolder, verifyFirebaseUser, verifyTeacherUser } from '../storage';
 import { generateMemoDocx } from '../memo-docx';
+import { classifyCheckSkill, compose } from '../skills';
+import { aiReady, aiGenerateJSON } from './ai.routes';
 
 export const SHEET_ID_RE = /^[A-Za-z0-9_-]{6,64}$/;
 export const docsIndexPath = join(docsFolder, 'index.json');
@@ -18,6 +20,42 @@ export function readDocsIndex(): Record<string, unknown>[] {
     return Array.isArray(arr) ? arr : [];
   } catch {
     return [];
+  }
+}
+
+/** First picture a saved sheet or series carries, used as its library thumbnail. Only /uploads paths are kept. */
+export function firstImageUrl(doc: Record<string, unknown>): string {
+  const urlOf = (b: unknown): string => {
+    const u = b && typeof b === 'object' ? (b as { imageUrl?: unknown }).imageUrl : undefined;
+    return typeof u === 'string' && u.startsWith('/uploads/') ? u : '';
+  };
+  const values = (doc['values'] ?? {}) as Record<string, unknown>;
+  const lists = [values['items'], values['columns'], doc['scenes']].filter(Array.isArray) as unknown[][];
+  return urlOf(values['hero']) || urlOf(values['problem']) || lists.flatMap((l) => l.map(urlOf)).find(Boolean) || '';
+}
+
+let thumbsBackfilled = false;
+/** Once per server run: give already-published sheets and series a thumbnail if they have a picture. */
+function backfillThumbs(): void {
+  if (thumbsBackfilled) return;
+  thumbsBackfilled = true;
+  try {
+    const index = readDocsIndex();
+    let changed = false;
+    for (const entry of index) {
+      const id = String(entry['id'] ?? '');
+      if (entry['thumb'] || !SHEET_ID_RE.test(id) || (entry['docType'] !== 'infographic' && entry['docType'] !== 'series')) continue;
+      const file = join(docsFolder, `${id}.json`);
+      if (!existsSync(file)) continue;
+      const thumb = firstImageUrl(JSON.parse(readFileSync(file, 'utf8')) as Record<string, unknown>);
+      if (thumb) {
+        entry['thumb'] = thumb;
+        changed = true;
+      }
+    }
+    if (changed) writeFileSync(docsIndexPath, JSON.stringify(index), 'utf8');
+  } catch (err) {
+    console.warn('Thumbnail backfill skipped:', err);
   }
 }
 
@@ -204,6 +242,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
         authorName: author.name,
         school: author.school,
         createdAt,
+        ...(firstImageUrl(doc as Record<string, unknown>) ? { thumb: firstImageUrl(doc as Record<string, unknown>) } : {}),
         ...(isSeries ? { sceneCount: (body['scenes'] as unknown[]).length } : {}),
         ...(isInfo ? { resourceKind: (doc as { resourceKind?: string }).resourceKind, trimester: (doc as { trimester?: string }).trimester } : {}),
       };
@@ -289,6 +328,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
 
 // List published worksheets for the library grid + blog feed.
 docsRouter.get('/', (_req: Request, res: Response): void => {
+  backfillThumbs();
   res.json({ success: true, docs: readDocsIndex() });
 });
 
@@ -318,3 +358,128 @@ docsRouter.get('/:id', async (req: Request, res: Response): Promise<void> => {
     res.status(500).json({ error: 'Erreur lors de la lecture de la fiche.' });
   }
 });
+
+/** Swappable in tests: ESM imports can't be mocked under the Angular test runner. */
+export const docsRouteDeps = { verifyTeacherUser };
+
+// Reclassify a document (Verified teachers only)
+docsRouter.post('/:id/reclassify', originGuard, async (req: Request, res: Response): Promise<void> => {
+  try {
+    const teacherRes = await docsRouteDeps.verifyTeacherUser(req);
+    if (!teacherRes || !teacherRes.isVerifiedTeacher) {
+      res.status(403).json({ error: 'Accès réservé aux enseignants vérifiés.' });
+      return;
+    }
+
+    const id = String(req.params['id'] || '');
+    if (!SHEET_ID_RE.test(id)) {
+      res.status(400).json({ error: 'Identifiant invalide.' });
+      return;
+    }
+
+    const filePath = join(docsFolder, `${id}.json`);
+    if (!existsSync(filePath)) {
+      res.status(404).json({ error: 'Fiche introuvable.' });
+      return;
+    }
+
+    const { proposed } = req.body as { proposed?: { grade?: string; subject?: string; trimester?: string; docType?: string } };
+    if (!proposed || typeof proposed !== 'object') {
+      res.status(400).json({ error: 'Propositions de reclassification requises.' });
+      return;
+    }
+
+    const doc = JSON.parse(readFileSync(filePath, 'utf8'));
+
+    const currentClassification = {
+      grade: doc.grade || '',
+      subject: doc.subject || '',
+      trimester: doc.trimester || '',
+      docType: doc.docType || '',
+    };
+
+    const proposedClassification = {
+      grade: proposed.grade || doc.grade || '',
+      subject: proposed.subject || doc.subject || '',
+      trimester: proposed.trimester || doc.trimester || '',
+      docType: proposed.docType || doc.docType || '',
+    };
+
+    let aiVerdict: 'ok' | 'reject' = 'ok';
+    let aiConfidence = 0.95;
+    let aiReason = 'Reclassification validée par l\'enseignant.';
+
+    if (aiReady()) {
+      try {
+        const input = {
+          title: doc.title || '',
+          extractedText: doc.content || doc.summary || '',
+          current: currentClassification,
+          proposed: proposedClassification,
+        };
+        const prompt = compose(classifyCheckSkill, input);
+        const data = (await aiGenerateJSON(
+          classifyCheckSkill.chain,
+          prompt,
+          classifyCheckSkill.schema,
+          classifyCheckSkill.temperature,
+        )) as { verdict: 'ok' | 'reject'; confidence: number; reason: string };
+
+        if (data && data.verdict) {
+          aiVerdict = data.verdict;
+          aiConfidence = typeof data.confidence === 'number' ? data.confidence : 0.9;
+          aiReason = data.reason || aiReason;
+        }
+      } catch (aiErr) {
+        console.warn('AI evaluation error during reclassify, defaulting to teacher input:', aiErr);
+      }
+    }
+
+    // Record change history item
+    const historyItem = {
+      who: teacherRes.displayName || teacherRes.uid,
+      uid: teacherRes.uid,
+      old: currentClassification,
+      new: proposedClassification,
+      verdict: aiVerdict,
+      confidence: aiConfidence,
+      reason: aiReason,
+      timestamp: new Date().toISOString(),
+    };
+
+    doc.history = Array.isArray(doc.history) ? doc.history : [];
+    doc.history.push(historyItem);
+
+    if (aiVerdict === 'ok') {
+      if (proposed.grade) doc.grade = proposed.grade;
+      if (proposed.subject) doc.subject = proposed.subject;
+      if (proposed.trimester) doc.trimester = proposed.trimester;
+      if (proposed.docType) doc.docType = proposed.docType;
+
+      // Update library index as well
+      const index = readDocsIndex();
+      const idxEntry = index.find((item) => item['id'] === id);
+      if (idxEntry) {
+        if (proposed.grade) idxEntry['grade'] = proposed.grade;
+        if (proposed.subject) idxEntry['subject'] = proposed.subject;
+        if (proposed.trimester) idxEntry['trimester'] = proposed.trimester;
+        if (proposed.docType) idxEntry['docType'] = proposed.docType;
+        writeFileSync(docsIndexPath, JSON.stringify(index), 'utf8');
+      }
+    }
+
+    writeFileSync(filePath, JSON.stringify(doc), 'utf8');
+
+    res.json({
+      success: true,
+      verdict: aiVerdict,
+      confidence: aiConfidence,
+      reason: aiReason,
+      updatedDoc: doc,
+    });
+  } catch (err: unknown) {
+    console.error('Error in POST /api/docs/:id/reclassify:', err);
+    res.status(500).json({ error: 'Erreur serveur lors de la reclassification.' });
+  }
+});
+

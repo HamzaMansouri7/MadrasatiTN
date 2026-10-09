@@ -19,3 +19,4 @@ export * from './worksheet';
 export * from './lesson-plan';
 export * from './series';
 export * from './infographic';
+export * from './classify-check';

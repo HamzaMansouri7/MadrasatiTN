@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } 
 import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EducationStore, FirebaseService, LanguageService, SeoService, Course, ExerciseItem, TeacherProfile, BlogPost, PrintService, paginate } from '@core';
-import { BlogCardComponent, CartoucheComponent, PaginationComponent, TeacherCardComponent, CommentPanelComponent } from '@shared';
+import { BlogCardComponent, CartoucheComponent, PaginationComponent, TeacherCardComponent } from '@shared';
 import { BlogReaderComponent } from './blog-reader.component';
 import { BdLibraryComponent } from '../bd/bd-library';
 
@@ -14,7 +14,7 @@ interface RecitationItem {
 @Component({
   selector: 'app-public-discovery',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, CartoucheComponent, CommentPanelComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent, BlogCardComponent, TeacherCardComponent],
+  imports: [RouterLink, CartoucheComponent, BlogReaderComponent, BdLibraryComponent, PaginationComponent, BlogCardComponent, TeacherCardComponent],
   template: `
     <div class="space-y-6">
       
@@ -378,109 +378,68 @@ interface RecitationItem {
                 </div>
               </div>
 
-              <!-- Action Bar pinned to card bottom -->
-              <div class="pt-3 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5 shrink-0 mt-3">
-
+              <!-- Action bar pinned to card bottom: main actions, then one compact icon row -->
+              <div class="pt-3 border-t border-[#E7DFCF] flex flex-col gap-2 shrink-0 mt-3">
                 @if (ex.openUrl) {
                   <a
                     [routerLink]="ex.openUrl"
-                    class="col-span-2 w-full justify-center bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1.5 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
-                    <span class="material-icons text-[12px]">open_in_new</span>
+                    class="w-full h-9 justify-center bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[12px] rounded-lg flex items-center gap-1.5 cursor-pointer transition-colors">
+                    <span class="material-icons text-[16px]">open_in_new</span>
                     {{ lang.tr('Ouvrir la fiche', 'فتح الجذاذة') }}
                   </a>
                 }
 
-                <!-- Q&A -->
-                <button
-                  (click)="toggleCommentPanel(ex.id)"
-                  [class]="openCommentIds().has(ex.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
-                  class="w-full justify-center px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 border transition-all cursor-pointer">
-                  <span class="material-icons text-[12px]">forum</span>
-                  <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
-                  @if (store.getComments(ex.id).length > 0) {
-                    <span class="bg-[#1B4332] text-[#FBF8F1] text-[9px] font-semibold px-1 rounded-full">
-                      {{ store.getComments(ex.id).length }}
-                    </span>
-                  }
-                </button>
-
-                <!-- Corrigé -->
-                <button
-                  (click)="toggleSolution(ex.id)"
-                  class="w-full justify-center font-semibold text-[11px] text-[#1B4332] bg-[#1B4332]/5 hover:bg-[#1B4332]/10 flex items-center gap-1 cursor-pointer px-1.5 py-1 rounded-md transition-colors border border-[#1B4332]/10">
-                  <span class="material-icons text-[12px]">visibility</span>
-                  {{ openSolutionIds().has(ex.id) ? lang.tr('Masquer', 'إخفاء') : lang.tr('Voir Corrigé', 'عرض الإصلاح') }}
-                </button>
-
-                <!-- Imprimer PDF -->
                 <button
                   (click)="openWatermarkPreviewModal(ex)"
-                  class="w-full justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
-                  <span class="material-icons text-[12px]">print</span>
+                  class="w-full h-9 justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[12px] rounded-lg flex items-center gap-1.5 cursor-pointer transition-colors">
+                  <span class="material-icons text-[16px]">print</span>
                   {{ lang.tr('Imprimer PDF', 'طباعة PDF') }}
                 </button>
 
-                <!-- Favoris -->
-                <button
-                  (click)="store.toggleWatchlist(ex.id, 'exercise')"
-                  [class]="store.isWatched(ex.id, 'exercise') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
-                  class="w-full justify-center px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer border"
-                  [title]="store.isWatched(ex.id, 'exercise') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
-                  <span class="material-icons text-[12px]" [class.text-[#8A5A00]]="store.isWatched(ex.id, 'exercise')">
-                    {{ store.isWatched(ex.id, 'exercise') ? 'bookmark' : 'bookmark_border' }}
-                  </span>
-                  <span>{{ store.isWatched(ex.id, 'exercise') ? 'Sauvegardé' : 'Favoris' }}</span>
-                </button>
-
-                <!-- Copier Post -->
-                <button
-                  (click)="copyExercisePost(ex)"
-                  class="col-span-2 w-full justify-center bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF] px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer"
-                  [title]="lang.tr('Copier comme publication sociale', 'نسخ كمنشور لتسهيل المشاركة')">
-                  <span class="material-icons text-[12px]">post_add</span>
-                  <span>{{ copiedPostId() === ex.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور') }}</span>
-                </button>
-
-                <!-- Metrics & Utilities Row -->
-                <div class="col-span-2 flex items-center justify-between pt-1.5 border-t border-[#E7DFCF]/50 mt-0.5">
+                <div class="flex items-center justify-between gap-1.5">
                   <button
                     (click)="store.toggleUpvoteExercise(ex.id)"
-                    [class]="ex.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-                    class="px-2 py-0.5 rounded-md text-[11px] flex items-center gap-1 transition-colors cursor-pointer">
-                    <span class="material-icons text-[12px]">thumb_up</span>
+                    [class]="ex.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F]' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]'"
+                    class="h-8 px-2.5 rounded-lg border text-[12px] font-semibold flex items-center gap-1.5 transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                    [attr.aria-pressed]="!!ex.isUpvoted"
+                    [attr.aria-label]="lang.tr('Utile', 'مفيد')">
+                    <span class="material-icons text-[16px]">thumb_up</span>
                     <span>{{ ex.upvotesCount || 0 }}</span>
                   </button>
-
-                  <div class="flex items-center gap-1">
-                    <button
-                      (click)="copyLink(ex)"
-                      class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium p-1 rounded-md flex items-center cursor-pointer border border-[#E7DFCF]"
-                      [title]="lang.tr('Copier le lien', 'نسخ الرابط')">
-                      <span class="material-icons text-[12px]">content_copy</span>
-                    </button>
-
-                    <button
-                      (click)="reportDocument(ex)"
-                      [disabled]="ex.isReported"
-                      [class]="ex.isReported ? 'text-[#C1121F] font-semibold' : 'text-[#6B7A70] hover:text-[#C1121F]'"
-                      [title]="lang.tr('Signaler un scan flou ou incomplet', 'الإبلاغ عن مسح ضوئي غير واضح')"
-                      class="p-1 rounded-md cursor-pointer transition-colors flex items-center gap-1">
-                      <span class="material-icons text-[12px]">report_problem</span>
-                    </button>
-                  </div>
+                  <button
+                    (click)="store.toggleWatchlist(ex.id, 'exercise')"
+                    [class]="store.isWatched(ex.id, 'exercise') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]'"
+                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                    [attr.aria-pressed]="store.isWatched(ex.id, 'exercise')"
+                    [attr.aria-label]="store.isWatched(ex.id, 'exercise') ? lang.tr('Retirer des favoris', 'إزالة من المحفوظات') : lang.tr('Ajouter aux favoris', 'حفظ في المحفوظات')"
+                    [title]="store.isWatched(ex.id, 'exercise') ? lang.tr('Retirer des favoris', 'إزالة من المحفوظات') : lang.tr('Ajouter aux favoris', 'حفظ في المحفوظات')">
+                    <span class="material-icons text-[18px]">{{ store.isWatched(ex.id, 'exercise') ? 'bookmark' : 'bookmark_border' }}</span>
+                  </button>
+                  <button
+                    (click)="copyExercisePost(ex)"
+                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]"
+                    [attr.aria-label]="lang.tr('Copier comme publication', 'نسخ كمنشور')"
+                    [title]="copiedPostId() === ex.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور')">
+                    <span class="material-icons text-[18px]">{{ copiedPostId() === ex.id ? 'check' : 'post_add' }}</span>
+                  </button>
+                  <button
+                    (click)="copyLink(ex)"
+                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]"
+                    [attr.aria-label]="lang.tr('Copier le lien', 'نسخ الرابط')"
+                    [title]="lang.tr('Copier le lien', 'نسخ الرابط')">
+                    <span class="material-icons text-[18px]">link</span>
+                  </button>
+                  <button
+                    (click)="reportDocument(ex)"
+                    [disabled]="ex.isReported"
+                    [class]="ex.isReported ? 'text-[#C1121F] border-[#C1121F]/30 bg-[#C1121F]/5' : 'text-[#6B7A70] hover:text-[#C1121F] bg-[#FBF8F1] border-[#E7DFCF]'"
+                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                    [attr.aria-label]="lang.tr('Signaler un scan flou ou incomplet', 'الإبلاغ عن مسح ضوئي غير واضح')"
+                    [title]="lang.tr('Signaler un scan flou ou incomplet', 'الإبلاغ عن مسح ضوئي غير واضح')">
+                    <span class="material-icons text-[18px]">flag</span>
+                  </button>
                 </div>
               </div>
-
-              @if (openCommentIds().has(ex.id)) {
-                <app-comment-panel [targetId]="ex.id" targetType="exercise" class="block mt-1" />
-              }
-
-              @if (openSolutionIds().has(ex.id)) {
-                <div class="bg-[#1B4332]/[0.06] text-[#14251D] p-4 rounded-2xl border border-[#E7DFCF] text-xs space-y-1">
-                  <span class="font-semibold text-[#1B4332]">{{ lang.tr('Corrigé Détaillé certifié :', 'الإصلاح المفصل المعتمد:') }}</span>
-                  <p class="whitespace-pre-line">{{ ex.solutionText }}</p>
-                </div>
-              }
             </div>
           }
         </div>
@@ -588,91 +547,69 @@ interface RecitationItem {
                 </div>
               </div>
 
-              <!-- action bar pinned to card bottom -->
-              <div class="pt-3 border-t border-[#E7DFCF] grid grid-cols-2 gap-1.5 shrink-0 mt-3">
-                <!-- Q&A Button (course) -->
-                <button
-                  (click)="toggleCommentPanel(c.id)"
-                  [class]="openCommentIds().has(c.id) ? 'bg-[#1B4332]/10 text-[#1B4332] border-[#1B4332]/30 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF] font-medium'"
-                  class="w-full justify-center px-1.5 py-1 rounded-md text-[11px] flex items-center gap-1 border transition-all cursor-pointer">
-                  <span class="material-icons text-xs">forum</span>
-                  <span>{{ lang.tr('Q&A', 'سؤال وجواب') }}</span>
-                  @if (store.getComments(c.id).length > 0) {
-                    <span class="bg-[#1B4332] text-[#FBF8F1] text-[10px] font-semibold px-1.5 py-0.5 rounded-full">
-                      {{ store.getComments(c.id).length }}
-                    </span>
-                  }
-                </button>
-
-                <button
-                  (click)="store.toggleUpvoteCourse(c.id)"
-                  [class]="c.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF]'"
-                  class="w-full justify-center px-1.5 py-1 rounded-md text-[11px] flex items-center gap-1 transition-colors cursor-pointer">
-                  <span class="material-icons text-xs">thumb_up</span>
-                  <span>{{ c.upvotesCount || 0 }}</span>
-                </button>
-
-                <!-- PDF/Print Button -->
+              <!-- action bar pinned to card bottom: main actions, then one compact icon row -->
+              <div class="pt-3 border-t border-[#E7DFCF] flex flex-col gap-2 shrink-0 mt-3">
                 @if (c.pdfUrl) {
                   <a
                     [href]="c.pdfUrl"
                     target="_blank"
                     rel="noopener"
-                    class="w-full justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1 rounded-md flex items-center gap-1 transition-colors">
-                    <span class="material-icons text-xs">download</span>
+                    class="w-full h-9 justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[12px] rounded-lg flex items-center gap-1.5 transition-colors">
+                    <span class="material-icons text-[16px]">download</span>
                     {{ lang.tr('Télécharger PDF', 'تحميل PDF') }}
                   </a>
                 } @else if (c.imageUrls && c.imageUrls.length) {
                   <button
                     (click)="openImageDoc(c)"
-                    class="w-full justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
-                    <span class="material-icons text-xs">print</span>
+                    class="w-full h-9 justify-center bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[12px] rounded-lg flex items-center gap-1.5 cursor-pointer transition-colors">
+                    <span class="material-icons text-[16px]">print</span>
                     {{ lang.tr('Voir & Imprimer', 'عرض وطباعة') }}
                   </button>
                 } @else {
                   <button
                     (click)="viewCourseModal.set(c)"
-                    class="w-full justify-center bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[11px] px-1.5 py-1 rounded-md flex items-center gap-1 cursor-pointer transition-colors">
-                    <span class="material-icons text-xs">menu_book</span>
+                    class="w-full h-9 justify-center bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-[12px] rounded-lg flex items-center gap-1.5 cursor-pointer transition-colors">
+                    <span class="material-icons text-[16px]">menu_book</span>
                     {{ lang.tr('Consulter', 'قراءة الملخص') }}
                   </button>
                 }
 
                 <button
-                  (click)="store.toggleWatchlist(c.id, 'course')"
-                  [class]="store.isWatched(c.id, 'course') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40 font-semibold' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border-[#E7DFCF]'"
-                  class="w-full justify-center px-1.5 py-1 rounded-md text-[11px] flex items-center gap-1 transition-colors cursor-pointer border"
-                  [title]="store.isWatched(c.id, 'course') ? 'Retirer des favoris' : 'Sauvegarder dans la watchlist'">
-                  <span class="material-icons text-xs" [class.text-[#8A5A00]]="store.isWatched(c.id, 'course')">
-                    {{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}
-                  </span>
-                  <span>{{ store.isWatched(c.id, 'course') ? 'Sauvegardé' : 'Favoris' }}</span>
-                </button>
-
-                <!-- Solve / حلّ Button -->
-                <button
                   (click)="router.navigate(['/solve'], { queryParams: { docId: c.id } })"
-                  class="col-span-2 w-full justify-center bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer shadow-2xs">
-                  <span class="material-icons text-xs">photo_camera</span>
+                  class="w-full h-8 justify-center bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold text-[11px] rounded-lg flex items-center gap-1.5 transition-colors cursor-pointer">
+                  <span class="material-icons text-[15px]">photo_camera</span>
                   <span>{{ lang.tr('Résoudre cet exercice / devoir', 'حلّ هذا التمرين أو الفرض') }}</span>
                 </button>
 
-                <!-- Copier Post -->
-                <button
-                  (click)="copyCoursePost(c)"
-                  class="col-span-2 w-full justify-center bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium border border-[#E7DFCF] px-1.5 py-1 text-[11px] rounded-md flex items-center gap-1 transition-colors cursor-pointer"
-                  [title]="lang.tr('Copier comme publication sociale', 'نسخ كمنشور لتسهيل المشاركة')">
-                  <span class="material-icons text-xs">post_add</span>
-                  <span>{{ copiedPostId() === c.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور') }}</span>
-                </button>
+                <div class="flex items-center justify-between gap-1.5">
+                  <button
+                    (click)="store.toggleUpvoteCourse(c.id)"
+                    [class]="c.isUpvoted ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F]' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]'"
+                    class="h-8 px-2.5 rounded-lg border text-[12px] font-semibold flex items-center gap-1.5 transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                    [attr.aria-pressed]="!!c.isUpvoted"
+                    [attr.aria-label]="lang.tr('Utile', 'مفيد')">
+                    <span class="material-icons text-[16px]">thumb_up</span>
+                    <span>{{ c.upvotesCount || 0 }}</span>
+                  </button>
+                  <button
+                    (click)="store.toggleWatchlist(c.id, 'course')"
+                    [class]="store.isWatched(c.id, 'course') ? 'bg-[#8A5A00]/10 text-[#8A5A00] border-[#8A5A00]/40' : 'bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]'"
+                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                    [attr.aria-pressed]="store.isWatched(c.id, 'course')"
+                    [attr.aria-label]="store.isWatched(c.id, 'course') ? lang.tr('Retirer des favoris', 'إزالة من المحفوظات') : lang.tr('Ajouter aux favoris', 'حفظ في المحفوظات')"
+                    [title]="store.isWatched(c.id, 'course') ? lang.tr('Retirer des favoris', 'إزالة من المحفوظات') : lang.tr('Ajouter aux favoris', 'حفظ في المحفوظات')">
+                    <span class="material-icons text-[18px]">{{ store.isWatched(c.id, 'course') ? 'bookmark' : 'bookmark_border' }}</span>
+                  </button>
+                  <button
+                    (click)="copyCoursePost(c)"
+                    class="w-8 h-8 shrink-0 rounded-lg border flex items-center justify-center transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] border-[#E7DFCF]"
+                    [attr.aria-label]="lang.tr('Copier comme publication', 'نسخ كمنشور')"
+                    [title]="copiedPostId() === c.id ? lang.tr('Copié !', 'تم النسخ!') : lang.tr('Copier comme publication', 'نسخ كمنشور')">
+                    <span class="material-icons text-[18px]">{{ copiedPostId() === c.id ? 'check' : 'post_add' }}</span>
+                  </button>
+                </div>
               </div>
 
-              @if (openCommentIds().has(c.id)) {
-                <app-comment-panel
-                  [targetId]="c.id"
-                  targetType="course"
-                  [placeholder]="lang.tr('Poser une question ou commenter ce cours...', 'اطرح سؤالاً حول هذا الدرس...')" />
-              }
             </div>
           }
         </div>
@@ -1367,23 +1304,11 @@ export class PublicDiscoveryComponent {
       console.error('Recitation load failed', e);
     }
   }
-  readonly openSolutionIds = signal<Set<string>>(new Set());
-  readonly openCommentIds = signal<Set<string>>(new Set());
 
   readonly viewCourseModal = signal<Course | null>(null);
   readonly imageDocModal = signal<Course | null>(null);
   readonly selectedTeacherModal = signal<TeacherProfile | null>(null);
   readonly watermarkPreviewModal = signal<ExerciseItem | null>(null);
-
-  toggleCommentPanel(targetId: string) {
-    const newSet = new Set(this.openCommentIds());
-    if (newSet.has(targetId)) {
-      newSet.delete(targetId);
-    } else {
-      newSet.add(targetId);
-    }
-    this.openCommentIds.set(newSet);
-  }
 
   publicSubText(): string {
     return this.lang.tr(
@@ -1447,16 +1372,6 @@ export class PublicDiscoveryComponent {
     this.store.resetAllFilters();
   }
 
-  toggleSolution(id: string) {
-    const newSet = new Set(this.openSolutionIds());
-    if (newSet.has(id)) {
-      newSet.delete(id);
-    } else {
-      newSet.add(id);
-    }
-    this.openSolutionIds.set(newSet);
-  }
-
   reportDocument(ex: ExerciseItem) {
     this.store.reportExercise(ex.id);
     const msg = this.lang.tr(
@@ -1467,6 +1382,11 @@ export class PublicDiscoveryComponent {
   }
 
   openWatermarkPreviewModal(ex: ExerciseItem) {
+    // Library sheets only carry a one-line summary here; their real content and print layout live on their own page.
+    if (ex.sheetId) {
+      void this.router.navigateByUrl(ex.openUrl ?? `/generate?sheet=${ex.sheetId}`);
+      return;
+    }
     this.watermarkPreviewModal.set(ex);
   }
 

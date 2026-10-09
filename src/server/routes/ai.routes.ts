@@ -97,7 +97,7 @@ async function aiGenerateText(prompt: string): Promise<string> {
 }
 
 /** Executes structured JSON generation across the specified provider fallback chain. */
-async function aiGenerateJSON(
+export async function aiGenerateJSON(
   chain: ChainName,
   contents: string | GeminiPart[],
   schema?: object,
