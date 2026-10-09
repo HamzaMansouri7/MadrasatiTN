@@ -272,6 +272,15 @@ export class BdLibraryComponent {
     w.document.close();
   }
 
+  /** Deep link to the album: opens the reader on its cover page inside the album. */
+  albumShareUrl(album: BdAlbum): string {
+    return typeof window === 'undefined' ? '' : `${window.location.origin}/discovery?bd=${album.cover.id}`;
+  }
+
+  albumDetails(album: BdAlbum): string[] {
+    return [this.gradeLabel(album.grade), this.lang.tr('Expression orale', 'التعبير الشفوي'), this.trimesterLabel(album.trimester)];
+  }
+
   shareUrl(): string {
     const item = this.selectedItem();
     if (!item || typeof window === 'undefined') return '';

@@ -1,4 +1,4 @@
-﻿# Resource Extraction Pipeline — instructions for the extraction agent (Antigravity)
+# Resource Extraction Pipeline — instructions for the extraction agent (Antigravity)
 
 Standing rules for slicing CNP/official PDFs into Madrasati TN knowledge resources.
 I (the owner) give you per batch: **PDF file(s) or URL + grade + subject + trimester + topic + CNP code + language**. You do everything below. Nothing else.
@@ -7,7 +7,7 @@ I (the owner) give you per batch: **PDF file(s) or URL + grade + subject + trime
 
 ```
 public/assets/resources/<grade>/<subject>/<trimester>/<topic>/
-├── <files>.png|.webp
+├── <files>.webp
 ├── manifest.json
 └── README.md
 ```
@@ -20,8 +20,8 @@ Slug values (lowercase, kebab-case, no accents, no Arabic in paths):
 
 ## 2. File naming (rename EVERYTHING, no original names survive)
 
-`<type>_<grade-short>_<subject>_t<n>_p<page:02d>.png`
-Example: `bd_1ere_arabe_t1_p07.png`
+`<type>_<grade-short>_<subject>_t<n>_p<page:02d>.webp`
+Example: `bd_1ere_arabe_t1_p07.webp`
 type prefixes: `bd` (bande dessinée), `ex` (exercise), `lesson`, `poster`, `eval`.
 
 ## 3. manifest.json (MUST match the app's KnowledgeSource shape)
@@ -38,8 +38,8 @@ type prefixes: `bd` (bande dessinée), `ex` (exercise), `lesson`, `poster`, `eva
     "trimester": 1,
     "topic": "bandes-dessinees",
     "title": "<Arabic or French human title, page number included>",
-    "file": "bd_1ere_arabe_t1_p01.png",
-    "relPath": "assets/resources/.../bd_1ere_arabe_t1_p01.png",
+    "file": "bd_1ere_arabe_t1_p01.webp",
+    "relPath": "assets/resources/.../bd_1ere_arabe_t1_p01.webp",
     "lang": "ar",
     "ref": "https://www.cnp.com.tn/arabic/PDF/<code>.pdf#page=1",
     "labels": ["cnp", "<book-name>", "<type>", "<grade_tag>"]
@@ -85,7 +85,7 @@ The BD/resources viewer (`/bd`) loads every manifest listed there. Not listed = 
 ## 5. Quality rules
 
 - Delete byte-identical duplicates outright (keep near-duplicates).
-- Page images: **WebP q82, max width 1600px**, no upscaling. If you extract PNGs, finish with `python scripts/optimize_resources.py` (converts + updates manifests automatically).
+- Page images: **WebP ONLY (q82, max width 1600px)**, no upscaling. Render straight to `.webp`; no `.png` may remain under `public/`. If you must render PNGs first, finish with `python scripts/optimize_resources.py` (converts + updates manifests automatically).
 - Skip blank/cover/colophon pages — only pedagogical content.
 - Never commit; leave changes in working tree for review.
 - If grade/subject/trimester is ambiguous from the PDF, STOP and ask — do not guess.

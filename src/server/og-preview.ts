@@ -120,10 +120,51 @@ function buildDocOg(
   return { title, description };
 }
 
+export interface BlogOg {
+  title: string;
+  excerpt: string;
+  coverImage?: string;
+  authorName?: string;
+}
+
+const blogOgCache = new Map<string, { at: number; value: BlogOg | null }>();
+const BLOG_OG_TTL_MS = 10 * 60 * 1000;
+
+/** Reads one public blog post (Firestore rules allow public read) over REST for the share card. */
+export async function fetchBlogOg(id: string): Promise<BlogOg | null> {
+  if (!SHEET_ID_RE.test(id)) return null;
+  const hit = blogOgCache.get(id);
+  if (hit && Date.now() - hit.at < BLOG_OG_TTL_MS) return hit.value;
+  let value: BlogOg | null = null;
+  try {
+    const cfg = JSON.parse(readFileSync(join(process.cwd(), 'firebase-applet-config.json'), 'utf8'));
+    const url = `https://firestore.googleapis.com/v1/projects/${cfg.projectId}/databases/${cfg.firestoreDatabaseId || '(default)'}/documents/blog_posts/${encodeURIComponent(id)}`;
+    const res = await fetch(url, { signal: AbortSignal.timeout(3000) });
+    if (res.ok) {
+      const f = ((await res.json()) as { fields?: Record<string, { stringValue?: string }> }).fields ?? {};
+      const str = (k: string) => f[k]?.stringValue?.trim() || '';
+      const title = str('titleAr') || str('title');
+      if (title) {
+        value = {
+          title,
+          excerpt: str('excerptAr') || str('excerpt'),
+          coverImage: str('coverImage') || undefined,
+          authorName: str('authorName') || undefined,
+        };
+      }
+    }
+  } catch {
+    value = null;
+  }
+  blogOgCache.set(id, { at: Date.now(), value });
+  return value;
+}
+
 /** Resolves metadata and image for any shared entity on Madrasati TN */
 export function resolveOgPayload(
   req: Request,
   browserDistFolder: string,
+  blog: BlogOg | null = null,
 ): OgMetaPayload {
   const proto = (req.get('x-forwarded-proto') || req.protocol || 'https').split(',')[0];
   const host = req.get('x-forwarded-host') || req.get('host') || 'madrastihub.com';
@@ -271,9 +312,13 @@ export function resolveOgPayload(
 
   // F. Blog Posts (?blog=... / ?article=...)
   if (queryBlog) {
-    const title = 'المقالات والنصائح التربوية — Madrasati TN';
-    const desc = 'مقالات بيداغوجية وإرشادات تعليمية للمعلمين والأولياء في تونس.';
-    const imageUrl = `${origin}/facebook_cover.jpg`;
+    const title = blog ? `${blog.title} — Madrasati TN` : 'المقالات والنصائح التربوية — Madrasati TN';
+    const lines = blog ? [blog.authorName ? `✍️ ${blog.authorName}` : '', blog.excerpt.slice(0, 200)].filter(Boolean) : [];
+    const desc = lines.length ? lines.join('\n') : 'مقالات بيداغوجية وإرشادات تعليمية للمعلمين والأولياء في تونس.';
+    const cover = blog?.coverImage;
+    const imageUrl = cover
+      ? (cover.startsWith('http') ? cover : `${origin}${cover.startsWith('/') ? '' : '/'}${cover}`)
+      : `${origin}/facebook_cover.jpg`;
     const pageUrl = `${origin}/discovery?blog=${encodeURIComponent(queryBlog)}`;
     return { title, description: desc, imageUrl, pageUrl, type: 'article' };
   }
@@ -299,7 +344,7 @@ export function resolveOgPayload(
 
 /** Unified Express Middleware to serve OpenGraph preview cards to social bots */
 export function createOgPreviewMiddleware(browserDistFolder: string) {
-  return (req: Request, res: Response, next: NextFunction): void => {
+  return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     const ua = req.get('user-agent') || '';
     if (!CRAWLER_UA_RE.test(ua)) {
       next();
@@ -314,7 +359,9 @@ export function createOgPreviewMiddleware(browserDistFolder: string) {
       }
 
       const html = readFileSync(indexPath, 'utf8');
-      const payload = resolveOgPayload(req, browserDistFolder);
+      const blogId = (req.query['blog'] as string) || (req.query['article'] as string) || '';
+      const blog = blogId ? await fetchBlogOg(blogId) : null;
+      const payload = resolveOgPayload(req, browserDistFolder, blog);
       const renderedHtml = renderOgHtml(html, payload);
 
       res.set('Content-Type', 'text/html; charset=utf-8');

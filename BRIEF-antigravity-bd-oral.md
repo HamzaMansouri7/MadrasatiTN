@@ -2,6 +2,17 @@
 
 Written by Claude Code, 2026-10-09, for Antigravity. Owner: Hamza. Read [RESOURCE-PIPELINE.md](RESOURCE-PIPELINE.md) first (layout, naming, manifest, WebP, index registration). Facts marked *(unverified)* are not confirmed.
 
+## 0. SCOPE UPDATE 2026-10-09 (overrides everything below)
+
+Owner decision: **forget 3ème and 6ème** and forget Arabic for grades 3 to 6 (CNP has no standalone Arabic BD albums there; 1ère `501110` and 2ème `501208` are done). Remaining work is **French BD albums only, grades 4 and 5**:
+
+| Grade | CNP code | Pages (per your scan) | Local file |
+|---|---|---|---|
+| 4ème | 521417 | 64 | `_sources_candidates/521417P00.pdf` |
+| 5ème | 521514 | 83 | `_sources_candidates/521514P00.pdf` |
+
+Rules for this batch: subject `francais`, `lang: "fr"`, `topic: "bandes-dessinees"`, `subSubject: "expression_orale"` (keep it consistent with the Arabic items), trimester per page range only if the book states it, otherwise STOP and ask. Folder `public/assets/resources/<4eme|5eme>-annee/francais/trimestre-<n>/bandes-dessinees/`. WebP only (see rule in section 4), manifests, README, register in `index.json`, run `scripts/annotate-bd.mjs` with **French** keywords (objects visible in the image, never invented). Skip covers, blanks, colophon. Do not touch the 6ème album (`521613`).
+
 ## 1. Problem (verified 2026-10-09)
 
 The `/bd` viewer ("شريط مصوّر") used to list every manifest in `public/assets/resources/index.json` (809 pages): workbook, reader and maths pages were shown as BD. Fixed in `src/app/features/bd/bd-library.ts` (keeps only `topic === 'bandes-dessinees'`). That leaves **89 real BD pages**, all 1ère Arabic (أنيسي, CNP 501110P01 = 42 pages T1, 501110P02 = 47 pages T2).
