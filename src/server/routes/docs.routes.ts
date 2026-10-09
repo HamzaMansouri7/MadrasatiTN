@@ -9,6 +9,7 @@ import { docsFolder, verifyFirebaseUser, verifyTeacherUser } from '../storage';
 import { generateMemoDocx } from '../memo-docx';
 import { classifyCheckSkill, compose } from '../skills';
 import { aiReady, aiGenerateJSON } from './ai.routes';
+import { postToFacebook } from '../facebook';
 
 export const SHEET_ID_RE = /^[A-Za-z0-9_-]{6,64}$/;
 export const docsIndexPath = join(docsFolder, 'index.json');
@@ -252,6 +253,17 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       if (listed) index.unshift(entry);
       writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
 
+      if (isInfo && listed) {
+        void postToFacebook({
+          id,
+          title: String(doc.title),
+          grade: String(doc.grade ?? ''),
+          subject: String(doc.subject ?? ''),
+          kind: (doc as { resourceKind?: string }).resourceKind === 'exercise' ? 'exercise' : 'course',
+          sharePath: `/infographic/${id}`,
+          thumb: firstImageUrl(doc as Record<string, unknown>),
+        });
+      }
       res.json({ success: true, id, shareUrl: isSeries ? `/series/${id}` : isInfo ? `/infographic/${id}` : `/lesson-plan/${id}` });
       return;
     }
@@ -316,6 +328,15 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
     });
     writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
 
+    void postToFacebook({
+      id,
+      title: doc.title,
+      grade: doc.grade,
+      subject: doc.subject,
+      kind: 'sheet',
+      sharePath: `/discovery?doc=${id}`,
+      thumb,
+    });
     res.json({ success: true, id, shareUrl: `/discovery?doc=${id}` });
     return;
   } catch (err: unknown) {
