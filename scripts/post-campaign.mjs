@@ -40,6 +40,7 @@ async function resolvePageToken() {
 const args = process.argv.slice(2);
 const GO = args.includes('--go');
 const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
+const skip = args.includes('--skip') ? (args[args.indexOf('--skip') + 1] || '').split(',') : [];
 const delay = args.includes('--delay') ? Number(args[args.indexOf('--delay') + 1]) * 1000 : 0;
 
 if (!PAGE_ID || !TOKEN) {
@@ -60,7 +61,7 @@ if (args.includes('--check')) {
 }
 
 const posts = JSON.parse(readFileSync(join(process.cwd(), 'scripts/fb-campaign-posts.json'), 'utf8'))
-  .filter((p) => !only || p.id === only);
+  .filter((p) => (!only || p.id === only) && !skip.includes(p.id));
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
