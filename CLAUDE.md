@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Madrasati TN — educational platform for the Tunisian primary system (1ère–6ème). Unifies Teachers, Parents, Students into role-based workspaces. Stack: Angular 21 (standalone, signals, OnPush) + Tailwind 4 + Express 5 SSR + Google Gemini AI + Firebase.
+Madrasati TN — educational platform for the Tunisian primary system (1ère–6ème). Unifies Teachers and Parents into role-based workspaces (no student accounts or student section). Stack: Angular 21 (standalone, signals, OnPush) + Tailwind 4 + Express 5 SSR + Google Gemini AI + Firebase.
 
 ## Commands
 
@@ -26,7 +26,7 @@ Env: server AI endpoints require `GEMINI_API_KEY`; if unset, `ai` is null and `/
 
 ## Architecture — the non-obvious parts
 
-**Router + role store hybrid.** [app.routes.ts](src/app/app.routes.ts) defines lazy routes (`/`, `/teacher`, `/parent`, `/student`, `/discovery`, `/bd`, `/editor`, `/article-studio`, `/generate`); [app.ts](src/app/app.ts) keeps `store.currentRole()` synced with the URL via `routeToRoleMap`. New page = lazy route + entry in that map.
+**Router + role store hybrid.** [app.routes.ts](src/app/app.routes.ts) defines lazy routes (`/`, `/teacher`, `/parent`, `/discovery`, `/bd`, `/editor`, `/article-studio`, `/generate`); [app.ts](src/app/app.ts) keeps `store.currentRole()` synced with the URL via `routeToRoleMap`. New page = lazy route + entry in that map.
 
 **Single global signal store.** [education-store.ts](src/app/core/services/education-store.ts) (~950 lines) holds all app state as Angular signals + `computed` derivations (activeClass, classCourses, filteredExercisesBank, watchlist, etc.). Injected everywhere. State changes go through store methods, not local component state.
 

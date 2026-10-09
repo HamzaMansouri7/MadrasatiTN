@@ -12,11 +12,8 @@ import {
   Comment,
   Course,
   ExerciseItem,
-  Homework,
   QuestionThread,
   QuestionAnswer,
-  StudentProfile,
-  Submission,
   TeacherProfile,
   UserRole,
   SubjectName,
@@ -66,7 +63,6 @@ export class EducationStore {
       'home': '/',
       'teacher': '/teacher',
       'parent': '/parent',
-      'student': '/discovery',
       'public': '/discovery',
       'editor': '/editor',
       'article-editor': '/article-studio',
@@ -241,8 +237,6 @@ export class EducationStore {
   // Currently selected class in Teacher/Class views
   readonly activeClassId = signal<string>('c-4a');
 
-  // Currently selected student in Parent view
-  readonly activeStudentId = signal<string>('st-1');
 
   // Multi-Facet Search & Filter Hub State
   readonly searchQuery = signal<string>('');
@@ -409,7 +403,6 @@ export class EducationStore {
   // Real teachers only — filled from Firestore `teachers` collection (see loadTeachers).
   readonly teachers = signal<TeacherProfile[]>([]);
 
-  readonly students = signal<StudentProfile[]>([]);
 
   readonly announcements = signal<Announcement[]>([
     {
@@ -434,8 +427,6 @@ export class EducationStore {
     ...SEED_COURSES,
   ]);
 
-  readonly homeworks = signal<Homework[]>([]);
-  readonly submissions = signal<Submission[]>([]);
 
   // Public Exercises Repository (Searchable Bank)
   readonly exercisesBank = signal<ExerciseItem[]>([
@@ -449,11 +440,6 @@ export class EducationStore {
     return this.classes().find((c) => c.id === id) || this.classes()[0];
   });
 
-  readonly activeStudent = computed<StudentProfile | null>(() => {
-    const id = this.activeStudentId();
-    return this.students().find((s) => s.id === id) || this.students()[0] || null;
-  });
-
   readonly classAnnouncements = computed(() => {
     const cid = this.activeClassId();
     return this.announcements().filter((a) => a.classId === cid);
@@ -462,11 +448,6 @@ export class EducationStore {
   readonly classCourses = computed(() => {
     const cid = this.activeClassId();
     return this.courses().filter((c) => c.classId === cid);
-  });
-
-  readonly classHomeworks = computed(() => {
-    const cid = this.activeClassId();
-    return this.homeworks().filter((h) => h.classId === cid);
   });
 
   // Official CNP textbooks are tagged 'CNP' (المركز الوطني البيداغوجي).
@@ -694,20 +675,16 @@ export class EducationStore {
       sig.update((local) => [...sorted, ...local.filter((l) => !remoteIds.has(l.id))]);
     };
 
-    const [courses, exercises, announcements, homeworks, submissions, threads] = await Promise.all([
+    const [courses, exercises, announcements, threads] = await Promise.all([
       this.firebase.fetchUserContent('courses'),
       this.firebase.fetchUserContent('exercises'),
       this.firebase.fetchUserContent('announcements'),
-      this.firebase.fetchUserContent('homeworks'),
-      this.firebase.fetchUserContent('submissions'),
       this.firebase.fetchUserContent('question_threads'),
     ]);
 
     mergeInto(this.courses, courses);
     mergeInto(this.exercisesBank, exercises);
     mergeInto(this.announcements, announcements);
-    mergeInto(this.homeworks, homeworks);
-    mergeInto(this.submissions, submissions);
     mergeInto(this.questionThreads, threads);
   }
 
@@ -835,10 +812,6 @@ export class EducationStore {
   // Actions
   setActiveClass(classId: string) {
     this.activeClassId.set(classId);
-  }
-
-  setActiveStudent(studentId: string) {
-    this.activeStudentId.set(studentId);
   }
 
   // Filter Updaters
@@ -1800,25 +1773,6 @@ export class EducationStore {
     return newC;
   }
 
-  addHomework(hwData: Partial<Homework>) {
-    const activeC = this.activeClass();
-    const newH: Homework = {
-      id: 'hw-' + Date.now(),
-      ownerUid: this.firebase.currentUser()?.uid,
-      title: hwData.title || 'Nouveau Devoir',
-      classId: activeC.id,
-      subject: hwData.subject || 'Mathématiques',
-      dueDate: hwData.dueDate || 'Demain à 18h00',
-      instructions: hwData.instructions || '',
-      exercises: hwData.exercises || [],
-      totalPoints: hwData.totalPoints || 20,
-      submissionsCount: 0,
-      status: 'pending',
-    };
-    this.homeworks.update((list) => [newH, ...list]);
-    void this.firebase.saveHomework(newH as unknown as Record<string, unknown>);
-  }
-
   addExerciseToBank(ex: ExerciseItem) {
     const enriched = {
       ...ex,
@@ -1844,37 +1798,6 @@ export class EducationStore {
     );
     const updated = this.announcements().find((a) => a.id === announcementId);
     if (updated) void this.firebase.saveAnnouncement(updated as unknown as Record<string, unknown>);
-  }
-
-  submitHomeworkAnswer(hwId: string, textAnswer: string, photoUrl?: string) {
-    const student = this.activeStudent();
-    const newSub: Submission = {
-      id: 'sub-' + Date.now(),
-      ownerUid: this.firebase.currentUser()?.uid,
-      homeworkId: hwId,
-      studentId: student?.id || 'st-anon',
-      studentName: student?.name || 'Élève',
-      studentAvatar: student?.avatarUrl || '',
-      submittedAt: 'À l\'instant',
-      textAnswer,
-      photoUrl,
-      maxScore: 20,
-      status: 'pending',
-    };
-
-    this.submissions.update((list) => [newSub, ...list]);
-    void this.firebase.saveSubmission(newSub as unknown as Record<string, unknown>);
-  }
-
-  gradeSubmission(submissionId: string, score: number, feedback: string) {
-    this.submissions.update((list) =>
-      list.map((s) =>
-        s.id === submissionId
-          ? { ...s, score, feedback, status: 'graded' }
-          : s
-      )
-    );
-    void this.firebase.updateSubmission(submissionId, { score, feedback, status: 'graded' });
   }
 
   // ================= BLOG & PEDAGOGICAL ARTICLES =================

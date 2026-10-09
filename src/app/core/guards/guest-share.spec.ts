@@ -11,7 +11,7 @@ describe('guestMayOpen', () => {
   });
 
   it('does not let a share param unlock other guarded pages', () => {
-    for (const path of ['teacher', 'parent', 'student', 'editor', 'ai-studio', 'profile', 'create']) {
+    for (const path of ['teacher', 'parent', 'editor', 'ai-studio', 'profile', 'create']) {
       expect(guestMayOpen(path, has('doc', 'sheet', 'memo', 'topicId')), path).toBe(false);
     }
   });

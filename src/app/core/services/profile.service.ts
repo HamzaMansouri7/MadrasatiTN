@@ -4,8 +4,6 @@ import { EducationStore } from './education-store';
 import {
   UserProfile,
   UserRole,
-  ChildProfile,
-  GradeLevel,
   TeacherProfile,
 } from '../models/education.model';
 import {
@@ -13,10 +11,7 @@ import {
   doc,
   getDocs,
   setDoc,
-  updateDoc,
   deleteDoc,
-  query,
-  where,
 } from 'firebase/firestore';
 
 export interface ProfileCompleteness {
@@ -35,7 +30,6 @@ export class ProfileService {
   readonly userProfile = this.firebase.userProfile;
 
   // Real-time / loaded children list for parent accounts
-  readonly children = signal<ChildProfile[]>([]);
   readonly isChildrenLoading = signal<boolean>(false);
 
   // Role-aware profile completeness meter (computed, not stored)
@@ -64,12 +58,7 @@ export class ProfileService {
     } else if (role === 'parent') {
       check('Nom complet', Boolean(p.displayName && p.displayName.trim().length >= 3));
       check('Numéro de téléphone', Boolean(p.phone && p.phone.trim().length >= 8));
-      check('Au moins un enfant ajouté', this.children().length > 0);
       check('Gouvernorat', Boolean(p.governorate || p.delegation));
-    } else if (role === 'student') {
-      check('Pseudo élève', Boolean(p.displayName && p.displayName.trim().length >= 2));
-      check('Classe / Niveau scolaire', Boolean(p.grade));
-      check('Avatar illustré choisi', Boolean(p.photoURL));
     } else {
       check('Nom d\'affichage', Boolean(p.displayName));
     }
@@ -83,10 +72,7 @@ export class ProfileService {
     effect(() => {
       const p = this.userProfile();
       if (p?.uid && !p.uid.startsWith('demo_user_')) {
-        void this.loadChildren(p.uid);
         void this.syncWatchlistWithFirestore(p.uid);
-      } else {
-        this.children.set([]);
       }
     });
   }
@@ -191,127 +177,6 @@ export class ProfileService {
   }
 
   /**
-   * Load children list from Firestore for parent accounts
-   */
-  async loadChildren(parentUid: string): Promise<ChildProfile[]> {
-    if (!this.firebase.db || parentUid.startsWith('demo_user_')) {
-      return [];
-    }
-
-    this.isChildrenLoading.set(true);
-    try {
-      const q = query(
-        collection(this.firebase.db, 'children'),
-        where('parentUid', '==', parentUid)
-      );
-      const snap = await getDocs(q);
-      const list: ChildProfile[] = snap.docs.map((d) => {
-        const data = d.data();
-        return {
-          id: d.id,
-          parentUid: data['parentUid'] || parentUid,
-          nickname: data['nickname'] || '',
-          grade: data['grade'] || '1ère Année',
-          avatarId: data['avatarId'] || 'avatar-1',
-          school: data['school'] || '',
-          createdAt: data['createdAt'] || Date.now(),
-          updatedAt: data['updatedAt'],
-        };
-      });
-
-      this.children.set(list);
-
-      // Update EducationStore student representations
-      this.syncStoreStudents(list);
-
-      return list;
-    } catch (err) {
-      console.warn('ProfileService: Could not load children from Firestore:', err);
-      return [];
-    } finally {
-      this.isChildrenLoading.set(false);
-    }
-  }
-
-  /**
-   * Add a child record to `children/{childId}`
-   */
-  async addChild(data: {
-    nickname: string;
-    grade: GradeLevel;
-    avatarId: string;
-    school?: string;
-  }): Promise<string> {
-    const user = this.userProfile();
-    if (!user) throw new Error('Must be logged in to add a child');
-
-    const childId = 'ch_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
-    const newChild: ChildProfile = {
-      id: childId,
-      parentUid: user.uid,
-      nickname: data.nickname.trim(),
-      grade: data.grade,
-      avatarId: data.avatarId || 'avatar-1',
-      school: data.school?.trim() || '',
-      createdAt: Date.now(),
-    };
-
-    if (this.firebase.db && !user.uid.startsWith('demo_user_')) {
-      await setDoc(doc(this.firebase.db, 'children', childId), newChild);
-    }
-
-    this.children.update((curr) => [...curr, newChild]);
-    this.syncStoreStudents(this.children());
-
-    // Auto-select as active student if first child
-    if (this.children().length === 1) {
-      this.store.setActiveStudent(childId);
-    }
-
-    return childId;
-  }
-
-  /**
-   * Update child record
-   */
-  async updateChild(childId: string, partial: Partial<ChildProfile>): Promise<void> {
-    const user = this.userProfile();
-    if (!user) throw new Error('Must be logged in');
-
-    if (this.firebase.db && !user.uid.startsWith('demo_user_')) {
-      await updateDoc(doc(this.firebase.db, 'children', childId), {
-        ...partial,
-        updatedAt: Date.now(),
-      });
-    }
-
-    this.children.update((curr) =>
-      curr.map((c) => (c.id === childId ? { ...c, ...partial, updatedAt: Date.now() } : c))
-    );
-    this.syncStoreStudents(this.children());
-  }
-
-  /**
-   * Delete child record and remove associated activity
-   */
-  async deleteChild(childId: string): Promise<void> {
-    const user = this.userProfile();
-    if (!user) throw new Error('Must be logged in');
-
-    if (this.firebase.db && !user.uid.startsWith('demo_user_')) {
-      await deleteDoc(doc(this.firebase.db, 'children', childId));
-    }
-
-    this.children.update((curr) => curr.filter((c) => c.id !== childId));
-    this.syncStoreStudents(this.children());
-
-    if (this.store.activeStudentId() === childId) {
-      const remaining = this.children();
-      this.store.setActiveStudent(remaining.length > 0 ? remaining[0].id : '');
-    }
-  }
-
-  /**
    * Sync Watchlist with Firestore `users/{uid}/watchlist/{itemId}` and merge local cache
    */
   async syncWatchlistWithFirestore(uid: string): Promise<void> {
@@ -357,13 +222,11 @@ export class ProfileService {
    */
   async exportUserData(): Promise<string> {
     const user = this.userProfile();
-    const children = this.children();
     const watchlist = this.store.watchlist();
 
     const dataPackage = {
       exportDate: new Date().toISOString(),
       userProfile: user,
-      children,
       watchlist,
       platform: 'Madrasati TN (مدرستي تونس)',
     };
@@ -379,16 +242,7 @@ export class ProfileService {
     if (!user) return;
 
     if (this.firebase.db && !user.uid.startsWith('demo_user_')) {
-      // 1. Delete all children
-      for (const child of this.children()) {
-        try {
-          await deleteDoc(doc(this.firebase.db, 'children', child.id));
-        } catch {
-          // continue
-        }
-      }
-
-      // 2. Delete teacher card if exists
+      // 1. Delete teacher card if exists
       try {
         await deleteDoc(doc(this.firebase.db, 'teachers', user.uid));
       } catch {
@@ -409,37 +263,6 @@ export class ProfileService {
       localStorage.removeItem('madrasati_user');
       localStorage.removeItem('madrasati_watchlist');
     }
-  }
-
-  /**
-   * Keep EducationStore students signal in sync with real ChildProfile records
-   */
-  private syncStoreStudents(childList: ChildProfile[]): void {
-    if (childList.length === 0) {
-      this.store.students.set([]);
-      return;
-    }
-
-    const students = childList.map((c) => ({
-      id: c.id,
-      name: c.nickname,
-      grade: c.grade,
-      school: c.school || 'École Primaire Tunisienne',
-      avatarUrl: `/assets/avatars/${c.avatarId || 'avatar-1'}.svg`,
-      avatarId: c.avatarId || 'avatar-1',
-      parentId: c.parentUid,
-      streakDays: 0,
-      totalPoints: 0,
-      completedExercisesCount: 0,
-      subjectsProgress: [
-        { subject: 'Mathématiques' as const, score: 0, color: '#10b981' },
-        { subject: 'Français' as const, score: 0, color: '#6366f1' },
-        { subject: 'اللغة العربية' as const, score: 0, color: '#f59e0b' },
-        { subject: 'Éveil Scientifique' as const, score: 0, color: '#06b6d4' },
-      ],
-    }));
-
-    this.store.students.set(students);
   }
 
   /**

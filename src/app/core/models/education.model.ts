@@ -1,4 +1,4 @@
-export type UserRole = 'home' | 'teacher' | 'parent' | 'student' | 'public' | 'editor' | 'article-editor';
+export type UserRole = 'home' | 'teacher' | 'parent' | 'public' | 'editor' | 'article-editor';
 
 export type GradeLevel =
   | '1ère Année'
@@ -170,36 +170,6 @@ export interface WorksheetDoc {
   createdAt?: string;
 }
 
-export interface Homework {
-  id: string;
-  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
-  title: string;
-  classId: string;
-  subject: SubjectName;
-  dueDate: string;
-  instructions: string;
-  exercises: ExerciseItem[];
-  totalPoints: number;
-  submissionsCount: number;
-  status: 'pending' | 'submitted' | 'corrected';
-}
-
-export interface Submission {
-  id: string;
-  ownerUid?: string;        // Firebase auth uid of the creator (ownership rules)
-  homeworkId: string;
-  studentId: string;
-  studentName: string;
-  studentAvatar: string;
-  submittedAt: string;
-  textAnswer?: string;
-  photoUrl?: string;
-  score?: number;
-  maxScore: number;
-  feedback?: string;
-  status: 'pending' | 'graded';
-}
-
 export interface ClassGroup {
   id: string;
   name: string;
@@ -289,7 +259,7 @@ export interface Comment {
   targetId: string;      // course id or exercise id
   targetType: 'course' | 'exercise';
   authorName: string;
-  authorRole: 'teacher' | 'parent' | 'student' | 'public';
+  authorRole: 'teacher' | 'parent' | 'public';
   authorAvatar?: string;
   text: string;
   createdAt: string;
@@ -331,47 +301,6 @@ export interface UserProfile {
   createdAt?: number;
   updatedAt?: number;
   onboardedAt?: number;
-}
-
-export interface ChildProfile {
-  id: string;
-  parentUid: string;
-  nickname: string;
-  grade: GradeLevel;
-  avatarId: string;
-  school?: string;
-  createdAt: number;
-  updatedAt?: number;
-}
-
-export interface ChildActivity {
-  id: string;
-  childId: string;
-  exerciseId: string;
-  subject: SubjectName;
-  grade: GradeLevel;
-  score: number;
-  totalPoints: number;
-  completedAt: number;
-}
-
-export interface StudentProfile {
-  id: string;
-  name: string;
-  grade: GradeLevel;
-  school?: string;
-  avatarUrl?: string;
-  avatarId?: string;
-  parentId?: string;
-  classId?: string;
-  streakDays: number;
-  totalPoints: number;
-  completedExercisesCount: number;
-  subjectsProgress: {
-    subject: SubjectName;
-    score: number;
-    color: string;
-  }[];
 }
 
 export interface BlogComment {

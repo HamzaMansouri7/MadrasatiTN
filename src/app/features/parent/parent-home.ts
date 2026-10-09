@@ -22,26 +22,9 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               {{ parentGreeting() }}
             </h1>
 
-            @if (isUserLoggedIn() && store.activeStudent(); as st) {
-              <div class="flex items-center gap-3 pt-1">
-                <div class="w-10 h-10 rounded-full bg-[#007CC2] text-white flex items-center justify-center font-bold">
-                  {{ st.name.charAt(0) }}
-                </div>
-                <div>
-                  <p class="font-semibold text-sm flex items-center gap-2 text-white">
-                    <span>{{ st.name }}</span>
-                    <span class="text-[11px] bg-[#E0AA32]/20 text-[#E0AA32] border border-[#E0AA32]/40 px-2 py-0.5 rounded-full font-semibold">
-                      {{ st.grade }}
-                    </span>
-                  </p>
-                  <p class="text-xs text-[#8CA9C4]">{{ st.school }}</p>
-                </div>
-              </div>
-            } @else {
-              <p class="text-xs sm:text-sm text-[#8CA9C4] max-w-xl leading-relaxed">
+            <p class="text-xs sm:text-sm text-[#8CA9C4] max-w-xl leading-relaxed">
                 {{ lang.tr('Banque nationale de devoirs et résumés conformes A4, conseils pédagogiques des enseignants et espace d’entraide.', 'بنك الامتحانات والملخصات الرسمية A4، نصائح المربين وفضاء طرح الأسئلة والتوجيه المدرسي.') }}
               </p>
-            }
           </div>
 
           <!-- Sibling Switcher or Quick CTA -->
@@ -60,27 +43,13 @@ import { EducationStore, LanguageService, FirebaseService, Course, BlogPost, Gra
               <span>{{ lang.tr('Générer Fiche d’Entraînement', 'توليد ورقة تمارين منزلية') }}</span>
             </button>
 
-            @if (isUserLoggedIn() && store.students().length > 1) {
-              <div class="bg-white/10 p-2 rounded-[12px] border border-white/15 flex items-center gap-1.5">
-                <span class="text-[11px] text-[#8CA9C4] font-medium hidden sm:inline">{{ lang.t('switchChild') }}:</span>
-                @for (st of store.students(); track st.id) {
-                  <button
-                    (click)="store.setActiveStudent(st.id)"
-                    [class]="store.activeStudentId() === st.id ? 'bg-[#007CC2] text-white font-semibold' : 'text-white/80 hover:text-white'"
-                    class="px-2.5 py-1 rounded-[8px] text-xs transition-colors cursor-pointer flex items-center gap-1">
-                    <span class="material-icons text-xs">face</span>
-                    {{ st.name }}
-                  </button>
-                }
-              </div>
-            } @else {
               <button
                 (click)="openModal('askQuestion')"
                 class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-4 py-2.5 rounded-[10px] text-xs transition-colors cursor-pointer shadow-sm">
                 <span class="material-icons text-base">help_outline</span>
                 {{ lang.t('askQuestionBtn') }}
               </button>
-            }
+            
           </div>
         </div>
       </div>

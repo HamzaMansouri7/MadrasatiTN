@@ -24,11 +24,6 @@ export const routes: Routes = [
     title: 'فضاء الولي | Espace Parent - Madrasati TN',
   },
   {
-    path: 'student',
-    redirectTo: 'discovery',
-    pathMatch: 'full',
-  },
-  {
     path: 'discovery',
     loadComponent: () =>
       import('./features/discovery/public-discovery').then((m) => m.PublicDiscoveryComponent),

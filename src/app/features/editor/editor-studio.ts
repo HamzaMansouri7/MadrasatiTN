@@ -214,7 +214,7 @@ export class EditorStudioComponent implements OnInit {
   // Dual-Mode Studio Signals (Teacher vs Parent - Idea 16)
   readonly isParentMode = computed(() => this.store.previousRole() === 'parent');
   readonly customChildName = signal<string>('');
-  readonly activeChildName = computed(() => this.customChildName() || this.store.activeStudent()?.name || 'Élève');
+  readonly activeChildName = computed(() => this.customChildName() || 'Élève');
   readonly isTransformingId = signal<string | null>(null);
 
   // Computed live exam points sum
@@ -273,10 +273,8 @@ export class EditorStudioComponent implements OnInit {
     this.loadDraft();
     const user = this.firebase.userProfile() || this.firebase.currentUser();
     if (this.isParentMode()) {
-      const child = this.store.activeStudent();
-      this.docWatermark.set(`Entraînement Maison — ${child?.name || 'Élève'}`);
+      this.docWatermark.set(`Entraînement Maison — ${this.activeChildName()}`);
       this.docTitle.set(`Fiche d'Entraînement — ${this.docSubject()}`);
-      if (child?.grade) this.docGrade.set(child.grade as GradeLevel);
     } else if (user?.displayName) {
       this.docWatermark.set(`Madrasati TN — Enseignant : ${user.displayName}`);
     }

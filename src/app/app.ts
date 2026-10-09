@@ -40,7 +40,6 @@ export class App {
           '/': 'home',
           '/teacher': 'teacher',
           '/parent': 'parent',
-          '/student': 'student',
           '/discovery': 'public',
           '/solve': 'public',
           '/summarize': 'public',

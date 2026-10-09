@@ -56,20 +56,6 @@ service cloud.firestore {
       }
     }
 
-    // Children collection (for parents managing children)
-    match /children/{childId} {
-      allow read, write, delete: if isSignedIn() && (
-        resource == null || resource.data.parentUid == request.auth.uid
-      ) && (
-        request.resource == null || request.resource.data.parentUid == request.auth.uid
-      );
-
-      match /activity/{activityId} {
-        allow read, write: if isSignedIn()
-          && get(/databases/$(database)/documents/children/$(childId)).data.parentUid == request.auth.uid;
-      }
-    }
-
     // Public teacher directory cards (whitelisted fields, length limits, immutable verification)
     match /teachers/{userId} {
       allow read: if true;
@@ -117,20 +103,6 @@ service cloud.firestore {
       allow read: if true;
       allow create: if ownsOnCreate();
       allow update: if isDocOwner() || ownerKept(); // upvotes/views by others keep ownerUid intact
-    }
-
-    // Homeworks Collection
-    match /homeworks/{homeworkId} {
-      allow read: if true;
-      allow create: if ownsOnCreate();
-      allow update: if isDocOwner() || ownerKept();
-    }
-
-    // Submissions Collection
-    match /submissions/{submissionId} {
-      allow read: if isSignedIn();
-      allow create: if ownsOnCreate();
-      allow update: if isDocOwner() || ownerKept(); // teacher grading keeps the student's ownerUid
     }
 
     // Exercise bank (teacher-published series/exams)

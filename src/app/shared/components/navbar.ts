@@ -573,7 +573,7 @@ export class NavbarComponent {
   getUserSubtitle(): string {
     const profile = this.firebase.userProfile();
     if (profile?.role === 'teacher') return this.lang.tr('Enseignante Certifiée', 'معلمة معتمدة');
-    if (profile?.role === 'parent' || profile?.role === 'student') return this.lang.tr('Parent Référent', 'ولي أمر متابع');
+    if (profile?.role === 'parent') return this.lang.tr('Parent Référent', 'ولي أمر متابع');
     return this.lang.tr('Non connecté', 'غير متصل');
   }
 

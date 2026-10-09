@@ -7,13 +7,11 @@ import {
   FirebaseService,
   LanguageService,
   EducationStore,
-  GradeLevel,
   UserRole,
-  ChildProfile,
 } from '@core';
 import { TeacherAvatarComponent } from '@shared';
 
-export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'published';
+export type ProfileTab = 'profile' | 'saved' | 'settings' | 'published';
 
 @Component({
   selector: 'app-profile-shell',
@@ -35,7 +33,6 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
               size="xl"
               class="ring-4 ring-[#2D6A4F]/60 rounded-full" />
             
-            @if (currentRole() !== 'student') {
               <label
                 class="absolute inset-0 rounded-full bg-black/50 text-white flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer transition-opacity text-[11px] font-semibold">
                 <span class="material-icons text-lg">photo_camera</span>
@@ -47,7 +44,7 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
                   (change)="handleAvatarSelected($event)"
                   [disabled]="isUploadingAvatar()" />
               </label>
-            }
+            
           </div>
 
           <div class="space-y-2 text-center sm:text-left flex-1">
@@ -90,12 +87,6 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
                 class="text-xs px-3 py-1 rounded-lg transition-colors cursor-pointer border border-[#3A5A4A]">
                 {{ lang.tr('Enseignant', 'معلم') }}
               </button>
-              <button
-                (click)="switchRole('student')"
-                [class]="currentRole() === 'student' ? 'bg-[#F2C14E] text-[#14251D] font-bold' : 'bg-[#233D30] text-[#B7C7BC] hover:text-white'"
-                class="text-xs px-3 py-1 rounded-lg transition-colors cursor-pointer border border-[#3A5A4A]">
-                {{ lang.tr('Élève', 'تلميذ') }}
-              </button>
             </div>
           </div>
         </div>
@@ -131,17 +122,6 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
           <span class="material-icons text-sm">badge</span>
           {{ lang.tr('Informations & Profil', 'المعلومات الشخصية') }}
         </button>
-
-        @if (currentRole() === 'parent') {
-          <button
-            (click)="setTab('children')"
-            [class]="activeTab() === 'children' ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'bg-[#F2ECDE] text-[#4A5A50] hover:bg-[#E7DFCF]'"
-            class="px-4 py-2 rounded-xl text-xs font-semibold cursor-pointer transition-colors shrink-0 flex items-center gap-1.5">
-            <span class="material-icons text-sm">family_restroom</span>
-            {{ lang.tr('Mes Enfants', 'أبنائي') }}
-            <span class="bg-[#14251D] text-[#FBF8F1] text-[10px] px-1.5 py-0.2 rounded-full">{{ children().length }}</span>
-          </button>
-        }
 
         @if (currentRole() === 'teacher') {
           <button
@@ -183,31 +163,11 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
             </p>
           </div>
 
-          <!-- Student Illustrated Avatar Selector -->
-          @if (currentRole() === 'student') {
-            <div class="space-y-3">
-              <p class="block text-xs font-semibold text-[#14251D]">
-                {{ lang.tr('Choisissez votre avatar illustré', 'اختر صورتك الرمزية') }}
-              </p>
-              <div class="grid grid-cols-3 sm:grid-cols-6 gap-3">
-                @for (avId of ['avatar-1', 'avatar-2', 'avatar-3', 'avatar-4', 'avatar-5', 'avatar-6']; track avId) {
-                  <button
-                    type="button"
-                    (click)="selectStudentAvatar(avId)"
-                    [class]="selectedStudentAvatar() === avId ? 'ring-3 ring-[#2D6A4F] bg-[#F2ECDE]' : 'border border-[#E7DFCF] bg-[#FBF8F1] hover:bg-[#F2ECDE]'"
-                    class="p-2 rounded-xl flex flex-col items-center gap-2 cursor-pointer transition-all">
-                    <img [src]="'/assets/avatars/' + avId + '.svg'" alt="Avatar" class="w-12 h-12 rounded-full" />
-                    <span class="text-[11px] font-mono text-[#14251D]">{{ avId }}</span>
-                  </button>
-                }
-              </div>
-            </div>
-          }
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label for="pf-1" class="block text-xs font-semibold text-[#14251D] mb-1">
-                {{ currentRole() === 'student' ? lang.tr('Pseudo élève *', 'الاسم المستعار للتلميذ *') : lang.tr('Nom et prénom *', 'الاسم واللقب *') }}
+                {{ lang.tr('Nom et prénom *', 'الاسم واللقب *') }}
               </label>
               <input id="pf-1"
                 type="text"
@@ -300,34 +260,6 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
               </div>
             }
 
-            @if (currentRole() === 'student') {
-              <div>
-                <label for="pf-9" class="block text-xs font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('Classe / Niveau scolaire *', 'القسم / المستوى الدراسي *') }}
-                </label>
-                <select id="pf-9"
-                  [(ngModel)]="editGrade"
-                  class="w-full bg-[#FBF8F1] border border-[#D5CDBC] rounded-xl px-3.5 py-2.5 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]">
-                  <option value="1ère Année">1ère Année (السنة الأولى)</option>
-                  <option value="2ème Année">2ème Année (السنة الثانية)</option>
-                  <option value="3ème Année">3ème Année (السنة الثالثة)</option>
-                  <option value="4ème Année">4ème Année (السنة الرابعة)</option>
-                  <option value="5ème Année">5ème Année (السنة الخامسة)</option>
-                  <option value="6ème Année">6ème Année (السنة السادسة)</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="pf-10" class="block text-xs font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('École primaire', 'المدرسة الابتدائية') }}
-                </label>
-                <input id="pf-10"
-                  type="text"
-                  [(ngModel)]="editSchool"
-                  placeholder="Ex: École de la République"
-                  class="w-full bg-[#FBF8F1] border border-[#D5CDBC] rounded-xl px-3.5 py-2.5 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
-              </div>
-            }
           </div>
 
           @if (currentRole() === 'teacher') {
@@ -360,84 +292,6 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
       }
 
       <!-- TAB 2: CHILDREN MANAGEMENT (PARENT ONLY) -->
-      @if (activeTab() === 'children' && currentRole() === 'parent') {
-        <div class="space-y-5">
-          <div class="flex items-center justify-between">
-            <div>
-              <h2 class="font-display font-semibold text-base text-[#14251D]">
-                {{ lang.tr('Espace Enfants & Suivi Scolaire', 'فضاء الأبناء والمتابعة الدراسية') }}
-              </h2>
-              <p class="text-xs text-[#6B7A70]">
-                {{ lang.tr('Ajoutez vos enfants pour personnaliser leurs exercices et suivre leurs progrès.', 'أضف أبناءك لتخصيص التمارين ومتابعة تقدمهم.') }}
-              </p>
-            </div>
-            <button
-              (click)="openAddChildModal()"
-              class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] px-4 py-2 rounded-xl text-xs font-semibold cursor-pointer transition-colors flex items-center gap-1.5 shadow-xs">
-              <span class="material-icons text-sm">add</span>
-              {{ lang.tr('Ajouter un enfant', 'إضافة ابن') }}
-            </button>
-          </div>
-
-          @if (children().length === 0) {
-            <div class="bg-white rounded-2xl p-8 border border-[#E7DFCF] text-center space-y-4 shadow-xs">
-              <div class="w-16 h-16 bg-[#F2ECDE] rounded-full flex items-center justify-center mx-auto text-[#2D6A4F]">
-                <span class="material-icons text-3xl">child_care</span>
-              </div>
-              <div class="space-y-1">
-                <h3 class="font-display font-semibold text-base text-[#14251D]">
-                  {{ lang.tr('Aucun enfant enregistré pour le moment', 'لم يتم تسجيل أي تلميذ بعد') }}
-                </h3>
-                <p class="text-xs text-[#6B7A70] max-w-md mx-auto">
-                  {{ lang.tr('Ajoutez vos enfants pour générer des devoirs adaptés à leur niveau et synchroniser leur progression.', 'أضف أبناءك للوصول إلى التمارين المخصصة لمستواهم وتتبع تقدمهم.') }}
-                </p>
-              </div>
-              <button
-                (click)="openAddChildModal()"
-                class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] px-5 py-2.5 rounded-xl text-xs font-semibold cursor-pointer transition-colors inline-flex items-center gap-1.5">
-                <span class="material-icons text-sm">add_circle</span>
-                {{ lang.tr('Ajouter mon premier enfant', 'إضافة ابني الأول') }}
-              </button>
-            </div>
-          } @else {
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              @for (child of children(); track child.id) {
-                <div class="bg-white rounded-2xl p-5 border border-[#E7DFCF] space-y-4 shadow-xs hover:border-[#2D6A4F] transition-all">
-                  <div class="flex items-center gap-3">
-                    <img [src]="'/assets/avatars/' + child.avatarId + '.svg'" alt="Avatar" class="w-12 h-12 rounded-full border border-[#D5CDBC]" />
-                    <div class="flex-1 min-w-0">
-                      <h4 class="font-display font-semibold text-sm text-[#14251D] truncate">{{ child.nickname }}</h4>
-                      <p class="text-xs text-[#2D6A4F] font-medium">{{ child.grade }}</p>
-                      @if (child.school) {
-                        <p class="text-[11px] text-[#6B7A70] truncate">{{ child.school }}</p>
-                      }
-                    </div>
-                  </div>
-
-                  <div class="flex items-center justify-between pt-3 border-t border-[#E7DFCF] text-xs">
-                    <button
-                      (click)="store.setActiveStudent(child.id)"
-                      [class]="store.activeStudentId() === child.id ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'bg-[#F2ECDE] text-[#14251D] hover:bg-[#E7DFCF]'"
-                      class="px-3 py-1.5 rounded-lg font-semibold cursor-pointer transition-colors flex items-center gap-1">
-                      <span class="material-icons text-xs">{{ store.activeStudentId() === child.id ? 'check_circle' : 'radio_button_unchecked' }}</span>
-                      {{ store.activeStudentId() === child.id ? lang.tr('Actif', 'النشط') : lang.tr('Sélectionner', 'تحديد') }}
-                    </button>
-                    
-                    <div class="flex items-center gap-1">
-                      <button
-                        (click)="confirmDeleteChild(child)"
-                        class="text-[#C1121F] hover:bg-[#FDF0ED] p-1.5 rounded-lg transition-colors cursor-pointer"
-                        title="Supprimer">
-                        <span class="material-icons text-base">delete</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              }
-            </div>
-          }
-        </div>
-      }
 
       <!-- TAB 3: SAVED WATCHLIST -->
       @if (activeTab() === 'saved') {
@@ -650,91 +504,6 @@ export type ProfileTab = 'profile' | 'children' | 'saved' | 'settings' | 'publis
     </div>
 
     <!-- MODAL: ADD CHILD -->
-    @if (isAddChildModalOpen()) {
-      <div class="fixed inset-0 z-50 bg-[#14251D]/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-[#FBF8F1] rounded-2xl max-w-md w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl">
-          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
-            <h3 class="font-display font-semibold text-[#14251D] text-sm">
-              {{ lang.tr('Ajouter un enfant', 'إضافة ابن جديد') }}
-            </h3>
-            <button (click)="isAddChildModalOpen.set(false)" class="text-[#6B7A70] hover:text-[#14251D] cursor-pointer">
-              <span class="material-icons">close</span>
-            </button>
-          </div>
-
-          <div class="space-y-3">
-            <div>
-              <label for="pf-12" class="block text-xs font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Prénom ou Pseudo de l’élève *', 'اسم أو لقب التلميذ *') }}
-              </label>
-              <input id="pf-12"
-                type="text"
-                [(ngModel)]="newChildName"
-                placeholder="Ex: Youssef"
-                class="w-full bg-white border border-[#D5CDBC] rounded-xl px-3.5 py-2.5 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
-            </div>
-
-            <div>
-              <label for="pf-13" class="block text-xs font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Niveau scolaire (Classe) *', 'المستوى الدراسي *') }}
-              </label>
-              <select id="pf-13"
-                [(ngModel)]="newChildGrade"
-                class="w-full bg-white border border-[#D5CDBC] rounded-xl px-3.5 py-2.5 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]">
-                <option value="1ère Année">1ère Année (السنة الأولى)</option>
-                <option value="2ème Année">2ème Année (السنة الثانية)</option>
-                <option value="3ème Année">3ème Année (السنة الثالثة)</option>
-                <option value="4ème Année">4ème Année (السنة الرابعة)</option>
-                <option value="5ème Année">5ème Année (السنة الخامسة)</option>
-                <option value="6ème Année">6ème Année (السنة السادسة)</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="pf-14" class="block text-xs font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Établissement scolaire (Optionnel)', 'المدرسة (اختياري)') }}
-              </label>
-              <input id="pf-14"
-                type="text"
-                [(ngModel)]="newChildSchool"
-                placeholder="Ex: École Primaire Habib Bourguiba"
-                class="w-full bg-white border border-[#D5CDBC] rounded-xl px-3.5 py-2.5 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
-            </div>
-
-            <div>
-              <p class="block text-xs font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Avatar illustré', 'الصورة الرمزية') }}
-              </p>
-              <div class="grid grid-cols-6 gap-2">
-                @for (avId of ['avatar-1', 'avatar-2', 'avatar-3', 'avatar-4', 'avatar-5', 'avatar-6']; track avId) {
-                  <button
-                    type="button"
-                    (click)="newChildAvatar = avId"
-                    [class]="newChildAvatar === avId ? 'ring-2 ring-[#2D6A4F] bg-[#F2ECDE]' : 'border border-[#E7DFCF] bg-white'"
-                    class="p-1 rounded-xl flex items-center justify-center cursor-pointer">
-                    <img [src]="'/assets/avatars/' + avId + '.svg'" alt="Avatar" class="w-8 h-8 rounded-full" />
-                  </button>
-                }
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-2 pt-3 border-t border-[#E7DFCF]">
-            <button
-              (click)="isAddChildModalOpen.set(false)"
-              class="flex-1 bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#14251D] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors">
-              {{ lang.tr('Annuler', 'إلغاء') }}
-            </button>
-            <button
-              (click)="submitAddChild()"
-              [disabled]="!newChildName.trim()"
-              class="flex-1 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-2.5 rounded-xl text-xs cursor-pointer transition-colors disabled:opacity-50">
-              {{ lang.tr('Ajouter', 'تأكيد الإضافة') }}
-            </button>
-          </div>
-        </div>
-      </div>
-    }
   `,
 })
 export class ProfileShellComponent implements OnInit {
@@ -747,12 +516,10 @@ export class ProfileShellComponent implements OnInit {
 
   readonly profile = this.profileService.userProfile;
   readonly completeness = this.profileService.completeness;
-  readonly children = this.profileService.children;
 
   readonly activeTab = signal<ProfileTab>('profile');
   readonly isSaving = signal<boolean>(false);
   readonly isUploadingAvatar = signal<boolean>(false);
-  readonly isAddChildModalOpen = signal<boolean>(false);
 
   // Profile form state
   editName = '';
@@ -761,19 +528,13 @@ export class ProfileShellComponent implements OnInit {
   editSchool = '';
   editDelegation = '';
   editCnpId = '';
-  editGrade: GradeLevel = '4ème Année';
   editBio = '';
-  selectedStudentAvatar = signal<string>('avatar-1');
 
   // Preferences state
   prefActivity = true;
   prefAnnouncements = true;
 
   // New child modal state
-  newChildName = '';
-  newChildGrade: GradeLevel = '1ère Année';
-  newChildSchool = '';
-  newChildAvatar = 'avatar-1';
 
   readonly currentRole = computed<UserRole>(() => {
     const p = this.profile();
@@ -783,7 +544,6 @@ export class ProfileShellComponent implements OnInit {
   readonly roleLabel = computed(() => {
     switch (this.currentRole()) {
       case 'teacher': return this.lang.tr('Enseignant', 'معلم');
-      case 'student': return this.lang.tr('Élève', 'تلميذ');
       default: return this.lang.tr('Parent d’élève', 'ولي أمر');
     }
   });
@@ -809,7 +569,6 @@ export class ProfileShellComponent implements OnInit {
       this.editSchool = p.school || '';
       this.editDelegation = p.delegation || p.governorate || '';
       this.editCnpId = p.cnpId || '';
-      this.editGrade = (p.grade as GradeLevel) || '4ème Année';
       this.editBio = p.bio || '';
       this.prefActivity = p.notificationPrefs?.activity ?? true;
       this.prefAnnouncements = p.notificationPrefs?.announcements ?? true;
@@ -827,11 +586,6 @@ export class ProfileShellComponent implements OnInit {
 
   async switchRole(role: UserRole) {
     await this.profileService.switchRole(role);
-  }
-
-  selectStudentAvatar(avId: string) {
-    this.selectedStudentAvatar.set(avId);
-    void this.profileService.update({ photoURL: `/assets/avatars/${avId}.svg` });
   }
 
   async handleAvatarSelected(e: Event) {
@@ -862,7 +616,6 @@ export class ProfileShellComponent implements OnInit {
         delegation: this.editDelegation.trim() || undefined,
         governorate: this.editDelegation.trim() || undefined,
         cnpId: this.editCnpId.trim() || undefined,
-        grade: this.currentRole() === 'student' ? this.editGrade : undefined,
         bio: this.editBio.trim() || undefined,
         onboardedAt: Date.now(),
       });
@@ -872,48 +625,6 @@ export class ProfileShellComponent implements OnInit {
       this.store.showToast(this.lang.tr('Erreur lors de l’enregistrement', 'حدث خطأ أثناء الحفظ'));
     } finally {
       this.isSaving.set(false);
-    }
-  }
-
-  openAddChildModal() {
-    this.newChildName = '';
-    this.newChildGrade = '1ère Année';
-    this.newChildSchool = '';
-    this.newChildAvatar = 'avatar-1';
-    this.isAddChildModalOpen.set(true);
-  }
-
-  async submitAddChild() {
-    if (!this.newChildName.trim()) return;
-    try {
-      await this.profileService.addChild({
-        nickname: this.newChildName.trim(),
-        grade: this.newChildGrade,
-        avatarId: this.newChildAvatar,
-        school: this.newChildSchool.trim() || undefined,
-      });
-      this.isAddChildModalOpen.set(false);
-      this.store.showToast(this.lang.tr('Enfant ajouté avec succès', 'تمت إضافة الابن بنجاح'));
-    } catch (err) {
-      console.error('Add child error:', err);
-      this.store.showToast(this.lang.tr('Erreur lors de l’ajout', 'حدث خطأ أثناء الإضافة'));
-    }
-  }
-
-  async confirmDeleteChild(child: ChildProfile) {
-    const ok = confirm(
-      this.lang.tr(
-        `Êtes-vous sûr de vouloir supprimer ${child.nickname} ? Ses données de progression seront effacées.`,
-        `هل أنت متأكد من رغبتك في حذف ${child.nickname}؟ سيتم حذف جميع بيانات تقدمه.`
-      )
-    );
-    if (!ok) return;
-
-    try {
-      await this.profileService.deleteChild(child.id);
-      this.store.showToast(this.lang.tr('Enfant supprimé', 'تم حذف السجل'));
-    } catch (err) {
-      console.error('Delete child error:', err);
     }
   }
 

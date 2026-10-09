@@ -93,6 +93,11 @@ export class LanguageService {
     bdCopyPost: { fr: 'Copier comme publication', ar: 'نسخ كمنشور' },
     bdPostCopied: { fr: 'Publication copiée !', ar: 'تم نسخ المنشور!' },
     bdDraft: { fr: 'Brouillon — en attente de validation', ar: 'مسودة — بانتظار التوثيق' },
+    bdBack: { fr: 'Retour aux albums', ar: 'العودة إلى الألبومات' },
+    bdAllTrimesters: { fr: 'Tous les trimestres', ar: 'كل الثلاثيات' },
+    bdAlbumOpen: { fr: 'Ouvrir l’album', ar: 'فتح الألبوم' },
+    bdZoom: { fr: 'Agrandir / réduire', ar: 'تكبير / تصغير' },
+    bdAlbums: { fr: 'albums', ar: 'ألبوم' },
 
     // Photo-Solve (public solver)
     solveTitle: { fr: 'Photographiez l’exercice, recevez la solution', ar: 'صوّر التمرين واحصل على الحل' },
@@ -192,7 +197,6 @@ export class LanguageService {
     activeClassLabel: { fr: 'Classe active :', ar: 'الفصل الحالي:' },
     addAnnouncementBtn: { fr: '+ Annonce', ar: '+ إعلان جديد' },
     addCourseBtn: { fr: '+ Cours', ar: '+ درس جديد' },
-    addHomeworkBtn: { fr: '+ Devoir', ar: '+ واجب مدرسي' },
     aiAssistantBtn: { fr: 'Assistant IA', ar: 'المساعد الذكي Gemini' },
 
     // Stats Cards
@@ -204,7 +208,6 @@ export class LanguageService {
     // Tabs & Workspace Sections
     tabAnnouncements: { fr: 'Annonces Officielles', ar: 'الإعلانات الرسمية' },
     tabCourses: { fr: 'Cours & Fiches A4', ar: 'الدروس والملخصات A4' },
-    tabHomeworks: { fr: 'Devoirs & Exercices', ar: 'الواجبات والتمارين' },
     tabSubmissions: { fr: 'Corrections Élèves', ar: 'تطبيقات التلاميذ والإصلاح' },
     tabTeacherDocs: { fr: 'Fiches & Évaluations A4', ar: 'الوثائق والامتحانات A4' },
     tabTeacherBlog: { fr: 'Blog Pédagogique', ar: 'المدونة البيداغوجية' },
@@ -238,7 +241,6 @@ export class LanguageService {
 
     // Parent View
     parentTitle: { fr: 'Espace Parent', ar: 'فضاء الولي' },
-    switchChild: { fr: 'Changer d\'enfant :', ar: 'متابعة تلميذ آخر:' },
     announcementsTitle: { fr: 'Annonces des Enseignants', ar: 'إعلانات المعلمين' },
     announcementsSub: {
       fr: 'Communications officielles transmises par l\'école',
@@ -246,7 +248,6 @@ export class LanguageService {
     },
     confirmReadBtn: { fr: 'Confirmer la lecture', ar: 'تأكيد الاطلاع والإعلام' },
     readConfirmed: { fr: 'Bien pris en note', ar: 'تمت المصادقة والاطلاع' },
-    homeworksTitle: { fr: 'Devoirs à rendre', ar: 'الواجبات المدرسية المطلوبة' },
     progressTitle: { fr: 'Suivi des Résultats', ar: 'متابعة النتائج والتحصيل' },
     teachersTitle: { fr: 'Enseignants Référents', ar: 'الإطار التربوي المباشر' },
     messageBtn: { fr: 'Message', ar: 'مراسلة' },
@@ -259,7 +260,6 @@ export class LanguageService {
       ar: 'مرحباً بك في فضاؤك التعليمي. أنجز واجباتك، تدرب على التمارين واطلب المساعدة من معلمك الذكي!',
     },
     successPoints: { fr: 'Points Réussite', ar: 'نقاط التميز' },
-    myHomeworks: { fr: 'Tes Devoirs à Faire', ar: 'واجباتك المدرسية الان' },
     solveBtn: { fr: 'Résoudre maintenant', ar: 'إنجاز الواجب الآن' },
     practiceZone: { fr: 'Entraînement & Autonomie', ar: 'فضاء التدريب المستقل' },
     aiTutorTitle: { fr: 'Mon Tuteur Éducatif IA', ar: 'المعلم الذكي المساعد' },

@@ -10,7 +10,7 @@ Madrasati TN (مدرستي تونس) is a **collaborative Teacher–Parent Educa
   1. A4 printable official ministry exam layout with teacher watermark & attribution.
   2. Free VPS disk-backed storage engine (`/api/upload`) eliminating third-party cloud costs.
   3. Direct 1-click WhatsApp document and assignment distribution.
-  4. Interactive student homework solver with notebook photo uploads and bilingual AI tutoring.
+  4. Homework solver for parents with notebook photo uploads and bilingual AI explanations.
 
 ---
 
@@ -35,7 +35,7 @@ src/
 │   │   ├── landing/                 # Public presentation & conversion landing page
 │   │   ├── teacher/                 # Teacher classroom manager, course/exam publisher
 │   │   ├── parent/                  # Parent multi-child tracker & direct teacher messaging
-│   │   ├── student/                 # Student homework solver, camera upload & AI tutor
+│   │   ├── solve/                   # Parent homework solver, camera upload & AI explanation
 │   │   ├── discovery/               # 38 CNP official textbooks & public repository
 │   │   └── index.ts                 # Barrel export: import from '@features'
 │   │
@@ -63,7 +63,7 @@ src/
 ---
 
 ## 4. Storage & Zero-Cost Infrastructure
-- **VPS File Storage (`/api/upload`):** Files and student notebook photos are uploaded as base64 to `/api/upload` and saved directly to the VPS disk under `/uploads`.
+- **VPS File Storage (`/api/upload`):** Files and notebook photos are uploaded as base64 to `/api/upload` and saved directly to the VPS disk under `/uploads`.
 - **Static Serving:** Served via `express.static('uploads')` at `http://<host>:<port>/uploads/<filename>`.
 - **Benefit:** Zero Firebase Storage limits (no 5GB cap, zero egress bills).
 

@@ -79,7 +79,7 @@ export class FirebaseService {
               displayName: data['displayName'] || user.displayName || 'Utilisateur',
               email: user.email,
               photoURL: data['photoURL'] || user.photoURL || null,
-              role: (data['role'] === 'student' ? 'parent' : (data['role'] as UserRole)) || 'teacher',
+              role: (data['role'] === 'teacher' || !data['role'] ? 'teacher' : 'parent') as UserRole,
               school: data['school'],
               phone: data['phone'],
               grade: data['grade'],
@@ -539,16 +539,6 @@ export class FirebaseService {
     }
   }
 
-  /** Persist a homework doc to `homeworks` collection. */
-  async saveHomework(hw: Record<string, unknown>): Promise<void> {
-    try {
-      const id = hw['id'] as string;
-      await setDoc(doc(this.db, 'homeworks', id), { ...hw, updatedAt: new Date().toISOString() }, { merge: true });
-    } catch (err) {
-      console.warn('Could not write homework to Firestore (retained in local state):', err);
-    }
-  }
-
   /** Persist an exercise to `exercises` collection. */
   async saveExercise(ex: Record<string, unknown>): Promise<void> {
     try {
@@ -577,25 +567,6 @@ export class FirebaseService {
       await setDoc(doc(this.db, 'question_threads', id), { ...sanitized, updatedAt: new Date().toISOString() }, { merge: true });
     } catch (err) {
       console.warn('Could not write question thread to Firestore (retained in local state):', err);
-    }
-  }
-
-  /** Persist a submission to `submissions` collection. */
-  async saveSubmission(sub: Record<string, unknown>): Promise<void> {
-    try {
-      const id = sub['id'] as string;
-      await setDoc(doc(this.db, 'submissions', id), { ...sub, updatedAt: new Date().toISOString() }, { merge: true });
-    } catch (err) {
-      console.warn('Could not write submission to Firestore (retained in local state):', err);
-    }
-  }
-
-  /** Update a submission field (grade/feedback/status). */
-  async updateSubmission(id: string, updates: Record<string, unknown>): Promise<void> {
-    try {
-      await updateDoc(doc(this.db, 'submissions', id), updates);
-    } catch (err) {
-      console.warn('Could not update submission in Firestore:', err);
     }
   }
 

@@ -27,7 +27,7 @@ This is the **single source of truth** for the UI. Every page, component, and fu
 | `rule` | `#E7DFCF` | Hairline borders / dividers |
 | `gold` | `#8A5A00` | Parent accent, links-on-paper |
 | `gold-hi` | `#F2C14E` | Highlight number / AI button on dark bg |
-| `terracotta` | `#BF5B34` | Student accent |
+| `terracotta` | `#BF5B34` | Accent |
 | `seal` | `#C1121F` | Tunisian flag red — **seals only**, never a button fill |
 | text muted (paper) | `#5B6B60` | Secondary text on light |
 | text faint (paper) | `#6B7A70` | Captions on light |
@@ -99,4 +99,4 @@ Icons: Material Icons only (already loaded). **Never emoji as a functional icon.
 
 ## 8. Consistency scope
 
-The canonical style is applied to the landing. It **must be propagated identically** to: teacher, parent, student, discovery workspaces, navbar, auth-modal, footer. A screen is "done" only when it is visually indistinguishable in system from the landing.
+The canonical style is applied to the landing. It **must be propagated identically** to: teacher, parent, discovery workspaces, navbar, auth-modal, footer. A screen is "done" only when it is visually indistinguishable in system from the landing.

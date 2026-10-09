@@ -22,9 +22,6 @@ describe('ProfileService', () => {
 
     const storeMock = {
       watchlist: signal({ courses: [], exercises: [], teachers: [] }),
-      students: signal([]),
-      activeStudentId: signal(''),
-      setActiveStudent: vi.fn(),
       showToast: vi.fn(),
     };
 
@@ -83,7 +80,7 @@ describe('ProfileService', () => {
     expect(comp.missingSteps).toContain('Établissement scolaire');
   });
 
-  it('should correctly calculate completeness for parent role with children', () => {
+  it('should correctly calculate completeness for parent role', () => {
     mockUserProfile.set({
       uid: 'p-123',
       displayName: 'Sami Parent',
@@ -95,20 +92,6 @@ describe('ProfileService', () => {
       governorate: 'Ariana',
     });
 
-    expect(service.completeness().missingSteps).toContain('Au moins un enfant ajouté');
-
-    service.children.set([
-      {
-        id: 'c-1',
-        parentUid: 'p-123',
-        nickname: 'Youssef',
-        grade: '3ème Année',
-        avatarId: 'avatar-1',
-        createdAt: Date.now(),
-      },
-    ]);
-
-    expect(service.completeness().missingSteps).not.toContain('Au moins un enfant ajouté');
     expect(service.completeness().score).toBe(100);
   });
 
