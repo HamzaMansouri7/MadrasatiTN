@@ -33,6 +33,16 @@ interface ResourceManifest {
   items: BdItem[];
 }
 
+/** One album = the pages of one source book for a grade and trimester. */
+export interface BdAlbum {
+  key: string;
+  title: string;
+  grade: string;
+  trimester: number;
+  cover: BdItem;
+  pages: BdItem[];
+}
+
 const GRADE_LABELS: Record<string, { fr: string; ar: string }> = {
   '1ere-annee': { fr: '1ère Année', ar: 'السنة الأولى' },
   '2eme-annee': { fr: '2ème Année', ar: 'السنة الثانية' },
@@ -55,18 +65,53 @@ export class BdLibraryComponent {
   readonly items = signal<BdItem[]>([]);
   readonly isLoading = signal(true);
   readonly activeGrade = signal<string>('all');
+  readonly activeTrimester = signal<number>(0);
+  readonly activeAlbumKey = signal<string | null>(null);
   readonly selectedIndex = signal<number | null>(null);
+  readonly zoomed = signal(false);
 
   readonly grades = computed(() => {
     const seen = new Set(this.items().map((i) => i.grade));
     return Object.keys(GRADE_LABELS).filter((g) => seen.has(g));
   });
 
-  readonly filteredItems = computed(() => {
+  readonly trimesters = computed(() =>
+    [...new Set(this.items().map((i) => i.trimester))].sort((a, b) => a - b),
+  );
+
+  private readonly levelItems = computed(() => {
     const grade = this.activeGrade();
-    const all = this.items();
-    return grade === 'all' ? all : all.filter((i) => i.grade === grade);
+    const trim = this.activeTrimester();
+    return this.items().filter((i) => (grade === 'all' || i.grade === grade) && (!trim || i.trimester === trim));
   });
+
+  readonly albums = computed<BdAlbum[]>(() => {
+    const map = new Map<string, BdAlbum>();
+    for (const item of this.levelItems()) {
+      const key = this.albumKeyOf(item);
+      const album = map.get(key);
+      if (album) album.pages.push(item);
+      else {
+        map.set(key, {
+          key,
+          title: item.title.replace(/\s*(صفحة|page|planche)\s*\d+.*$/i, '').trim() || item.title,
+          grade: item.grade,
+          trimester: item.trimester,
+          cover: item,
+          pages: [item],
+        });
+      }
+    }
+    return [...map.values()];
+  });
+
+  readonly activeAlbum = computed(() => {
+    const key = this.activeAlbumKey();
+    return key ? this.albums().find((a) => a.key === key) ?? null : null;
+  });
+
+  /** Pages the reader steps through: the open album, else everything matching the filters. */
+  readonly filteredItems = computed(() => this.activeAlbum()?.pages ?? this.levelItems());
 
   readonly selectedItem = computed(() => {
     const idx = this.selectedIndex();
@@ -98,8 +143,10 @@ export class BdLibraryComponent {
 
       // Deep link: /discovery?bd=<itemId> opens the reader directly on that page.
       const target = new URLSearchParams(window.location.search).get('bd');
-      if (target) {
-        const pos = this.filteredItems().findIndex((i) => i.id === target);
+      const found = target ? this.items().find((i) => i.id === target) : undefined;
+      if (found) {
+        this.activeAlbumKey.set(this.albumKeyOf(found));
+        const pos = this.filteredItems().findIndex((i) => i.id === found.id);
         if (pos >= 0) this.selectedIndex.set(pos);
       }
     } catch (err) {
@@ -114,27 +161,77 @@ export class BdLibraryComponent {
     return g ? this.lang.tr(g.fr, g.ar) : slug;
   }
 
+  private albumKeyOf(item: BdItem): string {
+    return `${item.grade}|${item.trimester}|${item.ref.split('#')[0]}`;
+  }
+
+  trimesterLabel(n: number): string {
+    return this.lang.tr(`Trimestre ${n}`, `الثلاثي ${['', 'الأول', 'الثاني', 'الثالث'][n] || n}`);
+  }
+
   setGrade(grade: string) {
     this.activeGrade.set(grade);
+    this.activeAlbumKey.set(null);
+    this.selectedIndex.set(null);
+  }
+
+  setTrimester(trim: number) {
+    this.activeTrimester.set(trim);
+    this.activeAlbumKey.set(null);
+    this.selectedIndex.set(null);
+  }
+
+  openAlbum(key: string) {
+    this.activeAlbumKey.set(key);
+  }
+
+  closeAlbum() {
+    this.activeAlbumKey.set(null);
     this.selectedIndex.set(null);
   }
 
   openReader(index: number) {
+    this.zoomed.set(false);
     this.selectedIndex.set(index);
   }
 
   closeReader() {
+    this.zoomed.set(false);
     this.selectedIndex.set(null);
+  }
+
+  goTo(index: number) {
+    this.zoomed.set(false);
+    this.selectedIndex.set(index);
   }
 
   prev() {
     const idx = this.selectedIndex();
-    if (idx !== null && idx > 0) this.selectedIndex.set(idx - 1);
+    if (idx !== null && idx > 0) this.goTo(idx - 1);
   }
 
   next() {
     const idx = this.selectedIndex();
-    if (idx !== null && idx < this.filteredItems().length - 1) this.selectedIndex.set(idx + 1);
+    if (idx !== null && idx < this.filteredItems().length - 1) this.goTo(idx + 1);
+  }
+
+  toggleZoom() {
+    this.zoomed.update((z) => !z);
+  }
+
+  private touchStartX = 0;
+
+  onTouchStart(event: TouchEvent) {
+    this.touchStartX = event.touches[0]?.clientX ?? 0;
+  }
+
+  /** Horizontal swipe turns the page (swipe left = next), ignored while zoomed. */
+  onTouchEnd(event: TouchEvent) {
+    if (this.zoomed()) return;
+    const dx = (event.changedTouches[0]?.clientX ?? 0) - this.touchStartX;
+    if (Math.abs(dx) < 50) return;
+    if (dx < 0) this.next();
+    else this.prev();
   }
 
   @HostListener('window:keydown', ['$event'])
@@ -143,6 +240,7 @@ export class BdLibraryComponent {
     if (event.key === 'Escape') this.closeReader();
     else if (event.key === 'ArrowLeft') this.prev();
     else if (event.key === 'ArrowRight') this.next();
+    else if (event.key === 'z' || event.key === 'Z') this.toggleZoom();
   }
 
   printCurrent() {

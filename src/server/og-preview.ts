@@ -41,7 +41,9 @@ export function loadBdItems(browserDistFolder: string): BdManifestItem[] {
     bdItemsCache = paths.flatMap((p) => {
       try {
         const m = JSON.parse(readFileSync(join(browserDistFolder, p), 'utf8'));
-        return Array.isArray(m.items) ? (m.items as BdManifestItem[]) : [];
+        return Array.isArray(m.items)
+          ? (m.items as BdManifestItem[]).filter((item) => item.topic === 'bandes-dessinees')
+          : [];
       } catch {
         return [];
       }

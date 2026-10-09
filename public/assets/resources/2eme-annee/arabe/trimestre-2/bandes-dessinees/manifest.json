@@ -1,0 +1,778 @@
+{
+  "source": "CNP 501208 (Trimestre-2)",
+  "count": 21,
+  "items": [
+    {
+      "id": "cnp-501208P01-p21",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 1",
+      "file": "bd_2eme_arabe_t2_p01.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p01.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=21",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "أريكة",
+          "تلفاز",
+          "لوحة رقمية",
+          "كرسي",
+          "يشاهد",
+          "يجلس"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p22",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 2",
+      "file": "bd_2eme_arabe_t2_p02.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p02.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=22",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "أريكة",
+          "جهاز",
+          "مكتبة",
+          "كتب",
+          "نبات",
+          "يجلس"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p23",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 3",
+      "file": "bd_2eme_arabe_t2_p03.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p03.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=23",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "أريكة",
+          "لوحة رقمية",
+          "مكتبة",
+          "نبات",
+          "يجلس",
+          "ينظر"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p24",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 4",
+      "file": "bd_2eme_arabe_t2_p04.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p04.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=24",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "مزرعة",
+          "حقيبة",
+          "بقرة",
+          "ماعز",
+          "دجاجة",
+          "سفر"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p25",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 5",
+      "file": "bd_2eme_arabe_t2_p05.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p05.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=25",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "مزرعة",
+          "سقي",
+          "غرس",
+          "شمس",
+          "أشجار",
+          "سياج"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p26",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 6",
+      "file": "bd_2eme_arabe_t2_p06.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p06.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=26",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "شرفة",
+          "نافذة",
+          "أزهار",
+          "مرشة",
+          "نبات"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p27",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 7",
+      "file": "bd_2eme_arabe_t2_p07.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p07.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=27",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "شرفة",
+          "نبات",
+          "نافذة",
+          "مرشة",
+          "أصيص"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p28",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 8",
+      "file": "bd_2eme_arabe_t2_p08.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p08.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=28",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "حديقة",
+          "شجرة",
+          "غرس",
+          "كرسي",
+          "سياج",
+          "أطفال"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p29",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 9",
+      "file": "bd_2eme_arabe_t2_p09.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p09.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=29",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "حديقة",
+          "شجرة",
+          "غرس",
+          "كرسي متحرك",
+          "سياج"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p30",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 10",
+      "file": "bd_2eme_arabe_t2_p10.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p10.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=30",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "قطار",
+          "ركاب",
+          "نافذة",
+          "حقيبة",
+          "جريدة",
+          "هاتف"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p31",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 11",
+      "file": "bd_2eme_arabe_t2_p11.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p11.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=31",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "جبل",
+          "أطفال",
+          "حقيبة",
+          "سماء",
+          "سحاب",
+          "أشجار"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p32",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 12",
+      "file": "bd_2eme_arabe_t2_p12.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p12.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=32",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "أطفال",
+          "غابة",
+          "نهر",
+          "حيوانات",
+          "طيور",
+          "أشجار"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p33",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 13",
+      "file": "bd_2eme_arabe_t2_p13.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p13.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=33",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "شجرة",
+          "جبل",
+          "طعام",
+          "عصير",
+          "جلوس",
+          "وقوف"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P01-p34",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 14",
+      "file": "bd_2eme_arabe_t2_p14.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p14.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P01.pdf#page=34",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "أطفال",
+          "شجرة",
+          "تنظيف",
+          "أكياس",
+          "طبيعة"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P02-p01",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 15",
+      "file": "bd_2eme_arabe_t2_p15.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p15.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P02.pdf#page=1",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "أطفال",
+          "ماعز",
+          "كلب",
+          "نفايات",
+          "أكياس",
+          "شمس"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P02-p02",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 16",
+      "file": "bd_2eme_arabe_t2_p16.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p16.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P02.pdf#page=2",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "شمس",
+          "شجرة",
+          "بقرة",
+          "ماعز",
+          "نملة",
+          "حبوب"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P02-p03",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 17",
+      "file": "bd_2eme_arabe_t2_p17.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p17.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P02.pdf#page=3",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "نمل",
+          "شجرة",
+          "شمس",
+          "سحاب",
+          "أوراق",
+          "تربة"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P02-p04",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 18",
+      "file": "bd_2eme_arabe_t2_p18.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p18.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P02.pdf#page=4",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "قمح",
+          "شمس",
+          "شجرة",
+          "نمل",
+          "حقل"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P02-p05",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 19",
+      "file": "bd_2eme_arabe_t2_p19.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p19.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P02.pdf#page=5",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "نمل",
+          "قمح",
+          "تربة",
+          "حقل",
+          "يحمل",
+          "يخزن"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P02-p06",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 20",
+      "file": "bd_2eme_arabe_t2_p20.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p20.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P02.pdf#page=6",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "رصيف",
+          "طريق",
+          "بالون",
+          "إشارة",
+          "مبنى",
+          "يمشي"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-501208P02-p07",
+      "grade": "2eme-annee",
+      "subject": "arabe",
+      "subSubject": "communication_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "مساراتي - شريط مصور صفحة 21",
+      "file": "bd_2eme_arabe_t2_p21.webp",
+      "relPath": "assets/resources/2eme-annee/arabe/trimestre-2/bandes-dessinees/bd_2eme_arabe_t2_p21.webp",
+      "lang": "ar",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/501208P02.pdf#page=7",
+      "labels": [
+        "cnp",
+        "masarati",
+        "bande_dessinee",
+        "expression_orale",
+        "2eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "رجل",
+          "طفل",
+          "بالون",
+          "إشارة",
+          "طريق",
+          "رصيف"
+        ],
+        "structures": [
+          "يَذْهَبُ إِلَى / يَرْجِعُ مِنْ",
+          "لِمَاذَا؟ / لِأَنَّ",
+          "كَانَ / أَصْبَحَ",
+          "كَمْ / كَيْفَ"
+        ],
+        "verifiedBy": null
+      }
+    }
+  ]
+}

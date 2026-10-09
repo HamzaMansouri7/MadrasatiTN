@@ -36,6 +36,11 @@ const STRUCTURES = {
     2: ['أَمَامَ / وَرَاءَ', 'يَذْهَبُ إِلَى / تَذْهَبُ إِلَى', 'هُنَا / هُنَاكَ'],
     3: ['كَانَ / أَصْبَحَ', 'لِمَاذَا؟ / لِأَنَّ', 'ثُمَّ / بَعْدَ ذَلِكَ'],
   },
+  '2eme-annee': {
+    1: ['هَذَا / هَذِهِ', 'فِي / عَلَى / أَمَامَ / وَرَاءَ', 'مَاذَا يَفْعَلُ؟ / مَاذَا تَفْعَلُ؟'],
+    2: ['يَذْهَبُ إِلَى / يَرْجِعُ مِنْ', 'لِمَاذَا؟ / لِأَنَّ', 'كَانَ / أَصْبَحَ', 'كَمْ / كَيْفَ'],
+    3: ['ثُمَّ / بَعْدَ ذَلِكَ', 'عِنْدَمَا / حِينَمَا', 'مَا أَجْمَلَ...!'],
+  },
 };
 
 const KEYWORDS_SCHEMA = {
@@ -46,7 +51,7 @@ const KEYWORDS_SCHEMA = {
   required: ['keywords'],
 };
 
-const PROMPT = `أنت نظام تعرف بصري دقيق لصور قصص صامتة موجهة لتلاميذ السنة الأولى ابتدائي في تونس.
+const PROMPT = `أنت نظام تعرف بصري دقيق لصور قصص صامتة موجهة لتلاميذ المرحلة الابتدائية في تونس.
 استخرج من هذه الصورة 4 إلى 6 كلمات مفاتيح بالعربية الفصحى فقط:
 - أشياء وأماكن وأفعال مرئية فعلاً في الصورة (مثال: حديقة، شجرة، نهر، يلعب، يركض).
 - ممنوع منعاً باتاً: أسماء الشخصيات، القصة أو النوايا، أي شيء غير مرئي مباشرة.
@@ -55,16 +60,30 @@ const PROMPT = `أنت نظام تعرف بصري دقيق لصور قصص صا�
 
 async function extractKeywords(imagePath) {
   const data = readFileSync(imagePath).toString('base64');
-  const res = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
-    contents: [
-      { inlineData: { mimeType: 'image/webp', data } },
-      { text: PROMPT },
-    ],
-    config: { responseMimeType: 'application/json', responseSchema: KEYWORDS_SCHEMA, temperature: 0.1 },
-  });
-  const parsed = JSON.parse((res.text || '').trim());
-  return Array.isArray(parsed.keywords) ? parsed.keywords.slice(0, 6) : [];
+  const models = ['gemini-3.1-flash-lite', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite-preview'];
+  
+  for (const model of models) {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await ai.models.generateContent({
+          model,
+          contents: [
+            { inlineData: { mimeType: 'image/webp', data } },
+            { text: PROMPT },
+          ],
+          config: { responseMimeType: 'application/json', responseSchema: KEYWORDS_SCHEMA, temperature: 0.1 },
+        });
+        const parsed = JSON.parse((res.text || '').trim());
+        if (Array.isArray(parsed.keywords) && parsed.keywords.length > 0) {
+          await new Promise((r) => setTimeout(r, 600));
+          return parsed.keywords.slice(0, 6);
+        }
+      } catch (err) {
+        await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
+      }
+    }
+  }
+  return [];
 }
 
 const index = JSON.parse(readFileSync('public/assets/resources/index.json', 'utf8'));

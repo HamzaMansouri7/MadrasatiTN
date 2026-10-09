@@ -13,7 +13,11 @@
       </div>
       @if (!isLoading()) {
         <p class="font-display font-semibold text-lg text-[#1B4332] shrink-0">
-          {{ filteredItems().length }} <span class="text-sm font-normal text-[#5B6B60]">{{ lang.t('bdPages') }}</span>
+          @if (activeAlbum(); as album) {
+            {{ album.pages.length }} <span class="text-sm font-normal text-[#5B6B60]">{{ lang.t('bdPages') }}</span>
+          } @else {
+            {{ albums().length }} <span class="text-sm font-normal text-[#5B6B60]">{{ lang.t('bdAlbums') }}</span>
+          }
         </p>
       }
     </div>
@@ -39,33 +43,95 @@
         </button>
       }
     </div>
+
+    @if (trimesters().length > 1) {
+      <div class="mt-3 flex flex-wrap items-center gap-2">
+        <button
+          (click)="setTrimester(0)"
+          [class]="activeTrimester() === 0
+            ? 'bg-[#14251D] text-[#FBF8F1] border-[#14251D]'
+            : 'bg-white text-[#4A5A50] border-[#E7DFCF] hover:bg-[#F2ECDE]'"
+          class="px-3.5 py-2 rounded-xl text-xs font-medium border transition-colors cursor-pointer min-h-[40px]">
+          {{ lang.t('bdAllTrimesters') }}
+        </button>
+        @for (t of trimesters(); track t) {
+          <button
+            (click)="setTrimester(t)"
+            [class]="activeTrimester() === t
+              ? 'bg-[#14251D] text-[#FBF8F1] border-[#14251D]'
+              : 'bg-white text-[#4A5A50] border-[#E7DFCF] hover:bg-[#F2ECDE]'"
+            class="px-3.5 py-2 rounded-xl text-xs font-medium border transition-colors cursor-pointer min-h-[40px]">
+            {{ trimesterLabel(t) }}
+          </button>
+        }
+      </div>
+    }
   </section>
 
   <!-- Grid -->
   @if (isLoading()) {
     <p class="text-sm text-[#5B6B60] text-center py-12">{{ lang.t('bdLoading') }}</p>
-  } @else if (filteredItems().length === 0) {
+  } @else if (albums().length === 0) {
     <section class="bg-white rounded-2xl border border-[#E7DFCF] p-10 text-center space-y-2">
       <span class="material-icons text-3xl text-[#9DBBA8]" aria-hidden="true">auto_stories</span>
       <p class="text-sm text-[#5B6B60]">{{ lang.t('bdEmpty') }}</p>
     </section>
-  } @else {
-    <section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-      @for (item of filteredItems(); track item.id; let i = $index) {
+  } @else if (activeAlbum(); as album) {
+    <!-- Pages of one album -->
+    <section class="space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-3">
         <button
-          (click)="openReader(i)"
-          class="group bg-white rounded-2xl border border-[#E7DFCF] overflow-hidden text-start transition-shadow cursor-pointer hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]"
-          [attr.aria-label]="item.title">
-          <div class="aspect-[4/5] bg-[#F2ECDE] overflow-hidden">
-            <img
-              [src]="item.relPath"
-              [alt]="item.title"
-              loading="lazy"
-              class="w-full h-full object-cover object-top" />
+          (click)="closeAlbum()"
+          class="flex items-center gap-2 text-sm font-medium text-[#1B4332] hover:text-[#2D6A4F] cursor-pointer min-h-[44px]">
+          <span class="material-icons text-base rtl:rotate-180" aria-hidden="true">arrow_back</span>
+          {{ lang.t('bdBack') }}
+        </button>
+        <p class="font-display font-semibold text-[#14251D]">
+          {{ album.title }}
+          <span class="text-sm font-normal text-[#5B6B60]"> · {{ gradeLabel(album.grade) }} · {{ trimesterLabel(album.trimester) }}</span>
+        </p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        @for (item of album.pages; track item.id; let i = $index) {
+          <button
+            (click)="openReader(i)"
+            class="group bg-white rounded-2xl border border-[#E7DFCF] overflow-hidden text-start transition-shadow cursor-pointer hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]"
+            [attr.aria-label]="item.title">
+            <div class="relative aspect-[4/5] bg-[#F2ECDE] overflow-hidden">
+              <img [src]="item.relPath" [alt]="item.title" loading="lazy" class="w-full h-full object-cover object-top" />
+              <span class="absolute top-2 start-2 bg-[#14251D]/80 text-[#F2C14E] font-display font-semibold text-xs px-2 py-0.5 rounded-full">{{ i + 1 }}</span>
+            </div>
+            <div class="p-3 border-t border-[#E7DFCF]">
+              <p class="text-xs font-medium text-[#14251D] truncate">{{ item.title }}</p>
+            </div>
+          </button>
+        }
+      </div>
+    </section>
+  } @else {
+    <!-- Albums -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      @for (album of albums(); track album.key) {
+        <button
+          (click)="openAlbum(album.key)"
+          class="group bg-white rounded-[22px] border border-[#E7DFCF] overflow-hidden text-start transition-shadow cursor-pointer hover:shadow-[0_18px_45px_-30px_rgba(20,38,29,0.5)] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]"
+          [attr.aria-label]="album.title">
+          <div class="relative aspect-[16/10] bg-[#F2ECDE] overflow-hidden">
+            <img [src]="album.cover.relPath" [alt]="album.title" loading="lazy" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]" />
+            <span class="absolute bottom-2 end-2 bg-[#14251D]/85 text-[#F2C14E] font-display font-semibold text-xs px-2.5 py-1 rounded-full">
+              {{ album.pages.length }} {{ lang.t('bdPages') }}
+            </span>
           </div>
-          <div class="p-3 border-t border-[#E7DFCF]">
-            <p class="text-xs font-medium text-[#14251D] truncate">{{ item.title }}</p>
-            <p class="text-[11px] text-[#6B7A70] mt-0.5">{{ gradeLabel(item.grade) }}</p>
+          <div class="p-4 border-t border-[#E7DFCF] space-y-2">
+            <p class="font-display font-semibold text-[#14251D] leading-snug">{{ album.title }}</p>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="text-[11px] font-semibold text-[#8A5A00] bg-[#F2C14E]/15 px-2.5 py-0.5 rounded-full">{{ gradeLabel(album.grade) }}</span>
+              <span class="text-[11px] font-semibold text-[#2D6A4F] bg-[#2D6A4F]/10 px-2.5 py-0.5 rounded-full">{{ trimesterLabel(album.trimester) }}</span>
+            </div>
+            <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#1B4332]">
+              {{ lang.t('bdAlbumOpen') }}
+              <span class="material-icons text-sm rtl:rotate-180" aria-hidden="true">arrow_forward</span>
+            </span>
           </div>
         </button>
       }
@@ -90,6 +156,13 @@
             <span class="material-icons text-base" aria-hidden="true">print</span>
             <span class="hidden sm:inline">{{ lang.t('bdPrint') }}</span>
           </button>
+          <button
+            (click)="toggleZoom()"
+            class="flex items-center justify-center bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 text-[#FBF8F1] w-11 h-11 rounded-xl transition-colors cursor-pointer"
+            [attr.aria-label]="lang.t('bdZoom')"
+            [attr.aria-pressed]="zoomed()">
+            <span class="material-icons" aria-hidden="true">{{ zoomed() ? 'zoom_out' : 'zoom_in' }}</span>
+          </button>
           <app-share-button
             [url]="shareUrl()"
             [title]="item.title"
@@ -109,7 +182,11 @@
       </div>
 
       <!-- Page -->
-      <div class="flex-1 flex items-center justify-center gap-2 sm:gap-4 px-2 sm:px-6 pb-4 min-h-0" dir="ltr">
+      <div
+        class="flex-1 flex items-center justify-center gap-2 sm:gap-4 px-2 sm:px-6 pb-2 min-h-0"
+        dir="ltr"
+        (touchstart)="onTouchStart($event)"
+        (touchend)="onTouchEnd($event)">
         <button
           (click)="prev()"
           [disabled]="selectedIndex() === 0"
@@ -118,10 +195,15 @@
           <span class="material-icons" aria-hidden="true">chevron_left</span>
         </button>
 
-        <img
-          [src]="item.relPath"
-          [alt]="item.title"
-          class="max-h-full max-w-full object-contain rounded-lg bg-white" />
+        <div class="h-full min-w-0 flex-1 flex items-center justify-center" [class.overflow-auto]="zoomed()">
+          <img
+            [src]="item.relPath"
+            [alt]="item.title"
+            (dblclick)="toggleZoom()"
+            [class]="zoomed()
+              ? 'max-w-none w-[180%] sm:w-[140%] h-auto rounded-lg bg-white cursor-zoom-out self-start'
+              : 'max-h-full max-w-full object-contain rounded-lg bg-white cursor-zoom-in'" />
+        </div>
 
         <button
           (click)="next()"
@@ -167,6 +249,22 @@
           </div>
         </div>
       }
+
+      <!-- Page strip -->
+      <div class="px-4 sm:px-6 pb-2">
+        <div class="flex gap-2 overflow-x-auto justify-start sm:justify-center py-1" dir="ltr">
+          @for (p of filteredItems(); track p.id; let i = $index) {
+            <button
+              (click)="goTo(i)"
+              class="shrink-0 w-12 h-16 rounded-md overflow-hidden border-2 cursor-pointer transition-opacity"
+              [class]="i === selectedIndex() ? 'border-[#F2C14E] opacity-100' : 'border-transparent opacity-50 hover:opacity-90'"
+              [attr.aria-label]="p.title"
+              [attr.aria-current]="i === selectedIndex() ? 'true' : null">
+              <img [src]="p.relPath" alt="" loading="lazy" class="w-full h-full object-cover object-top" />
+            </button>
+          }
+        </div>
+      </div>
 
       <!-- Cartouche page counter -->
       <div class="pb-4 text-center">
