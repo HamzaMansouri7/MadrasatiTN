@@ -201,14 +201,12 @@ export class LanguageService {
 
     // Stats Cards
     statStudents: { fr: 'Élèves de la classe', ar: 'تلاميذ الفصل' },
-    statSubmissions: { fr: 'Travaux à corriger', ar: 'واجبات للتقييم' },
     statViews: { fr: 'Consultations cours', ar: 'مشاهدات الدروس' },
     statConfirmations: { fr: 'Confirmation parents', ar: 'تأكيدات الأولياء' },
 
     // Tabs & Workspace Sections
     tabAnnouncements: { fr: 'Annonces Officielles', ar: 'الإعلانات الرسمية' },
     tabCourses: { fr: 'Cours & Fiches A4', ar: 'الدروس والملخصات A4' },
-    tabSubmissions: { fr: 'Corrections Élèves', ar: 'تطبيقات التلاميذ والإصلاح' },
     tabTeacherDocs: { fr: 'Fiches & Évaluations A4', ar: 'الوثائق والامتحانات A4' },
     tabTeacherBlog: { fr: 'Blog Pédagogique', ar: 'المدونة البيداغوجية' },
     tabTeacherQA: { fr: 'Questions & Demandes Parents', ar: 'أسئلة الأولياء والتوجيه' },

@@ -723,7 +723,7 @@ aiRouter.post(
   },
 );
 
-// 3. Student Homework Solver (Camera / Photo Upload)
+// 3. Homework Solver for parents (Camera / Photo Upload)
 aiRouter.post(
   "/photo-solve",
   originGuard,
