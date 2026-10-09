@@ -35,6 +35,18 @@ if (!PAGE_ID || !TOKEN) {
   process.exit(1);
 }
 
+if (args.includes('--check')) {
+  const dbg = await (await fetch(`https://graph.facebook.com/${VERSION}/debug_token?input_token=${TOKEN}&access_token=${TOKEN}`)).json();
+  const d = dbg.data || {};
+  console.log('token valid:', d.is_valid, '| type:', d.type, '| expires:', d.expires_at === 0 ? 'never' : new Date((d.expires_at || 0) * 1000).toISOString());
+  console.log('scopes:', (d.scopes || []).join(', '));
+  console.log('token belongs to id:', d.profile_id || d.user_id || '(none)');
+  console.log('FB_PAGE_ID in .env:', PAGE_ID);
+  const accts = await (await fetch(`https://graph.facebook.com/${VERSION}/me/accounts?fields=id,name,tasks&access_token=${TOKEN}`)).json();
+  console.log('pages this token manages:', JSON.stringify(accts.data || accts.error || accts));
+  process.exit(0);
+}
+
 const posts = JSON.parse(readFileSync(join(process.cwd(), 'scripts/fb-campaign-posts.json'), 'utf8'))
   .filter((p) => !only || p.id === only);
 
