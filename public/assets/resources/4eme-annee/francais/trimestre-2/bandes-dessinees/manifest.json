@@ -1,0 +1,789 @@
+{
+  "source": "CNP 521417P00 (4ème Année Trimestre-2)",
+  "count": 22,
+  "items": [
+    {
+      "id": "cnp-521417P00-p23",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 1",
+      "file": "bd_4eme_francais_t2_p01.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p01.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=23",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "enfants",
+          "cartable",
+          "agression",
+          "école",
+          "voler"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p24",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 2",
+      "file": "bd_4eme_francais_t2_p02.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p02.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=24",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "enfant",
+          "courir",
+          "montrer",
+          "groupe",
+          "immeuble",
+          "cartable"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p25",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 3",
+      "file": "bd_4eme_francais_t2_p03.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p03.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=25",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "enfants",
+          "groupe",
+          "parler",
+          "montrer",
+          "doigt",
+          "lunettes"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p26",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 4",
+      "file": "bd_4eme_francais_t2_p04.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p04.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=26",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "enfants",
+          "poignée de main",
+          "saluer",
+          "cartable",
+          "groupe"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p27",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 5",
+      "file": "bd_4eme_francais_t2_p05.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p05.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=27",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "chat",
+          "collier",
+          "assis",
+          "animal",
+          "dessin"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p28",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 6",
+      "file": "bd_4eme_francais_t2_p06.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p06.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=28",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "chat",
+          "fille",
+          "garçon",
+          "voiture",
+          "siège"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p29",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 7",
+      "file": "bd_4eme_francais_t2_p07.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p07.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=29",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "mère",
+          "bébé",
+          "enfant",
+          "famille",
+          "femme"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p30",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 8",
+      "file": "bd_4eme_francais_t2_p08.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p08.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=30",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "homme",
+          "femme",
+          "chat",
+          "fenetre"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p31",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 9",
+      "file": "bd_4eme_francais_t2_p09.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p09.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=31",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "visage",
+          "personnage",
+          "dessin",
+          "homme",
+          "femme",
+          "illustration"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p32",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 10",
+      "file": "bd_4eme_francais_t2_p10.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p10.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=32",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "homme",
+          "femme",
+          "animal",
+          "chien",
+          "chat",
+          "âne"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p33",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 11",
+      "file": "bd_4eme_francais_t2_p11.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p11.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=33",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "jardinage",
+          "brouette",
+          "pelle",
+          "râteau",
+          "famille",
+          "extérieur"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p34",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 12",
+      "file": "bd_4eme_francais_t2_p12.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p12.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=34",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "jardinage",
+          "arrosoir",
+          "jardin",
+          "plante",
+          "désherber",
+          "arroser"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p35",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 13",
+      "file": "bd_4eme_francais_t2_p13.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p13.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=35",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "supermarché",
+          "enfant",
+          "chariot",
+          "rayonnage",
+          "faire les courses",
+          "produit"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p36",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 14",
+      "file": "bd_4eme_francais_t2_p14.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p14.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=36",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "magasin",
+          "caisse",
+          "payer",
+          "argent",
+          "client",
+          "caissière"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p37",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 15",
+      "file": "bd_4eme_francais_t2_p15.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p15.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=37",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "camion",
+          "déménagement",
+          "meuble",
+          "carton",
+          "livrer",
+          "maison"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p38",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 16",
+      "file": "bd_4eme_francais_t2_p16.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p16.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=38",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carton",
+          "déménagement",
+          "porter",
+          "famille",
+          "maison"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p39",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 17",
+      "file": "bd_4eme_francais_t2_p17.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p17.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=39",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cuisine",
+          "vaisselle",
+          "assiettes",
+          "ranger",
+          "laver",
+          "évier"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p40",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 18",
+      "file": "bd_4eme_francais_t2_p18.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p18.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=40",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "canapé",
+          "hommes",
+          "déplacer",
+          "salon",
+          "tapis",
+          "rideaux"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p41",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 19",
+      "file": "bd_4eme_francais_t2_p19.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p19.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=41",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "table",
+          "parasol",
+          "jardin",
+          "manger",
+          "soleil"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p42",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 20",
+      "file": "bd_4eme_francais_t2_p20.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p20.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=42",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "fenêtre",
+          "garçon",
+          "femme",
+          "regarder",
+          "parler",
+          "rideau"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p43",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 21",
+      "file": "bd_4eme_francais_t2_p21.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p21.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=43",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "pluie",
+          "enfant",
+          "homme",
+          "marcher",
+          "puddle",
+          "maison"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p44",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 22",
+      "file": "bd_4eme_francais_t2_p22.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-2/bandes-dessinees/bd_4eme_francais_t2_p22.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=44",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "infirmière",
+          "enfant",
+          "blouse",
+          "parler",
+          "cabinet"
+        ],
+        "structures": [
+          "pour + infinitif / parce que...",
+          "le matin / le soir / aujourd’hui",
+          "Il faut + infinitif"
+        ],
+        "verifiedBy": null
+      }
+    }
+  ]
+}

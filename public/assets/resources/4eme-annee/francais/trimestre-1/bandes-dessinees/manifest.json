@@ -1,0 +1,793 @@
+{
+  "source": "CNP 521417P00 (4ème Année Trimestre-1)",
+  "count": 22,
+  "items": [
+    {
+      "id": "cnp-521417P00-p01",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 1",
+      "file": "bd_4eme_francais_t1_p01.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p01.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=1",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "télévision",
+          "jouer",
+          "football",
+          "ordinateur",
+          "supermarché",
+          "courses"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p02",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 2",
+      "file": "bd_4eme_francais_t1_p02.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p02.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=2",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cuisine",
+          "cuisiner",
+          "table",
+          "manger",
+          "repas",
+          "famille"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p03",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 3",
+      "file": "bd_4eme_francais_t1_p03.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p03.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=3",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "petit-déjeuner",
+          "table",
+          "manger",
+          "boire",
+          "cuisine"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p04",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 4",
+      "file": "bd_4eme_francais_t1_p04.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p04.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=4",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "vaisselle",
+          "laver",
+          "oreiller",
+          "écrire",
+          "cahier",
+          "lampe"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p05",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 5",
+      "file": "bd_4eme_francais_t1_p05.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p05.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=5",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "jouer",
+          "ballon",
+          "magasin",
+          "télévision",
+          "ordinateur",
+          "regarder"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p06",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 6",
+      "file": "bd_4eme_francais_t1_p06.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p06.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=6",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cuisine",
+          "repas",
+          "famille",
+          "cuisiner",
+          "manger",
+          "table"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p07",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 7",
+      "file": "bd_4eme_francais_t1_p07.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p07.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=7",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "glace",
+          "arbre",
+          "canard",
+          "soleil",
+          "manger"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p08",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 8",
+      "file": "bd_4eme_francais_t1_p08.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p08.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=8",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "école",
+          "bus",
+          "voiture",
+          "élèves",
+          "arriver"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p09",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 9",
+      "file": "bd_4eme_francais_t1_p09.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p09.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=9",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "classe",
+          "enseignante",
+          "élèves",
+          "parler",
+          "bureau",
+          "tableau"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p10",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 10",
+      "file": "bd_4eme_francais_t1_p10.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p10.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=10",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "école",
+          "couloir",
+          "élèves",
+          "cartable",
+          "entrer",
+          "marcher"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p11",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 11",
+      "file": "bd_4eme_francais_t1_p11.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p11.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=11",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "classe",
+          "enseignante",
+          "élèves",
+          "tableau",
+          "bureau",
+          "écrire"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p12",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 12",
+      "file": "bd_4eme_francais_t1_p12.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p12.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=12",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "classe",
+          "enseignant",
+          "élève",
+          "bureau",
+          "tableau",
+          "entrer"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p13",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 13",
+      "file": "bd_4eme_francais_t1_p13.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p13.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=13",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "enfants",
+          "maison de jeunes",
+          "table de ping-pong",
+          "discuter",
+          "bâtiment"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p14",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 14",
+      "file": "bd_4eme_francais_t1_p14.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p14.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=14",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "fenêtre",
+          "porte",
+          "enfants",
+          "frapper",
+          "cour de récréation"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p15",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 15",
+      "file": "bd_4eme_francais_t1_p15.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p15.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=15",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "magasin",
+          "famille",
+          "berceau",
+          "poussette",
+          "vêtements",
+          "montrer"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p16",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 16",
+      "file": "bd_4eme_francais_t1_p16.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p16.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=16",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "salon",
+          "vêtements",
+          "jouer",
+          "bébé",
+          "table"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p17",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 17",
+      "file": "bd_4eme_francais_t1_p17.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p17.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=17",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "hôpital",
+          "voiture",
+          "fleurs",
+          "homme",
+          "enfant",
+          "sortir"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p18",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 18",
+      "file": "bd_4eme_francais_t1_p18.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p18.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=18",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "bébé",
+          "berceau",
+          "chambre",
+          "regarder",
+          "lit"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p19",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 19",
+      "file": "bd_4eme_francais_t1_p19.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p19.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=19",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "fauteuil",
+          "bébé",
+          "enfant",
+          "plante",
+          "tenir",
+          "salon"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p20",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 20",
+      "file": "bd_4eme_francais_t1_p20.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p20.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=20",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cadeau",
+          "maison",
+          "porte",
+          "enfant",
+          "adulte",
+          "donner"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p21",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 21",
+      "file": "bd_4eme_francais_t1_p21.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p21.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=21",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "adulte",
+          "bébé",
+          "vomir",
+          "vêtement",
+          "soigner"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p22",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 1,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 22",
+      "file": "bd_4eme_francais_t1_p22.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-1/bandes-dessinees/bd_4eme_francais_t1_p22.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=22",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "vêtements",
+          "chambre",
+          "s'habiller",
+          "chaussures",
+          "lampe"
+        ],
+        "structures": [
+          "C'est / Ce sont...",
+          "dans / sur / sous / devant / derrière",
+          "Qui est-ce ? / Qu’est-ce que c’est ?"
+        ],
+        "verifiedBy": null
+      }
+    }
+  ]
+}

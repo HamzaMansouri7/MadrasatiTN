@@ -1,0 +1,571 @@
+{
+  "source": "CNP 521514P00 (5ème Année Trimestre-3)",
+  "count": 16,
+  "items": [
+    {
+      "id": "cnp-521514P00-p46",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 1",
+      "file": "bd_5eme_francais_t3_p01.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p01.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=46",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "magasin",
+          "fleuriste",
+          "boulanger",
+          "maçon",
+          "menuisier",
+          "outils"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p47",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 2",
+      "file": "bd_5eme_francais_t3_p02.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p02.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=47",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "musique",
+          "pompier",
+          "pharmacie",
+          "vétérinaire",
+          "médecin",
+          "hôpital"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p48",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 3",
+      "file": "bd_5eme_francais_t3_p03.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p03.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=48",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "peintre",
+          "mécanicien",
+          "clown",
+          "cirque",
+          "voiture",
+          "outils"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p49",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 4",
+      "file": "bd_5eme_francais_t3_p04.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p04.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=49",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "fête foraine",
+          "grande roue",
+          "montagnes russes",
+          "palmier",
+          "enfants",
+          "marcher"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p50",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 5",
+      "file": "bd_5eme_francais_t3_p05.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p05.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=50",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "manège",
+          "chevaux",
+          "fête foraine",
+          "tourner",
+          "attraction"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p51",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 6",
+      "file": "bd_5eme_francais_t3_p06.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p06.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=51",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "fête foraine",
+          "grande roue",
+          "auto-tamponneuse",
+          "palmier",
+          "jouer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p52",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 7",
+      "file": "bd_5eme_francais_t3_p07.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p07.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=52",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "basket",
+          "ballon",
+          "fête foraine",
+          "montagnes russes",
+          "jouer",
+          "regarder"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p53",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 8",
+      "file": "bd_5eme_francais_t3_p08.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p08.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=53",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carte",
+          "pays",
+          "ville",
+          "frontière",
+          "mer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p54",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 9",
+      "file": "bd_5eme_francais_t3_p09.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p09.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=54",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carte",
+          "pays",
+          "ville",
+          "fleuve",
+          "mer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p55",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 10",
+      "file": "bd_5eme_francais_t3_p10.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p10.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=55",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carte",
+          "pays",
+          "ville",
+          "mer",
+          "frontière"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p56",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 11",
+      "file": "bd_5eme_francais_t3_p11.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p11.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=56",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carte",
+          "pays",
+          "capitale",
+          "ville",
+          "mer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p57",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 12",
+      "file": "bd_5eme_francais_t3_p12.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p12.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=57",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "mer",
+          "terre",
+          "capitale",
+          "golfe",
+          "carte"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p58",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 13",
+      "file": "bd_5eme_francais_t3_p13.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p13.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=58",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carte",
+          "pays",
+          "capitale",
+          "ville",
+          "mer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p59",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 14",
+      "file": "bd_5eme_francais_t3_p14.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p14.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=59",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carte",
+          "pays",
+          "ville",
+          "mer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p60",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 15",
+      "file": "bd_5eme_francais_t3_p15.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p15.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=60",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "Maroc",
+          "Rabat",
+          "Casablanca",
+          "Tanger",
+          "carte",
+          "mer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p61",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 16",
+      "file": "bd_5eme_francais_t3_p16.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-3/bandes-dessinees/bd_5eme_francais_t3_p16.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=61",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "carte",
+          "pays",
+          "capitale",
+          "ville",
+          "mer"
+        ],
+        "structures": [
+          "Un jour / Tout à coup / Finalement",
+          "Si + présent...",
+          "trouver que / penser que"
+        ],
+        "verifiedBy": null
+      }
+    }
+  ]
+}

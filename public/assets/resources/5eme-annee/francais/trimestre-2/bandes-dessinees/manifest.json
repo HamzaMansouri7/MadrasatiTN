@@ -1,0 +1,812 @@
+{
+  "source": "CNP 521514P00 (5ème Année Trimestre-2)",
+  "count": 30,
+  "items": [
+    {
+      "id": "cnp-521514P00-p22",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 1",
+      "file": "bd_5eme_francais_t2_p01.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p01.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=22",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cinéma",
+          "billetterie",
+          "file",
+          "attendre",
+          "acheter",
+          "ticket"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p23",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 2",
+      "file": "bd_5eme_francais_t2_p02.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p02.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=23",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "bus",
+          "passager",
+          "femme",
+          "debout",
+          "s'asseoir",
+          "voyage"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p24",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 3",
+      "file": "bd_5eme_francais_t2_p03.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p03.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=24",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "train",
+          "voyageurs",
+          "s'asseoir",
+          "debout",
+          "siège",
+          "fenêtre"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p25",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 4",
+      "file": "bd_5eme_francais_t2_p04.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p04.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=25",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "magasin",
+          "client",
+          "vendeur",
+          "acheter",
+          "file",
+          "marchandise"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p26",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 5",
+      "file": "bd_5eme_francais_t2_p05.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p05.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=26",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "taxi",
+          "voiture",
+          "fumer",
+          "cigarette",
+          "conducteur",
+          "passager"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p27",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 6",
+      "file": "bd_5eme_francais_t2_p06.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p06.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=27",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "taxi",
+          "voiture",
+          "fumer",
+          "passager",
+          "chauffeur",
+          "cigarette"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p28",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 7",
+      "file": "bd_5eme_francais_t2_p07.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p07.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=28",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "voiture",
+          "panne",
+          "homme",
+          "route",
+          "triangle",
+          "capot"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p29",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 8",
+      "file": "bd_5eme_francais_t2_p08.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p08.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=29",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "voiture",
+          "panne",
+          "réparer",
+          "moteur",
+          "route",
+          "triangle"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p30",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 9",
+      "file": "bd_5eme_francais_t2_p09.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p09.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=30",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "voiture",
+          "homme",
+          "route",
+          "conduire",
+          "arrêt"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p31",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 10",
+      "file": "bd_5eme_francais_t2_p10.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p10.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=31",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "table",
+          "manger",
+          "femme",
+          "garçon",
+          "assiette",
+          "verre"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p32",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 11",
+      "file": "bd_5eme_francais_t2_p11.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p11.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=32",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p33",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 12",
+      "file": "bd_5eme_francais_t2_p12.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p12.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=33",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p34",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 13",
+      "file": "bd_5eme_francais_t2_p13.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p13.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=34",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p35",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 14",
+      "file": "bd_5eme_francais_t2_p14.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p14.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=35",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p36",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 15",
+      "file": "bd_5eme_francais_t2_p15.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p15.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=36",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p37",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 16",
+      "file": "bd_5eme_francais_t2_p16.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p16.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=37",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p38",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 17",
+      "file": "bd_5eme_francais_t2_p17.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p17.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=38",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p39",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 18",
+      "file": "bd_5eme_francais_t2_p18.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p18.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=39",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p40",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 19",
+      "file": "bd_5eme_francais_t2_p19.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p19.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=40",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p41",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 20",
+      "file": "bd_5eme_francais_t2_p20.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p20.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=41",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p42",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 21",
+      "file": "bd_5eme_francais_t2_p21.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p21.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=42",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p43",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 22",
+      "file": "bd_5eme_francais_t2_p22.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p22.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=43",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p44",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 23",
+      "file": "bd_5eme_francais_t2_p23.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p23.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=44",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p45",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 24",
+      "file": "bd_5eme_francais_t2_p24.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p24.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=45",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p78",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 25",
+      "file": "bd_5eme_francais_t2_p25.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p25.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=78",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p79",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 26",
+      "file": "bd_5eme_francais_t2_p26.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p26.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=79",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "fenêtre",
+          "femme",
+          "enfant",
+          "parler",
+          "regarder"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p80",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 27",
+      "file": "bd_5eme_francais_t2_p27.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p27.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=80",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cartable",
+          "fenêtre",
+          "enfant",
+          "adulte",
+          "regarder",
+          "porter"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p81",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 28",
+      "file": "bd_5eme_francais_t2_p28.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p28.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=81",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    },
+    {
+      "id": "cnp-521514P00-p82",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 29",
+      "file": "bd_5eme_francais_t2_p29.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p29.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=82",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "homme",
+          "enfants",
+          "panier",
+          "fruits",
+          "escalier",
+          "parler"
+        ],
+        "structures": [
+          "Il faut / Il ne faut pas / Devoir",
+          "plus... que / moins... que / aussi... que",
+          "donc / pour que"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521514P00-p83",
+      "grade": "5eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 2,
+      "topic": "bandes-dessinees",
+      "title": "Français 5ème Année — Expression Orale / BD planche 30",
+      "file": "bd_5eme_francais_t2_p30.webp",
+      "relPath": "assets/resources/5eme-annee/francais/trimestre-2/bandes-dessinees/bd_5eme_francais_t2_p30.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521514P00.pdf#page=83",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "5eme_annee"
+      ]
+    }
+  ]
+}

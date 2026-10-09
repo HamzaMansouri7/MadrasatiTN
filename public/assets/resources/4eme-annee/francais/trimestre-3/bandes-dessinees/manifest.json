@@ -1,0 +1,721 @@
+{
+  "source": "CNP 521417P00 (4ème Année Trimestre-3)",
+  "count": 20,
+  "items": [
+    {
+      "id": "cnp-521417P00-p45",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 1",
+      "file": "bd_4eme_francais_t3_p01.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p01.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=45",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "infirmière",
+          "enfant",
+          "examen",
+          "gorge",
+          "abaisse-langue",
+          "verre"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p46",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 2",
+      "file": "bd_4eme_francais_t3_p02.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p02.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=46",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cuisine",
+          "cuisiner",
+          "casserole",
+          "sucre",
+          "citron",
+          "enfant"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p47",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 3",
+      "file": "bd_4eme_francais_t3_p03.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p03.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=47",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "femme",
+          "échelle",
+          "fenêtre",
+          "blessure",
+          "tomber"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p48",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 4",
+      "file": "bd_4eme_francais_t3_p04.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p04.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=48",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "téléphone",
+          "téléphoner",
+          "femme",
+          "conversation",
+          "fleurs"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p49",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 5",
+      "file": "bd_4eme_francais_t3_p05.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p05.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=49",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "pansement",
+          "pied",
+          "médecin",
+          "examen",
+          "soin"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p50",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 6",
+      "file": "bd_4eme_francais_t3_p06.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p06.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=50",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cuisine",
+          "femme",
+          "enfant",
+          "écrire",
+          "évier",
+          "casserole"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p51",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 7",
+      "file": "bd_4eme_francais_t3_p07.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p07.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=51",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "supermarché",
+          "courses",
+          "caddie",
+          "liste",
+          "rayon",
+          "famille"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p52",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 8",
+      "file": "bd_4eme_francais_t3_p08.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p08.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=52",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "vêtement",
+          "jouet",
+          "pâtisserie",
+          "boucherie",
+          "parfumerie",
+          "poissonnerie"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p53",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 9",
+      "file": "bd_4eme_francais_t3_p09.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p09.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=53",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "sandwich",
+          "préparer",
+          "table",
+          "fruit",
+          "manger",
+          "cuisine"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p54",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 10",
+      "file": "bd_4eme_francais_t3_p10.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p10.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=54",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "pique-nique",
+          "arbre",
+          "soleil",
+          "voiture",
+          "manger"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p55",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 11",
+      "file": "bd_4eme_francais_t3_p11.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p11.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=55",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "pique-nique",
+          "arbre",
+          "voiture",
+          "soleil",
+          "ranger",
+          "nappe"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p56",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 12",
+      "file": "bd_4eme_francais_t3_p12.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p12.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=56",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "manger",
+          "boire",
+          "plage",
+          "parasol",
+          "gâteau",
+          "mouche"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p57",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 13",
+      "file": "bd_4eme_francais_t3_p13.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p13.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=57",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "enfant",
+          "manger",
+          "oeuf",
+          "cuisiner",
+          "bol",
+          "poêle"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p58",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 14",
+      "file": "bd_4eme_francais_t3_p14.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p14.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=58",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "table",
+          "cuisine",
+          "manger",
+          "repas",
+          "horloge"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p59",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 15",
+      "file": "bd_4eme_francais_t3_p15.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p15.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=59",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "cuisine",
+          "préparer",
+          "repas",
+          "famille",
+          "cuisiner",
+          "nourriture"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p60",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 16",
+      "file": "bd_4eme_francais_t3_p16.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p16.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=60",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "table",
+          "nappe",
+          "vase",
+          "fleurs",
+          "assiettes",
+          "verres"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p61",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 17",
+      "file": "bd_4eme_francais_t3_p17.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p17.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=61",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "famille",
+          "salon",
+          "discuter",
+          "télévision",
+          "gâteau",
+          "boisson"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p62",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 18",
+      "file": "bd_4eme_francais_t3_p18.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p18.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=62",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "métiers",
+          "travail",
+          "profession",
+          "magasin",
+          "service",
+          "client"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p63",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 19",
+      "file": "bd_4eme_francais_t3_p19.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p19.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=63",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "animaux",
+          "dessin",
+          "carte",
+          "illustration"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    },
+    {
+      "id": "cnp-521417P00-p64",
+      "grade": "4eme-annee",
+      "subject": "francais",
+      "subSubject": "expression_orale",
+      "trimester": 3,
+      "topic": "bandes-dessinees",
+      "title": "Français 4ème Année — Expression Orale / BD planche 20",
+      "file": "bd_4eme_francais_t3_p20.webp",
+      "relPath": "assets/resources/4eme-annee/francais/trimestre-3/bandes-dessinees/bd_4eme_francais_t3_p20.webp",
+      "lang": "fr",
+      "ref": "https://www.cnp.com.tn/arabic/PDF/521417P00.pdf#page=64",
+      "labels": [
+        "cnp",
+        "francais",
+        "bande_dessinee",
+        "expression_orale",
+        "4eme_annee"
+      ],
+      "pedagogy": {
+        "keywords": [
+          "grenouille",
+          "tête",
+          "yeux",
+          "taches",
+          "dessin"
+        ],
+        "structures": [
+          "d’abord / ensuite / puis / enfin",
+          "aimer / préférer / quel beau... !",
+          "Où... ? / Comment... ? / Pourquoi... ?"
+        ],
+        "verifiedBy": null
+      }
+    }
+  ]
+}
