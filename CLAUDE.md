@@ -50,3 +50,7 @@ Env: server AI endpoints require `GEMINI_API_KEY`; if unset, `ai` is null and `/
 ## UI / Design (mandatory)
 
 Any UI work must follow [DESIGN.md](DESIGN.md) — the "Cartouche officielle" design system. Workflow: **(1)** invoke the `frontend-design` and `ui-ux-pro-max` skills first, **(2)** then apply DESIGN.md's exact tokens (tokens win over skill defaults), **(3)** match the landing page ([landing-home.ts](src/app/features/landing/landing-home.ts)) pixel-for-pixel — same hex, radius, spacing, `font-display` headings. No indigo/purple, no gradient heroes, no emoji-as-icon, no WhatsApp share copy.
+
+## Facebook auto-post
+
+Published worksheets and published infographics (course/exercise) are auto-posted to the Facebook Page from `POST /api/docs` via [src/server/facebook.ts](src/server/facebook.ts) (Graph API, fire-and-forget, deduped by doc id in `docs/fb-posted.json`). Env: `FB_PAGE_ID`, `FB_PAGE_TOKEN` (Page token with `pages_manage_posts` + `pages_read_engagement`), `PUBLIC_BASE_URL`; disabled if any is unset. Never commit or print the token.
