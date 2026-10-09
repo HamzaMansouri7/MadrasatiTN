@@ -132,6 +132,13 @@ app.use(
     maxAge: '1y',
     index: false,
     redirect: false,
+    // Resource manifests/index change when albums are added: browsers must revalidate them.
+    setHeaders: (res, filePath) => {
+      const normalized = filePath.split('\\').join('/');
+      if (normalized.includes('/assets/resources/') && normalized.endsWith('.json')) {
+        res.setHeader('Cache-Control', 'no-cache');
+      }
+    },
   }),
 );
 
