@@ -100,6 +100,27 @@ export const INFOGRAPHIC_SCHEMA = {
       },
       required: ['text'],
     },
+    interface: {
+      type: Type.OBJECT,
+      properties: {
+        appName: STR,
+        tabs: { type: Type.ARRAY, items: STR },
+        fields: {
+          type: Type.ARRAY,
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              label: STR,
+              kind: { type: Type.STRING, enum: ['choice', 'short', 'long', 'button'] },
+              hint: STR,
+              options: { type: Type.ARRAY, items: STR },
+            },
+            required: ['label', 'kind'],
+          },
+        },
+      },
+      required: ['appName', 'fields'],
+    },
     problem: {
       type: Type.OBJECT,
       properties: {
@@ -145,6 +166,8 @@ const PRESET_BRIEF: Record<InfographicPreset, string> = {
     'comparison : comparaison côte à côte (2 colonnes A vs B avec points distincts et points communs).',
   'picture-rows':
     'picture-rows : lignes numérotées « image + phrase modèle » (observer une image puis écrire une phrase) ; chaque item = une ligne : title = le mot ou verbe travaillé, text = une phrase complète et enrichie, keyword = le mot de la phrase à mettre en rouge.',
+  'steps-interface':
+    'steps-interface : tutoriel d’un outil numérique ; chaque item = une étape numérotée (title court, text = consigne) ; remplis "interface" avec l’écran simplifié de l’outil (appName, 1 à 4 tabs, 2 à 4 fields).',
   problem:
     'problem : وضعية مشكل / situation problème avec données textuelles, tableau de données numériques si pertinent, et questions de calcul/réflexion avec lignes d’écriture pour les élèves.',
 };
@@ -189,6 +212,7 @@ Règles de choix (seulement parmi les presets listés ci-dessus) :
 - EXEMPLE hero-cards (leçon "الأعداد من 1 إلى 5", 1ère année) : hero.label "1-5" ; carte { title: "العدد 3", text: "أعدّ ثلاثة أشياء : واحد، اثنان، ثلاثة. أكتب 3.", icon: "looks_3", count: 3, imagePrompt: "three red apples on a plain white background" }. MAUVAIS : { title: "العدد 3 و 4", text: "تمثيل العدد 3 بثلاثة كتب" }.
 - keyword (picture-rows) : UN mot copié EXACTEMENT tel qu'il apparaît dans item.text (le verbe ou la notion travaillée), jamais une phrase. Laisse vide pour les autres presets.
 - picture-rows : 2 à 5 items ; item.text = phrase complète de 140 caractères maximum ; chaque item a un imagePrompt qui montre l'action de la phrase.
+- steps-interface : 3 à 6 items = étapes dans l'ordre ; "interface" = écran simplifié : appName (nom de l'outil), tabs (onglets), fields (2 à 4) avec kind = choice (avec 2 à 5 options), short, long ou button, label et hint courts. L'écran est dessiné par le code (texte seulement). Illustrations : chaque item a un imagePrompt = UNE petite icône d'objet concret (ex. "a pencil and a checklist"), et hero = { label: nom court de l'outil, imagePrompt: une icône d'objet pour l'en-tête } ; jamais de capture d'écran ni de logo de marque.
 - remember : 1 à 3 points à retenir, très courts.
 - comparison : remplis "columns" avec EXACTEMENT 2 colonnes (title, 2 à 5 points courts, imagePrompt) ; "items" = points communs (0 à 4).
 - lesson-stages : remplis "stages" avec 2 à 5 étapes (stageNumber, title, teacherActivity, learnerActivity, duration ex. "10 min") ; "items" = notions clés (0 à 5).

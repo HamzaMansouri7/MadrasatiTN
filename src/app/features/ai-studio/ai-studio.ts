@@ -391,12 +391,14 @@ export class AiStudioComponent implements OnInit {
     { id: 'comparison', icon: 'compare_arrows', fr: 'Comparaison', ar: 'مقارنة' },
     { id: 'problem', icon: 'quiz', fr: 'Problème', ar: 'وضعية مشكل' },
     { id: 'picture-rows', icon: 'view_list', fr: 'Image et phrase', ar: 'صورة وجملة' },
+    { id: 'steps-interface', icon: 'web', fr: 'Étapes et écran', ar: 'خطوات وشاشة' },
   ];
 
   readonly themes: { id: InfographicTheme; icon: string; fr: string; ar: string; hintFr: string; hintAr: string }[] = [
     { id: 'kids', icon: 'palette', fr: 'Enfants', ar: 'أطفال', hintFr: 'Couleurs vives, illustrations', hintAr: 'ألوان زاهية ورسوم' },
     { id: 'official', icon: 'account_balance', fr: 'Officiel', ar: 'رسمي', hintFr: 'Sobre, style ministère', hintAr: 'هادئ بطابع رسمي' },
     { id: 'fiche', icon: 'star', fr: 'Fiche classe', ar: 'بطاقة القسم', hintFr: 'Bleu et rouge, cadre étoilé', hintAr: 'أزرق وأحمر، إطار بالنجوم' },
+    { id: 'lilac', icon: 'dashboard_customize', fr: 'Fiche numérique', ar: 'ورقة رقمية', hintFr: 'Violet, sections encadrées', hintAr: 'بنفسجي وأقسام داخل إطارات' },
   ];
 
   readonly source = signal<SourceInput | null>(null);

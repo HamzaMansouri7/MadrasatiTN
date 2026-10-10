@@ -5,6 +5,8 @@ import {
   PRESET_ITEM_LIMITS,
   SPEC_ICONS,
   SpecColumn,
+  SpecInterface,
+  SpecInterfaceField,
   SpecItem,
   SpecProblem,
   SpecProblemQuestion,
@@ -259,7 +261,37 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     }
   }
 
+  // steps-interface: simplified screen mockup (plain text only, rendered as HTML by our code)
+  const ifRaw = r['interface'] && typeof r['interface'] === 'object' ? (r['interface'] as Record<string, unknown>) : null;
+  let uiMock: SpecInterface | undefined;
+  if (ifRaw) {
+    const fields = (Array.isArray(ifRaw['fields']) ? (ifRaw['fields'] as unknown[]) : [])
+      .map((f): SpecInterfaceField | null => {
+        if (!f || typeof f !== 'object') return null;
+        const fo = f as Record<string, unknown>;
+        const label = clip(fo['label'], 60);
+        if (!label) return null;
+        const kind = fo['kind'] === 'choice' || fo['kind'] === 'long' || fo['kind'] === 'button' ? fo['kind'] : 'short';
+        const options = (Array.isArray(fo['options']) ? (fo['options'] as unknown[]) : [])
+          .map((o) => clip(o, 40))
+          .filter(Boolean)
+          .slice(0, 5);
+        return { label, kind, hint: clip(fo['hint'], 80) || undefined, options: options.length ? options : undefined };
+      })
+      .filter((f): f is SpecInterfaceField => f !== null)
+      .slice(0, 4);
+    const appName = clip(ifRaw['appName'], 40);
+    if (appName && fields.length) {
+      uiMock = {
+        appName,
+        tabs: (Array.isArray(ifRaw['tabs']) ? (ifRaw['tabs'] as unknown[]) : []).map((x) => clip(x, 24)).filter(Boolean).slice(0, 4),
+        fields,
+      };
+    }
+  }
+
   // Validate minimum requirements per preset
+  if (preset === 'steps-interface' && !uiMock) return null;
   if (preset === 'comparison' && (columns?.length ?? 0) < 2) return null;
   if (preset === 'lesson-stages' && (stages?.length ?? 0) < 2) return null;
   if (preset === 'problem' && !problem?.situation && (problem?.questions?.length ?? 0) < 1) return null;
@@ -300,6 +332,7 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     stages: stages?.length ? stages : undefined,
     quote,
     problem,
+    interface: uiMock,
     imageStory: imageStory && !/[؀-ۿ]/.test(imageStory) ? imageStory : undefined,
     imageLibrary: Object.keys(imageLibrary).length ? imageLibrary : undefined,
   };

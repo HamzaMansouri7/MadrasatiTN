@@ -38,7 +38,7 @@ import { chapterById } from '../utils/curriculum.util';
 import { SeriesDoc, Scene } from '../models/series.model';
 import { InfographicDoc } from '../models/infographic.model';
 import { InfographicPreset, InfographicSpec, InfographicTheme } from '../models/infographic-spec.model';
-import { resolveTheme, SpecImageTarget } from '../data/infographic-image-style.data';
+import { themeImageStyle, SpecImageTarget } from '../data/infographic-image-style.data';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
@@ -1117,8 +1117,8 @@ export class EducationStore {
   }
 
   // Phase 2 — generate one illustration for an exercise (returns a /uploads URL).
-  async generateIllustration(promptText: string, style = 'educational', variation?: number): Promise<string | null> {
-    const res = await this.ai.post('generate-illustration', { promptText, style, variation }, { retry429: true });
+  async generateIllustration(promptText: string, style = 'educational', variation?: number, seedKey?: string): Promise<string | null> {
+    const res = await this.ai.post('generate-illustration', { promptText, style, variation, seedKey }, { retry429: true });
     return res.ok && res.data['imageUrl'] ? (res.data['imageUrl'] as string) : null;
   }
 
@@ -1496,7 +1496,7 @@ export class EducationStore {
       {
         promptText: story ? `${story}. ${prompt}` : prompt,
         raw: true,
-        style: resolveTheme(doc.theme).imageStyle,
+        style: themeImageStyle(doc.theme),
         seedKey: doc.id,
         // New seed + cache bypass for "صورة أخرى"; same doc look otherwise.
         variation: variation ? (Date.now() % 1_000_000) + 1 : undefined,

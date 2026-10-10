@@ -7,10 +7,11 @@ export type InfographicPreset =
   | 'lesson-stages'
   | 'comparison'
   | 'problem'
-  | 'picture-rows';
+  | 'picture-rows'
+  | 'steps-interface';
 
 /** Look of the sheet (design tokens only). Scoped to AI Studio sheets, never the app UI. */
-export type InfographicTheme = 'kids' | 'official' | 'fiche';
+export type InfographicTheme = 'kids' | 'official' | 'fiche' | 'handwritten' | 'graph-paper' | 'poster' | 'comic' | 'lilac';
 
 export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'hero-cards',
@@ -21,6 +22,7 @@ export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'comparison',
   'problem',
   'picture-rows',
+  'steps-interface',
 ];
 /**
  * Presets that have a renderer today. The model may only pick from these (schema enum + Auto list);
@@ -35,8 +37,18 @@ export const ENABLED_INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'comparison',
   'problem',
   'picture-rows',
+  'steps-interface',
 ];
-export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = ['kids', 'official', 'fiche'];
+export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = [
+  'kids',
+  'official',
+  'fiche',
+  'handwritten',
+  'graph-paper',
+  'poster',
+  'comic',
+  'lilac',
+];
 
 /** Narrows untrusted input (request body, saved doc) to a known theme id. */
 export function isInfographicTheme(value: unknown): value is InfographicTheme {
@@ -115,6 +127,22 @@ export interface SpecProblem {
   imageUrl?: string;
 }
 
+/** One field of the simplified screen mockup: a question, a setting, a menu entry... */
+export interface SpecInterfaceField {
+  label: string;
+  /** How the field is drawn: radio choices, short answer line, paragraph box, or a plain button. */
+  kind: 'choice' | 'short' | 'long' | 'button';
+  hint?: string;
+  options?: string[];
+}
+
+/** Simplified screen of the tool being taught (drawn by our code as HTML, never an image). */
+export interface SpecInterface {
+  appName: string;
+  tabs: string[];
+  fields: SpecInterfaceField[];
+}
+
 export interface InfographicSpec {
   preset: InfographicPreset;
   title: string;
@@ -135,6 +163,8 @@ export interface InfographicSpec {
   quote?: SpecQuote;
   /** Optional problem solving layout for problem preset */
   problem?: SpecProblem;
+  /** Simplified screen mockup for the steps-interface preset */
+  interface?: SpecInterface;
   /** One English sentence of lesson context (topic + key objects), prepended to every image prompt. */
   imageStory?: string;
   /** Per-doc image library carrying illustrations across layout switches */
@@ -155,4 +185,6 @@ export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: n
   problem: { min: 0, max: 4 },
   // one numbered row per picture + sentence
   'picture-rows': { min: 2, max: 5 },
+  // numbered steps beside a simplified screen mockup (`interface`)
+  'steps-interface': { min: 3, max: 6 },
 };

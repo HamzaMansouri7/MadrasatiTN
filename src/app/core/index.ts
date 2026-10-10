@@ -29,4 +29,6 @@ export * from './data/cnp-books.data';
 export * from './data/library-exercises.data';
 export * from './data/first-grade-exercises.data';
 export * from './data/curriculum-chapters.data';
+export * from './models/visual-preset.model';
+export * from './data/visual-presets.data';
 

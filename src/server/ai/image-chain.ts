@@ -29,6 +29,8 @@ export interface ImageRequest {
   seed?: number;
   width?: number;
   height?: number;
+  /** Model id to try first (keeps one look per document). Other models only run if it fails or is very slow. */
+  preferModel?: string;
 }
 
 type Env = Record<string, string | undefined>;
@@ -38,10 +40,10 @@ interface ImageModel {
   /** Only models flagged true may receive Arabic in the prompt. FLUX-family models draw garbled Arabic, so they never do. */
   arabicSafe?: boolean;
   id: string;
-  group: 'nvidia' | 'gemini' | 'pollinations';
+  group: 'nvidia' | 'gemini' | 'pollinations' | 'siliconflow';
   quality: number;
   enabled: (env: Env) => boolean;
-  generate: (env: Env, req: Required<ImageRequest>, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
+  generate: (env: Env, req: Required<Omit<ImageRequest, 'preferModel'>>, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
 }
 
 const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/g;
@@ -136,6 +138,39 @@ const geminiPaidImage = (quality: number): ImageModel => ({
 
 const pollKey = (env: Env): string => (env['POLLINATIONS_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
 
+const sfKey = (env: Env): string => (env['SILICONFLOW_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+
+/** SiliconFlow hosted Qwen/Qwen-Image: free tier, text-free educational illustrations. */
+const siliconflowQwenImage = (quality: number): ImageModel => ({
+  id: 'siliconflow-qwen-image',
+  group: 'siliconflow',
+  quality,
+  enabled: (env) => !!sfKey(env),
+  async generate(env, req, fetchImpl, signal) {
+    const res = await fetchImpl('https://api.siliconflow.com/v1/images/generations', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${sfKey(env)}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'Qwen/Qwen-Image',
+        prompt: req.prompt,
+        image_size: '1024x1024',
+        seed: req.seed,
+      }),
+      signal,
+    });
+    if (!res.ok) throw new Error(`SiliconFlow HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
+    const j = (await res.json()) as { images?: { url?: string }[] };
+    const imgUrl = j.images?.[0]?.url;
+    if (!imgUrl) throw new Error('SiliconFlow returned no image url');
+    const imgRes = await fetchImpl(imgUrl, { signal });
+    if (!imgRes.ok) throw new Error(`SiliconFlow image download HTTP ${imgRes.status}`);
+    return Buffer.from(await imgRes.arrayBuffer());
+  },
+});
+
 /** Pollinations newer API (needs a key): real FLUX.1.1-pro, no watermark. Same group as the anonymous one: they share the cooldown. */
 const pollinationsKeyed = (quality: number): ImageModel => ({
   id: 'pollinations-flux-1.1-pro',
@@ -153,6 +188,7 @@ const pollinationsKeyed = (quality: number): ImageModel => ({
 export const IMAGE_MODELS: ImageModel[] = [
   geminiPaidImage(99),
   nvidiaFluxDev(97),
+  siliconflowQwenImage(70),
   pollinationsKeyed(50),
   {
     id: 'pollinations-flux',
@@ -191,12 +227,12 @@ export interface ImageChainOptions {
   now?: () => number;
 }
 
-/** Model order: IMAGE_CHAIN env ("gemini,nvidia,pollinations") picks and orders groups; default = by quality. */
+/** Model order: IMAGE_CHAIN env ("gemini,nvidia,siliconflow,pollinations") picks and orders groups; default = by quality. */
 function candidates(env: Env, now: number, ignoreCooldown: boolean): ImageModel[] {
   const wanted = (env['IMAGE_CHAIN'] || '')
     .split(',')
     .map((s) => s.trim().toLowerCase())
-    .filter((s) => s === 'nvidia' || s === 'gemini' || s === 'pollinations');
+    .filter((s) => s === 'nvidia' || s === 'gemini' || s === 'pollinations' || s === 'siliconflow');
   let list = IMAGE_MODELS.filter((m) => m.enabled(env));
   if (wanted.length) {
     list = list.filter((m) => wanted.includes(m.group));
@@ -211,8 +247,8 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
   const env = options.env ?? (process.env as Env);
   const fetchImpl = options.fetchImpl ?? fetch;
   const now = options.now ?? Date.now;
-  const hedgeMs = options.hedgeMs ?? Math.max(1000, parseInt(env['IMAGE_HEDGE_MS'] || '8000', 10));
-  const full: Required<ImageRequest> = {
+  const baseHedgeMs = options.hedgeMs ?? Math.max(1000, parseInt(env['IMAGE_HEDGE_MS'] || '8000', 10));
+  const full = {
     prompt: req.prompt,
     seed: req.seed ?? 0,
     width: req.width ?? 1024,
@@ -222,11 +258,19 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
   let list = candidates(env, now(), false);
   if (list.length === 0) list = candidates(env, now(), true); // everything cooling: try anyway
 
-  // Arabic rule: non-arabicSafe models get an English, text-free prompt; with no usable English left they are skipped.
-  const safePrompt = hasArabic(full.prompt) ? textFreePrompt(full.prompt) : full.prompt;
+  // Text-free rule: non-arabicSafe models get an English, text-free prompt; with no usable English left they are skipped.
+  const safePrompt = textFreePrompt(full.prompt);
   if (safePrompt === null) list = list.filter((m) => m.arabicSafe);
-  const requestFor = (m: ImageModel): Required<ImageRequest> =>
+  const requestFor = (m: ImageModel): Required<Omit<ImageRequest, 'preferModel'>> =>
     m.arabicSafe || safePrompt === null ? full : { ...full, prompt: safePrompt };
+
+  // Pinned model: tried first, and hedging is relaxed so a merely slow answer is not raced by another look.
+  let hedgeMs = baseHedgeMs;
+  const pinned = req.preferModel ? list.find((m) => m.id === req.preferModel) : undefined;
+  if (pinned) {
+    list = [pinned, ...list.filter((m) => m !== pinned)];
+    hedgeMs = Math.max(baseHedgeMs, 45_000);
+  }
 
   if (list.length === 0) throw new Error("Aucun service d'image disponible.");
 

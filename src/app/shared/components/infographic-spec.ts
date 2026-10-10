@@ -9,6 +9,7 @@ import { PresetLessonStagesComponent } from './presets/preset-lesson-stages';
 import { PresetComparisonComponent } from './presets/preset-comparison';
 import { PresetProblemComponent } from './presets/preset-problem';
 import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
+import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface';
 
 /**
  * Draws an AI Studio spec on an A4 sheet. The model only picks a preset and fills text;
@@ -28,6 +29,7 @@ import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
     PresetComparisonComponent,
     PresetProblemComponent,
     PresetPictureRowsComponent,
+    PresetStepsInterfaceComponent,
   ],
   host: { '[attr.data-theme]': 'theme()', '[style]': 'themeVars()' },
   styles: `
@@ -77,6 +79,55 @@ import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
     }
     .ig-sheet[data-frame='fiche'] header { padding-inline-end: 3.25rem; }
     .ig-sheet[data-frame='fiche'] .ig-chip { border-color: var(--ig-border); }
+
+    /* Notebook frame: subtle lined paper background, red margin line */
+    .ig-sheet[data-frame='notebook'] {
+      background-color: var(--ig-bg);
+      background-image: repeating-linear-gradient(transparent, transparent 31px, rgba(226, 217, 200, 0.35) 32px);
+      border-color: var(--ig-border);
+      position: relative;
+    }
+    .ig-sheet[data-frame='notebook']::before {
+      content: ''; position: absolute; top: 0; bottom: 0;
+      inset-inline-start: 3.5rem; width: 2px;
+      background: rgba(230, 57, 70, 0.3); pointer-events: none;
+    }
+    .ig-sheet[data-frame='notebook'] .ig-remember {
+      border: 1.5px dashed var(--ig-border); background: var(--ig-tip);
+    }
+
+    /* Graph frame: technical millimeter grid background */
+    .ig-sheet[data-frame='graph'] {
+      background-color: var(--ig-bg);
+      background-image:
+        linear-gradient(to right, rgba(2, 132, 199, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(2, 132, 199, 0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+      border-color: var(--ig-border);
+    }
+    .ig-sheet[data-frame='graph'] .ig-accent-bar {
+      height: 5px;
+      background: linear-gradient(90deg, #0284C7 0%, #0D9488 50%, #2563EB 100%);
+    }
+
+    /* Poster frame: bold high-contrast classroom poster frame */
+    .ig-sheet[data-frame='poster'] {
+      border: 4px solid var(--ig-border);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
+    .ig-sheet[data-frame='poster'] .ig-accent-bar { height: 8px; }
+
+    /* Comic frame: heavy comic ink borders */
+    .ig-sheet[data-frame='comic'] {
+      border: 3.5px solid #18181B;
+      box-shadow: 4px 4px 0px #18181B;
+    }
+    .ig-sheet[data-frame='comic'] .ig-accent-bar { height: 6px; background: #18181B; }
+
+    /* Boxed frame: purple outlined sheet, header strip as a rounded banner, no stars. */
+    .ig-sheet[data-frame='boxed'] { border: 2px solid var(--ig-border); border-radius: 18px; }
+    .ig-sheet[data-frame='boxed'] .ig-accent-bar { display: none; }
+    .ig-sheet[data-frame='boxed'] .ig-strip { background: var(--ig-hero); }
 
     /* Fiche header: date | title | grade, three cells in one bordered strip. */
     .ig-strip {
@@ -164,7 +215,7 @@ import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
       }
 
       <header class="space-y-2.5 pt-1">
-        @if (frame() === 'fiche') {
+        @if (frame() === 'fiche' || frame() === 'boxed') {
           <div class="ig-strip">
             <div class="ig-strip-side">
               <span class="material-icons" aria-hidden="true">event</span>
@@ -180,8 +231,8 @@ import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
             </div>
           </div>
         }
-        <div class="flex flex-wrap items-center justify-between gap-2" [class.hidden]="frame() === 'fiche' && !doc().author?.name">
-          <div class="flex flex-wrap items-center gap-2" [class.hidden]="frame() === 'fiche'">
+        <div class="flex flex-wrap items-center justify-between gap-2" [class.hidden]="(frame() === 'fiche' || frame() === 'boxed') && !doc().author?.name">
+          <div class="flex flex-wrap items-center gap-2" [class.hidden]="frame() === 'fiche' || frame() === 'boxed'">
             <span class="ig-chip" style="color: var(--ig-heading)">{{ doc().grade }}</span>
             <span class="ig-chip" [style.color]="accent(0)">{{ doc().subject }}</span>
             @if (doc().trimester) {
@@ -202,7 +253,7 @@ import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
           }
         </div>
 
-        @if (frame() !== 'fiche') {
+        @if (frame() !== 'fiche' && frame() !== 'boxed') {
           <h2 class="ig-title">{{ s.title }}</h2>
         }
 
@@ -286,6 +337,15 @@ import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
               [illustrating]="illustrating()"
               (illustrate)="illustrate.emit($event)">
             </app-preset-picture-rows>
+          }
+          @case ('steps-interface') {
+            <app-preset-steps-interface
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-steps-interface>
           }
           @default {
             <app-preset-hero-cards

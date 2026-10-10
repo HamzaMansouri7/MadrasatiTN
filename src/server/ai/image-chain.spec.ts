@@ -12,19 +12,30 @@ const geminiRes = () =>
   new Response(JSON.stringify({ candidates: [{ content: { parts: [{ inlineData: { data: png().toString('base64') } }] } }] }), { status: 200 });
 const nvidiaRes = () => new Response(JSON.stringify({ artifacts: [{ base64: png().toString('base64') }] }), { status: 200 });
 
+const sfRes = (u: string) => {
+  if (u.includes('/images/generations')) {
+    return new Response(JSON.stringify({ images: [{ url: 'https://sf-cdn.test/img.png' }] }), {
+      status: 200,
+      headers: { 'content-type': 'application/json' },
+    });
+  }
+  return okRes();
+};
+
 const KEYS = { NVIDIA_API_KEY: 'nv-test', POLLINATIONS_API_KEY: 'pk-test' };
-const ALL = { ...KEYS, GEMINI_PAID_API_KEY: 'paid-test' };
+const ALL = { ...KEYS, SILICONFLOW_API_KEY: 'sf-test', GEMINI_PAID_API_KEY: 'paid-test' };
 
 /** Fake fetch: handler receives the URL (and init) and returns a Response (or throws). */
 const fakeFetch = (handler: (url: string, init?: RequestInit) => Response | Promise<Response>): typeof fetch =>
   (async (input: RequestInfo | URL, init?: RequestInit) => handler(String(input), init)) as typeof fetch;
 
 /** Route by host so each provider answers in its own format. */
-const byHost = (over: Partial<Record<'gemini' | 'nvidia' | 'pollinations', () => Response | Promise<Response>>> = {}) =>
+const byHost = (over: Partial<Record<'gemini' | 'nvidia' | 'pollinations' | 'siliconflow', (u: string) => Response | Promise<Response>>> = {}) =>
   (u: string): Response | Promise<Response> => {
-    if (u.includes('generativelanguage')) return (over.gemini ?? geminiRes)();
-    if (u.includes('nvidia.com')) return (over.nvidia ?? nvidiaRes)();
-    return (over.pollinations ?? okRes)();
+    if (u.includes('generativelanguage')) return (over.gemini ?? geminiRes)(u);
+    if (u.includes('nvidia.com')) return (over.nvidia ?? nvidiaRes)(u);
+    if (u.includes('siliconflow.com') || u.includes('sf-cdn.test')) return (over.siliconflow ?? sfRes)(u);
+    return (over.pollinations ?? okRes)(u);
   };
 
 beforeEach(() => {
@@ -71,6 +82,19 @@ describe('generateImage', () => {
     const r = await generateImage({ prompt: 'a cartoon sun over a river' }, { env: KEYS, fetchImpl: fakeFetch((u) => (urls.push(u), byHost()(u))) });
     expect(r.provider).toBe('nvidia-flux-1-dev');
     expect(urls[0]).toContain('flux.1-dev');
+  });
+
+  it('preferModel: tries the pinned model first and falls back only if it fails', async () => {
+    const first = await generateImage(
+      { prompt: 'a cartoon sun over a river', preferModel: 'pollinations-flux-1.1-pro' },
+      { env: ALL, fetchImpl: fakeFetch(byHost()) },
+    );
+    expect(first.provider).toBe('pollinations-flux-1.1-pro');
+    const fallback = await generateImage(
+      { prompt: 'a cartoon sun over a river', preferModel: 'nvidia-flux-1-dev' },
+      { env: KEYS, fetchImpl: fakeFetch(byHost({ nvidia: () => new Response('boom', { status: 500 }) })) },
+    );
+    expect(fallback.provider).not.toBe('nvidia-flux-1-dev');
   });
 
   it('falls from NVIDIA to keyed Pollinations (no watermark) when NVIDIA fails', async () => {
@@ -141,9 +165,54 @@ describe('generateImage', () => {
     expect(r.provider).toBe('gemini-paid-flash-lite-image');
   });
 
+  it('English prompt: forces no-text on non-arabicSafe models like FLUX', async () => {
+    const bodies: string[] = [];
+    const f = fakeFetch(async (u, init) => {
+      bodies.push(`${u} ${String(init?.body)}`);
+      return byHost()(u);
+    });
+    await generateImage({ prompt: 'a cartoon sun over a river' }, { env: KEYS, fetchImpl: f });
+    expect(bodies[0]).toMatch(/no text, no letters/);
+  });
+
+  it('falls from NVIDIA to SiliconFlow before Pollinations when SiliconFlow key is present', async () => {
+    const env = { ...KEYS, SILICONFLOW_API_KEY: 'sf-test' };
+    const urls: string[] = [];
+    const r = await generateImage({ prompt: 'a cartoon sun over a river' }, {
+      env,
+      fetchImpl: fakeFetch((u) => (urls.push(u), byHost({ nvidia: () => new Response('boom', { status: 500 }) })(u))),
+    });
+    expect(r.provider).toBe('siliconflow-qwen-image');
+    expect(urls.some((u) => u.includes('siliconflow.com'))).toBe(true);
+    expect(urls.some((u) => u.includes('sf-cdn.test'))).toBe(true);
+  });
+
+  it('SiliconFlow formats payload correctly with model Qwen/Qwen-Image and Bearer auth', async () => {
+    let capturedBody: Record<string, unknown> | undefined;
+    let authHeader: string | undefined;
+    const f = fakeFetch(async (u, init) => {
+      if (u.includes('siliconflow.com')) {
+        authHeader = (init?.headers as Record<string, string>)?.['Authorization'];
+        capturedBody = JSON.parse(String(init?.body));
+      }
+      return byHost()(u);
+    });
+    const r = await generateImage({ prompt: 'a cartoon sun over a river', seed: 42 }, {
+      env: { SILICONFLOW_API_KEY: 'sf-secret-key' },
+      fetchImpl: f,
+    });
+    expect(r.provider).toBe('siliconflow-qwen-image');
+    expect(authHeader).toBe('Bearer sf-secret-key');
+    expect(capturedBody?.['model']).toBe('Qwen/Qwen-Image');
+    expect(capturedBody?.['image_size']).toBe('1024x1024');
+    expect(capturedBody?.['seed']).toBe(42);
+    expect(capturedBody?.['prompt']).toMatch(/no text, no letters/);
+  });
+
   it('textFreePrompt keeps English, drops Arabic, returns null when nothing is left', () => {
     expect(textFreePrompt('sun مرحبا')).toBeNull();
     expect(textFreePrompt('a cartoon sun and a river مرحبا')).toMatch(/^a cartoon sun and a river\. no text/);
     expect(textFreePrompt('مرحبا بالعالم')).toBeNull();
   });
 });
+

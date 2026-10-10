@@ -289,6 +289,8 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
 
   readonly regeneratingIndex = signal<number | null>(null);
   private variations = new Map<number, number>();
+  /** One key per sheet: all its pictures share the same seed and image model (one look). */
+  private readonly sheetKey = 'ws-' + Math.random().toString(36).slice(2, 10);
 
   async illustrate() {
     const list = this.exercises();
@@ -309,7 +311,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
         while (queue.length > 0) {
           const item = queue.shift();
           if (!item) break;
-          const url = await this.store.generateIllustration(item.ex.imagePrompt!, style);
+          const url = await this.store.generateIllustration(item.ex.imagePrompt!, style, undefined, this.sheetKey);
           if (url) {
             this.exercises.update((cur) => {
               const copy = [...cur];
@@ -335,7 +337,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     this.variations.set(index, nextVar);
     this.regeneratingIndex.set(index);
     try {
-      const url = await this.store.generateIllustration(ex.imagePrompt, style, nextVar);
+      const url = await this.store.generateIllustration(ex.imagePrompt, style, nextVar, this.sheetKey);
       if (url) {
         this.exercises.update((cur) => {
           const copy = [...cur];

@@ -274,13 +274,22 @@ function rawImagePrompt(
   return { prompt: `${scene}. ${styleBlock}${IMAGE_COMMON}`, scene, category: "generic" };
 }
 
+/** seedKey (document id) -> image model that first answered for it. In memory, bounded. */
+const pinnedModels = new Map<string, string>();
+
 async function generateIllustrationFile(
   prompt: string,
   scene: string,
   seed: number,
+  seedKey?: string,
 ): Promise<string> {
   try {
-    const res = await generateImage({ prompt, seed });
+    const res = await generateImage({ prompt, seed, preferModel: seedKey ? pinnedModels.get(seedKey) : undefined });
+    if (seedKey && !pinnedModels.has(seedKey)) {
+      // Pin the first model that answered so the rest of this document keeps one look.
+      if (pinnedModels.size >= 500) pinnedModels.delete(pinnedModels.keys().next().value as string);
+      pinnedModels.set(seedKey, res.provider);
+    }
     return saveGenerated(`illustration_${randomUUID()}.${res.ext}`, res.data);
   } catch (err) {
     console.warn(
@@ -1877,7 +1886,7 @@ aiRouter.post(
             ? seedFor(promptText + variation)
             : seedFor(promptText);
 
-      const style = body.style ? String(body.style).slice(0, 300) : undefined;
+      const style = body.style ? String(body.style).slice(0, 450) : undefined;
       const hasVariation = variation !== undefined && variation > 0;
       const cacheKey = hashKey({
         prompt: promptText,
@@ -1910,7 +1919,7 @@ aiRouter.post(
             kind: String(body.kind ?? "").slice(0, 30),
             style,
           });
-      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed);
+      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey);
       if (!hasVariation) {
         exerciseCache.set(cacheKey, { imageUrl, category });
       }
