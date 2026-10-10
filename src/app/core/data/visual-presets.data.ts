@@ -21,6 +21,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     styleBlock:
       'Infographic — visually organized sections/cards, icons, short explanations, key facts, color-coded information, and strong visual hierarchy. Keep text concise and prioritize short headings, labels, and information fragments that remain easy to read.',
     themeId: 'kids',
+    presetId: 'auto',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -56,6 +57,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     styleBlock:
       'Handwritten Notes — realistic handwritten study notes on paper, with headings, underlines, highlights, arrows, small sketches, formulas, and concise explanations. Use a natural study-note structure with clear sections and readable handwritten elements.',
     themeId: 'handwritten',
+    presetId: 'hero-cards',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -98,6 +100,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     styleBlock:
       'Xray / Cutaway — detailed cutaway anatomical or mechanical cross-section on technical graph paper, revealing internal layers, labeled parts, circular close-up insets, and technical data callouts.',
     themeId: 'graph-paper',
+    presetId: 'central-picture',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -139,6 +142,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     styleBlock:
       'Visualize — intuitive conceptual visual breakdown using real-world analogies, step-by-step physical models, visual metaphors, and clear comparisons to make abstract concepts instantly concrete.',
     themeId: 'kids',
+    presetId: 'comparison',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -173,6 +177,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     styleBlock:
       'Diagram — clean scientific diagram with structured sections, arrows, connectors, labels, symbols, and simplified explanations.',
     themeId: 'official',
+    presetId: 'circular-flow',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -204,7 +209,8 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     basePrompt: 'Create a hierarchical mind map radiating outward from a central concept.',
     styleBlock:
       'Mind Map — place the topic as the central concept, with logical main branches and sub-branches containing related concepts, keywords, examples, and connections. Organize the information hierarchically and maintain clear relationships between the central concept, main branches, and supporting ideas.',
-    themeId: 'mindmap',
+    themeId: 'kids',
+    presetId: 'mindmap',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [],
     schemaFields: [
@@ -229,6 +235,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     styleBlock:
       'Poster — high-impact classroom poster layout with strong bold typography, clear hierarchy, high-contrast palette, central focal illustration, and concise summary points readable from a distance.',
     themeId: 'poster',
+    presetId: 'central-picture',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -260,6 +267,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     styleBlock:
       'Comic — clean sequential multi-panel comic strip with dynamic character interactions, clear dialogue and narration boxes, expressive illustrations, and step-by-step concept progression.',
     themeId: 'comic',
+    presetId: 'picture-rows',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -294,7 +302,8 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     basePrompt: 'Create an educational timeline with sequential milestone events.',
     styleBlock:
       'Timeline — chronological curriculum progression with verified dates, epoch badges, sequential connector, and event cards.',
-    themeId: 'timeline',
+    themeId: 'official',
+    presetId: 'timeline',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
@@ -325,7 +334,8 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     basePrompt: 'Create a set of printable revision flashcards for key lesson vocabulary.',
     styleBlock:
       'Flashcards — modular printable double-sided study cards with vocabulary word, phonetics, definition, example sentence, and visual hint illustration.',
-    themeId: 'flashcards',
+    themeId: 'fiche',
+    presetId: 'flashcards',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {

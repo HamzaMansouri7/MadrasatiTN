@@ -1,3 +1,5 @@
+import { InfographicPreset } from './infographic-spec.model';
+
 export type VisualCommand =
   | '/infographic'
   | '/handwritten'
@@ -33,6 +35,7 @@ export interface VisualPresetDefinition {
   basePrompt: string;
   styleBlock: string;
   themeId: string;
+  presetId?: InfographicPreset | 'auto';
   defaultModel: string;
   imageSlots: VisualImageSlot[];
   schemaFields: VisualContentSchemaField[];

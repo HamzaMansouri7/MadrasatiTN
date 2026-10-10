@@ -260,4 +260,6 @@ export type SpecImageTarget =
   | { kind: 'hero' }
   | { kind: 'item'; index: number }
   | { kind: 'column'; index: number }
+  | { kind: 'stage'; index: number }
   | { kind: 'problem' };
+

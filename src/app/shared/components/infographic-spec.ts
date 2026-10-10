@@ -10,6 +10,8 @@ import { PresetComparisonComponent } from './presets/preset-comparison';
 import { PresetProblemComponent } from './presets/preset-problem';
 import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
 import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface';
+import { PresetMindmapComponent } from './presets/preset-mindmap';
+import { PresetFlashcardsComponent } from './presets/preset-flashcards';
 
 /**
  * Draws an AI Studio spec on an A4 sheet. The model only picks a preset and fills text;
@@ -30,6 +32,8 @@ import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface'
     PresetProblemComponent,
     PresetPictureRowsComponent,
     PresetStepsInterfaceComponent,
+    PresetMindmapComponent,
+    PresetFlashcardsComponent,
   ],
   host: { '[attr.data-theme]': 'theme()', '[style]': 'themeVars()' },
   styles: `
@@ -86,11 +90,12 @@ import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface'
       background-image: repeating-linear-gradient(transparent, transparent 31px, rgba(226, 217, 200, 0.35) 32px);
       border-color: var(--ig-border);
       position: relative;
+      padding-inline-start: 4.25rem;
     }
     .ig-sheet[data-frame='notebook']::before {
       content: ''; position: absolute; top: 0; bottom: 0;
-      inset-inline-start: 3.5rem; width: 2px;
-      background: rgba(230, 57, 70, 0.3); pointer-events: none;
+      inset-inline-start: 3.25rem; width: 2px;
+      background: rgba(230, 57, 70, 0.35); pointer-events: none;
     }
     .ig-sheet[data-frame='notebook'] .ig-remember {
       border: 1.5px dashed var(--ig-border); background: var(--ig-tip);
@@ -156,7 +161,7 @@ import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface'
       box-shadow: 0 1px 3px rgba(0,0,0,0.02);
     }
     .ig-objective {
-      display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.85rem; border-radius: 10px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; padding: 0.4rem 0.85rem; border-radius: 10px;
       background: var(--ig-hero); border: 1px solid var(--ig-border); font-size: 0.85rem; font-weight: 600;
     }
     .ig-remember {
@@ -310,7 +315,13 @@ import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface'
             </app-preset-central-picture>
           }
           @case ('lesson-stages') {
-            <app-preset-lesson-stages [spec]="s" [doc]="doc()" [accent]="accentFn"></app-preset-lesson-stages>
+            <app-preset-lesson-stages
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-lesson-stages>
           }
           @case ('comparison') {
             <app-preset-comparison
@@ -346,6 +357,24 @@ import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface'
               [illustrating]="illustrating()"
               (illustrate)="illustrate.emit($event)">
             </app-preset-steps-interface>
+          }
+          @case ('mindmap') {
+            <app-preset-mindmap
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-mindmap>
+          }
+          @case ('flashcards') {
+            <app-preset-flashcards
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-flashcards>
           }
           @default {
             <app-preset-hero-cards

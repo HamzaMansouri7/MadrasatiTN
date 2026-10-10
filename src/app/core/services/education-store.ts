@@ -1444,6 +1444,7 @@ export class EducationStore {
     if (needs(spec.hero)) out.push({ kind: 'hero' });
     spec.items?.forEach((it, i) => needs(it) && out.push({ kind: 'item', index: i }));
     spec.columns?.forEach((c, i) => needs(c) && out.push({ kind: 'column', index: i }));
+    spec.stages?.forEach((st, i) => needs(st) && out.push({ kind: 'stage', index: i }));
     if (needs(spec.problem)) out.push({ kind: 'problem' });
     return out;
   }
@@ -1484,7 +1485,9 @@ export class EducationStore {
           ? spec.items?.[target.index]
           : target.kind === 'column'
             ? spec.columns?.[target.index]
-            : spec.problem;
+            : target.kind === 'stage'
+              ? spec.stages?.[target.index]
+              : spec.problem;
     const prompt = block?.imagePrompt?.trim();
     if (!block || !prompt) return { ok: false, error: 'Aucune description d’image pour ce bloc.' };
 
@@ -1534,6 +1537,12 @@ export class EducationStore {
       updatedValues = {
         ...spec,
         columns: (spec.columns ?? []).map((c, i) => (i === target.index ? (withImage as typeof c) : c)),
+        imageLibrary: updatedLib,
+      };
+    } else if (target.kind === 'stage') {
+      updatedValues = {
+        ...spec,
+        stages: (spec.stages ?? []).map((st, i) => (i === target.index ? (withImage as typeof st) : st)),
         imageLibrary: updatedLib,
       };
     } else {

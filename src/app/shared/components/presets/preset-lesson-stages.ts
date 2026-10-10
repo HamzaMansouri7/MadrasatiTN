@@ -1,14 +1,17 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { InfographicDoc, InfographicSpec } from '@core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
+import { InfographicDoc, InfographicSpec, SpecImageTarget } from '@core';
+import { IllustrateButtonComponent } from './illustrate-button';
 
 /**
  * A lesson told as numbered stages, each split into what the teacher does and what the
  * learner does (the "مذكرة درس" poster structure). Items, when present, become key-notion chips.
+ * Now supports optional illustrations per stage via app-illustrate-button.
  */
 @Component({
   selector: 'app-preset-lesson-stages',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [IllustrateButtonComponent],
   styles: `
     :host { display: block; }
     .ls-stage {
@@ -18,14 +21,21 @@ import { InfographicDoc, InfographicSpec } from '@core';
       overflow: hidden;
       break-inside: avoid;
     }
-    .ls-head { display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 1rem; }
+    .ls-head { display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 1rem; flex-wrap: wrap; }
     .ls-num {
       width: 2.25rem; height: 2.25rem; border-radius: 999px; color: #fff; font-weight: 800;
       display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
     .ls-time {
-      margin-inline-start: auto; font-size: 0.75rem; font-weight: 700; padding: 0.15rem 0.6rem;
+      font-size: 0.75rem; font-weight: 700; padding: 0.15rem 0.6rem;
       border-radius: 999px; background: var(--ig-hero); border: 1px solid var(--ig-border);
+    }
+    .ls-pic {
+      margin-inline-start: auto; display: inline-flex; align-items: center; gap: 0.4rem;
+    }
+    .ls-pic img {
+      width: 48px; height: 48px; object-fit: contain; border-radius: 8px;
+      border: 1px solid var(--ig-border); background: #ffffff;
     }
     .ls-cols { display: grid; grid-template-columns: 1fr 1fr; border-top: var(--ig-bw, 2px) solid var(--ig-border); }
     .ls-col { padding: 0.75rem 1rem; }
@@ -63,6 +73,19 @@ import { InfographicDoc, InfographicSpec } from '@core';
             @if (st.duration) {
               <span class="ls-time">{{ st.duration }}</span>
             }
+            @if (st.imagePrompt || st.imageUrl) {
+              <span class="ls-pic">
+                @if (st.imageUrl) {
+                  <img [src]="st.imageUrl" [alt]="st.title" />
+                }
+                <app-illustrate-button
+                  [prompt]="st.imagePrompt"
+                  [imageUrl]="st.imageUrl"
+                  [busy]="illustrating() === 'stage-' + $index"
+                  [disabled]="!!illustrating()"
+                  (pressed)="illustrate.emit({ kind: 'stage', index: $index })" />
+              </span>
+            }
           </div>
           <div class="ls-cols">
             <div class="ls-col">
@@ -89,4 +112,6 @@ export class PresetLessonStagesComponent {
   readonly spec = input.required<InfographicSpec>();
   readonly doc = input.required<InfographicDoc>();
   readonly accent = input.required<(i: number) => string>();
+  readonly illustrating = input<string | null>(null);
+  readonly illustrate = output<SpecImageTarget>();
 }

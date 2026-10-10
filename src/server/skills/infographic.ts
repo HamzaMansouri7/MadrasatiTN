@@ -88,6 +88,8 @@ export const INFOGRAPHIC_SCHEMA = {
           teacherActivity: STR,
           learnerActivity: STR,
           duration: STR,
+          wantsImage: BOOL,
+          imagePrompt: STR,
         },
         required: ['stageNumber', 'title', 'teacherActivity', 'learnerActivity'],
       },
@@ -166,6 +168,10 @@ const PRESET_BRIEF: Record<InfographicPreset, string> = {
     'comparison : comparaison côte à côte (2 colonnes A vs B avec points distincts et points communs).',
   'picture-rows':
     'picture-rows : lignes numérotées « image + phrase modèle » (observer une image puis écrire une phrase) ; chaque item = une ligne : title = le mot ou verbe travaillé, text = une phrase complète et enrichie, keyword = le mot de la phrase à mettre en rouge.',
+  mindmap:
+    'mindmap : concept central (hero.label, 1 à 3 mots) rayonnant vers des branches thématiques ; chaque item = une branche : title = la branche, text = 2 à 4 sous-notions courtes séparées par des virgules, icon.',
+  flashcards:
+    'flashcards : cartes de révision imprimables ; chaque item = une carte : title = le mot clé, text = définition claire en une phrase, keyword = un court exemple.',
   'steps-interface':
     'steps-interface : tutoriel d’un outil numérique ; chaque item = une étape numérotée (title court, text = consigne) ; remplis "interface" avec l’écran simplifié de l’outil (appName, 1 à 4 tabs, 2 à 4 fields).',
   problem:
@@ -215,7 +221,7 @@ Règles de choix (seulement parmi les presets listés ci-dessus) :
 - steps-interface : 3 à 6 items = étapes dans l'ordre ; "interface" = écran simplifié : appName (nom de l'outil), tabs (onglets), fields (2 à 4) avec kind = choice (avec 2 à 5 options), short, long ou button, label et hint courts. L'écran est dessiné par le code (texte seulement). Illustrations : chaque item a un imagePrompt = UNE petite icône d'objet concret (ex. "a pencil and a checklist"), et hero = { label: nom court de l'outil, imagePrompt: une icône d'objet pour l'en-tête } ; jamais de capture d'écran ni de logo de marque.
 - remember : 1 à 3 points à retenir, très courts.
 - comparison : remplis "columns" avec EXACTEMENT 2 colonnes (title, 2 à 5 points courts, imagePrompt) ; "items" = points communs (0 à 4).
-- lesson-stages : remplis "stages" avec 2 à 5 étapes (stageNumber, title, teacherActivity, learnerActivity, duration ex. "10 min") ; "items" = notions clés (0 à 5).
+- lesson-stages : remplis "stages" avec 2 à 5 étapes (stageNumber, title, teacherActivity, learnerActivity, duration ex. "10 min", et imagePrompt = une petite scène concrète en anglais) ; "items" = notions clés (0 à 5).
 - central-picture : hero.label = le thème en 1 à 3 mots, hero.caption = une phrase complète de 120 caractères maximum, hero.wantsImage = true et hero.imagePrompt = la scène centrale ; "items" = 2 à 6 cartes (rôles, exemples) ; "quote" facultatif = une phrase d'encouragement.
 - problem : remplis "problem" avec "situation" (texte narratif ancré dans le réel tunisien, prix en DT / millimes, fractions 1/2, 3/4, etc.), "table" facultatif (tableau de données structuré), "questions" (2 à 4 questions claires de calcul ou déduction, avec linesCount: 2 ou 3) et "imagePrompt" (TOUJOURS : la scène concrète de la situation, ex. "a Tunisian family in a market buying vegetables") ; "items" = 0 à 3 conseils méthodologiques.
 - ILLUSTRATIONS : Inclus le contexte concret de la leçon dans CHAQUE imagePrompt : une phrase courte STRICTEMENT EN ANGLAIS (300 car max) décrivant des objets et personnages concrets en action dans le contexte du sujet (ex: "In a Tunisian olive grove, farmers placing harvested olives in crates"). Toutes les images d'une fiche ont le MÊME cadrage : un seul groupe d'objets isolé, centré, sur fond blanc uni, sans décor de pièce ni paysage (sauf hero et central-picture qui peuvent montrer une scène). Si item.count est rempli, l'image montre exactement ce nombre d'objets. Décris uniquement la scène : AUCUN mot de style, de couleur ou d'artifice, le serveur ajoute le style. AUCUN mot en arabe. Ne demande jamais de texte ni de chiffres dans l'image. Pour les cartes purement abstraites, mets wantsImage = false.`,

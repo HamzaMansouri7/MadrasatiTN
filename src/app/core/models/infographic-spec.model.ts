@@ -8,7 +8,9 @@ export type InfographicPreset =
   | 'comparison'
   | 'problem'
   | 'picture-rows'
-  | 'steps-interface';
+  | 'steps-interface'
+  | 'mindmap'
+  | 'flashcards';
 
 /** Look of the sheet (design tokens only). Scoped to AI Studio sheets, never the app UI. */
 export type InfographicTheme = 'kids' | 'official' | 'fiche' | 'handwritten' | 'graph-paper' | 'poster' | 'comic' | 'lilac';
@@ -23,6 +25,8 @@ export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'problem',
   'picture-rows',
   'steps-interface',
+  'mindmap',
+  'flashcards',
 ];
 /**
  * Presets that have a renderer today. The model may only pick from these (schema enum + Auto list);
@@ -38,6 +42,8 @@ export const ENABLED_INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'problem',
   'picture-rows',
   'steps-interface',
+  'mindmap',
+  'flashcards',
 ];
 export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = [
   'kids',
@@ -101,6 +107,9 @@ export interface SpecStage {
   teacherActivity: string;
   learnerActivity: string;
   duration?: string;
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
 }
 
 export interface SpecQuote {
@@ -187,4 +196,6 @@ export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: n
   'picture-rows': { min: 2, max: 5 },
   // numbered steps beside a simplified screen mockup (`interface`)
   'steps-interface': { min: 3, max: 6 },
+  mindmap: { min: 3, max: 8 },
+  flashcards: { min: 4, max: 8 },
 };

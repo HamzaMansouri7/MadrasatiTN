@@ -6,12 +6,15 @@ import {
   InfographicPreset,
   InfographicSpec,
   InfographicTheme,
+  isInfographicTheme,
   LanguageService,
   PRIMARY_GRADES,
   PRIMARY_SUBJECTS,
   SourceInput,
   SpecImageTarget,
   TRIMESTERS,
+  VISUAL_PRESETS,
+  VisualCommand,
 } from '@core';
 import { AiStatusComponent, InfographicSpecComponent, ShareButtonComponent } from '@shared';
 
@@ -145,6 +148,29 @@ interface PresetOption {
                   </a>
                 </div>
               </div>
+
+              <!-- Command Quick Picker -->
+              <fieldset>
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <legend class="font-display font-semibold text-[#14251D]">{{ lang.tr('Préréglage visuel', 'النمط السريع') }}</legend>
+                  <span class="text-[11px] font-mono text-[#6B7A70] bg-[#F2ECDE] px-2 py-0.5 rounded-full">/commandes</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  @for (c of commands; track c.cmd) {
+                    <button
+                      type="button"
+                      (click)="applyCommand(c.cmd)"
+                      [attr.aria-pressed]="activeCommand() === c.cmd"
+                      [class]="activeCommand() === c.cmd
+                        ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F] shadow-xs'
+                        : 'bg-white hover:bg-[#FBF8F1] text-[#14251D] border-[#E7DFCF]'"
+                      class="px-2.5 py-1.5 border rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                      <span class="material-icons text-sm" aria-hidden="true">{{ c.icon }}</span>
+                      <span>{{ c.cmd }}</span>
+                    </button>
+                  }
+                </div>
+              </fieldset>
 
               <fieldset>
                 <legend class="font-display font-semibold text-[#14251D] mb-3">{{ lang.tr('Style', 'الأسلوب') }}</legend>
@@ -392,6 +418,8 @@ export class AiStudioComponent implements OnInit {
     { id: 'problem', icon: 'quiz', fr: 'Problème', ar: 'وضعية مشكل' },
     { id: 'picture-rows', icon: 'view_list', fr: 'Image et phrase', ar: 'صورة وجملة' },
     { id: 'steps-interface', icon: 'web', fr: 'Étapes et écran', ar: 'خطوات وشاشة' },
+    { id: 'mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية' },
+    { id: 'flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات مراجعة' },
   ];
 
   readonly themes: { id: InfographicTheme; icon: string; fr: string; ar: string; hintFr: string; hintAr: string }[] = [
@@ -399,7 +427,36 @@ export class AiStudioComponent implements OnInit {
     { id: 'official', icon: 'account_balance', fr: 'Officiel', ar: 'رسمي', hintFr: 'Sobre, style ministère', hintAr: 'هادئ بطابع رسمي' },
     { id: 'fiche', icon: 'star', fr: 'Fiche classe', ar: 'بطاقة القسم', hintFr: 'Bleu et rouge, cadre étoilé', hintAr: 'أزرق وأحمر، إطار بالنجوم' },
     { id: 'lilac', icon: 'dashboard_customize', fr: 'Fiche numérique', ar: 'ورقة رقمية', hintFr: 'Violet, sections encadrées', hintAr: 'بنفسجي وأقسام داخل إطارات' },
+    { id: 'handwritten', icon: 'edit', fr: 'Cahier de notes', ar: 'دفتر ملاحظات', hintFr: 'Papier crème ligné, annotations', hintAr: 'ورق مسطر وهوامش وهوامش ملونة' },
+    { id: 'graph-paper', icon: 'grid_4x4', fr: 'Papier millimétré', ar: 'ورق تقني ومخطط', hintFr: 'Grille technique, écorché', hintAr: 'شبكة هندسية ومقطع تشريحي' },
+    { id: 'poster', icon: 'campaign', fr: 'Affiche', ar: 'ملصق حائطي', hintFr: 'Grand format, contraste fort', hintAr: 'خط عريض وألوان واضحة' },
+    { id: 'comic', icon: 'forum', fr: 'BD éducative', ar: 'قصة مصورة', hintFr: 'Cases illustrées et bulles', hintAr: 'إطارات متسلسلة وحوارات' },
   ];
+
+  readonly commands: { cmd: VisualCommand; icon: string; fr: string; ar: string }[] = [
+    { cmd: '/infographic', icon: 'auto_awesome', fr: 'Infographie', ar: 'إنفوغرافيك' },
+    { cmd: '/handwritten', icon: 'edit_note', fr: 'Cahier', ar: 'دفتر' },
+    { cmd: '/xray', icon: 'biotech', fr: 'Écorché', ar: 'تشريحي' },
+    { cmd: '/diagram', icon: 'schema', fr: 'Schéma', ar: 'رسم بياني' },
+    { cmd: '/mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية' },
+    { cmd: '/poster', icon: 'campaign', fr: 'Affiche', ar: 'ملصق' },
+    { cmd: '/comic', icon: 'forum', fr: 'BD', ar: 'قصة مصورة' },
+    { cmd: '/timeline', icon: 'timeline', fr: 'Frise', ar: 'خط زمني' },
+    { cmd: '/flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات' },
+  ];
+  readonly activeCommand = signal<VisualCommand | null>(null);
+
+  applyCommand(cmd: VisualCommand) {
+    this.activeCommand.set(cmd);
+    const def = VISUAL_PRESETS[cmd];
+    if (!def) return;
+    if (isInfographicTheme(def.themeId)) {
+      this.setTheme(def.themeId);
+    }
+    if (def.presetId) {
+      this.setPreset(def.presetId);
+    }
+  }
 
   readonly source = signal<SourceInput | null>(null);
   readonly preset = signal<InfographicPreset | 'auto'>('auto');

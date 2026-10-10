@@ -200,12 +200,18 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
           const teacherActivity = clip(s['teacherActivity'], 200);
           const learnerActivity = clip(s['learnerActivity'], 200);
           if (!stTitle && !teacherActivity && !learnerActivity) return null;
+          const wantsImage = Boolean(s['wantsImage']);
+          const imagePrompt = s['wantsImage'] === false ? undefined : sanitizeImagePrompt(s['imagePrompt']);
+          const imageUrl = sanitizeImageUrl(s['imageUrl']);
           return {
             stageNumber: typeof s['stageNumber'] === 'number' ? s['stageNumber'] : idx + 1,
             title: stTitle,
             teacherActivity,
             learnerActivity,
             duration: clip(s['duration'], 30) || undefined,
+            wantsImage: wantsImage || undefined,
+            imagePrompt,
+            imageUrl,
           };
         })
         .filter((st): st is SpecStage => st !== null)
