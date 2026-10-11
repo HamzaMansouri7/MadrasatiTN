@@ -1,0 +1,22 @@
+{
+  "_note": "Notebook order. Notebook name = 'Madrasati TN · NN · <book title>'. A book not listed here gets the next free number automatically (build_runsheets.py appends it in the sheets, then add it here to freeze its number).",
+  "order": [
+    "1ere_annee/evaluations_maths_arabe",
+    "2eme_annee/evaluations_toutes_matieres",
+    "3eme_annee/examens_toutes_matieres",
+    "4eme_annee/mathematiques_exercices_corriges",
+    "4eme_annee/production_ecrite_arabe",
+    "5eme_annee/mathematiques_exercices_evaluations",
+    "5eme_annee/exercices_mathematiques_corriges",
+    "5eme_annee/eveil_scientifique_evaluations",
+    "5eme_annee/devoirs_trimestre_1_matieres_mixtes",
+    "6eme_annee/concours_mathematiques_corriges",
+    "6eme_annee/epreuve_modele_mathematiques_corrigee",
+    "6eme_annee/eveil_scientifique_cours_exercices",
+    "6eme_annee/concours_blanc_eveil_scientifique_corrige",
+    "6eme_annee/francais_lire_et_sexprimer",
+    "6eme_annee/grammaire_arabe_cahier_regles",
+    "6eme_annee/examen_lecture_arabe_corrige",
+    "6eme_annee/soutien_maths_francais"
+  ]
+}

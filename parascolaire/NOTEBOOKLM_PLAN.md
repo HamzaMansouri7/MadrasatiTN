@@ -28,7 +28,7 @@ Download PDF / PPTX → split to images → review → library
 
 | Rule | Detail |
 |---|---|
-| One notebook per book | Named exactly as `book.json` → `title` (the rebranded name). 17 notebooks. |
+| One notebook per book | Named `Madrasati TN · NN · <book.json title>` (NN = order number 01–17, title = the rebranded name). 17 notebooks. |
 | Sources | One `.md` per **theme**, plus `00-overview.md`. Generation only uses the sources ticked in the dialog, so a theme-sized file lets you generate for one theme at a time. |
 | Never add as sources | The website, PDFs, any old OCR text, any file with a commercial name. |
 | Source limits | Pro: 300 sources per notebook; 500,000 words or 200 MB per source ([Fast.io](https://fast.io/resources/notebooklm-limits.md), [Elephas](https://elephas.app/blog/notebooklm-source-limits)). Far above what is needed. |
@@ -444,6 +444,7 @@ Run section 17's table for every new book before generating anything: if it cann
 
 | Date | Output | Setting changed | Prompt version | Result (good / bad, why) | Keep? |
 |---|---|---|---|---|---|
+| 2026-10-11 | Infographic, notebook 01, theme *Comparaison et rangement des nombres* | Arabic, Portrait, Kawaii, Standard | infographic v1 (section 16.2 prompt) | **Good:** Arabic sharp and vowelled, Kawaii look fits age 6-7, clear 3-rule layout, 2 practice questions without answers. **Bad:** (1) English labels appeared although the language was Arabic; (2) rule examples reused the source exercise's own pictures and numbers (apples 7 vs bananas 5, snails 3 vs butterflies 6), which answers source exercise 1. | v2 needed: ban English text; ban reusing source objects or numbers in examples |
 | | | | | | |
 
 ## 20. Decisions needed from the owner

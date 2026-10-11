@@ -131,7 +131,8 @@ def export_book(bdir):
     for n, theme in enumerate(order, 1):
         trows = sorted(by_theme[theme], key=lambda r: (r['page'], str(r['number'])))
         chapters = sorted({r['topicId'] for r in trows if r.get('topicId')})
-        L = [f'# {theme} — {book["grade"]} — {book["subject"]}', '',
+        tsubj = collections.Counter(r.get('subject') or book['subject'] for r in trows).most_common(1)[0][0]
+        L = [f'# {theme} — {book["grade"]} — {tsubj}', '',
              f'Book: {book["title"]}',
              f'Official chapter: {", ".join(chapters) if chapters else "unknown"}', '',
              '## Exercises', '']
@@ -152,14 +153,16 @@ def export_book(bdir):
         stats[theme] = (len(trows), withc, len(chapters))
 
     kinds = collections.Counter(r['pageType'] for r in rows)
+    subs = collections.Counter(r.get('subject') or book['subject'] for r in rows)
+    subj_line = ' + '.join(s for s, _ in subs.most_common()) if subs else book['subject']
     ov = [f'# {book["title"]}', '',
-          f'Class: {book["grade"]}', f'Subject: {book["subject"]}',
+          f'Class: {book["grade"]}', f'Subject: {subj_line}',
           f'Main content type: {kinds.most_common(1)[0][0] if kinds else "n/a"}',
           f'Exercises exported (ready only): {len(rows)}',
           f'With a correction: {sum(v[1] for v in stats.values())}', '',
-          '## Themes (one source file each)', '', '| File | Theme | Exercises | With correction |', '|---|---|---|---|']
+          '## Themes (one source file each)', '', '| File | Theme | Subject | Exercises | With correction |', '|---|---|---|---|---|']
     for n, theme in enumerate(order, 1):
-        ov.append(f'| {slug(theme, n)}.md | {theme} | {stats[theme][0]} | {stats[theme][1]} |')
+        ov.append(f'| {slug(theme, n)}.md | {theme} | {collections.Counter(r.get("subject") or book["subject"] for r in by_theme[theme]).most_common(1)[0][0]} | {stats[theme][0]} | {stats[theme][1]} |')
     ov += ['', 'Rule: only the statements and corrections written in the theme files may be used. Exercises marked "No correction yet" have no answer in the sources; never create one.', '']
     (dest / '00-overview.md').write_text('\n'.join(ov), encoding='utf-8')
     return book['title'], dest, len(order), len(rows), sum(v[1] for v in stats.values())

@@ -1,0 +1,142 @@
+{
+  "_note": "Single place for every default. Change a value here, never inside a prompt template. Style choices are proposals to be confirmed in the pilot (see NOTEBOOKLM_PLAN.md section 16.6).",
+  "version": 1,
+  "bands": {
+    "1-3": {
+      "infographic": {
+        "orientation": "Portrait",
+        "style": "Kawaii",
+        "detail": "Standard"
+      },
+      "slides": {
+        "format": "Diaporama détaillé",
+        "length": "Par défaut"
+      },
+      "video": {
+        "format": "Court",
+        "style": "Papier découpé"
+      }
+    },
+    "4-6": {
+      "infographic": {
+        "orientation": "Portrait",
+        "style": "Croquis",
+        "detail": "Standard"
+      },
+      "slides": {
+        "format": "Diaporama détaillé",
+        "length": "Par défaut"
+      },
+      "video": {
+        "format": "Court",
+        "style": "Tableau blanc"
+      }
+    }
+  },
+  "classes": {
+    "1": {
+      "en": "1st grade",
+      "age": "age 6-7",
+      "ar": "السنة الأولى",
+      "fr": "1ère année",
+      "numbers": "under 20"
+    },
+    "2": {
+      "en": "2nd grade",
+      "age": "age 7-8",
+      "ar": "السنة الثانية",
+      "fr": "2ème année",
+      "numbers": "under 100"
+    },
+    "3": {
+      "en": "3rd grade",
+      "age": "age 8-9",
+      "ar": "السنة الثالثة",
+      "fr": "3ème année",
+      "numbers": "under 1000"
+    },
+    "4": {
+      "en": "4th grade",
+      "age": "age 9-10",
+      "ar": "السنة الرابعة",
+      "fr": "4ème année",
+      "numbers": "under 10000"
+    },
+    "5": {
+      "en": "5th grade",
+      "age": "age 10-11",
+      "ar": "السنة الخامسة",
+      "fr": "5ème année",
+      "numbers": "under 100000"
+    },
+    "6": {
+      "en": "6th grade",
+      "age": "age 11-12",
+      "ar": "السنة السادسة",
+      "fr": "6ème année",
+      "numbers": "under 1000000"
+    }
+  },
+  "subjects": {
+    "Mathématiques": {
+      "lang": "ar",
+      "ar": "الرياضيات",
+      "fr": "Mathématiques",
+      "maths": true
+    },
+    "Arabe": {
+      "lang": "ar",
+      "ar": "اللغة العربية",
+      "fr": "Arabe"
+    },
+    "Éveil scientifique": {
+      "lang": "ar",
+      "ar": "الإيقاظ العلمي",
+      "fr": "Éveil scientifique"
+    },
+    "Éducation islamique": {
+      "lang": "ar",
+      "ar": "التربية الإسلامية",
+      "fr": "Éducation islamique"
+    },
+    "Éducation civique": {
+      "lang": "ar",
+      "ar": "التربية المدنية",
+      "fr": "Éducation civique"
+    },
+    "Histoire-Géographie": {
+      "lang": "ar",
+      "ar": "التاريخ والجغرافيا",
+      "fr": "Histoire-Géographie"
+    },
+    "Français": {
+      "lang": "fr",
+      "ar": "الفرنسية",
+      "fr": "Français"
+    }
+  },
+  "languages": {
+    "ar": {
+      "name": "Arabic",
+      "vowel_clause": ", fully vowelled Modern Standard Arabic",
+      "dropdown": "Arabic",
+      "brand_display": "مدرستي تونس",
+      "exception": " No other language, except the small Latin \"Madrasati TN\"."
+    },
+    "fr": {
+      "name": "French",
+      "vowel_clause": "",
+      "dropdown": "French",
+      "brand_display": "Madrasati TN",
+      "exception": " No other language."
+    }
+  },
+  "rules": {
+    "small_theme_max_exercises": 7,
+    "min_correction_ratio_for_answers": 0.5
+  },
+  "brand": {
+    "name_ar": "مدرستي تونس",
+    "name_latin": "Madrasati TN"
+  }
+}
