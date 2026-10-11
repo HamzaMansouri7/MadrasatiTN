@@ -1,100 +1,98 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { filter, map } from 'rxjs';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, NotificationItem, UserRole } from '@core';
 import { TimeAgoPipe } from '../pipes/time-ago.pipe';
 import { TeacherAvatarComponent } from './teacher-avatar';
 
+interface NavItem {
+  path: string;
+  /** URL prefixes that mark this link as the current page. */
+  match: string[];
+  icon: string;
+  fr: string;
+  ar: string;
+  compact?: boolean;
+}
+
+function stripUrl(url: string): string {
+  return url.split(/[?#]/)[0] || '/';
+}
+
 @Component({
   selector: 'app-navbar',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [TimeAgoPipe, TeacherAvatarComponent],
+  imports: [RouterLink, TimeAgoPipe, TeacherAvatarComponent],
   template: `
-    <header class="sticky top-0 z-40 bg-white border-b border-[#E6EEF3] transition-colors">
+    <header class="sticky top-0 z-40 bg-white border-b border-[#E7DFCF] transition-colors">
       <div class="w-full max-w-full mx-auto px-3 sm:px-6 lg:px-8 xl:px-10">
         <div class="flex items-center justify-between h-[76px] gap-2 lg:gap-4">
           
           <!-- Logo & Platform Identity -->
-          <div (click)="selectRole('home')" (keydown.enter)="selectRole('home')" role="button" tabindex="0" class="flex items-center gap-2.5 sm:gap-3 shrink-0 cursor-pointer group">
-            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] overflow-hidden flex items-center justify-center shadow-sm shrink-0 group-hover:scale-102 transition-transform border border-[#E6EEF3]">
+          <a routerLink="/" [attr.aria-label]="lang.t('brandName')" class="flex items-center gap-2.5 sm:gap-3 shrink-0 cursor-pointer group rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] overflow-hidden flex items-center justify-center shadow-sm shrink-0 group-hover:scale-102 transition-transform border border-[#E7DFCF]">
               <img src="/logo.jpg" alt="Madrasati Logo" class="w-full h-full object-cover" />
             </div>
             <div>
               <div class="flex items-center gap-1.5 sm:gap-2">
-                <span class="font-display font-bold text-[#102A43] text-sm sm:text-base xl:text-lg tracking-tight whitespace-nowrap">
+                <span class="font-display font-bold text-[#14251D] text-sm sm:text-base xl:text-lg tracking-tight whitespace-nowrap">
                   {{ lang.t('brandName') }}
                 </span>
-                <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/20 shrink-0">
+                <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#F2ECDE] text-[#2D6A4F] border border-[#2D6A4F]/20 shrink-0">
                   <span class="font-black">TN</span>
                 </span>
               </div>
-              <p class="text-[10px] sm:text-[11px] text-[#486581] font-medium leading-none hidden 2xl:block mt-0.5">
+              <p class="text-[10px] sm:text-[11px] text-[#5B6B60] font-medium leading-none hidden 2xl:block mt-0.5">
                 {{ lang.t('brandSub') }}
               </p>
             </div>
-          </div>
+          </a>
 
-          <!-- Intentional 4-Group Navigation -->
-          <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5 2xl:gap-2 shrink-0 h-[76px]">
-            <!-- 1. Library link: Bibliothèque CNP -->
-            <button
-              type="button"
-              (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isTeachersRoute() && router.url !== '/programme'
-                ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10'
-                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg" aria-hidden="true">explore</span>
-              <span>{{ lang.tr('Bibliothèque CNP', 'المكتبة والدليل') }}</span>
-            </button>
-
-            <!-- 2. Programme link: Programme Officiel -->
-            <button
-              type="button"
-              (click)="router.navigate(['/programme'])"
-              [class]="router.url === '/programme'
-                ? 'text-[#007CC2] font-semibold border-b-[3px] border-[#007CC2] bg-[#E8F5FC]/60'
-                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg" aria-hidden="true">account_tree</span>
-              <span>{{ lang.tr('Programme Officiel', 'البرنامج البيداغوجي') }}</span>
-            </button>
-
-            <!-- 3. Create Hub / مركز الإنشاء (teachers only) -->
-            @if (firebase.userProfile()?.role === 'teacher') {
-              <button
-                type="button"
-                (click)="router.navigate(['/create'])"
-                [class]="router.url.startsWith('/create') || router.url.startsWith('/editor') || router.url.startsWith('/ai-studio') || router.url.startsWith('/memo-studio') || router.url.startsWith('/article-studio')
-                  ? 'bg-[#1B4332] text-[#FBF8F1] shadow-xs' 
-                  : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] shadow-xs'"
-                class="flex items-center gap-1.5 px-3.5 h-[40px] rounded-xl text-xs font-semibold tracking-wide transition-all cursor-pointer mx-1">
-                <span class="material-icons text-base">auto_fix_high</span>
-                <span>{{ lang.tr('Créer / Studio', 'مركز الإنشاء') }}</span>
-              </button>
+          <!-- Main navigation: real links, active state from the URL -->
+          <nav [attr.aria-label]="lang.tr('Navigation principale', 'التصفح الرئيسي')" class="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0 h-[76px]">
+            @for (item of navItems; track item.path) {
+              <a
+                [routerLink]="item.path"
+                [attr.aria-current]="isActive(item.match) ? 'page' : null"
+                [attr.title]="lang.tr(item.fr, item.ar)"
+                [class]="isActive(item.match) ? tabActive : tabIdle"
+                class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                <span class="material-icons text-base xl:text-lg" aria-hidden="true">{{ item.icon }}</span>
+                <span [class]="item.compact ? 'sr-only 2xl:not-sr-only' : ''">{{ lang.tr(item.fr, item.ar) }}</span>
+              </a>
             }
 
-            <!-- 4. Spaces / الفضاءات -->
-            <button
-              type="button"
-              (click)="selectRole('teacher')"
-              [class]="store.currentRole() === 'teacher' 
-                ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10' 
-                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg">school</span>
-              <span>{{ lang.t('roleTeacher') }}</span>
-            </button>
+            @if (firebase.userProfile()?.role === 'teacher') {
+              <a
+                routerLink="/create"
+                [attr.aria-current]="isActive(studioPaths) ? 'page' : null"
+                [class]="isActive(studioPaths) ? 'bg-[#1B4332]' : 'bg-[#2D6A4F] hover:bg-[#1B4332]'"
+                class="flex items-center gap-1.5 px-3.5 h-[40px] rounded-xl text-xs font-semibold text-[#FBF8F1] shadow-sm transition-colors mx-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
+                <span class="material-icons text-base" aria-hidden="true">auto_fix_high</span>
+                <span>{{ lang.tr('Créer / Studio', 'مركز الإنشاء') }}</span>
+              </a>
+            }
 
-            <button
-              type="button"
-              (click)="selectRole('parent')"
-              [class]="store.currentRole() === 'parent' 
-                ? 'text-[#8A5A00] font-semibold border-b-[3px] border-[#8A5A00] bg-[#8A5A00]/10' 
-                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
-              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
-              <span class="material-icons text-base xl:text-lg">family_restroom</span>
+            <a
+              routerLink="/teacher"
+              [attr.aria-current]="isActive(['/teacher']) ? 'page' : null"
+              [class]="isActive(['/teacher']) ? tabActive : tabIdle"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+              <span class="material-icons text-base xl:text-lg" aria-hidden="true">school</span>
+              <span>{{ lang.t('roleTeacher') }}</span>
+            </a>
+
+            <a
+              routerLink="/parent"
+              [attr.aria-current]="isActive(['/parent']) ? 'page' : null"
+              [class]="isActive(['/parent'])
+                ? 'text-[#8A5A00] font-semibold border-b-[3px] border-[#8A5A00] bg-[#8A5A00]/10'
+                : tabIdle"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+              <span class="material-icons text-base xl:text-lg" aria-hidden="true">family_restroom</span>
               <span>{{ lang.t('roleParent') }}</span>
-            </button>
+            </a>
           </nav>
 
           <!-- Right Action Bar: Search + Notifications + Language + Profile Avatar -->
@@ -102,13 +100,13 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             
             <!-- Global Quick Search Input -->
             <div class="hidden 2xl:flex items-center relative">
-              <span class="material-icons absolute left-3.5 rtl:left-auto rtl:right-3.5 text-base text-[#829AB1] pointer-events-none">search</span>
+              <span class="material-icons absolute left-3.5 rtl:left-auto rtl:right-3.5 text-base text-[#6B7A70] pointer-events-none">search</span>
               <input
                 type="text"
                 [value]="store.searchQuery()"
                 (input)="store.searchQuery.set($any($event.target).value)"
                 [placeholder]="lang.tr('Rechercher...', 'بحث...')"
-                class="w-36 2xl:w-48 pl-9 pr-3.5 rtl:pl-3.5 rtl:pr-9 h-[40px] bg-[#F7F9FB] hover:bg-white focus:bg-white text-[#102A43] text-xs rounded-[10px] border border-[#CBD9E2] focus:border-[#007CC2] focus:ring-3 focus:ring-[#E8F5FC] outline-none transition-all placeholder-[#829AB1]" />
+                class="w-36 2xl:w-48 pl-9 pr-3.5 rtl:pl-3.5 rtl:pr-9 h-[40px] bg-[#FBF8F1] hover:bg-white focus:bg-white text-[#14251D] text-xs rounded-[10px] border border-[#E7DFCF] focus:border-[#2D6A4F] focus:ring-3 focus:ring-[#F2ECDE] outline-none transition-all placeholder-[#6B7A70]" />
             </div>
 
             <!-- Notifications Bell & Dropdown Flyout -->
@@ -118,10 +116,10 @@ import { TeacherAvatarComponent } from './teacher-avatar';
                 (click)="notifDropdownOpen.set(!notifDropdownOpen()); profileMenuOpen.set(false)"
                 [title]="lang.t('notifTitleOfficial')"
                 [attr.aria-label]="lang.t('notifTitleOfficial') + ' (' + notifService.unreadCount() + ')'"
-                class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white hover:bg-[#F3FAFD] text-[#102A43] border border-[#CBD9E2] flex items-center justify-center cursor-pointer transition-colors shrink-0 shadow-2xs">
-                <span class="material-icons text-base sm:text-lg text-[#102A43]">notifications</span>
+                class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-[10px] bg-white hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] flex items-center justify-center cursor-pointer transition-colors shrink-0 shadow-2xs">
+                <span class="material-icons text-base sm:text-lg text-[#14251D]">notifications</span>
                 @if (notifService.unreadCount() > 0) {
-                  <span class="absolute -top-1 -right-1 min-w-4 h-4 px-1 rounded-full bg-[#D64545] text-white text-[9px] font-bold flex items-center justify-center shadow-xs motion-safe:animate-pulse">
+                  <span class="absolute -top-1 -right-1 min-w-4 h-4 px-1 rounded-full bg-[#BF5B34] text-white text-[9px] font-bold flex items-center justify-center shadow-xs motion-safe:animate-pulse">
                     {{ unreadBadgeText() }}
                   </span>
                 }
@@ -129,18 +127,18 @@ import { TeacherAvatarComponent } from './teacher-avatar';
 
               <!-- Notification Dropdown Panel -->
               @if (notifDropdownOpen()) {
-                <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-84 sm:w-96 bg-white border border-[#CBD9E2] rounded-2xl shadow-2xl z-50 overflow-hidden animate-in">
+                <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-84 sm:w-96 bg-white border border-[#E7DFCF] rounded-2xl shadow-2xl z-50 overflow-hidden animate-in">
                   
                   <!-- Header -->
-                  <div class="p-3 bg-[#F7F9FB] border-b border-[#E6EEF3]">
+                  <div class="p-3 bg-[#FBF8F1] border-b border-[#E7DFCF]">
                     <div class="flex items-center justify-between gap-2 mb-2">
                       <div class="flex items-center gap-1.5">
-                        <span class="material-icons text-base text-[#007CC2]">notifications_active</span>
-                        <span class="font-display font-bold text-xs sm:text-sm text-[#102A43]">
+                        <span class="material-icons text-base text-[#2D6A4F]">notifications_active</span>
+                        <span class="font-display font-bold text-xs sm:text-sm text-[#14251D]">
                           {{ lang.t('notifTitleOfficial') }}
                         </span>
                         @if (notifService.unreadCount() > 0) {
-                          <span class="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-[#E8F5FC] text-[#007CC2]">
+                          <span class="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-[#F2ECDE] text-[#2D6A4F]">
                             {{ notifService.unreadCount() }} {{ lang.t('notifTabUnread') }}
                           </span>
                         }
@@ -150,32 +148,32 @@ import { TeacherAvatarComponent } from './teacher-avatar';
                         <button
                           type="button"
                           (click)="notifService.markAllRead()"
-                          class="text-[11px] text-[#007CC2] hover:underline font-semibold cursor-pointer">
+                          class="text-[11px] text-[#2D6A4F] hover:underline font-semibold cursor-pointer">
                           {{ lang.t('notifMarkAllRead') }}
                         </button>
                       }
                     </div>
 
                     <!-- Filter Tabs -->
-                    <div class="flex items-center gap-1 bg-[#E8F0F5]/80 p-0.5 rounded-lg text-[11px]">
+                    <div class="flex items-center gap-1 bg-[#F2ECDE]/80 p-0.5 rounded-lg text-[11px]">
                       <button
                         type="button"
                         (click)="activeNotifTab.set('all')"
-                        [class]="activeNotifTab() === 'all' ? 'bg-white text-[#102A43] font-bold shadow-xs' : 'text-[#627D98] hover:text-[#102A43]'"
+                        [class]="activeNotifTab() === 'all' ? 'bg-white text-[#14251D] font-bold shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D]'"
                         class="flex-1 py-1 rounded-md text-center transition-all cursor-pointer">
                         {{ lang.t('notifTabAll') }}
                       </button>
                       <button
                         type="button"
                         (click)="activeNotifTab.set('unread')"
-                        [class]="activeNotifTab() === 'unread' ? 'bg-white text-[#102A43] font-bold shadow-xs' : 'text-[#627D98] hover:text-[#102A43]'"
+                        [class]="activeNotifTab() === 'unread' ? 'bg-white text-[#14251D] font-bold shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D]'"
                         class="flex-1 py-1 rounded-md text-center transition-all cursor-pointer">
                         {{ lang.t('notifTabUnread') }}
                       </button>
                       <button
                         type="button"
                         (click)="activeNotifTab.set('announcements')"
-                        [class]="activeNotifTab() === 'announcements' ? 'bg-white text-[#102A43] font-bold shadow-xs' : 'text-[#627D98] hover:text-[#102A43]'"
+                        [class]="activeNotifTab() === 'announcements' ? 'bg-white text-[#14251D] font-bold shadow-xs' : 'text-[#5B6B60] hover:text-[#14251D]'"
                         class="flex-1 py-1 rounded-md text-center transition-all cursor-pointer">
                         {{ lang.t('notifTabAnnounce') }}
                       </button>
@@ -183,19 +181,19 @@ import { TeacherAvatarComponent } from './teacher-avatar';
                   </div>
 
                   <!-- Notifications List -->
-                  <div class="max-h-[380px] overflow-y-auto divide-y divide-[#E6EEF3]">
+                  <div class="max-h-[380px] overflow-y-auto divide-y divide-[#E7DFCF]">
                     @for (notif of filteredNotifications(); track notif.id) {
                       <div
                         (click)="handleNotificationClick(notif)"
                         (keydown.enter)="handleNotificationClick(notif)"
                         role="button"
                         tabindex="0"
-                        [class]="notif.isRead ? 'bg-white opacity-75' : 'bg-[#F0F8FF]/80 font-medium'"
-                        class="group p-3 hover:bg-[#F3FAFD] transition-colors cursor-pointer flex gap-2.5 items-start text-start">
+                        [class]="notif.isRead ? 'bg-white opacity-75' : 'bg-[#FBF8F1]/80 font-medium'"
+                        class="group p-3 hover:bg-[#F2ECDE] transition-colors cursor-pointer flex gap-2.5 items-start text-start">
                         
                         <!-- Type Icon -->
                         <div
-                          [class]="notif.category === 'announcement' ? 'bg-amber-500/10 text-amber-600' : 'bg-[#007CC2]/10 text-[#007CC2]'"
+                          [class]="notif.category === 'announcement' ? 'bg-amber-500/10 text-amber-600' : 'bg-[#2D6A4F]/10 text-[#2D6A4F]'"
                           class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
                           <span class="material-icons text-base">{{ notif.icon || 'notifications' }}</span>
                         </div>
@@ -204,51 +202,51 @@ import { TeacherAvatarComponent } from './teacher-avatar';
                         <div class="flex-1 min-w-0">
                           <div class="flex items-center justify-between gap-1 mb-0.5">
                             <div class="flex items-center gap-1.5 truncate">
-                              <h4 class="text-xs font-semibold text-[#102A43] truncate">
+                              <h4 class="text-xs font-semibold text-[#14251D] truncate">
                                 {{ lang.t(notif.titleKey, notif.params) }}
                               </h4>
                               @if (!notif.isRead && notif.category === 'announcement') {
-                                <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-[#D64545] text-white uppercase tracking-wider shrink-0">
+                                <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-[#BF5B34] text-white uppercase tracking-wider shrink-0">
                                   {{ lang.t('notifBadgeNew') }}
                                 </span>
                               }
                             </div>
                             @if (!notif.isRead) {
-                              <span class="w-2 h-2 rounded-full bg-[#007CC2] shrink-0"></span>
+                              <span class="w-2 h-2 rounded-full bg-[#2D6A4F] shrink-0"></span>
                             }
                           </div>
-                          <p class="text-[11px] text-[#486581] line-clamp-2 leading-relaxed mb-1">
+                          <p class="text-[11px] text-[#5B6B60] line-clamp-2 leading-relaxed mb-1">
                             {{ lang.t(notif.messageKey, notif.params) }}
                           </p>
-                          <div class="flex items-center justify-between text-[10px] text-[#829AB1]">
+                          <div class="flex items-center justify-between text-[10px] text-[#6B7A70]">
                             <span>{{ notif.createdAt | timeAgo }}</span>
                             <!-- Dismiss Action -->
                             <button
                               type="button"
                               (click)="$event.stopPropagation(); notifService.dismiss(notif.id)"
                               [title]="lang.t('notifDismiss')"
-                              class="opacity-0 group-hover:opacity-100 text-[#829AB1] hover:text-[#D64545] transition-opacity cursor-pointer p-0.5">
+                              class="opacity-0 group-hover:opacity-100 text-[#6B7A70] hover:text-[#BF5B34] transition-opacity cursor-pointer p-0.5">
                               <span class="material-icons text-xs">close</span>
                             </button>
                           </div>
                         </div>
                       </div>
                     } @empty {
-                      <div class="p-8 text-center text-[#829AB1]">
-                        <span class="material-icons text-3xl mb-1 text-[#829AB1]/60">notifications_none</span>
+                      <div class="p-8 text-center text-[#6B7A70]">
+                        <span class="material-icons text-3xl mb-1 text-[#6B7A70]/60">notifications_none</span>
                         <p class="text-xs">{{ lang.t('notifEmpty') }}</p>
                       </div>
                     }
                   </div>
 
                   <!-- Footer Broadcast Action -->
-                  <div class="p-2.5 bg-[#F7F9FB] border-t border-[#E6EEF3] text-center">
-                    <button
-                      type="button"
-                      (click)="notifDropdownOpen.set(false); selectRole('parent')"
-                      class="text-xs text-[#007CC2] font-semibold hover:underline cursor-pointer">
-                      {{ lang.tr('Voir la banque de documents', 'عرض بنك الوثائق الرسمي') }} →
-                    </button>
+                  <div class="p-2.5 bg-[#FBF8F1] border-t border-[#E7DFCF] text-center">
+                    <a
+                      routerLink="/discovery"
+                      (click)="notifDropdownOpen.set(false)"
+                      class="text-xs text-[#8A5A00] hover:text-[#C1121F] font-semibold underline underline-offset-4 decoration-[#E7DFCF]">
+                      {{ lang.tr('Voir la banque de documents', 'عرض بنك الوثائق الرسمي') }}
+                    </a>
                   </div>
 
                 </div>
@@ -261,11 +259,11 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               type="button"
               (click)="lang.toggleLanguage()"
               [title]="lang.t('changeLanguage')"
-              class="flex items-center gap-1.5 bg-white hover:bg-[#F3FAFD] text-[#102A43] border border-[#CBD9E2] px-2.5 sm:px-3 h-[38px] sm:h-[40px] rounded-[10px] text-xs font-semibold cursor-pointer transition-colors shrink-0 shadow-2xs">
-              <span [class.text-[#007CC2]]="lang.isArabic()" [class.font-bold]="lang.isArabic()" [class.opacity-50]="!lang.isArabic()">عربي</span>
-              <span class="text-slate-300">|</span>
-              <span [class.text-[#007CC2]]="!lang.isArabic()" [class.font-bold]="!lang.isArabic()" [class.opacity-50]="lang.isArabic()">FR</span>
-              <span class="material-icons text-xs text-[#829AB1] ml-0.5">translate</span>
+              class="flex items-center gap-1.5 bg-white hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] px-2.5 sm:px-3 h-[38px] sm:h-[40px] rounded-[10px] text-xs font-semibold cursor-pointer transition-colors shrink-0 shadow-2xs">
+              <span [class.text-[#2D6A4F]]="lang.isArabic()" [class.font-bold]="lang.isArabic()" [class.opacity-50]="!lang.isArabic()">عربي</span>
+              <span class="text-[#E7DFCF]">|</span>
+              <span [class.text-[#2D6A4F]]="!lang.isArabic()" [class.font-bold]="!lang.isArabic()" [class.opacity-50]="lang.isArabic()">FR</span>
+              <span class="material-icons text-xs text-[#6B7A70] ml-0.5">translate</span>
             </button>
 
             <!-- User Profile Avatar & Dropdown Menu OR Connexion CTA Button -->
@@ -274,14 +272,14 @@ import { TeacherAvatarComponent } from './teacher-avatar';
                 <button
                   type="button"
                   (click)="profileMenuOpen.set(!profileMenuOpen())"
-                  class="flex items-center gap-1 p-0.5 rounded-full hover:ring-2 hover:ring-[#007CC2]/30 cursor-pointer transition-all shrink-0">
+                  class="flex items-center gap-1 p-0.5 rounded-full hover:ring-2 hover:ring-[#2D6A4F]/30 cursor-pointer transition-all shrink-0">
                   <app-user-avatar [avatarUrl]="getUserAvatar()" [name]="getUserName()" size="sm" />
-                  <span class="material-icons text-xs text-[#829AB1] transition-transform" [class.rotate-180]="profileMenuOpen()">expand_more</span>
+                  <span class="material-icons text-xs text-[#6B7A70] transition-transform" [class.rotate-180]="profileMenuOpen()">expand_more</span>
                 </button>
 
                 <!-- Profile Dropdown Flyout Card -->
                 @if (profileMenuOpen()) {
-                  <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-64 bg-white border border-[#CBD9E2] rounded-2xl shadow-xl p-2 z-50 text-xs space-y-1 animate-in">
+                  <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-64 bg-white border border-[#E7DFCF] rounded-2xl shadow-sm p-2 z-50 text-xs space-y-1 animate-in">
                     
                     <!-- Top User Identification Block -->
                     <div
@@ -289,55 +287,47 @@ import { TeacherAvatarComponent } from './teacher-avatar';
                       (keydown.enter)="handleProfileClick()"
                       role="button"
                       tabindex="0"
-                      class="flex items-center justify-between p-2 rounded-xl hover:bg-[#F7F9FB] cursor-pointer transition-colors">
+                      class="flex items-center justify-between p-2 rounded-xl hover:bg-[#FBF8F1] cursor-pointer transition-colors">
                       <div class="flex items-center gap-2.5 min-w-0">
                         <app-user-avatar [avatarUrl]="getUserAvatar()" [name]="getUserName()" size="md" />
                         <div class="min-w-0 text-left rtl:text-right">
-                          <p class="font-display font-semibold text-[#102A43] text-xs truncate">
+                          <p class="font-display font-semibold text-[#14251D] text-xs truncate">
                             {{ getUserName() }}
                           </p>
-                          <p class="text-[10px] text-[#007CC2] font-medium truncate">
+                          <p class="text-[10px] text-[#2D6A4F] font-medium truncate">
                             {{ getUserSubtitle() }}
                           </p>
                         </div>
                       </div>
-                      <span class="material-icons text-sm text-[#829AB1]">chevron_right</span>
+                      <span class="material-icons text-sm text-[#6B7A70]">chevron_right</span>
                     </div>
 
-                    <div class="border-t border-[#E6EEF3] my-1"></div>
+                    <div class="border-t border-[#E7DFCF] my-1"></div>
 
                     <!-- Menu Actions -->
                     <button
                       type="button"
                       (click)="handleProfileClick('profile')"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
-                      <span class="material-icons text-base text-[#007CC2]">person</span>
+                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#14251D] hover:bg-[#FBF8F1] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
+                      <span class="material-icons text-base text-[#2D6A4F]">person</span>
                       <span>{{ lang.tr('Mon profil', 'ملفي الشخصي') }}</span>
                     </button>
 
                     <button
                       type="button"
                       (click)="handleProfileClick('settings')"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
-                      <span class="material-icons text-base text-[#007CC2]">settings</span>
+                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#14251D] hover:bg-[#FBF8F1] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
+                      <span class="material-icons text-base text-[#2D6A4F]">settings</span>
                       <span>{{ lang.tr('Paramètres', 'الإعدادات') }}</span>
                     </button>
 
-                    <button
-                      type="button"
-                      (click)="profileMenuOpen.set(false); selectRole('public')"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#102A43] hover:bg-[#F7F9FB] font-semibold cursor-pointer transition-colors text-left rtl:text-right">
-                      <span class="material-icons text-base text-[#007CC2]">help</span>
-                      <span>{{ lang.tr('Aide & Documentation', 'المساعدة والدليل') }}</span>
-                    </button>
-
-                    <div class="border-t border-[#E6EEF3] my-1"></div>
+                    <div class="border-t border-[#E7DFCF] my-1"></div>
 
                     <button
                       type="button"
                       (click)="profileMenuOpen.set(false); handleLogout()"
-                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#D64545] hover:bg-rose-50 font-semibold cursor-pointer transition-colors text-left rtl:text-right">
-                      <span class="material-icons text-base text-[#D64545]">logout</span>
+                      class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-[#BF5B34] hover:bg-[#BF5B34]/10 font-semibold cursor-pointer transition-colors text-left rtl:text-right">
+                      <span class="material-icons text-base text-[#BF5B34]">logout</span>
                       <span>{{ lang.tr('Se déconnecter', 'تسجيل الخروج') }}</span>
                     </button>
                   </div>
@@ -348,7 +338,7 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               <button
                 type="button"
                 (click)="store.openLoginModal()"
-                class="flex items-center gap-1.5 bg-[#007CC2] hover:bg-[#006EAD] text-white font-semibold px-3 sm:px-3.5 h-[38px] sm:h-[40px] rounded-[10px] text-xs transition-colors cursor-pointer shrink-0 shadow-2xs">
+                class="flex items-center gap-1.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-semibold px-3 sm:px-3.5 h-[38px] sm:h-[40px] rounded-[10px] text-xs transition-colors cursor-pointer shrink-0 shadow-2xs">
                 <span class="material-icons text-sm sm:text-base">login</span>
                 <span class="font-bold">{{ lang.tr('Connexion', 'دخول') }}</span>
               </button>
@@ -358,50 +348,19 @@ import { TeacherAvatarComponent } from './teacher-avatar';
 
         </div>
 
-        <!-- Secondary/Mobile Role & Navigation Bar (5 Items, 44px touch targets) -->
-        <div class="flex lg:hidden items-center justify-around py-1.5 gap-1 border-t border-[#E7DFCF] text-xs">
-          <!-- 1. Home -->
-          <button
-            type="button"
-            (click)="selectRole('home')"
-            [class]="store.currentRole() === 'home' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
-            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
-            <span class="material-icons text-base">home</span>
-            <span class="text-[10px] leading-tight">{{ lang.t('navHome') }}</span>
-          </button>
-
-          <!-- 2. Library link -->
-          <button
-            type="button"
-            (click)="selectRole('public')"
-            [class]="store.currentRole() === 'public' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
-            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
-            <span class="material-icons text-base" aria-hidden="true">explore</span>
-            <span class="text-[11px] leading-tight">{{ lang.tr('Bibliothèque', 'المكتبة') }}</span>
-          </button>
-
-          <!-- 4. Create Hub (teachers only) -->
-          @if (firebase.userProfile()?.role === 'teacher') {
-            <button
-              type="button"
-              (click)="router.navigate(['/create'])"
-              [class]="router.url.startsWith('/create') ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#2D6A4F] text-[#FBF8F1]'"
-              class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-xl px-2.5 transition-colors cursor-pointer shadow-xs">
-              <span class="material-icons text-base">auto_fix_high</span>
-              <span class="text-[10px] font-bold leading-tight">{{ lang.tr('Créer', 'إنشاء') }}</span>
-            </button>
+        <!-- Mobile navigation bar (44px touch targets) -->
+        <nav [attr.aria-label]="lang.tr('Navigation principale', 'التصفح الرئيسي')" class="flex lg:hidden items-center justify-around py-1.5 gap-1 border-t border-[#E7DFCF] text-xs">
+          @for (item of mobileItems(); track item.path) {
+            <a
+              [routerLink]="item.path"
+              [attr.aria-current]="isActive(item.match) ? 'page' : null"
+              [class]="isActive(item.match) ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+              class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+              <span class="material-icons text-base" aria-hidden="true">{{ item.icon }}</span>
+              <span class="text-[11px] leading-tight">{{ lang.tr(item.fr, item.ar) }}</span>
+            </a>
           }
-
-          <!-- 5. Current Space (Teacher / Parent) -->
-          <button
-            type="button"
-            (click)="selectRole(firebase.userProfile()?.role === 'parent' ? 'parent' : 'teacher')"
-            [class]="store.currentRole() === 'teacher' || store.currentRole() === 'parent' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
-            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
-            <span class="material-icons text-base">person</span>
-            <span class="text-[10px] leading-tight">{{ lang.tr('فضاءك', 'فضاءك') }}</span>
-          </button>
-        </div>
+        </nav>
 
       </div>
     </header>
@@ -455,37 +414,45 @@ export class NavbarComponent {
     });
   }
 
-  isMemoStudioRoute(): boolean {
-    return this.router.url.includes('/memo-studio');
-  }
+  readonly tabActive = 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10';
+  readonly tabIdle = 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent';
+  readonly studioPaths = ['/create', '/editor', '/ai-studio', '/memo-studio', '/article-studio', '/generate'];
 
-  navigateToMemoStudio() {
-    this.router.navigateByUrl('/memo-studio');
-  }
+  /** Desktop links. `compact` items show only their icon below 2xl (label kept for screen readers). */
+  readonly navItems: NavItem[] = [
+    { path: '/discovery', match: ['/discovery'], icon: 'explore', fr: 'Bibliothèque CNP', ar: 'المكتبة والدليل' },
+    { path: '/programme', match: ['/programme'], icon: 'account_tree', fr: 'Programme officiel', ar: 'البرنامج البيداغوجي' },
+    { path: '/solve', match: ['/solve'], icon: 'photo_camera', fr: 'Photo-solution', ar: 'حلّ تمرين بالصورة', compact: true },
+    { path: '/teachers', match: ['/teachers'], icon: 'groups', fr: 'Enseignants', ar: 'المعلمون', compact: true },
+  ];
 
-  isGeneratorRoute(): boolean {
-    return this.router.url.includes('/generate');
-  }
+  readonly mobileItems = computed<NavItem[]>(() => {
+    const role = this.firebase.userProfile()?.role;
+    const items: NavItem[] = [
+      { path: '/', match: ['/'], icon: 'home', fr: 'Accueil', ar: 'الرئيسية' },
+      { path: '/discovery', match: ['/discovery'], icon: 'explore', fr: 'Bibliothèque', ar: 'المكتبة' },
+      { path: '/solve', match: ['/solve'], icon: 'photo_camera', fr: 'Solution', ar: 'حلّ تمرين' },
+    ];
+    if (role === 'teacher') {
+      items.push({ path: '/create', match: this.studioPaths, icon: 'auto_fix_high', fr: 'Créer', ar: 'إنشاء' });
+    }
+    const space = role === 'parent' ? '/parent' : '/teacher';
+    items.push({ path: space, match: [space], icon: 'person', fr: 'Mon espace', ar: 'فضاءك' });
+    return items;
+  });
 
-  navigateToGenerator() {
-    this.router.navigateByUrl('/generate');
-  }
+  /** Current path without query string or fragment, updated on every navigation. */
+  private readonly path = toSignal(
+    this.router.events.pipe(
+      filter((e): e is NavigationEnd => e instanceof NavigationEnd),
+      map((e) => stripUrl(e.urlAfterRedirects)),
+    ),
+    { initialValue: stripUrl(this.router.url) },
+  );
 
-  isTeachersRoute(): boolean {
-    return this.router.url.includes('/teachers');
-  }
-
-  navigateToTeachers() {
-    this.router.navigateByUrl('/teachers');
-  }
-
-
-  isSolveRoute(): boolean {
-    return this.router.url.includes('/solve');
-  }
-
-  navigateToSolve() {
-    this.router.navigateByUrl('/solve');
+  isActive(prefixes: string[]): boolean {
+    const path = this.path();
+    return prefixes.some((p) => (p === '/' ? path === '/' : path === p || path.startsWith(p + '/')));
   }
 
   async handleNotificationClick(notif: NotificationItem) {

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, HostListener, inject, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, HostListener, inject, OnInit, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import {
   EducationStore,
@@ -31,6 +31,42 @@ interface PresetOption {
  * actions, and a collapsible drawer holds content, style, composition and notes.
  * Style = CSS swap (no AI call); composition and notes = regenerate.
  */
+const DRAFT_KEY = 'madrasati_ai_studio_draft';
+
+interface StudioDraft {
+  source: SourceInput | null;
+  preset: InfographicPreset | 'auto';
+  theme: InfographicTheme;
+  notes: string;
+  command: VisualCommand | null;
+  doc: InfographicDoc | null;
+}
+
+function saveDraft(draft: StudioDraft) {
+  if (typeof localStorage === 'undefined') return;
+  try {
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+  } catch {
+    // Quota exceeded (uploaded photos or PDF): keep the sheet, drop the heavy source files.
+    try {
+      const light = draft.source ? { ...draft.source, photos: undefined, images: undefined, file: null } : null;
+      localStorage.setItem(DRAFT_KEY, JSON.stringify({ ...draft, source: light }));
+    } catch {
+      /* storage unavailable: nothing to keep */
+    }
+  }
+}
+
+function loadDraft(): StudioDraft | null {
+  if (typeof localStorage === 'undefined') return null;
+  try {
+    const raw = localStorage.getItem(DRAFT_KEY);
+    return raw ? (JSON.parse(raw) as StudioDraft) : null;
+  } catch {
+    return null;
+  }
+}
+
 @Component({
   selector: 'app-ai-studio',
   standalone: true,
@@ -149,28 +185,6 @@ interface PresetOption {
                 </div>
               </div>
 
-              <!-- Command Quick Picker -->
-              <fieldset>
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <legend class="font-display font-semibold text-[#14251D]">{{ lang.tr('Préréglage visuel', 'النمط السريع') }}</legend>
-                  <span class="text-[11px] font-mono text-[#6B7A70] bg-[#F2ECDE] px-2 py-0.5 rounded-full">/commandes</span>
-                </div>
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  @for (c of commands; track c.cmd) {
-                    <button
-                      type="button"
-                      (click)="applyCommand(c.cmd)"
-                      [attr.aria-pressed]="activeCommand() === c.cmd"
-                      [class]="activeCommand() === c.cmd
-                        ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F] shadow-xs'
-                        : 'bg-white hover:bg-[#FBF8F1] text-[#14251D] border-[#E7DFCF]'"
-                      class="px-2.5 py-1.5 border rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
-                      <span class="material-icons text-sm" aria-hidden="true">{{ c.icon }}</span>
-                      <span>{{ c.cmd }}</span>
-                    </button>
-                  }
-                </div>
-              </fieldset>
 
               <fieldset>
                 <legend class="font-display font-semibold text-[#14251D] mb-3">{{ lang.tr('Style', 'الأسلوب') }}</legend>
@@ -198,6 +212,43 @@ interface PresetOption {
 
             <!-- Composition + notes -->
             <div class="min-w-0 space-y-6">
+              <!-- Command Quick Picker -->
+              <fieldset>
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <legend class="font-display font-semibold text-[#14251D]">{{ lang.tr('Préréglage visuel', 'النمط السريع') }}</legend>
+                  <span class="text-[11px] font-mono text-[#6B7A70] bg-[#F2ECDE] px-2 py-0.5 rounded-full">/commandes</span>
+                </div>
+                <div class="grid grid-cols-3 sm:grid-cols-5 gap-2.5">
+                  @for (c of commands; track c.cmd) {
+                    <button
+                      type="button"
+                      (click)="applyCommand(c.cmd)"
+                      [attr.aria-pressed]="activeCommand() === c.cmd"
+                      [class]="activeCommand() === c.cmd ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5' : 'border-[#E7DFCF] hover:border-[#2D6A4F]/50 bg-white'"
+                      class="group relative border rounded-xl overflow-hidden text-start cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
+                      <span class="block aspect-[4/3] bg-[#FBF8F1] overflow-hidden">
+                        @if (c.thumb) {
+                          <img [src]="c.thumb" alt="" width="640" height="480" loading="lazy" decoding="async"
+                            class="w-full h-full object-cover transition-transform duration-150 motion-safe:group-hover:scale-[1.03]">
+                        } @else {
+                          <span class="w-full h-full flex items-center justify-center">
+                            <span class="material-icons text-3xl text-[#6B7A70]" aria-hidden="true">{{ c.icon }}</span>
+                          </span>
+                        }
+                      </span>
+                      @if (activeCommand() === c.cmd) {
+                        <span class="absolute top-1.5 end-1.5 w-6 h-6 rounded-full bg-white shadow-xs flex items-center justify-center" aria-hidden="true">
+                          <span class="material-icons text-base text-[#2D6A4F]">check_circle</span>
+                        </span>
+                      }
+                      <span class="block px-2.5 py-2">
+                        <span class="block text-sm font-semibold font-display text-[#14251D] leading-tight">{{ lang.tr(c.fr, c.ar) }}</span>
+                        <span class="block text-[11px] text-[#6B7A70] mt-0.5"><bdi>{{ c.cmd }}</bdi></span>
+                      </span>
+                    </button>
+                  }
+                </div>
+              </fieldset>
               <fieldset>
                 <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
                   <legend class="font-display font-semibold text-[#14251D]">{{ lang.tr('Composition', 'التركيب') }}</legend>
@@ -433,16 +484,16 @@ export class AiStudioComponent implements OnInit {
     { id: 'comic', icon: 'forum', fr: 'BD éducative', ar: 'قصة مصورة', hintFr: 'Cases illustrées et bulles', hintAr: 'إطارات متسلسلة وحوارات' },
   ];
 
-  readonly commands: { cmd: VisualCommand; icon: string; fr: string; ar: string }[] = [
-    { cmd: '/infographic', icon: 'auto_awesome', fr: 'Infographie', ar: 'إنفوغرافيك' },
-    { cmd: '/handwritten', icon: 'edit_note', fr: 'Cahier', ar: 'دفتر' },
-    { cmd: '/xray', icon: 'biotech', fr: 'Écorché', ar: 'تشريحي' },
-    { cmd: '/diagram', icon: 'schema', fr: 'Schéma', ar: 'رسم بياني' },
-    { cmd: '/mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية' },
-    { cmd: '/poster', icon: 'campaign', fr: 'Affiche', ar: 'ملصق' },
-    { cmd: '/comic', icon: 'forum', fr: 'BD', ar: 'قصة مصورة' },
-    { cmd: '/timeline', icon: 'timeline', fr: 'Frise', ar: 'خط زمني' },
-    { cmd: '/flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات' },
+  readonly commands: { cmd: VisualCommand; icon: string; fr: string; ar: string; thumb?: string }[] = [
+    { cmd: '/infographic', icon: 'auto_awesome', fr: 'Infographie', ar: 'إنفوغرافيك', thumb: '/assets/thumbs/presets/infographic.webp' },
+    { cmd: '/handwritten', icon: 'edit_note', fr: 'Cahier', ar: 'دفتر', thumb: '/assets/thumbs/presets/handwritten.webp' },
+    { cmd: '/xray', icon: 'biotech', fr: 'Écorché', ar: 'تشريحي', thumb: '/assets/thumbs/presets/xray.webp' },
+    { cmd: '/diagram', icon: 'schema', fr: 'Schéma', ar: 'رسم بياني', thumb: '/assets/thumbs/presets/diagram.webp' },
+    { cmd: '/mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية', thumb: '/assets/thumbs/presets/mindmap.webp' },
+    { cmd: '/poster', icon: 'campaign', fr: 'Affiche', ar: 'ملصق', thumb: '/assets/thumbs/presets/poster.webp' },
+    { cmd: '/comic', icon: 'forum', fr: 'BD', ar: 'قصة مصورة', thumb: '/assets/thumbs/presets/comic.webp' },
+    { cmd: '/timeline', icon: 'timeline', fr: 'Frise', ar: 'خط زمني', thumb: '/assets/thumbs/presets/timeline.webp' },
+    { cmd: '/flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات', thumb: '/assets/thumbs/presets/flashcards.webp' },
   ];
   readonly activeCommand = signal<VisualCommand | null>(null);
 
@@ -471,10 +522,37 @@ export class AiStudioComponent implements OnInit {
   readonly pendingPreset = signal<InfographicPreset | 'auto' | null>(null);
   readonly presetWarningOpen = signal(false);
 
+  constructor() {
+    // Keep the current sheet and its settings so a page reload does not lose the work.
+    effect(() => {
+      const draft: StudioDraft = {
+        source: this.source(),
+        preset: this.preset(),
+        theme: this.theme(),
+        notes: this.notes(),
+        command: this.activeCommand(),
+        doc: this.doc(),
+      };
+      if (this.busy() || !draft.source) return;
+      saveDraft(draft);
+    });
+  }
+
   ngOnInit() {
     if (typeof window === 'undefined') return;
     const src = this.store.consumeLastSourceInput();
     if (!src) {
+      const draft = loadDraft();
+      if (draft?.source) {
+        this.source.set(draft.source);
+        this.preset.set(draft.preset);
+        this.theme.set(draft.theme);
+        this.notes.set(draft.notes);
+        this.activeCommand.set(draft.command);
+        this.doc.set(draft.doc);
+        if (!draft.doc) void this.generate();
+        return;
+      }
       // No content yet: the Create hub is the single place to give it.
       this.router.navigate(['/create'], { queryParams: { output: 'memo' }, replaceUrl: true });
       return;

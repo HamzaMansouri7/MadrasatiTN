@@ -44,6 +44,7 @@ export class App {
           '/solve': 'public',
           '/summarize': 'public',
           '/teachers': 'public',
+          '/programme': 'public',
           '/editor': 'editor',
           '/create': 'editor',
           '/generate': 'editor',
@@ -52,7 +53,7 @@ export class App {
           '/article-studio': 'article-editor',
           '/studio': 'editor',
         };
-        const matchedRole = routeToRoleMap[path] ?? (/^\/(lesson-plan|series)\//.test(path) ? ('public' as UserRole) : undefined);
+        const matchedRole = routeToRoleMap[path] ?? (/^\/(lesson-plan|series|infographic|teachers)\//.test(path) ? ('public' as UserRole) : undefined);
         if (matchedRole && this.store.currentRole() !== matchedRole) {
           this.store.currentRole.set(matchedRole);
         }

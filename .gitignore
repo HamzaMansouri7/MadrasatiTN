@@ -67,3 +67,8 @@ docs/
 /tmp_cnp_tocs/
 /scratch/
 /_sources_candidates/
+
+# impeccable-ignore-start
+.impeccable/
+.claude/settings.local.json
+# impeccable-ignore-end
