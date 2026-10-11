@@ -2,7 +2,8 @@
 import json, collections, re, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_archive'); rows = []
+A = Path('parascolaire/_original_frozen/_archive'); rows = []
+BOOK_NAMES = json.loads((A / 'book_names.json').read_text(encoding='utf-8')) if (A / 'book_names.json').exists() else {}
 for pf in sorted(A.glob('*/pages/*.json')):
     d = json.loads(pf.read_text(encoding='utf-8')); t = d.get('tags', {})
     ptype = d.get('pageType') or t.get('pageType')
@@ -27,7 +28,8 @@ for g in sorted(tree, key=GO):
             L.append(f'**{th}**'); L.append('')
             for r in rs:
                 c = f"corrigé: p{','.join(map(str, r['correctionPages']))}" if r['correction'] == 'linked' else 'corrigé sur la page'
-                L.append(f"- {r['book']} p{r['page']} · {c} · qualité {r['quality']}" + (f" ({r['accuracy']})" if r['accuracy'] else '') + (' · EN ATTENTE' if r['tier'] == 'shelved' else ' · À AUDITER' if r['tier'] == 'pending_audit' else ''))
+                bname = BOOK_NAMES.get(r['book'], r['book'])
+                L.append(f"- {bname} p{r['page']} · {c} · qualité {r['quality']}" + (f" ({r['accuracy']})" if r['accuracy'] else '') + (' · EN ATTENTE' if r['tier'] == 'shelved' else ' · À AUDITER' if r['tier'] == 'pending_audit' else ''))
             L.append('')
 (A / 'EXAMS_WITH_CORRECTION.md').write_text('\n'.join(L), encoding='utf-8')
 c = collections.Counter((r['grade'], r['tier']) for r in rows)

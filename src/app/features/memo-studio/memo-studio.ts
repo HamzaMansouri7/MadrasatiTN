@@ -15,7 +15,7 @@ import { LanguageService } from '@core/services/language.service';
 import { FirebaseService } from '@core/services/firebase.service';
 import { StorageVaultService } from '@core/services/storage-vault.service';
 import { downscaleImage } from '@core/utils/image.util';
-import { MemoInput, MemoLayout } from '@core/models/memo.model';
+import { MemoDoc, MemoInput, MemoLayout } from '@core/models/memo.model';
 import { CurriculumChapter } from '@core/data/curriculum-chapters.data';
 import { chapterTitle } from '@core/utils/curriculum.util';
 import { TopicPickerComponent } from '@shared/components/topic-picker';
@@ -756,7 +756,7 @@ export class MemoStudioComponent implements OnInit {
 
       // Restore unsaved draft from IndexedDB on page reload
       const cached = await this.vault.getAsset<{
-        memo: any;
+        memo: MemoDoc;
         layout: MemoLayout;
         topic: string;
         grade: string;

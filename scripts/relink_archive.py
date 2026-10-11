@@ -42,7 +42,7 @@ def link(d, grade, book_subject):
     return best, round(min(bs, 0.99), 2)
 
 n = collections.Counter(); changed = 0
-for bj in sorted(glob.glob('parascolaire/_archive/*/book.json')):
+for bj in sorted(glob.glob('parascolaire/_original_frozen/_archive/*/book.json')):
     bm = json.loads(Path(bj).read_text(encoding='utf-8'))
     for pf in sorted(Path(bj).parent.glob('pages/*.json')):
         d = json.loads(pf.read_text(encoding='utf-8'))

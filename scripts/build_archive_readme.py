@@ -1,7 +1,7 @@
 import json, glob, re, sys, collections
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_archive')
+A = Path('parascolaire/_original_frozen/_archive')
 CORR = re.compile(r'corrig|corrección|تصحيح|إصلاح|اصلاح|حلول|الحل\b|solutions?', re.I)
 EXAM = re.compile(r'examen|épreuve|epreuve|concours|évaluation|evaluation|اختبار|امتحان|فرض|تقييم|تقويم|محطة|وضعية', re.I)
 COVER = re.compile(r'garde|couverture|page vide|blanche|aucun contenu|non identifiable|indéterminé|غلاف', re.I)
@@ -24,6 +24,8 @@ def rng(ps):
     return ', '.join(out)
 
 NAMES = {'exam': 'Examens / évaluations', 'exercise': 'Exercices', 'correction': 'Corrections', 'cover': 'Pages de garde / vides'}
+BOOK_NAMES = json.loads((A / 'book_names.json').read_text(encoding='utf-8')) if (A / 'book_names.json').exists() else {}
+bk = lambda b: BOOK_NAMES.get(b, b)
 LINKS = json.loads((A / 'exam_links.json').read_text(encoding='utf-8')) if (A / 'exam_links.json').exists() else []
 books = []; tot = collections.Counter(); selfc = collections.Counter()
 for bj in sorted(A.glob('*/book.json')):
@@ -68,7 +70,7 @@ for g in sorted(GS, key=lambda x: int(x[0])):
 c = TT; L.append(f"| **Total** | **{c['pages']}** | **{c['p_lesson']}** | **{c['li']}** | **{c['p_exercise']}** | **{c['p_mixed']}** | **{c['p_exam']}** | **{c['ec']}** | **{c['en']}** | **{c['ex']}** | **{c['ex_ready']}** | **{c['ex_pending_audit']}** | **{c['ex_shelved']}** |")
 L += ['', 'Les exercices ne comptent que les items de type exercice; `exercises.jsonl` contient aussi les items de cours. Prêts = contrôlés ou vérifiés; À auditer = jamais contrôlés; Écartés = mauvaise qualité de scan.', '']
 for b, clean, rest in books:
-    L += [f"## {b['title']}", f"{b['grade']} · {b['subject']} · {b['totalPages']} pages · `{b['book']}`", '']
+    L += [f"## {b.get('displayName', b['title'])}", f"{b['grade']} · {b['subject']} · {b['totalPages']} pages · `{b['book']}`", '']
     if clean:
         L += ['**Propres, par chapitre officiel**', '', '| topicId | Chapitre | Pages |', '|---|---|---|']
         for (tid, t), ps in sorted(clean.items()): L.append(f'| {tid} | {t} | {rng(ps)} |')
@@ -123,7 +125,7 @@ L += ['', '**Règles appliquées**', '',
       '- Moins de 0.75: page mise en attente (`poor_scan`) avec son énoncé ou son corrigé associé (`partner_parked`), afin de ne jamais garder un énoncé sans corrigé ni l’inverse.',
       '- `manual_queue.json` liste les pages trop faibles, à reprendre à la main si besoin.', '',
       '**Précision moyenne par livre (pages auditées)**', '', '| Livre | Pages auditées | Précision moyenne |', '|---|---|---|']
-for b, v in sorted(QB.items(), key=lambda kv: sum(kv[1]) / len(kv[1])): L.append(f'| {b} | {len(v)} | {sum(v) / len(v):.2f} |')
+for b, v in sorted(QB.items(), key=lambda kv: sum(kv[1]) / len(kv[1])): L.append(f'| {bk(b)} | {len(v)} | {sum(v) / len(v):.2f} |')
 L += ['', '**Limites**: le contrôleur est le même modèle que l’OCR; les pages non auditées (environ 55 %) n’ont aucune garantie mesurée; les pourcentages viennent du modèle, pas d’une relecture humaine.', '']
 EX = collections.defaultdict(lambda: collections.defaultdict(list))
 for pf in A.glob('*/pages/*.json'):
@@ -135,8 +137,29 @@ L += ['## Examens et corrigés', '',
 tl = ts = tn = 0
 for b, v in sorted(EX.items()):
     l, sc, n = len(v['linked']), len(v['self_contained']), len(v['no_correction_yet']); tl += l; ts += sc; tn += n
-    L.append(f"| {b} | {l} | {sc} | {n}" + (f" (p. {rng(v['no_correction_yet'])})" if n else '') + ' |')
+    L.append(f"| {bk(b)} | {l} | {sc} | {n}" + (f" (p. {rng(v['no_correction_yet'])})" if n else '') + ' |')
 L += [f'| **Total** | **{tl}** | **{ts}** | **{tn}** |', '']
+SC = collections.defaultdict(collections.Counter); SCT = collections.Counter()
+for pf in A.glob('*/pages/*.json'):
+    d = json.loads(pf.read_text(encoding='utf-8'))
+    if d.get('examScope'): SC[d['grade']][d['examScope']] += 1; SCT[d['examScope']] += 1
+if SCT:
+    cols = ['single', 'short_test', 'trimester', 'full_year', 'exam_part', 'unknown']
+    L += ['## Portée des examens (`examScope`)', '', 'Un examen couvrant plusieurs chapitres n’est pas « mal classé »: il porte une portée au lieu d’un seul chapitre. `single` = un chapitre, `short_test` = contrôle court (quelques thèmes), `trimester` = examen de trimestre (`examTrimester` si connu), `full_year` = examen de fin d’année ou concours, `exam_part` = page d’un examen plus long, `unknown` = non déterminé.', '',
+          '| Classe | ' + ' | '.join(cols) + ' | Total |', '|---|' + '---|' * (len(cols) + 1)]
+    for g in sorted(SC, key=lambda x: int(x[0])): L.append(f'| {g} | ' + ' | '.join(str(SC[g][k]) for k in cols) + f' | {sum(SC[g].values())} |')
+    L.append('| **Total** | ' + ' | '.join(f'**{SCT[k]}**' for k in cols) + f' | **{sum(SCT.values())}** |'); L.append('')
+L += ['## Guides d’utilisation par moteur', '',
+      '### 1. Moteur de génération de fiches & devoirs (Presets)',
+      'Le moteur de génération de fiches interroge la bibliothèque locale via `src/server/parascolaire-adapter.ts` (ou en CLI via `python scripts/query_library.py --topicId <id>`). Seuls les exercices de statut `tier=ready` (2 103 exercices vérifiés) sont injectés comme contextes de référence.',
+      'Les exercices fournissent des variations réelles d’énoncés selon les formats classifiés (`qcm`, `matching`, `fill_blank`, `calculation`, `problem_solving`). La provenance est systématiquement attribuée au manuel source (ex. *Al Ahram — 5ème Année (Complet)*, *Sagesse — 6ème Année (Complet)*, *Al Mounir — Éveil Scientifique 6ème*).', '',
+      '### 2. Agent de rédaction de contenu & blog (Blog Agent)',
+      'L’agent de génération d’articles et de conseils pédagogiques extrait les contextes par classe, matière et thème via `retrieveContext({ grade, subject, theme })`.',
+      'Cette source permet d’identifier les erreurs fréquentes, les compétences clés et les consignes canoniques issues des manuels de référence (ex. *Examens 3ème année — Toutes matières*, *Devoirs 5ème année — Trimestre 1, matières mixtes*, *Soutien 6ème année — Maths et Français*), garantissant des articles pédagogiques ancrés dans la réalité des programmes tunisiens.', '',
+      '### 3. Consultation et bibliothèque locale privée (Private Books)',
+      'La consultation de la bibliothèque privée s’effectue exclusivement à travers les noms d’affichage officiels définis dans `book_names.json` (les identifiants internes / slugs ne sont jamais exposés).',
+      'Règle de confidentialité : les scans et textes bruts sont strictement réservés à l’environnement local (`data/parascolaire/` est exclu du suivi Git par `.gitignore`). Seules les synthèses et patrons d’exercices sont consommés par les modèles.', '']
+
 L += ['## Limites connues', '',
       '- Le référentiel contient 147 chapitres (pas de grammaire/conjugaison française, production écrite, etc.): ces pages restent en attente faute de chapitre.',
       '- Seulement 4 pages ont été comparées visuellement au scan; le reste repose sur l\'audit automatique et la confiance du modèle.',

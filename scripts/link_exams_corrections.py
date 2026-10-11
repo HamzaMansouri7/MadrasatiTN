@@ -4,7 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 sys.stdout.reconfigure(encoding='utf-8'); load_dotenv()
 KEY = os.getenv('ANTHROPIC_API_KEY', '').strip().strip('"').strip("'")
-A = Path('parascolaire/_archive'); use = [0, 0]
+A = Path('parascolaire/_original_frozen/_archive'); use = [0, 0]
 
 def call(p):
     body = json.dumps({'model': 'claude-sonnet-5-5', 'max_tokens': 8000, 'output_config': {'effort': 'medium'}, 'messages': [{'role': 'user', 'content': p}]}).encode()

@@ -40,4 +40,12 @@ describe('retrieveContext with topicId', () => {
     expect(sources.length).toBeLessThanOrEqual(3);
     expect(new Set(sources).size).toBe(sources.length);
   });
+
+  it('returns parascolaire rows when retrieveContext is called with topicId math-5-ch1', () => {
+    const { sources } = retrieveContext({ topicId: 'math-5-ch1' });
+    expect(sources.length).toBeGreaterThan(0);
+    const parascolaireRows = sources.filter((s) => s.origin === 'parascolaire');
+    expect(parascolaireRows.length).toBeGreaterThan(0);
+    expect(parascolaireRows[0].ref).toBe('math-5-ch1');
+  });
 });

@@ -2,7 +2,7 @@
 import json, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_archive')
+A = Path('parascolaire/_original_frozen/_archive')
 for f in sys.argv[1:]:
     n = json.loads(Path(f).read_text(encoding='utf-8')); b, p = n['book'], n['page']; items = [i for i in n['items'] if ((i.get('body') or '') + (i.get('instruction') or '')).strip()]
     pf = A / b / 'pages' / f'{p:03d}.json'; o = json.loads(pf.read_text(encoding='utf-8'))

@@ -2,7 +2,7 @@
 import json, sys, time
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_archive'); targets = {}
+A = Path('parascolaire/_original_frozen/_archive'); targets = {}
 for a in sys.argv[1:]:
     b, p = a.rsplit(':', 1); targets.setdefault(b, set()).add(int(p))
 gone = {(b, p) for b, ps in targets.items() for p in ps}; log = []

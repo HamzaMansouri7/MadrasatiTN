@@ -6,7 +6,7 @@ import fitz
 from dotenv import load_dotenv
 sys.stdout.reconfigure(encoding='utf-8'); load_dotenv()
 KEY = os.getenv('ANTHROPIC_API_KEY', '').strip().strip('"').strip("'")
-A = Path('parascolaire/_archive'); lock = threading.Lock(); use = {'i': 0, 'o': 0, 'n': 0, 'fail': 0}; BUDGET = 13.0
+A = Path('parascolaire/_original_frozen/_archive'); lock = threading.Lock(); use = {'i': 0, 'o': 0, 'n': 0, 'fail': 0}; BUDGET = 13.0
 cost = lambda: use['i'] * 2 / 1e6 + use['o'] * 10 / 1e6
 
 def call(img, p):

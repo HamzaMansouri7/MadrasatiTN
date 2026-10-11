@@ -2,7 +2,8 @@
 import json, sys, collections, re
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_archive')
+A = Path('parascolaire/_original_frozen/_archive')
+BOOK_NAMES = json.loads((A / 'book_names.json').read_text(encoding='utf-8')) if (A / 'book_names.json').exists() else {}
 GO = lambda g: int(re.match(r'(\d)', g).group(1))
 rows = []
 for pf in sorted(A.glob('*/pages/*.json')):
@@ -32,7 +33,7 @@ for g in sorted(tree, key=GO):
             types = collections.Counter(r['type'] for r in rs); star = '★ ' if any(r['ideaValue'] == 'high' for r in rs) else ''
             byb = collections.defaultdict(list)
             for r in rs: byb[r['book']].append(r['page'])
-            src = '; '.join(f'{b} p{rng(ps)}' for b, ps in byb.items())
+            src = '; '.join(f"{BOOK_NAMES.get(b, b)} p{rng(ps)}" for b, ps in byb.items())
             L.append(f"- {star}**{th}**: {len(rs)} p · {', '.join(f'{k} {v}' for k, v in types.most_common())} · {src}")
         L.append('')
 (A / 'CATALOG.md').write_text('\n'.join(L), encoding='utf-8')

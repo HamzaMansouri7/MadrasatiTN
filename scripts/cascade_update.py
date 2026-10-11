@@ -2,7 +2,7 @@
 import json, sys, collections
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_archive'); pages = {}
+A = Path('parascolaire/_original_frozen/_archive'); pages = {}
 for pf in A.glob('*/pages/*.json'):
     d = json.loads(pf.read_text(encoding='utf-8')); pages[(d['book'], d['page'])] = (pf, d)
 is_poor = lambda d: d.get('quality', {}).get('status') == 'poor' or 'poor_scan' in d.get('linkFlags', [])

@@ -2,9 +2,8 @@
 import json, shutil, sys
 from pathlib import Path
 import fitz
-from PIL import Image, ImageDraw
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_archive'); R = A / '_review'; D = R / '_done'; D.mkdir(exist_ok=True)
+A = Path('parascolaire/_original_frozen/_archive'); R = A / '_review'; D = R / '_done'; D.mkdir(exist_ok=True)
 pending = []; resolved = set()
 for pf in sorted(A.glob('*/pages/*.json')):
     d = json.loads(pf.read_text(encoding='utf-8')); q = d.get('quality', {}); st = q.get('status'); fl = d.get('linkFlags', [])
@@ -36,12 +35,6 @@ L = [f'# Pages à vérifier ({len(pending)})', '', 'Seules les pages encore sans
 pending.sort()
 for k, (g, gr, sub, b, p, pt, sc) in enumerate(pending, 1): L.append(f'| {k} | {g} | {gr} | {sub} | {b} | {p} | {pt} | {sc} |')
 (R / 'REVIEW_LIST.md').write_text('\n'.join(L), encoding='utf-8')
-W, H, cols = 300, 420, 5; rows = (len(pending) + cols - 1) // cols
-sheet = Image.new('RGB', (cols * W, max(rows, 1) * (H + 22)), 'white'); dr = ImageDraw.Draw(sheet)
-for k, (g, gr, sub, b, p, pt, sc) in enumerate(pending):
-    im = Image.open(R / f'{b}_p{p:03d}.png').convert('RGB'); im.thumbnail((W - 6, H - 4)); x, y = (k % cols) * W, (k // cols) * (H + 22)
-    sheet.paste(im, (x + 3, y + 22)); dr.text((x + 4, y + 4), f'{k + 1}. {b[:22]} p{p} {g[0]} {sc}', fill='black')
-sheet.save(R / 'contact_sheet.png')
 old = R / 'contact_sheet_low_confidence.png'
 if old.exists(): old.unlink()
 print(len(pending), 'to review;', moved, 'files moved to _done;', len(resolved), 'resolved pages')

@@ -10,6 +10,7 @@
 import { TUNISIAN_CURRICULUM_CHAPTERS } from '../app/core/data/curriculum-chapters.data';
 import { chapterById, chapterTitle } from '../app/core/utils/curriculum.util';
 import { CNP_PRIMARY_COURSES } from '../app/core/data/cnp-books.data';
+import { registerParascolaireSources } from './parascolaire-adapter';
 
 export type KnowledgeLang = 'ar' | 'fr' | 'en' | 'mixed';
 
@@ -110,6 +111,9 @@ export function registerSources(sources: KnowledgeSource[]): void {
     }
   }
 }
+
+// Auto-register optional local adapters (silent no-op if bundles not present)
+registerParascolaireSources();
 
 // ---------------------------------------------------------------------------
 // Retrieval — keyword filter + topic ranking (small corpus; embeddings later).

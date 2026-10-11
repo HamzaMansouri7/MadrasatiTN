@@ -70,4 +70,5 @@ docs/
 
 # private commercial books + OCR archive, never publish
 parascolaire/
+data/parascolaire/
 __pycache__/

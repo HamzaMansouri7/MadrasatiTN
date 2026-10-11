@@ -3,7 +3,7 @@ import json, collections, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 c = collections.Counter()
-for pf in sorted(Path('parascolaire/_archive').glob('*/pages/*.json')):
+for pf in sorted(Path('parascolaire/_original_frozen/_archive').glob('*/pages/*.json')):
     d = json.loads(pf.read_text(encoding='utf-8'))
     t = d.get('pageType') or d.get('tags', {}).get('pageType')
     if t != 'exam': d.pop('correctionStatus', None); continue
