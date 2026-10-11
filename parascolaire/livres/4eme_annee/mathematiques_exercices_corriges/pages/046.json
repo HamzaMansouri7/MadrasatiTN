@@ -180,7 +180,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p046_i1"
+      "id": "mathematiques_exercices_corriges_p046_i1"
     },
     {
       "kind": "exercise",
@@ -192,7 +192,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p046_i2"
+      "id": "mathematiques_exercices_corriges_p046_i2"
     },
     {
       "kind": "exercise",
@@ -204,7 +204,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p046_i3"
+      "id": "mathematiques_exercices_corriges_p046_i3"
     },
     {
       "kind": "exercise",
@@ -216,7 +216,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p046_i4"
+      "id": "mathematiques_exercices_corriges_p046_i4"
     },
     {
       "kind": "exercise",
@@ -228,7 +228,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p046_i5"
+      "id": "mathematiques_exercices_corriges_p046_i5"
     }
   ],
   "itemsOcr1": [
@@ -240,7 +240,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p046_i1",
+      "id": "mathematiques_exercices_corriges_p046_i1",
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "medium"
@@ -253,7 +253,7 @@
       "figureDesc": "رسم قارورة زيت سعتها 1 ل تساوي 5 كؤوس؛ تحت الكؤوس عبارة «سعة القارورة».",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p046_i2",
+      "id": "mathematiques_exercices_corriges_p046_i2",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -266,7 +266,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p046_i3",
+      "id": "mathematiques_exercices_corriges_p046_i3",
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "medium"
@@ -279,7 +279,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "math_solutions_4eme_sellami_p046_i4",
+      "id": "mathematiques_exercices_corriges_p046_i4",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -292,7 +292,7 @@
       "figureDesc": "جدول من 5 أعمدة (الثمن / السعة) مع أسهم ودوائر عمليات: 3 x بين خانتي 1 دسل و3 دسل، 10: من 1 ل إلى 1 دسل، ودوائر فارغة (........) لإتمام العمليات في الأعلى والأسفل.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p046_i5",
+      "id": "mathematiques_exercices_corriges_p046_i5",
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "medium"

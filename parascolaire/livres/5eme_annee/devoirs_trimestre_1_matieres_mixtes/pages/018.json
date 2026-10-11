@@ -118,7 +118,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "livre_mowazi_5eme_math_sciences_p018_i1"
+      "id": "devoirs_trimestre_1_matieres_mixtes_p018_i1"
     },
     {
       "kind": "lesson",
@@ -130,7 +130,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "livre_mowazi_5eme_math_sciences_p018_i2"
+      "id": "devoirs_trimestre_1_matieres_mixtes_p018_i2"
     }
   ],
   "itemsOcr1": [
@@ -142,7 +142,7 @@
       "figureDesc": "دائرة (تبدو بيضاوية) سوداء مرسومة بمركز نقطة سوداء. شعاع باللون الأحمر الداكن من المركز إلى الأعلى مكتوب عليه «شعاع»، القطر أفقي أصفر مكتوب عليه «القطر»، حبل أزرق في الأسفل مكتوب عليه «حبل»، وكلمة «المركز» بالأسود بجانب المركز.",
       "answer": null,
       "confidence": 0.9,
-      "id": "livre_mowazi_5eme_math_sciences_p018_i1",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p018_i1",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -155,7 +155,7 @@
       "figureDesc": "قرص دائري أحمر ممتلئ في وسطه نقطة سوداء (المركز) مع عنوان «القرص الدّائري» بالأحمر.",
       "answer": null,
       "confidence": 0.9,
-      "id": "livre_mowazi_5eme_math_sciences_p018_i2",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p018_i2",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy"

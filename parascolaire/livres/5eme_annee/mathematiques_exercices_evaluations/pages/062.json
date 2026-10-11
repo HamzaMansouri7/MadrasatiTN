@@ -163,7 +163,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p062_i1"
+      "id": "mathematiques_exercices_evaluations_p062_i1"
     },
     {
       "kind": "exercise",
@@ -175,7 +175,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p062_i2"
+      "id": "mathematiques_exercices_evaluations_p062_i2"
     },
     {
       "kind": "exercise",
@@ -187,7 +187,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p062_i3"
+      "id": "mathematiques_exercices_evaluations_p062_i3"
     },
     {
       "kind": "exercise",
@@ -199,7 +199,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p062_i4"
+      "id": "mathematiques_exercices_evaluations_p062_i4"
     }
   ],
   "itemsOcr1": [
@@ -211,7 +211,7 @@
       "figureDesc": "Bandeau-titre décoratif avec le logo « السنة 5 » à gauche",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p062_i1",
+      "id": "mathematiques_exercices_evaluations_p062_i1",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -224,7 +224,7 @@
       "figureDesc": "Quatre opérations posées séparées par des traits verticaux, avec une icône de crayon à côté de chaque opération",
       "answer": null,
       "confidence": 0.75,
-      "id": "al_ahram_5eme_complet_p062_i2",
+      "id": "mathematiques_exercices_evaluations_p062_i2",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -237,7 +237,7 @@
       "figureDesc": "Tableau de 5 colonnes (المساكن، أ، ب، ج، د) et 3 lignes (الطول، العرض، المساحة) ; la ligne de l'aire est vide. Ligne pointillée pour la réponse du rangement.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p062_i3",
+      "id": "mathematiques_exercices_evaluations_p062_i3",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -250,7 +250,7 @@
       "figureDesc": "Lignes pointillées pour écrire les réponses",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p062_i4",
+      "id": "mathematiques_exercices_evaluations_p062_i4",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"

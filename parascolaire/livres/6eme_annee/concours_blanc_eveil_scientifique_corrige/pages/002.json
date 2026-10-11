@@ -223,7 +223,7 @@
       "figureDesc": "Grand cadre bleu presque vide en haut de la page. Seules deux étiquettes arrondies sont visibles en bas : « مترسّب » et « تخثّر » (en vert). Le reste du contenu est absent.",
       "answer": null,
       "confidence": 0.4,
-      "id": "concours_blanc_eveil_scientifique_corriges_p002_i1",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -236,7 +236,7 @@
       "figureDesc": "",
       "answer": "1) يحتوي البطين الأيسر للقلب على دم قاني قادم من الأذين الأيسر\n2) هذه الافادة صحيحة",
       "confidence": 0.9,
-      "id": "concours_blanc_eveil_scientifique_corriges_p002_i2",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -249,7 +249,7 @@
       "figureDesc": "",
       "answer": "1) خطأ\n2) خطأ\n3) صواب",
       "confidence": 0.9,
-      "id": "concours_blanc_eveil_scientifique_corriges_p002_i3",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "true_false",
       "difficultyGuess": "medium"
@@ -262,7 +262,7 @@
       "figureDesc": "Deux tubes à essai contenant du sang. Le tube de gauche montre trois couches : plasma (jaune), globules blancs et globules rouges (rouge en bas). Le tube de droite montre du sérum (jaune) et un caillot (rouge foncé en bas). Les étiquettes sont reliées aux tubes par des flèches. Sous chaque tube figure le mot « دم ».",
       "answer": "بلازما ← الطبقة الصفراء العليا ؛ كريّات بيضاء ← الطبقة الرقيقة الوسطى ؛ كريّات حمراء ← الطبقة الحمراء السفلى ؛ مصل ← الطبقة الصفراء العليا في الأنبوب الثاني ؛ علقة ← الراسب الأحمر الداكن في أسفل الأنبوب الثاني",
       "confidence": 0.8,
-      "id": "concours_blanc_eveil_scientifique_corriges_p002_i4",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i4",
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "medium"

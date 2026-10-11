@@ -193,7 +193,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i1"
+      "id": "evaluations_toutes_matieres_p013_i1"
     },
     {
       "kind": "exercise",
@@ -205,7 +205,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i2"
+      "id": "evaluations_toutes_matieres_p013_i2"
     },
     {
       "kind": "exercise",
@@ -217,7 +217,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i3"
+      "id": "evaluations_toutes_matieres_p013_i3"
     },
     {
       "kind": "section",
@@ -229,7 +229,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i4"
+      "id": "evaluations_toutes_matieres_p013_i4"
     },
     {
       "kind": "exercise",
@@ -241,7 +241,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i5"
+      "id": "evaluations_toutes_matieres_p013_i5"
     }
   ],
   "itemsOcr1": [
@@ -253,7 +253,7 @@
       "figureDesc": "ورق مسطر (شبكة) تحت كل سطر لنسخ الحروف والمقاطع؛ جدول المعايير (الوضوح، الجمالية) بخانات على اليمين، والنقاط المسندة على اليسار.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i1",
+      "id": "evaluations_toutes_matieres_p013_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -266,7 +266,7 @@
       "figureDesc": "ورق مسطر لإعادة كتابة الجملة؛ المعايير: الاسترسال، التناسق، الجمالية؛ النقاط: 0,25 / 0,5 / 0,25 لكل كلمة؛ المجموع /10.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i2",
+      "id": "evaluations_toutes_matieres_p013_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -279,7 +279,7 @@
       "figureDesc": "فقرة بها فراغات منقطة على ورق مسطر؛ المعيار: السلامة من الأخطاء؛ التنقيط: 2 لكل كلمة صحيحة؛ المجموع /10.",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i3",
+      "id": "evaluations_toutes_matieres_p013_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

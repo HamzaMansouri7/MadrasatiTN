@@ -149,7 +149,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "concours_math_6eme_corriges_p012_i1"
+      "id": "concours_mathematiques_corriges_p012_i1"
     },
     {
       "kind": "exercise",
@@ -161,7 +161,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "concours_math_6eme_corriges_p012_i2"
+      "id": "concours_mathematiques_corriges_p012_i2"
     }
   ],
   "itemsOcr1": [
@@ -173,7 +173,7 @@
       "figureDesc": "La figure de l'énoncé n'apparaît pas sur cette page (elle figure probablement sur la page précédente). Filigrane bleu arabe en travers de la page.",
       "answer": "قيس م هـ : ( 213.52 × 2 ) : 3.14 = 136 م\nقيس أ م : 136 : 2 = 68 م\nقيس مساحة القطعة ( 3 ) : ( 68 × 51 ) : 2 = 1734 م²\nقيس مساحة القطعة ( 2 ) : ( 1734 : 32 ) × 100 = 5418.75 م²\nقيس مساحة القطعة ( 1 ) : ( 68 × 68 × 3.14 ) : 2 = 7259.68 م²\nالمساحة الجملية : 1734 + 5418.75 + 7259.68 = 14412.43 م²",
       "confidence": 0.9,
-      "id": "concours_math_6eme_corriges_p012_i1",
+      "id": "concours_mathematiques_corriges_p012_i1",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -186,7 +186,7 @@
       "figureDesc": "",
       "answer": "قيس د ج : 5418.75 : 51 = 106.25 م\nقيس م د : ( 1734 × 2 ) : 40.8 = 85 م\nالمحيط : 106.25 + 85 + 213.52 + ( 106.25 – 68 ) + 51 = 494.02 م\nطول السياج : 494.02 – 4 = 490.02 م\nثمن شراء الأسلاك : 1176.048 × 5 = 5880.24 د\nثمن المتر الواحد : 490.02 : 4880.24 = 12 د",
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p012_i2",
+      "id": "concours_mathematiques_corriges_p012_i2",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"

@@ -186,7 +186,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p041_i1"
+      "id": "evaluations_maths_arabe_p041_i1"
     },
     {
       "kind": "exercise",
@@ -198,7 +198,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p041_i2"
+      "id": "evaluations_maths_arabe_p041_i2"
     },
     {
       "kind": "exercise",
@@ -210,7 +210,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p041_i3"
+      "id": "evaluations_maths_arabe_p041_i3"
     },
     {
       "kind": "exercise",
@@ -222,7 +222,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p041_i4"
+      "id": "evaluations_maths_arabe_p041_i4"
     }
   ],
   "itemsOcr1": [
@@ -234,7 +234,7 @@
       "figureDesc": "رسم لسُلَّم يحتوي على ست درجات (مربعات متصاعدة)",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p041_i1",
+      "id": "evaluations_maths_arabe_p041_i1",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -247,7 +247,7 @@
       "figureDesc": "ثلاث مجموعات: الأولى كَمُّهَا 8 وبها مستطيل واحد، الثانية كَمُّهَا 6 وبها 3 أشجار، الثالثة كَمُّهَا 7 وبها 5 بيوت",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p041_i2",
+      "id": "evaluations_maths_arabe_p041_i2",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -260,7 +260,7 @@
       "figureDesc": "رسم صاروخ بجانب أربعة أشرطة تتضمن متتاليات عددية مختلفة",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p041_i3",
+      "id": "evaluations_maths_arabe_p041_i3",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -273,7 +273,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p041_i4",
+      "id": "evaluations_maths_arabe_p041_i4",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

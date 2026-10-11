@@ -335,7 +335,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i1"
+      "id": "mathematiques_exercices_corriges_p112_i1"
     },
     {
       "kind": "answer",
@@ -347,7 +347,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i2"
+      "id": "mathematiques_exercices_corriges_p112_i2"
     },
     {
       "kind": "answer",
@@ -359,7 +359,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i3"
+      "id": "mathematiques_exercices_corriges_p112_i3"
     },
     {
       "kind": "answer",
@@ -371,7 +371,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i4"
+      "id": "mathematiques_exercices_corriges_p112_i4"
     },
     {
       "kind": "answer",
@@ -383,7 +383,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i5"
+      "id": "mathematiques_exercices_corriges_p112_i5"
     },
     {
       "kind": "answer",
@@ -395,7 +395,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i6"
+      "id": "mathematiques_exercices_corriges_p112_i6"
     },
     {
       "kind": "answer",
@@ -407,7 +407,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i7"
+      "id": "mathematiques_exercices_corriges_p112_i7"
     },
     {
       "kind": "answer",
@@ -419,7 +419,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i8"
+      "id": "mathematiques_exercices_corriges_p112_i8"
     },
     {
       "kind": "answer",
@@ -431,7 +431,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i9"
+      "id": "mathematiques_exercices_corriges_p112_i9"
     },
     {
       "kind": "answer",
@@ -443,7 +443,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i10"
+      "id": "mathematiques_exercices_corriges_p112_i10"
     },
     {
       "kind": "answer",
@@ -455,7 +455,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i11"
+      "id": "mathematiques_exercices_corriges_p112_i11"
     },
     {
       "kind": "answer",
@@ -467,7 +467,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i12"
+      "id": "mathematiques_exercices_corriges_p112_i12"
     },
     {
       "kind": "answer",
@@ -479,7 +479,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i13"
+      "id": "mathematiques_exercices_corriges_p112_i13"
     },
     {
       "kind": "answer",
@@ -491,7 +491,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i14"
+      "id": "mathematiques_exercices_corriges_p112_i14"
     },
     {
       "kind": "answer",
@@ -503,7 +503,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p112_i15"
+      "id": "mathematiques_exercices_corriges_p112_i15"
     }
   ],
   "itemsOcr1": [
@@ -515,7 +515,7 @@
       "figureDesc": "",
       "answer": "أ) 400 - 401 ؛ ب) 221 - 222 - 223 ؛ ج) 250 - 252 ؛ د) 299 - 301 - 303",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p112_i1",
+      "id": "mathematiques_exercices_corriges_p112_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -528,7 +528,7 @@
       "figureDesc": "جدول من سطرين: عدد الطوابق وعدد المربعات الملونة",
       "answer": "15 ، 21 ، 28 ، 36 ، 45 ، 55",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p112_i2",
+      "id": "mathematiques_exercices_corriges_p112_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -541,7 +541,7 @@
       "figureDesc": "شبكة 4×4 فيها خانات مظللة بالنقاط",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p112_i3",
+      "id": "mathematiques_exercices_corriges_p112_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -554,7 +554,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "math_solutions_4eme_sellami_p112_i4",
+      "id": "mathematiques_exercices_corriges_p112_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -567,7 +567,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p112_i5",
+      "id": "mathematiques_exercices_corriges_p112_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -580,7 +580,7 @@
       "figureDesc": "",
       "answer": "870 م ؛ 3480 م",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p112_i6",
+      "id": "mathematiques_exercices_corriges_p112_i6",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -593,7 +593,7 @@
       "figureDesc": "",
       "answer": "500 م",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p112_i7",
+      "id": "mathematiques_exercices_corriges_p112_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -606,7 +606,7 @@
       "figureDesc": "مستقيم عليه النقاط ك، م، ج، ص مع جزء بالأزرق وجزء بالأحمر",
       "answer": null,
       "confidence": 0.5,
-      "id": "math_solutions_4eme_sellami_p112_i8",
+      "id": "mathematiques_exercices_corriges_p112_i8",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -619,7 +619,7 @@
       "figureDesc": "نصف مستقيم بالنقاط أ، ب، ص ونقطة د خارجه",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p112_i9",
+      "id": "mathematiques_exercices_corriges_p112_i9",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -632,7 +632,7 @@
       "figureDesc": "مستقيم عليه النقطتان ج وب ونقطة بينهما",
       "answer": null,
       "confidence": 0.5,
-      "id": "math_solutions_4eme_sellami_p112_i10",
+      "id": "mathematiques_exercices_corriges_p112_i10",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -645,7 +645,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p112_i11",
+      "id": "mathematiques_exercices_corriges_p112_i11",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -658,7 +658,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.4,
-      "id": "math_solutions_4eme_sellami_p112_i12",
+      "id": "mathematiques_exercices_corriges_p112_i12",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -671,7 +671,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.5,
-      "id": "math_solutions_4eme_sellami_p112_i13",
+      "id": "mathematiques_exercices_corriges_p112_i13",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -684,7 +684,7 @@
       "figureDesc": "جدول أعداد مثلثية وأقواس الإضافة",
       "answer": "1 ، 3 ، 6 ، 10 ، 15 ، 21 ، 28 ، 36",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p112_i14",
+      "id": "mathematiques_exercices_corriges_p112_i14",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -697,7 +697,7 @@
       "figureDesc": "جدول: عدد القطع من فئة 1/2 دينار 3؛ المبلغ الذي زادته فرح 20؛ المبلغ الذي أرجعه الكتبي 100؛ ثمن القصة؛ ثمن الكوس 425",
       "answer": "145 مليم",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p112_i15",
+      "id": "mathematiques_exercices_corriges_p112_i15",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

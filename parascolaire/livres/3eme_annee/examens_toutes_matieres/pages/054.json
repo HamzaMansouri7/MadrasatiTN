@@ -161,7 +161,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_3eme_examens_p054_i1"
+      "id": "examens_toutes_matieres_p054_i1"
     },
     {
       "kind": "exercise",
@@ -173,7 +173,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_3eme_examens_p054_i2"
+      "id": "examens_toutes_matieres_p054_i2"
     },
     {
       "kind": "exercise",
@@ -185,7 +185,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_3eme_examens_p054_i3"
+      "id": "examens_toutes_matieres_p054_i3"
     },
     {
       "kind": "exercise",
@@ -197,7 +197,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_3eme_examens_p054_i4"
+      "id": "examens_toutes_matieres_p054_i4"
     }
   ],
   "itemsOcr1": [
@@ -209,7 +209,7 @@
       "figureDesc": "سطران منقطان للكتابة. المعيار: مع2ب مع مربع للتنقيط.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p054_i1",
+      "id": "examens_toutes_matieres_p054_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -222,7 +222,7 @@
       "figureDesc": "عمودان من النقاط للربط بخط: قائمة الأعمال على اليسار وعبارة «من فرائض الوضوء» على اليمين. المعيار: مع3أ مع ثلاثة مربعات.",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_3eme_examens_p054_i2",
+      "id": "examens_toutes_matieres_p054_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -235,7 +235,7 @@
       "figureDesc": "إطار بعمودين: عمود به المراحل مبعثرة وعمود به سطور منقطة للكتابة مع بعض المراحل مكتوبة. المعيار: مع3ب مع ثلاثة مربعات.",
       "answer": null,
       "confidence": 0.82,
-      "id": "jisr_ennajah_3eme_examens_p054_i3",
+      "id": "examens_toutes_matieres_p054_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -248,7 +248,7 @@
       "figureDesc": "إطار رمادي يحتوي على الكلمات المقترحة. المعيار: مع2ب مع مربعين.",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_3eme_examens_p054_i4",
+      "id": "examens_toutes_matieres_p054_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

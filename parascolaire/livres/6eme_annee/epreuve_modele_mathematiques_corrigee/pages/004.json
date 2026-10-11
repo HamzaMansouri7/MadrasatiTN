@@ -151,7 +151,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "epreuve_modele_math_6eme_corrigee_p004_i1"
+      "id": "epreuve_modele_mathematiques_corrigee_p004_i1"
     },
     {
       "kind": "exercise",
@@ -163,7 +163,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "epreuve_modele_math_6eme_corrigee_p004_i2"
+      "id": "epreuve_modele_mathematiques_corrigee_p004_i2"
     }
   ],
   "itemsOcr1": [
@@ -175,7 +175,7 @@
       "figureDesc": "En-tête officiel : وزارة التربية، المعلم: نبيل ثابتي، الاختبار: رياضيات، التوقيت: 60 دقيقة، الضارب: 1, مناظرة الدخول إلى المدارس الإعدادية النموذجية، دورة 2023 (تجريبي) / الإصلاح. Tableau à 3 colonnes : مساهمة الأب = 1/3 المبلغ ; مساهمة الأم = 40 % من المبلغ ; مساهمة البنت الكبرى = أقلّ من مساهمة الأب بـ 287,4 د.",
       "answer": "مساهمة الأب: 1/3 المبلغ = 5/15. مساهمة الأم: 40 % من المبلغ = 2/5 = 6/15. مساهمة البنت الكبرى: 15/15 − (6/15 + 5/15) = 4/15. الكسر الممثّل للفرق بين مساهمة الأب و مساهمة البنت الكبرى: 5/15 − 4/15 = 1/15. المبلغ المجمّع لدى العائلة: 287,4 × 15 = 4311 د.",
       "confidence": 0.93,
-      "id": "epreuve_modele_math_6eme_corrigee_p004_i1",
+      "id": "epreuve_modele_mathematiques_corrigee_p004_i1",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -188,7 +188,7 @@
       "figureDesc": "",
       "answer": "النسبة المائوية الممثّلة للفرق بين ثمن التلفاز و ثمن الثلاّجة: 100 % − 85 % = 15 %. 15 % = 405 د. ثمن الثلاّجة: (405 : 15) × 100 = 2700 د. ثمن المكيّف: 2700 − (405 + 4311) = 2016 د. أو: ثمن التلفاز: (405 : 15) × 85 = 2295 د. ثمن المكيّف: 4311 − 2295 = 2016 د.",
       "confidence": 0.9,
-      "id": "epreuve_modele_math_6eme_corrigee_p004_i2",
+      "id": "epreuve_modele_mathematiques_corrigee_p004_i2",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"

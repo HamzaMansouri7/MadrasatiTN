@@ -277,7 +277,7 @@
       "figureDesc": "مخطط مدرسة على شكل مستطيل بعرض 20 م وارتفاع 7 م في الجزء العلوي؛ في الجزء السفلي ضلع 6 م وارتفاع 6 م؛ قاعة صغيرة في الركن السفلي الأيمن مكتوب عليها «المجموعة الصحية»؛ مثلث صغير في القاعة الوسطى. التصميم غير مكتمل.",
       "answer": null,
       "confidence": 0.6,
-      "id": "al_ahram_5eme_complet_p073_i1",
+      "id": "mathematiques_exercices_evaluations_p073_i1",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -290,7 +290,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p073_i2",
+      "id": "mathematiques_exercices_evaluations_p073_i2",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -303,7 +303,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p073_i3",
+      "id": "mathematiques_exercices_evaluations_p073_i3",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -316,7 +316,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.55,
-      "id": "al_ahram_5eme_complet_p073_i4",
+      "id": "mathematiques_exercices_evaluations_p073_i4",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -329,7 +329,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p073_i5",
+      "id": "mathematiques_exercices_evaluations_p073_i5",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -342,7 +342,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p073_i6",
+      "id": "mathematiques_exercices_evaluations_p073_i6",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"

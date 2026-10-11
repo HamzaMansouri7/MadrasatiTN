@@ -164,7 +164,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i1"
+      "id": "evaluations_toutes_matieres_p017_i1"
     },
     {
       "kind": "exercise",
@@ -176,7 +176,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i2"
+      "id": "evaluations_toutes_matieres_p017_i2"
     },
     {
       "kind": "exercise",
@@ -188,7 +188,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i3"
+      "id": "evaluations_toutes_matieres_p017_i3"
     }
   ],
   "itemsOcr1": [
@@ -200,7 +200,7 @@
       "figureDesc": "Deux lignes quadrillées d'écriture avec les modèles en gras suivis de points de repère pour copier. Barème : 0,25 par lettre ; 0,5 par syllabe/mot ; 0,25 par syllabe/mot. Critères : الوضوح، الجمالية.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i1",
+      "id": "evaluations_toutes_matieres_p017_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -213,7 +213,7 @@
       "figureDesc": "Lignes quadrillées pour recopier la phrase. Barème : 0,25 par mot / 0,5 par mot / 0,25 par mot ; total /10. Critères : الوضوح، الجمالية، الاسترسال، التناسق، الجمالية.",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i2",
+      "id": "evaluations_toutes_matieres_p017_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -226,7 +226,7 @@
       "figureDesc": "Paragraphe à trous sur papier quadrillé, avec des pointillés à compléter. Barème : 2 points par mot correct, total /10. Critère : السلامة من الأخطاء.",
       "answer": null,
       "confidence": 0.7,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i3",
+      "id": "evaluations_toutes_matieres_p017_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

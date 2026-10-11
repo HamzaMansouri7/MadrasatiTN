@@ -149,7 +149,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p003_i1"
+      "id": "mathematiques_exercices_evaluations_p003_i1"
     },
     {
       "kind": "exercise",
@@ -161,7 +161,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p003_i2"
+      "id": "mathematiques_exercices_evaluations_p003_i2"
     }
   ],
   "itemsOcr1": [
@@ -173,7 +173,7 @@
       "figureDesc": "جدول من عمودين: «العَدَدُ بِالأَرْقَامِ» و«العَدَدُ بِالحُرُوفِ» وأربعة أسطر فارغة منقطة للإجابة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p003_i1",
+      "id": "mathematiques_exercices_evaluations_p003_i1",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -186,7 +186,7 @@
       "figureDesc": "سبع بطاقات أرقام (9 7 5 3 2 1 0) وستة جداول من سبع خانات، الخانة الأولى في كل منها مملوءة بـ 1 و2 و3 و5 و7 و9 والبقية فارغة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p003_i2",
+      "id": "mathematiques_exercices_evaluations_p003_i2",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

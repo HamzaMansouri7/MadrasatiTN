@@ -208,7 +208,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p018_i1"
+      "id": "examens_toutes_matieres_p018_i1"
     },
     {
       "kind": "exercise",
@@ -220,7 +220,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p018_i2"
+      "id": "examens_toutes_matieres_p018_i2"
     },
     {
       "kind": "exercise",
@@ -232,7 +232,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p018_i3"
+      "id": "examens_toutes_matieres_p018_i3"
     },
     {
       "kind": "exercise",
@@ -244,7 +244,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p018_i4"
+      "id": "examens_toutes_matieres_p018_i4"
     },
     {
       "kind": "exercise",
@@ -256,7 +256,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_3eme_examens_p018_i5"
+      "id": "examens_toutes_matieres_p018_i5"
     }
   ],
   "itemsOcr1": [
@@ -268,7 +268,7 @@
       "figureDesc": "Trois petites cases de notation à gauche de la phrase. Critère: مع1أ",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p018_i1",
+      "id": "examens_toutes_matieres_p018_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -281,7 +281,7 @@
       "figureDesc": "Trois lignes pointillées pour écrire chaque phrase, avec une case de notation à droite de chacune. Critère: مع2أ. Filigrane MOURAJAA.COM.",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_3eme_examens_p018_i2",
+      "id": "examens_toutes_matieres_p018_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -294,7 +294,7 @@
       "figureDesc": "Une case de notation à côté de chaque phrase. Critère: مع2ب",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_3eme_examens_p018_i3",
+      "id": "examens_toutes_matieres_p018_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -307,7 +307,7 @@
       "figureDesc": "Une case de notation à droite de chaque phrase. Critère: مع1ب",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_3eme_examens_p018_i4",
+      "id": "examens_toutes_matieres_p018_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

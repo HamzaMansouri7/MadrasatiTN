@@ -205,7 +205,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p056_i1"
+      "id": "evaluations_maths_arabe_p056_i1"
     },
     {
       "kind": "exercise",
@@ -217,7 +217,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p056_i2"
+      "id": "evaluations_maths_arabe_p056_i2"
     },
     {
       "kind": "section_header",
@@ -229,7 +229,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p056_i3"
+      "id": "evaluations_maths_arabe_p056_i3"
     },
     {
       "kind": "exercise",
@@ -241,7 +241,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p056_i4"
+      "id": "evaluations_maths_arabe_p056_i4"
     },
     {
       "kind": "exercise",
@@ -253,7 +253,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p056_i5"
+      "id": "evaluations_maths_arabe_p056_i5"
     },
     {
       "kind": "exercise",
@@ -265,7 +265,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_1ere_evaluations_p056_i6"
+      "id": "evaluations_maths_arabe_p056_i6"
     },
     {
       "kind": "footer",
@@ -277,7 +277,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_1ere_evaluations_p056_i7"
+      "id": "evaluations_maths_arabe_p056_i7"
     }
   ],
   "itemsOcr1": [
@@ -289,7 +289,7 @@
       "figureDesc": "مخطط لتفكيك العدد 9: حيز بيضاوي كبير يحتوي مجموعتين؛ الأولى بها رسم لقطعتين والثانية بها رسم لخمس قطع، مع دوائر لكتابة الأعداد وتفكيك العدد 9.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_1ere_evaluations_p056_i1",
+      "id": "evaluations_maths_arabe_p056_i1",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -302,7 +302,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p056_i2",
+      "id": "evaluations_maths_arabe_p056_i2",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -315,7 +315,7 @@
       "figureDesc": "حيز كبير يمثل تفكيك 9 مي إلى مجموعتين فرعيتين: الأولى بها دائرتان لقطعتين نقديتين (... مي، ... مي) والثانية بها دائرة لقطعة نقدية واحدة (... مي) ودوائر فارغة لكتابة الأعداد.",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p056_i3",
+      "id": "evaluations_maths_arabe_p056_i3",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -328,7 +328,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p056_i4",
+      "id": "evaluations_maths_arabe_p056_i4",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -341,7 +341,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p056_i5",
+      "id": "evaluations_maths_arabe_p056_i5",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -183,7 +183,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p007_i1"
+      "id": "mathematiques_exercices_corriges_p007_i1"
     },
     {
       "kind": "exercise",
@@ -195,7 +195,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p007_i2"
+      "id": "mathematiques_exercices_corriges_p007_i2"
     },
     {
       "kind": "exercise",
@@ -207,7 +207,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p007_i3"
+      "id": "mathematiques_exercices_corriges_p007_i3"
     },
     {
       "kind": "exercise",
@@ -219,7 +219,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p007_i4"
+      "id": "mathematiques_exercices_corriges_p007_i4"
     },
     {
       "kind": "exercise",
@@ -231,7 +231,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p007_i5"
+      "id": "mathematiques_exercices_corriges_p007_i5"
     }
   ],
   "itemsOcr1": [
@@ -243,7 +243,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p007_i1",
+      "id": "mathematiques_exercices_corriges_p007_i1",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -256,7 +256,7 @@
       "figureDesc": "نقاط للإجابة (خطوط منقطة) في كل معادلة.",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p007_i2",
+      "id": "mathematiques_exercices_corriges_p007_i2",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -269,7 +269,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p007_i3",
+      "id": "mathematiques_exercices_corriges_p007_i3",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -282,7 +282,7 @@
       "figureDesc": "أربع نقاط مبعثرة: أ (أعلى يمين)، د (أعلى يسار)، ب (أسفل يسار)، هـ (أسفل يمين) على الصفحة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p007_i4",
+      "id": "mathematiques_exercices_corriges_p007_i4",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -295,7 +295,7 @@
       "figureDesc": "جدول من عمودين: «دفعت دُرّة»: قصّة وقلمان جافّان = 820 مي؛ «دفعت صديقتها»: قصّة و3 أقلام جافّة = 980 مي، مع أقواس تجمع الأشياء وتبيّن المبلغ.",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p007_i5",
+      "id": "mathematiques_exercices_corriges_p007_i5",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

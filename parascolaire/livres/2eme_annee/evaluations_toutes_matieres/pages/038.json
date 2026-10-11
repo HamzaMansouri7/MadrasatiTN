@@ -168,7 +168,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i1"
+      "id": "evaluations_toutes_matieres_p038_i1"
     },
     {
       "kind": "exercise",
@@ -180,7 +180,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i2"
+      "id": "evaluations_toutes_matieres_p038_i2"
     },
     {
       "kind": "exercise",
@@ -192,7 +192,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i3"
+      "id": "evaluations_toutes_matieres_p038_i3"
     },
     {
       "kind": "lesson",
@@ -204,7 +204,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i4"
+      "id": "evaluations_toutes_matieres_p038_i4"
     }
   ],
   "itemsOcr1": [
@@ -216,7 +216,7 @@
       "figureDesc": "سطر منقّط لكتابة الحل. على اليمين خانة تقييم (مع 5) مقسومة إلى خانتين، وعلى اليسار الرقمان 1 و1.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i1",
+      "id": "evaluations_toutes_matieres_p038_i1",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -229,7 +229,7 @@
       "figureDesc": "إطار كبير بخطوط متقطعة فارغ للتمثيل بالقطع النقدية. على اليمين خانة تقييم (مع 5) وعلى اليسار الرقمان 1 و1.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i2",
+      "id": "evaluations_toutes_matieres_p038_i2",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -242,7 +242,7 @@
       "figureDesc": "ثلاثة أسطر منقطة لكتابة السؤال والحل.",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i3",
+      "id": "evaluations_toutes_matieres_p038_i3",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -255,7 +255,7 @@
       "figureDesc": "جدول إسناد الأعداد: انعدام التمَلُّك: 0 في كل الخانات. التمَلُّك دون الأدنى: مع1 0,5؛ مع2أ 0,5؛ مع2ب 1؛ مع2ج 0,5؛ مع3 1؛ مع4 0,5؛ مع5 1. التمَلُّك الأدنى: 1، 1، 1، 2، 1، 2، (3 - 2) لمع5. التمَلُّك الأقصى: 1,5، 1,5، 3، 1,5، 3، 1,5، 4 لمع5. الحساب الذهني: ‎…/4 ثم ‎…/16 + …/4 = …/20.",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i4",
+      "id": "evaluations_toutes_matieres_p038_i4",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "easy"

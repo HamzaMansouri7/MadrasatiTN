@@ -245,7 +245,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i1"
+      "id": "evaluations_toutes_matieres_p037_i1"
     },
     {
       "kind": "exercise",
@@ -257,7 +257,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i2"
+      "id": "evaluations_toutes_matieres_p037_i2"
     },
     {
       "kind": "exercise",
@@ -269,7 +269,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i3"
+      "id": "evaluations_toutes_matieres_p037_i3"
     },
     {
       "kind": "exercise",
@@ -281,7 +281,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i4"
+      "id": "evaluations_toutes_matieres_p037_i4"
     },
     {
       "kind": "exercise",
@@ -293,7 +293,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i5"
+      "id": "evaluations_toutes_matieres_p037_i5"
     },
     {
       "kind": "exercise",
@@ -305,7 +305,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i6"
+      "id": "evaluations_toutes_matieres_p037_i6"
     },
     {
       "kind": "exercise",
@@ -317,7 +317,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i7"
+      "id": "evaluations_toutes_matieres_p037_i7"
     },
     {
       "kind": "exercise",
@@ -329,7 +329,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i8"
+      "id": "evaluations_toutes_matieres_p037_i8"
     },
     {
       "kind": "exercise",
@@ -341,7 +341,7 @@
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i9"
+      "id": "evaluations_toutes_matieres_p037_i9"
     }
   ],
   "itemsOcr1": [
@@ -353,7 +353,7 @@
       "figureDesc": "في أعلى الصفحة إطار مستدير الحواف بداخله قطعة نقدية من فئة 50 مي (ثمن الشكلاطة). على الهامش أعمدة للتنقيط (1، 0,5، 0,5، 1...) ومربعات للمعايير (مع 3، مع 1...).",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i1",
+      "id": "evaluations_toutes_matieres_p037_i1",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -366,7 +366,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i2",
+      "id": "evaluations_toutes_matieres_p037_i2",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -379,7 +379,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i3",
+      "id": "evaluations_toutes_matieres_p037_i3",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -392,7 +392,7 @@
       "figureDesc": "إطار مستطيل فارغ مستدير الزوايا لرسم القطع النقدية.",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i4",
+      "id": "evaluations_toutes_matieres_p037_i4",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -405,7 +405,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i5",
+      "id": "evaluations_toutes_matieres_p037_i5",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -418,7 +418,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i6",
+      "id": "evaluations_toutes_matieres_p037_i6",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -431,7 +431,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i7",
+      "id": "evaluations_toutes_matieres_p037_i7",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -444,7 +444,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i8",
+      "id": "evaluations_toutes_matieres_p037_i8",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -457,7 +457,7 @@
       "figureDesc": "ثلاثة أشكال مفتوحة تحتاج إلى إكمال: (يمين) شكل بثلاثة أضلاع مفتوح من الأسفل ليُكمَل بخط منحن؛ (وسط) شكل منكسر مفتوح من الجهة اليمنى ليُكمَل بخط منكسر؛ (يسار) شكل على هيئة رأس مثلث (خطان مائلان) ليُكمَل بخط مستقيم.",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i9",
+      "id": "evaluations_toutes_matieres_p037_i9",
       "topicId": "math-2-p3",
       "formatGuess": "free",
       "difficultyGuess": "medium"

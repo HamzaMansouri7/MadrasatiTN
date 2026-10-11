@@ -177,7 +177,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p108_i1"
+      "id": "soutien_maths_francais_p108_i1"
     },
     {
       "kind": "exercise",
@@ -189,7 +189,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p108_i2"
+      "id": "soutien_maths_francais_p108_i2"
     },
     {
       "kind": "exercise",
@@ -201,7 +201,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p108_i3"
+      "id": "soutien_maths_francais_p108_i3"
     },
     {
       "kind": "section_title",
@@ -213,7 +213,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p108_i4"
+      "id": "soutien_maths_francais_p108_i4"
     },
     {
       "kind": "exercise",
@@ -225,7 +225,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p108_i5"
+      "id": "soutien_maths_francais_p108_i5"
     }
   ],
   "itemsOcr1": [
@@ -237,7 +237,7 @@
       "figureDesc": "Quadrillage avec un axe vertical (D) à gauche. À droite de l'axe, un parallélogramme ABCD (côtés horizontaux en haut et en bas, côtés obliques). Il faut construire son symétrique à gauche de l'axe.",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p108_i1",
+      "id": "soutien_maths_francais_p108_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -250,7 +250,7 @@
       "figureDesc": "Quadrillage avec une figure grisée à droite : un triangle (sommet en haut) prolongé par un polygone avec une partie rectangulaire en bas à droite. La figure réduite est à tracer sur la partie gauche du quadrillage.",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p108_i2",
+      "id": "soutien_maths_francais_p108_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -263,7 +263,7 @@
       "figureDesc": "Tableau à 4 lignes, chacune avec un barème (1ن) et des pointillés à compléter.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p108_i3",
+      "id": "soutien_maths_francais_p108_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -225,7 +225,7 @@
       "figureDesc": "",
       "answer": "Compléments soulignés en gras : Durant les jours de grand froid ; aujourd'hui ; Dans une auberge",
       "confidence": 0.9,
-      "id": "sagesse_6eme_complet_p128_i1",
+      "id": "francais_lire_et_sexprimer_p128_i1",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -238,7 +238,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "sagesse_6eme_complet_p128_i2",
+      "id": "francais_lire_et_sexprimer_p128_i2",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -251,7 +251,7 @@
       "figureDesc": "Tableau à trois colonnes : Le passé composé, Le présent, Le futur",
       "answer": null,
       "confidence": 0.9,
-      "id": "sagesse_6eme_complet_p128_i3",
+      "id": "francais_lire_et_sexprimer_p128_i3",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -264,7 +264,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "sagesse_6eme_complet_p128_i4",
+      "id": "francais_lire_et_sexprimer_p128_i4",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -277,7 +277,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "sagesse_6eme_complet_p128_i5",
+      "id": "francais_lire_et_sexprimer_p128_i5",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -290,7 +290,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "sagesse_6eme_complet_p128_i6",
+      "id": "francais_lire_et_sexprimer_p128_i6",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -303,7 +303,7 @@
       "figureDesc": "",
       "answer": "b- « Il se dit : « C'est la première fois que je travaille pour un homme ! Mon salaire vaudra sûrement son pesant d'or… »",
       "confidence": 0.88,
-      "id": "sagesse_6eme_complet_p128_i7",
+      "id": "francais_lire_et_sexprimer_p128_i7",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -316,7 +316,7 @@
       "figureDesc": "",
       "answer": "b- « Alima, fils d'homme, si tu manges ce jaguar, tu deviendras aussi rusé que lui ! »",
       "confidence": 0.88,
-      "id": "sagesse_6eme_complet_p128_i8",
+      "id": "francais_lire_et_sexprimer_p128_i8",
       "topicId": "fr-6-m1",
       "formatGuess": "problem_solving",
       "difficultyGuess": "hard"
@@ -329,7 +329,7 @@
       "figureDesc": "",
       "answer": "C'est l'histoire d'un jaguar malin qui aide un chef de village. Son fils refuse de manger. Le jaguar lui apporte donc un singe, puis un serpent comme repas. Mais au bout de trois jours, chaque fois, le petit garçon ne mange plus. Lorsque le jaguar rapporte un tapir comme repas, l'enfant se remet à manger. Le chef a compris la ruse du jaguar et décide de devenir aussi malin que lui : le chef fait alors semblant d'accepter de payer, mais il en profite pour assommer le jaguar qui devient à son tour le repas de son fils.",
       "confidence": 0.9,
-      "id": "sagesse_6eme_complet_p128_i9",
+      "id": "francais_lire_et_sexprimer_p128_i9",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -342,7 +342,7 @@
       "figureDesc": "Dessin en noir et blanc d'une classe : des élèves lèvent la main ; au premier plan un garçon souriant tient un cahier portant la mention « NOTE ».",
       "answer": null,
       "confidence": 0.8,
-      "id": "sagesse_6eme_complet_p128_i10",
+      "id": "francais_lire_et_sexprimer_p128_i10",
       "topicId": "fr-6-m1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

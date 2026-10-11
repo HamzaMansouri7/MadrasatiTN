@@ -156,7 +156,7 @@
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i1"
+      "id": "evaluations_toutes_matieres_p019_i1"
     },
     {
       "kind": "lesson",
@@ -168,7 +168,7 @@
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i2"
+      "id": "evaluations_toutes_matieres_p019_i2"
     }
   ],
   "itemsOcr1": [
@@ -180,7 +180,7 @@
       "figureDesc": "ثلاث صور بالأبيض والأسود والرمادي: فتاة بمظلة أمام المدرسة تحت المطر؛ فتاة تواجه عاصفة ومظلتها منقلبة وشجرة تميل؛ أم تلمس جبين طفلة مريضة في السرير. أسطر منقطة وخانات تقييم مربعة على الجانب.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i1",
+      "id": "evaluations_toutes_matieres_p019_i1",
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -193,7 +193,7 @@
       "figureDesc": "جدول إسناد الأعداد بمستويات التمَلُّك والمعايير، مع مربع للمجموع من 20 على اليسار. رقم الصفحة 18.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i2",
+      "id": "evaluations_toutes_matieres_p019_i2",
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "easy"

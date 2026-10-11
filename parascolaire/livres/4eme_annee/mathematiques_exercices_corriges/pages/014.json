@@ -188,7 +188,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p014_i1"
+      "id": "mathematiques_exercices_corriges_p014_i1"
     },
     {
       "kind": "exercise",
@@ -200,7 +200,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p014_i2"
+      "id": "mathematiques_exercices_corriges_p014_i2"
     },
     {
       "kind": "exercise",
@@ -212,7 +212,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p014_i3"
+      "id": "mathematiques_exercices_corriges_p014_i3"
     },
     {
       "kind": "exercise",
@@ -224,7 +224,7 @@
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p014_i4"
+      "id": "mathematiques_exercices_corriges_p014_i4"
     },
     {
       "kind": "exercise",
@@ -236,7 +236,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p014_i5"
+      "id": "mathematiques_exercices_corriges_p014_i5"
     }
   ],
   "itemsOcr1": [
@@ -248,7 +248,7 @@
       "figureDesc": "Quatre horloges à aiguilles étiquetées أ (environ 2 h), ب (environ 4 h 20), ج (environ 5 h 40), د (environ 6 h 40). Sous chacune, un tableau à deux lignes : صباحا / مساء. Dans le tableau (أ), la valeur 2 est déjà écrite dans la case de « صباحا ».",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p014_i1",
+      "id": "mathematiques_exercices_corriges_p014_i1",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -261,7 +261,7 @@
       "figureDesc": "Tableau à 4 colonnes d'horaires et 2 lignes. Seule la première colonne est remplie (8 et 3).",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p014_i2",
+      "id": "mathematiques_exercices_corriges_p014_i2",
       "topicId": "math-4-p6",
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy"
@@ -274,7 +274,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p014_i3",
+      "id": "mathematiques_exercices_corriges_p014_i3",
       "topicId": "math-4-p6",
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy"
@@ -287,7 +287,7 @@
       "figureDesc": "Trois horloges : « لحظة وصول فراس » (environ 5 h 30 passé/proche de 5 h), « لحظة وصول أمين » (environ 5 h 30, aiguille longue sur 6 et courte vers 5), « لحظة وصول مهدي » (environ 4 h 20).",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p014_i4",
+      "id": "mathematiques_exercices_corriges_p014_i4",
       "topicId": "math-4-p6",
       "formatGuess": "matching",
       "difficultyGuess": "easy"

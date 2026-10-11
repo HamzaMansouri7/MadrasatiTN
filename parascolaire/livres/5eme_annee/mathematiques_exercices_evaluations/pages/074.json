@@ -98,7 +98,7 @@
       "figureDesc": "شريط عنوان رمادي ملون مع رقم السند 3؛ على الهامش مربعان للتنقيط (معـ 2).",
       "answer": null,
       "confidence": 0.4,
-      "id": "al_ahram_5eme_complet_p074_i1",
+      "id": "mathematiques_exercices_evaluations_p074_i1",
       "topicId": "math-5-p3",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -111,7 +111,7 @@
       "figureDesc": "أسطر منقطة للإجابة؛ خانة تنقيط (معـ 5).",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p074_i2",
+      "id": "mathematiques_exercices_evaluations_p074_i2",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -124,7 +124,7 @@
       "figureDesc": "شريط عنوان رمادي ملون مع رقم السند 4.",
       "answer": null,
       "confidence": 0.4,
-      "id": "al_ahram_5eme_complet_p074_i3",
+      "id": "mathematiques_exercices_evaluations_p074_i3",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -137,7 +137,7 @@
       "figureDesc": "فراغ كبير للرسم؛ خانة تنقيط (معـ 4).",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p074_i4",
+      "id": "mathematiques_exercices_evaluations_p074_i4",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -150,7 +150,7 @@
       "figureDesc": "أسطر منقطة؛ خانة تنقيط (معـ 4). رقم الصفحة 75.",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_ahram_5eme_complet_p074_i5",
+      "id": "mathematiques_exercices_evaluations_p074_i5",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"

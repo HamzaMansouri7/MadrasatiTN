@@ -231,7 +231,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i1"
+      "id": "eveil_scientifique_cours_exercices_p033_i1"
     },
     {
       "kind": "lesson",
@@ -243,7 +243,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i2"
+      "id": "eveil_scientifique_cours_exercices_p033_i2"
     },
     {
       "kind": "exercise",
@@ -255,7 +255,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i3"
+      "id": "eveil_scientifique_cours_exercices_p033_i3"
     },
     {
       "kind": "lesson",
@@ -267,7 +267,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i4"
+      "id": "eveil_scientifique_cours_exercices_p033_i4"
     },
     {
       "kind": "exercise",
@@ -279,7 +279,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i5"
+      "id": "eveil_scientifique_cours_exercices_p033_i5"
     },
     {
       "kind": "exercise",
@@ -291,7 +291,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i6"
+      "id": "eveil_scientifique_cours_exercices_p033_i6"
     },
     {
       "kind": "exercise",
@@ -303,7 +303,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i7"
+      "id": "eveil_scientifique_cours_exercices_p033_i7"
     },
     {
       "kind": "exercise",
@@ -315,7 +315,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i8"
+      "id": "eveil_scientifique_cours_exercices_p033_i8"
     }
   ],
   "itemsOcr1": [
@@ -327,7 +327,7 @@
       "figureDesc": "Petite photo en haut à droite : un enfant qui reçoit une injection/un vaccin dans le bras, administrée par une personne en blouse blanche.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i1",
+      "id": "eveil_scientifique_cours_exercices_p033_i1",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -340,7 +340,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i2",
+      "id": "eveil_scientifique_cours_exercices_p033_i2",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -353,7 +353,7 @@
       "figureDesc": "Photo d'un garçon en chemise bleue allongé sur un canapé, une main sur le front, couvert d'une couverture rouge, l'air malade.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i3",
+      "id": "eveil_scientifique_cours_exercices_p033_i3",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -366,7 +366,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i4",
+      "id": "eveil_scientifique_cours_exercices_p033_i4",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -379,7 +379,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i5",
+      "id": "eveil_scientifique_cours_exercices_p033_i5",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -392,7 +392,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i6",
+      "id": "eveil_scientifique_cours_exercices_p033_i6",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -405,7 +405,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p033_i7",
+      "id": "eveil_scientifique_cours_exercices_p033_i7",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"

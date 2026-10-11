@@ -169,7 +169,7 @@
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p030_i1"
+      "id": "mathematiques_exercices_corriges_p030_i1"
     },
     {
       "kind": "exercise",
@@ -181,7 +181,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p030_i2"
+      "id": "mathematiques_exercices_corriges_p030_i2"
     },
     {
       "kind": "exercise",
@@ -193,7 +193,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p030_i3"
+      "id": "mathematiques_exercices_corriges_p030_i3"
     },
     {
       "kind": "exercise",
@@ -205,7 +205,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p030_i4"
+      "id": "mathematiques_exercices_corriges_p030_i4"
     }
   ],
   "itemsOcr1": [
@@ -217,7 +217,7 @@
       "figureDesc": "شبكة مربعات (8 أعمدة تقريبا × 9 صفوف) عليها نقطتان في الصف الأخير: النقطة \"أ\" على اليسار والنقطة \"ب\" على اليمين.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p030_i1",
+      "id": "mathematiques_exercices_corriges_p030_i1",
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy"
@@ -230,7 +230,7 @@
       "figureDesc": "شبكة مرقّمة: المحور الأفقي من 9 إلى 0 (من اليسار إلى اليمين) والمحور العمودي من 1 إلى 7. النقطة \"ص\" عند (5، 6) والنقطة \"ل\" عند (2، 1).",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p030_i2",
+      "id": "mathematiques_exercices_corriges_p030_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -243,7 +243,7 @@
       "figureDesc": "شبكة مربعات عليها مربّع (□) في الأسفل ومثلّث (△) في الأعلى، ومسلك سميك على شكل درج يربط بينهما، ومسلك رقيق آخر.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p030_i3",
+      "id": "mathematiques_exercices_corriges_p030_i3",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "easy"

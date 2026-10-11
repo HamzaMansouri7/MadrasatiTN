@@ -212,7 +212,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i1"
+      "id": "evaluations_toutes_matieres_p028_i1"
     },
     {
       "kind": "exercise",
@@ -224,7 +224,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i2"
+      "id": "evaluations_toutes_matieres_p028_i2"
     },
     {
       "kind": "exercise",
@@ -236,7 +236,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i3"
+      "id": "evaluations_toutes_matieres_p028_i3"
     },
     {
       "kind": "exercise",
@@ -248,7 +248,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i4"
+      "id": "evaluations_toutes_matieres_p028_i4"
     },
     {
       "kind": "lesson",
@@ -260,7 +260,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i5"
+      "id": "evaluations_toutes_matieres_p028_i5"
     },
     {
       "kind": "exercise",
@@ -272,7 +272,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i6"
+      "id": "evaluations_toutes_matieres_p028_i6"
     },
     {
       "kind": "exercise",
@@ -284,7 +284,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i7"
+      "id": "evaluations_toutes_matieres_p028_i7"
     },
     {
       "kind": "exercise",
@@ -296,7 +296,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i8"
+      "id": "evaluations_toutes_matieres_p028_i8"
     },
     {
       "kind": "lesson",
@@ -308,7 +308,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i9"
+      "id": "evaluations_toutes_matieres_p028_i9"
     }
   ],
   "itemsOcr1": [
@@ -320,7 +320,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i1",
+      "id": "evaluations_toutes_matieres_p028_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -333,7 +333,7 @@
       "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ1",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i2",
+      "id": "evaluations_toutes_matieres_p028_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -346,7 +346,7 @@
       "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ2ب؛ نقطة 0,5",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i3",
+      "id": "evaluations_toutes_matieres_p028_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -359,7 +359,7 @@
       "figureDesc": "سطر منقّط للإجابة؛ خانتا التقييم معـ2ج ومعـ2أ؛ نقطة 0,5",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i4",
+      "id": "evaluations_toutes_matieres_p028_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -372,7 +372,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i5",
+      "id": "evaluations_toutes_matieres_p028_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -385,7 +385,7 @@
       "figureDesc": "سبع قطع نقدية تونسية: أربع قطع من فئة 20 مي، قطعة 100 مي، قطعة 10 مي، قطعة 50 مي؛ خانة التقييم معـ3",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i6",
+      "id": "evaluations_toutes_matieres_p028_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -398,7 +398,7 @@
       "figureDesc": "إطار مستطيل فارغ بزوايا مستديرة للرسم أو التمثيل؛ خانة التقييم معـ3",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i7",
+      "id": "evaluations_toutes_matieres_p028_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -411,7 +411,7 @@
       "figureDesc": "إطار يحتوي قطعة 1 مي وقطعة 20 مي وقطعة 2 مي، مع فقاعة 138مي؛ خانة التقييم معـ3",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i8",
+      "id": "evaluations_toutes_matieres_p028_i8",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -424,7 +424,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i9",
+      "id": "evaluations_toutes_matieres_p028_i9",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

@@ -234,7 +234,7 @@
       "figureDesc": "Tableau à deux colonnes : à droite les particules du nasb (أن، كي/لكي، لن، لام التعليل، حتى), à gauche un exemple pour chacune.",
       "answer": null,
       "confidence": 0.95,
-      "id": "cahier_grammaire_6eme_p008_i1",
+      "id": "grammaire_arabe_cahier_regles_p008_i1",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -247,7 +247,7 @@
       "figureDesc": "Grand tableau de conjugaison : colonnes الضمائر، الأفعال، حل، اعتد، استمد ; lignes groupées en المتكلم، المخاطب، الغائب, avec « لن » + verbe mudhaʿʿaf. Le texte est recopié sans tashkeel, car il est absent sur le scan ; les voyelles ci-dessus sont déduites.",
       "answer": null,
       "confidence": 0.8,
-      "id": "cahier_grammaire_6eme_p008_i2",
+      "id": "grammaire_arabe_cahier_regles_p008_i2",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -260,7 +260,7 @@
       "figureDesc": "Encadré de conclusions.",
       "answer": null,
       "confidence": 0.93,
-      "id": "cahier_grammaire_6eme_p008_i3",
+      "id": "grammaire_arabe_cahier_regles_p008_i3",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

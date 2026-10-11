@@ -186,7 +186,7 @@
       "figureDesc": "Deux flèches indiquant le sens (gauche pour la répulsion, droite pour l'attraction) entre les aimants numérotés ①④ et ②③.",
       "answer": "① و ④ يتنافران؛ ② و ③ يتجاذبان",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p057_i1",
+      "id": "eveil_scientifique_cours_exercices_p057_i1",
       "topicId": "sci-6-u5",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -199,7 +199,7 @@
       "figureDesc": "Quatre rectangles (aimants) divisés en deux pôles, étiquetés par des lettres arabes, avec des flèches à gauche de chacun.",
       "answer": null,
       "confidence": 0.5,
-      "id": "al_mounir_eveil_scientifique_6eme_p057_i2",
+      "id": "eveil_scientifique_cours_exercices_p057_i2",
       "topicId": "sci-6-u5",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -212,7 +212,7 @@
       "figureDesc": "",
       "answer": "كما في النص",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p057_i3",
+      "id": "eveil_scientifique_cours_exercices_p057_i3",
       "topicId": "sci-6-u5",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -225,7 +225,7 @@
       "figureDesc": "",
       "answer": "كما في النص",
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p057_i4",
+      "id": "eveil_scientifique_cours_exercices_p057_i4",
       "topicId": "sci-6-u5",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -238,7 +238,7 @@
       "figureDesc": "",
       "answer": "كما في النص",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p057_i5",
+      "id": "eveil_scientifique_cours_exercices_p057_i5",
       "topicId": "sci-6-u5",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -251,7 +251,7 @@
       "figureDesc": "",
       "answer": "كما في النص",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p057_i6",
+      "id": "eveil_scientifique_cours_exercices_p057_i6",
       "topicId": "sci-6-u5",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -264,7 +264,7 @@
       "figureDesc": "",
       "answer": "كما في النص",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p057_i7",
+      "id": "eveil_scientifique_cours_exercices_p057_i7",
       "topicId": "sci-6-u5",
       "formatGuess": "matching",
       "difficultyGuess": "hard"

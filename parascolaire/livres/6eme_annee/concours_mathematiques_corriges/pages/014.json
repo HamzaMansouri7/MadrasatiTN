@@ -144,7 +144,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "calculation",
       "difficultyGuess": "hard",
-      "id": "concours_math_6eme_corriges_p014_i1"
+      "id": "concours_mathematiques_corriges_p014_i1"
     },
     {
       "kind": "exercise",
@@ -156,7 +156,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "concours_math_6eme_corriges_p014_i2"
+      "id": "concours_mathematiques_corriges_p014_i2"
     }
   ],
   "itemsOcr1": [
@@ -168,7 +168,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p014_i1",
+      "id": "concours_mathematiques_corriges_p014_i1",
       "topicId": "math-6-p6",
       "formatGuess": "calculation",
       "difficultyGuess": "hard"
@@ -181,7 +181,7 @@
       "figureDesc": "رسم طريق: المدينة \"أ\" على اليمين، طريق مائل نحو \"ب\"، ثم نصف دائرة من \"ب\" إلى \"ج\" (سهام تبيّن اتجاه السيارة)، ثم طريق مستقيم أفقي من \"ج\" إلى \"د\" طوله 251.2 كم. سيارات مرسومة على الطريق.",
       "answer": null,
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p014_i2",
+      "id": "concours_mathematiques_corriges_p014_i2",
       "topicId": "math-6-p6",
       "formatGuess": "matching",
       "difficultyGuess": "hard"

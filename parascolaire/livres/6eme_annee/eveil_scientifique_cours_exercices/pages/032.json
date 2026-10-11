@@ -138,7 +138,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p032_i1"
+      "id": "eveil_scientifique_cours_exercices_p032_i1"
     },
     {
       "kind": "exercise",
@@ -150,7 +150,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p032_i2"
+      "id": "eveil_scientifique_cours_exercices_p032_i2"
     }
   ],
   "itemsOcr1": [
@@ -162,7 +162,7 @@
       "figureDesc": "Schéma d'une station d'épuration des eaux usées : la ville (immeubles et maisons) à gauche, canalisation avec dégrillage et dépôt de sable/déchets, bassins de décantation et de traitement (cuves rondes et bassins rectangulaires), flèches indiquant le sens de circulation de l'eau, camion évacuant les boues, et rejet de l'eau épurée dans la nature (cours d'eau et pelouse fleurie).",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p032_i1",
+      "id": "eveil_scientifique_cours_exercices_p032_i1",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -175,7 +175,7 @@
       "figureDesc": "Tableau à deux colonnes : à droite les causes (déchets industriels chimiques, eaux usées, rejet de produits pétroliers comme l'essence, huiles de moteurs et pétrole brut, négligence des gens) ; la colonne de gauche (conséquence dans la mer) est vide, à compléter.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p032_i2",
+      "id": "eveil_scientifique_cours_exercices_p032_i2",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"

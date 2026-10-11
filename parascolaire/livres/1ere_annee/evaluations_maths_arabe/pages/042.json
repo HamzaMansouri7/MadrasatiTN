@@ -140,7 +140,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p042_i1"
+      "id": "evaluations_maths_arabe_p042_i1"
     },
     {
       "kind": "exercise",
@@ -152,7 +152,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p042_i2"
+      "id": "evaluations_maths_arabe_p042_i2"
     },
     {
       "kind": "exercise",
@@ -164,7 +164,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p042_i3"
+      "id": "evaluations_maths_arabe_p042_i3"
     }
   ],
   "itemsOcr1": [
@@ -176,7 +176,7 @@
       "figureDesc": "ستة أشكال بيضاوية فارغة تحت الكلمات مخصصة لكتابة الأرقام.",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p042_i1",
+      "id": "evaluations_maths_arabe_p042_i1",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -189,7 +189,7 @@
       "figureDesc": "مدرّج سلالم على شكل حرف V يتوسطه الصفر في الأسفل: درجات نازلة من اليسار (مربع فارغ، 5، مربع فارغ، 3، 2، مربع فارغ، 0) ودرجات صاعدة إلى اليمين (1، 2، مربع فارغ، 4، مربع فارغ، 6).",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p042_i2",
+      "id": "evaluations_maths_arabe_p042_i2",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -202,7 +202,7 @@
       "figureDesc": "مشهد سباق يحتوي على لافتة وخط وصول، وأربع سيارات متتالية تقترب من خط الوصول، مع خلفية لبناية ومارة على الرصيف.",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p042_i3",
+      "id": "evaluations_maths_arabe_p042_i3",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

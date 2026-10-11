@@ -207,7 +207,7 @@
       "figureDesc": "جدول من عمودين: على اليمين رسم لأنبوب اختبار منكوس في ماء مع أنبوب مطاطي يصل إلى بالونة حمراء؛ على اليسار رسم لمحقنة مثبّتة على حامل، أنبوبها داخل كأس فيه ثلج وسائل، مع التسميتين «سائل» و«ثلج».",
       "answer": "التجربة الأولى: يمرّ الهواء في هذه التّجربة تلقائيّا من البالونة الى الكأس المدرّج المنكوس عند وصلهما بانبوب لأنّه غاز قابل للانتشار كما يمكن نقله من اناء الى آخر يتغيّر شكل الهواء بعد انتقاله ليأخذ شكل الكأس المنكوس لأنّ الهواء لا شكل له. التجربة الثانية: عند وضع الأنبوب داخل التّلج تنخفض درجة حرارة الهواء فيتقلص و يصغر حجمه ما يؤدّي الى دخول الهواء عبر الانبوب فتظهر فقاقيع داخل السائل.",
       "confidence": 0.9,
-      "id": "concours_blanc_eveil_scientifique_corriges_p003_i1",
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i1",
       "topicId": "sci-6-u2",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -220,7 +220,7 @@
       "figureDesc": "رسم لشعيرة دموية على شكل كمثرى: جزء أزرق (دم أحمر قاتم يدخل) وجزء أحمر (دم أحمر قاني يخرج)، أسهم لتبادل الغازين O2 وCO2 بين الدم والعضو.",
       "answer": "دم أحمر قاتم (يدخل)، دم أحمر قاني (يخرج)، O2 يمرّ من الدم الى العضو، CO2 يمرّ من العضو الى الدم.",
       "confidence": 0.8,
-      "id": "concours_blanc_eveil_scientifique_corriges_p003_i2",
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i2",
       "topicId": "sci-6-u2",
       "formatGuess": "fill_blank",
       "difficultyGuess": "hard"
@@ -233,7 +233,7 @@
       "figureDesc": "",
       "answer": "يصل الدّم الى الأعضاء أحمر قانيا عبر الشريان الابهر فيزوّد الخلايا بالاكسجين و الغذاء و يخلّصها من ثاني أكسيد الكربون و الفضلات ليخرج من الأعضاء أحمر قاتما",
       "confidence": 0.93,
-      "id": "concours_blanc_eveil_scientifique_corriges_p003_i3",
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i3",
       "topicId": "sci-6-u2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -246,7 +246,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.6,
-      "id": "concours_blanc_eveil_scientifique_corriges_p003_i4",
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i4",
       "topicId": "sci-6-u2",
       "formatGuess": "free",
       "difficultyGuess": "hard"

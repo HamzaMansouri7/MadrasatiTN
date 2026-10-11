@@ -187,7 +187,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p012_i1"
+      "id": "examens_toutes_matieres_p012_i1"
     },
     {
       "kind": "exercise",
@@ -199,7 +199,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p012_i2"
+      "id": "examens_toutes_matieres_p012_i2"
     },
     {
       "kind": "exercise",
@@ -211,7 +211,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p012_i3"
+      "id": "examens_toutes_matieres_p012_i3"
     },
     {
       "kind": "exercise",
@@ -223,7 +223,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p012_i4"
+      "id": "examens_toutes_matieres_p012_i4"
     },
     {
       "kind": "exercise",
@@ -235,7 +235,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p012_i5"
+      "id": "examens_toutes_matieres_p012_i5"
     }
   ],
   "itemsOcr1": [
@@ -247,7 +247,7 @@
       "figureDesc": "على اليسار نقاط التقييم 0,5 / 0,5 / 0,5 وعلى اليمين خانات المعيار (معـ أ1) للتقييم.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p012_i1",
+      "id": "examens_toutes_matieres_p012_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -260,7 +260,7 @@
       "figureDesc": "ثلاثة أعمدة من الكلمات تتقدمها نقاط للربط بخطوط؛ علامة مائية MOURAJAA.COM؛ معيار معـ أ2 (معـاب).",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_3eme_examens_p012_i2",
+      "id": "examens_toutes_matieres_p012_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -273,7 +273,7 @@
       "figureDesc": "أسطر منقطة للإكمال؛ نقاط 0,5 لكل جملة (معـ ج).",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_3eme_examens_p012_i3",
+      "id": "examens_toutes_matieres_p012_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -286,7 +286,7 @@
       "figureDesc": "أسطر منقطة؛ سلم تنقيط 0 / 0,5 / 1 / 1,5 / 2 / 2,5 وشبكة معايير (معـ 2أ).",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p012_i4",
+      "id": "examens_toutes_matieres_p012_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -299,7 +299,7 @@
       "figureDesc": "عمود جمل وعمود ضمائر بنقاط للربط؛ نقاط 0,5 لكل ربط (معـ 2ب).",
       "answer": null,
       "confidence": 0.75,
-      "id": "jisr_ennajah_3eme_examens_p012_i5",
+      "id": "examens_toutes_matieres_p012_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

@@ -145,7 +145,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p003_i1"
+      "id": "concours_mathematiques_corriges_p003_i1"
     },
     {
       "kind": "exercise",
@@ -157,7 +157,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p003_i2"
+      "id": "concours_mathematiques_corriges_p003_i2"
     },
     {
       "kind": "exercise",
@@ -169,7 +169,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p003_i3"
+      "id": "concours_mathematiques_corriges_p003_i3"
     }
   ],
   "itemsOcr1": [
@@ -181,7 +181,7 @@
       "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
       "answer": "توحيد المقامات: 3/5 = 21/35 ؛ 6/7 = 30/35. العدد الكسري الممثل للكمية الثانية: 30/35 - 21/35 = 9/35. كمّية البرتقال الثانية: 51.840 : 0.480 = 108 كغ. سعة الآلة: (35 × 108) / 9 = 420 كغ.",
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p003_i1",
+      "id": "concours_mathematiques_corriges_p003_i1",
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy"
@@ -194,7 +194,7 @@
       "figureDesc": "",
       "answer": "النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال: (100 × 147) / 420 = 35 %",
       "confidence": 0.88,
-      "id": "concours_math_6eme_corriges_p003_i2",
+      "id": "concours_mathematiques_corriges_p003_i2",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -207,7 +207,7 @@
       "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
       "answer": "طول القاعدة: (5 × 55) / 11 = 25 م. طول الارتفاع: (6 × 55) / 11 = 30 م. قيس المساحة: (30 × 25) / 2 = 375 م². ثمن قطعة الأرض: 375 × 87.4 = 32775 د. المبلغ المجمّع: (4 × 135450) / 5 = 60200 د. ثمن السيّارة: 60200 - 32775 = 27425 د.",
       "confidence": 0.8,
-      "id": "concours_math_6eme_corriges_p003_i3",
+      "id": "concours_mathematiques_corriges_p003_i3",
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy"

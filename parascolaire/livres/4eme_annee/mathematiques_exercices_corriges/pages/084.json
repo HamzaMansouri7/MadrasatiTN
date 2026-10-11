@@ -171,7 +171,7 @@
       "figureDesc": "Deux schémas en arbre. À gauche : une case contenant 7 et une case vide en pointillés reliées à un ovale « : » qui mène à la case 126. À droite : une case contenant 7 et une case vide en pointillés reliées à un ovale « x » qui mène à la case 126.",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p084_i1",
+      "id": "mathematiques_exercices_corriges_p084_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -184,7 +184,7 @@
       "figureDesc": "Deux balances à fléau en équilibre. Droite : plateau avec des masses marquées 2 مغ et 2 كغ. Gauche : plateau avec le corps « أ » (cercle) et le corps « ب » (triangle) contre 100 غ, 2 مغ, 1 كغ. Une troisième balance : « أ » contre une masse de 5 مغ.",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p084_i2",
+      "id": "mathematiques_exercices_corriges_p084_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -197,7 +197,7 @@
       "figureDesc": "Quadrillage carré avec sommets A (haut droite), B (haut gauche), C (bas gauche), D (bas droite). Points M sur [AB] et N sur [AD]. Le segment [MN] est tracé ainsi qu'un début de côté partant de N vers le bas.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p084_i3",
+      "id": "mathematiques_exercices_corriges_p084_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -210,7 +210,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "math_solutions_4eme_sellami_p084_i4",
+      "id": "mathematiques_exercices_corriges_p084_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

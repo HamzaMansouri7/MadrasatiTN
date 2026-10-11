@@ -157,7 +157,7 @@
       "figureDesc": "Image 1 : dans un jardin, près d'un mur et d'un buisson, un chat au poil hérissé fait face à un serpent dressé et enroulé sur lui-même, prêt à l'attaquer.",
       "answer": null,
       "confidence": 0.55,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i1",
+      "id": "evaluations_toutes_matieres_p025_i1",
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -170,7 +170,7 @@
       "figureDesc": "Image 2 : dans un jardin, un homme muni d'une fourche court vers un serpent et le soulève avec elle. Un chat se tient près de lui. Une fillette observe la scène depuis derrière un muret. Une cage à oiseau est suspendue à la branche d'un arbre.",
       "answer": null,
       "confidence": 0.55,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i2",
+      "id": "evaluations_toutes_matieres_p025_i2",
       "topicId": "ar-2-u8",
       "formatGuess": "text_production",
       "difficultyGuess": "medium"
@@ -183,7 +183,7 @@
       "figureDesc": "Image 3 : l'homme tenant sa fourche parle à la fillette, qui lui fait un geste de la main. Un chat se tient contre ses jambes. Deux bulles de dialogue sont vides.",
       "answer": null,
       "confidence": 0.55,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i3",
+      "id": "evaluations_toutes_matieres_p025_i3",
       "topicId": "ar-2-u8",
       "formatGuess": "text_production",
       "difficultyGuess": "medium"
@@ -196,7 +196,7 @@
       "figureDesc": "Tableau de notation des niveaux de maîtrise (absence, en dessous du minimum, minimum, maximum) selon les critères minimaux مع1 à مع3 et le critère de perfectionnement مع4.",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i4",
+      "id": "evaluations_toutes_matieres_p025_i4",
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "easy"

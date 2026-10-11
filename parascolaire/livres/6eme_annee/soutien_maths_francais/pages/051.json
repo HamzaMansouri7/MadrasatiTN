@@ -234,7 +234,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p051_i1"
+      "id": "soutien_maths_francais_p051_i1"
     },
     {
       "kind": "section",
@@ -246,7 +246,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p051_i2"
+      "id": "soutien_maths_francais_p051_i2"
     },
     {
       "kind": "exercise",
@@ -258,7 +258,7 @@
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p051_i3"
+      "id": "soutien_maths_francais_p051_i3"
     },
     {
       "kind": "exercise",
@@ -270,7 +270,7 @@
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p051_i4"
+      "id": "soutien_maths_francais_p051_i4"
     },
     {
       "kind": "exercise",
@@ -282,7 +282,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p051_i5"
+      "id": "soutien_maths_francais_p051_i5"
     },
     {
       "kind": "exercise",
@@ -294,7 +294,7 @@
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p051_i6"
+      "id": "soutien_maths_francais_p051_i6"
     },
     {
       "kind": "section",
@@ -306,7 +306,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p051_i7"
+      "id": "soutien_maths_francais_p051_i7"
     },
     {
       "kind": "exercise",
@@ -318,7 +318,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p051_i8"
+      "id": "soutien_maths_francais_p051_i8"
     }
   ],
   "itemsOcr1": [
@@ -330,7 +330,7 @@
       "figureDesc": "Quadrillage contenant une figure noire en forme de L (à gauche). À droite, un agrandissement de rapport 2 dessiné et colorié en rouge par l'élève.",
       "answer": "Agrandissement de rapport 2 de la figure noire, tracé et colorié en rouge sur le quadrillage",
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p051_i1",
+      "id": "soutien_maths_francais_p051_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -343,7 +343,7 @@
       "figureDesc": "",
       "answer": "Réponses manuscrites de l'élève : 783 m ; 43,240 hg ; 1606,56 dam² ; 0,04812 m³",
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p051_i2",
+      "id": "soutien_maths_francais_p051_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -356,7 +356,7 @@
       "figureDesc": "Cercle avec un diamètre tracé, indiqué D = 14 m.",
       "answer": "P = 2 × r × π = 2 × 7 × 3,14 = 43,96 m",
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p051_i3",
+      "id": "soutien_maths_francais_p051_i3",
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "medium"
@@ -369,7 +369,7 @@
       "figureDesc": "",
       "answer": "S = L × l = 6 × 5 = 30 cm²",
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p051_i4",
+      "id": "soutien_maths_francais_p051_i4",
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium"
@@ -382,7 +382,7 @@
       "figureDesc": "",
       "answer": "V = a × a × a = 12 × 12 × 12 = 1728 cm³",
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p051_i5",
+      "id": "soutien_maths_francais_p051_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -395,7 +395,7 @@
       "figureDesc": "Tableau : الدولة / عدد الإصابات — كندا 77 ; الولايات المتحدة 21 ; فرنسا 51 ; بريطانيا 400 ; البرتغال 119 ; اسبانيا 132 ; المغرب 1.",
       "answer": "أ) 1 + 132 + 119 + 400 + 51 + 21 + 77 = 801 إصابة ؛ ب) الدولة الأكثر إصابة بفيروس جدري القردة هي: بريطانيا ؛ ج) الدولة الأقل إصابة بفيروس جدري القردة هي: المغرب ؛ د) بريطانيا – البرتغال – اسبانيا",
       "confidence": 0.8,
-      "id": "mouayen_6eme_math_francais_p051_i6",
+      "id": "soutien_maths_francais_p051_i6",
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium"

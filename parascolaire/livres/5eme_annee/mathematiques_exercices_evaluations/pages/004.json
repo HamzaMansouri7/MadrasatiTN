@@ -161,7 +161,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p004_i1"
+      "id": "mathematiques_exercices_evaluations_p004_i1"
     },
     {
       "kind": "exercise",
@@ -173,7 +173,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p004_i2"
+      "id": "mathematiques_exercices_evaluations_p004_i2"
     },
     {
       "kind": "exercise",
@@ -185,7 +185,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p004_i3"
+      "id": "mathematiques_exercices_evaluations_p004_i3"
     },
     {
       "kind": "exercise",
@@ -197,7 +197,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p004_i4"
+      "id": "mathematiques_exercices_evaluations_p004_i4"
     }
   ],
   "itemsOcr1": [
@@ -209,7 +209,7 @@
       "figureDesc": "Bandeau de titre décoratif avec la mention « السنة 5 » et le numéro de page 5 en bas.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p004_i1",
+      "id": "mathematiques_exercices_evaluations_p004_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -222,7 +222,7 @@
       "figureDesc": "Quadrillage avec deux axes gradués de -5 à 5. Points repérés : س en haut à gauche (environ (-4 ; 5)), غ (3 ; 4), م (2 ; 1).",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p004_i2",
+      "id": "mathematiques_exercices_evaluations_p004_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -235,7 +235,7 @@
       "figureDesc": "Utiliser le même quadrillage pour placer les points.",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_ahram_5eme_complet_p004_i3",
+      "id": "mathematiques_exercices_evaluations_p004_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -248,7 +248,7 @@
       "figureDesc": "Lignes pointillées vides en bas de page pour la réponse.",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p004_i4",
+      "id": "mathematiques_exercices_evaluations_p004_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

@@ -156,7 +156,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "text_production",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p061_i1"
+      "id": "mathematiques_exercices_evaluations_p061_i1"
     },
     {
       "kind": "exercise",
@@ -168,7 +168,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p061_i2"
+      "id": "mathematiques_exercices_evaluations_p061_i2"
     },
     {
       "kind": "exercise",
@@ -180,7 +180,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p061_i3"
+      "id": "mathematiques_exercices_evaluations_p061_i3"
     }
   ],
   "itemsOcr1": [
@@ -192,7 +192,7 @@
       "figureDesc": "أسطر منقطة للإجابة",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p061_i1",
+      "id": "mathematiques_exercices_evaluations_p061_i1",
       "topicId": "math-5-p4",
       "formatGuess": "text_production",
       "difficultyGuess": "medium"
@@ -205,7 +205,7 @@
       "figureDesc": "أسطر منقطة للإجابة (خمسة أسطر تقريبًا)",
       "answer": null,
       "confidence": 0.82,
-      "id": "al_ahram_5eme_complet_p061_i2",
+      "id": "mathematiques_exercices_evaluations_p061_i2",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -218,7 +218,7 @@
       "figureDesc": "أسطر منقطة للإجابة (ستة أسطر تقريبًا)",
       "answer": null,
       "confidence": 0.82,
-      "id": "al_ahram_5eme_complet_p061_i3",
+      "id": "mathematiques_exercices_evaluations_p061_i3",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "medium"

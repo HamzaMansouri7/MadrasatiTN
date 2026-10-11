@@ -146,7 +146,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "concours_math_6eme_corriges_p016_i1"
+      "id": "concours_mathematiques_corriges_p016_i1"
     },
     {
       "kind": "exercise",
@@ -158,7 +158,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "concours_math_6eme_corriges_p016_i2"
+      "id": "concours_mathematiques_corriges_p016_i2"
     }
   ],
   "itemsOcr1": [
@@ -170,7 +170,7 @@
       "figureDesc": "رسم: جزء دائري مركزه م، داخله المعيّن أ م ج د (الزاوية عند م قيسها 120°)، والقطران متقطعان. شبه منحرف قائم أ د ب هـ إلى اليمين (زاويتان قائمتان عند ب وهـ). النقطة ق هي المسقط العمودي لـ ج على المستقيم (د ق) مع زاوية قائمة عند ق، وق ج = 120 م.",
       "answer": null,
       "confidence": 0.9,
-      "id": "concours_math_6eme_corriges_p016_i1",
+      "id": "concours_mathematiques_corriges_p016_i1",
       "topicId": "math-6-p6",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -183,7 +183,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "concours_math_6eme_corriges_p016_i2",
+      "id": "concours_mathematiques_corriges_p016_i2",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"

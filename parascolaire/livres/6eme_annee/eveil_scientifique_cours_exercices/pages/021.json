@@ -147,7 +147,7 @@
       "figureDesc": "سطر منقّط للإجابة",
       "answer": null,
       "confidence": 0.93,
-      "id": "al_mounir_eveil_scientifique_6eme_p021_i1",
+      "id": "eveil_scientifique_cours_exercices_p021_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -160,7 +160,7 @@
       "figureDesc": "خمس خانات فارغة للتأشير، واحدة أمام كل عبارة",
       "answer": null,
       "confidence": 0.93,
-      "id": "al_mounir_eveil_scientifique_6eme_p021_i2",
+      "id": "eveil_scientifique_cours_exercices_p021_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -173,7 +173,7 @@
       "figureDesc": "جدول: المدة الزمنية المخصصة لاحتراق هذه الأغذية بالدقائق، حسب الحالة (أثناء راحة تامة / في حالة مشي / في حالة عدو). عصير: 85 / 22 / 11. قطعة من البيزا: 142 / 36 / 18. قطعة من المرطبات: 450 / 116 / 58. لمجة (ساندويتش): 254 / 66 / 33. سطران منقطان للإجابة عن كل سؤال.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p021_i3",
+      "id": "eveil_scientifique_cours_exercices_p021_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"

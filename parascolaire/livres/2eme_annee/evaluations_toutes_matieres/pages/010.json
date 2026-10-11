@@ -227,7 +227,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i1"
+      "id": "evaluations_toutes_matieres_p010_i1"
     },
     {
       "kind": "exercise",
@@ -239,7 +239,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i2"
+      "id": "evaluations_toutes_matieres_p010_i2"
     },
     {
       "kind": "exercise",
@@ -251,7 +251,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i3"
+      "id": "evaluations_toutes_matieres_p010_i3"
     },
     {
       "kind": "exercise",
@@ -263,7 +263,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i4"
+      "id": "evaluations_toutes_matieres_p010_i4"
     },
     {
       "kind": "exercise",
@@ -275,7 +275,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i5"
+      "id": "evaluations_toutes_matieres_p010_i5"
     },
     {
       "kind": "exercise",
@@ -287,7 +287,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i6"
+      "id": "evaluations_toutes_matieres_p010_i6"
     },
     {
       "kind": "exercise",
@@ -299,7 +299,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i7"
+      "id": "evaluations_toutes_matieres_p010_i7"
     },
     {
       "kind": "exercise",
@@ -311,7 +311,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i8"
+      "id": "evaluations_toutes_matieres_p010_i8"
     },
     {
       "kind": "lesson",
@@ -323,7 +323,7 @@
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i9"
+      "id": "evaluations_toutes_matieres_p010_i9"
     }
   ],
   "itemsOcr1": [
@@ -335,7 +335,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i1",
+      "id": "evaluations_toutes_matieres_p010_i1",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -348,7 +348,7 @@
       "figureDesc": "ثلاثة مربعات صغيرة أمام الجمل لوضع العلامة (0,5 نقطة) - معـ2أ",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i2",
+      "id": "evaluations_toutes_matieres_p010_i2",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -361,7 +361,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i3",
+      "id": "evaluations_toutes_matieres_p010_i3",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -374,7 +374,7 @@
       "figureDesc": "رسم لفيل يدفع صخرة كبيرة بجانب جدول ماء، وأرنبان صغيران على اليمين، في الغابة.",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i4",
+      "id": "evaluations_toutes_matieres_p010_i4",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -387,7 +387,7 @@
       "figureDesc": "جدول من عمودين: الأحداث على اليمين وخانات منقوطة لوضع الأرقام على اليسار (0,5 لكل حدث) - معـ2أ",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i5",
+      "id": "evaluations_toutes_matieres_p010_i5",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -400,7 +400,7 @@
       "figureDesc": "ثلاث خانات للتقييم",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i6",
+      "id": "evaluations_toutes_matieres_p010_i6",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -413,7 +413,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i7",
+      "id": "evaluations_toutes_matieres_p010_i7",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -426,7 +426,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i8",
+      "id": "evaluations_toutes_matieres_p010_i8",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -439,7 +439,7 @@
       "figureDesc": "جدول إسناد الأعداد وجدول صغير لتقييم القراءة الجهرية؛ رقم الصفحة 9",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p010_i9",
+      "id": "evaluations_toutes_matieres_p010_i9",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
       "difficultyGuess": "easy"

@@ -156,7 +156,7 @@
       "topicId": "hg-5-u2",
       "formatGuess": "matching",
       "difficultyGuess": "easy",
-      "id": "livre_mowazi_5eme_math_sciences_p036_i1"
+      "id": "devoirs_trimestre_1_matieres_mixtes_p036_i1"
     }
   ],
   "itemsOcr1": [
@@ -168,7 +168,7 @@
       "figureDesc": "Rose des vents (étoile à 4 branches rouges principales, branches bleues et jaunes secondaires) avec les noms arabes : الشمال، الجنوب، الشرق، الغرب (rouge) ; الشمال الشرقي، الشمال الغربي، الجنوب الشرقي، الجنوب الغربي (bleu) ; et les directions intermédiaires : شمال الشمال الشرقي، شمال الشمال الغربي، شرق الشمال الشرقي، غرب الشمال الغربي، شرق الجنوب الشرقي، غرب الجنوب الغربي، جنوب الجنوب الشرقي، جنوب الجنوب الغربي (marron).",
       "answer": null,
       "confidence": 0.9,
-      "id": "livre_mowazi_5eme_math_sciences_p036_i1",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p036_i1",
       "topicId": "hg-5-u2",
       "formatGuess": "matching",
       "difficultyGuess": "easy"

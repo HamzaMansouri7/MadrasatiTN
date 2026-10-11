@@ -144,7 +144,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p025_i1"
+      "id": "evaluations_maths_arabe_p025_i1"
     },
     {
       "kind": "exercise",
@@ -156,7 +156,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_1ere_evaluations_p025_i2"
+      "id": "evaluations_maths_arabe_p025_i2"
     }
   ],
   "itemsOcr1": [
@@ -168,7 +168,7 @@
       "figureDesc": "ثلاثة مشاهد متسلسلة للأحداث وبجانب كل مشهد أسطر لكتابة الجمل المرتبة والربط بينها: المشهد 1 يُظهر خروج التلاميذ من المدرسة تحت المطر بالمظلات، المشهد 2 يُظهر فردوس تقاوم الرياح والمطر ممسكة بمظلتها، المشهد 3 يُظهر فردوس في غرفتها والأم تساعدها في تغيير ثيابها المبللة.",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p025_i1",
+      "id": "evaluations_maths_arabe_p025_i1",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"

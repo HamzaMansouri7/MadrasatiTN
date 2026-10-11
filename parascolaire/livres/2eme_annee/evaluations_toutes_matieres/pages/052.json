@@ -198,7 +198,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i1"
+      "id": "evaluations_toutes_matieres_p052_i1"
     },
     {
       "kind": "exercise",
@@ -210,7 +210,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i2"
+      "id": "evaluations_toutes_matieres_p052_i2"
     },
     {
       "kind": "exercise",
@@ -222,7 +222,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i3"
+      "id": "evaluations_toutes_matieres_p052_i3"
     },
     {
       "kind": "lesson",
@@ -234,7 +234,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i4"
+      "id": "evaluations_toutes_matieres_p052_i4"
     },
     {
       "kind": "exercise",
@@ -246,7 +246,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i5"
+      "id": "evaluations_toutes_matieres_p052_i5"
     },
     {
       "kind": "exercise",
@@ -258,7 +258,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i6"
+      "id": "evaluations_toutes_matieres_p052_i6"
     },
     {
       "kind": "exercise",
@@ -270,7 +270,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i7"
+      "id": "evaluations_toutes_matieres_p052_i7"
     }
   ],
   "itemsOcr1": [
@@ -282,7 +282,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i1",
+      "id": "evaluations_toutes_matieres_p052_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -295,7 +295,7 @@
       "figureDesc": "ثلاثة أسطر منقطة بنقاط، ومربعات تقييم المعيار مع 1 على اليمين",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i2",
+      "id": "evaluations_toutes_matieres_p052_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -308,7 +308,7 @@
       "figureDesc": "ثلاثة فراغات منقطة ومربع تقييم للمعيار مع 2 أ",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i3",
+      "id": "evaluations_toutes_matieres_p052_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -321,7 +321,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i4",
+      "id": "evaluations_toutes_matieres_p052_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -334,7 +334,7 @@
       "figureDesc": "ثلاثة أسطر منقطة للإجابة ومربعات تقييم المعيار مع 2 ب",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i5",
+      "id": "evaluations_toutes_matieres_p052_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -347,7 +347,7 @@
       "figureDesc": "فراغان منقطان ومربعات تقييم للمعيار مع 2 أ",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i6",
+      "id": "evaluations_toutes_matieres_p052_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -360,7 +360,7 @@
       "figureDesc": "عمودان من العبارات يُربط بينهما بأسهم، ومربعات تقييم المعيار مع 3",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i7",
+      "id": "evaluations_toutes_matieres_p052_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

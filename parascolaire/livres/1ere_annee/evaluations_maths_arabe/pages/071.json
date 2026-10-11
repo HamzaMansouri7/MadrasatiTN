@@ -193,7 +193,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p071_i1"
+      "id": "evaluations_maths_arabe_p071_i1"
     },
     {
       "kind": "exercise",
@@ -205,7 +205,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p071_i2"
+      "id": "evaluations_maths_arabe_p071_i2"
     },
     {
       "kind": "exercise",
@@ -217,7 +217,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p071_i3"
+      "id": "evaluations_maths_arabe_p071_i3"
     },
     {
       "kind": "exercise",
@@ -229,7 +229,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p071_i4"
+      "id": "evaluations_maths_arabe_p071_i4"
     },
     {
       "kind": "lesson",
@@ -241,7 +241,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p071_i5"
+      "id": "evaluations_maths_arabe_p071_i5"
     }
   ],
   "itemsOcr1": [
@@ -253,7 +253,7 @@
       "figureDesc": "لا يوجد رسم. مساحة فارغة تحتوي على خطوط منقطة للإجابة، وبجانبها خانة تقييم (معيار 1).",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_1ere_evaluations_p071_i1",
+      "id": "evaluations_maths_arabe_p071_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -266,7 +266,7 @@
       "figureDesc": "ثلاثة سطور منقطة تفصل بينها علامتا مقارنة، وبجانبها خانتا تقييم (معيار 2أ ومعيار 2ب). الأعداد المراد ترتيبها غير ظاهرة في الصفحة (قد تكون في الصفحة السابقة).",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_1ere_evaluations_p071_i2",
+      "id": "evaluations_maths_arabe_p071_i2",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -279,7 +279,7 @@
       "figureDesc": "مجموعتان داخل شكلين بيضاويين: الأولى 8 أشجار كبيرة ذات جذوع بنية مرتبة في دائرة (العدد 8 في دائرة)، والثانية 9 أشجار أصغر مرتبة في شكل بيضاوي (العدد 9 في دائرة). تحتها سطر منقط لكتابة العملية الجمعية، وبجانبه خانتا تقييم (معيار 2ب).",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_1ere_evaluations_p071_i3",
+      "id": "evaluations_maths_arabe_p071_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -292,7 +292,7 @@
       "figureDesc": "خط منقط فقط، وبجانبه خانة تقييم (معيار 2ب).",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_1ere_evaluations_p071_i4",
+      "id": "evaluations_maths_arabe_p071_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -305,7 +305,7 @@
       "figureDesc": "عنوان السند في لافتة خضراء. يتبعه نص السند فقط في هذه الصفحة، وبجانبه خانة تقييم (معيار 5).",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_1ere_evaluations_p071_i5",
+      "id": "evaluations_maths_arabe_p071_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

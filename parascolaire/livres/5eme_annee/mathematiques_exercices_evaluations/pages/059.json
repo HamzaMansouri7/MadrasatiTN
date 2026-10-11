@@ -275,7 +275,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p059_i1",
+      "id": "mathematiques_exercices_evaluations_p059_i1",
       "topicId": "math-5-ch2",
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium"
@@ -288,7 +288,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p059_i2",
+      "id": "mathematiques_exercices_evaluations_p059_i2",
       "topicId": "math-5-ch2",
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium"
@@ -301,7 +301,7 @@
       "figureDesc": "إطار نص ملوّن غير مقروء جزئيًا، وبعده ثلاثة أسطر منقطة للإجابة",
       "answer": null,
       "confidence": 0.5,
-      "id": "al_ahram_5eme_complet_p059_i3",
+      "id": "mathematiques_exercices_evaluations_p059_i3",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -314,7 +314,7 @@
       "figureDesc": "إطار نص ملوّن مشوّه، وسطران منقطان للإجابة",
       "answer": null,
       "confidence": 0.5,
-      "id": "al_ahram_5eme_complet_p059_i4",
+      "id": "mathematiques_exercices_evaluations_p059_i4",
       "topicId": "math-5-ch2",
       "formatGuess": "matching",
       "difficultyGuess": "medium"
@@ -327,7 +327,7 @@
       "figureDesc": "سطران منقطان للإجابة",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p059_i5",
+      "id": "mathematiques_exercices_evaluations_p059_i5",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -340,7 +340,7 @@
       "figureDesc": "ثلاثة أسطر منقطة للإجابة",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p059_i6",
+      "id": "mathematiques_exercices_evaluations_p059_i6",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

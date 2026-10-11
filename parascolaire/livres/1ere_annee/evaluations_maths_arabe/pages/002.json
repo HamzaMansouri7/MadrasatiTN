@@ -188,7 +188,7 @@
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p002_i1"
+      "id": "evaluations_maths_arabe_p002_i1"
     },
     {
       "kind": "exercise",
@@ -200,7 +200,7 @@
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p002_i2"
+      "id": "evaluations_maths_arabe_p002_i2"
     },
     {
       "kind": "exercise",
@@ -212,7 +212,7 @@
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p002_i3"
+      "id": "evaluations_maths_arabe_p002_i3"
     },
     {
       "kind": "exercise",
@@ -224,7 +224,7 @@
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p002_i4"
+      "id": "evaluations_maths_arabe_p002_i4"
     },
     {
       "kind": "exercise",
@@ -236,7 +236,7 @@
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p002_i5"
+      "id": "evaluations_maths_arabe_p002_i5"
     },
     {
       "kind": "exercise",
@@ -248,7 +248,7 @@
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p002_i6"
+      "id": "evaluations_maths_arabe_p002_i6"
     }
   ],
   "itemsOcr1": [
@@ -260,7 +260,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p002_i1",
+      "id": "evaluations_maths_arabe_p002_i1",
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -273,7 +273,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p002_i2",
+      "id": "evaluations_maths_arabe_p002_i2",
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -286,7 +286,7 @@
       "figureDesc": "رسم لطفلة (فتيحة) تنظف أسنانها بالفرشاة والمعجون أمام مغسلة الحمام.",
       "answer": null,
       "confidence": 0.96,
-      "id": "jisr_ennajah_1ere_evaluations_p002_i3",
+      "id": "evaluations_maths_arabe_p002_i3",
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -299,7 +299,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p002_i4",
+      "id": "evaluations_maths_arabe_p002_i4",
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -312,7 +312,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p002_i5",
+      "id": "evaluations_maths_arabe_p002_i5",
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -325,7 +325,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p002_i6",
+      "id": "evaluations_maths_arabe_p002_i6",
       "topicId": "ar-1-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"

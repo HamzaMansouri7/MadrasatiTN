@@ -196,7 +196,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p018_i1"
+      "id": "soutien_maths_francais_p018_i1"
     },
     {
       "kind": "exercise",
@@ -208,7 +208,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p018_i2"
+      "id": "soutien_maths_francais_p018_i2"
     },
     {
       "kind": "exercise",
@@ -220,7 +220,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p018_i3"
+      "id": "soutien_maths_francais_p018_i3"
     },
     {
       "kind": "exercise",
@@ -232,7 +232,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p018_i4"
+      "id": "soutien_maths_francais_p018_i4"
     },
     {
       "kind": "exercise",
@@ -244,7 +244,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p018_i5"
+      "id": "soutien_maths_francais_p018_i5"
     },
     {
       "kind": "exercise",
@@ -256,7 +256,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p018_i6"
+      "id": "soutien_maths_francais_p018_i6"
     }
   ],
   "itemsOcr1": [
@@ -268,7 +268,7 @@
       "figureDesc": "Deux cadres de divisions posées avec cases vides à remplir : 8526 ÷ 42 et 18399 ÷ 65 ; sous chacun, un cadre avec D = (d × q) + r et une ligne en pointillés.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p018_i1",
+      "id": "soutien_maths_francais_p018_i1",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -281,7 +281,7 @@
       "figureDesc": "Deux dessins de grandes boîtes bleues contenant 6 petites boîtes chacune, avec la légende : علب كبيرة بكل واحدة 6 علب صغيرة من الحليب.",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p018_i2",
+      "id": "soutien_maths_francais_p018_i2",
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy"
@@ -294,7 +294,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p018_i3",
+      "id": "soutien_maths_francais_p018_i3",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -307,7 +307,7 @@
       "figureDesc": "Prisme droit à base pentagonale : N = 5 cm, M = 6 cm, B = 45 cm² (aire de la base), h = 8 cm (hauteur), h1 = 5 cm. Partie supérieure en bleu, faces latérales en jaune.",
       "answer": null,
       "confidence": 0.88,
-      "id": "mouayen_6eme_math_francais_p018_i4",
+      "id": "soutien_maths_francais_p018_i4",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -320,7 +320,7 @@
       "figureDesc": "Trois figures : un losange ABCD avec angle A = 25° ; un triangle isocèle EFJ de sommet E avec angle 84° ; un trapèze rectangle HIGK avec angle G = 54°. Lignes de réponse en pointillés.",
       "answer": null,
       "confidence": 0.88,
-      "id": "mouayen_6eme_math_francais_p018_i5",
+      "id": "soutien_maths_francais_p018_i5",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"

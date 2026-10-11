@@ -175,7 +175,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p031_i1"
+      "id": "evaluations_maths_arabe_p031_i1"
     },
     {
       "kind": "exercise",
@@ -187,7 +187,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p031_i2"
+      "id": "evaluations_maths_arabe_p031_i2"
     },
     {
       "kind": "exercise",
@@ -199,7 +199,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p031_i3"
+      "id": "evaluations_maths_arabe_p031_i3"
     },
     {
       "kind": "exercise",
@@ -211,7 +211,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p031_i4"
+      "id": "evaluations_maths_arabe_p031_i4"
     },
     {
       "kind": "exercise",
@@ -223,7 +223,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p031_i5"
+      "id": "evaluations_maths_arabe_p031_i5"
     }
   ],
   "itemsOcr1": [
@@ -235,7 +235,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p031_i1",
+      "id": "evaluations_maths_arabe_p031_i1",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -248,7 +248,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p031_i2",
+      "id": "evaluations_maths_arabe_p031_i2",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -261,7 +261,7 @@
       "figureDesc": "رسم لبنت مستلقية على أريكة خشبية تبدو متعبة ومنهكة القوى.",
       "answer": null,
       "confidence": 0.96,
-      "id": "jisr_ennajah_1ere_evaluations_p031_i3",
+      "id": "evaluations_maths_arabe_p031_i3",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -274,7 +274,7 @@
       "figureDesc": "ثلاث دوائر بيضاوية مخصصة لوضع العلامة أمام كل جملة.",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p031_i4",
+      "id": "evaluations_maths_arabe_p031_i4",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -287,7 +287,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p031_i5",
+      "id": "evaluations_maths_arabe_p031_i5",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"

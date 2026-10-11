@@ -151,7 +151,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p083_i1"
+      "id": "mathematiques_exercices_evaluations_p083_i1"
     },
     {
       "kind": "exercise",
@@ -163,7 +163,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p083_i2"
+      "id": "mathematiques_exercices_evaluations_p083_i2"
     },
     {
       "kind": "exercise",
@@ -175,7 +175,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p083_i3"
+      "id": "mathematiques_exercices_evaluations_p083_i3"
     },
     {
       "kind": "exercise",
@@ -187,7 +187,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p083_i4"
+      "id": "mathematiques_exercices_evaluations_p083_i4"
     }
   ],
   "itemsOcr1": [
@@ -199,7 +199,7 @@
       "figureDesc": "Trois triangles numérotés : ① triangle aux trois côtés apparemment égaux (équilatéral), ② triangle isocèle à sommet en haut, ③ triangle rectangle avec l'angle droit en bas à gauche.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p083_i1",
+      "id": "mathematiques_exercices_evaluations_p083_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -212,7 +212,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p083_i2",
+      "id": "mathematiques_exercices_evaluations_p083_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -225,7 +225,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p083_i3",
+      "id": "mathematiques_exercices_evaluations_p083_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -238,7 +238,7 @@
       "figureDesc": "Segment [أب] de 4 صم déjà tracé en bas à gauche, avec A à droite et B à gauche, à compléter.",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p083_i4",
+      "id": "mathematiques_exercices_evaluations_p083_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

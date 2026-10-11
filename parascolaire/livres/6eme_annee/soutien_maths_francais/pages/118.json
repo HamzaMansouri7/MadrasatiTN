@@ -168,7 +168,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p118_i1"
+      "id": "soutien_maths_francais_p118_i1"
     },
     {
       "kind": "exercise",
@@ -180,7 +180,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p118_i2"
+      "id": "soutien_maths_francais_p118_i2"
     },
     {
       "kind": "exercise",
@@ -192,7 +192,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p118_i3"
+      "id": "soutien_maths_francais_p118_i3"
     },
     {
       "kind": "exercise",
@@ -204,7 +204,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p118_i4"
+      "id": "soutien_maths_francais_p118_i4"
     },
     {
       "kind": "exercise",
@@ -216,7 +216,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p118_i5"
+      "id": "soutien_maths_francais_p118_i5"
     },
     {
       "kind": "exercise",
@@ -228,7 +228,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "mouayen_6eme_math_francais_p118_i6"
+      "id": "soutien_maths_francais_p118_i6"
     }
   ],
   "itemsOcr1": [
@@ -240,7 +240,7 @@
       "figureDesc": "En-tête d'examen : Royaume du Maroc, Ministère de l'Éducation Nationale, Académie régionale Rabat-Salé-Kénitra, Direction provinciale Skhirat-Témara. Examen normalisé provincial, Épreuve de la langue française, Session juillet 2022, Durée : 1h30min. Cases Nom, Prénom, N° d'examen, note sur 40 en chiffres et en lettres (arabe), nom du correcteur et signature. Triangle noir en haut à droite (zone masquée).",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p118_i1",
+      "id": "soutien_maths_francais_p118_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -253,7 +253,7 @@
       "figureDesc": "Lignes pointillées pour répondre",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p118_i2",
+      "id": "soutien_maths_francais_p118_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -266,7 +266,7 @@
       "figureDesc": "Lignes pointillées pour répondre",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p118_i3",
+      "id": "soutien_maths_francais_p118_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -279,7 +279,7 @@
       "figureDesc": "Lignes pointillées pour répondre",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p118_i4",
+      "id": "soutien_maths_francais_p118_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -292,7 +292,7 @@
       "figureDesc": "Lignes pointillées pour répondre",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p118_i5",
+      "id": "soutien_maths_francais_p118_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -305,7 +305,7 @@
       "figureDesc": "Deux lignes pointillées pour répondre",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p118_i6",
+      "id": "soutien_maths_francais_p118_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

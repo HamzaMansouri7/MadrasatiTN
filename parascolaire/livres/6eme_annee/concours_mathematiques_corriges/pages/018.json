@@ -149,7 +149,7 @@
       "figureDesc": "",
       "answer": "المسافة المقطوعة بالحافلة = 61.25 كم ؛ المسافة الفاصلة بين المحطة و الضيعة = 62.75 كم",
       "confidence": 0.9,
-      "id": "concours_math_6eme_corriges_p018_i1",
+      "id": "concours_mathematiques_corriges_p018_i1",
       "topicId": "math-6-p6",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -162,7 +162,7 @@
       "figureDesc": "رسم: جزء دائري مركزه م، معيّن أ م ج د داخله (قطراه متقاطعان بخطين متقطعين)، وشبه منحرف قائم أ د ب هـ على اليمين؛ ق نقطة على امتداد الارتفاع من ج نحو الضلع د ق (زاوية قائمة)؛ الزاوية أ م ج = 110°.",
       "answer": "قيس ضلع المعين = شعاع الدائرة = 18000 : 120 = 150 م\nقيس مساحة القرص الدائري : 150 × 150 × 3.14 = 70650 م²\nقيس مساحة شبه المنحرف : ( 70650 × 3 ) : 5 = 42390 م²\nقيس مساحة الجزء الدائري : ( 70650 × 250 ) : 360 = 49062.5 م²\nقيس المساحة الجملية : 49062.5 + 18000 + 42390 = 109452.5 م²",
       "confidence": 0.88,
-      "id": "concours_math_6eme_corriges_p018_i2",
+      "id": "concours_mathematiques_corriges_p018_i2",
       "topicId": "math-6-p6",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -175,7 +175,7 @@
       "figureDesc": "",
       "answer": "المساحة المبلطة : 109452.5 : 5 = 21890.5 د (م²)\nكلفة التبليط : 21890.5 × 25 = 547262.5 د\nثمن مواد البناء : ( 547262.5 × 4 ) : 20 = 109452.5 د",
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p018_i3",
+      "id": "concours_mathematiques_corriges_p018_i3",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"

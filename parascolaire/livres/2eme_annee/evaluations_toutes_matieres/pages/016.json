@@ -174,7 +174,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i1"
+      "id": "evaluations_toutes_matieres_p016_i1"
     },
     {
       "kind": "exercise",
@@ -186,7 +186,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i2"
+      "id": "evaluations_toutes_matieres_p016_i2"
     },
     {
       "kind": "exercise",
@@ -198,7 +198,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i3"
+      "id": "evaluations_toutes_matieres_p016_i3"
     }
   ],
   "itemsOcr1": [
@@ -210,7 +210,7 @@
       "figureDesc": "Deux lignes de lettres et de syllabes modèles à copier sur papier quadrillé (écriture), séparées par des points ; à droite les cases des critères : الوضوح، الجمالية.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i1",
+      "id": "evaluations_toutes_matieres_p016_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -223,7 +223,7 @@
       "figureDesc": "Lignes quadrillées pour la copie ; critères à droite : الاسترسال، التناسق، الجمالية ; note sur 10.",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i2",
+      "id": "evaluations_toutes_matieres_p016_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -236,7 +236,7 @@
       "figureDesc": "Paragraphe à trous avec lignes pointillées à compléter sous dictée.",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i3",
+      "id": "evaluations_toutes_matieres_p016_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

@@ -350,7 +350,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i1"
+      "id": "eveil_scientifique_cours_exercices_p053_i1"
     },
     {
       "kind": "answer",
@@ -362,7 +362,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i2"
+      "id": "eveil_scientifique_cours_exercices_p053_i2"
     },
     {
       "kind": "answer",
@@ -374,7 +374,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i3"
+      "id": "eveil_scientifique_cours_exercices_p053_i3"
     },
     {
       "kind": "exercise",
@@ -386,7 +386,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "true_false",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i4"
+      "id": "eveil_scientifique_cours_exercices_p053_i4"
     },
     {
       "kind": "answer",
@@ -398,7 +398,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i5"
+      "id": "eveil_scientifique_cours_exercices_p053_i5"
     },
     {
       "kind": "answer",
@@ -410,7 +410,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i6"
+      "id": "eveil_scientifique_cours_exercices_p053_i6"
     },
     {
       "kind": "answer",
@@ -422,7 +422,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i7"
+      "id": "eveil_scientifique_cours_exercices_p053_i7"
     },
     {
       "kind": "answer",
@@ -434,7 +434,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i8"
+      "id": "eveil_scientifique_cours_exercices_p053_i8"
     },
     {
       "kind": "answer",
@@ -446,7 +446,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i9"
+      "id": "eveil_scientifique_cours_exercices_p053_i9"
     },
     {
       "kind": "answer",
@@ -458,7 +458,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i10"
+      "id": "eveil_scientifique_cours_exercices_p053_i10"
     },
     {
       "kind": "exercise",
@@ -470,7 +470,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i11"
+      "id": "eveil_scientifique_cours_exercices_p053_i11"
     },
     {
       "kind": "answer",
@@ -482,7 +482,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i12"
+      "id": "eveil_scientifique_cours_exercices_p053_i12"
     },
     {
       "kind": "answer",
@@ -494,7 +494,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i13"
+      "id": "eveil_scientifique_cours_exercices_p053_i13"
     },
     {
       "kind": "exercise",
@@ -506,7 +506,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "fill_blank",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i14"
+      "id": "eveil_scientifique_cours_exercices_p053_i14"
     },
     {
       "kind": "exercise",
@@ -518,7 +518,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i15"
+      "id": "eveil_scientifique_cours_exercices_p053_i15"
     },
     {
       "kind": "exercise",
@@ -530,7 +530,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i16"
+      "id": "eveil_scientifique_cours_exercices_p053_i16"
     }
   ],
   "itemsOcr1": [
@@ -542,7 +542,7 @@
       "figureDesc": "",
       "answer": "ينتج سوء التغذية عن سوء في التغذية أو إفراط في استهلاك الأغذية ويتسبب في أمراض خطيرة تشوه الجسم وتؤدي أحيانا إلى الموت.",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i1",
+      "id": "eveil_scientifique_cours_exercices_p053_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -555,7 +555,7 @@
       "figureDesc": "",
       "answer": "نقص فيتامين د: الكساح؛ نقص فيتامين ج: نزف اللثة وتسوس الأسنان؛ نقص فيتامين أ: ضعف الرؤية ليلا؛ كثرة الأكل وقلة النشاط: السمنة",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i2",
+      "id": "eveil_scientifique_cours_exercices_p053_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -568,7 +568,7 @@
       "figureDesc": "",
       "answer": "المشكلة: الإكثار من تناول وجبة تحتوي على زلاليات فقط؛ سيعانيان من السمنة؛ أنصحهما بتناول وجبة غذائية متوازنة ومتنوعة بكميات معتدلة وفي مواعيدها.",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i3",
+      "id": "eveil_scientifique_cours_exercices_p053_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -581,7 +581,7 @@
       "figureDesc": "Cases « صواب / خطأ » à gauche de chaque phrase",
       "answer": "صواب، خطأ، صواب، صواب، صواب، صواب",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i4",
+      "id": "eveil_scientifique_cours_exercices_p053_i4",
       "topicId": "sci-6-u3",
       "formatGuess": "true_false",
       "difficultyGuess": "hard"
@@ -594,7 +594,7 @@
       "figureDesc": "",
       "answer": "الكساح",
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i5",
+      "id": "eveil_scientifique_cours_exercices_p053_i5",
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -607,7 +607,7 @@
       "figureDesc": "",
       "answer": "لا يبذل جهدا فكريا أو عضليا؛ فقدان الرغبة في العمل؛ عدم احتمال البرد؛ حدوث اضطرابات نفسانية",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i6",
+      "id": "eveil_scientifique_cours_exercices_p053_i6",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -620,7 +620,7 @@
       "figureDesc": "",
       "answer": "الكريات الحمراء: نقل الأكسجين؛ الكريات البيضاء: محاربة الجراثيم؛ البلازما: نقل المواد الغذائية؛ الصفيحات: تحثر الدم؛ الصمام: يمنع عودة الدم من البطين إلى الأذينة",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i7",
+      "id": "eveil_scientifique_cours_exercices_p053_i7",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -633,7 +633,7 @@
       "figureDesc": "",
       "answer": "د) الرئتين",
       "confidence": 0.65,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i8",
+      "id": "eveil_scientifique_cours_exercices_p053_i8",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -646,7 +646,7 @@
       "figureDesc": "",
       "answer": "الحقن: الخناق؛ الكشط: السل؛ التجرع: الشلل",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i9",
+      "id": "eveil_scientifique_cours_exercices_p053_i9",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -659,7 +659,7 @@
       "figureDesc": "Numéros écrits dans des cases",
       "answer": "1، 4، 2، 5، 3",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i10",
+      "id": "eveil_scientifique_cours_exercices_p053_i10",
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -672,7 +672,7 @@
       "figureDesc": "",
       "answer": "أ) الجلد؛ ب) البشرة؛ ج) المسام؛ د) غدة عرقية؛ هـ) الأدمة",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i11",
+      "id": "eveil_scientifique_cours_exercices_p053_i11",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -685,7 +685,7 @@
       "figureDesc": "",
       "answer": "أ) زلاليات حيوانية؛ ب) النمو والبناء وتجديد الخلايا؛ ج) 75 مل",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i12",
+      "id": "eveil_scientifique_cours_exercices_p053_i12",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -698,7 +698,7 @@
       "figureDesc": "Deux colonnes reliées par des traits : cinq groupes d'aliments à gauche, trois rôles à droite",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i13",
+      "id": "eveil_scientifique_cours_exercices_p053_i13",
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -711,7 +711,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i14",
+      "id": "eveil_scientifique_cours_exercices_p053_i14",
       "topicId": "sci-6-u3",
       "formatGuess": "fill_blank",
       "difficultyGuess": "hard"
@@ -724,7 +724,7 @@
       "figureDesc": "Tableau de correspondance à trois colonnes reliées par des traits",
       "answer": null,
       "confidence": 0.65,
-      "id": "al_mounir_eveil_scientifique_6eme_p053_i15",
+      "id": "eveil_scientifique_cours_exercices_p053_i15",
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard"

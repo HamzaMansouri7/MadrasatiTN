@@ -153,7 +153,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "eveil_scientifique_5eme_evaluations_p007_i1"
+      "id": "eveil_scientifique_evaluations_p007_i1"
     },
     {
       "kind": "exercise",
@@ -165,7 +165,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "eveil_scientifique_5eme_evaluations_p007_i2"
+      "id": "eveil_scientifique_evaluations_p007_i2"
     },
     {
       "kind": "exercise",
@@ -177,7 +177,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "eveil_scientifique_5eme_evaluations_p007_i3"
+      "id": "eveil_scientifique_evaluations_p007_i3"
     }
   ],
   "itemsOcr1": [
@@ -189,7 +189,7 @@
       "figureDesc": "جدول من ثلاثة أعمدة (ظروف الزراعة، النتائج، التعليل) وأربعة أسطر؛ عمودا النتائج والتعليل فارغان ليعمرهما التلميذ. علامة مائية خضراء بالخط العربي.",
       "answer": null,
       "confidence": 0.85,
-      "id": "eveil_scientifique_5eme_evaluations_p007_i1",
+      "id": "eveil_scientifique_evaluations_p007_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -202,7 +202,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.88,
-      "id": "eveil_scientifique_5eme_evaluations_p007_i2",
+      "id": "eveil_scientifique_evaluations_p007_i2",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -215,7 +215,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.6,
-      "id": "eveil_scientifique_5eme_evaluations_p007_i3",
+      "id": "eveil_scientifique_evaluations_p007_i3",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"

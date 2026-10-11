@@ -136,7 +136,7 @@
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i1"
+      "id": "evaluations_toutes_matieres_p021_i1"
     },
     {
       "kind": "lesson",
@@ -148,7 +148,7 @@
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i2"
+      "id": "evaluations_toutes_matieres_p021_i2"
     }
   ],
   "itemsOcr1": [
@@ -160,7 +160,7 @@
       "figureDesc": "ثلاثة رسوم لصيادين في قوارب ودلافين تحت الماء؛ الثاني فيه دلفين وبالونة حوار فارغة؛ الثالث فيه شبكة صيد ودلافين وبالونتا حوار فارغتان.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i1",
+      "id": "evaluations_toutes_matieres_p021_i1",
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -173,7 +173,7 @@
       "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i2",
+      "id": "evaluations_toutes_matieres_p021_i2",
       "topicId": "ar-2-u8",
       "formatGuess": "free",
       "difficultyGuess": "easy"

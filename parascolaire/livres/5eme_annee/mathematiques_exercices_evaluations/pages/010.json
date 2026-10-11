@@ -159,7 +159,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p010_i1"
+      "id": "mathematiques_exercices_evaluations_p010_i1"
     },
     {
       "kind": "exercise",
@@ -171,7 +171,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p010_i2"
+      "id": "mathematiques_exercices_evaluations_p010_i2"
     },
     {
       "kind": "exercise",
@@ -183,7 +183,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p010_i3"
+      "id": "mathematiques_exercices_evaluations_p010_i3"
     }
   ],
   "itemsOcr1": [
@@ -195,7 +195,7 @@
       "figureDesc": "Bandeau-titre décoratif avec la mention « السنة 5 » à gauche.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p010_i1",
+      "id": "mathematiques_exercices_evaluations_p010_i1",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -208,7 +208,7 @@
       "figureDesc": "Tableau : ligne 1 « سنوات الدراسة » : س1, س2, س3, س4, س5, س6. Ligne « عدد النسخ » : 6500, 6370, 5980, 5500, 4760, 3950. Ligne « ثمن تكلفة النسخة الواحدة » : 4100, 4200, 4300, 4400, 4500, 4600. Ligne « الثمن الجملي بالدينار » : cases vides à remplir.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p010_i2",
+      "id": "mathematiques_exercices_evaluations_p010_i2",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -221,7 +221,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p010_i3",
+      "id": "mathematiques_exercices_evaluations_p010_i3",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

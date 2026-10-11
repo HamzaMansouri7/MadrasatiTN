@@ -202,7 +202,7 @@
       "figureDesc": "جدول بثلاثة أعمدة رئيسية (الأجزاء، الوحدة الأساسيّة، المضاعفات). الصف الثاني يحتوي على الوحدات: مم، صم، دسم، م، دكم، هم، كم. الصف الثالث فارغ، وفيه خانتان لكل وحدة.",
       "answer": null,
       "confidence": 0.93,
-      "id": "livre_mowazi_5eme_math_sciences_p008_i1",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p008_i1",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -215,7 +215,7 @@
       "figureDesc": "جدول من ثلاثة أعمدة (الهكتار، الآر، الصنتيار). الصف الثاني يحمل الرموز: هآ، آر، صآ. الصف الثالث فارغ.",
       "answer": null,
       "confidence": 0.93,
-      "id": "livre_mowazi_5eme_math_sciences_p008_i2",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p008_i2",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -228,7 +228,7 @@
       "figureDesc": "جدول عدّ بأربع مجموعات (الوحدات البسيطة، الآلاف، الملايين، المليارات). كل مجموعة تحتوي على ثلاثة أعمدة (آ، ع، م). الصف السفلي فارغ لكتابة الأرقام.",
       "answer": null,
       "confidence": 0.92,
-      "id": "livre_mowazi_5eme_math_sciences_p008_i3",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p008_i3",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

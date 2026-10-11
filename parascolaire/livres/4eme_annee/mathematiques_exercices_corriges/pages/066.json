@@ -168,7 +168,7 @@
       "figureDesc": "شبكة من النقاط عليها سبعة أشكال هندسية مرمزة: (أ) مثلث، (ب) مستطيل طويل عمودي، (هـ) شكل رباعي ذو زاويتين قائمتين وضلع مائل، (د) مستطيل أفقي رفيع، (ج) متوازي أضلاع، (و) مثلث قائم الزاوية، (ز) مربع مائل (معين).",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p066_i1",
+      "id": "mathematiques_exercices_corriges_p066_i1",
       "topicId": "math-4-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -181,7 +181,7 @@
       "figureDesc": "شبكة مربعات تحتوي على: مثلثين، مربعين/مستطيلين، مستطيل كبير، مربع مائل (معين) كبير، ودائرة. إضافة إلى جدول التعليمات على اليمين.",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p066_i2",
+      "id": "mathematiques_exercices_corriges_p066_i2",
       "topicId": "math-4-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -194,7 +194,7 @@
       "figureDesc": "شريطان متقاطعان (أفقي وعمودي) يحددان مستطيل التقاطع بالنقاط أ، ب، ج، د؛ مثلث قائم صغير للتحقق من الزاوية القائمة؛ جدول فارغ من أربعة أعمدة.",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p066_i3",
+      "id": "mathematiques_exercices_corriges_p066_i3",
       "topicId": "math-4-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -207,7 +207,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p066_i4",
+      "id": "mathematiques_exercices_corriges_p066_i4",
       "topicId": "math-4-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

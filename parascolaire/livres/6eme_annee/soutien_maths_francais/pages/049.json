@@ -214,7 +214,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p049_i1"
+      "id": "soutien_maths_francais_p049_i1"
     },
     {
       "kind": "section",
@@ -226,7 +226,7 @@
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p049_i2"
+      "id": "soutien_maths_francais_p049_i2"
     },
     {
       "kind": "exercise",
@@ -238,7 +238,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p049_i3"
+      "id": "soutien_maths_francais_p049_i3"
     },
     {
       "kind": "exercise",
@@ -250,7 +250,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p049_i4"
+      "id": "soutien_maths_francais_p049_i4"
     },
     {
       "kind": "exercise",
@@ -262,7 +262,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p049_i5"
+      "id": "soutien_maths_francais_p049_i5"
     },
     {
       "kind": "exercise",
@@ -274,7 +274,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p049_i6"
+      "id": "soutien_maths_francais_p049_i6"
     },
     {
       "kind": "exercise",
@@ -286,7 +286,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p049_i7"
+      "id": "soutien_maths_francais_p049_i7"
     },
     {
       "kind": "exercise",
@@ -298,7 +298,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p049_i8"
+      "id": "soutien_maths_francais_p049_i8"
     }
   ],
   "itemsOcr1": [
@@ -310,7 +310,7 @@
       "figureDesc": "Tableau à trois colonnes contenant les trois opérations posées en colonnes, avec des calculs manuscrits en rouge.",
       "answer": "326 568,00 + 1 709,23 = 324 759,23 (valeur écrite par l'élève, en réalité 328 277,23) ; 324 759,23 – 65 726,20 = 259 033,03 ; 3 344,12 × 52 = 173 894,24 ; 49248 ÷ 72 = 684 (reste 0), donc 4 924,8 ÷ 7,2 = 684",
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p049_i1",
+      "id": "soutien_maths_francais_p049_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -323,7 +323,7 @@
       "figureDesc": "",
       "answer": "((63+52)/36 - 29/36) × 2/3 = (115/36 - 29/36) × 2/3 = 86/36 × 2/3 = 172/108 = 43/27",
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p049_i2",
+      "id": "soutien_maths_francais_p049_i2",
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "medium"
@@ -336,7 +336,7 @@
       "figureDesc": "Cadre contenant la soustraction de durées posée en colonnes, manuscrite en rouge.",
       "answer": "11h 97min 13s - 10h 42min 08s = 01h 55min 05s",
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p049_i3",
+      "id": "soutien_maths_francais_p049_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -349,7 +349,7 @@
       "figureDesc": "",
       "answer": "27 × 25 = (3×3×3) × (5×5) = 3³ × 5²",
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p049_i4",
+      "id": "soutien_maths_francais_p049_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -362,7 +362,7 @@
       "figureDesc": "",
       "answer": "2,5 < 14/5 < 10/3 < 15 < 25,1 < 28",
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p049_i5",
+      "id": "soutien_maths_francais_p049_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -375,7 +375,7 @@
       "figureDesc": "",
       "answer": "1599 × 30/100 = 479,70 dh ; ثمن هذا الفرن بعد التخفيض هو : 1599 – 479,70 = 1119,30 dh",
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p049_i6",
+      "id": "soutien_maths_francais_p049_i6",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "medium"

@@ -147,7 +147,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p051_i1"
+      "id": "mathematiques_exercices_evaluations_p051_i1"
     },
     {
       "kind": "exercise",
@@ -159,7 +159,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p051_i2"
+      "id": "mathematiques_exercices_evaluations_p051_i2"
     },
     {
       "kind": "exercise",
@@ -171,7 +171,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p051_i3"
+      "id": "mathematiques_exercices_evaluations_p051_i3"
     }
   ],
   "itemsOcr1": [
@@ -183,7 +183,7 @@
       "figureDesc": "جدول من 6 أعمدة يحوي أسماء التلاميذ ومعدلاتهم، تحته جدول فارغ من سطرين و6 أعمدة للإجابة (الأسماء والمعدلات مرتبة).",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p051_i1",
+      "id": "mathematiques_exercices_evaluations_p051_i1",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -196,7 +196,7 @@
       "figureDesc": "جدول بعمودين: اليوم / طول الجدار المنجز (بوحدات مختلفة: م، دسم، دكم، هم)؛ تحت كل سؤال سطر منقط للإجابة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p051_i2",
+      "id": "mathematiques_exercices_evaluations_p051_i2",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -209,7 +209,7 @@
       "figureDesc": "جدول من 5 أعمدة للمزروعات (أسماؤها غير واضحة في الصورة) وثلاثة أسطر: كتلة المنتوج، ثمن بيع 1 كغ، ثمن بيع كامل المنتوج (السطر الأخير فارغ)؛ سطران منقطان للإجابة.",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p051_i3",
+      "id": "mathematiques_exercices_evaluations_p051_i3",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

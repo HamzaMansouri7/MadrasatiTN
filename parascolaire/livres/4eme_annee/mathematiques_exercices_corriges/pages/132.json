@@ -323,7 +323,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i1"
+      "id": "mathematiques_exercices_corriges_p132_i1"
     },
     {
       "kind": "answer",
@@ -335,7 +335,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i2"
+      "id": "mathematiques_exercices_corriges_p132_i2"
     },
     {
       "kind": "answer",
@@ -347,7 +347,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i3"
+      "id": "mathematiques_exercices_corriges_p132_i3"
     },
     {
       "kind": "answer",
@@ -359,7 +359,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i4"
+      "id": "mathematiques_exercices_corriges_p132_i4"
     },
     {
       "kind": "answer",
@@ -371,7 +371,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i5"
+      "id": "mathematiques_exercices_corriges_p132_i5"
     },
     {
       "kind": "answer",
@@ -383,7 +383,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i6"
+      "id": "mathematiques_exercices_corriges_p132_i6"
     },
     {
       "kind": "answer",
@@ -395,7 +395,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i7"
+      "id": "mathematiques_exercices_corriges_p132_i7"
     },
     {
       "kind": "answer",
@@ -407,7 +407,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i8"
+      "id": "mathematiques_exercices_corriges_p132_i8"
     },
     {
       "kind": "answer",
@@ -419,7 +419,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i9"
+      "id": "mathematiques_exercices_corriges_p132_i9"
     },
     {
       "kind": "answer",
@@ -431,7 +431,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i10"
+      "id": "mathematiques_exercices_corriges_p132_i10"
     },
     {
       "kind": "answer",
@@ -443,7 +443,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i11"
+      "id": "mathematiques_exercices_corriges_p132_i11"
     },
     {
       "kind": "answer",
@@ -455,7 +455,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i12"
+      "id": "mathematiques_exercices_corriges_p132_i12"
     },
     {
       "kind": "answer",
@@ -467,7 +467,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i13"
+      "id": "mathematiques_exercices_corriges_p132_i13"
     },
     {
       "kind": "answer",
@@ -479,7 +479,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p132_i14"
+      "id": "mathematiques_exercices_corriges_p132_i14"
     }
   ],
   "itemsOcr1": [
@@ -491,7 +491,7 @@
       "figureDesc": "",
       "answer": "أ) 167 532 ب) 196 752 ج) 156 752 د) 167 572",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p132_i1",
+      "id": "mathematiques_exercices_corriges_p132_i1",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -504,7 +504,7 @@
       "figureDesc": "أشكال بيضاوية تحتوي على 900 000 و600 000 و100 000 و10 000 و100 مرتبطة بمستطيلات تحتوي على 800 000 و165×1 000 و825 و10×8",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p132_i2",
+      "id": "mathematiques_exercices_corriges_p132_i2",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -517,7 +517,7 @@
       "figureDesc": "ست بطاقات أرقام: 9 5 3 1 4 0 / 9 4 5 3 1 0 / 9 5 3 1 0 4 / 5 9 3 4 1 0 / 5 3 1 9 0 4 / 5 3 1 0 9 4",
       "answer": "953 140 > 953 104 > 945 310 > 593 410 ؛ 531 094 < 531 904",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p132_i3",
+      "id": "mathematiques_exercices_corriges_p132_i3",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -530,7 +530,7 @@
       "figureDesc": "",
       "answer": "801 269",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p132_i4",
+      "id": "mathematiques_exercices_corriges_p132_i4",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -543,7 +543,7 @@
       "figureDesc": "",
       "answer": "450 لتر ؛ 50 وعاء",
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p132_i5",
+      "id": "mathematiques_exercices_corriges_p132_i5",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -556,7 +556,7 @@
       "figureDesc": "",
       "answer": "13 000",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p132_i6",
+      "id": "mathematiques_exercices_corriges_p132_i6",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -569,7 +569,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p132_i7",
+      "id": "mathematiques_exercices_corriges_p132_i7",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -582,7 +582,7 @@
       "figureDesc": "جدول بثلاثة أعمدة: العدد، عدد الآلاف، الباقي",
       "answer": "26 350 : 26 / 350 ؛ 275 640 : 275 / 640 ؛ 750 : 0 / 750 ؛ 183 000 : 183 / 0",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p132_i8",
+      "id": "mathematiques_exercices_corriges_p132_i8",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -595,7 +595,7 @@
       "figureDesc": "",
       "answer": "180 ورقة ؛ 9 رزم",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p132_i9",
+      "id": "mathematiques_exercices_corriges_p132_i9",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -608,7 +608,7 @@
       "figureDesc": "",
       "answer": "75 م ؛ 5 625 م2",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p132_i10",
+      "id": "mathematiques_exercices_corriges_p132_i10",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -621,7 +621,7 @@
       "figureDesc": "",
       "answer": "2 700 م2",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p132_i11",
+      "id": "mathematiques_exercices_corriges_p132_i11",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -634,7 +634,7 @@
       "figureDesc": "",
       "answer": "36 صم2",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p132_i12",
+      "id": "mathematiques_exercices_corriges_p132_i12",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -647,7 +647,7 @@
       "figureDesc": "",
       "answer": "1 450 م2",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p132_i13",
+      "id": "mathematiques_exercices_corriges_p132_i13",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -660,7 +660,7 @@
       "figureDesc": "",
       "answer": "(أ) أكبر مساحة من (ب)",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p132_i14",
+      "id": "mathematiques_exercices_corriges_p132_i14",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -243,7 +243,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i1"
+      "id": "eveil_scientifique_cours_exercices_p052_i1"
     },
     {
       "kind": "answer",
@@ -255,7 +255,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i2"
+      "id": "eveil_scientifique_cours_exercices_p052_i2"
     },
     {
       "kind": "answer",
@@ -267,7 +267,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "qcm",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i3"
+      "id": "eveil_scientifique_cours_exercices_p052_i3"
     },
     {
       "kind": "answer",
@@ -279,7 +279,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i4"
+      "id": "eveil_scientifique_cours_exercices_p052_i4"
     },
     {
       "kind": "answer",
@@ -291,7 +291,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i5"
+      "id": "eveil_scientifique_cours_exercices_p052_i5"
     },
     {
       "kind": "answer",
@@ -303,7 +303,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i6"
+      "id": "eveil_scientifique_cours_exercices_p052_i6"
     },
     {
       "kind": "answer",
@@ -315,7 +315,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i7"
+      "id": "eveil_scientifique_cours_exercices_p052_i7"
     }
   ],
   "itemsOcr1": [
@@ -327,7 +327,7 @@
       "figureDesc": "Tableau à 6 colonnes classant des aliments par groupe : produits animaux (السمك، البيض، اللحم، الحليب), dérivés du lait (الجبن، الياغورت، اللبن، الزبدة), légumes secs (اللوبيا، الفول، الجلبان، العدس), dérivés des céréales (القاروصة، السميد، المشروبة...), légumes (الكبوس، الطماطم، البسباس...), fruits (البلح، الموز، التين...).",
       "answer": "Le contenu du tableau est lui-même le corrigé (classement des aliments par groupe).",
       "confidence": 0.5,
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i1",
+      "id": "eveil_scientifique_cours_exercices_p052_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -340,7 +340,7 @@
       "figureDesc": "",
       "answer": "Aliments bâtisseurs : légumes secs, laitages, œufs, lentilles, viandes. Aliments énergétiques : beurre, pommes de terre, farine, huile, pain, pistaches. Aliments protecteurs : orange, laitue, artichaut, piment, etc.",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i2",
+      "id": "eveil_scientifique_cours_exercices_p052_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -353,7 +353,7 @@
       "figureDesc": "",
       "answer": "قطعة المرطبات ; علامة (×) أمام : أ، ج، د، هـ",
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i3",
+      "id": "eveil_scientifique_cours_exercices_p052_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "qcm",
       "difficultyGuess": "hard"
@@ -366,7 +366,7 @@
       "figureDesc": "",
       "answer": "السمك يحتوي على قيمة زلالية تعادل اللحم : صواب ; تعويض 100 غرام لحم ببيضة واحدة : خطأ ; القيمة الغذائية للسمك الصغير مثل الكبير : صواب",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i4",
+      "id": "eveil_scientifique_cours_exercices_p052_i4",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -379,7 +379,7 @@
       "figureDesc": "",
       "answer": "صواب / خطأ كما هو مبين في النص",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i5",
+      "id": "eveil_scientifique_cours_exercices_p052_i5",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -392,7 +392,7 @@
       "figureDesc": "",
       "answer": "خطأ، خطأ، صواب ; الطفل الذي عمره 15 سنة ; خطأ، صواب، صواب، صواب",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i6",
+      "id": "eveil_scientifique_cours_exercices_p052_i6",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -405,7 +405,7 @@
       "figureDesc": "",
       "answer": "التغذية المتنوعة والمتزنة وبكميات كافية تجنبنا سوء التغذية ومشاكلها.",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p052_i7",
+      "id": "eveil_scientifique_cours_exercices_p052_i7",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"

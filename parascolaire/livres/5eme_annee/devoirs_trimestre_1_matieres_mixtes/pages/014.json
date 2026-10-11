@@ -110,7 +110,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "livre_mowazi_5eme_math_sciences_p014_i1"
+      "id": "devoirs_trimestre_1_matieres_mixtes_p014_i1"
     },
     {
       "kind": "exercise",
@@ -122,7 +122,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "livre_mowazi_5eme_math_sciences_p014_i2"
+      "id": "devoirs_trimestre_1_matieres_mixtes_p014_i2"
     }
   ],
   "itemsOcr1": [
@@ -134,7 +134,7 @@
       "figureDesc": "شبكة مدرجة (ورق مربعات) بمحورين متعامدين مركزهما O. المحور الأفقي مرقم من 1 إلى 4 نحو اليمين (يمين) ومن 1 إلى 4 نحو اليسار (شمال). المحور العمودي مرقم من 1 إلى 4 نحو الأعلى (أمام) ومن 1 إلى 4 نحو الأسفل (وراء). الشبكة فارغة، لا توجد عليها نقاط.",
       "answer": null,
       "confidence": 0.8,
-      "id": "livre_mowazi_5eme_math_sciences_p014_i1",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p014_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -147,7 +147,7 @@
       "figureDesc": "شبكة مدرجة بمحورين مرقمين من 1 إلى 4 (يمين/شمال، أمام/وراء). النقاط: أ على يسار المحور العمودي عند 3 شمال وعلى ارتفاع 2 أمام؛ ب عند 1 يمين و1 أمام؛ ج عند 2 يمين و1 وراء؛ د عند 3 شمال و2 وراء.",
       "answer": null,
       "confidence": 0.8,
-      "id": "livre_mowazi_5eme_math_sciences_p014_i2",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p014_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

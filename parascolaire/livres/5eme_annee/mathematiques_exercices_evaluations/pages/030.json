@@ -230,7 +230,7 @@
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p030_i1"
+      "id": "mathematiques_exercices_evaluations_p030_i1"
     },
     {
       "kind": "exercise",
@@ -242,7 +242,7 @@
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p030_i2"
+      "id": "mathematiques_exercices_evaluations_p030_i2"
     },
     {
       "kind": "exercise",
@@ -254,7 +254,7 @@
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p030_i3"
+      "id": "mathematiques_exercices_evaluations_p030_i3"
     },
     {
       "kind": "exercise",
@@ -266,7 +266,7 @@
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p030_i4"
+      "id": "mathematiques_exercices_evaluations_p030_i4"
     },
     {
       "kind": "exercise",
@@ -278,7 +278,7 @@
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p030_i5"
+      "id": "mathematiques_exercices_evaluations_p030_i5"
     },
     {
       "kind": "exercise",
@@ -290,7 +290,7 @@
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p030_i6"
+      "id": "mathematiques_exercices_evaluations_p030_i6"
     },
     {
       "kind": "exercise",
@@ -302,7 +302,7 @@
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p030_i7"
+      "id": "mathematiques_exercices_evaluations_p030_i7"
     },
     {
       "kind": "exercise",
@@ -314,7 +314,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_ahram_5eme_complet_p030_i8"
+      "id": "mathematiques_exercices_evaluations_p030_i8"
     }
   ],
   "itemsOcr1": [
@@ -326,7 +326,7 @@
       "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 1).",
       "answer": null,
       "confidence": 0.4,
-      "id": "al_ahram_5eme_complet_p030_i1",
+      "id": "mathematiques_exercices_evaluations_p030_i1",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -339,7 +339,7 @@
       "figureDesc": "Lignes pointillées pour la réponse, cases de notation à droite.",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p030_i2",
+      "id": "mathematiques_exercices_evaluations_p030_i2",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -352,7 +352,7 @@
       "figureDesc": "Lignes pointillées pour la réponse.",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p030_i3",
+      "id": "mathematiques_exercices_evaluations_p030_i3",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -365,7 +365,7 @@
       "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 2).",
       "answer": null,
       "confidence": 0.35,
-      "id": "al_ahram_5eme_complet_p030_i4",
+      "id": "mathematiques_exercices_evaluations_p030_i4",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -378,7 +378,7 @@
       "figureDesc": "Lignes pointillées pour la réponse.",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p030_i5",
+      "id": "mathematiques_exercices_evaluations_p030_i5",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -391,7 +391,7 @@
       "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 3).",
       "answer": null,
       "confidence": 0.35,
-      "id": "al_ahram_5eme_complet_p030_i6",
+      "id": "mathematiques_exercices_evaluations_p030_i6",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -404,7 +404,7 @@
       "figureDesc": "Lignes pointillées pour la réponse.",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_ahram_5eme_complet_p030_i7",
+      "id": "mathematiques_exercices_evaluations_p030_i7",
       "topicId": "math-5-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"

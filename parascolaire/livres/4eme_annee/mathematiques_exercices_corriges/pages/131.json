@@ -350,7 +350,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i1"
+      "id": "mathematiques_exercices_corriges_p131_i1"
     },
     {
       "kind": "answer",
@@ -362,7 +362,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i2"
+      "id": "mathematiques_exercices_corriges_p131_i2"
     },
     {
       "kind": "answer",
@@ -374,7 +374,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i3"
+      "id": "mathematiques_exercices_corriges_p131_i3"
     },
     {
       "kind": "answer",
@@ -386,7 +386,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i4"
+      "id": "mathematiques_exercices_corriges_p131_i4"
     },
     {
       "kind": "answer",
@@ -398,7 +398,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i5"
+      "id": "mathematiques_exercices_corriges_p131_i5"
     },
     {
       "kind": "answer",
@@ -410,7 +410,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i6"
+      "id": "mathematiques_exercices_corriges_p131_i6"
     },
     {
       "kind": "answer",
@@ -422,7 +422,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i7"
+      "id": "mathematiques_exercices_corriges_p131_i7"
     },
     {
       "kind": "answer",
@@ -434,7 +434,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i8"
+      "id": "mathematiques_exercices_corriges_p131_i8"
     },
     {
       "kind": "answer",
@@ -446,7 +446,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i9"
+      "id": "mathematiques_exercices_corriges_p131_i9"
     },
     {
       "kind": "answer",
@@ -458,7 +458,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i10"
+      "id": "mathematiques_exercices_corriges_p131_i10"
     },
     {
       "kind": "answer",
@@ -470,7 +470,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i11"
+      "id": "mathematiques_exercices_corriges_p131_i11"
     },
     {
       "kind": "answer",
@@ -482,7 +482,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i12"
+      "id": "mathematiques_exercices_corriges_p131_i12"
     },
     {
       "kind": "answer",
@@ -494,7 +494,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i13"
+      "id": "mathematiques_exercices_corriges_p131_i13"
     },
     {
       "kind": "answer",
@@ -506,7 +506,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i14"
+      "id": "mathematiques_exercices_corriges_p131_i14"
     },
     {
       "kind": "answer",
@@ -518,7 +518,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p131_i15"
+      "id": "mathematiques_exercices_corriges_p131_i15"
     }
   ],
   "itemsOcr1": [
@@ -530,7 +530,7 @@
       "figureDesc": "",
       "answer": "1 776 ؛ 222",
       "confidence": 0.7,
-      "id": "math_solutions_4eme_sellami_p131_i1",
+      "id": "mathematiques_exercices_corriges_p131_i1",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -543,7 +543,7 @@
       "figureDesc": "",
       "answer": "16",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p131_i2",
+      "id": "mathematiques_exercices_corriges_p131_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -556,7 +556,7 @@
       "figureDesc": "",
       "answer": "70",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p131_i3",
+      "id": "mathematiques_exercices_corriges_p131_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -569,7 +569,7 @@
       "figureDesc": "",
       "answer": "108 000 ؛ 54 000 ؛ 10 800 ؛ 1 200",
       "confidence": 0.7,
-      "id": "math_solutions_4eme_sellami_p131_i4",
+      "id": "mathematiques_exercices_corriges_p131_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -582,7 +582,7 @@
       "figureDesc": "",
       "answer": "الطول 27 ؛ العرض 18",
       "confidence": 0.65,
-      "id": "math_solutions_4eme_sellami_p131_i5",
+      "id": "mathematiques_exercices_corriges_p131_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -595,7 +595,7 @@
       "figureDesc": "مستطيل: العرض يساوي جزءا واحدا والطول ثلاثة أجزاء متساوية، المجموع 72 على 2",
       "answer": "54",
       "confidence": 0.55,
-      "id": "math_solutions_4eme_sellami_p131_i6",
+      "id": "mathematiques_exercices_corriges_p131_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -608,7 +608,7 @@
       "figureDesc": "",
       "answer": "العرض 12 ؛ الطول 24",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p131_i7",
+      "id": "mathematiques_exercices_corriges_p131_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -621,7 +621,7 @@
       "figureDesc": "",
       "answer": "110 ؛ 30 ؛ 40",
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p131_i8",
+      "id": "mathematiques_exercices_corriges_p131_i8",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -634,7 +634,7 @@
       "figureDesc": "مستطيل: العرض جزء واحد والطول أربعة أجزاء",
       "answer": "العرض 20 ؛ الطول 60",
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p131_i9",
+      "id": "mathematiques_exercices_corriges_p131_i9",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -647,7 +647,7 @@
       "figureDesc": "عملية قسمة عمودية: 2756 على 9، الخارج 306، الباقي 2",
       "answer": "306 (الباقي 2)",
       "confidence": 0.7,
-      "id": "math_solutions_4eme_sellami_p131_i10",
+      "id": "mathematiques_exercices_corriges_p131_i10",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -660,7 +660,7 @@
       "figureDesc": "ثلاث عمليات قسمة عمودية",
       "answer": "39 (الباقي 2) ؛ 28 (الباقي 5) ؛ 7",
       "confidence": 0.7,
-      "id": "math_solutions_4eme_sellami_p131_i11",
+      "id": "mathematiques_exercices_corriges_p131_i11",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -673,7 +673,7 @@
       "figureDesc": "",
       "answer": "17",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p131_i12",
+      "id": "mathematiques_exercices_corriges_p131_i12",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -686,7 +686,7 @@
       "figureDesc": "",
       "answer": "35 ؛ 8 750 ؛ 140 000 ؛ 100 000",
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p131_i13",
+      "id": "mathematiques_exercices_corriges_p131_i13",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -699,7 +699,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p131_i14",
+      "id": "mathematiques_exercices_corriges_p131_i14",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -712,7 +712,7 @@
       "figureDesc": "أقواس تحت العبارة تشير إلى 18 000 و40 200",
       "answer": "900 ؛ 1 800 ؛ 58 200",
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p131_i15",
+      "id": "mathematiques_exercices_corriges_p131_i15",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

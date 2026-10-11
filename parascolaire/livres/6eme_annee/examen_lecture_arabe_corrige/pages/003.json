@@ -163,7 +163,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p003_i1"
+      "id": "examen_lecture_arabe_corrige_p003_i1"
     },
     {
       "kind": "answer",
@@ -175,7 +175,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p003_i2"
+      "id": "examen_lecture_arabe_corrige_p003_i2"
     }
   ],
   "itemsOcr1": [
@@ -187,7 +187,7 @@
       "figureDesc": "Lignes pointillées vides pour la réponse de l'élève (quatre lignes au-dessus, qui terminent l'exercice précédent, et quatre lignes en dessous de la question). Petit cadre de notation à trois cases sur le côté droit. Filigrane « MOURAJAA.COM » et calligraphie arabe orange en arrière-plan.",
       "answer": null,
       "confidence": 0.85,
-      "id": "examen_lecture_6eme_corriges_p003_i1",
+      "id": "examen_lecture_arabe_corrige_p003_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -200,7 +200,7 @@
       "figureDesc": "Tableau de barème à 4 lignes (niveaux de maîtrise ---, +--, -++, +++) et colonnes par critère (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4) avec totaux partiels (15/10) et total général 20.",
       "answer": null,
       "confidence": 0.8,
-      "id": "examen_lecture_6eme_corriges_p003_i2",
+      "id": "examen_lecture_arabe_corrige_p003_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

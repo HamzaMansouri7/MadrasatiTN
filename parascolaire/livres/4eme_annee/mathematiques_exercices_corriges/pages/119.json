@@ -348,7 +348,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i1"
+      "id": "mathematiques_exercices_corriges_p119_i1"
     },
     {
       "kind": "answer",
@@ -360,7 +360,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i2"
+      "id": "mathematiques_exercices_corriges_p119_i2"
     },
     {
       "kind": "answer",
@@ -372,7 +372,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i3"
+      "id": "mathematiques_exercices_corriges_p119_i3"
     },
     {
       "kind": "answer",
@@ -384,7 +384,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i4"
+      "id": "mathematiques_exercices_corriges_p119_i4"
     },
     {
       "kind": "answer",
@@ -396,7 +396,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i5"
+      "id": "mathematiques_exercices_corriges_p119_i5"
     },
     {
       "kind": "answer",
@@ -408,7 +408,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i6"
+      "id": "mathematiques_exercices_corriges_p119_i6"
     },
     {
       "kind": "answer",
@@ -420,7 +420,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i7"
+      "id": "mathematiques_exercices_corriges_p119_i7"
     },
     {
       "kind": "answer",
@@ -432,7 +432,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i8"
+      "id": "mathematiques_exercices_corriges_p119_i8"
     },
     {
       "kind": "answer",
@@ -444,7 +444,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i9"
+      "id": "mathematiques_exercices_corriges_p119_i9"
     },
     {
       "kind": "answer",
@@ -456,7 +456,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i10"
+      "id": "mathematiques_exercices_corriges_p119_i10"
     },
     {
       "kind": "answer",
@@ -468,7 +468,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i11"
+      "id": "mathematiques_exercices_corriges_p119_i11"
     },
     {
       "kind": "answer",
@@ -480,7 +480,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i12"
+      "id": "mathematiques_exercices_corriges_p119_i12"
     },
     {
       "kind": "answer",
@@ -492,7 +492,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i13"
+      "id": "mathematiques_exercices_corriges_p119_i13"
     },
     {
       "kind": "answer",
@@ -504,7 +504,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i14"
+      "id": "mathematiques_exercices_corriges_p119_i14"
     },
     {
       "kind": "answer",
@@ -516,7 +516,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i15"
+      "id": "mathematiques_exercices_corriges_p119_i15"
     },
     {
       "kind": "answer",
@@ -528,7 +528,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i16"
+      "id": "mathematiques_exercices_corriges_p119_i16"
     },
     {
       "kind": "answer",
@@ -540,7 +540,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p119_i17"
+      "id": "mathematiques_exercices_corriges_p119_i17"
     }
   ],
   "itemsOcr1": [
@@ -552,7 +552,7 @@
       "figureDesc": "",
       "answer": "2",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p119_i1",
+      "id": "mathematiques_exercices_corriges_p119_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -565,7 +565,7 @@
       "figureDesc": "",
       "answer": "1 500 مي",
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p119_i2",
+      "id": "mathematiques_exercices_corriges_p119_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -578,7 +578,7 @@
       "figureDesc": "",
       "answer": "سامي: 4 000 مي ؛ مراد: 6 000 مي",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i3",
+      "id": "mathematiques_exercices_corriges_p119_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -591,7 +591,7 @@
       "figureDesc": "",
       "answer": "الباقي 1 620 مي",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i4",
+      "id": "mathematiques_exercices_corriges_p119_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -604,7 +604,7 @@
       "figureDesc": "",
       "answer": "3 350 مي ؛ ينقصه 770 مي",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i5",
+      "id": "mathematiques_exercices_corriges_p119_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -617,7 +617,7 @@
       "figureDesc": "",
       "answer": "25 دسل ؛ نصف دكل ؛ 432 صل",
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p119_i6",
+      "id": "mathematiques_exercices_corriges_p119_i6",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -630,7 +630,7 @@
       "figureDesc": "",
       "answer": "6",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i7",
+      "id": "mathematiques_exercices_corriges_p119_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -643,7 +643,7 @@
       "figureDesc": "",
       "answer": "48 صل ؛ نعم تكفيه",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i8",
+      "id": "mathematiques_exercices_corriges_p119_i8",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -656,7 +656,7 @@
       "figureDesc": "",
       "answer": "9 000 مي",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p119_i9",
+      "id": "mathematiques_exercices_corriges_p119_i9",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -669,7 +669,7 @@
       "figureDesc": "",
       "answer": "300 مي ؛ 900 مي ؛ 150 مي",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p119_i10",
+      "id": "mathematiques_exercices_corriges_p119_i10",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -682,7 +682,7 @@
       "figureDesc": "",
       "answer": "متوازيان",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i11",
+      "id": "mathematiques_exercices_corriges_p119_i11",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -695,7 +695,7 @@
       "figureDesc": "مستقيم (ص) تقطعه ثلاثة مستقيمات عمودية في ج و ب و هـ، المسافة بين كل اثنين 2 صم، مع زوايا قائمة.",
       "answer": "مستقيمات متوازية",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i12",
+      "id": "mathematiques_exercices_corriges_p119_i12",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -708,7 +708,7 @@
       "figureDesc": "شكل رباعي أ ج ب هـ قطراه يتقاطعان في ن، مع علامات تساوي الأطوال، والمستقيمان (د) و (ص) وخطوط منقطة.",
       "answer": "(أ ج)//(ب هـ) و (أ هـ)//(ج ب)",
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p119_i13",
+      "id": "mathematiques_exercices_corriges_p119_i13",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -721,7 +721,7 @@
       "figureDesc": "",
       "answer": "1 068 ؛ 6 080",
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p119_i14",
+      "id": "mathematiques_exercices_corriges_p119_i14",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -734,7 +734,7 @@
       "figureDesc": "",
       "answer": "4 000 مي",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i15",
+      "id": "mathematiques_exercices_corriges_p119_i15",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -747,7 +747,7 @@
       "figureDesc": "مستقيمان عموديان (ك) و(س) على المستقيم (ص)، ونقطة ب.",
       "answer": "متوازيان",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i16",
+      "id": "mathematiques_exercices_corriges_p119_i16",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -760,7 +760,7 @@
       "figureDesc": "",
       "answer": "2 ل ؛ 1 600 مي ؛ 4 600 مي",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p119_i17",
+      "id": "mathematiques_exercices_corriges_p119_i17",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

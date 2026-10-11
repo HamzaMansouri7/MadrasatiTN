@@ -178,7 +178,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p082_i1"
+      "id": "mathematiques_exercices_corriges_p082_i1"
     },
     {
       "kind": "exercise",
@@ -190,7 +190,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p082_i2"
+      "id": "mathematiques_exercices_corriges_p082_i2"
     },
     {
       "kind": "exercise",
@@ -202,7 +202,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p082_i3"
+      "id": "mathematiques_exercices_corriges_p082_i3"
     },
     {
       "kind": "exercise",
@@ -214,7 +214,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p082_i4"
+      "id": "mathematiques_exercices_corriges_p082_i4"
     },
     {
       "kind": "exercise",
@@ -226,7 +226,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p082_i5"
+      "id": "mathematiques_exercices_corriges_p082_i5"
     }
   ],
   "itemsOcr1": [
@@ -238,7 +238,7 @@
       "figureDesc": "جدول من سطرين وتسع خانات: السطر الأول 1 2 3 4 5 6 7 8 9 (من اليمين إلى اليسار)، والسطر الثاني تحته 12 و24 و36 مملوءة، والخانات من 4 إلى 9 فارغة. بجانبه دائرة كُتب فيها «12 x».",
       "answer": null,
       "confidence": 0.93,
-      "id": "math_solutions_4eme_sellami_p082_i1",
+      "id": "mathematiques_exercices_corriges_p082_i1",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -251,7 +251,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "math_solutions_4eme_sellami_p082_i2",
+      "id": "mathematiques_exercices_corriges_p082_i2",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -264,7 +264,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p082_i3",
+      "id": "mathematiques_exercices_corriges_p082_i3",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -277,7 +277,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "math_solutions_4eme_sellami_p082_i4",
+      "id": "mathematiques_exercices_corriges_p082_i4",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -290,7 +290,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "math_solutions_4eme_sellami_p082_i5",
+      "id": "mathematiques_exercices_corriges_p082_i5",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"

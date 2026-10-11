@@ -164,7 +164,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p022_i1"
+      "id": "eveil_scientifique_cours_exercices_p022_i1"
     },
     {
       "kind": "exercise",
@@ -176,7 +176,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p022_i2"
+      "id": "eveil_scientifique_cours_exercices_p022_i2"
     },
     {
       "kind": "exercise",
@@ -188,7 +188,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p022_i3"
+      "id": "eveil_scientifique_cours_exercices_p022_i3"
     },
     {
       "kind": "exercise",
@@ -200,7 +200,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_mounir_eveil_scientifique_6eme_p022_i4"
+      "id": "eveil_scientifique_cours_exercices_p022_i4"
     }
   ],
   "itemsOcr1": [
@@ -212,7 +212,7 @@
       "figureDesc": "رسم لمائدة عليها وجبة: قارورة ماء، طبق سلطة، خبز، فاكهة، كأس، وطبق لحم مع شوكة وسكين.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p022_i1",
+      "id": "eveil_scientifique_cours_exercices_p022_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -225,7 +225,7 @@
       "figureDesc": "رسم لمائدة عليها طبق فيه شواء وبطاطس مع شوكة وسكين، وطبق خضر وسلطة، وصحن أبيض، وفاكهة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p022_i2",
+      "id": "eveil_scientifique_cours_exercices_p022_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -238,7 +238,7 @@
       "figureDesc": "سلسلة تعادلات بالرسوم: سمكة = قطعة لحم = بيضتان = قطعة جبن = علبة حليب، مع تسميات تحت كل رسم.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p022_i3",
+      "id": "eveil_scientifique_cours_exercices_p022_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"

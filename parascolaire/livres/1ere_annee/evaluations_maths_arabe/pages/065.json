@@ -220,7 +220,7 @@
       "figureDesc": "جدولان للحساب الذهني: جدول أول به معطيات وأخطاء، وجدول ثانٍ فارغ جزئيًا ومظلل في بعض الخانات لمطابقة النتائج وتصحيحها وفق العناوين (+1، 8، 9، 2، 15، 3، 2+4).",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p065_i1",
+      "id": "evaluations_maths_arabe_p065_i1",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -233,7 +233,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p065_i2",
+      "id": "evaluations_maths_arabe_p065_i2",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -246,7 +246,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p065_i3",
+      "id": "evaluations_maths_arabe_p065_i3",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -121,7 +121,7 @@
       "figureDesc": "جدول فاتورة بعمودين (البيانات / المبلغ بالد): لوازم للمكابح 76,000؛ تعديل الأضواء 25,000؛ إطارات للعجلات 360,000؛ كابل محوّل السرعة 23,500؛ يد عاملة 125,000؛ الأداء على القيمة المضافة (فارغ، منقّط)؛ المجموع (الجملة) 719,200. تحته أسطر منقطة للإجابة.",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_ahram_5eme_complet_p086_i1",
+      "id": "mathematiques_exercices_evaluations_p086_i1",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -134,7 +134,7 @@
       "figureDesc": "أسطر منقطة للإجابة.",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_ahram_5eme_complet_p086_i2",
+      "id": "mathematiques_exercices_evaluations_p086_i2",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard"

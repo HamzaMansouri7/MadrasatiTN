@@ -215,7 +215,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p040_i1"
+      "id": "mathematiques_exercices_evaluations_p040_i1"
     },
     {
       "kind": "exercise",
@@ -227,7 +227,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p040_i2"
+      "id": "mathematiques_exercices_evaluations_p040_i2"
     },
     {
       "kind": "exercise",
@@ -239,7 +239,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p040_i3"
+      "id": "mathematiques_exercices_evaluations_p040_i3"
     },
     {
       "kind": "exercise",
@@ -251,7 +251,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p040_i4"
+      "id": "mathematiques_exercices_evaluations_p040_i4"
     },
     {
       "kind": "exercise",
@@ -263,7 +263,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p040_i5"
+      "id": "mathematiques_exercices_evaluations_p040_i5"
     },
     {
       "kind": "exercise",
@@ -275,7 +275,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_ahram_5eme_complet_p040_i6"
+      "id": "mathematiques_exercices_evaluations_p040_i6"
     }
   ],
   "itemsOcr1": [
@@ -287,7 +287,7 @@
       "figureDesc": "Cinq angles dessinés, chacun marqué d'un petit arc : un angle obtus ouvert vers la droite, un angle obtus ouvert vers le bas, un angle aigu en forme de V, un angle aigu très étroit, et un angle à ouverture à gauche près d'un sommet.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p040_i1",
+      "id": "mathematiques_exercices_evaluations_p040_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -300,7 +300,7 @@
       "figureDesc": "Angle de sommet و, avec la demi-droite [وس] horizontale vers la droite et la demi-droite [وع] oblique vers le haut à gauche ; un arc marque l'angle obtus.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p040_i2",
+      "id": "mathematiques_exercices_evaluations_p040_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -313,7 +313,7 @@
       "figureDesc": "Segment horizontal [أ ب] avec le point و en son milieu.",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p040_i3",
+      "id": "mathematiques_exercices_evaluations_p040_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -326,7 +326,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p040_i4",
+      "id": "mathematiques_exercices_evaluations_p040_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -339,7 +339,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p040_i5",
+      "id": "mathematiques_exercices_evaluations_p040_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

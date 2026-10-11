@@ -188,7 +188,7 @@
       "figureDesc": "Tableau de 4 colonnes (السكون، حذف حرف العلة، حذف النون، البناء على السكون) avec un exemple sous chaque en-tête.",
       "answer": null,
       "confidence": 0.93,
-      "id": "cahier_grammaire_6eme_p026_i1",
+      "id": "grammaire_arabe_cahier_regles_p026_i1",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -201,7 +201,7 @@
       "figureDesc": "Tableau de conjugaison : colonnes الأفعال (بدا، حبا، رجا) et lignes الضمائر groupées en المتكلم، المخاطب، الغائب. Le tashkeel est absent du scan ; les signes de voyelles ci-dessus sont restitués. Le scan reproduit les formes telles quelles, y compris les doublons « هما » et « أنت », et les formes avec « ون » pour أنتن/هن.",
       "answer": null,
       "confidence": 0.8,
-      "id": "cahier_grammaire_6eme_p026_i2",
+      "id": "grammaire_arabe_cahier_regles_p026_i2",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -214,7 +214,7 @@
       "figureDesc": "Encadré de conclusions en bas de page.",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p026_i3",
+      "id": "grammaire_arabe_cahier_regles_p026_i3",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

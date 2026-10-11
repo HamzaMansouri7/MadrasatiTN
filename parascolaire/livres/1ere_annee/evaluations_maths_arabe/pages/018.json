@@ -185,7 +185,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p018_i1"
+      "id": "evaluations_maths_arabe_p018_i1"
     },
     {
       "kind": "exercise",
@@ -197,7 +197,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p018_i2"
+      "id": "evaluations_maths_arabe_p018_i2"
     },
     {
       "kind": "exercise",
@@ -209,7 +209,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p018_i3"
+      "id": "evaluations_maths_arabe_p018_i3"
     },
     {
       "kind": "exercise",
@@ -221,7 +221,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p018_i4"
+      "id": "evaluations_maths_arabe_p018_i4"
     },
     {
       "kind": "exercise",
@@ -233,7 +233,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p018_i5"
+      "id": "evaluations_maths_arabe_p018_i5"
     }
   ],
   "itemsOcr1": [
@@ -245,7 +245,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p018_i1",
+      "id": "evaluations_maths_arabe_p018_i1",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -258,7 +258,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p018_i2",
+      "id": "evaluations_maths_arabe_p018_i2",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -271,7 +271,7 @@
       "figureDesc": "مشهد يبيّن تهاطل أمطار غزيرة في المدينة مع ريح تعصف بشجرة أمام المباني السكنية.",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p018_i3",
+      "id": "evaluations_maths_arabe_p018_i3",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -284,7 +284,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p018_i4",
+      "id": "evaluations_maths_arabe_p018_i4",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -297,7 +297,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p018_i5",
+      "id": "evaluations_maths_arabe_p018_i5",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"

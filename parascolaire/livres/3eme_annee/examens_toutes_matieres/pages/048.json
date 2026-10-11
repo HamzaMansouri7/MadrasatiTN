@@ -188,7 +188,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p048_i1"
+      "id": "examens_toutes_matieres_p048_i1"
     },
     {
       "kind": "exercise",
@@ -200,7 +200,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p048_i2"
+      "id": "examens_toutes_matieres_p048_i2"
     },
     {
       "kind": "exercise",
@@ -212,7 +212,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p048_i3"
+      "id": "examens_toutes_matieres_p048_i3"
     },
     {
       "kind": "exercise",
@@ -224,7 +224,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p048_i4"
+      "id": "examens_toutes_matieres_p048_i4"
     },
     {
       "kind": "lesson",
@@ -236,7 +236,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p048_i5"
+      "id": "examens_toutes_matieres_p048_i5"
     }
   ],
   "itemsOcr1": [
@@ -248,7 +248,7 @@
       "figureDesc": "En-tête de l'examen : cadre avec nom, prénom, classe ; titre, numéro, matière et niveau ; colonne des critères d'évaluation (معأ، معاب، معاج) avec cases de notation. Filigrane MOURAJAA.COM.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p048_i1",
+      "id": "examens_toutes_matieres_p048_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -261,7 +261,7 @@
       "figureDesc": "Trois cases vides pour numéroter (pointillés) au-dessus de trois horloges : une horloge à aiguilles indiquant 9h00, une horloge à aiguilles indiquant environ 11h30 (6 pour les minutes), une horloge digitale 9:15. En dessous, trois étiquettes à relier par points : « الوُصُولُ إِلَى الْمَكْتَبَةِ », « مُغَادَرَةُ المَنْزِلِ », « مُغَادَرَةُ المَكْتَبَةِ ».",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p048_i2",
+      "id": "examens_toutes_matieres_p048_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -274,7 +274,7 @@
       "figureDesc": "Reliage par traits entre les horloges et les étiquettes d'événements (points de liaison).",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_3eme_examens_p048_i3",
+      "id": "examens_toutes_matieres_p048_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -287,7 +287,7 @@
       "figureDesc": "Trois items à droite (شروق الشمس، نباح الكلب، حركة الأرض) avec points, et à gauche « حدث غير دوري » avec un point, à relier. Trois petites cases de notation à droite.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p048_i4",
+      "id": "examens_toutes_matieres_p048_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -300,7 +300,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p048_i5",
+      "id": "examens_toutes_matieres_p048_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

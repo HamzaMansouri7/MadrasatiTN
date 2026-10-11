@@ -165,7 +165,7 @@
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p029_i1"
+      "id": "production_ecrite_arabe_p029_i1"
     },
     {
       "kind": "lesson",
@@ -177,7 +177,7 @@
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p029_i2"
+      "id": "production_ecrite_arabe_p029_i2"
     },
     {
       "kind": "lesson",
@@ -189,7 +189,7 @@
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p029_i3"
+      "id": "production_ecrite_arabe_p029_i3"
     },
     {
       "kind": "lesson",
@@ -201,7 +201,7 @@
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p029_i4"
+      "id": "production_ecrite_arabe_p029_i4"
     }
   ],
   "itemsOcr1": [
@@ -213,7 +213,7 @@
       "figureDesc": "جدول من ثلاثة أعمدة: وسائل الوصف، نظام الوصف، مبادئ الوصف.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_production_ecrite_4eme_p029_i1",
+      "id": "production_ecrite_arabe_p029_i1",
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -226,7 +226,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "mouayen_production_ecrite_4eme_p029_i2",
+      "id": "production_ecrite_arabe_p029_i2",
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -239,7 +239,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.75,
-      "id": "mouayen_production_ecrite_4eme_p029_i3",
+      "id": "production_ecrite_arabe_p029_i3",
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -252,7 +252,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "mouayen_production_ecrite_4eme_p029_i4",
+      "id": "production_ecrite_arabe_p029_i4",
       "topicId": "ar-4-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"

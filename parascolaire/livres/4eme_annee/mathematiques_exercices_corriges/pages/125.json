@@ -355,7 +355,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i1"
+      "id": "mathematiques_exercices_corriges_p125_i1"
     },
     {
       "kind": "answer",
@@ -367,7 +367,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i2"
+      "id": "mathematiques_exercices_corriges_p125_i2"
     },
     {
       "kind": "answer",
@@ -379,7 +379,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i3"
+      "id": "mathematiques_exercices_corriges_p125_i3"
     },
     {
       "kind": "answer",
@@ -391,7 +391,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i4"
+      "id": "mathematiques_exercices_corriges_p125_i4"
     },
     {
       "kind": "answer",
@@ -403,7 +403,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i5"
+      "id": "mathematiques_exercices_corriges_p125_i5"
     },
     {
       "kind": "answer",
@@ -415,7 +415,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i6"
+      "id": "mathematiques_exercices_corriges_p125_i6"
     },
     {
       "kind": "answer",
@@ -427,7 +427,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i7"
+      "id": "mathematiques_exercices_corriges_p125_i7"
     },
     {
       "kind": "answer",
@@ -439,7 +439,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i8"
+      "id": "mathematiques_exercices_corriges_p125_i8"
     },
     {
       "kind": "answer",
@@ -451,7 +451,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i9"
+      "id": "mathematiques_exercices_corriges_p125_i9"
     },
     {
       "kind": "exercise",
@@ -463,7 +463,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i10"
+      "id": "mathematiques_exercices_corriges_p125_i10"
     },
     {
       "kind": "answer",
@@ -475,7 +475,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i11"
+      "id": "mathematiques_exercices_corriges_p125_i11"
     },
     {
       "kind": "answer",
@@ -487,7 +487,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i12"
+      "id": "mathematiques_exercices_corriges_p125_i12"
     },
     {
       "kind": "answer",
@@ -499,7 +499,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i13"
+      "id": "mathematiques_exercices_corriges_p125_i13"
     },
     {
       "kind": "answer",
@@ -511,7 +511,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i14"
+      "id": "mathematiques_exercices_corriges_p125_i14"
     },
     {
       "kind": "answer",
@@ -523,7 +523,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p125_i15"
+      "id": "mathematiques_exercices_corriges_p125_i15"
     }
   ],
   "itemsOcr1": [
@@ -535,7 +535,7 @@
       "figureDesc": "",
       "answer": "أ) 9 900 = (1 + 10) × (100 - 1 000) ؛ ب) 1080 = 15 × 72",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p125_i1",
+      "id": "mathematiques_exercices_corriges_p125_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -548,7 +548,7 @@
       "figureDesc": "",
       "answer": "مضاعفات (5): { 0 - 5 - 10 - 15 - 20 - 25 ...} ؛ مضاعفات (7): { 0 - 7 - 14 - 20 - 28 ...} ؛ عمرها: 20 سنة ؛ ب) العدد: 48",
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p125_i2",
+      "id": "mathematiques_exercices_corriges_p125_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -561,7 +561,7 @@
       "figureDesc": "",
       "answer": "ثمن الشراء: 105 000 = 300 × 350 ؛ الكلفة: 110 100 = 3 000 + 2 100 + 105 000 ؛ البيع الأول: 84 000 = 200 × 420 ؛ الكتلة: 95 = (5 + 200) - 300 ؛ البيع الثاني: 38 000 = 95 × 400 ؛ قبض في الجملة: 122 000 = 38 000 + 84 000 ؛ المقدار الذي وفّره: 11 900 = 110 100 - 122 000",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p125_i3",
+      "id": "mathematiques_exercices_corriges_p125_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -574,7 +574,7 @@
       "figureDesc": "ثلاثة مربعات تحتوي الأعداد 7666 و1888 و4777",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p125_i4",
+      "id": "mathematiques_exercices_corriges_p125_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -587,7 +587,7 @@
       "figureDesc": "",
       "answer": "(ط) > (أ) > (هـ)",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p125_i5",
+      "id": "mathematiques_exercices_corriges_p125_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -600,7 +600,7 @@
       "figureDesc": "شبه منحرف قائم مرسوم برأسين قائمين على اليسار",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p125_i6",
+      "id": "mathematiques_exercices_corriges_p125_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -613,7 +613,7 @@
       "figureDesc": "جدول من سطرين، العدد 5 محاط بدائرة",
       "answer": "المبلغ المدخر: 480 = 24 × 20 ؛ ينقصها: 100 = 480 - 580 (5 أسابيع) ؛ ثمن الآلة: 400 500 = (44 000 + 35 500) - 480 000",
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p125_i7",
+      "id": "mathematiques_exercices_corriges_p125_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -626,7 +626,7 @@
       "figureDesc": "ثلاث عمليات طرح موضوعة عموديا",
       "answer": "31 375 ؛ 60 354 ؛ 08 555 ؛ ج) 1098 = 9 × 122 = 9 × (50 + 72) ؛ 1098 = 450 + 648 = (9 × 50) + (9 × 72)",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p125_i8",
+      "id": "mathematiques_exercices_corriges_p125_i8",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -639,7 +639,7 @@
       "figureDesc": "",
       "answer": "292 = (508 + 150) - 950",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p125_i9",
+      "id": "mathematiques_exercices_corriges_p125_i9",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -652,7 +652,7 @@
       "figureDesc": "رسم زوايا بالرؤوس ج و هـ و و و ب مع تظليل",
       "answer": null,
       "confidence": 0.4,
-      "id": "math_solutions_4eme_sellami_p125_i10",
+      "id": "mathematiques_exercices_corriges_p125_i10",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -665,7 +665,7 @@
       "figureDesc": "",
       "answer": "10 000 = 2 500 + (2 × 175) + (3 × 850) + 4 600 ؛ 14 000 = 20 × 700 ؛ الربح: 4 000 = 10 000 - 14 000",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p125_i11",
+      "id": "mathematiques_exercices_corriges_p125_i11",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -678,7 +678,7 @@
       "figureDesc": "عمليات ضرب وجمع وطرح عمودية",
       "answer": "ب) 90 = (11 + 7) × 5 = (9 - 27) × 5 = 18 × 5 ؛ ج) 352 ؛ 20 000 ؛ 11 149",
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p125_i12",
+      "id": "mathematiques_exercices_corriges_p125_i12",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -691,7 +691,7 @@
       "figureDesc": "",
       "answer": "1 688 = 1 600 + 80 + 8 ؛ الأوراق: 65 000 = 30 000 + 5 000 + 10 000 + 20 000 ؛ المجموع: 66 688 = 1 688 + 65 000",
       "confidence": 0.7,
-      "id": "math_solutions_4eme_sellami_p125_i13",
+      "id": "mathematiques_exercices_corriges_p125_i13",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -704,7 +704,7 @@
       "figureDesc": "",
       "answer": "الزَّاوِيَةُ (أ) : مُنْفَرِجَةٌ ، الزَّاوِيَةُ (ب) : قَائِمَةٌ ، الزَّاوِيَةُ (د) : حَادَّةٌ",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p125_i14",
+      "id": "mathematiques_exercices_corriges_p125_i14",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -717,7 +717,7 @@
       "figureDesc": "",
       "answer": "المشتريات: 11 230 = 1 230 + (2 × 5 000) ؛ الكؤوس: 2 370 = 6 × 395 ؛ الصحون: 5 640 = 8 × 705 ؛ الملاعق: 1 000 = 4 × 250 ؛ الورق: 2 220 = (1 000 + 5 640 + 2 370) - 11 230",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p125_i15",
+      "id": "mathematiques_exercices_corriges_p125_i15",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

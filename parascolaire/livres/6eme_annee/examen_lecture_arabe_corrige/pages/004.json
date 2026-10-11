@@ -153,7 +153,7 @@
       "topicId": "ar-6-ch2",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "examen_lecture_6eme_corriges_p004_i1"
+      "id": "examen_lecture_arabe_corrige_p004_i1"
     },
     {
       "kind": "exercise",
@@ -165,7 +165,7 @@
       "topicId": "ar-6-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p004_i2"
+      "id": "examen_lecture_arabe_corrige_p004_i2"
     }
   ],
   "itemsOcr1": [
@@ -177,7 +177,7 @@
       "figureDesc": "Page d'examen avec cadre décoratif et en-tête en tableau (مجال اللغة العربية، مدرسة الانطلاقة، 2021/2022، اختبار اللغة العربية – القراءة – الثلاثي الأول، الاسم، اللقب، القسم السادسة). Filigrane jaune et « MOURAJAA.COM ». Les mots « أَمْسَكَتْ عَنِ » et « لَمْ يَأْبَهْ » sont soulignés.",
       "answer": null,
       "confidence": 0.85,
-      "id": "examen_lecture_6eme_corriges_p004_i1",
+      "id": "examen_lecture_arabe_corrige_p004_i1",
       "topicId": "ar-6-ch2",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -190,7 +190,7 @@
       "figureDesc": "Deux cases à cocher/remplir, une pour chaque parent.",
       "answer": "تَوَقُّعُ الأُمِّ : أنّ ابنها سيبقى فِي أرضه ليخدمها ويسْتقرَّبين أهله. / تَوَقُّعُ الأَبِ : لن يرضى بالبقاء فِي القرية ولن يستقرّ بأرْضٍ جدباء قاحلة",
       "confidence": 0.88,
-      "id": "examen_lecture_6eme_corriges_p004_i2",
+      "id": "examen_lecture_arabe_corrige_p004_i2",
       "topicId": "ar-6-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

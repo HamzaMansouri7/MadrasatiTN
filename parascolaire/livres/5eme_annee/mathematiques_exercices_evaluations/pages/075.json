@@ -169,7 +169,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p075_i1"
+      "id": "mathematiques_exercices_evaluations_p075_i1"
     },
     {
       "kind": "exercise",
@@ -181,7 +181,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p075_i2"
+      "id": "mathematiques_exercices_evaluations_p075_i2"
     },
     {
       "kind": "exercise",
@@ -193,7 +193,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p075_i3"
+      "id": "mathematiques_exercices_evaluations_p075_i3"
     }
   ],
   "itemsOcr1": [
@@ -205,7 +205,7 @@
       "figureDesc": "Quatre opérations à poser en colonnes, avec un grand espace blanc à gauche séparé par un trait vertical pour les calculs.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p075_i1",
+      "id": "mathematiques_exercices_evaluations_p075_i1",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -218,7 +218,7 @@
       "figureDesc": "Tableau de 4 lignes et 6 colonnes (type de marchandise, masse en kg, prix d'1 kg, prix total) avec plusieurs cases vides à compléter.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p075_i2",
+      "id": "mathematiques_exercices_evaluations_p075_i2",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -231,7 +231,7 @@
       "figureDesc": "Tableau des tarifs de la lafita murale (entrée, photo souvenir, collation, café ou thé) et lignes pointillées pour les réponses.",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p075_i3",
+      "id": "mathematiques_exercices_evaluations_p075_i3",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "hard"

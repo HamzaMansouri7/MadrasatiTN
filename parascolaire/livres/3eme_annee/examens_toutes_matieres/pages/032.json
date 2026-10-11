@@ -183,7 +183,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p032_i1"
+      "id": "examens_toutes_matieres_p032_i1"
     },
     {
       "kind": "exercise",
@@ -195,7 +195,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p032_i2"
+      "id": "examens_toutes_matieres_p032_i2"
     },
     {
       "kind": "exercise",
@@ -207,7 +207,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p032_i3"
+      "id": "examens_toutes_matieres_p032_i3"
     },
     {
       "kind": "exercise",
@@ -219,7 +219,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p032_i4"
+      "id": "examens_toutes_matieres_p032_i4"
     },
     {
       "kind": "exercise",
@@ -231,7 +231,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p032_i5"
+      "id": "examens_toutes_matieres_p032_i5"
     }
   ],
   "itemsOcr1": [
@@ -243,7 +243,7 @@
       "figureDesc": "مساحة للحل بنقاط منقطة، العدد المسند 0,5",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p032_i1",
+      "id": "examens_toutes_matieres_p032_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -256,7 +256,7 @@
       "figureDesc": "مكانان للحل، العدد المسند 0,5 لكل عدد",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_3eme_examens_p032_i2",
+      "id": "examens_toutes_matieres_p032_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -269,7 +269,7 @@
       "figureDesc": "مساحة للحل، العدد المسند 0,5",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p032_i3",
+      "id": "examens_toutes_matieres_p032_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -282,7 +282,7 @@
       "figureDesc": "مساحة للحل، العدد المسند 0,5",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_3eme_examens_p032_i4",
+      "id": "examens_toutes_matieres_p032_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -295,7 +295,7 @@
       "figureDesc": "ثلاثة أسطر للحل، كل منها بالعدد المسند 0,5",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p032_i5",
+      "id": "examens_toutes_matieres_p032_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

@@ -257,7 +257,7 @@
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i1"
+      "id": "eveil_scientifique_cours_exercices_p042_i1"
     },
     {
       "kind": "answer",
@@ -269,7 +269,7 @@
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i2"
+      "id": "eveil_scientifique_cours_exercices_p042_i2"
     },
     {
       "kind": "answer",
@@ -281,7 +281,7 @@
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i3"
+      "id": "eveil_scientifique_cours_exercices_p042_i3"
     },
     {
       "kind": "answer",
@@ -293,7 +293,7 @@
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i4"
+      "id": "eveil_scientifique_cours_exercices_p042_i4"
     },
     {
       "kind": "answer",
@@ -305,7 +305,7 @@
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i5"
+      "id": "eveil_scientifique_cours_exercices_p042_i5"
     },
     {
       "kind": "answer",
@@ -317,7 +317,7 @@
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i6"
+      "id": "eveil_scientifique_cours_exercices_p042_i6"
     },
     {
       "kind": "answer",
@@ -329,7 +329,7 @@
       "topicId": "sci-6-u1",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i7"
+      "id": "eveil_scientifique_cours_exercices_p042_i7"
     }
   ],
   "itemsOcr1": [
@@ -341,7 +341,7 @@
       "figureDesc": "",
       "answer": "ينحرف الضوء عن مساره عندما ينتقل بين وسطين شفافين؛ تسمى هذه الظاهرة الانكسار؛ لا تظهر السمكة في مكانها الحقيقي فهي أقرب إلى سطح الماء؛ انكسار الضوء عند سطح الماء يقرّب رؤية الأجسام المغمورة.",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i1",
+      "id": "eveil_scientifique_cours_exercices_p042_i1",
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -354,7 +354,7 @@
       "figureDesc": "",
       "answer": "أ- انعكاس، ب- انكسار، ج- عدسة محدّبة (لامّة)، د- عدسة مقعّرة (مفرّقة)",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i2",
+      "id": "eveil_scientifique_cours_exercices_p042_i2",
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -367,7 +367,7 @@
       "figureDesc": "رسم لتجربة على طاولة: عدسة مركّبة على حامل بين جسم وشاشة مع أشعة ضوئية متقاطعة",
       "answer": null,
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i3",
+      "id": "eveil_scientifique_cours_exercices_p042_i3",
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -380,7 +380,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i4",
+      "id": "eveil_scientifique_cours_exercices_p042_i4",
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -393,7 +393,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i5",
+      "id": "eveil_scientifique_cours_exercices_p042_i5",
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -406,7 +406,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i6",
+      "id": "eveil_scientifique_cours_exercices_p042_i6",
       "topicId": "sci-6-u1",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -419,7 +419,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p042_i7",
+      "id": "eveil_scientifique_cours_exercices_p042_i7",
       "topicId": "sci-6-u1",
       "formatGuess": "matching",
       "difficultyGuess": "hard"

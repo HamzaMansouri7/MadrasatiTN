@@ -177,7 +177,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p006_i1"
+      "id": "mathematiques_exercices_corriges_p006_i1"
     },
     {
       "kind": "exercise",
@@ -189,7 +189,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p006_i2"
+      "id": "mathematiques_exercices_corriges_p006_i2"
     },
     {
       "kind": "exercise",
@@ -201,7 +201,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p006_i3"
+      "id": "mathematiques_exercices_corriges_p006_i3"
     },
     {
       "kind": "exercise",
@@ -213,7 +213,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p006_i4"
+      "id": "mathematiques_exercices_corriges_p006_i4"
     },
     {
       "kind": "exercise",
@@ -225,7 +225,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p006_i5"
+      "id": "mathematiques_exercices_corriges_p006_i5"
     }
   ],
   "itemsOcr1": [
@@ -237,7 +237,7 @@
       "figureDesc": "نقاط مبعثرة في الصفحة مسماة: ب، ج، ز (ر)، د، ج (نقطة ثانية)، هـ، وبعض النقاط الأخرى؛ المطلوب إيجاد ثلاث نقاط على استقامة واحدة ثم رسم النقطة أ.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p006_i1",
+      "id": "mathematiques_exercices_corriges_p006_i1",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -250,7 +250,7 @@
       "figureDesc": "مستطيل يمثل ورقة منشورة عليها خط طي منقط مائل، تقع عليه النقاط أ، ب، ج؛ النقطة د خارج خط الطي إلى اليمين.",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p006_i2",
+      "id": "mathematiques_exercices_corriges_p006_i2",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -263,7 +263,7 @@
       "figureDesc": "مستطيل فيه خط طي منقط مائل من أعلى اليسار إلى أسفل اليمين، والنقطتان ج (أعلى اليمين) وب (يسار).",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p006_i3",
+      "id": "mathematiques_exercices_corriges_p006_i3",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -276,7 +276,7 @@
       "figureDesc": "نقاط معطاة: س وص في الأعلى، وب وج في الأسفل، إضافة إلى جدول من ثلاثة أسطر.",
       "answer": null,
       "confidence": 0.87,
-      "id": "math_solutions_4eme_sellami_p006_i4",
+      "id": "mathematiques_exercices_corriges_p006_i4",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

@@ -157,7 +157,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i1"
+      "id": "eveil_scientifique_cours_exercices_p020_i1"
     },
     {
       "kind": "exercise",
@@ -169,7 +169,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i2"
+      "id": "eveil_scientifique_cours_exercices_p020_i2"
     },
     {
       "kind": "exercise",
@@ -181,7 +181,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i3"
+      "id": "eveil_scientifique_cours_exercices_p020_i3"
     },
     {
       "kind": "exercise",
@@ -193,7 +193,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i4"
+      "id": "eveil_scientifique_cours_exercices_p020_i4"
     }
   ],
   "itemsOcr1": [
@@ -205,7 +205,7 @@
       "figureDesc": "Schéma en fleur de 6 groupes d'aliments : مجموعة 1 (poisson, viande, volaille, œufs), مجموعة 2 (lait, fromage, produits laitiers), مجموعة 3 (beurre, huile, matières grasses, dattes), مجموعة 4 (pain, céréales, pommes de terre, farine), مجموعة 5 (fruits et légumes), مجموعة 6 au centre (eau et boissons). Les numéros 1 à 5 en couleur correspondent aux descriptions.",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i1",
+      "id": "eveil_scientifique_cours_exercices_p020_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -218,7 +218,7 @@
       "figureDesc": "Ligne pointillée pour la réponse",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i2",
+      "id": "eveil_scientifique_cours_exercices_p020_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -231,7 +231,7 @@
       "figureDesc": "Ligne pointillée pour la réponse",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i3",
+      "id": "eveil_scientifique_cours_exercices_p020_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -244,7 +244,7 @@
       "figureDesc": "Tableau à 3 colonnes à remplir : أغذية بنّاءة | أغذية طاقية | أغذية واقية",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_mounir_eveil_scientifique_6eme_p020_i4",
+      "id": "eveil_scientifique_cours_exercices_p020_i4",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"

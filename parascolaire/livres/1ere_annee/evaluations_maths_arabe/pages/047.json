@@ -159,7 +159,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p047_i1"
+      "id": "evaluations_maths_arabe_p047_i1"
     },
     {
       "kind": "exercise",
@@ -171,7 +171,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p047_i2"
+      "id": "evaluations_maths_arabe_p047_i2"
     },
     {
       "kind": "exercise",
@@ -183,7 +183,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p047_i3"
+      "id": "evaluations_maths_arabe_p047_i3"
     },
     {
       "kind": "exercise",
@@ -195,7 +195,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p047_i4"
+      "id": "evaluations_maths_arabe_p047_i4"
     }
   ],
   "itemsOcr1": [
@@ -207,7 +207,7 @@
       "figureDesc": "قطع نقدية مرسومة (1 مي، 2 مي، 5 مي) مع دوائر فارغة تحتها كلمة 'مي' لإكمال المجموع المطلوب.",
       "answer": null,
       "confidence": 0.96,
-      "id": "jisr_ennajah_1ere_evaluations_p047_i1",
+      "id": "evaluations_maths_arabe_p047_i1",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -220,7 +220,7 @@
       "figureDesc": "مجموعتان من القطع النقدية المقابلة لمبلغين (7 مي و 8 مي) للتعرف على القطعة الزائدة وشطبها.",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p047_i2",
+      "id": "evaluations_maths_arabe_p047_i2",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -233,7 +233,7 @@
       "figureDesc": "مستطيل مقسم إلى ثلاثة أجزاء متقابلة مع المبالغ المكتوبة لرسم القطعة النقدية المناسبة لكل منها.",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p047_i3",
+      "id": "evaluations_maths_arabe_p047_i3",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -246,7 +246,7 @@
       "figureDesc": "جدول مكوّن من 3 أسطر لتمثيل مبلغ 9 مليمات بثلاثة شروط مختلفة وكتابة النتيجة.",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p047_i4",
+      "id": "evaluations_maths_arabe_p047_i4",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "medium"

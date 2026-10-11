@@ -210,7 +210,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p068_i1"
+      "id": "evaluations_maths_arabe_p068_i1"
     },
     {
       "kind": "support",
@@ -222,7 +222,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p068_i2"
+      "id": "evaluations_maths_arabe_p068_i2"
     },
     {
       "kind": "exercise",
@@ -234,7 +234,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p068_i3"
+      "id": "evaluations_maths_arabe_p068_i3"
     },
     {
       "kind": "exercise",
@@ -246,7 +246,7 @@
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p068_i4"
+      "id": "evaluations_maths_arabe_p068_i4"
     },
     {
       "kind": "support",
@@ -258,7 +258,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_1ere_evaluations_p068_i5"
+      "id": "evaluations_maths_arabe_p068_i5"
     },
     {
       "kind": "exercise",
@@ -270,7 +270,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_1ere_evaluations_p068_i6"
+      "id": "evaluations_maths_arabe_p068_i6"
     }
   ],
   "itemsOcr1": [
@@ -282,7 +282,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p068_i1",
+      "id": "evaluations_maths_arabe_p068_i1",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -295,7 +295,7 @@
       "figureDesc": "جدول يوضح القطع النقدية المتبقية لدى كل من: شادي (قطعتان من فئة 2 مي وقطعتان من فئة 1 مي)، وخالد (قطعة من فئة 5 مي وثلاث قطع من فئة 1 مي).",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p068_i2",
+      "id": "evaluations_maths_arabe_p068_i2",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -308,7 +308,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p068_i3",
+      "id": "evaluations_maths_arabe_p068_i3",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -321,7 +321,7 @@
       "figureDesc": "مجموعة من ثمانية خطوط وأشكال هندسية مرسومة (مربعات مغلقة، خطوط منكسرة مفتوحة، خط بيضاوي مغلق، خطوط منحنية وحلزونية مفتوحة، ودائرة مغلقة)، وأسفلها بطاقتان للربط: 'خُطُوطٌ مَفْتُوحَةٌ' و'خُطُوطٌ مُغْلَقَةٌ'.",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p068_i4",
+      "id": "evaluations_maths_arabe_p068_i4",
       "topicId": "math-1-p2",
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -165,7 +165,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p087_i1"
+      "id": "mathematiques_exercices_corriges_p087_i1"
     },
     {
       "kind": "exercise",
@@ -177,7 +177,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p087_i2"
+      "id": "mathematiques_exercices_corriges_p087_i2"
     },
     {
       "kind": "exercise",
@@ -189,7 +189,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p087_i3"
+      "id": "mathematiques_exercices_corriges_p087_i3"
     },
     {
       "kind": "exercise",
@@ -201,7 +201,7 @@
       "topicId": "math-4-ch3",
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p087_i4"
+      "id": "mathematiques_exercices_corriges_p087_i4"
     }
   ],
   "itemsOcr1": [
@@ -213,7 +213,7 @@
       "figureDesc": "جدول من أربعة أعمدة (المقسوم، القاسم، خارج القسمة، الباقي) وثلاثة أسطر، بعض الخانات فارغة (نقطة) يجب إتمامها.",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p087_i1",
+      "id": "mathematiques_exercices_corriges_p087_i1",
       "topicId": "math-4-ch3",
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium"
@@ -226,7 +226,7 @@
       "figureDesc": "رسم قارورة حليب تساوي خمسة كؤوس.",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p087_i2",
+      "id": "mathematiques_exercices_corriges_p087_i2",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -239,7 +239,7 @@
       "figureDesc": "مستطيل أ ب ج د مقسّم إلى 6 مربعات متقايسة (3 أعمدة وسطرين). طول الضلع أ د مشار إليه بسهم ويساوي 6 صم.",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p087_i3",
+      "id": "mathematiques_exercices_corriges_p087_i3",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -252,7 +252,7 @@
       "figureDesc": "مربعان نصيان للمسألتين وأربعة مربعات للإجابات المقترحة أ، ب، ج، د مع دوائر للاختيار.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p087_i4",
+      "id": "mathematiques_exercices_corriges_p087_i4",
       "topicId": "math-4-ch3",
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium"

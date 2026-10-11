@@ -174,7 +174,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p051_i1"
+      "id": "evaluations_maths_arabe_p051_i1"
     },
     {
       "kind": "exercise",
@@ -186,7 +186,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p051_i2"
+      "id": "evaluations_maths_arabe_p051_i2"
     },
     {
       "kind": "exercise",
@@ -198,7 +198,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p051_i3"
+      "id": "evaluations_maths_arabe_p051_i3"
     },
     {
       "kind": "exercise",
@@ -210,7 +210,7 @@
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_1ere_evaluations_p051_i4"
+      "id": "evaluations_maths_arabe_p051_i4"
     }
   ],
   "itemsOcr1": [
@@ -222,7 +222,7 @@
       "figureDesc": "ثلاثة جداول مقسمة إلى عمودين (أ) و(ب) تحتوي على نتائج مقترحة لتلوين الصحيح منها.",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p051_i1",
+      "id": "evaluations_maths_arabe_p051_i1",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -235,7 +235,7 @@
       "figureDesc": "مخطط فين يتكون من مجموعة كبرى تحتوي على دائرة فارغة مع علامة 10 بجانبها، ومجموعة فرعية تحتوي على 8 مثلثات زرقاء، وتتصل بالمجموعات أشكال هندسية فارغة (مربع، دائرة، مثلث) لإكمال الأعداد المناسبة.",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p051_i2",
+      "id": "evaluations_maths_arabe_p051_i2",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -248,7 +248,7 @@
       "figureDesc": "مجموعتان من القطع النقدية التونسية: الأولى لأحمد تحتوي على قطع (10، 10، 10، 5، 2، 1) مي والثانية لمنير تحتوي على قطع (10، 10، 10، 5، 5، 2، 2، 1) مي، وأسفل كل مجموعة فراغ لكتابة المبلغ بالمليم ثم المقارنة بينهما.",
       "answer": null,
       "confidence": 0.97,
-      "id": "jisr_ennajah_1ere_evaluations_p051_i3",
+      "id": "evaluations_maths_arabe_p051_i3",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -261,7 +261,7 @@
       "figureDesc": "إطار يحتوي على قطع نقدية متفرقة: 20 مي، 10 مي (3 قطع)، 5 مي (3 قطع)، 2 مي (قطعة واحدة)، 1 مي (3 قطع).",
       "answer": null,
       "confidence": 0.98,
-      "id": "jisr_ennajah_1ere_evaluations_p051_i4",
+      "id": "evaluations_maths_arabe_p051_i4",
       "topicId": "math-1-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"

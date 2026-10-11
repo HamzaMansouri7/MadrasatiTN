@@ -211,7 +211,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p058_i1"
+      "id": "grammaire_arabe_cahier_regles_p058_i1"
     },
     {
       "kind": "exercise",
@@ -223,7 +223,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "cahier_grammaire_6eme_p058_i2"
+      "id": "grammaire_arabe_cahier_regles_p058_i2"
     },
     {
       "kind": "exercise",
@@ -235,7 +235,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "cahier_grammaire_6eme_p058_i3"
+      "id": "grammaire_arabe_cahier_regles_p058_i3"
     },
     {
       "kind": "exercise",
@@ -247,7 +247,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "cahier_grammaire_6eme_p058_i4"
+      "id": "grammaire_arabe_cahier_regles_p058_i4"
     },
     {
       "kind": "exercise",
@@ -259,7 +259,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "cahier_grammaire_6eme_p058_i5"
+      "id": "grammaire_arabe_cahier_regles_p058_i5"
     },
     {
       "kind": "lesson",
@@ -271,7 +271,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p058_i6"
+      "id": "grammaire_arabe_cahier_regles_p058_i6"
     }
   ],
   "itemsOcr1": [
@@ -283,7 +283,7 @@
       "figureDesc": "جدول من ثلاثة أسطر: الأوزان، الفعل الماضي المضاعف، اسم الفاعل؛ خانة وزن افعلّ مظللة فارغة",
       "answer": null,
       "confidence": 0.85,
-      "id": "cahier_grammaire_6eme_p058_i1",
+      "id": "grammaire_arabe_cahier_regles_p058_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -296,7 +296,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "cahier_grammaire_6eme_p058_i2",
+      "id": "grammaire_arabe_cahier_regles_p058_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -309,7 +309,7 @@
       "figureDesc": "جدول من خمس خانات للأفعال وسطر فارغ للإجابات تحتها",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p058_i3",
+      "id": "grammaire_arabe_cahier_regles_p058_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -322,7 +322,7 @@
       "figureDesc": "الأفعال المؤطرة: استقر، تسلق، ردد، ودع؛ مع فراغات في النص",
       "answer": null,
       "confidence": 0.8,
-      "id": "cahier_grammaire_6eme_p058_i4",
+      "id": "grammaire_arabe_cahier_regles_p058_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -335,7 +335,7 @@
       "figureDesc": "جدول بست خانات فارغة: المفرد والمثنى والجمع، لكل منها مذكر ومؤنث",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p058_i5",
+      "id": "grammaire_arabe_cahier_regles_p058_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -348,7 +348,7 @@
       "figureDesc": "جدول مراجعة لأوزان المزيد مع مثال لكل وزن",
       "answer": null,
       "confidence": 0.85,
-      "id": "cahier_grammaire_6eme_p058_i6",
+      "id": "grammaire_arabe_cahier_regles_p058_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

@@ -176,7 +176,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p081_i1"
+      "id": "mathematiques_exercices_evaluations_p081_i1"
     },
     {
       "kind": "exercise",
@@ -188,7 +188,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p081_i2"
+      "id": "mathematiques_exercices_evaluations_p081_i2"
     },
     {
       "kind": "exercise",
@@ -200,7 +200,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p081_i3"
+      "id": "mathematiques_exercices_evaluations_p081_i3"
     },
     {
       "kind": "exercise",
@@ -212,7 +212,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p081_i4"
+      "id": "mathematiques_exercices_evaluations_p081_i4"
     },
     {
       "kind": "exercise",
@@ -224,7 +224,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_ahram_5eme_complet_p081_i5"
+      "id": "mathematiques_exercices_evaluations_p081_i5"
     }
   ],
   "itemsOcr1": [
@@ -236,7 +236,7 @@
       "figureDesc": "جدول من عمودين تفصل بينهما خطّ عمودي، كل سطر ينتهي بنقاط للإجابة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p081_i1",
+      "id": "mathematiques_exercices_evaluations_p081_i1",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -249,7 +249,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p081_i2",
+      "id": "mathematiques_exercices_evaluations_p081_i2",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -262,7 +262,7 @@
       "figureDesc": "أسطر منقّطة لكتابة الحل.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p081_i3",
+      "id": "mathematiques_exercices_evaluations_p081_i3",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -275,7 +275,7 @@
       "figureDesc": "أسطر منقّطة لكتابة الحل.",
       "answer": null,
       "confidence": 0.82,
-      "id": "al_ahram_5eme_complet_p081_i4",
+      "id": "mathematiques_exercices_evaluations_p081_i4",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -239,7 +239,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p061_i1"
+      "id": "soutien_maths_francais_p061_i1"
     },
     {
       "kind": "lesson",
@@ -251,7 +251,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i2"
+      "id": "soutien_maths_francais_p061_i2"
     },
     {
       "kind": "exercise",
@@ -263,7 +263,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i3"
+      "id": "soutien_maths_francais_p061_i3"
     },
     {
       "kind": "exercise",
@@ -275,7 +275,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i4"
+      "id": "soutien_maths_francais_p061_i4"
     },
     {
       "kind": "exercise",
@@ -287,7 +287,7 @@
       "topicId": null,
       "formatGuess": "true_false",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i5"
+      "id": "soutien_maths_francais_p061_i5"
     },
     {
       "kind": "exercise",
@@ -299,7 +299,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i6"
+      "id": "soutien_maths_francais_p061_i6"
     },
     {
       "kind": "exercise",
@@ -311,7 +311,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i7"
+      "id": "soutien_maths_francais_p061_i7"
     },
     {
       "kind": "exercise",
@@ -323,7 +323,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i8"
+      "id": "soutien_maths_francais_p061_i8"
     },
     {
       "kind": "exercise",
@@ -335,7 +335,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p061_i9"
+      "id": "soutien_maths_francais_p061_i9"
     },
     {
       "kind": "exercise",
@@ -347,7 +347,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p061_i10"
+      "id": "soutien_maths_francais_p061_i10"
     }
   ],
   "itemsOcr1": [
@@ -359,7 +359,7 @@
       "figureDesc": "En-tête d'examen : emblème du Royaume du Maroc, ministère de l'Éducation nationale, avec des champs à remplir (Académie, Direction, Établissement, Nom, Prénom, N° de l'examen, La note). Mentions : Epreuve de français, Durée 01:30, Examen normalisé blanc pour l'obtention du certificat des études primaires, session de JUILLET 2022, Réalisé par Prof Ahmed MARZOUGUE.",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p061_i1",
+      "id": "soutien_maths_francais_p061_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -372,7 +372,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p061_i2",
+      "id": "soutien_maths_francais_p061_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -385,7 +385,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p061_i3",
+      "id": "soutien_maths_francais_p061_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -398,7 +398,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p061_i4",
+      "id": "soutien_maths_francais_p061_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -411,7 +411,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p061_i5",
+      "id": "soutien_maths_francais_p061_i5",
       "topicId": null,
       "formatGuess": "true_false",
       "difficultyGuess": "medium"
@@ -424,7 +424,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_6eme_math_francais_p061_i6",
+      "id": "soutien_maths_francais_p061_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -437,7 +437,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.94,
-      "id": "mouayen_6eme_math_francais_p061_i7",
+      "id": "soutien_maths_francais_p061_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -450,7 +450,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p061_i8",
+      "id": "soutien_maths_francais_p061_i8",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -463,7 +463,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_6eme_math_francais_p061_i9",
+      "id": "soutien_maths_francais_p061_i9",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

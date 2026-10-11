@@ -174,7 +174,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p020_i1"
+      "id": "mathematiques_exercices_evaluations_p020_i1"
     },
     {
       "kind": "exercise",
@@ -186,7 +186,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p020_i2"
+      "id": "mathematiques_exercices_evaluations_p020_i2"
     },
     {
       "kind": "exercise",
@@ -198,7 +198,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p020_i3"
+      "id": "mathematiques_exercices_evaluations_p020_i3"
     },
     {
       "kind": "exercise",
@@ -210,7 +210,7 @@
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p020_i4"
+      "id": "mathematiques_exercices_evaluations_p020_i4"
     }
   ],
   "itemsOcr1": [
@@ -222,7 +222,7 @@
       "figureDesc": "Bandeau-titre décoratif avec le numéro 5 (السنة الخامسة) et le logo Al Ahram",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p020_i1",
+      "id": "mathematiques_exercices_evaluations_p020_i1",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -235,7 +235,7 @@
       "figureDesc": "Tableau de conversion kg / quintal / tonne avec cases vides pointillées à remplir",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p020_i2",
+      "id": "mathematiques_exercices_evaluations_p020_i2",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -248,7 +248,7 @@
       "figureDesc": "Opérations en deux colonnes séparées par une double ligne verticale",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p020_i3",
+      "id": "mathematiques_exercices_evaluations_p020_i3",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -261,7 +261,7 @@
       "figureDesc": "Lignes pointillées pour écrire les réponses après chaque question",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p020_i4",
+      "id": "mathematiques_exercices_evaluations_p020_i4",
       "topicId": "math-5-p4",
       "formatGuess": "free",
       "difficultyGuess": "easy"

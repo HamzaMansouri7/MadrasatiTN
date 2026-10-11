@@ -197,7 +197,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p058_i1"
+      "id": "mathematiques_exercices_evaluations_p058_i1"
     },
     {
       "kind": "exercise",
@@ -209,7 +209,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p058_i2"
+      "id": "mathematiques_exercices_evaluations_p058_i2"
     },
     {
       "kind": "exercise",
@@ -221,7 +221,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p058_i3"
+      "id": "mathematiques_exercices_evaluations_p058_i3"
     },
     {
       "kind": "exercise",
@@ -233,7 +233,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p058_i4"
+      "id": "mathematiques_exercices_evaluations_p058_i4"
     },
     {
       "kind": "exercise",
@@ -245,7 +245,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p058_i5"
+      "id": "mathematiques_exercices_evaluations_p058_i5"
     },
     {
       "kind": "exercise",
@@ -257,7 +257,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p058_i6"
+      "id": "mathematiques_exercices_evaluations_p058_i6"
     },
     {
       "kind": "exercise",
@@ -269,7 +269,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_ahram_5eme_complet_p058_i7"
+      "id": "mathematiques_exercices_evaluations_p058_i7"
     }
   ],
   "itemsOcr1": [
@@ -281,7 +281,7 @@
       "figureDesc": "جدول من سطرين يحتوي على عمليتي فؤاد وأشرف.",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_ahram_5eme_complet_p058_i1",
+      "id": "mathematiques_exercices_evaluations_p058_i1",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -294,7 +294,7 @@
       "figureDesc": "خانتان لتنقيط المعيار «معـ 2» على الهامش.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p058_i2",
+      "id": "mathematiques_exercices_evaluations_p058_i2",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -307,7 +307,7 @@
       "figureDesc": "خانة تنقيط «معـ 5» على الهامش.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p058_i3",
+      "id": "mathematiques_exercices_evaluations_p058_i3",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -320,7 +320,7 @@
       "figureDesc": "إطار ملوّن بخلفية مشوّشة.",
       "answer": null,
       "confidence": 0.55,
-      "id": "al_ahram_5eme_complet_p058_i4",
+      "id": "mathematiques_exercices_evaluations_p058_i4",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -333,7 +333,7 @@
       "figureDesc": "معايير التقييم على الهامش: معـ 2 و معـ 3.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p058_i5",
+      "id": "mathematiques_exercices_evaluations_p058_i5",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -346,7 +346,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p058_i6",
+      "id": "mathematiques_exercices_evaluations_p058_i6",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -359,7 +359,7 @@
       "figureDesc": "معيار التقييم على الهامش: معـ 2. رقم الصفحة 59.",
       "answer": null,
       "confidence": 0.65,
-      "id": "al_ahram_5eme_complet_p058_i7",
+      "id": "mathematiques_exercices_evaluations_p058_i7",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

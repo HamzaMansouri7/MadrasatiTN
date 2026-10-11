@@ -143,7 +143,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_1ere_evaluations_p028_i1"
+      "id": "evaluations_maths_arabe_p028_i1"
     }
   ],
   "itemsOcr1": [
@@ -155,7 +155,7 @@
       "figureDesc": "جدول مقاطع الحروف المدروسة مع الحركات والمدود والتنوين وبجانبه خمس صور ورسوم مصحوبة بكلمات ناقصة: صورة حلزون، صورة خزانة، صورة حزام، صورة معزة، صورة زرافة.",
       "answer": null,
       "confidence": 0.96,
-      "id": "jisr_ennajah_1ere_evaluations_p028_i1",
+      "id": "evaluations_maths_arabe_p028_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

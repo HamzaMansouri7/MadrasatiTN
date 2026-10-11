@@ -172,7 +172,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p004_i1"
+      "id": "concours_mathematiques_corriges_p004_i1"
     },
     {
       "kind": "answer",
@@ -184,7 +184,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p004_i2"
+      "id": "concours_mathematiques_corriges_p004_i2"
     },
     {
       "kind": "exercise",
@@ -196,7 +196,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p004_i3"
+      "id": "concours_mathematiques_corriges_p004_i3"
     },
     {
       "kind": "exercise",
@@ -208,7 +208,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p004_i4"
+      "id": "concours_mathematiques_corriges_p004_i4"
     }
   ],
   "itemsOcr1": [
@@ -220,7 +220,7 @@
       "figureDesc": "Tampon circulaire de l'éditeur en haut à gauche et filigrane orange en arabe sur la page.",
       "answer": "المبلغ المجمع بعد بيع الحلي: (55 × 135450) / 100 = 74497.5 د ؛ ثمن بيع الحلي: 60200 - 74497.5 = 14297.5 د ؛ ثمن بيع الغرام الواحد من الحلي: 14297.5 / 250 = 57.190 د",
       "confidence": 0.8,
-      "id": "concours_math_6eme_corriges_p004_i1",
+      "id": "concours_mathematiques_corriges_p004_i1",
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy"
@@ -233,7 +233,7 @@
       "figureDesc": "",
       "answer": "المبلغ المقترض: 135450 – (60200 + 14297.5) = 60952.5 د ؛ المبلغ المسدّد: 532.770 × 135 = 71923.950 د ؛ قيمة الفائض: 71923.950 - 60952.5 = 10971.450 د ؛ النسبة المائوية للفائض من المبلغ المقترض: (100 × 10971.450) / 60952.5 = 18 %",
       "confidence": 0.8,
-      "id": "concours_math_6eme_corriges_p004_i2",
+      "id": "concours_mathematiques_corriges_p004_i2",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -246,7 +246,7 @@
       "figureDesc": "Triangle أ ب ج avec أب = 1.5 سم، أج = 1.2 سم (نقطة هـ)، ب ج = 4 سم ; نصف دائرة قطرها ب ج مرسوم على الضلع ب ج، مركزه معلّم بنجمة.",
       "answer": "الأبعاد الحقيقية: 1.5 × 2000 = 30 م ؛ 1.2 × 2000 = 24 م ؛ 4 × 2000 = 80 م ؛ قيس مساحة (أ ب ج) = (80 × 30)/2 = 1200 م² ؛ طول (ب ج): (2 × 1200)/24 = 100 م ؛ قيس الشعاع: 100 : 2 = 50 م ؛ قيس مساحة نصف القرص = (3.14 × 50 × 50)/2 = 3925 م² ؛ ثمن الشراء: 3925 × 63 = 247275 د ؛ قيمة المصاريف: 269529.750 – 247275 = 22254.750 د ؛ النسبة المائوية للمصاريف: (100 × 22254.750)/247275 = 9 % أي 9 %",
       "confidence": 0.8,
-      "id": "concours_math_6eme_corriges_p004_i3",
+      "id": "concours_mathematiques_corriges_p004_i3",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -259,7 +259,7 @@
       "figureDesc": "Tableau de proportionnalité : 100% ↔ 12696 ; 15% ↔ (vide) ; 115% ↔ ؟",
       "answer": "طول القوس = (3.14 × 100)/2 = 157 م ؛ قيس المحيط: 157 + 80 + 30 = 267 م ؛ طول السياج: 267 – 2.5 = 264.5 م ؛ كلفة البناء: 264.5 × 48 = 12696 د",
       "confidence": 0.8,
-      "id": "concours_math_6eme_corriges_p004_i4",
+      "id": "concours_mathematiques_corriges_p004_i4",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"

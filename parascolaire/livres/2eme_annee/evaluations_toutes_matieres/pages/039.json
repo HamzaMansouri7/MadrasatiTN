@@ -149,7 +149,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i1"
+      "id": "evaluations_toutes_matieres_p039_i1"
     },
     {
       "kind": "exercise",
@@ -161,7 +161,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i2"
+      "id": "evaluations_toutes_matieres_p039_i2"
     },
     {
       "kind": "exercise",
@@ -173,7 +173,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i3"
+      "id": "evaluations_toutes_matieres_p039_i3"
     },
     {
       "kind": "exercise",
@@ -185,7 +185,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i4"
+      "id": "evaluations_toutes_matieres_p039_i4"
     }
   ],
   "itemsOcr1": [
@@ -197,7 +197,7 @@
       "figureDesc": "Ligne de tableau (colonnes : ع/ر، الأنشطة، إجابة التلميذ(ة)، النقاط المسندة) avec ligne pointillée pour la réponse ; note : 1 point. En-tête de la page : امْتِحَانَات جِسْر النَّجَاح، المادة : رِيَاضِيّات (حِسَابٌ ذِهْنِيٌّ)، المستوى : السنة الثانية، اِخْتِبَار نِهَايَة الثَّلَاثِي الثَّانِي، عدد : 4 ; champs الاسم / اللقب / القسم ; total sur 4.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i1",
+      "id": "evaluations_toutes_matieres_p039_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -210,7 +210,7 @@
       "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i2",
+      "id": "evaluations_toutes_matieres_p039_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -223,7 +223,7 @@
       "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i3",
+      "id": "evaluations_toutes_matieres_p039_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -236,7 +236,7 @@
       "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point. Case de total en bas à gauche : …/4.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i4",
+      "id": "evaluations_toutes_matieres_p039_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

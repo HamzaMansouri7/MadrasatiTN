@@ -215,7 +215,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p105_i1"
+      "id": "mathematiques_exercices_corriges_p105_i1"
     },
     {
       "kind": "exercise",
@@ -227,7 +227,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p105_i2"
+      "id": "mathematiques_exercices_corriges_p105_i2"
     },
     {
       "kind": "exercise",
@@ -239,7 +239,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p105_i3"
+      "id": "mathematiques_exercices_corriges_p105_i3"
     },
     {
       "kind": "exercise",
@@ -251,7 +251,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p105_i4"
+      "id": "mathematiques_exercices_corriges_p105_i4"
     },
     {
       "kind": "exercise",
@@ -263,7 +263,7 @@
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "hard",
-      "id": "math_solutions_4eme_sellami_p105_i5"
+      "id": "mathematiques_exercices_corriges_p105_i5"
     },
     {
       "kind": "exercise",
@@ -275,7 +275,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p105_i6"
+      "id": "mathematiques_exercices_corriges_p105_i6"
     },
     {
       "kind": "page_number",
@@ -287,7 +287,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p105_i7"
+      "id": "mathematiques_exercices_corriges_p105_i7"
     }
   ],
   "itemsOcr1": [
@@ -299,7 +299,7 @@
       "figureDesc": "جدول من ست خانات؛ الخانات الثلاث الأولى من اليمين تحتوي على 150 000 و300 000 و450 000 والثلاث الأخرى فارغة.",
       "answer": null,
       "confidence": 0.95,
-      "id": "math_solutions_4eme_sellami_p105_i1",
+      "id": "mathematiques_exercices_corriges_p105_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -312,7 +312,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "math_solutions_4eme_sellami_p105_i2",
+      "id": "mathematiques_exercices_corriges_p105_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -325,7 +325,7 @@
       "figureDesc": "ميزان ذو كفتين في حالة توازن؛ الكفة اليمنى: وعاء عسل + 2 هغ؛ الكفة اليسرى: 1 هغ + 5 هغ + 1 كغ.",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p105_i3",
+      "id": "mathematiques_exercices_corriges_p105_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -338,7 +338,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "math_solutions_4eme_sellami_p105_i4",
+      "id": "mathematiques_exercices_corriges_p105_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -351,7 +351,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "math_solutions_4eme_sellami_p105_i5",
+      "id": "mathematiques_exercices_corriges_p105_i5",
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "hard"

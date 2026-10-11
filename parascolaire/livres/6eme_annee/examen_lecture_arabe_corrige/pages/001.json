@@ -169,7 +169,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "examen_lecture_6eme_corriges_p001_i1"
+      "id": "examen_lecture_arabe_corrige_p001_i1"
     },
     {
       "kind": "exercise",
@@ -181,7 +181,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "examen_lecture_6eme_corriges_p001_i2"
+      "id": "examen_lecture_arabe_corrige_p001_i2"
     },
     {
       "kind": "exercise",
@@ -193,7 +193,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "examen_lecture_6eme_corriges_p001_i3"
+      "id": "examen_lecture_arabe_corrige_p001_i3"
     }
   ],
   "itemsOcr1": [
@@ -205,7 +205,7 @@
       "figureDesc": "ترويسة: مجال اللغة العربية، مدرسة الانطلاقة 2022/2023، اختبار اللغة العربية (القراءة) الثلاثي الأول، الاسم واللقب والقسم السادسة. عبارة «أمسكت على» و«لم يأبه لذلك» مسطّرتان في النص. علامة مائية.",
       "answer": null,
       "confidence": 0.8,
-      "id": "examen_lecture_6eme_corriges_p001_i1",
+      "id": "examen_lecture_arabe_corrige_p001_i1",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -218,7 +218,7 @@
       "figureDesc": "مربّعان صغيران للتقييم بجانب كل توقع",
       "answer": null,
       "confidence": 0.9,
-      "id": "examen_lecture_6eme_corriges_p001_i2",
+      "id": "examen_lecture_arabe_corrige_p001_i2",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -231,7 +231,7 @@
       "figureDesc": "الجدول غير ظاهر في هذه الصفحة (يُتوقع في الصفحة التالية)",
       "answer": null,
       "confidence": 0.88,
-      "id": "examen_lecture_6eme_corriges_p001_i3",
+      "id": "examen_lecture_arabe_corrige_p001_i3",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

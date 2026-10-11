@@ -236,7 +236,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i1"
+      "id": "eveil_scientifique_cours_exercices_p016_i1"
     },
     {
       "kind": "exercise",
@@ -248,7 +248,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i2"
+      "id": "eveil_scientifique_cours_exercices_p016_i2"
     },
     {
       "kind": "exercise",
@@ -260,7 +260,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i3"
+      "id": "eveil_scientifique_cours_exercices_p016_i3"
     },
     {
       "kind": "exercise",
@@ -272,7 +272,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i4"
+      "id": "eveil_scientifique_cours_exercices_p016_i4"
     },
     {
       "kind": "exercise",
@@ -284,7 +284,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i5"
+      "id": "eveil_scientifique_cours_exercices_p016_i5"
     },
     {
       "kind": "exercise",
@@ -296,7 +296,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i6"
+      "id": "eveil_scientifique_cours_exercices_p016_i6"
     },
     {
       "kind": "lesson",
@@ -308,7 +308,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i7"
+      "id": "eveil_scientifique_cours_exercices_p016_i7"
     },
     {
       "kind": "lesson",
@@ -320,7 +320,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i8"
+      "id": "eveil_scientifique_cours_exercices_p016_i8"
     }
   ],
   "itemsOcr1": [
@@ -332,7 +332,7 @@
       "figureDesc": "Schéma d'un garçon avec les appareils respiratoire (هواء، رئة), digestif (غذاء، معدة، معي، غائط), circulatoire (قلب) et excréteur (كلية، مثانة، بول), muscle (عضو الجسم). Quatre points numérotés (1 à 4) marquent les étapes, avec des flèches rouges de circulation. En haut à droite, petit schéma des capillaires reliant artère (شريان) et veine (وريد).",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i1",
+      "id": "eveil_scientifique_cours_exercices_p016_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -345,7 +345,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i2",
+      "id": "eveil_scientifique_cours_exercices_p016_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -358,7 +358,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i3",
+      "id": "eveil_scientifique_cours_exercices_p016_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -371,7 +371,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i4",
+      "id": "eveil_scientifique_cours_exercices_p016_i4",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -384,7 +384,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i5",
+      "id": "eveil_scientifique_cours_exercices_p016_i5",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -397,7 +397,7 @@
       "figureDesc": "Encadré bleu « Le savais-tu ? »",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i6",
+      "id": "eveil_scientifique_cours_exercices_p016_i6",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -410,7 +410,7 @@
       "figureDesc": "Encadré bleu « Le savais-tu ? »",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p016_i7",
+      "id": "eveil_scientifique_cours_exercices_p016_i7",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"

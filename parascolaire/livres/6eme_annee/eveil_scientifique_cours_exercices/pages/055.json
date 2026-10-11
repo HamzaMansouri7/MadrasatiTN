@@ -247,7 +247,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i1"
+      "id": "eveil_scientifique_cours_exercices_p055_i1"
     },
     {
       "kind": "answer",
@@ -259,7 +259,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i2"
+      "id": "eveil_scientifique_cours_exercices_p055_i2"
     },
     {
       "kind": "answer",
@@ -271,7 +271,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i3"
+      "id": "eveil_scientifique_cours_exercices_p055_i3"
     },
     {
       "kind": "answer",
@@ -283,7 +283,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i4"
+      "id": "eveil_scientifique_cours_exercices_p055_i4"
     },
     {
       "kind": "answer",
@@ -295,7 +295,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i5"
+      "id": "eveil_scientifique_cours_exercices_p055_i5"
     },
     {
       "kind": "answer",
@@ -307,7 +307,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i6"
+      "id": "eveil_scientifique_cours_exercices_p055_i6"
     },
     {
       "kind": "answer",
@@ -319,7 +319,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i7"
+      "id": "eveil_scientifique_cours_exercices_p055_i7"
     }
   ],
   "itemsOcr1": [
@@ -331,7 +331,7 @@
       "figureDesc": "",
       "answer": "المنتج: العشب؛ مستهلك أول: الجرادة؛ ثانٍ: ضفدعة؛ ثالث: أفعى؛ رابع: نسر",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i1",
+      "id": "eveil_scientifique_cours_exercices_p055_i1",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -344,7 +344,7 @@
       "figureDesc": "",
       "answer": "انظر النص",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i2",
+      "id": "eveil_scientifique_cours_exercices_p055_i2",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -357,7 +357,7 @@
       "figureDesc": "",
       "answer": "انظر النص",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i3",
+      "id": "eveil_scientifique_cours_exercices_p055_i3",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -370,7 +370,7 @@
       "figureDesc": "",
       "answer": "انظر النص",
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i4",
+      "id": "eveil_scientifique_cours_exercices_p055_i4",
       "topicId": "sci-6-u4",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -383,7 +383,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i5",
+      "id": "eveil_scientifique_cours_exercices_p055_i5",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -396,7 +396,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i6",
+      "id": "eveil_scientifique_cours_exercices_p055_i6",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -409,7 +409,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i7",
+      "id": "eveil_scientifique_cours_exercices_p055_i7",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -422,7 +422,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p055_i8",
+      "id": "eveil_scientifique_cours_exercices_p055_i8",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"

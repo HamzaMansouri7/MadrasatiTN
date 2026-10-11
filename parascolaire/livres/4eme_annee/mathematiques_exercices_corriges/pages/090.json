@@ -193,7 +193,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p090_i1"
+      "id": "mathematiques_exercices_corriges_p090_i1"
     },
     {
       "kind": "exercise",
@@ -205,7 +205,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p090_i2"
+      "id": "mathematiques_exercices_corriges_p090_i2"
     },
     {
       "kind": "exercise",
@@ -217,7 +217,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p090_i3"
+      "id": "mathematiques_exercices_corriges_p090_i3"
     },
     {
       "kind": "exercise",
@@ -229,7 +229,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p090_i4"
+      "id": "mathematiques_exercices_corriges_p090_i4"
     },
     {
       "kind": "exercise",
@@ -241,7 +241,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p090_i5"
+      "id": "mathematiques_exercices_corriges_p090_i5"
     },
     {
       "kind": "footer",
@@ -253,7 +253,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p090_i6"
+      "id": "mathematiques_exercices_corriges_p090_i6"
     }
   ],
   "itemsOcr1": [
@@ -265,7 +265,7 @@
       "figureDesc": "Division posée en potence avec des points à la place des chiffres manquants ; seuls 5, 8, 7, 1, 4 et 2 sont visibles.",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p090_i1",
+      "id": "mathematiques_exercices_corriges_p090_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -278,7 +278,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p090_i2",
+      "id": "mathematiques_exercices_corriges_p090_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -291,7 +291,7 @@
       "figureDesc": "Quadrillage avec trois rectangles emboîtés partageant le sommet أ (coin inférieur droit). Points : ب، ج، د ; هـ، و، ز ; ح، ط، ي. Tableau à compléter à droite.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p090_i3",
+      "id": "mathematiques_exercices_corriges_p090_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -304,7 +304,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.82,
-      "id": "math_solutions_4eme_sellami_p090_i4",
+      "id": "mathematiques_exercices_corriges_p090_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

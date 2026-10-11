@@ -219,7 +219,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i1"
+      "id": "eveil_scientifique_cours_exercices_p031_i1"
     },
     {
       "kind": "subtitle",
@@ -231,7 +231,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i2"
+      "id": "eveil_scientifique_cours_exercices_p031_i2"
     },
     {
       "kind": "exercise",
@@ -243,7 +243,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i3"
+      "id": "eveil_scientifique_cours_exercices_p031_i3"
     },
     {
       "kind": "exercise",
@@ -255,7 +255,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i4"
+      "id": "eveil_scientifique_cours_exercices_p031_i4"
     },
     {
       "kind": "exercise",
@@ -267,7 +267,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i5"
+      "id": "eveil_scientifique_cours_exercices_p031_i5"
     },
     {
       "kind": "exercise",
@@ -279,7 +279,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i6"
+      "id": "eveil_scientifique_cours_exercices_p031_i6"
     },
     {
       "kind": "page_number",
@@ -291,7 +291,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i7"
+      "id": "eveil_scientifique_cours_exercices_p031_i7"
     }
   ],
   "itemsOcr1": [
@@ -303,7 +303,7 @@
       "figureDesc": "Dessin d'une usine avec trois cheminées fumantes au bord de la mer ; un tuyau rejette ses déchets vers l'eau.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i1",
+      "id": "eveil_scientifique_cours_exercices_p031_i1",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -316,7 +316,7 @@
       "figureDesc": "Grand tuyau d'évacuation d'où s'écoule une eau trouble et sale vers la mer.",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i2",
+      "id": "eveil_scientifique_cours_exercices_p031_i2",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -329,7 +329,7 @@
       "figureDesc": "Deux hommes sur une barque remontant un filet chargé de déchets noirs ; des nageurs dans l'eau polluée.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i3",
+      "id": "eveil_scientifique_cours_exercices_p031_i3",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -342,7 +342,7 @@
       "figureDesc": "Grand cargo en mer laissant derrière lui une traînée de déchets flottants.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p031_i4",
+      "id": "eveil_scientifique_cours_exercices_p031_i4",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "medium"

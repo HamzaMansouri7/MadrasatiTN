@@ -84,7 +84,6 @@ for slug, display_name in NAMES.items():
         "totalPages": bj_data.get('totalPages', 0),
         "totalExercises": len(clean_exercises),
         "readyExercises": sum(1 for x in clean_exercises if x.get('tier') == 'ready'),
-        "legacyArchiveRef": slug
     }
     with open(dest_book_dir / 'book.json', 'w', encoding='utf-8') as f:
         json.dump(clean_book_meta, f, indent=2, ensure_ascii=False)

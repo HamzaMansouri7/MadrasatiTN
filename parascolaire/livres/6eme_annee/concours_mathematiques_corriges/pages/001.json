@@ -143,7 +143,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p001_i1"
+      "id": "concours_mathematiques_corriges_p001_i1"
     },
     {
       "kind": "exercise",
@@ -155,7 +155,7 @@
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "concours_math_6eme_corriges_p001_i2"
+      "id": "concours_mathematiques_corriges_p001_i2"
     }
   ],
   "itemsOcr1": [
@@ -167,7 +167,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p001_i1",
+      "id": "concours_mathematiques_corriges_p001_i1",
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy"
@@ -180,7 +180,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p001_i2",
+      "id": "concours_mathematiques_corriges_p001_i2",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -193,7 +193,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p001_i3",
+      "id": "concours_mathematiques_corriges_p001_i3",
       "topicId": "math-6-p6",
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy"
@@ -206,7 +206,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
-      "id": "concours_math_6eme_corriges_p001_i4",
+      "id": "concours_mathematiques_corriges_p001_i4",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -219,7 +219,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "concours_math_6eme_corriges_p001_i5",
+      "id": "concours_mathematiques_corriges_p001_i5",
       "topicId": "math-6-p6",
       "formatGuess": "free",
       "difficultyGuess": "easy"

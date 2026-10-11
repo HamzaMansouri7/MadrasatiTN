@@ -210,7 +210,7 @@
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p072_i1"
+      "id": "mathematiques_exercices_corriges_p072_i1"
     },
     {
       "kind": "exercise",
@@ -222,7 +222,7 @@
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p072_i2"
+      "id": "mathematiques_exercices_corriges_p072_i2"
     },
     {
       "kind": "exercise",
@@ -234,7 +234,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p072_i3"
+      "id": "mathematiques_exercices_corriges_p072_i3"
     },
     {
       "kind": "exercise",
@@ -246,7 +246,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p072_i4"
+      "id": "mathematiques_exercices_corriges_p072_i4"
     },
     {
       "kind": "exercise",
@@ -258,7 +258,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p072_i5"
+      "id": "mathematiques_exercices_corriges_p072_i5"
     },
     {
       "kind": "exercise",
@@ -270,7 +270,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p072_i6"
+      "id": "mathematiques_exercices_corriges_p072_i6"
     }
   ],
   "itemsOcr1": [
@@ -282,7 +282,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p072_i1",
+      "id": "mathematiques_exercices_corriges_p072_i1",
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium"
@@ -295,7 +295,7 @@
       "figureDesc": "سلسلة مساواة بها نقاط للتعويض",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p072_i2",
+      "id": "mathematiques_exercices_corriges_p072_i2",
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "medium"
@@ -308,7 +308,7 @@
       "figureDesc": "ثلاث عمليات حسابية موضوعة عموديا (طرح وجمع وضرب) تتضمن أرقاما مجهولة",
       "answer": null,
       "confidence": 0.65,
-      "id": "math_solutions_4eme_sellami_p072_i3",
+      "id": "mathematiques_exercices_corriges_p072_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -321,7 +321,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "math_solutions_4eme_sellami_p072_i4",
+      "id": "mathematiques_exercices_corriges_p072_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -334,7 +334,7 @@
       "figureDesc": "شبه منحرف قائم الرؤوس أ ب ج د: الضلع أ ب أفقي في الأعلى، ب ج عمودي، ج د أفقي في الأسفل، والضلع المائل يصل أ بـ د",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p072_i5",
+      "id": "mathematiques_exercices_corriges_p072_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -347,7 +347,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p072_i6",
+      "id": "mathematiques_exercices_corriges_p072_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

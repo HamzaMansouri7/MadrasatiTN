@@ -205,7 +205,7 @@
       "figureDesc": "جدول بثلاثة أعمدة: عدد الصناديق، عدد القوارير التي وُضعت في الصناديق، عدد القوارير الباقية. السطر 1: 10 ؛ 10 × 6 = 60 ؛ 155 − 60 = 95. السطر 2: 10 ؛ 10 × 6 = 60 ؛ ... = ... − ... (فارغ). السطر 3: 5 ؛ ... = 5 × ... ؛ ... = ... − ... (فارغ).",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p076_i1",
+      "id": "mathematiques_exercices_corriges_p076_i1",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -218,7 +218,7 @@
       "figureDesc": "جدول: عدد الصفوف، عدد الكراسي، ما بقي من الكراسي. السطر 1: 5 ؛ 8 × 5 = 40 ؛ 228 − 40 = 188. السطر 2: 20 ؛ ... = ... × 8 ؛ ... = ... − 188. السطر 3: 3 ؛ ... = ... × 8 ؛ ... = ... − ... (فارغة).",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p076_i2",
+      "id": "mathematiques_exercices_corriges_p076_i2",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -231,7 +231,7 @@
       "figureDesc": "أربع بطاقات فارغة في المعادلة: بطاقة + ( بطاقة × بطاقة ) = بطاقة",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p076_i3",
+      "id": "mathematiques_exercices_corriges_p076_i3",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -244,7 +244,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p076_i4",
+      "id": "mathematiques_exercices_corriges_p076_i4",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -257,7 +257,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p076_i5",
+      "id": "mathematiques_exercices_corriges_p076_i5",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -270,7 +270,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p076_i6",
+      "id": "mathematiques_exercices_corriges_p076_i6",
       "topicId": "math-4-ch3",
       "formatGuess": "free",
       "difficultyGuess": "medium"

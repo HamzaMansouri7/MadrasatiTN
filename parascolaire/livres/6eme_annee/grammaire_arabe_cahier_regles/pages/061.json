@@ -253,7 +253,7 @@
       "figureDesc": "جدول من 7 أعمدة و4 صفوف: الصف الأول عناوين (المزيد بحرف، المزيد بحرفين، المزيد بثلاثة أحرف) ثم الصيغ، ثم الماضي والمضارع واسم المفعول",
       "answer": null,
       "confidence": 0.85,
-      "id": "cahier_grammaire_6eme_p061_i1",
+      "id": "grammaire_arabe_cahier_regles_p061_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -266,7 +266,7 @@
       "figureDesc": "جدول من 5 خانات، الأفعال في الصف الأول وصف فارغ للإجابة",
       "answer": null,
       "confidence": 0.93,
-      "id": "cahier_grammaire_6eme_p061_i2",
+      "id": "grammaire_arabe_cahier_regles_p061_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -279,7 +279,7 @@
       "figureDesc": "جدول من 5 خانات، الكلمات في الصف الأول وصف فارغ للإجابة",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p061_i3",
+      "id": "grammaire_arabe_cahier_regles_p061_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -292,7 +292,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.7,
-      "id": "cahier_grammaire_6eme_p061_i4",
+      "id": "grammaire_arabe_cahier_regles_p061_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -305,7 +305,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p061_i5",
+      "id": "grammaire_arabe_cahier_regles_p061_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"

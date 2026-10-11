@@ -217,7 +217,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i1"
+      "id": "evaluations_maths_arabe_p015_i1"
     },
     {
       "kind": "exercise",
@@ -229,7 +229,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i2"
+      "id": "evaluations_maths_arabe_p015_i2"
     },
     {
       "kind": "exercise",
@@ -241,7 +241,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i3"
+      "id": "evaluations_maths_arabe_p015_i3"
     },
     {
       "kind": "exercise",
@@ -253,7 +253,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i4"
+      "id": "evaluations_maths_arabe_p015_i4"
     },
     {
       "kind": "exercise",
@@ -265,7 +265,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i5"
+      "id": "evaluations_maths_arabe_p015_i5"
     },
     {
       "kind": "exercise",
@@ -277,7 +277,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i6"
+      "id": "evaluations_maths_arabe_p015_i6"
     },
     {
       "kind": "exercise",
@@ -289,7 +289,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i7"
+      "id": "evaluations_maths_arabe_p015_i7"
     },
     {
       "kind": "exercise",
@@ -301,7 +301,7 @@
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_1ere_evaluations_p015_i8"
+      "id": "evaluations_maths_arabe_p015_i8"
     }
   ],
   "itemsOcr1": [
@@ -313,7 +313,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.96,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i1",
+      "id": "evaluations_maths_arabe_p015_i1",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -326,7 +326,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i2",
+      "id": "evaluations_maths_arabe_p015_i2",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -339,7 +339,7 @@
       "figureDesc": "ثلاث خانات بيضاوية للاختيار",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i3",
+      "id": "evaluations_maths_arabe_p015_i3",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -352,7 +352,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i4",
+      "id": "evaluations_maths_arabe_p015_i4",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -365,7 +365,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.94,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i5",
+      "id": "evaluations_maths_arabe_p015_i5",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -378,7 +378,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i6",
+      "id": "evaluations_maths_arabe_p015_i6",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -391,7 +391,7 @@
       "figureDesc": "رسم لبحر به قارب شراعي إلى جانب الكلمة الأولى، ورسم لمحراب مسجد إلى جانب الكلمة الثانية.",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i7",
+      "id": "evaluations_maths_arabe_p015_i7",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -404,7 +404,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_1ere_evaluations_p015_i8",
+      "id": "evaluations_maths_arabe_p015_i8",
       "topicId": "ar-1-u4",
       "formatGuess": "free",
       "difficultyGuess": "easy"

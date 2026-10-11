@@ -120,7 +120,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "exercices_math_5eme_corriges_p007_i1"
+      "id": "exercices_mathematiques_corriges_p007_i1"
     }
   ],
   "itemsOcr1": [
@@ -132,7 +132,7 @@
       "figureDesc": "جدول من عمودين وسطرين: خانة العنوان فارغة، وخانة الحل تحتوي على العمليات المكتوبة بالأحمر. أسفل الصفحة صورة يد تكتب بقلم مع قلب مكتوب عليه Facebook واسم الأستاذ هاشمي زروال.",
       "answer": "1 - 500000 ÷ 40 = 12500 ; 2 - 500000 + 8500 + 75500 = 584000 ; 3 - 1500000 ÷ 40 = 37500 ; 4 - 1500000 - 584000 = 916000",
       "confidence": 0.93,
-      "id": "exercices_math_5eme_corriges_p007_i1",
+      "id": "exercices_mathematiques_corriges_p007_i1",
       "topicId": "math-5-ch1",
       "formatGuess": "matching",
       "difficultyGuess": "hard"

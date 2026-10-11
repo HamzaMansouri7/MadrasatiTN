@@ -159,7 +159,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p007_i1"
+      "id": "mathematiques_exercices_evaluations_p007_i1"
     },
     {
       "kind": "exercise",
@@ -171,7 +171,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p007_i2"
+      "id": "mathematiques_exercices_evaluations_p007_i2"
     },
     {
       "kind": "exercise",
@@ -183,7 +183,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p007_i3"
+      "id": "mathematiques_exercices_evaluations_p007_i3"
     },
     {
       "kind": "exercise",
@@ -195,7 +195,7 @@
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p007_i4"
+      "id": "mathematiques_exercices_evaluations_p007_i4"
     }
   ],
   "itemsOcr1": [
@@ -207,7 +207,7 @@
       "figureDesc": "ثلاثة أسطر منقّطة لكتابة الإجابة",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p007_i1",
+      "id": "mathematiques_exercices_evaluations_p007_i1",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -220,7 +220,7 @@
       "figureDesc": "سطر منقّط لكتابة الإجابة",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p007_i2",
+      "id": "mathematiques_exercices_evaluations_p007_i2",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -233,7 +233,7 @@
       "figureDesc": "جدول بأعمدة: المنطقة الجغرافية، عدد رؤوس الأبقار، عدد رؤوس الأغنام، عدد رؤوس الماعز؛ صفوف: الشمال، الوسط، الجنوب، المجموع (فارغ). يليه سطر منقّط للإجابة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p007_i3",
+      "id": "mathematiques_exercices_evaluations_p007_i3",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -246,7 +246,7 @@
       "figureDesc": "جدول: المنتوج (بطاطا، طماطم، فلفل، بطيخ ودلاع) وسطر سنة 2000 بالقيم المذكورة؛ الأسئلة مقطوعة أسفل الصفحة.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p007_i4",
+      "id": "mathematiques_exercices_evaluations_p007_i4",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

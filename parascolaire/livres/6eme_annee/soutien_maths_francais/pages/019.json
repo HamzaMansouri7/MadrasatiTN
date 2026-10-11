@@ -120,7 +120,7 @@
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy",
-      "id": "mouayen_6eme_math_francais_p019_i1"
+      "id": "soutien_maths_francais_p019_i1"
     }
   ],
   "itemsOcr1": [
@@ -132,7 +132,7 @@
       "figureDesc": "Graphique en ligne brisée « إصابات جُدَرِي القِرَدَة » : axe de 0 à 26 ; pays : البرتغال 20, اسبانيا 23, بريطانيا 20, بلجيكا 2, أمريكا 1, السويد 1, ألمانيا 1, فرنسا 1, كندا 17, أستراليا 1.",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p019_i1",
+      "id": "soutien_maths_francais_p019_i1",
       "topicId": null,
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy"
@@ -145,7 +145,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p019_i2",
+      "id": "soutien_maths_francais_p019_i2",
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "easy"
@@ -158,7 +158,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p019_i3",
+      "id": "soutien_maths_francais_p019_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -171,7 +171,7 @@
       "figureDesc": "Quadrillage avec la figure ❶ (polygone bleu foncé), axe vertical rouge (d1), axe horizontal pointillé bleu (d2), emplacements numérotés ❷, ❸, ❹.",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p019_i4",
+      "id": "soutien_maths_francais_p019_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -184,7 +184,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p019_i5",
+      "id": "soutien_maths_francais_p019_i5",
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "easy"
@@ -197,7 +197,7 @@
       "figureDesc": "Tableau : الدفعة 1 à 5 ; الكتلة بـ kg : 560 pour la 1ère, autres cases vides ; النسبة المئوية : 10%, 30%, 25%, 20%, 15%.",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p019_i6",
+      "id": "soutien_maths_francais_p019_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -210,7 +210,7 @@
       "figureDesc": "Diagramme circulaire : المستوى الأول 42, الثاني 32, الثالث 30, الرابع 27, الخامس 36, السادس 12.",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p019_i7",
+      "id": "soutien_maths_francais_p019_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

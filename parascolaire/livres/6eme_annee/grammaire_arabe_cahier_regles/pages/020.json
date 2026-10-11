@@ -179,7 +179,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p020_i1"
+      "id": "grammaire_arabe_cahier_regles_p020_i1"
     },
     {
       "kind": "lesson",
@@ -191,7 +191,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p020_i2"
+      "id": "grammaire_arabe_cahier_regles_p020_i2"
     },
     {
       "kind": "lesson",
@@ -203,7 +203,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p020_i3"
+      "id": "grammaire_arabe_cahier_regles_p020_i3"
     },
     {
       "kind": "lesson",
@@ -215,7 +215,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "cahier_grammaire_6eme_p020_i4"
+      "id": "grammaire_arabe_cahier_regles_p020_i4"
     }
   ],
   "itemsOcr1": [
@@ -227,7 +227,7 @@
       "figureDesc": "Tableau de 3 colonnes (الضمة الظاهرة، ثبوت النون، الضمة المقدرة على اللف) avec un exemple sous chaque colonne.",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p020_i1",
+      "id": "grammaire_arabe_cahier_regles_p020_i1",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -240,7 +240,7 @@
       "figureDesc": "Tableau de conjugaison : colonnes = verbes جنى، رضي، رعى ; lignes = pronoms (أنا، نحن، أنت، أنت، أنتما، أنتم، أنتن، هو، هي، هما، هما، هم، هن) regroupés en المتكلم، المخاطب، الغائب.",
       "answer": null,
       "confidence": 0.8,
-      "id": "cahier_grammaire_6eme_p020_i2",
+      "id": "grammaire_arabe_cahier_regles_p020_i2",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -253,7 +253,7 @@
       "figureDesc": "Encadré de conclusions (règles).",
       "answer": null,
       "confidence": 0.8,
-      "id": "cahier_grammaire_6eme_p020_i3",
+      "id": "grammaire_arabe_cahier_regles_p020_i3",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

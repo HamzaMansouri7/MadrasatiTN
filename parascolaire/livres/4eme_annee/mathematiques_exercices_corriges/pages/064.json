@@ -155,7 +155,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p064_i1"
+      "id": "mathematiques_exercices_corriges_p064_i1"
     },
     {
       "kind": "exercise",
@@ -167,7 +167,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p064_i2"
+      "id": "mathematiques_exercices_corriges_p064_i2"
     },
     {
       "kind": "exercise",
@@ -179,7 +179,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p064_i3"
+      "id": "mathematiques_exercices_corriges_p064_i3"
     },
     {
       "kind": "exercise",
@@ -191,7 +191,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p064_i4"
+      "id": "mathematiques_exercices_corriges_p064_i4"
     }
   ],
   "itemsOcr1": [
@@ -203,7 +203,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.95,
-      "id": "math_solutions_4eme_sellami_p064_i1",
+      "id": "mathematiques_exercices_corriges_p064_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -216,7 +216,7 @@
       "figureDesc": "ثلاث عمليات حسابية موضوعة عموديا (ضرب وجمع وطرح) بها نقاط مكان الأرقام أو الأعداد المجهولة.",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p064_i2",
+      "id": "mathematiques_exercices_corriges_p064_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -229,7 +229,7 @@
       "figureDesc": "شبكة مربعات 7×7 مرقمة أفقيا من 7 إلى 0 وعموديا من 1 إلى 7، النقطة \"أ\" عند (5 ، 2). شريط الكتابة السهمية: ↓1 ، →2 ، ↑2 ، ←1 ، ↑2 ، →2 .",
       "answer": null,
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p064_i3",
+      "id": "mathematiques_exercices_corriges_p064_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -242,7 +242,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "math_solutions_4eme_sellami_p064_i4",
+      "id": "mathematiques_exercices_corriges_p064_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

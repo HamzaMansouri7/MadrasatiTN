@@ -156,7 +156,7 @@
       "topicId": "sci-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p046_i1"
+      "id": "examens_toutes_matieres_p046_i1"
     },
     {
       "kind": "exercise",
@@ -168,7 +168,7 @@
       "topicId": "sci-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p046_i2"
+      "id": "examens_toutes_matieres_p046_i2"
     },
     {
       "kind": "exercise",
@@ -180,7 +180,7 @@
       "topicId": "sci-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p046_i3"
+      "id": "examens_toutes_matieres_p046_i3"
     }
   ],
   "itemsOcr1": [
@@ -192,7 +192,7 @@
       "figureDesc": "جدول من عمودين وثلاثة أسطر فيها نقاط للإتمام: دوافع التنقل لدى الإنسان ولدى الحيوان. على الهامش المعيار أ1 ومربعات التنقيط.",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p046_i1",
+      "id": "examens_toutes_matieres_p046_i1",
       "topicId": "sci-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -205,7 +205,7 @@
       "figureDesc": "جدول تصنيفي: السطر الأول لأسماء الحيوانات (ست خانات فارغة منقطة)، والعمود الأول لطرق التنقل. علامات x موجودة: القفز (عمودان: الثاني والثالث من اليمين)، السباحة (الثالث والرابع)، الزحف (الخامس)، الطيران (الرابع والخامس)، العدو (السادس). على الهامش المعيار أب.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p046_i2",
+      "id": "examens_toutes_matieres_p046_i2",
       "topicId": "sci-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -218,7 +218,7 @@
       "figureDesc": "سطران منقطان: أحدهما مسبوق بدائرة فيها x، والآخر بدائرة فارغة. على الهامش المعيار أ2.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p046_i3",
+      "id": "examens_toutes_matieres_p046_i3",
       "topicId": "sci-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "medium"

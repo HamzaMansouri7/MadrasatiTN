@@ -187,7 +187,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p005_i1"
+      "id": "grammaire_arabe_cahier_regles_p005_i1"
     },
     {
       "kind": "exercise",
@@ -199,7 +199,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "matching",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p005_i2"
+      "id": "grammaire_arabe_cahier_regles_p005_i2"
     },
     {
       "kind": "exercise",
@@ -211,7 +211,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p005_i3"
+      "id": "grammaire_arabe_cahier_regles_p005_i3"
     },
     {
       "kind": "exercise",
@@ -223,7 +223,7 @@
       "topicId": "ar-6-ch1",
       "formatGuess": "matching",
       "difficultyGuess": "easy",
-      "id": "cahier_grammaire_6eme_p005_i4"
+      "id": "grammaire_arabe_cahier_regles_p005_i4"
     }
   ],
   "itemsOcr1": [
@@ -235,7 +235,7 @@
       "figureDesc": "جدولان فارغان: الأول بعمودين «اسم مضاف» و«ضمير جر مضاف إليه»، والثاني بعمودين «حرف جر» و«ضمير مجرور».",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p005_i1",
+      "id": "grammaire_arabe_cahier_regles_p005_i1",
       "topicId": "ar-6-ch1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -248,7 +248,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p005_i2",
+      "id": "grammaire_arabe_cahier_regles_p005_i2",
       "topicId": "ar-6-ch1",
       "formatGuess": "matching",
       "difficultyGuess": "easy"
@@ -261,7 +261,7 @@
       "figureDesc": "جدول من أربع خانات، في كل خانة عبارة بها فراغ (ضمير متصل) يُكمل بما يناسب.",
       "answer": null,
       "confidence": 0.85,
-      "id": "cahier_grammaire_6eme_p005_i3",
+      "id": "grammaire_arabe_cahier_regles_p005_i3",
       "topicId": "ar-6-ch1",
       "formatGuess": "fill_blank",
       "difficultyGuess": "easy"
@@ -274,7 +274,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "cahier_grammaire_6eme_p005_i4",
+      "id": "grammaire_arabe_cahier_regles_p005_i4",
       "topicId": "ar-6-ch1",
       "formatGuess": "matching",
       "difficultyGuess": "easy"

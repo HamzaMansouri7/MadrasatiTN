@@ -160,7 +160,7 @@
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i1"
+      "id": "evaluations_toutes_matieres_p032_i1"
     },
     {
       "kind": "exercise",
@@ -172,7 +172,7 @@
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i2"
+      "id": "evaluations_toutes_matieres_p032_i2"
     },
     {
       "kind": "exercise",
@@ -184,7 +184,7 @@
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i3"
+      "id": "evaluations_toutes_matieres_p032_i3"
     },
     {
       "kind": "exercise",
@@ -196,7 +196,7 @@
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i4"
+      "id": "evaluations_toutes_matieres_p032_i4"
     }
   ],
   "itemsOcr1": [
@@ -208,7 +208,7 @@
       "figureDesc": "Tableau à deux colonnes : « الْعَمَلُ » (vide, à gauche) et « الْحَلُّ » (à droite) avec « كَمِّيَّةُ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case de critère « مع 1 » et « مع 2 ب ».",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i1",
+      "id": "evaluations_toutes_matieres_p032_i1",
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -221,7 +221,7 @@
       "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ الَّتِي بَاعَهَا الْبُسْتَانِيُّ لِلتَّاجِرِ الثَّانِي. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « مع 2 ج ».",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i2",
+      "id": "evaluations_toutes_matieres_p032_i2",
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -234,7 +234,7 @@
       "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ النَّاقِصَةُ لِمَلْءِ الدَّنِّ. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « مع 2 ج ».",
       "answer": null,
       "confidence": 0.92,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i3",
+      "id": "evaluations_toutes_matieres_p032_i3",
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -247,7 +247,7 @@
       "figureDesc": "Ligne pointillée pour écrire la réponse ; barème 0,5 ; case « مع 2 أ ».",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i4",
+      "id": "evaluations_toutes_matieres_p032_i4",
       "topicId": "math-2-p1",
       "formatGuess": "free",
       "difficultyGuess": "medium"

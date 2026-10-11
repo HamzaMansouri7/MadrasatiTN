@@ -260,7 +260,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i1"
+      "id": "soutien_maths_francais_p041_i1"
     },
     {
       "kind": "exercise",
@@ -272,7 +272,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i2"
+      "id": "soutien_maths_francais_p041_i2"
     },
     {
       "kind": "exercise",
@@ -284,7 +284,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i3"
+      "id": "soutien_maths_francais_p041_i3"
     },
     {
       "kind": "exercise",
@@ -296,7 +296,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i4"
+      "id": "soutien_maths_francais_p041_i4"
     },
     {
       "kind": "exercise",
@@ -308,7 +308,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i5"
+      "id": "soutien_maths_francais_p041_i5"
     },
     {
       "kind": "exercise",
@@ -320,7 +320,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i6"
+      "id": "soutien_maths_francais_p041_i6"
     },
     {
       "kind": "exercise",
@@ -332,7 +332,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i7"
+      "id": "soutien_maths_francais_p041_i7"
     },
     {
       "kind": "exercise",
@@ -344,7 +344,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i8"
+      "id": "soutien_maths_francais_p041_i8"
     },
     {
       "kind": "exercise",
@@ -356,7 +356,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p041_i9"
+      "id": "soutien_maths_francais_p041_i9"
     },
     {
       "kind": "exercise",
@@ -368,7 +368,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p041_i10"
+      "id": "soutien_maths_francais_p041_i10"
     },
     {
       "kind": "footer",
@@ -380,7 +380,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p041_i11"
+      "id": "soutien_maths_francais_p041_i11"
     }
   ],
   "itemsOcr1": [
@@ -392,7 +392,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p041_i1",
+      "id": "soutien_maths_francais_p041_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -405,7 +405,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p041_i2",
+      "id": "soutien_maths_francais_p041_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -418,7 +418,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p041_i3",
+      "id": "soutien_maths_francais_p041_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -431,7 +431,7 @@
       "figureDesc": "Schéma d'une coupe de tête humaine montrant le cerveau, le cervelet et la moelle épinière, avec trois flèches bleues pointant vers des pointillés à compléter et une accolade menant à un pointillé commun.",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p041_i4",
+      "id": "soutien_maths_francais_p041_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -444,7 +444,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "mouayen_6eme_math_francais_p041_i5",
+      "id": "soutien_maths_francais_p041_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -457,7 +457,7 @@
       "figureDesc": "Chaîne de cases : seule la case « الجلد » est remplie, les autres sont vides à compléter.",
       "answer": null,
       "confidence": 0.8,
-      "id": "mouayen_6eme_math_francais_p041_i6",
+      "id": "soutien_maths_francais_p041_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -470,7 +470,7 @@
       "figureDesc": "Tableau à deux colonnes : « أخطار على الجهاز العصبي » et « أمراض سوء التغذية », avec trois lignes vides.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p041_i7",
+      "id": "soutien_maths_francais_p041_i7",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "medium"
@@ -483,7 +483,7 @@
       "figureDesc": "Trois photos : dunes de sable, forêt verte avec un chemin, vagues de mer. Sous chacune, un cadre vide.",
       "answer": null,
       "confidence": 0.7,
-      "id": "mouayen_6eme_math_francais_p041_i8",
+      "id": "soutien_maths_francais_p041_i8",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -496,7 +496,7 @@
       "figureDesc": "Quatre cases reliées par des flèches noires, de droite à gauche, à remplir ; légendes : منتج، مستهلك من الدرجة.",
       "answer": null,
       "confidence": 0.8,
-      "id": "mouayen_6eme_math_francais_p041_i9",
+      "id": "soutien_maths_francais_p041_i9",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

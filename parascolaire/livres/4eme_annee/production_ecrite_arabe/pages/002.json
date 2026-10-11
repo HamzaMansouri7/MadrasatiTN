@@ -184,7 +184,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p002_i1"
+      "id": "production_ecrite_arabe_p002_i1"
     },
     {
       "kind": "lesson",
@@ -196,7 +196,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p002_i2"
+      "id": "production_ecrite_arabe_p002_i2"
     },
     {
       "kind": "lesson",
@@ -208,7 +208,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p002_i3"
+      "id": "production_ecrite_arabe_p002_i3"
     },
     {
       "kind": "lesson",
@@ -220,7 +220,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p002_i4"
+      "id": "production_ecrite_arabe_p002_i4"
     },
     {
       "kind": "lesson",
@@ -232,7 +232,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p002_i5"
+      "id": "production_ecrite_arabe_p002_i5"
     },
     {
       "kind": "lesson",
@@ -244,7 +244,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "mouayen_production_ecrite_4eme_p002_i6"
+      "id": "production_ecrite_arabe_p002_i6"
     }
   ],
   "itemsOcr1": [
@@ -256,7 +256,7 @@
       "figureDesc": "جدول بعنوان «الإطار الزمني». الصف الأول «المكاني» مقسم إلى ثلاثة أعمدة: الطبيعية، الاجتماعية، والفصول (في فصل الشتاء/الربيع/الصيف/الخريف).",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_production_ecrite_4eme_p002_i1",
+      "id": "production_ecrite_arabe_p002_i1",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "easy"
@@ -269,7 +269,7 @@
       "figureDesc": "صف في الجدول عنوانه «وصف عناصر المحيط» وقائمة العناصر في خلية واحدة ممتدة. تكررت عبارة «أوصاف خلقية» في الصورة (ربما الثانية تعني «أوصاف خُلقية»).",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_production_ecrite_4eme_p002_i2",
+      "id": "production_ecrite_arabe_p002_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -282,7 +282,7 @@
       "figureDesc": "صف في الجدول عنوانه «وصف الأحاسيس والمشاعر» وقائمة المشاعر في الخلية المجاورة.",
       "answer": null,
       "confidence": 0.95,
-      "id": "mouayen_production_ecrite_4eme_p002_i3",
+      "id": "production_ecrite_arabe_p002_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -295,7 +295,7 @@
       "figureDesc": "صف في الجدول بثلاث خانات.",
       "answer": null,
       "confidence": 0.93,
-      "id": "mouayen_production_ecrite_4eme_p002_i4",
+      "id": "production_ecrite_arabe_p002_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -308,7 +308,7 @@
       "figureDesc": "صف في الجدول بأربع خانات.",
       "answer": null,
       "confidence": 0.92,
-      "id": "mouayen_production_ecrite_4eme_p002_i5",
+      "id": "production_ecrite_arabe_p002_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -321,7 +321,7 @@
       "figureDesc": "صف أخير في الجدول.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_production_ecrite_4eme_p002_i6",
+      "id": "production_ecrite_arabe_p002_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

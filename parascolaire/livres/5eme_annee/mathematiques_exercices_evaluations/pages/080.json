@@ -169,7 +169,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p080_i1"
+      "id": "mathematiques_exercices_evaluations_p080_i1"
     },
     {
       "kind": "exercise",
@@ -181,7 +181,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p080_i2"
+      "id": "mathematiques_exercices_evaluations_p080_i2"
     },
     {
       "kind": "exercise",
@@ -193,7 +193,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p080_i3"
+      "id": "mathematiques_exercices_evaluations_p080_i3"
     },
     {
       "kind": "exercise",
@@ -205,7 +205,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p080_i4"
+      "id": "mathematiques_exercices_evaluations_p080_i4"
     }
   ],
   "itemsOcr1": [
@@ -217,7 +217,7 @@
       "figureDesc": "Bandeau décoratif contenant la liste des nombres décimaux, suivi d'une ligne pointillée pour la réponse.",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p080_i1",
+      "id": "mathematiques_exercices_evaluations_p080_i1",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -230,7 +230,7 @@
       "figureDesc": "Quatre opérations avec lignes pointillées et un trait vertical à gauche pour la disposition en colonnes.",
       "answer": null,
       "confidence": 0.75,
-      "id": "al_ahram_5eme_complet_p080_i2",
+      "id": "mathematiques_exercices_evaluations_p080_i2",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -243,7 +243,7 @@
       "figureDesc": "Deux lignes pointillées pour la réponse.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p080_i3",
+      "id": "mathematiques_exercices_evaluations_p080_i3",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -256,7 +256,7 @@
       "figureDesc": "Tableau: الأيام: الاثنان، الثلاثاء، الخميس، السبت ؛ الكميات: 15 مم، 25 مم، 19 مم، 34 مم. Trois lignes pointillées pour la réponse.",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p080_i4",
+      "id": "mathematiques_exercices_evaluations_p080_i4",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"

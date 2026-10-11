@@ -182,7 +182,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p043_i1"
+      "id": "examens_toutes_matieres_p043_i1"
     },
     {
       "kind": "lesson",
@@ -194,7 +194,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p043_i2"
+      "id": "examens_toutes_matieres_p043_i2"
     },
     {
       "kind": "exercise",
@@ -206,7 +206,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p043_i3"
+      "id": "examens_toutes_matieres_p043_i3"
     },
     {
       "kind": "lesson",
@@ -218,7 +218,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p043_i4"
+      "id": "examens_toutes_matieres_p043_i4"
     }
   ],
   "itemsOcr1": [
@@ -230,7 +230,7 @@
       "figureDesc": "ثلاث دوائر فارغة أمام الأسئلة الثلاثة لوضع العلامة (x)، وخمسة أسطر منقطة للحل، ومربعات تقييم على الهامش (مع5).",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p043_i1",
+      "id": "examens_toutes_matieres_p043_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -243,7 +243,7 @@
       "figureDesc": "المضلع أ: مستطيل. المضلع ب: شكل ذو خمسة أضلاع (مستطيل مقطوع إحدى زواياه العليا). المضلع ج: شكل على هيئة ساعة رملية (ستة أضلاع، منحنٍ إلى الداخل من الجانبين).",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p043_i2",
+      "id": "examens_toutes_matieres_p043_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -256,7 +256,7 @@
       "figureDesc": "جدول من ثلاثة أسطر وثلاثة أعمدة (المضلع، المطلوب، الإجابة) مع نقاط للإجابة في السطرين الأولين؛ مربعات تقييم على الهامش (مع4).",
       "answer": null,
       "confidence": 0.9,
-      "id": "jisr_ennajah_3eme_examens_p043_i3",
+      "id": "examens_toutes_matieres_p043_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -269,7 +269,7 @@
       "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة، مقطوع جزئيا.",
       "answer": null,
       "confidence": 0.7,
-      "id": "jisr_ennajah_3eme_examens_p043_i4",
+      "id": "examens_toutes_matieres_p043_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

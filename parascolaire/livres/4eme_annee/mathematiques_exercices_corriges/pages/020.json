@@ -170,7 +170,7 @@
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p020_i1"
+      "id": "mathematiques_exercices_corriges_p020_i1"
     },
     {
       "kind": "exercise",
@@ -182,7 +182,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p020_i2"
+      "id": "mathematiques_exercices_corriges_p020_i2"
     },
     {
       "kind": "exercise",
@@ -194,7 +194,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p020_i3"
+      "id": "mathematiques_exercices_corriges_p020_i3"
     },
     {
       "kind": "exercise",
@@ -206,7 +206,7 @@
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "easy",
-      "id": "math_solutions_4eme_sellami_p020_i4"
+      "id": "mathematiques_exercices_corriges_p020_i4"
     }
   ],
   "itemsOcr1": [
@@ -218,7 +218,7 @@
       "figureDesc": "خمسة إطارات متتالية تحتوي أعدادا ناقصة رقما، تفصل بينها علامات أكبر من (>): [9 . 0] > [97 .] > [. 72] > [97 .] > [. 70]",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p020_i1",
+      "id": "mathematiques_exercices_corriges_p020_i1",
       "topicId": null,
       "formatGuess": "matching",
       "difficultyGuess": "easy"
@@ -231,7 +231,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p020_i2",
+      "id": "mathematiques_exercices_corriges_p020_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -244,7 +244,7 @@
       "figureDesc": "جدول من ثماني خانات: الخانات الثلاث الأولى من اليسار فارغة (منقطة) ثم 15 ، 10 ، 6 ، 3 ، 1 (القراءة من اليمين)",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p020_i3",
+      "id": "mathematiques_exercices_corriges_p020_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -257,7 +257,7 @@
       "figureDesc": "جدول بعنوان «سجّل بقية المعطيات الواردة في الجدول التالي» بعمودين (مدلول العدد / العدد): عدد القطع من فئة النصف دينار (خانة فارغة)، 20 (مدلول فارغ)، 100 (مدلول فارغ)، ثمن القصة (فارغ)، ثمن ... (الكوس) : 425",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p020_i4",
+      "id": "mathematiques_exercices_corriges_p020_i4",
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "easy"

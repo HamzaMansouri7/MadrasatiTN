@@ -136,7 +136,7 @@
       "figureDesc": "",
       "answer": "1- تدخل الجراثيم إلى الجرح. 2- تنمو الجراثيم وتتكاثر. 3- يحمرّ موقع الإصابة ويتورّم. 4- ترتفع درجة حرارة المصاب. 5- تبدأ مقاومة الجسم للجراثيم. / 1- عند الإصابة بجرح تدخل الجراثيم... 2- تقاوم الكريات البيضاء الجراثيم... 3- ينتقل التعفّن الجرثومي إلى الجسم... 4- يتسمّم الدم وترتفع درجة حرارة المريض.",
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p051_i1",
+      "id": "eveil_scientifique_cours_exercices_p051_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -149,7 +149,7 @@
       "figureDesc": "",
       "answer": "يتمّ تلقيح الإنسان إذا كان جسمه في صحّة جيّدة... (انظر النص)",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p051_i2",
+      "id": "eveil_scientifique_cours_exercices_p051_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -162,7 +162,7 @@
       "figureDesc": "",
       "answer": "صواب: ب، د. خطأ: أ، ج، هـ.",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p051_i3",
+      "id": "eveil_scientifique_cours_exercices_p051_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -175,7 +175,7 @@
       "figureDesc": "",
       "answer": "انظر النص",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p051_i4",
+      "id": "eveil_scientifique_cours_exercices_p051_i4",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -188,7 +188,7 @@
       "figureDesc": "",
       "answer": "ت1: 1+2 أغذية النموّ؛ 3+4 أغذية الطاقة؛ 5 أغذية الوقاية.",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p051_i5",
+      "id": "eveil_scientifique_cours_exercices_p051_i5",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -201,7 +201,7 @@
       "figureDesc": "جدول وجبة مهدي بستّ خانات مرقّمة 1-6 يتضمّن أغذية؛ وجدول ثانٍ «مجموعة الأغذية» (1-6) بصفوف: فطور الصباح، الغداء، العشاء، العَشاء، توزّع عليها الأغذية (حليب، زبدة، خبز، فاكهة، سمك، جبن، زيت، لبن، بيض، كسكسي، خضر، عصير، ماء...).",
       "answer": "نعم هذه الوجبات الغذائيّة احترمت النصيحة التي قدّمها طبيب مختصّ في التغذية.",
       "confidence": 0.5,
-      "id": "al_mounir_eveil_scientifique_6eme_p051_i6",
+      "id": "eveil_scientifique_cours_exercices_p051_i6",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -194,7 +194,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_ahram_5eme_complet_p068_i1"
+      "id": "mathematiques_exercices_evaluations_p068_i1"
     },
     {
       "kind": "exercise",
@@ -206,7 +206,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p068_i2"
+      "id": "mathematiques_exercices_evaluations_p068_i2"
     },
     {
       "kind": "exercise",
@@ -218,7 +218,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p068_i3"
+      "id": "mathematiques_exercices_evaluations_p068_i3"
     },
     {
       "kind": "exercise",
@@ -230,7 +230,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p068_i4"
+      "id": "mathematiques_exercices_evaluations_p068_i4"
     },
     {
       "kind": "exercise",
@@ -242,7 +242,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p068_i5"
+      "id": "mathematiques_exercices_evaluations_p068_i5"
     },
     {
       "kind": "exercise",
@@ -254,7 +254,7 @@
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_ahram_5eme_complet_p068_i6"
+      "id": "mathematiques_exercices_evaluations_p068_i6"
     }
   ],
   "itemsOcr1": [
@@ -266,7 +266,7 @@
       "figureDesc": "Bandeau-titre décoratif avec le numéro 5 (السنة 5) à gauche",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p068_i1",
+      "id": "mathematiques_exercices_evaluations_p068_i1",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -279,7 +279,7 @@
       "figureDesc": "Tableau à 5 colonnes et 4 lignes ; seule la colonne du prix d'achat est remplie, les autres sont à compléter (points de suspension et « د »)",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p068_i2",
+      "id": "mathematiques_exercices_evaluations_p068_i2",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -292,7 +292,7 @@
       "figureDesc": "Quatre colonnes d'items à relier par des traits : décimaux entourés d'ovales, fractions dans des cadres",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_ahram_5eme_complet_p068_i3",
+      "id": "mathematiques_exercices_evaluations_p068_i3",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -305,7 +305,7 @@
       "figureDesc": "Lignes pointillées pour la réponse",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p068_i4",
+      "id": "mathematiques_exercices_evaluations_p068_i4",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -318,7 +318,7 @@
       "figureDesc": "Ligne pointillée pour la réponse",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_ahram_5eme_complet_p068_i5",
+      "id": "mathematiques_exercices_evaluations_p068_i5",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -331,7 +331,7 @@
       "figureDesc": "Deux lignes pointillées pour la réponse",
       "answer": null,
       "confidence": 0.8,
-      "id": "al_ahram_5eme_complet_p068_i6",
+      "id": "mathematiques_exercices_evaluations_p068_i6",
       "topicId": "math-5-p3",
       "formatGuess": "free",
       "difficultyGuess": "hard"

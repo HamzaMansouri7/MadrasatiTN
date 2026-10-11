@@ -192,7 +192,7 @@
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p041_i1"
+      "id": "examens_toutes_matieres_p041_i1"
     },
     {
       "kind": "exercise",
@@ -204,7 +204,7 @@
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p041_i2"
+      "id": "examens_toutes_matieres_p041_i2"
     },
     {
       "kind": "exercise",
@@ -216,7 +216,7 @@
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p041_i3"
+      "id": "examens_toutes_matieres_p041_i3"
     },
     {
       "kind": "exercise",
@@ -228,7 +228,7 @@
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "jisr_ennajah_3eme_examens_p041_i4"
+      "id": "examens_toutes_matieres_p041_i4"
     },
     {
       "kind": "exercise",
@@ -240,7 +240,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "jisr_ennajah_3eme_examens_p041_i5"
+      "id": "examens_toutes_matieres_p041_i5"
     }
   ],
   "itemsOcr1": [
@@ -252,7 +252,7 @@
       "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع 1 أ (نقطة 1). علامة مائية MOURAJAA.COM",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p041_i1",
+      "id": "examens_toutes_matieres_p041_i1",
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -265,7 +265,7 @@
       "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع 2 أ (نقطة 1)",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p041_i2",
+      "id": "examens_toutes_matieres_p041_i2",
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -278,7 +278,7 @@
       "figureDesc": "تسع قطع نقدية تونسية: قطعة بطائرة/سيارة، ثلاث قطع صغيرة (20، 20، 10 ملّيم)، قطعة 100 مي، قطعتان كبيرتان داكنتان (1 دينار)، وقطعتان من فئة 2 دينار. إطار للإجابة مع نقاط. المعيار: مع 3 (نقاط 1,5)",
       "answer": null,
       "confidence": 0.75,
-      "id": "jisr_ennajah_3eme_examens_p041_i3",
+      "id": "examens_toutes_matieres_p041_i3",
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -291,7 +291,7 @@
       "figureDesc": "أسطر منقطة لكتابة الإجابة. المعيار: مع 2 ب",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p041_i4",
+      "id": "examens_toutes_matieres_p041_i4",
       "topicId": "math-3-p2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

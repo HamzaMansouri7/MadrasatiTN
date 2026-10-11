@@ -189,7 +189,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p050_i1"
+      "id": "mathematiques_exercices_corriges_p050_i1"
     },
     {
       "kind": "exercise",
@@ -201,7 +201,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p050_i2"
+      "id": "mathematiques_exercices_corriges_p050_i2"
     },
     {
       "kind": "exercise",
@@ -213,7 +213,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p050_i3"
+      "id": "mathematiques_exercices_corriges_p050_i3"
     },
     {
       "kind": "exercise",
@@ -225,7 +225,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "math_solutions_4eme_sellami_p050_i4"
+      "id": "mathematiques_exercices_corriges_p050_i4"
     }
   ],
   "itemsOcr1": [
@@ -237,7 +237,7 @@
       "figureDesc": "Quadrillage sur lequel un parcours est tracé en trait épais, du nœud « أ » (en bas à droite) vers le nœud « ن » (en haut). Le parcours part de أ, va vers la gauche, monte, puis va vers la droite et monte encore. Le quadrillage est vierge pour tracer le parcours le plus court avec une seconde couleur.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p050_i1",
+      "id": "mathematiques_exercices_corriges_p050_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -250,7 +250,7 @@
       "figureDesc": "Quadrillage dont les axes sont gradués de 0 à 8 (horizontal, de droite à gauche : 8 7 6 5 4 3 2 1 0) et de 1 à 8 (vertical). Des points portent des nombres écrits en lettres : عشرون, مائتان, سهمة (?) , ألف, ستون, عشرة, تسعة, ثمانون. Tableau à compléter à droite avec les parcours (م) et (ب).",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p050_i2",
+      "id": "mathematiques_exercices_corriges_p050_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -263,7 +263,7 @@
       "figureDesc": "Quadrillage vierge avec le point de départ « أ » (الانطلاق) marqué en bas à gauche. Deux tableaux de flèches: le premier avec 7 cases (→ ↑ → → → ↑ ↑), le second avec 4 cases (↑2, →, ↑, →3).",
       "answer": null,
       "confidence": 0.88,
-      "id": "math_solutions_4eme_sellami_p050_i3",
+      "id": "mathematiques_exercices_corriges_p050_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

@@ -320,7 +320,7 @@
       "figureDesc": "Deux ensembles de nombres à ranger (consigne non lisible sur le scan)",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p110_i1",
+      "id": "mathematiques_exercices_corriges_p110_i1",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -333,7 +333,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p110_i2",
+      "id": "mathematiques_exercices_corriges_p110_i2",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -346,7 +346,7 @@
       "figureDesc": "Les nombres sont écrits dans des cases (valeurs manuscrites/réponses)",
       "answer": "أ = 681 ؛ ب = 682 ؛ ج = 340 ؛ د = 341",
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p110_i3",
+      "id": "mathematiques_exercices_corriges_p110_i3",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -359,7 +359,7 @@
       "figureDesc": "Diagramme : grande ellipse contenant deux cercles ; l'un avec 6 triangles (△), l'autre avec 4 croix (x) ; étiquettes أ (cercle des croix), ب (ellipse entière), ج (cercle des triangles)",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p110_i4",
+      "id": "mathematiques_exercices_corriges_p110_i4",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -372,7 +372,7 @@
       "figureDesc": "Tableau de 4 colonnes et 3 lignes (calendrier)",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p110_i5",
+      "id": "mathematiques_exercices_corriges_p110_i5",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -385,7 +385,7 @@
       "figureDesc": "",
       "answer": "أ) 1 - 8 - 15 - 22 - 29 ؛ ب) الإثنان 31 مارس",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p110_i6",
+      "id": "mathematiques_exercices_corriges_p110_i6",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -398,7 +398,7 @@
       "figureDesc": "Tableau d'années (bissextiles) en une ligne",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p110_i7",
+      "id": "mathematiques_exercices_corriges_p110_i7",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -411,7 +411,7 @@
       "figureDesc": "Tableau de 2 lignes : dates et jours",
       "answer": null,
       "confidence": 0.75,
-      "id": "math_solutions_4eme_sellami_p110_i8",
+      "id": "mathematiques_exercices_corriges_p110_i8",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -424,7 +424,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p110_i9",
+      "id": "mathematiques_exercices_corriges_p110_i9",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -437,7 +437,7 @@
       "figureDesc": "Droite avec quatre points alignés : ج، ب، أ، د",
       "answer": "هذه النّقط على استقامة واحدة .",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p110_i10",
+      "id": "mathematiques_exercices_corriges_p110_i10",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -450,7 +450,7 @@
       "figureDesc": "Segment avec les points ب، ج، أ",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p110_i11",
+      "id": "mathematiques_exercices_corriges_p110_i11",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -463,7 +463,7 @@
       "figureDesc": "Droite oblique avec les points ب، د، ج، م، أ",
       "answer": "نعم يمكن رسم نقط أخرى .",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p110_i12",
+      "id": "mathematiques_exercices_corriges_p110_i12",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -476,7 +476,7 @@
       "figureDesc": "",
       "answer": "المستقيم مجموعة لا نهائية من النّقط .",
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p110_i13",
+      "id": "mathematiques_exercices_corriges_p110_i13",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -489,7 +489,7 @@
       "figureDesc": "Droite oblique (ص) avec points ب، د، أ، ج",
       "answer": null,
       "confidence": 0.6,
-      "id": "math_solutions_4eme_sellami_p110_i14",
+      "id": "mathematiques_exercices_corriges_p110_i14",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -502,7 +502,7 @@
       "figureDesc": "Deux cases de comparaison",
       "answer": "900 > 899 ؛ 499 < 500",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p110_i15",
+      "id": "mathematiques_exercices_corriges_p110_i15",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -515,7 +515,7 @@
       "figureDesc": "Tableau des mois de 30 jours",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p110_i16",
+      "id": "mathematiques_exercices_corriges_p110_i16",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -528,7 +528,7 @@
       "figureDesc": "Tableau années / nombre de jours",
       "answer": "1993: 365 ؛ 1996: 366 ؛ 1980: 366 ؛ 1950: 365",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p110_i17",
+      "id": "mathematiques_exercices_corriges_p110_i17",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -541,7 +541,7 @@
       "figureDesc": "Segment avec trois points ب، أ، م",
       "answer": null,
       "confidence": 0.5,
-      "id": "math_solutions_4eme_sellami_p110_i18",
+      "id": "mathematiques_exercices_corriges_p110_i18",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -554,7 +554,7 @@
       "figureDesc": "",
       "answer": "3 500 مي ؛ 2 100 مي ؛ 300 مي",
       "confidence": 0.65,
-      "id": "math_solutions_4eme_sellami_p110_i19",
+      "id": "mathematiques_exercices_corriges_p110_i19",
       "topicId": "math-4-p6",
       "formatGuess": "free",
       "difficultyGuess": "hard"

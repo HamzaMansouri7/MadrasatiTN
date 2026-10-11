@@ -170,7 +170,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p080_i1"
+      "id": "mathematiques_exercices_corriges_p080_i1"
     },
     {
       "kind": "exercise",
@@ -182,7 +182,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p080_i2"
+      "id": "mathematiques_exercices_corriges_p080_i2"
     },
     {
       "kind": "exercise",
@@ -194,7 +194,7 @@
       "topicId": "math-4-ch1",
       "formatGuess": "calculation",
       "difficultyGuess": "medium",
-      "id": "math_solutions_4eme_sellami_p080_i3"
+      "id": "mathematiques_exercices_corriges_p080_i3"
     }
   ],
   "itemsOcr1": [
@@ -206,7 +206,7 @@
       "figureDesc": "أربعة مستطيلات تحتوي على الأعداد 1 500 و5 و500 و3.",
       "answer": null,
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p080_i1",
+      "id": "mathematiques_exercices_corriges_p080_i1",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -219,7 +219,7 @@
       "figureDesc": "رسم بياني: المحور العمودي المسافة بالكيلومتر (0 الشّيحيّة، 5، 10، 15 طبرنة، 20، 25، 30 الشقار)، المحور الأفقي الزّمن بالسّاعات والدّقائق (9 س، 9 س 15 د، 9 س 30 د، 9 س 45 د، 10 س، 10 س 15 د، 10 س 30 د). المنحنى يصعد من 0 إلى 15 كلم عند 9 س 30 د، يبقى ثابتا عند 15 إلى 10 س، ثم يصعد إلى 30 كلم عند 10 س 30 د.",
       "answer": null,
       "confidence": 0.8,
-      "id": "math_solutions_4eme_sellami_p080_i2",
+      "id": "mathematiques_exercices_corriges_p080_i2",
       "topicId": "math-4-ch1",
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium"
@@ -232,7 +232,7 @@
       "figureDesc": "",
       "answer": "الحلّ: المبلغ الذي وفّره أصغر الأبناء : (78 على 3) - (4 × 5) = 6 دنانير",
       "confidence": 0.85,
-      "id": "math_solutions_4eme_sellami_p080_i3",
+      "id": "mathematiques_exercices_corriges_p080_i3",
       "topicId": "math-4-ch1",
       "formatGuess": "calculation",
       "difficultyGuess": "medium"

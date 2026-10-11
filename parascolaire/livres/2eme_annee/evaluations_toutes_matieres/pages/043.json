@@ -166,7 +166,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i1"
+      "id": "evaluations_toutes_matieres_p043_i1"
     },
     {
       "kind": "lesson",
@@ -178,7 +178,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i2"
+      "id": "evaluations_toutes_matieres_p043_i2"
     },
     {
       "kind": "exercise",
@@ -190,7 +190,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i3"
+      "id": "evaluations_toutes_matieres_p043_i3"
     },
     {
       "kind": "lesson",
@@ -202,7 +202,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i4"
+      "id": "evaluations_toutes_matieres_p043_i4"
     }
   ],
   "itemsOcr1": [
@@ -214,7 +214,7 @@
       "figureDesc": "إطار مستطيل بزوايا مدورة يحتوي على ثلاث دوائر فارغة تمثل القطع النقدية. على الجانب مربع صغير للتنقيط بجانب «معـ3»، والعلامة 1 على اليسار.",
       "answer": null,
       "confidence": 0.95,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i1",
+      "id": "evaluations_toutes_matieres_p043_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -227,7 +227,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i2",
+      "id": "evaluations_toutes_matieres_p043_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -240,7 +240,7 @@
       "figureDesc": "ثلاثة أشكال هندسية: خماسي (شكل يشبه المنزل مائل)، معين (رباعي)، ومثلث. تحت كل شكل سطر منقط للإجابة. على الجانب ثلاثة مربعات تنقيط بجانب «معـ4»، والعلامات 1 و1 و1 على اليسار (0,5 / 0,5 / 0,5 مرتبطة بالسند).",
       "answer": null,
       "confidence": 0.93,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i3",
+      "id": "evaluations_toutes_matieres_p043_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -253,7 +253,7 @@
       "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة مع الأعمدة: المعايير/مستويات التملك، معايير الحد الأدنى، معيار التميز، الرياضيات، الحساب الذهني. رقم الصفحة 42.",
       "answer": null,
       "confidence": 0.88,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i4",
+      "id": "evaluations_toutes_matieres_p043_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"

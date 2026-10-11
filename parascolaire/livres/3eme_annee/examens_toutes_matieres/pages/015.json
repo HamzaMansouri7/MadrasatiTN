@@ -157,7 +157,7 @@
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p015_i1"
+      "id": "examens_toutes_matieres_p015_i1"
     },
     {
       "kind": "exercise",
@@ -169,7 +169,7 @@
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p015_i2"
+      "id": "examens_toutes_matieres_p015_i2"
     },
     {
       "kind": "exercise",
@@ -181,7 +181,7 @@
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p015_i3"
+      "id": "examens_toutes_matieres_p015_i3"
     },
     {
       "kind": "lesson",
@@ -193,7 +193,7 @@
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_3eme_examens_p015_i4"
+      "id": "examens_toutes_matieres_p015_i4"
     }
   ],
   "itemsOcr1": [
@@ -205,7 +205,7 @@
       "figureDesc": "جدول من عمودين: المتكلم (ولد وبنت / بنت / بنتان وولد) والجمل ذات الفراغات. على اليسار علامات 0,5 لكل جملة ومربعات للتقييم (معيار 2 أ).",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_3eme_examens_p015_i1",
+      "id": "examens_toutes_matieres_p015_i1",
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -218,7 +218,7 @@
       "figureDesc": "ثلاثة أسطر منقطة للكتابة (معيار 2 ب).",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_3eme_examens_p015_i2",
+      "id": "examens_toutes_matieres_p015_i2",
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -231,7 +231,7 @@
       "figureDesc": "نص إملاء به مربعات فارغة منقطة (كلمات محجوبة) وعلامات التنقيط 0,5 و2 على الهامش.",
       "answer": null,
       "confidence": 0.75,
-      "id": "jisr_ennajah_3eme_examens_p015_i3",
+      "id": "examens_toutes_matieres_p015_i3",
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -244,7 +244,7 @@
       "figureDesc": "جدول إسناد الأعداد: المعايير (معيار الحد الأدنى: معـ1 أ، ب، ج، د؛ معـ2 أ؛ معـ2 ب) ومعيار التميز. مستويات التملك: انعدام التملك 0 في كل الخانات؛ التملك دون الأدنى 0,5 (وفي معـ2 ب: 0,5 وللتميز 1)؛ التملك الأدنى 1 (معـ2 ب: 1,5 وللتميز 2)؛ التملك الأقصى 1,5 (معـ2 ب: 2,5).",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_3eme_examens_p015_i4",
+      "id": "examens_toutes_matieres_p015_i4",
       "topicId": "ar-3-u1",
       "formatGuess": "free",
       "difficultyGuess": "easy"

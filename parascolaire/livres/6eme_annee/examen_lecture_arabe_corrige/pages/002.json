@@ -225,7 +225,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i1"
+      "id": "examen_lecture_arabe_corrige_p002_i1"
     },
     {
       "kind": "exercise",
@@ -237,7 +237,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i2"
+      "id": "examen_lecture_arabe_corrige_p002_i2"
     },
     {
       "kind": "exercise",
@@ -249,7 +249,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i3"
+      "id": "examen_lecture_arabe_corrige_p002_i3"
     },
     {
       "kind": "exercise",
@@ -261,7 +261,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i4"
+      "id": "examen_lecture_arabe_corrige_p002_i4"
     },
     {
       "kind": "exercise",
@@ -273,7 +273,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i5"
+      "id": "examen_lecture_arabe_corrige_p002_i5"
     },
     {
       "kind": "exercise",
@@ -285,7 +285,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i6"
+      "id": "examen_lecture_arabe_corrige_p002_i6"
     },
     {
       "kind": "exercise",
@@ -297,7 +297,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i7"
+      "id": "examen_lecture_arabe_corrige_p002_i7"
     },
     {
       "kind": "exercise",
@@ -309,7 +309,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "examen_lecture_6eme_corriges_p002_i8"
+      "id": "examen_lecture_arabe_corrige_p002_i8"
     }
   ],
   "itemsOcr1": [
@@ -321,7 +321,7 @@
       "figureDesc": "Tableau à trois colonnes (الأرضُ، الْماءُ، النّاسُ), chacune avec deux lignes de pointillés à remplir ; cases de notation à droite.",
       "answer": null,
       "confidence": 0.8,
-      "id": "examen_lecture_6eme_corriges_p002_i1",
+      "id": "examen_lecture_arabe_corrige_p002_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -334,7 +334,7 @@
       "figureDesc": "Trois lignes pointillées avec cases de notation à droite.",
       "answer": null,
       "confidence": 0.9,
-      "id": "examen_lecture_6eme_corriges_p002_i2",
+      "id": "examen_lecture_arabe_corrige_p002_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -347,7 +347,7 @@
       "figureDesc": "Lignes pointillées avec cases de notation.",
       "answer": null,
       "confidence": 0.92,
-      "id": "examen_lecture_6eme_corriges_p002_i3",
+      "id": "examen_lecture_arabe_corrige_p002_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -360,7 +360,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "examen_lecture_6eme_corriges_p002_i4",
+      "id": "examen_lecture_arabe_corrige_p002_i4",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -373,7 +373,7 @@
       "figureDesc": "Ligne pointillée avec symbole ≠ et case de notation.",
       "answer": null,
       "confidence": 0.9,
-      "id": "examen_lecture_6eme_corriges_p002_i5",
+      "id": "examen_lecture_arabe_corrige_p002_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -386,7 +386,7 @@
       "figureDesc": "Les expressions « أَمْسَكَتْ عَلَى » et « لم يَأْبَهْ » sont soulignées.",
       "answer": null,
       "confidence": 0.88,
-      "id": "examen_lecture_6eme_corriges_p002_i6",
+      "id": "examen_lecture_arabe_corrige_p002_i6",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -399,7 +399,7 @@
       "figureDesc": "Cinq phrases, chacune accompagnée d'une case vide pour numéroter l'ordre.",
       "answer": null,
       "confidence": 0.88,
-      "id": "examen_lecture_6eme_corriges_p002_i7",
+      "id": "examen_lecture_arabe_corrige_p002_i7",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -412,7 +412,7 @@
       "figureDesc": "Ligne pointillée avec cases de notation.",
       "answer": null,
       "confidence": 0.9,
-      "id": "examen_lecture_6eme_corriges_p002_i8",
+      "id": "examen_lecture_arabe_corrige_p002_i8",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"

@@ -140,7 +140,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "exercices_math_5eme_corriges_p005_i1"
+      "id": "exercices_mathematiques_corriges_p005_i1"
     },
     {
       "kind": "exercise",
@@ -152,7 +152,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "exercices_math_5eme_corriges_p005_i2"
+      "id": "exercices_mathematiques_corriges_p005_i2"
     }
   ],
   "itemsOcr1": [
@@ -164,7 +164,7 @@
       "figureDesc": "Tableau de 4 cases (2×2) contenant chacune une addition décimale posée en colonnes, avec les virgules alignées et un trait rouge avant le résultat. Pour 359 + 32.88, on écrit 359.00 ; pour 100 + 0.514, on écrit 100.000.",
       "answer": "1509.56 + 233.68 = 1743.24 ؛ 195.33 + 0.86 = 196.19 (la page indique 196.16, ce qui est une erreur de calcul) ؛ 359 + 32.88 = 391.88 ؛ 100 + 0.514 = 100.514",
       "confidence": 0.93,
-      "id": "exercices_math_5eme_corriges_p005_i1",
+      "id": "exercices_mathematiques_corriges_p005_i1",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -177,7 +177,7 @@
       "figureDesc": "",
       "answer": "2500 × 7 = 17500 ؛ 17500 × 3 = 52500",
       "confidence": 0.93,
-      "id": "exercices_math_5eme_corriges_p005_i2",
+      "id": "exercices_mathematiques_corriges_p005_i2",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "medium"

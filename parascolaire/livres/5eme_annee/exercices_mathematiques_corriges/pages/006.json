@@ -149,7 +149,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "exercices_math_5eme_corriges_p006_i1"
+      "id": "exercices_mathematiques_corriges_p006_i1"
     },
     {
       "kind": "exercise",
@@ -161,7 +161,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "fill_blank",
       "difficultyGuess": "hard",
-      "id": "exercices_math_5eme_corriges_p006_i2"
+      "id": "exercices_mathematiques_corriges_p006_i2"
     },
     {
       "kind": "exercise",
@@ -173,7 +173,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "exercices_math_5eme_corriges_p006_i3"
+      "id": "exercices_mathematiques_corriges_p006_i3"
     },
     {
       "kind": "exercise",
@@ -185,7 +185,7 @@
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "exercices_math_5eme_corriges_p006_i4"
+      "id": "exercices_mathematiques_corriges_p006_i4"
     }
   ],
   "itemsOcr1": [
@@ -197,7 +197,7 @@
       "figureDesc": "",
       "answer": "0.115 < 0.30 < 0.78 < 0.89 < 0.9",
       "confidence": 0.95,
-      "id": "exercices_math_5eme_corriges_p006_i1",
+      "id": "exercices_mathematiques_corriges_p006_i1",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -210,7 +210,7 @@
       "figureDesc": "",
       "answer": "17.06 < 17.6 / 25.135 < 25.2 / 7.99 > 7.899 / 0.9 = 0.900",
       "confidence": 0.9,
-      "id": "exercices_math_5eme_corriges_p006_i2",
+      "id": "exercices_mathematiques_corriges_p006_i2",
       "topicId": "math-5-ch2",
       "formatGuess": "fill_blank",
       "difficultyGuess": "hard"
@@ -223,7 +223,7 @@
       "figureDesc": "",
       "answer": "1) 1.60 m > 1.498 m > 1.35 m (الجواب كما كُتب في الصفحة: 1.35 m > 1.498 m > 1.60 m، ويبدو أن علامة الترتيب مكتوبة بشكل معكوس) 2) أحمد هو الأطول",
       "confidence": 0.85,
-      "id": "exercices_math_5eme_corriges_p006_i3",
+      "id": "exercices_mathematiques_corriges_p006_i3",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -236,7 +236,7 @@
       "figureDesc": "",
       "answer": "0 < 0.38 < 1 ، 13 < 13.95 < 14 ، 105 < 105.6 < 106 ، 3545 < 3545.86 < 3546",
       "confidence": 0.9,
-      "id": "exercices_math_5eme_corriges_p006_i4",
+      "id": "exercices_mathematiques_corriges_p006_i4",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
       "difficultyGuess": "hard"

@@ -220,7 +220,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p048_i1"
+      "id": "soutien_maths_francais_p048_i1"
     },
     {
       "kind": "section",
@@ -232,7 +232,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p048_i2"
+      "id": "soutien_maths_francais_p048_i2"
     },
     {
       "kind": "exercise",
@@ -244,7 +244,7 @@
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p048_i3"
+      "id": "soutien_maths_francais_p048_i3"
     },
     {
       "kind": "exercise",
@@ -256,7 +256,7 @@
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p048_i4"
+      "id": "soutien_maths_francais_p048_i4"
     },
     {
       "kind": "exercise",
@@ -268,7 +268,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p048_i5"
+      "id": "soutien_maths_francais_p048_i5"
     },
     {
       "kind": "exercise",
@@ -280,7 +280,7 @@
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium",
-      "id": "mouayen_6eme_math_francais_p048_i6"
+      "id": "soutien_maths_francais_p048_i6"
     },
     {
       "kind": "section",
@@ -292,7 +292,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p048_i7"
+      "id": "soutien_maths_francais_p048_i7"
     },
     {
       "kind": "exercise",
@@ -304,7 +304,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p048_i8"
+      "id": "soutien_maths_francais_p048_i8"
     },
     {
       "kind": "note",
@@ -316,7 +316,7 @@
       "topicId": null,
       "formatGuess": null,
       "difficultyGuess": null,
-      "id": "mouayen_6eme_math_francais_p048_i9"
+      "id": "soutien_maths_francais_p048_i9"
     }
   ],
   "itemsOcr1": [
@@ -328,7 +328,7 @@
       "figureDesc": "Quadrillage sur lequel figure une forme noire composée de carreaux (2 rangées de 4 carreaux en haut, puis 2 carreaux en bas à droite) à agrandir selon un rapport 2.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p048_i1",
+      "id": "soutien_maths_francais_p048_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -341,7 +341,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "mouayen_6eme_math_francais_p048_i2",
+      "id": "soutien_maths_francais_p048_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -354,7 +354,7 @@
       "figureDesc": "Cercle avec un diamètre tracé en jaune, marqué D = 14 m ; lignes pointillées pour la réponse.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p048_i3",
+      "id": "soutien_maths_francais_p048_i3",
       "topicId": null,
       "formatGuess": "calculation",
       "difficultyGuess": "medium"
@@ -367,7 +367,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "mouayen_6eme_math_francais_p048_i4",
+      "id": "soutien_maths_francais_p048_i4",
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium"
@@ -380,7 +380,7 @@
       "figureDesc": "",
       "answer": null,
       "confidence": 0.92,
-      "id": "mouayen_6eme_math_francais_p048_i5",
+      "id": "soutien_maths_francais_p048_i5",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -393,7 +393,7 @@
       "figureDesc": "Tableau : الدولة / عدد الإصابات : كندا 77، الولايات المتحدة 21، فرنسا 51، بريطانيا 400، البرتغال 119، اسبانيا 132، المغرب 1.",
       "answer": null,
       "confidence": 0.9,
-      "id": "mouayen_6eme_math_francais_p048_i6",
+      "id": "soutien_maths_francais_p048_i6",
       "topicId": null,
       "formatGuess": "problem_solving",
       "difficultyGuess": "medium"

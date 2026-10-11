@@ -231,7 +231,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i1"
+      "id": "eveil_scientifique_cours_exercices_p054_i1"
     },
     {
       "kind": "answer",
@@ -243,7 +243,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i2"
+      "id": "eveil_scientifique_cours_exercices_p054_i2"
     },
     {
       "kind": "answer",
@@ -255,7 +255,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i3"
+      "id": "eveil_scientifique_cours_exercices_p054_i3"
     },
     {
       "kind": "answer",
@@ -267,7 +267,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i4"
+      "id": "eveil_scientifique_cours_exercices_p054_i4"
     },
     {
       "kind": "answer",
@@ -279,7 +279,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "matching",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i5"
+      "id": "eveil_scientifique_cours_exercices_p054_i5"
     },
     {
       "kind": "answer",
@@ -291,7 +291,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i6"
+      "id": "eveil_scientifique_cours_exercices_p054_i6"
     },
     {
       "kind": "answer",
@@ -303,7 +303,7 @@
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard",
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i7"
+      "id": "eveil_scientifique_cours_exercices_p054_i7"
     }
   ],
   "itemsOcr1": [
@@ -315,7 +315,7 @@
       "figureDesc": "",
       "answer": "يحتاج الطفل إلى وجبة غذائية تتوفر فيها خاصة الزلاليات؛ يحتاج الشيخ إلى وجبة تتوفر فيها خاصة الخضروات؛ الزلاليات (البروتينات) ضرورية لنمو الجسم؛ يحتاج الجسم في فصل الصيف إلى الماء والأملاح.",
       "confidence": 0.8,
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i1",
+      "id": "eveil_scientifique_cours_exercices_p054_i1",
       "topicId": "sci-6-u4",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -328,7 +328,7 @@
       "figureDesc": "Schéma d'une fleur en coupe avec légendes : ميسم، قلم، سداة، بتلة، مبيض، سبلة",
       "answer": "1: تصبح الزهرة في النهاية ثمرة. 2: تتحول المدقة عند نموها إلى ثمرة. 3: تتحول البويضات إلى بذور. 4: المبيض والبذور.",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i2",
+      "id": "eveil_scientifique_cours_exercices_p054_i2",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -341,7 +341,7 @@
       "figureDesc": "",
       "answer": "كما في النص.",
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i3",
+      "id": "eveil_scientifique_cours_exercices_p054_i3",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -354,7 +354,7 @@
       "figureDesc": "",
       "answer": "كما في النص.",
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i4",
+      "id": "eveil_scientifique_cours_exercices_p054_i4",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -367,7 +367,7 @@
       "figureDesc": "Exercice d'appariement par flèches croisées entre trois descriptions et les termes الإخصاب / التأبير الذاتي / التأبير الخلطي",
       "answer": "انتقال حبوب الطلع من مئبر زهرة إلى ميسم زهرة أخرى من نفس النوع = التأبير الخلطي؛ انتقال حبوب الطلع إلى ميسم نفس الزهرة = التأبير الذاتي؛ اتحاد حبوب الطلع بالبويضة = الإخصاب.",
       "confidence": 0.65,
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i5",
+      "id": "eveil_scientifique_cours_exercices_p054_i5",
       "topicId": "sci-6-u4",
       "formatGuess": "matching",
       "difficultyGuess": "hard"
@@ -380,7 +380,7 @@
       "figureDesc": "Schéma du cycle de vie du pois : fécondation, floraison, germination, gousse (قرن), graines, jeune plante",
       "answer": "كما في النص.",
       "confidence": 0.7,
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i6",
+      "id": "eveil_scientifique_cours_exercices_p054_i6",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"
@@ -393,7 +393,7 @@
       "figureDesc": "Schéma circulaire à compléter avec quatre cases : زهرة، ثمرة، شجرة = نبتة، بذرة",
       "answer": "1 الإنبات، 2 نمو النبتة، 3 نبتة مورقة، 4 زهرة، 5 قرن، 6 بذور",
       "confidence": 0.75,
-      "id": "al_mounir_eveil_scientifique_6eme_p054_i7",
+      "id": "eveil_scientifique_cours_exercices_p054_i7",
       "topicId": "sci-6-u4",
       "formatGuess": "free",
       "difficultyGuess": "hard"

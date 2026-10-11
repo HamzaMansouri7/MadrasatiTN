@@ -179,7 +179,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i1"
+      "id": "eveil_scientifique_cours_exercices_p019_i1"
     },
     {
       "kind": "exercise",
@@ -191,7 +191,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i2"
+      "id": "eveil_scientifique_cours_exercices_p019_i2"
     },
     {
       "kind": "exercise",
@@ -203,7 +203,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium",
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i3"
+      "id": "eveil_scientifique_cours_exercices_p019_i3"
     },
     {
       "kind": "lesson",
@@ -215,7 +215,7 @@
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i4"
+      "id": "eveil_scientifique_cours_exercices_p019_i4"
     }
   ],
   "itemsOcr1": [
@@ -227,7 +227,7 @@
       "figureDesc": "Un plateau de repas avec six aliments reliés par des traits à des cases vides à remplir : un verre de lait, une assiette de gâteaux/dattes, des biscuits, une poire, une grande assiette de plat (couscous/légumes) dont la case porte le chiffre 4, et un pot. À gauche, un tableau de numéros 1 à 6 avec deux croix sous 3 et 4. Une ligne pointillée pour la conclusion.",
       "answer": null,
       "confidence": 0.85,
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i1",
+      "id": "eveil_scientifique_cours_exercices_p019_i1",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -240,7 +240,7 @@
       "figureDesc": "Tableau « مجموعة الأغذية » avec colonnes 1 à 6 et lignes : فطور الصباح (croix déjà placées sous 2, 3, 4, 5), الغداء, اللمجة, العشاء (vides). Encadré avec le menu de la journée et encadré avec le conseil du médecin nutritionniste.",
       "answer": null,
       "confidence": 0.88,
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i2",
+      "id": "eveil_scientifique_cours_exercices_p019_i2",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -253,7 +253,7 @@
       "figureDesc": "Tableau à six colonnes avec trois lignes pointillées à remplir par colonne.",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i3",
+      "id": "eveil_scientifique_cours_exercices_p019_i3",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "medium"
@@ -266,7 +266,7 @@
       "figureDesc": "Encadré « Le savais-tu ? » en bas à gauche.",
       "answer": null,
       "confidence": 0.9,
-      "id": "al_mounir_eveil_scientifique_6eme_p019_i4",
+      "id": "eveil_scientifique_cours_exercices_p019_i4",
       "topicId": "sci-6-u3",
       "formatGuess": "free",
       "difficultyGuess": "easy"

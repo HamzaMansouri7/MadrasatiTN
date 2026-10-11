@@ -189,7 +189,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i1"
+      "id": "evaluations_toutes_matieres_p014_i1"
     },
     {
       "kind": "exercise",
@@ -201,7 +201,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i2"
+      "id": "evaluations_toutes_matieres_p014_i2"
     },
     {
       "kind": "exercise",
@@ -213,7 +213,7 @@
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy",
-      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i3"
+      "id": "evaluations_toutes_matieres_p014_i3"
     }
   ],
   "itemsOcr1": [
@@ -225,7 +225,7 @@
       "figureDesc": "Deux lignes de modèles à copier sur papier quadrillé (écriture cursive), séparés par des points. Colonne de critères (الوضوح، الجمالية) avec cases à cocher et colonne des points attribués.",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i1",
+      "id": "evaluations_toutes_matieres_p014_i1",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -238,7 +238,7 @@
       "figureDesc": "Espace d'écriture sur papier quadrillé pour recopier et compléter la phrase ; cases de critères et case de note /10.",
       "answer": null,
       "confidence": 0.85,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i2",
+      "id": "evaluations_toutes_matieres_p014_i2",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
@@ -251,7 +251,7 @@
       "figureDesc": "Paragraphe à trous avec lignes pointillées sur papier quadrillé ; case de critère « السلامة من الأخطاء » et case de note /10. En-tête « إِمْلَاءٌ : ».",
       "answer": null,
       "confidence": 0.8,
-      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i3",
+      "id": "evaluations_toutes_matieres_p014_i3",
       "topicId": null,
       "formatGuess": "free",
       "difficultyGuess": "easy"
