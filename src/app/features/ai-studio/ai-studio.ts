@@ -74,7 +74,7 @@ function loadDraft(): StudioDraft | null {
   imports: [RouterLink, AiStatusComponent, InfographicSpecComponent, ShareButtonComponent],
   template: `
     <div class="min-h-screen bg-[#FBF8F1] text-[#14251D] pb-16">
-      <main class="max-w-[1280px] mx-auto px-4 sm:px-6 pt-6 space-y-5">
+      <main class="w-full px-4 sm:px-6 lg:px-8 pt-6 space-y-5">
         <!-- Studio bar: same structure as the document editor, Cartouche tokens -->
         <div class="no-print bg-[#14251D] text-[#FBF8F1] rounded-[28px] p-5">
           <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -110,6 +110,12 @@ function loadDraft(): StudioDraft | null {
             </div>
 
             <div class="flex flex-wrap items-center gap-2">
+              <a
+                routerLink="/memo-studio"
+                class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 px-3.5 min-h-11 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors text-[#FBF8F1]">
+                <span class="material-icons text-sm" aria-hidden="true">account_tree</span>
+                <span>{{ lang.tr('Memo Studio', 'استوديو التلخيص') }}</span>
+              </a>
               <button
                 type="button"
                 (click)="settingsOpen.set(!settingsOpen())"
@@ -157,178 +163,219 @@ function loadDraft(): StudioDraft | null {
           </div>
         </div>
 
-        <!-- Settings drawer (collapsible, like the editor's configuration panel) -->
-        @if (settingsOpen()) {
-          <section id="ai-settings" class="no-print bg-white rounded-[28px] border border-[#E7DFCF] p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-[300px_minmax(0,1fr)] gap-5 lg:gap-7">
-            <!-- Source + style -->
-            <aside class="space-y-5 min-w-0">
-              <div class="bg-[#FBF8F1] border border-[#E7DFCF] rounded-2xl p-4">
-                <div class="flex items-center gap-3">
-                  <span class="w-10 h-10 shrink-0 rounded-xl bg-white border border-[#E7DFCF] text-[#2D6A4F] flex items-center justify-center">
-                    <span class="material-icons text-xl" aria-hidden="true">{{ sourceKind().icon }}</span>
-                  </span>
-                  <div class="min-w-0">
-                    <p class="text-xs text-[#6B7A70]">{{ lang.tr('Contenu source', 'المحتوى المصدر') }}</p>
-                    <p class="text-sm font-semibold text-[#14251D]">{{ lang.tr(sourceKind().fr, sourceKind().ar) }}</p>
-                  </div>
-                </div>
-                <p class="text-sm text-[#5B6B60] leading-relaxed mt-3 break-words" [class.line-clamp-3]="!contentOpen()">{{ sourcePreview() }}</p>
-                <div class="flex flex-wrap items-center gap-x-4 mt-1">
-                  @if (sourcePreview().length > 70) {
-                    <button type="button" (click)="contentOpen.set(!contentOpen())" [attr.aria-expanded]="contentOpen()" class="text-sm text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] cursor-pointer min-h-11">
-                      {{ contentOpen() ? lang.tr('Réduire', 'إخفاء') : lang.tr('Tout afficher', 'عرض الكل') }}
-                    </button>
-                  }
-                  <a routerLink="/create" [queryParams]="{ output: 'memo' }" class="text-sm text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] min-h-11 inline-flex items-center">
-                    {{ lang.tr('Changer le contenu', 'تغيير المحتوى') }}
-                  </a>
+        <!-- 3-Column Split Workbench -->
+        <div class="grid grid-cols-1 lg:grid-cols-[280px_minmax(0,1fr)_260px] xl:grid-cols-[300px_minmax(0,1fr)_280px] gap-4 items-start">
+          
+          <!-- LEFT SIDEBAR: Source & Composition Presets -->
+          <aside class="no-print space-y-4 min-w-0">
+            <!-- Source Content Card -->
+            <div class="bg-white border border-[#E7DFCF] rounded-2xl p-3.5 shadow-xs space-y-2.5">
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 shrink-0 rounded-lg bg-[#FBF8F1] border border-[#E7DFCF] text-[#2D6A4F] flex items-center justify-center">
+                  <span class="material-icons text-lg" aria-hidden="true">{{ sourceKind().icon }}</span>
+                </span>
+                <div class="min-w-0">
+                  <p class="text-[11px] font-medium text-[#6B7A70]">{{ lang.tr('Contenu source', 'المحتوى المصدر') }}</p>
+                  <p class="text-xs font-semibold text-[#14251D] truncate">{{ lang.tr(sourceKind().fr, sourceKind().ar) }}</p>
                 </div>
               </div>
+              <p class="text-xs text-[#5B6B60] leading-relaxed break-words" [class.line-clamp-2]="!contentOpen()">{{ sourcePreview() }}</p>
+              <div class="flex items-center gap-x-3 pt-1 border-t border-[#F2ECDE]">
+                @if (sourcePreview().length > 50) {
+                  <button type="button" (click)="contentOpen.set(!contentOpen())" [attr.aria-expanded]="contentOpen()" class="text-xs text-[#8A5A00] hover:text-[#C1121F] font-medium cursor-pointer">
+                    {{ contentOpen() ? lang.tr('Réduire', 'إخفاء') : lang.tr('Tout afficher', 'عرض الكل') }}
+                  </button>
+                }
+                <a routerLink="/create" [queryParams]="{ output: 'memo' }" class="text-xs text-[#8A5A00] hover:text-[#C1121F] font-medium inline-flex items-center gap-1">
+                  <span class="material-icons text-xs" aria-hidden="true">edit</span>
+                  {{ lang.tr('Changer', 'تغيير المحتوى') }}
+                </a>
+              </div>
+            </div>
 
-
-              <fieldset>
-                <legend class="font-display font-semibold text-[#14251D] mb-3">{{ lang.tr('Style', 'الأسلوب') }}</legend>
-                <div class="grid grid-cols-2 gap-2">
-                  @for (th of themes; track th.id) {
-                    <button
-                      type="button"
-                      (click)="setTheme(th.id)"
-                      [attr.aria-pressed]="theme() === th.id"
-                      [class]="theme() === th.id ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5' : 'border-[#E7DFCF] hover:bg-[#FBF8F1]'"
-                      class="border rounded-xl p-3 text-start cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
-                      <span class="flex items-center justify-between gap-2">
-                        <span class="material-icons text-xl" [class]="theme() === th.id ? 'text-[#2D6A4F]' : 'text-[#6B7A70]'" aria-hidden="true">{{ th.icon }}</span>
-                        @if (theme() === th.id) {
-                          <span class="material-icons text-base text-[#2D6A4F]" aria-hidden="true">check_circle</span>
-                        }
-                      </span>
-                      <span class="block text-sm font-semibold text-[#14251D] mt-2">{{ lang.tr(th.fr, th.ar) }}</span>
-                      <span class="block text-xs text-[#6B7A70] mt-0.5">{{ lang.tr(th.hintFr, th.hintAr) }}</span>
-                    </button>
-                  }
-                </div>
-              </fieldset>
-            </aside>
-
-            <!-- Composition + notes -->
-            <div class="min-w-0 space-y-6">
-              <!-- Command Quick Picker -->
-              <fieldset>
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <legend class="font-display font-semibold text-[#14251D]">{{ lang.tr('Préréglage visuel', 'النمط السريع') }}</legend>
-                  <span class="text-[11px] font-mono text-[#6B7A70] bg-[#F2ECDE] px-2 py-0.5 rounded-full">/commandes</span>
-                </div>
-                <div class="grid grid-cols-3 sm:grid-cols-5 gap-2.5">
-                  @for (c of commands; track c.cmd) {
-                    <button
-                      type="button"
-                      (click)="applyCommand(c.cmd)"
-                      [attr.aria-pressed]="activeCommand() === c.cmd"
-                      [class]="activeCommand() === c.cmd ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5' : 'border-[#E7DFCF] hover:border-[#2D6A4F]/50 bg-white'"
-                      class="group relative border rounded-xl overflow-hidden text-start cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
-                      <span class="block aspect-[4/3] bg-[#FBF8F1] overflow-hidden">
-                        @if (c.thumb) {
-                          <img [src]="c.thumb" alt="" width="640" height="480" loading="lazy" decoding="async"
-                            class="w-full h-full object-cover transition-transform duration-150 motion-safe:group-hover:scale-[1.03]">
-                        } @else {
-                          <span class="w-full h-full flex items-center justify-center">
-                            <span class="material-icons text-3xl text-[#6B7A70]" aria-hidden="true">{{ c.icon }}</span>
-                          </span>
-                        }
-                      </span>
-                      @if (activeCommand() === c.cmd) {
-                        <span class="absolute top-1.5 end-1.5 w-6 h-6 rounded-full bg-white shadow-xs flex items-center justify-center" aria-hidden="true">
-                          <span class="material-icons text-base text-[#2D6A4F]">check_circle</span>
-                        </span>
-                      }
-                      <span class="block px-2.5 py-2">
-                        <span class="block text-sm font-semibold font-display text-[#14251D] leading-tight">{{ lang.tr(c.fr, c.ar) }}</span>
-                        <span class="block text-[11px] text-[#6B7A70] mt-0.5"><bdi>{{ c.cmd }}</bdi></span>
-                      </span>
-                    </button>
-                  }
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
-                  <legend class="font-display font-semibold text-[#14251D]">{{ lang.tr('Composition', 'التركيب') }}</legend>
-                  @if (autoPicked(); as picked) {
-                    <p class="text-xs text-[#6B7A70]" aria-live="polite">
-                      {{ lang.tr('L’IA a choisi :', 'اختار الذكاء الاصطناعي:') }}
-                      <strong class="text-[#1B4332] font-semibold">{{ presetName(picked) }}</strong>
-                    </p>
-                  }
-                </div>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                  @for (p of presets; track p.id) {
-                    <button
-                      type="button"
-                      (click)="setPreset(p.id)"
-                      [disabled]="busy()"
-                      [attr.aria-pressed]="preset() === p.id"
-                      [class]="preset() === p.id
-                        ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5'
-                        : autoPicked() === p.id
-                          ? 'border-dashed border-[#2D6A4F] bg-[#FBF8F1]'
-                          : 'border-[#E7DFCF] hover:bg-[#FBF8F1]'"
-                      class="relative border rounded-xl p-3 min-h-[88px] flex flex-col items-start justify-between gap-2 text-start cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]">
-                      <span
-                        class="w-9 h-9 rounded-lg flex items-center justify-center"
-                        [class]="preset() === p.id || autoPicked() === p.id ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'bg-[#F2ECDE] text-[#1B4332]'">
-                        <span class="material-icons text-xl" aria-hidden="true">{{ p.icon }}</span>
-                      </span>
-                      <span class="text-sm font-semibold text-[#14251D] leading-snug">{{ lang.tr(p.fr, p.ar) }}</span>
-                      @if (preset() === p.id) {
-                        <span class="material-icons absolute top-2.5 end-2.5 text-base text-[#2D6A4F]" aria-hidden="true">check_circle</span>
-                      } @else if (autoPicked() === p.id) {
-                        <span class="absolute top-2.5 end-2.5 text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#F2C14E] text-[#14251D]">{{ lang.tr('Choix IA', 'اختيار الذكاء') }}</span>
-                      }
-                    </button>
-                  }
-                </div>
-              </fieldset>
-
-              <div class="border-t border-[#F2ECDE] pt-5">
-                <label for="ai-notes" class="block font-display font-semibold text-[#14251D]">{{ lang.tr('Consignes pour l’IA', 'توجيهات للذكاء الاصطناعي') }}</label>
-                <p class="text-xs text-[#6B7A70] mt-1 mb-3">{{ lang.tr('Facultatif. Appliquez pour régénérer avec ces consignes.', 'اختياري. اضغط «تطبيق» لإعادة التوليد بهذه التوجيهات.') }}</p>
-                <div class="flex flex-col sm:flex-row gap-2.5">
-                  <textarea
-                    id="ai-notes"
-                    rows="2"
-                    [value]="notes()"
-                    (input)="notes.set($any($event.target).value)"
-                    [placeholder]="lang.tr('Ex. : insister sur les exemples du quotidien', 'مثال: التركيز على أمثلة من الحياة اليومية')"
-                    class="flex-1 min-w-0 resize-y min-h-12 bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 py-3 text-sm placeholder:text-[#6B7A70] focus:border-[#2D6A4F] focus:bg-white focus-visible:outline-2 focus-visible:outline-[#2D6A4F] transition-colors"></textarea>
+            <!-- Visual Command Quick Picker -->
+            <div class="bg-white border border-[#E7DFCF] rounded-2xl p-3.5 shadow-xs space-y-2.5">
+              <div class="flex items-center justify-between gap-2">
+                <h3 class="font-display font-semibold text-xs text-[#14251D] flex items-center gap-1.5">
+                  <span class="material-icons text-sm text-[#2D6A4F]" aria-hidden="true">auto_awesome</span>
+                  {{ lang.tr('Préréglage visuel', 'النمط السريع') }}
+                </h3>
+                <span class="text-[10px] font-mono text-[#6B7A70] bg-[#F2ECDE] px-1.5 py-0.5 rounded-full">/commandes</span>
+              </div>
+              <div class="grid grid-cols-3 gap-1.5">
+                @for (c of commands; track c.cmd) {
                   <button
                     type="button"
-                    (click)="regenerate()"
-                    [disabled]="busy() || !source() || !notes().trim()"
-                    class="sm:self-start bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-xl text-sm transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-default disabled:hover:bg-[#2D6A4F]">
-                    <span class="material-icons text-base" [class.animate-spin]="busy()" aria-hidden="true">refresh</span>
-                    {{ lang.tr('Appliquer', 'تطبيق') }}
+                    (click)="applyCommand(c.cmd)"
+                    [attr.aria-pressed]="activeCommand() === c.cmd"
+                    [class]="activeCommand() === c.cmd ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5' : 'border-[#E7DFCF] hover:border-[#2D6A4F]/50 bg-white'"
+                    class="group relative border rounded-xl overflow-hidden text-start cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[#2D6A4F]">
+                    <span class="block h-10 w-full bg-[#FBF8F1] overflow-hidden">
+                      @if (c.thumb) {
+                        <img [src]="c.thumb" alt="" width="160" height="120" loading="lazy" decoding="async"
+                          class="w-full h-full object-cover transition-transform duration-150 motion-safe:group-hover:scale-[1.05]">
+                      } @else {
+                        <span class="w-full h-full flex items-center justify-center">
+                          <span class="material-icons text-lg text-[#6B7A70]" aria-hidden="true">{{ c.icon }}</span>
+                        </span>
+                      }
+                    </span>
+                    @if (activeCommand() === c.cmd) {
+                      <span class="absolute top-1 end-1 w-4 h-4 rounded-full bg-white shadow-xs flex items-center justify-center" aria-hidden="true">
+                        <span class="material-icons text-xs text-[#2D6A4F]">check_circle</span>
+                      </span>
+                    }
+                    <span class="block p-1">
+                      <span class="block text-[11px] font-semibold font-display text-[#14251D] leading-tight truncate">{{ lang.tr(c.fr, c.ar) }}</span>
+                    </span>
                   </button>
-                </div>
+                }
               </div>
             </div>
-          </section>
-        }
 
-        <!-- The A4 sheet -->
-        <section class="max-w-[900px] mx-auto space-y-4">
-          @if (doc(); as current) {
-            <div [class.opacity-50]="busy()" class="transition-opacity">
-              <app-infographic-spec [doc]="current" [illustrating]="illustrating()" (illustrate)="illustrate($event)"></app-infographic-spec>
+            <!-- Composition Layouts -->
+            <div class="bg-white border border-[#E7DFCF] rounded-2xl p-3.5 shadow-xs space-y-2.5">
+              <div class="flex items-center justify-between gap-2">
+                <h3 class="font-display font-semibold text-xs text-[#14251D] flex items-center gap-1.5">
+                  <span class="material-icons text-sm text-[#2D6A4F]" aria-hidden="true">dashboard</span>
+                  {{ lang.tr('Composition', 'التركيب') }}
+                </h3>
+                @if (autoPicked(); as picked) {
+                  <span class="text-[10px] text-[#2D6A4F] bg-[#2D6A4F]/10 font-semibold px-2 py-0.5 rounded-full">
+                    {{ presetName(picked) }}
+                  </span>
+                }
+              </div>
+              <div class="grid grid-cols-2 gap-1.5">
+                @for (p of presets; track p.id) {
+                  <button
+                    type="button"
+                    (click)="setPreset(p.id)"
+                    [disabled]="busy()"
+                    [attr.aria-pressed]="preset() === p.id"
+                    [class]="preset() === p.id
+                      ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5'
+                      : autoPicked() === p.id
+                        ? 'border-dashed border-[#2D6A4F] bg-[#FBF8F1]'
+                        : 'border-[#E7DFCF] hover:bg-[#FBF8F1]'"
+                    class="relative border rounded-xl p-2 min-h-[52px] flex flex-col items-start justify-between gap-1 text-start cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[#2D6A4F]">
+                    <div class="flex items-center justify-between w-full gap-1">
+                      <span
+                        class="w-5 h-5 rounded flex items-center justify-center shrink-0 text-xs"
+                        [class]="preset() === p.id || autoPicked() === p.id ? 'bg-[#2D6A4F] text-[#FBF8F1]' : 'bg-[#F2ECDE] text-[#1B4332]'">
+                        <span class="material-icons text-xs" aria-hidden="true">{{ p.icon }}</span>
+                      </span>
+                      @if (preset() === p.id) {
+                        <span class="material-icons text-xs text-[#2D6A4F]" aria-hidden="true">check_circle</span>
+                      }
+                    </div>
+                    <span class="text-[11px] font-semibold text-[#14251D] leading-tight truncate w-full">{{ lang.tr(p.fr, p.ar) }}</span>
+                  </button>
+                }
+              </div>
             </div>
-          } @else if (busy()) {
-            <div class="no-print bg-white rounded-[28px] border border-[#E7DFCF] p-16 text-center">
-              <span class="material-icons text-4xl text-[#2D6A4F] animate-spin" aria-hidden="true">sync</span>
-              <p class="font-display font-semibold mt-3">{{ lang.tr('Création de votre infographie', 'جارٍ إنشاء الإنفوغرافيك') }}</p>
+          </aside>
+
+          <!-- CENTER CANVAS: Main A4 Sheet Workspace -->
+          <section class="min-w-0 space-y-4">
+            @if (doc(); as current) {
+              <div [class.opacity-50]="busy()" class="transition-opacity flex justify-center">
+                <app-infographic-spec [doc]="current" [illustrating]="illustrating()" (illustrate)="illustrate($event)"></app-infographic-spec>
+              </div>
+            } @else if (busy()) {
+              <div class="no-print bg-white rounded-2xl border border-[#E7DFCF] p-16 text-center shadow-xs">
+                <span class="material-icons text-4xl text-[#2D6A4F] animate-spin" aria-hidden="true">sync</span>
+                <p class="font-display font-semibold mt-3 text-sm">{{ lang.tr('Création de votre infographie', 'جارٍ إنشاء الإنفوغرافيك') }}</p>
+              </div>
+            }
+            <div class="no-print">
+              <app-ai-status [loading]="false" [error]="error()" (retry)="regenerate()"></app-ai-status>
             </div>
-          }
-          <div class="no-print">
-            <app-ai-status [loading]="false" [error]="error()" (retry)="regenerate()"></app-ai-status>
-          </div>
-        </section>
+          </section>
+
+          <!-- RIGHT SIDEBAR: Style & AI Fine-Tuning -->
+          <aside class="no-print space-y-4 min-w-0">
+            <!-- Themes / Style Picker -->
+            <div class="bg-white border border-[#E7DFCF] rounded-2xl p-3.5 shadow-xs space-y-2.5">
+              <h3 class="font-display font-semibold text-xs text-[#14251D] flex items-center gap-1.5">
+                <span class="material-icons text-sm text-[#2D6A4F]" aria-hidden="true">palette</span>
+                {{ lang.tr('Style & Palette', 'الأسلوب والألوان') }}
+              </h3>
+              <div class="grid grid-cols-2 gap-1.5">
+                @for (th of themes; track th.id) {
+                  <button
+                    type="button"
+                    (click)="setTheme(th.id)"
+                    [attr.aria-pressed]="theme() === th.id"
+                    [class]="theme() === th.id ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/5' : 'border-[#E7DFCF] hover:bg-[#FBF8F1]'"
+                    class="border rounded-xl p-2 text-start cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[#2D6A4F]">
+                    <span class="flex items-center justify-between gap-1">
+                      <span class="material-icons text-sm" [class]="theme() === th.id ? 'text-[#2D6A4F]' : 'text-[#6B7A70]'" aria-hidden="true">{{ th.icon }}</span>
+                      @if (theme() === th.id) {
+                        <span class="material-icons text-xs text-[#2D6A4F]" aria-hidden="true">check_circle</span>
+                      }
+                    </span>
+                    <span class="block text-[11px] font-semibold text-[#14251D] mt-1 leading-tight">{{ lang.tr(th.fr, th.ar) }}</span>
+                  </button>
+                }
+              </div>
+            </div>
+
+            <!-- AI Instructions Box -->
+            <div class="bg-white border border-[#E7DFCF] rounded-2xl p-3.5 shadow-xs space-y-2.5">
+              <div class="flex items-center justify-between gap-2">
+                <h3 class="font-display font-semibold text-xs text-[#14251D] flex items-center gap-1.5">
+                  <span class="material-icons text-sm text-[#2D6A4F]" aria-hidden="true">psychology</span>
+                  {{ lang.tr('Consignes IA', 'توجيهات الذكاء') }}
+                </h3>
+                <span class="text-[10px] text-[#6B7A70]">{{ lang.tr('Facultatif', 'اختياري') }}</span>
+              </div>
+              <div class="space-y-2">
+                <textarea
+                  id="ai-notes"
+                  rows="3"
+                  [value]="notes()"
+                  (input)="notes.set($any($event.target).value)"
+                  [placeholder]="lang.tr('Ex. : insister sur les exemples du quotidien', 'مثال: التركيز على أمثلة من الحياة اليومية')"
+                  class="w-full resize-y min-h-[72px] bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2 text-xs placeholder:text-[#6B7A70] focus:border-[#2D6A4F] focus:bg-white focus-visible:outline-2 focus-visible:outline-[#2D6A4F] transition-colors"></textarea>
+                <button
+                  type="button"
+                  (click)="regenerate()"
+                  [disabled]="busy() || !source() || !notes().trim()"
+                  class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 h-9 rounded-xl text-xs transition-colors cursor-pointer flex items-center justify-center gap-1.5 shadow-xs disabled:opacity-50 disabled:cursor-default">
+                  <span class="material-icons text-sm" [class.animate-spin]="busy()" aria-hidden="true">refresh</span>
+                  {{ lang.tr('Appliquer', 'تطبيق التوجيهات') }}
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Actions Panel -->
+            @if (doc()) {
+              <div class="bg-white border border-[#E7DFCF] rounded-2xl p-3.5 shadow-xs space-y-2">
+                <h3 class="font-display font-semibold text-xs text-[#14251D] flex items-center gap-1.5 mb-1">
+                  <span class="material-icons text-sm text-[#2D6A4F]" aria-hidden="true">download</span>
+                  {{ lang.tr('Actions & Export', 'التصدير والمشاركة') }}
+                </h3>
+                <button
+                  type="button"
+                  (click)="print()"
+                  class="w-full bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] border border-[#E7DFCF] font-medium px-3 h-9 rounded-xl text-xs flex items-center justify-center gap-2 cursor-pointer transition-colors">
+                  <span class="material-icons text-sm" aria-hidden="true">print</span>
+                  {{ lang.tr('Imprimer A4', 'طباعة A4') }}
+                </button>
+                @if (doc()?.isOwner) {
+                  <button
+                    type="button"
+                    (click)="openPublish()"
+                    class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 h-9 rounded-xl text-xs transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-xs">
+                    <span class="material-icons text-sm" aria-hidden="true">{{ doc()?.published ? 'library_add_check' : 'library_add' }}</span>
+                    {{ doc()?.published ? lang.tr('Dans la bibliothèque', 'في المكتبة') : lang.tr('Publier', 'نشر') }}
+                  </button>
+                }
+              </div>
+            }
+          </aside>
+        </div>
       </main>
 
       @if (publishOpen()) {
