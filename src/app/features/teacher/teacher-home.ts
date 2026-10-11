@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, inject, signal, effect, computed } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate } from '@core';
+import { ChangeDetectionStrategy, Component, inject, signal, effect, computed, HostListener } from '@angular/core';
+import { Router, RouterLink, ActivatedRoute } from '@angular/router';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate, StorageVaultService } from '@core';
 import { TeacherAvatarComponent, BlogCardComponent, CartoucheComponent, DocCardComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem, copySharePost, joinDetails } from '@shared';
 
 export interface GeneratedExerciseResult {
@@ -95,7 +95,7 @@ export interface GeneratedExerciseResult {
             </button>
 
             <button
-              (click)="openStudio()"
+              (click)="openModal('course')"
               class="flex items-center gap-2 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-5 py-3 rounded-[10px] text-sm transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-lg">cloud_upload</span>
               {{ lang.t('addCourseBtn') }}
@@ -252,7 +252,7 @@ export interface GeneratedExerciseResult {
                   </p>
                 </div>
                 <button
-                  (click)="openStudio()"
+                  (click)="openModal('course')"
                   class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">add</span> {{ lang.t('addCourseBtn') }}
                 </button>
@@ -291,7 +291,7 @@ export interface GeneratedExerciseResult {
                   </p>
                 </div>
                 <button
-                  (click)="openStudio()"
+                  (click)="openArticleStudio()"
                   class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold text-xs px-4 py-2.5 rounded-[10px] flex items-center gap-1.5 cursor-pointer shadow-sm self-start sm:self-auto">
                   <span class="material-icons text-sm">edit_note</span> {{ lang.t('writeArticleBtn') }}
                 </button>
@@ -444,201 +444,358 @@ export interface GeneratedExerciseResult {
       </div>
     }
 
-    <!-- MODAL 2: CREATE COURSE / A4 DOCUMENT -->
+    <!-- FULL PAGE WORKSPACE: CREATE & PUBLISH COURSE / A4 DOCUMENT -->
     @if (modalType() === 'course') {
-      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
-            <div class="flex items-center gap-2">
-              <span class="material-icons text-[#2D6A4F]">post_add</span>
-              <h3 class="font-display font-semibold text-[#14251D] text-base">
-                {{ lang.tr('Publier un Document ou Examen A4', 'نشر وثيقة، تلخيص أو امتحان A4') }}
-              </h3>
-            </div>
-            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
-              <span class="material-icons">close</span>
+      <div class="fixed inset-0 z-50 bg-[#F4F6F4] flex flex-col overflow-hidden animate-in fade-in duration-300">
+        
+        <!-- Top Sticky App Bar -->
+        <header class="bg-[#14251D] text-[#FBF8F1] border-b border-[#2D6A4F]/40 h-16 px-4 sm:px-6 lg:px-8 flex items-center justify-between shrink-0 shadow-md">
+          <div class="flex items-center gap-3">
+            <button
+              (click)="closeModal()"
+              class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-[#FBF8F1] text-xs font-semibold cursor-pointer transition-colors">
+              <span class="material-icons text-base rtl:rotate-180">arrow_back</span>
+              <span>{{ lang.tr('Retour au tableau de bord', 'العودة إلى فضاء المعلم') }}</span>
             </button>
+            <div class="h-5 w-px bg-white/20 hidden sm:block"></div>
+            <div class="flex items-center gap-2">
+              <span class="material-icons text-[#F2C14E] text-lg">post_add</span>
+              <h2 class="font-display font-semibold text-sm sm:text-base text-[#FBF8F1] truncate">
+                {{ lang.tr('Studio de Publication & Certification A4', 'استوديو النشر وتوثيق الوثائق الرسمية A4') }}
+              </h2>
+            </div>
           </div>
 
-          <div class="space-y-3 text-xs">
-            <!-- VPS Direct Upload & AI Multimodal Scanner Zone -->
-            <div class="border-2 border-dashed border-[#2D6A4F]/40 rounded-[18px] p-4 text-center bg-[#F2ECDE] space-y-2">
-              <label for="file-upload" class="cursor-pointer block">
-                <div class="w-12 h-12 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center mx-auto mb-2">
-                  <span class="material-icons text-2xl">document_scanner</span>
-                </div>
-                <h4 class="text-xs font-bold text-[#14251D]">
-                  {{ lang.tr("Numériser un devoir / capture d'écran / PDF", 'مسح ضوئي للامتحان أو الصورة أو PDF') }}
-                </h4>
-                <p class="text-[11px] text-[#5B6B60] mt-0.5">
-                  {{ isAiScanning() ? lang.tr('Analyse OCR & classification par Gemini 2.5 en cours...', 'جاري الفرز والتحليل الذكي بواسطة الذكاء الاصطناعي...') : (isUploading() ? lang.tr('Envoi vers le VPS...', 'جاري الرفع إلى الخادم...') : lang.tr("L'IA extrait le texte, classifie la matière/niveau et applique votre filigrane officiel", 'يقوم الذكاء الاصطناعي باستخراج النص وتصنيف المادة وتطبيق علامتك المائية')) }}
-                </p>
-                <input
-                  id="file-upload"
-                  type="file"
-                  (change)="handleCourseFileUpload($event)"
-                  class="hidden"
-                  accept="application/pdf,image/*" />
-              </label>
-
-              @if (isAiScanning()) {
-                <div class="flex items-center justify-center gap-2 text-xs text-[#2D6A4F] font-semibold py-1 animate-pulse">
-                  <span class="material-icons animate-spin text-sm">sync</span>
-                  <span>{{ lang.tr('OCR & Classification intelligente...', 'معالجة ضوئية وفهرسة...') }}</span>
-                </div>
-              }
-
-              @if (aiDetectedBadge()) {
-                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] text-[11px] font-bold border border-[#2D6A4F]/20">
-                  <span class="material-icons text-xs">auto_awesome</span>
-                  <span>{{ aiDetectedBadge() }}</span>
-                </div>
-              }
-
-              @if (uploadedFileName()) {
-                <span class="text-[11px] text-[#2D6A4F] font-semibold block">✓ {{ uploadedFileName() }}</span>
-              }
-            </div>
-
-            <div>
-              <label for="course-title" class="block font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Titre officiel du document', 'العنوان الرسمي للوثيقة') }} *
-              </label>
-              <input
-                id="course-title"
-                type="text"
-                [value]="newCourseTitle()"
-                (input)="newCourseTitle.set($any($event.target).value)"
-                placeholder="Ex: Devoir de Contrôle N°1 : Mathématiques et Géométrie"
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none font-semibold" />
-            </div>
-
-            <!-- 4-Facet Strict Classification Matrix to Protect Library -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-              <div>
-                <label for="course-subj" class="block font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('Matière', 'المادة') }} *
-                </label>
-                <select
-                  id="course-subj"
-                  [value]="newCourseSubject()"
-                  (change)="newCourseSubject.set($any($event.target).value)"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
-                  <option value="Mathématiques">Mathématiques / الرياضيات</option>
-                  <option value="Français">Français / الفرنسية</option>
-                  <option value="اللغة العربية">اللغة العربية</option>
-                  <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ</option>
-                  <option value="Histoire & Géographie">Histoire & Géo / التاريخ والجغرافيا</option>
-                  <option value="Anglais">Anglais / الإنجليزية</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="course-grade" class="block font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('Niveau', 'المستوى') }} *
-                </label>
-                <select
-                  id="course-grade"
-                  [value]="newCourseGrade()"
-                  (change)="newCourseGrade.set($any($event.target).value)"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
-                  <option value="1ère Année">1ère Année / السنة الأولى</option>
-                  <option value="2ème Année">2ème Année / السنة الثانية</option>
-                  <option value="3ème Année">3ème Année / السنة الثالثة</option>
-                  <option value="4ème Année">4ème Année / السنة الرابعة</option>
-                  <option value="5ème Année">5ème Année / السنة الخامسة</option>
-                  <option value="6ème Année">6ème Année / السنة السادسة</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="course-trim" class="block font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('Trimestre', 'الثلاثي') }} *
-                </label>
-                <select
-                  id="course-trim"
-                  [value]="newCourseTrimester()"
-                  (change)="newCourseTrimester.set($any($event.target).value)"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
-                  <option value="Trimestre 1">Trimestre 1 / الثلاثي الأول</option>
-                  <option value="Trimestre 2">Trimestre 2 / الثلاثي الثاني</option>
-                  <option value="Trimestre 3">Trimestre 3 / الثلاثي الثالث</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="course-doctype" class="block font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('Type', 'النوع') }} *
-                </label>
-                <select
-                  id="course-doctype"
-                  [value]="newCourseDocType()"
-                  (change)="newCourseDocType.set($any($event.target).value)"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2 text-[#14251D] outline-none">
-                  <option value="Devoir de Contrôle">Devoir de Contrôle / مراقبة</option>
-                  <option value="Devoir de Synthèse">Devoir de Synthèse / تأليفي</option>
-                  <option value="Fiche de Révision">Fiche de Révision / تقييم</option>
-                  <option value="Série d'Exercices">Série d'Exercices / تمارين</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="course-summary" class="block font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Résumé pédagogique', 'ملخص تربوي موجز') }}
-              </label>
-              <input
-                id="course-summary"
-                type="text"
-                [value]="newCourseSummary()"
-                (input)="newCourseSummary.set($any($event.target).value)"
-                placeholder="Ex: Fiche d'exercices et problèmes d'évaluation pour le 1er trimestre."
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
-            </div>
-
-            <div>
-              <div class="flex items-center justify-between mb-1">
-                <label for="course-content" class="block font-semibold text-[#14251D]">
-                  {{ lang.tr('Contenu A4 imprimable & transcrit par OCR', 'المحتوى المستخرج القابل للطباعة A4') }}
-                </label>
-                <span class="text-[10px] text-[#5B6B60]">
-                  {{ lang.tr('Format Markdown supporté', 'يدعم التنسيق المتقدم') }}
-                </span>
-              </div>
-              <textarea
-                id="course-content"
-                [value]="newCourseContent()"
-                (input)="newCourseContent.set($any($event.target).value)"
-                rows="5"
-                placeholder="Rédigez ou laissez l'IA transcrire automatiquement les exercices depuis votre photo..."
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none font-mono text-[11px] leading-relaxed"></textarea>
-            </div>
-
-            <!-- Identity Attribution & Watermark Badge Preview -->
-            <div class="p-3 bg-[#F2ECDE]/80 border border-[#2D6A4F]/20 rounded-[12px] flex items-center justify-between gap-3 text-xs">
-              <div class="flex items-center gap-2">
-                <span class="material-icons text-base text-[#2D6A4F]">verified_user</span>
-                <div>
-                  <p class="font-bold text-[#14251D]">
-                    {{ getTeacherName() }}
-                  </p>
-                  <p class="text-[10px] text-[#5B6B60]">
-                    {{ getTeacherSchool() }} • {{ lang.tr('Filigrane officiel appliqué automatiquement', 'العلامة المائية تطبق تلقائياً') }}
-                  </p>
-                </div>
-              </div>
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#2D6A4F] text-[#FBF8F1]">
-                A4 Impress
-              </span>
-            </div>
+          <div class="flex items-center gap-2 sm:gap-3">
+            <button
+              (click)="closeModal()"
+              class="px-3.5 py-2 rounded-xl text-xs font-semibold text-[#B7C7BC] hover:text-[#FBF8F1] hover:bg-white/10 transition-colors cursor-pointer hidden sm:block">
+              {{ lang.tr('Annuler', 'إلغاء') }}
+            </button>
 
             <button
               (click)="submitCourse()"
-              class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold py-3 rounded-[10px] cursor-pointer shadow-sm">
-              {{ lang.tr('Publier le Document A4 Certifié', 'نشر وتوثيق الوثيقة الرسمية') }}
+              class="flex items-center gap-2 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm cursor-pointer shadow-sm transition-all">
+              <span class="material-icons text-base sm:text-lg">verified_user</span>
+              <span>{{ lang.tr('Publier le Document A4 Certifié', 'نشر وتوثيق الوثيقة الرسمية') }}</span>
             </button>
           </div>
-        </div>
+        </header>
+
+        <!-- Main Workspace Body (Two Columns) -->
+        <main class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
+          <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            
+            <!-- Left Column: Settings, Metadata & Upload (5 Cols) -->
+            <div class="lg:col-span-5 space-y-5">
+              
+              <!-- 1. AI OCR & VPS Upload Card -->
+              <div class="bg-white rounded-[22px] border border-[#E7DFCF] p-5 shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-[#E7DFCF]">
+                  <div class="flex items-center gap-2">
+                    <span class="material-icons text-[#2D6A4F] text-lg">document_scanner</span>
+                    <h3 class="font-display font-semibold text-[#14251D] text-sm">
+                      {{ lang.tr('Numérisation & OCR Multimodal', 'المسح الضوئي والفرز الذكي') }}
+                    </h3>
+                  </div>
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F]">
+                    Gemini 2.5
+                  </span>
+                </div>
+
+                <div class="border-2 border-dashed border-[#2D6A4F]/30 hover:border-[#2D6A4F] rounded-[18px] p-5 text-center bg-[#FBF8F1] transition-colors">
+                  <label for="fullpage-file-upload" class="cursor-pointer block">
+                    <div class="w-12 h-12 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center mx-auto mb-2.5">
+                      <span class="material-icons text-2xl">cloud_upload</span>
+                    </div>
+                    <h4 class="text-xs font-bold text-[#14251D]">
+                      {{ lang.tr("Téléversez un examen, PDF ou photo d'exercice", 'ارفع امتحاناً، صورة تمرين أو ملف PDF') }}
+                    </h4>
+                    <p class="text-[11px] text-[#5B6B60] mt-1 max-w-xs mx-auto leading-relaxed">
+                      {{ isAiScanning() ? lang.tr('Analyse OCR & classification par IA en cours...', 'جاري الفرز والتحليل الذكي بواسطة الذكاء الاصطناعي...') : (isUploading() ? lang.tr('Envoi vers le VPS...', 'جاري الرفع إلى الخادم...') : lang.tr("L'IA extrait le texte, classifie la matière/niveau et applique votre filigrane officiel", 'يقوم الذكاء الاصطناعي باستخراج النص وتصنيف المادة وتطبيق علامتك المائية')) }}
+                    </p>
+                    <input
+                      id="fullpage-file-upload"
+                      type="file"
+                      (change)="handleCourseFileUpload($event)"
+                      class="hidden"
+                      accept="application/pdf,image/*" />
+                  </label>
+
+                  @if (isAiScanning()) {
+                    <div class="flex items-center justify-center gap-2 text-xs text-[#2D6A4F] font-semibold pt-3 animate-pulse">
+                      <span class="material-icons animate-spin text-sm">sync</span>
+                      <span>{{ lang.tr('OCR & Classification intelligente...', 'معالجة ضوئية وفهرسة...') }}</span>
+                    </div>
+                  }
+
+                  @if (aiDetectedBadge()) {
+                    <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2D6A4F]/15 text-[#2D6A4F] text-xs font-bold border border-[#2D6A4F]/30">
+                      <span class="material-icons text-xs">auto_awesome</span>
+                      <span>{{ aiDetectedBadge() }}</span>
+                    </div>
+                  }
+
+                  @if (uploadedFileName()) {
+                    <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#E8F5FC] text-[#007CC2] text-xs font-semibold">
+                      <span class="material-icons text-xs">description</span>
+                      <span class="truncate max-w-[200px]">{{ uploadedFileName() }}</span>
+                    </div>
+                  }
+                </div>
+              </div>
+
+              <!-- 2. Classification & Details Card -->
+              <div class="bg-white rounded-[22px] border border-[#E7DFCF] p-5 shadow-xs space-y-4 text-xs">
+                <div class="flex items-center gap-2 pb-2 border-b border-[#E7DFCF]">
+                  <span class="material-icons text-[#2D6A4F] text-lg">tune</span>
+                  <h3 class="font-display font-semibold text-[#14251D] text-sm">
+                    {{ lang.tr('Informations & Classification Pédagogique', 'بيانات وتصنيف الوثيقة') }}
+                  </h3>
+                </div>
+
+                <div>
+                  <label for="course-title-full" class="block font-semibold text-[#14251D] mb-1">
+                    {{ lang.tr('Titre officiel du document', 'العنوان الرسمي للوثيقة') }} *
+                  </label>
+                  <input
+                    id="course-title-full"
+                    type="text"
+                    [value]="newCourseTitle()"
+                    (input)="newCourseTitle.set($any($event.target).value)"
+                    placeholder="Ex: Devoir de Contrôle N°1 : Mathématiques et Géométrie"
+                    class="w-full bg-[#FBF8F1] border border-[#E7DFCF] focus:border-[#2D6A4F] focus:bg-white rounded-xl p-3 text-[#14251D] outline-none font-semibold transition-colors" />
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <div>
+                    <label for="course-subj-full" class="block font-semibold text-[#14251D] mb-1">
+                      {{ lang.tr('Matière', 'المادة') }} *
+                    </label>
+                    <select
+                      id="course-subj-full"
+                      [value]="newCourseSubject()"
+                      (change)="newCourseSubject.set($any($event.target).value)"
+                      class="w-full bg-[#FBF8F1] border border-[#E7DFCF] focus:border-[#2D6A4F] rounded-xl p-2.5 text-[#14251D] outline-none">
+                      <option value="Mathématiques">Mathématiques / الرياضيات</option>
+                      <option value="Français">Français / الفرنسية</option>
+                      <option value="اللغة العربية">اللغة العربية</option>
+                      <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ</option>
+                      <option value="Histoire & Géographie">Histoire & Géo / التاريخ والجغرافيا</option>
+                      <option value="Anglais">Anglais / الإنجليزية</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="course-grade-full" class="block font-semibold text-[#14251D] mb-1">
+                      {{ lang.tr('Niveau', 'المستوى') }} *
+                    </label>
+                    <select
+                      id="course-grade-full"
+                      [value]="newCourseGrade()"
+                      (change)="newCourseGrade.set($any($event.target).value)"
+                      class="w-full bg-[#FBF8F1] border border-[#E7DFCF] focus:border-[#2D6A4F] rounded-xl p-2.5 text-[#14251D] outline-none">
+                      <option value="1ère Année">1ère Année / السنة الأولى</option>
+                      <option value="2ème Année">2ème Année / السنة الثانية</option>
+                      <option value="3ème Année">3ème Année / السنة الثالثة</option>
+                      <option value="4ème Année">4ème Année / السنة الرابعة</option>
+                      <option value="5ème Année">5ème Année / السنة الخامسة</option>
+                      <option value="6ème Année">6ème Année / السنة السادسة</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="course-trim-full" class="block font-semibold text-[#14251D] mb-1">
+                      {{ lang.tr('Trimestre', 'الثلاثي') }} *
+                    </label>
+                    <select
+                      id="course-trim-full"
+                      [value]="newCourseTrimester()"
+                      (change)="newCourseTrimester.set($any($event.target).value)"
+                      class="w-full bg-[#FBF8F1] border border-[#E7DFCF] focus:border-[#2D6A4F] rounded-xl p-2.5 text-[#14251D] outline-none">
+                      <option value="Trimestre 1">Trimestre 1 / الثلاثي الأول</option>
+                      <option value="Trimestre 2">Trimestre 2 / الثلاثي الثاني</option>
+                      <option value="Trimestre 3">Trimestre 3 / الثلاثي الثالث</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="course-doctype-full" class="block font-semibold text-[#14251D] mb-1">
+                      {{ lang.tr('Type', 'النوع') }} *
+                    </label>
+                    <select
+                      id="course-doctype-full"
+                      [value]="newCourseDocType()"
+                      (change)="newCourseDocType.set($any($event.target).value)"
+                      class="w-full bg-[#FBF8F1] border border-[#E7DFCF] focus:border-[#2D6A4F] rounded-xl p-2.5 text-[#14251D] outline-none">
+                      <option value="Devoir de Contrôle">Devoir de Contrôle / مراقبة</option>
+                      <option value="Devoir de Synthèse">Devoir de Synthèse / تأليفي</option>
+                      <option value="Fiche de Révision">Fiche de Révision / تقييم</option>
+                      <option value="Série d'Exercices">Série d'Exercices / تمارين</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="course-summary-full" class="block font-semibold text-[#14251D] mb-1">
+                    {{ lang.tr('Résumé pédagogique', 'ملخص تربوي موجز') }}
+                  </label>
+                  <input
+                    id="course-summary-full"
+                    type="text"
+                    [value]="newCourseSummary()"
+                    (input)="newCourseSummary.set($any($event.target).value)"
+                    placeholder="Ex: Fiche d'exercices et problèmes d'évaluation pour le 1er trimestre."
+                    class="w-full bg-[#FBF8F1] border border-[#E7DFCF] focus:border-[#2D6A4F] rounded-xl p-3 text-[#14251D] outline-none transition-colors" />
+                </div>
+              </div>
+
+              <!-- 3. Certified Watermark Badge Card -->
+              <div class="bg-white rounded-[22px] border border-[#E7DFCF] p-4 shadow-xs flex items-center justify-between gap-3 text-xs">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-10 h-10 rounded-xl bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
+                    <span class="material-icons text-xl">verified</span>
+                  </div>
+                  <div>
+                    <p class="font-bold text-[#14251D] text-sm">
+                      {{ getTeacherName() }}
+                    </p>
+                    <p class="text-[11px] text-[#5B6B60]">
+                      {{ getTeacherSchool() }}
+                    </p>
+                    <p class="text-[10px] text-[#2D6A4F] font-semibold mt-0.5">
+                      {{ lang.tr('Filigrane officiel et attribution automatique', 'العلامة المائية الرسمية وحقوق التأليف مفعلة') }}
+                    </p>
+                  </div>
+                </div>
+                <span class="text-[10px] font-bold px-2.5 py-1 rounded-lg bg-[#2D6A4F] text-[#FBF8F1] shrink-0">
+                  A4 Impress 🇹🇳
+                </span>
+              </div>
+            </div>
+
+            <!-- Right Column: Live A4 Printable Editor & Preview (7 Cols) -->
+            <div class="lg:col-span-7 bg-white rounded-[22px] border border-[#E7DFCF] p-5 sm:p-6 shadow-xs space-y-4">
+              
+              <!-- Tab Bar (Edit Markdown vs A4 Print Preview) -->
+              <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+                <div class="flex items-center gap-2">
+                  <button
+                    (click)="publishDocTab.set('edit')"
+                    [class]="publishDocTab() === 'edit'
+                      ? 'bg-[#2D6A4F] text-[#FBF8F1]'
+                      : 'bg-[#FBF8F1] text-[#5B6B60] hover:text-[#14251D]'"
+                    class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold cursor-pointer transition-colors">
+                    <span class="material-icons text-sm">edit_note</span>
+                    <span>{{ lang.tr('Éditeur de Contenu', 'تحرير محتوى الوثيقة') }}</span>
+                  </button>
+
+                  <button
+                    (click)="publishDocTab.set('preview')"
+                    [class]="publishDocTab() === 'preview'
+                      ? 'bg-[#2D6A4F] text-[#FBF8F1]'
+                      : 'bg-[#FBF8F1] text-[#5B6B60] hover:text-[#14251D]'"
+                    class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold cursor-pointer transition-colors">
+                    <span class="material-icons text-sm">print</span>
+                    <span>{{ lang.tr('Aperçu A4 Imprimable', 'معاينة ورقة A4 للطباعة') }}</span>
+                  </button>
+                </div>
+
+                <span class="text-[11px] text-[#5B6B60] hidden sm:inline">
+                  {{ lang.tr('Format Markdown supporté', 'يدعم التنسيق والرموز الرياضية') }}
+                </span>
+              </div>
+
+              <!-- VIEW 1: MARKDOWN TEXTAREA EDITOR -->
+              @if (publishDocTab() === 'edit') {
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between text-xs text-[#5B6B60]">
+                    <span>{{ lang.tr('Contenu transcrit ou rédigé', 'نص الامتحان أو التمارين') }}</span>
+                    <span>{{ newCourseContent().length }} {{ lang.tr('caractères', 'حرف') }}</span>
+                  </div>
+
+                  <textarea
+                    id="course-content-full"
+                    [value]="newCourseContent()"
+                    (input)="newCourseContent.set($any($event.target).value)"
+                    rows="16"
+                    placeholder="Rédigez ou collez le sujet ici... L'IA peut aussi transcrire automatiquement votre devoir scanné."
+                    class="w-full bg-[#FBF8F1] border border-[#E7DFCF] focus:border-[#2D6A4F] focus:bg-white rounded-2xl p-4 text-[#14251D] outline-none font-mono text-xs leading-relaxed transition-colors"></textarea>
+
+                  <div class="bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-3 text-[11px] text-[#5B6B60] flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <span class="material-icons text-sm text-[#2D6A4F]">lightbulb</span>
+                      <span>{{ lang.tr("Astuce : Utilisez les tirets (-) pour les questions et (##) pour les parties d'examen.", 'نصيحة: استخدم (-) لتعداد الأسئلة و (##) لتقسيم التمارين.') }}</span>
+                    </div>
+                    <button
+                      (click)="publishDocTab.set('preview')"
+                      class="text-[#2D6A4F] font-bold hover:underline cursor-pointer">
+                      {{ lang.tr('Voir le rendu A4 →', 'معاينة النتيجة →') }}
+                    </button>
+                  </div>
+                </div>
+              }
+
+              <!-- VIEW 2: REAL A4 SHEET LIVE PREVIEW -->
+              @if (publishDocTab() === 'preview') {
+                <div class="bg-[#E7DFCF]/40 p-4 sm:p-6 rounded-2xl overflow-x-auto flex justify-center">
+                  <div class="bg-white w-full max-w-[595px] min-h-[700px] p-6 sm:p-8 rounded-sm shadow-md border border-[#D5CBB9] relative flex flex-col justify-between text-ink select-none">
+                    
+                    <!-- Top Official Ministry Header -->
+                    <div>
+                      <div class="border-b-2 border-black pb-2 mb-4 text-center">
+                        <div class="flex items-center justify-between text-[10px] font-bold text-gray-700">
+                          <span>الجمهورية التونسية<br/>وزارة التربية</span>
+                          <span class="font-display font-semibold text-xs text-black">{{ getTeacherSchool() }}</span>
+                          <span>السنة الدراسية<br/>2025 / 2026</span>
+                        </div>
+                      </div>
+
+                      <!-- Student Info Block -->
+                      <div class="grid grid-cols-3 gap-2 border border-black p-2 mb-4 text-[11px]">
+                        <div>الاسم واللقب: ....................</div>
+                        <div>القسم: {{ newCourseGrade() }}</div>
+                        <div>العدد: ..... / 20</div>
+                      </div>
+
+                      <!-- Document Title Block -->
+                      <div class="text-center my-3 pb-2 border-b border-gray-300">
+                        <h4 class="font-display font-bold text-base sm:text-lg text-black">
+                          {{ newCourseTitle() || lang.tr('Titre du Devoir / Examen', 'عنوان الامتحان أو الوثيقة') }}
+                        </h4>
+                        <div class="flex items-center justify-center gap-2 text-[10px] font-bold text-gray-600 mt-1">
+                          <span>{{ newCourseSubject() }}</span>
+                          <span>•</span>
+                          <span>{{ newCourseTrimester() }}</span>
+                          <span>•</span>
+                          <span>{{ newCourseDocType() }}</span>
+                        </div>
+                      </div>
+
+                      <!-- Document Printable Content -->
+                      <div class="text-xs leading-relaxed text-gray-800 whitespace-pre-wrap font-sans my-4 min-h-[220px]">
+                        {{ newCourseContent() || lang.tr('Aucun contenu saisi pour le moment. Vous pouvez rédiger ou numériser une feuille pour voir la mise en page ici.', 'لم يتم إدخال نص بعد. يمكنك كتابة التمارين في خانة التحرير أو رفع وثيقة لملئها آلياً.') }}
+                      </div>
+                    </div>
+
+                    <!-- Watermark Stamp & Teacher Signature Block -->
+                    <div class="pt-4 border-t border-gray-300 flex items-center justify-between text-[10px] text-gray-600">
+                      <div>
+                        <span>إعداد الأستاذ(ة): </span>
+                        <span class="font-bold text-black">{{ getTeacherName() }}</span>
+                      </div>
+                      <div class="font-mono text-[9px] text-gray-400">
+                        MADRASATI TN • FILIGRANE OFFICIEL
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              }
+
+            </div>
+          </div>
+        </main>
       </div>
     }
 
@@ -1588,7 +1745,71 @@ export class TeacherHomeComponent {
     { key: 'qa', label: this.lang.t('tabTeacherQA'), icon: 'forum', count: this.store.questionThreads().length },
   ]);
 
+  private readonly route = inject(ActivatedRoute);
+  private readonly vault = inject(StorageVaultService);
+
+  @HostListener('window:beforeunload', ['$event'])
+  onBeforeUnload(event: BeforeUnloadEvent) {
+    if (this.isAiScanning() || (this.modalType() === 'course' && (this.newCourseTitle() || this.newCourseContent()))) {
+      event.preventDefault();
+      event.returnValue = '';
+    }
+  }
+
   constructor() {
+    // Restore draft and query param state on page load
+    const viewParam = this.route.snapshot.queryParamMap.get('view');
+    const savedDraft = this.vault.getMeta<{
+      title: string;
+      subject: SubjectName;
+      grade: GradeLevel;
+      trimester: string;
+      docType: DocType;
+      summary: string;
+      content: string;
+      fileUrl: string | null;
+      fileName: string | null;
+    }>('madrasati_draft_teacher_doc');
+
+    if (savedDraft) {
+      if (savedDraft.title) this.newCourseTitle.set(savedDraft.title);
+      if (savedDraft.subject) this.newCourseSubject.set(savedDraft.subject);
+      if (savedDraft.grade) this.newCourseGrade.set(savedDraft.grade);
+      if (savedDraft.trimester) this.newCourseTrimester.set(savedDraft.trimester);
+      if (savedDraft.docType) this.newCourseDocType.set(savedDraft.docType);
+      if (savedDraft.summary) this.newCourseSummary.set(savedDraft.summary);
+      if (savedDraft.content) this.newCourseContent.set(savedDraft.content);
+      if (savedDraft.fileUrl) this.uploadedFileUrl.set(savedDraft.fileUrl);
+      if (savedDraft.fileName) this.uploadedFileName.set(savedDraft.fileName);
+    }
+
+    if (viewParam === 'publish-doc' || (savedDraft && (savedDraft.title || savedDraft.content))) {
+      this.modalType.set('course');
+    }
+
+    // Auto-save teacher course draft on changes
+    effect(() => {
+      if (this.modalType() === 'course') {
+        const title = this.newCourseTitle();
+        const content = this.newCourseContent();
+        const fileUrl = this.uploadedFileUrl();
+        if (title || content || fileUrl) {
+          this.vault.setMeta('madrasati_draft_teacher_doc', {
+            title,
+            subject: this.newCourseSubject(),
+            grade: this.newCourseGrade(),
+            trimester: this.newCourseTrimester(),
+            docType: this.newCourseDocType(),
+            summary: this.newCourseSummary(),
+            content,
+            fileUrl,
+            fileName: this.uploadedFileName(),
+            updatedAt: Date.now(),
+          });
+        }
+      }
+    });
+
     effect(() => {
       if (this.store.isTeacherProfileModalOpen()) {
         this.openProfileModal();
@@ -1724,6 +1945,7 @@ export class TeacherHomeComponent {
   readonly isUploading = signal<boolean>(false);
   readonly isAiScanning = signal<boolean>(false);
   readonly aiDetectedBadge = signal<string | null>(null);
+  readonly publishDocTab = signal<'edit' | 'preview'>('edit');
 
   getTeacherName(): string {
     return this.firebase.userProfile()?.displayName || 'Enseignant Certifié';
@@ -1768,6 +1990,9 @@ export class TeacherHomeComponent {
   openModal(type: 'course' | 'blogArticle' | 'ai') {
     if (!this.requireAuth()) return;
     this.modalType.set(type);
+    if (type === 'course') {
+      this.router.navigate([], { queryParams: { view: 'publish-doc' }, queryParamsHandling: 'merge' });
+    }
   }
 
   openStudio() {
@@ -1879,6 +2104,7 @@ export class TeacherHomeComponent {
     this.uploadedFileName.set(null);
     this.isAiScanning.set(false);
     this.aiDetectedBadge.set(null);
+    this.router.navigate([], { queryParams: { view: null }, queryParamsHandling: 'merge' });
   }
 
   copyDocLink(c: Course) {
@@ -2010,6 +2236,10 @@ export class TeacherHomeComponent {
       icon: 'menu_book',
     });
 
+    this.vault.removeMeta('madrasati_draft_teacher_doc');
+    this.newCourseTitle.set('');
+    this.newCourseContent.set('');
+    this.newCourseSummary.set('');
     this.closeModal();
   }
 

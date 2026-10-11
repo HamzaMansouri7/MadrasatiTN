@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark, chapterById, chapterTitle } from '@core';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal, HostListener } from '@angular/core';
+import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark, chapterById, chapterTitle, StorageVaultService } from '@core';
 import { CartoucheComponent, ShareButtonComponent, copySharePost, joinDetails } from '@shared';
 
 /**
@@ -18,6 +18,15 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
   readonly store = inject(EducationStore);
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
+  private readonly vault = inject(StorageVaultService);
+
+  @HostListener('window:beforeunload', ['$event'])
+  onBeforeUnload(event: BeforeUnloadEvent) {
+    if (this.busy()) {
+      event.preventDefault();
+      event.returnValue = '';
+    }
+  }
 
   readonly sourceImage = signal<string | null>(null);
   readonly dna = signal<WorksheetDna | null>(null);
@@ -134,7 +143,21 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     }
 
     const src = this.store.consumeLastSourceInput();
-    if (!src) return;
+    if (!src) {
+      // Restore cached generated worksheet from IndexedDB on page reload
+      const cached = await this.vault.getAsset<{
+        dna: WorksheetDna;
+        exercises: GeneratedExercise[];
+        count: number;
+      }>('madrasati_draft_worksheet');
+
+      if (cached && cached.dna && cached.exercises?.length) {
+        this.dna.set(cached.dna);
+        this.exercises.set(cached.exercises);
+        if (cached.count) this.count.set(cached.count);
+      }
+      return;
+    }
 
     const photos = src.photos ?? src.images ?? [];
     if (photos.length > 0 && photos[0].base64Data) {
@@ -281,6 +304,11 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     try {
       const list = await this.store.generateSimilarExercises(dna, this.count());
       this.exercises.set(list);
+      void this.vault.saveAsset('madrasati_draft_worksheet', {
+        dna,
+        exercises: list,
+        count: this.count(),
+      });
     } finally {
       this.generating.set(false);
       this.stopThinking();
@@ -326,6 +354,11 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     } finally {
       this.illustrating.set(false);
       this.stopThinking();
+      void this.vault.saveAsset('madrasati_draft_worksheet', {
+        dna: this.dna(),
+        exercises: this.exercises(),
+        count: this.count(),
+      });
     }
   }
 

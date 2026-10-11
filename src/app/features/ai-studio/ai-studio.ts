@@ -15,6 +15,7 @@ import {
   TRIMESTERS,
   VISUAL_PRESETS,
   VisualCommand,
+  StorageVaultService,
 } from '@core';
 import { AiStatusComponent, InfographicSpecComponent, ShareButtonComponent } from '@shared';
 
@@ -91,6 +92,14 @@ interface PresetOption {
                 class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 px-4 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-2 cursor-pointer transition-colors disabled:opacity-50 disabled:cursor-default">
                 <span class="material-icons text-base" [class.animate-spin]="busy()" aria-hidden="true">refresh</span>
                 {{ lang.tr('Régénérer', 'إعادة التوليد') }}
+              </button>
+              <button
+                type="button"
+                (click)="resetStudio()"
+                [attr.aria-label]="lang.tr('Créer un nouveau', 'مشروع جديد')"
+                class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 px-3.5 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors text-[#FBF8F1]">
+                <span class="material-icons text-base" aria-hidden="true">add_circle_outline</span>
+                <span class="hidden sm:inline">{{ lang.tr('Nouveau', 'جديد') }}</span>
               </button>
               @if (doc()) {
                 <app-share-button
@@ -406,6 +415,15 @@ export class AiStudioComponent implements OnInit {
   readonly lang = inject(LanguageService);
   private readonly store = inject(EducationStore);
   private readonly router = inject(Router);
+  private readonly vault = inject(StorageVaultService);
+
+  @HostListener('window:beforeunload', ['$event'])
+  onBeforeUnload(event: BeforeUnloadEvent) {
+    if (this.busy() || this.illustrating()) {
+      event.preventDefault();
+      event.returnValue = '';
+    }
+  }
 
   readonly presets: PresetOption[] = [
     { id: 'auto', icon: 'auto_awesome', fr: 'Auto', ar: 'تلقائي' },
@@ -471,17 +489,43 @@ export class AiStudioComponent implements OnInit {
   readonly pendingPreset = signal<InfographicPreset | 'auto' | null>(null);
   readonly presetWarningOpen = signal(false);
 
-  ngOnInit() {
+  async ngOnInit() {
     if (typeof window === 'undefined') return;
     const src = this.store.consumeLastSourceInput();
-    if (!src) {
-      // No content yet: the Create hub is the single place to give it.
-      this.router.navigate(['/create'], { queryParams: { output: 'memo' }, replaceUrl: true });
+    if (src) {
+      this.source.set(src);
+      this.notes.set(src.instructions ?? '');
+      await this.generate();
       return;
     }
-    this.source.set(src);
-    this.notes.set(src.instructions ?? '');
-    void this.generate();
+
+    // Restore cached infographic from IndexedDB across page reloads
+    const cached = await this.vault.getAsset<{
+      doc: InfographicDoc;
+      source: SourceInput;
+      preset: InfographicPreset | 'auto';
+      theme: InfographicTheme;
+      notes: string;
+    }>('madrasati_active_infographic');
+
+    if (cached && cached.doc) {
+      this.doc.set(cached.doc);
+      if (cached.source) this.source.set(cached.source);
+      if (cached.preset) this.preset.set(cached.preset);
+      if (cached.theme) this.theme.set(cached.theme);
+      if (cached.notes) this.notes.set(cached.notes);
+      return;
+    }
+
+    // No content yet: redirect to create hub
+    this.router.navigate(['/create'], { queryParams: { output: 'memo' }, replaceUrl: true });
+  }
+
+  async resetStudio() {
+    await this.vault.deleteAsset('madrasati_active_infographic');
+    this.doc.set(null);
+    this.source.set(null);
+    this.router.navigate(['/create'], { queryParams: { output: 'memo' } });
   }
 
   readonly contentOpen = signal(false);
@@ -605,6 +649,13 @@ export class AiStudioComponent implements OnInit {
     this.busy.set(false);
     if (res.ok && res.doc) {
       this.doc.set(res.doc);
+      void this.vault.saveAsset('madrasati_active_infographic', {
+        doc: res.doc,
+        source: this.source(),
+        preset: this.preset(),
+        theme: this.theme(),
+        notes: this.notes(),
+      });
       void this.illustrateAll(res.doc);
     } else this.error.set(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));
   }
@@ -618,7 +669,16 @@ export class AiStudioComponent implements OnInit {
       (target) => this.illustrating.set(keyOf(target)),
       (_target, next) => {
         // The sheet may have been regenerated or edited meanwhile: stop applying it, but let the loop finish and save.
-        if (this.doc() === doc || this.doc() === next) this.doc.set(next);
+        if (this.doc() === doc || this.doc() === next) {
+          this.doc.set(next);
+          void this.vault.saveAsset('madrasati_active_infographic', {
+            doc: next,
+            source: this.source(),
+            preset: this.preset(),
+            theme: this.theme(),
+            notes: this.notes(),
+          });
+        }
       },
     );
     this.illustrating.set(null);

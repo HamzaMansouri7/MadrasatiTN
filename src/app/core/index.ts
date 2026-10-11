@@ -20,6 +20,7 @@ export * from './services/profile.service';
 export * from './services/language.service';
 export * from './services/seo.service';
 export * from './services/print.service';
+export * from './services/storage-vault.service';
 export * from './services/ai-client';
 export * from './guards/auth.guard';
 export * from './utils/image.util';

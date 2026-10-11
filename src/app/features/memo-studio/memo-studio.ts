@@ -13,6 +13,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { EducationStore } from '@core/services/education-store';
 import { LanguageService } from '@core/services/language.service';
 import { FirebaseService } from '@core/services/firebase.service';
+import { StorageVaultService } from '@core/services/storage-vault.service';
 import { downscaleImage } from '@core/utils/image.util';
 import { MemoInput, MemoLayout } from '@core/models/memo.model';
 import { CurriculumChapter } from '@core/data/curriculum-chapters.data';
@@ -599,6 +600,15 @@ interface LibraryResourceItem {
 
                 <button
                   type="button"
+                  (click)="resetMemoStudio()"
+                  class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 min-h-11 rounded-md text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-1.5"
+                >
+                  <span class="material-icons text-base" aria-hidden="true">add_circle_outline</span>
+                  {{ lang.tr('Nouveau', 'جديد') }}
+                </button>
+
+                <button
+                  type="button"
                   (click)="printMemo()"
                   class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-md text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm"
                 >
@@ -670,6 +680,15 @@ export class MemoStudioComponent implements OnInit {
   readonly activeTab = signal<'topic' | 'text' | 'photo' | 'file' | 'library'>('topic');
   readonly state = signal<'idle' | 'analyzing' | 'done' | 'error'>('idle');
   readonly errorMessage = signal<string>('');
+  private readonly vault = inject(StorageVaultService);
+
+  @HostListener('window:beforeunload', ['$event'])
+  onBeforeUnload(event: BeforeUnloadEvent) {
+    if (this.state() === 'analyzing') {
+      event.preventDefault();
+      event.returnValue = '';
+    }
+  }
 
   readonly topic = signal<string>('');
   readonly topicId = signal<string | null>(null);
@@ -731,9 +750,41 @@ export class MemoStudioComponent implements OnInit {
           this.savedSchool.set(loaded.school || null);
           this.isSaved.set(true);
           this.state.set('done');
+          return;
         }
       }
+
+      // Restore unsaved draft from IndexedDB on page reload
+      const cached = await this.vault.getAsset<{
+        memo: any;
+        layout: MemoLayout;
+        topic: string;
+        grade: string;
+        subject: string;
+        trimester: string;
+        extractedText: string;
+      }>('madrasati_draft_memo');
+
+      if (cached && cached.memo) {
+        this.store.memo.set(cached.memo);
+        if (cached.layout) this.store.memoLayout.set(cached.layout);
+        if (cached.topic) this.topic.set(cached.topic);
+        if (cached.grade) this.grade.set(cached.grade);
+        if (cached.subject) this.subject.set(cached.subject);
+        if (cached.trimester) this.trimester.set(cached.trimester);
+        if (cached.extractedText) this.extractedText.set(cached.extractedText);
+        this.state.set('done');
+      }
     });
+  }
+
+  async resetMemoStudio() {
+    await this.vault.deleteAsset('madrasati_draft_memo');
+    this.store.memo.set(null);
+    this.state.set('idle');
+    this.topic.set('');
+    this.text.set('');
+    this.extractedText.set('');
   }
 
   private async loadLibraryIndex() {
@@ -959,6 +1010,15 @@ export class MemoStudioComponent implements OnInit {
       this.state.set('done');
       this.isSaved.set(false);
       this.savedMemoId.set(null);
+      void this.vault.saveAsset('madrasati_draft_memo', {
+        memo: this.store.memo(),
+        layout: this.store.memoLayout(),
+        topic: this.topic(),
+        grade: this.grade(),
+        subject: this.subject(),
+        trimester: this.trimester(),
+        extractedText: this.extractedText(),
+      });
     } else {
       this.errorMessage.set(res.error || 'Erreur lors de la génération.');
       this.state.set('error');
