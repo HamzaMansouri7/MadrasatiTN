@@ -22,6 +22,9 @@ NotebookLM notebook "<book name>"  one notebook per book
         │  Studio: Infographic / Video / Slides  (settings + prompt)
         ▼
 Download PDF / PPTX → split to images → review → library
+        │  (optional, slides only)
+        ▼
+Google Vids: "Diapositives en vidéo" → narrated video (Arabic voice / AI avatar)
 ```
 
 ## 3. Notebook rules
@@ -194,6 +197,7 @@ Rule: finish and approve one book before opening the next notebook.
 | Exercises with no `topicId` (43% of exercises) | They still export by theme, but cannot be grouped by official chapter. |
 | Exercises not `ready` (6%) | Excluded from export. |
 | Product changes (names, menus) | NotebookLM UI is changing (renamed "Gemini Notebook" in the screenshots). Re-check the settings before each batch. |
+| Google Vids limits and Arabic voice quality | **Unverified.** Test in the pilot (section 19b). |
 | Opal | Not used here. It leaves Labs on 2026-11-17 (banner on the Opal page). |
 
 ## 12. To build (not built yet)
@@ -447,9 +451,40 @@ Run section 17's table for every new book before generating anything: if it cann
 | 2026-10-11 | Infographic, notebook 01, theme *Comparaison et rangement des nombres* | Arabic, Portrait, Kawaii, Standard | infographic v1 (section 16.2 prompt) | **Good:** Arabic sharp and vowelled, Kawaii look fits age 6-7, clear 3-rule layout, 2 practice questions without answers. **Bad:** (1) English labels appeared although the language was Arabic; (2) rule examples reused the source exercise's own pictures and numbers (apples 7 vs bananas 5, snails 3 vs butterflies 6), which answers source exercise 1. | v2 needed: ban English text; ban reusing source objects or numbers in examples |
 | | | | | | |
 
+## 19b. Google Vids: last step for narrated video (added 2026-10-11)
+
+Role: turn an **approved slide deck** into a narrated video, optionally with an AI avatar. It is not a source tool: it never reads the books, only the approved deck.
+
+| Item | Detail |
+|---|---|
+| Input | The approved NotebookLM deck (PPTX or PDF), exported after the quality gate (section 10) |
+| Entry | Vids home screen → **Diapositives en vidéo** ("Transformez vos présentations en vidéos…", seen on the owner's screen) |
+| Orientation | **Paysage** (screen), **Portrait** (Shorts/Reels), **Carré** (seen on the owner's screen) |
+| Voice / avatar | AI voiceover and AI avatar. Arabic is among the 24 supported languages ([Workspace Updates, Feb 2026](https://workspaceupdates.googleblog.com/2026/02/vids-avatars-voiceovers-new-languages.html), [Apr 2026](https://workspaceupdates.googleblog.com/2026/04/new-more-expressive-ai-voiceovers-in-Google-Vids-and-16-additional-languages-powered-by-Gemini-3.1-Flash-TTS.html)) |
+| Availability | AI voiceover is open to personal Google accounts per the same posts. Higher usage limits need an add-on (AI Expanded Access). **The owner's own limits: unverified.** |
+| Audience rule | One deck = one audience (child / parent / teacher), same as section 16.7. Pick the narration tone to match. |
+
+Rules:
+1. Only approved decks go into Vids. Never narrate an unchecked deck.
+2. The narration text comes from the deck. Do not let the avatar add facts. If Vids offers a script step, read it and delete anything not in the sources.
+3. Vowelled Arabic matters for kids: check the voice reads the vowelled text correctly.
+4. Keep the Madrasati TN brand mark on slide 1 and the last slide.
+5. Same naming and `manifest.json` rule as section 9, plus a `video-vids.mp4` entry with the orientation used.
+
+**Pilot (after the infographic and slides pilot pass):** take the approved 8-slide deck of one theme, make one Portrait and one Paysage video, and judge:
+
+- [ ] Arabic voice is clear and pronounces the vowelled text correctly
+- [ ] The narration matches the slides, nothing added
+- [ ] Slides stay sharp and readable at video size
+- [ ] Avatar (if used) looks suitable for the age band
+- [ ] Usage meter / limits understood and logged in section 19
+
+NotebookLM's own **Résumé vidéo** (section 16.4) stays the main video path. Vids is the option when the owner wants a narrated deck or an avatar presenter. Compare both on the same theme and log the result.
+
 ## 20. Decisions needed from the owner
 
 1. Pilot book: 4ème Maths — agree?
 2. Pilot theme: **Périmètre et aire** (proposed) or another from the table?
 3. `parascolaire/notebooklm/`: gitignored (regenerable) or pushed?
 4. Outputs root folder: where on disk?
+5. Google Vids (section 19b): confirm the plan you have there and whether to use the AI avatar.
