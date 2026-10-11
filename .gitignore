@@ -67,3 +67,7 @@ docs/
 /tmp_cnp_tocs/
 /scratch/
 /_sources_candidates/
+
+# private commercial books + OCR archive, never publish
+parascolaire/
+__pycache__/
